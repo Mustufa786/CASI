@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/menu_wifiDirect"
+        android:orderInCategory="1"
+        android:title="Connect to device"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_addMember"
+        android:orderInCategory="1"
+        android:title="Add New Member"
+        app:showAsAction="never" />
+
+
+</menu>

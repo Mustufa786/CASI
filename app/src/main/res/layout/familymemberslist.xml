@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="16dp"
+    android:paddingTop="10dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rlcontainer"
+        style="@style/Widget.AppCompat.ListView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_73sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/bacground_border2"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/imgUser"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/toic1" />
+
+        <LinearLayout
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgHead"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_weight="0.1"
+                android:src="@drawable/head"
+                android:textAlignment="textEnd" />
+
+            <ImageView
+                android:id="@+id/imgResp"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_weight="0.1"
+                android:src="@drawable/resp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/info"
+            android:layout_width="@dimen/_65sdp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/imgUser"
+            android:paddingTop="@dimen/_2sdp">
+            <!-- Family Member Name-->
+            <TextView
+                android:id="@+id/memberName"
+                style="@style/listItems"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:text="Memeber Name"
+                android:textColor="#efefef"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="monospace" />
+
+            <!-- Mother -->
+            <TextView
+                android:id="@+id/mmName"
+                style="@style/listItems"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_below="@id/memberName"
+                android:layout_alignParentStart="true"
+                android:gravity="clip_horizontal"
+                android:text="ABCDEFG"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:typeface="normal" />
+
+            <!-- Father -->
+            <TextView
+                android:id="@+id/ffName"
+                style="@style/listItems"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_below="@id/mmName"
+                android:layout_alignParentStart="true"
+                android:gravity="clip_horizontal"
+                android:text="ABCDEFG"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:typeface="normal" />
+
+            <!-- LineNo -->
+            <TextView
+                android:id="@+id/lineNo"
+                style="@style/listItems"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignEnd="@+id/maritalStatus"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:gravity="right"
+                android:text="Line No"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <!-- na204 -->
+            <TextView
+                android:id="@+id/na204"
+                style="@style/listItems"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignBaseline="@+id/mmName"
+                android:layout_alignEnd="@+id/maritalStatus"
+                android:layout_alignBottom="@+id/mmName"
+                android:layout_alignParentEnd="@id/lineNo"
+                android:gravity="right"
+                android:text="na204"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <!-- Status -->
+            <TextView
+                android:id="@+id/maritalStatus"
+                style="@style/listItems"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_below="@id/na204"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="8dp"
+                android:gravity="right"
+                android:text="M.S"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>

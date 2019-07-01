@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="edu.aku.hassannaqvi.casi_2018.ui.ViewMemberActivity">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="callback"
+            type="edu.aku.hassannaqvi.casi_2018.ui.ViewMemberActivity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--     <TextView
+                 android:id="@+id/txt"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_horizontal"
+                 android:background="@color/colorPrimaryDark"
+                 android:gravity="center"
+                 android:text="CHECKLIST MEMBERS"
+                 android:textSize="40sp" />-->
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:animateLayoutChanges="true"
+                android:layoutDirection="rtl"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/fldGrpVisA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:text="@string/nh102a"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/white" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/chckenumblock"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="60"
+                            android:hint="@string/nh102a"
+                            android:inputType="number"
+                            android:maxLength="4" />
+
+                        <Button
+                            android:id="@+id/checkEnmBtn"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="30"
+                            android:background="@drawable/button_bg"
+                            android:elevation="5dp"
+                            android:onClick="@{() -> callback.BtnCheckEnm()}"
+                            android:text="CHECK"
+                            android:textColor="@color/colorPrimaryDark" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fldGrphidden"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <LinearLayout
+                        android:id="@+id/fldGrpVisB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <!--nh103-->
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="16dp"
+                                    android:layout_marginBottom="4dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:text="@string/nh103"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="@android:color/white" />
+
+
+                                <TextView
+                                    android:id="@+id/nsuba"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="13dp"
+                                    android:layout_marginBottom="4dp"
+                                    android:layout_weight="2"
+                                    android:background="@color/pink_100"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="16sp" />
+
+                                <!--nh104-->
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="16dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:text="@string/nh104"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="@android:color/white" />
+
+
+                                <TextView
+                                    android:id="@+id/nzilla"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="13dp"
+                                    android:layout_marginBottom="4dp"
+                                    android:layout_weight="2"
+                                    android:background="@color/pink_100"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <!--nh105-->
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="16dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:text="@string/nh105"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="@android:color/white" />
+
+
+                                <TextView
+                                    android:id="@+id/ntehsil"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="16dp"
+                                    android:layout_marginBottom="4dp"
+                                    android:layout_weight="2"
+                                    android:background="@color/pink_100"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="16sp" />
+
+                                <!--nh106-->
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="16dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:text="@string/nh106"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="@android:color/white" />
+
+
+                                <TextView
+                                    android:id="@+id/ncity"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="13dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_weight="2"
+                                    android:background="@color/pink_100"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="3"
+                                android:background="@color/colorPrimary"
+                                android:text="@string/nh108"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white" />
+
+                            <EditText
+                                android:id="@+id/chckhouse"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="4"
+                                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-"
+                                android:hint="9999-999"
+                                android:inputType="textCapCharacters"
+                                android:maxLength="8" />
+
+
+                            <Button
+                                android:id="@+id/checkHHBtn"
+                                style="@style/Widget.AppCompat.Button.Colored"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="2"
+                                android:background="@drawable/button_bg"
+                                android:elevation="5dp"
+                                android:onClick="@{() -> callback.BtnCheckHH()}"
+                                android:text="CHECK"
+                                android:textColor="@color/colorPrimaryDark" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fldGrpviewlist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layoutDirection="ltr"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        tools:visibility="visible">
+
+                        <LinearLayout
+                            android:id="@+id/fldGrpEditHH"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:layout_weight="1"
+                                android:background="@color/colorPrimary"
+                                android:gravity="center"
+                                android:text="Household Sections"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white" />
+
+                            <Button
+                                style="@style/Widget.AppCompat.Button.Colored"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_5sdp"
+                                android:background="@drawable/button_bg1"
+                                android:elevation="5dp"
+                                android:onClick="@{() -> callback.BtnEditHH()}"
+                                android:text="CLICK HERE"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <!--WRAs / CHILD-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:layout_marginRight="@dimen/_2sdp"
+                                android:layout_weight="1"
+                                android:background="@color/colorPrimary"
+                                android:gravity="center"
+                                android:text="WRA/Adolescent"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:layout_weight="1"
+                                android:background="@color/colorPrimary"
+                                android:gravity="center"
+                                android:text="Children"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="5dp">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/_2sdp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/nowrafound"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_2sdp"
+                                    android:layout_marginTop="-3dp"
+                                    android:layout_marginRight="@dimen/_2sdp"
+                                    android:background="@color/pink_100"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:paddingTop="-2dp"
+                                    android:text="No WRA's/Adolescents found!"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="@color/red"
+                                    android:textSize="14sp"
+                                    android:visibility="visible" />
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/recyclerMwra"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:layoutDirection="ltr"
+                                    android:nestedScrollingEnabled="false"
+                                    android:scrollbars="vertical"
+                                    tools:listitem="@layout/wra_adapter" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/nochildfound"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_2sdp"
+                                    android:layout_marginTop="-3dp"
+                                    android:layout_marginRight="@dimen/_2sdp"
+                                    android:background="@color/pink_100"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:paddingTop="-2dp"
+                                    android:text="No Children Found!"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="@color/red"
+                                    android:textSize="14sp"
+                                    android:visibility="visible" />
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/recyclerChild"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:layoutDirection="ltr"
+                                    android:nestedScrollingEnabled="false"
+                                    android:scrollbars="vertical"
+                                    tools:listitem="@layout/child_adapter" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <!--OTHERS / ADOLESCENTS-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:layout_marginRight="@dimen/_2sdp"
+                                android:layout_weight="1"
+                                android:background="@color/colorPrimary"
+                                android:gravity="center"
+                                android:text="Adolescents"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:layout_marginRight="@dimen/_2sdp"
+                                android:layout_weight="1"
+                                android:background="@color/colorPrimary"
+                                android:gravity="center"
+                                android:text="Others"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="5dp">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/_2sdp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/noadolfound"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_2sdp"
+                                    android:layout_marginTop="-3dp"
+                                    android:layout_marginRight="@dimen/_2sdp"
+                                    android:background="@color/pink_100"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:paddingTop="-2dp"
+                                    android:text="No Adolescents found!"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="@color/red"
+                                    android:textSize="14sp"
+                                    android:visibility="gone" />
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/recyclerAdol"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:layoutDirection="ltr"
+                                    android:nestedScrollingEnabled="false"
+                                    android:scrollbars="vertical"
+                                    tools:listitem="@layout/adol_adapter" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/othersfound"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_2sdp"
+                                    android:layout_marginTop="-3dp"
+                                    android:layout_marginRight="@dimen/_2sdp"
+                                    android:background="@color/pink_100"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:paddingTop="-2dp"
+                                    android:text="No Others Found!"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="@color/red"
+                                    android:textSize="14sp"
+                                    android:visibility="gone" />
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/recyclerOthers"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:layoutDirection="ltr"
+                                    android:nestedScrollingEnabled="false"
+                                    android:scrollbars="vertical"
+                                    tools:listitem="@layout/other_adapter" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <!--BUTTONS-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginTop="40dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btn_End"
+                                style="@style/buttons"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/red"
+                                android:onClick="@{() -> callback.BtnEnd()}"
+                                android:text="@string/end_interview"
+                                android:textColor="@color/white"
+                                android:visibility="gone" />
+
+                            <Button
+                                style="@style/buttons"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/brown"
+                                android:onClick="intentWifi"
+                                android:text="@string/dataShare"
+                                android:textColor="@color/white"
+                                android:visibility="visible" />
+
+                            <Button
+                                android:id="@+id/btn_Continue"
+                                style="@style/buttons"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/_3sdp"
+                                android:layout_weight="1"
+                                android:background="#1ed61e"
+                                android:onClick="@{() -> callback.BtnContinue()}"
+                                android:text="@string/nextSection"
+                                android:textColor="@color/white"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+</layout>
