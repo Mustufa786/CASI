@@ -1605,79 +1605,74 @@
 
 
     <!--Section A5 CASI-->
-
     <string name="rare"> کبھی کبھار (پچھلے 4 ہفتوں کے دوران ایک سے دو مرتبہ) </string>
     <string name="stime"> کبھی کبھار (پچھلے 4 ہفتوں کے دوران تین سے دس مرتبہ) </string>
     <string name="often"> کبھی کبھار (پچھلے 4 ہفتوں کے دوران تین سے دس مرتبہ) </string>
-
-
     <string name="cih601"> چھلے 4 ہفتوں کے دوران کیا کبھی آپ فکرمند تھےکہ آپ کے گھر میں اتنا کھانا نہیں ہوگا کہ آپ اور آپ کے گھر کے دوسرے افراد کھا سکیں؟ </string>
-
     <string name="cih602"> کتنی مرتبہ ایسا ہوا؟ </string>
-
     <string name="cih603"> In the past four weeks, were you or any household member not able to eat the kinds of foods you preferred because of a lack of resources? </string>
-
     <string name="cih604"> کتنی مرتبہ ایسا ہوا؟ </string>
-
     <string name="cih605"> In the past four weeks, did you or any household member have to eat a limited variety of foods due to a lack of resources? </string>
-
     <string name="cih606"> کتنی مرتبہ ایسا ہوا؟ </string>
-
     <string name="cih607"> In the past four weeks, did you or any household member have to eat some foods that you really did not want to eat because of a lack of resources to obtain other types of food? </string>
-
     <string name="cih608"> کتنی مرتبہ ایسا ہوا؟ </string>
-
     <string name="cih609"> In the past four weeks, did you or any household member have to eat a smaller meal than you felt you needed because there was not enough food? </string>
-
     <string name="cih610"> کتنی مرتبہ ایسا ہوا؟ </string>
-
     <string name="cih611"> In the past four weeks, did you or any other household member have to eat fewer meals in a day because there was not enough food? </string>
-
     <string name="cih612"> کتنی مرتبہ ایسا ہوا؟ </string>
-
     <string name="cih613"> In the past four weeks, was there ever no food to eat of any kind in your household because of lack of resources to get food? </string>
-
     <string name="cih614"> کتنی مرتبہ ایسا ہوا؟ </string>
-
     <string name="cih615"> In the past four weeks, did you or any household member go to sleep at night hungry because there was not enough food? </string>
-
     <string name="cih616"> کتنی مرتبہ ایسا ہوا؟ </string>
-
     <string name="cih617"> In the past four weeks, did you or any household member go a whole day and night without eating anything because there was not enough food? </string>
-
     <string name="cih618"> کتنی مرتبہ ایسا ہوا؟ </string>
 
-
     <!--Section A7-->
-
     <string name="benef"> وصول کنندہ کی تعداد </string>
     <string name="source">ذریعہ</string>
-
     <string name="cih701"> بچوں کے لیے RUSF / وا وامم  </string>
-
     <string name="cih702"> بچوں کے لیے RUSF </string>
-
     <string name="cih703"> بچوں کے لیے (مائکرو نیوٹرینٹ پائوڈر) ایم این پی </string>
-
     <string name="cih704"> خواتین کے لیے سپرسیریل, گندم سویا </string>
-
     <string name="cih705"> گندم </string>
-
     <string name="cih706"> نقد رقم </string>
-
     <string name="cih707"> کیش وا ئو چر . </string>
-
     <string name="cih708"> کھانے کا وا ئو چر </string>
-
     <string name="cih709"> امداد سے متعلق صحت, دوائیاں </string>
-
     <string name="cih710"> تعلیم سے متعلق امداد (فیس, یونیفورم, کتابیں ) </string>
-
     <string name="cih711"> زرعی امداد (بیج, کھاد, اوذار) </string>
-
     <string name="cih712"> جانوروں کے لیے اشیا (دوائیاں,کھانا) </string>
-
     <string name="cih713"> غذا کے باے میں مشورہ </string>
+
+    <!--Women Section 5-->
+    <string name="ciw5h"> سال کےسیکشن 5: خواتین کے مختلف اقسام کے کھانوں کا استعمال </string>
+    <string name="ciw501"> آپ کے بچے نے کل دن اور رات کے دوران کھانا کھا یا ؟ </string>
+    <string name="ciw501h"> کھانے </string>
+    <string name="ciw502"> مطابق کے معمول یہ کیا ہے ؟ </string>
+    <string name="ciw502a"> کم </string>
+    <string name="ciw502b"> ایک </string>
+    <string name="ciw502c"> زیادہ </string>
+    <string name="ciw5h1"> پچھلے 7 دنوں کے دوران کتنے دن آپ نے یہ کھانے کے گروپ کھائے؟ </string>
+    <string name="ciw503h1"> پچھلے 7 دنوں کے دوران کتنے دن یہ کھانے کے گروپ کھائے؟ </string>
+    <string name="ciw503h2"> پچھلے 7 دنوں کے دوران ان کھانے کے گروپ کا زریعہ کیا تھا؟ </string>
+    <string name="ciw503h2a"> اپنی فصل/ باغ </string>
+    <string name="ciw503h2b"> سنٹرل مارکیٹ سے خرید </string>
+    <string name="ciw503h2c"> مقامی مارکیٹ/ دکان سے خرید </string>
+    <string name="ciw503h2d"> کھانے کے لیے کام کرنا </string>
+    <string name="ciw503h2e"> ادھار/قرضہ </string>
+    <string name="ciw503h2f"> پروسی/دوستوں کی طرف سے تحفہ </string>
+    <string name="ciw503h2g"> غذا کی امداد </string>
+    <string name="ciw503h2h"> اشیاء کی تجارت </string>
+    <string name="ciw503h2i"> پچھلے 7 دنوں میں نہیں کھایا </string>
+    <string name="ciw503h3"> کیا کل آپ یا آپ کے گھر کے دوسرے افراد نے یہ کھانے کے گروپ کھائے؟ </string>
+    <string name="ciw50301"> مثلاً روٹی ,جو،جوار، چاول ،گندم،شکرقندی، آلو وغیرہ </string>
+    <string name="ciw50302"> تمام قسم کی دالیں اور پھلی بیج وغیرہ </string>
+    <string name="ciw50303"> سبزیاں </string>
+    <string name="ciw50304"> پھل </string>
+    <string name="ciw50305"> کوئی بھی گوشت, مچھلی, انڈے </string>
+    <string name="ciw50306"> دودھ، دودھ سے بنی ہوئی دیگر اشیاء (دہی،پنیر) </string>
+    <string name="ciw50307"> چینی, شہد </string>
+    <string name="ciw50308"> کوئی تیل، چکنائی </string>
 
 
 </resources>

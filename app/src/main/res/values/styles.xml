@@ -471,8 +471,7 @@
          <item name="textColor">@color/white</item>
          <item name="android:background">@color/black</item>
          <item name="textSize">15sp</item>
-
-
      </style>-->
+
 
 </resources>
