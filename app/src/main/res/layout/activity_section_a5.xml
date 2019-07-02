@@ -298,7 +298,6 @@
 
                 </LinearLayout>
 
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -550,11 +549,8 @@
 
                 </LinearLayout>
 
-                <!--na5a-->
 
-
-                <!-- Section A6 Start here -->
-
+                <!-- Section A5 Start here -->
 
                 <TextView
                     android:layout_width="match_parent"
@@ -566,9 +562,7 @@
                     android:text="@string/na6heading"
                     android:textSize="40sp" />
 
-
                 <!--nh501-->
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -781,71 +775,8 @@
 
                 </LinearLayout>
 
-                <!--nh504-->
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:background="@color/colorPrimary"
-                    android:text="@string/nh504"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textColor="@android:color/white" />
 
-                <RadioGroup
-                    android:id="@+id/nh504"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <RadioButton
-                        android:id="@+id/nh504a"
-                        style="@style/radiobutton"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="1dp"
-                        android:text="@string/yes" />
-
-                    <RadioButton
-                        android:id="@+id/nh504b"
-                        style="@style/radiobutton"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="1dp"
-                        android:text="@string/no" />
-
-                </RadioGroup>
-
-                <!--nh505-->
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:background="@color/colorPrimary"
-                    android:text="@string/nh505"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textColor="@android:color/white" />
-
-                <RadioGroup
-                    android:id="@+id/nh505"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <RadioButton
-                        android:id="@+id/nh505a"
-                        style="@style/radiobutton"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="1dp"
-                        android:text="@string/yes" />
-
-                    <RadioButton
-                        android:id="@+id/nh505b"
-                        style="@style/radiobutton"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="1dp"
-                        android:text="@string/no" />
-
-                </RadioGroup>
+                <!-- Section A6 Start here -->
 
                 <TextView
                     android:layout_width="match_parent"
@@ -856,7 +787,6 @@
                     android:gravity="center"
                     android:text="@string/nh6heading"
                     android:textSize="40sp" />
-
 
                 <TextView
                     style="@style/sub"
@@ -873,7 +803,6 @@
                     android:text="@string/nh601"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/white" />
-
 
                 <RadioGroup
                     android:id="@+id/nh601"
@@ -910,7 +839,6 @@
 
                 </RadioGroup>
 
-
                 <!--02-->
                 <TextView
                     android:layout_width="match_parent"
@@ -920,7 +848,6 @@
                     android:text="@string/nh602"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/white" />
-
 
                 <RadioGroup
                     android:id="@+id/nh602"
@@ -967,7 +894,6 @@
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/white" />
 
-
                 <RadioGroup
                     android:id="@+id/nh603"
                     android:layout_width="match_parent"
@@ -1012,7 +938,6 @@
                     android:text="@string/nh604"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/white" />
-
 
                 <RadioGroup
                     android:id="@+id/nh604"
@@ -1059,7 +984,6 @@
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/white" />
 
-
                 <RadioGroup
                     android:id="@+id/nh605"
                     android:layout_width="match_parent"
@@ -1104,7 +1028,6 @@
                     android:text="@string/nh606"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/white" />
-
 
                 <RadioGroup
                     android:id="@+id/nh606"
@@ -1151,7 +1074,6 @@
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/white" />
 
-
                 <RadioGroup
                     android:id="@+id/nh607"
                     android:layout_width="match_parent"
@@ -1196,7 +1118,6 @@
                     android:text="@string/nh608"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/white" />
-
 
                 <RadioGroup
                     android:id="@+id/nh608"
@@ -1243,7 +1164,6 @@
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/white" />
 
-
                 <RadioGroup
                     android:id="@+id/nh609"
                     android:layout_width="match_parent"
@@ -1281,6 +1201,7 @@
                 </RadioGroup>
 
 
+                <!-- Section A7 Start here -->
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -1306,7 +1227,6 @@
                     android:text="@string/nh701"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/white" />
-
 
                 <RadioGroup
                     android:id="@+id/nh701"
