@@ -63,6 +63,11 @@ import edu.aku.hassannaqvi.casi_2018.other.Summary;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
+    public static final String DATABASE_NAME = "gsed_2019.db";
+    public static final String PROJECT_NAME = "gsed_2019";
+    private static final int DATABASE_VERSION = 1;
+    public static final String DB_NAME = DATABASE_NAME.replace(".", "_" + MainApp.versionName + "_" + DATABASE_VERSION + "_copy.");
+
     public static final String SQL_CREATE_USERS = "CREATE TABLE " + UsersContract.UsersTable.TABLE_NAME + "("
             + UsersTable._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
             + UsersTable.ROW_USERNAME + " TEXT,"
@@ -71,8 +76,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             + UsersTable.TEAM_NO + " TEXT,"
             + UsersTable.ORG_ID + " TEXT"
             + " );";
-
-    public static final String DATABASE_NAME = "nns_2018.db";
     public static final String SQL_CREATE_BL_RANDOM = "CREATE TABLE " + singleRandomHH.TABLE_NAME + "("
             + singleRandomHH.COLUMN_ID + " TEXT,"
             + singleRandomHH.COLUMN_ENUM_BLOCK_CODE + " TEXT,"
@@ -87,10 +90,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             + singleRandomHH.COLUMN_RANDOM_TYPE + " TEXT,"
             + singleRandomHH.COLUMN_ASSIGNED_HH + " TEXT,"
             + singleRandomHH.COLUMN_SNO_HH + " TEXT );";
-
-    public static final String PROJECT_NAME = "NNS-2018";
-    private static final int DATABASE_VERSION = 15;
-    public static final String DB_NAME = DATABASE_NAME.replace(".", "_" + MainApp.versionName + "_" + DATABASE_VERSION + "_copy.");
 
     private static final String SQL_CREATE_FORMS = "CREATE TABLE "
             + FormsTable.TABLE_NAME + "("
@@ -123,10 +122,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             FormsTable.COLUMN_SYNCED_DATE + " TEXT"
             + " );";
 
-    private static final String SQL_ALTER_FORM = "ALTER TABLE " +
-            FormsTable.TABLE_NAME + " ADD COLUMN " +
-            FormsTable.COLUMN_ISTATUSHH + " TEXT;";
-
     private static final String SQL_CREATE_FAMILY_MEMEBERS = "CREATE TABLE "
             + familyMembers.TABLE_NAME + "("
             + familyMembers.COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
@@ -147,26 +142,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             familyMembers.COLUMN_SYNCED_DATE + " TEXT," +
             familyMembers.COLUMN_FLAG + " TEXT"
             + " );";
-
-    private static final String SQL_ALTER_FAMILYMEMBER = "ALTER TABLE " +
-            familyMembers.TABLE_NAME + " ADD COLUMN " +
-            familyMembers.COLUMN_FLAG + " TEXT;";
-
-    private static final String SQL_ALTER_FAMILYMEMBER1 = "ALTER TABLE " +
-            familyMembers.TABLE_NAME + " ADD COLUMN " +
-            familyMembers.COLUMN_KISH_SELECTED + " TEXT;";
-
-    private static final String SQL_ALTER_USERS = "ALTER TABLE " +
-            UsersTable.TABLE_NAME + " ADD COLUMN " +
-            UsersTable.TEAM_NO + " TEXT;";
-
-    private static final String SQL_ALTER_USERS1 = "ALTER TABLE " +
-            UsersTable.TABLE_NAME + " ADD COLUMN " +
-            UsersTable.ORG_ID + " TEXT;";
-
-    private static final String SQL_ALTER_ELIGIBLEMEMBER = "ALTER TABLE " +
-            eligibleMembers.TABLE_NAME + " ADD COLUMN " +
-            eligibleMembers.COLUMN_END_TIME + " TEXT;";
 
     private static final String SQL_CREATE_CHILD_FORMS = "CREATE TABLE "
             + ChildTable.TABLE_NAME + "("
@@ -191,39 +166,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             ChildTable.COLUMN_CSTATUS + " TEXT," +
             ChildTable.COLUMN_CSTATUS88x + " TEXT," +
             ChildTable.COLUMN_APPVERSION + " TEXT " + " );";
-    private static final String SQL_DELETE_USERS =
-            "DROP TABLE IF EXISTS " + UsersContract.UsersTable.TABLE_NAME;
-    private static final String SQL_ALTER_MWRAS = "ALTER TABLE " +
-            MWRATable.TABLE_NAME + " ADD COLUMN " +
-            MWRATable.COLUMN_SB2FLAG + " TEXT;";
-    private static final String SQL_ALTER_BLRANDOM1 = "ALTER TABLE " +
-            singleRandomHH.TABLE_NAME + " ADD COLUMN " +
-            singleRandomHH.COLUMN_RANDOM_TYPE + " TEXT;";
-    private static final String SQL_ALTER_BLRANDOM2 = "ALTER TABLE " +
-            singleRandomHH.TABLE_NAME + " ADD COLUMN " +
-            singleRandomHH.COLUMN_ASSIGNED_HH + " TEXT;";
-    private static final String SQL_ALTER_BLRANDOM3 = "ALTER TABLE " +
-            singleRandomHH.TABLE_NAME + " ADD COLUMN " +
-            singleRandomHH.COLUMN_SNO_HH + " TEXT;";
-    private static final String SQL_ALTER_VERSIONAPP = "ALTER TABLE " +
-            VersionAppTable.TABLE_NAME + " ADD COLUMN " +
-            VersionAppTable.COLUMN_VERSION_NAME + " TEXT;";
-    private static final String SQL_DELETE_FORMS =
-            "DROP TABLE IF EXISTS " + FormsTable.TABLE_NAME;
-    private static final String SQL_DELETE_CHILD_FORMS =
-            "DROP TABLE IF EXISTS " + ChildContract.ChildTable.TABLE_NAME;
-    private static final String SQL_DELETE_SINGLE = "DROP TABLE IF EXISTS " + singleSerial.TABLE_NAME;
-    private static final String SQL_DELETE_TALUKAS = "DROP TABLE IF EXISTS " + EnumBlockTable.TABLE_NAME;
-    private static final String SQL_DELETE_UCS = "DROP TABLE IF EXISTS " + UCsTable.TABLE_NAME;
-    private static final String SQL_DELETE_ELIGIBLE_MEMBERS = "DROP TABLE IF EXISTS " + eligibleMembers.TABLE_NAME;
-    private static final String SQL_DELETE_MWRAS = "DROP TABLE IF EXISTS " + MWRATable.TABLE_NAME;
-    private static final String SQL_DELETE_OUTCOME = "DROP TABLE IF EXISTS " + outcomeTable.TABLE_NAME;
-    private static final String SQL_DELETE_FAMILYMEMBERS = "DROP TABLE IF EXISTS " + familyMembers.TABLE_NAME;
-    private static final String SQL_DELETE_RECIENPTS = "DROP TABLE IF EXISTS " + RecipientsTable.TABLE_NAME;
-    private static final String SQL_DELETE_NUTRITION = "DROP TABLE IF EXISTS " + NutritionTable.TABLE_NAME;
-    private static final String SQL_DELETE_DECEASED = "DROP TABLE IF EXISTS " + DeceasedContract.DeceasedTable.TABLE_NAME;
-    private static final String SQL_DELETE_BLRANDOM = "DROP TABLE IF EXISTS " + BLRandomContract.singleRandomHH.TABLE_NAME;
-    private static final String SQL_DELETE_VERSIONAPP = "DROP TABLE IF EXISTS " + VersionAppTable.TABLE_NAME;
     final String SQL_CREATE_SERIAL = "CREATE TABLE " + singleSerial.TABLE_NAME + " (" +
             singleSerial._ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
             singleSerial.COLUMN_DEVICE_ID + " TEXT, " +
@@ -268,8 +210,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             MWRATable.COLUMN_MSTATUS + " TEXT," +
             MWRATable.COLUMN_MSTATUS88x + " TEXT," +
             MWRATable.COLUMN_SYNCEDDATE + " TEXT " +
-
             ");";
+
     final String SQL_CREATE_OUTCOME = "CREATE TABLE " + outcomeTable.TABLE_NAME + " (" +
             outcomeTable.COLUMN__ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
             outcomeTable.COLUMN_PROJECTNAME + " TEXT," +
@@ -287,8 +229,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             outcomeTable.COLUMN_SB1A + " TEXT," +
             outcomeTable.COLUMN_SYNCED + " TEXT," +
             outcomeTable.COLUMN_SYNCEDDATE + " TEXT " +
-
             ");";
+
     final String SQL_CREATE_RECIPIENTS = "CREATE TABLE " + RecipientsTable.TABLE_NAME + " (" +
             RecipientsTable.COLUMN__ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
             RecipientsTable.COLUMN_PROJECTNAME + " TEXT," +
@@ -304,8 +246,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             RecipientsTable.COLUMN_SA8A + " TEXT," +
             RecipientsTable.COLUMN_SYNCED + " TEXT," +
             RecipientsTable.COLUMN_SYNCEDDATE + " TEXT " +
-
             ");";
+
     final String SQL_CREATE_NUTRITION = "CREATE TABLE " + NutritionTable.TABLE_NAME + " (" +
             NutritionTable.COLUMN__ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
             NutritionTable.COLUMN_PROJECTNAME + " TEXT," +
@@ -324,6 +266,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             NutritionTable.COLUMN_SYNCEDDATE + " TEXT " +
 
             ");";
+
     final String SQL_CREATE_DECEASED = "CREATE TABLE " + DeceasedContract.DeceasedTable.TABLE_NAME + " (" +
             DeceasedContract.DeceasedTable.COLUMN__ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
             DeceasedContract.DeceasedTable.COLUMN_PROJECTNAME + " TEXT," +
@@ -358,12 +301,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             singleSum.COLUMN_DEVICEID + " TEXT," +
             singleSum.COLUMN_DEVICETAGID + " TEXT," +
             singleSum.COLUMN_APPVERSION + " TEXT);";
+
     final String SQL_CREATE_VERSIONAPP = "CREATE TABLE " + VersionAppTable.TABLE_NAME + " (" +
             VersionAppTable._ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
             VersionAppTable.COLUMN_VERSION_CODE + " TEXT, " +
             VersionAppTable.COLUMN_VERSION_NAME + " TEXT, " +
             VersionAppTable.COLUMN_PATH_NAME + " TEXT " +
             ");";
+
     final String SQL_CREATE_ELIGIBLE_MEMBERS = "CREATE TABLE " + eligibleMembers.TABLE_NAME + " (" +
             eligibleMembers.COLUMN__ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
             eligibleMembers.COLUMN_UID + " TEXT," +
@@ -447,6 +392,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             MicroContract.MicroTable.COLUMN_SYNCED_DATE + " TEXT" +
 
             ");";
+
     final String SQL_CREATE_DEVICE = "CREATE TABLE " + DeviceContract.DeviceTable.TABLE_NAME + " (" +
             DeviceContract.DeviceTable.COLUMN__ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
             DeviceContract.DeviceTable.COLUMN_IMEI + " TEXT," +
@@ -472,6 +418,21 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                     "LEFT JOIN water_specimen w\n" +
                     "ON f._uid = w._uuid group by f._uid order by f.formdate DESC;";
 
+    private static final String SQL_DELETE_USERS = "DROP TABLE IF EXISTS " + UsersContract.UsersTable.TABLE_NAME;
+    private static final String SQL_DELETE_FORMS = "DROP TABLE IF EXISTS " + FormsTable.TABLE_NAME;
+    private static final String SQL_DELETE_CHILD_FORMS = "DROP TABLE IF EXISTS " + ChildContract.ChildTable.TABLE_NAME;
+    private static final String SQL_DELETE_SINGLE = "DROP TABLE IF EXISTS " + singleSerial.TABLE_NAME;
+    private static final String SQL_DELETE_TALUKAS = "DROP TABLE IF EXISTS " + EnumBlockTable.TABLE_NAME;
+    private static final String SQL_DELETE_UCS = "DROP TABLE IF EXISTS " + UCsTable.TABLE_NAME;
+    private static final String SQL_DELETE_ELIGIBLE_MEMBERS = "DROP TABLE IF EXISTS " + eligibleMembers.TABLE_NAME;
+    private static final String SQL_DELETE_MWRAS = "DROP TABLE IF EXISTS " + MWRATable.TABLE_NAME;
+    private static final String SQL_DELETE_OUTCOME = "DROP TABLE IF EXISTS " + outcomeTable.TABLE_NAME;
+    private static final String SQL_DELETE_FAMILYMEMBERS = "DROP TABLE IF EXISTS " + familyMembers.TABLE_NAME;
+    private static final String SQL_DELETE_RECIENPTS = "DROP TABLE IF EXISTS " + RecipientsTable.TABLE_NAME;
+    private static final String SQL_DELETE_NUTRITION = "DROP TABLE IF EXISTS " + NutritionTable.TABLE_NAME;
+    private static final String SQL_DELETE_DECEASED = "DROP TABLE IF EXISTS " + DeceasedContract.DeceasedTable.TABLE_NAME;
+    private static final String SQL_DELETE_BLRANDOM = "DROP TABLE IF EXISTS " + BLRandomContract.singleRandomHH.TABLE_NAME;
+    private static final String SQL_DELETE_VERSIONAPP = "DROP TABLE IF EXISTS " + VersionAppTable.TABLE_NAME;
 
     private final String TAG = "DatabaseHelper";
     public String spDateT = new SimpleDateFormat("dd-MM-yy").format(new Date().getTime());
@@ -482,7 +443,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-
         db.execSQL(SQL_CREATE_USERS);
         db.execSQL(SQL_CREATE_FORMS);
         db.execSQL(SQL_CREATE_CHILD_FORMS);
@@ -502,13 +462,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(SQL_CREATE_WATER_SPECIMEN_MEMBERS);
         db.execSQL(SQL_CREATE_MICRO);
         db.execSQL(SQL_CREATE_SUMMARY);
-//        db.execSQL(SQL_CREATE_DEVICE);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
-        /*db.execSQL(SQL_DELETE_USERS);
-
+        db.execSQL(SQL_DELETE_USERS);
         db.execSQL(SQL_DELETE_USERS);
         db.execSQL(SQL_DELETE_FORMS);
         db.execSQL(SQL_DELETE_CHILD_FORMS);
@@ -524,40 +482,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(SQL_DELETE_BLRANDOM);
         db.execSQL(SQL_DELETE_NUTRITION);
         db.execSQL(SQL_DELETE_DECEASED);
-
-        db.execSQL(SQL_CREATE_NUTRITION);*/
-
-        switch (i) {
-            case 2:
-                db.execSQL(SQL_ALTER_FAMILYMEMBER);
-            case 3:
-                db.execSQL(SQL_ALTER_MWRAS);
-            case 4:
-                db.execSQL(SQL_ALTER_BLRANDOM1);
-                db.execSQL(SQL_ALTER_BLRANDOM2);
-            case 5:
-                db.execSQL(SQL_ALTER_ELIGIBLEMEMBER);
-            case 6:
-                db.execSQL(SQL_ALTER_USERS);
-            case 8:
-                db.execSQL(SQL_CREATE_MICRO);
-            case 9:
-                db.execSQL(SQL_ALTER_FAMILYMEMBER1);
-            case 10:
-                db.execSQL(SQL_ALTER_BLRANDOM3);
-            case 11:
-                db.execSQL(SQL_CREATE_SUMMARY);
-            case 12:
-                db.execSQL(SQL_ALTER_VERSIONAPP);
-            case 13:
-                db.execSQL(SQL_ALTER_FORM);
-            case 14:
-                db.execSQL(SQL_ALTER_USERS1);
-           /* case 13: not required
-                db.execSQL(SQL_CREATE_DEVICE);*/
-
-        }
-
+        db.execSQL(SQL_CREATE_NUTRITION);
     }
 
     public void syncEnumBlocks(JSONArray Enumlist) {
@@ -1431,7 +1356,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                     case "NNS 2018 - Team Leaders":
                         BLRandomInsertion(jsonObjectDT, db);
                         break;
-                    case "National Nutrition Survey 2018":
+                    case "Central Asia Stunting Initiative 2019":
                         AntrhoInsertion(jsonObjectDT, db);
                         break;
                 }
