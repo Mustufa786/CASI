@@ -1,4 +1,4 @@
-package edu.aku.hassannaqvi.casi_2018.Adapters;
+package edu.aku.hassannaqvi.casi_2018.adapters;
 
 import android.databinding.DataBindingUtil;
 import android.graphics.Color;
@@ -14,11 +14,11 @@ import edu.aku.hassannaqvi.casi_2018.R;
 import edu.aku.hassannaqvi.casi_2018.databinding.UploadListAdapterBinding;
 import edu.aku.hassannaqvi.casi_2018.other.SyncModel;
 
-public class upload_list_adapter extends RecyclerView.Adapter<upload_list_adapter.UploadListViewHolder> {
+public class Upload_list_adapter extends RecyclerView.Adapter<Upload_list_adapter.UploadListViewHolder> {
     List<SyncModel> uploadlist;
     UploadListViewHolder holder;
 
-    public upload_list_adapter(List<SyncModel> uploadlist) {
+    public Upload_list_adapter(List<SyncModel> uploadlist) {
         this.uploadlist = uploadlist;
     }
 

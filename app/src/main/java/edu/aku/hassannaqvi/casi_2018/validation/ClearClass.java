@@ -67,59 +67,6 @@ public class ClearClass {
         }
     }
 
-    public static void ClearAllCardFields(LinearLayout container) {
-        for (int i = 0; i < container.getChildCount(); i++) {
-            View v = container.getChildAt(i);
-            if (v instanceof CheckBox) {
-                ((CheckBox) v).setChecked(false);
-                ((CheckBox) v).setError(null);
-            } else if (v instanceof RadioGroup) {
-                ((RadioGroup) v).clearCheck();
-
-            } else if (v instanceof EditText) {
-                ((EditText) v).setText(null);
-                ((EditText) v).setError(null);
-                v.clearFocus();
-
-            } else if (v instanceof CardView) {
-                ClearAllCardFields((CardView) v);
-            } else if (v instanceof LinearLayout) {
-                ClearAllCardFields((LinearLayout) v);
-            }
-        }
-    }
-
-    public static void ClearAllCardFields(CardView container) {
-        for (int i = 0; i < container.getChildCount(); i++) {
-            View v = container.getChildAt(i);
-            if (v instanceof CheckBox) {
-                ((CheckBox) v).setChecked(false);
-                ((CheckBox) v).setError(null);
-            } else if (v instanceof RadioGroup) {
-                ((RadioGroup) v).clearCheck();
-            } else if (v instanceof EditText) {
-                ((EditText) v).setText(null);
-                ((EditText) v).setError(null);
-                v.clearFocus();
-
-            } else if (v instanceof LinearLayout) {
-                for (int k = 0; k < ((LinearLayout) v).getChildCount(); k++) {
-                    View v1 = ((LinearLayout) v).getChildAt(k);
-                    if (v1 instanceof CheckBox) {
-                        ((CheckBox) v1).setChecked(false);
-                        ((CheckBox) v1).setError(null);
-                    } else if (v1 instanceof RadioGroup) {
-                        ((RadioGroup) v1).clearCheck();
-                    } else if (v1 instanceof EditText) {
-                        ((EditText) v1).setText(null);
-                        ((EditText) v1).setError(null);
-                        v1.clearFocus();
-                    }
-                }
-            }
-        }
-    }
-
     public static void ClearAllFields(View container, Boolean flag) {
         for (int i = 0; i < ((ViewGroup) container).getChildCount(); i++) {
             View v = ((ViewGroup) container).getChildAt(i);
@@ -156,5 +103,6 @@ public class ClearClass {
 
         }
     }
+
 
 }

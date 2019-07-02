@@ -44,7 +44,7 @@ import edu.aku.hassannaqvi.casi_2018.core.MainApp;
 import edu.aku.hassannaqvi.casi_2018.databinding.ActivitySectionA1Binding;
 import edu.aku.hassannaqvi.casi_2018.other.JSONUtilClass;
 import edu.aku.hassannaqvi.casi_2018.other.MembersCount;
-import edu.aku.hassannaqvi.casi_2018.validation.validatorClass;
+import edu.aku.hassannaqvi.casi_2018.validation.ValidatorClass;
 
 public class SectionA1Activity extends Menu2Activity implements TextWatcher, RadioGroup.OnCheckedChangeListener {
 
@@ -417,12 +417,12 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
         //Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
 
 //        nh101
-        if (!validatorClass.EmptyTextBox(this, binding.nh101, getString(R.string.nh101))) {
+        if (!ValidatorClass.EmptyTextBox(this, binding.nh101, getString(R.string.nh101))) {
             return false;
         }
 
 //        nh102
-        if (!validatorClass.EmptyTextBox(this, binding.nh102, getString(R.string.nh102))) {
+        if (!ValidatorClass.EmptyTextBox(this, binding.nh102, getString(R.string.nh102))) {
             return false;
         }
 
@@ -447,7 +447,7 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
 //        New HHHead
 
         if (!binding.checkHHHeadpresent.isChecked()) {
-            if (!validatorClass.EmptyTextBox(this, binding.newHHheadname, "New head name.")) {
+            if (!ValidatorClass.EmptyTextBox(this, binding.newHHheadname, "New head name.")) {
                 return false;
             }
         } else {
@@ -456,29 +456,29 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
 
 //        nh113
         if (!flag) {
-            if (!validatorClass.EmptyTextBox(this, binding.nh113, getString(R.string.nh113))) {
+            if (!ValidatorClass.EmptyTextBox(this, binding.nh113, getString(R.string.nh113))) {
                 return false;
             }
 //        nh115
-            if (!validatorClass.EmptyTextBox(this, binding.nh115, getString(R.string.nh115))) {
+            if (!ValidatorClass.EmptyTextBox(this, binding.nh115, getString(R.string.nh115))) {
                 return false;
             }
 
-            if (!validatorClass.RangeTextBox(this, binding.nh115, 18, 99, getString(R.string.nh115), "age")) {
+            if (!ValidatorClass.RangeTextBox(this, binding.nh115, 18, 99, getString(R.string.nh115), "age")) {
                 return false;
             }
 
 //        nh213
-            if (!validatorClass.EmptyTextBox(this, binding.nh213, getString(R.string.nh213))) {
+            if (!ValidatorClass.EmptyTextBox(this, binding.nh213, getString(R.string.nh213))) {
                 return false;
             }
 
 //        na11801
-            return validatorClass.EmptyRadioButton(this, binding.na11801, binding.na11801b, getString(R.string.na11801));
+            return ValidatorClass.EmptyRadioButton(this, binding.na11801, binding.na11801b, getString(R.string.na11801));
 //        na11802
 
            /* if (MainApp.selectedHead.getSelStructure().equals("1")) {
-                return validatorClass.EmptyRadioButton(this, binding.na11802, binding.na11802b, getString(R.string.na11802));
+                return ValidatorClass.EmptyRadioButton(this, binding.na11802, binding.na11802b, getString(R.string.na11802));
             }
 */
 
@@ -707,7 +707,7 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
 
     public void BtnCheckEnm() {
 
-        if (editFormFlag || validatorClass.EmptyTextBox(this, binding.nh101, getString(R.string.nh101)) && validatorClass.EmptyTextBox(this, binding.nh102, getString(R.string.nh102))) {
+        if (editFormFlag || ValidatorClass.EmptyTextBox(this, binding.nh101, getString(R.string.nh101)) && ValidatorClass.EmptyTextBox(this, binding.nh102, getString(R.string.nh102))) {
 
             Boolean loginFlag = false;
             int clus = Integer.valueOf(binding.nh102.getText().toString());

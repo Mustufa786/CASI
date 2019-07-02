@@ -23,10 +23,10 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.Collection;
 
-import edu.aku.hassannaqvi.casi_2018.Adapters.AdolescentsAdapter;
-import edu.aku.hassannaqvi.casi_2018.Adapters.ChildAdapter;
-import edu.aku.hassannaqvi.casi_2018.Adapters.OthersAdapter;
-import edu.aku.hassannaqvi.casi_2018.Adapters.WraAdapter;
+import edu.aku.hassannaqvi.casi_2018.adapters.AdolescentsAdapter;
+import edu.aku.hassannaqvi.casi_2018.adapters.ChildAdapter;
+import edu.aku.hassannaqvi.casi_2018.adapters.OthersAdapter;
+import edu.aku.hassannaqvi.casi_2018.adapters.WraAdapter;
 import edu.aku.hassannaqvi.casi_2018.JSONModels.JSONModelClass;
 import edu.aku.hassannaqvi.casi_2018.R;
 import edu.aku.hassannaqvi.casi_2018.WifiDirect.WiFiDirectActivity;
@@ -37,7 +37,7 @@ import edu.aku.hassannaqvi.casi_2018.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2018.core.MainApp;
 import edu.aku.hassannaqvi.casi_2018.databinding.ActivityViewMemberBinding;
 import edu.aku.hassannaqvi.casi_2018.other.JSONUtilClass;
-import edu.aku.hassannaqvi.casi_2018.validation.validatorClass;
+import edu.aku.hassannaqvi.casi_2018.validation.ValidatorClass;
 
 
 public class ViewMemberActivity extends MenuActivity {
@@ -355,7 +355,7 @@ public class ViewMemberActivity extends MenuActivity {
 
     public void BtnCheckEnm() {
 
-        if (validatorClass.EmptyTextBox(this, binding.chckenumblock, getString(R.string.nh102))) {
+        if (ValidatorClass.EmptyTextBox(this, binding.chckenumblock, getString(R.string.nh102))) {
 
             EnumBlockContract enumBlockContract = db.getEnumBlock(binding.chckenumblock.getText().toString());
             if (enumBlockContract != null) {

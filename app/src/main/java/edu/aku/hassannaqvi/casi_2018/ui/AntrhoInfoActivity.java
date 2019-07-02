@@ -29,7 +29,7 @@ import edu.aku.hassannaqvi.casi_2018.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2018.core.MainApp;
 import edu.aku.hassannaqvi.casi_2018.databinding.ActivityAntrhoInfoBinding;
 import edu.aku.hassannaqvi.casi_2018.other.JSONUtilClass;
-import edu.aku.hassannaqvi.casi_2018.validation.validatorClass;
+import edu.aku.hassannaqvi.casi_2018.validation.ValidatorClass;
 
 
 public class AntrhoInfoActivity extends Activity {
@@ -226,7 +226,7 @@ public class AntrhoInfoActivity extends Activity {
         Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
 
 //        nh102
-        if (!validatorClass.EmptyTextBox(this, binding.nh102, getString(R.string.nh102))) {
+        if (!ValidatorClass.EmptyTextBox(this, binding.nh102, getString(R.string.nh102))) {
             return false;
         }
 
@@ -247,7 +247,7 @@ public class AntrhoInfoActivity extends Activity {
         int scanChar;
 
         /*if(MainActivity.ftype.equals("B")) {
-            if (!validatorClass.EmptyTextBox(this, binding.hcCode, getString(R.string.hc))) {
+            if (!ValidatorClass.EmptyTextBox(this, binding.hcCode, getString(R.string.hc))) {
                 return false;
             }
 
@@ -271,7 +271,7 @@ public class AntrhoInfoActivity extends Activity {
 
         */
         if (MainActivity.ftype.equals("A")) {
-            if (!validatorClass.EmptyTextBox(this, binding.htCode, getString(R.string.ht))) {
+            if (!ValidatorClass.EmptyTextBox(this, binding.htCode, getString(R.string.ht))) {
                 return false;
             }
 
@@ -292,7 +292,7 @@ public class AntrhoInfoActivity extends Activity {
                 binding.htCode.setError(null);
             }
 
-            if (!validatorClass.EmptyTextBox(this, binding.wtCode, getString(R.string.wt))) {
+            if (!ValidatorClass.EmptyTextBox(this, binding.wtCode, getString(R.string.wt))) {
                 return false;
             }
 
@@ -420,7 +420,7 @@ public class AntrhoInfoActivity extends Activity {
 
     public void BtnCheckEnm() {
 
-        if (validatorClass.EmptyTextBox(this, binding.nh102, getString(R.string.nh102))) {
+        if (ValidatorClass.EmptyTextBox(this, binding.nh102, getString(R.string.nh102))) {
 
             EnumBlockContract enumBlockContract = db.getEnumBlock(binding.nh102.getText().toString());
             if (enumBlockContract != null) {

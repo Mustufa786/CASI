@@ -18,7 +18,7 @@ import edu.aku.hassannaqvi.casi_2018.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2018.core.MainApp;
 import edu.aku.hassannaqvi.casi_2018.databinding.ActivitySectionH8infoBinding;
 import edu.aku.hassannaqvi.casi_2018.other.JSONUtilClass;
-import edu.aku.hassannaqvi.casi_2018.validation.validatorClass;
+import edu.aku.hassannaqvi.casi_2018.validation.ValidatorClass;
 
 public class SectionH8infoActivity extends AppCompatActivity {
     static int deceasedCounter = 0;
@@ -42,12 +42,12 @@ public class SectionH8infoActivity extends AppCompatActivity {
     public boolean formValidation() {
 
 
-        if (!validatorClass.EmptyRadioButton(this, bi.nh801, bi.nh801a, getString(R.string.nh801))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.nh801, bi.nh801a, getString(R.string.nh801))) {
             return false;
         }
 
         if (bi.nh801a.isChecked()) {
-            if (!validatorClass.EmptyTextBox(this, bi.nh802, getString(R.string.nh802))) {
+            if (!ValidatorClass.EmptyTextBox(this, bi.nh802, getString(R.string.nh802))) {
                 return false;
             }
 
@@ -57,7 +57,7 @@ public class SectionH8infoActivity extends AppCompatActivity {
                     return false;
                 }
             } else {
-                return validatorClass.RangeTextBox(this, bi.nh802, 1, 99, getString(R.string.nh802), " Deceased");
+                return ValidatorClass.RangeTextBox(this, bi.nh802, 1, 99, getString(R.string.nh802), " Deceased");
             }
         }
 

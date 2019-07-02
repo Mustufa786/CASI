@@ -18,7 +18,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.List;
 
-import edu.aku.hassannaqvi.casi_2018.Adapters.syncListAdapter;
+import edu.aku.hassannaqvi.casi_2018.adapters.SyncListAdapter;
 import edu.aku.hassannaqvi.casi_2018.contracts.BLRandomContract;
 import edu.aku.hassannaqvi.casi_2018.contracts.EnumBlockContract;
 import edu.aku.hassannaqvi.casi_2018.contracts.FamilyMembersContract;
@@ -35,7 +35,7 @@ import edu.aku.hassannaqvi.casi_2018.other.SyncModel;
 public class GetAllData extends AsyncTask<String, String, String> {
 
     HttpURLConnection urlConnection;
-    syncListAdapter adapter;
+    SyncListAdapter adapter;
     List<SyncModel> list;
     int position;
     private String TAG = "";
@@ -50,7 +50,7 @@ public class GetAllData extends AsyncTask<String, String, String> {
         TAG = "Get" + syncClass;
     }
 
-    public GetAllData(Context context, String syncClass, syncListAdapter adapter, List<SyncModel> list) {
+    public GetAllData(Context context, String syncClass, SyncListAdapter adapter, List<SyncModel> list) {
         mContext = context;
         this.syncClass = syncClass;
         this.adapter = adapter;

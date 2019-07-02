@@ -37,8 +37,8 @@ import edu.aku.hassannaqvi.casi_2018.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2018.core.MainApp;
 import edu.aku.hassannaqvi.casi_2018.databinding.ActivitySpecimenInfoBinding;
 import edu.aku.hassannaqvi.casi_2018.other.JSONUtilClass;
-import edu.aku.hassannaqvi.casi_2018.validation.clearClass;
-import edu.aku.hassannaqvi.casi_2018.validation.validatorClass;
+import edu.aku.hassannaqvi.casi_2018.validation.ClearClass;
+import edu.aku.hassannaqvi.casi_2018.validation.ValidatorClass;
 
 
 public class SpecimenInfoActivity extends AppCompatActivity {
@@ -139,21 +139,21 @@ public class SpecimenInfoActivity extends AppCompatActivity {
                 if (MainActivity.ftype.equals("B")) {
                     if (binding.neselecteda.isChecked()) {
 
-                        clearClass.ClearAllFields(binding.fldGrpnhconsent, true);
-                        clearClass.ClearAllFields(binding.fldGrpHC, true);
+                        ClearClass.ClearAllFields(binding.fldGrpnhconsent, true);
+                        ClearClass.ClearAllFields(binding.fldGrpHC, true);
                         binding.btnScanHC.setEnabled(true);
                     } else {
-                        clearClass.ClearAllFields(binding.fldGrpnhconsent, false);
-                        clearClass.ClearAllFields(binding.fldGrpHC, false);
+                        ClearClass.ClearAllFields(binding.fldGrpnhconsent, false);
+                        ClearClass.ClearAllFields(binding.fldGrpHC, false);
                         binding.btnScanHC.setEnabled(false);
                     }
                 } else if (MainActivity.ftype.equals("W")) {
                     if (binding.neselecteda.isChecked()) {
 
-                        clearClass.ClearAllFields(binding.fldGrpnhconsent, true);
+                        ClearClass.ClearAllFields(binding.fldGrpnhconsent, true);
 
                     } else {
-                        clearClass.ClearAllFields(binding.fldGrpnhconsent, false);
+                        ClearClass.ClearAllFields(binding.fldGrpnhconsent, false);
 
                     }
                 }
@@ -306,7 +306,7 @@ public class SpecimenInfoActivity extends AppCompatActivity {
         Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
 
 //        nh102
-        if (!validatorClass.EmptyTextBox(this, binding.nh102, getString(R.string.nh102))) {
+        if (!ValidatorClass.EmptyTextBox(this, binding.nh102, getString(R.string.nh102))) {
             return false;
         }
 
@@ -329,19 +329,19 @@ public class SpecimenInfoActivity extends AppCompatActivity {
 
         if (MainActivity.ftype.equals("B")) {
 
-            if (!validatorClass.EmptyRadioButton(this, binding.neselected, binding.neselecteda, getString(R.string.selected1))) {
+            if (!ValidatorClass.EmptyRadioButton(this, binding.neselected, binding.neselecteda, getString(R.string.selected1))) {
                 return false;
             }
 
             if (binding.neselecteda.isChecked()) {
 
-                if (!validatorClass.EmptyRadioButton(this, binding.na11802, binding.na11802b, getString(R.string.na11802))) {
+                if (!ValidatorClass.EmptyRadioButton(this, binding.na11802, binding.na11802b, getString(R.string.na11802))) {
                     return false;
                 }
 
                 if (binding.na11802a.isChecked()) {
 
-                    if (!validatorClass.EmptyTextBox(this, binding.hcCode, getString(R.string.hc))) {
+                    if (!ValidatorClass.EmptyTextBox(this, binding.hcCode, getString(R.string.hc))) {
                         return false;
                     }
 
@@ -364,7 +364,7 @@ public class SpecimenInfoActivity extends AppCompatActivity {
                 }
             }
         } else {
-            return validatorClass.EmptyRadioButton(this, binding.neselected, binding.neselecteda, getString(R.string.selected2));
+            return ValidatorClass.EmptyRadioButton(this, binding.neselected, binding.neselecteda, getString(R.string.selected2));
         }
 
 
@@ -598,7 +598,7 @@ public class SpecimenInfoActivity extends AppCompatActivity {
 
     public void BtnCheckEnm() {
 
-        if (validatorClass.EmptyTextBox(this, binding.nh102, getString(R.string.nh102))) {
+        if (ValidatorClass.EmptyTextBox(this, binding.nh102, getString(R.string.nh102))) {
 
             EnumBlockContract enumBlockContract = db.getEnumBlock(binding.nh102.getText().toString());
             if (enumBlockContract != null) {

@@ -23,8 +23,8 @@ import edu.aku.hassannaqvi.casi_2018.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2018.core.MainApp;
 import edu.aku.hassannaqvi.casi_2018.databinding.ActivitySectionA4Binding;
 import edu.aku.hassannaqvi.casi_2018.other.JSONUtilClass;
-import edu.aku.hassannaqvi.casi_2018.validation.clearClass;
-import edu.aku.hassannaqvi.casi_2018.validation.validatorClass;
+import edu.aku.hassannaqvi.casi_2018.validation.ClearClass;
+import edu.aku.hassannaqvi.casi_2018.validation.ValidatorClass;
 
 public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnCheckedChangeListener, TextWatcher {
 
@@ -54,9 +54,9 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (i == R.id.nh303b || i == R.id.nh303c) {
                     formValidation();
-                    clearClass.ClearAllFields(binding.fldGrnh304, false);
+                    ClearClass.ClearAllFields(binding.fldGrnh304, false);
                 } else {
-                    clearClass.ClearAllFields(binding.fldGrnh304, true);
+                    ClearClass.ClearAllFields(binding.fldGrnh304, true);
                 }
             }
         });
@@ -96,9 +96,9 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 formValidation();
                 if (checkedId == R.id.nh305b) {
-                    clearClass.ClearAllFields(binding.fldGrpnh305, false);
+                    ClearClass.ClearAllFields(binding.fldGrpnh305, false);
                 } else {
-                    clearClass.ClearAllFields(binding.fldGrpnh305, true);
+                    ClearClass.ClearAllFields(binding.fldGrpnh305, true);
                     binding.nh30696x.setEnabled(false);
                 }
             }
@@ -112,10 +112,10 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 formValidation();
                 if (i == R.id.nh307h || i == R.id.nh307i) {
-                    clearClass.ClearAllFields(binding.fldGrpnh308, false);
-                    //  clearClass.ClearAllFields(binding.fldGrpnh309,true);
+                    ClearClass.ClearAllFields(binding.fldGrpnh308, false);
+                    //  ClearClass.ClearAllFields(binding.fldGrpnh309,true);
                 } else {
-                    clearClass.ClearAllFields(binding.fldGrpnh308, true);
+                    ClearClass.ClearAllFields(binding.fldGrpnh308, true);
                 }
             }
         });
@@ -126,10 +126,10 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 formValidation();
                 if (checkedId == R.id.nh308b) {
-                    clearClass.ClearAllFields(binding.fldGrpnh309, false);
+                    ClearClass.ClearAllFields(binding.fldGrpnh309, false);
                 } else {
 //                    binding.fldGrpnh309.setVisibility(View.VISIBLE);
-                    clearClass.ClearAllFields(binding.fldGrpnh309, true);
+                    ClearClass.ClearAllFields(binding.fldGrpnh309, true);
 
                 }
             }
@@ -175,9 +175,9 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 formValidation();
                 if (binding.nh315a.isChecked()) {
-                    clearClass.ClearAllFields(binding.fldGrpnh316, true);
+                    ClearClass.ClearAllFields(binding.fldGrpnh316, true);
                 } else {
-                    clearClass.ClearAllFields(binding.fldGrpnh316, false);
+                    ClearClass.ClearAllFields(binding.fldGrpnh316, false);
                 }
             }
         });
@@ -194,10 +194,10 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 formValidation();
                 if (i == R.id.nh321b) {
-                    clearClass.ClearAllFields(binding.fldGrpnh322, false);
+                    ClearClass.ClearAllFields(binding.fldGrpnh322, false);
 
                 } else {
-                    clearClass.ClearAllFields(binding.fldGrpnh322, true);
+                    ClearClass.ClearAllFields(binding.fldGrpnh322, true);
                     binding.nh322acr.setEnabled(false);
                     binding.nh322can.setEnabled(false);
                 }
@@ -211,9 +211,9 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 formValidation();
                 if (i == R.id.nh323b) {
-                    clearClass.ClearAllFields(binding.fldGrpnh324, false);
+                    ClearClass.ClearAllFields(binding.fldGrpnh324, false);
                 } else {
-                    clearClass.ClearAllFields(binding.fldGrpnh324, true);
+                    ClearClass.ClearAllFields(binding.fldGrpnh324, true);
                 }
             }
         });
@@ -732,325 +732,325 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
     private boolean formValidation() {
         //Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
 
-        if (!validatorClass.EmptyRadioButton(this, binding.nh301, binding.nh301a, getString(R.string.nh301))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh301, binding.nh301a, getString(R.string.nh301))) {
             return false;
         }
-        if (!validatorClass.EmptyRadioButton(this, binding.nh301, binding.nh30196, binding.nh30196x, getString(R.string.nh301))) {
-            return false;
-        }
-
-        if (!validatorClass.EmptyRadioButton(this, binding.nh302, binding.nh302a, getString(R.string.nh302))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh301, binding.nh30196, binding.nh30196x, getString(R.string.nh301))) {
             return false;
         }
 
-        if (!validatorClass.EmptyRadioButton(this, binding.nh302, binding.nh30296, binding.nh30296x, getString(R.string.nh302))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh302, binding.nh302a, getString(R.string.nh302))) {
+            return false;
+        }
+
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh302, binding.nh30296, binding.nh30296x, getString(R.string.nh302))) {
             return false;
         }
 
 
-        if (!validatorClass.EmptyRadioButton(this, binding.nh303a, binding.nh303a1, getString(R.string.nh303a))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh303a, binding.nh303a1, getString(R.string.nh303a))) {
             return false;
         }
 
-        if (!validatorClass.EmptyRadioButton(this, binding.nh303, binding.nh303b, getString(R.string.nh303))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh303, binding.nh303b, getString(R.string.nh303))) {
             return false;
         }
-        if (!validatorClass.EmptyRadioButton(this, binding.nh303, binding.nh30396, binding.nh30396x, getString(R.string.nh303))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh303, binding.nh30396, binding.nh30396x, getString(R.string.nh303))) {
             return false;
         }
         if (!binding.nh303b.isChecked() && !binding.nh303c.isChecked()) {
 
             if (!binding.nh30498.isChecked() && !binding.nh30499.isChecked()) {
-                if (!validatorClass.EmptyTextBox(this, binding.nh304, getString(R.string.nh304))) {
+                if (!ValidatorClass.EmptyTextBox(this, binding.nh304, getString(R.string.nh304))) {
                     return false;
                 }
 
-                if (!validatorClass.RangeTextBox(this, binding.nh304, 1, 999, getString(R.string.nh304), "minutes")) {
+                if (!ValidatorClass.RangeTextBox(this, binding.nh304, 1, 999, getString(R.string.nh304), "minutes")) {
                     return false;
                 }
             } else {
-                if (!validatorClass.EmptyCheckBox(this, binding.fldGrnh304check, binding.nh30499, getString(R.string.nh304))) {
+                if (!ValidatorClass.EmptyCheckBox(this, binding.fldGrnh304check, binding.nh30499, getString(R.string.nh304))) {
                     return false;
                 }
             }
         }
-        if (!validatorClass.EmptyRadioButton(this, binding.nh305, binding.nh305b, getString(R.string.nh305))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh305, binding.nh305b, getString(R.string.nh305))) {
             return false;
         }
         if (binding.nh305a.isChecked()) {
-            if (!validatorClass.EmptyRadioButton(this, binding.nh306, binding.nh306a, getString(R.string.nh306))) {
+            if (!ValidatorClass.EmptyRadioButton(this, binding.nh306, binding.nh306a, getString(R.string.nh306))) {
                 return false;
             }
-            if (!validatorClass.EmptyRadioButton(this, binding.nh306, binding.nh30696, binding.nh30696x, getString(R.string.nh306))) {
+            if (!ValidatorClass.EmptyRadioButton(this, binding.nh306, binding.nh30696, binding.nh30696x, getString(R.string.nh306))) {
                 return false;
             }
         }
 
-        if (!validatorClass.EmptyRadioButton(this, binding.nh307, binding.nh307a, getString(R.string.nh307))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh307, binding.nh307a, getString(R.string.nh307))) {
             return false;
         }
 
-        if (!validatorClass.EmptyRadioButton(this, binding.nh307, binding.nh30796, binding.nh30796x, getString(R.string.nh307))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh307, binding.nh30796, binding.nh30796x, getString(R.string.nh307))) {
             return false;
         }
 
         if (!binding.nh307h.isChecked() && !binding.nh307i.isChecked()) {
-            if (!validatorClass.EmptyRadioButton(this, binding.nh308, binding.nh308b, getString(R.string.nh308))) {
+            if (!ValidatorClass.EmptyRadioButton(this, binding.nh308, binding.nh308b, getString(R.string.nh308))) {
                 return false;
             }
 
             if (binding.nh308a.isChecked()) {
-                if (!validatorClass.EmptyTextBox(this, binding.nh309, getString(R.string.nh309))) {
+                if (!ValidatorClass.EmptyTextBox(this, binding.nh309, getString(R.string.nh309))) {
                     return false;
                 }
-                if (!validatorClass.RangeTextBox(this, binding.nh309, 1, 99, getString(R.string.nh309), "Toilet")) {
+                if (!ValidatorClass.RangeTextBox(this, binding.nh309, 1, 99, getString(R.string.nh309), "Toilet")) {
                     return false;
                 }
             }
         }
 
 
-        if (!validatorClass.EmptyRadioButton(this, binding.nh310, binding.nh310a, getString(R.string.nh310))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh310, binding.nh310a, getString(R.string.nh310))) {
             return false;
         }
-        if (!validatorClass.EmptyRadioButton(this, binding.nh310, binding.nh31096, binding.nh31096x, getString(R.string.nh310))) {
-            return false;
-        }
-
-        if (!validatorClass.EmptyRadioButton(this, binding.nh31101, binding.nh31101b, getString(R.string.nh31101))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh310, binding.nh31096, binding.nh31096x, getString(R.string.nh310))) {
             return false;
         }
 
-        if (!validatorClass.EmptyRadioButton(this, binding.nh31102, binding.nh31102b, getString(R.string.nh31102))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh31101, binding.nh31101b, getString(R.string.nh31101))) {
             return false;
         }
 
-        if (!validatorClass.EmptyRadioButton(this, binding.nh31103, binding.nh31103b, getString(R.string.nh31103))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh31102, binding.nh31102b, getString(R.string.nh31102))) {
             return false;
         }
 
-        if (!validatorClass.EmptyRadioButton(this, binding.nh31104, binding.nh31104b, getString(R.string.nh31104))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh31103, binding.nh31103b, getString(R.string.nh31103))) {
             return false;
         }
 
-        if (!validatorClass.EmptyRadioButton(this, binding.nh31105, binding.nh31105b, getString(R.string.nh31105))) {
-            return false;
-        }
-        if (!validatorClass.EmptyRadioButton(this, binding.nh31106, binding.nh31106b, getString(R.string.nh31106))) {
-            return false;
-        }
-        if (!validatorClass.EmptyRadioButton(this, binding.nh31107, binding.nh31107b, getString(R.string.nh31107))) {
-            return false;
-        }
-        if (!validatorClass.EmptyRadioButton(this, binding.nh31108, binding.nh31108b, getString(R.string.nh31108))) {
-            return false;
-        }
-        if (!validatorClass.EmptyRadioButton(this, binding.nh31109, binding.nh31109b, getString(R.string.nh31109))) {
-            return false;
-        }
-        if (!validatorClass.EmptyRadioButton(this, binding.nh31110, binding.nh31110b, getString(R.string.nh31110))) {
-            return false;
-        }
-        if (!validatorClass.EmptyRadioButton(this, binding.nh31111, binding.nh31111b, getString(R.string.nh31111))) {
-            return false;
-        }
-        if (!validatorClass.EmptyRadioButton(this, binding.nh31112, binding.nh31112b, getString(R.string.nh31112))) {
-            return false;
-        }
-        if (!validatorClass.EmptyRadioButton(this, binding.nh31113, binding.nh31113b, getString(R.string.nh31113))) {
-            return false;
-        }
-        if (!validatorClass.EmptyRadioButton(this, binding.nh31114, binding.nh31114b, getString(R.string.nh31114))) {
-            return false;
-        }
-        if (!validatorClass.EmptyRadioButton(this, binding.nh31115, binding.nh31115b, getString(R.string.nh31115))) {
-            return false;
-        }
-        if (!validatorClass.EmptyRadioButton(this, binding.nh31116, binding.nh31116b, getString(R.string.nh31116))) {
-            return false;
-        }
-        if (!validatorClass.EmptyRadioButton(this, binding.nh31117, binding.nh31117b, getString(R.string.nh31117))) {
-            return false;
-        }
-        if (!validatorClass.EmptyRadioButton(this, binding.nh31118, binding.nh31118b, getString(R.string.nh31118))) {
-            return false;
-        }
-        if (!validatorClass.EmptyRadioButton(this, binding.nh31119, binding.nh31119b, getString(R.string.nh31119))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh31104, binding.nh31104b, getString(R.string.nh31104))) {
             return false;
         }
 
-
-        if (!validatorClass.EmptyRadioButton(this, binding.nh312a, binding.nh312a1, getString(R.string.nh312a))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh31105, binding.nh31105b, getString(R.string.nh31105))) {
             return false;
         }
-
-        if (!validatorClass.EmptyRadioButton(this, binding.nh312b, binding.nh312b1, getString(R.string.nh312b))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh31106, binding.nh31106b, getString(R.string.nh31106))) {
             return false;
         }
-
-        if (!validatorClass.EmptyRadioButton(this, binding.nh312c, binding.nh312c1, getString(R.string.nh312c))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh31107, binding.nh31107b, getString(R.string.nh31107))) {
             return false;
         }
-
-        if (!validatorClass.EmptyRadioButton(this, binding.nh312d, binding.nh312d1, getString(R.string.nh312d))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh31108, binding.nh31108b, getString(R.string.nh31108))) {
             return false;
         }
-
-        if (!validatorClass.EmptyRadioButton(this, binding.nh312e, binding.nh312e1, getString(R.string.nh312e))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh31109, binding.nh31109b, getString(R.string.nh31109))) {
             return false;
         }
-
-        if (!validatorClass.EmptyRadioButton(this, binding.nh312f, binding.nh312f1, getString(R.string.nh312f))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh31110, binding.nh31110b, getString(R.string.nh31110))) {
             return false;
         }
-        if (!validatorClass.EmptyRadioButton(this, binding.nh312g, binding.nh312g1, getString(R.string.nh312g))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh31111, binding.nh31111b, getString(R.string.nh31111))) {
             return false;
         }
-
-        if (!validatorClass.EmptyRadioButton(this, binding.nh312h, binding.nh312h1, getString(R.string.nh312h))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh31112, binding.nh31112b, getString(R.string.nh31112))) {
             return false;
         }
-
-        if (!validatorClass.EmptyRadioButton(this, binding.nh312i, binding.nh312i1, getString(R.string.nh312i))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh31113, binding.nh31113b, getString(R.string.nh31113))) {
             return false;
         }
-
-        if (!validatorClass.EmptyCheckBox(this, binding.fldGrpna0413check, binding.nh313a, getString(R.string.nh313))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh31114, binding.nh31114b, getString(R.string.nh31114))) {
             return false;
         }
-        if (!validatorClass.EmptyCheckBox(this, binding.fldGrpna0413check, binding.nh31396, binding.nh31396x, getString(R.string.nh313))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh31115, binding.nh31115b, getString(R.string.nh31115))) {
+            return false;
+        }
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh31116, binding.nh31116b, getString(R.string.nh31116))) {
+            return false;
+        }
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh31117, binding.nh31117b, getString(R.string.nh31117))) {
+            return false;
+        }
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh31118, binding.nh31118b, getString(R.string.nh31118))) {
+            return false;
+        }
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh31119, binding.nh31119b, getString(R.string.nh31119))) {
             return false;
         }
 
 
-        if (!validatorClass.EmptyRadioButton(this, binding.nh314, binding.nh314a, getString(R.string.nh314))) {
-            return false;
-        }
-        if (!validatorClass.EmptyRadioButton(this, binding.nh314, binding.nh31496, binding.nh31496x, getString(R.string.nh314))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh312a, binding.nh312a1, getString(R.string.nh312a))) {
             return false;
         }
 
-        if (!validatorClass.EmptyRadioButton(this, binding.nh315, binding.nh315a, getString(R.string.nh315))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh312b, binding.nh312b1, getString(R.string.nh312b))) {
             return false;
         }
 
-        if (!validatorClass.EmptyRadioButton(this, binding.nh315, binding.nh31596, binding.nh31596x, getString(R.string.nh315))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh312c, binding.nh312c1, getString(R.string.nh312c))) {
+            return false;
+        }
+
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh312d, binding.nh312d1, getString(R.string.nh312d))) {
+            return false;
+        }
+
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh312e, binding.nh312e1, getString(R.string.nh312e))) {
+            return false;
+        }
+
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh312f, binding.nh312f1, getString(R.string.nh312f))) {
+            return false;
+        }
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh312g, binding.nh312g1, getString(R.string.nh312g))) {
+            return false;
+        }
+
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh312h, binding.nh312h1, getString(R.string.nh312h))) {
+            return false;
+        }
+
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh312i, binding.nh312i1, getString(R.string.nh312i))) {
+            return false;
+        }
+
+        if (!ValidatorClass.EmptyCheckBox(this, binding.fldGrpna0413check, binding.nh313a, getString(R.string.nh313))) {
+            return false;
+        }
+        if (!ValidatorClass.EmptyCheckBox(this, binding.fldGrpna0413check, binding.nh31396, binding.nh31396x, getString(R.string.nh313))) {
+            return false;
+        }
+
+
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh314, binding.nh314a, getString(R.string.nh314))) {
+            return false;
+        }
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh314, binding.nh31496, binding.nh31496x, getString(R.string.nh314))) {
+            return false;
+        }
+
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh315, binding.nh315a, getString(R.string.nh315))) {
+            return false;
+        }
+
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh315, binding.nh31596, binding.nh31596x, getString(R.string.nh315))) {
             return false;
         }
         if (binding.nh315a.isChecked()) {
-            if (!validatorClass.EmptyRadioButton(this, binding.nh316, binding.nh316a, getString(R.string.nh316))) {
+            if (!ValidatorClass.EmptyRadioButton(this, binding.nh316, binding.nh316a, getString(R.string.nh316))) {
                 return false;
             }
         }
         // 315
 
-        if (!validatorClass.EmptyRadioButton(this, binding.nh317, binding.nh317a, getString(R.string.nh317))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh317, binding.nh317a, getString(R.string.nh317))) {
             return false;
         }
 
 
-        if (!validatorClass.EmptyRadioButton(this, binding.nh317, binding.nh31796, binding.nh31796x, getString(R.string.nh317))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh317, binding.nh31796, binding.nh31796x, getString(R.string.nh317))) {
             return false;
         }
 
-        if (!validatorClass.EmptyRadioButton(this, binding.nh318, binding.nh318a, getString(R.string.nh318))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh318, binding.nh318a, getString(R.string.nh318))) {
             return false;
         }
 
-        if (!validatorClass.EmptyRadioButton(this, binding.nh318, binding.nh31896, binding.nh31896x, getString(R.string.nh318))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh318, binding.nh31896, binding.nh31896x, getString(R.string.nh318))) {
             return false;
         }
 
-        if (!validatorClass.EmptyRadioButton(this, binding.nh319, binding.nh319a, getString(R.string.nh319))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh319, binding.nh319a, getString(R.string.nh319))) {
             return false;
         }
-        if (!validatorClass.EmptyRadioButton(this, binding.nh319, binding.nh31996, binding.nh31996x, getString(R.string.nh319))) {
-            return false;
-        }
-
-        if (!validatorClass.EmptyTextBox(this, binding.nh320, getString(R.string.nh320))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh319, binding.nh31996, binding.nh31996x, getString(R.string.nh319))) {
             return false;
         }
 
-        if (!validatorClass.RangeTextBox(this, binding.nh320, 1, 15, getString(R.string.nh320), "Room")) {
+        if (!ValidatorClass.EmptyTextBox(this, binding.nh320, getString(R.string.nh320))) {
             return false;
         }
 
-        if (!validatorClass.EmptyRadioButton(this, binding.nh321, binding.nh321b, getString(R.string.nh321))) {
+        if (!ValidatorClass.RangeTextBox(this, binding.nh320, 1, 15, getString(R.string.nh320), "Room")) {
+            return false;
+        }
+
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh321, binding.nh321b, getString(R.string.nh321))) {
             return false;
         }
 
         if (binding.nh321a.isChecked()) {
-            if (!validatorClass.EmptyRadioButton(this, binding.nh322, binding.nh322a, getString(R.string.nh322))) {
+            if (!ValidatorClass.EmptyRadioButton(this, binding.nh322, binding.nh322a, getString(R.string.nh322))) {
                 return false;
             }
 
             if (binding.nh322a.isChecked()) {
-                if (!validatorClass.EmptyTextBox(this, binding.nh322acr, getString(R.string.nh322acr))) {
+                if (!ValidatorClass.EmptyTextBox(this, binding.nh322acr, getString(R.string.nh322acr))) {
                     return false;
                 }
-                if (!validatorClass.RangeTextBox(this, binding.nh322acr, 1.00, 999.0, getString(R.string.nh322acr), "acre")) {
+                if (!ValidatorClass.RangeTextBox(this, binding.nh322acr, 1.00, 999.0, getString(R.string.nh322acr), "acre")) {
                     return false;
                 }
             } else if (binding.nh322b.isChecked()) {
-                if (!validatorClass.EmptyTextBox(this, binding.nh322can, getString(R.string.nh322can))) {
+                if (!ValidatorClass.EmptyTextBox(this, binding.nh322can, getString(R.string.nh322can))) {
                     return false;
                 }
-                if (!validatorClass.RangeTextBox(this, binding.nh322can, 1.00, 999.0, getString(R.string.nh322can), "kanal")) {
+                if (!ValidatorClass.RangeTextBox(this, binding.nh322can, 1.00, 999.0, getString(R.string.nh322can), "kanal")) {
                     return false;
                 }
             }
         }
 
-        if (!validatorClass.EmptyRadioButton(this, binding.nh323, binding.nh323b, getString(R.string.nh323))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh323, binding.nh323b, getString(R.string.nh323))) {
             return false;
         }
 
 
         if (binding.nh323a.isChecked()) {
-            if (!validatorClass.EmptyTextBox(this, binding.nh324a, getString(R.string.nh324a))) {
+            if (!ValidatorClass.EmptyTextBox(this, binding.nh324a, getString(R.string.nh324a))) {
                 return false;
             }
 
-            if (!validatorClass.RangeTextBox(this, binding.nh324a, 0, 999, getString(R.string.nh324a), "Animal")) {
+            if (!ValidatorClass.RangeTextBox(this, binding.nh324a, 0, 999, getString(R.string.nh324a), "Animal")) {
                 return false;
             }
 
-            if (!validatorClass.EmptyTextBox(this, binding.nh324b, getString(R.string.nh324b))) {
+            if (!ValidatorClass.EmptyTextBox(this, binding.nh324b, getString(R.string.nh324b))) {
                 return false;
             }
-            if (!validatorClass.RangeTextBox(this, binding.nh324b, 0, 999, getString(R.string.nh324b), "Animal")) {
+            if (!ValidatorClass.RangeTextBox(this, binding.nh324b, 0, 999, getString(R.string.nh324b), "Animal")) {
                 return false;
             }
 
-            if (!validatorClass.EmptyTextBox(this, binding.nh324c, getString(R.string.nh324c))) {
+            if (!ValidatorClass.EmptyTextBox(this, binding.nh324c, getString(R.string.nh324c))) {
                 return false;
             }
-            if (!validatorClass.RangeTextBox(this, binding.nh324c, 0, 999, getString(R.string.nh324c), "Animal")) {
+            if (!ValidatorClass.RangeTextBox(this, binding.nh324c, 0, 999, getString(R.string.nh324c), "Animal")) {
                 return false;
             }
-            if (!validatorClass.EmptyTextBox(this, binding.nh324d, getString(R.string.nh324d))) {
+            if (!ValidatorClass.EmptyTextBox(this, binding.nh324d, getString(R.string.nh324d))) {
                 return false;
             }
-            if (!validatorClass.RangeTextBox(this, binding.nh324d, 0, 999, getString(R.string.nh324d), "Animal")) {
+            if (!ValidatorClass.RangeTextBox(this, binding.nh324d, 0, 999, getString(R.string.nh324d), "Animal")) {
                 return false;
             }
-            if (!validatorClass.EmptyTextBox(this, binding.nh324e, getString(R.string.nh324e))) {
+            if (!ValidatorClass.EmptyTextBox(this, binding.nh324e, getString(R.string.nh324e))) {
                 return false;
             }
-            if (!validatorClass.RangeTextBox(this, binding.nh324e, 0, 999, getString(R.string.nh324e), "Animal")) {
+            if (!ValidatorClass.RangeTextBox(this, binding.nh324e, 0, 999, getString(R.string.nh324e), "Animal")) {
                 return false;
             }
-            if (!validatorClass.EmptyTextBox(this, binding.nh324f, getString(R.string.nh324f))) {
+            if (!ValidatorClass.EmptyTextBox(this, binding.nh324f, getString(R.string.nh324f))) {
                 return false;
             }
-            if (!validatorClass.RangeTextBox(this, binding.nh324f, 0, 999, getString(R.string.nh324f), "Animal")) {
+            if (!ValidatorClass.RangeTextBox(this, binding.nh324f, 0, 999, getString(R.string.nh324f), "Animal")) {
                 return false;
             }
-            if (!validatorClass.EmptyTextBox(this, binding.nh324g, getString(R.string.nh324g))) {
+            if (!ValidatorClass.EmptyTextBox(this, binding.nh324g, getString(R.string.nh324g))) {
                 return false;
             }
-            return validatorClass.RangeTextBox(this, binding.nh324g, 0, 999, getString(R.string.nh324g), "Animal");
+            return ValidatorClass.RangeTextBox(this, binding.nh324g, 0, 999, getString(R.string.nh324g), "Animal");
         }
         return true;
 

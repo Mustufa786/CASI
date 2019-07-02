@@ -41,7 +41,7 @@ import edu.aku.hassannaqvi.casi_2018.core.MainApp;
 import edu.aku.hassannaqvi.casi_2018.databinding.ActivitySectionC1Binding;
 import edu.aku.hassannaqvi.casi_2018.other.DateUtils;
 import edu.aku.hassannaqvi.casi_2018.other.JSONUtilClass;
-import edu.aku.hassannaqvi.casi_2018.validation.validatorClass;
+import edu.aku.hassannaqvi.casi_2018.validation.ValidatorClass;
 
 public class SectionC1Activity extends AddMember_MenuActivity implements TextWatcher, RadioGroup.OnCheckedChangeListener {
 
@@ -510,14 +510,14 @@ public class SectionC1Activity extends AddMember_MenuActivity implements TextWat
 
         if (endflag) {
             if (!isNA) {
-                return editChildFlag || validatorClass.EmptySpinner(this, binding.nc101, getString(R.string.nc101));
+                return editChildFlag || ValidatorClass.EmptySpinner(this, binding.nc101, getString(R.string.nc101));
             } else {
 
                 if (!editChildFlag) {
-                    if (!validatorClass.EmptySpinner(this, binding.resp, getString(R.string.resp))) {
+                    if (!ValidatorClass.EmptySpinner(this, binding.resp, getString(R.string.resp))) {
                         return false;
                     }
-                    return validatorClass.EmptySpinner(this, binding.nc101, getString(R.string.nc101));
+                    return ValidatorClass.EmptySpinner(this, binding.nc101, getString(R.string.nc101));
                 }
                 return true;
             }
@@ -525,46 +525,46 @@ public class SectionC1Activity extends AddMember_MenuActivity implements TextWat
 
             if (isNA) {
                 if (!editChildFlag) {
-                    if (!validatorClass.EmptySpinner(this, binding.resp, getString(R.string.resp))) {
+                    if (!ValidatorClass.EmptySpinner(this, binding.resp, getString(R.string.resp))) {
                         return false;
                     }
                 }
             }
 
             if (!editChildFlag) {
-                if (!validatorClass.EmptySpinner(this, binding.nc101, getString(R.string.nc101))) {
+                if (!ValidatorClass.EmptySpinner(this, binding.nc101, getString(R.string.nc101))) {
                     return false;
                 }
             }
 
-            if (!validatorClass.EmptyRadioButton(this, binding.na11801, binding.na11801b, getString(R.string.na11801))) {
+            if (!ValidatorClass.EmptyRadioButton(this, binding.na11801, binding.na11801b, getString(R.string.na11801))) {
                 return false;
             }
 
             if (binding.na11801a.isChecked()) {
 
-                if (!validatorClass.EmptyTextBox(this, binding.nc201y, getString(R.string.nc201))) {
+                if (!ValidatorClass.EmptyTextBox(this, binding.nc201y, getString(R.string.nc201))) {
                     return false;
                 }
 
-                if (!validatorClass.RangeTextBox(this, binding.nc201y, DateUtils.getCurrentYear() - 5, DateUtils.getCurrentYear(), getString(R.string.nc201), " years")) {
+                if (!ValidatorClass.RangeTextBox(this, binding.nc201y, DateUtils.getCurrentYear() - 5, DateUtils.getCurrentYear(), getString(R.string.nc201), " years")) {
                     return false;
                 }
 
-                if (!validatorClass.EmptyTextBox(this, binding.nc201m, getString(R.string.nc201))) {
+                if (!ValidatorClass.EmptyTextBox(this, binding.nc201m, getString(R.string.nc201))) {
                     return false;
                 }
 
-                if (!validatorClass.RangeTextBox(this, binding.nc201m, 1, 12, getString(R.string.nc201), " months")) {
+                if (!ValidatorClass.RangeTextBox(this, binding.nc201m, 1, 12, getString(R.string.nc201), " months")) {
                     return false;
                 }
 
 
-                if (!validatorClass.EmptyTextBox(this, binding.nc201d, getString(R.string.nc201))) {
+                if (!ValidatorClass.EmptyTextBox(this, binding.nc201d, getString(R.string.nc201))) {
                     return false;
                 }
 
-                if (!validatorClass.RangeTextBox(this, binding.nc201d, 1, 31, 98, getString(R.string.nc201), " days")) {
+                if (!ValidatorClass.RangeTextBox(this, binding.nc201d, 1, 31, 98, getString(R.string.nc201), " days")) {
                     return false;
                 }
 
@@ -575,36 +575,36 @@ public class SectionC1Activity extends AddMember_MenuActivity implements TextWat
                 sixYears.add(Calendar.DAY_OF_YEAR, -2190);
 
                 if (dob.before(sixYears)) {
-                    if (!validatorClass.RangeTextBoxforDate(this, binding.nc201d, 1, DateUtils.getCurrentDate(), 98, "Date can not be more than today")) {
+                    if (!ValidatorClass.RangeTextBoxforDate(this, binding.nc201d, 1, DateUtils.getCurrentDate(), 98, "Date can not be more than today")) {
                         return false;
                     }
 
-                    if (!validatorClass.RangeTextBoxforDate(this, binding.nc201m, 1, DateUtils.getCurrentMonth(), "Month can not be more than current month")) {
+                    if (!ValidatorClass.RangeTextBoxforDate(this, binding.nc201m, 1, DateUtils.getCurrentMonth(), "Month can not be more than current month")) {
                         return false;
                     }
 
-                    if (!validatorClass.RangeTextBoxforDate(this, binding.nc201y, DateUtils.getCurrentYear() - 5, DateUtils.getCurrentYear(), "Year can not be more than current year")) {
+                    if (!ValidatorClass.RangeTextBoxforDate(this, binding.nc201y, DateUtils.getCurrentYear() - 5, DateUtils.getCurrentYear(), "Year can not be more than current year")) {
                         return false;
                     }
                 }
 
 
                 if (dob.after(today)) {
-                    if (!validatorClass.RangeTextBoxforDate(this, binding.nc201d, 1, DateUtils.getCurrentDate(), 98, "Date can not be more than today")) {
+                    if (!ValidatorClass.RangeTextBoxforDate(this, binding.nc201d, 1, DateUtils.getCurrentDate(), 98, "Date can not be more than today")) {
                         return false;
                     }
 
-                    if (!validatorClass.RangeTextBoxforDate(this, binding.nc201m, 1, DateUtils.getCurrentMonth(), "Month can not be more than current month")) {
+                    if (!ValidatorClass.RangeTextBoxforDate(this, binding.nc201m, 1, DateUtils.getCurrentMonth(), "Month can not be more than current month")) {
                         return false;
                     }
 
-                    if (!validatorClass.RangeTextBoxforDate(this, binding.nc201y, DateUtils.getCurrentYear() - 5, DateUtils.getCurrentYear(), "Year can not be more than current year")) {
+                    if (!ValidatorClass.RangeTextBoxforDate(this, binding.nc201y, DateUtils.getCurrentYear() - 5, DateUtils.getCurrentYear(), "Year can not be more than current year")) {
                         return false;
                     }
 
                 }
 
-                if (!validatorClass.EmptyRadioButton(this, binding.nc202, binding.nc202a, getString(R.string.nc202))) {
+                if (!ValidatorClass.EmptyRadioButton(this, binding.nc202, binding.nc202a, getString(R.string.nc202))) {
                     return false;
                 }
 
@@ -639,11 +639,11 @@ public class SectionC1Activity extends AddMember_MenuActivity implements TextWat
                     binding.nc202c.setError(null);
                 }
 
-                if (!validatorClass.EmptyTextBox(this, binding.nc203, getString(R.string.nc203))) {
+                if (!ValidatorClass.EmptyTextBox(this, binding.nc203, getString(R.string.nc203))) {
                     return false;
                 }
 
-                if (!validatorClass.RangeTextBox(this, binding.nc203, 0, 72, getString(R.string.nc203), " months")) {
+                if (!ValidatorClass.RangeTextBox(this, binding.nc203, 0, 72, getString(R.string.nc203), " months")) {
                     return false;
                 }
 
@@ -657,15 +657,15 @@ public class SectionC1Activity extends AddMember_MenuActivity implements TextWat
                     binding.nc203.setError(null);
                 }
 
-            /*if (!validatorClass.EmptyRadioButton(this, binding.nc204a, binding.nc204aa, getString(R.string.nc204a))) {
+            /*if (!ValidatorClass.EmptyRadioButton(this, binding.nc204a, binding.nc204aa, getString(R.string.nc204a))) {
                 return false;
             }
 
-            if (!validatorClass.EmptyRadioButton(this, binding.nc204b, binding.nc204ba, getString(R.string.nc204b))) {
+            if (!ValidatorClass.EmptyRadioButton(this, binding.nc204b, binding.nc204ba, getString(R.string.nc204b))) {
                 return false;
             }*/
 
-                if (!validatorClass.EmptyRadioButton(this, binding.nc205, binding.nc205a, getString(R.string.nc205))) {
+                if (!ValidatorClass.EmptyRadioButton(this, binding.nc205, binding.nc205a, getString(R.string.nc205))) {
                     return false;
                 }
 

@@ -35,8 +35,8 @@ import edu.aku.hassannaqvi.casi_2018.core.MainApp;
 import edu.aku.hassannaqvi.casi_2018.databinding.ActivitySectionE1Binding;
 import edu.aku.hassannaqvi.casi_2018.other.DateUtils;
 import edu.aku.hassannaqvi.casi_2018.other.JSONUtilClass;
-import edu.aku.hassannaqvi.casi_2018.validation.clearClass;
-import edu.aku.hassannaqvi.casi_2018.validation.validatorClass;
+import edu.aku.hassannaqvi.casi_2018.validation.ClearClass;
+import edu.aku.hassannaqvi.casi_2018.validation.ValidatorClass;
 
 public class SectionE1Activity extends AppCompatActivity {
 
@@ -69,16 +69,16 @@ public class SectionE1Activity extends AppCompatActivity {
 
         this.setTitle(getResources().getString(R.string.ne1heading));
 
-        bi.ne104d.setManager(getSupportFragmentManager());
+
         bi.ne104d.setMinDate(DateUtils.getThreeDaysBack("dd/MM/yyyy", -3));
         bi.ne104d.setMaxDate(maxDate);
-        bi.ne104t.setManager(getSupportFragmentManager());
+
         bi.ne104t.setTimeFormat("HH:mm");
 
-        bi.ne108d.setManager(getSupportFragmentManager());
+
         bi.ne108d.setMinDate(DateUtils.getThreeDaysBack("dd/MM/yyyy", -3));
         bi.ne108d.setMaxDate(maxDate);
-        bi.ne108t.setManager(getSupportFragmentManager());
+
         bi.ne108t.setTimeFormat("HH:mm");
 
 
@@ -142,16 +142,16 @@ public class SectionE1Activity extends AppCompatActivity {
                     fetchMembersFromGroup(position);
                     bi.ne102.setAdapter(new ArrayAdapter<>(SectionE1Activity.this, R.layout.item_style, members));
                     if (position == 2) {
-                        clearClass.ClearAllFields(bi.fldGrpUnine, false);
-                        clearClass.ClearAllFields(bi.fldGrpblood, true);
+                        ClearClass.ClearAllFields(bi.fldGrpUnine, false);
+                        ClearClass.ClearAllFields(bi.fldGrpblood, true);
                     } else if (position == 1) {
-                        clearClass.ClearAllFields(bi.fldGrpUnine, true);
-                        clearClass.ClearAllFields(bi.fldGrpblood, true);
+                        ClearClass.ClearAllFields(bi.fldGrpUnine, true);
+                        ClearClass.ClearAllFields(bi.fldGrpblood, true);
                     } else if (position == 3) {
-                        clearClass.ClearAllFields(bi.fldGrpUnine, true);
-                        clearClass.ClearAllFields(bi.fldGrpblood, false);
+                        ClearClass.ClearAllFields(bi.fldGrpUnine, true);
+                        ClearClass.ClearAllFields(bi.fldGrpblood, false);
                     } else if (position == 4) {
-                        //clearClass.ClearAllFields(bi.fldGrpbloodyes, false);
+                        //ClearClass.ClearAllFields(bi.fldGrpbloodyes, false);
                         bi.ne104a.setEnabled(false);
                         bi.ne104b.setEnabled(false);
                         bi.ne104.clearCheck();
@@ -160,9 +160,9 @@ public class SectionE1Activity extends AppCompatActivity {
                         bi.ne104d.setText(null);
                         bi.ne104t.setText(null);
                         bi.btnScanBL.setEnabled(false);
-                        clearClass.ClearAllFields(bi.fldGrpbloodno, false);
-                        clearClass.ClearAllFields(bi.fldGrphb, true);
-                        clearClass.ClearAllFields(bi.fldGrpUnine, false);
+                        ClearClass.ClearAllFields(bi.fldGrpbloodno, false);
+                        ClearClass.ClearAllFields(bi.fldGrphb, true);
+                        ClearClass.ClearAllFields(bi.fldGrpUnine, false);
 
                     }
                 }
@@ -195,21 +195,21 @@ public class SectionE1Activity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (bi.ne104a.isChecked()) {
-                    clearClass.ClearAllFields(bi.fldGrpbloodyes, true);
+                    ClearClass.ClearAllFields(bi.fldGrpbloodyes, true);
                     bi.ne104d.setEnabled(true);
                     bi.ne104t.setEnabled(true);
 
-                    clearClass.ClearAllFields(bi.fldGrpbloodno, false);
+                    ClearClass.ClearAllFields(bi.fldGrpbloodno, false);
 
                     bi.btnScanBL.setEnabled(true);
                 } else {
-                    clearClass.ClearAllFields(bi.fldGrpbloodyes, false);
+                    ClearClass.ClearAllFields(bi.fldGrpbloodyes, false);
                     bi.ne104d.setEnabled(false);
                     bi.ne104t.setEnabled(false);
                     bi.ne104d.setText(null);
                     bi.ne104t.setText(null);
                     bi.btnScanBL.setEnabled(false);
-                    clearClass.ClearAllFields(bi.fldGrpbloodno, true);
+                    ClearClass.ClearAllFields(bi.fldGrpbloodno, true);
                 }
             }
         });
@@ -218,19 +218,19 @@ public class SectionE1Activity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (bi.ne108a.isChecked()) {
-                    clearClass.ClearAllFields(bi.fldGrpurineyes, true);
+                    ClearClass.ClearAllFields(bi.fldGrpurineyes, true);
                     bi.ne108d.setEnabled(true);
                     bi.ne108t.setEnabled(true);
 
-                    clearClass.ClearAllFields(bi.fldGrpurinno, false);
+                    ClearClass.ClearAllFields(bi.fldGrpurinno, false);
                     bi.btnScanUR.setEnabled(true);
                 } else {
-                    clearClass.ClearAllFields(bi.fldGrpurineyes, false);
+                    ClearClass.ClearAllFields(bi.fldGrpurineyes, false);
                     bi.ne108d.setEnabled(false);
                     bi.ne108t.setEnabled(false);
                     bi.ne108d.setText(null);
                     bi.ne108t.setText(null);
-                    clearClass.ClearAllFields(bi.fldGrpurinno, true);
+                    ClearClass.ClearAllFields(bi.fldGrpurinno, true);
                     bi.btnScanUR.setEnabled(false);
                 }
             }
@@ -507,21 +507,21 @@ public class SectionE1Activity extends AppCompatActivity {
         //Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
         int scanChar;
 
-        if (!validatorClass.EmptySpinner(this, bi.ne103, getString(R.string.neselected))) {
+        if (!ValidatorClass.EmptySpinner(this, bi.ne103, getString(R.string.neselected))) {
             return false;
         }
 
-        if (!validatorClass.EmptySpinner(this, bi.ne102, getString(R.string.ne102))) {
+        if (!ValidatorClass.EmptySpinner(this, bi.ne102, getString(R.string.ne102))) {
             return false;
         }
 
         if (position == 1) {
-            if (!validatorClass.EmptyRadioButton(this, bi.ne104, bi.ne104a, getString(R.string.ne104))) {
+            if (!ValidatorClass.EmptyRadioButton(this, bi.ne104, bi.ne104a, getString(R.string.ne104))) {
                 return false;
             }
 
             if (bi.ne104a.isChecked()) {
-                if (!validatorClass.EmptyTextBox(this, bi.ne105, getString(R.string.barcode))) {
+                if (!ValidatorClass.EmptyTextBox(this, bi.ne105, getString(R.string.barcode))) {
                     return false;
                 }
 
@@ -543,34 +543,34 @@ public class SectionE1Activity extends AppCompatActivity {
                     bi.ne105.setError(null);
                 }
 
-                if (!validatorClass.EmptyTextBox(this, bi.ne104d, getString(R.string.date))) {
+                if (!ValidatorClass.EmptyTextBox(this, bi.ne104d, getString(R.string.date))) {
                     return false;
                 }
 
-                if (!validatorClass.EmptyTextBox(this, bi.ne104t, getString(R.string.time))) {
+                if (!ValidatorClass.EmptyTextBox(this, bi.ne104t, getString(R.string.time))) {
                     return false;
                 }
 
-                if (!validatorClass.EmptyTextBox(this, bi.ne106, getString(R.string.hb_result))) {
+                if (!ValidatorClass.EmptyTextBox(this, bi.ne106, getString(R.string.hb_result))) {
                     return false;
                 }
 
-                if (!validatorClass.RangeTextBox(this, bi.ne106, 0.1, 24.9, getString(R.string.hb_result), " hemoglobin")) {
+                if (!ValidatorClass.RangeTextBox(this, bi.ne106, 0.1, 24.9, getString(R.string.hb_result), " hemoglobin")) {
                     return false;
                 }
 
             } else {
-                if (!validatorClass.EmptyRadioButton(this, bi.ne107, bi.ne107a, getString(R.string.ne107))) {
+                if (!ValidatorClass.EmptyRadioButton(this, bi.ne107, bi.ne107a, getString(R.string.ne107))) {
                     return false;
                 }
             }
 
-            if (!validatorClass.EmptyRadioButton(this, bi.ne108, bi.ne108a, getString(R.string.ne104))) {
+            if (!ValidatorClass.EmptyRadioButton(this, bi.ne108, bi.ne108a, getString(R.string.ne104))) {
                 return false;
             }
 
             if (bi.ne108a.isChecked()) {
-                if (!validatorClass.EmptyTextBox(this, bi.ne109, getString(R.string.barcode))) {
+                if (!ValidatorClass.EmptyTextBox(this, bi.ne109, getString(R.string.barcode))) {
                     return false;
                 }
 
@@ -590,15 +590,15 @@ public class SectionE1Activity extends AppCompatActivity {
                 } else {
                     bi.ne109.setError(null);
                 }
-                if (!validatorClass.EmptyTextBox(this, bi.ne108d, getString(R.string.date))) {
+                if (!ValidatorClass.EmptyTextBox(this, bi.ne108d, getString(R.string.date))) {
                     return false;
                 }
-                if (!validatorClass.EmptyTextBox(this, bi.ne108t, getString(R.string.time))) {
+                if (!ValidatorClass.EmptyTextBox(this, bi.ne108t, getString(R.string.time))) {
                     return false;
                 }
 
             } else {
-                if (!validatorClass.EmptyRadioButton(this, bi.ne110, bi.ne110a, getString(R.string.ne107))) {
+                if (!ValidatorClass.EmptyRadioButton(this, bi.ne110, bi.ne110a, getString(R.string.ne107))) {
                     return false;
                 }
             }
@@ -606,12 +606,12 @@ public class SectionE1Activity extends AppCompatActivity {
         }
 
         if (position == 2) {
-            if (!validatorClass.EmptyRadioButton(this, bi.ne104, bi.ne104a, getString(R.string.ne104))) {
+            if (!ValidatorClass.EmptyRadioButton(this, bi.ne104, bi.ne104a, getString(R.string.ne104))) {
                 return false;
             }
 
             if (bi.ne104a.isChecked()) {
-                if (!validatorClass.EmptyTextBox(this, bi.ne105, getString(R.string.barcode))) {
+                if (!ValidatorClass.EmptyTextBox(this, bi.ne105, getString(R.string.barcode))) {
                     return false;
                 }
 
@@ -631,33 +631,33 @@ public class SectionE1Activity extends AppCompatActivity {
                 } else {
                     bi.ne105.setError(null);
                 }
-                if (!validatorClass.EmptyTextBox(this, bi.ne104d, getString(R.string.date))) {
+                if (!ValidatorClass.EmptyTextBox(this, bi.ne104d, getString(R.string.date))) {
                     return false;
                 }
 
-                if (!validatorClass.EmptyTextBox(this, bi.ne104t, getString(R.string.time))) {
+                if (!ValidatorClass.EmptyTextBox(this, bi.ne104t, getString(R.string.time))) {
                     return false;
                 }
 
-                if (!validatorClass.EmptyTextBox(this, bi.ne106, getString(R.string.hb_result))) {
+                if (!ValidatorClass.EmptyTextBox(this, bi.ne106, getString(R.string.hb_result))) {
                     return false;
                 }
 
 
             } else {
-                if (!validatorClass.EmptyRadioButton(this, bi.ne107, bi.ne107a, getString(R.string.ne107))) {
+                if (!ValidatorClass.EmptyRadioButton(this, bi.ne107, bi.ne107a, getString(R.string.ne107))) {
                     return false;
                 }
             }
         }
 
         if (position == 3) {
-            if (!validatorClass.EmptyRadioButton(this, bi.ne108, bi.ne108a, getString(R.string.ne104))) {
+            if (!ValidatorClass.EmptyRadioButton(this, bi.ne108, bi.ne108a, getString(R.string.ne104))) {
                 return false;
             }
 
             if (bi.ne108a.isChecked()) {
-                if (!validatorClass.EmptyTextBox(this, bi.ne109, getString(R.string.barcode))) {
+                if (!ValidatorClass.EmptyTextBox(this, bi.ne109, getString(R.string.barcode))) {
                     return false;
                 }
 
@@ -677,21 +677,21 @@ public class SectionE1Activity extends AppCompatActivity {
                 } else {
                     bi.ne109.setError(null);
                 }
-                if (!validatorClass.EmptyTextBox(this, bi.ne108d, getString(R.string.date))) {
+                if (!ValidatorClass.EmptyTextBox(this, bi.ne108d, getString(R.string.date))) {
                     return false;
                 }
-                if (!validatorClass.EmptyTextBox(this, bi.ne108t, getString(R.string.time))) {
+                if (!ValidatorClass.EmptyTextBox(this, bi.ne108t, getString(R.string.time))) {
                     return false;
                 }
             } else {
-                if (!validatorClass.EmptyRadioButton(this, bi.ne110, bi.ne110a, getString(R.string.ne107))) {
+                if (!ValidatorClass.EmptyRadioButton(this, bi.ne110, bi.ne110a, getString(R.string.ne107))) {
                     return false;
                 }
             }
         }
 
         if (position == 4) {
-            return validatorClass.EmptyTextBox(this, bi.ne106, getString(R.string.hb_result));
+            return ValidatorClass.EmptyTextBox(this, bi.ne106, getString(R.string.hb_result));
 
         }
 

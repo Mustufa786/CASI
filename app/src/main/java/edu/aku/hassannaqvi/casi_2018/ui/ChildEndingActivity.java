@@ -14,7 +14,7 @@ import edu.aku.hassannaqvi.casi_2018.contracts.FamilyMembersContract;
 import edu.aku.hassannaqvi.casi_2018.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2018.core.MainApp;
 import edu.aku.hassannaqvi.casi_2018.databinding.ActivityChildEndingBinding;
-import edu.aku.hassannaqvi.casi_2018.validation.validatorClass;
+import edu.aku.hassannaqvi.casi_2018.validation.ValidatorClass;
 
 public class ChildEndingActivity extends AppCompatActivity {
 
@@ -133,7 +133,7 @@ public class ChildEndingActivity extends AppCompatActivity {
     private boolean formValidation() {
         //Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
 
-        if (!validatorClass.EmptyRadioButton(this, binding.istatus, binding.istatusa, getString(R.string.istatus))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.istatus, binding.istatusa, getString(R.string.istatus))) {
             return false;
         }
 

@@ -34,7 +34,7 @@ import edu.aku.hassannaqvi.casi_2018.core.MainApp;
 import edu.aku.hassannaqvi.casi_2018.databinding.ActivitySectionA2EditBinding;
 import edu.aku.hassannaqvi.casi_2018.other.DateUtils;
 import edu.aku.hassannaqvi.casi_2018.other.JSONUtilClass;
-import edu.aku.hassannaqvi.casi_2018.validation.validatorClass;
+import edu.aku.hassannaqvi.casi_2018.validation.ValidatorClass;
 
 
 public class SectionA2EditActivity extends AppCompatActivity implements TextWatcher, RadioGroup.OnCheckedChangeListener {
@@ -1149,70 +1149,70 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
 
     private boolean formValidation() {
 
-        if (!validatorClass.EmptyTextBox(this, binding.na202, getString(R.string.na202))) {
+        if (!ValidatorClass.EmptyTextBox(this, binding.na202, getString(R.string.na202))) {
             return false;
         }
 
-        if (!validatorClass.EmptyRadioButton(this, binding.na203, binding.na203a, getString(R.string.na203))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.na203, binding.na203a, getString(R.string.na203))) {
             return false;
         }
 
-        if (!validatorClass.EmptyRadioButton(this, binding.na204, binding.na204a, getString(R.string.na204))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.na204, binding.na204a, getString(R.string.na204))) {
             return false;
         }
 
         if (!MainApp.IsResp) {
-            return validatorClass.EmptyRadioButton(this, binding.resp, binding.respb, getString(R.string.resp));
+            return ValidatorClass.EmptyRadioButton(this, binding.resp, binding.respb, getString(R.string.resp));
         }
 
-        if (!validatorClass.EmptyTextBox(this, binding.nh2doby, getString(R.string.nh2dob))) {
+        if (!ValidatorClass.EmptyTextBox(this, binding.nh2doby, getString(R.string.nh2dob))) {
             return false;
         }
 
 
-        if (!validatorClass.RangeTextBox(this, binding.nh2doby, DateUtils.getCurrentYear() - 95, DateUtils.getCurrentYear(), 9998, getString(R.string.nh2dob), " year")) {
+        if (!ValidatorClass.RangeTextBox(this, binding.nh2doby, DateUtils.getCurrentYear() - 95, DateUtils.getCurrentYear(), 9998, getString(R.string.nh2dob), " year")) {
             return false;
         }
 
 
-        if (!validatorClass.EmptyTextBox(this, binding.nh2dobm, getString(R.string.nh2dob))) {
+        if (!ValidatorClass.EmptyTextBox(this, binding.nh2dobm, getString(R.string.nh2dob))) {
             return false;
         }
 
-        if (!validatorClass.RangeTextBox(this, binding.nh2dobm, 1, 12, 98, getString(R.string.nh2dob), " month")) {
+        if (!ValidatorClass.RangeTextBox(this, binding.nh2dobm, 1, 12, 98, getString(R.string.nh2dob), " month")) {
             return false;
         }
 
-        if (!validatorClass.EmptyTextBox(this, binding.nh2dobd, getString(R.string.nh2dob))) {
+        if (!ValidatorClass.EmptyTextBox(this, binding.nh2dobd, getString(R.string.nh2dob))) {
             return false;
         }
 
-        if (!validatorClass.RangeTextBox(this, binding.nh2dobd, 1, 31, 98, getString(R.string.nh2dob), " day")) {
+        if (!ValidatorClass.RangeTextBox(this, binding.nh2dobd, 1, 31, 98, getString(R.string.nh2dob), " day")) {
             return false;
         }
 
         Calendar today = Calendar.getInstance();
         if (dob.after(today)) {
-            if (!validatorClass.RangeTextBoxforDate(this, binding.nh2dobd, 1, DateUtils.getCurrentDate(), 98, "Date can not be more than today")) {
+            if (!ValidatorClass.RangeTextBoxforDate(this, binding.nh2dobd, 1, DateUtils.getCurrentDate(), 98, "Date can not be more than today")) {
                 return false;
             }
 
-            if (!validatorClass.RangeTextBoxforDate(this, binding.nh2dobm, 1, DateUtils.getCurrentMonth(), 98, "Month can not be more than current Month")) {
+            if (!ValidatorClass.RangeTextBoxforDate(this, binding.nh2dobm, 1, DateUtils.getCurrentMonth(), 98, "Month can not be more than current Month")) {
                 return false;
             }
 
-            if (!validatorClass.RangeTextBoxforDate(this, binding.nh2doby, DateUtils.getCurrentYear() - 95, DateUtils.getCurrentYear(), 9998, "Year can not be more than current year")) {
+            if (!ValidatorClass.RangeTextBoxforDate(this, binding.nh2doby, DateUtils.getCurrentYear() - 95, DateUtils.getCurrentYear(), 9998, "Year can not be more than current year")) {
                 return false;
             }
         }
 
         if (binding.nh2doby.getText().toString().equals("9998")) {
 
-            if (!validatorClass.EmptyTextBox(this, binding.nh2agey, getString(R.string.na2age))) {
+            if (!ValidatorClass.EmptyTextBox(this, binding.nh2agey, getString(R.string.na2age))) {
                 return false;
             }
 
-            if (!validatorClass.RangeTextBox(this, binding.nh2agey, 0, 95, 98, getString(R.string.na2age), " years")) {
+            if (!ValidatorClass.RangeTextBox(this, binding.nh2agey, 0, 95, 98, getString(R.string.na2age), " years")) {
                 return false;
             }
         }
@@ -1235,33 +1235,33 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
             binding.nh2agey.setError(null);
         }
 
-        if (!validatorClass.EmptyRadioButton(this, binding.nh2ms, binding.nh2msa, getString(R.string.nh2ms))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh2ms, binding.nh2msa, getString(R.string.nh2ms))) {
             return false;
         }
 
-        if (!validatorClass.EmptyRadioButton(this, binding.nh2edu, binding.nh2edua, getString(R.string.nh2edu))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh2edu, binding.nh2edua, getString(R.string.nh2edu))) {
             return false;
         }
 
-        if (!validatorClass.EmptyRadioButton(this, binding.nh2occ, binding.nh2occa, getString(R.string.nh2occ))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh2occ, binding.nh2occa, getString(R.string.nh2occ))) {
             return false;
         }
 
-        if (!validatorClass.EmptyRadioButton(this, binding.nh2occ, binding.nh2occ96, binding.nh2occ96x, getString(R.string.nh2occ))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nh2occ, binding.nh2occ96, binding.nh2occ96x, getString(R.string.nh2occ))) {
             return false;
         }
 
         if (!MainApp.IsResp) {
-            if (!validatorClass.EmptyRadioButton(this, binding.nh210, binding.nh210a, getString(R.string.nh210))) {
+            if (!ValidatorClass.EmptyRadioButton(this, binding.nh210, binding.nh210a, getString(R.string.nh210))) {
                 return false;
             }
         }
 
         if (Age < 5) {
-            if (!validatorClass.EmptySpinner(this, binding.nh211, getString(R.string.nh211))) {
+            if (!ValidatorClass.EmptySpinner(this, binding.nh211, getString(R.string.nh211))) {
                 return false;
             }
-            return validatorClass.EmptySpinner(this, binding.nh212, getString(R.string.nh212));
+            return ValidatorClass.EmptySpinner(this, binding.nh212, getString(R.string.nh212));
         }
         return true;
     }

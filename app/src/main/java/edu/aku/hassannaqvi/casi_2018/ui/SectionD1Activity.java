@@ -36,8 +36,8 @@ import edu.aku.hassannaqvi.casi_2018.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2018.core.MainApp;
 import edu.aku.hassannaqvi.casi_2018.databinding.ActivitySectionD1Binding;
 import edu.aku.hassannaqvi.casi_2018.other.JSONUtilClass;
-import edu.aku.hassannaqvi.casi_2018.validation.clearClass;
-import edu.aku.hassannaqvi.casi_2018.validation.validatorClass;
+import edu.aku.hassannaqvi.casi_2018.validation.ClearClass;
+import edu.aku.hassannaqvi.casi_2018.validation.ValidatorClass;
 
 public class SectionD1Activity extends Menu2Activity implements TextWatcher, RadioGroup.OnCheckedChangeListener, CompoundButton.OnCheckedChangeListener {
 
@@ -121,46 +121,46 @@ public class SectionD1Activity extends Menu2Activity implements TextWatcher, Rad
                         case 1: // MWRA
 
 //                            binding.fldGrpbcgScar.setVisibility(View.GONE);
-                            clearClass.ClearAllFields(binding.fldGrpbcgScar, false);
+                            ClearClass.ClearAllFields(binding.fldGrpbcgScar, false);
 
 //                            binding.fldGrpgoiter.setVisibility(View.VISIBLE);
-                            clearClass.ClearAllFields(binding.fldGrpgoiter, true);
+                            ClearClass.ClearAllFields(binding.fldGrpgoiter, true);
 
 //                            binding.fldGrpca.setVisibility(View.VISIBLE);
-                            clearClass.ClearAllFields(binding.fldGrpca, true);
+                            ClearClass.ClearAllFields(binding.fldGrpca, true);
 
 //                            binding.fldGrpode.setVisibility(View.GONE);
-                            clearClass.ClearAllFields(binding.fldGrpode, false);
+                            ClearClass.ClearAllFields(binding.fldGrpode, false);
                             break;
 
                         case 2: // U5
 
 //                            binding.fldGrpbcgScar.setVisibility(View.VISIBLE);
-                            clearClass.ClearAllFields(binding.fldGrpbcgScar, true);
+                            ClearClass.ClearAllFields(binding.fldGrpbcgScar, true);
 
 //                            binding.fldGrpgoiter.setVisibility(View.VISIBLE);
-                            clearClass.ClearAllFields(binding.fldGrpgoiter, true);
+                            ClearClass.ClearAllFields(binding.fldGrpgoiter, true);
 
 //                            binding.fldGrpca.setVisibility(View.VISIBLE);
-                            clearClass.ClearAllFields(binding.fldGrpca, true);
+                            ClearClass.ClearAllFields(binding.fldGrpca, true);
 
 //                            binding.fldGrpode.setVisibility(View.VISIBLE);
-                            clearClass.ClearAllFields(binding.fldGrpode, true);
+                            ClearClass.ClearAllFields(binding.fldGrpode, true);
                             break;
 
                         case 3: // Adolescent
 
 //                            binding.fldGrpbcgScar.setVisibility(View.GONE);
-                            clearClass.ClearAllFields(binding.fldGrpbcgScar, false);
+                            ClearClass.ClearAllFields(binding.fldGrpbcgScar, false);
 
 //                            binding.fldGrpgoiter.setVisibility(View.VISIBLE);
-                            clearClass.ClearAllFields(binding.fldGrpgoiter, true);
+                            ClearClass.ClearAllFields(binding.fldGrpgoiter, true);
 
 //                            binding.fldGrpca.setVisibility(View.VISIBLE);
-                            clearClass.ClearAllFields(binding.fldGrpca, true);
+                            ClearClass.ClearAllFields(binding.fldGrpca, true);
 
 //                            binding.fldGrpode.setVisibility(View.GONE);
-                            clearClass.ClearAllFields(binding.fldGrpode, false);
+                            ClearClass.ClearAllFields(binding.fldGrpode, false);
                             break;
                     }
                 }
@@ -548,16 +548,16 @@ public class SectionD1Activity extends Menu2Activity implements TextWatcher, Rad
 
         if (endflag) {
 
-            return validatorClass.EmptySpinner(this, binding.nd101, getString(R.string.nd101sno));
+            return ValidatorClass.EmptySpinner(this, binding.nd101, getString(R.string.nd101sno));
         } else {
 
 
-            if (!validatorClass.EmptySpinner(this, binding.nd101, getString(R.string.nd101sno))) {
+            if (!ValidatorClass.EmptySpinner(this, binding.nd101, getString(R.string.nd101sno))) {
                 return false;
             }
 
             /*Add ranges here.. 3 types of*/
-            if (!validatorClass.EmptyTextBox(this, binding.nd1w, getString(R.string.nd1w))) {
+            if (!ValidatorClass.EmptyTextBox(this, binding.nd1w, getString(R.string.nd1w))) {
                 return false;
             }
 
@@ -570,7 +570,7 @@ public class SectionD1Activity extends Menu2Activity implements TextWatcher, Rad
                 binding.nd1w.setError(null);
             }
 
-            if (!validatorClass.EmptyTextBox(this, binding.nd1w1, getString(R.string.nd1w))) {
+            if (!ValidatorClass.EmptyTextBox(this, binding.nd1w1, getString(R.string.nd1w))) {
                 return false;
             }
 
@@ -584,11 +584,11 @@ public class SectionD1Activity extends Menu2Activity implements TextWatcher, Rad
             }
 
 
-            if (!validatorClass.RangeTextBox(this, binding.nd1w, MinWeight(slc_type), MaxWeight(slc_type), getString(R.string.nd1w), " weight")) {
+            if (!ValidatorClass.RangeTextBox(this, binding.nd1w, MinWeight(slc_type), MaxWeight(slc_type), getString(R.string.nd1w), " weight")) {
                 return false;
             }
 
-            if (!validatorClass.EmptyTextBox(this, binding.nd1h, getString(R.string.nd1h))) {
+            if (!ValidatorClass.EmptyTextBox(this, binding.nd1h, getString(R.string.nd1h))) {
                 return false;
             }
 
@@ -602,11 +602,11 @@ public class SectionD1Activity extends Menu2Activity implements TextWatcher, Rad
             }
 
 
-            if (!validatorClass.RangeTextBox(this, binding.nd1h, MinHeight(slc_type), MaxHeight(slc_type), getString(R.string.nd1h), " height")) {
+            if (!ValidatorClass.RangeTextBox(this, binding.nd1h, MinHeight(slc_type), MaxHeight(slc_type), getString(R.string.nd1h), " height")) {
                 return false;
             }
 
-            if (!validatorClass.EmptyTextBox(this, binding.nd1muac, getString(R.string.nd1muac))) {
+            if (!ValidatorClass.EmptyTextBox(this, binding.nd1muac, getString(R.string.nd1muac))) {
                 return false;
             }
 
@@ -620,27 +620,27 @@ public class SectionD1Activity extends Menu2Activity implements TextWatcher, Rad
             }
 
 
-            if (!validatorClass.RangeTextBox(this, binding.nd1muac, MinMAUC(slc_type), MaxMAUC(slc_type), getString(R.string.nd1muac), " MAUC")) {
+            if (!ValidatorClass.RangeTextBox(this, binding.nd1muac, MinMAUC(slc_type), MaxMAUC(slc_type), getString(R.string.nd1muac), " MAUC")) {
                 return false;
             }
             /*end*/
 
 
             if (slc_type == 2) {
-                if (!validatorClass.EmptyRadioButton(this, binding.nd1bcgscar, binding.nd1bcgscara, getString(R.string.nd1bcgscar))) {
+                if (!ValidatorClass.EmptyRadioButton(this, binding.nd1bcgscar, binding.nd1bcgscara, getString(R.string.nd1bcgscar))) {
                     return false;
                 }
             }
-            if (!validatorClass.EmptyRadioButton(this, binding.nd1g, binding.nd1ga, getString(R.string.nd1g))) {
+            if (!ValidatorClass.EmptyRadioButton(this, binding.nd1g, binding.nd1ga, getString(R.string.nd1g))) {
                 return false;
             }
 
-            if (!validatorClass.EmptyRadioButton(this, binding.nd1ca, binding.nd1caa, getString(R.string.nd1ca))) {
+            if (!ValidatorClass.EmptyRadioButton(this, binding.nd1ca, binding.nd1caa, getString(R.string.nd1ca))) {
                 return false;
             }
 
             if (slc_type == 2) {
-                return validatorClass.EmptyRadioButton(this, binding.nd1o, binding.nd1oa, getString(R.string.nd1o));
+                return ValidatorClass.EmptyRadioButton(this, binding.nd1o, binding.nd1oa, getString(R.string.nd1o));
             }
         }
 

@@ -13,7 +13,7 @@ import edu.aku.hassannaqvi.casi_2018.contracts.FormsContract;
 import edu.aku.hassannaqvi.casi_2018.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2018.core.MainApp;
 import edu.aku.hassannaqvi.casi_2018.databinding.ActivityAnthroEndingBinding;
-import edu.aku.hassannaqvi.casi_2018.validation.validatorClass;
+import edu.aku.hassannaqvi.casi_2018.validation.ValidatorClass;
 
 public class AnthroEndingActivity extends AppCompatActivity {
 
@@ -135,7 +135,7 @@ public class AnthroEndingActivity extends AppCompatActivity {
         Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
 
 
-        return validatorClass.EmptyRadioButton(this, binding.istatus, binding.istatusa, getString(R.string.istatus));
+        return ValidatorClass.EmptyRadioButton(this, binding.istatus, binding.istatusa, getString(R.string.istatus));
 
 
     }

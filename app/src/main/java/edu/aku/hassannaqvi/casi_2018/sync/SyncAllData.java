@@ -25,7 +25,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.Collection;
 import java.util.List;
 
-import edu.aku.hassannaqvi.casi_2018.Adapters.upload_list_adapter;
+import edu.aku.hassannaqvi.casi_2018.adapters.Upload_list_adapter;
 import edu.aku.hassannaqvi.casi_2018.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2018.other.SyncModel;
 
@@ -35,7 +35,7 @@ import edu.aku.hassannaqvi.casi_2018.other.SyncModel;
 
 public class SyncAllData extends AsyncTask<Void, Integer, String> {
 
-    upload_list_adapter adapter;
+    Upload_list_adapter adapter;
     List<SyncModel> uploadlist;
     int position;
     private String TAG = "";
@@ -60,7 +60,7 @@ public class SyncAllData extends AsyncTask<Void, Integer, String> {
         uploadlist.get(position).settableName(syncClass);
     }
 
-    public SyncAllData(Context context, String syncClass, String updateSyncClass, Class contractClass, String url, Collection dbData, View syncStatus, int position, upload_list_adapter adapter, List<SyncModel> uploadlist) {
+    public SyncAllData(Context context, String syncClass, String updateSyncClass, Class contractClass, String url, Collection dbData, View syncStatus, int position, Upload_list_adapter adapter, List<SyncModel> uploadlist) {
         mContext = context;
         this.syncClass = syncClass;
         this.updateSyncClass = updateSyncClass;

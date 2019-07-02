@@ -38,7 +38,7 @@ import edu.aku.hassannaqvi.casi_2018.core.MainApp;
 import edu.aku.hassannaqvi.casi_2018.databinding.ActivitySectionB1Binding;
 import edu.aku.hassannaqvi.casi_2018.other.DateUtils;
 import edu.aku.hassannaqvi.casi_2018.other.JSONUtilClass;
-import edu.aku.hassannaqvi.casi_2018.validation.validatorClass;
+import edu.aku.hassannaqvi.casi_2018.validation.ValidatorClass;
 
 public class SectionB1Activity extends AddMember_MenuActivity implements TextWatcher, RadioGroup.OnCheckedChangeListener {
 
@@ -1552,37 +1552,37 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
 
         if (endflag) {
             if (!editWRAFlag) {
-                return validatorClass.EmptySpinner(this, bi.nb101, getString(R.string.nb101));
+                return ValidatorClass.EmptySpinner(this, bi.nb101, getString(R.string.nb101));
             }
         } else {
 
             if (!editWRAFlag) {
-                if (!validatorClass.EmptySpinner(this, bi.nb101, getString(R.string.nb101))) {
+                if (!ValidatorClass.EmptySpinner(this, bi.nb101, getString(R.string.nb101))) {
                     return false;
                 }
             }
 
-            if (!validatorClass.EmptyRadioButton(this, bi.na11801, bi.na11801b, getString(R.string.na11801))) {
+            if (!ValidatorClass.EmptyRadioButton(this, bi.na11801, bi.na11801b, getString(R.string.na11801))) {
                 return false;
             }
 
             if (bi.na11801a.isChecked()) {
 
-                if (!validatorClass.EmptyTextBox(this, bi.nw201days, getString(R.string.day))) {
+                if (!ValidatorClass.EmptyTextBox(this, bi.nw201days, getString(R.string.day))) {
                     return false;
                 }
-                if (!validatorClass.RangeTextBox(this, bi.nw201days, 1, 31, 98, "Range 1-31 or 98", getString(R.string.day))) {
-                    return false;
-                }
-
-                if (!validatorClass.EmptyTextBox(this, bi.nw201months, getString(R.string.months))) {
-                    return false;
-                }
-                if (!validatorClass.RangeTextBox(this, bi.nw201months, 1, 12, 98, "Range 1-12 or 98", getString(R.string.months))) {
+                if (!ValidatorClass.RangeTextBox(this, bi.nw201days, 1, 31, 98, "Range 1-31 or 98", getString(R.string.day))) {
                     return false;
                 }
 
-                if (!validatorClass.EmptyTextBox(this, bi.nw201years, getString(R.string.year2))) {
+                if (!ValidatorClass.EmptyTextBox(this, bi.nw201months, getString(R.string.months))) {
+                    return false;
+                }
+                if (!ValidatorClass.RangeTextBox(this, bi.nw201months, 1, 12, 98, "Range 1-12 or 98", getString(R.string.months))) {
+                    return false;
+                }
+
+                if (!ValidatorClass.EmptyTextBox(this, bi.nw201years, getString(R.string.year2))) {
                     return false;
                 }
 
@@ -1591,31 +1591,31 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                 cal.setTime(date);
                 int year = cal.get(Calendar.YEAR);
 
-                if (!validatorClass.RangeTextBox(this, bi.nw201years, year - 49, year - 15, 9998,
+                if (!ValidatorClass.RangeTextBox(this, bi.nw201years, year - 49, year - 15, 9998,
                         "Range " + (year - 49) + " - " + (year - 15), getString(R.string.year2))) {
                     return false;
                 }
 
-                if (!validatorClass.EmptyTextBox(this, bi.nw202, getString(R.string.nw202))) {
+                if (!ValidatorClass.EmptyTextBox(this, bi.nw202, getString(R.string.nw202))) {
                     return false;
                 }
-                if (!validatorClass.RangeTextBox(this, bi.nw202, 15, 49, "Range 15-49", getString(R.string.year))) {
+                if (!ValidatorClass.RangeTextBox(this, bi.nw202, 15, 49, "Range 15-49", getString(R.string.year))) {
                     return false;
                 }
 
 
-                if (!validatorClass.EmptyRadioButton(this, bi.nw203, bi.nw203b, getString(R.string.nw203))) {
+                if (!ValidatorClass.EmptyRadioButton(this, bi.nw203, bi.nw203b, getString(R.string.nw203))) {
                     return false;
                 }
 
                 if (bi.nw203a.isChecked()) {
 
-                    if (!validatorClass.EmptyRadioButton(this, bi.nw204, bi.nw204a, getString(R.string.nw204))) {
+                    if (!ValidatorClass.EmptyRadioButton(this, bi.nw204, bi.nw204a, getString(R.string.nw204))) {
                         return false;
                     }
 
                     if (bi.nw204b.isChecked()) {
-                        if (!validatorClass.EmptyRadioButton(this, bi.nw205, bi.nw205a, getString(R.string.nw205))) {
+                        if (!ValidatorClass.EmptyRadioButton(this, bi.nw205, bi.nw205a, getString(R.string.nw205))) {
                             return false;
                         }
                     }
@@ -1623,38 +1623,38 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                     if (bi.nw204a.isChecked() || bi.nw205a.isChecked()) {
 
                         //if (bi.nw204a.isChecked() || bi.nw205a.isChecked()) {
-                        if (!validatorClass.EmptyTextBox(this, bi.nw206, getString(R.string.nw206))) {
+                        if (!ValidatorClass.EmptyTextBox(this, bi.nw206, getString(R.string.nw206))) {
                             return false;
                         }
 
-                        if (!validatorClass.RangeTextBox(this, bi.nw206, 10, Integer.valueOf(bi.nw202.getText().toString()), getString(R.string.nw206), " years")) {
+                        if (!ValidatorClass.RangeTextBox(this, bi.nw206, 10, Integer.valueOf(bi.nw202.getText().toString()), getString(R.string.nw206), " years")) {
                             return false;
                         }
 
-                        if (!validatorClass.EmptyRadioButton(this, bi.nw207, bi.nw207a, getString(R.string.nw207))) {
+                        if (!ValidatorClass.EmptyRadioButton(this, bi.nw207, bi.nw207a, getString(R.string.nw207))) {
                             return false;
                         }
 
                         if (bi.nw207a.isChecked()) {
 
-                            if (!validatorClass.EmptyRadioButton(this, bi.nw208, bi.nw208a, getString(R.string.nw208))) {
+                            if (!ValidatorClass.EmptyRadioButton(this, bi.nw208, bi.nw208a, getString(R.string.nw208))) {
                                 return false;
                             }
 
                             if (bi.nw208a.isChecked()) {
 
-                                if (!validatorClass.EmptyRadioButton(this, bi.nw209, bi.nw209a, getString(R.string.nw210))) {
+                                if (!ValidatorClass.EmptyRadioButton(this, bi.nw209, bi.nw209a, getString(R.string.nw210))) {
                                     return false;
                                 }
 
                                 if (bi.nw209a.isChecked()) {
 
                                     if (!bi.nw21098a.isChecked() && !bi.nw21099a.isChecked() && !bi.nw21003a.isChecked()) {
-                                        if (!validatorClass.EmptyRadioButton(this, bi.nw21001, bi.nw21001a, getString(R.string.nw21001))) {
+                                        if (!ValidatorClass.EmptyRadioButton(this, bi.nw21001, bi.nw21001a, getString(R.string.nw21001))) {
                                             return false;
                                         }
 
-                                        if (!validatorClass.EmptyRadioButton(this, bi.nw21002, bi.nw21002a, getString(R.string.nw21002))) {
+                                        if (!ValidatorClass.EmptyRadioButton(this, bi.nw21002, bi.nw21002a, getString(R.string.nw21002))) {
                                             return false;
                                         }
 
@@ -1663,48 +1663,48 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
 
                             }
 
-                            if (!validatorClass.EmptyTextBox(this, bi.nw211, getString(R.string.nw211))) {
+                            if (!ValidatorClass.EmptyTextBox(this, bi.nw211, getString(R.string.nw211))) {
                                 return false;
                             }
 
-                            if (!validatorClass.RangeTextBox(this, bi.nw211, 1, 20, getString(R.string.nw211), " pregnancies")) {
+                            if (!ValidatorClass.RangeTextBox(this, bi.nw211, 1, 20, getString(R.string.nw211), " pregnancies")) {
                                 return false;
                             }
 
-                            if (!validatorClass.EmptyTextBox(this, bi.nw212, getString(R.string.nw212))) {
+                            if (!ValidatorClass.EmptyTextBox(this, bi.nw212, getString(R.string.nw212))) {
                                 return false;
                             }
 
 
                             if (bi.nw208a.isChecked()) {
-                                if (!validatorClass.RangeTextBox(this, bi.nw212, 0, (Integer.valueOf(bi.nw211.getText().toString()) - 1), getString(R.string.nw212), " Deliveries")) {
+                                if (!ValidatorClass.RangeTextBox(this, bi.nw212, 0, (Integer.valueOf(bi.nw211.getText().toString()) - 1), getString(R.string.nw212), " Deliveries")) {
                                     return false;
                                 }
                             } else {
-                                if (!validatorClass.RangeTextBox(this, bi.nw212, 0, Integer.valueOf(bi.nw211.getText().toString()), getString(R.string.nw212), " Deliveries")) {
+                                if (!ValidatorClass.RangeTextBox(this, bi.nw212, 0, Integer.valueOf(bi.nw211.getText().toString()), getString(R.string.nw212), " Deliveries")) {
                                     return false;
                                 }
                             }
 
                             if (!bi.nw212.getText().toString().equals("0")) {
-                                if (!validatorClass.EmptyTextBox(this, bi.nw213, getString(R.string.nw213))) {
+                                if (!ValidatorClass.EmptyTextBox(this, bi.nw213, getString(R.string.nw213))) {
                                     return false;
                                 }
 
-                                if (!validatorClass.EmptyTextBox(this, bi.nw213, getString(R.string.nw213))) {
+                                if (!ValidatorClass.EmptyTextBox(this, bi.nw213, getString(R.string.nw213))) {
                                     return false;
                                 }
 
-                                if (!validatorClass.RangeTextBox(this, bi.nw213, Integer.valueOf(bi.nw206.getText().toString()), Integer.valueOf(bi.nw202.getText().toString()), getString(R.string.nw213), " years")) {
+                                if (!ValidatorClass.RangeTextBox(this, bi.nw213, Integer.valueOf(bi.nw206.getText().toString()), Integer.valueOf(bi.nw202.getText().toString()), getString(R.string.nw213), " years")) {
                                     return false;
                                 }
 
                             }
-                            if (!validatorClass.EmptyTextBox(this, bi.nw214, getString(R.string.nw214))) {
+                            if (!ValidatorClass.EmptyTextBox(this, bi.nw214, getString(R.string.nw214))) {
                                 return false;
                             }
 
-                            if (!validatorClass.RangeTextBox(this, bi.nw214, 0, Integer.valueOf(bi.nw211.getText().toString()), getString(R.string.nw211), " Deliveries")) {
+                            if (!ValidatorClass.RangeTextBox(this, bi.nw214, 0, Integer.valueOf(bi.nw211.getText().toString()), getString(R.string.nw211), " Deliveries")) {
                                 return false;
                             }
 
@@ -1713,10 +1713,10 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                                 if (Integer.valueOf(bi.nw214.getText().toString()) == 1 && bi.nw208a.isChecked()) {
 
                                 } else {
-                                    if (!validatorClass.EmptyTextBox(this, bi.nw215, getString(R.string.nw215))) {
+                                    if (!ValidatorClass.EmptyTextBox(this, bi.nw215, getString(R.string.nw215))) {
                                         return false;
                                     }
-                                    return validatorClass.RangeTextBox(this, bi.nw215, 0, Integer.valueOf(bi.nw212.getText().toString()), getString(R.string.nw212), " Deliveries");
+                                    return ValidatorClass.RangeTextBox(this, bi.nw215, 0, Integer.valueOf(bi.nw212.getText().toString()), getString(R.string.nw212), " Deliveries");
                                 }
 
                             } else {

@@ -1,4 +1,4 @@
-package edu.aku.hassannaqvi.casi_2018.Adapters;
+package edu.aku.hassannaqvi.casi_2018.adapters;
 
 import android.databinding.DataBindingUtil;
 import android.graphics.Color;
@@ -14,11 +14,11 @@ import edu.aku.hassannaqvi.casi_2018.R;
 import edu.aku.hassannaqvi.casi_2018.databinding.SyncListAdapterBinding;
 import edu.aku.hassannaqvi.casi_2018.other.SyncModel;
 
-public class syncListAdapter extends RecyclerView.Adapter<syncListAdapter.SyncListViewHolder> {
+public class SyncListAdapter extends RecyclerView.Adapter<SyncListAdapter.SyncListViewHolder> {
     List<SyncModel> synclist;
     SyncListViewHolder holder;
 
-    public syncListAdapter(List<SyncModel> synclist) {
+    public SyncListAdapter(List<SyncModel> synclist) {
         this.synclist = synclist;
     }
 

@@ -23,7 +23,7 @@ import edu.aku.hassannaqvi.casi_2018.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2018.core.MainApp;
 import edu.aku.hassannaqvi.casi_2018.databinding.ActivitySectionC5Binding;
 import edu.aku.hassannaqvi.casi_2018.other.JSONUtilClass;
-import edu.aku.hassannaqvi.casi_2018.validation.validatorClass;
+import edu.aku.hassannaqvi.casi_2018.validation.ValidatorClass;
 
 public class SectionC5Activity extends Menu2Activity implements TextWatcher, RadioGroup.OnCheckedChangeListener {
 
@@ -195,22 +195,22 @@ public class SectionC5Activity extends Menu2Activity implements TextWatcher, Rad
     private boolean formValidation() {
         //Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
 
-        if (!validatorClass.EmptyRadioButton(this, bi.nc501, bi.nc501a, getString(R.string.nc501))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.nc501, bi.nc501a, getString(R.string.nc501))) {
             return false;
         }
-        if (!validatorClass.EmptyRadioButton(this, bi.nc502, bi.nc502a, getString(R.string.nc502))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.nc502, bi.nc502a, getString(R.string.nc502))) {
             return false;
         }
-        if (!validatorClass.EmptyRadioButton(this, bi.nc503, bi.nc503a, getString(R.string.nc503))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.nc503, bi.nc503a, getString(R.string.nc503))) {
             return false;
         }
-        if (!validatorClass.EmptyRadioButton(this, bi.nc504, bi.nc504a, getString(R.string.nc504))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.nc504, bi.nc504a, getString(R.string.nc504))) {
             return false;
         }
-        if (!validatorClass.EmptyRadioButton(this, bi.nc505, bi.nc505a, getString(R.string.nc505))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.nc505, bi.nc505a, getString(R.string.nc505))) {
             return false;
         }
-        return validatorClass.EmptyRadioButton(this, bi.nc506, bi.nc506a, getString(R.string.nc506));
+        return ValidatorClass.EmptyRadioButton(this, bi.nc506, bi.nc506a, getString(R.string.nc506));
 
     }
 

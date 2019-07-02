@@ -28,8 +28,8 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 
-import edu.aku.hassannaqvi.casi_2018.Adapters.syncListAdapter;
-import edu.aku.hassannaqvi.casi_2018.Adapters.upload_list_adapter;
+import edu.aku.hassannaqvi.casi_2018.adapters.SyncListAdapter;
+import edu.aku.hassannaqvi.casi_2018.adapters.Upload_list_adapter;
 import edu.aku.hassannaqvi.casi_2018.R;
 import edu.aku.hassannaqvi.casi_2018.contracts.ChildContract;
 import edu.aku.hassannaqvi.casi_2018.contracts.DeceasedContract;
@@ -56,8 +56,8 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
     SharedPreferences sharedPref;
     String DirectoryName;
     DatabaseHelper db;
-    syncListAdapter syncListAdapter;
-    upload_list_adapter uploadListAdapter;
+    SyncListAdapter syncListAdapter;
+    Upload_list_adapter uploadListAdapter;
     ActivitySyncBinding bi;
     SyncModel model;
     SyncModel uploadmodel;
@@ -137,7 +137,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
     }
 
     void setAdapter() {
-        syncListAdapter = new syncListAdapter(list);
+        syncListAdapter = new SyncListAdapter(list);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
         bi.rvSyncList.setLayoutManager(mLayoutManager);
         bi.rvSyncList.setItemAnimator(new DefaultItemAnimator());
@@ -151,7 +151,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
     }
 
     void setUploadAdapter() {
-        uploadListAdapter = new upload_list_adapter(uploadlist);
+        uploadListAdapter = new Upload_list_adapter(uploadlist);
         RecyclerView.LayoutManager mLayoutManager2 = new LinearLayoutManager(getApplicationContext());
         bi.rvUploadList.setLayoutManager(mLayoutManager2);
         bi.rvUploadList.setItemAnimator(new DefaultItemAnimator());

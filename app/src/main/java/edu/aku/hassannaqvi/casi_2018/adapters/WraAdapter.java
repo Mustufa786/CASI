@@ -1,4 +1,4 @@
-package edu.aku.hassannaqvi.casi_2018.Adapters;
+package edu.aku.hassannaqvi.casi_2018.adapters;
 
 import android.content.Context;
 import android.databinding.DataBindingUtil;

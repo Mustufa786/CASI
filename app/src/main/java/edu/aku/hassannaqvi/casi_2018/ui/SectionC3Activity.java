@@ -21,8 +21,8 @@ import edu.aku.hassannaqvi.casi_2018.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2018.core.MainApp;
 import edu.aku.hassannaqvi.casi_2018.databinding.ActivitySectionC3Binding;
 import edu.aku.hassannaqvi.casi_2018.other.JSONUtilClass;
-import edu.aku.hassannaqvi.casi_2018.validation.clearClass;
-import edu.aku.hassannaqvi.casi_2018.validation.validatorClass;
+import edu.aku.hassannaqvi.casi_2018.validation.ClearClass;
+import edu.aku.hassannaqvi.casi_2018.validation.ValidatorClass;
 
 public class SectionC3Activity extends Menu2Activity implements RadioGroup.OnCheckedChangeListener {
 
@@ -66,11 +66,11 @@ public class SectionC3Activity extends Menu2Activity implements RadioGroup.OnChe
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 formValidation();
                 if (checkedId == R.id.nc302b) {
-                    clearClass.ClearAllFields(binding.fldGrpnc303parent, false);
+                    ClearClass.ClearAllFields(binding.fldGrpnc303parent, false);
 
 
                 } else {
-                    clearClass.ClearAllFields(binding.fldGrpnc303parent, true);
+                    ClearClass.ClearAllFields(binding.fldGrpnc303parent, true);
 
                 }
 
@@ -127,9 +127,9 @@ public class SectionC3Activity extends Menu2Activity implements RadioGroup.OnChe
                 formValidation();
                 if (binding.nc305b.isChecked() || binding.nc30598.isChecked()) {
 //                    binding.nc306.clearCheck();
-                    clearClass.ClearAllFields(binding.fldGrpnc305, false);
+                    ClearClass.ClearAllFields(binding.fldGrpnc305, false);
                 } else {
-                    clearClass.ClearAllFields(binding.fldGrpnc305, true);
+                    ClearClass.ClearAllFields(binding.fldGrpnc305, true);
                 }
             }
         });
@@ -436,153 +436,153 @@ public class SectionC3Activity extends Menu2Activity implements RadioGroup.OnChe
         //Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
 
 //       nc302
-        if (!validatorClass.EmptyRadioButton(this, binding.nc302, binding.nc302b, getString(R.string.nc302))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nc302, binding.nc302b, getString(R.string.nc302))) {
             return false;
         }
         if (binding.nc302a.isChecked()) {
 
 //        nc303
-            if (!validatorClass.EmptyRadioButton(this, binding.nc303, binding.nc303d, getString(R.string.nc303))) {
+            if (!ValidatorClass.EmptyRadioButton(this, binding.nc303, binding.nc303d, getString(R.string.nc303))) {
                 return false;
             }
         }
 
 //        nc3bcg
-        if (!validatorClass.EmptyRadioButton(this, binding.nc3bcg, binding.nc3bcga, getString(R.string.nc3bcg) + getString(R.string.nc3response))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3bcg, binding.nc3bcga, getString(R.string.nc3bcg) + getString(R.string.nc3response))) {
             return false;
         }
-        if (!validatorClass.EmptyRadioButton(this, binding.nc3bcgsrc, binding.nc3bcgsrca, getString(R.string.nc3bcg) + getString(R.string.nc3src))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3bcgsrc, binding.nc3bcgsrca, getString(R.string.nc3bcg) + getString(R.string.nc3src))) {
             return false;
         }
 
 
 //        nc3opv0
-        if (!validatorClass.EmptyRadioButton(this, binding.nc3opv0, binding.nc3opv0a, getString(R.string.nc3opv0) + getString(R.string.nc3response))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3opv0, binding.nc3opv0a, getString(R.string.nc3opv0) + getString(R.string.nc3response))) {
             return false;
         }
-        if (!validatorClass.EmptyRadioButton(this, binding.nc3opv0src, binding.nc3opv0srca, getString(R.string.nc3opv0) + getString(R.string.nc3src))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3opv0src, binding.nc3opv0srca, getString(R.string.nc3opv0) + getString(R.string.nc3src))) {
             return false;
         }
 
 
 //        nc3opv1
-        if (!validatorClass.EmptyRadioButton(this, binding.nc3opv1, binding.nc3opv1a, getString(R.string.nc3opv1) + getString(R.string.nc3response))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3opv1, binding.nc3opv1a, getString(R.string.nc3opv1) + getString(R.string.nc3response))) {
             return false;
         }
-        if (!validatorClass.EmptyRadioButton(this, binding.nc3opv1src, binding.nc3opv1srca, getString(R.string.nc3opv1) + getString(R.string.nc3src))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3opv1src, binding.nc3opv1srca, getString(R.string.nc3opv1) + getString(R.string.nc3src))) {
             return false;
         }
 
 
 //        nc3p1
-        if (!validatorClass.EmptyRadioButton(this, binding.nc3p1, binding.nc3p1a, getString(R.string.nc3p1) + getString(R.string.nc3response))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3p1, binding.nc3p1a, getString(R.string.nc3p1) + getString(R.string.nc3response))) {
             return false;
         }
 
-        if (!validatorClass.EmptyRadioButton(this, binding.nc3p1src, binding.nc3p1srca, getString(R.string.nc3p1) + getString(R.string.nc3src))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3p1src, binding.nc3p1srca, getString(R.string.nc3p1) + getString(R.string.nc3src))) {
             return false;
         }
 
 
 //        nc3pcv1
-        if (!validatorClass.EmptyRadioButton(this, binding.nc3pcv1, binding.nc3pcv1a, getString(R.string.nc3pcv1) + getString(R.string.nc3response))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3pcv1, binding.nc3pcv1a, getString(R.string.nc3pcv1) + getString(R.string.nc3response))) {
             return false;
         }
-        if (!validatorClass.EmptyRadioButton(this, binding.nc3pcv1src, binding.nc3pcv1srca, getString(R.string.nc3pcv1) + getString(R.string.nc3src))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3pcv1src, binding.nc3pcv1srca, getString(R.string.nc3pcv1) + getString(R.string.nc3src))) {
             return false;
         }
 
 
 //        nc3opv2
-        if (!validatorClass.EmptyRadioButton(this, binding.nc3opv2, binding.nc3opv2a, getString(R.string.nc3opv2) + getString(R.string.nc3response))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3opv2, binding.nc3opv2a, getString(R.string.nc3opv2) + getString(R.string.nc3response))) {
             return false;
         }
 
-        if (!validatorClass.EmptyRadioButton(this, binding.nc3opv2src, binding.nc3opv2srca, getString(R.string.nc3opv2) + getString(R.string.nc3src))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3opv2src, binding.nc3opv2srca, getString(R.string.nc3opv2) + getString(R.string.nc3src))) {
             return false;
         }
 
 
 //        nc3p2
-        if (!validatorClass.EmptyRadioButton(this, binding.nc3p2, binding.nc3p2a, getString(R.string.nc3p2) + getString(R.string.nc3response))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3p2, binding.nc3p2a, getString(R.string.nc3p2) + getString(R.string.nc3response))) {
             return false;
         }
-        if (!validatorClass.EmptyRadioButton(this, binding.nc3p2src, binding.nc3p2srca, getString(R.string.nc3p2) + getString(R.string.nc3src))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3p2src, binding.nc3p2srca, getString(R.string.nc3p2) + getString(R.string.nc3src))) {
             return false;
         }
 
 
 //        nc3pcv2
-        if (!validatorClass.EmptyRadioButton(this, binding.nc3pcv2, binding.nc3pcv2a, getString(R.string.nc3pcv2) + getString(R.string.nc3response))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3pcv2, binding.nc3pcv2a, getString(R.string.nc3pcv2) + getString(R.string.nc3response))) {
             return false;
         }
-        if (!validatorClass.EmptyRadioButton(this, binding.nc3pcv2src, binding.nc3pcv2srca, getString(R.string.nc3pcv2) + getString(R.string.nc3src))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3pcv2src, binding.nc3pcv2srca, getString(R.string.nc3pcv2) + getString(R.string.nc3src))) {
             return false;
         }
 
 
 //        nc3opv3
-        if (!validatorClass.EmptyRadioButton(this, binding.nc3opv3, binding.nc3opv3a, getString(R.string.nc3opv3) + getString(R.string.nc3response))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3opv3, binding.nc3opv3a, getString(R.string.nc3opv3) + getString(R.string.nc3response))) {
             return false;
         }
-        if (!validatorClass.EmptyRadioButton(this, binding.nc3opv3src, binding.nc3opv3srca, getString(R.string.nc3opv3) + getString(R.string.nc3src))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3opv3src, binding.nc3opv3srca, getString(R.string.nc3opv3) + getString(R.string.nc3src))) {
             return false;
         }
 
 
 //        nc3p3
-        if (!validatorClass.EmptyRadioButton(this, binding.nc3p3, binding.nc3p3a, getString(R.string.nc3p3) + getString(R.string.nc3response))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3p3, binding.nc3p3a, getString(R.string.nc3p3) + getString(R.string.nc3response))) {
             return false;
         }
-        if (!validatorClass.EmptyRadioButton(this, binding.nc3p3src, binding.nc3p3srca, getString(R.string.nc3p3) + getString(R.string.nc3src))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3p3src, binding.nc3p3srca, getString(R.string.nc3p3) + getString(R.string.nc3src))) {
             return false;
         }
 
 
 //        nc3pcv3
-        if (!validatorClass.EmptyRadioButton(this, binding.nc3pcv3, binding.nc3pcv3a, getString(R.string.nc3pcv3) + getString(R.string.nc3response))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3pcv3, binding.nc3pcv3a, getString(R.string.nc3pcv3) + getString(R.string.nc3response))) {
             return false;
         }
-        if (!validatorClass.EmptyRadioButton(this, binding.nc3pcv3src, binding.nc3pcv3srca, getString(R.string.nc3pcv3) + getString(R.string.nc3src))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3pcv3src, binding.nc3pcv3srca, getString(R.string.nc3pcv3) + getString(R.string.nc3src))) {
             return false;
         }
 
 
 //        nc3ipv3
-        if (!validatorClass.EmptyRadioButton(this, binding.nc3ipv, binding.nc3ipva, getString(R.string.nc3ipv) + getString(R.string.nc3response))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3ipv, binding.nc3ipva, getString(R.string.nc3ipv) + getString(R.string.nc3response))) {
             return false;
         }
-        if (!validatorClass.EmptyRadioButton(this, binding.nc3ipvsrc, binding.nc3ipvsrca, getString(R.string.nc3ipv) + getString(R.string.nc3src))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3ipvsrc, binding.nc3ipvsrca, getString(R.string.nc3ipv) + getString(R.string.nc3src))) {
             return false;
         }
 
 
 //        nc3m1dt
-        if (!validatorClass.EmptyRadioButton(this, binding.nc3m1, binding.nc3m1a, getString(R.string.nc3m1) + getString(R.string.nc3response))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3m1, binding.nc3m1a, getString(R.string.nc3m1) + getString(R.string.nc3response))) {
             return false;
         }
-        if (!validatorClass.EmptyRadioButton(this, binding.nc3m1src, binding.nc3m1srca, getString(R.string.nc3m1) + getString(R.string.nc3src))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3m1src, binding.nc3m1srca, getString(R.string.nc3m1) + getString(R.string.nc3src))) {
             return false;
         }
 
 
 //        nc3m2dt
-        if (!validatorClass.EmptyRadioButton(this, binding.nc3m2, binding.nc3m2a, getString(R.string.nc3m2) + getString(R.string.nc3response))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3m2, binding.nc3m2a, getString(R.string.nc3m2) + getString(R.string.nc3response))) {
             return false;
         }
-        if (!validatorClass.EmptyRadioButton(this, binding.nc3m2src, binding.nc3m2srca, getString(R.string.nc3m2) + getString(R.string.nc3src))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3m2src, binding.nc3m2srca, getString(R.string.nc3m2) + getString(R.string.nc3src))) {
             return false;
         }
 
 
 //        nc305
-        if (!validatorClass.EmptyRadioButton(this, binding.nc305, binding.nc305a, getString(R.string.nc305))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nc305, binding.nc305a, getString(R.string.nc305))) {
             return false;
         }
 
         if (binding.nc305a.isChecked()) {
 //        nc306
-            return validatorClass.EmptyRadioButton(this, binding.nc306, binding.nc306a, getString(R.string.nc306));
+            return ValidatorClass.EmptyRadioButton(this, binding.nc306, binding.nc306a, getString(R.string.nc306));
         }
         return true;
     }

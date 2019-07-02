@@ -1,4 +1,4 @@
-package edu.aku.hassannaqvi.casi_2018.Adapters;
+package edu.aku.hassannaqvi.casi_2018.adapters;
 
 import android.databinding.DataBindingUtil;
 import android.support.annotation.NonNull;

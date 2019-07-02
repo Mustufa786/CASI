@@ -22,8 +22,8 @@ import edu.aku.hassannaqvi.casi_2018.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2018.core.MainApp;
 import edu.aku.hassannaqvi.casi_2018.databinding.ActivitySectionB5Binding;
 import edu.aku.hassannaqvi.casi_2018.other.JSONUtilClass;
-import edu.aku.hassannaqvi.casi_2018.validation.clearClass;
-import edu.aku.hassannaqvi.casi_2018.validation.validatorClass;
+import edu.aku.hassannaqvi.casi_2018.validation.ClearClass;
+import edu.aku.hassannaqvi.casi_2018.validation.ValidatorClass;
 
 public class SectionB5Activity extends Menu2Activity implements TextWatcher, RadioGroup.OnCheckedChangeListener {
 
@@ -54,10 +54,10 @@ public class SectionB5Activity extends Menu2Activity implements TextWatcher, Rad
                 ValidateForm();
                 if (i == R.id.nw414b) {
 
-                    clearClass.ClearAllFields(binding.fldGrpnw415, false);
+                    ClearClass.ClearAllFields(binding.fldGrpnw415, false);
 
                 } else {
-                    clearClass.ClearAllFields(binding.fldGrpnw415, true);
+                    ClearClass.ClearAllFields(binding.fldGrpnw415, true);
                 }
             }
         });
@@ -68,9 +68,9 @@ public class SectionB5Activity extends Menu2Activity implements TextWatcher, Rad
                 ValidateForm();
                 if (i == R.id.nw419b) {
 
-                    clearClass.ClearAllFields(binding.fldGrpnw420, false);
+                    ClearClass.ClearAllFields(binding.fldGrpnw420, false);
                 } else {
-                    clearClass.ClearAllFields(binding.fldGrpnw420, true);
+                    ClearClass.ClearAllFields(binding.fldGrpnw420, true);
                 }
             }
         });
@@ -315,30 +315,30 @@ public class SectionB5Activity extends Menu2Activity implements TextWatcher, Rad
 
         //Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
 
-        if (!validatorClass.EmptyRadioButton(this, binding.nw414, binding.nw414a, getString(R.string.nw414))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nw414, binding.nw414a, getString(R.string.nw414))) {
             return false;
         }
 
         if (binding.nw414a.isChecked()) {
-            if (!validatorClass.EmptyCheckBox(this, binding.fldGrpnw415check, binding.nw415a, getString(R.string.nw415))) {
+            if (!ValidatorClass.EmptyCheckBox(this, binding.fldGrpnw415check, binding.nw415a, getString(R.string.nw415))) {
                 return false;
             }
 
-            if (!validatorClass.EmptyCheckBox(this, binding.fldGrpnw415check, binding.nw41596, binding.nw41596x, getString(R.string.nw415) + " - " + getString(R.string.other))) {
+            if (!ValidatorClass.EmptyCheckBox(this, binding.fldGrpnw415check, binding.nw41596, binding.nw41596x, getString(R.string.nw415) + " - " + getString(R.string.other))) {
                 return false;
             }
 
-            if (!validatorClass.EmptyRadioButton(this, binding.nw416, binding.nw416a, getString(R.string.nw416))) {
+            if (!ValidatorClass.EmptyRadioButton(this, binding.nw416, binding.nw416a, getString(R.string.nw416))) {
                 return false;
             }
 
             if (binding.nw416a.isChecked()) {
 
-                if (!validatorClass.EmptyTextBox(this, binding.nw416hr, getString(R.string.nw416a))) {
+                if (!ValidatorClass.EmptyTextBox(this, binding.nw416hr, getString(R.string.nw416a))) {
                     return false;
                 }
 
-                if (!validatorClass.RangeTextBox(this, binding.nw416hr, 1, 23, getString(R.string.nw416a), " hours")) {
+                if (!ValidatorClass.RangeTextBox(this, binding.nw416hr, 1, 23, getString(R.string.nw416a), " hours")) {
                     return false;
                 }
 
@@ -346,11 +346,11 @@ public class SectionB5Activity extends Menu2Activity implements TextWatcher, Rad
 
             if (binding.nw416b.isChecked()) {
 
-                if (!validatorClass.EmptyTextBox(this, binding.nw416d, getString(R.string.nw416b))) {
+                if (!ValidatorClass.EmptyTextBox(this, binding.nw416d, getString(R.string.nw416b))) {
                     return false;
                 }
 
-                if (!validatorClass.RangeTextBox(this, binding.nw416d, 1, 29, getString(R.string.nw416b), " days")) {
+                if (!ValidatorClass.RangeTextBox(this, binding.nw416d, 1, 29, getString(R.string.nw416b), " days")) {
                     return false;
                 }
 
@@ -358,62 +358,62 @@ public class SectionB5Activity extends Menu2Activity implements TextWatcher, Rad
 
             if (binding.nw416c.isChecked()) {
 
-                if (!validatorClass.EmptyTextBox(this, binding.nw416w, getString(R.string.nw416c))) {
+                if (!ValidatorClass.EmptyTextBox(this, binding.nw416w, getString(R.string.nw416c))) {
                     return false;
                 }
 
-                if (!validatorClass.RangeTextBox(this, binding.nw416w, 1, 29, getString(R.string.nw416c), " weeks")) {
+                if (!ValidatorClass.RangeTextBox(this, binding.nw416w, 1, 29, getString(R.string.nw416c), " weeks")) {
                     return false;
                 }
 
             }
 
 
-            if (!validatorClass.EmptyTextBox(this, binding.nw417, getString(R.string.nw417))) {
+            if (!ValidatorClass.EmptyTextBox(this, binding.nw417, getString(R.string.nw417))) {
                 return false;
             }
 
-            if (!validatorClass.RangeTextBox(this, binding.nw417, 1, 12, getString(R.string.nw417), " times")) {
+            if (!ValidatorClass.RangeTextBox(this, binding.nw417, 1, 12, getString(R.string.nw417), " times")) {
                 return false;
             }
 
-            if (!validatorClass.EmptyCheckBox(this, binding.fldGrpnw418check, binding.nw418a, getString(R.string.nw418))) {
+            if (!ValidatorClass.EmptyCheckBox(this, binding.fldGrpnw418check, binding.nw418a, getString(R.string.nw418))) {
                 return false;
             }
 
-            if (!validatorClass.EmptyCheckBox(this, binding.fldGrpnw418check, binding.nw41896, binding.nw41896x, getString(R.string.nw418) + " - " + getString(R.string.other))) {
+            if (!ValidatorClass.EmptyCheckBox(this, binding.fldGrpnw418check, binding.nw41896, binding.nw41896x, getString(R.string.nw418) + " - " + getString(R.string.other))) {
                 return false;
             }
 
         }
 
 
-        if (!validatorClass.EmptyRadioButton(this, binding.nw419, binding.nw419a, getString(R.string.nw419))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.nw419, binding.nw419a, getString(R.string.nw419))) {
             return false;
         }
 
 
         if (binding.nw419a.isChecked()) {
 
-            if (!validatorClass.EmptyCheckBox(this, binding.fldGrpnw420check, binding.nw420a, getString(R.string.nw420))) {
+            if (!ValidatorClass.EmptyCheckBox(this, binding.fldGrpnw420check, binding.nw420a, getString(R.string.nw420))) {
                 return false;
             }
 
-            if (!validatorClass.EmptyCheckBox(this, binding.fldGrpnw420check, binding.nw42096, binding.nw42096x, getString(R.string.nw418) + " - " + getString(R.string.other))) {
+            if (!ValidatorClass.EmptyCheckBox(this, binding.fldGrpnw420check, binding.nw42096, binding.nw42096x, getString(R.string.nw418) + " - " + getString(R.string.other))) {
                 return false;
             }
 
-            if (!validatorClass.EmptyRadioButton(this, binding.nw421, binding.nw421a, getString(R.string.nw421))) {
+            if (!ValidatorClass.EmptyRadioButton(this, binding.nw421, binding.nw421a, getString(R.string.nw421))) {
                 return false;
             }
 
             if (binding.nw421a.isChecked()) {
 
-                if (!validatorClass.EmptyTextBox(this, binding.nw421hr, getString(R.string.nw421a))) {
+                if (!ValidatorClass.EmptyTextBox(this, binding.nw421hr, getString(R.string.nw421a))) {
                     return false;
                 }
 
-                if (!validatorClass.RangeTextBox(this, binding.nw421hr, 1, 23, getString(R.string.nw421a), " hours")) {
+                if (!ValidatorClass.RangeTextBox(this, binding.nw421hr, 1, 23, getString(R.string.nw421a), " hours")) {
                     return false;
                 }
 
@@ -423,11 +423,11 @@ public class SectionB5Activity extends Menu2Activity implements TextWatcher, Rad
 
             if (binding.nw421b.isChecked()) {
 
-                if (!validatorClass.EmptyTextBox(this, binding.nw421d, getString(R.string.nw421b))) {
+                if (!ValidatorClass.EmptyTextBox(this, binding.nw421d, getString(R.string.nw421b))) {
                     return false;
                 }
 
-                if (!validatorClass.RangeTextBox(this, binding.nw421d, 1, 29, getString(R.string.nw421b), " days")) {
+                if (!ValidatorClass.RangeTextBox(this, binding.nw421d, 1, 29, getString(R.string.nw421b), " days")) {
                     return false;
                 }
 
@@ -435,30 +435,30 @@ public class SectionB5Activity extends Menu2Activity implements TextWatcher, Rad
 
             if (binding.nw421c.isChecked()) {
 
-                if (!validatorClass.EmptyTextBox(this, binding.nw421w, getString(R.string.nw421c))) {
+                if (!ValidatorClass.EmptyTextBox(this, binding.nw421w, getString(R.string.nw421c))) {
                     return false;
                 }
 
-                if (!validatorClass.RangeTextBox(this, binding.nw421w, 1, 29, getString(R.string.nw421c), " weeks")) {
+                if (!ValidatorClass.RangeTextBox(this, binding.nw421w, 1, 29, getString(R.string.nw421c), " weeks")) {
                     return false;
                 }
 
             }
 
 
-            if (!validatorClass.EmptyTextBox(this, binding.nw422, getString(R.string.nw422))) {
+            if (!ValidatorClass.EmptyTextBox(this, binding.nw422, getString(R.string.nw422))) {
                 return false;
             }
 
-            if (!validatorClass.RangeTextBox(this, binding.nw422, 1, 12, getString(R.string.nw422), " times")) {
+            if (!ValidatorClass.RangeTextBox(this, binding.nw422, 1, 12, getString(R.string.nw422), " times")) {
                 return false;
             }
 
-            if (!validatorClass.EmptyCheckBox(this, binding.fldGrpnw423check, binding.nw423a, getString(R.string.nw423))) {
+            if (!ValidatorClass.EmptyCheckBox(this, binding.fldGrpnw423check, binding.nw423a, getString(R.string.nw423))) {
                 return false;
             }
 
-            return validatorClass.EmptyCheckBox(this, binding.fldGrpnw423check, binding.nw42396, binding.nw42396x, getString(R.string.nw423) + " - " + getString(R.string.other));
+            return ValidatorClass.EmptyCheckBox(this, binding.fldGrpnw423check, binding.nw42396, binding.nw42396x, getString(R.string.nw423) + " - " + getString(R.string.other));
 
 
         }

@@ -9,7 +9,7 @@
 
         <variable
             name="callback"
-            type="edu.aku.hassannaqvi.casi_2018.Adapters.upload_list_adapter" />
+            type="edu.aku.hassannaqvi.casi_2018.adapters.Upload_list_adapter" />
     </data>
 
     <android.support.v7.widget.CardView

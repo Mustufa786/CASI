@@ -18,7 +18,7 @@ import edu.aku.hassannaqvi.casi_2018.R;
 import edu.aku.hassannaqvi.casi_2018.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2018.core.MainApp;
 import edu.aku.hassannaqvi.casi_2018.databinding.ActivityEndingBinding;
-import edu.aku.hassannaqvi.casi_2018.validation.validatorClass;
+import edu.aku.hassannaqvi.casi_2018.validation.ValidatorClass;
 
 public class EndingActivity extends AddMember_MenuActivity {
 
@@ -145,7 +145,7 @@ public class EndingActivity extends AddMember_MenuActivity {
         Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
 
 
-        return validatorClass.EmptyRadioButton(this, binding.istatus, binding.istatus96, binding.istatus96x, getString(R.string.istatus));
+        return ValidatorClass.EmptyRadioButton(this, binding.istatus, binding.istatus96, binding.istatus96x, getString(R.string.istatus));
     }
 
 

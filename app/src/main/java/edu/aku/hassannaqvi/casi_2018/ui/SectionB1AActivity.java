@@ -30,8 +30,8 @@ import edu.aku.hassannaqvi.casi_2018.core.MainApp;
 import edu.aku.hassannaqvi.casi_2018.databinding.ActivitySectionB1ABinding;
 import edu.aku.hassannaqvi.casi_2018.other.DateUtils;
 import edu.aku.hassannaqvi.casi_2018.other.JSONUtilClass;
-import edu.aku.hassannaqvi.casi_2018.validation.clearClass;
-import edu.aku.hassannaqvi.casi_2018.validation.validatorClass;
+import edu.aku.hassannaqvi.casi_2018.validation.ClearClass;
+import edu.aku.hassannaqvi.casi_2018.validation.ValidatorClass;
 
 import static edu.aku.hassannaqvi.casi_2018.ui.SectionB1Activity.childisUnder2AndAlive;
 
@@ -233,11 +233,11 @@ public class SectionB1AActivity extends AppCompatActivity implements TextWatcher
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if (bi.nw220a.isChecked()) {
-                    clearClass.ClearAllFields(bi.fldGrpnw221, true);
-                    clearClass.ClearAllFields(bi.fldGrpnw222, false);
+                    ClearClass.ClearAllFields(bi.fldGrpnw221, true);
+                    ClearClass.ClearAllFields(bi.fldGrpnw222, false);
 
-                    clearClass.ClearAllFields(bi.fldGrnw221alive, true);
-                    clearClass.ClearAllFields(bi.fldGrnw221death, false);
+                    ClearClass.ClearAllFields(bi.fldGrnw221alive, true);
+                    ClearClass.ClearAllFields(bi.fldGrnw221death, false);
                     //bi.fldGrpnw221.setVisibility(View.VISIBLE);
                     /*bi.fldGrpnw222.setVisibility(View.GONE);
                     bi.nw222d.setText(null);
@@ -245,11 +245,11 @@ public class SectionB1AActivity extends AppCompatActivity implements TextWatcher
                     bi.nw222y.setText(null);*/
 
                 } else {
-                    clearClass.ClearAllFields(bi.fldGrpnw221, false);
-                    clearClass.ClearAllFields(bi.fldGrpnw222, true);
+                    ClearClass.ClearAllFields(bi.fldGrpnw221, false);
+                    ClearClass.ClearAllFields(bi.fldGrpnw222, true);
 
-                    clearClass.ClearAllFields(bi.fldGrnw221alive, false);
-                    clearClass.ClearAllFields(bi.fldGrnw221death, true);
+                    ClearClass.ClearAllFields(bi.fldGrnw221alive, false);
+                    ClearClass.ClearAllFields(bi.fldGrnw221death, true);
                     /*bi.fldGrpnw221.setVisibility(View.GONE);
                     bi.fldGrpnw222.setVisibility(View.VISIBLE);
                     bi.nw221d.setText(null);
@@ -263,14 +263,14 @@ public class SectionB1AActivity extends AppCompatActivity implements TextWatcher
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if (bi.nw218a.isChecked() || bi.nw218b.isChecked() || bi.nw218e.isChecked()) {
-                    clearClass.ClearAllFields(bi.fldGrpnb1a03, false);
-                    clearClass.ClearAllFields(bi.fldGrnw221alive, false);
-                    clearClass.ClearAllFields(bi.fldGrnw221death, false);
+                    ClearClass.ClearAllFields(bi.fldGrpnb1a03, false);
+                    ClearClass.ClearAllFields(bi.fldGrnw221alive, false);
+                    ClearClass.ClearAllFields(bi.fldGrnw221death, false);
 
                 } else {
-                    clearClass.ClearAllFields(bi.fldGrpnb1a03, true);
-                    clearClass.ClearAllFields(bi.fldGrnw221alive, true);
-                    clearClass.ClearAllFields(bi.fldGrnw221death, true);
+                    ClearClass.ClearAllFields(bi.fldGrpnb1a03, true);
+                    ClearClass.ClearAllFields(bi.fldGrnw221alive, true);
+                    ClearClass.ClearAllFields(bi.fldGrnw221death, true);
                 }
 
             }
@@ -377,80 +377,80 @@ public class SectionB1AActivity extends AppCompatActivity implements TextWatcher
 
         //Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
 
-        if (!validatorClass.EmptyTextBox(this, bi.nw217d, getString(R.string.nw217))) {
+        if (!ValidatorClass.EmptyTextBox(this, bi.nw217d, getString(R.string.nw217))) {
             return false;
         }
 
-        if (!validatorClass.EmptyTextBox(this, bi.nw217m, getString(R.string.nw217))) {
+        if (!ValidatorClass.EmptyTextBox(this, bi.nw217m, getString(R.string.nw217))) {
             return false;
         }
 
-        if (!validatorClass.EmptyTextBox(this, bi.nw217y, getString(R.string.nw217))) {
+        if (!ValidatorClass.EmptyTextBox(this, bi.nw217y, getString(R.string.nw217))) {
             return false;
         }
 
-        if (!validatorClass.RangeTextBox(this, bi.nw217d, 1, 31, 98, getString(R.string.nw217), " day")) {
+        if (!ValidatorClass.RangeTextBox(this, bi.nw217d, 1, 31, 98, getString(R.string.nw217), " day")) {
             return false;
         }
 
-        if (!validatorClass.RangeTextBox(this, bi.nw217m, 1, 12, 98, getString(R.string.nw217), " month")) {
+        if (!ValidatorClass.RangeTextBox(this, bi.nw217m, 1, 12, 98, getString(R.string.nw217), " month")) {
             return false;
         }
 
 
-        if (!validatorClass.RangeTextBox(this, bi.nw217y, DateUtils.getCurrentYear() - 5, DateUtils.getCurrentYear(), getString(R.string.nw217), " years")) {
+        if (!ValidatorClass.RangeTextBox(this, bi.nw217y, DateUtils.getCurrentYear() - 5, DateUtils.getCurrentYear(), getString(R.string.nw217), " years")) {
             return false;
         }
 
         Calendar today = Calendar.getInstance();
         if (date.after(today)) {
-            if (!validatorClass.RangeTextBoxforDate(this, bi.nw217d, 1, DateUtils.getCurrentDate(), 98, "Date can not be more than today")) {
+            if (!ValidatorClass.RangeTextBoxforDate(this, bi.nw217d, 1, DateUtils.getCurrentDate(), 98, "Date can not be more than today")) {
                 return false;
             }
 
-            if (!validatorClass.RangeTextBoxforDate(this, bi.nw217m, 1, DateUtils.getCurrentMonth(), 98, "Month can not be more than current month")) {
+            if (!ValidatorClass.RangeTextBoxforDate(this, bi.nw217m, 1, DateUtils.getCurrentMonth(), 98, "Month can not be more than current month")) {
                 return false;
             }
 
-            if (!validatorClass.RangeTextBoxforDate(this, bi.nw217y, DateUtils.getCurrentYear() - 5, DateUtils.getCurrentYear(), "Year can not be more than current year")) {
+            if (!ValidatorClass.RangeTextBoxforDate(this, bi.nw217y, DateUtils.getCurrentYear() - 5, DateUtils.getCurrentYear(), "Year can not be more than current year")) {
                 return false;
             }
 
         }
 
 
-        if (!validatorClass.EmptyRadioButton(this, bi.nw218, bi.nw218a, getString(R.string.nw218))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.nw218, bi.nw218a, getString(R.string.nw218))) {
             return false;
         }
 
         if (bi.nw218c.isChecked() || bi.nw218f.isChecked()) {
-            if (!validatorClass.EmptyRadioButton(this, bi.nw220, bi.nw220a, getString(R.string.nw220))) {
+            if (!ValidatorClass.EmptyRadioButton(this, bi.nw220, bi.nw220a, getString(R.string.nw220))) {
                 return false;
             }
 
             if (bi.nw220a.isChecked()) {
-                if (!validatorClass.EmptyTextBox(this, bi.nw221y, getString(R.string.nw221) + " - " + getString(R.string.year))) {
+                if (!ValidatorClass.EmptyTextBox(this, bi.nw221y, getString(R.string.nw221) + " - " + getString(R.string.year))) {
                     return false;
                 }
 
-                if (!validatorClass.EmptyTextBox(this, bi.nw221m, getString(R.string.nw221) + " - " + getString(R.string.month))) {
+                if (!ValidatorClass.EmptyTextBox(this, bi.nw221m, getString(R.string.nw221) + " - " + getString(R.string.month))) {
                     return false;
                 }
 
-                if (!validatorClass.EmptyTextBox(this, bi.nw221d, getString(R.string.nw221) + " - " + getString(R.string.day))) {
+                if (!ValidatorClass.EmptyTextBox(this, bi.nw221d, getString(R.string.nw221) + " - " + getString(R.string.day))) {
                     return false;
                 }
 
-                if (!validatorClass.RangeTextBox(this, bi.nw221y, 0, 4, getString(R.string.nw221), " years")) {
+                if (!ValidatorClass.RangeTextBox(this, bi.nw221y, 0, 4, getString(R.string.nw221), " years")) {
                     return false;
                 }
 
-                if (!validatorClass.RangeTextBox(this, bi.nw221m, 0, 11, getString(R.string.nw221), " months")) {
+                if (!ValidatorClass.RangeTextBox(this, bi.nw221m, 0, 11, getString(R.string.nw221), " months")) {
                     return false;
                 }
 
 
-                if (!validatorClass.RangeTextBox(this, bi.nw221d, 0, 29, getString(R.string.nw221), " days")) {
+                if (!ValidatorClass.RangeTextBox(this, bi.nw221d, 0, 29, getString(R.string.nw221), " days")) {
                     return false;
                 }
 
@@ -481,28 +481,28 @@ public class SectionB1AActivity extends AppCompatActivity implements TextWatcher
                 bi.nw221y.setText(ageModel.getyears());
 */
             } else if (bi.nw220b.isChecked()) {
-                if (!validatorClass.EmptyTextBox(this, bi.nw222y, getString(R.string.nw222) + " - " + getString(R.string.year))) {
+                if (!ValidatorClass.EmptyTextBox(this, bi.nw222y, getString(R.string.nw222) + " - " + getString(R.string.year))) {
                     return false;
                 }
 
-                if (!validatorClass.EmptyTextBox(this, bi.nw222m, getString(R.string.nw222) + " - " + getString(R.string.month))) {
+                if (!ValidatorClass.EmptyTextBox(this, bi.nw222m, getString(R.string.nw222) + " - " + getString(R.string.month))) {
                     return false;
                 }
 
-                if (!validatorClass.EmptyTextBox(this, bi.nw222d, getString(R.string.nw222) + " - " + getString(R.string.day))) {
+                if (!ValidatorClass.EmptyTextBox(this, bi.nw222d, getString(R.string.nw222) + " - " + getString(R.string.day))) {
                     return false;
                 }
 
-                if (!validatorClass.RangeTextBox(this, bi.nw222y, 0, 4, getString(R.string.nw222), " years")) {
+                if (!ValidatorClass.RangeTextBox(this, bi.nw222y, 0, 4, getString(R.string.nw222), " years")) {
                     return false;
                 }
 
-                if (!validatorClass.RangeTextBox(this, bi.nw222m, 0, 11, getString(R.string.nw222), " months")) {
+                if (!ValidatorClass.RangeTextBox(this, bi.nw222m, 0, 11, getString(R.string.nw222), " months")) {
                     return false;
                 }
 
 
-                if (!validatorClass.RangeTextBox(this, bi.nw222d, 0, 29, getString(R.string.nw222), " days")) {
+                if (!ValidatorClass.RangeTextBox(this, bi.nw222d, 0, 29, getString(R.string.nw222), " days")) {
                     return false;
                 }
 

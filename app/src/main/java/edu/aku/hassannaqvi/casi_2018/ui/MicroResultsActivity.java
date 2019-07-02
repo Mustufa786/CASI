@@ -31,7 +31,7 @@ import edu.aku.hassannaqvi.casi_2018.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2018.core.MainApp;
 import edu.aku.hassannaqvi.casi_2018.databinding.ActivityMicroResultsBinding;
 import edu.aku.hassannaqvi.casi_2018.other.JSONUtilClass;
-import edu.aku.hassannaqvi.casi_2018.validation.validatorClass;
+import edu.aku.hassannaqvi.casi_2018.validation.ValidatorClass;
 
 public class MicroResultsActivity extends AppCompatActivity {
 
@@ -57,12 +57,6 @@ public class MicroResultsActivity extends AppCompatActivity {
         db = new DatabaseHelper(this);
         binding.setCallback(this);
 
-        binding.ne20301b.setManager(getSupportFragmentManager());
-        binding.ne20301c.setManager(getSupportFragmentManager());
-        binding.ne20301d.setManager(getSupportFragmentManager());
-        binding.ne20301e.setManager(getSupportFragmentManager());
-        binding.ne20301f.setManager(getSupportFragmentManager());
-        binding.ne20301g.setManager(getSupportFragmentManager());
 
         binding.ne20301b.setMaxDate(new SimpleDateFormat("dd/MM/yyyy").format(System.currentTimeMillis()));
         binding.ne20301f.setMaxDate(new SimpleDateFormat("dd/MM/yyyy").format(Calendar.getInstance().getTimeInMillis() + ((MainApp.MILLISECONDS_IN_DAY))));
@@ -168,7 +162,7 @@ public class MicroResultsActivity extends AppCompatActivity {
 
     public void BtnCheckEnm() {
 
-        if (validatorClass.EmptyTextBox(this, binding.nh102, getString(R.string.nh102))) {
+        if (ValidatorClass.EmptyTextBox(this, binding.nh102, getString(R.string.nh102))) {
 
             EnumBlockContract enumBlockContract = db.getEnumBlock(binding.nh102.getText().toString());
             if (enumBlockContract != null) {
@@ -280,7 +274,7 @@ public class MicroResultsActivity extends AppCompatActivity {
         int scanChar;
 
         //Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
-        if (!validatorClass.EmptyTextBox(this, binding.nh102, getString(R.string.nh102))) {
+        if (!ValidatorClass.EmptyTextBox(this, binding.nh102, getString(R.string.nh102))) {
             return false;
         }
 
@@ -298,7 +292,7 @@ public class MicroResultsActivity extends AppCompatActivity {
             return false;
         }
 
-        if (!validatorClass.EmptyTextBox(this, binding.ne20301a, getString(R.string.ne20301a))) {
+        if (!ValidatorClass.EmptyTextBox(this, binding.ne20301a, getString(R.string.ne20301a))) {
             return false;
         }
 
@@ -320,19 +314,19 @@ public class MicroResultsActivity extends AppCompatActivity {
         }
 
 
-        if (!validatorClass.EmptyTextBox(this, binding.ne20301b, getString(R.string.ne20301b))) {
+        if (!ValidatorClass.EmptyTextBox(this, binding.ne20301b, getString(R.string.ne20301b))) {
             return false;
         }
 
 
         // Collection Time
-        if (!validatorClass.EmptyTextBox(this, binding.ne20301c, getString(R.string.ne20301c))) {
+        if (!ValidatorClass.EmptyTextBox(this, binding.ne20301c, getString(R.string.ne20301c))) {
             return false;
         }
 
 
         // Inoculation Time
-        if (!validatorClass.EmptyTextBox(this, binding.ne20301d, getString(R.string.ne20301d))) {
+        if (!ValidatorClass.EmptyTextBox(this, binding.ne20301d, getString(R.string.ne20301d))) {
             return false;
         }
 
@@ -348,7 +342,7 @@ public class MicroResultsActivity extends AppCompatActivity {
         }
 
         // Reading Time
-        if (!validatorClass.EmptyTextBox(this, binding.ne20301e, getString(R.string.ne20301e))) {
+        if (!ValidatorClass.EmptyTextBox(this, binding.ne20301e, getString(R.string.ne20301e))) {
             return false;
         }
 
@@ -362,29 +356,29 @@ public class MicroResultsActivity extends AppCompatActivity {
             binding.ne20301e.setError(null);
         }
 
-        if (!validatorClass.EmptyTextBox(this, binding.ne20301f, getString(R.string.ne20301f))) {
+        if (!ValidatorClass.EmptyTextBox(this, binding.ne20301f, getString(R.string.ne20301f))) {
             return false;
         }
 
 
-        if (!validatorClass.EmptyTextBox(this, binding.ne20301g, getString(R.string.ne20301g))) {
+        if (!ValidatorClass.EmptyTextBox(this, binding.ne20301g, getString(R.string.ne20301g))) {
             return false;
         }
 
 
-        if (!validatorClass.EmptyTextBox(this, binding.ne20301h, getString(R.string.ne20301h))) {
+        if (!ValidatorClass.EmptyTextBox(this, binding.ne20301h, getString(R.string.ne20301h))) {
             return false;
         }
 
-        if (!validatorClass.RangeTextBox(this, binding.ne20301h, 0, 999, getString(R.string.ne20301h), "")) {
+        if (!ValidatorClass.RangeTextBox(this, binding.ne20301h, 0, 999, getString(R.string.ne20301h), "")) {
             return false;
         }
 
-        if (!validatorClass.EmptyTextBox(this, binding.ne20301i, getString(R.string.ne20301i))) {
+        if (!ValidatorClass.EmptyTextBox(this, binding.ne20301i, getString(R.string.ne20301i))) {
             return false;
         }
 
-        return validatorClass.RangeTextBox(this, binding.ne20301i, 0, 999, getString(R.string.ne20301i), "");
+        return ValidatorClass.RangeTextBox(this, binding.ne20301i, 0, 999, getString(R.string.ne20301i), "");
     }
 
     private void SaveDraft() throws JSONException {

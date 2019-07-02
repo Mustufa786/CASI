@@ -38,7 +38,7 @@ import edu.aku.hassannaqvi.casi_2018.core.MainApp;
 import edu.aku.hassannaqvi.casi_2018.databinding.ActivitySectionH8Binding;
 import edu.aku.hassannaqvi.casi_2018.other.DateUtils;
 import edu.aku.hassannaqvi.casi_2018.other.JSONUtilClass;
-import edu.aku.hassannaqvi.casi_2018.validation.validatorClass;
+import edu.aku.hassannaqvi.casi_2018.validation.ValidatorClass;
 
 public class SectionH8Activity extends AppCompatActivity implements TextWatcher, RadioGroup.OnCheckedChangeListener {
 
@@ -514,35 +514,35 @@ public class SectionH8Activity extends AppCompatActivity implements TextWatcher,
 
         //Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
 
-        if (!validatorClass.EmptyTextBox(this, bi.nh803, getString(R.string.nh803))) {
+        if (!ValidatorClass.EmptyTextBox(this, bi.nh803, getString(R.string.nh803))) {
             return false;
         }
 
-        if (!validatorClass.EmptyRadioButton(this, bi.nh806, bi.nh806a, getString(R.string.nh806))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.nh806, bi.nh806a, getString(R.string.nh806))) {
             return false;
         }
 
-        if (!validatorClass.EmptyTextBox(this, bi.nh807y, getString(R.string.nh807))) {
+        if (!ValidatorClass.EmptyTextBox(this, bi.nh807y, getString(R.string.nh807))) {
             return false;
         }
 
-        if (!validatorClass.RangeTextBox(this, bi.nh807y, 0, 95, getString(R.string.nh807), " years")) {
+        if (!ValidatorClass.RangeTextBox(this, bi.nh807y, 0, 95, getString(R.string.nh807), " years")) {
             return false;
         }
 
-        if (!validatorClass.EmptyTextBox(this, bi.nh807m, getString(R.string.nh807))) {
+        if (!ValidatorClass.EmptyTextBox(this, bi.nh807m, getString(R.string.nh807))) {
             return false;
         }
 
-        if (!validatorClass.RangeTextBox(this, bi.nh807m, 0, 11, getString(R.string.nh807), " months")) {
+        if (!ValidatorClass.RangeTextBox(this, bi.nh807m, 0, 11, getString(R.string.nh807), " months")) {
             return false;
         }
 
-        if (!validatorClass.EmptyTextBox(this, bi.nh807d, getString(R.string.nh807))) {
+        if (!ValidatorClass.EmptyTextBox(this, bi.nh807d, getString(R.string.nh807))) {
             return false;
         }
 
-        if (!validatorClass.RangeTextBox(this, bi.nh807d, 0, 29, getString(R.string.nh807), " days")) {
+        if (!ValidatorClass.RangeTextBox(this, bi.nh807d, 0, 29, getString(R.string.nh807), " days")) {
             return false;
         }
 
@@ -563,62 +563,62 @@ public class SectionH8Activity extends AppCompatActivity implements TextWatcher,
 
         if (Integer.valueOf(bi.nh807y.getText().toString()) < 5) {
             if (!SectionA1Activity.editFormFlag) {
-                if (!validatorClass.EmptySpinner(this, bi.nh804, getString(R.string.nh804))) {
+                if (!ValidatorClass.EmptySpinner(this, bi.nh804, getString(R.string.nh804))) {
                     return false;
                 }
 
-                if (!validatorClass.EmptySpinner(this, bi.nh805, getString(R.string.nh805))) {
+                if (!ValidatorClass.EmptySpinner(this, bi.nh805, getString(R.string.nh805))) {
                     return false;
                 }
             }
         } else {
-            if (!validatorClass.EmptyRadioButton(this, bi.nh8ms, bi.nh8msa, getString(R.string.nh8ms))) {
+            if (!ValidatorClass.EmptyRadioButton(this, bi.nh8ms, bi.nh8msa, getString(R.string.nh8ms))) {
                 return false;
             }
         }
 
-        if (!validatorClass.EmptyTextBox(this, bi.nh808y, getString(R.string.nh808))) {
+        if (!ValidatorClass.EmptyTextBox(this, bi.nh808y, getString(R.string.nh808))) {
             return false;
         }
 
-        if (!validatorClass.EmptyTextBox(this, bi.nh808m, getString(R.string.nh808))) {
+        if (!ValidatorClass.EmptyTextBox(this, bi.nh808m, getString(R.string.nh808))) {
             return false;
         }
 
-        if (!validatorClass.EmptyTextBox(this, bi.nh808d, getString(R.string.nh808))) {
+        if (!ValidatorClass.EmptyTextBox(this, bi.nh808d, getString(R.string.nh808))) {
             return false;
         }
 
-        if (!validatorClass.RangeTextBox(this, bi.nh808y, DateUtils.getCurrentYear() - 5, DateUtils.getCurrentYear(), getString(R.string.nh808), " year")) {
+        if (!ValidatorClass.RangeTextBox(this, bi.nh808y, DateUtils.getCurrentYear() - 5, DateUtils.getCurrentYear(), getString(R.string.nh808), " year")) {
             return false;
         }
 
-        if (!validatorClass.RangeTextBox(this, bi.nh808m, 1, 12, 98, getString(R.string.nh808), " month")) {
+        if (!ValidatorClass.RangeTextBox(this, bi.nh808m, 1, 12, 98, getString(R.string.nh808), " month")) {
             return false;
         }
 
-        if (!validatorClass.RangeTextBox(this, bi.nh808d, 1, 31, 98, getString(R.string.nh808), " day")) {
+        if (!ValidatorClass.RangeTextBox(this, bi.nh808d, 1, 31, 98, getString(R.string.nh808), " day")) {
             return false;
         }
 
 
         Calendar today = Calendar.getInstance();
         if (dob.after(today)) {
-            if (!validatorClass.RangeTextBoxforDate(this, bi.nh808d, 1, DateUtils.getCurrentDate(), 98, "Date can not be more than today")) {
+            if (!ValidatorClass.RangeTextBoxforDate(this, bi.nh808d, 1, DateUtils.getCurrentDate(), 98, "Date can not be more than today")) {
                 return false;
             }
 
-            if (!validatorClass.RangeTextBoxforDate(this, bi.nh808m, 1, DateUtils.getCurrentMonth(), 98, "Month can not be more than current Month")) {
+            if (!ValidatorClass.RangeTextBoxforDate(this, bi.nh808m, 1, DateUtils.getCurrentMonth(), 98, "Month can not be more than current Month")) {
                 return false;
             }
 
-            if (!validatorClass.RangeTextBoxforDate(this, bi.nh808y, DateUtils.getCurrentYear() - 5, DateUtils.getCurrentYear(), 9998, "Year can not be more than current year")) {
+            if (!ValidatorClass.RangeTextBoxforDate(this, bi.nh808y, DateUtils.getCurrentYear() - 5, DateUtils.getCurrentYear(), 9998, "Year can not be more than current year")) {
                 return false;
             }
 
         }
 
-        return validatorClass.EmptyRadioButton(this, bi.nh809, bi.nh80996, getString(R.string.nh809));
+        return ValidatorClass.EmptyRadioButton(this, bi.nh809, bi.nh80996, getString(R.string.nh809));
     }
 
     @Override

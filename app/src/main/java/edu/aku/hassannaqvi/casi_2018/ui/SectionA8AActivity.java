@@ -28,7 +28,7 @@ import edu.aku.hassannaqvi.casi_2018.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2018.core.MainApp;
 import edu.aku.hassannaqvi.casi_2018.databinding.ActivitySectionA8ABinding;
 import edu.aku.hassannaqvi.casi_2018.other.JSONUtilClass;
-import edu.aku.hassannaqvi.casi_2018.validation.validatorClass;
+import edu.aku.hassannaqvi.casi_2018.validation.ValidatorClass;
 
 public class SectionA8AActivity extends AppCompatActivity {
 
@@ -316,7 +316,7 @@ public class SectionA8AActivity extends AppCompatActivity {
                     .putExtra("hhno", MainApp.fc.getHhNo())
             );
         } else {
-            if (validatorClass.EmptySpinner(this, bi.nh7a02, getString(R.string.nh7a02))) {
+            if (ValidatorClass.EmptySpinner(this, bi.nh7a02, getString(R.string.nh7a02))) {
                 try {
                     SaveDraft();
                 } catch (JSONException e) {
@@ -340,20 +340,20 @@ public class SectionA8AActivity extends AppCompatActivity {
         //Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
 
         if (!SectionA1Activity.editFormFlag) {
-            if (!validatorClass.EmptySpinner(this, bi.nh7a02, getString(R.string.nh7a02))) {
+            if (!ValidatorClass.EmptySpinner(this, bi.nh7a02, getString(R.string.nh7a02))) {
                 return false;
             }
         }
 
-        if (!validatorClass.EmptyTextBox(this, bi.nh7a03y, getString(R.string.nh7a03y))) {
+        if (!ValidatorClass.EmptyTextBox(this, bi.nh7a03y, getString(R.string.nh7a03y))) {
             return false;
         }
 
-        if (!validatorClass.EmptyTextBox(this, bi.nh7a03m, getString(R.string.nh7a03m))) {
+        if (!ValidatorClass.EmptyTextBox(this, bi.nh7a03m, getString(R.string.nh7a03m))) {
             return false;
         }
 
-        if (!validatorClass.RangeTextBox(this, bi.nh7a03m, 0, 11, getString(R.string.nh7a03m), " months")) {
+        if (!ValidatorClass.RangeTextBox(this, bi.nh7a03m, 0, 11, getString(R.string.nh7a03m), " months")) {
             return false;
         }
 
@@ -367,28 +367,28 @@ public class SectionA8AActivity extends AppCompatActivity {
             bi.nh7a03m.setError(null);
         }
 
-        if (!validatorClass.EmptyCheckBox(this, bi.fldGrpna08a04check, bi.nh7a04a, getString(R.string.nh7a04))) {
+        if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpna08a04check, bi.nh7a04a, getString(R.string.nh7a04))) {
             return false;
         }
 
-        if (!validatorClass.EmptyCheckBox(this, bi.fldGrpna08a04check, bi.nh7a0496, bi.nh7a0496x, getString(R.string.nh7a04) + " - " + getString(R.string.other))) {
+        if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpna08a04check, bi.nh7a0496, bi.nh7a0496x, getString(R.string.nh7a04) + " - " + getString(R.string.other))) {
             return false;
         }
 
 
-        if (!validatorClass.EmptyTextBox(this, bi.nh7a05, getString(R.string.nh7a05))) {
+        if (!ValidatorClass.EmptyTextBox(this, bi.nh7a05, getString(R.string.nh7a05))) {
             return false;
         }
 
-        if (!validatorClass.RangeTextBox(this, bi.nh7a05, 1000, 99999, getString(R.string.nh7a05), " Rupees")) {
+        if (!ValidatorClass.RangeTextBox(this, bi.nh7a05, 1000, 99999, getString(R.string.nh7a05), " Rupees")) {
             return false;
         }
 
-        if (!validatorClass.EmptyTextBox(this, bi.nh7a06, getString(R.string.nh7a06))) {
+        if (!ValidatorClass.EmptyTextBox(this, bi.nh7a06, getString(R.string.nh7a06))) {
             return false;
         }
 
-        return validatorClass.RangeTextBox(this, bi.nh7a06, 0, Integer.valueOf(bi.nh7a05.getText().toString()), getString(R.string.nh7a06), " Rupees");
+        return ValidatorClass.RangeTextBox(this, bi.nh7a06, 0, Integer.valueOf(bi.nh7a05.getText().toString()), getString(R.string.nh7a06), " Rupees");
 
     }
 
