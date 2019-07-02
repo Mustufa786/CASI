@@ -29,7 +29,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
-        <activity android:name=".ui.SectionA7Activity"></activity>
+        <activity android:name=".ui.SectionA402"></activity>
+        <activity android:name=".ui.SectionA7Activity" />
         <activity
             android:name=".ui.SplashscreenActivity"
             android:screenOrientation="portrait">
