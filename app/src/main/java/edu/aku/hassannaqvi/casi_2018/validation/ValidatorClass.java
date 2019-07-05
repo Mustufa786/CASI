@@ -63,16 +63,13 @@ public abstract class ValidatorClass {
                 View v = ((RadioGroup) view).getChildAt(0);
                 if (v != null) {
 
-                    if (v.getTag() != null)
-                        if (v.getTag().equals("-1")) {
+                    if (v.getTag() == null) {
 
+                        String asNamed = getString(context, getIDComponent(view));
+
+                        if (!EmptyRadioButton(context, (RadioGroup) view, (RadioButton) v, asNamed)) {
+                            return false;
                         }
-
-
-                    String asNamed = getString(context, getIDComponent(view));
-
-                    if (!EmptyRadioButton(context, (RadioGroup) view, (RadioButton) v, asNamed)) {
-                        return false;
                     }
                 }
             } else if (view instanceof Spinner) {
