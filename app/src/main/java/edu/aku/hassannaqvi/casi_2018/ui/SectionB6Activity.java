@@ -8,8 +8,6 @@ import android.widget.Toast;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.text.SimpleDateFormat;
-import java.util.Collection;
 import java.util.Timer;
 
 import edu.aku.hassannaqvi.casi_2018.JSONModels.JSONB6ModelClass;
@@ -18,7 +16,6 @@ import edu.aku.hassannaqvi.casi_2018.contracts.NutritionContract;
 import edu.aku.hassannaqvi.casi_2018.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2018.core.MainApp;
 import edu.aku.hassannaqvi.casi_2018.databinding.ActivitySectionB6Binding;
-import edu.aku.hassannaqvi.casi_2018.other.JSONUtilClass;
 import edu.aku.hassannaqvi.casi_2018.validation.ValidatorClass;
 
 public class SectionB6Activity extends Menu2Activity {
@@ -44,63 +41,40 @@ public class SectionB6Activity extends Menu2Activity {
         db = new DatabaseHelper(this);
         bi.setCallback(this);
 
-        this.setTitle(getResources().getString(R.string.nw5heading));
-        bi.textName.setText("Selected Woman : " + SectionB1Activity.wraName);
+        this.setTitle(getResources().getString(R.string.ciw5h));
 
-        settingTimeToEat();
         setListners();
 
-//        if (getIntent().getBooleanExtra("backPressed", false)) {
-//            frontPressed = true;
-
-        Collection<NutritionContract> nutritionContracts = db.getPressedNutrition();
-
-        for (NutritionContract nutritionContract : nutritionContracts) {
-            jsonB6 = JSONUtilClass.getModelFromJSON(nutritionContract.getsB6(), JSONB6ModelClass.class);
-
-            if (jsonB6.getSerial().equals(String.valueOf(MainApp.nuCount))) {
-
-                frontPressed = true;
-
-                nutritionCC = nutritionContract;
-
-                if (jsonB6.getnw501a().equals("1")) {
-                    bi.nw501a.setChecked(true);
-                }
-
-            }
-        }
+//        Collection<NutritionContract> nutritionContracts = db.getPressedNutrition();
+//
+//        for (NutritionContract nutritionContract : nutritionContracts) {
+//            jsonB6 = JSONUtilClass.getModelFromJSON(nutritionContract.getsB6(), JSONB6ModelClass.class);
+//
+//            if (jsonB6.getSerial().equals(String.valueOf(MainApp.nuCount))) {
+//
+//                frontPressed = true;
+//
+//                nutritionCC = nutritionContract;
+////
+////                if (jsonB6.getnw501a().equals("1")) {
+////                    bi.nw501a.setChecked(true);
+////                }
+//
+//            }
+//        }
 
 
 //        }
 
 
 //        Validation Boolean
-        MainApp.validateFlag = false;
+//        MainApp.validateFlag = false;
 
     }
 
     private void setListners() {
 
 
-    }
-
-    private void settingTimeToEat() {
-        if (MainApp.nuCount == 1) {
-            bi.nw501.setText(R.string._1);
-        } else if (MainApp.nuCount == 2) {
-            bi.nw501.setText(R.string._2);
-        } else if (MainApp.nuCount == 3) {
-            bi.nw501.setText(R.string._3);
-        } else if (MainApp.nuCount == 4) {
-            bi.nw501.setText(R.string._4);
-        } else if (MainApp.nuCount == 5) {
-            bi.nw501.setText(R.string._5);
-        } else if (MainApp.nuCount == 6) {
-            bi.nw501.setText(R.string._6);
-        } else if (MainApp.nuCount == 7) {
-            bi.nw501.setText(R.string._7);
-        }
     }
 
     public void BtnContinue() {
@@ -173,28 +147,28 @@ public class SectionB6Activity extends Menu2Activity {
 
     public void BtnEnd() {
 
-        if (MainApp.nuCount == 1) {
-            MainApp.B6Flag = true;
-            MainApp.B2B6Flag = false;
-        }
-
-        if (SectionB1Activity.editWRAFlag) {
-            finish();
-            startActivity(new Intent(this, ViewMemberActivity.class)
-                    .putExtra("flagEdit", false)
-                    .putExtra("comingBack", true)
-                    .putExtra("cluster", MainApp.mc.getCluster())
-                    .putExtra("hhno", MainApp.mc.getHhno())
-            );
-        } else {
-            MainApp.endActivityMother(this, this, false);
-        }
+//        if (MainApp.nuCount == 1) {
+//            MainApp.B6Flag = true;
+//            MainApp.B2B6Flag = false;
+//        }
+//
+//        if (SectionB1Activity.editWRAFlag) {
+//            finish();
+//            startActivity(new Intent(this, ViewMemberActivity.class)
+//                    .putExtra("flagEdit", false)
+//                    .putExtra("comingBack", true)
+//                    .putExtra("cluster", MainApp.mc.getCluster())
+//                    .putExtra("hhno", MainApp.mc.getHhno())
+//            );
+//        } else {
+//            MainApp.endActivityMother(this, this, false);
+//        }
 
     }
 
     private boolean ValidateForm() {
 
-        return ValidatorClass.EmptyCheckBox(this, bi.fldGrpnw501check, bi.nw501a, getString(R.string.nw501a));
+        return ValidatorClass.EmptyCheckingContainer(this, bi.fldGrpSectionB6);
 
     }
 
@@ -205,76 +179,76 @@ public class SectionB6Activity extends Menu2Activity {
         MainApp.nc = new NutritionContract();
 
         JSONObject sB6 = new JSONObject();
-
-        if (!backPressed && !frontPressed) {
-            if (SectionB1Activity.editWRAFlag) {
-                MainApp.nc.setDevicetagID(MainApp.mc.getDevicetagID());
-                MainApp.nc.setFormDate(MainApp.mc.getFormDate());
-                MainApp.nc.setUser(MainApp.mc.getUser());
-                MainApp.nc.setDeviceId(MainApp.mc.getDeviceId());
-                MainApp.nc.setApp_ver(MainApp.mc.getApp_ver());
-                MainApp.nc.set_UUID(MainApp.mc.get_UUID());
-                MainApp.nc.setMUID(MainApp.mc.get_UID());
-                MainApp.nc.setFMUID(MainApp.mc.getFMUID());
-
-                sB6.put("cluster_no", MainApp.mc.getCluster());
-                sB6.put("hhno", MainApp.mc.getHhno());
-
-            } else {
-                MainApp.nc.setDevicetagID(MainApp.fc.getDevicetagID());
-                MainApp.nc.setFormDate(MainApp.fc.getFormDate());
-                MainApp.nc.setUser(MainApp.fc.getUser());
-                MainApp.nc.setDeviceId(MainApp.fc.getDeviceID());
-                MainApp.nc.setApp_ver(MainApp.fc.getAppversion());
-                MainApp.nc.set_UUID(MainApp.fc.getUID());
-                MainApp.nc.setMUID(MainApp.mc.get_UID());
-                MainApp.nc.setFMUID(MainApp.mc.getFMUID());
-
-                sB6.put("cluster_no", MainApp.fc.getClusterNo());
-                sB6.put("hhno", MainApp.fc.getHhNo());
-            }
-        } else {
-            MainApp.nc.setUpdatedate(new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
-
-            if (frontPressed) {
-                MainApp.nc.set_UID(nutritionCC.get_UID());
-            } else if (backPressed) {
-                MainApp.nc.set_UID(uid);
-            }
-
-            if (SectionB1Activity.editWRAFlag && !frontPressed) {
-                sB6.put("edit_updatedate_nw1", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
-
-                sB6.put("cluster_no", jsonB6.getCluster_no());
-                sB6.put("hhno", jsonB6.getHhno());
-
-            } else if (SectionB1Activity.editWRAFlag) {
-
-                sB6.put("cluster_no", jsonB6.getCluster_no());
-                sB6.put("hhno", jsonB6.getHhno());
-
-            } else {
-
-                sB6.put("cluster_no", MainApp.fc.getClusterNo());
-                sB6.put("hhno", MainApp.fc.getHhNo());
-
-            }
-
-        }
-
-        //sB6.put("MUID", MainApp.mc.get_UID());
-
-        sB6.put("tpsno", String.valueOf(MainApp.nuCount));
-        sB6.put("wra_lno", MainApp.mc.getB1SerialNo());
-        //       nw501
-        sB6.put("nw501a", bi.nw501a.isChecked() ? "1"
-                : "2");
-
-        if (backPressed) {
-            sB6.put("backPressed", backPressed);
-        } else if (frontPressed) {
-            sB6.put("frontPressed", frontPressed);
-        }
+//
+//        if (!backPressed && !frontPressed) {
+//            if (SectionB1Activity.editWRAFlag) {
+//                MainApp.nc.setDevicetagID(MainApp.mc.getDevicetagID());
+//                MainApp.nc.setFormDate(MainApp.mc.getFormDate());
+//                MainApp.nc.setUser(MainApp.mc.getUser());
+//                MainApp.nc.setDeviceId(MainApp.mc.getDeviceId());
+//                MainApp.nc.setApp_ver(MainApp.mc.getApp_ver());
+//                MainApp.nc.set_UUID(MainApp.mc.get_UUID());
+//                MainApp.nc.setMUID(MainApp.mc.get_UID());
+//                MainApp.nc.setFMUID(MainApp.mc.getFMUID());
+//
+//                sB6.put("cluster_no", MainApp.mc.getCluster());
+//                sB6.put("hhno", MainApp.mc.getHhno());
+//
+//            } else {
+//                MainApp.nc.setDevicetagID(MainApp.fc.getDevicetagID());
+//                MainApp.nc.setFormDate(MainApp.fc.getFormDate());
+//                MainApp.nc.setUser(MainApp.fc.getUser());
+//                MainApp.nc.setDeviceId(MainApp.fc.getDeviceID());
+//                MainApp.nc.setApp_ver(MainApp.fc.getAppversion());
+//                MainApp.nc.set_UUID(MainApp.fc.getUID());
+//                MainApp.nc.setMUID(MainApp.mc.get_UID());
+//                MainApp.nc.setFMUID(MainApp.mc.getFMUID());
+//
+//                sB6.put("cluster_no", MainApp.fc.getClusterNo());
+//                sB6.put("hhno", MainApp.fc.getHhNo());
+//            }
+//        } else {
+//            MainApp.nc.setUpdatedate(new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
+//
+//            if (frontPressed) {
+//                MainApp.nc.set_UID(nutritionCC.get_UID());
+//            } else if (backPressed) {
+//                MainApp.nc.set_UID(uid);
+//            }
+//
+//            if (SectionB1Activity.editWRAFlag && !frontPressed) {
+//                sB6.put("edit_updatedate_nw1", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
+//
+//                sB6.put("cluster_no", jsonB6.getCluster_no());
+//                sB6.put("hhno", jsonB6.getHhno());
+//
+//            } else if (SectionB1Activity.editWRAFlag) {
+//
+//                sB6.put("cluster_no", jsonB6.getCluster_no());
+//                sB6.put("hhno", jsonB6.getHhno());
+//
+//            } else {
+//
+//                sB6.put("cluster_no", MainApp.fc.getClusterNo());
+//                sB6.put("hhno", MainApp.fc.getHhNo());
+//
+//            }
+//
+//        }
+//
+//        //sB6.put("MUID", MainApp.mc.get_UID());
+//
+//        sB6.put("tpsno", String.valueOf(MainApp.nuCount));
+//        sB6.put("wra_lno", MainApp.mc.getB1SerialNo());
+//        //       nw501
+////        sB6.put("nw501a", bi.nw501a.isChecked() ? "1"
+////                : "2");
+//
+//        if (backPressed) {
+//            sB6.put("backPressed", backPressed);
+//        } else if (frontPressed) {
+//            sB6.put("frontPressed", frontPressed);
+//        }
 
         MainApp.nc.setsB6(String.valueOf(sB6));
 
@@ -323,62 +297,62 @@ public class SectionB6Activity extends Menu2Activity {
     protected void onResume() {
         super.onResume();
 
-        if (firstTimePressed) {
-            backPressed = true;
-        }
-
-        firstTimePressed = true;
+//        if (firstTimePressed) {
+//            backPressed = true;
+//        }
+//
+//        firstTimePressed = true;
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-
-        if (firstTimePressed && !frontPressed) {
-            backPressed = false;
-            if (!SectionB1Activity.editWRAFlag) {
-                firstTimePressed = false;
-            }
-        }
+//
+//        if (firstTimePressed && !frontPressed) {
+//            backPressed = false;
+//            if (!SectionB1Activity.editWRAFlag) {
+//                firstTimePressed = false;
+//            }
+//        }
     }
 
     @Override
     public void onBackPressed() {
-
-        try {
-            SaveDraft();
-            UpdateDB();
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-
-        if (MainApp.nuCount != 7) {
-            MainApp.nuCount--;
-        }
-
-        if (MainApp.nuCount == 1) {
-            MainApp.B6Flag = true;
-            MainApp.B2B6Flag = false;
-        }
-
-        Intent intent = new Intent();
-        intent.putExtra("backPressedClass", SectionB6Activity.class.getName());
-        setResult(RESULT_OK, intent);
+//
+//        try {
+//            SaveDraft();
+//            UpdateDB();
+//        } catch (JSONException e) {
+//            e.printStackTrace();
+//        }
+//
+//        if (MainApp.nuCount != 7) {
+//            MainApp.nuCount--;
+//        }
+//
+//        if (MainApp.nuCount == 1) {
+//            MainApp.B6Flag = true;
+//            MainApp.B2B6Flag = false;
+//        }
+//
+//        Intent intent = new Intent();
+//        intent.putExtra("backPressedClass", SectionB6Activity.class.getName());
+//        setResult(RESULT_OK, intent);
 
         super.onBackPressed();
     }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == 1) {
-            if (resultCode == RESULT_OK) {
-                classPassName = data.getStringExtra("backPressedClass");
-            } else {
-                classPassName = "";
-            }
-        }
-    }
+//    @Override
+//    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+//        super.onActivityResult(requestCode, resultCode, data);
+//        if (requestCode == 1) {
+//            if (resultCode == RESULT_OK) {
+//                classPassName = data.getStringExtra("backPressedClass");
+//            } else {
+//                classPassName = "";
+//            }
+//        }
+//    }
 
 
 }
