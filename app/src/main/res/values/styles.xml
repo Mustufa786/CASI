@@ -131,17 +131,6 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <!--
-        <stnamename="SpinnerItem">
-            <inamename="android:textAppearance">@style/SpinnerItemText</item>
-        </style>
-
-        <stnamename="SpinnerItemText">
-            <inamename="android:textSize">24sp</item>
-            <inamename="android:typeface">serif</item>
-        </style>
-    -->
-
     <style name="ActionBarTheme" parent="android:Theme.Material.Light.DarkActionBar">
         <!--<inamename="android:background">@drawable/background_grad</item>-->
         <item name="background">@color/colorPrimary</item>
@@ -371,44 +360,6 @@
 
     </style>
 
-
-    <!-- <stnamename="CustomShowcaseTheme" parent="ShowcaseView.Light">
-         <inamename="sv_backgroundColor">#33b78ff7</item>
-         <inamename="sv_showcaseColor">@color/colorPrimaryDark</item>
-         <inamename="sv_buttonText">OK</item>
-         <inamename="sv_titleTextAppearance">@style/CustomTitle</item>
-         <inamename="sv_detailTextAppearance">@style/CustomTitle</item>
-
-     </style>
-
-     <stnamename="CustomShowcaseTheme2" parent="ShowcaseView">
-         <inamename="sv_backgroundColor">#e51249d9</item>
-         <inamename="sv_showcaseColor">#25467A</item>
-         <inamename="sv_buttonText">Close</item>
-         <inamename="sv_titleTextAppearance">@style/CustomTitle2</item>
-         <inamename="sv_detailTextAppearance">@style/CustomText2</item>
-     </style>
-
-     <stnamename="CustomTitle2" parent="TextAppearance.ShowcaseView.Title.Light">
-         <inamename="android:textColor">@color/colorPrimaryDark</item>
-     </style>
-
-     <stnamename="CustomeButton" parent="ShowcaseButton">
-         <inamename="android:buttonTintMode">@color/colorPrimaryDark</item>
-     </style>
-
-
-     <stnamename="CustomTitle" parent="TextAppearance.ShowcaseView.Title">
-         <inamename="android:textColor">@android:color/black</item>
-         <inamename="android:textSize">30sp</item>
-         <inamename="android:textStyle">bold</item>
-         <inamename="android:textAppearance">?android:attr/textAppearanceLarge</item>
-     </style>
-
-     <stnamename="CustomText2" parent="TextAppearance.ShowcaseView.Detail.Light">
-         <inamename="android:textColor">#8affffff</item>
-     </style>-->
-
     <style name="AppTheme.AppBarOverlay" parent="android:Widget.Material.Light.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="android:Widget.Material.Light" />
@@ -432,21 +383,6 @@
         <item name="android:colorForeground">@color/black</item>
     </style>
 
-    <!--<style name="CustomShowcaseTheme" parent="ShowcaseView.Light">
-        <item name="sv_backgroundColor">#33b78ff7</item>
-        <item name="sv_showcaseColor">@color/colorPrimaryDark</item>
-        <item name="sv_buttonText">OK</item>
-        <item name="sv_titleTextAppearance">@style/CustomTitle</item>
-        <item name="sv_detailTextAppearance">@style/CustomTitle</item>
-    </style>
-
-    <style name="CustomTitle" parent="TextAppearance.ShowcaseView.Title">
-        <item name="android:textColor">@android:color/black</item>
-        <item name="android:textSize">30sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
-    </style>-->
-
     <style name="HeaderBar">
         <item name="android:background">#303F9F</item>
     </style>
@@ -467,11 +403,138 @@
     </style>
 
 
-    <!-- <style name="itemStyle" parent="Base.TextAppearance.AppCompat.Menu">
-         <item name="textColor">@color/white</item>
-         <item name="android:background">@color/black</item>
-         <item name="textSize">15sp</item>
-     </style>-->
+    <style name="linearlayout_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">1dp</item>
+    </style>
 
+    <style name="linearlayout_view_wt_bound">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="i_textview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:drawable">@drawable/textview_background_grad</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:elevation">1dp</item>
+        <item name="android:paddingStart">8dp</item>
+    </style>
+
+    <style name="h_textview">
+        <item name="android:background">@color/dullWhile</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!-- Textview List  -->
+    <style name="textview">
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="textview_fm_lst_h">
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">35sp</item>
+    </style>
+
+    <!--Card View Start-->
+    <style name="cardView">
+        <item name="android:background">@color/dullWhileOverlay</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <!--<item name="android:layout_marginRight">10dp</item>-->
+        <!--<item name="android:layout_marginLeft">10dp</item>-->
+        <item name="cardCornerRadius">10dp</item>
+        <item name="cardElevation">4dp</item>
+    </style>
+    <!--Card View End-->
+
+    <!-- EditText Acept Characters Starts. -->
+    <style name="EditText">
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:digits">abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="EditTextAlphaNumeric">
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:digits">abcdefghijklmnopqrstuvwxyz
+            ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
+        </item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:padding">10dp</item>
+    </style>
+    <!-- EditText Acept Number  Ends. -->
+
+    <!-- EditText Acept Number  Starts. -->
+    <style name="EditText_number" parent="android:Widget.Material.Light.EditText">
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:inputType">number</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:padding">10dp</item>
+    </style>
+    <!-- EditText Acept Number  Ends. -->
 
 </resources>
