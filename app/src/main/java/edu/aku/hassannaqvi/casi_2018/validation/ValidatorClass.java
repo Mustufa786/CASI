@@ -63,6 +63,12 @@ public abstract class ValidatorClass {
                 View v = ((RadioGroup) view).getChildAt(0);
                 if (v != null) {
 
+                    if (v.getTag() != null)
+                        if (v.getTag().equals("-1")) {
+
+                        }
+
+
                     String asNamed = getString(context, getIDComponent(view));
 
                     if (!EmptyRadioButton(context, (RadioGroup) view, (RadioButton) v, asNamed)) {
@@ -148,6 +154,7 @@ public abstract class ValidatorClass {
         }
 
     }
+
     public static boolean EmptyTextBox(Context context, EditText txt, String msg) {
         if (TextUtils.isEmpty(txt.getText().toString().trim())) {
             if (MainApp.validateFlag) {
