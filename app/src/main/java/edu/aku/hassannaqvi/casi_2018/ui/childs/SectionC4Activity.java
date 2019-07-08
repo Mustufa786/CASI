@@ -19,6 +19,7 @@ import edu.aku.hassannaqvi.casi_2018.core.MainApp;
 import edu.aku.hassannaqvi.casi_2018.databinding.ActivitySectionC4Binding;
 import edu.aku.hassannaqvi.casi_2018.ui.mainUI.Menu2Activity;
 import edu.aku.hassannaqvi.casi_2018.ui.viewMem.ViewMemberActivity;
+import edu.aku.hassannaqvi.casi_2018.ui.wra.SectionB1Activity;
 import edu.aku.hassannaqvi.casi_2018.validation.ClearClass;
 import edu.aku.hassannaqvi.casi_2018.validation.ValidatorClass;
 
@@ -41,41 +42,41 @@ public class SectionC4Activity extends Menu2Activity {
 
         this.setTitle(getResources().getString(R.string.cic4heading));
 
-//        if (SectionC1Activity.editChildFlag) {
-//            binding.textName.setText(SectionC1Activity.selectedChildName + " : " + getString(R.string.childname)
-//                    + "\n\n" + SectionC1Activity.editMotherName + " : " + getString(R.string.cic212a));
-//        } else {
-//            if (!SectionC1Activity.isNA) {
-//                binding.textName.setText(SectionC1Activity.selectedChildName + " : " + getString(R.string.childname)
-//                        + "\n\n" + SectionB1Activity.wraName + " : " + getString(R.string.cic212a));
-//            } else {
-//                binding.textName.setText(SectionC1Activity.selectedChildName + " : " + getString(R.string.childname)
-//                        + "\n\n" + SectionC1Activity.careTaker + " : " + getString(R.string.nh113));
-//            }
-//        }
-//
-//        binding.txtcic401.setText(binding.txtcic401.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtcic402.setText(binding.txtcic402.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtcic403.setText(binding.txtcic403.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtcic404.setText(binding.txtcic404.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtcic405.setText(binding.txtcic405.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtcic406.setText(binding.txtcic406.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtcic407.setText(binding.txtcic407.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtcic408.setText(binding.txtcic408.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtcic409.setText(binding.txtcic409.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtcic410.setText(binding.txtcic410.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtcic411.setText(binding.txtcic411.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtcic412.setText(binding.txtcic412.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtcic413.setText(binding.txtcic413.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtcic414.setText(binding.txtcic414.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtcic415.setText(binding.txtcic415.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtcic416.setText(binding.txtcic416.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtcic417.setText(binding.txtcic417.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtcic418.setText(binding.txtcic418.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtcic419.setText(binding.txtcic419.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtcic420.setText(binding.txtcic420.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//
-//
+        if (SectionC1Activity.editChildFlag) {
+            binding.textName.setText(SectionC1Activity.selectedChildName + " : " + getString(R.string.childname)
+                    + "\n\n" + SectionC1Activity.editMotherName + " : " + getString(R.string.cic212a));
+        } else {
+            if (!SectionC1Activity.isNA) {
+                binding.textName.setText(SectionC1Activity.selectedChildName + " : " + getString(R.string.childname)
+                        + "\n\n" + SectionB1Activity.wraName + " : " + getString(R.string.cic212a));
+            } else {
+                binding.textName.setText(SectionC1Activity.selectedChildName + " : " + getString(R.string.childname)
+                        + "\n\n" + SectionC1Activity.careTaker + " : " + getString(R.string.cih113));
+            }
+        }
+
+        binding.txtcic401.setText(binding.txtcic401.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        binding.txtcic402.setText(binding.txtcic402.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        binding.txtcic403.setText(binding.txtcic403.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        binding.txtcic404.setText(binding.txtcic404.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        binding.txtcic405.setText(binding.txtcic405.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        binding.txtcic406.setText(binding.txtcic406.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        binding.txtcic407.setText(binding.txtcic407.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        binding.txtcic408.setText(binding.txtcic408.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        binding.txtcic409.setText(binding.txtcic409.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        binding.txtcic410.setText(binding.txtcic410.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        binding.txtcic411.setText(binding.txtcic411.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        binding.txtcic412.setText(binding.txtcic412.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        binding.txtcic413.setText(binding.txtcic413.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        binding.txtcic414.setText(binding.txtcic414.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        binding.txtcic415.setText(binding.txtcic415.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        binding.txtcic416.setText(binding.txtcic416.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        binding.txtcic417.setText(binding.txtcic417.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        binding.txtcic418.setText(binding.txtcic418.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        binding.txtcic419.setText(binding.txtcic419.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        binding.txtcic420.setText(binding.txtcic420.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+
+
 //        //        Assigning data to UI binding
         binding.setCallback(this);
 
