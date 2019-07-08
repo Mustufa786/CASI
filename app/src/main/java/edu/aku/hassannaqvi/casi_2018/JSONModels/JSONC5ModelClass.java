@@ -6,62 +6,62 @@ package edu.aku.hassannaqvi.casi_2018.JSONModels;
 
 public class JSONC5ModelClass {
 
-    private String nc501 = "";
-    private String nc502 = "";
-    private String nc503 = "";
-    private String nc504 = "";
-    private String nc505 = "";
-    private String nc506 = "";
+    private String cic501 = "";
+    private String cic502 = "";
+    private String cic503 = "";
+    private String cic504 = "";
+    private String cic505 = "";
+    private String cic506 = "";
 
     public JSONC5ModelClass() {
 
     }
 
-    public String getnc501() {
-        return nc501;
+    public String getcic501() {
+        return cic501;
     }
 
-    public void setnc501(String nc501) {
-        this.nc501 = nc501;
+    public void setcic501(String cic501) {
+        this.cic501 = cic501;
     }
 
-    public String getnc502() {
-        return nc502;
+    public String getcic502() {
+        return cic502;
     }
 
-    public void setnc502(String nc502) {
-        this.nc502 = nc502;
+    public void setcic502(String cic502) {
+        this.cic502 = cic502;
     }
 
-    public String getnc503() {
-        return nc503;
+    public String getcic503() {
+        return cic503;
     }
 
-    public void setnc503(String nc503) {
-        this.nc503 = nc503;
+    public void setcic503(String cic503) {
+        this.cic503 = cic503;
     }
 
-    public String getnc504() {
-        return nc504;
+    public String getcic504() {
+        return cic504;
     }
 
-    public void setnc504(String nc504) {
-        this.nc504 = nc504;
+    public void setcic504(String cic504) {
+        this.cic504 = cic504;
     }
 
-    public String getnc505() {
-        return nc505;
+    public String getcic505() {
+        return cic505;
     }
 
-    public void setnc505(String nc505) {
-        this.nc505 = nc505;
+    public void setcic505(String cic505) {
+        this.cic505 = cic505;
     }
 
-    public String getnc506() {
-        return nc506;
+    public String getcic506() {
+        return cic506;
     }
 
-    public void setnc506(String nc506) {
-        this.nc506 = nc506;
+    public void setcic506(String cic506) {
+        this.cic506 = cic506;
     }
 }

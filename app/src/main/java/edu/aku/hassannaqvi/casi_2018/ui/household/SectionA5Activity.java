@@ -175,10 +175,6 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
         binding.cih502.setOnCheckedChangeListener(this);
         binding.cih503.setOnCheckedChangeListener(this);
 
-        binding.cih701.setOnCheckedChangeListener(this);
-
-        binding.cih702.addTextChangedListener(this);
-
 //        Validation Boolean
         MainApp.validateFlag = false;
 
@@ -308,41 +304,6 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
                                                 binding.cih503d.getId()
                 );
             }
-
-            if (!jsonA5.getcih701().equals("0")) {
-                binding.cih701.check(
-                        jsonA5.getcih701().equals("1") ? binding.cih701a.getId() :
-                                binding.cih701b.getId()
-
-                );
-            }
-            binding.cih702.setText(jsonA5.getcih702());
-
-            if (jsonA5.getcih701().equals("2")) {
-                binding.cih701a.setEnabled(false);
-            }
-            if (!jsonA5.getcih702().equals("")) {
-                prevRecipientCounter = Integer.valueOf(jsonA5.getcih702());
-
-            }
-           /*
-            if (!jsonA5.getcih801().equals("0")) {
-                binding.cih801.check(
-                        jsonA5.getcih801().equals("1") ? binding.cih801a.getId() :
-                                binding.cih801b.getId()
-
-                );
-            }
-            binding.cih802.setText(jsonA5.getcih802());
-
-            if (jsonA5.getcih801().equals("2")) {
-                binding.cih801a.setEnabled(false);
-            }
-            if (!jsonA5.getcih802().equals("")) {
-                prevDeceasedCounter = Integer.valueOf(jsonA5.getcih802());
-            }
-
-            */
 
             if (!jsonA5.getcih801().equals("0")) {
                 cih801 = jsonA5.getcih801().equals("1") ? "1" :
@@ -656,85 +617,11 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
                 : binding.cih618c.isChecked() ? "3"
                 : "0");
 
-
-//        sA5.put("cih601", binding.cih601a.isChecked() ? "1"
-//                : binding.cih601b.isChecked() ? "2"
-//                : binding.cih60198.isChecked() ? "98"
-//                : binding.cih60199.isChecked() ? "99"
-//                : "0");
-//
-//        sA5.put("cih602", binding.cih602a.isChecked() ? "1"
-//                : binding.cih602b.isChecked() ? "2"
-//                : binding.cih60298.isChecked() ? "98"
-//                : binding.cih60299.isChecked() ? "99"
-//                : "0");
-//
-//        sA5.put("cih603", binding.cih603a.isChecked() ? "1"
-//                : binding.cih603b.isChecked() ? "2"
-//                : binding.cih60398.isChecked() ? "98"
-//                : binding.cih60399.isChecked() ? "99"
-//                : "0");
-//
-//        sA5.put("cih604", binding.cih604a.isChecked() ? "1"
-//                : binding.cih604b.isChecked() ? "2"
-//                : binding.cih60498.isChecked() ? "98"
-//                : binding.cih60499.isChecked() ? "99"
-//                : "0");
-//
-//        sA5.put("cih605", binding.cih605a.isChecked() ? "1"
-//                : binding.cih605b.isChecked() ? "2"
-//                : binding.cih60598.isChecked() ? "98"
-//                : binding.cih60599.isChecked() ? "99"
-//                : "0");
-//
-//        sA5.put("cih606", binding.cih606a.isChecked() ? "1"
-//                : binding.cih606b.isChecked() ? "2"
-//                : binding.cih60698.isChecked() ? "98"
-//                : binding.cih60699.isChecked() ? "99"
-//                : "0");
-//
-//        sA5.put("cih607", binding.cih607a.isChecked() ? "1"
-//                : binding.cih607b.isChecked() ? "2"
-//                : binding.cih60798.isChecked() ? "98"
-//                : binding.cih60799.isChecked() ? "99"
-//                : "0");
-//
-//        sA5.put("cih608", binding.cih608a.isChecked() ? "1"
-//                : binding.cih608b.isChecked() ? "2"
-//                : binding.cih60898.isChecked() ? "98"
-//                : binding.cih60899.isChecked() ? "99"
-//                : "0");
-//
-//        sA5.put("cih609", binding.cih609a.isChecked() ? "1"
-//                : binding.cih609b.isChecked() ? "2"
-//                : binding.cih60998.isChecked() ? "98"
-//                : binding.cih60999.isChecked() ? "99"
-//                : "0");
-
-        // Section A8
-
-        sA5.put("cih701", binding.cih701a.isChecked() ? "1"
-                : binding.cih701b.isChecked() ? "2"
-                : "0");
-
-        sA5.put("cih702", binding.cih702.getText().toString());
-
-        if (binding.cih701a.isChecked()) {
-            recipientCounter = Integer.valueOf(binding.cih702.getText().toString());
-        }
-
         if (SectionA1Activity.editFormFlag) {
             sA5.put("cih801", cih801);
             sA5.put("cih802", cih802);
         }
-/*
-        sA5.put("cih801", binding.cih801a.isChecked() ? "1" : binding.cih801b.isChecked() ? "2" : "0");
-        sA5.put("cih802", binding.cih802.getText().toString());
 
-        if (binding.cih801a.isChecked()) {
-            deceasedCounter = Integer.valueOf(binding.cih802.getText().toString());
-        }
-*/
         MainApp.fc.setsA5(String.valueOf(sA5));
 
         // Set summary fields

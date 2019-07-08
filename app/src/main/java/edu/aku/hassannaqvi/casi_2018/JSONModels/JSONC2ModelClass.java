@@ -6,647 +6,647 @@ package edu.aku.hassannaqvi.casi_2018.JSONModels;
 
 public class JSONC2ModelClass {
 
-    private String nc201d = "";
-    private String nc201m = "";
-    private String nc201y = "";
-    private String nc20198 = "";
-    private String nc202 = "";
-    private String nc203 = "";
-    private String nc204a = "";
-    private String nc204b = "";
-    private String nc205 = "";
-    private String nc206 = "";
-    private String nc207 = "";
-    private String nc207h = "";
-    private String nc207d = "";
-    private String nc208 = "";
-    private String nc209 = "";
-    private String nc20996x = "";
-    private String nc210 = "";
-    private String nc211a = "";
-    private String nc211b = "";
-    private String nc211c = "";
-    private String nc211d = "";
-    private String nc211e = "";
-    private String nc211f = "";
-    private String nc211g = "";
-    private String nc211h = "";
-    private String nc211i = "";
-    private String nc211j = "";
-    private String nc21196 = "";
-    private String nc21199 = "";
-    private String nc21196x = "";
-    private String nc212 = "";
-    private String nc212a = "";
-    private String nc213 = "";
-    private String nc214 = "";
-    private String nc215a = "";
-    private String nc215b = "";
-    private String nc215bx = "";
-    private String nc215c = "";
-    private String nc215cx = "";
-    private String nc215d = "";
-    private String nc215e = "";
-    private String nc215f = "";
-    private String nc215fx = "";
-    private String nc215g = "";
-    private String nc215h = "";
-    private String nc215i = "";
-    private String nc217a = "";
-    private String nc217b = "";
-    private String nc217c = "";
-    private String nc217d = "";
-    private String nc217e = "";
-    private String nc217f = "";
-    private String nc217g = "";
-    private String nc217h = "";
-    private String nc217i = "";
-    private String nc217j = "";
-    private String nc217k = "";
-    private String nc217l = "";
-    private String nc217m = "";
-    private String nc217n = "";
-    private String nc217o = "";
-    private String nc217p = "";
-    private String nc217q = "";
-    private String nc218 = "";
-    private String nc219 = "";
-    private String nc220 = "";
-    private String nc221 = "";
-    private String nc22196x = "";
-    private String nc222 = "";
-    private String nc22296x = "";
-    private String nc223 = "";
+    private String cic201d = "";
+    private String cic201m = "";
+    private String cic201y = "";
+    private String cic20198 = "";
+    private String cic202 = "";
+    private String cic203 = "";
+    private String cic204a = "";
+    private String cic204b = "";
+    private String cic205 = "";
+    private String cic206 = "";
+    private String cic207 = "";
+    private String cic207h = "";
+    private String cic207d = "";
+    private String cic208 = "";
+    private String cic209 = "";
+    private String cic20996x = "";
+    private String cic210 = "";
+    private String cic211a = "";
+    private String cic211b = "";
+    private String cic211c = "";
+    private String cic211d = "";
+    private String cic211e = "";
+    private String cic211f = "";
+    private String cic211g = "";
+    private String cic211h = "";
+    private String cic211i = "";
+    private String cic211j = "";
+    private String cic21196 = "";
+    private String cic21199 = "";
+    private String cic21196x = "";
+    private String cic212 = "";
+    private String cic212a = "";
+    private String cic213 = "";
+    private String cic214 = "";
+    private String cic215a = "";
+    private String cic215b = "";
+    private String cic215bx = "";
+    private String cic215c = "";
+    private String cic215cx = "";
+    private String cic215d = "";
+    private String cic215e = "";
+    private String cic215f = "";
+    private String cic215fx = "";
+    private String cic215g = "";
+    private String cic215h = "";
+    private String cic215i = "";
+    private String cic217a = "";
+    private String cic217b = "";
+    private String cic217c = "";
+    private String cic217d = "";
+    private String cic217e = "";
+    private String cic217f = "";
+    private String cic217g = "";
+    private String cic217h = "";
+    private String cic217i = "";
+    private String cic217j = "";
+    private String cic217k = "";
+    private String cic217l = "";
+    private String cic217m = "";
+    private String cic217n = "";
+    private String cic217o = "";
+    private String cic217p = "";
+    private String cic217q = "";
+    private String cic218 = "";
+    private String cic219 = "";
+    private String cic220 = "";
+    private String cic221 = "";
+    private String cic22196x = "";
+    private String cic222 = "";
+    private String cic22296x = "";
+    private String cic223 = "";
 
     public JSONC2ModelClass() {
 
     }
 
     public String getNc211a() {
-        return nc211a;
+        return cic211a;
     }
 
-    public void setNc211a(String nc211a) {
-        this.nc211a = nc211a;
+    public void setNc211a(String cic211a) {
+        this.cic211a = cic211a;
     }
 
     public String getNc211b() {
-        return nc211b;
+        return cic211b;
     }
 
-    public void setNc211b(String nc211b) {
-        this.nc211b = nc211b;
+    public void setNc211b(String cic211b) {
+        this.cic211b = cic211b;
     }
 
     public String getNc211c() {
-        return nc211c;
+        return cic211c;
     }
 
-    public void setNc211c(String nc211c) {
-        this.nc211c = nc211c;
+    public void setNc211c(String cic211c) {
+        this.cic211c = cic211c;
     }
 
     public String getNc211d() {
-        return nc211d;
+        return cic211d;
     }
 
-    public void setNc211d(String nc211d) {
-        this.nc211d = nc211d;
+    public void setNc211d(String cic211d) {
+        this.cic211d = cic211d;
     }
 
     public String getNc211e() {
-        return nc211e;
+        return cic211e;
     }
 
-    public void setNc211e(String nc211e) {
-        this.nc211e = nc211e;
+    public void setNc211e(String cic211e) {
+        this.cic211e = cic211e;
     }
 
     public String getNc211f() {
-        return nc211f;
+        return cic211f;
     }
 
-    public void setNc211f(String nc211f) {
-        this.nc211f = nc211f;
+    public void setNc211f(String cic211f) {
+        this.cic211f = cic211f;
     }
 
     public String getNc211g() {
-        return nc211g;
+        return cic211g;
     }
 
-    public void setNc211g(String nc211g) {
-        this.nc211g = nc211g;
+    public void setNc211g(String cic211g) {
+        this.cic211g = cic211g;
     }
 
     public String getNc211h() {
-        return nc211h;
+        return cic211h;
     }
 
-    public void setNc211h(String nc211h) {
-        this.nc211h = nc211h;
+    public void setNc211h(String cic211h) {
+        this.cic211h = cic211h;
     }
 
     public String getNc211i() {
-        return nc211i;
+        return cic211i;
     }
 
-    public void setNc211i(String nc211i) {
-        this.nc211i = nc211i;
+    public void setNc211i(String cic211i) {
+        this.cic211i = cic211i;
     }
 
     public String getNc211j() {
-        return nc211j;
+        return cic211j;
     }
 
-    public void setNc211j(String nc211j) {
-        this.nc211j = nc211j;
+    public void setNc211j(String cic211j) {
+        this.cic211j = cic211j;
     }
 
     public String getNc21196() {
-        return nc21196;
+        return cic21196;
     }
 
-    public void setNc21196(String nc21196) {
-        this.nc21196 = nc21196;
+    public void setNc21196(String cic21196) {
+        this.cic21196 = cic21196;
     }
 
     public String getNc21199() {
-        return nc21199;
+        return cic21199;
     }
 
-    public void setNc21199(String nc21199) {
-        this.nc21199 = nc21199;
+    public void setNc21199(String cic21199) {
+        this.cic21199 = cic21199;
     }
 
-    public String getnc201d() {
-        return nc201d;
+    public String getcic201d() {
+        return cic201d;
     }
 
-    public void setnc201d(String nc201d) {
-        this.nc201d = nc201d;
+    public void setcic201d(String cic201d) {
+        this.cic201d = cic201d;
     }
 
-    public String getnc201m() {
-        return nc201m;
+    public String getcic201m() {
+        return cic201m;
     }
 
-    public void setnc201m(String nc201m) {
-        this.nc201m = nc201m;
+    public void setcic201m(String cic201m) {
+        this.cic201m = cic201m;
     }
 
-    public String getnc201y() {
-        return nc201y;
+    public String getcic201y() {
+        return cic201y;
     }
 
-    public void setnc201y(String nc201y) {
-        this.nc201y = nc201y;
+    public void setcic201y(String cic201y) {
+        this.cic201y = cic201y;
     }
 
-    public String getnc20198() {
-        return nc20198;
+    public String getcic20198() {
+        return cic20198;
     }
 
-    public void setnc20198(String nc20198) {
-        this.nc20198 = nc20198;
+    public void setcic20198(String cic20198) {
+        this.cic20198 = cic20198;
     }
 
-    public String getnc202() {
-        return nc202;
+    public String getcic202() {
+        return cic202;
     }
 
-    public void setnc202(String nc202) {
-        this.nc202 = nc202;
+    public void setcic202(String cic202) {
+        this.cic202 = cic202;
     }
 
-    public String getnc203() {
-        return nc203;
+    public String getcic203() {
+        return cic203;
     }
 
-    public void setnc203(String nc203) {
-        this.nc203 = nc203;
+    public void setcic203(String cic203) {
+        this.cic203 = cic203;
     }
 
-    public String getnc204a() {
-        return nc204a;
+    public String getcic204a() {
+        return cic204a;
     }
 
-    public void setnc204a(String nc204a) {
-        this.nc204a = nc204a;
+    public void setcic204a(String cic204a) {
+        this.cic204a = cic204a;
     }
 
-    public String getnc204b() {
-        return nc204b;
+    public String getcic204b() {
+        return cic204b;
     }
 
-    public void setnc204b(String nc204b) {
-        this.nc204b = nc204b;
+    public void setcic204b(String cic204b) {
+        this.cic204b = cic204b;
     }
 
-    public String getnc205() {
-        return nc205;
+    public String getcic205() {
+        return cic205;
     }
 
-    public void setnc205(String nc205) {
-        this.nc205 = nc205;
+    public void setcic205(String cic205) {
+        this.cic205 = cic205;
     }
 
-    public String getnc206() {
-        return nc206;
+    public String getcic206() {
+        return cic206;
     }
 
-    public void setnc206(String nc206) {
-        this.nc206 = nc206;
+    public void setcic206(String cic206) {
+        this.cic206 = cic206;
     }
 
-    public String getnc207() {
-        return nc207;
+    public String getcic207() {
+        return cic207;
     }
 
-    public void setnc207(String nc207) {
-        this.nc207 = nc207;
+    public void setcic207(String cic207) {
+        this.cic207 = cic207;
     }
 
-    public String getnc207h() {
-        return nc207h;
+    public String getcic207h() {
+        return cic207h;
     }
 
-    public void setnc207h(String nc207h) {
-        this.nc207h = nc207h;
+    public void setcic207h(String cic207h) {
+        this.cic207h = cic207h;
     }
 
-    public String getnc207d() {
-        return nc207d;
+    public String getcic207d() {
+        return cic207d;
     }
 
-    public void setnc207d(String nc207d) {
-        this.nc207d = nc207d;
+    public void setcic207d(String cic207d) {
+        this.cic207d = cic207d;
     }
 
-    public String getnc208() {
-        return nc208;
+    public String getcic208() {
+        return cic208;
     }
 
-    public void setnc208(String nc208) {
-        this.nc208 = nc208;
+    public void setcic208(String cic208) {
+        this.cic208 = cic208;
     }
 
-    public String getnc209() {
-        return nc209;
+    public String getcic209() {
+        return cic209;
     }
 
-    public void setnc209(String nc209) {
-        this.nc209 = nc209;
+    public void setcic209(String cic209) {
+        this.cic209 = cic209;
     }
 
-    public String getnc20996x() {
-        return nc20996x;
+    public String getcic20996x() {
+        return cic20996x;
     }
 
-    public void setnc20996x(String nc20996x) {
-        this.nc20996x = nc20996x;
+    public void setcic20996x(String cic20996x) {
+        this.cic20996x = cic20996x;
     }
 
-    public String getnc210() {
-        return nc210;
+    public String getcic210() {
+        return cic210;
     }
 
-    public void setnc210(String nc210) {
-        this.nc210 = nc210;
+    public void setcic210(String cic210) {
+        this.cic210 = cic210;
     }
 
-    public String getnc21196x() {
-        return nc21196x;
+    public String getcic21196x() {
+        return cic21196x;
     }
 
-    public void setnc21196x(String nc21196x) {
-        this.nc21196x = nc21196x;
+    public void setcic21196x(String cic21196x) {
+        this.cic21196x = cic21196x;
     }
 
-    public String getnc212() {
-        return nc212;
+    public String getcic212() {
+        return cic212;
     }
 
-    public void setnc212(String nc212) {
-        this.nc212 = nc212;
+    public void setcic212(String cic212) {
+        this.cic212 = cic212;
     }
 
-    public String getnc212a() {
-        return nc212a;
+    public String getcic212a() {
+        return cic212a;
     }
 
-    public void setnc212a(String nc212a) {
-        this.nc212a = nc212a;
+    public void setcic212a(String cic212a) {
+        this.cic212a = cic212a;
     }
 
-    public String getnc213() {
-        return nc213;
+    public String getcic213() {
+        return cic213;
     }
 
-    public void setnc213(String nc213) {
-        this.nc213 = nc213;
+    public void setcic213(String cic213) {
+        this.cic213 = cic213;
     }
 
-    public String getnc214() {
-        return nc214;
+    public String getcic214() {
+        return cic214;
     }
 
-    public void setnc214(String nc214) {
-        this.nc214 = nc214;
+    public void setcic214(String cic214) {
+        this.cic214 = cic214;
     }
 
-    public String getnc215a() {
-        return nc215a;
+    public String getcic215a() {
+        return cic215a;
     }
 
-    public void setnc215a(String nc215a) {
-        this.nc215a = nc215a;
+    public void setcic215a(String cic215a) {
+        this.cic215a = cic215a;
     }
 
-    public String getnc215b() {
-        return nc215b;
+    public String getcic215b() {
+        return cic215b;
     }
 
-    public void setnc215b(String nc215b) {
-        this.nc215b = nc215b;
+    public void setcic215b(String cic215b) {
+        this.cic215b = cic215b;
     }
 
-    public String getnc215bx() {
-        return nc215bx;
+    public String getcic215bx() {
+        return cic215bx;
     }
 
-    public void setnc215bx(String nc215bx) {
-        this.nc215bx = nc215bx;
+    public void setcic215bx(String cic215bx) {
+        this.cic215bx = cic215bx;
     }
 
-    public String getnc215c() {
-        return nc215c;
+    public String getcic215c() {
+        return cic215c;
     }
 
-    public void setnc215c(String nc215c) {
-        this.nc215c = nc215c;
+    public void setcic215c(String cic215c) {
+        this.cic215c = cic215c;
     }
 
-    public String getnc215cx() {
-        return nc215cx;
+    public String getcic215cx() {
+        return cic215cx;
     }
 
-    public void setnc215cx(String nc215cx) {
-        this.nc215cx = nc215cx;
+    public void setcic215cx(String cic215cx) {
+        this.cic215cx = cic215cx;
     }
 
-    public String getnc215d() {
-        return nc215d;
+    public String getcic215d() {
+        return cic215d;
     }
 
-    public void setnc215d(String nc215d) {
-        this.nc215d = nc215d;
+    public void setcic215d(String cic215d) {
+        this.cic215d = cic215d;
     }
 
-    public String getnc215e() {
-        return nc215e;
+    public String getcic215e() {
+        return cic215e;
     }
 
-    public void setnc215e(String nc215e) {
-        this.nc215e = nc215e;
+    public void setcic215e(String cic215e) {
+        this.cic215e = cic215e;
     }
 
-    public String getnc215f() {
-        return nc215f;
+    public String getcic215f() {
+        return cic215f;
     }
 
-    public void setnc215f(String nc215f) {
-        this.nc215f = nc215f;
+    public void setcic215f(String cic215f) {
+        this.cic215f = cic215f;
     }
 
-    public String getnc215fx() {
-        return nc215fx;
+    public String getcic215fx() {
+        return cic215fx;
     }
 
-    public void setnc215fx(String nc215fx) {
-        this.nc215fx = nc215fx;
+    public void setcic215fx(String cic215fx) {
+        this.cic215fx = cic215fx;
     }
 
-    public String getnc215g() {
-        return nc215g;
+    public String getcic215g() {
+        return cic215g;
     }
 
-    public void setnc215g(String nc215g) {
-        this.nc215g = nc215g;
+    public void setcic215g(String cic215g) {
+        this.cic215g = cic215g;
     }
 
-    public String getnc215h() {
-        return nc215h;
+    public String getcic215h() {
+        return cic215h;
     }
 
-    public void setnc215h(String nc215h) {
-        this.nc215h = nc215h;
+    public void setcic215h(String cic215h) {
+        this.cic215h = cic215h;
     }
 
-    public String getnc215i() {
-        return nc215i;
+    public String getcic215i() {
+        return cic215i;
     }
 
-    public void setnc215i(String nc215i) {
-        this.nc215i = nc215i;
+    public void setcic215i(String cic215i) {
+        this.cic215i = cic215i;
     }
 
-    public String getnc217a() {
-        return nc217a;
+    public String getcic217a() {
+        return cic217a;
     }
 
-    public void setnc217a(String nc217a) {
-        this.nc217a = nc217a;
+    public void setcic217a(String cic217a) {
+        this.cic217a = cic217a;
     }
 
-    public String getnc217b() {
-        return nc217b;
+    public String getcic217b() {
+        return cic217b;
     }
 
-    public void setnc217b(String nc217b) {
-        this.nc217b = nc217b;
+    public void setcic217b(String cic217b) {
+        this.cic217b = cic217b;
     }
 
-    public String getnc217c() {
-        return nc217c;
+    public String getcic217c() {
+        return cic217c;
     }
 
-    public void setnc217c(String nc217c) {
-        this.nc217c = nc217c;
+    public void setcic217c(String cic217c) {
+        this.cic217c = cic217c;
     }
 
-    public String getnc217d() {
-        return nc217d;
+    public String getcic217d() {
+        return cic217d;
     }
 
-    public void setnc217d(String nc217d) {
-        this.nc217d = nc217d;
+    public void setcic217d(String cic217d) {
+        this.cic217d = cic217d;
     }
 
-    public String getnc217e() {
-        return nc217e;
+    public String getcic217e() {
+        return cic217e;
     }
 
-    public void setnc217e(String nc217e) {
-        this.nc217e = nc217e;
+    public void setcic217e(String cic217e) {
+        this.cic217e = cic217e;
     }
 
-    public String getnc217f() {
-        return nc217f;
+    public String getcic217f() {
+        return cic217f;
     }
 
-    public void setnc217f(String nc217f) {
-        this.nc217f = nc217f;
+    public void setcic217f(String cic217f) {
+        this.cic217f = cic217f;
     }
 
-    public String getnc217g() {
-        return nc217g;
+    public String getcic217g() {
+        return cic217g;
     }
 
-    public void setnc217g(String nc217g) {
-        this.nc217g = nc217g;
+    public void setcic217g(String cic217g) {
+        this.cic217g = cic217g;
     }
 
-    public String getnc217h() {
-        return nc217h;
+    public String getcic217h() {
+        return cic217h;
     }
 
-    public void setnc217h(String nc217h) {
-        this.nc217h = nc217h;
+    public void setcic217h(String cic217h) {
+        this.cic217h = cic217h;
     }
 
-    public String getnc217i() {
-        return nc217i;
+    public String getcic217i() {
+        return cic217i;
     }
 
-    public void setnc217i(String nc217i) {
-        this.nc217i = nc217i;
+    public void setcic217i(String cic217i) {
+        this.cic217i = cic217i;
     }
 
-    public String getnc217j() {
-        return nc217j;
+    public String getcic217j() {
+        return cic217j;
     }
 
-    public void setnc217j(String nc217j) {
-        this.nc217j = nc217j;
+    public void setcic217j(String cic217j) {
+        this.cic217j = cic217j;
     }
 
-    public String getnc217k() {
-        return nc217k;
+    public String getcic217k() {
+        return cic217k;
     }
 
-    public void setnc217k(String nc217k) {
-        this.nc217k = nc217k;
+    public void setcic217k(String cic217k) {
+        this.cic217k = cic217k;
     }
 
-    public String getnc217l() {
-        return nc217l;
+    public String getcic217l() {
+        return cic217l;
     }
 
-    public void setnc217l(String nc217l) {
-        this.nc217l = nc217l;
+    public void setcic217l(String cic217l) {
+        this.cic217l = cic217l;
     }
 
-    public String getnc217m() {
-        return nc217m;
+    public String getcic217m() {
+        return cic217m;
     }
 
-    public void setnc217m(String nc217m) {
-        this.nc217m = nc217m;
+    public void setcic217m(String cic217m) {
+        this.cic217m = cic217m;
     }
 
-    public String getnc217n() {
-        return nc217n;
+    public String getcic217n() {
+        return cic217n;
     }
 
-    public void setnc217n(String nc217n) {
-        this.nc217n = nc217n;
+    public void setcic217n(String cic217n) {
+        this.cic217n = cic217n;
     }
 
-    public String getnc217o() {
-        return nc217o;
+    public String getcic217o() {
+        return cic217o;
     }
 
-    public void setnc217o(String nc217o) {
-        this.nc217o = nc217o;
+    public void setcic217o(String cic217o) {
+        this.cic217o = cic217o;
     }
 
-    public String getnc217p() {
-        return nc217p;
+    public String getcic217p() {
+        return cic217p;
     }
 
-    public void setnc217p(String nc217p) {
-        this.nc217p = nc217p;
+    public void setcic217p(String cic217p) {
+        this.cic217p = cic217p;
     }
 
-    public String getnc217q() {
-        return nc217q;
+    public String getcic217q() {
+        return cic217q;
     }
 
-    public void setnc217q(String nc217q) {
-        this.nc217q = nc217q;
+    public void setcic217q(String cic217q) {
+        this.cic217q = cic217q;
     }
 
-    public String getnc218() {
-        return nc218;
+    public String getcic218() {
+        return cic218;
     }
 
-    public void setnc218(String nc218) {
-        this.nc218 = nc218;
+    public void setcic218(String cic218) {
+        this.cic218 = cic218;
     }
 
-    public String getnc219() {
-        return nc219;
+    public String getcic219() {
+        return cic219;
     }
 
-    public void setnc219(String nc219) {
-        this.nc219 = nc219;
+    public void setcic219(String cic219) {
+        this.cic219 = cic219;
     }
 
-    public String getnc220() {
-        return nc220;
+    public String getcic220() {
+        return cic220;
     }
 
-    public void setnc220(String nc220) {
-        this.nc220 = nc220;
+    public void setcic220(String cic220) {
+        this.cic220 = cic220;
     }
 
-    public String getnc221() {
-        return nc221;
+    public String getcic221() {
+        return cic221;
     }
 
-    public void setnc221(String nc221) {
-        this.nc221 = nc221;
+    public void setcic221(String cic221) {
+        this.cic221 = cic221;
     }
 
-    public String getnc22196x() {
-        return nc22196x;
+    public String getcic22196x() {
+        return cic22196x;
     }
 
-    public void setnc22196x(String nc22196x) {
-        this.nc22196x = nc22196x;
+    public void setcic22196x(String cic22196x) {
+        this.cic22196x = cic22196x;
     }
 
-    public String getnc222() {
-        return nc222;
+    public String getcic222() {
+        return cic222;
     }
 
-    public void setnc222(String nc222) {
-        this.nc222 = nc222;
+    public void setcic222(String cic222) {
+        this.cic222 = cic222;
     }
 
-    public String getnc22296x() {
-        return nc22296x;
+    public String getcic22296x() {
+        return cic22296x;
     }
 
-    public void setnc22296x(String nc22296x) {
-        this.nc22296x = nc22296x;
+    public void setcic22296x(String cic22296x) {
+        this.cic22296x = cic22296x;
     }
 
-    public String getnc223() {
-        return nc223;
+    public String getcic223() {
+        return cic223;
     }
 
-    public void setnc223(String nc223) {
-        this.nc223 = nc223;
+    public void setcic223(String cic223) {
+        this.cic223 = cic223;
     }
 }

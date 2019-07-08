@@ -45,7 +45,7 @@ public class SectionC5Activity extends Menu2Activity implements TextWatcher, Rad
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_c5);
         bi.setCallback(this);
 
-        this.setTitle(getResources().getString(R.string.nc5heading));
+        this.setTitle(getResources().getString(R.string.cic5heading));
 
         if (SectionC1Activity.editChildFlag) {
             bi.textName.setText(SectionC1Activity.selectedChildName + " : " + getString(R.string.childname)
@@ -66,12 +66,12 @@ public class SectionC5Activity extends Menu2Activity implements TextWatcher, Rad
         selectedChild = (FamilyMembersContract) getIntent().getSerializableExtra("selectedChild");
 
 
-        bi.nc501.setOnCheckedChangeListener(this);
-        bi.nc502.setOnCheckedChangeListener(this);
-        bi.nc503.setOnCheckedChangeListener(this);
-        bi.nc504.setOnCheckedChangeListener(this);
-        bi.nc505.setOnCheckedChangeListener(this);
-        bi.nc506.setOnCheckedChangeListener(this);
+        bi.cic501.setOnCheckedChangeListener(this);
+        bi.cic502.setOnCheckedChangeListener(this);
+        bi.cic503.setOnCheckedChangeListener(this);
+        bi.cic504.setOnCheckedChangeListener(this);
+        bi.cic505.setOnCheckedChangeListener(this);
+        bi.cic506.setOnCheckedChangeListener(this);
 
 //        Validation Boolean
         MainApp.validateFlag = false;
@@ -88,52 +88,52 @@ public class SectionC5Activity extends Menu2Activity implements TextWatcher, Rad
 
             JSONC5ModelClass jsonC5 = JSONUtilClass.getModelFromJSON(childContract.getsC5(), JSONC5ModelClass.class);
 
-            if (!jsonC5.getnc501().equals("0")) {
-                bi.nc501.check(
-                        jsonC5.getnc501().equals("1") ? bi.nc501a.getId()
-                                : jsonC5.getnc501().equals("2") ? bi.nc501b.getId()
-                                : jsonC5.getnc501().equals("3") ? bi.nc501c.getId()
-                                : bi.nc501d.getId()
+            if (!jsonC5.getcic501().equals("0")) {
+                bi.cic501.check(
+                        jsonC5.getcic501().equals("1") ? bi.cic501a.getId()
+                                : jsonC5.getcic501().equals("2") ? bi.cic501b.getId()
+                                : jsonC5.getcic501().equals("3") ? bi.cic501c.getId()
+                                : bi.cic501d.getId()
                 );
             }
-            if (!jsonC5.getnc502().equals("0")) {
-                bi.nc502.check(
-                        jsonC5.getnc502().equals("1") ? bi.nc502a.getId()
-                                : jsonC5.getnc502().equals("2") ? bi.nc502b.getId()
-                                : jsonC5.getnc502().equals("3") ? bi.nc502c.getId()
-                                : bi.nc502d.getId()
+            if (!jsonC5.getcic502().equals("0")) {
+                bi.cic502.check(
+                        jsonC5.getcic502().equals("1") ? bi.cic502a.getId()
+                                : jsonC5.getcic502().equals("2") ? bi.cic502b.getId()
+                                : jsonC5.getcic502().equals("3") ? bi.cic502c.getId()
+                                : bi.cic502d.getId()
                 );
             }
-            if (!jsonC5.getnc503().equals("0")) {
-                bi.nc503.check(
-                        jsonC5.getnc503().equals("1") ? bi.nc503a.getId()
-                                : jsonC5.getnc503().equals("2") ? bi.nc503b.getId()
-                                : jsonC5.getnc503().equals("3") ? bi.nc503c.getId()
-                                : bi.nc503d.getId()
+            if (!jsonC5.getcic503().equals("0")) {
+                bi.cic503.check(
+                        jsonC5.getcic503().equals("1") ? bi.cic503a.getId()
+                                : jsonC5.getcic503().equals("2") ? bi.cic503b.getId()
+                                : jsonC5.getcic503().equals("3") ? bi.cic503c.getId()
+                                : bi.cic503d.getId()
                 );
             }
-            if (!jsonC5.getnc504().equals("0")) {
-                bi.nc504.check(
-                        jsonC5.getnc504().equals("1") ? bi.nc504a.getId()
-                                : jsonC5.getnc504().equals("2") ? bi.nc504b.getId()
-                                : jsonC5.getnc504().equals("3") ? bi.nc504c.getId()
-                                : bi.nc504d.getId()
+            if (!jsonC5.getcic504().equals("0")) {
+                bi.cic504.check(
+                        jsonC5.getcic504().equals("1") ? bi.cic504a.getId()
+                                : jsonC5.getcic504().equals("2") ? bi.cic504b.getId()
+                                : jsonC5.getcic504().equals("3") ? bi.cic504c.getId()
+                                : bi.cic504d.getId()
                 );
             }
-            if (!jsonC5.getnc505().equals("0")) {
-                bi.nc505.check(
-                        jsonC5.getnc505().equals("1") ? bi.nc505a.getId()
-                                : jsonC5.getnc505().equals("2") ? bi.nc505b.getId()
-                                : jsonC5.getnc505().equals("3") ? bi.nc505c.getId()
-                                : bi.nc505d.getId()
+            if (!jsonC5.getcic505().equals("0")) {
+                bi.cic505.check(
+                        jsonC5.getcic505().equals("1") ? bi.cic505a.getId()
+                                : jsonC5.getcic505().equals("2") ? bi.cic505b.getId()
+                                : jsonC5.getcic505().equals("3") ? bi.cic505c.getId()
+                                : bi.cic505d.getId()
                 );
             }
-            if (!jsonC5.getnc506().equals("0")) {
-                bi.nc506.check(
-                        jsonC5.getnc506().equals("1") ? bi.nc506a.getId()
-                                : jsonC5.getnc506().equals("2") ? bi.nc506b.getId()
-                                : jsonC5.getnc506().equals("3") ? bi.nc506c.getId()
-                                : bi.nc506d.getId()
+            if (!jsonC5.getcic506().equals("0")) {
+                bi.cic506.check(
+                        jsonC5.getcic506().equals("1") ? bi.cic506a.getId()
+                                : jsonC5.getcic506().equals("2") ? bi.cic506b.getId()
+                                : jsonC5.getcic506().equals("3") ? bi.cic506c.getId()
+                                : bi.cic506d.getId()
                 );
             }
 
@@ -198,22 +198,22 @@ public class SectionC5Activity extends Menu2Activity implements TextWatcher, Rad
     private boolean formValidation() {
         //Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nc501, bi.nc501a, getString(R.string.nc501))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cic501, bi.cic501a, getString(R.string.cic501))) {
             return false;
         }
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nc502, bi.nc502a, getString(R.string.nc502))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cic502, bi.cic502a, getString(R.string.cic502))) {
             return false;
         }
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nc503, bi.nc503a, getString(R.string.nc503))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cic503, bi.cic503a, getString(R.string.cic503))) {
             return false;
         }
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nc504, bi.nc504a, getString(R.string.nc504))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cic504, bi.cic504a, getString(R.string.cic504))) {
             return false;
         }
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nc505, bi.nc505a, getString(R.string.nc505))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cic505, bi.cic505a, getString(R.string.cic505))) {
             return false;
         }
-        return ValidatorClass.EmptyRadioButton(this, bi.nc506, bi.nc506a, getString(R.string.nc506));
+        return ValidatorClass.EmptyRadioButton(this, bi.cic506, bi.cic506a, getString(R.string.cic506));
 
     }
 
@@ -223,7 +223,7 @@ public class SectionC5Activity extends Menu2Activity implements TextWatcher, Rad
         JSONObject sC5 = new JSONObject();
 
         if (backPressed) {
-            sC5.put("updatedate_nc5", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
+            sC5.put("updatedate_cic5", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
         }
 
         if (SectionC1Activity.editChildFlag) {
@@ -231,45 +231,45 @@ public class SectionC5Activity extends Menu2Activity implements TextWatcher, Rad
         }
 
 //        nc301
-        //sC5.put("nc501", selectedChild.getName());
+        //sC5.put("cic501", selectedChild.getName());
 //        nc302
-        //sC5.put("nc502Serial", selectedChild.getSerialNo());
+        //sC5.put("cic502Serial", selectedChild.getSerialNo());
 
-//        nc501
-        sC5.put("nc501", bi.nc501a.isChecked() ? "1"
-                : bi.nc501b.isChecked() ? "2"
-                : bi.nc501c.isChecked() ? "3"
-                : bi.nc501d.isChecked() ? "4"
+//        cic501
+        sC5.put("cic501", bi.cic501a.isChecked() ? "1"
+                : bi.cic501b.isChecked() ? "2"
+                : bi.cic501c.isChecked() ? "3"
+                : bi.cic501d.isChecked() ? "4"
                 : "0");
-//        nc502
-        sC5.put("nc502", bi.nc502a.isChecked() ? "1"
-                : bi.nc502b.isChecked() ? "2"
-                : bi.nc502c.isChecked() ? "3"
-                : bi.nc502d.isChecked() ? "4"
+//        cic502
+        sC5.put("cic502", bi.cic502a.isChecked() ? "1"
+                : bi.cic502b.isChecked() ? "2"
+                : bi.cic502c.isChecked() ? "3"
+                : bi.cic502d.isChecked() ? "4"
                 : "0");
-//        nc503
-        sC5.put("nc503", bi.nc503a.isChecked() ? "1"
-                : bi.nc503b.isChecked() ? "2"
-                : bi.nc503c.isChecked() ? "3"
-                : bi.nc503d.isChecked() ? "4"
+//        cic503
+        sC5.put("cic503", bi.cic503a.isChecked() ? "1"
+                : bi.cic503b.isChecked() ? "2"
+                : bi.cic503c.isChecked() ? "3"
+                : bi.cic503d.isChecked() ? "4"
                 : "0");
-//        nc504
-        sC5.put("nc504", bi.nc504a.isChecked() ? "1"
-                : bi.nc504b.isChecked() ? "2"
-                : bi.nc504c.isChecked() ? "3"
-                : bi.nc504d.isChecked() ? "4"
+//        cic504
+        sC5.put("cic504", bi.cic504a.isChecked() ? "1"
+                : bi.cic504b.isChecked() ? "2"
+                : bi.cic504c.isChecked() ? "3"
+                : bi.cic504d.isChecked() ? "4"
                 : "0");
-//        nc505
-        sC5.put("nc505", bi.nc505a.isChecked() ? "1"
-                : bi.nc505b.isChecked() ? "2"
-                : bi.nc505c.isChecked() ? "3"
-                : bi.nc505d.isChecked() ? "4"
+//        cic505
+        sC5.put("cic505", bi.cic505a.isChecked() ? "1"
+                : bi.cic505b.isChecked() ? "2"
+                : bi.cic505c.isChecked() ? "3"
+                : bi.cic505d.isChecked() ? "4"
                 : "0");
-//        nc506
-        sC5.put("nc506", bi.nc506a.isChecked() ? "1"
-                : bi.nc506b.isChecked() ? "2"
-                : bi.nc506c.isChecked() ? "3"
-                : bi.nc506d.isChecked() ? "4"
+//        cic506
+        sC5.put("cic506", bi.cic506a.isChecked() ? "1"
+                : bi.cic506b.isChecked() ? "2"
+                : bi.cic506c.isChecked() ? "3"
+                : bi.cic506d.isChecked() ? "4"
                 : "0");
 
         MainApp.cc.setsC5(String.valueOf(sC5));

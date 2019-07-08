@@ -45,40 +45,40 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
         public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 //            ValidateForm();
             if (isChecked) {
-                bi.nc21199.setChecked(false);
+                bi.cic21199.setChecked(false);
             }
         }
     };
     FamilyMembersContract selectedChild;
     DatabaseHelper db;
     Boolean backPressed = false;
-    @BindViews({R.id.nc211a, R.id.nc211b, R.id.nc211c, R.id.nc211d, R.id.nc211e, R.id.nc211f,
-            R.id.nc211g, R.id.nc211h, R.id.nc211i, R.id.nc211j})
-    List<CheckBox> grpnc211;
-    @BindViews({R.id.nc215a, R.id.nc215b, R.id.nc215c, R.id.nc215d, R.id.nc215e, R.id.nc215f,
-            R.id.nc215g, R.id.nc215h, R.id.nc215i, R.id.nc217a, R.id.nc217b, R.id.nc217c,
-            R.id.nc217d, R.id.nc217e, R.id.nc217f, R.id.nc217g, R.id.nc217h, R.id.nc217i,
-            R.id.nc217j, R.id.nc217k, R.id.nc217l, R.id.nc217m, R.id.nc217n, R.id.nc217o,
-            R.id.nc217p, R.id.nc217q})
-    List<RadioGroup> grpnc215;
-    @BindViews({R.id.nc215aa, R.id.nc215ba, R.id.nc215ca, R.id.nc215da, R.id.nc215ea, R.id.nc215fa,
-            R.id.nc215ga, R.id.nc215ha, R.id.nc215ia, R.id.nc217aa, R.id.nc217ba, R.id.nc217ca,
-            R.id.nc217da, R.id.nc217ea, R.id.nc217fa, R.id.nc217ga, R.id.nc217ha, R.id.nc217ia,
-            R.id.nc217ja, R.id.nc217ka, R.id.nc217la, R.id.nc217ma, R.id.nc217na, R.id.nc217oa,
-            R.id.nc217pa, R.id.nc217qa})
-    List<RadioButton> nc215yes;
-    @BindViews({R.id.nc215ab, R.id.nc215bb, R.id.nc215cb, R.id.nc215db, R.id.nc215eb, R.id.nc215fb,
-            R.id.nc215gb, R.id.nc215hb, R.id.nc215ib, R.id.nc217ab, R.id.nc217bb, R.id.nc217cb,
-            R.id.nc217db, R.id.nc217eb, R.id.nc217fb, R.id.nc217gb, R.id.nc217hb, R.id.nc217ib,
-            R.id.nc217jb, R.id.nc217kb, R.id.nc217lb, R.id.nc217mb, R.id.nc217nb, R.id.nc217ob,
-            R.id.nc217pb, R.id.nc217qb})
-    List<RadioButton> nc215no;
-    @BindViews({R.id.nc215a98, R.id.nc215b98, R.id.nc215c98, R.id.nc215d98, R.id.nc215e98, R.id.nc215f98,
-            R.id.nc215g98, R.id.nc215h98, R.id.nc215i98, R.id.nc217a98, R.id.nc217b98, R.id.nc217c98,
-            R.id.nc217d98, R.id.nc217e98, R.id.nc217f98, R.id.nc217g98, R.id.nc217h98, R.id.nc217i98,
-            R.id.nc217j98, R.id.nc217k98, R.id.nc217l98, R.id.nc217m98, R.id.nc217n98, R.id.nc217o98,
-            R.id.nc217p98, R.id.nc217q98})
-    List<RadioButton> nc215dkn;
+    @BindViews({R.id.cic211a, R.id.cic211b, R.id.cic211c, R.id.cic211d, R.id.cic211e, R.id.cic211f,
+            R.id.cic211g, R.id.cic211h, R.id.cic211i, R.id.cic211j})
+    List<CheckBox> grpcic211;
+    @BindViews({R.id.cic215a, R.id.cic215b, R.id.cic215c, R.id.cic215d, R.id.cic215e, R.id.cic215f,
+            R.id.cic215g, R.id.cic215h, R.id.cic215i, R.id.cic217a, R.id.cic217b, R.id.cic217c,
+            R.id.cic217d, R.id.cic217e, R.id.cic217f, R.id.cic217g, R.id.cic217h, R.id.cic217i,
+            R.id.cic217j, R.id.cic217k, R.id.cic217l, R.id.cic217m, R.id.cic217n, R.id.cic217o,
+            R.id.cic217p, R.id.cic217q})
+    List<RadioGroup> grpcic215;
+    @BindViews({R.id.cic215aa, R.id.cic215ba, R.id.cic215ca, R.id.cic215da, R.id.cic215ea, R.id.cic215fa,
+            R.id.cic215ga, R.id.cic215ha, R.id.cic215ia, R.id.cic217aa, R.id.cic217ba, R.id.cic217ca,
+            R.id.cic217da, R.id.cic217ea, R.id.cic217fa, R.id.cic217ga, R.id.cic217ha, R.id.cic217ia,
+            R.id.cic217ja, R.id.cic217ka, R.id.cic217la, R.id.cic217ma, R.id.cic217na, R.id.cic217oa,
+            R.id.cic217pa, R.id.cic217qa})
+    List<RadioButton> cic215yes;
+    @BindViews({R.id.cic215ab, R.id.cic215bb, R.id.cic215cb, R.id.cic215db, R.id.cic215eb, R.id.cic215fb,
+            R.id.cic215gb, R.id.cic215hb, R.id.cic215ib, R.id.cic217ab, R.id.cic217bb, R.id.cic217cb,
+            R.id.cic217db, R.id.cic217eb, R.id.cic217fb, R.id.cic217gb, R.id.cic217hb, R.id.cic217ib,
+            R.id.cic217jb, R.id.cic217kb, R.id.cic217lb, R.id.cic217mb, R.id.cic217nb, R.id.cic217ob,
+            R.id.cic217pb, R.id.cic217qb})
+    List<RadioButton> cic215no;
+    @BindViews({R.id.cic215a98, R.id.cic215b98, R.id.cic215c98, R.id.cic215d98, R.id.cic215e98, R.id.cic215f98,
+            R.id.cic215g98, R.id.cic215h98, R.id.cic215i98, R.id.cic217a98, R.id.cic217b98, R.id.cic217c98,
+            R.id.cic217d98, R.id.cic217e98, R.id.cic217f98, R.id.cic217g98, R.id.cic217h98, R.id.cic217i98,
+            R.id.cic217j98, R.id.cic217k98, R.id.cic217l98, R.id.cic217m98, R.id.cic217n98, R.id.cic217o98,
+            R.id.cic217p98, R.id.cic217q98})
+    List<RadioButton> cic215dkn;
     public RadioGroup.OnCheckedChangeListener check = new RadioGroup.OnCheckedChangeListener() {
         @Override
         public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -87,58 +87,58 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
             ValidateForm();
 
             if (isoneYes()) {
-                //bi.fldGrpnc218.setVisibility(View.GONE);
-                ClearClass.ClearAllFields(bi.fldGrpnc218, false);
-                ClearClass.ClearAllFields(bi.fldGrpnc219, true);
-                //bi.fldGrpnc219.setVisibility(View.VISIBLE);
-                //bi.nc218.clearCheck();
+                //bi.fldGrpcic218.setVisibility(View.GONE);
+                ClearClass.ClearAllFields(bi.fldGrpcic218, false);
+                ClearClass.ClearAllFields(bi.fldGrpcic219, true);
+                //bi.fldGrpcic219.setVisibility(View.VISIBLE);
+                //bi.cic218.clearCheck();
             } else {
-                ClearClass.ClearAllFields(bi.fldGrpnc218, true);
-                ClearClass.ClearAllFields(bi.fldGrpnc219, false);
-                //bi.fldGrpnc218.setVisibility(View.VISIBLE);
-                //bi.fldGrpnc219.setVisibility(View.VISIBLE);
+                ClearClass.ClearAllFields(bi.fldGrpcic218, true);
+                ClearClass.ClearAllFields(bi.fldGrpcic219, false);
+                //bi.fldGrpcic218.setVisibility(View.VISIBLE);
+                //bi.fldGrpcic219.setVisibility(View.VISIBLE);
             }
 
 
         }
     };
-    public RadioGroup.OnCheckedChangeListener nc215 = new RadioGroup.OnCheckedChangeListener() {
+    public RadioGroup.OnCheckedChangeListener cic215 = new RadioGroup.OnCheckedChangeListener() {
         @Override
         public void onCheckedChanged(RadioGroup group, int checkedId) {
 
             ValidateForm();
-            if (group == bi.nc215b) {
-                if (bi.nc215ba.isChecked()) {
-                    //ClearClass.ClearAllFields(bi.nc215bx, true);
-                    bi.nc215bx.setVisibility(View.VISIBLE);
-                    bi.nc215bx.setEnabled(true);
+            if (group == bi.cic215b) {
+                if (bi.cic215ba.isChecked()) {
+                    //ClearClass.ClearAllFields(bi.cic215bx, true);
+                    bi.cic215bx.setVisibility(View.VISIBLE);
+                    bi.cic215bx.setEnabled(true);
                 } else {
-                    //bi.nc215bx.setVisibility(View.GONE);
-                    bi.nc215bx.setText(null);
-                    bi.nc215bx.setEnabled(false);
+                    //bi.cic215bx.setVisibility(View.GONE);
+                    bi.cic215bx.setText(null);
+                    bi.cic215bx.setEnabled(false);
 
                 }
             }
 
-            if (group == bi.nc215c) {
-                if (bi.nc215ca.isChecked()) {
-                    bi.nc215cx.setVisibility(View.VISIBLE);
-                    bi.nc215cx.setEnabled(true);
+            if (group == bi.cic215c) {
+                if (bi.cic215ca.isChecked()) {
+                    bi.cic215cx.setVisibility(View.VISIBLE);
+                    bi.cic215cx.setEnabled(true);
                 } else {
-                    //bi.nc215cx.setVisibility(View.GONE);
-                    bi.nc215cx.setText(null);
-                    bi.nc215cx.setEnabled(false);
+                    //bi.cic215cx.setVisibility(View.GONE);
+                    bi.cic215cx.setText(null);
+                    bi.cic215cx.setEnabled(false);
                 }
             }
 
-            if (group == bi.nc215f) {
-                if (bi.nc215fa.isChecked()) {
-                    bi.nc215fx.setVisibility(View.VISIBLE);
-                    bi.nc215fx.setEnabled(true);
+            if (group == bi.cic215f) {
+                if (bi.cic215fa.isChecked()) {
+                    bi.cic215fx.setVisibility(View.VISIBLE);
+                    bi.cic215fx.setEnabled(true);
                 } else {
-                    //bi.nc215fx.setVisibility(View.GONE);
-                    bi.nc215fx.setEnabled(false);
-                    bi.nc215fx.setText(null);
+                    //bi.cic215fx.setVisibility(View.GONE);
+                    bi.cic215fx.setEnabled(false);
+                    bi.cic215fx.setText(null);
                 }
             }
 
@@ -156,7 +156,7 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
         db = new DatabaseHelper(this);
         bi.setCallback(this);
 
-        this.setTitle(getResources().getString(R.string.nc2heading));
+        this.setTitle(getResources().getString(R.string.cic2heading));
 
         setupViews();
 
@@ -176,98 +176,98 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
             }
         }
 
-        bi.txtnc206.setText(bi.txtnc206.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        bi.txtnc207.setText(bi.txtnc207.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        bi.txtnc209.setText(bi.txtnc209.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        bi.txtnc210.setText(bi.txtnc210.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        bi.txtnc211.setText(bi.txtnc211.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        bi.txtnc212.setText(bi.txtnc212.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        bi.txtnc212a.setText(bi.txtnc212a.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        bi.txtnc213.setText(bi.txtnc213.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        bi.txtnc214.setText(bi.txtnc214.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        bi.txtnc215.setText(bi.txtnc215.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        bi.txtnc217.setText(bi.txtnc217.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        bi.txtnc218.setText(bi.txtnc218.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        bi.txtnc219.setText(bi.txtnc219.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        bi.txtnc220.setText(bi.txtnc220.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        bi.txtnc221.setText(bi.txtnc221.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        bi.txtnc223.setText(bi.txtnc223.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        bi.txtnc212.setText(bi.txtnc212.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        bi.txtcic206.setText(bi.txtcic206.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        bi.txtcic207.setText(bi.txtcic207.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        bi.txtcic209.setText(bi.txtcic209.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        bi.txtcic210.setText(bi.txtcic210.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        bi.txtcic211.setText(bi.txtcic211.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        bi.txtcic212.setText(bi.txtcic212.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        bi.txtcic212a.setText(bi.txtcic212a.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        bi.txtcic213.setText(bi.txtcic213.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        bi.txtcic214.setText(bi.txtcic214.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        bi.txtcic215.setText(bi.txtcic215.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        bi.txtcic217.setText(bi.txtcic217.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        bi.txtcic218.setText(bi.txtcic218.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        bi.txtcic219.setText(bi.txtcic219.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        bi.txtcic220.setText(bi.txtcic220.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        bi.txtcic221.setText(bi.txtcic221.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        bi.txtcic223.setText(bi.txtcic223.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        bi.txtcic212.setText(bi.txtcic212.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
 
 
-        bi.nc207a.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        bi.cic207a.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if (b) {
-                    bi.nc207h.setEnabled(false);
-                    bi.nc207h.setText(null);
-                    bi.nc207d.setEnabled(false);
-                    bi.nc207d.setText(null);
+                    bi.cic207h.setEnabled(false);
+                    bi.cic207h.setText(null);
+                    bi.cic207d.setEnabled(false);
+                    bi.cic207d.setText(null);
 
                 } /*else {
-                    bi.nc207h.setEnabled(true);
-                    bi.nc207d.setEnabled(true);
+                    bi.cic207h.setEnabled(true);
+                    bi.cic207d.setEnabled(true);
                 }*/
             }
         });
 
-       /* bi.nc207b.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+       /* bi.cic207b.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if (b) {
-                    bi.nc207h.setEnabled(true);
-                    bi.nc207d.setEnabled(false);
-                    bi.nc207d.setText(null);
+                    bi.cic207h.setEnabled(true);
+                    bi.cic207d.setEnabled(false);
+                    bi.cic207d.setText(null);
                 } else {
-                    bi.nc207h.setEnabled(false);
-                    bi.nc207h.setText(null);
+                    bi.cic207h.setEnabled(false);
+                    bi.cic207h.setText(null);
                 }
             }
         });
 
-        bi.nc207c.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        bi.cic207c.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if (b) {
-                    bi.nc207d.setEnabled(true);
-                    bi.nc207h.setEnabled(false);
-                    bi.nc207h.setText(null);
+                    bi.cic207d.setEnabled(true);
+                    bi.cic207h.setEnabled(false);
+                    bi.cic207h.setText(null);
                 } else {
-                    bi.nc207d.setEnabled(false);
-                    bi.nc207d.setText(null);
+                    bi.cic207d.setEnabled(false);
+                    bi.cic207d.setText(null);
                 }
             }
         });*/
 
 
-        bi.nc220.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        bi.cic220.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                if (bi.nc220a.isChecked()) {
-                    bi.nc221a.setEnabled(true);
-                    bi.nc221b.setEnabled(true);
-                    bi.nc221c.setEnabled(true);
-                    bi.nc22196.setEnabled(true);
+                if (bi.cic220a.isChecked()) {
+                    bi.cic221a.setEnabled(true);
+                    bi.cic221b.setEnabled(true);
+                    bi.cic221c.setEnabled(true);
+                    bi.cic22196.setEnabled(true);
 
-                    bi.nc222a.setEnabled(true);
-                    bi.nc222b.setEnabled(true);
-                    bi.nc222c.setEnabled(true);
-                    bi.nc22296.setEnabled(true);
+                    bi.cic222a.setEnabled(true);
+                    bi.cic222b.setEnabled(true);
+                    bi.cic222c.setEnabled(true);
+                    bi.cic22296.setEnabled(true);
 
 
                 } else {
-                    bi.nc221.clearCheck();
-                    bi.nc222.clearCheck();
+                    bi.cic221.clearCheck();
+                    bi.cic222.clearCheck();
 
-                    bi.nc221a.setEnabled(false);
-                    bi.nc221b.setEnabled(false);
-                    bi.nc221c.setEnabled(false);
-                    bi.nc22196.setEnabled(false);
+                    bi.cic221a.setEnabled(false);
+                    bi.cic221b.setEnabled(false);
+                    bi.cic221c.setEnabled(false);
+                    bi.cic22196.setEnabled(false);
 
-                    bi.nc222a.setEnabled(false);
-                    bi.nc222b.setEnabled(false);
-                    bi.nc222c.setEnabled(false);
-                    bi.nc22296.setEnabled(false);
+                    bi.cic222a.setEnabled(false);
+                    bi.cic222b.setEnabled(false);
+                    bi.cic222c.setEnabled(false);
+                    bi.cic22296.setEnabled(false);
                 }
             }
         });
@@ -283,375 +283,375 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
 
             JSONC2ModelClass jsonC2 = JSONUtilClass.getModelFromJSON(childContract.getsC2(), JSONC2ModelClass.class);
 
-            if (!jsonC2.getnc206().equals("0")) {
-                bi.nc206.check(
-                        jsonC2.getnc206().equals("1") ? bi.nc206a.getId()
-                                : jsonC2.getnc206().equals("2") ? bi.nc206b.getId()
-                                : bi.nc20698.getId()
+            if (!jsonC2.getcic206().equals("0")) {
+                bi.cic206.check(
+                        jsonC2.getcic206().equals("1") ? bi.cic206a.getId()
+                                : jsonC2.getcic206().equals("2") ? bi.cic206b.getId()
+                                : bi.cic20698.getId()
                 );
             }
 
 
-            bi.nc207h.setText(jsonC2.getnc207h());
-            bi.nc207d.setText(jsonC2.getnc207d());
+            bi.cic207h.setText(jsonC2.getcic207h());
+            bi.cic207d.setText(jsonC2.getcic207d());
 
 
-            if (!jsonC2.getnc207().equals("0")) {
-                bi.nc207.check(
-                        jsonC2.getnc207().equals("1") ? bi.nc207a.getId()
-                                : jsonC2.getnc207().equals("2") ? bi.nc207b.getId()
-                                : bi.nc207c.getId()
+            if (!jsonC2.getcic207().equals("0")) {
+                bi.cic207.check(
+                        jsonC2.getcic207().equals("1") ? bi.cic207a.getId()
+                                : jsonC2.getcic207().equals("2") ? bi.cic207b.getId()
+                                : bi.cic207c.getId()
                 );
             }
-            if (!jsonC2.getnc208().equals("0")) {
-                bi.nc208.check(
-                        jsonC2.getnc208().equals("1") ? bi.nc208a.getId()
-                                : jsonC2.getnc208().equals("2") ? bi.nc208b.getId()
-                                : bi.nc20898.getId()
+            if (!jsonC2.getcic208().equals("0")) {
+                bi.cic208.check(
+                        jsonC2.getcic208().equals("1") ? bi.cic208a.getId()
+                                : jsonC2.getcic208().equals("2") ? bi.cic208b.getId()
+                                : bi.cic20898.getId()
                 );
             }
-            if (!jsonC2.getnc209().equals("0")) {
-                bi.nc209.check(
-                        jsonC2.getnc209().equals("1") ? bi.nc209a.getId()
-                                : jsonC2.getnc209().equals("2") ? bi.nc209b.getId()
-                                : jsonC2.getnc209().equals("3") ? bi.nc209c.getId()
-                                : bi.nc20996.getId()
+            if (!jsonC2.getcic209().equals("0")) {
+                bi.cic209.check(
+                        jsonC2.getcic209().equals("1") ? bi.cic209a.getId()
+                                : jsonC2.getcic209().equals("2") ? bi.cic209b.getId()
+                                : jsonC2.getcic209().equals("3") ? bi.cic209c.getId()
+                                : bi.cic20996.getId()
                 );
             }
 
-            bi.nc20996x.setText(jsonC2.getnc20996x());
+            bi.cic20996x.setText(jsonC2.getcic20996x());
 
 
-            if (!jsonC2.getnc210().equals("0")) {
-                bi.nc210.check(
-                        jsonC2.getnc210().equals("1") ? bi.nc210a.getId()
-                                : bi.nc210b.getId()
+            if (!jsonC2.getcic210().equals("0")) {
+                bi.cic210.check(
+                        jsonC2.getcic210().equals("1") ? bi.cic210a.getId()
+                                : bi.cic210b.getId()
                 );
             }
 
 
             if (!jsonC2.getNc211a().equals("0")) {
-                bi.nc211a.setChecked(true);
+                bi.cic211a.setChecked(true);
             }
             if (!jsonC2.getNc211b().equals("0")) {
-                bi.nc211b.setChecked(true);
+                bi.cic211b.setChecked(true);
             }
             if (!jsonC2.getNc211c().equals("0")) {
-                bi.nc211c.setChecked(true);
+                bi.cic211c.setChecked(true);
             }
             if (!jsonC2.getNc211d().equals("0")) {
-                bi.nc211d.setChecked(true);
+                bi.cic211d.setChecked(true);
             }
 
             if (!jsonC2.getNc211e().equals("0")) {
-                bi.nc211e.setChecked(true);
+                bi.cic211e.setChecked(true);
             }
             if (!jsonC2.getNc211f().equals("0")) {
-                bi.nc211f.setChecked(true);
+                bi.cic211f.setChecked(true);
             }
 
             if (!jsonC2.getNc211g().equals("0")) {
-                bi.nc211g.setChecked(true);
+                bi.cic211g.setChecked(true);
             }
             if (!jsonC2.getNc211h().equals("0")) {
-                bi.nc211h.setChecked(true);
+                bi.cic211h.setChecked(true);
             }
             if (!jsonC2.getNc211i().equals("0")) {
-                bi.nc211i.setChecked(true);
+                bi.cic211i.setChecked(true);
             }
             if (!jsonC2.getNc211j().equals("0")) {
-                bi.nc211j.setChecked(true);
+                bi.cic211j.setChecked(true);
             }
             if (!jsonC2.getNc21196().equals("0")) {
-                bi.nc21196.setChecked(true);
+                bi.cic21196.setChecked(true);
             }
             if (!jsonC2.getNc21199().equals("0")) {
-                bi.nc21199.setChecked(true);
+                bi.cic21199.setChecked(true);
             }
 
-            bi.nc21196x.setText(jsonC2.getnc21196x());
+            bi.cic21196x.setText(jsonC2.getcic21196x());
 
-            if (!jsonC2.getnc212().equals("0")) {
-                bi.nc212.check(
-                        jsonC2.getnc212().equals("1") ? bi.nc212a.getId()
-                                : jsonC2.getnc212().equals("2") ? bi.nc212b.getId()
-                                : bi.nc21298.getId()
+            if (!jsonC2.getcic212().equals("0")) {
+                bi.cic212.check(
+                        jsonC2.getcic212().equals("1") ? bi.cic212a.getId()
+                                : jsonC2.getcic212().equals("2") ? bi.cic212b.getId()
+                                : bi.cic21298.getId()
                 );
             }
 //            here
-            if (!jsonC2.getnc212a().equals("0")) {
-                bi.nc21201.check(
-                        jsonC2.getnc212a().equals("1") ? bi.nc21201a.getId()
-                                : jsonC2.getnc212a().equals("2") ? bi.nc21201b.getId()
-                                : bi.nc2120198.getId()
+            if (!jsonC2.getcic212a().equals("0")) {
+                bi.cic21201.check(
+                        jsonC2.getcic212a().equals("1") ? bi.cic21201a.getId()
+                                : jsonC2.getcic212a().equals("2") ? bi.cic21201b.getId()
+                                : bi.cic2120198.getId()
                 );
             }
 
-            if (!jsonC2.getnc213().equals("0")) {
-                bi.nc213.check(
-                        jsonC2.getnc213().equals("1") ? bi.nc213a.getId()
-                                : jsonC2.getnc213().equals("2") ? bi.nc213b.getId()
-                                : bi.nc21398.getId()
+            if (!jsonC2.getcic213().equals("0")) {
+                bi.cic213.check(
+                        jsonC2.getcic213().equals("1") ? bi.cic213a.getId()
+                                : jsonC2.getcic213().equals("2") ? bi.cic213b.getId()
+                                : bi.cic21398.getId()
                 );
             }
-            if (!jsonC2.getnc214().equals("0")) {
-                bi.nc214.check(
-                        jsonC2.getnc214().equals("1") ? bi.nc214a.getId()
-                                : jsonC2.getnc214().equals("2") ? bi.nc214b.getId()
-                                : bi.nc21498.getId()
+            if (!jsonC2.getcic214().equals("0")) {
+                bi.cic214.check(
+                        jsonC2.getcic214().equals("1") ? bi.cic214a.getId()
+                                : jsonC2.getcic214().equals("2") ? bi.cic214b.getId()
+                                : bi.cic21498.getId()
                 );
             }
-            if (!jsonC2.getnc215a().equals("0")) {
-                bi.nc215a.check(
-                        jsonC2.getnc215a().equals("1") ? bi.nc215aa.getId()
-                                : jsonC2.getnc215a().equals("2") ? bi.nc215ab.getId()
-                                : bi.nc215a98.getId()
+            if (!jsonC2.getcic215a().equals("0")) {
+                bi.cic215a.check(
+                        jsonC2.getcic215a().equals("1") ? bi.cic215aa.getId()
+                                : jsonC2.getcic215a().equals("2") ? bi.cic215ab.getId()
+                                : bi.cic215a98.getId()
                 );
             }
-            if (!jsonC2.getnc215b().equals("0")) {
-                bi.nc215b.check(
-                        jsonC2.getnc215b().equals("1") ? bi.nc215ba.getId()
-                                : jsonC2.getnc215b().equals("2") ? bi.nc215bb.getId()
-                                : bi.nc215b98.getId()
+            if (!jsonC2.getcic215b().equals("0")) {
+                bi.cic215b.check(
+                        jsonC2.getcic215b().equals("1") ? bi.cic215ba.getId()
+                                : jsonC2.getcic215b().equals("2") ? bi.cic215bb.getId()
+                                : bi.cic215b98.getId()
                 );
             }
-            bi.nc215bx.setText(jsonC2.getnc215bx());
+            bi.cic215bx.setText(jsonC2.getcic215bx());
 
-            if (!jsonC2.getnc215c().equals("0")) {
-                bi.nc215c.check(
-                        jsonC2.getnc215c().equals("1") ? bi.nc215ca.getId()
-                                : jsonC2.getnc215c().equals("2") ? bi.nc215cb.getId()
-                                : bi.nc215c98.getId()
+            if (!jsonC2.getcic215c().equals("0")) {
+                bi.cic215c.check(
+                        jsonC2.getcic215c().equals("1") ? bi.cic215ca.getId()
+                                : jsonC2.getcic215c().equals("2") ? bi.cic215cb.getId()
+                                : bi.cic215c98.getId()
                 );
             }
-            bi.nc215cx.setText(jsonC2.getnc215cx());
-
-
-            if (!jsonC2.getnc215d().equals("0")) {
-                bi.nc215d.check(
-                        jsonC2.getnc215d().equals("1") ? bi.nc215da.getId()
-                                : jsonC2.getnc215d().equals("2") ? bi.nc215db.getId()
-                                : bi.nc215d98.getId()
-                );
-            }
-            if (!jsonC2.getnc215e().equals("0")) {
-                bi.nc215e.check(
-                        jsonC2.getnc215e().equals("1") ? bi.nc215ea.getId()
-                                : jsonC2.getnc215e().equals("2") ? bi.nc215eb.getId()
-                                : bi.nc215e98.getId()
-                );
-            }
-            if (!jsonC2.getnc215f().equals("0")) {
-                bi.nc215f.check(
-                        jsonC2.getnc215f().equals("1") ? bi.nc215fa.getId()
-                                : jsonC2.getnc215f().equals("2") ? bi.nc215fb.getId()
-                                : bi.nc215f98.getId()
-                );
-            }
-            bi.nc215fx.setText(jsonC2.getnc215fx());
-
-            if (!jsonC2.getnc215g().equals("0")) {
-                bi.nc215g.check(
-                        jsonC2.getnc215g().equals("1") ? bi.nc215ga.getId()
-                                : jsonC2.getnc215g().equals("2") ? bi.nc215gb.getId()
-                                : bi.nc215g98.getId()
-                );
-            }
-            if (!jsonC2.getnc215h().equals("0")) {
-                bi.nc215h.check(
-                        jsonC2.getnc215h().equals("1") ? bi.nc215ha.getId()
-                                : jsonC2.getnc215h().equals("2") ? bi.nc215hb.getId()
-                                : bi.nc215h98.getId()
-                );
-            }
-            if (!jsonC2.getnc215i().equals("0")) {
-                bi.nc215i.check(
-                        jsonC2.getnc215i().equals("1") ? bi.nc215ia.getId()
-                                : jsonC2.getnc215i().equals("2") ? bi.nc215ib.getId()
-                                : bi.nc215i98.getId()
-                );
-            }
+            bi.cic215cx.setText(jsonC2.getcic215cx());
 
 
-            if (!jsonC2.getnc217a().equals("0")) {
-                bi.nc217a.check(
-                        jsonC2.getnc217a().equals("1") ? bi.nc217aa.getId()
-                                : jsonC2.getnc217a().equals("2") ? bi.nc217ab.getId()
-                                : bi.nc217a98.getId()
+            if (!jsonC2.getcic215d().equals("0")) {
+                bi.cic215d.check(
+                        jsonC2.getcic215d().equals("1") ? bi.cic215da.getId()
+                                : jsonC2.getcic215d().equals("2") ? bi.cic215db.getId()
+                                : bi.cic215d98.getId()
                 );
             }
-            if (!jsonC2.getnc217b().equals("0")) {
-                bi.nc217b.check(
-                        jsonC2.getnc217b().equals("1") ? bi.nc217ba.getId()
-                                : jsonC2.getnc217b().equals("2") ? bi.nc217bb.getId()
-                                : bi.nc217b98.getId()
+            if (!jsonC2.getcic215e().equals("0")) {
+                bi.cic215e.check(
+                        jsonC2.getcic215e().equals("1") ? bi.cic215ea.getId()
+                                : jsonC2.getcic215e().equals("2") ? bi.cic215eb.getId()
+                                : bi.cic215e98.getId()
                 );
             }
-            if (!jsonC2.getnc217c().equals("0")) {
-                bi.nc217c.check(
-                        jsonC2.getnc217c().equals("1") ? bi.nc217ca.getId()
-                                : jsonC2.getnc217c().equals("2") ? bi.nc217cb.getId()
-                                : bi.nc217c98.getId()
+            if (!jsonC2.getcic215f().equals("0")) {
+                bi.cic215f.check(
+                        jsonC2.getcic215f().equals("1") ? bi.cic215fa.getId()
+                                : jsonC2.getcic215f().equals("2") ? bi.cic215fb.getId()
+                                : bi.cic215f98.getId()
                 );
             }
-            if (!jsonC2.getnc217d().equals("0")) {
-                bi.nc217d.check(
-                        jsonC2.getnc217d().equals("1") ? bi.nc217da.getId()
-                                : jsonC2.getnc217d().equals("2") ? bi.nc217db.getId()
-                                : bi.nc217d98.getId()
+            bi.cic215fx.setText(jsonC2.getcic215fx());
+
+            if (!jsonC2.getcic215g().equals("0")) {
+                bi.cic215g.check(
+                        jsonC2.getcic215g().equals("1") ? bi.cic215ga.getId()
+                                : jsonC2.getcic215g().equals("2") ? bi.cic215gb.getId()
+                                : bi.cic215g98.getId()
                 );
             }
-            if (!jsonC2.getnc217e().equals("0")) {
-                bi.nc217e.check(
-                        jsonC2.getnc217e().equals("1") ? bi.nc217ea.getId()
-                                : jsonC2.getnc217e().equals("2") ? bi.nc217eb.getId()
-                                : bi.nc217e98.getId()
+            if (!jsonC2.getcic215h().equals("0")) {
+                bi.cic215h.check(
+                        jsonC2.getcic215h().equals("1") ? bi.cic215ha.getId()
+                                : jsonC2.getcic215h().equals("2") ? bi.cic215hb.getId()
+                                : bi.cic215h98.getId()
                 );
             }
-            if (!jsonC2.getnc217f().equals("0")) {
-                bi.nc217f.check(
-                        jsonC2.getnc217f().equals("1") ? bi.nc217fa.getId()
-                                : jsonC2.getnc217f().equals("2") ? bi.nc217fb.getId()
-                                : bi.nc217f98.getId()
-                );
-            }
-            if (!jsonC2.getnc217g().equals("0")) {
-                bi.nc217g.check(
-                        jsonC2.getnc217g().equals("1") ? bi.nc217ga.getId()
-                                : jsonC2.getnc217a().equals("2") ? bi.nc217gb.getId()
-                                : bi.nc217g98.getId()
-                );
-            }
-            if (!jsonC2.getnc217h().equals("0")) {
-                bi.nc217h.check(
-                        jsonC2.getnc217h().equals("1") ? bi.nc217ha.getId()
-                                : jsonC2.getnc217h().equals("2") ? bi.nc217hb.getId()
-                                : bi.nc217h98.getId()
-                );
-            }
-            if (!jsonC2.getnc217i().equals("0")) {
-                bi.nc217i.check(
-                        jsonC2.getnc217i().equals("1") ? bi.nc217ia.getId()
-                                : jsonC2.getnc217i().equals("2") ? bi.nc217ib.getId()
-                                : bi.nc217i98.getId()
-                );
-            }
-            if (!jsonC2.getnc217j().equals("0")) {
-                bi.nc217j.check(
-                        jsonC2.getnc217j().equals("1") ? bi.nc217ja.getId()
-                                : jsonC2.getnc217j().equals("2") ? bi.nc217jb.getId()
-                                : bi.nc217j98.getId()
-                );
-            }
-            if (!jsonC2.getnc217k().equals("0")) {
-                bi.nc217k.check(
-                        jsonC2.getnc217k().equals("1") ? bi.nc217ka.getId()
-                                : jsonC2.getnc217k().equals("2") ? bi.nc217kb.getId()
-                                : bi.nc217k98.getId()
-                );
-            }
-            if (!jsonC2.getnc217l().equals("0")) {
-                bi.nc217l.check(
-                        jsonC2.getnc217l().equals("1") ? bi.nc217la.getId()
-                                : jsonC2.getnc217l().equals("2") ? bi.nc217lb.getId()
-                                : bi.nc217l98.getId()
-                );
-            }
-            if (!jsonC2.getnc217m().equals("0")) {
-                bi.nc217m.check(
-                        jsonC2.getnc217m().equals("1") ? bi.nc217ma.getId()
-                                : jsonC2.getnc217m().equals("2") ? bi.nc217mb.getId()
-                                : bi.nc217m98.getId()
-                );
-            }
-            if (!jsonC2.getnc217a().equals("0")) {
-                bi.nc217a.check(
-                        jsonC2.getnc217a().equals("1") ? bi.nc217aa.getId()
-                                : jsonC2.getnc217a().equals("2") ? bi.nc217ab.getId()
-                                : bi.nc217a98.getId()
-                );
-            }
-            if (!jsonC2.getnc217n().equals("0")) {
-                bi.nc217n.check(
-                        jsonC2.getnc217n().equals("1") ? bi.nc217na.getId()
-                                : jsonC2.getnc217n().equals("2") ? bi.nc217nb.getId()
-                                : bi.nc217n98.getId()
-                );
-            }
-            if (!jsonC2.getnc217o().equals("0")) {
-                bi.nc217o.check(
-                        jsonC2.getnc217o().equals("1") ? bi.nc217oa.getId()
-                                : jsonC2.getnc217o().equals("2") ? bi.nc217ob.getId()
-                                : bi.nc217o98.getId()
-                );
-            }
-            if (!jsonC2.getnc217p().equals("0")) {
-                bi.nc217p.check(
-                        jsonC2.getnc217p().equals("1") ? bi.nc217pa.getId()
-                                : jsonC2.getnc217p().equals("2") ? bi.nc217pb.getId()
-                                : bi.nc217p98.getId()
-                );
-            }
-            if (!jsonC2.getnc217q().equals("0")) {
-                bi.nc217q.check(
-                        jsonC2.getnc217q().equals("1") ? bi.nc217qa.getId()
-                                : jsonC2.getnc217q().equals("2") ? bi.nc217qb.getId()
-                                : bi.nc217q98.getId()
-                );
-            }
-            if (!jsonC2.getnc218().equals("0")) {
-                bi.nc218.check(
-                        jsonC2.getnc218().equals("1") ? bi.nc218a.getId()
-                                : jsonC2.getnc218().equals("2") ? bi.nc218b.getId()
-                                : bi.nc21898.getId()
+            if (!jsonC2.getcic215i().equals("0")) {
+                bi.cic215i.check(
+                        jsonC2.getcic215i().equals("1") ? bi.cic215ia.getId()
+                                : jsonC2.getcic215i().equals("2") ? bi.cic215ib.getId()
+                                : bi.cic215i98.getId()
                 );
             }
 
-            if (jsonC2.getnc219().equals("98")) {
-                bi.nc21998.setChecked(true);
+
+            if (!jsonC2.getcic217a().equals("0")) {
+                bi.cic217a.check(
+                        jsonC2.getcic217a().equals("1") ? bi.cic217aa.getId()
+                                : jsonC2.getcic217a().equals("2") ? bi.cic217ab.getId()
+                                : bi.cic217a98.getId()
+                );
+            }
+            if (!jsonC2.getcic217b().equals("0")) {
+                bi.cic217b.check(
+                        jsonC2.getcic217b().equals("1") ? bi.cic217ba.getId()
+                                : jsonC2.getcic217b().equals("2") ? bi.cic217bb.getId()
+                                : bi.cic217b98.getId()
+                );
+            }
+            if (!jsonC2.getcic217c().equals("0")) {
+                bi.cic217c.check(
+                        jsonC2.getcic217c().equals("1") ? bi.cic217ca.getId()
+                                : jsonC2.getcic217c().equals("2") ? bi.cic217cb.getId()
+                                : bi.cic217c98.getId()
+                );
+            }
+            if (!jsonC2.getcic217d().equals("0")) {
+                bi.cic217d.check(
+                        jsonC2.getcic217d().equals("1") ? bi.cic217da.getId()
+                                : jsonC2.getcic217d().equals("2") ? bi.cic217db.getId()
+                                : bi.cic217d98.getId()
+                );
+            }
+            if (!jsonC2.getcic217e().equals("0")) {
+                bi.cic217e.check(
+                        jsonC2.getcic217e().equals("1") ? bi.cic217ea.getId()
+                                : jsonC2.getcic217e().equals("2") ? bi.cic217eb.getId()
+                                : bi.cic217e98.getId()
+                );
+            }
+            if (!jsonC2.getcic217f().equals("0")) {
+                bi.cic217f.check(
+                        jsonC2.getcic217f().equals("1") ? bi.cic217fa.getId()
+                                : jsonC2.getcic217f().equals("2") ? bi.cic217fb.getId()
+                                : bi.cic217f98.getId()
+                );
+            }
+            if (!jsonC2.getcic217g().equals("0")) {
+                bi.cic217g.check(
+                        jsonC2.getcic217g().equals("1") ? bi.cic217ga.getId()
+                                : jsonC2.getcic217a().equals("2") ? bi.cic217gb.getId()
+                                : bi.cic217g98.getId()
+                );
+            }
+            if (!jsonC2.getcic217h().equals("0")) {
+                bi.cic217h.check(
+                        jsonC2.getcic217h().equals("1") ? bi.cic217ha.getId()
+                                : jsonC2.getcic217h().equals("2") ? bi.cic217hb.getId()
+                                : bi.cic217h98.getId()
+                );
+            }
+            if (!jsonC2.getcic217i().equals("0")) {
+                bi.cic217i.check(
+                        jsonC2.getcic217i().equals("1") ? bi.cic217ia.getId()
+                                : jsonC2.getcic217i().equals("2") ? bi.cic217ib.getId()
+                                : bi.cic217i98.getId()
+                );
+            }
+            if (!jsonC2.getcic217j().equals("0")) {
+                bi.cic217j.check(
+                        jsonC2.getcic217j().equals("1") ? bi.cic217ja.getId()
+                                : jsonC2.getcic217j().equals("2") ? bi.cic217jb.getId()
+                                : bi.cic217j98.getId()
+                );
+            }
+            if (!jsonC2.getcic217k().equals("0")) {
+                bi.cic217k.check(
+                        jsonC2.getcic217k().equals("1") ? bi.cic217ka.getId()
+                                : jsonC2.getcic217k().equals("2") ? bi.cic217kb.getId()
+                                : bi.cic217k98.getId()
+                );
+            }
+            if (!jsonC2.getcic217l().equals("0")) {
+                bi.cic217l.check(
+                        jsonC2.getcic217l().equals("1") ? bi.cic217la.getId()
+                                : jsonC2.getcic217l().equals("2") ? bi.cic217lb.getId()
+                                : bi.cic217l98.getId()
+                );
+            }
+            if (!jsonC2.getcic217m().equals("0")) {
+                bi.cic217m.check(
+                        jsonC2.getcic217m().equals("1") ? bi.cic217ma.getId()
+                                : jsonC2.getcic217m().equals("2") ? bi.cic217mb.getId()
+                                : bi.cic217m98.getId()
+                );
+            }
+            if (!jsonC2.getcic217a().equals("0")) {
+                bi.cic217a.check(
+                        jsonC2.getcic217a().equals("1") ? bi.cic217aa.getId()
+                                : jsonC2.getcic217a().equals("2") ? bi.cic217ab.getId()
+                                : bi.cic217a98.getId()
+                );
+            }
+            if (!jsonC2.getcic217n().equals("0")) {
+                bi.cic217n.check(
+                        jsonC2.getcic217n().equals("1") ? bi.cic217na.getId()
+                                : jsonC2.getcic217n().equals("2") ? bi.cic217nb.getId()
+                                : bi.cic217n98.getId()
+                );
+            }
+            if (!jsonC2.getcic217o().equals("0")) {
+                bi.cic217o.check(
+                        jsonC2.getcic217o().equals("1") ? bi.cic217oa.getId()
+                                : jsonC2.getcic217o().equals("2") ? bi.cic217ob.getId()
+                                : bi.cic217o98.getId()
+                );
+            }
+            if (!jsonC2.getcic217p().equals("0")) {
+                bi.cic217p.check(
+                        jsonC2.getcic217p().equals("1") ? bi.cic217pa.getId()
+                                : jsonC2.getcic217p().equals("2") ? bi.cic217pb.getId()
+                                : bi.cic217p98.getId()
+                );
+            }
+            if (!jsonC2.getcic217q().equals("0")) {
+                bi.cic217q.check(
+                        jsonC2.getcic217q().equals("1") ? bi.cic217qa.getId()
+                                : jsonC2.getcic217q().equals("2") ? bi.cic217qb.getId()
+                                : bi.cic217q98.getId()
+                );
+            }
+            if (!jsonC2.getcic218().equals("0")) {
+                bi.cic218.check(
+                        jsonC2.getcic218().equals("1") ? bi.cic218a.getId()
+                                : jsonC2.getcic218().equals("2") ? bi.cic218b.getId()
+                                : bi.cic21898.getId()
+                );
+            }
+
+            if (jsonC2.getcic219().equals("98")) {
+                bi.cic21998.setChecked(true);
             } else {
-                bi.nc219x.setText(jsonC2.getnc219());
+                bi.cic219x.setText(jsonC2.getcic219());
             }
 
 
-            if (!jsonC2.getnc219().equals("0")) {
-                bi.nc219.check(
-                        jsonC2.getnc219().equals("1") ? bi.nc219a.getId()
-                                : bi.nc21998.getId()
+            if (!jsonC2.getcic219().equals("0")) {
+                bi.cic219.check(
+                        jsonC2.getcic219().equals("1") ? bi.cic219a.getId()
+                                : bi.cic21998.getId()
                 );
             }
 
-            if (!jsonC2.getnc220().equals("0")) {
-                bi.nc220.check(
-                        jsonC2.getnc220().equals("1") ? bi.nc220a.getId()
-                                : jsonC2.getnc220().equals("2") ? bi.nc220b.getId()
-                                : bi.nc22098.getId()
+            if (!jsonC2.getcic220().equals("0")) {
+                bi.cic220.check(
+                        jsonC2.getcic220().equals("1") ? bi.cic220a.getId()
+                                : jsonC2.getcic220().equals("2") ? bi.cic220b.getId()
+                                : bi.cic22098.getId()
                 );
             }
-            if (!jsonC2.getnc221().equals("0")) {
-                bi.nc221.check(
-                        jsonC2.getnc221().equals("1") ? bi.nc221a.getId()
-                                : jsonC2.getnc221().equals("2") ? bi.nc221b.getId()
-                                : jsonC2.getnc221().equals("3") ? bi.nc221c.getId()
-                                : bi.nc22196.getId()
+            if (!jsonC2.getcic221().equals("0")) {
+                bi.cic221.check(
+                        jsonC2.getcic221().equals("1") ? bi.cic221a.getId()
+                                : jsonC2.getcic221().equals("2") ? bi.cic221b.getId()
+                                : jsonC2.getcic221().equals("3") ? bi.cic221c.getId()
+                                : bi.cic22196.getId()
                 );
             }
-            bi.nc22196x.setText(jsonC2.getnc22196x());
-            if (!jsonC2.getnc222().equals("0")) {
-                bi.nc222.check(
-                        jsonC2.getnc222().equals("1") ? bi.nc222a.getId()
-                                : jsonC2.getnc222().equals("2") ? bi.nc222b.getId()
-                                : jsonC2.getnc222().equals("3") ? bi.nc222c.getId()
-                                : bi.nc22296.getId()
+            bi.cic22196x.setText(jsonC2.getcic22196x());
+            if (!jsonC2.getcic222().equals("0")) {
+                bi.cic222.check(
+                        jsonC2.getcic222().equals("1") ? bi.cic222a.getId()
+                                : jsonC2.getcic222().equals("2") ? bi.cic222b.getId()
+                                : jsonC2.getcic222().equals("3") ? bi.cic222c.getId()
+                                : bi.cic22296.getId()
                 );
             }
-            bi.nc22296x.setText(jsonC2.getnc22296x());
+            bi.cic22296x.setText(jsonC2.getcic22296x());
 
-            if (!jsonC2.getnc223().equals("0")) {
-                bi.nc223.check(
-                        jsonC2.getnc223().equals("1") ? bi.nc223a.getId()
-                                : jsonC2.getnc223().equals("2") ? bi.nc223b.getId()
-                                : bi.nc22398.getId()
+            if (!jsonC2.getcic223().equals("0")) {
+                bi.cic223.check(
+                        jsonC2.getcic223().equals("1") ? bi.cic223a.getId()
+                                : jsonC2.getcic223().equals("2") ? bi.cic223b.getId()
+                                : bi.cic22398.getId()
                 );
             }
 
@@ -717,272 +717,272 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
     private boolean ValidateForm() {
 
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nc206, bi.nc206a, getString(R.string.nc206))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cic206, bi.cic206a, getString(R.string.cic206))) {
             return false;
         }
 
-        if (bi.nc206a.isChecked()) {
-            if (!ValidatorClass.EmptyRadioButton(this, bi.nc207, bi.nc207a, getString(R.string.nc207))) {
+        if (bi.cic206a.isChecked()) {
+            if (!ValidatorClass.EmptyRadioButton(this, bi.cic207, bi.cic207a, getString(R.string.cic207))) {
                 return false;
             }
 
-            if (bi.nc207b.isChecked()) {
-                if (!ValidatorClass.EmptyTextBox(this, bi.nc207h, getString(R.string.nc207b))) {
+            if (bi.cic207b.isChecked()) {
+                if (!ValidatorClass.EmptyTextBox(this, bi.cic207h, getString(R.string.cic207b))) {
                     return false;
                 }
 
             }
 
-            if (bi.nc207c.isChecked()) {
-                if (!ValidatorClass.EmptyTextBox(this, bi.nc207d, getString(R.string.nc207c))) {
+            if (bi.cic207c.isChecked()) {
+                if (!ValidatorClass.EmptyTextBox(this, bi.cic207d, getString(R.string.cic207c))) {
                     return false;
                 }
 
             }
 
-            if (!ValidatorClass.EmptyRadioButton(this, bi.nc208, bi.nc208a, getString(R.string.nc208))) {
+            if (!ValidatorClass.EmptyRadioButton(this, bi.cic208, bi.cic208a, getString(R.string.cic208))) {
                 return false;
             }
 
-            if (bi.nc208b.isChecked()) {
+            if (bi.cic208b.isChecked()) {
 
-                if (!ValidatorClass.EmptyRadioButton(this, bi.nc209, bi.nc209a, getString(R.string.nc209))) {
+                if (!ValidatorClass.EmptyRadioButton(this, bi.cic209, bi.cic209a, getString(R.string.cic209))) {
                     return false;
                 }
-                if (!ValidatorClass.EmptyRadioButton(this, bi.nc209, bi.nc20996, bi.nc20996x, getString(R.string.nc209))) {
-                    return false;
-                }
-            }
-
-            if (!ValidatorClass.EmptyRadioButton(this, bi.nc210, bi.nc210a, getString(R.string.nc210))) {
-                return false;
-            }
-
-            if (bi.nc210a.isChecked()) {
-                if (!ValidatorClass.EmptyCheckBox(this, bi.nc211, bi.nc211a, getString(R.string.nc211))) {
-                    return false;
-                }
-                if (!ValidatorClass.EmptyCheckBox(this, bi.nc211, bi.nc21196, bi.nc21196x, getString(R.string.nc211))) {
+                if (!ValidatorClass.EmptyRadioButton(this, bi.cic209, bi.cic20996, bi.cic20996x, getString(R.string.cic209))) {
                     return false;
                 }
             }
 
+            if (!ValidatorClass.EmptyRadioButton(this, bi.cic210, bi.cic210a, getString(R.string.cic210))) {
+                return false;
+            }
 
-            if (!ValidatorClass.EmptyRadioButton(this, bi.nc212, bi.nc212a, getString(R.string.nc212))) {
+            if (bi.cic210a.isChecked()) {
+                if (!ValidatorClass.EmptyCheckBox(this, bi.cic211, bi.cic211a, getString(R.string.cic211))) {
+                    return false;
+                }
+                if (!ValidatorClass.EmptyCheckBox(this, bi.cic211, bi.cic21196, bi.cic21196x, getString(R.string.cic211))) {
+                    return false;
+                }
+            }
+
+
+            if (!ValidatorClass.EmptyRadioButton(this, bi.cic212, bi.cic212a, getString(R.string.cic212))) {
                 return false;
             }
         }
 
-        if (!bi.nc212a.isChecked()) {
-            if (!ValidatorClass.EmptyRadioButton(this, bi.nc21201, bi.nc21201a, getString(R.string.nc212a))) {
+        if (!bi.cic212a.isChecked()) {
+            if (!ValidatorClass.EmptyRadioButton(this, bi.cic21201, bi.cic21201a, getString(R.string.cic212a))) {
                 return false;
             }
         }
 
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nc213, bi.nc213a, getString(R.string.nc213))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cic213, bi.cic213a, getString(R.string.cic213))) {
             return false;
         }
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nc214, bi.nc214a, getString(R.string.nc214))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cic214, bi.cic214a, getString(R.string.cic214))) {
             return false;
         }
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nc215a, bi.nc215aa, getString(R.string.nc215a))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cic215a, bi.cic215aa, getString(R.string.cic215a))) {
             return false;
         }
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nc215b, bi.nc215ba, getString(R.string.nc215b))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cic215b, bi.cic215ba, getString(R.string.cic215b))) {
             return false;
         }
 
-        if (bi.nc215ba.isChecked()) {
-            if (!ValidatorClass.EmptyTextBox(this, bi.nc215bx, getString(R.string.nc215b))) {
+        if (bi.cic215ba.isChecked()) {
+            if (!ValidatorClass.EmptyTextBox(this, bi.cic215bx, getString(R.string.cic215b))) {
                 return false;
             }
 
 
         }
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nc215c, bi.nc215ca, getString(R.string.nc215c))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cic215c, bi.cic215ca, getString(R.string.cic215c))) {
             return false;
         }
 
-        if (bi.nc215ca.isChecked()) {
-            if (!ValidatorClass.EmptyTextBox(this, bi.nc215cx, getString(R.string.nc215c))) {
-                return false;
-            }
-
-
-        }
-
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nc215d, bi.nc215da, getString(R.string.nc215d))) {
-            return false;
-        }
-
-
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nc215e, bi.nc215ea, getString(R.string.nc215e))) {
-            return false;
-        }
-
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nc215f, bi.nc215fa, getString(R.string.nc215f))) {
-            return false;
-        }
-
-        if (bi.nc215fa.isChecked()) {
-            if (!ValidatorClass.EmptyTextBox(this, bi.nc215fx, getString(R.string.nc215f))) {
+        if (bi.cic215ca.isChecked()) {
+            if (!ValidatorClass.EmptyTextBox(this, bi.cic215cx, getString(R.string.cic215c))) {
                 return false;
             }
 
 
         }
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nc215g, bi.nc215ga, getString(R.string.nc215g))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cic215d, bi.cic215da, getString(R.string.cic215d))) {
             return false;
         }
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nc215h, bi.nc215ha, getString(R.string.nc215h))) {
+
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cic215e, bi.cic215ea, getString(R.string.cic215e))) {
             return false;
         }
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nc215i, bi.nc215ia, getString(R.string.nc215i))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cic215f, bi.cic215fa, getString(R.string.cic215f))) {
             return false;
         }
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nc217a, bi.nc217aa, getString(R.string.nc217a))) {
+        if (bi.cic215fa.isChecked()) {
+            if (!ValidatorClass.EmptyTextBox(this, bi.cic215fx, getString(R.string.cic215f))) {
+                return false;
+            }
+
+
+        }
+
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cic215g, bi.cic215ga, getString(R.string.cic215g))) {
             return false;
         }
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nc217b, bi.nc217ba, getString(R.string.nc217b))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cic215h, bi.cic215ha, getString(R.string.cic215h))) {
             return false;
         }
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nc217c, bi.nc217ca, getString(R.string.nc217c))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cic215i, bi.cic215ia, getString(R.string.cic215i))) {
             return false;
         }
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nc217d, bi.nc217da, getString(R.string.nc217d))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cic217a, bi.cic217aa, getString(R.string.cic217a))) {
             return false;
         }
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nc217e, bi.nc217ea, getString(R.string.nc217e))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cic217b, bi.cic217ba, getString(R.string.cic217b))) {
             return false;
         }
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nc217f, bi.nc217fa, getString(R.string.nc217f))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cic217c, bi.cic217ca, getString(R.string.cic217c))) {
             return false;
         }
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nc217g, bi.nc217ga, getString(R.string.nc217g))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cic217d, bi.cic217da, getString(R.string.cic217d))) {
             return false;
         }
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nc217h, bi.nc217ha, getString(R.string.nc217h))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cic217e, bi.cic217ea, getString(R.string.cic217e))) {
             return false;
         }
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nc217i, bi.nc217ia, getString(R.string.nc217i))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cic217f, bi.cic217fa, getString(R.string.cic217f))) {
             return false;
         }
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nc217j, bi.nc217ja, getString(R.string.nc217j))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cic217g, bi.cic217ga, getString(R.string.cic217g))) {
             return false;
         }
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nc217k, bi.nc217ka, getString(R.string.nc217k))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cic217h, bi.cic217ha, getString(R.string.cic217h))) {
             return false;
         }
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nc217l, bi.nc217la, getString(R.string.nc217l))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cic217i, bi.cic217ia, getString(R.string.cic217i))) {
             return false;
         }
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nc217m, bi.nc217ma, getString(R.string.nc217m))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cic217j, bi.cic217ja, getString(R.string.cic217j))) {
             return false;
         }
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nc217n, bi.nc217na, getString(R.string.nc217n))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cic217k, bi.cic217ka, getString(R.string.cic217k))) {
             return false;
         }
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nc217o, bi.nc217oa, getString(R.string.nc217o))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cic217l, bi.cic217la, getString(R.string.cic217l))) {
             return false;
         }
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nc217p, bi.nc217pa, getString(R.string.nc217p))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cic217m, bi.cic217ma, getString(R.string.cic217m))) {
             return false;
         }
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nc217q, bi.nc217qa, getString(R.string.nc217q))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cic217n, bi.cic217na, getString(R.string.cic217n))) {
+            return false;
+        }
+
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cic217o, bi.cic217oa, getString(R.string.cic217o))) {
+            return false;
+        }
+
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cic217p, bi.cic217pa, getString(R.string.cic217p))) {
+            return false;
+        }
+
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cic217q, bi.cic217qa, getString(R.string.cic217q))) {
             return false;
         }
 
         if (isAllNo() || isAlldkn() || (!isoneYes())) {
-            if (!ValidatorClass.EmptyRadioButton(this, bi.nc218, bi.nc218a, getString(R.string.nc218))) {
+            if (!ValidatorClass.EmptyRadioButton(this, bi.cic218, bi.cic218a, getString(R.string.cic218))) {
                 return false;
             }
         }
 
-        if ((isAllNo() || isAlldkn()) && bi.nc218a.isChecked()) {
-            Toast.makeText(this, "ERROR: " + getString(R.string.nc218) + "Atleast one should be Yes", Toast.LENGTH_SHORT).show();
-            bi.nc218a.setError(getString(R.string.nc218));
-            Log.i(SectionC2Activity.class.getSimpleName(), "nc218: This data is Required!");
+        if ((isAllNo() || isAlldkn()) && bi.cic218a.isChecked()) {
+            Toast.makeText(this, "ERROR: " + getString(R.string.cic218) + "Atleast one should be Yes", Toast.LENGTH_SHORT).show();
+            bi.cic218a.setError(getString(R.string.cic218));
+            Log.i(SectionC2Activity.class.getSimpleName(), "cic218: This data is Required!");
             return false;
         } else {
-            bi.nc218a.setError(null);
+            bi.cic218a.setError(null);
         }
 
-            /*if (isAlldkn() && bi.nc218a.isChecked()) {
-                Toast.makeText(this, "ERROR: " + getString(R.string.nc218) + "Atleast one should be Yes", Toast.LENGTH_SHORT).show();
-                bi.nc218a.setError(getString(R.string.nc218));
-                Log.i(SectionC2Activity.class.getSimpleName(), "nc218: This data is Required!");
+            /*if (isAlldkn() && bi.cic218a.isChecked()) {
+                Toast.makeText(this, "ERROR: " + getString(R.string.cic218) + "Atleast one should be Yes", Toast.LENGTH_SHORT).show();
+                bi.cic218a.setError(getString(R.string.cic218));
+                Log.i(SectionC2Activity.class.getSimpleName(), "cic218: This data is Required!");
                 return false;
             } else {
-                bi.nc218a.setError(null);
+                bi.cic218a.setError(null);
             }
 */
         if (isoneYes()) {
-            if (!ValidatorClass.EmptyRadioButton(this, bi.nc219, bi.nc219a, bi.nc219x, getString(R.string.nc219))) {
+            if (!ValidatorClass.EmptyRadioButton(this, bi.cic219, bi.cic219a, bi.cic219x, getString(R.string.cic219))) {
                 return false;
             }
         }
 
-        if (bi.nc219a.isChecked()) {
-            if (!ValidatorClass.EmptyTextBox(this, bi.nc219x, getString(R.string.nc219))) {
+        if (bi.cic219a.isChecked()) {
+            if (!ValidatorClass.EmptyTextBox(this, bi.cic219x, getString(R.string.cic219))) {
                 return false;
             }
-            if (!ValidatorClass.RangeTextBox(this, bi.nc219x, 1, 10, getString(R.string.nc219), " times")) {
+            if (!ValidatorClass.RangeTextBox(this, bi.cic219x, 1, 10, getString(R.string.cic219), " times")) {
                 return false;
             }
         }
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nc220, bi.nc220a, getString(R.string.nc220))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cic220, bi.cic220a, getString(R.string.cic220))) {
             return false;
         }
 
 
-        if (bi.nc220a.isChecked()) {
+        if (bi.cic220a.isChecked()) {
 
-            if (!ValidatorClass.EmptyRadioButton(this, bi.nc221, bi.nc221a, getString(R.string.nc221))) {
+            if (!ValidatorClass.EmptyRadioButton(this, bi.cic221, bi.cic221a, getString(R.string.cic221))) {
                 return false;
             }
 
-            if (!ValidatorClass.EmptyRadioButton(this, bi.nc221, bi.nc22196, bi.nc22196x, getString(R.string.nc221))) {
+            if (!ValidatorClass.EmptyRadioButton(this, bi.cic221, bi.cic22196, bi.cic22196x, getString(R.string.cic221))) {
                 return false;
             }
 
-            if (bi.nc221a.isChecked()) {
-                if (!ValidatorClass.EmptyRadioButton(this, bi.nc222, bi.nc222a, getString(R.string.nc222))) {
+            if (bi.cic221a.isChecked()) {
+                if (!ValidatorClass.EmptyRadioButton(this, bi.cic222, bi.cic222a, getString(R.string.cic222))) {
                     return false;
                 }
 
-                if (!ValidatorClass.EmptyRadioButton(this, bi.nc222, bi.nc22296, bi.nc22296x, getString(R.string.nc222))) {
+                if (!ValidatorClass.EmptyRadioButton(this, bi.cic222, bi.cic22296, bi.cic22296x, getString(R.string.cic222))) {
                     return false;
                 }
             }
         }
 
 
-        return ValidatorClass.EmptyRadioButton(this, bi.nc223, bi.nc223a, getString(R.string.nc223));
+        return ValidatorClass.EmptyRadioButton(this, bi.cic223, bi.cic223a, getString(R.string.cic223));
     }
 
     private void SaveDraft() throws JSONException {
@@ -990,244 +990,244 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
 
         JSONObject sC2 = new JSONObject();
         if (backPressed) {
-            sC2.put("updatedate_nc2", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
+            sC2.put("updatedate_cic2", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
         }
 
         if (SectionC1Activity.editChildFlag) {
             sC2.put("edit_updatedate_sc2", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
         }
 
-//        nc2_child_name
-        //sC2.put("nc2_child_name", selectedChild.getName());
-//        nc2_line_no
-        //sC2.put("nc2_line_noSerial", selectedChild.getSerialNo());
+//        cic2_child_name
+        //sC2.put("cic2_child_name", selectedChild.getName());
+//        cic2_line_no
+        //sC2.put("cic2_line_noSerial", selectedChild.getSerialNo());
 
 
-        sC2.put("nc206", bi.nc206a.isChecked() ? "1"
-                : bi.nc206b.isChecked() ? "2"
-                : bi.nc20698.isChecked() ? "98"
+        sC2.put("cic206", bi.cic206a.isChecked() ? "1"
+                : bi.cic206b.isChecked() ? "2"
+                : bi.cic20698.isChecked() ? "98"
                 : "0");
 
-        sC2.put("nc207", bi.nc207a.isChecked() ? "1"
-                : bi.nc207b.isChecked() ? "2"
-                : bi.nc207c.isChecked() ? "3"
+        sC2.put("cic207", bi.cic207a.isChecked() ? "1"
+                : bi.cic207b.isChecked() ? "2"
+                : bi.cic207c.isChecked() ? "3"
                 : "0");
 
-        sC2.put("nc207h", bi.nc207h.getText().toString());
-        sC2.put("nc207d", bi.nc207d.getText().toString());
+        sC2.put("cic207h", bi.cic207h.getText().toString());
+        sC2.put("cic207d", bi.cic207d.getText().toString());
 
-        sC2.put("nc208", bi.nc208a.isChecked() ? "1"
-                : bi.nc208b.isChecked() ? "2"
-                : bi.nc20898.isChecked() ? "98"
+        sC2.put("cic208", bi.cic208a.isChecked() ? "1"
+                : bi.cic208b.isChecked() ? "2"
+                : bi.cic20898.isChecked() ? "98"
                 : "0");
 
-        sC2.put("nc209", bi.nc209a.isChecked() ? "1"
-                : bi.nc209b.isChecked() ? "2"
-                : bi.nc209c.isChecked() ? "3"
-                : bi.nc20996.isChecked() ? "96"
+        sC2.put("cic209", bi.cic209a.isChecked() ? "1"
+                : bi.cic209b.isChecked() ? "2"
+                : bi.cic209c.isChecked() ? "3"
+                : bi.cic20996.isChecked() ? "96"
                 : "0");
-        sC2.put("nc20996x", bi.nc20996x.getText().toString());
+        sC2.put("cic20996x", bi.cic20996x.getText().toString());
 
-        sC2.put("nc210", bi.nc210a.isChecked() ? "1"
-                : bi.nc210b.isChecked() ? "2"
+        sC2.put("cic210", bi.cic210a.isChecked() ? "1"
+                : bi.cic210b.isChecked() ? "2"
                 : "0");
-        sC2.put("nc211a", bi.nc211a.isChecked() ? "1" : "0");
-        sC2.put("nc211b", bi.nc211b.isChecked() ? "2" : "0");
-        sC2.put("nc211c", bi.nc211c.isChecked() ? "3" : "0");
-        sC2.put("nc211d", bi.nc211d.isChecked() ? "4" : "0");
-        sC2.put("nc211e", bi.nc211e.isChecked() ? "5" : "0");
-        sC2.put("nc211f", bi.nc211f.isChecked() ? "6" : "0");
-        sC2.put("nc211g", bi.nc211g.isChecked() ? "7" : "0");
-        sC2.put("nc211h", bi.nc211h.isChecked() ? "8" : "0");
-        sC2.put("nc211i", bi.nc211i.isChecked() ? "9" : "0");
-        sC2.put("nc211j", bi.nc211j.isChecked() ? "10" : "0");
-        sC2.put("nc21199", bi.nc21199.isChecked() ? "99" : "0");
-        sC2.put("nc21196", bi.nc21196.isChecked() ? "96" : "0");
+        sC2.put("cic211a", bi.cic211a.isChecked() ? "1" : "0");
+        sC2.put("cic211b", bi.cic211b.isChecked() ? "2" : "0");
+        sC2.put("cic211c", bi.cic211c.isChecked() ? "3" : "0");
+        sC2.put("cic211d", bi.cic211d.isChecked() ? "4" : "0");
+        sC2.put("cic211e", bi.cic211e.isChecked() ? "5" : "0");
+        sC2.put("cic211f", bi.cic211f.isChecked() ? "6" : "0");
+        sC2.put("cic211g", bi.cic211g.isChecked() ? "7" : "0");
+        sC2.put("cic211h", bi.cic211h.isChecked() ? "8" : "0");
+        sC2.put("cic211i", bi.cic211i.isChecked() ? "9" : "0");
+        sC2.put("cic211j", bi.cic211j.isChecked() ? "10" : "0");
+        sC2.put("cic21199", bi.cic21199.isChecked() ? "99" : "0");
+        sC2.put("cic21196", bi.cic21196.isChecked() ? "96" : "0");
 
-        sC2.put("nc21196x", bi.nc21196x.getText().toString());
+        sC2.put("cic21196x", bi.cic21196x.getText().toString());
 
-        sC2.put("nc212", bi.nc212a.isChecked() ? "1"
-                : bi.nc212b.isChecked() ? "2"
-                : bi.nc21298.isChecked() ? "98"
-                : "0");
-
-        sC2.put("nc212a", bi.nc21201a.isChecked() ? "1"
-                : bi.nc21201b.isChecked() ? "2"
-                : bi.nc2120198.isChecked() ? "98"
+        sC2.put("cic212", bi.cic212a.isChecked() ? "1"
+                : bi.cic212b.isChecked() ? "2"
+                : bi.cic21298.isChecked() ? "98"
                 : "0");
 
-        sC2.put("nc213", bi.nc213a.isChecked() ? "1"
-                : bi.nc213b.isChecked() ? "2"
-                : bi.nc21398.isChecked() ? "98"
+        sC2.put("cic212a", bi.cic21201a.isChecked() ? "1"
+                : bi.cic21201b.isChecked() ? "2"
+                : bi.cic2120198.isChecked() ? "98"
                 : "0");
 
-        sC2.put("nc214", bi.nc214a.isChecked() ? "1"
-                : bi.nc214b.isChecked() ? "2"
-                : bi.nc21498.isChecked() ? "98"
+        sC2.put("cic213", bi.cic213a.isChecked() ? "1"
+                : bi.cic213b.isChecked() ? "2"
+                : bi.cic21398.isChecked() ? "98"
                 : "0");
 
-        sC2.put("nc215a", bi.nc215aa.isChecked() ? "1"
-                : bi.nc215ab.isChecked() ? "2"
-                : bi.nc215a98.isChecked() ? "98"
+        sC2.put("cic214", bi.cic214a.isChecked() ? "1"
+                : bi.cic214b.isChecked() ? "2"
+                : bi.cic21498.isChecked() ? "98"
                 : "0");
 
-        sC2.put("nc215b", bi.nc215ba.isChecked() ? "1"
-                : bi.nc215bb.isChecked() ? "2"
-                : bi.nc215b98.isChecked() ? "98"
+        sC2.put("cic215a", bi.cic215aa.isChecked() ? "1"
+                : bi.cic215ab.isChecked() ? "2"
+                : bi.cic215a98.isChecked() ? "98"
                 : "0");
 
-        sC2.put("nc215bx", bi.nc215bx.getText().toString());
-        sC2.put("nc215c", bi.nc215ca.isChecked() ? "1"
-                : bi.nc215cb.isChecked() ? "2"
-                : bi.nc215c98.isChecked() ? "98"
-                : "0");
-        sC2.put("nc215cx", bi.nc215cx.getText().toString());
-
-        sC2.put("nc215d", bi.nc215da.isChecked() ? "1"
-                : bi.nc215db.isChecked() ? "2"
-                : bi.nc215d98.isChecked() ? "98"
+        sC2.put("cic215b", bi.cic215ba.isChecked() ? "1"
+                : bi.cic215bb.isChecked() ? "2"
+                : bi.cic215b98.isChecked() ? "98"
                 : "0");
 
-        sC2.put("nc215e", bi.nc215ea.isChecked() ? "1"
-                : bi.nc215eb.isChecked() ? "2"
-                : bi.nc215e98.isChecked() ? "98"
+        sC2.put("cic215bx", bi.cic215bx.getText().toString());
+        sC2.put("cic215c", bi.cic215ca.isChecked() ? "1"
+                : bi.cic215cb.isChecked() ? "2"
+                : bi.cic215c98.isChecked() ? "98"
+                : "0");
+        sC2.put("cic215cx", bi.cic215cx.getText().toString());
+
+        sC2.put("cic215d", bi.cic215da.isChecked() ? "1"
+                : bi.cic215db.isChecked() ? "2"
+                : bi.cic215d98.isChecked() ? "98"
                 : "0");
 
-        sC2.put("nc215f", bi.nc215fa.isChecked() ? "1"
-                : bi.nc215fb.isChecked() ? "2"
-                : bi.nc215f98.isChecked() ? "98"
-                : "0");
-        sC2.put("nc215fx", bi.nc215fx.getText().toString());
-
-
-        sC2.put("nc215g", bi.nc215ga.isChecked() ? "1"
-                : bi.nc215gb.isChecked() ? "2"
-                : bi.nc215g98.isChecked() ? "98"
+        sC2.put("cic215e", bi.cic215ea.isChecked() ? "1"
+                : bi.cic215eb.isChecked() ? "2"
+                : bi.cic215e98.isChecked() ? "98"
                 : "0");
 
-        sC2.put("nc215h", bi.nc215ha.isChecked() ? "1"
-                : bi.nc215hb.isChecked() ? "2"
-                : bi.nc215h98.isChecked() ? "98"
+        sC2.put("cic215f", bi.cic215fa.isChecked() ? "1"
+                : bi.cic215fb.isChecked() ? "2"
+                : bi.cic215f98.isChecked() ? "98"
+                : "0");
+        sC2.put("cic215fx", bi.cic215fx.getText().toString());
+
+
+        sC2.put("cic215g", bi.cic215ga.isChecked() ? "1"
+                : bi.cic215gb.isChecked() ? "2"
+                : bi.cic215g98.isChecked() ? "98"
                 : "0");
 
-        sC2.put("nc215i", bi.nc215ia.isChecked() ? "1"
-                : bi.nc215ib.isChecked() ? "2"
-                : bi.nc215i98.isChecked() ? "98"
+        sC2.put("cic215h", bi.cic215ha.isChecked() ? "1"
+                : bi.cic215hb.isChecked() ? "2"
+                : bi.cic215h98.isChecked() ? "98"
                 : "0");
 
-        sC2.put("nc217a", bi.nc217aa.isChecked() ? "1"
-                : bi.nc217ab.isChecked() ? "2"
-                : bi.nc217a98.isChecked() ? "98"
+        sC2.put("cic215i", bi.cic215ia.isChecked() ? "1"
+                : bi.cic215ib.isChecked() ? "2"
+                : bi.cic215i98.isChecked() ? "98"
                 : "0");
 
-        sC2.put("nc217b", bi.nc217ba.isChecked() ? "1"
-                : bi.nc217bb.isChecked() ? "2"
-                : bi.nc217b98.isChecked() ? "98"
+        sC2.put("cic217a", bi.cic217aa.isChecked() ? "1"
+                : bi.cic217ab.isChecked() ? "2"
+                : bi.cic217a98.isChecked() ? "98"
                 : "0");
 
-        sC2.put("nc217c", bi.nc217ca.isChecked() ? "1"
-                : bi.nc217cb.isChecked() ? "2"
-                : bi.nc217c98.isChecked() ? "98"
+        sC2.put("cic217b", bi.cic217ba.isChecked() ? "1"
+                : bi.cic217bb.isChecked() ? "2"
+                : bi.cic217b98.isChecked() ? "98"
                 : "0");
 
-        sC2.put("nc217d", bi.nc217da.isChecked() ? "1"
-                : bi.nc217db.isChecked() ? "2"
-                : bi.nc217d98.isChecked() ? "98"
+        sC2.put("cic217c", bi.cic217ca.isChecked() ? "1"
+                : bi.cic217cb.isChecked() ? "2"
+                : bi.cic217c98.isChecked() ? "98"
                 : "0");
 
-        sC2.put("nc217e", bi.nc217ea.isChecked() ? "1"
-                : bi.nc217eb.isChecked() ? "2"
-                : bi.nc217e98.isChecked() ? "98"
+        sC2.put("cic217d", bi.cic217da.isChecked() ? "1"
+                : bi.cic217db.isChecked() ? "2"
+                : bi.cic217d98.isChecked() ? "98"
                 : "0");
 
-        sC2.put("nc217f", bi.nc217fa.isChecked() ? "1"
-                : bi.nc217fb.isChecked() ? "2"
-                : bi.nc217f98.isChecked() ? "98"
-                : "0");
-        sC2.put("nc217g", bi.nc217ga.isChecked() ? "1"
-                : bi.nc217gb.isChecked() ? "2"
-                : bi.nc217g98.isChecked() ? "98"
+        sC2.put("cic217e", bi.cic217ea.isChecked() ? "1"
+                : bi.cic217eb.isChecked() ? "2"
+                : bi.cic217e98.isChecked() ? "98"
                 : "0");
 
-        sC2.put("nc217h", bi.nc217ha.isChecked() ? "1"
-                : bi.nc217hb.isChecked() ? "2"
-                : bi.nc217h98.isChecked() ? "98"
+        sC2.put("cic217f", bi.cic217fa.isChecked() ? "1"
+                : bi.cic217fb.isChecked() ? "2"
+                : bi.cic217f98.isChecked() ? "98"
+                : "0");
+        sC2.put("cic217g", bi.cic217ga.isChecked() ? "1"
+                : bi.cic217gb.isChecked() ? "2"
+                : bi.cic217g98.isChecked() ? "98"
                 : "0");
 
-        sC2.put("nc217i", bi.nc217ia.isChecked() ? "1"
-                : bi.nc217ib.isChecked() ? "2"
-                : bi.nc217i98.isChecked() ? "98"
+        sC2.put("cic217h", bi.cic217ha.isChecked() ? "1"
+                : bi.cic217hb.isChecked() ? "2"
+                : bi.cic217h98.isChecked() ? "98"
                 : "0");
 
-        sC2.put("nc217j", bi.nc217ja.isChecked() ? "1"
-                : bi.nc217jb.isChecked() ? "2"
-                : bi.nc217j98.isChecked() ? "98"
+        sC2.put("cic217i", bi.cic217ia.isChecked() ? "1"
+                : bi.cic217ib.isChecked() ? "2"
+                : bi.cic217i98.isChecked() ? "98"
                 : "0");
 
-        sC2.put("nc217k", bi.nc217ka.isChecked() ? "1"
-                : bi.nc217kb.isChecked() ? "2"
-                : bi.nc217k98.isChecked() ? "98"
+        sC2.put("cic217j", bi.cic217ja.isChecked() ? "1"
+                : bi.cic217jb.isChecked() ? "2"
+                : bi.cic217j98.isChecked() ? "98"
                 : "0");
 
-        sC2.put("nc217l", bi.nc217la.isChecked() ? "1"
-                : bi.nc217lb.isChecked() ? "2"
-                : bi.nc217l98.isChecked() ? "98"
+        sC2.put("cic217k", bi.cic217ka.isChecked() ? "1"
+                : bi.cic217kb.isChecked() ? "2"
+                : bi.cic217k98.isChecked() ? "98"
                 : "0");
 
-        sC2.put("nc217m", bi.nc217ma.isChecked() ? "1"
-                : bi.nc217mb.isChecked() ? "2"
-                : bi.nc217m98.isChecked() ? "98"
+        sC2.put("cic217l", bi.cic217la.isChecked() ? "1"
+                : bi.cic217lb.isChecked() ? "2"
+                : bi.cic217l98.isChecked() ? "98"
                 : "0");
 
-        sC2.put("nc217n", bi.nc217na.isChecked() ? "1"
-                : bi.nc217nb.isChecked() ? "2"
-                : bi.nc217n98.isChecked() ? "98"
+        sC2.put("cic217m", bi.cic217ma.isChecked() ? "1"
+                : bi.cic217mb.isChecked() ? "2"
+                : bi.cic217m98.isChecked() ? "98"
                 : "0");
 
-        sC2.put("nc217o", bi.nc217oa.isChecked() ? "1"
-                : bi.nc217ob.isChecked() ? "2"
-                : bi.nc217o98.isChecked() ? "98"
+        sC2.put("cic217n", bi.cic217na.isChecked() ? "1"
+                : bi.cic217nb.isChecked() ? "2"
+                : bi.cic217n98.isChecked() ? "98"
                 : "0");
 
-        sC2.put("nc217p", bi.nc217pa.isChecked() ? "1"
-                : bi.nc217pb.isChecked() ? "2"
-                : bi.nc217p98.isChecked() ? "98"
+        sC2.put("cic217o", bi.cic217oa.isChecked() ? "1"
+                : bi.cic217ob.isChecked() ? "2"
+                : bi.cic217o98.isChecked() ? "98"
                 : "0");
 
-        sC2.put("nc217q", bi.nc217qa.isChecked() ? "1"
-                : bi.nc217qb.isChecked() ? "2"
-                : bi.nc217q98.isChecked() ? "98"
+        sC2.put("cic217p", bi.cic217pa.isChecked() ? "1"
+                : bi.cic217pb.isChecked() ? "2"
+                : bi.cic217p98.isChecked() ? "98"
                 : "0");
 
-        sC2.put("nc218", bi.nc218a.isChecked() ? "1"
-                : bi.nc218b.isChecked() ? "2"
-                : bi.nc21898.isChecked() ? "98"
+        sC2.put("cic217q", bi.cic217qa.isChecked() ? "1"
+                : bi.cic217qb.isChecked() ? "2"
+                : bi.cic217q98.isChecked() ? "98"
                 : "0");
 
-        sC2.put("nc219", bi.nc21998.isChecked() ? "98" : bi.nc219x.getText().toString());
-
-        sC2.put("nc220", bi.nc220a.isChecked() ? "1"
-                : bi.nc220b.isChecked() ? "2"
-                : bi.nc22098.isChecked() ? "98"
+        sC2.put("cic218", bi.cic218a.isChecked() ? "1"
+                : bi.cic218b.isChecked() ? "2"
+                : bi.cic21898.isChecked() ? "98"
                 : "0");
 
-        sC2.put("nc221", bi.nc221a.isChecked() ? "1"
-                : bi.nc221b.isChecked() ? "2"
-                : bi.nc221c.isChecked() ? "3"
-                : bi.nc22196.isChecked() ? "96"
-                : "0");
-        sC2.put("nc22196x", bi.nc22196x.getText().toString());
+        sC2.put("cic219", bi.cic21998.isChecked() ? "98" : bi.cic219x.getText().toString());
 
-        sC2.put("nc222", bi.nc222a.isChecked() ? "1"
-                : bi.nc222b.isChecked() ? "2"
-                : bi.nc222c.isChecked() ? "3"
-                : bi.nc22296.isChecked() ? "96"
+        sC2.put("cic220", bi.cic220a.isChecked() ? "1"
+                : bi.cic220b.isChecked() ? "2"
+                : bi.cic22098.isChecked() ? "98"
                 : "0");
-        sC2.put("nc22296x", bi.nc22296x.getText().toString());
 
-        sC2.put("nc223", bi.nc223a.isChecked() ? "1"
-                : bi.nc223b.isChecked() ? "2"
-                : bi.nc22398.isChecked() ? "98"
+        sC2.put("cic221", bi.cic221a.isChecked() ? "1"
+                : bi.cic221b.isChecked() ? "2"
+                : bi.cic221c.isChecked() ? "3"
+                : bi.cic22196.isChecked() ? "96"
+                : "0");
+        sC2.put("cic22196x", bi.cic22196x.getText().toString());
+
+        sC2.put("cic222", bi.cic222a.isChecked() ? "1"
+                : bi.cic222b.isChecked() ? "2"
+                : bi.cic222c.isChecked() ? "3"
+                : bi.cic22296.isChecked() ? "96"
+                : "0");
+        sC2.put("cic22296x", bi.cic22296x.getText().toString());
+
+        sC2.put("cic223", bi.cic223a.isChecked() ? "1"
+                : bi.cic223b.isChecked() ? "2"
+                : bi.cic22398.isChecked() ? "98"
                 : "0");
 
 
@@ -1256,93 +1256,93 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
         selectedChild = (FamilyMembersContract) getIntent().getSerializableExtra("selectedChild");
 
 
-        /*bi.nc205.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        /*bi.cic205.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                if (bi.nc205a.isChecked()) {
-                    //bi.fldGrpnc206.setVisibility(View.VISIBLE);
-                    ClearClass.ClearAllFields(bi.fldGrpnc206, true);
+                if (bi.cic205a.isChecked()) {
+                    //bi.fldGrpcic206.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldGrpcic206, true);
 
                 } else {
-                    ClearClass.ClearAllFields(bi.fldGrpnc206, false);
+                    ClearClass.ClearAllFields(bi.fldGrpcic206, false);
 
                 }
             }
         });*/
 
-        bi.nc206.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        bi.cic206.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 ValidateForm();
-                if (bi.nc206a.isChecked()) {
-                    //bi.fldGrpnc207.setVisibility(View.VISIBLE);
-                    ClearClass.ClearAllFields(bi.fldGrpnc207, true);
+                if (bi.cic206a.isChecked()) {
+                    //bi.fldGrpcic207.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldGrpcic207, true);
 
                 } else {
-                    ClearClass.ClearAllFields(bi.fldGrpnc207, false);
-                    /*bi.fldGrpnc207.setVisibility(View.GONE);
-                    bi.nc207.clearCheck();
-                    bi.nc207d.setText(null);
-                    bi.nc207h.setText(null);
-                    bi.nc208.clearCheck();
-                    bi.nc209.clearCheck();
-                    bi.nc20996x.setText(null);
-                    bi.nc210.clearCheck();
-                    bi.nc211.clearCheck();
-                    bi.nc21196x.setText(null);
-                    bi.nc212.clearCheck();
+                    ClearClass.ClearAllFields(bi.fldGrpcic207, false);
+                    /*bi.fldGrpcic207.setVisibility(View.GONE);
+                    bi.cic207.clearCheck();
+                    bi.cic207d.setText(null);
+                    bi.cic207h.setText(null);
+                    bi.cic208.clearCheck();
+                    bi.cic209.clearCheck();
+                    bi.cic20996x.setText(null);
+                    bi.cic210.clearCheck();
+                    bi.cic211.clearCheck();
+                    bi.cic21196x.setText(null);
+                    bi.cic212.clearCheck();
 */
                 }
             }
         });
 
-        bi.nc208.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        bi.cic208.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 ValidateForm();
-                if (bi.nc208b.isChecked()) {
-                    //bi.fldGrpnc209.setVisibility(View.VISIBLE);
-                    ClearClass.ClearAllFields(bi.fldGrpnc209, true);
+                if (bi.cic208b.isChecked()) {
+                    //bi.fldGrpcic209.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldGrpcic209, true);
                 } else {
-                    ClearClass.ClearAllFields(bi.fldGrpnc209, false);
-                    /*bi.fldGrpnc209.setVisibility(View.GONE);
-                    bi.nc209.clearCheck();
-                    bi.nc20996x.setText(null);*/
+                    ClearClass.ClearAllFields(bi.fldGrpcic209, false);
+                    /*bi.fldGrpcic209.setVisibility(View.GONE);
+                    bi.cic209.clearCheck();
+                    bi.cic20996x.setText(null);*/
                 }
             }
         });
 
-        bi.nc210.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        bi.cic210.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 ValidateForm();
-                if (bi.nc210a.isChecked()) {
-                    //bi.fldGrpnc211.setVisibility(View.VISIBLE);
-                    ClearClass.ClearAllFields(bi.fldGrpnc211, true);
+                if (bi.cic210a.isChecked()) {
+                    //bi.fldGrpcic211.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldGrpcic211, true);
                 } else {
-                    ClearClass.ClearAllFields(bi.fldGrpnc211, false);
-                    /*bi.fldGrpnc211.setVisibility(View.GONE);
-                    bi.nc211.clearCheck();
-                    bi.nc21196x.setText(null);*/
+                    ClearClass.ClearAllFields(bi.fldGrpcic211, false);
+                    /*bi.fldGrpcic211.setVisibility(View.GONE);
+                    bi.cic211.clearCheck();
+                    bi.cic21196x.setText(null);*/
                 }
             }
         });
 
-        bi.nc212.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        bi.cic212.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 ValidateForm();
-                if (bi.nc212a.isChecked()) {
-                    //bi.fldGrpnc212a.setVisibility(View.GONE);
-                    ClearClass.ClearAllFields(bi.fldGrpnc212a, false);
-                    //bi.nc21201.clearCheck();
+                if (bi.cic212a.isChecked()) {
+                    //bi.fldGrpcic212a.setVisibility(View.GONE);
+                    ClearClass.ClearAllFields(bi.fldGrpcic212a, false);
+                    //bi.cic21201.clearCheck();
                 } else {
-                    //bi.fldGrpnc212a.setVisibility(View.VISIBLE);
-                    ClearClass.ClearAllFields(bi.fldGrpnc212a, true);
+                    //bi.fldGrpcic212a.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldGrpcic212a, true);
                 }
             }
         });
-        /*bi.nc20198.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        /*bi.cic20198.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
@@ -1356,35 +1356,35 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
                 }
             }
         });*/
-        bi.nc21199.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        bi.cic21199.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    bi.nc211a.setChecked(false);
-                    bi.nc211b.setChecked(false);
-                    bi.nc211c.setChecked(false);
-                    bi.nc211d.setChecked(false);
-                    bi.nc211e.setChecked(false);
-                    bi.nc211f.setChecked(false);
-                    bi.nc211g.setChecked(false);
-                    bi.nc211h.setChecked(false);
-                    bi.nc211i.setChecked(false);
-                    bi.nc211j.setChecked(false);
-                    bi.nc21196.setChecked(false);
-                    bi.nc21196x.setText(null);
+                    bi.cic211a.setChecked(false);
+                    bi.cic211b.setChecked(false);
+                    bi.cic211c.setChecked(false);
+                    bi.cic211d.setChecked(false);
+                    bi.cic211e.setChecked(false);
+                    bi.cic211f.setChecked(false);
+                    bi.cic211g.setChecked(false);
+                    bi.cic211h.setChecked(false);
+                    bi.cic211i.setChecked(false);
+                    bi.cic211j.setChecked(false);
+                    bi.cic21196.setChecked(false);
+                    bi.cic21196x.setText(null);
                 }
             }
         });
-        bi.nc21196.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        bi.cic21196.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (!isChecked) {
-                    bi.nc21196x.setText(null);
-                    bi.nc21196x.setEnabled(false);
+                    bi.cic21196x.setText(null);
+                    bi.cic21196x.setEnabled(false);
                 } else {
-                    bi.nc21196x.setEnabled(true);
-                    if (bi.nc21199.isChecked()) {
-                        bi.nc21199.setChecked(false);
+                    bi.cic21196x.setEnabled(true);
+                    if (bi.cic21199.isChecked()) {
+                        bi.cic21199.setChecked(false);
                     }
                 }
             }
@@ -1392,53 +1392,53 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
 
 
 
-        /*bi.nc218.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        /*bi.cic218.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                if(bi.nc218a.isChecked())
+                if(bi.cic218a.isChecked())
                 {
-                    bi.fldGrpnc219.setVisibility(View.VISIBLE);
+                    bi.fldGrpcic219.setVisibility(View.VISIBLE);
                 }else{
-                    bi.fldGrpnc219.setVisibility(View.GONE);
-                    bi.nc219.clearCheck();
-                    bi.nc219x.setText(null);
+                    bi.fldGrpcic219.setVisibility(View.GONE);
+                    bi.cic219.clearCheck();
+                    bi.cic219x.setText(null);
                 }
             }
         });*/
 
-        for (CheckBox chk : grpnc211) {
+        for (CheckBox chk : grpcic211) {
             chk.setOnCheckedChangeListener(check2);
         }
-        for (RadioGroup rg : grpnc215) {
+        for (RadioGroup rg : grpcic215) {
             rg.setOnCheckedChangeListener(check);
         }
 
-        bi.nc215b.setOnCheckedChangeListener(nc215);
-        bi.nc215c.setOnCheckedChangeListener(nc215);
-        bi.nc215f.setOnCheckedChangeListener(nc215);
+        bi.cic215b.setOnCheckedChangeListener(cic215);
+        bi.cic215c.setOnCheckedChangeListener(cic215);
+        bi.cic215f.setOnCheckedChangeListener(cic215);
 
 //        Listener
 
-        bi.nc207.setOnCheckedChangeListener(this);
-        bi.nc209.setOnCheckedChangeListener(this);
-        //bi.nc211.setOnCheckedChangeListener(this);
-        bi.nc21201.setOnCheckedChangeListener(this);
-        bi.nc213.setOnCheckedChangeListener(this);
-        bi.nc214.setOnCheckedChangeListener(this);
-        bi.nc218.setOnCheckedChangeListener(this);
-        bi.nc219.setOnCheckedChangeListener(this);
-        bi.nc220.setOnCheckedChangeListener(this);
-        //bi.nc221.setOnCheckedChangeListener(this);
-        bi.nc222.setOnCheckedChangeListener(this);
-        bi.nc223.setOnCheckedChangeListener(this);
+        bi.cic207.setOnCheckedChangeListener(this);
+        bi.cic209.setOnCheckedChangeListener(this);
+        //bi.cic211.setOnCheckedChangeListener(this);
+        bi.cic21201.setOnCheckedChangeListener(this);
+        bi.cic213.setOnCheckedChangeListener(this);
+        bi.cic214.setOnCheckedChangeListener(this);
+        bi.cic218.setOnCheckedChangeListener(this);
+        bi.cic219.setOnCheckedChangeListener(this);
+        bi.cic220.setOnCheckedChangeListener(this);
+        //bi.cic221.setOnCheckedChangeListener(this);
+        bi.cic222.setOnCheckedChangeListener(this);
+        bi.cic223.setOnCheckedChangeListener(this);
 
-        bi.nc221.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        bi.cic221.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                if (bi.nc221a.isChecked()) {
-                    ClearClass.ClearAllFields(bi.fldGrpnc222, true);
+                if (bi.cic221a.isChecked()) {
+                    ClearClass.ClearAllFields(bi.fldGrpcic222, true);
                 } else {
-                    ClearClass.ClearAllFields(bi.fldGrpnc222, false);
+                    ClearClass.ClearAllFields(bi.fldGrpcic222, false);
                 }
             }
         });
@@ -1458,7 +1458,7 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
     public boolean isoneYes() {
 
         int i = 0;
-        for (RadioButton rg : nc215yes) {
+        for (RadioButton rg : cic215yes) {
             if (rg.isChecked())
                 return true;
         }
@@ -1471,25 +1471,25 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
     public boolean isAlldkn() {
 
         int i = 0;
-        for (RadioButton rg : nc215dkn) {
+        for (RadioButton rg : cic215dkn) {
             if (rg.isChecked())
                 i++;
         }
 
         // Show answer here
-        return i == nc215dkn.size();
+        return i == cic215dkn.size();
     }
 
     public boolean isAllNo() {
 
         int i = 0;
-        for (RadioButton rg : nc215no) {
+        for (RadioButton rg : cic215no) {
             if (rg.isChecked())
                 i++;
         }
 
         // Show answer here
-        return i == nc215no.size();
+        return i == cic215no.size();
     }
 
 

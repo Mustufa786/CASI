@@ -39,7 +39,7 @@ public class SectionC4Activity extends Menu2Activity {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_section_c4);
         db = new DatabaseHelper(this);
 
-        this.setTitle(getResources().getString(R.string.nc4heading));
+        this.setTitle(getResources().getString(R.string.cic4heading));
 
 //        if (SectionC1Activity.editChildFlag) {
 //            binding.textName.setText(SectionC1Activity.selectedChildName + " : " + getString(R.string.childname)
@@ -54,26 +54,26 @@ public class SectionC4Activity extends Menu2Activity {
 //            }
 //        }
 //
-//        binding.txtnc401.setText(binding.txtnc401.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtnc402.setText(binding.txtnc402.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtnc403.setText(binding.txtnc403.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtnc404.setText(binding.txtnc404.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtnc405.setText(binding.txtnc405.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtnc406.setText(binding.txtnc406.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtnc407.setText(binding.txtnc407.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtnc408.setText(binding.txtnc408.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtnc409.setText(binding.txtnc409.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtnc410.setText(binding.txtnc410.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtnc411.setText(binding.txtnc411.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtnc412.setText(binding.txtnc412.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtnc413.setText(binding.txtnc413.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtnc414.setText(binding.txtnc414.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtnc415.setText(binding.txtnc415.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtnc416.setText(binding.txtnc416.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtnc417.setText(binding.txtnc417.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtnc418.setText(binding.txtnc418.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtnc419.setText(binding.txtnc419.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-//        binding.txtnc420.setText(binding.txtnc420.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic401.setText(binding.txtcic401.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic402.setText(binding.txtcic402.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic403.setText(binding.txtcic403.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic404.setText(binding.txtcic404.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic405.setText(binding.txtcic405.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic406.setText(binding.txtcic406.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic407.setText(binding.txtcic407.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic408.setText(binding.txtcic408.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic409.setText(binding.txtcic409.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic410.setText(binding.txtcic410.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic411.setText(binding.txtcic411.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic412.setText(binding.txtcic412.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic413.setText(binding.txtcic413.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic414.setText(binding.txtcic414.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic415.setText(binding.txtcic415.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic416.setText(binding.txtcic416.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic417.setText(binding.txtcic417.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic418.setText(binding.txtcic418.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic419.setText(binding.txtcic419.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic420.setText(binding.txtcic420.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
 //
 //
 //        //        Assigning data to UI binding
@@ -83,81 +83,81 @@ public class SectionC4Activity extends Menu2Activity {
     }
 
     private void setupViews() {
-        binding.nc401.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        binding.cic401.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 formValidation();
-                if (!binding.nc401a.isChecked()) {
-                    ClearClass.ClearAllFields(binding.fldGrnc402, false);
+                if (!binding.cic401a.isChecked()) {
+                    ClearClass.ClearAllFields(binding.fldGrcic402, false);
                 } else {
-                    ClearClass.ClearAllFields(binding.fldGrnc402, true);
+                    ClearClass.ClearAllFields(binding.fldGrcic402, true);
 
                 }
             }
         });
-        binding.nc402.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        binding.cic402.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 formValidation();
-                if (!binding.nc402a.isChecked()) {
-                    ClearClass.ClearAllFields(binding.fldGrpnc403, false);
-                    ClearClass.ClearAllFields(binding.fldGrnc404, true);
+                if (!binding.cic402a.isChecked()) {
+                    ClearClass.ClearAllFields(binding.fldGrpcic403, false);
+                    ClearClass.ClearAllFields(binding.fldGrcic404, true);
                 } else {
-                    ClearClass.ClearAllFields(binding.fldGrpnc403, true);
-                    ClearClass.ClearAllFields(binding.fldGrnc404, false);
-
-                }
-            }
-        });
-
-        binding.nc406.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                formValidation();
-                if (binding.nc406a.isChecked()) {
-                    ClearClass.ClearAllFields(binding.fldGrpnc406, true);
-                } else {
-                    ClearClass.ClearAllFields(binding.fldGrpnc406, false);
-
-                }
-            }
-        });
-        binding.nc407.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                formValidation();
-                if (binding.nc407a.isChecked()) {
-                    ClearClass.ClearAllFields(binding.fldGrpnc408, false);
-                    ClearClass.ClearAllFields(binding.fldGrpnc409, true);
-                } else {
-                    ClearClass.ClearAllFields(binding.fldGrpnc408, true);
-                    ClearClass.ClearAllFields(binding.fldGrpnc409, false);
+                    ClearClass.ClearAllFields(binding.fldGrpcic403, true);
+                    ClearClass.ClearAllFields(binding.fldGrcic404, false);
 
                 }
             }
         });
 
-        binding.nc411.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        binding.cic406.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 formValidation();
-                if (binding.nc411b.isChecked()) {
-                    ClearClass.ClearAllFields(binding.fldGrpnc412, false);
+                if (binding.cic406a.isChecked()) {
+                    ClearClass.ClearAllFields(binding.fldGrpcic406, true);
                 } else {
-                    ClearClass.ClearAllFields(binding.fldGrpnc412, true);
+                    ClearClass.ClearAllFields(binding.fldGrpcic406, false);
 
                 }
             }
         });
-        binding.nc412.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        binding.cic407.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 formValidation();
-                if (binding.nc412a.isChecked()) {
-                    ClearClass.ClearAllFields(binding.fldGrpnc413, false);
+                if (binding.cic407a.isChecked()) {
+                    ClearClass.ClearAllFields(binding.fldGrpcic408, false);
+                    ClearClass.ClearAllFields(binding.fldGrpcic409, true);
+                } else {
+                    ClearClass.ClearAllFields(binding.fldGrpcic408, true);
+                    ClearClass.ClearAllFields(binding.fldGrpcic409, false);
+
+                }
+            }
+        });
+
+        binding.cic411.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                formValidation();
+                if (binding.cic411b.isChecked()) {
+                    ClearClass.ClearAllFields(binding.fldGrpcic412, false);
+                } else {
+                    ClearClass.ClearAllFields(binding.fldGrpcic412, true);
+
+                }
+            }
+        });
+        binding.cic412.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                formValidation();
+                if (binding.cic412a.isChecked()) {
+                    ClearClass.ClearAllFields(binding.fldGrpcic413, false);
                     ClearClass.ClearAllFields(binding.fldGrpnc14, true);
                 } else {
-                    ClearClass.ClearAllFields(binding.fldGrpnc413, true);
+                    ClearClass.ClearAllFields(binding.fldGrpcic413, true);
                     ClearClass.ClearAllFields(binding.fldGrpnc14, false);
 
                 }
@@ -168,21 +168,21 @@ public class SectionC4Activity extends Menu2Activity {
         //Get Intent
         selectedChild = (FamilyMembersContract) getIntent().getSerializableExtra("selectedChild");
 
-//        binding.nc403.setOnCheckedChangeListener(this);
-//        binding.nc404a.setOnCheckedChangeListener(this);
-//        binding.nc407.setOnCheckedChangeListener(this);
-//        binding.nc408b.setOnCheckedChangeListener(this);
-//        binding.nc411.setOnCheckedChangeListener(this);
-//        binding.nc412b.setOnCheckedChangeListener(this);
-//        binding.nc413.setOnCheckedChangeListener(this);
-//        binding.nc414.setOnCheckedChangeListener(this);
-//        //binding.nc415.setOnCheckedChangeListener(this);
-//        binding.nc416.addTextChangedListener(this);
-//        binding.nc417.setOnCheckedChangeListener(this);
-//        //binding.nc418.setOnCheckedChangeListener(this);
-//        binding.nc419.setOnCheckedChangeListener(this);
-//        binding.nc420m.addTextChangedListener(this);
-//        binding.nc420d.addTextChangedListener(this);
+//        binding.cic403.setOnCheckedChangeListener(this);
+//        binding.cic404a.setOnCheckedChangeListener(this);
+//        binding.cic407.setOnCheckedChangeListener(this);
+//        binding.cic408b.setOnCheckedChangeListener(this);
+//        binding.cic411.setOnCheckedChangeListener(this);
+//        binding.cic412b.setOnCheckedChangeListener(this);
+//        binding.cic413.setOnCheckedChangeListener(this);
+//        binding.cic414.setOnCheckedChangeListener(this);
+//        //binding.cic415.setOnCheckedChangeListener(this);
+//        binding.cic416.addTextChangedListener(this);
+//        binding.cic417.setOnCheckedChangeListener(this);
+//        //binding.cic418.setOnCheckedChangeListener(this);
+//        binding.cic419.setOnCheckedChangeListener(this);
+//        binding.cic420m.addTextChangedListener(this);
+//        binding.cic420d.addTextChangedListener(this);
 
 //        Validation Boolean
         MainApp.validateFlag = false;
@@ -198,258 +198,258 @@ public class SectionC4Activity extends Menu2Activity {
 //
 //            JSONC4ModelClass jsonC4 = JSONUtilClass.getModelFromJSON(childContract.getsC4(), JSONC4ModelClass.class);
 //
-//            if (!jsonC4.getnc401().equals("0")) {
-//                binding.nc401.check(
-//                        jsonC4.getnc401().equals("1") ? binding.nc401a.getId()
-//                                : binding.nc401b.getId());
+//            if (!jsonC4.getcic401().equals("0")) {
+//                binding.cic401.check(
+//                        jsonC4.getcic401().equals("1") ? binding.cic401a.getId()
+//                                : binding.cic401b.getId());
 //            }
-//            if (!jsonC4.getnc402().equals("0")) {
-//                binding.nc402.check(
-//                        jsonC4.getnc402().equals("1") ? binding.nc402a.getId()
-//                                : binding.nc402b.getId());
+//            if (!jsonC4.getcic402().equals("0")) {
+//                binding.cic402.check(
+//                        jsonC4.getcic402().equals("1") ? binding.cic402a.getId()
+//                                : binding.cic402b.getId());
 //            }
-//            if (!jsonC4.getnc403().equals("0")) {
-//                binding.nc403.check(
-//                        jsonC4.getnc403().equals("1") ? binding.nc403a.getId()
-//                                : jsonC4.getnc403().equals("2") ? binding.nc403b.getId()
-//                                : jsonC4.getnc403().equals("3") ? binding.nc403c.getId()
-//                                : jsonC4.getnc403().equals("4") ? binding.nc403d.getId()
-//                                : jsonC4.getnc403().equals("5") ? binding.nc403e.getId()
-//                                : jsonC4.getnc403().equals("961") ? binding.nc40396.getId()
+//            if (!jsonC4.getcic403().equals("0")) {
+//                binding.cic403.check(
+//                        jsonC4.getcic403().equals("1") ? binding.cic403a.getId()
+//                                : jsonC4.getcic403().equals("2") ? binding.cic403b.getId()
+//                                : jsonC4.getcic403().equals("3") ? binding.cic403c.getId()
+//                                : jsonC4.getcic403().equals("4") ? binding.cic403d.getId()
+//                                : jsonC4.getcic403().equals("5") ? binding.cic403e.getId()
+//                                : jsonC4.getcic403().equals("961") ? binding.cic40396.getId()
 //                );
 //            }
-//            binding.nc40396x.setText(jsonC4.getnc4039601x());
+//            binding.cic40396x.setText(jsonC4.getcic4039601x());
 //
 //
-//            if (!jsonC4.getnc404a().equals("0")) {
-//                binding.nc404a.setChecked(true);
+//            if (!jsonC4.getcic404a().equals("0")) {
+//                binding.cic404a.setChecked(true);
 //            }
-//            if (!jsonC4.getnc404b().equals("0")) {
-//                binding.nc404b.setChecked(true);
+//            if (!jsonC4.getcic404b().equals("0")) {
+//                binding.cic404b.setChecked(true);
 //            }
-//            if (!jsonC4.getnc404c().equals("0")) {
-//                binding.nc404c.setChecked(true);
+//            if (!jsonC4.getcic404c().equals("0")) {
+//                binding.cic404c.setChecked(true);
 //            }
-//            if (!jsonC4.getnc404d().equals("0")) {
-//                binding.nc404d.setChecked(true);
+//            if (!jsonC4.getcic404d().equals("0")) {
+//                binding.cic404d.setChecked(true);
 //            }
-//            if (!jsonC4.getnc404e().equals("0")) {
-//                binding.nc404e.setChecked(true);
+//            if (!jsonC4.getcic404e().equals("0")) {
+//                binding.cic404e.setChecked(true);
 //            }
-//            if (!jsonC4.getnc404f().equals("0")) {
-//                binding.nc404f.setChecked(true);
+//            if (!jsonC4.getcic404f().equals("0")) {
+//                binding.cic404f.setChecked(true);
 //            }
-//            if (!jsonC4.getnc404g().equals("0")) {
-//                binding.nc404g.setChecked(true);
+//            if (!jsonC4.getcic404g().equals("0")) {
+//                binding.cic404g.setChecked(true);
 //            }
-//            if (!jsonC4.getnc404h().equals("0")) {
-//                binding.nc404h.setChecked(true);
+//            if (!jsonC4.getcic404h().equals("0")) {
+//                binding.cic404h.setChecked(true);
 //            }
-//            if (!jsonC4.getnc404i().equals("0")) {
-//                binding.nc404i.setChecked(true);
+//            if (!jsonC4.getcic404i().equals("0")) {
+//                binding.cic404i.setChecked(true);
 //            }
-//            if (!jsonC4.getnc404j().equals("0")) {
-//                binding.nc404j.setChecked(true);
+//            if (!jsonC4.getcic404j().equals("0")) {
+//                binding.cic404j.setChecked(true);
 //            }
 //            if (!jsonC4.getNc404k().equals("0")) {
-//                binding.nc404k.setChecked(true);
+//                binding.cic404k.setChecked(true);
 //            }
 //            if (!jsonC4.getNc404l().equals("0")) {
-//                binding.nc404l.setChecked(true);
+//                binding.cic404l.setChecked(true);
 //            }
 //            if (!jsonC4.getNc404m().equals("0")) {
-//                binding.nc404m.setChecked(true);
+//                binding.cic404m.setChecked(true);
 //            }
-//            if (!jsonC4.getnc40496().equals("0")) {
-//                binding.nc4049601.setChecked(true);
+//            if (!jsonC4.getcic40496().equals("0")) {
+//                binding.cic4049601.setChecked(true);
 //            }
 //            if (!jsonC4.getNc4049602().equals("0")) {
-//                binding.nc4049602.setChecked(true);
+//                binding.cic4049602.setChecked(true);
 //            }
 //            if (!jsonC4.getNc4049603().equals("0")) {
-//                binding.nc4049603.setChecked(true);
+//                binding.cic4049603.setChecked(true);
 //            }
 //
-//            binding.nc4049601x.setText(jsonC4.getnc40496x());
-//            binding.nc4049602x.setText(jsonC4.getnc40496x());
-//            binding.nc4049603x.setText(jsonC4.getnc40496x());
+//            binding.cic4049601x.setText(jsonC4.getcic40496x());
+//            binding.cic4049602x.setText(jsonC4.getcic40496x());
+//            binding.cic4049603x.setText(jsonC4.getcic40496x());
 //
 //
 ////            C405
 //
 //
-//            if (!jsonC4.getnc405().equals("0")) {
-//                binding.nc405.check(
-//                        jsonC4.getnc405().equals("1") ? binding.nc405a.getId()
-//                                : binding.nc405b.getId());
+//            if (!jsonC4.getcic405().equals("0")) {
+//                binding.cic405.check(
+//                        jsonC4.getcic405().equals("1") ? binding.cic405a.getId()
+//                                : binding.cic405b.getId());
 //            }
-//            if (!jsonC4.getnc406().equals("0")) {
-//                binding.nc406.check(
-//                        jsonC4.getnc406().equals("1") ? binding.nc406a.getId()
-//                                : binding.nc406b.getId());
+//            if (!jsonC4.getcic406().equals("0")) {
+//                binding.cic406.check(
+//                        jsonC4.getcic406().equals("1") ? binding.cic406a.getId()
+//                                : binding.cic406b.getId());
 //            }
-//            if (!jsonC4.getnc407().equals("0")) {
-//                binding.nc407.check(
-//                        jsonC4.getnc407().equals("1") ? binding.nc407a.getId()
-//                                : jsonC4.getnc407().equals("2") ? binding.nc407b.getId()
-//                                : jsonC4.getnc407().equals("3") ? binding.nc407c.getId()
-//                                : jsonC4.getnc407().equals("4") ? binding.nc407d.getId()
-//                                : jsonC4.getnc407().equals("5") ? binding.nc407e.getId()
-//                                : jsonC4.getnc407().equals("961") ? binding.nc4079601.getId()
-//                                : jsonC4.getnc407().equals("6") ? binding.nc407f.getId()
-//                                : jsonC4.getnc407().equals("7") ? binding.nc407g.getId()
-//                                : jsonC4.getnc407().equals("8") ? binding.nc407h.getId()
-//                                : jsonC4.getnc407().equals("9") ? binding.nc407i.getId()
-//                                : jsonC4.getnc407().equals("10") ? binding.nc407j.getId()
-//                                : jsonC4.getnc407().equals("962") ? binding.nc4079602.getId()
-//                                : jsonC4.getnc407().equals("11") ? binding.nc407k.getId()
-//                                : jsonC4.getnc407().equals("12") ? binding.nc407l.getId()
-//                                : jsonC4.getnc407().equals("13") ? binding.nc407m.getId()
-//                                : binding.nc4079603.getId());
+//            if (!jsonC4.getcic407().equals("0")) {
+//                binding.cic407.check(
+//                        jsonC4.getcic407().equals("1") ? binding.cic407a.getId()
+//                                : jsonC4.getcic407().equals("2") ? binding.cic407b.getId()
+//                                : jsonC4.getcic407().equals("3") ? binding.cic407c.getId()
+//                                : jsonC4.getcic407().equals("4") ? binding.cic407d.getId()
+//                                : jsonC4.getcic407().equals("5") ? binding.cic407e.getId()
+//                                : jsonC4.getcic407().equals("961") ? binding.cic4079601.getId()
+//                                : jsonC4.getcic407().equals("6") ? binding.cic407f.getId()
+//                                : jsonC4.getcic407().equals("7") ? binding.cic407g.getId()
+//                                : jsonC4.getcic407().equals("8") ? binding.cic407h.getId()
+//                                : jsonC4.getcic407().equals("9") ? binding.cic407i.getId()
+//                                : jsonC4.getcic407().equals("10") ? binding.cic407j.getId()
+//                                : jsonC4.getcic407().equals("962") ? binding.cic4079602.getId()
+//                                : jsonC4.getcic407().equals("11") ? binding.cic407k.getId()
+//                                : jsonC4.getcic407().equals("12") ? binding.cic407l.getId()
+//                                : jsonC4.getcic407().equals("13") ? binding.cic407m.getId()
+//                                : binding.cic4079603.getId());
 //            }
-//            binding.nc4079601x.setText(jsonC4.getnc4079601x());
-//            binding.nc4079602x.setText(jsonC4.getnc4079602x());
-//            binding.nc4079603x.setText(jsonC4.getnc4079603x());
+//            binding.cic4079601x.setText(jsonC4.getcic4079601x());
+//            binding.cic4079602x.setText(jsonC4.getcic4079602x());
+//            binding.cic4079603x.setText(jsonC4.getcic4079603x());
 //
 //
-//            if (!jsonC4.getnc408b().equals("0")) {
-//                binding.nc408b.setChecked(true);
+//            if (!jsonC4.getcic408b().equals("0")) {
+//                binding.cic408b.setChecked(true);
 //            }
 //
-//            if (!jsonC4.getnc408e().equals("0")) {
-//                binding.nc408e.setChecked(true);
+//            if (!jsonC4.getcic408e().equals("0")) {
+//                binding.cic408e.setChecked(true);
 //            }
-//            if (!jsonC4.getnc408f().equals("0")) {
-//                binding.nc408f.setChecked(true);
+//            if (!jsonC4.getcic408f().equals("0")) {
+//                binding.cic408f.setChecked(true);
 //            }
-//            if (!jsonC4.getnc408g().equals("0")) {
-//                binding.nc408g.setChecked(true);
+//            if (!jsonC4.getcic408g().equals("0")) {
+//                binding.cic408g.setChecked(true);
 //            }
-//            if (!jsonC4.getnc408h().equals("0")) {
-//                binding.nc408h.setChecked(true);
+//            if (!jsonC4.getcic408h().equals("0")) {
+//                binding.cic408h.setChecked(true);
 //            }
-//            if (!jsonC4.getnc408i().equals("0")) {
-//                binding.nc408i.setChecked(true);
+//            if (!jsonC4.getcic408i().equals("0")) {
+//                binding.cic408i.setChecked(true);
 //            }
-//            if (!jsonC4.getnc408j().equals("0")) {
-//                binding.nc408j.setChecked(true);
+//            if (!jsonC4.getcic408j().equals("0")) {
+//                binding.cic408j.setChecked(true);
 //            }
-//            if (!jsonC4.getnc4089601().equals("0")) {
-//                binding.nc4089601.setChecked(true);
+//            if (!jsonC4.getcic4089601().equals("0")) {
+//                binding.cic4089601.setChecked(true);
 //            }
 //
-//            binding.nc4089601x.setText(jsonC4.getnc40496x());
+//            binding.cic4089601x.setText(jsonC4.getcic40496x());
 ////            C409
-//            if (!jsonC4.getnc409().equals("0")) {
-//                binding.nc409.check(
-//                        jsonC4.getnc409().equals("1") ? binding.nc409a.getId()
-//                                : binding.nc409b.getId());
+//            if (!jsonC4.getcic409().equals("0")) {
+//                binding.cic409.check(
+//                        jsonC4.getcic409().equals("1") ? binding.cic409a.getId()
+//                                : binding.cic409b.getId());
 //            }
-//            if (!jsonC4.getnc410().equals("0")) {
-//                binding.nc410.check(
-//                        jsonC4.getnc410().equals("1") ? binding.nc410a.getId()
-//                                : binding.nc410b.getId());
+//            if (!jsonC4.getcic410().equals("0")) {
+//                binding.cic410.check(
+//                        jsonC4.getcic410().equals("1") ? binding.cic410a.getId()
+//                                : binding.cic410b.getId());
 //            }
-//            if (!jsonC4.getnc411().equals("0")) {
-//                binding.nc411.check(
-//                        jsonC4.getnc411().equals("1") ? binding.nc411a.getId()
-//                                : jsonC4.getnc411().equals("2") ? binding.nc411b.getId()
-//                                : jsonC4.getnc411().equals("3") ? binding.nc411c.getId()
-//                                : jsonC4.getnc411().equals("4") ? binding.nc411d.getId()
-//                                : jsonC4.getnc411().equals("5") ? binding.nc411e.getId()
-//                                : jsonC4.getnc411().equals("961") ? binding.nc4119601.getId()
-//                                : jsonC4.getnc411().equals("6") ? binding.nc411f.getId()
-//                                : jsonC4.getnc411().equals("7") ? binding.nc411g.getId()
-//                                : jsonC4.getnc411().equals("8") ? binding.nc411h.getId()
-//                                : jsonC4.getnc411().equals("9") ? binding.nc411i.getId()
-//                                : jsonC4.getnc411().equals("10") ? binding.nc411j.getId()
-//                                : jsonC4.getnc411().equals("962") ? binding.nc4119602.getId()
-//                                : jsonC4.getnc411().equals("11") ? binding.nc411k.getId()
-//                                : jsonC4.getnc411().equals("12") ? binding.nc411l.getId()
-//                                : jsonC4.getnc411().equals("13") ? binding.nc411m.getId()
-//                                : binding.nc4119603.getId());
+//            if (!jsonC4.getcic411().equals("0")) {
+//                binding.cic411.check(
+//                        jsonC4.getcic411().equals("1") ? binding.cic411a.getId()
+//                                : jsonC4.getcic411().equals("2") ? binding.cic411b.getId()
+//                                : jsonC4.getcic411().equals("3") ? binding.cic411c.getId()
+//                                : jsonC4.getcic411().equals("4") ? binding.cic411d.getId()
+//                                : jsonC4.getcic411().equals("5") ? binding.cic411e.getId()
+//                                : jsonC4.getcic411().equals("961") ? binding.cic4119601.getId()
+//                                : jsonC4.getcic411().equals("6") ? binding.cic411f.getId()
+//                                : jsonC4.getcic411().equals("7") ? binding.cic411g.getId()
+//                                : jsonC4.getcic411().equals("8") ? binding.cic411h.getId()
+//                                : jsonC4.getcic411().equals("9") ? binding.cic411i.getId()
+//                                : jsonC4.getcic411().equals("10") ? binding.cic411j.getId()
+//                                : jsonC4.getcic411().equals("962") ? binding.cic4119602.getId()
+//                                : jsonC4.getcic411().equals("11") ? binding.cic411k.getId()
+//                                : jsonC4.getcic411().equals("12") ? binding.cic411l.getId()
+//                                : jsonC4.getcic411().equals("13") ? binding.cic411m.getId()
+//                                : binding.cic4119603.getId());
 //            }
-//            binding.nc4119601x.setText(jsonC4.getnc4119601x());
-//            binding.nc4119602x.setText(jsonC4.getnc4119602x());
-//            binding.nc4119603x.setText(jsonC4.getnc4119603x());
+//            binding.cic4119601x.setText(jsonC4.getcic4119601x());
+//            binding.cic4119602x.setText(jsonC4.getcic4119602x());
+//            binding.cic4119603x.setText(jsonC4.getcic4119603x());
 //
-//            if (!jsonC4.getnc412a().equals("0")) {
-//                binding.nc412b.setChecked(true);
+//            if (!jsonC4.getcic412a().equals("0")) {
+//                binding.cic412b.setChecked(true);
 //            }
-//            if (!jsonC4.getnc412b().equals("0")) {
-//                binding.nc412c.setChecked(true);
+//            if (!jsonC4.getcic412b().equals("0")) {
+//                binding.cic412c.setChecked(true);
 //            }
-//            if (!jsonC4.getnc412c().equals("0")) {
-//                binding.nc412e.setChecked(true);
+//            if (!jsonC4.getcic412c().equals("0")) {
+//                binding.cic412e.setChecked(true);
 //            }
-//            if (!jsonC4.getnc412d().equals("0")) {
-//                binding.nc412f.setChecked(true);
+//            if (!jsonC4.getcic412d().equals("0")) {
+//                binding.cic412f.setChecked(true);
 //            }
-//            if (!jsonC4.getnc412e().equals("0")) {
-//                binding.nc412g.setChecked(true);
+//            if (!jsonC4.getcic412e().equals("0")) {
+//                binding.cic412g.setChecked(true);
 //            }
-//            if (!jsonC4.getnc412f().equals("0")) {
-//                binding.nc412h.setChecked(true);
+//            if (!jsonC4.getcic412f().equals("0")) {
+//                binding.cic412h.setChecked(true);
 //            }
-//            if (!jsonC4.getnc412g().equals("0")) {
-//                binding.nc412i.setChecked(true);
+//            if (!jsonC4.getcic412g().equals("0")) {
+//                binding.cic412i.setChecked(true);
 //            }
-//            if (!jsonC4.getnc412h().equals("0")) {
-//                binding.nc412j.setChecked(true);
-//            }
-//
-//            if (!jsonC4.getnc4129601().equals("0")) {
-//                binding.nc4129601.setChecked(true);
+//            if (!jsonC4.getcic412h().equals("0")) {
+//                binding.cic412j.setChecked(true);
 //            }
 //
-//            binding.nc4129601x.setText(jsonC4.getnc40496x());
+//            if (!jsonC4.getcic4129601().equals("0")) {
+//                binding.cic4129601.setChecked(true);
+//            }
 //
-//            if (!jsonC4.getnc413().equals("0")) {
-//                binding.nc413.check(
-//                        jsonC4.getnc413().equals("1") ? binding.nc413a.getId()
-//                                : jsonC4.getnc413().equals("2") ? binding.nc413b.getId()
-//                                : binding.nc41398.getId());
-//            }
-//            if (!jsonC4.getnc414().equals("0")) {
-//                binding.nc414.check(
-//                        jsonC4.getnc414().equals("1") ? binding.nc414a.getId()
-//                                : jsonC4.getnc414().equals("2") ? binding.nc414b.getId()
-//                                : binding.nc41498.getId());
-//            }
-//            if (!jsonC4.getnc415().equals("0")) {
-//                binding.nc415.check(
-//                        jsonC4.getnc415().equals("1") ? binding.nc415a.getId()
-//                                : jsonC4.getnc415().equals("2") ? binding.nc415b.getId()
-//                                : binding.nc41598.getId());
-//            }
-//            binding.nc416.setText(jsonC4.getnc416());
+//            binding.cic4129601x.setText(jsonC4.getcic40496x());
 //
-//            if (!jsonC4.getnc417().equals("0")) {
-//                binding.nc417.check(
-//                        jsonC4.getnc417().equals("1") ? binding.nc417a.getId()
-//                                : jsonC4.getnc417().equals("2") ? binding.nc417b.getId()
-//                                : jsonC4.getnc417().equals("3") ? binding.nc417c.getId()
-//                                : jsonC4.getnc417().equals("4") ? binding.nc417d.getId()
-//                                : binding.nc417e.getId());
+//            if (!jsonC4.getcic413().equals("0")) {
+//                binding.cic413.check(
+//                        jsonC4.getcic413().equals("1") ? binding.cic413a.getId()
+//                                : jsonC4.getcic413().equals("2") ? binding.cic413b.getId()
+//                                : binding.cic41398.getId());
 //            }
-//            if (!jsonC4.getnc418().equals("0")) {
-//                binding.nc418.check(
-//                        jsonC4.getnc418().equals("1") ? binding.nc418a.getId()
-//                                : binding.nc418b.getId()
+//            if (!jsonC4.getcic414().equals("0")) {
+//                binding.cic414.check(
+//                        jsonC4.getcic414().equals("1") ? binding.cic414a.getId()
+//                                : jsonC4.getcic414().equals("2") ? binding.cic414b.getId()
+//                                : binding.cic41498.getId());
+//            }
+//            if (!jsonC4.getcic415().equals("0")) {
+//                binding.cic415.check(
+//                        jsonC4.getcic415().equals("1") ? binding.cic415a.getId()
+//                                : jsonC4.getcic415().equals("2") ? binding.cic415b.getId()
+//                                : binding.cic41598.getId());
+//            }
+//            binding.cic416.setText(jsonC4.getcic416());
+//
+//            if (!jsonC4.getcic417().equals("0")) {
+//                binding.cic417.check(
+//                        jsonC4.getcic417().equals("1") ? binding.cic417a.getId()
+//                                : jsonC4.getcic417().equals("2") ? binding.cic417b.getId()
+//                                : jsonC4.getcic417().equals("3") ? binding.cic417c.getId()
+//                                : jsonC4.getcic417().equals("4") ? binding.cic417d.getId()
+//                                : binding.cic417e.getId());
+//            }
+//            if (!jsonC4.getcic418().equals("0")) {
+//                binding.cic418.check(
+//                        jsonC4.getcic418().equals("1") ? binding.cic418a.getId()
+//                                : binding.cic418b.getId()
 //                );
 //            }
-//            if (!jsonC4.getnc419().equals("0")) {
-//                binding.nc419.check(
-//                        jsonC4.getnc419().equals("1") ? binding.nc419a.getId()
-//                                : jsonC4.getnc419().equals("2") ? binding.nc419b.getId()
-//                                : jsonC4.getnc419().equals("3") ? binding.nc419c.getId()
-//                                : jsonC4.getnc419().equals("4") ? binding.nc419d.getId()
-//                                : binding.nc419e.getId());
+//            if (!jsonC4.getcic419().equals("0")) {
+//                binding.cic419.check(
+//                        jsonC4.getcic419().equals("1") ? binding.cic419a.getId()
+//                                : jsonC4.getcic419().equals("2") ? binding.cic419b.getId()
+//                                : jsonC4.getcic419().equals("3") ? binding.cic419c.getId()
+//                                : jsonC4.getcic419().equals("4") ? binding.cic419d.getId()
+//                                : binding.cic419e.getId());
 //            }
 //
-//            binding.nc420m.setText(jsonC4.getnc420m());
+//            binding.cic420m.setText(jsonC4.getcic420m());
 //
-//            binding.nc420d.setText(jsonC4.getnc420d());
+//            binding.cic420d.setText(jsonC4.getcic420d());
 //
 //
 //        }
@@ -540,7 +540,7 @@ public class SectionC4Activity extends Menu2Activity {
 
         JSONObject sC4 = new JSONObject();
         if (backPressed) {
-            sC4.put("updatedate_nc4", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
+            sC4.put("updatedate_cic4", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
         }
 
         if (SectionC1Activity.editChildFlag) {
@@ -548,240 +548,240 @@ public class SectionC4Activity extends Menu2Activity {
         }
 
 //        nc301
-        //sC4.put("nc4name", selectedChild.getName());
+        //sC4.put("cic4name", selectedChild.getName());
 //        nc302
-        //sC4.put("nc402Serial", selectedChild.getSerialNo());
+        //sC4.put("cic402Serial", selectedChild.getSerialNo());
 
-//        nc401
-        sC4.put("nc401", binding.nc401a.isChecked() ? "1"
-                : binding.nc401b.isChecked() ? "2"
+//        cic401
+        sC4.put("cic401", binding.cic401a.isChecked() ? "1"
+                : binding.cic401b.isChecked() ? "2"
                 : "0");
 
-//      nc402
-        sC4.put("nc402", binding.nc402a.isChecked() ? "1"
-                : binding.nc402b.isChecked() ? "2"
+//      cic402
+        sC4.put("cic402", binding.cic402a.isChecked() ? "1"
+                : binding.cic402b.isChecked() ? "2"
                 : "0");
 
 
-//        nc403
-        sC4.put("nc403", binding.nc403a.isChecked() ? "1"
-                : binding.nc403b.isChecked() ? "2"
-                : binding.nc403c.isChecked() ? "3"
-                : binding.nc403d.isChecked() ? "4"
-                : binding.nc403e.isChecked() ? "5"
-                : binding.nc40396.isChecked() ? "961"
+//        cic403
+        sC4.put("cic403", binding.cic403a.isChecked() ? "1"
+                : binding.cic403b.isChecked() ? "2"
+                : binding.cic403c.isChecked() ? "3"
+                : binding.cic403d.isChecked() ? "4"
+                : binding.cic403e.isChecked() ? "5"
+                : binding.cic40396.isChecked() ? "961"
                 : "0");
 
-        sC4.put("nc40396x", binding.nc40396x.getText().toString());
+        sC4.put("cic40396x", binding.cic40396x.getText().toString());
 
 
-//     nc404
-        sC4.put("nc404", binding.nc404a.isChecked() ? "1"
-                : binding.nc404b.isChecked() ? "2"
-                : binding.nc404c.isChecked() ? "3"
-                : binding.nc404d.isChecked() ? "4"
-                : binding.nc404e.isChecked() ? "5"
-                : binding.nc4049601.isChecked() ? "961"
-                : binding.nc404g.isChecked() ? "6"
-                : binding.nc404h.isChecked() ? "7"
-                : binding.nc404i.isChecked() ? "8"
-                : binding.nc404j.isChecked() ? "9"
-                : binding.nc4049602.isChecked() ? "962"
-                : binding.nc404l.isChecked() ? "10"
-                : binding.nc404m.isChecked() ? "11"
-                : binding.nc4049603.isChecked() ? "963" :
+//     cic404
+        sC4.put("cic404", binding.cic404a.isChecked() ? "1"
+                : binding.cic404b.isChecked() ? "2"
+                : binding.cic404c.isChecked() ? "3"
+                : binding.cic404d.isChecked() ? "4"
+                : binding.cic404e.isChecked() ? "5"
+                : binding.cic4049601.isChecked() ? "961"
+                : binding.cic404g.isChecked() ? "6"
+                : binding.cic404h.isChecked() ? "7"
+                : binding.cic404i.isChecked() ? "8"
+                : binding.cic404j.isChecked() ? "9"
+                : binding.cic4049602.isChecked() ? "962"
+                : binding.cic404l.isChecked() ? "10"
+                : binding.cic404m.isChecked() ? "11"
+                : binding.cic4049603.isChecked() ? "963" :
                 "0");
 
-        sC4.put("nc4049601x", binding.nc4049601x.getText().toString());
-        sC4.put("nc4049602x", binding.nc4049602x.getText().toString());
-        sC4.put("nc4049603x", binding.nc4049603x.getText().toString());
+        sC4.put("cic4049601x", binding.cic4049601x.getText().toString());
+        sC4.put("cic4049602x", binding.cic4049602x.getText().toString());
+        sC4.put("cic4049603x", binding.cic4049603x.getText().toString());
 
 
-//        nc405
-        sC4.put("nc405a", binding.nc405a.isChecked() ? "1" : "0");
-        sC4.put("nc405b", binding.nc405b.isChecked() ? "2" : "0");
-        sC4.put("nc405c", binding.nc405c.isChecked() ? "3" : "0");
-        sC4.put("nc405d", binding.nc405d.isChecked() ? "4" : "0");
-        sC4.put("nc405e", binding.nc405e.isChecked() ? "5" : "0");
-        sC4.put("nc405f", binding.nc405f.isChecked() ? "6" : "0");
-        sC4.put("nc405g", binding.nc405g.isChecked() ? "7" : "0");
-        sC4.put("nc405h", binding.nc405h.isChecked() ? "8" : "0");
-        sC4.put("nc405i", binding.nc405i.isChecked() ? "9" : "0");
-        sC4.put("nc405j", binding.nc405j.isChecked() ? "10" : "0");
-        sC4.put("nc40596", binding.nc40596.isChecked() ? "96" : "0");
-        sC4.put("nc40596x", binding.nc40596x.getText().toString());
+//        cic405
+        sC4.put("cic405a", binding.cic405a.isChecked() ? "1" : "0");
+        sC4.put("cic405b", binding.cic405b.isChecked() ? "2" : "0");
+        sC4.put("cic405c", binding.cic405c.isChecked() ? "3" : "0");
+        sC4.put("cic405d", binding.cic405d.isChecked() ? "4" : "0");
+        sC4.put("cic405e", binding.cic405e.isChecked() ? "5" : "0");
+        sC4.put("cic405f", binding.cic405f.isChecked() ? "6" : "0");
+        sC4.put("cic405g", binding.cic405g.isChecked() ? "7" : "0");
+        sC4.put("cic405h", binding.cic405h.isChecked() ? "8" : "0");
+        sC4.put("cic405i", binding.cic405i.isChecked() ? "9" : "0");
+        sC4.put("cic405j", binding.cic405j.isChecked() ? "10" : "0");
+        sC4.put("cic40596", binding.cic40596.isChecked() ? "96" : "0");
+        sC4.put("cic40596x", binding.cic40596x.getText().toString());
 
 
-//        nc406
-        sC4.put("nc406", binding.nc406a.isChecked() ? "1"
-                : binding.nc406b.isChecked() ? "2"
+//        cic406
+        sC4.put("cic406", binding.cic406a.isChecked() ? "1"
+                : binding.cic406b.isChecked() ? "2"
                 : "0");
 
 
-//        nc407
-        sC4.put("nc407", binding.nc407a.isChecked() ? "1"
-                : binding.nc407b.isChecked() ? "2"
+//        cic407
+        sC4.put("cic407", binding.cic407a.isChecked() ? "1"
+                : binding.cic407b.isChecked() ? "2"
                 : "0");
 
 
-//        nc408
-        sC4.put("nc408", binding.nc408a.isChecked() ? "1"
-                : binding.nc408b.isChecked() ? "2"
-                : binding.nc408c.isChecked() ? "3"
-                : binding.nc408d.isChecked() ? "4"
-                : binding.nc408e.isChecked() ? "5"
-                : binding.nc40896.isChecked() ? "96"
+//        cic408
+        sC4.put("cic408", binding.cic408a.isChecked() ? "1"
+                : binding.cic408b.isChecked() ? "2"
+                : binding.cic408c.isChecked() ? "3"
+                : binding.cic408d.isChecked() ? "4"
+                : binding.cic408e.isChecked() ? "5"
+                : binding.cic40896.isChecked() ? "96"
                 : "0");
-        sC4.put("nc40896x", binding.nc40896x.getText().toString());
+        sC4.put("cic40896x", binding.cic40896x.getText().toString());
 
 
-//        nc409
-        sC4.put("nc409", binding.nc409a.isChecked() ? "1"
-                : binding.nc409b.isChecked() ? "2"
-                : binding.nc409c.isChecked() ? "3"
-                : binding.nc409d.isChecked() ? "4"
-                : binding.nc409e.isChecked() ? "5"
-                : binding.nc4099601.isChecked() ? "961"
-                : binding.nc409f.isChecked() ? "6"
-                : binding.nc409g.isChecked() ? "7"
-                : binding.nc409h.isChecked() ? "8"
-                : binding.nc409i.isChecked() ? "9"
-                : binding.nc409j.isChecked() ? "10"
-                : binding.nc4099602.isChecked() ? "962"
-                : binding.nc409k.isChecked() ? "11"
-                : binding.nc409l.isChecked() ? "12"
-                : binding.nc409m.isChecked() ? "13"
-                : binding.nc4099603.isChecked() ? "963" :
+//        cic409
+        sC4.put("cic409", binding.cic409a.isChecked() ? "1"
+                : binding.cic409b.isChecked() ? "2"
+                : binding.cic409c.isChecked() ? "3"
+                : binding.cic409d.isChecked() ? "4"
+                : binding.cic409e.isChecked() ? "5"
+                : binding.cic4099601.isChecked() ? "961"
+                : binding.cic409f.isChecked() ? "6"
+                : binding.cic409g.isChecked() ? "7"
+                : binding.cic409h.isChecked() ? "8"
+                : binding.cic409i.isChecked() ? "9"
+                : binding.cic409j.isChecked() ? "10"
+                : binding.cic4099602.isChecked() ? "962"
+                : binding.cic409k.isChecked() ? "11"
+                : binding.cic409l.isChecked() ? "12"
+                : binding.cic409m.isChecked() ? "13"
+                : binding.cic4099603.isChecked() ? "963" :
                 "0");
 
-        sC4.put("nc4099601x", binding.nc4099601x.getText().toString());
-        sC4.put("nc4099602x", binding.nc4099602x.getText().toString());
-        sC4.put("nc4099603x", binding.nc4099603x.getText().toString());
+        sC4.put("cic4099601x", binding.cic4099601x.getText().toString());
+        sC4.put("cic4099602x", binding.cic4099602x.getText().toString());
+        sC4.put("cic4099603x", binding.cic4099603x.getText().toString());
 
 
-//          nc410
-        sC4.put("nc410a", binding.nc410a.isChecked() ? "1" : "0");
-        sC4.put("nc410b", binding.nc410b.isChecked() ? "2" : "0");
-        sC4.put("nc410c", binding.nc410c.isChecked() ? "3" : "0");
-        sC4.put("nc410d", binding.nc410d.isChecked() ? "4" : "0");
-        sC4.put("nc410e", binding.nc410e.isChecked() ? "5" : "0");
-        sC4.put("nc410f", binding.nc410f.isChecked() ? "6" : "0");
-        sC4.put("nc410g", binding.nc410g.isChecked() ? "7" : "0");
-        sC4.put("nc41096", binding.nc41096.isChecked() ? "96" : "0");
-        sC4.put("nc41096x", binding.nc41096x.getText().toString());
+//          cic410
+        sC4.put("cic410a", binding.cic410a.isChecked() ? "1" : "0");
+        sC4.put("cic410b", binding.cic410b.isChecked() ? "2" : "0");
+        sC4.put("cic410c", binding.cic410c.isChecked() ? "3" : "0");
+        sC4.put("cic410d", binding.cic410d.isChecked() ? "4" : "0");
+        sC4.put("cic410e", binding.cic410e.isChecked() ? "5" : "0");
+        sC4.put("cic410f", binding.cic410f.isChecked() ? "6" : "0");
+        sC4.put("cic410g", binding.cic410g.isChecked() ? "7" : "0");
+        sC4.put("cic41096", binding.cic41096.isChecked() ? "96" : "0");
+        sC4.put("cic41096x", binding.cic41096x.getText().toString());
 
 
-//        nc411
-        sC4.put("nc411", binding.nc411a.isChecked() ? "1"
-                : binding.nc411b.isChecked() ? "2"
+//        cic411
+        sC4.put("cic411", binding.cic411a.isChecked() ? "1"
+                : binding.cic411b.isChecked() ? "2"
                 : "0");
 
 
-//       nc412
-       sC4.put("nc412", binding.nc412a.isChecked() ? "1"
-                : binding.nc412b.isChecked() ? "2"
+//       cic412
+        sC4.put("cic412", binding.cic412a.isChecked() ? "1"
+                : binding.cic412b.isChecked() ? "2"
                 : "0");
 
 
-//        nc413
-        sC4.put("nc413", binding.nc413a.isChecked() ? "1"
-                : binding.nc413b.isChecked() ? "2"
-                : binding.nc413c.isChecked() ? "3"
-                : binding.nc413d.isChecked() ? "4"
-                : binding.nc413e.isChecked() ? "5"
-                : binding.nc41396.isChecked() ? "96"
+//        cic413
+        sC4.put("cic413", binding.cic413a.isChecked() ? "1"
+                : binding.cic413b.isChecked() ? "2"
+                : binding.cic413c.isChecked() ? "3"
+                : binding.cic413d.isChecked() ? "4"
+                : binding.cic413e.isChecked() ? "5"
+                : binding.cic41396.isChecked() ? "96"
                 : "0");
-        sC4.put("nc41396x", binding.nc41396x.getText().toString());
+        sC4.put("cic41396x", binding.cic41396x.getText().toString());
 
 
-//      nc414
-        sC4.put("nc414", binding.nc414a.isChecked() ? "1"
-                : binding.nc414b.isChecked() ? "2"
-                : binding.nc414c.isChecked() ? "3"
-                : binding.nc414d.isChecked() ? "4"
-                : binding.nc414e.isChecked() ? "5"
-                : binding.nc4149601.isChecked() ? "961"
-                : binding.nc414f.isChecked() ? "6"
-                : binding.nc414g.isChecked() ? "7"
-                : binding.nc414h.isChecked() ? "8"
-                : binding.nc414i.isChecked() ? "9"
-                : binding.nc414j.isChecked() ? "10"
-                : binding.nc4149602.isChecked() ? "962"
-                : binding.nc414k.isChecked() ? "11"
-                : binding.nc414l.isChecked() ? "12"
-                : binding.nc414m.isChecked() ? "13"
-                : binding.nc4149603.isChecked() ? "963" :
+//      cic414
+        sC4.put("cic414", binding.cic414a.isChecked() ? "1"
+                : binding.cic414b.isChecked() ? "2"
+                : binding.cic414c.isChecked() ? "3"
+                : binding.cic414d.isChecked() ? "4"
+                : binding.cic414e.isChecked() ? "5"
+                : binding.cic4149601.isChecked() ? "961"
+                : binding.cic414f.isChecked() ? "6"
+                : binding.cic414g.isChecked() ? "7"
+                : binding.cic414h.isChecked() ? "8"
+                : binding.cic414i.isChecked() ? "9"
+                : binding.cic414j.isChecked() ? "10"
+                : binding.cic4149602.isChecked() ? "962"
+                : binding.cic414k.isChecked() ? "11"
+                : binding.cic414l.isChecked() ? "12"
+                : binding.cic414m.isChecked() ? "13"
+                : binding.cic4149603.isChecked() ? "963" :
                 "0");
 
-        sC4.put("nc4149601x", binding.nc4149601x.getText().toString());
-        sC4.put("nc4149602x", binding.nc4149602x.getText().toString());
-        sC4.put("nc4149603x", binding.nc4149603x.getText().toString());
+        sC4.put("cic4149601x", binding.cic4149601x.getText().toString());
+        sC4.put("cic4149602x", binding.cic4149602x.getText().toString());
+        sC4.put("cic4149603x", binding.cic4149603x.getText().toString());
 
 
-//        nc415
-        sC4.put("nc415a", binding.nc415a.isChecked() ? "1" : "0");
-        sC4.put("nc415b", binding.nc415b.isChecked() ? "2" : "0");
-        sC4.put("nc415c", binding.nc415c.isChecked() ? "3" : "0");
-        sC4.put("nc415d", binding.nc415d.isChecked() ? "4" : "0");
-        sC4.put("nc415e", binding.nc415e.isChecked() ? "5" : "0");
-        sC4.put("nc415f", binding.nc415f.isChecked() ? "6" : "0");
-        sC4.put("nc415g", binding.nc415g.isChecked() ? "7" : "0");
-        sC4.put("nc415h", binding.nc415g.isChecked() ? "7" : "0");
-        sC4.put("nc41596", binding.nc41596.isChecked() ? "96" : "0");
-        sC4.put("nc41596x", binding.nc41596x.getText().toString());
+//        cic415
+        sC4.put("cic415a", binding.cic415a.isChecked() ? "1" : "0");
+        sC4.put("cic415b", binding.cic415b.isChecked() ? "2" : "0");
+        sC4.put("cic415c", binding.cic415c.isChecked() ? "3" : "0");
+        sC4.put("cic415d", binding.cic415d.isChecked() ? "4" : "0");
+        sC4.put("cic415e", binding.cic415e.isChecked() ? "5" : "0");
+        sC4.put("cic415f", binding.cic415f.isChecked() ? "6" : "0");
+        sC4.put("cic415g", binding.cic415g.isChecked() ? "7" : "0");
+        sC4.put("cic415h", binding.cic415g.isChecked() ? "7" : "0");
+        sC4.put("cic41596", binding.cic41596.isChecked() ? "96" : "0");
+        sC4.put("cic41596x", binding.cic41596x.getText().toString());
 
 
-//        nc416
-        sC4.put("nc416", binding.nc416a.isChecked() ? "1"
-                : binding.nc416b.isChecked() ? "2"
-                : binding.nc41698.isChecked() ? "98"
+//        cic416
+        sC4.put("cic416", binding.cic416a.isChecked() ? "1"
+                : binding.cic416b.isChecked() ? "2"
+                : binding.cic41698.isChecked() ? "98"
                 : "0");
 
 
-//        nc417
-        sC4.put("nc417", binding.nc417a.isChecked() ? "1"
-                : binding.nc417b.isChecked() ? "2"
-                : binding.nc41798.isChecked() ? "98"
+//        cic417
+        sC4.put("cic417", binding.cic417a.isChecked() ? "1"
+                : binding.cic417b.isChecked() ? "2"
+                : binding.cic41798.isChecked() ? "98"
                 : "0");
 
 
-//        nc418
-        sC4.put("nc418", binding.nc418a.isChecked() ? "1"
-                : binding.nc418b.isChecked() ? "2"
-                : binding.nc41898.isChecked() ? "98"
+//        cic418
+        sC4.put("cic418", binding.cic418a.isChecked() ? "1"
+                : binding.cic418b.isChecked() ? "2"
+                : binding.cic41898.isChecked() ? "98"
                 : "0");
 
 
-//        nc419
-        sC4.put("nc419", binding.nc419.getText().toString());
+//        cic419
+        sC4.put("cic419", binding.cic419.getText().toString());
 
 
-//        nc420
-        sC4.put("nc420", binding.nc420a.isChecked() ? "1"
-                : binding.nc420b.isChecked() ? "2"
-                : binding.nc420c.isChecked() ? "3"
-                : binding.nc420d.isChecked() ? "4"
-                : binding.nc420e.isChecked() ? "5"
+//        cic420
+        sC4.put("cic420", binding.cic420a.isChecked() ? "1"
+                : binding.cic420b.isChecked() ? "2"
+                : binding.cic420c.isChecked() ? "3"
+                : binding.cic420d.isChecked() ? "4"
+                : binding.cic420e.isChecked() ? "5"
                 : "0");
 
-//        nc421
-        sC4.put("nc421", binding.nc421a.isChecked() ? "1"
-                : binding.nc421b.isChecked() ? "2"
+//        cic421
+        sC4.put("cic421", binding.cic421a.isChecked() ? "1"
+                : binding.cic421b.isChecked() ? "2"
                 : "0");
 
-//        nc422
-        sC4.put("nc422", binding.nc422a.isChecked() ? "1"
-                : binding.nc422b.isChecked() ? "2"
-                : binding.nc422c.isChecked() ? "3"
-                : binding.nc422d.isChecked() ? "4"
-                : binding.nc422e.isChecked() ? "5"
+//        cic422
+        sC4.put("cic422", binding.cic422a.isChecked() ? "1"
+                : binding.cic422b.isChecked() ? "2"
+                : binding.cic422c.isChecked() ? "3"
+                : binding.cic422d.isChecked() ? "4"
+                : binding.cic422e.isChecked() ? "5"
                 : "0");
 
-//        nc423m
-        sC4.put("nc423m", binding.nc423m.getText().toString());
+//        cic423m
+        sC4.put("cic423m", binding.cic423m.getText().toString());
 
-//       nc423a
-        sC4.put("nc423d", binding.nc423d.getText().toString());
+//       cic423a
+        sC4.put("cic423d", binding.cic423d.getText().toString());
 
         MainApp.cc.setsC4(String.valueOf(sC4));
 

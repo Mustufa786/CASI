@@ -44,10 +44,10 @@ public class SectionC3Activity extends Menu2Activity implements RadioGroup.OnChe
         binding = DataBindingUtil.setContentView(this, R.layout.activity_section_c3);
         ButterKnife.bind(this);
 
-        this.setTitle(getResources().getString(R.string.nc3heading));
+        this.setTitle(getResources().getString(R.string.cic3heading));
 
-        binding.txtnc305.setText(binding.txtnc305.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        binding.txtnc306.setText(binding.txtnc306.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        binding.txtcic305.setText(binding.txtcic305.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        binding.txtcic306.setText(binding.txtcic306.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
 
 
         if (SectionC1Activity.editChildFlag) {
@@ -64,75 +64,75 @@ public class SectionC3Activity extends Menu2Activity implements RadioGroup.OnChe
         }
         db = new DatabaseHelper(this);
         binding.setCallback(this);
-        binding.nc302.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        binding.cic302.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 formValidation();
-                if (checkedId == R.id.nc302b) {
-                    ClearClass.ClearAllFields(binding.fldGrpnc303parent, false);
+                if (checkedId == R.id.cic302b) {
+                    ClearClass.ClearAllFields(binding.fldGrpcic303parent, false);
 
 
                 } else {
-                    ClearClass.ClearAllFields(binding.fldGrpnc303parent, true);
+                    ClearClass.ClearAllFields(binding.fldGrpcic303parent, true);
 
                 }
 
             }
         });
 
-        binding.nc303.setOnCheckedChangeListener(this);
-        binding.nc3bcg.setOnCheckedChangeListener(this);
-        binding.nc3bcgsrc.setOnCheckedChangeListener(this);
-        binding.nc3opv0.setOnCheckedChangeListener(this);
-        binding.nc3opv0src.setOnCheckedChangeListener(this);
+        binding.cic303.setOnCheckedChangeListener(this);
+        binding.cic3bcg.setOnCheckedChangeListener(this);
+        binding.cic3bcgsrc.setOnCheckedChangeListener(this);
+        binding.cic3opv0.setOnCheckedChangeListener(this);
+        binding.cic3opv0src.setOnCheckedChangeListener(this);
 
-        binding.nc3opv1.setOnCheckedChangeListener(this);
-        binding.nc3opv1src.setOnCheckedChangeListener(this);
+        binding.cic3opv1.setOnCheckedChangeListener(this);
+        binding.cic3opv1src.setOnCheckedChangeListener(this);
 
-        binding.nc3p1.setOnCheckedChangeListener(this);
-        binding.nc3p1src.setOnCheckedChangeListener(this);
+        binding.cic3p1.setOnCheckedChangeListener(this);
+        binding.cic3p1src.setOnCheckedChangeListener(this);
 
-        binding.nc3pcv1.setOnCheckedChangeListener(this);
-        binding.nc3pcv1src.setOnCheckedChangeListener(this);
+        binding.cic3pcv1.setOnCheckedChangeListener(this);
+        binding.cic3pcv1src.setOnCheckedChangeListener(this);
 
-        binding.nc3opv2.setOnCheckedChangeListener(this);
-        binding.nc3opv2src.setOnCheckedChangeListener(this);
+        binding.cic3opv2.setOnCheckedChangeListener(this);
+        binding.cic3opv2src.setOnCheckedChangeListener(this);
 
-        binding.nc3p2.setOnCheckedChangeListener(this);
-        binding.nc3p2src.setOnCheckedChangeListener(this);
+        binding.cic3p2.setOnCheckedChangeListener(this);
+        binding.cic3p2src.setOnCheckedChangeListener(this);
 
-        binding.nc3pcv2.setOnCheckedChangeListener(this);
-        binding.nc3pcv2src.setOnCheckedChangeListener(this);
+        binding.cic3pcv2.setOnCheckedChangeListener(this);
+        binding.cic3pcv2src.setOnCheckedChangeListener(this);
 
-        binding.nc3opv3.setOnCheckedChangeListener(this);
-        binding.nc3opv3src.setOnCheckedChangeListener(this);
+        binding.cic3opv3.setOnCheckedChangeListener(this);
+        binding.cic3opv3src.setOnCheckedChangeListener(this);
 
-        binding.nc3p3.setOnCheckedChangeListener(this);
-        binding.nc3p3src.setOnCheckedChangeListener(this);
+        binding.cic3p3.setOnCheckedChangeListener(this);
+        binding.cic3p3src.setOnCheckedChangeListener(this);
 
-        binding.nc3pcv3.setOnCheckedChangeListener(this);
-        binding.nc3pcv3src.setOnCheckedChangeListener(this);
+        binding.cic3pcv3.setOnCheckedChangeListener(this);
+        binding.cic3pcv3src.setOnCheckedChangeListener(this);
 
-        binding.nc3ipv.setOnCheckedChangeListener(this);
-        binding.nc3ipvsrc.setOnCheckedChangeListener(this);
+        binding.cic3ipv.setOnCheckedChangeListener(this);
+        binding.cic3ipvsrc.setOnCheckedChangeListener(this);
 
-        binding.nc3m1.setOnCheckedChangeListener(this);
-        binding.nc3m1src.setOnCheckedChangeListener(this);
+        binding.cic3m1.setOnCheckedChangeListener(this);
+        binding.cic3m1src.setOnCheckedChangeListener(this);
 
-        binding.nc3m2.setOnCheckedChangeListener(this);
-        binding.nc3m2src.setOnCheckedChangeListener(this);
-        binding.nc306.setOnCheckedChangeListener(this);
+        binding.cic3m2.setOnCheckedChangeListener(this);
+        binding.cic3m2src.setOnCheckedChangeListener(this);
+        binding.cic306.setOnCheckedChangeListener(this);
 
 
-        binding.nc305.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        binding.cic305.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 formValidation();
-                if (binding.nc305b.isChecked() || binding.nc30598.isChecked()) {
-//                    binding.nc306.clearCheck();
-                    ClearClass.ClearAllFields(binding.fldGrpnc305, false);
+                if (binding.cic305b.isChecked() || binding.cic30598.isChecked()) {
+//                    binding.cic306.clearCheck();
+                    ClearClass.ClearAllFields(binding.fldGrpcic305, false);
                 } else {
-                    ClearClass.ClearAllFields(binding.fldGrpnc305, true);
+                    ClearClass.ClearAllFields(binding.fldGrpcic305, true);
                 }
             }
         });
@@ -155,238 +155,238 @@ public class SectionC3Activity extends Menu2Activity implements RadioGroup.OnChe
 
             JSONC3ModelClass jsonC3 = JSONUtilClass.getModelFromJSON(childContract.getsC3(), JSONC3ModelClass.class);
 
-            if (!jsonC3.getnc302().equals("0")) {
-                binding.nc302.check(
-                        jsonC3.getnc302().equals("1") ? binding.nc302a.getId()
-                                : binding.nc302b.getId()
+            if (!jsonC3.getcic302().equals("0")) {
+                binding.cic302.check(
+                        jsonC3.getcic302().equals("1") ? binding.cic302a.getId()
+                                : binding.cic302b.getId()
                 );
             }
 
-            if (!jsonC3.getnc303().equals("0")) {
-                binding.nc303.check(
-                        jsonC3.getnc303().equals("1") ? binding.nc303a.getId()
-                                : jsonC3.getnc303().equals("2") ? binding.nc303b.getId()
-                                : jsonC3.getnc303().equals("3") ? binding.nc303c.getId()
-                                : binding.nc303d.getId()
+            if (!jsonC3.getcic303().equals("0")) {
+                binding.cic303.check(
+                        jsonC3.getcic303().equals("1") ? binding.cic303a.getId()
+                                : jsonC3.getcic303().equals("2") ? binding.cic303b.getId()
+                                : jsonC3.getcic303().equals("3") ? binding.cic303c.getId()
+                                : binding.cic303d.getId()
                 );
             }
 //            bcg
 
-            if (!jsonC3.getnc3bcg().equals("0")) {
-                binding.nc3bcg.check(
-                        jsonC3.getnc3bcg().equals("1") ? binding.nc3bcga.getId()
-                                : binding.nc3bcgb.getId()
+            if (!jsonC3.getcic3bcg().equals("0")) {
+                binding.cic3bcg.check(
+                        jsonC3.getcic3bcg().equals("1") ? binding.cic3bcga.getId()
+                                : binding.cic3bcgb.getId()
                 );
             }
-            if (!jsonC3.getnc3bcgsrc().equals("0")) {
-                binding.nc3bcgsrc.check(
-                        jsonC3.getnc3bcgsrc().equals("1") ? binding.nc3bcgsrca.getId()
-                                : binding.nc3bcgsrcb.getId()
+            if (!jsonC3.getcic3bcgsrc().equals("0")) {
+                binding.cic3bcgsrc.check(
+                        jsonC3.getcic3bcgsrc().equals("1") ? binding.cic3bcgsrca.getId()
+                                : binding.cic3bcgsrcb.getId()
                 );
             }
             //            opv
 
-            if (!jsonC3.getnc3opv0().equals("0")) {
-                binding.nc3opv0.check(
-                        jsonC3.getnc3opv0().equals("1") ? binding.nc3opv0a.getId()
-                                : binding.nc3opv0b.getId()
+            if (!jsonC3.getcic3opv0().equals("0")) {
+                binding.cic3opv0.check(
+                        jsonC3.getcic3opv0().equals("1") ? binding.cic3opv0a.getId()
+                                : binding.cic3opv0b.getId()
                 );
             }
-            if (!jsonC3.getnc3opv0src().equals("0")) {
-                binding.nc3opv0src.check(
-                        jsonC3.getnc3opv0src().equals("1") ? binding.nc3opv0srca.getId()
-                                : binding.nc3opv0srcb.getId()
+            if (!jsonC3.getcic3opv0src().equals("0")) {
+                binding.cic3opv0src.check(
+                        jsonC3.getcic3opv0src().equals("1") ? binding.cic3opv0srca.getId()
+                                : binding.cic3opv0srcb.getId()
                 );
             }
             //            opv1
 
-            if (!jsonC3.getnc3opv1().equals("0")) {
-                binding.nc3opv1.check(
-                        jsonC3.getnc3opv1().equals("1") ? binding.nc3opv1a.getId()
-                                : binding.nc3opv1b.getId()
+            if (!jsonC3.getcic3opv1().equals("0")) {
+                binding.cic3opv1.check(
+                        jsonC3.getcic3opv1().equals("1") ? binding.cic3opv1a.getId()
+                                : binding.cic3opv1b.getId()
                 );
             }
-            if (!jsonC3.getnc3opv1src().equals("0")) {
-                binding.nc3opv1src.check(
-                        jsonC3.getnc3opv1src().equals("1") ? binding.nc3opv1srca.getId()
-                                : binding.nc3opv1srcb.getId()
+            if (!jsonC3.getcic3opv1src().equals("0")) {
+                binding.cic3opv1src.check(
+                        jsonC3.getcic3opv1src().equals("1") ? binding.cic3opv1srca.getId()
+                                : binding.cic3opv1srcb.getId()
                 );
             }
 
             //            p1
 
-            if (!jsonC3.getnc3p1().equals("0")) {
-                binding.nc3p1.check(
-                        jsonC3.getnc3p1().equals("1") ? binding.nc3p1a.getId()
-                                : binding.nc3p1b.getId()
+            if (!jsonC3.getcic3p1().equals("0")) {
+                binding.cic3p1.check(
+                        jsonC3.getcic3p1().equals("1") ? binding.cic3p1a.getId()
+                                : binding.cic3p1b.getId()
                 );
             }
-            if (!jsonC3.getnc3p1src().equals("0")) {
-                binding.nc3p1src.check(
-                        jsonC3.getnc3p1src().equals("1") ? binding.nc3p1srca.getId()
-                                : binding.nc3p1srcb.getId()
+            if (!jsonC3.getcic3p1src().equals("0")) {
+                binding.cic3p1src.check(
+                        jsonC3.getcic3p1src().equals("1") ? binding.cic3p1srca.getId()
+                                : binding.cic3p1srcb.getId()
                 );
             }
 
             //            pcv1
 
-            if (!jsonC3.getnc3pcv1().equals("0")) {
-                binding.nc3pcv1.check(
-                        jsonC3.getnc3pcv1().equals("1") ? binding.nc3pcv1a.getId()
-                                : binding.nc3pcv1b.getId()
+            if (!jsonC3.getcic3pcv1().equals("0")) {
+                binding.cic3pcv1.check(
+                        jsonC3.getcic3pcv1().equals("1") ? binding.cic3pcv1a.getId()
+                                : binding.cic3pcv1b.getId()
                 );
             }
-            if (!jsonC3.getnc3pcv1src().equals("0")) {
-                binding.nc3pcv1src.check(
-                        jsonC3.getnc3pcv1src().equals("1") ? binding.nc3pcv1srca.getId()
-                                : binding.nc3pcv1srcb.getId()
+            if (!jsonC3.getcic3pcv1src().equals("0")) {
+                binding.cic3pcv1src.check(
+                        jsonC3.getcic3pcv1src().equals("1") ? binding.cic3pcv1srca.getId()
+                                : binding.cic3pcv1srcb.getId()
                 );
             }
             //            opv2
 
-            if (!jsonC3.getnc3opv2().equals("0")) {
-                binding.nc3opv2.check(
-                        jsonC3.getnc3opv2().equals("1") ? binding.nc3opv2a.getId()
-                                : binding.nc3opv2b.getId()
+            if (!jsonC3.getcic3opv2().equals("0")) {
+                binding.cic3opv2.check(
+                        jsonC3.getcic3opv2().equals("1") ? binding.cic3opv2a.getId()
+                                : binding.cic3opv2b.getId()
                 );
             }
-            if (!jsonC3.getnc3opv2src().equals("0")) {
-                binding.nc3opv2src.check(
-                        jsonC3.getnc3opv2src().equals("1") ? binding.nc3opv2srca.getId()
-                                : binding.nc3opv2srcb.getId()
+            if (!jsonC3.getcic3opv2src().equals("0")) {
+                binding.cic3opv2src.check(
+                        jsonC3.getcic3opv2src().equals("1") ? binding.cic3opv2srca.getId()
+                                : binding.cic3opv2srcb.getId()
                 );
             }
 
             //            p2
 
-            if (!jsonC3.getnc3p2().equals("0")) {
-                binding.nc3p2.check(
-                        jsonC3.getnc3p2().equals("1") ? binding.nc3p2a.getId()
-                                : binding.nc3p2b.getId()
+            if (!jsonC3.getcic3p2().equals("0")) {
+                binding.cic3p2.check(
+                        jsonC3.getcic3p2().equals("1") ? binding.cic3p2a.getId()
+                                : binding.cic3p2b.getId()
                 );
             }
-            if (!jsonC3.getnc3p2src().equals("0")) {
-                binding.nc3p2src.check(
-                        jsonC3.getnc3p2src().equals("1") ? binding.nc3p2srca.getId()
-                                : binding.nc3p2srcb.getId()
+            if (!jsonC3.getcic3p2src().equals("0")) {
+                binding.cic3p2src.check(
+                        jsonC3.getcic3p2src().equals("1") ? binding.cic3p2srca.getId()
+                                : binding.cic3p2srcb.getId()
                 );
             }
 
             //            pcv2
 
-            if (!jsonC3.getnc3pcv2().equals("0")) {
-                binding.nc3pcv2.check(
-                        jsonC3.getnc3pcv2().equals("1") ? binding.nc3pcv2a.getId()
-                                : binding.nc3pcv2b.getId()
+            if (!jsonC3.getcic3pcv2().equals("0")) {
+                binding.cic3pcv2.check(
+                        jsonC3.getcic3pcv2().equals("1") ? binding.cic3pcv2a.getId()
+                                : binding.cic3pcv2b.getId()
                 );
             }
-            if (!jsonC3.getnc3pcv2src().equals("0")) {
-                binding.nc3pcv2src.check(
-                        jsonC3.getnc3pcv2src().equals("1") ? binding.nc3pcv2srca.getId()
-                                : binding.nc3pcv2srcb.getId()
+            if (!jsonC3.getcic3pcv2src().equals("0")) {
+                binding.cic3pcv2src.check(
+                        jsonC3.getcic3pcv2src().equals("1") ? binding.cic3pcv2srca.getId()
+                                : binding.cic3pcv2srcb.getId()
                 );
             }
 
             //            opv3
 
-            if (!jsonC3.getnc3opv3().equals("0")) {
-                binding.nc3opv3.check(
-                        jsonC3.getnc3opv3().equals("1") ? binding.nc3opv3a.getId()
-                                : binding.nc3opv3b.getId()
+            if (!jsonC3.getcic3opv3().equals("0")) {
+                binding.cic3opv3.check(
+                        jsonC3.getcic3opv3().equals("1") ? binding.cic3opv3a.getId()
+                                : binding.cic3opv3b.getId()
                 );
             }
-            if (!jsonC3.getnc3opv3src().equals("0")) {
-                binding.nc3opv3src.check(
-                        jsonC3.getnc3opv3src().equals("1") ? binding.nc3opv3srca.getId()
-                                : binding.nc3opv3srcb.getId()
+            if (!jsonC3.getcic3opv3src().equals("0")) {
+                binding.cic3opv3src.check(
+                        jsonC3.getcic3opv3src().equals("1") ? binding.cic3opv3srca.getId()
+                                : binding.cic3opv3srcb.getId()
                 );
             }
 
             //            p3
 
-            if (!jsonC3.getnc3p3().equals("0")) {
-                binding.nc3p3.check(
-                        jsonC3.getnc3p3().equals("1") ? binding.nc3p3a.getId()
-                                : binding.nc3p3b.getId()
+            if (!jsonC3.getcic3p3().equals("0")) {
+                binding.cic3p3.check(
+                        jsonC3.getcic3p3().equals("1") ? binding.cic3p3a.getId()
+                                : binding.cic3p3b.getId()
                 );
             }
-            if (!jsonC3.getnc3p3src().equals("0")) {
-                binding.nc3p3src.check(
-                        jsonC3.getnc3p3src().equals("1") ? binding.nc3p3srca.getId()
-                                : binding.nc3p3srcb.getId()
+            if (!jsonC3.getcic3p3src().equals("0")) {
+                binding.cic3p3src.check(
+                        jsonC3.getcic3p3src().equals("1") ? binding.cic3p3srca.getId()
+                                : binding.cic3p3srcb.getId()
                 );
             }
 
             //            pcv3
 
-            if (!jsonC3.getnc3pcv3().equals("0")) {
-                binding.nc3pcv3.check(
-                        jsonC3.getnc3pcv3().equals("1") ? binding.nc3pcv3a.getId()
-                                : binding.nc3pcv3b.getId()
+            if (!jsonC3.getcic3pcv3().equals("0")) {
+                binding.cic3pcv3.check(
+                        jsonC3.getcic3pcv3().equals("1") ? binding.cic3pcv3a.getId()
+                                : binding.cic3pcv3b.getId()
                 );
             }
-            if (!jsonC3.getnc3pcv3src().equals("0")) {
-                binding.nc3pcv3src.check(
-                        jsonC3.getnc3pcv3src().equals("1") ? binding.nc3pcv3srca.getId()
-                                : binding.nc3pcv3srcb.getId()
+            if (!jsonC3.getcic3pcv3src().equals("0")) {
+                binding.cic3pcv3src.check(
+                        jsonC3.getcic3pcv3src().equals("1") ? binding.cic3pcv3srca.getId()
+                                : binding.cic3pcv3srcb.getId()
                 );
             }
             //            ipv
 
-            if (!jsonC3.getnc3ipv().equals("0")) {
-                binding.nc3ipv.check(
-                        jsonC3.getnc3ipv().equals("1") ? binding.nc3ipva.getId()
-                                : binding.nc3ipvb.getId()
+            if (!jsonC3.getcic3ipv().equals("0")) {
+                binding.cic3ipv.check(
+                        jsonC3.getcic3ipv().equals("1") ? binding.cic3ipva.getId()
+                                : binding.cic3ipvb.getId()
                 );
             }
-            if (!jsonC3.getnc3ipvsrc().equals("0")) {
-                binding.nc3ipvsrc.check(
-                        jsonC3.getnc3ipvsrc().equals("1") ? binding.nc3ipvsrca.getId()
-                                : binding.nc3ipvsrcb.getId()
+            if (!jsonC3.getcic3ipvsrc().equals("0")) {
+                binding.cic3ipvsrc.check(
+                        jsonC3.getcic3ipvsrc().equals("1") ? binding.cic3ipvsrca.getId()
+                                : binding.cic3ipvsrcb.getId()
                 );
             }
             //            m1
 
-            if (!jsonC3.getnc3m1().equals("0")) {
-                binding.nc3m1.check(
-                        jsonC3.getnc3m1().equals("1") ? binding.nc3m1a.getId()
-                                : binding.nc3m1b.getId()
+            if (!jsonC3.getcic3m1().equals("0")) {
+                binding.cic3m1.check(
+                        jsonC3.getcic3m1().equals("1") ? binding.cic3m1a.getId()
+                                : binding.cic3m1b.getId()
                 );
             }
-            if (!jsonC3.getnc3m1src().equals("0")) {
-                binding.nc3m1src.check(
-                        jsonC3.getnc3m1src().equals("1") ? binding.nc3m1srca.getId()
-                                : binding.nc3m1srcb.getId()
+            if (!jsonC3.getcic3m1src().equals("0")) {
+                binding.cic3m1src.check(
+                        jsonC3.getcic3m1src().equals("1") ? binding.cic3m1srca.getId()
+                                : binding.cic3m1srcb.getId()
                 );
             }
             //            m2
 
-            if (!jsonC3.getnc3m2().equals("0")) {
-                binding.nc3m2.check(
-                        jsonC3.getnc3m2().equals("1") ? binding.nc3m2a.getId()
-                                : binding.nc3m2b.getId()
+            if (!jsonC3.getcic3m2().equals("0")) {
+                binding.cic3m2.check(
+                        jsonC3.getcic3m2().equals("1") ? binding.cic3m2a.getId()
+                                : binding.cic3m2b.getId()
                 );
             }
-            if (!jsonC3.getnc3m2src().equals("0")) {
-                binding.nc3m2src.check(
-                        jsonC3.getnc3m2src().equals("1") ? binding.nc3m2srca.getId()
-                                : binding.nc3m2srcb.getId()
+            if (!jsonC3.getcic3m2src().equals("0")) {
+                binding.cic3m2src.check(
+                        jsonC3.getcic3m2src().equals("1") ? binding.cic3m2srca.getId()
+                                : binding.cic3m2srcb.getId()
                 );
             }
 
-//           nc305
+//           cic305
 
-            if (!jsonC3.getnc305().equals("0")) {
-                binding.nc305.check(
-                        jsonC3.getnc305().equals("1") ? binding.nc305a.getId()
-                                : jsonC3.getnc305().equals("2") ? binding.nc305b.getId()
-                                : binding.nc30598.getId()
+            if (!jsonC3.getcic305().equals("0")) {
+                binding.cic305.check(
+                        jsonC3.getcic305().equals("1") ? binding.cic305a.getId()
+                                : jsonC3.getcic305().equals("2") ? binding.cic305b.getId()
+                                : binding.cic30598.getId()
                 );
             }
-            if (!jsonC3.getnc306().equals("0")) {
-                binding.nc306.check(
-                        jsonC3.getnc306().equals("1") ? binding.nc306a.getId()
-                                : binding.nc306b.getId()
+            if (!jsonC3.getcic306().equals("0")) {
+                binding.cic306.check(
+                        jsonC3.getcic306().equals("1") ? binding.cic306a.getId()
+                                : binding.cic306b.getId()
                 );
             }
 
@@ -438,154 +438,154 @@ public class SectionC3Activity extends Menu2Activity implements RadioGroup.OnChe
     private boolean formValidation() {
         //Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
 
-//       nc302
-        if (!ValidatorClass.EmptyRadioButton(this, binding.nc302, binding.nc302b, getString(R.string.nc302))) {
+//       cic302
+        if (!ValidatorClass.EmptyRadioButton(this, binding.cic302, binding.cic302b, getString(R.string.cic302))) {
             return false;
         }
-        if (binding.nc302a.isChecked()) {
+        if (binding.cic302a.isChecked()) {
 
-//        nc303
-            if (!ValidatorClass.EmptyRadioButton(this, binding.nc303, binding.nc303d, getString(R.string.nc303))) {
+//        cic303
+            if (!ValidatorClass.EmptyRadioButton(this, binding.cic303, binding.cic303d, getString(R.string.cic303))) {
                 return false;
             }
         }
 
-//        nc3bcg
-        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3bcg, binding.nc3bcga, getString(R.string.nc3bcg) + getString(R.string.nc3response))) {
+//        cic3bcg
+        if (!ValidatorClass.EmptyRadioButton(this, binding.cic3bcg, binding.cic3bcga, getString(R.string.cic3bcg) + getString(R.string.cic3response))) {
             return false;
         }
-        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3bcgsrc, binding.nc3bcgsrca, getString(R.string.nc3bcg) + getString(R.string.nc3src))) {
-            return false;
-        }
-
-
-//        nc3opv0
-        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3opv0, binding.nc3opv0a, getString(R.string.nc3opv0) + getString(R.string.nc3response))) {
-            return false;
-        }
-        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3opv0src, binding.nc3opv0srca, getString(R.string.nc3opv0) + getString(R.string.nc3src))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.cic3bcgsrc, binding.cic3bcgsrca, getString(R.string.cic3bcg) + getString(R.string.cic3src))) {
             return false;
         }
 
 
-//        nc3opv1
-        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3opv1, binding.nc3opv1a, getString(R.string.nc3opv1) + getString(R.string.nc3response))) {
+//        cic3opv0
+        if (!ValidatorClass.EmptyRadioButton(this, binding.cic3opv0, binding.cic3opv0a, getString(R.string.cic3opv0) + getString(R.string.cic3response))) {
             return false;
         }
-        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3opv1src, binding.nc3opv1srca, getString(R.string.nc3opv1) + getString(R.string.nc3src))) {
-            return false;
-        }
-
-
-//        nc3p1
-        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3p1, binding.nc3p1a, getString(R.string.nc3p1) + getString(R.string.nc3response))) {
-            return false;
-        }
-
-        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3p1src, binding.nc3p1srca, getString(R.string.nc3p1) + getString(R.string.nc3src))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.cic3opv0src, binding.cic3opv0srca, getString(R.string.cic3opv0) + getString(R.string.cic3src))) {
             return false;
         }
 
 
-//        nc3pcv1
-        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3pcv1, binding.nc3pcv1a, getString(R.string.nc3pcv1) + getString(R.string.nc3response))) {
+//        cic3opv1
+        if (!ValidatorClass.EmptyRadioButton(this, binding.cic3opv1, binding.cic3opv1a, getString(R.string.cic3opv1) + getString(R.string.cic3response))) {
             return false;
         }
-        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3pcv1src, binding.nc3pcv1srca, getString(R.string.nc3pcv1) + getString(R.string.nc3src))) {
-            return false;
-        }
-
-
-//        nc3opv2
-        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3opv2, binding.nc3opv2a, getString(R.string.nc3opv2) + getString(R.string.nc3response))) {
-            return false;
-        }
-
-        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3opv2src, binding.nc3opv2srca, getString(R.string.nc3opv2) + getString(R.string.nc3src))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.cic3opv1src, binding.cic3opv1srca, getString(R.string.cic3opv1) + getString(R.string.cic3src))) {
             return false;
         }
 
 
-//        nc3p2
-        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3p2, binding.nc3p2a, getString(R.string.nc3p2) + getString(R.string.nc3response))) {
-            return false;
-        }
-        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3p2src, binding.nc3p2srca, getString(R.string.nc3p2) + getString(R.string.nc3src))) {
+//        cic3p1
+        if (!ValidatorClass.EmptyRadioButton(this, binding.cic3p1, binding.cic3p1a, getString(R.string.cic3p1) + getString(R.string.cic3response))) {
             return false;
         }
 
-
-//        nc3pcv2
-        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3pcv2, binding.nc3pcv2a, getString(R.string.nc3pcv2) + getString(R.string.nc3response))) {
-            return false;
-        }
-        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3pcv2src, binding.nc3pcv2srca, getString(R.string.nc3pcv2) + getString(R.string.nc3src))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.cic3p1src, binding.cic3p1srca, getString(R.string.cic3p1) + getString(R.string.cic3src))) {
             return false;
         }
 
 
-//        nc3opv3
-        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3opv3, binding.nc3opv3a, getString(R.string.nc3opv3) + getString(R.string.nc3response))) {
+//        cic3pcv1
+        if (!ValidatorClass.EmptyRadioButton(this, binding.cic3pcv1, binding.cic3pcv1a, getString(R.string.cic3pcv1) + getString(R.string.cic3response))) {
             return false;
         }
-        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3opv3src, binding.nc3opv3srca, getString(R.string.nc3opv3) + getString(R.string.nc3src))) {
-            return false;
-        }
-
-
-//        nc3p3
-        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3p3, binding.nc3p3a, getString(R.string.nc3p3) + getString(R.string.nc3response))) {
-            return false;
-        }
-        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3p3src, binding.nc3p3srca, getString(R.string.nc3p3) + getString(R.string.nc3src))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.cic3pcv1src, binding.cic3pcv1srca, getString(R.string.cic3pcv1) + getString(R.string.cic3src))) {
             return false;
         }
 
 
-//        nc3pcv3
-        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3pcv3, binding.nc3pcv3a, getString(R.string.nc3pcv3) + getString(R.string.nc3response))) {
-            return false;
-        }
-        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3pcv3src, binding.nc3pcv3srca, getString(R.string.nc3pcv3) + getString(R.string.nc3src))) {
+//        cic3opv2
+        if (!ValidatorClass.EmptyRadioButton(this, binding.cic3opv2, binding.cic3opv2a, getString(R.string.cic3opv2) + getString(R.string.cic3response))) {
             return false;
         }
 
-
-//        nc3ipv3
-        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3ipv, binding.nc3ipva, getString(R.string.nc3ipv) + getString(R.string.nc3response))) {
-            return false;
-        }
-        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3ipvsrc, binding.nc3ipvsrca, getString(R.string.nc3ipv) + getString(R.string.nc3src))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.cic3opv2src, binding.cic3opv2srca, getString(R.string.cic3opv2) + getString(R.string.cic3src))) {
             return false;
         }
 
 
-//        nc3m1dt
-        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3m1, binding.nc3m1a, getString(R.string.nc3m1) + getString(R.string.nc3response))) {
+//        cic3p2
+        if (!ValidatorClass.EmptyRadioButton(this, binding.cic3p2, binding.cic3p2a, getString(R.string.cic3p2) + getString(R.string.cic3response))) {
             return false;
         }
-        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3m1src, binding.nc3m1srca, getString(R.string.nc3m1) + getString(R.string.nc3src))) {
-            return false;
-        }
-
-
-//        nc3m2dt
-        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3m2, binding.nc3m2a, getString(R.string.nc3m2) + getString(R.string.nc3response))) {
-            return false;
-        }
-        if (!ValidatorClass.EmptyRadioButton(this, binding.nc3m2src, binding.nc3m2srca, getString(R.string.nc3m2) + getString(R.string.nc3src))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.cic3p2src, binding.cic3p2srca, getString(R.string.cic3p2) + getString(R.string.cic3src))) {
             return false;
         }
 
 
-//        nc305
-        if (!ValidatorClass.EmptyRadioButton(this, binding.nc305, binding.nc305a, getString(R.string.nc305))) {
+//        cic3pcv2
+        if (!ValidatorClass.EmptyRadioButton(this, binding.cic3pcv2, binding.cic3pcv2a, getString(R.string.cic3pcv2) + getString(R.string.cic3response))) {
+            return false;
+        }
+        if (!ValidatorClass.EmptyRadioButton(this, binding.cic3pcv2src, binding.cic3pcv2srca, getString(R.string.cic3pcv2) + getString(R.string.cic3src))) {
             return false;
         }
 
-        if (binding.nc305a.isChecked()) {
-//        nc306
-            return ValidatorClass.EmptyRadioButton(this, binding.nc306, binding.nc306a, getString(R.string.nc306));
+
+//        cic3opv3
+        if (!ValidatorClass.EmptyRadioButton(this, binding.cic3opv3, binding.cic3opv3a, getString(R.string.cic3opv3) + getString(R.string.cic3response))) {
+            return false;
+        }
+        if (!ValidatorClass.EmptyRadioButton(this, binding.cic3opv3src, binding.cic3opv3srca, getString(R.string.cic3opv3) + getString(R.string.cic3src))) {
+            return false;
+        }
+
+
+//        cic3p3
+        if (!ValidatorClass.EmptyRadioButton(this, binding.cic3p3, binding.cic3p3a, getString(R.string.cic3p3) + getString(R.string.cic3response))) {
+            return false;
+        }
+        if (!ValidatorClass.EmptyRadioButton(this, binding.cic3p3src, binding.cic3p3srca, getString(R.string.cic3p3) + getString(R.string.cic3src))) {
+            return false;
+        }
+
+
+//        cic3pcv3
+        if (!ValidatorClass.EmptyRadioButton(this, binding.cic3pcv3, binding.cic3pcv3a, getString(R.string.cic3pcv3) + getString(R.string.cic3response))) {
+            return false;
+        }
+        if (!ValidatorClass.EmptyRadioButton(this, binding.cic3pcv3src, binding.cic3pcv3srca, getString(R.string.cic3pcv3) + getString(R.string.cic3src))) {
+            return false;
+        }
+
+
+//        cic3ipv3
+        if (!ValidatorClass.EmptyRadioButton(this, binding.cic3ipv, binding.cic3ipva, getString(R.string.cic3ipv) + getString(R.string.cic3response))) {
+            return false;
+        }
+        if (!ValidatorClass.EmptyRadioButton(this, binding.cic3ipvsrc, binding.cic3ipvsrca, getString(R.string.cic3ipv) + getString(R.string.cic3src))) {
+            return false;
+        }
+
+
+//        cic3m1dt
+        if (!ValidatorClass.EmptyRadioButton(this, binding.cic3m1, binding.cic3m1a, getString(R.string.cic3m1) + getString(R.string.cic3response))) {
+            return false;
+        }
+        if (!ValidatorClass.EmptyRadioButton(this, binding.cic3m1src, binding.cic3m1srca, getString(R.string.cic3m1) + getString(R.string.cic3src))) {
+            return false;
+        }
+
+
+//        cic3m2dt
+        if (!ValidatorClass.EmptyRadioButton(this, binding.cic3m2, binding.cic3m2a, getString(R.string.cic3m2) + getString(R.string.cic3response))) {
+            return false;
+        }
+        if (!ValidatorClass.EmptyRadioButton(this, binding.cic3m2src, binding.cic3m2srca, getString(R.string.cic3m2) + getString(R.string.cic3src))) {
+            return false;
+        }
+
+
+//        cic305
+        if (!ValidatorClass.EmptyRadioButton(this, binding.cic305, binding.cic305a, getString(R.string.cic305))) {
+            return false;
+        }
+
+        if (binding.cic305a.isChecked()) {
+//        cic306
+            return ValidatorClass.EmptyRadioButton(this, binding.cic306, binding.cic306a, getString(R.string.cic306));
         }
         return true;
     }
@@ -610,167 +610,167 @@ public class SectionC3Activity extends Menu2Activity implements RadioGroup.OnChe
 
         JSONObject sC3 = new JSONObject();
         if (backPressed) {
-            sC3.put("updatedate_nc3", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
+            sC3.put("updatedate_cic3", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
         }
 
         if (SectionC1Activity.editChildFlag) {
             sC3.put("edit_updatedate_sc2", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
         }
 
-//        nc301
-        //sC3.put("nc3name", selectedChild.getName());
-//        nc302
-        //sC3.put("nc300Serial", selectedChild.getSerialNo());
+//        cic301
+        //sC3.put("cic3name", selectedChild.getName());
+//        cic302
+        //sC3.put("cic300Serial", selectedChild.getSerialNo());
 
-//        nc302
-        sC3.put("nc302", binding.nc302a.isChecked() ? "1"
-                : binding.nc302b.isChecked() ? "2"
+//        cic302
+        sC3.put("cic302", binding.cic302a.isChecked() ? "1"
+                : binding.cic302b.isChecked() ? "2"
                 : "0");
 
-//        nc303
-        sC3.put("nc303", binding.nc303a.isChecked() ? "1"
-                : binding.nc303b.isChecked() ? "2"
-                : binding.nc303c.isChecked() ? "3"
-                : binding.nc303d.isChecked() ? "4"
+//        cic303
+        sC3.put("cic303", binding.cic303a.isChecked() ? "1"
+                : binding.cic303b.isChecked() ? "2"
+                : binding.cic303c.isChecked() ? "3"
+                : binding.cic303d.isChecked() ? "4"
                 : "0");
 //at birth
-//          nc3bcg
-        sC3.put("nc3bcg", binding.nc3bcga.isChecked() ? "1"
-                : binding.nc3bcgb.isChecked() ? "2"
+//          cic3bcg
+        sC3.put("cic3bcg", binding.cic3bcga.isChecked() ? "1"
+                : binding.cic3bcgb.isChecked() ? "2"
                 : "0");
-        sC3.put("nc3bcgsrc", binding.nc3bcgsrca.isChecked() ? "1"
-                : binding.nc3bcgsrcb.isChecked() ? "2"
+        sC3.put("cic3bcgsrc", binding.cic3bcgsrca.isChecked() ? "1"
+                : binding.cic3bcgsrcb.isChecked() ? "2"
                 : "0");
 
 
-//          nc3opv0
-        sC3.put("nc3opv0", binding.nc3opv0a.isChecked() ? "1"
-                : binding.nc3opv0b.isChecked() ? "2"
+//          cic3opv0
+        sC3.put("cic3opv0", binding.cic3opv0a.isChecked() ? "1"
+                : binding.cic3opv0b.isChecked() ? "2"
                 : "0");
-        sC3.put("nc3opv0src", binding.nc3opv0srca.isChecked() ? "1"
-                : binding.nc3opv0srcb.isChecked() ? "2"
+        sC3.put("cic3opv0src", binding.cic3opv0srca.isChecked() ? "1"
+                : binding.cic3opv0srcb.isChecked() ? "2"
                 : "0");
 
 
 //       at age of 6
 
-//          nc3opv1
-        sC3.put("nc3opv1", binding.nc3opv1a.isChecked() ? "1"
-                : binding.nc3opv1b.isChecked() ? "2"
+//          cic3opv1
+        sC3.put("cic3opv1", binding.cic3opv1a.isChecked() ? "1"
+                : binding.cic3opv1b.isChecked() ? "2"
                 : "0");
-        sC3.put("nc3opv1src", binding.nc3opv1srca.isChecked() ? "1"
-                : binding.nc3opv1srcb.isChecked() ? "2"
-                : "0");
-
-//          nc3p1
-        sC3.put("nc3p1", binding.nc3p1a.isChecked() ? "1"
-                : binding.nc3p1b.isChecked() ? "2"
-                : "0");
-        sC3.put("nc3p1src", binding.nc3p1srca.isChecked() ? "1"
-                : binding.nc3p1srcb.isChecked() ? "2"
+        sC3.put("cic3opv1src", binding.cic3opv1srca.isChecked() ? "1"
+                : binding.cic3opv1srcb.isChecked() ? "2"
                 : "0");
 
-
-//          nc3pcv1
-        sC3.put("nc3pcv1", binding.nc3pcv1a.isChecked() ? "1"
-                : binding.nc3pcv1b.isChecked() ? "2"
+//          cic3p1
+        sC3.put("cic3p1", binding.cic3p1a.isChecked() ? "1"
+                : binding.cic3p1b.isChecked() ? "2"
                 : "0");
-        sC3.put("nc3pcv1src", binding.nc3pcv1srca.isChecked() ? "1"
-                : binding.nc3pcv1srcb.isChecked() ? "2"
+        sC3.put("cic3p1src", binding.cic3p1srca.isChecked() ? "1"
+                : binding.cic3p1srcb.isChecked() ? "2"
+                : "0");
+
+
+//          cic3pcv1
+        sC3.put("cic3pcv1", binding.cic3pcv1a.isChecked() ? "1"
+                : binding.cic3pcv1b.isChecked() ? "2"
+                : "0");
+        sC3.put("cic3pcv1src", binding.cic3pcv1srca.isChecked() ? "1"
+                : binding.cic3pcv1srcb.isChecked() ? "2"
                 : "0");
 
 //       at age of 10 weeks
 
-//          nc3opv2
-        sC3.put("nc3opv2", binding.nc3opv2a.isChecked() ? "1"
-                : binding.nc3opv2b.isChecked() ? "2"
+//          cic3opv2
+        sC3.put("cic3opv2", binding.cic3opv2a.isChecked() ? "1"
+                : binding.cic3opv2b.isChecked() ? "2"
                 : "0");
-        sC3.put("nc3opv2src", binding.nc3opv2srca.isChecked() ? "1"
-                : binding.nc3opv2srcb.isChecked() ? "2"
-                : "0");
-
-//          nc3p2
-        sC3.put("nc3p2", binding.nc3p2a.isChecked() ? "1"
-                : binding.nc3p2b.isChecked() ? "2"
-                : "0");
-        sC3.put("nc3p2src", binding.nc3p2srca.isChecked() ? "1"
-                : binding.nc3p2srcb.isChecked() ? "2"
+        sC3.put("cic3opv2src", binding.cic3opv2srca.isChecked() ? "1"
+                : binding.cic3opv2srcb.isChecked() ? "2"
                 : "0");
 
-
-//          nc3pcv2
-        sC3.put("nc3pcv2", binding.nc3pcv2a.isChecked() ? "1"
-                : binding.nc3pcv2b.isChecked() ? "2"
+//          cic3p2
+        sC3.put("cic3p2", binding.cic3p2a.isChecked() ? "1"
+                : binding.cic3p2b.isChecked() ? "2"
                 : "0");
-        sC3.put("nc3pcv2src", binding.nc3pcv2srca.isChecked() ? "1"
-                : binding.nc3pcv2srcb.isChecked() ? "2"
+        sC3.put("cic3p2src", binding.cic3p2srca.isChecked() ? "1"
+                : binding.cic3p2srcb.isChecked() ? "2"
+                : "0");
+
+
+//          cic3pcv2
+        sC3.put("cic3pcv2", binding.cic3pcv2a.isChecked() ? "1"
+                : binding.cic3pcv2b.isChecked() ? "2"
+                : "0");
+        sC3.put("cic3pcv2src", binding.cic3pcv2srca.isChecked() ? "1"
+                : binding.cic3pcv2srcb.isChecked() ? "2"
                 : "0");
 
 
 //       at age of 14 weeks
 
-//          nc3opv3
-        sC3.put("nc3opv3", binding.nc3opv3a.isChecked() ? "1"
-                : binding.nc3opv3b.isChecked() ? "2"
+//          cic3opv3
+        sC3.put("cic3opv3", binding.cic3opv3a.isChecked() ? "1"
+                : binding.cic3opv3b.isChecked() ? "2"
                 : "0");
-        sC3.put("nc3opv3src", binding.nc3opv3srca.isChecked() ? "1"
-                : binding.nc3opv3srcb.isChecked() ? "2"
-                : "0");
-
-//          nc3p3
-        sC3.put("nc3p3", binding.nc3p3a.isChecked() ? "1"
-                : binding.nc3p3b.isChecked() ? "2"
-                : "0");
-        sC3.put("nc3p3src", binding.nc3p3srca.isChecked() ? "1"
-                : binding.nc3p3srcb.isChecked() ? "2"
+        sC3.put("cic3opv3src", binding.cic3opv3srca.isChecked() ? "1"
+                : binding.cic3opv3srcb.isChecked() ? "2"
                 : "0");
 
+//          cic3p3
+        sC3.put("cic3p3", binding.cic3p3a.isChecked() ? "1"
+                : binding.cic3p3b.isChecked() ? "2"
+                : "0");
+        sC3.put("cic3p3src", binding.cic3p3srca.isChecked() ? "1"
+                : binding.cic3p3srcb.isChecked() ? "2"
+                : "0");
 
-//          nc3pcv3
-        sC3.put("nc3pcv3", binding.nc3pcv3a.isChecked() ? "1"
-                : binding.nc3pcv3b.isChecked() ? "2"
+
+//          cic3pcv3
+        sC3.put("cic3pcv3", binding.cic3pcv3a.isChecked() ? "1"
+                : binding.cic3pcv3b.isChecked() ? "2"
                 : "0");
-        sC3.put("nc3pcv3src", binding.nc3pcv3srca.isChecked() ? "1"
-                : binding.nc3pcv3srcb.isChecked() ? "2"
+        sC3.put("cic3pcv3src", binding.cic3pcv3srca.isChecked() ? "1"
+                : binding.cic3pcv3srcb.isChecked() ? "2"
                 : "0");
 
-//          nc3ipv
-        sC3.put("nc3ipv", binding.nc3ipva.isChecked() ? "1"
-                : binding.nc3ipvb.isChecked() ? "2"
+//          cic3ipv
+        sC3.put("cic3ipv", binding.cic3ipva.isChecked() ? "1"
+                : binding.cic3ipvb.isChecked() ? "2"
                 : "0");
-        sC3.put("nc3ipvsrc", binding.nc3ipvsrca.isChecked() ? "1"
-                : binding.nc3ipvsrcb.isChecked() ? "2"
+        sC3.put("cic3ipvsrc", binding.cic3ipvsrca.isChecked() ? "1"
+                : binding.cic3ipvsrcb.isChecked() ? "2"
                 : "0");
 
 
 //at the age of 9 months
-//          nc3m1
-        sC3.put("nc3m1", binding.nc3m1a.isChecked() ? "1"
-                : binding.nc3m1b.isChecked() ? "2"
+//          cic3m1
+        sC3.put("cic3m1", binding.cic3m1a.isChecked() ? "1"
+                : binding.cic3m1b.isChecked() ? "2"
                 : "0");
-        sC3.put("nc3m1src", binding.nc3m1srca.isChecked() ? "1"
-                : binding.nc3m1srcb.isChecked() ? "2"
+        sC3.put("cic3m1src", binding.cic3m1srca.isChecked() ? "1"
+                : binding.cic3m1srcb.isChecked() ? "2"
                 : "0");
 
 
 //at age of 15 months
-//          nc3m2
-        sC3.put("nc3m2", binding.nc3m2a.isChecked() ? "1"
-                : binding.nc3m2b.isChecked() ? "2"
+//          cic3m2
+        sC3.put("cic3m2", binding.cic3m2a.isChecked() ? "1"
+                : binding.cic3m2b.isChecked() ? "2"
                 : "0");
-        sC3.put("nc3m2src", binding.nc3m2srca.isChecked() ? "1"
-                : binding.nc3m2srcb.isChecked() ? "2"
-                : "0");
-
-//        nc305
-        sC3.put("nc305", binding.nc305a.isChecked() ? "1"
-                : binding.nc305b.isChecked() ? "2"
-                : binding.nc30598.isChecked() ? "98"
+        sC3.put("cic3m2src", binding.cic3m2srca.isChecked() ? "1"
+                : binding.cic3m2srcb.isChecked() ? "2"
                 : "0");
 
-//        nc306
-        sC3.put("nc306", binding.nc306a.isChecked() ? "1"
-                : binding.nc306b.isChecked() ? "2"
+//        cic305
+        sC3.put("cic305", binding.cic305a.isChecked() ? "1"
+                : binding.cic305b.isChecked() ? "2"
+                : binding.cic30598.isChecked() ? "98"
+                : "0");
+
+//        cic306
+        sC3.put("cic306", binding.cic306a.isChecked() ? "1"
+                : binding.cic306b.isChecked() ? "2"
                 : "0");
 
 

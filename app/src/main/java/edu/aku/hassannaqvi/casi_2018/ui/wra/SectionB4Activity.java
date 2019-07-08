@@ -594,7 +594,7 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
             // nw413
 
             if (binding.nb412a.isChecked()) {
-                if (!ValidatorClass.EmptyRadioButton(this, binding.nw413, binding.nw413a, getString(R.string.nc403))) {
+                if (!ValidatorClass.EmptyRadioButton(this, binding.nw413, binding.nw413a, getString(R.string.cic403))) {
                     return false;
                 }
                 //        nw4139601
