@@ -761,6 +761,7 @@
 
 
                         </RadioGroup>
+
                     </LinearLayout>
 
                     <LinearLayout
@@ -1813,7 +1814,6 @@
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@android:color/white" />
 
-
                     <RadioGroup
                         android:id="@+id/nc420"
                         android:layout_width="match_parent"
@@ -1989,7 +1989,6 @@
                         android:text="@string/nc423"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@android:color/white" />
-
 
                     <LinearLayout
                         android:layout_width="match_parent"
