@@ -39,12 +39,12 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
     public CheckBox.OnCheckedChangeListener check = new CompoundButton.OnCheckedChangeListener() {
         @Override
         public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-            if (binding.nh403a.isChecked() || binding.nh403b.isChecked() || binding.nh403c.isChecked()) {
-                ClearClass.ClearAllFields(binding.fldGrnh404, false);
-                ClearClass.ClearAllFields(binding.fldGrpnh405, false);
+            if (binding.cih403a.isChecked() || binding.cih403b.isChecked() || binding.cih403c.isChecked()) {
+                ClearClass.ClearAllFields(binding.fldGrcih404, false);
+                ClearClass.ClearAllFields(binding.fldGrpcih405, false);
             } else {
-                ClearClass.ClearAllFields(binding.fldGrnh404, true);
-                ClearClass.ClearAllFields(binding.fldGrpnh405, true);
+                ClearClass.ClearAllFields(binding.fldGrcih404, true);
+                ClearClass.ClearAllFields(binding.fldGrpcih405, true);
             }
         }
     };
@@ -53,7 +53,7 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
     int prevRecipientCounter = 0;
     Boolean backPressed = false;
     int prevDeceasedCounter = 0;
-    String nh801, nh802;
+    String cih801, cih802;
     private Timer timer = new Timer();
 
     @Override
@@ -67,96 +67,96 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
 
         this.setTitle(getResources().getString(R.string.na5heading));
 
-        binding.nh401.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        binding.cih401.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 //formValidation();
-                if (!(checkedId == R.id.nh401a)) {
+                if (!(checkedId == R.id.cih401a)) {
 
-                    ClearClass.ClearAllFields(binding.fldGrpnh402, false);
+                    ClearClass.ClearAllFields(binding.fldGrpcih402, false);
 
                 } else {
                     formValidation();
-                    ClearClass.ClearAllFields(binding.fldGrpnh402, true);
+                    ClearClass.ClearAllFields(binding.fldGrpcih402, true);
                 }
             }
         });
 
-        binding.nh403a.setOnCheckedChangeListener(check);
-        binding.nh403b.setOnCheckedChangeListener(check);
-        binding.nh403c.setOnCheckedChangeListener(check);
+        binding.cih403a.setOnCheckedChangeListener(check);
+        binding.cih403b.setOnCheckedChangeListener(check);
+        binding.cih403c.setOnCheckedChangeListener(check);
 
-        binding.nh403e.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        binding.cih403e.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
 
-                    binding.nh403a.setEnabled(false);
-                    binding.nh403b.setEnabled(false);
-                    binding.nh403c.setEnabled(false);
-                    binding.nh403d.setEnabled(false);
+                    binding.cih403a.setEnabled(false);
+                    binding.cih403b.setEnabled(false);
+                    binding.cih403c.setEnabled(false);
+                    binding.cih403d.setEnabled(false);
 
-                    binding.nh403a.setChecked(false);
-                    binding.nh403b.setChecked(false);
-                    binding.nh403c.setChecked(false);
-                    binding.nh403d.setChecked(false);
+                    binding.cih403a.setChecked(false);
+                    binding.cih403b.setChecked(false);
+                    binding.cih403c.setChecked(false);
+                    binding.cih403d.setChecked(false);
 
                 } else {
 
 
-                    binding.nh403a.setEnabled(true);
-                    binding.nh403b.setEnabled(true);
-                    binding.nh403c.setEnabled(true);
-                    binding.nh403d.setEnabled(true);
+                    binding.cih403a.setEnabled(true);
+                    binding.cih403b.setEnabled(true);
+                    binding.cih403c.setEnabled(true);
+                    binding.cih403d.setEnabled(true);
                 }
             }
         });
 
-        binding.nh404.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        binding.cih404.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 formValidation();
-                if (checkedId == R.id.nh404b) {
-                    ClearClass.ClearAllFields(binding.fldGrpnh405, false);
+                if (checkedId == R.id.cih404b) {
+                    ClearClass.ClearAllFields(binding.fldGrpcih405, false);
 
                 } else {
-                    ClearClass.ClearAllFields(binding.fldGrpnh405, true);
+                    ClearClass.ClearAllFields(binding.fldGrpcih405, true);
                 }
             }
         });
-        binding.nh405e.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        binding.cih405e.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    binding.nh405a.setEnabled(false);
-                    binding.nh405b.setEnabled(false);
-                    binding.nh405c.setEnabled(false);
-                    binding.nh405d.setEnabled(false);
+                    binding.cih405a.setEnabled(false);
+                    binding.cih405b.setEnabled(false);
+                    binding.cih405c.setEnabled(false);
+                    binding.cih405d.setEnabled(false);
 
-                    binding.nh405a.setChecked(false);
-                    binding.nh405b.setChecked(false);
-                    binding.nh405c.setChecked(false);
-                    binding.nh405d.setChecked(false);
+                    binding.cih405a.setChecked(false);
+                    binding.cih405b.setChecked(false);
+                    binding.cih405c.setChecked(false);
+                    binding.cih405d.setChecked(false);
 
                 } else {
-                    binding.nh405a.setEnabled(true);
-                    binding.nh405b.setEnabled(true);
-                    binding.nh405c.setEnabled(true);
-                    binding.nh405d.setEnabled(true);
+                    binding.cih405a.setEnabled(true);
+                    binding.cih405b.setEnabled(true);
+                    binding.cih405c.setEnabled(true);
+                    binding.cih405d.setEnabled(true);
                 }
             }
         });
 
-        binding.nh501.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        binding.cih501.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 formValidation();
-                if (checkedId == R.id.nh501d || checkedId == R.id.nh50196) {
-                    ClearClass.ClearAllFields(binding.fldGrnh602, false);
+                if (checkedId == R.id.cih501d || checkedId == R.id.cih50196) {
+                    ClearClass.ClearAllFields(binding.fldGrcih602, false);
                     ClearClass.ClearAllFields(binding.fldGrnc502, false);
 
                 } else {
-                    ClearClass.ClearAllFields(binding.fldGrnh602, true);
+                    ClearClass.ClearAllFields(binding.fldGrcih602, true);
                     ClearClass.ClearAllFields(binding.fldGrnc502, true);
 
                 }
@@ -164,20 +164,20 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
         });
 
 //        Listeners
-        binding.nh402.setOnCheckedChangeListener(this);
-        binding.nh40601.setOnCheckedChangeListener(this);
-        binding.nh40602.setOnCheckedChangeListener(this);
-        binding.nh40603.setOnCheckedChangeListener(this);
-        binding.nh40604.setOnCheckedChangeListener(this);
-        binding.nh40605.setOnCheckedChangeListener(this);
-        binding.nh40696.setOnCheckedChangeListener(this);
-        //binding.nh501.setOnCheckedChangeListener(this);
-        binding.nh502.setOnCheckedChangeListener(this);
-        binding.nh503.setOnCheckedChangeListener(this);
+        binding.cih402.setOnCheckedChangeListener(this);
+        binding.cih40601.setOnCheckedChangeListener(this);
+        binding.cih40602.setOnCheckedChangeListener(this);
+        binding.cih40603.setOnCheckedChangeListener(this);
+        binding.cih40604.setOnCheckedChangeListener(this);
+        binding.cih40605.setOnCheckedChangeListener(this);
+        binding.cih40696.setOnCheckedChangeListener(this);
+        //binding.cih501.setOnCheckedChangeListener(this);
+        binding.cih502.setOnCheckedChangeListener(this);
+        binding.cih503.setOnCheckedChangeListener(this);
 
-        binding.nh701.setOnCheckedChangeListener(this);
+        binding.cih701.setOnCheckedChangeListener(this);
 
-        binding.nh702.addTextChangedListener(this);
+        binding.cih702.addTextChangedListener(this);
 
 //        Validation Boolean
         MainApp.validateFlag = false;
@@ -193,163 +193,163 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
 
             JSONA5ModelClass jsonA5 = JSONUtilClass.getModelFromJSON(formContract.getsA5(), JSONA5ModelClass.class);
 
-            if (!jsonA5.getnh401().equals("0")) {
-                binding.nh401.check(
-                        jsonA5.getnh401().equals("1") ? binding.nh401a.getId() :
-                                jsonA5.getnh401().equals("2") ? binding.nh401b.getId() :
-                                        jsonA5.getnh401().equals("3") ? binding.nh401c.getId() :
-                                                binding.nh401d.getId()
+            if (!jsonA5.getcih401().equals("0")) {
+                binding.cih401.check(
+                        jsonA5.getcih401().equals("1") ? binding.cih401a.getId() :
+                                jsonA5.getcih401().equals("2") ? binding.cih401b.getId() :
+                                        jsonA5.getcih401().equals("3") ? binding.cih401c.getId() :
+                                                binding.cih401d.getId()
                 );
             }
-            if (!jsonA5.getnh402().equals("0")) {
-                binding.nh402.check(
-                        jsonA5.getnh402().equals("1") ? binding.nh402a.getId() :
-                                binding.nh402b.getId()
+            if (!jsonA5.getcih402().equals("0")) {
+                binding.cih402.check(
+                        jsonA5.getcih402().equals("1") ? binding.cih402a.getId() :
+                                binding.cih402b.getId()
                 );
             }
-            if (!jsonA5.getnh403a().equals("0")) {
-                binding.nh403a.setChecked(true);
+            if (!jsonA5.getcih403a().equals("0")) {
+                binding.cih403a.setChecked(true);
             }
-            if (!jsonA5.getnh403b().equals("0")) {
-                binding.nh403b.setChecked(true);
+            if (!jsonA5.getcih403b().equals("0")) {
+                binding.cih403b.setChecked(true);
             }
-            if (!jsonA5.getnh403c().equals("0")) {
-                binding.nh403c.setChecked(true);
+            if (!jsonA5.getcih403c().equals("0")) {
+                binding.cih403c.setChecked(true);
             }
-            if (!jsonA5.getnh403d().equals("0")) {
-                binding.nh403d.setChecked(true);
+            if (!jsonA5.getcih403d().equals("0")) {
+                binding.cih403d.setChecked(true);
             }
-            if (!jsonA5.getnh403e().equals("0")) {
-                binding.nh403e.setChecked(true);
+            if (!jsonA5.getcih403e().equals("0")) {
+                binding.cih403e.setChecked(true);
             }
 
-            if (!jsonA5.getnh404().equals("0")) {
-                binding.nh404.check(
-                        jsonA5.getnh404().equals("1") ? binding.nh404a.getId() :
-                                binding.nh404b.getId()
+            if (!jsonA5.getcih404().equals("0")) {
+                binding.cih404.check(
+                        jsonA5.getcih404().equals("1") ? binding.cih404a.getId() :
+                                binding.cih404b.getId()
                 );
             }
-            if (!jsonA5.getnh405a().equals("0")) {
-                binding.nh405a.setChecked(true);
+            if (!jsonA5.getcih405a().equals("0")) {
+                binding.cih405a.setChecked(true);
             }
 
-            if (!jsonA5.getnh405b().equals("0")) {
-                binding.nh405b.setChecked(true);
+            if (!jsonA5.getcih405b().equals("0")) {
+                binding.cih405b.setChecked(true);
             }
-            if (!jsonA5.getnh405c().equals("0")) {
-                binding.nh405c.setChecked(true);
+            if (!jsonA5.getcih405c().equals("0")) {
+                binding.cih405c.setChecked(true);
             }
-            if (!jsonA5.getnh405d().equals("0")) {
-                binding.nh405d.setChecked(true);
+            if (!jsonA5.getcih405d().equals("0")) {
+                binding.cih405d.setChecked(true);
             }
-            if (!jsonA5.getnh405e().equals("0")) {
-                binding.nh405e.setChecked(true);
+            if (!jsonA5.getcih405e().equals("0")) {
+                binding.cih405e.setChecked(true);
             }
-            if (!jsonA5.getnh40601().equals("0")) {
-                binding.nh40601.check(
-                        jsonA5.getnh404().equals("1") ? binding.nh40601a.getId() :
-                                binding.nh40601b.getId()
+            if (!jsonA5.getcih40601().equals("0")) {
+                binding.cih40601.check(
+                        jsonA5.getcih404().equals("1") ? binding.cih40601a.getId() :
+                                binding.cih40601b.getId()
                 );
             }
-            if (!jsonA5.getnh40602().equals("0")) {
-                binding.nh40602.check(
-                        jsonA5.getnh40602().equals("1") ? binding.nh40602a.getId() :
-                                binding.nh40602b.getId()
+            if (!jsonA5.getcih40602().equals("0")) {
+                binding.cih40602.check(
+                        jsonA5.getcih40602().equals("1") ? binding.cih40602a.getId() :
+                                binding.cih40602b.getId()
                 );
             }
-            if (!jsonA5.getnh40603().equals("0")) {
-                binding.nh40603.check(
-                        jsonA5.getnh404().equals("1") ? binding.nh40603a.getId() :
-                                binding.nh40603b.getId()
+            if (!jsonA5.getcih40603().equals("0")) {
+                binding.cih40603.check(
+                        jsonA5.getcih404().equals("1") ? binding.cih40603a.getId() :
+                                binding.cih40603b.getId()
                 );
             }
-            if (!jsonA5.getnh40604().equals("0")) {
-                binding.nh40604.check(
-                        jsonA5.getnh404().equals("1") ? binding.nh40604a.getId() :
-                                binding.nh40604b.getId()
+            if (!jsonA5.getcih40604().equals("0")) {
+                binding.cih40604.check(
+                        jsonA5.getcih404().equals("1") ? binding.cih40604a.getId() :
+                                binding.cih40604b.getId()
                 );
             }
-            if (!jsonA5.getnh40605().equals("0")) {
-                binding.nh40605.check(
-                        jsonA5.getnh404().equals("1") ? binding.nh40605a.getId() :
-                                binding.nh40605b.getId()
+            if (!jsonA5.getcih40605().equals("0")) {
+                binding.cih40605.check(
+                        jsonA5.getcih404().equals("1") ? binding.cih40605a.getId() :
+                                binding.cih40605b.getId()
                 );
             }
-            if (!jsonA5.getnh40696().equals("0")) {
-                binding.nh40696.check(
-                        jsonA5.getnh404().equals("1") ? binding.nh40696a.getId() :
-                                binding.nh40696b.getId()
+            if (!jsonA5.getcih40696().equals("0")) {
+                binding.cih40696.check(
+                        jsonA5.getcih404().equals("1") ? binding.cih40696a.getId() :
+                                binding.cih40696b.getId()
                 );
             }
-            binding.nh40696x.setText(jsonA5.getnh40696x());
+            binding.cih40696x.setText(jsonA5.getcih40696x());
 
-            if (!jsonA5.getnh501().equals("0")) {
-                binding.nh501.check(
-                        jsonA5.getnh501().equals("1") ? binding.nh501a.getId() :
-                                jsonA5.getnh501().equals("2") ? binding.nh501b.getId() :
-                                        jsonA5.getnh501().equals("3") ? binding.nh501c.getId() :
-                                                jsonA5.getnh501().equals("4") ? binding.nh501d.getId() :
-                                                        binding.nh50196.getId()
+            if (!jsonA5.getcih501().equals("0")) {
+                binding.cih501.check(
+                        jsonA5.getcih501().equals("1") ? binding.cih501a.getId() :
+                                jsonA5.getcih501().equals("2") ? binding.cih501b.getId() :
+                                        jsonA5.getcih501().equals("3") ? binding.cih501c.getId() :
+                                                jsonA5.getcih501().equals("4") ? binding.cih501d.getId() :
+                                                        binding.cih50196.getId()
                 );
             }
-            binding.nh50196x.setText(jsonA5.getnh50196x());
-            if (!jsonA5.getnh502().equals("0")) {
-                binding.nh502.check(
-                        jsonA5.getnh502().equals("1") ? binding.nh502a.getId() :
-                                jsonA5.getnh502().equals("2") ? binding.nh502b.getId() :
-                                        binding.nh502c.getId()
+            binding.cih50196x.setText(jsonA5.getcih50196x());
+            if (!jsonA5.getcih502().equals("0")) {
+                binding.cih502.check(
+                        jsonA5.getcih502().equals("1") ? binding.cih502a.getId() :
+                                jsonA5.getcih502().equals("2") ? binding.cih502b.getId() :
+                                        binding.cih502c.getId()
                 );
             }
-            if (!jsonA5.getnh503().equals("0")) {
-                binding.nh503.check(
-                        jsonA5.getnh503().equals("1") ? binding.nh503a.getId() :
-                                jsonA5.getnh503().equals("2") ? binding.nh503b.getId() :
-                                        jsonA5.getnh503().equals("3") ? binding.nh503c.getId() :
-                                                binding.nh503d.getId()
+            if (!jsonA5.getcih503().equals("0")) {
+                binding.cih503.check(
+                        jsonA5.getcih503().equals("1") ? binding.cih503a.getId() :
+                                jsonA5.getcih503().equals("2") ? binding.cih503b.getId() :
+                                        jsonA5.getcih503().equals("3") ? binding.cih503c.getId() :
+                                                binding.cih503d.getId()
                 );
             }
 
-            if (!jsonA5.getnh701().equals("0")) {
-                binding.nh701.check(
-                        jsonA5.getnh701().equals("1") ? binding.nh701a.getId() :
-                                binding.nh701b.getId()
+            if (!jsonA5.getcih701().equals("0")) {
+                binding.cih701.check(
+                        jsonA5.getcih701().equals("1") ? binding.cih701a.getId() :
+                                binding.cih701b.getId()
 
                 );
             }
-            binding.nh702.setText(jsonA5.getnh702());
+            binding.cih702.setText(jsonA5.getcih702());
 
-            if (jsonA5.getnh701().equals("2")) {
-                binding.nh701a.setEnabled(false);
+            if (jsonA5.getcih701().equals("2")) {
+                binding.cih701a.setEnabled(false);
             }
-            if (!jsonA5.getnh702().equals("")) {
-                prevRecipientCounter = Integer.valueOf(jsonA5.getnh702());
+            if (!jsonA5.getcih702().equals("")) {
+                prevRecipientCounter = Integer.valueOf(jsonA5.getcih702());
 
             }
            /*
-            if (!jsonA5.getnh801().equals("0")) {
-                binding.nh801.check(
-                        jsonA5.getnh801().equals("1") ? binding.nh801a.getId() :
-                                binding.nh801b.getId()
+            if (!jsonA5.getcih801().equals("0")) {
+                binding.cih801.check(
+                        jsonA5.getcih801().equals("1") ? binding.cih801a.getId() :
+                                binding.cih801b.getId()
 
                 );
             }
-            binding.nh802.setText(jsonA5.getnh802());
+            binding.cih802.setText(jsonA5.getcih802());
 
-            if (jsonA5.getnh801().equals("2")) {
-                binding.nh801a.setEnabled(false);
+            if (jsonA5.getcih801().equals("2")) {
+                binding.cih801a.setEnabled(false);
             }
-            if (!jsonA5.getnh802().equals("")) {
-                prevDeceasedCounter = Integer.valueOf(jsonA5.getnh802());
+            if (!jsonA5.getcih802().equals("")) {
+                prevDeceasedCounter = Integer.valueOf(jsonA5.getcih802());
             }
 
             */
 
-            if (!jsonA5.getnh801().equals("0")) {
-                nh801 = jsonA5.getnh801().equals("1") ? "1" :
+            if (!jsonA5.getcih801().equals("0")) {
+                cih801 = jsonA5.getcih801().equals("1") ? "1" :
                         "2";
             }
-            if (!jsonA5.getnh802().equals("")) {
-                nh802 = jsonA5.getnh802();
+            if (!jsonA5.getcih802().equals("")) {
+                cih802 = jsonA5.getcih802();
             }
 
         }
@@ -508,81 +508,81 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
             sA5.put("edit_updatedate_sa5", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
 
         }
-        sA5.put("nh401", binding.nh401a.isChecked() ? "1"
-                : binding.nh401b.isChecked() ? "2"
-                : binding.nh401c.isChecked() ? "3"
-                : binding.nh401d.isChecked() ? "4"
+        sA5.put("cih401", binding.cih401a.isChecked() ? "1"
+                : binding.cih401b.isChecked() ? "2"
+                : binding.cih401c.isChecked() ? "3"
+                : binding.cih401d.isChecked() ? "4"
                 : "0");
 
-        sA5.put("nh402", binding.nh402a.isChecked() ? "1"
-                : binding.nh402b.isChecked() ? "2"
+        sA5.put("cih402", binding.cih402a.isChecked() ? "1"
+                : binding.cih402b.isChecked() ? "2"
                 : "0");
 
-        sA5.put("nh403a", binding.nh403a.isChecked() ? "1" : "0");
-        sA5.put("nh403b", binding.nh403b.isChecked() ? "2" : "0");
-        sA5.put("nh403c", binding.nh403c.isChecked() ? "3" : "0");
-        sA5.put("nh403d", binding.nh403d.isChecked() ? "4" : "0");
-        sA5.put("nh403e", binding.nh403e.isChecked() ? "5" : "0");
+        sA5.put("cih403a", binding.cih403a.isChecked() ? "1" : "0");
+        sA5.put("cih403b", binding.cih403b.isChecked() ? "2" : "0");
+        sA5.put("cih403c", binding.cih403c.isChecked() ? "3" : "0");
+        sA5.put("cih403d", binding.cih403d.isChecked() ? "4" : "0");
+        sA5.put("cih403e", binding.cih403e.isChecked() ? "5" : "0");
 
-        sA5.put("nh404", binding.nh404a.isChecked() ? "1"
-                : binding.nh404b.isChecked() ? "2"
+        sA5.put("cih404", binding.cih404a.isChecked() ? "1"
+                : binding.cih404b.isChecked() ? "2"
                 : "0");
 
-        sA5.put("nh405a", binding.nh405a.isChecked() ? "1" : "0");
-        sA5.put("nh405b", binding.nh405b.isChecked() ? "2" : "0");
-        sA5.put("nh405c", binding.nh405c.isChecked() ? "3" : "0");
-        sA5.put("nh405d", binding.nh405d.isChecked() ? "4" : "0");
-        sA5.put("nh405e", binding.nh405e.isChecked() ? "5" : "0");
+        sA5.put("cih405a", binding.cih405a.isChecked() ? "1" : "0");
+        sA5.put("cih405b", binding.cih405b.isChecked() ? "2" : "0");
+        sA5.put("cih405c", binding.cih405c.isChecked() ? "3" : "0");
+        sA5.put("cih405d", binding.cih405d.isChecked() ? "4" : "0");
+        sA5.put("cih405e", binding.cih405e.isChecked() ? "5" : "0");
 
 
-        sA5.put("nh40601", binding.nh40601a.isChecked() ? "1"
-                : binding.nh40601b.isChecked() ? "2"
+        sA5.put("cih40601", binding.cih40601a.isChecked() ? "1"
+                : binding.cih40601b.isChecked() ? "2"
                 : "0");
 
 
-        sA5.put("nh40602", binding.nh40602a.isChecked() ? "1"
-                : binding.nh40602b.isChecked() ? "2"
+        sA5.put("cih40602", binding.cih40602a.isChecked() ? "1"
+                : binding.cih40602b.isChecked() ? "2"
                 : "0");
 
-        sA5.put("nh40603", binding.nh40603a.isChecked() ? "1"
-                : binding.nh40603b.isChecked() ? "2"
+        sA5.put("cih40603", binding.cih40603a.isChecked() ? "1"
+                : binding.cih40603b.isChecked() ? "2"
                 : "0");
 
-        sA5.put("nh40604", binding.nh40604a.isChecked() ? "1"
-                : binding.nh40604b.isChecked() ? "2"
+        sA5.put("cih40604", binding.cih40604a.isChecked() ? "1"
+                : binding.cih40604b.isChecked() ? "2"
                 : "0");
 
-        sA5.put("nh40605", binding.nh40605a.isChecked() ? "1"
-                : binding.nh40605b.isChecked() ? "2"
+        sA5.put("cih40605", binding.cih40605a.isChecked() ? "1"
+                : binding.cih40605b.isChecked() ? "2"
                 : "0");
 
-        sA5.put("nh40696", binding.nh40696a.isChecked() ? "1"
-                : binding.nh40696b.isChecked() ? "2"
+        sA5.put("cih40696", binding.cih40696a.isChecked() ? "1"
+                : binding.cih40696b.isChecked() ? "2"
                 : "0");
 
-        sA5.put("nh40696x", binding.nh40696x.getText().toString());
+        sA5.put("cih40696x", binding.cih40696x.getText().toString());
 
 
         // Section A6
 
-        sA5.put("nh501", binding.nh501a.isChecked() ? "1"
-                : binding.nh501b.isChecked() ? "2"
-                : binding.nh501c.isChecked() ? "3"
-                : binding.nh501d.isChecked() ? "4"
-                : binding.nh50196.isChecked() ? "96"
+        sA5.put("cih501", binding.cih501a.isChecked() ? "1"
+                : binding.cih501b.isChecked() ? "2"
+                : binding.cih501c.isChecked() ? "3"
+                : binding.cih501d.isChecked() ? "4"
+                : binding.cih50196.isChecked() ? "96"
                 : "0");
 
-        sA5.put("nh50196x", binding.nh50196x.getText().toString());
+        sA5.put("cih50196x", binding.cih50196x.getText().toString());
 
-        sA5.put("nh502", binding.nh502a.isChecked() ? "1"
-                : binding.nh502b.isChecked() ? "2"
-                : binding.nh502c.isChecked() ? "3"
+        sA5.put("cih502", binding.cih502a.isChecked() ? "1"
+                : binding.cih502b.isChecked() ? "2"
+                : binding.cih502c.isChecked() ? "3"
                 : "0");
 
-        sA5.put("nh503", binding.nh503a.isChecked() ? "1"
-                : binding.nh503b.isChecked() ? "2"
-                : binding.nh503c.isChecked() ? "3"
-                : binding.nh503d.isChecked() ? "4"
+        sA5.put("cih503", binding.cih503a.isChecked() ? "1"
+                : binding.cih503b.isChecked() ? "2"
+                : binding.cih503c.isChecked() ? "3"
+                : binding.cih503d.isChecked() ? "4"
                 : "0");
 
         //Section A6
@@ -657,82 +657,82 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
                 : "0");
 
 
-//        sA5.put("nh601", binding.nh601a.isChecked() ? "1"
-//                : binding.nh601b.isChecked() ? "2"
-//                : binding.nh60198.isChecked() ? "98"
-//                : binding.nh60199.isChecked() ? "99"
+//        sA5.put("cih601", binding.cih601a.isChecked() ? "1"
+//                : binding.cih601b.isChecked() ? "2"
+//                : binding.cih60198.isChecked() ? "98"
+//                : binding.cih60199.isChecked() ? "99"
 //                : "0");
 //
-//        sA5.put("nh602", binding.nh602a.isChecked() ? "1"
-//                : binding.nh602b.isChecked() ? "2"
-//                : binding.nh60298.isChecked() ? "98"
-//                : binding.nh60299.isChecked() ? "99"
+//        sA5.put("cih602", binding.cih602a.isChecked() ? "1"
+//                : binding.cih602b.isChecked() ? "2"
+//                : binding.cih60298.isChecked() ? "98"
+//                : binding.cih60299.isChecked() ? "99"
 //                : "0");
 //
-//        sA5.put("nh603", binding.nh603a.isChecked() ? "1"
-//                : binding.nh603b.isChecked() ? "2"
-//                : binding.nh60398.isChecked() ? "98"
-//                : binding.nh60399.isChecked() ? "99"
+//        sA5.put("cih603", binding.cih603a.isChecked() ? "1"
+//                : binding.cih603b.isChecked() ? "2"
+//                : binding.cih60398.isChecked() ? "98"
+//                : binding.cih60399.isChecked() ? "99"
 //                : "0");
 //
-//        sA5.put("nh604", binding.nh604a.isChecked() ? "1"
-//                : binding.nh604b.isChecked() ? "2"
-//                : binding.nh60498.isChecked() ? "98"
-//                : binding.nh60499.isChecked() ? "99"
+//        sA5.put("cih604", binding.cih604a.isChecked() ? "1"
+//                : binding.cih604b.isChecked() ? "2"
+//                : binding.cih60498.isChecked() ? "98"
+//                : binding.cih60499.isChecked() ? "99"
 //                : "0");
 //
-//        sA5.put("nh605", binding.nh605a.isChecked() ? "1"
-//                : binding.nh605b.isChecked() ? "2"
-//                : binding.nh60598.isChecked() ? "98"
-//                : binding.nh60599.isChecked() ? "99"
+//        sA5.put("cih605", binding.cih605a.isChecked() ? "1"
+//                : binding.cih605b.isChecked() ? "2"
+//                : binding.cih60598.isChecked() ? "98"
+//                : binding.cih60599.isChecked() ? "99"
 //                : "0");
 //
-//        sA5.put("nh606", binding.nh606a.isChecked() ? "1"
-//                : binding.nh606b.isChecked() ? "2"
-//                : binding.nh60698.isChecked() ? "98"
-//                : binding.nh60699.isChecked() ? "99"
+//        sA5.put("cih606", binding.cih606a.isChecked() ? "1"
+//                : binding.cih606b.isChecked() ? "2"
+//                : binding.cih60698.isChecked() ? "98"
+//                : binding.cih60699.isChecked() ? "99"
 //                : "0");
 //
-//        sA5.put("nh607", binding.nh607a.isChecked() ? "1"
-//                : binding.nh607b.isChecked() ? "2"
-//                : binding.nh60798.isChecked() ? "98"
-//                : binding.nh60799.isChecked() ? "99"
+//        sA5.put("cih607", binding.cih607a.isChecked() ? "1"
+//                : binding.cih607b.isChecked() ? "2"
+//                : binding.cih60798.isChecked() ? "98"
+//                : binding.cih60799.isChecked() ? "99"
 //                : "0");
 //
-//        sA5.put("nh608", binding.nh608a.isChecked() ? "1"
-//                : binding.nh608b.isChecked() ? "2"
-//                : binding.nh60898.isChecked() ? "98"
-//                : binding.nh60899.isChecked() ? "99"
+//        sA5.put("cih608", binding.cih608a.isChecked() ? "1"
+//                : binding.cih608b.isChecked() ? "2"
+//                : binding.cih60898.isChecked() ? "98"
+//                : binding.cih60899.isChecked() ? "99"
 //                : "0");
 //
-//        sA5.put("nh609", binding.nh609a.isChecked() ? "1"
-//                : binding.nh609b.isChecked() ? "2"
-//                : binding.nh60998.isChecked() ? "98"
-//                : binding.nh60999.isChecked() ? "99"
+//        sA5.put("cih609", binding.cih609a.isChecked() ? "1"
+//                : binding.cih609b.isChecked() ? "2"
+//                : binding.cih60998.isChecked() ? "98"
+//                : binding.cih60999.isChecked() ? "99"
 //                : "0");
 
         // Section A8
 
-        sA5.put("nh701", binding.nh701a.isChecked() ? "1"
-                : binding.nh701b.isChecked() ? "2"
+        sA5.put("cih701", binding.cih701a.isChecked() ? "1"
+                : binding.cih701b.isChecked() ? "2"
                 : "0");
 
-        sA5.put("nh702", binding.nh702.getText().toString());
+        sA5.put("cih702", binding.cih702.getText().toString());
 
-        if (binding.nh701a.isChecked()) {
-            recipientCounter = Integer.valueOf(binding.nh702.getText().toString());
+        if (binding.cih701a.isChecked()) {
+            recipientCounter = Integer.valueOf(binding.cih702.getText().toString());
         }
 
         if (SectionA1Activity.editFormFlag) {
-            sA5.put("nh801", nh801);
-            sA5.put("nh802", nh802);
+            sA5.put("cih801", cih801);
+            sA5.put("cih802", cih802);
         }
 /*
-        sA5.put("nh801", binding.nh801a.isChecked() ? "1" : binding.nh801b.isChecked() ? "2" : "0");
-        sA5.put("nh802", binding.nh802.getText().toString());
+        sA5.put("cih801", binding.cih801a.isChecked() ? "1" : binding.cih801b.isChecked() ? "2" : "0");
+        sA5.put("cih802", binding.cih802.getText().toString());
 
-        if (binding.nh801a.isChecked()) {
-            deceasedCounter = Integer.valueOf(binding.nh802.getText().toString());
+        if (binding.cih801a.isChecked()) {
+            deceasedCounter = Integer.valueOf(binding.cih802.getText().toString());
         }
 */
         MainApp.fc.setsA5(String.valueOf(sA5));

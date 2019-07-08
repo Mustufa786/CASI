@@ -6,359 +6,359 @@ package edu.aku.hassannaqvi.casi_2018.JSONModels;
 
 public class JSONA5ModelClass {
 
-    private String nh401 = "";
-    private String nh402 = "";
-    private String nh403a = "";
-    private String nh403b = "";
-    private String nh403c = "";
-    private String nh403d = "";
-    private String nh403e = "";
-    private String nh404 = "";
-    private String nh405a = "";
-    private String nh405b = "";
-    private String nh405c = "";
-    private String nh405d = "";
-    private String nh405e = "";
-    private String nh40601 = "";
-    private String nh40602 = "";
-    private String nh40603 = "";
-    private String nh40604 = "";
-    private String nh40605 = "";
-    private String nh40696 = "";
-    private String nh40696x = "";
-    private String nh501 = "";
-    private String nh50196x = "";
-    private String nh502 = "";
-    private String nh503 = "";
-    private String nh504 = "";
-    private String nh505 = "";
-    private String nh601 = "";
-    private String nh602 = "";
-    private String nh603 = "";
-    private String nh604 = "";
-    private String nh605 = "";
-    private String nh606 = "";
-    private String nh607 = "";
-    private String nh608 = "";
-    private String nh609 = "";
-    private String nh701 = "";
-    private String nh702 = "";
-    private String nh801 = "";
-    private String nh802 = "";
+    private String cih401 = "";
+    private String cih402 = "";
+    private String cih403a = "";
+    private String cih403b = "";
+    private String cih403c = "";
+    private String cih403d = "";
+    private String cih403e = "";
+    private String cih404 = "";
+    private String cih405a = "";
+    private String cih405b = "";
+    private String cih405c = "";
+    private String cih405d = "";
+    private String cih405e = "";
+    private String cih40601 = "";
+    private String cih40602 = "";
+    private String cih40603 = "";
+    private String cih40604 = "";
+    private String cih40605 = "";
+    private String cih40696 = "";
+    private String cih40696x = "";
+    private String cih501 = "";
+    private String cih50196x = "";
+    private String cih502 = "";
+    private String cih503 = "";
+    private String cih504 = "";
+    private String cih505 = "";
+    private String cih601 = "";
+    private String cih602 = "";
+    private String cih603 = "";
+    private String cih604 = "";
+    private String cih605 = "";
+    private String cih606 = "";
+    private String cih607 = "";
+    private String cih608 = "";
+    private String cih609 = "";
+    private String cih701 = "";
+    private String cih702 = "";
+    private String cih801 = "";
+    private String cih802 = "";
 
     public JSONA5ModelClass() {
 
     }
 
-    public String getnh401() {
-        return nh401;
+    public String getcih401() {
+        return cih401;
     }
 
-    public void setnh401(String nh401) {
-        this.nh401 = nh401;
+    public void setcih401(String cih401) {
+        this.cih401 = cih401;
     }
 
-    public String getnh402() {
-        return nh402;
+    public String getcih402() {
+        return cih402;
     }
 
-    public void setnh402(String nh402) {
-        this.nh402 = nh402;
+    public void setcih402(String cih402) {
+        this.cih402 = cih402;
     }
 
-    public String getnh403a() {
-        return nh403a;
+    public String getcih403a() {
+        return cih403a;
     }
 
-    public void setnh403a(String nh403a) {
-        this.nh403a = nh403a;
+    public void setcih403a(String cih403a) {
+        this.cih403a = cih403a;
     }
 
-    public String getnh403b() {
-        return nh403b;
+    public String getcih403b() {
+        return cih403b;
     }
 
-    public void setnh403b(String nh403b) {
-        this.nh403b = nh403b;
+    public void setcih403b(String cih403b) {
+        this.cih403b = cih403b;
     }
 
-    public String getnh403c() {
-        return nh403c;
+    public String getcih403c() {
+        return cih403c;
     }
 
-    public void setnh403c(String nh403c) {
-        this.nh403c = nh403c;
+    public void setcih403c(String cih403c) {
+        this.cih403c = cih403c;
     }
 
-    public String getnh403d() {
-        return nh403d;
+    public String getcih403d() {
+        return cih403d;
     }
 
-    public void setnh403d(String nh403d) {
-        this.nh403d = nh403d;
+    public void setcih403d(String cih403d) {
+        this.cih403d = cih403d;
     }
 
-    public String getnh403e() {
-        return nh403e;
+    public String getcih403e() {
+        return cih403e;
     }
 
-    public void setnh403e(String nh403e) {
-        this.nh403e = nh403e;
+    public void setcih403e(String cih403e) {
+        this.cih403e = cih403e;
     }
 
-    public String getnh404() {
-        return nh404;
+    public String getcih404() {
+        return cih404;
     }
 
-    public void setnh404(String nh404) {
-        this.nh404 = nh404;
+    public void setcih404(String cih404) {
+        this.cih404 = cih404;
     }
 
-    public String getnh405a() {
-        return nh405a;
+    public String getcih405a() {
+        return cih405a;
     }
 
-    public void setnh405a(String nh405a) {
-        this.nh405a = nh405a;
+    public void setcih405a(String cih405a) {
+        this.cih405a = cih405a;
     }
 
-    public String getnh405b() {
-        return nh405b;
+    public String getcih405b() {
+        return cih405b;
     }
 
-    public void setnh405b(String nh405b) {
-        this.nh405b = nh405b;
+    public void setcih405b(String cih405b) {
+        this.cih405b = cih405b;
     }
 
-    public String getnh405c() {
-        return nh405c;
+    public String getcih405c() {
+        return cih405c;
     }
 
-    public void setnh405c(String nh405c) {
-        this.nh405c = nh405c;
+    public void setcih405c(String cih405c) {
+        this.cih405c = cih405c;
     }
 
-    public String getnh405d() {
-        return nh405d;
+    public String getcih405d() {
+        return cih405d;
     }
 
-    public void setnh405d(String nh405d) {
-        this.nh405d = nh405d;
+    public void setcih405d(String cih405d) {
+        this.cih405d = cih405d;
     }
 
-    public String getnh405e() {
-        return nh405e;
+    public String getcih405e() {
+        return cih405e;
     }
 
-    public void setnh405e(String nh405e) {
-        this.nh405e = nh405e;
+    public void setcih405e(String cih405e) {
+        this.cih405e = cih405e;
     }
 
-    public String getnh40601() {
-        return nh40601;
+    public String getcih40601() {
+        return cih40601;
     }
 
-    public void setnh40601(String nh40601) {
-        this.nh40601 = nh40601;
+    public void setcih40601(String cih40601) {
+        this.cih40601 = cih40601;
     }
 
-    public String getnh40602() {
-        return nh40602;
+    public String getcih40602() {
+        return cih40602;
     }
 
-    public void setnh40602(String nh40602) {
-        this.nh40602 = nh40602;
+    public void setcih40602(String cih40602) {
+        this.cih40602 = cih40602;
     }
 
-    public String getnh40603() {
-        return nh40603;
+    public String getcih40603() {
+        return cih40603;
     }
 
-    public void setnh40603(String nh40603) {
-        this.nh40603 = nh40603;
+    public void setcih40603(String cih40603) {
+        this.cih40603 = cih40603;
     }
 
-    public String getnh40604() {
-        return nh40604;
+    public String getcih40604() {
+        return cih40604;
     }
 
-    public void setnh40604(String nh40604) {
-        this.nh40604 = nh40604;
+    public void setcih40604(String cih40604) {
+        this.cih40604 = cih40604;
     }
 
-    public String getnh40605() {
-        return nh40605;
+    public String getcih40605() {
+        return cih40605;
     }
 
-    public void setnh40605(String nh40605) {
-        this.nh40605 = nh40605;
+    public void setcih40605(String cih40605) {
+        this.cih40605 = cih40605;
     }
 
-    public String getnh40696() {
-        return nh40696;
+    public String getcih40696() {
+        return cih40696;
     }
 
-    public void setnh40696(String nh40696) {
-        this.nh40696 = nh40696;
+    public void setcih40696(String cih40696) {
+        this.cih40696 = cih40696;
     }
 
-    public String getnh40696x() {
-        return nh40696x;
+    public String getcih40696x() {
+        return cih40696x;
     }
 
-    public void setnh40696x(String nh40696x) {
-        this.nh40696x = nh40696x;
+    public void setcih40696x(String cih40696x) {
+        this.cih40696x = cih40696x;
     }
 
-    public String getnh501() {
-        return nh501;
+    public String getcih501() {
+        return cih501;
     }
 
-    public void setnh501(String nh501) {
-        this.nh501 = nh501;
+    public void setcih501(String cih501) {
+        this.cih501 = cih501;
     }
 
-    public String getnh50196x() {
-        return nh50196x;
+    public String getcih50196x() {
+        return cih50196x;
     }
 
-    public void setnh50196x(String nh50196x) {
-        this.nh50196x = nh50196x;
+    public void setcih50196x(String cih50196x) {
+        this.cih50196x = cih50196x;
     }
 
-    public String getnh502() {
-        return nh502;
+    public String getcih502() {
+        return cih502;
     }
 
-    public void setnh502(String nh502) {
-        this.nh502 = nh502;
+    public void setcih502(String cih502) {
+        this.cih502 = cih502;
     }
 
-    public String getnh503() {
-        return nh503;
+    public String getcih503() {
+        return cih503;
     }
 
-    public void setnh503(String nh503) {
-        this.nh503 = nh503;
+    public void setcih503(String cih503) {
+        this.cih503 = cih503;
     }
 
-    public String getnh504() {
-        return nh504;
+    public String getcih504() {
+        return cih504;
     }
 
-    public void setnh504(String nh504) {
-        this.nh504 = nh504;
+    public void setcih504(String cih504) {
+        this.cih504 = cih504;
     }
 
-    public String getnh505() {
-        return nh505;
+    public String getcih505() {
+        return cih505;
     }
 
-    public void setnh505(String nh505) {
-        this.nh505 = nh505;
+    public void setcih505(String cih505) {
+        this.cih505 = cih505;
     }
 
-    public String getnh601() {
-        return nh601;
+    public String getcih601() {
+        return cih601;
     }
 
-    public void setnh601(String nh601) {
-        this.nh601 = nh601;
+    public void setcih601(String cih601) {
+        this.cih601 = cih601;
     }
 
-    public String getnh602() {
-        return nh602;
+    public String getcih602() {
+        return cih602;
     }
 
-    public void setnh602(String nh602) {
-        this.nh602 = nh602;
+    public void setcih602(String cih602) {
+        this.cih602 = cih602;
     }
 
-    public String getnh603() {
-        return nh603;
+    public String getcih603() {
+        return cih603;
     }
 
-    public void setnh603(String nh603) {
-        this.nh603 = nh603;
+    public void setcih603(String cih603) {
+        this.cih603 = cih603;
     }
 
-    public String getnh604() {
-        return nh604;
+    public String getcih604() {
+        return cih604;
     }
 
-    public void setnh604(String nh604) {
-        this.nh604 = nh604;
+    public void setcih604(String cih604) {
+        this.cih604 = cih604;
     }
 
-    public String getnh605() {
-        return nh605;
+    public String getcih605() {
+        return cih605;
     }
 
-    public void setnh605(String nh605) {
-        this.nh605 = nh605;
+    public void setcih605(String cih605) {
+        this.cih605 = cih605;
     }
 
-    public String getnh606() {
-        return nh606;
+    public String getcih606() {
+        return cih606;
     }
 
-    public void setnh606(String nh606) {
-        this.nh606 = nh606;
+    public void setcih606(String cih606) {
+        this.cih606 = cih606;
     }
 
-    public String getnh607() {
-        return nh607;
+    public String getcih607() {
+        return cih607;
     }
 
-    public void setnh607(String nh607) {
-        this.nh607 = nh607;
+    public void setcih607(String cih607) {
+        this.cih607 = cih607;
     }
 
-    public String getnh608() {
-        return nh608;
+    public String getcih608() {
+        return cih608;
     }
 
-    public void setnh608(String nh608) {
-        this.nh608 = nh608;
+    public void setcih608(String cih608) {
+        this.cih608 = cih608;
     }
 
-    public String getnh609() {
-        return nh609;
+    public String getcih609() {
+        return cih609;
     }
 
-    public void setnh609(String nh609) {
-        this.nh609 = nh609;
+    public void setcih609(String cih609) {
+        this.cih609 = cih609;
     }
 
-    public String getnh701() {
-        return nh701;
+    public String getcih701() {
+        return cih701;
     }
 
-    public void setnh701(String nh701) {
-        this.nh701 = nh701;
+    public void setcih701(String cih701) {
+        this.cih701 = cih701;
     }
 
-    public String getnh702() {
-        return nh702;
+    public String getcih702() {
+        return cih702;
     }
 
-    public void setnh702(String nh702) {
-        this.nh702 = nh702;
+    public void setcih702(String cih702) {
+        this.cih702 = cih702;
     }
 
-    public String getnh801() {
-        return nh801;
+    public String getcih801() {
+        return cih801;
     }
 
-    public void setnh801(String nh801) {
-        this.nh801 = nh801;
+    public void setcih801(String cih801) {
+        this.cih801 = cih801;
     }
 
-    public String getnh802() {
-        return nh802;
+    public String getcih802() {
+        return cih802;
     }
 
-    public void setnh802(String nh802) {
-        this.nh802 = nh802;
+    public void setcih802(String cih802) {
+        this.cih802 = cih802;
     }
 }

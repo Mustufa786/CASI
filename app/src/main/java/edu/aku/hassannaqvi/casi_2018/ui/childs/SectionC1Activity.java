@@ -296,11 +296,11 @@ public class SectionC1Activity extends AddMember_MenuActivity implements TextWat
         if (!isNA) {
             binding.txtCounter.setVisibility(View.VISIBLE);
             binding.txtCounter.setText("Child " + counter + " out of " + counterPerMom +
-                    "\n\n " + SectionB1Activity.wraName + " : " + getString(R.string.nh212a));
+                    "\n\n " + SectionB1Activity.wraName + " : " + getString(R.string.cih212a));
         } else {
             binding.txtCounter.setVisibility(View.GONE);
             binding.txtCounter.setText("Child " + counter + " out of " + counterPerNA
-                    + "\n\n " + motherName + " : " + getString(R.string.nh212a));
+                    + "\n\n " + motherName + " : " + getString(R.string.cih212a));
 
 
         }
@@ -348,9 +348,9 @@ public class SectionC1Activity extends AddMember_MenuActivity implements TextWat
             MainApp.cc.setClusterno(jsonC1.getCluster_no());
             MainApp.cc.setHhno(jsonC1.getHhno());
 
-            if (!jsonC1.getnh11801().equals("0")) {
+            if (!jsonC1.getcih11801().equals("0")) {
                 binding.na11801.check(
-                        jsonC1.getnh11801().equals("1") ? binding.na11801a.getId() :
+                        jsonC1.getcih11801().equals("1") ? binding.na11801a.getId() :
                                 binding.na11801b.getId()
                 );
             }

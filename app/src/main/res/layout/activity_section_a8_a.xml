@@ -53,7 +53,7 @@
                 android:orientation="vertical">
 
                 <CheckBox
-                    android:id="@+id/nh7aFlag"
+                    android:id="@+id/cih7aFlag"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/_10sdp"
@@ -61,17 +61,17 @@
                     android:textColor="@color/red"
                     android:visibility="gone" />
 
-                <!--nh101-->
+                <!--cih101-->
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/colorPrimary"
-                    android:text="@string/nh7a02"
+                    android:text="@string/cih7a02"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/white" />
 
                 <Spinner
-                    android:id="@+id/nh7a02"
+                    android:id="@+id/cih7a02"
                     style="@style/Widget.AppCompat.Spinner.Underlined"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -79,7 +79,7 @@
                     android:gravity="center" />
 
                 <TextView
-                    android:id="@+id/nh7a02a"
+                    android:id="@+id/cih7a02a"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/black_overlay"
@@ -92,7 +92,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:background="@color/colorPrimary"
-                    android:text="@string/nh7a03"
+                    android:text="@string/cih7a03"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/white" />
 
@@ -102,24 +102,24 @@
                     android:orientation="horizontal">
 
                     <EditText
-                        android:id="@+id/nh7a03y"
+                        android:id="@+id/cih7a03y"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="2dp"
                         android:layout_marginTop="5dp"
                         android:layout_weight="1"
-                        android:hint="@string/nh7a03y"
+                        android:hint="@string/cih7a03y"
                         android:inputType="number"
                         android:maxLength="2" />
 
 
                     <EditText
-                        android:id="@+id/nh7a03m"
+                        android:id="@+id/cih7a03m"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:layout_weight="1"
-                        android:hint="@string/nh7a03m"
+                        android:hint="@string/cih7a03m"
                         android:inputType="number"
                         android:maxLength="2" />
 
@@ -130,7 +130,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:background="@color/colorPrimary"
-                    android:text="@string/nh7a04"
+                    android:text="@string/cih7a04"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/white" />
 
@@ -141,77 +141,77 @@
                     android:orientation="vertical">
 
                     <CheckBox
-                        android:id="@+id/nh7a04a"
+                        android:id="@+id/cih7a04a"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="1dp"
-                        android:text="@string/nh7a04a" />
+                        android:text="@string/cih7a04a" />
 
                     <CheckBox
-                        android:id="@+id/nh7a04b"
+                        android:id="@+id/cih7a04b"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="1dp"
-                        android:text="@string/nh7a04b" />
+                        android:text="@string/cih7a04b" />
 
                     <CheckBox
-                        android:id="@+id/nh7a04c"
+                        android:id="@+id/cih7a04c"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="1dp"
-                        android:text="@string/nh7a04c" />
+                        android:text="@string/cih7a04c" />
 
                     <CheckBox
-                        android:id="@+id/nh7a04d"
+                        android:id="@+id/cih7a04d"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="1dp"
-                        android:text="@string/nh7a04d" />
+                        android:text="@string/cih7a04d" />
 
                     <CheckBox
-                        android:id="@+id/nh7a04e"
+                        android:id="@+id/cih7a04e"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="1dp"
-                        android:text="@string/nh7a04e" />
+                        android:text="@string/cih7a04e" />
 
                     <CheckBox
-                        android:id="@+id/nh7a04f"
+                        android:id="@+id/cih7a04f"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="1dp"
-                        android:text="@string/nh7a04f" />
+                        android:text="@string/cih7a04f" />
 
                     <CheckBox
-                        android:id="@+id/nh7a04g"
+                        android:id="@+id/cih7a04g"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="1dp"
-                        android:text="@string/nh7a04g" />
+                        android:text="@string/cih7a04g" />
 
                     <CheckBox
-                        android:id="@+id/nh7a04h"
+                        android:id="@+id/cih7a04h"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="1dp"
-                        android:text="@string/nh7a04h" />
+                        android:text="@string/cih7a04h" />
 
                     <CheckBox
-                        android:id="@+id/nh7a04i"
+                        android:id="@+id/cih7a04i"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="1dp"
-                        android:text="@string/nh7a04i" />
+                        android:text="@string/cih7a04i" />
 
                     <CheckBox
-                        android:id="@+id/nh7a04j"
+                        android:id="@+id/cih7a04j"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="1dp"
-                        android:text="@string/nh7a04j" />
+                        android:text="@string/cih7a04j" />
 
                     <CheckBox
-                        android:id="@+id/nh7a0496"
+                        android:id="@+id/cih7a0496"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="1dp"
@@ -219,14 +219,14 @@
 
 
                     <EditText
-                        android:id="@+id/nh7a0496x"
+                        android:id="@+id/cih7a0496x"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
-                        android:enabled='@{nh7a0496.checked ? true : false}'
+                        android:enabled='@{cih7a0496.checked ? true : false}'
                         android:hint="@string/other"
-                        android:text='@{nh7a0496.checked ? nh7a0496x.getText.toString : ""}' />
+                        android:text='@{cih7a0496.checked ? cih7a0496x.getText.toString : ""}' />
                 </LinearLayout>
 
 
@@ -235,12 +235,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:background="@color/colorPrimary"
-                    android:text="@string/nh7a05"
+                    android:text="@string/cih7a05"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/white" />
 
                 <EditText
-                    android:id="@+id/nh7a05"
+                    android:id="@+id/cih7a05"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
@@ -253,12 +253,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:background="@color/colorPrimary"
-                    android:text="@string/nh7a06"
+                    android:text="@string/cih7a06"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/white" />
 
                 <EditText
-                    android:id="@+id/nh7a06"
+                    android:id="@+id/cih7a06"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"

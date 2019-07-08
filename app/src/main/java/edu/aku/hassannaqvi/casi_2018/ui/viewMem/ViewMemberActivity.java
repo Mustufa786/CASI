@@ -361,7 +361,7 @@ public class ViewMemberActivity extends MenuActivity {
 
     public void BtnCheckEnm() {
 
-        if (ValidatorClass.EmptyTextBox(this, binding.chckenumblock, getString(R.string.nh102))) {
+        if (ValidatorClass.EmptyTextBox(this, binding.chckenumblock, getString(R.string.cih102))) {
 
             EnumBlockContract enumBlockContract = db.getEnumBlock(binding.chckenumblock.getText().toString());
             if (enumBlockContract != null) {

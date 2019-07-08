@@ -82,13 +82,13 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
 
         if (editFormFlag) {
 
-            binding.nh102.setText(getIntent().getStringExtra("clusterNo"));
-            binding.nh102.setEnabled(false);
+            binding.cih102.setText(getIntent().getStringExtra("clusterNo"));
+            binding.cih102.setEnabled(false);
             binding.checkClusterBtn.setEnabled(false);
             binding.checkClusterBtn.setBackgroundColor(getResources().getColor(R.color.red));
             BtnCheckEnm();
-            binding.nh108.setText(getIntent().getStringExtra("hhNo"));
-            binding.nh108.setEnabled(false);
+            binding.cih108.setText(getIntent().getStringExtra("hhNo"));
+            binding.cih108.setEnabled(false);
             BtnCheckHH();
             binding.checkHHBtn.setEnabled(false);
             binding.checkHHBtn.setBackgroundColor(getResources().getColor(R.color.red));
@@ -105,8 +105,8 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
 
     public void AutoCompleteFields() {
 
-        MainApp.fc = db.getPressedForms(binding.nh102.getText().toString()
-                , binding.nh108.getText().toString());
+        MainApp.fc = db.getPressedForms(binding.cih102.getText().toString()
+                , binding.cih108.getText().toString());
 
         if (MainApp.fc != null) {
 
@@ -118,28 +118,28 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
                 binding.newHHheadname.setText(jsonA1.getHhheadpresentnew());
             }
 
-            binding.nh101.setText(jsonA1.getnh101());
-            binding.nh103.setText(jsonA1.getnh103());
-            binding.nh104.setText(jsonA1.getnh104());
-            binding.nh105.setText(jsonA1.getnh105());
-            binding.nh106.setText(jsonA1.getnh106());
+            binding.cih101.setText(jsonA1.getcih101());
+            binding.cih103.setText(jsonA1.getcih103());
+            binding.cih104.setText(jsonA1.getcih104());
+            binding.cih105.setText(jsonA1.getcih105());
+            binding.cih106.setText(jsonA1.getcih106());
 
-            binding.nh113.setText(jsonA1.getnh113());
-            binding.nh115.setText(jsonA1.getnh115());
-            binding.nh213.setText(jsonA1.getnh213());
+            binding.cih113.setText(jsonA1.getcih113());
+            binding.cih115.setText(jsonA1.getcih115());
+            binding.cih213.setText(jsonA1.getcih213());
 
-            if (!jsonA1.getnh11801().equals("0")) {
+            if (!jsonA1.getcih11801().equals("0")) {
                 binding.na11801.check(
-                        jsonA1.getnh11801().equals("1") ? binding.na11801a.getId() :
+                        jsonA1.getcih11801().equals("1") ? binding.na11801a.getId() :
                                 binding.na11801b.getId()
                 );
 
                 binding.na11801b.setEnabled(false);
             }
 
-           /* if (!jsonA1.getnh11802().equals("0")) {
+           /* if (!jsonA1.getcih11802().equals("0")) {
                 binding.na11802.check(
-                        jsonA1.getnh11802().equals("1") ? binding.na11802a.getId() :
+                        jsonA1.getcih11802().equals("1") ? binding.na11802a.getId() :
                                 binding.na11802b.getId()
                 );
 
@@ -199,7 +199,7 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
 
 //        Listener
 
-        binding.nh102.addTextChangedListener(new TextWatcher() {
+        binding.cih102.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
@@ -207,8 +207,8 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                binding.nh108.setText(null);
-                binding.fldGrpnh101.setVisibility(View.GONE);
+                binding.cih108.setText(null);
+                binding.fldGrpcih101.setVisibility(View.GONE);
             }
 
             @Override
@@ -227,11 +227,11 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
 
 
 //        HH listener
-        binding.nh108.addTextChangedListener(new TextWatcher() {
+        binding.cih108.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
-                binding.nh108.setInputType(InputType.TYPE_CLASS_NUMBER);
+                binding.cih108.setInputType(InputType.TYPE_CLASS_NUMBER);
                 length = charSequence.toString().length();
 
             }
@@ -242,12 +242,12 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
                 clearFields();
 
 
-                if (!binding.nh108.getText().toString().isEmpty() && binding.nh108.getText().toString().length() == 4) {
-                    if (binding.nh108.getText().toString().substring(0, 3).matches("[0-9]+")) {
+                if (!binding.cih108.getText().toString().isEmpty() && binding.cih108.getText().toString().length() == 4) {
+                    if (binding.cih108.getText().toString().substring(0, 3).matches("[0-9]+")) {
                         if (length < 5) {
-                            binding.nh108.setText(binding.nh108.getText().toString() + "-");
-                            binding.nh108.setSelection(binding.nh108.getText().length());
-                            //binding.nh108.setInputType(InputType.TYPE_TEXT_FLAG_CAP_CHARACTERS);
+                            binding.cih108.setText(binding.cih108.getText().toString() + "-");
+                            binding.cih108.setSelection(binding.cih108.getText().length());
+                            //binding.cih108.setInputType(InputType.TYPE_TEXT_FLAG_CAP_CHARACTERS);
                         }
 
                     }
@@ -263,25 +263,25 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
         });
 
         if (MainApp.cluster_no.equals("")) {
-            binding.nh102.setText(null);
+            binding.cih102.setText(null);
         } else {
-            binding.nh102.setText(MainApp.cluster_no);
+            binding.cih102.setText(MainApp.cluster_no);
 
-            EnumBlockContract enumBlockContract = db.getEnumBlock(binding.nh102.getText().toString());
+            EnumBlockContract enumBlockContract = db.getEnumBlock(binding.cih102.getText().toString());
             if (enumBlockContract != null) {
                 String selected = enumBlockContract.getGeoarea();
                 if (!selected.equals("")) {
 
                     String[] selSplit = selected.split("\\|");
 
-                    binding.nh103.setText(selSplit[0]);
-                    binding.nh104.setText(selSplit[1].equals("") ? "----" : selSplit[1]);
-                    binding.nh105.setText(selSplit[2].equals("") ? "----" : selSplit[2]);
-                    binding.nh106.setText(selSplit[3]);
-                    binding.nh107.setText(enumBlockContract.getEbcode());
+                    binding.cih103.setText(selSplit[0]);
+                    binding.cih104.setText(selSplit[1].equals("") ? "----" : selSplit[1]);
+                    binding.cih105.setText(selSplit[2].equals("") ? "----" : selSplit[2]);
+                    binding.cih106.setText(selSplit[3]);
+                    binding.cih107.setText(enumBlockContract.getEbcode());
 
-                    binding.fldGrpnh101.setVisibility(View.VISIBLE);
-                    MainApp.cluster_no = binding.nh102.getText().toString();
+                    binding.fldGrpcih101.setVisibility(View.VISIBLE);
+                    MainApp.cluster_no = binding.cih102.getText().toString();
 
                 }
             }
@@ -294,15 +294,15 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
     }
 
     public void clearFields() {
-        binding.fldGrpnh110.setVisibility(View.GONE);
+        binding.fldGrpcih110.setVisibility(View.GONE);
 
         binding.hhName.setText(null);
         binding.newHHheadname.setText(null);
         binding.checkHHHeadpresent.setChecked(false);
-        // binding.nh110.setText(null);
-        binding.nh113.setText(null);
-        binding.nh115.setText(null);
-        binding.nh213.setText(null);
+        // binding.cih110.setText(null);
+        binding.cih113.setText(null);
+        binding.cih115.setText(null);
+        binding.cih213.setText(null);
         binding.na11801.clearCheck();
         //binding.na11802.clearCheck();
     }
@@ -418,30 +418,30 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
 
         //Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
 
-//        nh101
-        if (!ValidatorClass.EmptyTextBox(this, binding.nh101, getString(R.string.nh101))) {
+//        cih101
+        if (!ValidatorClass.EmptyTextBox(this, binding.cih101, getString(R.string.cih101))) {
             return false;
         }
 
-//        nh102
-        if (!ValidatorClass.EmptyTextBox(this, binding.nh102, getString(R.string.nh102))) {
+//        cih102
+        if (!ValidatorClass.EmptyTextBox(this, binding.cih102, getString(R.string.cih102))) {
             return false;
         }
 
-//        nh108
+//        cih108
 
-        if (!binding.nh102.getText().toString().isEmpty()) {
+        if (!binding.cih102.getText().toString().isEmpty()) {
 
-            if (binding.nh108.getText().toString().length() == 8) {
-                String[] str = binding.nh108.getText().toString().split("-");
-                if (str.length > 2 || binding.nh108.getText().toString().charAt(4) != '-' || !str[0].matches("[0-9]+")
+            if (binding.cih108.getText().toString().length() == 8) {
+                String[] str = binding.cih108.getText().toString().split("-");
+                if (str.length > 2 || binding.cih108.getText().toString().charAt(4) != '-' || !str[0].matches("[0-9]+")
                         || !str[1].matches("[0-9]+")) {
-                    binding.nh108.setError("Wrong presentation!!");
+                    binding.cih108.setError("Wrong presentation!!");
                     return false;
                 }
             } else {
-                //Toast.makeText(this, "Invalid length: " + getString(R.string.nh108), Toast.LENGTH_SHORT).show();
-                binding.nh108.setError("Invalid length");
+                //Toast.makeText(this, "Invalid length: " + getString(R.string.cih108), Toast.LENGTH_SHORT).show();
+                binding.cih108.setError("Invalid length");
                 return false;
             }
         }
@@ -456,22 +456,22 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
             binding.newHHheadname.setError(null);
         }
 
-//        nh113
+//        cih113
         if (!flag) {
-            if (!ValidatorClass.EmptyTextBox(this, binding.nh113, getString(R.string.nh113))) {
+            if (!ValidatorClass.EmptyTextBox(this, binding.cih113, getString(R.string.cih113))) {
                 return false;
             }
-//        nh115
-            if (!ValidatorClass.EmptyTextBox(this, binding.nh115, getString(R.string.nh115))) {
-                return false;
-            }
-
-            if (!ValidatorClass.RangeTextBox(this, binding.nh115, 18, 99, getString(R.string.nh115), "age")) {
+//        cih115
+            if (!ValidatorClass.EmptyTextBox(this, binding.cih115, getString(R.string.cih115))) {
                 return false;
             }
 
-//        nh213
-            if (!ValidatorClass.EmptyTextBox(this, binding.nh213, getString(R.string.nh213))) {
+            if (!ValidatorClass.RangeTextBox(this, binding.cih115, 18, 99, getString(R.string.cih115), "age")) {
+                return false;
+            }
+
+//        cih213
+            if (!ValidatorClass.EmptyTextBox(this, binding.cih213, getString(R.string.cih213))) {
                 return false;
             }
 
@@ -503,8 +503,8 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
                     Settings.Secure.ANDROID_ID));
             MainApp.fc.setAppversion(MainApp.versionName + "." + MainApp.versionCode);
             MainApp.fc.setRespLineNo(MainApp.lineNo);
-            MainApp.fc.setClusterNo(binding.nh102.getText().toString());
-            MainApp.fc.setHhNo(binding.nh108.getText().toString().toUpperCase());
+            MainApp.fc.setClusterNo(binding.cih102.getText().toString());
+            MainApp.fc.setHhNo(binding.cih108.getText().toString().toUpperCase());
 
             setGPS(); // Set GPS
         } else {
@@ -535,29 +535,29 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
         sA1.put("hhss", MainApp.selectedHead.getSelStructure());
         sA1.put("hhheadpresent", binding.checkHHHeadpresent.isChecked() ? "1" : "2");
         sA1.put("hhheadpresentnew", binding.newHHheadname.getText().toString());
-        sA1.put("enumNo", binding.nh107.getText().toString());
+        sA1.put("enumNo", binding.cih107.getText().toString());
 
-        sA1.put("nh101", binding.nh101.getText().toString());
+        sA1.put("cih101", binding.cih101.getText().toString());
 
-        sA1.put("nh103", binding.nh103.getText().toString());
-        sA1.put("nh104", binding.nh104.getText().toString());
-        sA1.put("nh105", binding.nh105.getText().toString());
-        sA1.put("nh106", binding.nh106.getText().toString());
+        sA1.put("cih103", binding.cih103.getText().toString());
+        sA1.put("cih104", binding.cih104.getText().toString());
+        sA1.put("cih105", binding.cih105.getText().toString());
+        sA1.put("cih106", binding.cih106.getText().toString());
 
 
-        sA1.put("nh113", binding.nh113.getText().toString());
-        sA1.put("nh115", binding.nh115.getText().toString());
+        sA1.put("cih113", binding.cih113.getText().toString());
+        sA1.put("cih115", binding.cih115.getText().toString());
 
-        sA1.put("nh213", binding.nh213.getText().toString());
+        sA1.put("cih213", binding.cih213.getText().toString());
 
-        /*sA1.put("nh11701blood", MainApp.selectedHead.getSelStructure());
-        sA1.put("nh11702urine", MainApp.selectedHead.getSelStructure());
-        sA1.put("nh11703water", MainApp.selectedHead.getSelStructure());
+        /*sA1.put("cih11701blood", MainApp.selectedHead.getSelStructure());
+        sA1.put("cih11702urine", MainApp.selectedHead.getSelStructure());
+        sA1.put("cih11703water", MainApp.selectedHead.getSelStructure());
 */
-        sA1.put("nh11801", binding.na11801a.isChecked() ? "1"
+        sA1.put("cih11801", binding.na11801a.isChecked() ? "1"
                 : binding.na11801b.isChecked() ? "2" : "0");
 
-        /*sA1.put("nh11802", binding.na11802a.isChecked() ? "1"
+        /*sA1.put("cih11802", binding.na11802a.isChecked() ? "1"
                 : binding.na11802b.isChecked() ? "2" : "0");
 */
         MainApp.fc.setsA1(String.valueOf(sA1));
@@ -627,12 +627,12 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
 
     public void BtnCheckHH() {
 
-        if (!binding.nh102.getText().toString().trim().isEmpty() && !binding.nh108.getText().toString().trim().isEmpty()) {
+        if (!binding.cih102.getText().toString().trim().isEmpty() && !binding.cih108.getText().toString().trim().isEmpty()) {
 
             if (editFormFlag) {
                 setupViews();
             } else {
-                FormsContract partialMem = db.getPartialForms(binding.nh102.getText().toString(), binding.nh108.getText().toString(), "1");
+                FormsContract partialMem = db.getPartialForms(binding.cih102.getText().toString(), binding.cih108.getText().toString(), "1");
 
                 if (partialMem != null) {
                     AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
@@ -649,8 +649,8 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
                                             startActivity(new Intent(SectionA1Activity.this, ViewMemberActivity.class)
                                                     .putExtra("comingBack", true)
                                                     .putExtra("flagEdit", false)
-                                                    .putExtra("cluster", binding.nh102.getText().toString())
-                                                    .putExtra("hhno", binding.nh108.getText().toString()));
+                                                    .putExtra("cluster", binding.cih102.getText().toString())
+                                                    .putExtra("hhno", binding.cih108.getText().toString()));
                                         }
                                     })
                             .setNegativeButton("۔دوبارہ فارم شروح کرنا ہے",
@@ -674,7 +674,7 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
     }
 
     public void setupViews() {
-        selected = db.getAllBLRandom(binding.nh102.getText().toString(), binding.nh108.getText().toString().toUpperCase());
+        selected = db.getAllBLRandom(binding.cih102.getText().toString(), binding.cih108.getText().toString().toUpperCase());
 
         if (selected.size() != 0) {
 
@@ -686,7 +686,7 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
 
             binding.hhName.setText(MainApp.selectedHead.getHhhead().toUpperCase());
 
-            binding.fldGrpnh110.setVisibility(View.VISIBLE);
+            binding.fldGrpcih110.setVisibility(View.VISIBLE);
 
                 /*if (MainApp.selectedHead.getSelStructure().equals("1")) {
                     binding.na11802a.setEnabled(true);
@@ -709,10 +709,10 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
 
     public void BtnCheckEnm() {
 
-        if (editFormFlag || ValidatorClass.EmptyTextBox(this, binding.nh101, getString(R.string.nh101)) && ValidatorClass.EmptyTextBox(this, binding.nh102, getString(R.string.nh102))) {
+        if (editFormFlag || ValidatorClass.EmptyTextBox(this, binding.cih101, getString(R.string.cih101)) && ValidatorClass.EmptyTextBox(this, binding.cih102, getString(R.string.cih102))) {
 
             Boolean loginFlag = false;
-            int clus = Integer.valueOf(binding.nh102.getText().toString());
+            int clus = Integer.valueOf(binding.cih102.getText().toString());
             if (clus < 6000) {
                 loginFlag = !(MainApp.userName.equals("test1234") || MainApp.userName.equals("dmu@aku") || MainApp.userName.substring(0, 4).equals("user"));
             } else {
@@ -720,25 +720,25 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
             }
 
             if (loginFlag) {
-                EnumBlockContract enumBlockContract = db.getEnumBlock(binding.nh102.getText().toString());
+                EnumBlockContract enumBlockContract = db.getEnumBlock(binding.cih102.getText().toString());
                 if (enumBlockContract != null) {
                     String selected = enumBlockContract.getGeoarea();
                     if (!selected.equals("")) {
 
                         String[] selSplit = selected.split("\\|");
 
-                        binding.nh103.setText(selSplit[0]);
-                        binding.nh104.setText(selSplit[1].equals("") ? "----" : selSplit[1]);
-                        binding.nh105.setText(selSplit[2].equals("") ? "----" : selSplit[2]);
-                        binding.nh106.setText(selSplit[3]);
-                        binding.nh107.setText(enumBlockContract.getEbcode());
+                        binding.cih103.setText(selSplit[0]);
+                        binding.cih104.setText(selSplit[1].equals("") ? "----" : selSplit[1]);
+                        binding.cih105.setText(selSplit[2].equals("") ? "----" : selSplit[2]);
+                        binding.cih106.setText(selSplit[3]);
+                        binding.cih107.setText(enumBlockContract.getEbcode());
 
-                        binding.fldGrpnh101.setVisibility(View.VISIBLE);
-                        MainApp.cluster_no = binding.nh102.getText().toString();
+                        binding.fldGrpcih101.setVisibility(View.VISIBLE);
+                        MainApp.cluster_no = binding.cih102.getText().toString();
 
                     }
                 } else {
-                    binding.nh108.setText(null);
+                    binding.cih108.setText(null);
                     Toast.makeText(this, "Sorry cluster not found!!", Toast.LENGTH_SHORT).show();
                 }
             } else {

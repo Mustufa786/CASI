@@ -6,70 +6,70 @@ package edu.aku.hassannaqvi.casi_2018.JSONModels;
 
 public class JSONACountModelClass {
 
-    private String nh2tm = "";
-    private String nh2tf = "";
-    private String nh2adm = "";
-    private String nh2adf = "";
-    private String nh2u5b = "";
-    private String nh2u5g = "";
-    private String nh2mw = "";
+    private String cih2tm = "";
+    private String cih2tf = "";
+    private String cih2adm = "";
+    private String cih2adf = "";
+    private String cih2u5b = "";
+    private String cih2u5g = "";
+    private String cih2mw = "";
 
     public JSONACountModelClass() {
     }
 
-    public String getnh2tm() {
-        return nh2tm;
+    public String getcih2tm() {
+        return cih2tm;
     }
 
-    public void setnh2tm(String nh2tm) {
-        this.nh2tm = nh2tm;
+    public void setcih2tm(String cih2tm) {
+        this.cih2tm = cih2tm;
     }
 
-    public String getnh2tf() {
-        return nh2tf;
+    public String getcih2tf() {
+        return cih2tf;
     }
 
-    public void setnh2tf(String nh2tf) {
-        this.nh2tf = nh2tf;
+    public void setcih2tf(String cih2tf) {
+        this.cih2tf = cih2tf;
     }
 
-    public String getnh2adm() {
-        return nh2adm;
+    public String getcih2adm() {
+        return cih2adm;
     }
 
-    public void setnh2adm(String nh2adm) {
-        this.nh2adm = nh2adm;
+    public void setcih2adm(String cih2adm) {
+        this.cih2adm = cih2adm;
     }
 
-    public String getnh2adf() {
-        return nh2adf;
+    public String getcih2adf() {
+        return cih2adf;
     }
 
-    public void setnh2adf(String nh2adf) {
-        this.nh2adf = nh2adf;
+    public void setcih2adf(String cih2adf) {
+        this.cih2adf = cih2adf;
     }
 
-    public String getnh2u5b() {
-        return nh2u5b;
+    public String getcih2u5b() {
+        return cih2u5b;
     }
 
-    public void setnh2u5b(String nh2u5b) {
-        this.nh2u5b = nh2u5b;
+    public void setcih2u5b(String cih2u5b) {
+        this.cih2u5b = cih2u5b;
     }
 
-    public String getnh2u5g() {
-        return nh2u5g;
+    public String getcih2u5g() {
+        return cih2u5g;
     }
 
-    public void setnh2u5g(String nh2u5g) {
-        this.nh2u5g = nh2u5g;
+    public void setcih2u5g(String cih2u5g) {
+        this.cih2u5g = cih2u5g;
     }
 
-    public String getnh2mw() {
-        return nh2mw;
+    public String getcih2mw() {
+        return cih2mw;
     }
 
-    public void setnh2mw(String nh2mw) {
-        this.nh2mw = nh2mw;
+    public void setcih2mw(String cih2mw) {
+        this.cih2mw = cih2mw;
     }
 }

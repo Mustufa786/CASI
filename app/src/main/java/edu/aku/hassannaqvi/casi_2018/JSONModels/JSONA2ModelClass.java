@@ -9,25 +9,25 @@ public class JSONA2ModelClass {
     private String cluster_no = "";
     private String hhno = "";
     private String resp = "";
-    private String nh2SerialNo = "";
-    private String nh202 = "";
-    private String nh203 = "";
-    private String nh204 = "";
-    private String nh2doby = "";
-    private String nh2dobm = "";
-    private String nh2dobd = "";
-    private String nh20598 = "";
-    private String nh206y = "";
-    private String nh206m = "";
-    private String nh206d = "";
+    private String cih2SerialNo = "";
+    private String cih202 = "";
+    private String cih203 = "";
+    private String cih204 = "";
+    private String cih2doby = "";
+    private String cih2dobm = "";
+    private String cih2dobd = "";
+    private String cih20598 = "";
+    private String cih206y = "";
+    private String cih206m = "";
+    private String cih206d = "";
     private String age = "";
-    private String nh207 = "";
-    private String nh208 = "";
-    private String nh209 = "";
-    private String nh20996x = "";
-    private String nh210 = "";
-    private String nh211 = "";
-    private String nh212 = "";
+    private String cih207 = "";
+    private String cih208 = "";
+    private String cih209 = "";
+    private String cih20996x = "";
+    private String cih210 = "";
+    private String cih211 = "";
+    private String cih212 = "";
 
     public JSONA2ModelClass() {
     }
@@ -56,92 +56,92 @@ public class JSONA2ModelClass {
         this.resp = resp;
     }
 
-    public String getnh2SerialNo() {
-        return nh2SerialNo;
+    public String getcih2SerialNo() {
+        return cih2SerialNo;
     }
 
-    public void setnh2SerialNo(String nh2SerialNo) {
-        this.nh2SerialNo = nh2SerialNo;
+    public void setcih2SerialNo(String cih2SerialNo) {
+        this.cih2SerialNo = cih2SerialNo;
     }
 
-    public String getnh202() {
-        return nh202;
+    public String getcih202() {
+        return cih202;
     }
 
-    public void setnh202(String nh202) {
-        this.nh202 = nh202;
+    public void setcih202(String cih202) {
+        this.cih202 = cih202;
     }
 
-    public String getnh203() {
-        return nh203;
+    public String getcih203() {
+        return cih203;
     }
 
-    public void setnh203(String nh203) {
-        this.nh203 = nh203;
+    public void setcih203(String cih203) {
+        this.cih203 = cih203;
     }
 
-    public String getnh204() {
-        return nh204;
+    public String getcih204() {
+        return cih204;
     }
 
-    public void setnh204(String nh204) {
-        this.nh204 = nh204;
+    public void setcih204(String cih204) {
+        this.cih204 = cih204;
     }
 
-    public String getnh2doby() {
-        return nh2doby;
+    public String getcih2doby() {
+        return cih2doby;
     }
 
-    public void setnh2doby(String nh2doby) {
-        this.nh2doby = nh2doby;
+    public void setcih2doby(String cih2doby) {
+        this.cih2doby = cih2doby;
     }
 
-    public String getnh2dobm() {
-        return nh2dobm;
+    public String getcih2dobm() {
+        return cih2dobm;
     }
 
-    public void setnh2dobm(String nh2dobm) {
-        this.nh2dobm = nh2dobm;
+    public void setcih2dobm(String cih2dobm) {
+        this.cih2dobm = cih2dobm;
     }
 
-    public String getnh2dobd() {
-        return nh2dobd;
+    public String getcih2dobd() {
+        return cih2dobd;
     }
 
-    public void setnh2dobd(String nh2dobd) {
-        this.nh2dobd = nh2dobd;
+    public void setcih2dobd(String cih2dobd) {
+        this.cih2dobd = cih2dobd;
     }
 
-    public String getnh20598() {
-        return nh20598;
+    public String getcih20598() {
+        return cih20598;
     }
 
-    public void setnh20598(String nh20598) {
-        this.nh20598 = nh20598;
+    public void setcih20598(String cih20598) {
+        this.cih20598 = cih20598;
     }
 
-    public String getnh206y() {
-        return nh206y;
+    public String getcih206y() {
+        return cih206y;
     }
 
-    public void setnh206y(String nh206y) {
-        this.nh206y = nh206y;
+    public void setcih206y(String cih206y) {
+        this.cih206y = cih206y;
     }
 
-    public String getnh206m() {
-        return nh206m;
+    public String getcih206m() {
+        return cih206m;
     }
 
-    public void setnh206m(String nh206m) {
-        this.nh206m = nh206m;
+    public void setcih206m(String cih206m) {
+        this.cih206m = cih206m;
     }
 
-    public String getnh206d() {
-        return nh206d;
+    public String getcih206d() {
+        return cih206d;
     }
 
-    public void setnh206d(String nh206d) {
-        this.nh206d = nh206d;
+    public void setcih206d(String cih206d) {
+        this.cih206d = cih206d;
     }
 
     public String getAge() {
@@ -152,59 +152,59 @@ public class JSONA2ModelClass {
         this.age = age;
     }
 
-    public String getnh207() {
-        return nh207;
+    public String getcih207() {
+        return cih207;
     }
 
-    public void setnh207(String nh207) {
-        this.nh207 = nh207;
+    public void setcih207(String cih207) {
+        this.cih207 = cih207;
     }
 
-    public String getnh208() {
-        return nh208;
+    public String getcih208() {
+        return cih208;
     }
 
-    public void setnh208(String nh208) {
-        this.nh208 = nh208;
+    public void setcih208(String cih208) {
+        this.cih208 = cih208;
     }
 
-    public String getnh209() {
-        return nh209;
+    public String getcih209() {
+        return cih209;
     }
 
-    public void setnh209(String nh209) {
-        this.nh209 = nh209;
+    public void setcih209(String cih209) {
+        this.cih209 = cih209;
     }
 
-    public String getnh20996x() {
-        return nh20996x;
+    public String getcih20996x() {
+        return cih20996x;
     }
 
-    public void setnh20996x(String nh20996x) {
-        this.nh20996x = nh20996x;
+    public void setcih20996x(String cih20996x) {
+        this.cih20996x = cih20996x;
     }
 
-    public String getnh210() {
-        return nh210;
+    public String getcih210() {
+        return cih210;
     }
 
-    public void setnh210(String nh210) {
-        this.nh210 = nh210;
+    public void setcih210(String cih210) {
+        this.cih210 = cih210;
     }
 
-    public String getnh211() {
-        return nh211;
+    public String getcih211() {
+        return cih211;
     }
 
-    public void setnh211(String nh211) {
-        this.nh211 = nh211;
+    public void setcih211(String cih211) {
+        this.cih211 = cih211;
     }
 
-    public String getnh212() {
-        return nh212;
+    public String getcih212() {
+        return cih212;
     }
 
-    public void setnh212(String nh212) {
-        this.nh212 = nh212;
+    public void setcih212(String cih212) {
+        this.cih212 = cih212;
     }
 }

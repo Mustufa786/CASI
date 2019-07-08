@@ -34,13 +34,13 @@
                 android:gravity="center"
                 android:text="@string/na1heading"
                 android:textSize="40sp" />
-            <!--nh102-->
+            <!--cih102-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:background="@color/colorPrimary"
-                android:text="@string/nh102a"
+                android:text="@string/cih102a"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textColor="@android:color/white" />
 
@@ -50,13 +50,13 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/nh102"
+                    android:id="@+id/cih102"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="5dp"
                     android:layout_weight="60"
-                    android:hint="@string/nh102a"
+                    android:hint="@string/cih102a"
                     android:inputType="number"
                     android:maxLength="4" />
 
@@ -75,7 +75,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/fldGrpnh101"
+                android:id="@+id/fldGrpcih101"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -91,7 +91,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
-                        <!--nh103-->
+                        <!--cih103-->
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -100,13 +100,13 @@
                             android:layout_weight="1"
                             android:background="@color/colorPrimary"
                             android:gravity="center_horizontal|center_vertical"
-                            android:text="@string/nh103"
+                            android:text="@string/cih103"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white" />
 
 
                         <TextView
-                            android:id="@+id/nh103"
+                            android:id="@+id/cih103"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="13dp"
@@ -117,7 +117,7 @@
                             android:textColor="@color/colorPrimaryDark"
                             android:textSize="16sp" />
 
-                        <!--nh104-->
+                        <!--cih104-->
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -126,13 +126,13 @@
                             android:layout_weight="1"
                             android:background="@color/colorPrimary"
                             android:gravity="center_horizontal|center_vertical"
-                            android:text="@string/nh104"
+                            android:text="@string/cih104"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white" />
 
 
                         <TextView
-                            android:id="@+id/nh104"
+                            android:id="@+id/cih104"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="13dp"
@@ -155,7 +155,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
-                        <!--nh105-->
+                        <!--cih105-->
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -164,13 +164,13 @@
                             android:layout_weight="1"
                             android:background="@color/colorPrimary"
                             android:gravity="center_horizontal|center_vertical"
-                            android:text="@string/nh105"
+                            android:text="@string/cih105"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white" />
 
 
                         <TextView
-                            android:id="@+id/nh105"
+                            android:id="@+id/cih105"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
@@ -181,7 +181,7 @@
                             android:textColor="@color/colorPrimaryDark"
                             android:textSize="16sp" />
 
-                        <!--nh106-->
+                        <!--cih106-->
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -190,13 +190,13 @@
                             android:layout_weight="1"
                             android:background="@color/colorPrimary"
                             android:gravity="center_horizontal|center_vertical"
-                            android:text="@string/nh106"
+                            android:text="@string/cih106"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white" />
 
 
                         <TextView
-                            android:id="@+id/nh106"
+                            android:id="@+id/cih106"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="13dp"
@@ -210,13 +210,13 @@
 
                 </LinearLayout>
 
-                <!--nh108-->
+                <!--cih108-->
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:background="@color/colorPrimary"
-                    android:text="@string/nh108"
+                    android:text="@string/cih108"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/white" />
 
@@ -226,7 +226,7 @@
                     android:orientation="horizontal">
 
                     <EditText
-                        android:id="@+id/nh108"
+                        android:id="@+id/cih108"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"

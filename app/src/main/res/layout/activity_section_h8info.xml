@@ -35,7 +35,7 @@
                 android:layout_marginTop="2dp"
                 android:background="@color/colorPrimaryDark"
                 android:gravity="center"
-                android:text="@string/nh8heading"
+                android:text="@string/cih8heading"
                 android:visibility="gone" />
 
 
@@ -44,18 +44,18 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:background="@color/colorPrimary"
-                android:text="@string/nh801"
+                android:text="@string/cih801"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textColor="@android:color/white" />
 
             <RadioGroup
-                android:id="@+id/nh801"
+                android:id="@+id/cih801"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <RadioButton
-                    android:id="@+id/nh801a"
+                    android:id="@+id/cih801a"
                     style="@style/radiobutton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -65,7 +65,7 @@
 
 
                 <RadioButton
-                    android:id="@+id/nh801b"
+                    android:id="@+id/cih801b"
                     style="@style/radiobutton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -81,20 +81,20 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:background="@color/colorPrimary"
-                android:text="@string/nh802"
+                android:text="@string/cih802"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textColor="@android:color/white" />
 
             <EditText
-                android:id="@+id/nh802"
+                android:id="@+id/cih802"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="1dp"
-                android:enabled="@{nh801a.checked ? true : false}"
-                android:hint="@string/nh802"
+                android:enabled="@{cih801a.checked ? true : false}"
+                android:hint="@string/cih802"
                 android:inputType="number"
                 android:maxLength="2"
-                android:text='@{nh801a.checked ? nh802.getText.toString : ""}'
+                android:text='@{cih801a.checked ? cih802.getText.toString : ""}'
 
                 />
 

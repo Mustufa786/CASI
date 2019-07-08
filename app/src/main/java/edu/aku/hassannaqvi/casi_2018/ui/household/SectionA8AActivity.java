@@ -82,9 +82,9 @@ public class SectionA8AActivity extends AppCompatActivity {
 
         }
 
-        bi.nh7a02.setAdapter(new ArrayAdapter<>(this, R.layout.item_style, recpNames));
+        bi.cih7a02.setAdapter(new ArrayAdapter<>(this, R.layout.item_style, recpNames));
 
-        bi.nh7a02.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        bi.cih7a02.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 position = i;
@@ -133,64 +133,64 @@ public class SectionA8AActivity extends AppCompatActivity {
 
                 jsonA8A = JSONUtilClass.getModelFromJSON(recipientsContract.getsA8A(), JSONA8AModelClass.class);
 
-                bi.nh7a02.setVisibility(View.GONE);
+                bi.cih7a02.setVisibility(View.GONE);
 
-                bi.nh7a02a.setVisibility(View.VISIBLE);
-                bi.nh7a02a.setText(jsonA8A.getnh7a02().toUpperCase());
+                bi.cih7a02a.setVisibility(View.VISIBLE);
+                bi.cih7a02a.setText(jsonA8A.getcih7a02().toUpperCase());
 
                 //  bi.
-                bi.nh7a03y.setText(jsonA8A.getnh7a05y());
-                bi.nh7a03m.setText(jsonA8A.getnh7a06m());
+                bi.cih7a03y.setText(jsonA8A.getcih7a05y());
+                bi.cih7a03m.setText(jsonA8A.getcih7a06m());
 
-                if (!jsonA8A.getnh7a07a().equals("0")) {
-                    bi.nh7a04a.setChecked(true);
-
-                }
-                if (!jsonA8A.getnh7a07b().equals("0")) {
-                    bi.nh7a04b.setChecked(true);
+                if (!jsonA8A.getcih7a07a().equals("0")) {
+                    bi.cih7a04a.setChecked(true);
 
                 }
-                if (!jsonA8A.getnh7a07c().equals("0")) {
-                    bi.nh7a04c.setChecked(true);
+                if (!jsonA8A.getcih7a07b().equals("0")) {
+                    bi.cih7a04b.setChecked(true);
 
                 }
-                if (!jsonA8A.getnh7a07d().equals("0")) {
-                    bi.nh7a04d.setChecked(true);
+                if (!jsonA8A.getcih7a07c().equals("0")) {
+                    bi.cih7a04c.setChecked(true);
 
                 }
-                if (!jsonA8A.getnh7a07e().equals("0")) {
-                    bi.nh7a04e.setChecked(true);
+                if (!jsonA8A.getcih7a07d().equals("0")) {
+                    bi.cih7a04d.setChecked(true);
 
                 }
-                if (!jsonA8A.getnh7a07f().equals("0")) {
-                    bi.nh7a04f.setChecked(true);
+                if (!jsonA8A.getcih7a07e().equals("0")) {
+                    bi.cih7a04e.setChecked(true);
 
                 }
-                if (!jsonA8A.getnh7a07g().equals("0")) {
-                    bi.nh7a04g.setChecked(true);
+                if (!jsonA8A.getcih7a07f().equals("0")) {
+                    bi.cih7a04f.setChecked(true);
 
                 }
-                if (!jsonA8A.getnh7a07h().equals("0")) {
-                    bi.nh7a04h.setChecked(true);
+                if (!jsonA8A.getcih7a07g().equals("0")) {
+                    bi.cih7a04g.setChecked(true);
 
                 }
-                if (!jsonA8A.getnh7a07i().equals("0")) {
-                    bi.nh7a04i.setChecked(true);
+                if (!jsonA8A.getcih7a07h().equals("0")) {
+                    bi.cih7a04h.setChecked(true);
 
                 }
-                if (!jsonA8A.getnh7a0796().equals("0")) {
-                    bi.nh7a0496.setChecked(true);
-                    bi.nh7a0496x.setText(jsonA8A.getnh7a0796x());
+                if (!jsonA8A.getcih7a07i().equals("0")) {
+                    bi.cih7a04i.setChecked(true);
+
                 }
-                bi.nh7a05.setText(jsonA8A.getnh7a08());
+                if (!jsonA8A.getcih7a0796().equals("0")) {
+                    bi.cih7a0496.setChecked(true);
+                    bi.cih7a0496x.setText(jsonA8A.getcih7a0796x());
+                }
+                bi.cih7a05.setText(jsonA8A.getcih7a08());
 
-                bi.nh7a06.setText(jsonA8A.getnh7a09());
+                bi.cih7a06.setText(jsonA8A.getcih7a09());
 
-                if (jsonA8A.getnh7aFlag().equals("1")) {
-                    bi.nh7aFlag.setChecked(true);
+                if (jsonA8A.getcih7aFlag().equals("1")) {
+                    bi.cih7aFlag.setChecked(true);
                 }
 
-                bi.nh7aFlag.setVisibility(View.VISIBLE);
+                bi.cih7aFlag.setVisibility(View.VISIBLE);
 
                 break;
             }
@@ -287,11 +287,11 @@ public class SectionA8AActivity extends AppCompatActivity {
                 } else {
 
                     if (dataFlag) {
-                        recpNames.remove(bi.nh7a02.getSelectedItem().toString());
+                        recpNames.remove(bi.cih7a02.getSelectedItem().toString());
                         recpSerial.remove(recpSerial.get(position));
                     } else {
-                        recpNames.remove(jsonA8A.getnh7a02());
-                        recpSerial.remove(jsonA8A.getnh7a03());
+                        recpNames.remove(jsonA8A.getcih7a02());
+                        recpSerial.remove(jsonA8A.getcih7a03());
                     }
 
                     startActivity(new Intent(this, SectionA8AActivity.class).putExtra("flag", false));
@@ -317,7 +317,7 @@ public class SectionA8AActivity extends AppCompatActivity {
                     .putExtra("hhno", MainApp.fc.getHhNo())
             );
         } else {
-            if (ValidatorClass.EmptySpinner(this, bi.nh7a02, getString(R.string.nh7a02))) {
+            if (ValidatorClass.EmptySpinner(this, bi.cih7a02, getString(R.string.cih7a02))) {
                 try {
                     SaveDraft();
                 } catch (JSONException e) {
@@ -341,55 +341,55 @@ public class SectionA8AActivity extends AppCompatActivity {
         //Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
 
         if (!SectionA1Activity.editFormFlag) {
-            if (!ValidatorClass.EmptySpinner(this, bi.nh7a02, getString(R.string.nh7a02))) {
+            if (!ValidatorClass.EmptySpinner(this, bi.cih7a02, getString(R.string.cih7a02))) {
                 return false;
             }
         }
 
-        if (!ValidatorClass.EmptyTextBox(this, bi.nh7a03y, getString(R.string.nh7a03y))) {
+        if (!ValidatorClass.EmptyTextBox(this, bi.cih7a03y, getString(R.string.cih7a03y))) {
             return false;
         }
 
-        if (!ValidatorClass.EmptyTextBox(this, bi.nh7a03m, getString(R.string.nh7a03m))) {
+        if (!ValidatorClass.EmptyTextBox(this, bi.cih7a03m, getString(R.string.cih7a03m))) {
             return false;
         }
 
-        if (!ValidatorClass.RangeTextBox(this, bi.nh7a03m, 0, 11, getString(R.string.nh7a03m), " months")) {
+        if (!ValidatorClass.RangeTextBox(this, bi.cih7a03m, 0, 11, getString(R.string.cih7a03m), " months")) {
             return false;
         }
 
-        if (bi.nh7a03m.getText().toString().equals("0") && bi.nh7a03m.getText().toString().equals("0")) {
+        if (bi.cih7a03m.getText().toString().equals("0") && bi.cih7a03m.getText().toString().equals("0")) {
             Toast.makeText(this, "ERROR(invalid): " + "All can not be zero" + getString(R.string.na2age), Toast.LENGTH_LONG).show();
-            bi.nh7a03m.setError("All can not be zero");
-            bi.nh7a03y.setError("All can not be zero");
-            Log.i(SectionA2Activity.class.getSimpleName(), "nh703" + ": This data is Required!");
+            bi.cih7a03m.setError("All can not be zero");
+            bi.cih7a03y.setError("All can not be zero");
+            Log.i(SectionA2Activity.class.getSimpleName(), "cih703" + ": This data is Required!");
         } else {
-            bi.nh7a03y.setError(null);
-            bi.nh7a03m.setError(null);
+            bi.cih7a03y.setError(null);
+            bi.cih7a03m.setError(null);
         }
 
-        if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpna08a04check, bi.nh7a04a, getString(R.string.nh7a04))) {
+        if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpna08a04check, bi.cih7a04a, getString(R.string.cih7a04))) {
             return false;
         }
 
-        if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpna08a04check, bi.nh7a0496, bi.nh7a0496x, getString(R.string.nh7a04) + " - " + getString(R.string.other))) {
+        if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpna08a04check, bi.cih7a0496, bi.cih7a0496x, getString(R.string.cih7a04) + " - " + getString(R.string.other))) {
             return false;
         }
 
 
-        if (!ValidatorClass.EmptyTextBox(this, bi.nh7a05, getString(R.string.nh7a05))) {
+        if (!ValidatorClass.EmptyTextBox(this, bi.cih7a05, getString(R.string.cih7a05))) {
             return false;
         }
 
-        if (!ValidatorClass.RangeTextBox(this, bi.nh7a05, 1000, 99999, getString(R.string.nh7a05), " Rupees")) {
+        if (!ValidatorClass.RangeTextBox(this, bi.cih7a05, 1000, 99999, getString(R.string.cih7a05), " Rupees")) {
             return false;
         }
 
-        if (!ValidatorClass.EmptyTextBox(this, bi.nh7a06, getString(R.string.nh7a06))) {
+        if (!ValidatorClass.EmptyTextBox(this, bi.cih7a06, getString(R.string.cih7a06))) {
             return false;
         }
 
-        return ValidatorClass.RangeTextBox(this, bi.nh7a06, 0, Integer.valueOf(bi.nh7a05.getText().toString()), getString(R.string.nh7a06), " Rupees");
+        return ValidatorClass.RangeTextBox(this, bi.cih7a06, 0, Integer.valueOf(bi.cih7a05.getText().toString()), getString(R.string.cih7a06), " Rupees");
 
     }
 
@@ -410,47 +410,47 @@ public class SectionA8AActivity extends AppCompatActivity {
             MainApp.rc.setFMUID(fmcSelected.get_UID());
             MainApp.rc.setA8aSNo(String.valueOf(counter));
 
-            sA8a.put("nh7a04", fmcSelected.getName());
-            sA8a.put("nh7a03", fmcSelected.getSerialNo());
-            sA8a.put("nh7a02", bi.nh7a02.getSelectedItem().toString());
+            sA8a.put("cih7a04", fmcSelected.getName());
+            sA8a.put("cih7a03", fmcSelected.getSerialNo());
+            sA8a.put("cih7a02", bi.cih7a02.getSelectedItem().toString());
 //            sA8a.put("lineno", fmcSelected.getSerialNo());
 
         } else {
-            sA8a.put("edit_updatedate_nh7a", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
+            sA8a.put("edit_updatedate_cih7a", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
 
-            sA8a.put("nh7a04", jsonA8A.getnh7a04());
-            sA8a.put("nh7a03", jsonA8A.getnh7a03());
-            sA8a.put("nh7a02", jsonA8A.getnh7a02());
-//            sA8a.put("lineno", jsonA8A.getnh7a03());
+            sA8a.put("cih7a04", jsonA8A.getcih7a04());
+            sA8a.put("cih7a03", jsonA8A.getcih7a03());
+            sA8a.put("cih7a02", jsonA8A.getcih7a02());
+//            sA8a.put("lineno", jsonA8A.getcih7a03());
         }
 
        /* if (backPressed) {
             sA8a.put("updatedate_na8a", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
         }*/
 
-        sA8a.put("nh7aFlag", bi.nh7aFlag.isChecked() ? "1" : "2");
+        sA8a.put("cih7aFlag", bi.cih7aFlag.isChecked() ? "1" : "2");
 
         sA8a.put("cluster_no", MainApp.fc.getClusterNo());
         sA8a.put("hhno", MainApp.fc.getHhNo());
 
-        sA8a.put("nh7a05y", bi.nh7a03y.getText().toString());
+        sA8a.put("cih7a05y", bi.cih7a03y.getText().toString());
 
-        sA8a.put("nh7a06m", bi.nh7a03m.getText().toString());
+        sA8a.put("cih7a06m", bi.cih7a03m.getText().toString());
 
-        sA8a.put("nh7a07a", bi.nh7a04a.isChecked() ? "1" : "0");
-        sA8a.put("nh7a07b", bi.nh7a04b.isChecked() ? "2" : "0");
-        sA8a.put("nh7a07c", bi.nh7a04c.isChecked() ? "3" : "0");
-        sA8a.put("nh7a07d", bi.nh7a04d.isChecked() ? "4" : "0");
-        sA8a.put("nh7a07e", bi.nh7a04e.isChecked() ? "5" : "0");
-        sA8a.put("nh7a07f", bi.nh7a04f.isChecked() ? "6" : "0");
-        sA8a.put("nh7a07g", bi.nh7a04g.isChecked() ? "7" : "0");
-        sA8a.put("nh7a07h", bi.nh7a04h.isChecked() ? "8" : "0");
-        sA8a.put("nh7a07i", bi.nh7a04i.isChecked() ? "9" : "0");
-        sA8a.put("nh7a07j", bi.nh7a04j.isChecked() ? "10" : "0");
-        sA8a.put("nh7a0796", bi.nh7a0496.isChecked() ? "96" : "0");
-        sA8a.put("nh7a0796x", bi.nh7a0496x.getText().toString());
-        sA8a.put("nh7a08", bi.nh7a05.getText().toString());
-        sA8a.put("nh7a09", bi.nh7a06.getText().toString());
+        sA8a.put("cih7a07a", bi.cih7a04a.isChecked() ? "1" : "0");
+        sA8a.put("cih7a07b", bi.cih7a04b.isChecked() ? "2" : "0");
+        sA8a.put("cih7a07c", bi.cih7a04c.isChecked() ? "3" : "0");
+        sA8a.put("cih7a07d", bi.cih7a04d.isChecked() ? "4" : "0");
+        sA8a.put("cih7a07e", bi.cih7a04e.isChecked() ? "5" : "0");
+        sA8a.put("cih7a07f", bi.cih7a04f.isChecked() ? "6" : "0");
+        sA8a.put("cih7a07g", bi.cih7a04g.isChecked() ? "7" : "0");
+        sA8a.put("cih7a07h", bi.cih7a04h.isChecked() ? "8" : "0");
+        sA8a.put("cih7a07i", bi.cih7a04i.isChecked() ? "9" : "0");
+        sA8a.put("cih7a07j", bi.cih7a04j.isChecked() ? "10" : "0");
+        sA8a.put("cih7a0796", bi.cih7a0496.isChecked() ? "96" : "0");
+        sA8a.put("cih7a0796x", bi.cih7a0496x.getText().toString());
+        sA8a.put("cih7a08", bi.cih7a05.getText().toString());
+        sA8a.put("cih7a09", bi.cih7a06.getText().toString());
 
         MainApp.rc.setsA8A(String.valueOf(sA8a));
 

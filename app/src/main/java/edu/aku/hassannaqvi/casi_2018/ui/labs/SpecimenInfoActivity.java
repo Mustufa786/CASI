@@ -105,14 +105,14 @@ public class SpecimenInfoActivity extends AppCompatActivity {
         json = new JSONModelClass();
 
         if (MainActivity.ftype.equals("B")) {
-            binding.fldGrpnhconsent.setVisibility(View.VISIBLE);
+            binding.fldGrpcihconsent.setVisibility(View.VISIBLE);
             binding.fldGrpQR.setVisibility(View.VISIBLE);
             binding.fldGrpHC.setVisibility(View.VISIBLE);
             binding.txtSelected.setText(getResources().getString(R.string.selected1));
 
 
         } else if (MainActivity.ftype.equals("W")) {
-            binding.fldGrpnhconsent.setVisibility(View.GONE);
+            binding.fldGrpcihconsent.setVisibility(View.GONE);
             binding.fldGrpQR.setVisibility(View.GONE);
             binding.fldGrpHC.setVisibility(View.GONE);
             binding.hcCode.setText(null);
@@ -141,21 +141,21 @@ public class SpecimenInfoActivity extends AppCompatActivity {
                 if (MainActivity.ftype.equals("B")) {
                     if (binding.neselecteda.isChecked()) {
 
-                        ClearClass.ClearAllFields(binding.fldGrpnhconsent, true);
+                        ClearClass.ClearAllFields(binding.fldGrpcihconsent, true);
                         ClearClass.ClearAllFields(binding.fldGrpHC, true);
                         binding.btnScanHC.setEnabled(true);
                     } else {
-                        ClearClass.ClearAllFields(binding.fldGrpnhconsent, false);
+                        ClearClass.ClearAllFields(binding.fldGrpcihconsent, false);
                         ClearClass.ClearAllFields(binding.fldGrpHC, false);
                         binding.btnScanHC.setEnabled(false);
                     }
                 } else if (MainActivity.ftype.equals("W")) {
                     if (binding.neselecteda.isChecked()) {
 
-                        ClearClass.ClearAllFields(binding.fldGrpnhconsent, true);
+                        ClearClass.ClearAllFields(binding.fldGrpcihconsent, true);
 
                     } else {
-                        ClearClass.ClearAllFields(binding.fldGrpnhconsent, false);
+                        ClearClass.ClearAllFields(binding.fldGrpcihconsent, false);
 
                     }
                 }
@@ -164,7 +164,7 @@ public class SpecimenInfoActivity extends AppCompatActivity {
 
 
         //slcMem = new ArrayList<>();
-        binding.nh102.addTextChangedListener(new TextWatcher() {
+        binding.cih102.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
@@ -172,8 +172,8 @@ public class SpecimenInfoActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                binding.nh108.setText(null);
-                binding.fldGrpnh101.setVisibility(View.GONE);
+                binding.cih108.setText(null);
+                binding.fldGrpcih101.setVisibility(View.GONE);
             }
 
             @Override
@@ -187,11 +187,11 @@ public class SpecimenInfoActivity extends AppCompatActivity {
 
 
 //        HH listener
-        binding.nh108.addTextChangedListener(new TextWatcher() {
+        binding.cih108.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
-                binding.nh108.setInputType(InputType.TYPE_CLASS_NUMBER);
+                binding.cih108.setInputType(InputType.TYPE_CLASS_NUMBER);
 
                 length = charSequence.toString().length();
 
@@ -202,12 +202,12 @@ public class SpecimenInfoActivity extends AppCompatActivity {
 
 //                binding.fldGrpListHH.setVisibility(View.GONE);
 
-                if (!binding.nh108.getText().toString().isEmpty() && binding.nh108.getText().toString().length() == 4) {
-                    if (binding.nh108.getText().toString().substring(0, 3).matches("[0-9]+")) {
+                if (!binding.cih108.getText().toString().isEmpty() && binding.cih108.getText().toString().length() == 4) {
+                    if (binding.cih108.getText().toString().substring(0, 3).matches("[0-9]+")) {
                         if (length < 5) {
-                            binding.nh108.setText(binding.nh108.getText().toString() + "-");
-                            binding.nh108.setSelection(binding.nh108.getText().length());
-                            //binding.nh108.setInputType(InputType.TYPE_TEXT_FLAG_CAP_CHARACTERS);
+                            binding.cih108.setText(binding.cih108.getText().toString() + "-");
+                            binding.cih108.setSelection(binding.cih108.getText().length());
+                            //binding.cih108.setInputType(InputType.TYPE_TEXT_FLAG_CAP_CHARACTERS);
                         }
 
                     }
@@ -307,22 +307,22 @@ public class SpecimenInfoActivity extends AppCompatActivity {
 
         Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
 
-//        nh102
-        if (!ValidatorClass.EmptyTextBox(this, binding.nh102, getString(R.string.nh102))) {
+//        cih102
+        if (!ValidatorClass.EmptyTextBox(this, binding.cih102, getString(R.string.cih102))) {
             return false;
         }
 
-//        nh108
+//        cih108
 
-        if (binding.nh108.getText().toString().length() == 8) {
-            String[] str = binding.nh108.getText().toString().split("-");
-            if (str.length > 2 || binding.nh108.getText().toString().charAt(4) != '-' || !str[0].matches("[0-9]+") || !str[1].matches("[0-9]+")) {
-                binding.nh108.setError("Wrong presentation!!");
+        if (binding.cih108.getText().toString().length() == 8) {
+            String[] str = binding.cih108.getText().toString().split("-");
+            if (str.length > 2 || binding.cih108.getText().toString().charAt(4) != '-' || !str[0].matches("[0-9]+") || !str[1].matches("[0-9]+")) {
+                binding.cih108.setError("Wrong presentation!!");
                 return false;
             }
         } else {
-            Toast.makeText(this, "Invalid length: " + getString(R.string.nh108), Toast.LENGTH_SHORT).show();
-            binding.nh108.setError("Invalid length");
+            Toast.makeText(this, "Invalid length: " + getString(R.string.cih108), Toast.LENGTH_SHORT).show();
+            binding.cih108.setError("Invalid length");
             return false;
         }
 
@@ -380,8 +380,8 @@ public class SpecimenInfoActivity extends AppCompatActivity {
         if (MainActivity.ftype.equals("B")) {
             if (binding.neselecteda.isChecked()) {
 
-                enm_no = binding.nh102.getText().toString();
-                hh_no = binding.nh108.getText().toString().toUpperCase();
+                enm_no = binding.cih102.getText().toString();
+                hh_no = binding.cih108.getText().toString().toUpperCase();
                 hc_code = binding.hcCode.getText().toString();
                 consent = binding.na11802.indexOfChild(findViewById(binding.na11802.getCheckedRadioButtonId())) + 1;
                 selected = binding.neselected.indexOfChild(findViewById(binding.neselected.getCheckedRadioButtonId())) + 1;
@@ -396,8 +396,8 @@ public class SpecimenInfoActivity extends AppCompatActivity {
                 MainApp.smc.setDeviceID(Settings.Secure.getString(getApplicationContext().getContentResolver(),
                         Settings.Secure.ANDROID_ID));
                 MainApp.smc.setAppversion(MainApp.versionName + "." + MainApp.versionCode);
-                MainApp.smc.setClusterno(binding.nh102.getText().toString());
-                MainApp.smc.setHhno(binding.nh108.getText().toString().toUpperCase());
+                MainApp.smc.setClusterno(binding.cih102.getText().toString());
+                MainApp.smc.setHhno(binding.cih108.getText().toString().toUpperCase());
 
                 JSONObject sE1 = new JSONObject();
                 sE1.put("ne_selected_blood", binding.neselecteda.isChecked() ? "1" : binding.neselectedb.isChecked() ? "2" : "0");
@@ -412,8 +412,8 @@ public class SpecimenInfoActivity extends AppCompatActivity {
 
             if (binding.neselecteda.isChecked()) {
 
-                enm_no = binding.nh102.getText().toString();
-                hh_no = binding.nh108.getText().toString().toUpperCase();
+                enm_no = binding.cih102.getText().toString();
+                hh_no = binding.cih108.getText().toString().toUpperCase();
                 consent = binding.na11802.indexOfChild(findViewById(binding.na11802.getCheckedRadioButtonId())) + 1;
                 selected = binding.neselected.indexOfChild(findViewById(binding.neselected.getCheckedRadioButtonId())) + 1;
                 datetime = dateTime;
@@ -427,8 +427,8 @@ public class SpecimenInfoActivity extends AppCompatActivity {
                 MainApp.wsc.setDeviceID(Settings.Secure.getString(getApplicationContext().getContentResolver(),
                         Settings.Secure.ANDROID_ID));
                 MainApp.wsc.setAppversion(MainApp.versionName + "." + MainApp.versionCode);
-                MainApp.wsc.setClusterno(binding.nh102.getText().toString());
-                MainApp.wsc.setHhno(binding.nh108.getText().toString().toUpperCase());
+                MainApp.wsc.setClusterno(binding.cih102.getText().toString());
+                MainApp.wsc.setHhno(binding.cih108.getText().toString().toUpperCase());
 
 
                 JSONObject sE1 = new JSONObject();
@@ -499,10 +499,10 @@ public class SpecimenInfoActivity extends AppCompatActivity {
 
     public void BtnCheckHH() {
 
-        if (!binding.nh102.getText().toString().trim().isEmpty() && !binding.nh108.getText().toString().trim().isEmpty()) {
+        if (!binding.cih102.getText().toString().trim().isEmpty() && !binding.cih108.getText().toString().trim().isEmpty()) {
 
 //            populateHH();
-            hh = db.getAllHHforAnthro(binding.nh102.getText().toString(), binding.nh108.getText().toString().toUpperCase());
+            hh = db.getAllHHforAnthro(binding.cih102.getText().toString(), binding.cih108.getText().toString().toUpperCase());
             if (hh.size() > 0) {
                 populateMembers(hh.get(hh.size() - 1).get_UUID(), hh.get(hh.size() - 1).getFormDate());
             }
@@ -514,7 +514,7 @@ public class SpecimenInfoActivity extends AppCompatActivity {
     }
 
 /*    public void populateHH() {
-        hh = db.getAllHHforAnthro(binding.nh102.getText().toString(), binding.nh108.getText().toString().toUpperCase());
+        hh = db.getAllHHforAnthro(binding.cih102.getText().toString(), binding.cih108.getText().toString().toUpperCase());
         hhList.add("....");
 
         if (hh.size() > 0) {
@@ -530,7 +530,7 @@ public class SpecimenInfoActivity extends AppCompatActivity {
     }*/
 
     public void populateMembers(String uuid, String formDate) {
-        members = db.getAllMembersByHHforAnthro(binding.nh102.getText().toString(), binding.nh108.getText().toString().toUpperCase(), uuid, formDate, false);
+        members = db.getAllMembersByHHforAnthro(binding.cih102.getText().toString(), binding.cih108.getText().toString().toUpperCase(), uuid, formDate, false);
 
         if (members.size() != 0) {
             for (FamilyMembersContract fm : members) {
@@ -600,24 +600,24 @@ public class SpecimenInfoActivity extends AppCompatActivity {
 
     public void BtnCheckEnm() {
 
-        if (ValidatorClass.EmptyTextBox(this, binding.nh102, getString(R.string.nh102))) {
+        if (ValidatorClass.EmptyTextBox(this, binding.cih102, getString(R.string.cih102))) {
 
-            EnumBlockContract enumBlockContract = db.getEnumBlock(binding.nh102.getText().toString());
+            EnumBlockContract enumBlockContract = db.getEnumBlock(binding.cih102.getText().toString());
             if (enumBlockContract != null) {
                 String selected = enumBlockContract.getGeoarea();
                 if (!selected.equals("")) {
 
                     String[] selSplit = selected.split("\\|");
 
-                    binding.nh103.setText(selSplit[0]);
-                    binding.nh104.setText(selSplit[1].equals("") ? "----" : selSplit[1]);
-                    binding.nh105.setText(selSplit[2].equals("") ? "----" : selSplit[2]);
-                    binding.nh106.setText(selSplit[3]);
+                    binding.cih103.setText(selSplit[0]);
+                    binding.cih104.setText(selSplit[1].equals("") ? "----" : selSplit[1]);
+                    binding.cih105.setText(selSplit[2].equals("") ? "----" : selSplit[2]);
+                    binding.cih106.setText(selSplit[3]);
 
-                    binding.fldGrpnh101.setVisibility(View.VISIBLE);
+                    binding.fldGrpcih101.setVisibility(View.VISIBLE);
                 }
             } else {
-                binding.nh108.setText(null);
+                binding.cih108.setText(null);
                 Toast.makeText(this, "Sorry not found any block", Toast.LENGTH_SHORT).show();
             }
 

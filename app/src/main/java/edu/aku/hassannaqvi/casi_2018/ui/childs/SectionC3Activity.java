@@ -52,14 +52,14 @@ public class SectionC3Activity extends Menu2Activity implements RadioGroup.OnChe
 
         if (SectionC1Activity.editChildFlag) {
             binding.textName.setText(SectionC1Activity.selectedChildName + " : " + getString(R.string.childname)
-                    + "\n\n" + SectionC1Activity.editMotherName + " : " + getString(R.string.nh212a));
+                    + "\n\n" + SectionC1Activity.editMotherName + " : " + getString(R.string.cih212a));
         } else {
             if (!SectionC1Activity.isNA) {
                 binding.textName.setText(SectionC1Activity.selectedChildName + " : " + getString(R.string.childname)
-                        + "\n\n" + SectionB1Activity.wraName + " : " + getString(R.string.nh212a));
+                        + "\n\n" + SectionB1Activity.wraName + " : " + getString(R.string.cih212a));
             } else {
                 binding.textName.setText(SectionC1Activity.selectedChildName + " : " + getString(R.string.childname)
-                        + "\n\n" + SectionC1Activity.careTaker + " : " + getString(R.string.nh113));
+                        + "\n\n" + SectionC1Activity.careTaker + " : " + getString(R.string.cih113));
             }
         }
         db = new DatabaseHelper(this);

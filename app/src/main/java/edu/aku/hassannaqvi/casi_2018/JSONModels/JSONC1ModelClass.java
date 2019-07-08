@@ -24,18 +24,18 @@ public class JSONC1ModelClass {
     private String hhno = "";
     private String wra_lno = "";
     @SerializedName("nc11801")
-    private String nh11801 = "";
+    private String cih11801 = "";
 
     public JSONC1ModelClass() {
 
     }
 
-    public String getnh11801() {
-        return nh11801;
+    public String getcih11801() {
+        return cih11801;
     }
 
-    public void setnh11801(String nh11801) {
-        this.nh11801 = nh11801;
+    public void setcih11801(String cih11801) {
+        this.cih11801 = cih11801;
     }
 
     public String getWra_lno() {

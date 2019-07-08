@@ -65,50 +65,50 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
         @Override
         public void onTextChanged(CharSequence s, int start, int before, int count) {
 
-            if (binding.nh2dobd.getText().toString().length() == 2 && binding.nh2dobm.getText().toString().isEmpty()) {
-                binding.nh2dobm.requestFocus();
-            } else if (binding.nh2dobm.getText().toString().length() == 2 && binding.nh2doby.getText().toString().isEmpty()) {
-                binding.nh2doby.requestFocus();
-            } else if (binding.nh2doby.getText().toString().length() == 4 && binding.nh2dobm.getText().toString().isEmpty()) {
-                binding.nh2dobm.requestFocus();
+            if (binding.cih2dobd.getText().toString().length() == 2 && binding.cih2dobm.getText().toString().isEmpty()) {
+                binding.cih2dobm.requestFocus();
+            } else if (binding.cih2dobm.getText().toString().length() == 2 && binding.cih2doby.getText().toString().isEmpty()) {
+                binding.cih2doby.requestFocus();
+            } else if (binding.cih2doby.getText().toString().length() == 4 && binding.cih2dobm.getText().toString().isEmpty()) {
+                binding.cih2dobm.requestFocus();
             }
-            binding.nh2agey.setText(null);
+            binding.cih2agey.setText(null);
 
-            if (!binding.nh2dobd.getText().toString().isEmpty()
-                    && !binding.nh2dobm.getText().toString().isEmpty()
-                    && !binding.nh2doby.getText().toString().isEmpty()
-                    && (Integer.valueOf(binding.nh2dobd.getText().toString()) <= 31 || Integer.valueOf(binding.nh2dobd.getText().toString()) == 98)
-                    && (Integer.valueOf(binding.nh2dobm.getText().toString()) <= 12 || Integer.valueOf(binding.nh2dobm.getText().toString()) == 98)
-                    && ((Integer.valueOf(binding.nh2doby.getText().toString()) > 1900
-                    && Integer.valueOf(binding.nh2doby.getText().toString()) <= Calendar.getInstance().get(Calendar.YEAR))
-                    || Integer.valueOf(binding.nh2doby.getText().toString()) == 9998)) {
+            if (!binding.cih2dobd.getText().toString().isEmpty()
+                    && !binding.cih2dobm.getText().toString().isEmpty()
+                    && !binding.cih2doby.getText().toString().isEmpty()
+                    && (Integer.valueOf(binding.cih2dobd.getText().toString()) <= 31 || Integer.valueOf(binding.cih2dobd.getText().toString()) == 98)
+                    && (Integer.valueOf(binding.cih2dobm.getText().toString()) <= 12 || Integer.valueOf(binding.cih2dobm.getText().toString()) == 98)
+                    && ((Integer.valueOf(binding.cih2doby.getText().toString()) > 1900
+                    && Integer.valueOf(binding.cih2doby.getText().toString()) <= Calendar.getInstance().get(Calendar.YEAR))
+                    || Integer.valueOf(binding.cih2doby.getText().toString()) == 9998)) {
 
-                if (!binding.nh2dobd.getText().toString().equals("98") && !binding.nh2dobm.getText().toString().equals("98")
-                        && !binding.nh2doby.getText().toString().equals("9998")) {
+                if (!binding.cih2dobd.getText().toString().equals("98") && !binding.cih2dobm.getText().toString().equals("98")
+                        && !binding.cih2doby.getText().toString().equals("9998")) {
 
-                    dob = DateUtils.getCalendarDate(binding.nh2dobd.getText().toString(), binding.nh2dobm.getText().toString(),
-                            binding.nh2doby.getText().toString());
+                    dob = DateUtils.getCalendarDate(binding.cih2dobd.getText().toString(), binding.cih2dobm.getText().toString(),
+                            binding.cih2doby.getText().toString());
 
                     agebyDob = DateUtils.ageInYearByDOB(dob);
                     ageinMonths = DateUtils.ageInMonthsByDOB(dob);
 
-                    binding.nh2agey.setEnabled(false);
-                    binding.nh2agey.setText(agebyDob < 95 ? String.valueOf(agebyDob) : "95");
+                    binding.cih2agey.setEnabled(false);
+                    binding.cih2agey.setText(agebyDob < 95 ? String.valueOf(agebyDob) : "95");
 
-                } else if (!binding.nh2doby.getText().toString().equals("9998") && !binding.nh2dobm.getText().toString().equals("98")) {
+                } else if (!binding.cih2doby.getText().toString().equals("9998") && !binding.cih2dobm.getText().toString().equals("98")) {
 
-                    dob = DateUtils.getCalendarDate(binding.nh2dobm.getText().toString(),
-                            binding.nh2doby.getText().toString());
+                    dob = DateUtils.getCalendarDate(binding.cih2dobm.getText().toString(),
+                            binding.cih2doby.getText().toString());
                     agebyDob = DateUtils.ageInYearByDOB(dob);
-                    binding.nh2agey.setEnabled(false);
-                    binding.nh2agey.setText(agebyDob < 95 ? String.valueOf(agebyDob) : "95");
-                } else if (!binding.nh2doby.getText().toString().equals("9998")) {
-                    agebyDob = DateUtils.ageInYearByDOB(binding.nh2doby.getText().toString());
-                    binding.nh2agey.setEnabled(false);
-                    binding.nh2agey.setText(agebyDob < 95 ? String.valueOf(agebyDob) : "95");
-                } else if (binding.nh2doby.getText().toString().equals("9998")) {
-                    binding.nh2agey.setEnabled(true);
-                    binding.nh2agey.setText(null);
+                    binding.cih2agey.setEnabled(false);
+                    binding.cih2agey.setText(agebyDob < 95 ? String.valueOf(agebyDob) : "95");
+                } else if (!binding.cih2doby.getText().toString().equals("9998")) {
+                    agebyDob = DateUtils.ageInYearByDOB(binding.cih2doby.getText().toString());
+                    binding.cih2agey.setEnabled(false);
+                    binding.cih2agey.setText(agebyDob < 95 ? String.valueOf(agebyDob) : "95");
+                } else if (binding.cih2doby.getText().toString().equals("9998")) {
+                    binding.cih2agey.setEnabled(true);
+                    binding.cih2agey.setText(null);
                 }
 
 
@@ -123,7 +123,7 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
     };
     Boolean head;
     //Calendar calDob = Calendar.getInstance();
-    @BindViews({R.id.nh2doby, R.id.nh2dobm, R.id.nh2dobd})
+    @BindViews({R.id.cih2doby, R.id.cih2dobm, R.id.cih2dobd})
     List<EditText> grpdob;
     private Timer timer = new Timer();
 
@@ -172,10 +172,10 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
 //        binding.na203.setOnCheckedChangeListener(this);
 //        binding.na204.setOnCheckedChangeListener(this);
         binding.resp.setOnCheckedChangeListener(this);
-        //binding.nh2ms.setOnCheckedChangeListener(this);
-        binding.nh2edu.setOnCheckedChangeListener(this);
-        binding.nh2occ.setOnCheckedChangeListener(this);
-        binding.nh210.setOnCheckedChangeListener(this);
+        //binding.cih2ms.setOnCheckedChangeListener(this);
+        binding.cih2edu.setOnCheckedChangeListener(this);
+        binding.cih2occ.setOnCheckedChangeListener(this);
+        binding.cih210.setOnCheckedChangeListener(this);
 
 
     }
@@ -195,12 +195,12 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
 
             binding.selectedName.setText(family.getName().toUpperCase());
 
-            MainApp.SetNameClass nameSet = new MainApp.SetNameClass(getString(R.string.nh2dob) + " " + family.getName());
+            MainApp.SetNameClass nameSet = new MainApp.SetNameClass(getString(R.string.cih2dob) + " " + family.getName());
             binding.setName(nameSet);
 
-            binding.txtnh2dob.setText(binding.txtnh2dob.getText().toString().replace("Name", binding.selectedName.getText().toString()));
+            binding.txtcih2dob.setText(binding.txtcih2dob.getText().toString().replace("Name", binding.selectedName.getText().toString()));
             binding.txtna2age.setText(binding.txtna2age.getText().toString().replace("Name", binding.selectedName.getText().toString()));
-            binding.txtnh210.setText(binding.txtnh210.getText().toString().replace("Name", binding.selectedName.getText().toString()));
+            binding.txtcih210.setText(binding.txtcih210.getText().toString().replace("Name", binding.selectedName.getText().toString()));
 
 
             binding.fldGrpA201.setVisibility(View.GONE);
@@ -213,7 +213,7 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
         }
 
 
-        binding.nh2agey.addTextChangedListener(new TextWatcher() {
+        binding.cih2agey.addTextChangedListener(new TextWatcher() {
 
 
             @Override
@@ -224,385 +224,385 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
 
-                if (!binding.nh2agey.getText().toString().isEmpty()) {
+                if (!binding.cih2agey.getText().toString().isEmpty()) {
 
-                    Age = Integer.valueOf(binding.nh2agey.getText().toString());
+                    Age = Integer.valueOf(binding.cih2agey.getText().toString());
                     if (Age <= 2) {
-                        binding.fldGrpnh2edu.setVisibility(View.GONE);
-                        binding.fldGrpnh2ms.setVisibility(View.GONE);
-                        binding.fldGrpnh2occ.setVisibility(View.GONE);
+                        binding.fldGrpcih2edu.setVisibility(View.GONE);
+                        binding.fldGrpcih2ms.setVisibility(View.GONE);
+                        binding.fldGrpcih2occ.setVisibility(View.GONE);
 
                         binding.fldGrpfid.setVisibility(View.VISIBLE);
                         binding.fldGrpmid.setVisibility(View.VISIBLE);
 
-                        binding.nh2edu.clearCheck();
-                        binding.nh2ms.clearCheck();
-                        binding.nh2occ.clearCheck();
+                        binding.cih2edu.clearCheck();
+                        binding.cih2ms.clearCheck();
+                        binding.cih2occ.clearCheck();
 
-                        binding.nh2edua.setChecked(true);
-                        binding.nh2occa.setChecked(true);
-                        binding.nh2mse.setChecked(true);
+                        binding.cih2edua.setChecked(true);
+                        binding.cih2occa.setChecked(true);
+                        binding.cih2mse.setChecked(true);
 
                     } else if (Age > 2 && Age <= 5) {
-                        binding.nh2occ.clearCheck();
-                        binding.nh2edu.clearCheck();
-                        binding.fldGrpnh2edu.setVisibility(View.VISIBLE);
-                        binding.fldGrpnh2ms.setVisibility(View.GONE);
-                        binding.fldGrpnh2occ.setVisibility(View.VISIBLE);
-                        binding.nh2mse.setChecked(true);
+                        binding.cih2occ.clearCheck();
+                        binding.cih2edu.clearCheck();
+                        binding.fldGrpcih2edu.setVisibility(View.VISIBLE);
+                        binding.fldGrpcih2ms.setVisibility(View.GONE);
+                        binding.fldGrpcih2occ.setVisibility(View.VISIBLE);
+                        binding.cih2mse.setChecked(true);
 
                         binding.fldGrpfid.setVisibility(View.VISIBLE);
                         binding.fldGrpmid.setVisibility(View.VISIBLE);
 
-                        binding.nh2edua.setEnabled(true);
-                        binding.nh2edub.setEnabled(true);
-                        binding.nh2edu98.setEnabled(true);
-                        binding.nh2educ.setEnabled(true);
-                        binding.nh2edud.setEnabled(false);
-                        binding.nh2edud.setChecked(false);
-                        binding.nh2edue.setEnabled(false);
-                        binding.nh2edue.setChecked(false);
-                        binding.nh2eduf.setEnabled(false);
-                        binding.nh2eduf.setChecked(false);
-                        binding.nh2edug.setEnabled(false);
-                        binding.nh2edug.setChecked(false);
-                        binding.nh2eduh.setEnabled(false);
-                        binding.nh2eduh.setChecked(false);
-                        binding.nh2edui.setEnabled(false);
-                        binding.nh2edui.setChecked(false);
+                        binding.cih2edua.setEnabled(true);
+                        binding.cih2edub.setEnabled(true);
+                        binding.cih2edu98.setEnabled(true);
+                        binding.cih2educ.setEnabled(true);
+                        binding.cih2edud.setEnabled(false);
+                        binding.cih2edud.setChecked(false);
+                        binding.cih2edue.setEnabled(false);
+                        binding.cih2edue.setChecked(false);
+                        binding.cih2eduf.setEnabled(false);
+                        binding.cih2eduf.setChecked(false);
+                        binding.cih2edug.setEnabled(false);
+                        binding.cih2edug.setChecked(false);
+                        binding.cih2eduh.setEnabled(false);
+                        binding.cih2eduh.setChecked(false);
+                        binding.cih2edui.setEnabled(false);
+                        binding.cih2edui.setChecked(false);
 
-                        binding.nh2occa.setEnabled(true);
-                        binding.nh2occb.setEnabled(true);
-                        binding.nh2occc.setEnabled(true);
-                        binding.nh2occd.setEnabled(true);
-                        binding.nh2occe.setEnabled(true);
-                        binding.nh2occg.setEnabled(true);
-                        binding.nh2occh.setEnabled(true);
+                        binding.cih2occa.setEnabled(true);
+                        binding.cih2occb.setEnabled(true);
+                        binding.cih2occc.setEnabled(true);
+                        binding.cih2occd.setEnabled(true);
+                        binding.cih2occe.setEnabled(true);
+                        binding.cih2occg.setEnabled(true);
+                        binding.cih2occh.setEnabled(true);
 
                        /* if (!flag) {
                             if (!family.getna204().equals("1")) {
-                                binding.nh2occi.setEnabled(true);
+                                binding.cih2occi.setEnabled(true);
                             } else {
-                                binding.nh2occi.setEnabled(false);
-                                binding.nh2occi.setChecked(false);
+                                binding.cih2occi.setEnabled(false);
+                                binding.cih2occi.setChecked(false);
                             }
                         }*/
 
-                        binding.nh2occ96.setEnabled(true);
-                        binding.nh2occ96x.setEnabled(true);
+                        binding.cih2occ96.setEnabled(true);
+                        binding.cih2occ96x.setEnabled(true);
 
-                        binding.nh2occf.setEnabled(false);
-                        binding.nh2occf.setChecked(false);
-                        binding.nh2occj.setEnabled(false);
-                        binding.nh2occj.setChecked(false);
+                        binding.cih2occf.setEnabled(false);
+                        binding.cih2occf.setChecked(false);
+                        binding.cih2occj.setEnabled(false);
+                        binding.cih2occj.setChecked(false);
 
                     } else if (Age > 5 && Age < 10) {
-                        binding.nh2occ.clearCheck();
-                        binding.nh2edu.clearCheck();
-                        binding.nh2ms.clearCheck();
-                        binding.fldGrpnh2edu.setVisibility(View.VISIBLE);
-                        binding.fldGrpnh2ms.setVisibility(View.GONE);
-                        binding.fldGrpnh2occ.setVisibility(View.VISIBLE);
+                        binding.cih2occ.clearCheck();
+                        binding.cih2edu.clearCheck();
+                        binding.cih2ms.clearCheck();
+                        binding.fldGrpcih2edu.setVisibility(View.VISIBLE);
+                        binding.fldGrpcih2ms.setVisibility(View.GONE);
+                        binding.fldGrpcih2occ.setVisibility(View.VISIBLE);
 
                         binding.fldGrpfid.setVisibility(View.GONE);
                         binding.fldGrpmid.setVisibility(View.GONE);
-                        binding.nh2mse.setChecked(true);
+                        binding.cih2mse.setChecked(true);
 
-                        binding.nh211.setSelection(1);
-                        binding.nh212.setSelection(1);
+                        binding.cih211.setSelection(1);
+                        binding.cih212.setSelection(1);
 
-                        binding.nh2edua.setEnabled(true);
-                        binding.nh2edub.setEnabled(true);
-                        binding.nh2edu98.setEnabled(true);
-                        binding.nh2educ.setEnabled(true);
-                        binding.nh2edud.setEnabled(true);
-                        binding.nh2edue.setEnabled(false);
-                        binding.nh2edue.setChecked(false);
-                        binding.nh2eduf.setEnabled(false);
-                        binding.nh2eduf.setChecked(false);
-                        binding.nh2edug.setEnabled(false);
-                        binding.nh2edug.setChecked(false);
-                        binding.nh2eduh.setEnabled(false);
-                        binding.nh2eduh.setChecked(false);
-                        binding.nh2edui.setEnabled(false);
-                        binding.nh2edui.setChecked(false);
+                        binding.cih2edua.setEnabled(true);
+                        binding.cih2edub.setEnabled(true);
+                        binding.cih2edu98.setEnabled(true);
+                        binding.cih2educ.setEnabled(true);
+                        binding.cih2edud.setEnabled(true);
+                        binding.cih2edue.setEnabled(false);
+                        binding.cih2edue.setChecked(false);
+                        binding.cih2eduf.setEnabled(false);
+                        binding.cih2eduf.setChecked(false);
+                        binding.cih2edug.setEnabled(false);
+                        binding.cih2edug.setChecked(false);
+                        binding.cih2eduh.setEnabled(false);
+                        binding.cih2eduh.setChecked(false);
+                        binding.cih2edui.setEnabled(false);
+                        binding.cih2edui.setChecked(false);
 
-                        binding.nh2occa.setEnabled(true);
-                        binding.nh2occb.setEnabled(true);
-                        binding.nh2occc.setEnabled(true);
-                        binding.nh2occd.setEnabled(true);
-                        binding.nh2occe.setEnabled(true);
-                        binding.nh2occg.setEnabled(true);
-                        binding.nh2occh.setEnabled(true);
-                        //binding.nh2occi.setEnabled(true);
+                        binding.cih2occa.setEnabled(true);
+                        binding.cih2occb.setEnabled(true);
+                        binding.cih2occc.setEnabled(true);
+                        binding.cih2occd.setEnabled(true);
+                        binding.cih2occe.setEnabled(true);
+                        binding.cih2occg.setEnabled(true);
+                        binding.cih2occh.setEnabled(true);
+                        //binding.cih2occi.setEnabled(true);
 
                         /*if (!flag) {
                             if (!family.getna204().equals("1")) {
-                                binding.nh2occi.setEnabled(true);
+                                binding.cih2occi.setEnabled(true);
                             } else {
-                                binding.nh2occi.setEnabled(false);
-                                binding.nh2occi.setChecked(false);
+                                binding.cih2occi.setEnabled(false);
+                                binding.cih2occi.setChecked(false);
                             }
                         }
 */
-                        binding.nh2occ96.setEnabled(true);
-                        binding.nh2occ96x.setEnabled(true);
+                        binding.cih2occ96.setEnabled(true);
+                        binding.cih2occ96x.setEnabled(true);
 
-                        binding.nh2occf.setEnabled(false);
-                        binding.nh2occf.setChecked(false);
-                        binding.nh2occj.setEnabled(false);
-                        binding.nh2occj.setChecked(false);
+                        binding.cih2occf.setEnabled(false);
+                        binding.cih2occf.setChecked(false);
+                        binding.cih2occj.setEnabled(false);
+                        binding.cih2occj.setChecked(false);
 
                     } else if (Age >= 10 && Age < 14) {
-                        binding.nh2occ.clearCheck();
-                        binding.nh2edu.clearCheck();
-                        binding.nh2ms.clearCheck();
-                        binding.fldGrpnh2edu.setVisibility(View.VISIBLE);
-                        binding.fldGrpnh2ms.setVisibility(View.VISIBLE);
-                        binding.fldGrpnh2occ.setVisibility(View.VISIBLE);
+                        binding.cih2occ.clearCheck();
+                        binding.cih2edu.clearCheck();
+                        binding.cih2ms.clearCheck();
+                        binding.fldGrpcih2edu.setVisibility(View.VISIBLE);
+                        binding.fldGrpcih2ms.setVisibility(View.VISIBLE);
+                        binding.fldGrpcih2occ.setVisibility(View.VISIBLE);
 
                         binding.fldGrpfid.setVisibility(View.GONE);
                         binding.fldGrpmid.setVisibility(View.GONE);
-                        binding.nh211.setSelection(1);
-                        binding.nh212.setSelection(1);
-                        binding.nh2edua.setEnabled(true);
-                        binding.nh2edub.setEnabled(true);
-                        binding.nh2edu98.setEnabled(true);
-                        binding.nh2educ.setEnabled(true);
-                        binding.nh2edud.setEnabled(true);
-                        binding.nh2edue.setEnabled(true);
-                        binding.nh2eduf.setEnabled(false);
-                        binding.nh2eduf.setChecked(false);
-                        binding.nh2edug.setEnabled(false);
-                        binding.nh2edug.setChecked(false);
-                        binding.nh2eduh.setEnabled(false);
-                        binding.nh2eduh.setChecked(false);
-                        binding.nh2edui.setEnabled(false);
-                        binding.nh2edui.setChecked(false);
+                        binding.cih211.setSelection(1);
+                        binding.cih212.setSelection(1);
+                        binding.cih2edua.setEnabled(true);
+                        binding.cih2edub.setEnabled(true);
+                        binding.cih2edu98.setEnabled(true);
+                        binding.cih2educ.setEnabled(true);
+                        binding.cih2edud.setEnabled(true);
+                        binding.cih2edue.setEnabled(true);
+                        binding.cih2eduf.setEnabled(false);
+                        binding.cih2eduf.setChecked(false);
+                        binding.cih2edug.setEnabled(false);
+                        binding.cih2edug.setChecked(false);
+                        binding.cih2eduh.setEnabled(false);
+                        binding.cih2eduh.setChecked(false);
+                        binding.cih2edui.setEnabled(false);
+                        binding.cih2edui.setChecked(false);
 
-                        binding.nh2occa.setEnabled(true);
-                        binding.nh2occb.setEnabled(true);
-                        binding.nh2occc.setEnabled(true);
-                        binding.nh2occd.setEnabled(true);
-                        binding.nh2occe.setEnabled(true);
-                        binding.nh2occg.setEnabled(true);
-                        binding.nh2occh.setEnabled(true);
-                        //binding.nh2occi.setEnabled(true);
+                        binding.cih2occa.setEnabled(true);
+                        binding.cih2occb.setEnabled(true);
+                        binding.cih2occc.setEnabled(true);
+                        binding.cih2occd.setEnabled(true);
+                        binding.cih2occe.setEnabled(true);
+                        binding.cih2occg.setEnabled(true);
+                        binding.cih2occh.setEnabled(true);
+                        //binding.cih2occi.setEnabled(true);
 
                        /* if (!flag) {
                             if (!family.getna204().equals("1")) {
-                                binding.nh2occi.setEnabled(true);
+                                binding.cih2occi.setEnabled(true);
                             } else {
-                                binding.nh2occi.setEnabled(false);
-                                binding.nh2occi.setChecked(false);
+                                binding.cih2occi.setEnabled(false);
+                                binding.cih2occi.setChecked(false);
                             }
                         }*/
 
-                        binding.nh2occ96.setEnabled(true);
-                        binding.nh2occ96x.setEnabled(true);
+                        binding.cih2occ96.setEnabled(true);
+                        binding.cih2occ96x.setEnabled(true);
 
-                        binding.nh2occf.setEnabled(false);
-                        binding.nh2occf.setChecked(false);
-                        binding.nh2occj.setEnabled(false);
-                        binding.nh2occj.setChecked(false);
+                        binding.cih2occf.setEnabled(false);
+                        binding.cih2occf.setChecked(false);
+                        binding.cih2occj.setEnabled(false);
+                        binding.cih2occj.setChecked(false);
                     } else if (Age >= 14 && Age < 17) {
-                        binding.nh2occ.clearCheck();
-                        binding.nh2edu.clearCheck();
-                        binding.nh2ms.clearCheck();
-                        binding.fldGrpnh2edu.setVisibility(View.VISIBLE);
-                        binding.fldGrpnh2ms.setVisibility(View.VISIBLE);
-                        binding.fldGrpnh2occ.setVisibility(View.VISIBLE);
+                        binding.cih2occ.clearCheck();
+                        binding.cih2edu.clearCheck();
+                        binding.cih2ms.clearCheck();
+                        binding.fldGrpcih2edu.setVisibility(View.VISIBLE);
+                        binding.fldGrpcih2ms.setVisibility(View.VISIBLE);
+                        binding.fldGrpcih2occ.setVisibility(View.VISIBLE);
 
                         binding.fldGrpfid.setVisibility(View.GONE);
                         binding.fldGrpmid.setVisibility(View.GONE);
-                        binding.nh211.setSelection(1);
-                        binding.nh212.setSelection(1);
+                        binding.cih211.setSelection(1);
+                        binding.cih212.setSelection(1);
 
-                        binding.nh2edua.setEnabled(true);
-                        binding.nh2edub.setEnabled(true);
-                        binding.nh2edu98.setEnabled(true);
-                        binding.nh2educ.setEnabled(true);
-                        binding.nh2edud.setEnabled(true);
-                        binding.nh2edue.setEnabled(true);
-                        binding.nh2eduf.setEnabled(true);
-                        binding.nh2edug.setEnabled(false);
-                        binding.nh2edug.setChecked(false);
-                        binding.nh2eduh.setEnabled(false);
-                        binding.nh2eduh.setChecked(false);
-                        binding.nh2edui.setEnabled(false);
-                        binding.nh2edui.setChecked(false);
+                        binding.cih2edua.setEnabled(true);
+                        binding.cih2edub.setEnabled(true);
+                        binding.cih2edu98.setEnabled(true);
+                        binding.cih2educ.setEnabled(true);
+                        binding.cih2edud.setEnabled(true);
+                        binding.cih2edue.setEnabled(true);
+                        binding.cih2eduf.setEnabled(true);
+                        binding.cih2edug.setEnabled(false);
+                        binding.cih2edug.setChecked(false);
+                        binding.cih2eduh.setEnabled(false);
+                        binding.cih2eduh.setChecked(false);
+                        binding.cih2edui.setEnabled(false);
+                        binding.cih2edui.setChecked(false);
 
-                        binding.nh2occa.setEnabled(true);
-                        binding.nh2occb.setEnabled(true);
-                        binding.nh2occc.setEnabled(true);
-                        binding.nh2occd.setEnabled(true);
-                        binding.nh2occe.setEnabled(true);
-                        binding.nh2occg.setEnabled(true);
-                        binding.nh2occh.setEnabled(true);
+                        binding.cih2occa.setEnabled(true);
+                        binding.cih2occb.setEnabled(true);
+                        binding.cih2occc.setEnabled(true);
+                        binding.cih2occd.setEnabled(true);
+                        binding.cih2occe.setEnabled(true);
+                        binding.cih2occg.setEnabled(true);
+                        binding.cih2occh.setEnabled(true);
 
                        /* if (!flag) {
                             if (!family.getna204().equals("1")) {
-                                binding.nh2occi.setEnabled(true);
+                                binding.cih2occi.setEnabled(true);
                             } else {
-                                binding.nh2occi.setEnabled(false);
-                                binding.nh2occi.setChecked(false);
+                                binding.cih2occi.setEnabled(false);
+                                binding.cih2occi.setChecked(false);
                             }
                         }*/
 
-                        //binding.nh2occi.setEnabled(true);
-                        binding.nh2occ96.setEnabled(true);
-                        binding.nh2occ96x.setEnabled(true);
+                        //binding.cih2occi.setEnabled(true);
+                        binding.cih2occ96.setEnabled(true);
+                        binding.cih2occ96x.setEnabled(true);
 
-                        binding.nh2occf.setEnabled(false);
-                        binding.nh2occf.setChecked(false);
-                        binding.nh2occj.setEnabled(false);
-                        binding.nh2occj.setChecked(false);
+                        binding.cih2occf.setEnabled(false);
+                        binding.cih2occf.setChecked(false);
+                        binding.cih2occj.setEnabled(false);
+                        binding.cih2occj.setChecked(false);
                     } else if (Age >= 17 && Age < 20) {
-                        binding.nh2occ.clearCheck();
-                        binding.nh2edu.clearCheck();
-                        binding.nh2ms.clearCheck();
-                        binding.fldGrpnh2edu.setVisibility(View.VISIBLE);
-                        binding.fldGrpnh2ms.setVisibility(View.VISIBLE);
-                        binding.fldGrpnh2occ.setVisibility(View.VISIBLE);
+                        binding.cih2occ.clearCheck();
+                        binding.cih2edu.clearCheck();
+                        binding.cih2ms.clearCheck();
+                        binding.fldGrpcih2edu.setVisibility(View.VISIBLE);
+                        binding.fldGrpcih2ms.setVisibility(View.VISIBLE);
+                        binding.fldGrpcih2occ.setVisibility(View.VISIBLE);
 
                         binding.fldGrpfid.setVisibility(View.GONE);
                         binding.fldGrpmid.setVisibility(View.GONE);
-                        binding.nh211.setSelection(1);
-                        binding.nh212.setSelection(1);
+                        binding.cih211.setSelection(1);
+                        binding.cih212.setSelection(1);
 
-                        binding.nh2edua.setEnabled(true);
-                        binding.nh2edub.setEnabled(true);
-                        binding.nh2edu98.setEnabled(true);
-                        binding.nh2educ.setEnabled(true);
-                        binding.nh2edud.setEnabled(true);
-                        binding.nh2edue.setEnabled(true);
-                        binding.nh2eduf.setEnabled(true);
-                        binding.nh2edug.setEnabled(true);
-                        binding.nh2eduh.setEnabled(false);
-                        binding.nh2eduh.setChecked(false);
-                        binding.nh2edui.setEnabled(false);
-                        binding.nh2edui.setChecked(false);
+                        binding.cih2edua.setEnabled(true);
+                        binding.cih2edub.setEnabled(true);
+                        binding.cih2edu98.setEnabled(true);
+                        binding.cih2educ.setEnabled(true);
+                        binding.cih2edud.setEnabled(true);
+                        binding.cih2edue.setEnabled(true);
+                        binding.cih2eduf.setEnabled(true);
+                        binding.cih2edug.setEnabled(true);
+                        binding.cih2eduh.setEnabled(false);
+                        binding.cih2eduh.setChecked(false);
+                        binding.cih2edui.setEnabled(false);
+                        binding.cih2edui.setChecked(false);
 
-                        binding.nh2occa.setEnabled(true);
-                        binding.nh2occb.setEnabled(true);
-                        binding.nh2occc.setEnabled(true);
-                        binding.nh2occd.setEnabled(true);
-                        binding.nh2occe.setEnabled(true);
-                        binding.nh2occg.setEnabled(true);
-                        binding.nh2occh.setEnabled(true);
+                        binding.cih2occa.setEnabled(true);
+                        binding.cih2occb.setEnabled(true);
+                        binding.cih2occc.setEnabled(true);
+                        binding.cih2occd.setEnabled(true);
+                        binding.cih2occe.setEnabled(true);
+                        binding.cih2occg.setEnabled(true);
+                        binding.cih2occh.setEnabled(true);
 
                         /*if (!flag) {
                             if (!family.getna204().equals("1")) {
-                                binding.nh2occi.setEnabled(true);
+                                binding.cih2occi.setEnabled(true);
                             } else {
-                                binding.nh2occi.setEnabled(false);
-                                binding.nh2occi.setChecked(false);
+                                binding.cih2occi.setEnabled(false);
+                                binding.cih2occi.setChecked(false);
                             }
                         }*/
 
-                        //binding.nh2occi.setEnabled(true);
-                        binding.nh2occ96.setEnabled(true);
-                        binding.nh2occ96x.setEnabled(true);
+                        //binding.cih2occi.setEnabled(true);
+                        binding.cih2occ96.setEnabled(true);
+                        binding.cih2occ96x.setEnabled(true);
 
-                        binding.nh2occf.setEnabled(true);
-                        binding.nh2occj.setEnabled(false);
-                        binding.nh2occj.setChecked(false);
+                        binding.cih2occf.setEnabled(true);
+                        binding.cih2occj.setEnabled(false);
+                        binding.cih2occj.setChecked(false);
                     } else if (Age >= 19 && Age < 22) {
-                        binding.nh2occ.clearCheck();
-                        binding.nh2edu.clearCheck();
-                        binding.nh2ms.clearCheck();
-                        binding.fldGrpnh2edu.setVisibility(View.VISIBLE);
-                        binding.fldGrpnh2ms.setVisibility(View.VISIBLE);
-                        binding.fldGrpnh2occ.setVisibility(View.VISIBLE);
+                        binding.cih2occ.clearCheck();
+                        binding.cih2edu.clearCheck();
+                        binding.cih2ms.clearCheck();
+                        binding.fldGrpcih2edu.setVisibility(View.VISIBLE);
+                        binding.fldGrpcih2ms.setVisibility(View.VISIBLE);
+                        binding.fldGrpcih2occ.setVisibility(View.VISIBLE);
 
                         binding.fldGrpfid.setVisibility(View.GONE);
                         binding.fldGrpmid.setVisibility(View.GONE);
-                        binding.nh211.setSelection(1);
-                        binding.nh212.setSelection(1);
+                        binding.cih211.setSelection(1);
+                        binding.cih212.setSelection(1);
 
-                        binding.nh2edua.setEnabled(true);
-                        binding.nh2edub.setEnabled(true);
-                        binding.nh2edu98.setEnabled(true);
-                        binding.nh2educ.setEnabled(true);
-                        binding.nh2edud.setEnabled(true);
-                        binding.nh2edue.setEnabled(true);
-                        binding.nh2eduf.setEnabled(true);
-                        binding.nh2edug.setEnabled(true);
-                        binding.nh2eduh.setEnabled(true);
-                        binding.nh2edui.setEnabled(false);
-                        binding.nh2edui.setChecked(false);
+                        binding.cih2edua.setEnabled(true);
+                        binding.cih2edub.setEnabled(true);
+                        binding.cih2edu98.setEnabled(true);
+                        binding.cih2educ.setEnabled(true);
+                        binding.cih2edud.setEnabled(true);
+                        binding.cih2edue.setEnabled(true);
+                        binding.cih2eduf.setEnabled(true);
+                        binding.cih2edug.setEnabled(true);
+                        binding.cih2eduh.setEnabled(true);
+                        binding.cih2edui.setEnabled(false);
+                        binding.cih2edui.setChecked(false);
 
-                        binding.nh2occa.setEnabled(true);
-                        binding.nh2occb.setEnabled(true);
-                        binding.nh2occc.setEnabled(true);
-                        binding.nh2occd.setEnabled(true);
-                        binding.nh2occe.setEnabled(true);
-                        binding.nh2occg.setEnabled(true);
-                        binding.nh2occh.setEnabled(true);
-                        //binding.nh2occi.setEnabled(true);
+                        binding.cih2occa.setEnabled(true);
+                        binding.cih2occb.setEnabled(true);
+                        binding.cih2occc.setEnabled(true);
+                        binding.cih2occd.setEnabled(true);
+                        binding.cih2occe.setEnabled(true);
+                        binding.cih2occg.setEnabled(true);
+                        binding.cih2occh.setEnabled(true);
+                        //binding.cih2occi.setEnabled(true);
 
                        /* if (!flag) {
                             if (!family.getna204().equals("1")) {
-                                binding.nh2occi.setEnabled(true);
+                                binding.cih2occi.setEnabled(true);
                             } else {
-                                binding.nh2occi.setEnabled(false);
-                                binding.nh2occi.setChecked(false);
+                                binding.cih2occi.setEnabled(false);
+                                binding.cih2occi.setChecked(false);
                             }
                         }
 */
-                        binding.nh2occ96.setEnabled(true);
-                        binding.nh2occ96x.setEnabled(true);
+                        binding.cih2occ96.setEnabled(true);
+                        binding.cih2occ96x.setEnabled(true);
 
-                        binding.nh2occf.setEnabled(true);
-                        binding.nh2occj.setEnabled(false);
-                        binding.nh2occj.setChecked(false);
+                        binding.cih2occf.setEnabled(true);
+                        binding.cih2occj.setEnabled(false);
+                        binding.cih2occj.setChecked(false);
                     } else if (Age >= 22) {
-                        binding.nh2occ.clearCheck();
-                        binding.nh2edu.clearCheck();
-                        binding.nh2ms.clearCheck();
-                        binding.fldGrpnh2edu.setVisibility(View.VISIBLE);
-                        binding.fldGrpnh2ms.setVisibility(View.VISIBLE);
-                        binding.fldGrpnh2occ.setVisibility(View.VISIBLE);
+                        binding.cih2occ.clearCheck();
+                        binding.cih2edu.clearCheck();
+                        binding.cih2ms.clearCheck();
+                        binding.fldGrpcih2edu.setVisibility(View.VISIBLE);
+                        binding.fldGrpcih2ms.setVisibility(View.VISIBLE);
+                        binding.fldGrpcih2occ.setVisibility(View.VISIBLE);
 
                         binding.fldGrpfid.setVisibility(View.GONE);
                         binding.fldGrpmid.setVisibility(View.GONE);
-                        binding.nh211.setSelection(1);
-                        binding.nh212.setSelection(1);
+                        binding.cih211.setSelection(1);
+                        binding.cih212.setSelection(1);
 
-                        binding.nh2edua.setEnabled(true);
-                        binding.nh2edub.setEnabled(true);
-                        binding.nh2edu98.setEnabled(true);
-                        binding.nh2educ.setEnabled(true);
-                        binding.nh2edud.setEnabled(true);
-                        binding.nh2edue.setEnabled(true);
-                        binding.nh2eduf.setEnabled(true);
-                        binding.nh2edug.setEnabled(true);
-                        binding.nh2eduh.setEnabled(true);
-                        binding.nh2edui.setEnabled(true);
+                        binding.cih2edua.setEnabled(true);
+                        binding.cih2edub.setEnabled(true);
+                        binding.cih2edu98.setEnabled(true);
+                        binding.cih2educ.setEnabled(true);
+                        binding.cih2edud.setEnabled(true);
+                        binding.cih2edue.setEnabled(true);
+                        binding.cih2eduf.setEnabled(true);
+                        binding.cih2edug.setEnabled(true);
+                        binding.cih2eduh.setEnabled(true);
+                        binding.cih2edui.setEnabled(true);
 
-                        binding.nh2occa.setEnabled(true);
-                        binding.nh2occb.setEnabled(true);
-                        binding.nh2occc.setEnabled(true);
-                        binding.nh2occd.setEnabled(true);
-                        binding.nh2occe.setEnabled(true);
-                        binding.nh2occg.setEnabled(true);
-                        binding.nh2occh.setEnabled(true);
-                        //binding.nh2occi.setEnabled(true);
+                        binding.cih2occa.setEnabled(true);
+                        binding.cih2occb.setEnabled(true);
+                        binding.cih2occc.setEnabled(true);
+                        binding.cih2occd.setEnabled(true);
+                        binding.cih2occe.setEnabled(true);
+                        binding.cih2occg.setEnabled(true);
+                        binding.cih2occh.setEnabled(true);
+                        //binding.cih2occi.setEnabled(true);
 
                         /*if (!flag) {
                             if (!family.getna204().equals("1")) {
-                                binding.nh2occi.setEnabled(true);
+                                binding.cih2occi.setEnabled(true);
                             } else {
-                                binding.nh2occi.setEnabled(false);
-                                binding.nh2occi.setChecked(false);
+                                binding.cih2occi.setEnabled(false);
+                                binding.cih2occi.setChecked(false);
                             }
                         }*/
 
-                        binding.nh2occ96.setEnabled(true);
-                        binding.nh2occ96x.setEnabled(true);
+                        binding.cih2occ96.setEnabled(true);
+                        binding.cih2occ96x.setEnabled(true);
 
-                        binding.nh2occf.setEnabled(true);
-                        binding.nh2occj.setEnabled(true);
+                        binding.cih2occf.setEnabled(true);
+                        binding.cih2occj.setEnabled(true);
 
                     }
 
@@ -619,21 +619,21 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
 
         if (!flag) {
             if (!family.getna204().equals("1")) {
-                binding.nh2occi.setEnabled(true);
+                binding.cih2occi.setEnabled(true);
             } else {
-                binding.nh2occi.setEnabled(false);
-                binding.nh2occi.setChecked(false);
+                binding.cih2occi.setEnabled(false);
+                binding.cih2occi.setChecked(false);
             }
         }
-        binding.nh2edu.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        binding.cih2edu.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                if (checkedId == R.id.nh2edua || checkedId == R.id.nh2edub || checkedId == R.id.nh2educ
-                        || checkedId == R.id.nh2edud || checkedId == R.id.nh2edue || checkedId == R.id.nh2eduf) {
-                    binding.nh2occf.setEnabled(false);
-                    binding.nh2occf.setChecked(false);
+                if (checkedId == R.id.cih2edua || checkedId == R.id.cih2edub || checkedId == R.id.cih2educ
+                        || checkedId == R.id.cih2edud || checkedId == R.id.cih2edue || checkedId == R.id.cih2eduf) {
+                    binding.cih2occf.setEnabled(false);
+                    binding.cih2occf.setChecked(false);
                 } else {
-                    binding.nh2occf.setEnabled(true);
+                    binding.cih2occf.setEnabled(true);
                 }
             }
         });
@@ -673,8 +673,8 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
             }
         }
 
-        binding.nh211.setAdapter(new ArrayAdapter<>(this, R.layout.item_style, fathersList));
-        binding.nh212.setAdapter(new ArrayAdapter<>(this, R.layout.item_style, mothersList));
+        binding.cih211.setAdapter(new ArrayAdapter<>(this, R.layout.item_style, fathersList));
+        binding.cih212.setAdapter(new ArrayAdapter<>(this, R.layout.item_style, mothersList));
 
 //        Visibility for isHead
         if (MainApp.IsHead) {
@@ -711,8 +711,8 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                         binding.na204b.setChecked(false);
                     }
 
-                    binding.nh2mse.setChecked(false);
-                    binding.nh2mse.setEnabled(false);
+                    binding.cih2mse.setChecked(false);
+                    binding.cih2mse.setEnabled(false);
 
                 } else {
                     binding.na204.clearCheck();
@@ -724,9 +724,9 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
         });
 
         if (MainApp.othergender == 3) {
-            ClearClass.ClearAllFields(binding.fldGrpnh2ms, false);
+            ClearClass.ClearAllFields(binding.fldGrpcih2ms, false);
         } else {
-            ClearClass.ClearAllFields(binding.fldGrpnh2ms, true);
+            ClearClass.ClearAllFields(binding.fldGrpcih2ms, true);
         }
 
 
@@ -851,10 +851,10 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
 
         } else {
 
-            //family.setDob(binding.nh2dob.getText().toString());
-            family.setAge(binding.nh2agey.getText().toString()); //+ "/" + binding.nh2agem.getText().toString() + "/" + binding.nh2aged.getText().toString());
+            //family.setDob(binding.cih2dob.getText().toString());
+            family.setAge(binding.cih2agey.getText().toString()); //+ "/" + binding.cih2agem.getText().toString() + "/" + binding.cih2aged.getText().toString());
             if (Age < 6) {
-                family.setMotherId(mothersMap.get(binding.nh212.getSelectedItem().toString() + "_" + mothersSerials.get(mothersList.indexOf(binding.nh212.getSelectedItem().toString()) - 1)));
+                family.setMotherId(mothersMap.get(binding.cih212.getSelectedItem().toString() + "_" + mothersSerials.get(mothersList.indexOf(binding.cih212.getSelectedItem().toString()) - 1)));
             }
 
 
@@ -862,20 +862,20 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
 
 
             sA2.put("resp", family.getResp().equals("0") ? "" : family.getResp());
-            sA2.put("nh2SerialNo", family.getSerialNo());
-            sA2.put("nh202", family.getName());
-            sA2.put("nh203", family.getRealtionHH());
-            sA2.put("nh204", family.getna204());
+            sA2.put("cih2SerialNo", family.getSerialNo());
+            sA2.put("cih202", family.getName());
+            sA2.put("cih203", family.getRealtionHH());
+            sA2.put("cih204", family.getna204());
 
-            sA2.put("nh2doby", binding.nh2doby.getText().toString());
-            sA2.put("nh2dobm", binding.nh2dobm.getText().toString());
-            sA2.put("nh2dobd", binding.nh2dobd.getText().toString());
+            sA2.put("cih2doby", binding.cih2doby.getText().toString());
+            sA2.put("cih2dobm", binding.cih2dobm.getText().toString());
+            sA2.put("cih2dobd", binding.cih2dobd.getText().toString());
 
 
-            sA2.put("nh206y", binding.nh2agey.getText().toString());
+            sA2.put("cih206y", binding.cih2agey.getText().toString());
 
-            if (binding.nh2doby.getText().toString().equals("9998")) {
-                Age = Integer.valueOf(binding.nh2agey.getText().toString());
+            if (binding.cih2doby.getText().toString().equals("9998")) {
+                Age = Integer.valueOf(binding.cih2agey.getText().toString());
             } else {
                 Age = (int) agebyDob;
             }
@@ -883,34 +883,34 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
             sA2.put("age", String.valueOf(Age));
 
 
-            sA2.put("nh207", binding.nh2msa.isChecked() ? "1" : binding.nh2msb.isChecked() ? "2" : binding.nh2msc.isChecked() ? "3" : binding.nh2msd.isChecked() ? "4"
-                    : binding.nh2mse.isChecked() ? "5" : "0");
+            sA2.put("cih207", binding.cih2msa.isChecked() ? "1" : binding.cih2msb.isChecked() ? "2" : binding.cih2msc.isChecked() ? "3" : binding.cih2msd.isChecked() ? "4"
+                    : binding.cih2mse.isChecked() ? "5" : "0");
 
-            sA2.put("nh208", binding.nh2edua.isChecked() ? "1" : binding.nh2edub.isChecked() ? "2" : binding.nh2educ.isChecked() ? "3" : binding.nh2edud.isChecked() ? "4"
-                    : binding.nh2edue.isChecked() ? "5" : binding.nh2eduf.isChecked() ? "6" : binding.nh2edug.isChecked() ? "7" : binding.nh2eduh.isChecked() ? "8"
-                    : binding.nh2edui.isChecked() ? "9"
-                    : binding.nh2edu98.isChecked() ? "98" :
+            sA2.put("cih208", binding.cih2edua.isChecked() ? "1" : binding.cih2edub.isChecked() ? "2" : binding.cih2educ.isChecked() ? "3" : binding.cih2edud.isChecked() ? "4"
+                    : binding.cih2edue.isChecked() ? "5" : binding.cih2eduf.isChecked() ? "6" : binding.cih2edug.isChecked() ? "7" : binding.cih2eduh.isChecked() ? "8"
+                    : binding.cih2edui.isChecked() ? "9"
+                    : binding.cih2edu98.isChecked() ? "98" :
                     "0");
 
-            sA2.put("nh209", binding.nh2occa.isChecked() ? "1" : binding.nh2occb.isChecked() ? "2" : binding.nh2occc.isChecked() ? "3" : binding.nh2occd.isChecked() ? "4"
-                    : binding.nh2occe.isChecked() ? "5" : binding.nh2occf.isChecked() ? "6" : binding.nh2occg.isChecked() ? "7" : binding.nh2occh.isChecked() ? "8"
-                    : binding.nh2occi.isChecked() ? "9" : binding.nh2occj.isChecked() ? "10" : binding.nh2occ96.isChecked() ? "96" : "0");
+            sA2.put("cih209", binding.cih2occa.isChecked() ? "1" : binding.cih2occb.isChecked() ? "2" : binding.cih2occc.isChecked() ? "3" : binding.cih2occd.isChecked() ? "4"
+                    : binding.cih2occe.isChecked() ? "5" : binding.cih2occf.isChecked() ? "6" : binding.cih2occg.isChecked() ? "7" : binding.cih2occh.isChecked() ? "8"
+                    : binding.cih2occi.isChecked() ? "9" : binding.cih2occj.isChecked() ? "10" : binding.cih2occ96.isChecked() ? "96" : "0");
 
-            sA2.put("nh20996x", binding.nh2occ96x.getText().toString());
+            sA2.put("cih20996x", binding.cih2occ96x.getText().toString());
 
-            sA2.put("nh210", binding.nh210a.isChecked() ? "1" : binding.nh210b.isChecked() ? "2" : "0");
+            sA2.put("cih210", binding.cih210a.isChecked() ? "1" : binding.cih210b.isChecked() ? "2" : "0");
 
-            sA2.put("nh211", fathersMap.get(binding.nh211.getSelectedItem().toString() + "_" + fathersSerials.get(fathersList.indexOf(binding.nh211.getSelectedItem().toString()) - 1)));
-            sA2.put("nh212", mothersMap.get(binding.nh212.getSelectedItem().toString() + "_" + mothersSerials.get(mothersList.indexOf(binding.nh212.getSelectedItem().toString()) - 1)));
+            sA2.put("cih211", fathersMap.get(binding.cih211.getSelectedItem().toString() + "_" + fathersSerials.get(fathersList.indexOf(binding.cih211.getSelectedItem().toString()) - 1)));
+            sA2.put("cih212", mothersMap.get(binding.cih212.getSelectedItem().toString() + "_" + mothersSerials.get(mothersList.indexOf(binding.cih212.getSelectedItem().toString()) - 1)));
 
 
             family.setsA2(String.valueOf(sA2));
 
             //Setting for FamilyMembers List
-            family.setMaritialStatus(binding.nh2msa.isChecked() ? "1" : binding.nh2msb.isChecked() ? "2" : binding.nh2msc.isChecked() ? "3" : binding.nh2msd.isChecked() ? "4"
-                    : binding.nh2mse.isChecked() ? "5" : "0");
-            family.setFatherName(binding.nh211.getSelectedItem().toString().toUpperCase());
-            family.setMotherName(binding.nh212.getSelectedItem().toString().toUpperCase());
+            family.setMaritialStatus(binding.cih2msa.isChecked() ? "1" : binding.cih2msb.isChecked() ? "2" : binding.cih2msc.isChecked() ? "3" : binding.cih2msd.isChecked() ? "4"
+                    : binding.cih2mse.isChecked() ? "5" : "0");
+            family.setFatherName(binding.cih211.getSelectedItem().toString().toUpperCase());
+            family.setMotherName(binding.cih212.getSelectedItem().toString().toUpperCase());
 
             /*Functionality Setting*/
 
@@ -929,32 +929,32 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
             MainApp.membersCount.setMembers(1, memType);
 
             // Set availability
-            if (binding.nh210a.isChecked()) {
+            if (binding.cih210a.isChecked()) {
                 family.setAv("1");
             }
 
 
             //MWRA
             if ((Age >= 15 && Age < 50) && family.getna204().equals("2")) {
-                if (binding.nh2mse.isChecked()) {
+                if (binding.cih2mse.isChecked()) {
                     MainApp.membersCount.setWra(MainApp.membersCount.getWra() + 1);
-                    /*if (binding.nh210a.isChecked()) {
+                    /*if (binding.cih210a.isChecked()) {
                         family.setAv("1");
                     }*/
                 } else {
                     MainApp.membersCount.setMwra(MainApp.membersCount.getMwra() + 1);
-                    /*if (binding.nh210a.isChecked()) {
+                    /*if (binding.cih210a.isChecked()) {
                         family.setAv("1");
                     }*/
 
                 }
-                if (binding.nh210a.isChecked()) {
+                if (binding.cih210a.isChecked()) {
                     MainApp.mwra.add(family);
                 }
                 //MainApp.adolescents.add(family);
             }
             //Adolescent
-            if ((Age >= 10 && Age < 20) && binding.nh2mse.isChecked()) {
+            if ((Age >= 10 && Age < 20) && binding.cih2mse.isChecked()) {
                 memType = new HashMap<>();
                 if (family.getna204().equals("1")) {
                     memType.put(1, Integer.valueOf(mem.get(2).get(1).toString()) + 1);
@@ -967,7 +967,7 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
 
                 // Add data in list
                 MainApp.adolescents.add(family);
-                /*if (binding.nh210a.isChecked()) {
+                /*if (binding.cih210a.isChecked()) {
                     family.setAv("1");
                 }*/
             }
@@ -982,7 +982,7 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                     memType.put(1, Integer.valueOf(mem.get(3).get(1).toString()));
                 }
                 MainApp.membersCount.setMembers(3, memType);
-                /*if (binding.nh210a.isChecked()) {
+                /*if (binding.cih210a.isChecked()) {
                     family.setAv("1");
                 }*/
 
@@ -1009,11 +1009,11 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
 
             if (Age >= 15) {
                 // Add data in list
-                if (!binding.nh2mse.isChecked()) {
+                if (!binding.cih2mse.isChecked()) {
                     MainApp.members_f_m.add(family);
                 }
 
-                if (binding.nh210a.isChecked()) {
+                if (binding.cih210a.isChecked()) {
                     MainApp.respList.add(family);
                 }
             }
@@ -1093,105 +1093,105 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
 
         } else {
 
-            if (!ValidatorClass.EmptyTextBox(this, binding.nh2doby, getString(R.string.nh2dob))) {
+            if (!ValidatorClass.EmptyTextBox(this, binding.cih2doby, getString(R.string.cih2dob))) {
                 return false;
             }
 
 
-            if (!ValidatorClass.RangeTextBox(this, binding.nh2doby, DateUtils.getCurrentYear() - 95, DateUtils.getCurrentYear(), 9998, getString(R.string.nh2dob), " year")) {
+            if (!ValidatorClass.RangeTextBox(this, binding.cih2doby, DateUtils.getCurrentYear() - 95, DateUtils.getCurrentYear(), 9998, getString(R.string.cih2dob), " year")) {
                 return false;
             }
 
 
-            if (!ValidatorClass.EmptyTextBox(this, binding.nh2dobm, getString(R.string.nh2dob))) {
+            if (!ValidatorClass.EmptyTextBox(this, binding.cih2dobm, getString(R.string.cih2dob))) {
                 return false;
             }
 
-            if (!ValidatorClass.RangeTextBox(this, binding.nh2dobm, 1, 12, 98, getString(R.string.nh2dob), " month")) {
+            if (!ValidatorClass.RangeTextBox(this, binding.cih2dobm, 1, 12, 98, getString(R.string.cih2dob), " month")) {
                 return false;
             }
 
-            if (!ValidatorClass.EmptyTextBox(this, binding.nh2dobd, getString(R.string.nh2dob))) {
+            if (!ValidatorClass.EmptyTextBox(this, binding.cih2dobd, getString(R.string.cih2dob))) {
                 return false;
             }
 
-            if (!ValidatorClass.RangeTextBox(this, binding.nh2dobd, 1, 31, 98, getString(R.string.nh2dob), " day")) {
+            if (!ValidatorClass.RangeTextBox(this, binding.cih2dobd, 1, 31, 98, getString(R.string.cih2dob), " day")) {
                 return false;
             }
 
 
             Calendar today = Calendar.getInstance();
             if (dob.after(today)) {
-                if (!ValidatorClass.RangeTextBoxforDate(this, binding.nh2dobd, 1, DateUtils.getCurrentDate(), 98, "Date can not be more than today")) {
+                if (!ValidatorClass.RangeTextBoxforDate(this, binding.cih2dobd, 1, DateUtils.getCurrentDate(), 98, "Date can not be more than today")) {
                     return false;
                 }
 
-                if (!ValidatorClass.RangeTextBoxforDate(this, binding.nh2dobm, 1, DateUtils.getCurrentMonth(), 98, "Month can not be more than current Month")) {
+                if (!ValidatorClass.RangeTextBoxforDate(this, binding.cih2dobm, 1, DateUtils.getCurrentMonth(), 98, "Month can not be more than current Month")) {
                     return false;
                 }
 
-                if (!ValidatorClass.RangeTextBoxforDate(this, binding.nh2doby, DateUtils.getCurrentYear() - 95, DateUtils.getCurrentYear(), 9998, "Year can not be more than current year")) {
+                if (!ValidatorClass.RangeTextBoxforDate(this, binding.cih2doby, DateUtils.getCurrentYear() - 95, DateUtils.getCurrentYear(), 9998, "Year can not be more than current year")) {
                     return false;
                 }
 
             }
 
 
-            if (binding.nh2doby.getText().toString().equals("9998")) {
+            if (binding.cih2doby.getText().toString().equals("9998")) {
 
-                if (!ValidatorClass.EmptyTextBox(this, binding.nh2agey, getString(R.string.na2age))) {
+                if (!ValidatorClass.EmptyTextBox(this, binding.cih2agey, getString(R.string.na2age))) {
                     return false;
                 }
 
-                if (!ValidatorClass.RangeTextBox(this, binding.nh2agey, 0, 95, 98, getString(R.string.na2age), " years")) {
+                if (!ValidatorClass.RangeTextBox(this, binding.cih2agey, 0, 95, 98, getString(R.string.na2age), " years")) {
                     return false;
                 }
             }
             if ((family.getResp().equals("1") || family.getRealtionHH().equals("1")) && Age < 18) {
                 String chk = family.getResp().equals("1") ? "Resp" : "Head";
-                binding.nh2agey.setError("Error(Invalid) Age for " + chk);
+                binding.cih2agey.setError("Error(Invalid) Age for " + chk);
                 Toast.makeText(this, chk + " Age greater then or equal 18..", Toast.LENGTH_SHORT).show();
                 return false;
             } else {
-                binding.nh2agey.setError(null);
+                binding.cih2agey.setError(null);
             }
 
 
             if ((family.getResp().equals("1") || family.getRealtionHH().equals("1")) && Age < 18) {
                 String chk = family.getResp().equals("1") ? "Resp" : "Head";
-                binding.nh2agey.setError("Error(Invalid) Age for " + chk);
+                binding.cih2agey.setError("Error(Invalid) Age for " + chk);
                 Toast.makeText(this, chk + " Age greater then or equal 18..", Toast.LENGTH_SHORT).show();
                 return false;
             } else {
-                binding.nh2agey.setError(null);
+                binding.cih2agey.setError(null);
             }
             //}
 
             if (MainApp.othergender != 3) {
-                if (!ValidatorClass.EmptyRadioButton(this, binding.nh2ms, binding.nh2msa, getString(R.string.nh2ms))) {
+                if (!ValidatorClass.EmptyRadioButton(this, binding.cih2ms, binding.cih2msa, getString(R.string.cih2ms))) {
                     return false;
                 }
             }
 
-            if (!ValidatorClass.EmptyRadioButton(this, binding.nh2edu, binding.nh2edua, getString(R.string.nh2edu))) {
+            if (!ValidatorClass.EmptyRadioButton(this, binding.cih2edu, binding.cih2edua, getString(R.string.cih2edu))) {
                 return false;
             }
 
-            if (!ValidatorClass.EmptyRadioButton(this, binding.nh2occ, binding.nh2occa, getString(R.string.nh2occ))) {
+            if (!ValidatorClass.EmptyRadioButton(this, binding.cih2occ, binding.cih2occa, getString(R.string.cih2occ))) {
                 return false;
             }
 
-            if (!ValidatorClass.EmptyRadioButton(this, binding.nh2occ, binding.nh2occ96, binding.nh2occ96x, getString(R.string.nh2occ))) {
+            if (!ValidatorClass.EmptyRadioButton(this, binding.cih2occ, binding.cih2occ96, binding.cih2occ96x, getString(R.string.cih2occ))) {
                 return false;
             }
-            if (!ValidatorClass.EmptyRadioButton(this, binding.nh210, binding.nh210a, getString(R.string.nh210))) {
+            if (!ValidatorClass.EmptyRadioButton(this, binding.cih210, binding.cih210a, getString(R.string.cih210))) {
                 return false;
             }
-            if (!ValidatorClass.EmptySpinner(this, binding.nh211, getString(R.string.nh211))) {
+            if (!ValidatorClass.EmptySpinner(this, binding.cih211, getString(R.string.cih211))) {
                 return false;
             }
 
-            return ValidatorClass.EmptySpinner(this, binding.nh212, getString(R.string.nh212));
+            return ValidatorClass.EmptySpinner(this, binding.cih212, getString(R.string.cih212));
 
         }
 

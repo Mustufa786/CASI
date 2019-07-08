@@ -59,7 +59,7 @@
                             android:layout_marginTop="16dp"
                             android:layout_weight="23"
                             android:background="@color/colorPrimary"
-                            android:text="@string/nh2mw"
+                            android:text="@string/cih2mw"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white" />
 
@@ -108,7 +108,7 @@
                         android:weightSum="100">
 
                         <TextView
-                            android:id="@+id/nh2mw"
+                            android:id="@+id/cih2mw"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_marginLeft="1dp"
@@ -159,7 +159,7 @@
                                 android:weightSum="100">
 
                                 <TextView
-                                    android:id="@+id/nh2adf"
+                                    android:id="@+id/cih2adf"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_marginLeft="1dp"
@@ -169,7 +169,7 @@
                                     android:textColor="@color/colorPrimaryDark" />
 
                                 <TextView
-                                    android:id="@+id/nh2adm"
+                                    android:id="@+id/cih2adm"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_marginLeft="1dp"
@@ -219,7 +219,7 @@
                                 android:weightSum="100">
 
                                 <TextView
-                                    android:id="@+id/nh2u5g"
+                                    android:id="@+id/cih2u5g"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_marginLeft="1dp"
@@ -229,7 +229,7 @@
                                     android:textColor="@color/colorPrimaryDark" />
 
                                 <TextView
-                                    android:id="@+id/nh2u5b"
+                                    android:id="@+id/cih2u5b"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_marginLeft="1dp"
@@ -280,7 +280,7 @@
                                 android:weightSum="100">
 
                                 <TextView
-                                    android:id="@+id/nh2tf"
+                                    android:id="@+id/cih2tf"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_marginLeft="1dp"
@@ -290,7 +290,7 @@
                                     android:textColor="@color/colorPrimaryDark" />
 
                                 <TextView
-                                    android:id="@+id/nh2tm"
+                                    android:id="@+id/cih2tm"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="50"

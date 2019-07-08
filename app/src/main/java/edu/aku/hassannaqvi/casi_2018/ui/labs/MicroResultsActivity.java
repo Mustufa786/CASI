@@ -65,7 +65,7 @@ public class MicroResultsActivity extends AppCompatActivity {
         //binding.ne20301c.setCu
 
 
-        binding.nh102.addTextChangedListener(new TextWatcher() {
+        binding.cih102.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
@@ -73,8 +73,8 @@ public class MicroResultsActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                binding.nh108.setText(null);
-                binding.fldGrpnh101.setVisibility(View.GONE);
+                binding.cih108.setText(null);
+                binding.fldGrpcih101.setVisibility(View.GONE);
             }
 
             @Override
@@ -88,11 +88,11 @@ public class MicroResultsActivity extends AppCompatActivity {
 
 
 //        HH listener
-        binding.nh108.addTextChangedListener(new TextWatcher() {
+        binding.cih108.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
-                binding.nh108.setInputType(InputType.TYPE_CLASS_NUMBER);
+                binding.cih108.setInputType(InputType.TYPE_CLASS_NUMBER);
 
                 length = charSequence.toString().length();
 
@@ -102,12 +102,12 @@ public class MicroResultsActivity extends AppCompatActivity {
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
 
-                if (!binding.nh108.getText().toString().isEmpty() && binding.nh108.getText().toString().length() == 4) {
-                    if (binding.nh108.getText().toString().substring(0, 3).matches("[0-9]+")) {
+                if (!binding.cih108.getText().toString().isEmpty() && binding.cih108.getText().toString().length() == 4) {
+                    if (binding.cih108.getText().toString().substring(0, 3).matches("[0-9]+")) {
                         if (length < 5) {
-                            binding.nh108.setText(binding.nh108.getText().toString() + "-");
-                            binding.nh108.setSelection(binding.nh108.getText().length());
-                            //binding.nh108.setInputType(InputType.TYPE_TEXT_FLAG_CAP_CHARACTERS);
+                            binding.cih108.setText(binding.cih108.getText().toString() + "-");
+                            binding.cih108.setSelection(binding.cih108.getText().length());
+                            //binding.cih108.setInputType(InputType.TYPE_TEXT_FLAG_CAP_CHARACTERS);
                         }
 
                     }
@@ -128,9 +128,9 @@ public class MicroResultsActivity extends AppCompatActivity {
 
     public void BtnCheckHH() {
 
-        if (!binding.nh102.getText().toString().trim().isEmpty() && !binding.nh108.getText().toString().trim().isEmpty()) {
+        if (!binding.cih102.getText().toString().trim().isEmpty() && !binding.cih108.getText().toString().trim().isEmpty()) {
 
-            specimen = db.getMicroforresults(binding.nh102.getText().toString(), binding.nh108.getText().toString().toUpperCase());
+            specimen = db.getMicroforresults(binding.cih102.getText().toString(), binding.cih108.getText().toString().toUpperCase());
 
             if (specimen.size() != 0) {
                 for (WaterSpecimenContract fm : specimen) {
@@ -163,24 +163,24 @@ public class MicroResultsActivity extends AppCompatActivity {
 
     public void BtnCheckEnm() {
 
-        if (ValidatorClass.EmptyTextBox(this, binding.nh102, getString(R.string.nh102))) {
+        if (ValidatorClass.EmptyTextBox(this, binding.cih102, getString(R.string.cih102))) {
 
-            EnumBlockContract enumBlockContract = db.getEnumBlock(binding.nh102.getText().toString());
+            EnumBlockContract enumBlockContract = db.getEnumBlock(binding.cih102.getText().toString());
             if (enumBlockContract != null) {
                 String selected = enumBlockContract.getGeoarea();
                 if (!selected.equals("")) {
 
                     String[] selSplit = selected.split("\\|");
 
-                    binding.nh103.setText(selSplit[0]);
-                    binding.nh104.setText(selSplit[1].equals("") ? "----" : selSplit[1]);
-                    binding.nh105.setText(selSplit[2].equals("") ? "----" : selSplit[2]);
-                    binding.nh106.setText(selSplit[3]);
+                    binding.cih103.setText(selSplit[0]);
+                    binding.cih104.setText(selSplit[1].equals("") ? "----" : selSplit[1]);
+                    binding.cih105.setText(selSplit[2].equals("") ? "----" : selSplit[2]);
+                    binding.cih106.setText(selSplit[3]);
 
-                    binding.fldGrpnh101.setVisibility(View.VISIBLE);
+                    binding.fldGrpcih101.setVisibility(View.VISIBLE);
                 }
             } else {
-                binding.nh108.setText(null);
+                binding.cih108.setText(null);
                 Toast.makeText(this, "Sorry not found any block", Toast.LENGTH_SHORT).show();
             }
 
@@ -275,21 +275,21 @@ public class MicroResultsActivity extends AppCompatActivity {
         int scanChar;
 
         //Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
-        if (!ValidatorClass.EmptyTextBox(this, binding.nh102, getString(R.string.nh102))) {
+        if (!ValidatorClass.EmptyTextBox(this, binding.cih102, getString(R.string.cih102))) {
             return false;
         }
 
-//        nh108
+//        cih108
 
-        if (binding.nh108.getText().toString().length() == 8) {
-            String[] str = binding.nh108.getText().toString().split("-");
-            if (str.length > 2 || binding.nh108.getText().toString().charAt(4) != '-' || !str[0].matches("[0-9]+") || !str[1].matches("[0-9]+")) {
-                binding.nh108.setError("Wrong presentation!!");
+        if (binding.cih108.getText().toString().length() == 8) {
+            String[] str = binding.cih108.getText().toString().split("-");
+            if (str.length > 2 || binding.cih108.getText().toString().charAt(4) != '-' || !str[0].matches("[0-9]+") || !str[1].matches("[0-9]+")) {
+                binding.cih108.setError("Wrong presentation!!");
                 return false;
             }
         } else {
-            Toast.makeText(this, "Invalid length: " + getString(R.string.nh108), Toast.LENGTH_SHORT).show();
-            binding.nh108.setError("Invalid length");
+            Toast.makeText(this, "Invalid length: " + getString(R.string.cih108), Toast.LENGTH_SHORT).show();
+            binding.cih108.setError("Invalid length");
             return false;
         }
 
@@ -395,8 +395,8 @@ public class MicroResultsActivity extends AppCompatActivity {
         MainApp.msc.setUUID(uuid);
         MainApp.msc.setWUID(wuid);
 
-        MainApp.msc.setClusterno(binding.nh102.getText().toString());
-        MainApp.msc.setHhno(binding.nh108.getText().toString());
+        MainApp.msc.setClusterno(binding.cih102.getText().toString());
+        MainApp.msc.setHhno(binding.cih108.getText().toString());
 
         JSONObject sE1 = new JSONObject();
 

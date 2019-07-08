@@ -85,16 +85,16 @@ public class SectionA2ListActivity extends AppCompatActivity {
         mem = MainApp.membersCount.getMembers();
 
         // Total
-        binding.nh2tm.setText(mem.get(1).get(1).toString());
-        binding.nh2tf.setText(mem.get(1).get(2).toString());
+        binding.cih2tm.setText(mem.get(1).get(1).toString());
+        binding.cih2tf.setText(mem.get(1).get(2).toString());
         // Adolescents
-        binding.nh2adm.setText(mem.get(2).get(1).toString());
-        binding.nh2adf.setText(mem.get(2).get(2).toString());
+        binding.cih2adm.setText(mem.get(2).get(1).toString());
+        binding.cih2adf.setText(mem.get(2).get(2).toString());
         // Children < 5
-        binding.nh2u5b.setText(mem.get(3).get(1).toString());
-        binding.nh2u5g.setText(mem.get(3).get(2).toString());
+        binding.cih2u5b.setText(mem.get(3).get(1).toString());
+        binding.cih2u5g.setText(mem.get(3).get(2).toString());
         //  Mwra
-        binding.nh2mw.setText(String.valueOf(MainApp.membersCount.getMwra()));
+        binding.cih2mw.setText(String.valueOf(MainApp.membersCount.getMwra()));
 
         autoPopulateFields();
 
@@ -343,16 +343,16 @@ public class SectionA2ListActivity extends AppCompatActivity {
 //        editFormContract.getCount();
         countJSON = JSONUtilClass.getModelFromJSON(MainApp.fc.getCount(), JSONACountModelClass.class);
         // Total
-        binding.nh2tm.setText(countJSON.getnh2tm());
-        binding.nh2tf.setText(countJSON.getnh2tf());
+        binding.cih2tm.setText(countJSON.getcih2tm());
+        binding.cih2tf.setText(countJSON.getcih2tf());
         // Adolescents
-        binding.nh2adm.setText(countJSON.getnh2adm());
-        binding.nh2adf.setText(countJSON.getnh2adf());
+        binding.cih2adm.setText(countJSON.getcih2adm());
+        binding.cih2adf.setText(countJSON.getcih2adf());
         // Children < 5
-        binding.nh2u5b.setText(countJSON.getnh2u5b());
-        binding.nh2u5g.setText(countJSON.getnh2u5g());
+        binding.cih2u5b.setText(countJSON.getcih2u5b());
+        binding.cih2u5g.setText(countJSON.getcih2u5g());
         //  Mwra
-        binding.nh2mw.setText(countJSON.getnh2mw());
+        binding.cih2mw.setText(countJSON.getcih2mw());
     }
 
     public String MStatusChecking(String ms) {
@@ -483,13 +483,13 @@ public class SectionA2ListActivity extends AppCompatActivity {
 
         JSONObject count = new JSONObject();
 
-        count.put("nh2tm", binding.nh2tm.getText().toString());
-        count.put("nh2tf", binding.nh2tf.getText().toString());
-        count.put("nh2adm", binding.nh2adm.getText().toString());
-        count.put("nh2adf", binding.nh2adf.getText().toString());
-        count.put("nh2u5b", binding.nh2u5b.getText().toString());
-        count.put("nh2u5g", binding.nh2u5g.getText().toString());
-        count.put("nh2mw", binding.nh2mw.getText().toString());
+        count.put("cih2tm", binding.cih2tm.getText().toString());
+        count.put("cih2tf", binding.cih2tf.getText().toString());
+        count.put("cih2adm", binding.cih2adm.getText().toString());
+        count.put("cih2adf", binding.cih2adf.getText().toString());
+        count.put("cih2u5b", binding.cih2u5b.getText().toString());
+        count.put("cih2u5g", binding.cih2u5g.getText().toString());
+        count.put("cih2mw", binding.cih2mw.getText().toString());
 
         MainApp.fc.setRespLineNo(respLineNo);
 

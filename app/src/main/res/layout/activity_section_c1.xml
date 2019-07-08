@@ -81,7 +81,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
                         android:background="@color/colorPrimary"
-                        android:text="@string/nh113"
+                        android:text="@string/cih113"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@android:color/white" />
 

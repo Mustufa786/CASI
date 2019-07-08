@@ -33,7 +33,7 @@ public class SectionH8infoActivity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_h8info);
         bi.setCallback(this);
         db = new DatabaseHelper(this);
-        this.setTitle(getResources().getString(R.string.nh8heading));
+        this.setTitle(getResources().getString(R.string.cih8heading));
 
         if (SectionA1Activity.editFormFlag) {
             AutoPopulate();
@@ -43,22 +43,22 @@ public class SectionH8infoActivity extends AppCompatActivity {
     public boolean formValidation() {
 
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nh801, bi.nh801a, getString(R.string.nh801))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cih801, bi.cih801a, getString(R.string.cih801))) {
             return false;
         }
 
-        if (bi.nh801a.isChecked()) {
-            if (!ValidatorClass.EmptyTextBox(this, bi.nh802, getString(R.string.nh802))) {
+        if (bi.cih801a.isChecked()) {
+            if (!ValidatorClass.EmptyTextBox(this, bi.cih802, getString(R.string.cih802))) {
                 return false;
             }
 
             if (SectionA1Activity.editFormFlag) {
-                if (Integer.valueOf(bi.nh802.getText().toString()) > prevDeceasedCounter) {
+                if (Integer.valueOf(bi.cih802.getText().toString()) > prevDeceasedCounter) {
                     Toast.makeText(this, "Can't increase Deceased!", Toast.LENGTH_SHORT).show();
                     return false;
                 }
             } else {
-                return ValidatorClass.RangeTextBox(this, bi.nh802, 1, 99, getString(R.string.nh802), " Deceased");
+                return ValidatorClass.RangeTextBox(this, bi.cih802, 1, 99, getString(R.string.cih802), " Deceased");
             }
         }
 
@@ -72,11 +72,11 @@ public class SectionH8infoActivity extends AppCompatActivity {
         JSONA5ModelClass jsonA5 = JSONUtilClass.getModelFromJSON(MainApp.fc.getsA5(), JSONA5ModelClass.class);
 
 
-        jsonA5.setnh801(bi.nh801a.isChecked() ? "1" : bi.nh801b.isChecked() ? "2" : "0");
-        jsonA5.setnh802(bi.nh802.getText().toString());
+        jsonA5.setcih801(bi.cih801a.isChecked() ? "1" : bi.cih801b.isChecked() ? "2" : "0");
+        jsonA5.setcih802(bi.cih802.getText().toString());
 
-        if (bi.nh801a.isChecked()) {
-            deceasedCounter = Integer.valueOf(bi.nh802.getText().toString());
+        if (bi.cih801a.isChecked()) {
+            deceasedCounter = Integer.valueOf(bi.cih802.getText().toString());
         }
 //        JsonObject json = new JsonObject(jsonA5);
         GsonBuilder builder = new GsonBuilder();
@@ -113,20 +113,20 @@ public class SectionH8infoActivity extends AppCompatActivity {
 
             JSONA5ModelClass jsonA5 = JSONUtilClass.getModelFromJSON(formContract.getsA5(), JSONA5ModelClass.class);
 
-            if (!jsonA5.getnh801().equals("0")) {
-                bi.nh801.check(
-                        jsonA5.getnh801().equals("1") ? bi.nh801a.getId() :
-                                bi.nh801b.getId()
+            if (!jsonA5.getcih801().equals("0")) {
+                bi.cih801.check(
+                        jsonA5.getcih801().equals("1") ? bi.cih801a.getId() :
+                                bi.cih801b.getId()
 
                 );
             }
-            bi.nh802.setText(jsonA5.getnh802());
+            bi.cih802.setText(jsonA5.getcih802());
 
-            if (jsonA5.getnh801().equals("2")) {
-                bi.nh801a.setEnabled(false);
+            if (jsonA5.getcih801().equals("2")) {
+                bi.cih801a.setEnabled(false);
             }
-            if (!jsonA5.getnh802().equals("")) {
-                prevDeceasedCounter = Integer.valueOf(jsonA5.getnh802());
+            if (!jsonA5.getcih802().equals("")) {
+                prevDeceasedCounter = Integer.valueOf(jsonA5.getcih802());
             }
 
         }
@@ -145,7 +145,7 @@ public class SectionH8infoActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
             if (UpdateDB()) {
-                if (bi.nh801a.isChecked()) {
+                if (bi.cih801a.isChecked()) {
                     startActivity(new Intent(SectionH8infoActivity.this, SectionH8Activity.class));
                 } else {
                     if (SectionA1Activity.editFormFlag) {

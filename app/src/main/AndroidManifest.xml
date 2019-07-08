@@ -29,7 +29,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
-        <activity android:name=".ui.household.SectionA402"></activity>
+        <activity android:name=".ui.household.SectionA402Activity"></activity>
         <activity android:name=".ui.household.SectionA7Activity" />
         <activity
             android:name=".ui.mainUI.SplashscreenActivity"
