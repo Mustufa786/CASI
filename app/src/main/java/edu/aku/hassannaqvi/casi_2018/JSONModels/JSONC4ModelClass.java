@@ -26,8 +26,47 @@ public class JSONC4ModelClass {
     private String nc404h = "";
     private String nc404i = "";
     private String nc404j = "";
-    private String nc40496 = "";
-    private String nc40496x = "";
+    private String nc404k = "";
+    private String nc404l = "";
+    private String nc404m = "";
+    private String nc4049601 = "";
+    private String nc4049601x = "";
+    private String nc4049602 = "";
+    private String nc4049602x = "";
+    private String nc4049603 = "";
+    private String nc4049603x = "";
+
+    public String getNc4049602() {
+        return nc4049602;
+    }
+
+    public void setNc4049602(String nc4049602) {
+        this.nc4049602 = nc4049602;
+    }
+
+    public String getNc4049602x() {
+        return nc4049602x;
+    }
+
+    public void setNc4049602x(String nc4049602x) {
+        this.nc4049602x = nc4049602x;
+    }
+
+    public String getNc4049603() {
+        return nc4049603;
+    }
+
+    public void setNc4049603(String nc4049603) {
+        this.nc4049603 = nc4049603;
+    }
+
+    public String getNc4049603x() {
+        return nc4049603x;
+    }
+
+    public void setNc4049603x(String nc4049603x) {
+        this.nc4049603x = nc4049603x;
+    }
     private String nc405 = "";
     private String nc406 = "";
     private String nc407 = "";
@@ -82,6 +121,30 @@ public class JSONC4ModelClass {
 
     public JSONC4ModelClass() {
 
+    }
+
+    public String getNc404k() {
+        return nc404k;
+    }
+
+    public void setNc404k(String nc404k) {
+        this.nc404k = nc404k;
+    }
+
+    public String getNc404l() {
+        return nc404l;
+    }
+
+    public void setNc404l(String nc404l) {
+        this.nc404l = nc404l;
+    }
+
+    public String getNc404m() {
+        return nc404m;
+    }
+
+    public void setNc404m(String nc404m) {
+        this.nc404m = nc404m;
     }
 
     public String getnc4name() {
@@ -229,19 +292,19 @@ public class JSONC4ModelClass {
     }
 
     public String getnc40496() {
-        return nc40496;
+        return nc4049601;
     }
 
     public void setnc40496(String nc40496) {
-        this.nc40496 = nc40496;
+        this.nc4049601 = nc40496;
     }
 
     public String getnc40496x() {
-        return nc40496x;
+        return nc4049601x;
     }
 
     public void setnc40496x(String nc40496x) {
-        this.nc40496x = nc40496x;
+        this.nc4049601x = nc40496x;
     }
 
     public String getnc405() {

@@ -585,7 +585,77 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
                 : binding.nh503d.isChecked() ? "4"
                 : "0");
 
-        //Section A7
+        //Section A6
+        sA5.put("cih601", binding.cih601a.isChecked() ? "1"
+                : binding.cih601b.isChecked() ? "2"
+                : "0");
+        sA5.put("cih602", binding.cih602a.isChecked() ? "1"
+                : binding.cih602b.isChecked() ? "2"
+                : binding.cih602c.isChecked() ? "3"
+                : "0");
+        sA5.put("cih603", binding.cih603a.isChecked() ? "1"
+                : binding.cih603b.isChecked() ? "2"
+                : "0");
+        sA5.put("cih604", binding.cih604a.isChecked() ? "1"
+                : binding.cih604b.isChecked() ? "2"
+                : binding.cih604c.isChecked() ? "3"
+                : "0");
+        sA5.put("cih605", binding.cih605a.isChecked() ? "1"
+                : binding.cih605b.isChecked() ? "2"
+                : "0");
+        sA5.put("cih606", binding.cih606a.isChecked() ? "1"
+                : binding.cih606b.isChecked() ? "2"
+                : binding.cih606c.isChecked() ? "3"
+                : "0");
+
+        sA5.put("cih607", binding.cih607a.isChecked() ? "1"
+                : binding.cih607b.isChecked() ? "2"
+                : "0");
+
+        sA5.put("cih608", binding.cih608a.isChecked() ? "1"
+                : binding.cih608b.isChecked() ? "2"
+                : binding.cih608c.isChecked() ? "3"
+                : "0");
+
+
+        sA5.put("cih609", binding.cih609a.isChecked() ? "1"
+                : binding.cih609b.isChecked() ? "2"
+                : "0");
+
+        sA5.put("cih610", binding.cih610a.isChecked() ? "1"
+                : binding.cih610b.isChecked() ? "2"
+                : binding.cih610c.isChecked() ? "3"
+                : "0");
+        sA5.put("cih611", binding.cih611a.isChecked() ? "1"
+                : binding.cih611b.isChecked() ? "2"
+                : "0");
+        sA5.put("cih612", binding.cih612a.isChecked() ? "1"
+                : binding.cih612b.isChecked() ? "2"
+                : binding.cih612c.isChecked() ? "3"
+                : "0");
+        sA5.put("cih613", binding.cih613a.isChecked() ? "1"
+                : binding.cih613b.isChecked() ? "2"
+                : "0");
+        sA5.put("cih614", binding.cih614a.isChecked() ? "1"
+                : binding.cih614b.isChecked() ? "2"
+                : binding.cih614c.isChecked() ? "3"
+                : "0");
+        sA5.put("cih615", binding.cih615a.isChecked() ? "1"
+                : binding.cih615b.isChecked() ? "2"
+                : "0");
+
+        sA5.put("cih616", binding.cih616a.isChecked() ? "1"
+                : binding.cih616b.isChecked() ? "2"
+                : binding.cih616c.isChecked() ? "2"
+                : "0");
+        sA5.put("cih617", binding.cih617a.isChecked() ? "1"
+                : binding.cih617b.isChecked() ? "2"
+                : "0");
+        sA5.put("cih618", binding.cih618a.isChecked() ? "1"
+                : binding.cih618b.isChecked() ? "2"
+                : binding.cih618c.isChecked() ? "3"
+                : "0");
+
 
 //        sA5.put("nh601", binding.nh601a.isChecked() ? "1"
 //                : binding.nh601b.isChecked() ? "2"
