@@ -7,7 +7,9 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import org.json.JSONException;
+import org.json.JSONObject;
 
+import java.text.SimpleDateFormat;
 import java.util.Timer;
 
 import edu.aku.hassannaqvi.casi_2018.JSONModels.JSONC4ModelClass;
@@ -250,80 +252,28 @@ public class SectionC4Activity extends Menu2Activity {
             if (!jsonC4.getnc404j().equals("0")) {
                 binding.nc404j.setChecked(true);
             }
-            if (!jsonC4.getnc40496().equals("0")) {
-                binding.nc40496.setChecked(true);
+            if (!jsonC4.getNc404k().equals("0")) {
+                binding.nc404k.setChecked(true);
             }
-
-            binding.nc40496x.setText(jsonC4.getnc40496x());
-
-            if (!jsonC4.getnc401().equals("0")) {
-                binding.nc401.check(
-                        jsonC4.getnc401().equals("1") ? binding.nc401a.getId()
-                                : binding.nc401b.getId());
+            if (!jsonC4.getNc404l().equals("0")) {
+                binding.nc404l.setChecked(true);
             }
-            if (!jsonC4.getnc402().equals("0")) {
-                binding.nc402.check(
-                        jsonC4.getnc402().equals("1") ? binding.nc402a.getId()
-                                : binding.nc402b.getId());
-            }
-            if (!jsonC4.getnc403().equals("0")) {
-                binding.nc403.check(
-                        jsonC4.getnc403().equals("1") ? binding.nc403a.getId()
-                                : jsonC4.getnc403().equals("2") ? binding.nc403b.getId()
-                                : jsonC4.getnc403().equals("3") ? binding.nc403c.getId()
-                                : jsonC4.getnc403().equals("4") ? binding.nc403d.getId()
-                                : jsonC4.getnc403().equals("5") ? binding.nc403e.getId()
-                                : jsonC4.getnc403().equals("961") ? binding.nc4039601.getId()
-                                : jsonC4.getnc403().equals("6") ? binding.nc403f.getId()
-                                : jsonC4.getnc403().equals("7") ? binding.nc403g.getId()
-                                : jsonC4.getnc403().equals("8") ? binding.nc403h.getId()
-                                : jsonC4.getnc403().equals("9") ? binding.nc403i.getId()
-                                : jsonC4.getnc403().equals("10") ? binding.nc403j.getId()
-                                : jsonC4.getnc403().equals("962") ? binding.nc4039602.getId()
-                                : jsonC4.getnc403().equals("11") ? binding.nc403k.getId()
-                                : jsonC4.getnc403().equals("12") ? binding.nc403l.getId()
-                                : jsonC4.getnc403().equals("13") ? binding.nc403m.getId()
-                                : binding.nc4039603.getId());
-            }
-            binding.nc4039601x.setText(jsonC4.getnc4039601x());
-            binding.nc4039602x.setText(jsonC4.getnc4039602x());
-            binding.nc4039603x.setText(jsonC4.getnc4039603x());
-
-            if (!jsonC4.getnc404a().equals("0")) {
-                binding.nc404a.setChecked(true);
-            }
-            if (!jsonC4.getnc404b().equals("0")) {
-                binding.nc404b.setChecked(true);
-            }
-            if (!jsonC4.getnc404c().equals("0")) {
-                binding.nc404c.setChecked(true);
-            }
-            if (!jsonC4.getnc404d().equals("0")) {
-                binding.nc404d.setChecked(true);
-            }
-            if (!jsonC4.getnc404e().equals("0")) {
-                binding.nc404e.setChecked(true);
-            }
-            if (!jsonC4.getnc404f().equals("0")) {
-                binding.nc404f.setChecked(true);
-            }
-            if (!jsonC4.getnc404g().equals("0")) {
-                binding.nc404g.setChecked(true);
-            }
-            if (!jsonC4.getnc404h().equals("0")) {
-                binding.nc404h.setChecked(true);
-            }
-            if (!jsonC4.getnc404i().equals("0")) {
-                binding.nc404i.setChecked(true);
-            }
-            if (!jsonC4.getnc404j().equals("0")) {
-                binding.nc404j.setChecked(true);
+            if (!jsonC4.getNc404m().equals("0")) {
+                binding.nc404m.setChecked(true);
             }
             if (!jsonC4.getnc40496().equals("0")) {
-                binding.nc40496.setChecked(true);
+                binding.nc4049601.setChecked(true);
+            }
+            if (!jsonC4.getNc4049602().equals("0")) {
+                binding.nc4049602.setChecked(true);
+            }
+            if (!jsonC4.getNc4049603().equals("0")) {
+                binding.nc4049603.setChecked(true);
             }
 
-            binding.nc40496x.setText(jsonC4.getnc40496x());
+            binding.nc4049601x.setText(jsonC4.getnc40496x());
+            binding.nc4049602x.setText(jsonC4.getnc40496x());
+            binding.nc4049603x.setText(jsonC4.getnc40496x());
 
 
 //            C405
@@ -538,27 +488,27 @@ public class SectionC4Activity extends Menu2Activity {
 //                e.printStackTrace();
 //            }
             if (UpdateDB()) {
-//                backPressed = true;
-//
-//                if (SectionC1Activity.ageInMontsbyDob > 23 && SectionC1Activity.ageInMontsbyDob < 60) {
-//                    startActivity(new Intent(this, SectionC5Activity.class)
-//                            .putExtra("selectedChild", selectedChild));
-//                } else {
-//
-//                    if (SectionC1Activity.editChildFlag) {
-//                        finish();
-//                        startActivity(new Intent(this, ViewMemberActivity.class)
-//                                .putExtra("flagEdit", false)
-//                                .putExtra("comingBack", true)
-//                                .putExtra("cluster", MainApp.cc.getClusterno())
-//                                .putExtra("hhno", MainApp.cc.getHhno())
-//                        );
-//                    } else {
-//                        startActivity(new Intent(this, ChildEndingActivity.class)
-//                                //.putExtra("checkingFlag", false)
-//                                .putExtra("complete", true));
-//                    }
-//                }
+                backPressed = true;
+
+                if (SectionC1Activity.ageInMontsbyDob > 23 && SectionC1Activity.ageInMontsbyDob < 60) {
+                    startActivity(new Intent(this, SectionC5Activity.class)
+                            .putExtra("selectedChild", selectedChild));
+                } else {
+
+                    if (SectionC1Activity.editChildFlag) {
+                        finish();
+                        startActivity(new Intent(this, ViewMemberActivity.class)
+                                .putExtra("flagEdit", false)
+                                .putExtra("comingBack", true)
+                                .putExtra("cluster", MainApp.cc.getClusterno())
+                                .putExtra("hhno", MainApp.cc.getHhno())
+                        );
+                    } else {
+                        startActivity(new Intent(this, ChildEndingActivity.class)
+                                //.putExtra("checkingFlag", false)
+                                .putExtra("complete", true));
+                    }
+                }
 
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
@@ -620,87 +570,87 @@ public class SectionC4Activity extends Menu2Activity {
                 : binding.nc403c.isChecked() ? "3"
                 : binding.nc403d.isChecked() ? "4"
                 : binding.nc403e.isChecked() ? "5"
-                : binding.nc4039601.isChecked() ? "961"
-                : binding.nc403f.isChecked() ? "6"
-                : binding.nc403g.isChecked() ? "7"
-                : binding.nc403h.isChecked() ? "8"
-                : binding.nc403i.isChecked() ? "9"
-                : binding.nc403j.isChecked() ? "10"
-                : binding.nc4039602.isChecked() ? "962"
-                : binding.nc403k.isChecked() ? "11"
-                : binding.nc403l.isChecked() ? "12"
-                : binding.nc403m.isChecked() ? "13"
-                : binding.nc4039603.isChecked() ? "963"
+                : binding.nc40396.isChecked() ? "961"
                 : "0");
 
+        sC4.put("nc40396x", binding.nc40396x.getText().toString());
 
-        sC4.put("nc4039601x", binding.nc4039601x.getText().toString());
-        sC4.put("nc4039602x", binding.nc4039602x.getText().toString());
-        sC4.put("nc4039603x", binding.nc4039603x.getText().toString());
 
 //     nc404
-        sC4.put("nc404a", binding.nc404a.isChecked() ? "1" : "0");
-        sC4.put("nc404b", binding.nc404b.isChecked() ? "2" : "0");
-        sC4.put("nc404c", binding.nc404c.isChecked() ? "3" : "0");
-        sC4.put("nc404d", binding.nc404d.isChecked() ? "4" : "0");
-        sC4.put("nc404e", binding.nc404e.isChecked() ? "5" : "0");
-        sC4.put("nc404f", binding.nc404f.isChecked() ? "6" : "0");
-        sC4.put("nc404g", binding.nc404g.isChecked() ? "7" : "0");
-        sC4.put("nc404h", binding.nc404h.isChecked() ? "8" : "0");
-        sC4.put("nc404i", binding.nc404i.isChecked() ? "9" : "0");
-        sC4.put("nc404j", binding.nc404j.isChecked() ? "10" : "0");
-        sC4.put("nc40496", binding.nc40496.isChecked() ? "96" : "0");
+        sC4.put("nc404", binding.nc404a.isChecked() ? "1"
+                : binding.nc404b.isChecked() ? "2"
+                : binding.nc404c.isChecked() ? "3"
+                : binding.nc404d.isChecked() ? "4"
+                : binding.nc404e.isChecked() ? "5"
+                : binding.nc4049601.isChecked() ? "961"
+                : binding.nc404g.isChecked() ? "6"
+                : binding.nc404h.isChecked() ? "7"
+                : binding.nc404i.isChecked() ? "8"
+                : binding.nc404j.isChecked() ? "9"
+                : binding.nc4049602.isChecked() ? "962"
+                : binding.nc404l.isChecked() ? "10"
+                : binding.nc404m.isChecked() ? "11"
+                : binding.nc4049603.isChecked() ? "963" :
+                "0");
 
-        sC4.put("nc40496x", binding.nc40496x.getText().toString());
+        sC4.put("nc4049601x", binding.nc4049601x.getText().toString());
+        sC4.put("nc4049602x", binding.nc4049602x.getText().toString());
+        sC4.put("nc4049603x", binding.nc4049603x.getText().toString());
 
-//        nc405
-        sC4.put("nc405", binding.nc405a.isChecked() ? "1"
-                : binding.nc405b.isChecked() ? "2"
-                : "0");
+//        nc410
+        sC4.put("nc410a", binding.nc410a.isChecked() ? "1" : "0");
+        sC4.put("nc410b", binding.nc410b.isChecked() ? "2" : "0");
+        sC4.put("nc410c", binding.nc410c.isChecked() ? "3" : "0");
+        sC4.put("nc410d", binding.nc405d.isChecked() ? "4" : "0");
+        sC4.put("nc410e", binding.nc410e.isChecked() ? "5" : "0");
+        sC4.put("nc410f", binding.nc410f.isChecked() ? "6" : "0");
+        sC4.put("nc410g", binding.nc410g.isChecked() ? "7" : "0");
+        sC4.put("nc41096", binding.nc41096.isChecked() ? "96" : "0");
+
+        sC4.put("nc41096x", binding.nc41096x.getText().toString());
+
 
 //      nc406
-        sC4.put("nc406", binding.nc406a.isChecked() ? "1"
-                : binding.nc406b.isChecked() ? "2"
+        sC4.put("nc411", binding.nc411a.isChecked() ? "1"
+                : binding.nc411b.isChecked() ? "2"
                 : "0");
-
-
 //        nc407
-        sC4.put("nc407", binding.nc407a.isChecked() ? "1"
-                : binding.nc407b.isChecked() ? "2"
-                : binding.nc407c.isChecked() ? "3"
-                : binding.nc407d.isChecked() ? "4"
-                : binding.nc407e.isChecked() ? "5"
-                : binding.nc4079601.isChecked() ? "961"
-                : binding.nc407f.isChecked() ? "6"
-                : binding.nc407g.isChecked() ? "7"
-                : binding.nc407h.isChecked() ? "8"
-                : binding.nc407i.isChecked() ? "9"
-                : binding.nc407j.isChecked() ? "10"
-                : binding.nc4079602.isChecked() ? "962"
-                : binding.nc407k.isChecked() ? "11"
-                : binding.nc407l.isChecked() ? "12"
-                : binding.nc407m.isChecked() ? "13"
-                : binding.nc4079603.isChecked() ? "963"
+        sC4.put("nc412", binding.nc412a.isChecked() ? "1"
+                : binding.nc412b.isChecked() ? "2"
                 : "0");
 
 
-        sC4.put("nc4079601x", binding.nc4079601x.getText().toString());
-        sC4.put("nc4079602x", binding.nc4079602x.getText().toString());
-        sC4.put("nc4079603x", binding.nc4079603x.getText().toString());
-
-//     nc408
-        sC4.put("nc408b", binding.nc408b.isChecked() ? "2" : "0");
-        sC4.put("nc408e", binding.nc408e.isChecked() ? "5" : "0");
-        sC4.put("nc408f", binding.nc408f.isChecked() ? "6" : "0");
-        sC4.put("nc408g", binding.nc408g.isChecked() ? "7" : "0");
-        sC4.put("nc408h", binding.nc408h.isChecked() ? "8" : "0");
-        sC4.put("nc408i", binding.nc408i.isChecked() ? "9" : "0");
-        sC4.put("nc408j", binding.nc408j.isChecked() ? "10" : "0");
-        sC4.put("nc4089601", binding.nc4089601.isChecked() ? "96" : "0");
-
-        sC4.put("nc4089601x", binding.nc4089601x.getText().toString());
+//        nc408
+        sC4.put("nc413", binding.nc413a.isChecked() ? "1"
+                : binding.nc413b.isChecked() ? "2"
+                : binding.nc413c.isChecked() ? "3"
+                : binding.nc413d.isChecked() ? "4"
+                : binding.nc413e.isChecked() ? "5"
+                : binding.nc41396.isChecked() ? "96"
+                : "0");
+        sC4.put("nc41396x", binding.nc41396x.getText().toString());
 
 
+//     nc409
+        sC4.put("nc409", binding.nc409a.isChecked() ? "1"
+                : binding.nc409b.isChecked() ? "2"
+                : binding.nc409c.isChecked() ? "3"
+                : binding.nc409d.isChecked() ? "4"
+                : binding.nc409e.isChecked() ? "5"
+                : binding.nc4099601.isChecked() ? "961"
+                : binding.nc409g.isChecked() ? "6"
+                : binding.nc409h.isChecked() ? "7"
+                : binding.nc409i.isChecked() ? "8"
+                : binding.nc409j.isChecked() ? "9"
+                : binding.nc4099602.isChecked() ? "962"
+                : binding.nc409l.isChecked() ? "10"
+                : binding.nc409m.isChecked() ? "11"
+                : binding.nc4099603.isChecked() ? "963" :
+                "0");
+
+        sC4.put("nc4099601x", binding.nc4099601x.getText().toString());
+        sC4.put("nc4099602x", binding.nc4099602x.getText().toString());
+        sC4.put("nc4099603x", binding.nc4099603x.getText().toString());
 //        nc409
         sC4.put("nc409", binding.nc409a.isChecked() ? "1"
                 : binding.nc409b.isChecked() ? "2"
@@ -715,26 +665,9 @@ public class SectionC4Activity extends Menu2Activity {
 //        nc411
         sC4.put("nc411", binding.nc411a.isChecked() ? "1"
                 : binding.nc411b.isChecked() ? "2"
-                : binding.nc411c.isChecked() ? "3"
-                : binding.nc411d.isChecked() ? "4"
-                : binding.nc411e.isChecked() ? "5"
-                : binding.nc4119601.isChecked() ? "961"
-                : binding.nc411f.isChecked() ? "6"
-                : binding.nc411g.isChecked() ? "7"
-                : binding.nc411h.isChecked() ? "8"
-                : binding.nc411i.isChecked() ? "9"
-                : binding.nc411j.isChecked() ? "10"
-                : binding.nc4119602.isChecked() ? "962"
-                : binding.nc411k.isChecked() ? "11"
-                : binding.nc411l.isChecked() ? "12"
-                : binding.nc411m.isChecked() ? "13"
-                : binding.nc4119603.isChecked() ? "963"
+
                 : "0");
 
-
-        sC4.put("nc4119601x", binding.nc4119601x.getText().toString());
-        sC4.put("nc4119602x", binding.nc4119602x.getText().toString());
-        sC4.put("nc4119603x", binding.nc4119603x.getText().toString());
 
 //     nc412
         sC4.put("nc412b", binding.nc412b.isChecked() ? "2" : "0");
