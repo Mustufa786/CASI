@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ui.SectionB5Activity">
+    tools:context=".ui.wra.SectionB5Activity">
 
     <data>
 
@@ -9,7 +9,7 @@
 
         <variable
             name="callback"
-            type="edu.aku.hassannaqvi.casi_2018.ui.SectionB5Activity" />
+            type="edu.aku.hassannaqvi.casi_2018.ui.wra.SectionB5Activity" />
     </data>
 
     <LinearLayout

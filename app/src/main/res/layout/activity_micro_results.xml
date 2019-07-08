@@ -9,7 +9,7 @@
 
         <variable
             name="callback"
-            type="edu.aku.hassannaqvi.casi_2018.ui.MicroResultsActivity" />
+            type="edu.aku.hassannaqvi.casi_2018.ui.labs.MicroResultsActivity" />
     </data>
 
     <ScrollView

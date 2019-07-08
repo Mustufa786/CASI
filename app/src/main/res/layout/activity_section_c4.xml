@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ui.SectionC4Activity">
+    tools:context=".ui.childs.SectionC4Activity">
 
     <data>
 
@@ -9,7 +9,7 @@
 
         <variable
             name="callback"
-            type="edu.aku.hassannaqvi.casi_2018.ui.SectionC4Activity" />
+            type="edu.aku.hassannaqvi.casi_2018.ui.childs.SectionC4Activity" />
     </data>
 
     <LinearLayout
