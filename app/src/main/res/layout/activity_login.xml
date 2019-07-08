@@ -7,7 +7,7 @@
     android:fitsSystemWindows="true"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context="edu.aku.hassannaqvi.casi_2018.ui.LoginActivity">
+    tools:context="edu.aku.hassannaqvi.casi_2018.ui.mainUI.LoginActivity">
 
     <!-- Login progress -->
     <ProgressBar

@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layoutDirection="rtl"
-    tools:context=".ui.SpecimenInfoActivity">
+    tools:context=".ui.labs.SpecimenInfoActivity">
 
     <data>
 
@@ -10,7 +10,7 @@
 
         <variable
             name="callback"
-            type="edu.aku.hassannaqvi.casi_2018.ui.SpecimenInfoActivity" />
+            type="edu.aku.hassannaqvi.casi_2018.ui.labs.SpecimenInfoActivity" />
     </data>
 
     <LinearLayout

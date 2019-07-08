@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layoutDirection="rtl"
-    tools:context=".ui.AntrhoInfoActivity">
+    tools:context=".ui.anthro.AntrhoInfoActivity">
 
     <data>
 
@@ -10,7 +10,7 @@
 
         <variable
             name="callback"
-            type="edu.aku.hassannaqvi.casi_2018.ui.AntrhoInfoActivity" />
+            type="edu.aku.hassannaqvi.casi_2018.ui.anthro.AntrhoInfoActivity" />
     </data>
 
     <ScrollView

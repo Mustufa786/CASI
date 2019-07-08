@@ -45,10 +45,10 @@ import edu.aku.hassannaqvi.casi_2018.contracts.SummaryContract;
 import edu.aku.hassannaqvi.casi_2018.contracts.UsersContract;
 import edu.aku.hassannaqvi.casi_2018.contracts.WaterSpecimenContract;
 import edu.aku.hassannaqvi.casi_2018.other.MembersCount;
-import edu.aku.hassannaqvi.casi_2018.ui.AnthroEndingActivity;
-import edu.aku.hassannaqvi.casi_2018.ui.ChildEndingActivity;
-import edu.aku.hassannaqvi.casi_2018.ui.EndingActivity;
-import edu.aku.hassannaqvi.casi_2018.ui.MotherEndingActivity;
+import edu.aku.hassannaqvi.casi_2018.ui.anthro.AnthroEndingActivity;
+import edu.aku.hassannaqvi.casi_2018.ui.childs.ChildEndingActivity;
+import edu.aku.hassannaqvi.casi_2018.ui.household.EndingActivity;
+import edu.aku.hassannaqvi.casi_2018.ui.wra.MotherEndingActivity;
 
 /**
  * Created by hassan.naqvi on 11/30/2016.
