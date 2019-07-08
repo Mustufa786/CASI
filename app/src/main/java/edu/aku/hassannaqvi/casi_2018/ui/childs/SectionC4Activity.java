@@ -1,4 +1,4 @@
-package edu.aku.hassannaqvi.casi_2018.ui;
+package edu.aku.hassannaqvi.casi_2018.ui.childs;
 
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
@@ -12,14 +12,13 @@ import org.json.JSONObject;
 import java.text.SimpleDateFormat;
 import java.util.Timer;
 
-import edu.aku.hassannaqvi.casi_2018.JSONModels.JSONC4ModelClass;
 import edu.aku.hassannaqvi.casi_2018.R;
-import edu.aku.hassannaqvi.casi_2018.contracts.ChildContract;
 import edu.aku.hassannaqvi.casi_2018.contracts.FamilyMembersContract;
 import edu.aku.hassannaqvi.casi_2018.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2018.core.MainApp;
 import edu.aku.hassannaqvi.casi_2018.databinding.ActivitySectionC4Binding;
-import edu.aku.hassannaqvi.casi_2018.other.JSONUtilClass;
+import edu.aku.hassannaqvi.casi_2018.ui.mainUI.Menu2Activity;
+import edu.aku.hassannaqvi.casi_2018.ui.viewMem.ViewMemberActivity;
 import edu.aku.hassannaqvi.casi_2018.validation.ClearClass;
 import edu.aku.hassannaqvi.casi_2018.validation.ValidatorClass;
 
@@ -188,288 +187,288 @@ public class SectionC4Activity extends Menu2Activity {
 //        Validation Boolean
         MainApp.validateFlag = false;
 
-        autoPopulateFields();
+//        autoPopulateFields();
 
     }
 
-    private void autoPopulateFields() {
-        ChildContract childContract = db.getsC4();
-
-        if (!childContract.getsC4().equals("")) {
-
-            JSONC4ModelClass jsonC4 = JSONUtilClass.getModelFromJSON(childContract.getsC4(), JSONC4ModelClass.class);
-
-            if (!jsonC4.getnc401().equals("0")) {
-                binding.nc401.check(
-                        jsonC4.getnc401().equals("1") ? binding.nc401a.getId()
-                                : binding.nc401b.getId());
-            }
-            if (!jsonC4.getnc402().equals("0")) {
-                binding.nc402.check(
-                        jsonC4.getnc402().equals("1") ? binding.nc402a.getId()
-                                : binding.nc402b.getId());
-            }
-            if (!jsonC4.getnc403().equals("0")) {
-                binding.nc403.check(
-                        jsonC4.getnc403().equals("1") ? binding.nc403a.getId()
-                                : jsonC4.getnc403().equals("2") ? binding.nc403b.getId()
-                                : jsonC4.getnc403().equals("3") ? binding.nc403c.getId()
-                                : jsonC4.getnc403().equals("4") ? binding.nc403d.getId()
-                                : jsonC4.getnc403().equals("5") ? binding.nc403e.getId()
-                                : jsonC4.getnc403().equals("961") ? binding.nc40396.getId()
-                );
-            }
-            binding.nc40396x.setText(jsonC4.getnc4039601x());
-
-
-            if (!jsonC4.getnc404a().equals("0")) {
-                binding.nc404a.setChecked(true);
-            }
-            if (!jsonC4.getnc404b().equals("0")) {
-                binding.nc404b.setChecked(true);
-            }
-            if (!jsonC4.getnc404c().equals("0")) {
-                binding.nc404c.setChecked(true);
-            }
-            if (!jsonC4.getnc404d().equals("0")) {
-                binding.nc404d.setChecked(true);
-            }
-            if (!jsonC4.getnc404e().equals("0")) {
-                binding.nc404e.setChecked(true);
-            }
-            if (!jsonC4.getnc404f().equals("0")) {
-                binding.nc404f.setChecked(true);
-            }
-            if (!jsonC4.getnc404g().equals("0")) {
-                binding.nc404g.setChecked(true);
-            }
-            if (!jsonC4.getnc404h().equals("0")) {
-                binding.nc404h.setChecked(true);
-            }
-            if (!jsonC4.getnc404i().equals("0")) {
-                binding.nc404i.setChecked(true);
-            }
-            if (!jsonC4.getnc404j().equals("0")) {
-                binding.nc404j.setChecked(true);
-            }
-            if (!jsonC4.getNc404k().equals("0")) {
-                binding.nc404k.setChecked(true);
-            }
-            if (!jsonC4.getNc404l().equals("0")) {
-                binding.nc404l.setChecked(true);
-            }
-            if (!jsonC4.getNc404m().equals("0")) {
-                binding.nc404m.setChecked(true);
-            }
-            if (!jsonC4.getnc40496().equals("0")) {
-                binding.nc4049601.setChecked(true);
-            }
-            if (!jsonC4.getNc4049602().equals("0")) {
-                binding.nc4049602.setChecked(true);
-            }
-            if (!jsonC4.getNc4049603().equals("0")) {
-                binding.nc4049603.setChecked(true);
-            }
-
-            binding.nc4049601x.setText(jsonC4.getnc40496x());
-            binding.nc4049602x.setText(jsonC4.getnc40496x());
-            binding.nc4049603x.setText(jsonC4.getnc40496x());
-
-
-//            C405
-
-
-            if (!jsonC4.getnc405().equals("0")) {
-                binding.nc405.check(
-                        jsonC4.getnc405().equals("1") ? binding.nc405a.getId()
-                                : binding.nc405b.getId());
-            }
-            if (!jsonC4.getnc406().equals("0")) {
-                binding.nc406.check(
-                        jsonC4.getnc406().equals("1") ? binding.nc406a.getId()
-                                : binding.nc406b.getId());
-            }
-            if (!jsonC4.getnc407().equals("0")) {
-                binding.nc407.check(
-                        jsonC4.getnc407().equals("1") ? binding.nc407a.getId()
-                                : jsonC4.getnc407().equals("2") ? binding.nc407b.getId()
-                                : jsonC4.getnc407().equals("3") ? binding.nc407c.getId()
-                                : jsonC4.getnc407().equals("4") ? binding.nc407d.getId()
-                                : jsonC4.getnc407().equals("5") ? binding.nc407e.getId()
-                                : jsonC4.getnc407().equals("961") ? binding.nc4079601.getId()
-                                : jsonC4.getnc407().equals("6") ? binding.nc407f.getId()
-                                : jsonC4.getnc407().equals("7") ? binding.nc407g.getId()
-                                : jsonC4.getnc407().equals("8") ? binding.nc407h.getId()
-                                : jsonC4.getnc407().equals("9") ? binding.nc407i.getId()
-                                : jsonC4.getnc407().equals("10") ? binding.nc407j.getId()
-                                : jsonC4.getnc407().equals("962") ? binding.nc4079602.getId()
-                                : jsonC4.getnc407().equals("11") ? binding.nc407k.getId()
-                                : jsonC4.getnc407().equals("12") ? binding.nc407l.getId()
-                                : jsonC4.getnc407().equals("13") ? binding.nc407m.getId()
-                                : binding.nc4079603.getId());
-            }
-            binding.nc4079601x.setText(jsonC4.getnc4079601x());
-            binding.nc4079602x.setText(jsonC4.getnc4079602x());
-            binding.nc4079603x.setText(jsonC4.getnc4079603x());
-
-
-            if (!jsonC4.getnc408b().equals("0")) {
-                binding.nc408b.setChecked(true);
-            }
-
-            if (!jsonC4.getnc408e().equals("0")) {
-                binding.nc408e.setChecked(true);
-            }
-            if (!jsonC4.getnc408f().equals("0")) {
-                binding.nc408f.setChecked(true);
-            }
-            if (!jsonC4.getnc408g().equals("0")) {
-                binding.nc408g.setChecked(true);
-            }
-            if (!jsonC4.getnc408h().equals("0")) {
-                binding.nc408h.setChecked(true);
-            }
-            if (!jsonC4.getnc408i().equals("0")) {
-                binding.nc408i.setChecked(true);
-            }
-            if (!jsonC4.getnc408j().equals("0")) {
-                binding.nc408j.setChecked(true);
-            }
-            if (!jsonC4.getnc4089601().equals("0")) {
-                binding.nc4089601.setChecked(true);
-            }
-
-            binding.nc4089601x.setText(jsonC4.getnc40496x());
-//            C409
-            if (!jsonC4.getnc409().equals("0")) {
-                binding.nc409.check(
-                        jsonC4.getnc409().equals("1") ? binding.nc409a.getId()
-                                : binding.nc409b.getId());
-            }
-            if (!jsonC4.getnc410().equals("0")) {
-                binding.nc410.check(
-                        jsonC4.getnc410().equals("1") ? binding.nc410a.getId()
-                                : binding.nc410b.getId());
-            }
-            if (!jsonC4.getnc411().equals("0")) {
-                binding.nc411.check(
-                        jsonC4.getnc411().equals("1") ? binding.nc411a.getId()
-                                : jsonC4.getnc411().equals("2") ? binding.nc411b.getId()
-                                : jsonC4.getnc411().equals("3") ? binding.nc411c.getId()
-                                : jsonC4.getnc411().equals("4") ? binding.nc411d.getId()
-                                : jsonC4.getnc411().equals("5") ? binding.nc411e.getId()
-                                : jsonC4.getnc411().equals("961") ? binding.nc4119601.getId()
-                                : jsonC4.getnc411().equals("6") ? binding.nc411f.getId()
-                                : jsonC4.getnc411().equals("7") ? binding.nc411g.getId()
-                                : jsonC4.getnc411().equals("8") ? binding.nc411h.getId()
-                                : jsonC4.getnc411().equals("9") ? binding.nc411i.getId()
-                                : jsonC4.getnc411().equals("10") ? binding.nc411j.getId()
-                                : jsonC4.getnc411().equals("962") ? binding.nc4119602.getId()
-                                : jsonC4.getnc411().equals("11") ? binding.nc411k.getId()
-                                : jsonC4.getnc411().equals("12") ? binding.nc411l.getId()
-                                : jsonC4.getnc411().equals("13") ? binding.nc411m.getId()
-                                : binding.nc4119603.getId());
-            }
-            binding.nc4119601x.setText(jsonC4.getnc4119601x());
-            binding.nc4119602x.setText(jsonC4.getnc4119602x());
-            binding.nc4119603x.setText(jsonC4.getnc4119603x());
-
-            if (!jsonC4.getnc412a().equals("0")) {
-                binding.nc412b.setChecked(true);
-            }
-            if (!jsonC4.getnc412b().equals("0")) {
-                binding.nc412c.setChecked(true);
-            }
-            if (!jsonC4.getnc412c().equals("0")) {
-                binding.nc412e.setChecked(true);
-            }
-            if (!jsonC4.getnc412d().equals("0")) {
-                binding.nc412f.setChecked(true);
-            }
-            if (!jsonC4.getnc412e().equals("0")) {
-                binding.nc412g.setChecked(true);
-            }
-            if (!jsonC4.getnc412f().equals("0")) {
-                binding.nc412h.setChecked(true);
-            }
-            if (!jsonC4.getnc412g().equals("0")) {
-                binding.nc412i.setChecked(true);
-            }
-            if (!jsonC4.getnc412h().equals("0")) {
-                binding.nc412j.setChecked(true);
-            }
-
-            if (!jsonC4.getnc4129601().equals("0")) {
-                binding.nc4129601.setChecked(true);
-            }
-
-            binding.nc4129601x.setText(jsonC4.getnc40496x());
-
-            if (!jsonC4.getnc413().equals("0")) {
-                binding.nc413.check(
-                        jsonC4.getnc413().equals("1") ? binding.nc413a.getId()
-                                : jsonC4.getnc413().equals("2") ? binding.nc413b.getId()
-                                : binding.nc41398.getId());
-            }
-            if (!jsonC4.getnc414().equals("0")) {
-                binding.nc414.check(
-                        jsonC4.getnc414().equals("1") ? binding.nc414a.getId()
-                                : jsonC4.getnc414().equals("2") ? binding.nc414b.getId()
-                                : binding.nc41498.getId());
-            }
-            if (!jsonC4.getnc415().equals("0")) {
-                binding.nc415.check(
-                        jsonC4.getnc415().equals("1") ? binding.nc415a.getId()
-                                : jsonC4.getnc415().equals("2") ? binding.nc415b.getId()
-                                : binding.nc41598.getId());
-            }
-            binding.nc416.setText(jsonC4.getnc416());
-
-            if (!jsonC4.getnc417().equals("0")) {
-                binding.nc417.check(
-                        jsonC4.getnc417().equals("1") ? binding.nc417a.getId()
-                                : jsonC4.getnc417().equals("2") ? binding.nc417b.getId()
-                                : jsonC4.getnc417().equals("3") ? binding.nc417c.getId()
-                                : jsonC4.getnc417().equals("4") ? binding.nc417d.getId()
-                                : binding.nc417e.getId());
-            }
-            if (!jsonC4.getnc418().equals("0")) {
-                binding.nc418.check(
-                        jsonC4.getnc418().equals("1") ? binding.nc418a.getId()
-                                : binding.nc418b.getId()
-                );
-            }
-            if (!jsonC4.getnc419().equals("0")) {
-                binding.nc419.check(
-                        jsonC4.getnc419().equals("1") ? binding.nc419a.getId()
-                                : jsonC4.getnc419().equals("2") ? binding.nc419b.getId()
-                                : jsonC4.getnc419().equals("3") ? binding.nc419c.getId()
-                                : jsonC4.getnc419().equals("4") ? binding.nc419d.getId()
-                                : binding.nc419e.getId());
-            }
-
-            binding.nc420m.setText(jsonC4.getnc420m());
-
-            binding.nc420d.setText(jsonC4.getnc420d());
-
-
-        }
-    }
+//    private void autoPopulateFields() {
+//        ChildContract childContract = db.getsC4();
+//
+//        if (!childContract.getsC4().equals("")) {
+//
+//            JSONC4ModelClass jsonC4 = JSONUtilClass.getModelFromJSON(childContract.getsC4(), JSONC4ModelClass.class);
+//
+//            if (!jsonC4.getnc401().equals("0")) {
+//                binding.nc401.check(
+//                        jsonC4.getnc401().equals("1") ? binding.nc401a.getId()
+//                                : binding.nc401b.getId());
+//            }
+//            if (!jsonC4.getnc402().equals("0")) {
+//                binding.nc402.check(
+//                        jsonC4.getnc402().equals("1") ? binding.nc402a.getId()
+//                                : binding.nc402b.getId());
+//            }
+//            if (!jsonC4.getnc403().equals("0")) {
+//                binding.nc403.check(
+//                        jsonC4.getnc403().equals("1") ? binding.nc403a.getId()
+//                                : jsonC4.getnc403().equals("2") ? binding.nc403b.getId()
+//                                : jsonC4.getnc403().equals("3") ? binding.nc403c.getId()
+//                                : jsonC4.getnc403().equals("4") ? binding.nc403d.getId()
+//                                : jsonC4.getnc403().equals("5") ? binding.nc403e.getId()
+//                                : jsonC4.getnc403().equals("961") ? binding.nc40396.getId()
+//                );
+//            }
+//            binding.nc40396x.setText(jsonC4.getnc4039601x());
+//
+//
+//            if (!jsonC4.getnc404a().equals("0")) {
+//                binding.nc404a.setChecked(true);
+//            }
+//            if (!jsonC4.getnc404b().equals("0")) {
+//                binding.nc404b.setChecked(true);
+//            }
+//            if (!jsonC4.getnc404c().equals("0")) {
+//                binding.nc404c.setChecked(true);
+//            }
+//            if (!jsonC4.getnc404d().equals("0")) {
+//                binding.nc404d.setChecked(true);
+//            }
+//            if (!jsonC4.getnc404e().equals("0")) {
+//                binding.nc404e.setChecked(true);
+//            }
+//            if (!jsonC4.getnc404f().equals("0")) {
+//                binding.nc404f.setChecked(true);
+//            }
+//            if (!jsonC4.getnc404g().equals("0")) {
+//                binding.nc404g.setChecked(true);
+//            }
+//            if (!jsonC4.getnc404h().equals("0")) {
+//                binding.nc404h.setChecked(true);
+//            }
+//            if (!jsonC4.getnc404i().equals("0")) {
+//                binding.nc404i.setChecked(true);
+//            }
+//            if (!jsonC4.getnc404j().equals("0")) {
+//                binding.nc404j.setChecked(true);
+//            }
+//            if (!jsonC4.getNc404k().equals("0")) {
+//                binding.nc404k.setChecked(true);
+//            }
+//            if (!jsonC4.getNc404l().equals("0")) {
+//                binding.nc404l.setChecked(true);
+//            }
+//            if (!jsonC4.getNc404m().equals("0")) {
+//                binding.nc404m.setChecked(true);
+//            }
+//            if (!jsonC4.getnc40496().equals("0")) {
+//                binding.nc4049601.setChecked(true);
+//            }
+//            if (!jsonC4.getNc4049602().equals("0")) {
+//                binding.nc4049602.setChecked(true);
+//            }
+//            if (!jsonC4.getNc4049603().equals("0")) {
+//                binding.nc4049603.setChecked(true);
+//            }
+//
+//            binding.nc4049601x.setText(jsonC4.getnc40496x());
+//            binding.nc4049602x.setText(jsonC4.getnc40496x());
+//            binding.nc4049603x.setText(jsonC4.getnc40496x());
+//
+//
+////            C405
+//
+//
+//            if (!jsonC4.getnc405().equals("0")) {
+//                binding.nc405.check(
+//                        jsonC4.getnc405().equals("1") ? binding.nc405a.getId()
+//                                : binding.nc405b.getId());
+//            }
+//            if (!jsonC4.getnc406().equals("0")) {
+//                binding.nc406.check(
+//                        jsonC4.getnc406().equals("1") ? binding.nc406a.getId()
+//                                : binding.nc406b.getId());
+//            }
+//            if (!jsonC4.getnc407().equals("0")) {
+//                binding.nc407.check(
+//                        jsonC4.getnc407().equals("1") ? binding.nc407a.getId()
+//                                : jsonC4.getnc407().equals("2") ? binding.nc407b.getId()
+//                                : jsonC4.getnc407().equals("3") ? binding.nc407c.getId()
+//                                : jsonC4.getnc407().equals("4") ? binding.nc407d.getId()
+//                                : jsonC4.getnc407().equals("5") ? binding.nc407e.getId()
+//                                : jsonC4.getnc407().equals("961") ? binding.nc4079601.getId()
+//                                : jsonC4.getnc407().equals("6") ? binding.nc407f.getId()
+//                                : jsonC4.getnc407().equals("7") ? binding.nc407g.getId()
+//                                : jsonC4.getnc407().equals("8") ? binding.nc407h.getId()
+//                                : jsonC4.getnc407().equals("9") ? binding.nc407i.getId()
+//                                : jsonC4.getnc407().equals("10") ? binding.nc407j.getId()
+//                                : jsonC4.getnc407().equals("962") ? binding.nc4079602.getId()
+//                                : jsonC4.getnc407().equals("11") ? binding.nc407k.getId()
+//                                : jsonC4.getnc407().equals("12") ? binding.nc407l.getId()
+//                                : jsonC4.getnc407().equals("13") ? binding.nc407m.getId()
+//                                : binding.nc4079603.getId());
+//            }
+//            binding.nc4079601x.setText(jsonC4.getnc4079601x());
+//            binding.nc4079602x.setText(jsonC4.getnc4079602x());
+//            binding.nc4079603x.setText(jsonC4.getnc4079603x());
+//
+//
+//            if (!jsonC4.getnc408b().equals("0")) {
+//                binding.nc408b.setChecked(true);
+//            }
+//
+//            if (!jsonC4.getnc408e().equals("0")) {
+//                binding.nc408e.setChecked(true);
+//            }
+//            if (!jsonC4.getnc408f().equals("0")) {
+//                binding.nc408f.setChecked(true);
+//            }
+//            if (!jsonC4.getnc408g().equals("0")) {
+//                binding.nc408g.setChecked(true);
+//            }
+//            if (!jsonC4.getnc408h().equals("0")) {
+//                binding.nc408h.setChecked(true);
+//            }
+//            if (!jsonC4.getnc408i().equals("0")) {
+//                binding.nc408i.setChecked(true);
+//            }
+//            if (!jsonC4.getnc408j().equals("0")) {
+//                binding.nc408j.setChecked(true);
+//            }
+//            if (!jsonC4.getnc4089601().equals("0")) {
+//                binding.nc4089601.setChecked(true);
+//            }
+//
+//            binding.nc4089601x.setText(jsonC4.getnc40496x());
+////            C409
+//            if (!jsonC4.getnc409().equals("0")) {
+//                binding.nc409.check(
+//                        jsonC4.getnc409().equals("1") ? binding.nc409a.getId()
+//                                : binding.nc409b.getId());
+//            }
+//            if (!jsonC4.getnc410().equals("0")) {
+//                binding.nc410.check(
+//                        jsonC4.getnc410().equals("1") ? binding.nc410a.getId()
+//                                : binding.nc410b.getId());
+//            }
+//            if (!jsonC4.getnc411().equals("0")) {
+//                binding.nc411.check(
+//                        jsonC4.getnc411().equals("1") ? binding.nc411a.getId()
+//                                : jsonC4.getnc411().equals("2") ? binding.nc411b.getId()
+//                                : jsonC4.getnc411().equals("3") ? binding.nc411c.getId()
+//                                : jsonC4.getnc411().equals("4") ? binding.nc411d.getId()
+//                                : jsonC4.getnc411().equals("5") ? binding.nc411e.getId()
+//                                : jsonC4.getnc411().equals("961") ? binding.nc4119601.getId()
+//                                : jsonC4.getnc411().equals("6") ? binding.nc411f.getId()
+//                                : jsonC4.getnc411().equals("7") ? binding.nc411g.getId()
+//                                : jsonC4.getnc411().equals("8") ? binding.nc411h.getId()
+//                                : jsonC4.getnc411().equals("9") ? binding.nc411i.getId()
+//                                : jsonC4.getnc411().equals("10") ? binding.nc411j.getId()
+//                                : jsonC4.getnc411().equals("962") ? binding.nc4119602.getId()
+//                                : jsonC4.getnc411().equals("11") ? binding.nc411k.getId()
+//                                : jsonC4.getnc411().equals("12") ? binding.nc411l.getId()
+//                                : jsonC4.getnc411().equals("13") ? binding.nc411m.getId()
+//                                : binding.nc4119603.getId());
+//            }
+//            binding.nc4119601x.setText(jsonC4.getnc4119601x());
+//            binding.nc4119602x.setText(jsonC4.getnc4119602x());
+//            binding.nc4119603x.setText(jsonC4.getnc4119603x());
+//
+//            if (!jsonC4.getnc412a().equals("0")) {
+//                binding.nc412b.setChecked(true);
+//            }
+//            if (!jsonC4.getnc412b().equals("0")) {
+//                binding.nc412c.setChecked(true);
+//            }
+//            if (!jsonC4.getnc412c().equals("0")) {
+//                binding.nc412e.setChecked(true);
+//            }
+//            if (!jsonC4.getnc412d().equals("0")) {
+//                binding.nc412f.setChecked(true);
+//            }
+//            if (!jsonC4.getnc412e().equals("0")) {
+//                binding.nc412g.setChecked(true);
+//            }
+//            if (!jsonC4.getnc412f().equals("0")) {
+//                binding.nc412h.setChecked(true);
+//            }
+//            if (!jsonC4.getnc412g().equals("0")) {
+//                binding.nc412i.setChecked(true);
+//            }
+//            if (!jsonC4.getnc412h().equals("0")) {
+//                binding.nc412j.setChecked(true);
+//            }
+//
+//            if (!jsonC4.getnc4129601().equals("0")) {
+//                binding.nc4129601.setChecked(true);
+//            }
+//
+//            binding.nc4129601x.setText(jsonC4.getnc40496x());
+//
+//            if (!jsonC4.getnc413().equals("0")) {
+//                binding.nc413.check(
+//                        jsonC4.getnc413().equals("1") ? binding.nc413a.getId()
+//                                : jsonC4.getnc413().equals("2") ? binding.nc413b.getId()
+//                                : binding.nc41398.getId());
+//            }
+//            if (!jsonC4.getnc414().equals("0")) {
+//                binding.nc414.check(
+//                        jsonC4.getnc414().equals("1") ? binding.nc414a.getId()
+//                                : jsonC4.getnc414().equals("2") ? binding.nc414b.getId()
+//                                : binding.nc41498.getId());
+//            }
+//            if (!jsonC4.getnc415().equals("0")) {
+//                binding.nc415.check(
+//                        jsonC4.getnc415().equals("1") ? binding.nc415a.getId()
+//                                : jsonC4.getnc415().equals("2") ? binding.nc415b.getId()
+//                                : binding.nc41598.getId());
+//            }
+//            binding.nc416.setText(jsonC4.getnc416());
+//
+//            if (!jsonC4.getnc417().equals("0")) {
+//                binding.nc417.check(
+//                        jsonC4.getnc417().equals("1") ? binding.nc417a.getId()
+//                                : jsonC4.getnc417().equals("2") ? binding.nc417b.getId()
+//                                : jsonC4.getnc417().equals("3") ? binding.nc417c.getId()
+//                                : jsonC4.getnc417().equals("4") ? binding.nc417d.getId()
+//                                : binding.nc417e.getId());
+//            }
+//            if (!jsonC4.getnc418().equals("0")) {
+//                binding.nc418.check(
+//                        jsonC4.getnc418().equals("1") ? binding.nc418a.getId()
+//                                : binding.nc418b.getId()
+//                );
+//            }
+//            if (!jsonC4.getnc419().equals("0")) {
+//                binding.nc419.check(
+//                        jsonC4.getnc419().equals("1") ? binding.nc419a.getId()
+//                                : jsonC4.getnc419().equals("2") ? binding.nc419b.getId()
+//                                : jsonC4.getnc419().equals("3") ? binding.nc419c.getId()
+//                                : jsonC4.getnc419().equals("4") ? binding.nc419d.getId()
+//                                : binding.nc419e.getId());
+//            }
+//
+//            binding.nc420m.setText(jsonC4.getnc420m());
+//
+//            binding.nc420d.setText(jsonC4.getnc420d());
+//
+//
+//        }
+//    }
 
 
     @Override
     public void onBackPressed() {
-        //Toast.makeText(this, "You can't go back.", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "You can't go back.", Toast.LENGTH_SHORT).show();
 
         //Toast.makeText(this, "You can't go back.", Toast.LENGTH_SHORT).show();
-        try {
-            SaveDraft();
-            UpdateDB();
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            SaveDraft();
+//            UpdateDB();
+//        } catch (JSONException e) {
+//            e.printStackTrace();
+//        }
 
-        super.onBackPressed();
+//        super.onBackPressed();
 
 
     }
