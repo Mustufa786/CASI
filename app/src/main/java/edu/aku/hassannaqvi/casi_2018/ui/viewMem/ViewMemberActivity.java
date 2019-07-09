@@ -356,7 +356,7 @@ public class ViewMemberActivity extends MenuActivity {
     }
 
     private void viewOthList() {
-        new populateOtherRecyclerView(this).execute();
+        new populateOtherRecyclerView().execute();
     }
 
     public void BtnCheckEnm() {
@@ -514,7 +514,6 @@ public class ViewMemberActivity extends MenuActivity {
                         } else {
 
                             SectionC1Activity.isNA = false;
-//                            SectionC1Activity.childU5.remove(SectionC1Activity.selectedChildName);
 
                             GetIntent = new Intent(this, SectionB1Activity.class)
                                     .putExtra("mwraFlag", true)
@@ -532,7 +531,6 @@ public class ViewMemberActivity extends MenuActivity {
                     if (SectionC1Activity.counter == SectionC1Activity.counterPerNA) {
 
                         SectionC1Activity.isNA = false;
-//                        SectionC1Activity.childU5.remove(SectionC1Activity.selectedChildName);
                         SectionC1Activity.counter = 1;
                         SectionC1Activity.counterPerMom = 0;
                         SectionC1Activity.counterPerNA = 0;
@@ -544,7 +542,6 @@ public class ViewMemberActivity extends MenuActivity {
 
                         GetIntent = new Intent(this, SectionC1Activity.class)
                                 .putExtra("childFlag", true);
-//                                .putExtra("name", SectionC1Activity.selectedChildName);
                     }
                 }
                 break;
@@ -561,10 +558,7 @@ public class ViewMemberActivity extends MenuActivity {
                     if (childcount) {
                         SectionC1Activity.isNA = false;
                         GetIntent = new Intent(this, SectionC1Activity.class);
-                    } /*else if (MainApp.childNA.size() > 0) {
-                        SectionC1Activity.isNA = true;
-                        GetIntent = new Intent(this, SectionC1Activity.class);
-                    }*/ else if (SectionB1Activity.WRAcounter == MainApp.mwra.size()) {
+                    } else if (SectionB1Activity.WRAcounter == MainApp.mwra.size()) {
                         SectionB1Activity.WRAcounter++;
                         SectionB1Activity.lstMwra.remove(SectionB1Activity.wraName);
 
@@ -583,11 +577,9 @@ public class ViewMemberActivity extends MenuActivity {
                                             if (Integer.valueOf(familyMembersContract1.getAgeInYear()) >= 50 && familyMembersContract1.getAv().equals("1")) {
                                                 SectionC1Activity.isNA = true;
                                                 GetIntent = new Intent(this, SectionC1Activity.class);
-
                                                 break;
                                             } else {
                                                 GetIntent = new Intent(this, EndingActivity.class).putExtra("complete", true);
-
                                                 break;
                                             }
                                         }
@@ -850,26 +842,15 @@ public class ViewMemberActivity extends MenuActivity {
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-
-//                   Change background color for those whose data already filled
-                  /*  for (int item : WraAdapter.wraExistList) {
-                        binding.recyclerMwra.getChildAt(item).setBackgroundColor(getResources().getColor(R.color.lime));
-                    *//*   ImageView imgtemp =  binding.recyclerMwra.getChildAt(item).findViewById(R.id.wrastatus);
-                       imgtemp.setImageResource(R.drawable.circleshapegreen);*//*
-                    }*/
-
                     wraAdapter.notifyDataSetChanged();
-
                 }
             }, 800);
         }
     }
 
     public class populateOtherRecyclerView extends AsyncTask<String, String, String> {
-        private Context mContext;
 
-        public populateOtherRecyclerView(Context mContext) {
-            this.mContext = mContext;
+        public populateOtherRecyclerView() {
         }
 
         @Override
@@ -1017,7 +998,6 @@ public class ViewMemberActivity extends MenuActivity {
                                 Toast.makeText(mContext, "No members found, Check another HH.", Toast.LENGTH_SHORT).show();
                             }
 
-                            // onLoginFailed();
                             progressDialog.dismiss();
                         }
                     }, 3000);

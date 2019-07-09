@@ -1,7 +1,5 @@
 package edu.aku.hassannaqvi.casi_2018.ui.household;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
@@ -321,7 +319,6 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
 //        Validation Boolean
         MainApp.validateFlag = true;
 
-
         if (formValidation()) {
             try {
                 SaveDraft();
@@ -329,57 +326,16 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
                 e.printStackTrace();
             }
             if (UpdateDB()) {
-                if (recipientCounter > 0) {
 
-                    if (recipientCounter < prevRecipientCounter) {
-
-                        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
-                                SectionA5Activity.this);
-                        alertDialogBuilder
-                                .setMessage("In previous you saved " + prevRecipientCounter + " Recipient.\n" +
-                                        "Do you want to continue it?")
-                                .setCancelable(false)
-                                .setPositiveButton("Yes",
-                                        new DialogInterface.OnClickListener() {
-                                            public void onClick(DialogInterface dialog,
-                                                                int id) {
-
-                                                finish();
-
-                                                startActivity(new Intent(SectionA5Activity.this,
-                                                        SectionA7Activity.class).putExtra("recCounter", recipientCounter));
-                                            }
-                                        });
-                        alertDialogBuilder.setNegativeButton("Cancel",
-                                new DialogInterface.OnClickListener() {
-                                    public void onClick(DialogInterface dialog, int id) {
-                                        dialog.cancel();
-
-                                    }
-                                });
-                        AlertDialog alert = alertDialogBuilder.create();
-                        alert.show();
-
-                    } else {
-                        finish();
-                        startActivity(new Intent(this, SectionA7Activity.class).putExtra("recCounter", recipientCounter));
-                    }
-                }
-                else {
-                    finish();
-                    if (SectionA1Activity.editFormFlag) {
-                        startActivity(new Intent(this, SectionH8infoActivity.class));
-                    } else {
-                        startActivity(new Intent(this, SectionH8infoActivity.class));
-                    }
-                }
+                finish();
+                startActivity(new Intent(this, SectionA7Activity.class));
 
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }
         }
-    }
 
+    }
 
     @Override
     public void onBackPressed() {

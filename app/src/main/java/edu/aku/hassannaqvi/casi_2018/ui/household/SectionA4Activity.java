@@ -611,12 +611,10 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
         }
     }
 
-
     @Override
     public void onBackPressed() {
         Toast.makeText(this, "You can't go back.", Toast.LENGTH_SHORT).show();
     }
-
 
     private boolean formValidation() {
 

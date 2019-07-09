@@ -9,6 +9,8 @@ import android.widget.Toast;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.SimpleDateFormat;
+
 import edu.aku.hassannaqvi.casi_2018.R;
 import edu.aku.hassannaqvi.casi_2018.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2018.core.MainApp;
@@ -102,9 +104,11 @@ public class SectionA7Activity extends AppCompatActivity {
 
     private void SaveDraft() throws JSONException {
 
-
         JSONObject secH7 = new JSONObject();
+        if (SectionA1Activity.editFormFlag) {
+            secH7.put("edit_updatedate_sa7", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
 
+        }
         secH7.put("cih70101", bi.cih701a.isChecked() ? "1"
                 : bi.cih701b.isChecked() ? "2" : "0");
         secH7.put("cih70102", bi.cih70102.getText().toString());
@@ -191,7 +195,11 @@ public class SectionA7Activity extends AppCompatActivity {
 
         MainApp.fc.setsA7(secH7.toString());
 
+    }
 
+    @Override
+    public void onBackPressed() {
+        Toast.makeText(this, "You can't go back.", Toast.LENGTH_SHORT).show();
     }
 
 }
