@@ -412,7 +412,6 @@ public class ViewMemberActivity extends MenuActivity {
             case 2:
             case 3:
 
-
                 // Update istatus of ending activity
                 if (!updateEndingFromHH()) {
                     Toast.makeText(this, "Istatus for HH not update!!", Toast.LENGTH_SHORT).show();
@@ -421,15 +420,10 @@ public class ViewMemberActivity extends MenuActivity {
                 if (MainApp.mwra.size() > 0) {
                     GetIntent = new Intent(this, SectionB1Activity.class);
                 } else if (MainApp.childUnder5.size() > 0) {
-//                    if (MainApp.childUnder5.size() == MainApp.childNA.size()) {
                     if (MainApp.childNA.size() > 0) {
                         SectionC1Activity.isNA = true;
                         GetIntent = new Intent(this, SectionC1Activity.class);
                     }
-                    /*else {
-                        SectionC1Activity.isNA = false;
-                        GetIntent = new Intent(this, SectionC1Activity.class);
-                    }*/
                     else if (MainApp.childUnder5_Del.size() > 0) {
                         for (FamilyMembersContract familyMembersContract : MainApp.childUnder5_Del) {
                             if (!familyMembersContract.getMotherId().equals("00")) {
