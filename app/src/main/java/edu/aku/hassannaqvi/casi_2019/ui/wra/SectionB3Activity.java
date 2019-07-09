@@ -286,7 +286,7 @@ public class SectionB3Activity extends Menu2Activity implements TextWatcher, Rad
         JSONObject sB3 = new JSONObject();
 
         if (backPressed) {
-            sB3.put("updatedate_nw3b", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
+            sB3.put("updatedate_ciw3b", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
         }
 
         sB3.put("nw327", binding.nw327a.isChecked() ? "1"
@@ -344,7 +344,7 @@ public class SectionB3Activity extends Menu2Activity implements TextWatcher, Rad
         int updcount = db.updateSB3();
 
         if (updcount == 1) {
-            Toast.makeText(this, "Updating Database... Successful!", Toast.LENGTH_SHORT).show();
+
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();

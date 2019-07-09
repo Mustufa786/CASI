@@ -33,17 +33,9 @@ public class MotherEndingActivity extends AppCompatActivity {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_mother_ending);
         binding.setCallback(this);
 
-/*
-        flagMotherChild = getIntent().getBooleanExtra("checkingFlag", false);
-        if (flagMotherChild) {
-            binding.lblheaderName.setText(SectionB1Activity.wraName.toUpperCase());
-        } else {
-*/
         binding.lblheaderName.setText(SectionB1Activity.wraName.toUpperCase());
 
         db = new DatabaseHelper(this);
-
-        //}
 
         Boolean check = getIntent().getExtras().getBoolean("complete");
 
@@ -78,24 +70,7 @@ public class MotherEndingActivity extends AppCompatActivity {
 
 //                finish();
 
-
                 startActivity(new Intent(this, ViewMemberActivity.class).putExtra("activity", 5));
-
-
-                /*if (SectionB1Activity.WRAcounter == MainApp.mwra.size()) {
-
-                    if (MainApp.childNA.size() > 0) {
-                        SectionC1Activity.isNA = true;
-                        startActivity(new Intent(this, SectionC1Activity.class));
-                    } else {
-                        startActivity(new Intent(this, EndingActivity.class).putExtra("complete", true));
-                    }
-
-                } else {
-                    startActivity(new Intent(this, SectionB1Activity.class)
-                            .putExtra("mwraFlag", true)
-                            .putExtra("wraName", SectionB1Activity.wraName));
-                }*/
 
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
@@ -105,8 +80,6 @@ public class MotherEndingActivity extends AppCompatActivity {
 
 
     private void SaveDraft() {
-
-
 
         MainApp.mc.setMstatus(binding.istatusa.isChecked() ? "1"
                 : binding.istatusb.isChecked() ? "2"
@@ -121,14 +94,12 @@ public class MotherEndingActivity extends AppCompatActivity {
         // Set summary fields
         MainApp.sumc = MainApp.AddSummary(MainApp.fc, 2);
 
-        //
     }
 
     private boolean UpdateDB() {
 
         int updcount = db.updateMotherEnding();
         if (updcount == 1) {
-            Toast.makeText(this, "Updating Database... Successful!", Toast.LENGTH_SHORT).show();
 
             return MainApp.UpdateSummary(this, db, 2);
 
@@ -136,8 +107,6 @@ public class MotherEndingActivity extends AppCompatActivity {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
             return false;
         }
-
-        //return true;
 
     }
 

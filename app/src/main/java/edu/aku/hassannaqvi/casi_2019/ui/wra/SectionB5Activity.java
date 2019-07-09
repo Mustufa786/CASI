@@ -53,7 +53,7 @@ public class SectionB5Activity extends Menu2Activity implements TextWatcher, Rad
         binding.nw414.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                ValidateForm();
+                formValidation();
                 if (i == R.id.nw414b) {
 
                     ClearClass.ClearAllFields(binding.fldGrpnw415, false);
@@ -67,7 +67,7 @@ public class SectionB5Activity extends Menu2Activity implements TextWatcher, Rad
         binding.nw419.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                ValidateForm();
+                formValidation();
                 if (i == R.id.nw419b) {
 
                     ClearClass.ClearAllFields(binding.fldGrpnw420, false);
@@ -245,7 +245,7 @@ public class SectionB5Activity extends Menu2Activity implements TextWatcher, Rad
 //        Validation Boolean
         MainApp.validateFlag = true;
 
-        if (ValidateForm()) {
+        if (formValidation()) {
             try {
                 SaveDraft();
             } catch (JSONException e) {
@@ -253,49 +253,17 @@ public class SectionB5Activity extends Menu2Activity implements TextWatcher, Rad
             }
             if (UpdateDB()) {
 
-                MainApp.nuCount = 1;
-
-                frontPressed = true;
+                backPressed = true;
 
 //                finish();
 
-                if (SectionB1Activity.editWRAFlag) {
-                    /*if (!db.getNutritionCount()) {
-                        startActivity(new Intent(this, SectionB6Activity.class)
-                                .putExtra("backPressed", backPressed));
-                    } else*/
-                    if (MainApp.mc.getsB6().equals("1")) {
-                        startActivity(new Intent(this, SectionB6Activity.class)
-                                .putExtra("backPressed", backPressed));
-                    } else {
-                        finish();
-                        startActivity(new Intent(this, ViewMemberActivity.class)
-                                .putExtra("flagEdit", false)
-                                .putExtra("comingBack", true)
-                                .putExtra("cluster", MainApp.mc.getCluster())
-                                .putExtra("hhno", MainApp.mc.getHhno())
-                        );
-                    }
-                } else {
-                    /*if (SectionB1Activity.WRAcounter == MainApp.mwra.size()
-                            &&
-                            MainApp.B6Flag) {*/
-                    if (MainApp.mc.getsB6().equals("1")) {
-                        startActivity(new Intent(this, SectionB6Activity.class)
-                                .putExtra("backPressed", backPressed));
-                    }/* else if (MainApp.B2B6Flag) {
-                        startActivity(new Intent(this, SectionB6Activity.class)
-                                .putExtra("backPressed", backPressed));
-                    }*/ else {
-                        startActivity(new Intent(this, MotherEndingActivity.class)
-                                .putExtra("complete", true));
-                    }
-                }
+                startActivity(new Intent(this, SectionB6Activity.class));
 
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }
         }
+
     }
 
     public void BtnEnd() {
@@ -313,8 +281,7 @@ public class SectionB5Activity extends Menu2Activity implements TextWatcher, Rad
         }
     }
 
-    private boolean ValidateForm() {
-
+    private boolean formValidation() {
 
 
         if (!ValidatorClass.EmptyRadioButton(this, binding.nw414, binding.nw414a, getString(R.string.nw414))) {
@@ -474,7 +441,7 @@ public class SectionB5Activity extends Menu2Activity implements TextWatcher, Rad
         JSONObject sB5 = new JSONObject();
 
         if (backPressed) {
-            sB5.put("updatedate_nw4b", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
+            sB5.put("updatedate_ciw4b", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
         }
 
 //        nw414
@@ -574,8 +541,6 @@ public class SectionB5Activity extends Menu2Activity implements TextWatcher, Rad
             return false;
         }
 
-        //return true;
-
     }
 
     @Override
@@ -621,7 +586,7 @@ public class SectionB5Activity extends Menu2Activity implements TextWatcher, Rad
 
                         runOnUiThread(new Runnable() {
                             public void run() {
-                                ValidateForm();
+                                formValidation();
                             }
                         });
 
@@ -633,7 +598,7 @@ public class SectionB5Activity extends Menu2Activity implements TextWatcher, Rad
 
     @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
-        ValidateForm();
+        formValidation();
     }
 
 

@@ -432,7 +432,6 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
 //        Validation Boolean
         MainApp.validateFlag = true;
 
-
         if (formValidation()) {
             try {
                 SaveDraft();
@@ -451,8 +450,6 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }
         }
-
-        //startActivity(new Intent(this, SectionB5Activity.class));
     }
 
     public void BtnEnd() {
@@ -585,14 +582,10 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
 
         if (binding.nb411a.isChecked()) {
             // nb412
-            /*if (!ValidatorClass.EmptyCheckBox(this, binding.fldGrpnb412check, binding.nb412a, getString(R.string.nb412))) {
-                return false;
-            }*/
             if (!ValidatorClass.EmptyCheckBox(this, binding.fldGrpnb412check, binding.nb41296, binding.nb41296x, getString(R.string.nb412))) {
                 return false;
             }
             // nw413
-
             if (binding.nb412a.isChecked()) {
                 if (!ValidatorClass.EmptyRadioButton(this, binding.nw413, binding.nw413a, getString(R.string.cic403))) {
                     return false;
@@ -619,7 +612,7 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
         JSONObject sB4 = new JSONObject();
 
         if (backPressed) {
-            sB4.put("updatedate_nw4", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
+            sB4.put("updatedate_ciw4", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
         }
 
         //       nw401
@@ -765,9 +758,6 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
 
         MainApp.mc.setsB4(String.valueOf(sB4));
 
-
-        //
-
     }
 
     private boolean UpdateDB() {
@@ -778,13 +768,11 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
         int updcount = db.updateSB4();
 
         if (updcount == 1) {
-
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
             return false;
         }
-        //return true;
 
     }
 
@@ -853,8 +841,6 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
                 return true;
         }
 
-        // Show answer here
-        // return i == rg;
         return false;
     }
 

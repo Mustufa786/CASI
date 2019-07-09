@@ -1344,7 +1344,6 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
             MainApp.mc.setB1SerialNo(wraMap.get(bi.nb101.getSelectedItem().toString()).getSerialNo());
             MainApp.mc.set_UUID(MainApp.fc.getUID());
             MainApp.mc.setFMUID(wraMap.get(bi.nb101.getSelectedItem().toString()).get_UID());
-            MainApp.mc.setsB6(wraMap.get(bi.nb101.getSelectedItem().toString()).getKishSelected());
 
             wraName = bi.nb101.getSelectedItem().toString();
 
@@ -1360,10 +1359,10 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
 
         } else {
 
-            sB1.put("updatedate_nw1", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
+            sB1.put("updatedate_ciw1", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
 
             if (editWRAFlag && !frontPressed) {
-                sB1.put("edit_updatedate_nw1", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
+                sB1.put("edit_updatedate_ciw1", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
 
                 wraName = jsonB1.getnw101();
 

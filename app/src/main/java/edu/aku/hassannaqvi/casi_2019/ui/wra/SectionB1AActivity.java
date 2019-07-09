@@ -590,7 +590,7 @@ public class SectionB1AActivity extends AppCompatActivity implements TextWatcher
             }
 
             if (SectionB1Activity.editWRAFlag && !frontPressed) {
-                sB1a.put("edit_updatedate_nw1", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
+                sB1a.put("edit_updatedate_ciw1", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
                 sB1a.put("cluster_no", jsonB1A.getCluster_no());
                 sB1a.put("hhno", jsonB1A.getHhno());
 

@@ -745,7 +745,7 @@ public class SectionC1Activity extends AddMember_MenuActivity implements TextWat
 //            MainApp.cc.setUID(MainApp.cc.getUID());
 
             if (editChildFlag && !frontPressed) {
-                sC1.put("edit_updatedate_nw1", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
+                sC1.put("edit_updatedate_cic1", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
 
                 sC1.put("cluster_no", jsonC1.getCluster_no());
                 sC1.put("hhno", jsonC1.getHhno());

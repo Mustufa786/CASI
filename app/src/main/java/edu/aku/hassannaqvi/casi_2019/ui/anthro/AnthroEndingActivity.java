@@ -121,7 +121,7 @@ public class AnthroEndingActivity extends AppCompatActivity {
         int updcount = db.updateAnthroEnding();
 
         if (updcount == 1) {
-            Toast.makeText(this, "Updating Database... Successful!", Toast.LENGTH_SHORT).show();
+
 
             return MainApp.UpdateSummary(this, db, 4);
 

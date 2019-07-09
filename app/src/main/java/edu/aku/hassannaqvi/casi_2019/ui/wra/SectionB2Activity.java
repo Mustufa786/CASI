@@ -968,7 +968,7 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
         JSONObject sB2 = new JSONObject();
 
         if (backPressed) {
-            sB2.put("updatedate_nw3", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
+            sB2.put("updatedate_ciw3", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
         }
 
         sB2.put("nw301", bi.nw301a.isChecked() ? "1"
