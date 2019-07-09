@@ -22,152 +22,152 @@
         android:required="true" />
 
     <application
-        android:name="edu.aku.hassannaqvi.casi_2019.core.MainApp"
+        android:name=".core.MainApp"
         android:allowBackup="true"
         android:icon="@drawable/nns_2018_survey"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
-        <activity android:name="edu.aku.hassannaqvi.casi_2019.ui.household.SectionA402Activity"></activity>
-        <activity android:name="edu.aku.hassannaqvi.casi_2019.ui.household.SectionA7Activity" />
+        <activity android:name=".ui.household.SectionA402Activity"></activity>
+        <activity android:name=".ui.household.SectionA7Activity" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.mainUI.SplashscreenActivity"
+            android:name=".ui.mainUI.SplashscreenActivity"
             android:screenOrientation="portrait">
 
         </activity>
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.mainUI.LoginActivity"
+            android:name=".ui.mainUI.LoginActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
             android:windowSoftInputMode="stateVisible|adjustPan" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.mainUI.MainActivity"
+            android:name=".ui.mainUI.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.core.AndroidDatabaseManager"
+            android:name=".core.AndroidDatabaseManager"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.household.EndingActivity"
+            android:name=".ui.household.EndingActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.wra.MotherEndingActivity"
+            android:name=".ui.wra.MotherEndingActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.childs.ChildEndingActivity"
+            android:name=".ui.childs.ChildEndingActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.anthro.AnthroEndingActivity"
+            android:name=".ui.anthro.AnthroEndingActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.household.SectionA2Activity"
+            android:name=".ui.household.SectionA2Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.household.SectionA2EditActivity"
+            android:name=".ui.household.SectionA2EditActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.household.SectionA2ListActivity"
+            android:name=".ui.household.SectionA2ListActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.household.SectionA5Activity"
+            android:name=".ui.household.SectionA5Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.household.SectionA1Activity"
+            android:name=".ui.household.SectionA1Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.anthro.SectionD1Activity"
+            android:name=".ui.anthro.SectionD1Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.household.SectionA4Activity"
+            android:name=".ui.household.SectionA4Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.wra.SectionB1Activity"
+            android:name=".ui.wra.SectionB1Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.household.SectionA8AActivity"
+            android:name=".ui.household.SectionA8AActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.wra.SectionB1AActivity"
+            android:name=".ui.wra.SectionB1AActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.wra.SectionB2Activity"
+            android:name=".ui.wra.SectionB2Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.wra.SectionB4Activity"
+            android:name=".ui.wra.SectionB4Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.wra.SectionB3Activity"
+            android:name=".ui.wra.SectionB3Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.wra.SectionB5Activity"
+            android:name=".ui.wra.SectionB5Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.childs.SectionC1Activity"
+            android:name=".ui.childs.SectionC1Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.wra.SectionB6Activity"
+            android:name=".ui.wra.SectionB6Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.childs.SectionC5Activity"
+            android:name=".ui.childs.SectionC5Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.childs.SectionC2Activity"
+            android:name=".ui.childs.SectionC2Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.childs.SectionC3Activity"
+            android:name=".ui.childs.SectionC3Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.childs.SectionC4Activity"
+            android:name=".ui.childs.SectionC4Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize|stateHidden">
@@ -178,42 +178,42 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.anthro.AntrhoInfoActivity"
+            android:name=".ui.anthro.AntrhoInfoActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.viewMem.ViewMemberActivity"
+            android:name=".ui.viewMem.ViewMemberActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.household.SectionH8Activity"
+            android:name=".ui.household.SectionH8Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.mainUI.MenuActivity"
+            android:name=".ui.mainUI.MenuActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
             android:windowSoftInputMode="stateVisible|adjustPan" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.mainUI.Menu2Activity"
+            android:name=".ui.mainUI.Menu2Activity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
             android:windowSoftInputMode="stateVisible|adjustPan" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.mainUI.AddMember_MenuActivity"
+            android:name=".ui.mainUI.AddMember_MenuActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
             android:windowSoftInputMode="stateVisible|adjustPan" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.labs.SpecimenInfoActivity"
+            android:name=".ui.labs.SpecimenInfoActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="stateVisible|adjustPan" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.WifiDirect.WiFiDirectActivity"
+            android:name=".WifiDirect.WiFiDirectActivity"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
@@ -224,34 +224,34 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.labs.SectionE1Activity"
+            android:name=".ui.labs.SectionE1Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="stateVisible|adjustPan" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.labs.SectionE2Activity"
+            android:name=".ui.labs.SectionE2Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.labs.MicroResultsActivity"
+            android:name=".ui.labs.MicroResultsActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="stateVisible|adjustPan" />
-        <activity android:name="edu.aku.hassannaqvi.casi_2019.ui.household.DeceasedCountActivity" />
+        <activity android:name=".ui.household.DeceasedCountActivity" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.household.SectionH8infoActivity"
+            android:name=".ui.household.SectionH8infoActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="stateVisible|adjustPan" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.syncUI.SyncActivity"
+            android:name=".ui.syncUI.SyncActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.mainUI.DashboardActivity"
+            android:name=".ui.mainUI.DashboardActivity"
             android:screenOrientation="portrait" />
 
         <service
-            android:name="edu.aku.hassannaqvi.casi_2019.WifiDirect.DataTransferService"
+            android:name=".WifiDirect.DataTransferService"
             android:enabled="true" />
     </application>
 
