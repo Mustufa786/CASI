@@ -461,6 +461,9 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
             if (!ValidatorClass.EmptyTextBox(this, binding.cih113, getString(R.string.cih113))) {
                 return false;
             }
+            if (!ValidatorClass.EmptyTextBox(this, binding.cih111, getString(R.string.cih111))) {
+                return false;
+            }
 //        cih115
             if (!ValidatorClass.EmptyTextBox(this, binding.cih115, getString(R.string.cih115))) {
                 return false;
@@ -546,6 +549,7 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
 
 
         sA1.put("cih113", binding.cih113.getText().toString());
+        sA1.put("cih111", binding.cih111.getText().toString());
         sA1.put("cih115", binding.cih115.getText().toString());
 
         sA1.put("cih213", binding.cih213.getText().toString());

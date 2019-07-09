@@ -3,11 +3,13 @@ package edu.aku.hassannaqvi.casi_2018.ui.household;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.Toast;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import edu.aku.hassannaqvi.casi_2018.R;
+import edu.aku.hassannaqvi.casi_2018.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2018.core.MainApp;
 import edu.aku.hassannaqvi.casi_2018.databinding.ActivitySectionA7Binding;
 import edu.aku.hassannaqvi.casi_2018.validation.ValidatorClass;
@@ -102,7 +104,18 @@ public class SectionA7Activity extends AppCompatActivity {
 
     private boolean UpdateDB() {
 
-        return true;
+        //Long rowId;
+        DatabaseHelper db = new DatabaseHelper(this);
+
+        int updcount = db.updateSA7();
+
+        if (updcount == 1) {
+            //Toast.makeText(this, "Updating Database... Successful!", Toast.LENGTH_SHORT).show();
+            return true;
+        } else {
+            Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
+            return false;
+        }
     }
 
 
