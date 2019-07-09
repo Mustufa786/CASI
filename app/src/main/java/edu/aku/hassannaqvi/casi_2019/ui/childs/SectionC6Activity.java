@@ -12,11 +12,11 @@ import org.json.JSONObject;
 import java.text.SimpleDateFormat;
 
 import edu.aku.hassannaqvi.casi_2019.R;
+import edu.aku.hassannaqvi.casi_2019.contracts.FamilyMembersContract;
 import edu.aku.hassannaqvi.casi_2019.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2019.core.MainApp;
 import edu.aku.hassannaqvi.casi_2019.databinding.ActivitySectionC6Binding;
 import edu.aku.hassannaqvi.casi_2019.ui.viewMem.ViewMemberActivity;
-import edu.aku.hassannaqvi.casi_2019.ui.wra.MotherEndingActivity;
 import edu.aku.hassannaqvi.casi_2019.ui.wra.SectionB1Activity;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
@@ -26,12 +26,17 @@ public class SectionC6Activity extends AppCompatActivity {
 
     Boolean backPressed = false;
 
+    FamilyMembersContract selectedChild;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_c6);
         bi.setCallback(this);
+
+        //Get Intent
+        selectedChild = (FamilyMembersContract) getIntent().getSerializableExtra("selectedChild");
     }
 
     public void BtnContinue() {
@@ -47,21 +52,10 @@ public class SectionC6Activity extends AppCompatActivity {
             }
             if (UpdateDB()) {
 
+//                finish();
                 backPressed = true;
-
-                if (SectionB1Activity.editWRAFlag) {
-                    finish();
-                    startActivity(new Intent(this, ViewMemberActivity.class)
-                            .putExtra("flagEdit", false)
-                            .putExtra("comingBack", true)
-                            .putExtra("cluster", MainApp.mc.getCluster())
-                            .putExtra("hhno", MainApp.mc.getHhno())
-                    );
-                } else {
-                    startActivity(new Intent(this, MotherEndingActivity.class)
-                            .putExtra("checkingFlag", true)
-                            .putExtra("complete", true));
-                }
+                startActivity(new Intent(this, SectionC3Activity.class)
+                        .putExtra("selectedChild", selectedChild));
 
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
