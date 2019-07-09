@@ -1,14 +1,9 @@
 package edu.aku.hassannaqvi.casi_2019.ui.mainUI;
 
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
-import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
@@ -25,21 +20,8 @@ import java.util.Date;
 
 import edu.aku.hassannaqvi.casi_2019.R;
 import edu.aku.hassannaqvi.casi_2019.WifiDirect.WiFiDirectActivity;
-import edu.aku.hassannaqvi.casi_2019.contracts.ChildContract;
-import edu.aku.hassannaqvi.casi_2019.contracts.DeceasedContract;
-import edu.aku.hassannaqvi.casi_2019.contracts.EligibleMembersContract;
-import edu.aku.hassannaqvi.casi_2019.contracts.FamilyMembersContract;
-import edu.aku.hassannaqvi.casi_2019.contracts.FormsContract;
-import edu.aku.hassannaqvi.casi_2019.contracts.MWRAContract;
-import edu.aku.hassannaqvi.casi_2019.contracts.NutritionContract;
-import edu.aku.hassannaqvi.casi_2019.contracts.OutcomeContract;
-import edu.aku.hassannaqvi.casi_2019.contracts.RecipientsContract;
-import edu.aku.hassannaqvi.casi_2019.contracts.SummaryContract;
 import edu.aku.hassannaqvi.casi_2019.core.AndroidDatabaseManager;
 import edu.aku.hassannaqvi.casi_2019.core.DatabaseHelper;
-import edu.aku.hassannaqvi.casi_2019.core.MainApp;
-import edu.aku.hassannaqvi.casi_2019.get.GetAllData;
-import edu.aku.hassannaqvi.casi_2019.sync.SyncAllData;
 import edu.aku.hassannaqvi.casi_2019.ui.syncUI.SyncActivity;
 import edu.aku.hassannaqvi.casi_2019.ui.viewMem.ViewMemberActivity;
 
@@ -70,50 +52,28 @@ public class Menu2Activity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.menu_sync:
-//                onSyncDataClick();
                 startActivity(new Intent(getApplicationContext(), SyncActivity.class));
                 return true;
             case R.id.menu_upload:
-//                syncServer();
                 startActivity(new Intent(getApplicationContext(), SyncActivity.class));
                 return true;
-
             case R.id.menu_viewMember:
                 Intent iA = new Intent(this, ViewMemberActivity.class);
                 iA.putExtra("flagEdit", false);
                 startActivity(iA);
                 return true;
-
             case R.id.menu_openDB:
                 Intent dbmanager = new Intent(getApplicationContext(), AndroidDatabaseManager.class);
                 startActivity(dbmanager);
                 return true;
-
             case R.id.menu_wifiDirect:
                 Intent wifidirect = new Intent(getApplicationContext(), WiFiDirectActivity.class);
                 startActivity(wifidirect);
                 return true;
-
             default:
                 return super.onOptionsItemSelected(item);
         }
 
-    }
-
-    public void onSyncDataClick() {
-        //TODO implement
-
-        // Require permissions INTERNET & ACCESS_NETWORK_STATE
-        ConnectivityManager connMgr = (ConnectivityManager)
-                getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
-        if (networkInfo != null && networkInfo.isConnected()) {
-
-            new syncData(this).execute();
-
-        } else {
-            Toast.makeText(this, "No network connection available.", Toast.LENGTH_SHORT).show();
-        }
     }
 
     public void dbBackup() {
@@ -178,175 +138,4 @@ public class Menu2Activity extends AppCompatActivity {
 
     }
 
-    public void syncServer() {
-
-        // Require permissions INTERNET & ACCESS_NETWORK_STATE
-        ConnectivityManager connMgr = (ConnectivityManager)
-                getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
-        if (networkInfo != null && networkInfo.isConnected()) {
-
-            DatabaseHelper db = new DatabaseHelper(this);
-            //syncStatus.setText(null);
-            Toast.makeText(getApplicationContext(), "Syncing Forms", Toast.LENGTH_SHORT).show();
-            new SyncAllData(
-                    this,
-                    "Forms",
-                    "updateSyncedForms",
-                    FormsContract.class,
-                    MainApp._HOST_URL + FormsContract.FormsTable._URL,
-                    db.getUnsyncedForms(), this.findViewById(R.id.syncStatus)
-            ).execute();
-
-            Toast.makeText(getApplicationContext(), "Syncing Family Members", Toast.LENGTH_SHORT).show();
-            new SyncAllData(
-                    this,
-                    "Family Members",
-                    "updateSyncedFamilyMembers",
-                    FamilyMembersContract.class,
-                    MainApp._HOST_URL + FamilyMembersContract.familyMembers._URL,
-                    db.getUnsyncedFamilyMembers(), this.findViewById(R.id.syncStatus)
-            ).execute();
-
-            Toast.makeText(getApplicationContext(), "Syncing WRAs", Toast.LENGTH_SHORT).show();
-            new SyncAllData(
-                    this,
-                    "WRAs",
-                    "updateSyncedMWRAForm",
-                    MWRAContract.class,
-                    MainApp._HOST_URL + MWRAContract.MWRATable._URL,
-                    db.getUnsyncedMWRA(), this.findViewById(R.id.syncStatus)
-            ).execute();
-
-            Toast.makeText(getApplicationContext(), "Syncing Children", Toast.LENGTH_SHORT).show();
-            new SyncAllData(
-                    this,
-                    "Children",
-                    "updateSyncedChildForm",
-                    ChildContract.class,
-                    MainApp._HOST_URL + ChildContract.ChildTable._URL,
-                    db.getUnsyncedChildForms(), this.findViewById(R.id.syncStatus)
-            ).execute();
-
-            Toast.makeText(getApplicationContext(), "Syncing Eligibles", Toast.LENGTH_SHORT).show();
-            new SyncAllData(
-                    this,
-                    "Eligibles",
-                    "updateSyncedEligibles",
-                    EligibleMembersContract.class,
-                    MainApp._HOST_URL + EligibleMembersContract.eligibleMembers._URL,
-                    db.getUnsyncedEligbleMembers(), this.findViewById(R.id.syncStatus)
-            ).execute();
-
-            Toast.makeText(getApplicationContext(), "Syncing Outcomes", Toast.LENGTH_SHORT).show();
-            new SyncAllData(
-                    this,
-                    "Outcomes",
-                    "updateSyncedOutcomeForm",
-                    OutcomeContract.class,
-                    MainApp._HOST_URL + OutcomeContract.outcomeTable._URL,
-                    db.getUnsyncedOutcome(), this.findViewById(R.id.syncStatus)
-            ).execute();
-
-            Toast.makeText(getApplicationContext(), "Syncing Recepients", Toast.LENGTH_SHORT).show();
-            new SyncAllData(
-                    this,
-                    "Recepients",
-                    "updateSyncedRecepientsForm",
-                    RecipientsContract.class,
-                    MainApp._HOST_URL + RecipientsContract.RecipientsTable._URL,
-                    db.getUnsyncedRecipients(), this.findViewById(R.id.syncStatus)
-            ).execute();
-
-            Toast.makeText(getApplicationContext(), "Syncing Nutrition", Toast.LENGTH_SHORT).show();
-            new SyncAllData(
-                    this,
-                    "Nutrition",
-                    "updateSyncedNutrition",
-                    NutritionContract.class,
-                    MainApp._HOST_URL + NutritionContract.NutritionTable._URL,
-                    db.getUnsyncedNutrition(), this.findViewById(R.id.syncStatus)
-            ).execute();
-
-            Toast.makeText(getApplicationContext(), "Syncing Deceased", Toast.LENGTH_SHORT).show();
-            new SyncAllData(
-                    this,
-                    "Deceased",
-                    "updateSyncedDeceasedForm",
-                    DeceasedContract.class,
-                    MainApp._HOST_URL + DeceasedContract.DeceasedTable._URL,
-                    db.getUnsyncedDeceasedMembers(), this.findViewById(R.id.syncStatus)
-            ).execute();
-
-            Toast.makeText(getApplicationContext(), "Syncing Summary", Toast.LENGTH_SHORT).show();
-            new SyncAllData(
-                    this,
-                    "Summary",
-                    "updateSyncedSummaryForm",
-                    SummaryContract.class,
-                    MainApp._HOST_URL + SummaryContract.singleSum._URL,
-                    db.getUnsyncedSummary(), this.findViewById(R.id.syncStatus)
-            ).execute();
-
-            SharedPreferences syncPref = getSharedPreferences("SyncInfo", Context.MODE_PRIVATE);
-            SharedPreferences.Editor editor = syncPref.edit();
-
-            editor.putString("LastUpSyncServer", dtToday);
-
-            editor.apply();
-
-        } else {
-            Toast.makeText(this, "No network connection available.", Toast.LENGTH_SHORT).show();
-        }
-
-    }
-
-    public class syncData extends AsyncTask<String, String, String> {
-
-        private Context mContext;
-
-        public syncData(Context mContext) {
-            this.mContext = mContext;
-        }
-
-        @Override
-        protected String doInBackground(String... strings) {
-            runOnUiThread(new Runnable() {
-
-                @Override
-                public void run() {
-                    Toast.makeText(Menu2Activity.this, "Sync Enum Blocks", Toast.LENGTH_LONG).show();
-                    new GetAllData(mContext, "EnumBlock").execute();
-                    Toast.makeText(Menu2Activity.this, "Sync Users", Toast.LENGTH_LONG).show();
-                    new GetAllData(mContext, "User").execute();
-                    Toast.makeText(Menu2Activity.this, "Sync Randomizations", Toast.LENGTH_LONG).show();
-                    new GetAllData(mContext, "BLRandom").execute();
-                    Toast.makeText(Menu2Activity.this, "Sync App Version", Toast.LENGTH_LONG).show();
-                    new GetAllData(mContext, "VersionApp").execute();
-                    /*Toast.makeText(Menu2Activity.this, "Sync Family Members", Toast.LENGTH_LONG).show();
-                    new GetAllData(mContext, "FamilyMembers").execute();*/
-                }
-            });
-
-            return null;
-        }
-
-        @Override
-        protected void onPostExecute(String s) {
-            new Handler().postDelayed(new Runnable() {
-
-                @Override
-                public void run() {
-
-//                    populateSpinner(mContext);
-
-                    editor.putBoolean("flag", true);
-                    editor.commit();
-
-                    dbBackup();
-
-                }
-            }, 1200);
-        }
-    }
 }
