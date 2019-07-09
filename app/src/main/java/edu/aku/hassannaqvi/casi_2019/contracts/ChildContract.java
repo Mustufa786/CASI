@@ -29,6 +29,9 @@ public class ChildContract {
     private String sC4 = ""; // sB
     private String sC5 = ""; // sB
 
+
+    private String sC6 = ""; // sB
+
     //private String sC = ""; //
     //private String sD = "";
 
@@ -63,6 +66,7 @@ public class ChildContract {
         this.sC3 = jsonObject.getString(ChildTable.COLUMN_SC3);
         this.sC4 = jsonObject.getString(ChildTable.COLUMN_SC4);
         this.sC5 = jsonObject.getString(ChildTable.COLUMN_SC5);
+        this.sC6 = jsonObject.getString(ChildTable.COLUMN_SC6);
         this.deviceID = jsonObject.getString(ChildTable.COLUMN_DEVICEID);
         this.devicetagID = jsonObject.getString(ChildTable.COLUMN_DEVICETAGID);
         this.synced = jsonObject.getString(ChildTable.COLUMN_SYNCED);
@@ -99,6 +103,9 @@ public class ChildContract {
         }
         if (type == 0 || type == 5) {
             this.sC5 = cursor.getString(cursor.getColumnIndex(ChildTable.COLUMN_SC5));
+        }
+        if (type == 0 || type == 6) {
+            this.sC6 = cursor.getString(cursor.getColumnIndex(ChildTable.COLUMN_SC6));
         }
 
         if (type == 0) {
@@ -157,6 +164,10 @@ public class ChildContract {
 
         if (!this.sC5.equals("")) {
             json.put(ChildTable.COLUMN_SC5, this.sC5.equals("") ? JSONObject.NULL : new JSONObject(this.sC5));
+//            json.put(ChildTable.COLUMN_SC5, this.sC5 == null ? JSONObject.NULL : this.sC5);
+        }
+        if (!this.sC6.equals("")) {
+            json.put(ChildTable.COLUMN_SC6, this.sC6.equals("") ? JSONObject.NULL : new JSONObject(this.sC6));
 //            json.put(ChildTable.COLUMN_SC5, this.sC5 == null ? JSONObject.NULL : this.sC5);
         }
 
@@ -356,6 +367,15 @@ public class ChildContract {
         this.MUID = MUID;
     }
 
+    public String getsC6() {
+        return sC6;
+    }
+
+    public void setsC6(String sC6) {
+        this.sC6 = sC6;
+    }
+
+
     public static abstract class ChildTable implements BaseColumns {
 
         public static final String TABLE_NAME = "child";
@@ -375,6 +395,7 @@ public class ChildContract {
         public static final String COLUMN_SC3 = "sc3";
         public static final String COLUMN_SC4 = "sc4";
         public static final String COLUMN_SC5 = "sc5";
+        public static final String COLUMN_SC6 = "sc6";
         public static final String COLUMN_DEVICEID = "deviceid";
         public static final String COLUMN_DEVICETAGID = "devicetagid";
         public static final String COLUMN_SYNCED = "synced";
