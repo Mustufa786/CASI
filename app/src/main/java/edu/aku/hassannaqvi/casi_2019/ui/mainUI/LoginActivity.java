@@ -261,20 +261,24 @@ public class LoginActivity extends MenuActivity implements LoaderCallbacks<Curso
 
         MainApp.cluster_no = "";
 
+
         try {
+
+            String packageName = getApplicationContext().getPackageName();
+
             long installedOn = this
                     .getPackageManager()
-                    .getPackageInfo("edu.aku.hassannaqvi.nns_2018", 0)
+                    .getPackageInfo(packageName, 0)
                     .lastUpdateTime;
             MainApp.versionCode = this
                     .getPackageManager()
-                    .getPackageInfo("edu.aku.hassannaqvi.nns_2018", 0)
+                    .getPackageInfo(packageName, 0)
                     .versionCode;
             MainApp.versionName = this
                     .getPackageManager()
-                    .getPackageInfo("edu.aku.hassannaqvi.nns_2018", 0)
+                    .getPackageInfo(packageName, 0)
                     .versionName;
-            txtinstalldate.setText("Ver. " + MainApp.versionName + "." + MainApp.versionCode + " \r( Last Updated: " + new SimpleDateFormat("dd MMM. yyyy").format(new Date(installedOn)) + " )");
+            txtinstalldate.setText("Ver. " + MainApp.versionName + "." + MainApp.versionCode + " \r\n( Last Updated: " + new SimpleDateFormat("dd MMM. yyyy").format(new Date(installedOn)) + " )");
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
         }

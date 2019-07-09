@@ -976,18 +976,6 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
     private void AutoPopulate(String uuid, String uid) {
 
         MainApp.mc = db.getsB1(uuid, uid);
-        /*if (getIntent().getIntExtra("under2Size", 0) > 0) {
-            childCheck = true;
-        } else {
-            Collection<DeceasedContract> deceasedContracts = db.getDeceasedMembersCount(uuid);
-            for (DeceasedContract deceasedContract : deceasedContracts) {
-                JSONH8ModelClass jsonh8ModelClass = JSONUtilClass.getModelFromJSON(deceasedContract.getsH8(), JSONH8ModelClass.class);
-                if (jsonh8ModelClass.getMwraSerial().equals(MainApp.mc.getB1SerialNo())) {
-                    childCheck = true;
-                    break;
-                }
-            }
-        }*/
 
         bi.nb101.setVisibility(View.GONE);
         bi.nb101a.setVisibility(View.VISIBLE);
