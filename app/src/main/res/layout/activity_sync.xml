@@ -33,7 +33,7 @@
                 android:elevation="2dp"
                 android:onClick="SwitchServer"
                 android:padding="16dp"
-                android:text="@string/btnSync"
+                android:text="SWITCH SERVER"
                 android:textStyle="bold" />
 
             <Button
