@@ -43,107 +43,86 @@
         <activity
             android:name=".ui.mainUI.MainActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name=".core.AndroidDatabaseManager"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name=".ui.household.EndingActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name=".ui.wra.MotherEndingActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name=".ui.childs.ChildEndingActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name=".ui.anthro.AnthroEndingActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name=".ui.household.SectionA2Activity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name=".ui.household.SectionA2EditActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name=".ui.household.SectionA2ListActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name=".ui.household.SectionA5Activity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name=".ui.household.SectionA1Activity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name=".ui.anthro.SectionD1Activity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name=".ui.household.SectionA4Activity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name=".ui.wra.SectionB1Activity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name=".ui.wra.SectionB1AActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name=".ui.wra.SectionB2Activity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name=".ui.wra.SectionB4Activity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name=".ui.wra.SectionB3Activity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name=".ui.wra.SectionB5Activity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name=".ui.childs.SectionC1Activity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name=".ui.wra.SectionB6Activity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name=".ui.childs.SectionC5Activity"
@@ -174,12 +153,10 @@
         <activity
             android:name=".ui.anthro.AntrhoInfoActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name=".ui.viewMem.ViewMemberActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name=".ui.mainUI.MenuActivity"
@@ -215,16 +192,13 @@
         <activity
             android:name=".ui.labs.SectionE1Activity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateVisible|adjustPan" />
         <activity
             android:name=".ui.labs.SectionE2Activity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.labs.MicroResultsActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateVisible|adjustPan" />
         <activity
             android:name=".ui.syncUI.SyncActivity"
