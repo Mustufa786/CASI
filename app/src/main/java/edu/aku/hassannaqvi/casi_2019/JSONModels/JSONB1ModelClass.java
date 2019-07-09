@@ -8,63 +8,63 @@ import com.google.gson.annotations.SerializedName;
 
 public class JSONB1ModelClass {
 
-    private String nw101 = "";
+    private String ciw101 = "";
     @SerializedName("wra_lno")
-    private String nw1serialno = "";
+    private String ciw1serialno = "";
     private String hhno = "";
     private String cluster_no = "";
-    private String nw201days = "";
-    private String nw201months = "";
-    private String nw201years = "";
-    private String nw202 = "";
-    private String nw203 = "";
-    private String nw204 = "";
-    private String nw205 = "";
-    private String nw206 = "";
-    private String nw207 = "";
-    private String nw208 = "";
-    private String nw209 = "";
-    private String nw21001 = "";
-    private String nw21002 = "";
-    private String nw21003 = "";
-    private String nw21098 = "";
-    private String nw21099 = "";
-    private String nw211 = "";
-    private String nw212 = "";
-    private String nw213 = "";
-    private String nw214 = "";
-    private String nw215 = "";
-    private String nw216 = "";
-    private String nw216aa = "";
-    @SerializedName("nw11801")
-    private String nh11801 = "";
+    private String ciw201days = "";
+    private String ciw201months = "";
+    private String ciw201years = "";
+    private String ciw202 = "";
+    private String ciw203 = "";
+    private String ciw204 = "";
+    private String ciw205 = "";
+    private String ciw206 = "";
+    private String ciw207 = "";
+    private String ciw208 = "";
+    private String ciw209 = "";
+    private String ciw21001 = "";
+    private String ciw21002 = "";
+    private String ciw21003 = "";
+    private String ciw21098 = "";
+    private String ciw21099 = "";
+    private String ciw211 = "";
+    private String ciw212 = "";
+    private String ciw213 = "";
+    private String ciw214 = "";
+    private String ciw215 = "";
+    private String ciw216 = "";
+    private String ciw216aa = "";
+    @SerializedName("ciw11801")
+    private String ciw11801 = "";
 
     public JSONB1ModelClass() {
 
     }
 
-    public String getnh11801() {
-        return nh11801;
+    public String getciw11801() {
+        return ciw11801;
     }
 
-    public void setnh11801(String nh11801) {
-        this.nh11801 = nh11801;
+    public void setciw11801(String ciw11801) {
+        this.ciw11801 = ciw11801;
     }
 
-    public String getnw101() {
-        return nw101;
+    public String getciw101() {
+        return ciw101;
     }
 
-    public void setnw101(String nw101) {
-        this.nw101 = nw101;
+    public void setciw101(String ciw101) {
+        this.ciw101 = ciw101;
     }
 
-    public String getnw1serialno() {
-        return nw1serialno;
+    public String getciw1serialno() {
+        return ciw1serialno;
     }
 
-    public void setnw1serialno(String nw1serialno) {
-        this.nw1serialno = nw1serialno;
+    public void setciw1serialno(String ciw1serialno) {
+        this.ciw1serialno = ciw1serialno;
     }
 
     public String getHhno() {
@@ -83,187 +83,187 @@ public class JSONB1ModelClass {
         this.cluster_no = cluster_no;
     }
 
-    public String getnw201days() {
-        return nw201days;
+    public String getciw201days() {
+        return ciw201days;
     }
 
-    public void setnw201days(String nw201days) {
-        this.nw201days = nw201days;
+    public void setciw201days(String ciw201days) {
+        this.ciw201days = ciw201days;
     }
 
-    public String getnw201months() {
-        return nw201months;
+    public String getciw201months() {
+        return ciw201months;
     }
 
-    public void setnw201months(String nw201months) {
-        this.nw201months = nw201months;
+    public void setciw201months(String ciw201months) {
+        this.ciw201months = ciw201months;
     }
 
-    public String getnw201years() {
-        return nw201years;
+    public String getciw201years() {
+        return ciw201years;
     }
 
-    public void setnw201years(String nw201years) {
-        this.nw201years = nw201years;
+    public void setciw201years(String ciw201years) {
+        this.ciw201years = ciw201years;
     }
 
-    public String getnw202() {
-        return nw202;
+    public String getciw202() {
+        return ciw202;
     }
 
-    public void setnw202(String nw202) {
-        this.nw202 = nw202;
+    public void setciw202(String ciw202) {
+        this.ciw202 = ciw202;
     }
 
-    public String getnw203() {
-        return nw203;
+    public String getciw203() {
+        return ciw203;
     }
 
-    public void setnw203(String nw203) {
-        this.nw203 = nw203;
+    public void setciw203(String ciw203) {
+        this.ciw203 = ciw203;
     }
 
-    public String getnw204() {
-        return nw204;
+    public String getciw204() {
+        return ciw204;
     }
 
-    public void setnw204(String nw204) {
-        this.nw204 = nw204;
+    public void setciw204(String ciw204) {
+        this.ciw204 = ciw204;
     }
 
-    public String getnw205() {
-        return nw205;
+    public String getciw205() {
+        return ciw205;
     }
 
-    public void setnw205(String nw205) {
-        this.nw205 = nw205;
+    public void setciw205(String ciw205) {
+        this.ciw205 = ciw205;
     }
 
-    public String getnw206() {
-        return nw206;
+    public String getciw206() {
+        return ciw206;
     }
 
-    public void setnw206(String nw206) {
-        this.nw206 = nw206;
+    public void setciw206(String ciw206) {
+        this.ciw206 = ciw206;
     }
 
-    public String getnw207() {
-        return nw207;
+    public String getciw207() {
+        return ciw207;
     }
 
-    public void setnw207(String nw207) {
-        this.nw207 = nw207;
+    public void setciw207(String ciw207) {
+        this.ciw207 = ciw207;
     }
 
-    public String getnw208() {
-        return nw208;
+    public String getciw208() {
+        return ciw208;
     }
 
-    public void setnw208(String nw208) {
-        this.nw208 = nw208;
+    public void setciw208(String ciw208) {
+        this.ciw208 = ciw208;
     }
 
-    public String getnw209() {
-        return nw209;
+    public String getciw209() {
+        return ciw209;
     }
 
-    public void setnw209(String nw209) {
-        this.nw209 = nw209;
+    public void setciw209(String ciw209) {
+        this.ciw209 = ciw209;
     }
 
-    public String getnw21001() {
-        return nw21001;
+    public String getciw21001() {
+        return ciw21001;
     }
 
-    public void setnw21001(String nw21001) {
-        this.nw21001 = nw21001;
+    public void setciw21001(String ciw21001) {
+        this.ciw21001 = ciw21001;
     }
 
-    public String getnw21002() {
-        return nw21002;
+    public String getciw21002() {
+        return ciw21002;
     }
 
-    public void setnw21002(String nw21002) {
-        this.nw21002 = nw21002;
+    public void setciw21002(String ciw21002) {
+        this.ciw21002 = ciw21002;
     }
 
-    public String getnw21003() {
-        return nw21003;
+    public String getciw21003() {
+        return ciw21003;
     }
 
-    public void setnw21003(String nw21003) {
-        this.nw21003 = nw21003;
+    public void setciw21003(String ciw21003) {
+        this.ciw21003 = ciw21003;
     }
 
-    public String getnw21098() {
-        return nw21098;
+    public String getciw21098() {
+        return ciw21098;
     }
 
-    public void setnw21098(String nw21098) {
-        this.nw21098 = nw21098;
+    public void setciw21098(String ciw21098) {
+        this.ciw21098 = ciw21098;
     }
 
-    public String getnw21099() {
-        return nw21099;
+    public String getciw21099() {
+        return ciw21099;
     }
 
-    public void setnw21099(String nw21099) {
-        this.nw21099 = nw21099;
+    public void setciw21099(String ciw21099) {
+        this.ciw21099 = ciw21099;
     }
 
-    public String getnw211() {
-        return nw211;
+    public String getciw211() {
+        return ciw211;
     }
 
-    public void setnw211(String nw211) {
-        this.nw211 = nw211;
+    public void setciw211(String ciw211) {
+        this.ciw211 = ciw211;
     }
 
-    public String getnw212() {
-        return nw212;
+    public String getciw212() {
+        return ciw212;
     }
 
-    public void setnw212(String nw212) {
-        this.nw212 = nw212;
+    public void setciw212(String ciw212) {
+        this.ciw212 = ciw212;
     }
 
-    public String getnw213() {
-        return nw213;
+    public String getciw213() {
+        return ciw213;
     }
 
-    public void setnw213(String nw213) {
-        this.nw213 = nw213;
+    public void setciw213(String ciw213) {
+        this.ciw213 = ciw213;
     }
 
-    public String getnw214() {
-        return nw214;
+    public String getciw214() {
+        return ciw214;
     }
 
-    public void setnw214(String nw214) {
-        this.nw214 = nw214;
+    public void setciw214(String ciw214) {
+        this.ciw214 = ciw214;
     }
 
-    public String getnw215() {
-        return nw215;
+    public String getciw215() {
+        return ciw215;
     }
 
-    public void setnw215(String nw215) {
-        this.nw215 = nw215;
+    public void setciw215(String ciw215) {
+        this.ciw215 = ciw215;
     }
 
-    public String getnw216() {
-        return nw216;
+    public String getciw216() {
+        return ciw216;
     }
 
-    public void setnw216(String nw216) {
-        this.nw216 = nw216;
+    public void setciw216(String ciw216) {
+        this.ciw216 = ciw216;
     }
 
-    public String getnw216aa() {
-        return nw216aa;
+    public String getciw216aa() {
+        return ciw216aa;
     }
 
-    public void setnw216aa(String nw216aa) {
-        this.nw216aa = nw216aa;
+    public void setciw216aa(String ciw216aa) {
+        this.ciw216aa = ciw216aa;
     }
 }

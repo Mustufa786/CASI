@@ -370,8 +370,8 @@ public class SectionC1Activity extends AddMember_MenuActivity implements TextWat
                 MWRAContract mwraContract = db.getWRANameByUid(MainApp.cc.getMUID(), MainApp.cc.getUUID());
                 if (!mwraContract.get_UID().equals("")) {
                     JSONB1ModelClass jsonB1 = JSONUtilClass.getModelFromJSON(mwraContract.getsB1(), JSONB1ModelClass.class);
-                    binding.respa.setText(jsonB1.getnw101().split("-")[0]);
-                    editMotherName = jsonB1.getnw101().split("-")[0];
+                    binding.respa.setText(jsonB1.getciw101().split("-")[0]);
+                    editMotherName = jsonB1.getciw101().split("-")[0];
                 }
             }
 

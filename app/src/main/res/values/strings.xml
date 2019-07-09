@@ -507,45 +507,45 @@
     <string name="nb101"> خاتون کانام </string>
     <string name="nb102"> شادی شدہ خاتون کالائن نمبر سیکشن A2 سے دیکھ کر لکھیں </string>
 
-    <string name="nw201sub1"> اگر دن معلوم نہیں تو 98 لکھیں </string>
-    <string name="nw201sub2"> اگر مہینہ معلوم نہیں تو 98 لکھیں </string>
-    <string name="nw201sub3"> اگر سال معلوم نہیں تو 9998 لکھیں </string>
+    <string name="ciw201sub1"> اگر دن معلوم نہیں تو 98 لکھیں </string>
+    <string name="ciw201sub2"> اگر مہینہ معلوم نہیں تو 98 لکھیں </string>
+    <string name="ciw201sub3"> اگر سال معلوم نہیں تو 9998 لکھیں </string>
 
-    <string name="nw202a"> عمر سالوں میں </string>
+    <string name="ciw202a"> عمر سالوں میں </string>
 
 
-    <string name="nw204info"> (بشمول موجودہ حمل) </string>
-    <string name="nw204a"> حمل کی تعداد </string>
+    <string name="ciw204info"> (بشمول موجودہ حمل) </string>
+    <string name="ciw204a"> حمل کی تعداد </string>
 
-    <string name="nw206info"> IF FIRST PREGNANCY AFTER MARRIAGE THEN GO TO SECTION B2 </string>
+    <string name="ciw206info"> IF FIRST PREGNANCY AFTER MARRIAGE THEN GO TO SECTION B2 </string>
 
-    <string name="nw206a"> عمر سالوں میں </string>
+    <string name="ciw206a"> عمر سالوں میں </string>
 
     <string name="nb1aheading"> پچھلے پانچ سالوں میں تمام حمل کی معلومات  </string>
 
 
-    <string name="nw217"> حمل کے نتیجے کی تاریخ </string>
-    <string name="nw218"> نتیجہ </string>
-    <string name="nw218a"> حمل ضائع </string>
-    <string name="nw218b"> مردہ بچے کی پیدائش </string>
-    <string name="nw218c"> زندہ بچے کی پیدائش </string>
-    <string name="nw218d"> جڑواں بچوں کی پیدائش </string>
-    <string name="nw218e"> جڑواں مردہ بچوں کی پیدائش </string>
-    <string name="nw218f"> ایک زندہ ایک مردہ بچوں کی پیدائش </string>
+    <string name="ciw217"> حمل کے نتیجے کی تاریخ </string>
+    <string name="ciw218"> نتیجہ </string>
+    <string name="ciw218a"> حمل ضائع </string>
+    <string name="ciw218b"> مردہ بچے کی پیدائش </string>
+    <string name="ciw218c"> زندہ بچے کی پیدائش </string>
+    <string name="ciw218d"> جڑواں بچوں کی پیدائش </string>
+    <string name="ciw218e"> جڑواں مردہ بچوں کی پیدائش </string>
+    <string name="ciw218f"> ایک زندہ ایک مردہ بچوں کی پیدائش </string>
 
-    <string name="nw220"> بچے کی موجودہ صورت حال </string>
-    <string name="nw220a"> حیات </string>
-    <string name="nw220b"> فوت </string>
-    <string name="nw220c"> اس گھر میں نہیں رہتا </string>
-    <string name="nw221"> زندہ بچے کی عمر </string>
+    <string name="ciw220"> بچے کی موجودہ صورت حال </string>
+    <string name="ciw220a"> حیات </string>
+    <string name="ciw220b"> فوت </string>
+    <string name="ciw220c"> اس گھر میں نہیں رہتا </string>
+    <string name="ciw221"> زندہ بچے کی عمر </string>
     <string name="year">سال </string>
     <string name="year2">سنہ </string>
     <string name="month"> ماہ </string>
     <string name="day"> دن </string>
-    <string name="nw222"> وفات کے وقت بچے کی عمر </string>
-    <string name="nw222y"> سال </string>
-    <string name="nw222m"> ماہ </string>
-    <string name="nw222d"> دن </string>
+    <string name="ciw222"> وفات کے وقت بچے کی عمر </string>
+    <string name="ciw222y"> سال </string>
+    <string name="ciw222m"> ماہ </string>
+    <string name="ciw222d"> دن </string>
 
 
     <string name="nb1a03"> بچے کا نمبر </string>
@@ -554,62 +554,62 @@
     <string name="nb2heading"> سیکشن ڈبلیو 3: حمل کے دوران کیے گئے طبی معانئے کی معلومات </string>
     <string name="nb2subHeading">یہ حصہ ہر اُس خاتون کا بھرا جائے گا جس کی عمر 49-15 سال ہے اور گذشتہ 2 سال میں زندہ بچے کی پیدائش ہوئی ہو  </string>
     <string name="nb2sub"> یہ حصہ ہر اُس خاتون کا بھرا جائے گا جس کی عمر 49-15 سال ہے اور گذشتہ 2 سال میں زندہ بچے کی پیدائش ہوئی ہو  </string>
-    <string name="nw301a">۔W301 - کیا </string>
+    <string name="ciw301a">۔W301 - کیا </string>
 
-    <string name="nw302info"> مزید پوچھیں :کوئی اور
+    <string name="ciw302info"> مزید پوچھیں :کوئی اور
     مزید پوچھیں :معائنہ کرنے والے کے بارے میں مزید پوچھیں اور تمام جوابات کو ریکادڑ کریں </string>
-    <string name="nw302a"> گائنا کالوجسٹ </string>
-    <string name="nw302b"> کوئی دوسرا ڈاکٹر </string>
-    <string name="nw302c"> نرس </string>
-    <string name="nw302d"> کمیونٹی ہیلتھ ورکر </string>
-    <string name="nw302e"> لیڈی ہیلتھ ورکر </string>
-    <string name="nw302f"> کیمونٹی مڈوائف </string>
-    <string name="nw302g"> لیڈی ہیلتھ وزیٹر </string>
-    <string name="nw302h"> دائی </string>
+    <string name="ciw302a"> گائنا کالوجسٹ </string>
+    <string name="ciw302b"> کوئی دوسرا ڈاکٹر </string>
+    <string name="ciw302c"> نرس </string>
+    <string name="ciw302d"> کمیونٹی ہیلتھ ورکر </string>
+    <string name="ciw302e"> لیڈی ہیلتھ ورکر </string>
+    <string name="ciw302f"> کیمونٹی مڈوائف </string>
+    <string name="ciw302g"> لیڈی ہیلتھ وزیٹر </string>
+    <string name="ciw302h"> دائی </string>
 
 
-    <string name="nw303sub1"> گھر </string>
+    <string name="ciw303sub1"> گھر </string>
 
-    <string name="nw303a"> جواب دہندہ کے گھر پر </string>
-    <string name="nw303b"> کسی اور کے گھر پر  </string>
-    <string name="nw303sub2"> بپلک میڈیکل سیکٹر </string>
+    <string name="ciw303a"> جواب دہندہ کے گھر پر </string>
+    <string name="ciw303b"> کسی اور کے گھر پر  </string>
+    <string name="ciw303sub2"> بپلک میڈیکل سیکٹر </string>
 
-    <string name="nw303c"> سرکاری ہسپتال  </string>
-    <string name="nw303d">سرکاری کلینک </string>
-    <string name="nw303e">ماں اور بچہ کا صحت مرکز   </string>
-    <string name="nw303f">  دیگر  سرکاری</string>
-    <string name="nw303sub3">نجی ہسپتال/سیکٹر </string>
+    <string name="ciw303c"> سرکاری ہسپتال  </string>
+    <string name="ciw303d">سرکاری کلینک </string>
+    <string name="ciw303e">ماں اور بچہ کا صحت مرکز   </string>
+    <string name="ciw303f">  دیگر  سرکاری</string>
+    <string name="ciw303sub3">نجی ہسپتال/سیکٹر </string>
 
-    <string name="nw303g"> پرائیوٹ ہسپتال </string>
-    <string name="nw303h"> نجی  کلینک </string>
-    <string name="nw303i"> نجی زچہ و بچہ سینٹر </string>
-    <string name="nw303j"> دیگرنجی  </string>
-    <string name="nw303k">  جگہ کا نام </string>
-    <string name="nw303l"> </string>
-
-
-    <string name="nw304info"> جواب نوٹ کریں جیسے جوابدہندہ نے بتایا ہے ۔اگر 9 مہینے یا اس زیادہ ہے تو "9" ریکارڈ کریں </string>
+    <string name="ciw303g"> پرائیوٹ ہسپتال </string>
+    <string name="ciw303h"> نجی  کلینک </string>
+    <string name="ciw303i"> نجی زچہ و بچہ سینٹر </string>
+    <string name="ciw303j"> دیگرنجی  </string>
+    <string name="ciw303k">  جگہ کا نام </string>
+    <string name="ciw303l"> </string>
 
 
-    <string name="nw305info"> مزید پوچھیں: حمل کے معائنہ کے وزٹ کی تعداد کے بارے میں مزید پوچھیں ،اگر کوئی تعداد بتائی ہے تو جو کم سے کم نمبر وہ لکھیں </string>
-    <string name="nw305a"> معائنوں کی تعداد </string>
-    <string name="nw305b"> معلوم نہیں </string>
+    <string name="ciw304info"> جواب نوٹ کریں جیسے جوابدہندہ نے بتایا ہے ۔اگر 9 مہینے یا اس زیادہ ہے تو "9" ریکارڈ کریں </string>
 
-    <string name="nw306info">(ہر انتخاب کے بارے میں پوچھیں اور تمام مثبت جواب کو دائرہ کریں ) </string>
-    <string name="nw306a"> کیا آپ کا وزن کیاگیا </string>
-    <string name="nw306b"> کیاآپ کا بلڈپریشر چیک کیاگیا </string>
-    <string name="nw306c"> کیا آپ نے پیشاب کانمونہ دیا </string>
-    <string name="nw306d"> کیاآپ نے خون کا نمونہ دیا </string>
-    <string name="nw306e"> الٹراساؤنڈ </string>
-    <string name="nw306f"> غذا کے باے میں مشورہ ملا</string>
-    <string name="nw306g"> ماں کا دودھ پلانے کے بارے میں مشورہ ملا </string>
-    <string name="nw306h"> فیملی پلاننگ کے بارے میں مشورہ ملا </string>
-    <string name="nw306i">  کوئی نہیں </string>
 
-    <string name="nw307info"> اگر آپ کے پاس موجود ہے تو پوچھیں کیا میں دیکھ سکتی ہوں
+    <string name="ciw305info"> مزید پوچھیں: حمل کے معائنہ کے وزٹ کی تعداد کے بارے میں مزید پوچھیں ،اگر کوئی تعداد بتائی ہے تو جو کم سے کم نمبر وہ لکھیں </string>
+    <string name="ciw305a"> معائنوں کی تعداد </string>
+    <string name="ciw305b"> معلوم نہیں </string>
+
+    <string name="ciw306info">(ہر انتخاب کے بارے میں پوچھیں اور تمام مثبت جواب کو دائرہ کریں ) </string>
+    <string name="ciw306a"> کیا آپ کا وزن کیاگیا </string>
+    <string name="ciw306b"> کیاآپ کا بلڈپریشر چیک کیاگیا </string>
+    <string name="ciw306c"> کیا آپ نے پیشاب کانمونہ دیا </string>
+    <string name="ciw306d"> کیاآپ نے خون کا نمونہ دیا </string>
+    <string name="ciw306e"> الٹراساؤنڈ </string>
+    <string name="ciw306f"> غذا کے باے میں مشورہ ملا</string>
+    <string name="ciw306g"> ماں کا دودھ پلانے کے بارے میں مشورہ ملا </string>
+    <string name="ciw306h"> فیملی پلاننگ کے بارے میں مشورہ ملا </string>
+    <string name="ciw306i">  کوئی نہیں </string>
+
+    <string name="ciw307info"> اگر آپ کے پاس موجود ہے تو پوچھیں کیا میں دیکھ سکتی ہوں
     اگر کارڈ موجود ہے تو درج ذیل سوالات کے جوابات کا پتہ کریں </string>
-    <string name="nw307a"> ہاں (کارڈ اور دیگر دستاویزات دیکھے) </string>
-    <string name="nw307b"> ہاں (کارڈ اور دیگر دستاویزات نہیں دیکھے) </string>
+    <string name="ciw307a"> ہاں (کارڈ اور دیگر دستاویزات دیکھے) </string>
+    <string name="ciw307b"> ہاں (کارڈ اور دیگر دستاویزات نہیں دیکھے) </string>
 
     <string name="nb210"> اگر ہاں ہے تو کسی نے دی یا خریدی </string>
     <string name="nb21001"> کلینک پر ملی </string>
@@ -617,118 +617,118 @@
     <string name="nb21003"> نہ ملی نہ خریدی </string>
     <string name="nb21004"> جواب نہیں دیا </string>
 
-    <string name="nw313a"> روزانہ </string>
-    <string name="nw313b"> ہفتے میں ایک مرتبہ </string>
-    <string name="nw313c"> ہفتے میں دو مرتبہ </string>
-    <string name="nw313d"> ہرمہینے </string>
-    <string name="nw313e"> کبھی کبھار </string>
+    <string name="ciw313a"> روزانہ </string>
+    <string name="ciw313b"> ہفتے میں ایک مرتبہ </string>
+    <string name="ciw313c"> ہفتے میں دو مرتبہ </string>
+    <string name="ciw313d"> ہرمہینے </string>
+    <string name="ciw313e"> کبھی کبھار </string>
 
-    <string name="nw314m"> مہینے </string>
-    <string name="nw314d"> دنوں </string>
+    <string name="ciw314m"> مہینے </string>
+    <string name="ciw314d"> دنوں </string>
 
-    <string name="nw318a"> روزانہ </string>
-    <string name="nw318b"> ہفتے میں ایک مرتبہ </string>
-    <string name="nw318c"> ہفتے میں دو مرتبہ </string>
-    <string name="nw318d"> ہرمہینے </string>
-    <string name="nw318e"> کبھی کبھار </string>
+    <string name="ciw318a"> روزانہ </string>
+    <string name="ciw318b"> ہفتے میں ایک مرتبہ </string>
+    <string name="ciw318c"> ہفتے میں دو مرتبہ </string>
+    <string name="ciw318d"> ہرمہینے </string>
+    <string name="ciw318e"> کبھی کبھار </string>
 
-    <string name="nw319m"> مہینے </string>
-    <string name="nw319d"> دنوں </string>
+    <string name="ciw319m"> مہینے </string>
+    <string name="ciw319d"> دنوں </string>
 
-    <string name="nw323a"> روزانہ </string>
-    <string name="nw323b"> ہفتے میں ایک مرتبہ </string>
-    <string name="nw323c"> ہفتے میں دو مرتبہ </string>
-    <string name="nw323d"> ہرمہینے </string>
-    <string name="nw323e"> کبھی کبھار </string>
+    <string name="ciw323a"> روزانہ </string>
+    <string name="ciw323b"> ہفتے میں ایک مرتبہ </string>
+    <string name="ciw323c"> ہفتے میں دو مرتبہ </string>
+    <string name="ciw323d"> ہرمہینے </string>
+    <string name="ciw323e"> کبھی کبھار </string>
 
-    <string name="nw324m"> مہینے </string>
-    <string name="nw324d"> دنوں </string>
+    <string name="ciw324m"> مہینے </string>
+    <string name="ciw324d"> دنوں </string>
 
     <string name="nb3heading"> Section W3 LHW Coverage </string>
 
-    <string name="nw327m"> مہینوں </string>
-    <string name="nw327d"> دنوں </string>
+    <string name="ciw327m"> مہینوں </string>
+    <string name="ciw327d"> دنوں </string>
 
-    <string name="nw328a"> ہرہفتے </string>
-    <string name="nw328b"> ہر پندرہ دن بعد </string>
-    <string name="nw328c"> ہر مہینے </string>
-    <string name="nw328d"> کبھی کبھار </string>
-    <string name="nw328e"> صرف پولیو پلانے کے لیے </string>
+    <string name="ciw328a"> ہرہفتے </string>
+    <string name="ciw328b"> ہر پندرہ دن بعد </string>
+    <string name="ciw328c"> ہر مہینے </string>
+    <string name="ciw328d"> کبھی کبھار </string>
+    <string name="ciw328e"> صرف پولیو پلانے کے لیے </string>
 
-    <string name="nw329a"> صحت اور غذائیت کا سیشن </string>
-    <string name="nw329b"> مانع حمل کی فراہمی </string>
-    <string name="nw329c"> صحت مرکز جانے کا مشورہ </string>
-    <string name="nw329d"> حفاظتی ٹیکے </string>
-    <string name="nw329e"> پولیو کے قطرے </string>
-    <string name="nw329f"> ماں کا علاج </string>
-    <string name="nw329g"> بچے کا علاج </string>
-    <string name="nw329h"> اضافی خوراک کی فراہمی </string>
+    <string name="ciw329a"> صحت اور غذائیت کا سیشن </string>
+    <string name="ciw329b"> مانع حمل کی فراہمی </string>
+    <string name="ciw329c"> صحت مرکز جانے کا مشورہ </string>
+    <string name="ciw329d"> حفاظتی ٹیکے </string>
+    <string name="ciw329e"> پولیو کے قطرے </string>
+    <string name="ciw329f"> ماں کا علاج </string>
+    <string name="ciw329g"> بچے کا علاج </string>
+    <string name="ciw329h"> اضافی خوراک کی فراہمی </string>
 
-    <string name="nw330a"> پچھلے مہینے </string>
-    <string name="nw330b"> تین مہینے پہلے </string>
-    <string name="nw330c"> گزشتہ 6 مہینوں میں </string>
+    <string name="ciw330a"> پچھلے مہینے </string>
+    <string name="ciw330b"> تین مہینے پہلے </string>
+    <string name="ciw330c"> گزشتہ 6 مہینوں میں </string>
 
-    <string name="nw332a"> ہرماہ </string>
-    <string name="nw332b"> ہر تین ماہ بعد </string>
-    <string name="nw332c"> 6 مہینے میں </string>
-    <string name="nw332d"> سال میں ایک بار </string>
+    <string name="ciw332a"> ہرماہ </string>
+    <string name="ciw332b"> ہر تین ماہ بعد </string>
+    <string name="ciw332c"> 6 مہینے میں </string>
+    <string name="ciw332d"> سال میں ایک بار </string>
     <string name="nb4heading">  سیکشن ڈبلیو 4: زچگی اور زچگی کے بعد کرائے گئے طبی معائنہ کے معلومات</string>
     <string name="nb4subheading">یہ حصہ ہر اُس خاتون کا بھرا جائے گا جس کی عمر 49-15 سال ہے اور گذشتہ 2 سال میں زندہ بچے کی پیدائش ہوئی ہو</string>
 
-    <string name="nw401sub">Health professional</string>
-    <string name="nw401a"> ڈاکٹر </string>
+    <string name="ciw401sub">Health professional</string>
+    <string name="ciw401a"> ڈاکٹر </string>
 
-    <string name="nw401c">  مڈ وائف  </string>
-    <string name="nw401sub1">other person</string>
-    <string name="nw401d"> نرس </string>
-    <string name="nw401e"> لیڈی ہیلتھ ورکر  </string>
-    <string name="nw401f"> روایتی دائی </string>
-    <string name="nw401b">لیڈی ہیلتھ وزیٹر </string>
-    <string name="nw401g">دوست /رشتہ دار </string>
-    <string name="nw401h">گائنا کالوجسٹ  </string>
+    <string name="ciw401c">  مڈ وائف  </string>
+    <string name="ciw401sub1">other person</string>
+    <string name="ciw401d"> نرس </string>
+    <string name="ciw401e"> لیڈی ہیلتھ ورکر  </string>
+    <string name="ciw401f"> روایتی دائی </string>
+    <string name="ciw401b">لیڈی ہیلتھ وزیٹر </string>
+    <string name="ciw401g">دوست /رشتہ دار </string>
+    <string name="ciw401h">گائنا کالوجسٹ  </string>
 
 
-    <string name="nw402info"> پوچھیں : کوئی اور
+    <string name="ciw402info"> پوچھیں : کوئی اور
     پوچھیں: زچگی میں مدد کروانے والوں کانام پوچھیں اور تمام جوابات لکھیں۔ </string>
-    <string name="nw402a"> ڈاکٹر </string>
-    <string name="nw402b">  لیڈی ہیلتھ وزیٹر </string>
-    <string name="nw402info1"> other person </string>
-    <string name="nw402c"> نرس  </string>
-    <string name="nw402d"> مڈ وائف  </string>
-    <string name="nw402f"> روایتی دائی  </string>
-    <string name="nw402e">  لیڈی ہیلتھ ورکر </string>
-    <string name="nw402g"> دوست /رشتہ دار </string>
-    <string name="nw402h">گائنا کالوجسٹ </string>
-    <string name="nw40299"> کوئی بھی نہیں </string>
+    <string name="ciw402a"> ڈاکٹر </string>
+    <string name="ciw402b">  لیڈی ہیلتھ وزیٹر </string>
+    <string name="ciw402info1"> other person </string>
+    <string name="ciw402c"> نرس  </string>
+    <string name="ciw402d"> مڈ وائف  </string>
+    <string name="ciw402f"> روایتی دائی  </string>
+    <string name="ciw402e">  لیڈی ہیلتھ ورکر </string>
+    <string name="ciw402g"> دوست /رشتہ دار </string>
+    <string name="ciw402h">گائنا کالوجسٹ </string>
+    <string name="ciw40299"> کوئی بھی نہیں </string>
 
 
-    <string name="nw403info"> پیدائش  کی جگہ کو شناخت کرنے کے لیے سوالات پوچھیں </string>
-    <string name="nw403info1"> گھر </string>
-    <string name="nw403a"> جواب دہندہ کے گھر پر </string>
-    <string name="nw403b"> کسی اور کے گھر پر </string>
-    <string name="nw403info2"> بپلک میڈیکل سیکٹ </string>
-    <string name="nw403c"> سرکاری ہسپتال </string>
-    <string name="nw403d"> سرکاری کلینک </string>
-    <string name="nw403e"> ماں اور بچہ کا صحت مرکز</string>
-    <string name="nw403f"> دیگر جگہ </string>
-    <string name="nw403info3">  نجی ہسپتال/سیکٹر </string>
-    <string name="nw403g"> نجی ہسپتال </string>
-    <string name="nw403h"> نجی کلینک </string>
-    <string name="nw403i"> نجی زچہ و بچہ سینٹر </string>
-    <string name="nw403j"> دیگرنجی  صحت مرکز </string>
-    <string name="nw403k"> جگہ کا نام </string>
-    <string name="nw403info4"> (دیگر کی صورت میں جگہ کا نام لکھیں) </string>
+    <string name="ciw403info"> پیدائش  کی جگہ کو شناخت کرنے کے لیے سوالات پوچھیں </string>
+    <string name="ciw403info1"> گھر </string>
+    <string name="ciw403a"> جواب دہندہ کے گھر پر </string>
+    <string name="ciw403b"> کسی اور کے گھر پر </string>
+    <string name="ciw403info2"> بپلک میڈیکل سیکٹ </string>
+    <string name="ciw403c"> سرکاری ہسپتال </string>
+    <string name="ciw403d"> سرکاری کلینک </string>
+    <string name="ciw403e"> ماں اور بچہ کا صحت مرکز</string>
+    <string name="ciw403f"> دیگر جگہ </string>
+    <string name="ciw403info3">  نجی ہسپتال/سیکٹر </string>
+    <string name="ciw403g"> نجی ہسپتال </string>
+    <string name="ciw403h"> نجی کلینک </string>
+    <string name="ciw403i"> نجی زچہ و بچہ سینٹر </string>
+    <string name="ciw403j"> دیگرنجی  صحت مرکز </string>
+    <string name="ciw403k"> جگہ کا نام </string>
+    <string name="ciw403info4"> (دیگر کی صورت میں جگہ کا نام لکھیں) </string>
 
 
-    <string name="nw404a"> بہت بڑا </string>
-    <string name="nw404b"> اوسطً سے بڑا </string>
-    <string name="nw404c"> اوسطً </string>
-    <string name="nw404d"> اوسطً سے چھوٹا </string>
-    <string name="nw404e"> بہت چھوٹا </string>
+    <string name="ciw404a"> بہت بڑا </string>
+    <string name="ciw404b"> اوسطً سے بڑا </string>
+    <string name="ciw404c"> اوسطً </string>
+    <string name="ciw404d"> اوسطً سے چھوٹا </string>
+    <string name="ciw404e"> بہت چھوٹا </string>
 
-    <string name="nw406info"> اگر کارڈ دستیاب ہوتوکارڈ سے وزن کو ریکارڈ کریں </string>
-    <string name="nw406c"> کارڈ سے </string>
-    <string name="nw406r"> یاد کر کے </string>
+    <string name="ciw406info"> اگر کارڈ دستیاب ہوتوکارڈ سے وزن کو ریکارڈ کریں </string>
+    <string name="ciw406c"> کارڈ سے </string>
+    <string name="ciw406r"> یاد کر کے </string>
 
     <string name="nb410a"> ایک گھنٹے سے بھی کم وقت میں </string>
     <string name="nb410h"> گھنٹوں میں </string>
@@ -744,94 +744,82 @@
     <string name="nb412f"> گوبر </string>
 
 
-    <string name="nw413sub1"> بپلک میڈیکل سیکٹر </string>
-    <string name="nw413a">سرکاری ہسپتال </string>
-    <string name="nw413b">  سرکاری صحت سینٹر</string>
-    <string name="nw413c"> سرکاری صحت پوسٹ </string>
-    <string name="nw413d">  کمیونٹی ہیلتھ ورکر</string>
-    <string name="nw413e"> سرکاری موبائل / دوسرے کلینک </string>
-    <string name="nw413sub2">  نجی ہسپتال/سیکٹر</string>
-    <string name="nw413f">  نجی ہسپتال /کلینک</string>
-    <string name="nw413g"> نجی ڈاکٹر </string>
-    <string name="nw413h"> نجی  دواخان </string>
-    <string name="nw413i">غیرسرکاری عوامی صحت کارکن </string>
-    <string name="nw413j"> غیر سرکاری موبائل کلینک </string>
-    <string name="nw413sub3"> دیگر زرائع</string>
-    <string name="nw413k">رشتہ دار /دوست</string>
-    <string name="nw413l"> دوکان /بازار/مفت تقسیم کرنے والوں سے </string>
-    <string name="nw413m"> روایتی تجربہ کار </string>
-    <string name="nw413961"> دوسرے عوامی وضاحت کریں</string>
-    <string name="nw413962"> دیگر نجی  (وضاحت کریں) </string>
+    <string name="ciw413sub1"> بپلک میڈیکل سیکٹر </string>
+    <string name="ciw413a">سرکاری ہسپتال </string>
+    <string name="ciw413b">  سرکاری صحت سینٹر</string>
+    <string name="ciw413c"> سرکاری صحت پوسٹ </string>
+    <string name="ciw413d">  کمیونٹی ہیلتھ ورکر</string>
+    <string name="ciw413e"> سرکاری موبائل / دوسرے کلینک </string>
+    <string name="ciw413sub2">  نجی ہسپتال/سیکٹر</string>
+    <string name="ciw413f">  نجی ہسپتال /کلینک</string>
+    <string name="ciw413g"> نجی ڈاکٹر </string>
+    <string name="ciw413h"> نجی  دواخان </string>
+    <string name="ciw413i">غیرسرکاری عوامی صحت کارکن </string>
+    <string name="ciw413j"> غیر سرکاری موبائل کلینک </string>
+    <string name="ciw413sub3"> دیگر زرائع</string>
+    <string name="ciw413k">رشتہ دار /دوست</string>
+    <string name="ciw413l"> دوکان /بازار/مفت تقسیم کرنے والوں سے </string>
+    <string name="ciw413m"> روایتی تجربہ کار </string>
+    <string name="ciw413961"> دوسرے عوامی وضاحت کریں</string>
+    <string name="ciw413962"> دیگر نجی  (وضاحت کریں) </string>
 
 
     <string name="nb5heading"> SECTION B5: POST NATAL CARE (For all MWRA with at least one delivery REF B1 Q6) </string>
 
-    <!--<string name="nw415"> زچگی کے بعد کس نے آپ کی صحت کا معائنہ کیاتھا؟ </string>-->
-    <string name="nw415a"> گائنا کولوجسٹ </string>
-    <string name="nw415b"> کوئی اور ڈاکٹر </string>
-    <string name="nw415c"> نرس </string>
-    <string name="nw415d"> کمیونٹی مڈوائف </string>
-    <string name="nw415e"> لیڈی ہیلتھ ورکر </string>
-    <string name="nw415f"> لیڈی ہیلتھ وزیٹر </string>
-    <string name="nw415g"> دائی </string>
+    <!--<string name="ciw415"> زچگی کے بعد کس نے آپ کی صحت کا معائنہ کیاتھا؟ </string>-->
+    <string name="ciw415a"> گائنا کولوجسٹ </string>
+    <string name="ciw415b"> کوئی اور ڈاکٹر </string>
+    <string name="ciw415c"> نرس </string>
+    <string name="ciw415d"> کمیونٹی مڈوائف </string>
+    <string name="ciw415e"> لیڈی ہیلتھ ورکر </string>
+    <string name="ciw415f"> لیڈی ہیلتھ وزیٹر </string>
+    <string name="ciw415g"> دائی </string>
 
-    <string name="nw416a"> اگر ایک دن سے کم ہے (گھنٹے درج کریں) </string>
-    <string name="nw416b"> اگر ایک ہفتے سے کم ہے (دن درج کریں) </string>
-    <string name="nw416c"> دوسری صورت میں ہفتہ ریکارڈ کریں </string>
-    <string name="nw416h"> گھنٹے </string>
-    <string name="nw416d"> دنوں </string>
-    <string name="nw416w"> ہفتے </string>
+    <string name="ciw416a"> اگر ایک دن سے کم ہے (گھنٹے درج کریں) </string>
+    <string name="ciw416b"> اگر ایک ہفتے سے کم ہے (دن درج کریں) </string>
+    <string name="ciw416c"> دوسری صورت میں ہفتہ ریکارڈ کریں </string>
+    <string name="ciw416h"> گھنٹے </string>
+    <string name="ciw416d"> دنوں </string>
+    <string name="ciw416w"> ہفتے </string>
 
-    <string name="nw417a"> کتنی مرتبہ </string>
+    <string name="ciw417a"> کتنی مرتبہ </string>
 
-    <string name="nw418a"> غذا کے بارے میں مشورہ دینا </string>
-    <string name="nw418b"> ماں کے دودھ اور آئی وائی سی ایف کا مشورہ دینا </string>
-    <string name="nw418c"> فیملی پلاننگ کے بارے میں مشورہ دینا </string>
-    <string name="nw418d">پیچیدگیوں کی جانچ کرنے </string>
-    <string name="nw418e"> مرکز صحت  جانے کا مشورہ دینے </string>
-    <string name="nw418f"> ماں کے علاج کے حوالے سے </string>
-    <string name="nw418g"> اضافی خوراک کی فراہمی </string>
-    <string name="nw418h"> مانع حمل کی فراہمی </string>
-    <string name="nw418i"> کچھ اور وضاحت کریں </string>
+    <string name="ciw418a"> غذا کے بارے میں مشورہ دینا </string>
+    <string name="ciw418b"> ماں کے دودھ اور آئی وائی سی ایف کا مشورہ دینا </string>
+    <string name="ciw418c"> فیملی پلاننگ کے بارے میں مشورہ دینا </string>
+    <string name="ciw418d">پیچیدگیوں کی جانچ کرنے </string>
+    <string name="ciw418e"> مرکز صحت  جانے کا مشورہ دینے </string>
+    <string name="ciw418f"> ماں کے علاج کے حوالے سے </string>
+    <string name="ciw418g"> اضافی خوراک کی فراہمی </string>
+    <string name="ciw418h"> مانع حمل کی فراہمی </string>
+    <string name="ciw418i"> کچھ اور وضاحت کریں </string>
 
-    <string name="nw420a"> بچے کے ڈاکٹرنے </string>
-    <string name="nw420b"> کسی اور ڈاکٹر نے </string>
-    <string name="nw420c"> نرس </string>
-    <string name="nw420d"> کمیونٹی مڈوائف </string>
-    <string name="nw420e"> لیڈی ہیلتھ ورکر </string>
-    <string name="nw420f"> لیڈی ہیلتھ وزیٹر </string>
-    <string name="nw420g"> دائی </string>
+    <string name="ciw420a"> بچے کے ڈاکٹرنے </string>
+    <string name="ciw420b"> کسی اور ڈاکٹر نے </string>
+    <string name="ciw420c"> نرس </string>
+    <string name="ciw420d"> کمیونٹی مڈوائف </string>
+    <string name="ciw420e"> لیڈی ہیلتھ ورکر </string>
+    <string name="ciw420f"> لیڈی ہیلتھ وزیٹر </string>
+    <string name="ciw420g"> دائی </string>
 
-    <string name="nw421a"> اگر ایک دن سے کم ہے (گھنٹہ ریکارڈ بتائیں) </string>
-    <string name="nw421b"> اگر ایک ہفتے سے کم ہے (دن ریکارڈ بتائیں) </string>
-    <string name="nw421c"> دوسری صورت میں ہفتہ ریکارڈ کریں </string>
-    <string name="nw421h"> گھنٹے </string>
-    <string name="nw421d"> دنوں </string>
-    <string name="nw421w"> ہفتے </string>
+    <string name="ciw421a"> اگر ایک دن سے کم ہے (گھنٹہ ریکارڈ بتائیں) </string>
+    <string name="ciw421b"> اگر ایک ہفتے سے کم ہے (دن ریکارڈ بتائیں) </string>
+    <string name="ciw421c"> دوسری صورت میں ہفتہ ریکارڈ کریں </string>
+    <string name="ciw421h"> گھنٹے </string>
+    <string name="ciw421d"> دنوں </string>
+    <string name="ciw421w"> ہفتے </string>
 
-    <string name="nw422a"> کتنی مرتبہ </string>
-    <string name="nw423"> اس معائنہ کا مقصد کیاتھا </string>
-    <string name="nw423a"> حفاظتی ٹیکہ </string>
-    <string name="nw423b"> پولیو سے بچاؤ کے قطرے </string>
-    <string name="nw423c">پیچیدگیوں کی جانچ کرنے </string>
-    <string name="nw423d"> صصحت مرکز جانے کا مشورہ دینے   </string>
-    <string name="nw423e"> بچے کے علاج کے بارے میں </string>
-    <string name="nw423f"> کوئی اور </string>
+    <string name="ciw422a"> کتنی مرتبہ </string>
+    <string name="ciw423"> اس معائنہ کا مقصد کیاتھا </string>
+    <string name="ciw423a"> حفاظتی ٹیکہ </string>
+    <string name="ciw423b"> پولیو سے بچاؤ کے قطرے </string>
+    <string name="ciw423c">پیچیدگیوں کی جانچ کرنے </string>
+    <string name="ciw423d"> صصحت مرکز جانے کا مشورہ دینے   </string>
+    <string name="ciw423e"> بچے کے علاج کے بارے میں </string>
+    <string name="ciw423f"> کوئی اور </string>
     <string name="nb6heading"> سیکشن ڈبلیو5: خواتین کے مختلف اقسام کے کھانوں کا استعمال </string>
-    <string name="nw5heading"> سیکشن ڈبلیو5: خواتین کے مختلف اقسام کے کھانوں کا استعمال </string>
+    <string name="ciw5heading"> سیکشن ڈبلیو5: خواتین کے مختلف اقسام کے کھانوں کا استعمال </string>
 
-    <string name="nw501info"> خاتون سے پوچھیں کہ کل صبح جاگنے سے لے کررات کو سونے تک کیا  کچھ کھایا </string>
-    <string name="nw501info1"> فوڈ گروپ جاننے کے لیے دئیے گئے کتابچہ کو دیکھیں اور کھائے گئے کھانوں کا اندراج مندرجہ ذیل ٹیبل  میں کری   </string>
-    <string name="nw501a">مثلاً جو،جوار،دلیا،چاول ،شلجم ،گندم،شکرقندی،کچے کیلے، بیھ،اروی،آلو  وغیرہ </string>
-    <string name="nw501b"> تمام قسم کی لوبیا ،چنا ،مٹر  ،ارد کی دال ،اور تمام دوسری دالیں </string>
-    <string name="nw501c">مونگ پھلی،بادام،کاجو،پستہ،اخروٹ،خربوزے کے بیج، تل،سورج مکھی کے بیج  اور کدو کے بیج وغیرہ</string>
-    <string name="nw501d"> کم اور مکمل چکنائی والا دودھ،دودھ ،دہی،پنیر،خشک دودھ اور دودھ  کی تمام قسمیں </string>
-    <string name="nw501e">گائے ،بھنس ،بکری،بھیڑ،دنبہ،مرغی،بطخ،کبوتر،مرغابی کا گوشت،مچھلی اور دوسرے تمام حلال جانوروں کا گوشت ،پوٹا،کلیجی،اوجھڑی،دل،گردہ،ڈبے میں محفوظ مچھلی،جینھگے،کیٹرا،خشک /برف میں رکھی ہوئی مچھلی</string>
-    <string name="nw501f"> مرغی اور بطخ کے انڈے </string>
-    <string name="nw501g">گہرے ہرے پتوں والی سبزیاں مثلاً میتھی   ،پالک، کریلا، بھنڈی، کدو ،بروکولی ،ہری مرچ ، سلاد پتہ ، گوبی ساگ ،ہرا کدو وغیرہ</string>
-    <string name="nw501h"> وٹامن اے سے بھرپور پھل اور سبزیاں مثلاً خوبانی ،خربوزہ، تربوز، پپیتا،آملوک،گاجر وغیرہ</string>
-    <string name="nw501i"> دوسری سبزیاں مثلاًٹماٹر ،مکئی،پھول گوبی ،بند گوبی ،تورئی،سلاد پتے ،پیاز،اجوائن،ہرا مٹر، بیگن، کھیرا وغیرہ  </string>
-    <string name="nw501j">سیب،انگور،پپیتا،خوبانی،چکوترا،امرود،ناشپاتی،کیلا،انناس،جامن،لیموں،انار،تربوز،آلوبخارہ ،نارنگی،آم،آڑو وغیرہ </string>
     <string name="cic1info"> ماڈیول سی: پانچ سال سے کمر عمر بچے کی غذائی معلومات </string>
     <string name="cic1heading"> سیکشن سی 1:پانچ سال سے کم عمر بچوں کی معلومات  </string>
     <string name="cic1info1"> ماڈیول سی پانچ سال سے کم عمر بچوں کا بھرا جائے گا،اور کچھ مخصوص حصہ عمر کے حساب سے گھرمیں موجود بچوں کا بھرا جائے گا </string>
@@ -1173,71 +1161,71 @@
     <string name="cic506d"> بلکل نہیں بات چیت کر سکتا </string>
 
 
-    <string name="nw311a"> گائنا کولوجسٹ </string>
-    <string name="nw311b">کوئی دوسرا ڈاکٹر </string>
-    <string name="nw311c"> نرس </string>
-    <string name="nw311d"> کمیونٹی ہیلتھ ورکر </string>
-    <string name="nw311e"> لیڈی ہیلتھ ورکر </string>
-    <string name="nw311f">کیمونٹی مڈوائف </string>
-    <string name="nw311g"> لیڈی ہیلتھ وزیٹر</string>
-    <string name="nw311h"> دائی </string>
+    <string name="ciw311a"> گائنا کولوجسٹ </string>
+    <string name="ciw311b">کوئی دوسرا ڈاکٹر </string>
+    <string name="ciw311c"> نرس </string>
+    <string name="ciw311d"> کمیونٹی ہیلتھ ورکر </string>
+    <string name="ciw311e"> لیڈی ہیلتھ ورکر </string>
+    <string name="ciw311f">کیمونٹی مڈوائف </string>
+    <string name="ciw311g"> لیڈی ہیلتھ وزیٹر</string>
+    <string name="ciw311h"> دائی </string>
 
 
-    <string name="nw312sub1"> بپلک میڈیکل سیکٹر</string>
-    <string name="nw312sub2">  نجی ہسپتال/سیکٹر</string>
-    <string name="nw312sub3">  دیگر زرائع</string>
-    <string name="nw312a">   سرکاری ہسپتال</string>
-    <string name="nw312b"> سرکاری صحت سینٹر</string>
-    <string name="nw312c">  سرکاری صحت پوسٹ</string>
-    <string name="nw312d"> کمیونٹی ہیلتھ ورکر</string>
-    <string name="nw312e">سرکاری موبائل / دوسرے کلینک</string>
-    <string name="nw312961">دوسرے عوامی طبی مرکز</string>
-    <string name="nw312f"> نجی ہسپتال /کلینک</string>
-    <string name="nw312g">  نجی ڈاکٹر</string>
-    <string name="nw312h">  نجی  دواخانہ  </string>
-    <string name="nw312i">  غیرسرکاری عوامی صحت کارکن </string>
-    <string name="nw312j">  غیر سرکاری موبائل کلینک </string>
-    <string name="nw312962"> دوسرے نجی دواخانہ </string>
-    <string name="nw312k">   رشتہ دار / دوست </string>
-    <string name="nw312l">  دوکان /بازار/مفت تقسیم کرنے والوں سے  </string>
-    <string name="nw312m">   روایتی تجربہ کار   </string>
-    <string name="nw321a"> گائنا کولوجسٹ </string>
-    <string name="nw321b">کوئی دوسرا ڈاکٹر </string>
-    <string name="nw321c"> نرس </string>
-    <string name="nw321d"> کمیونٹی ہیلتھ ورکر </string>
-    <string name="nw321e"> لیڈی ہیلتھ ورکر </string>
-    <string name="nw321f">کیمونٹی مڈوائف </string>
-    <string name="nw321g"> لیڈی ہیلتھ وزیٹر</string>
-    <string name="nw321h"> دائی </string>
+    <string name="ciw312sub1"> بپلک میڈیکل سیکٹر</string>
+    <string name="ciw312sub2">  نجی ہسپتال/سیکٹر</string>
+    <string name="ciw312sub3">  دیگر زرائع</string>
+    <string name="ciw312a">   سرکاری ہسپتال</string>
+    <string name="ciw312b"> سرکاری صحت سینٹر</string>
+    <string name="ciw312c">  سرکاری صحت پوسٹ</string>
+    <string name="ciw312d"> کمیونٹی ہیلتھ ورکر</string>
+    <string name="ciw312e">سرکاری موبائل / دوسرے کلینک</string>
+    <string name="ciw312961">دوسرے عوامی طبی مرکز</string>
+    <string name="ciw312f"> نجی ہسپتال /کلینک</string>
+    <string name="ciw312g">  نجی ڈاکٹر</string>
+    <string name="ciw312h">  نجی  دواخانہ  </string>
+    <string name="ciw312i">  غیرسرکاری عوامی صحت کارکن </string>
+    <string name="ciw312j">  غیر سرکاری موبائل کلینک </string>
+    <string name="ciw312962"> دوسرے نجی دواخانہ </string>
+    <string name="ciw312k">   رشتہ دار / دوست </string>
+    <string name="ciw312l">  دوکان /بازار/مفت تقسیم کرنے والوں سے  </string>
+    <string name="ciw312m">   روایتی تجربہ کار   </string>
+    <string name="ciw321a"> گائنا کولوجسٹ </string>
+    <string name="ciw321b">کوئی دوسرا ڈاکٹر </string>
+    <string name="ciw321c"> نرس </string>
+    <string name="ciw321d"> کمیونٹی ہیلتھ ورکر </string>
+    <string name="ciw321e"> لیڈی ہیلتھ ورکر </string>
+    <string name="ciw321f">کیمونٹی مڈوائف </string>
+    <string name="ciw321g"> لیڈی ہیلتھ وزیٹر</string>
+    <string name="ciw321h"> دائی </string>
 
 
-    <string name="nw214">۔W214 - گذشتہ پانچ سالوں کے دوران ہونے والے حمل کی تعداد (بشمول موجودہ حمل)</string>
-    <string name="nw215">۔W215 - گذشتہ پانچ سالوں کے دوران آپ کی کتنی زچگیاں ہوئیں؟</string>
-    <string name="nw205time"> زچگیوں کی تعداد </string>
-    <string name="nw216">۔W216 - کیا گزشتہ پانچ سالوں کے دوران  کسی بھی حمل کا نتیجہ مردہ بچے کی پیدائش یا اسقاط حمل  ہوا۔</string>
-    <string name="nw216a"> اگر ہاں تو ان کی تعداد کتنی ہے؟</string>
-    <!--<string name="nw217">۔W217 -  گذشتہ پانچ سالوں کے دوران ہونے والے حمل کی معلومات جن کا نتیجہ  مردہ بچے کی پیدائش /اسقاط حمل ہے  </string>
+    <string name="ciw214">۔W214 - گذشتہ پانچ سالوں کے دوران ہونے والے حمل کی تعداد (بشمول موجودہ حمل)</string>
+    <string name="ciw215">۔W215 - گذشتہ پانچ سالوں کے دوران آپ کی کتنی زچگیاں ہوئیں؟</string>
+    <string name="ciw205time"> زچگیوں کی تعداد </string>
+    <string name="ciw216">۔W216 - کیا گزشتہ پانچ سالوں کے دوران  کسی بھی حمل کا نتیجہ مردہ بچے کی پیدائش یا اسقاط حمل  ہوا۔</string>
+    <string name="ciw216a"> اگر ہاں تو ان کی تعداد کتنی ہے؟</string>
+    <!--<string name="ciw217">۔W217 -  گذشتہ پانچ سالوں کے دوران ہونے والے حمل کی معلومات جن کا نتیجہ  مردہ بچے کی پیدائش /اسقاط حمل ہے  </string>
   -->
-    <string name="nw217Flag"> Delete Record </string>
-    <string name="nw21701"> حمل کا نتیجہ </string>
-    <string name="nw21702"> حمل کے نتیجہ کی تاریخ </string>
-    <string name="nw21701a"> حمل ضائع </string>
-    <string name="nw21701b"> مردہ بچے کی پیدائش </string>
+    <string name="ciw217Flag"> Delete Record </string>
+    <string name="ciw21701"> حمل کا نتیجہ </string>
+    <string name="ciw21702"> حمل کے نتیجہ کی تاریخ </string>
+    <string name="ciw21701a"> حمل ضائع </string>
+    <string name="ciw21701b"> مردہ بچے کی پیدائش </string>
 
-    <string name="nw21001">کلینک پر ملی</string>
-    <string name="nw21002">خریدی</string>
-    <string name="nw21003">نہ ملی نہ خریدی</string>
+    <string name="ciw21001">کلینک پر ملی</string>
+    <string name="ciw21002">خریدی</string>
+    <string name="ciw21003">نہ ملی نہ خریدی</string>
 
 
-    <string name="nw601">Yesterday during the day or night, did you eat or drink:</string>
+    <string name="ciw601">Yesterday during the day or night, did you eat or drink:</string>
 
     <!-- Foods-->
-    <string name="nw601a1">روٹی</string>
-    <string name="nw601a2">دلیہ / اناج / کارن فلیکس</string>
-    <string name="nw601a3">نوڈلس / پاستا</string>
-    <string name="nw601a4">چاول</string>
-    <string name="nw601f">گوشت / مرغی / مچھلی</string>
-    <string name="nw601i">انڈے</string>
+    <string name="ciw601a1">روٹی</string>
+    <string name="ciw601a2">دلیہ / اناج / کارن فلیکس</string>
+    <string name="ciw601a3">نوڈلس / پاستا</string>
+    <string name="ciw601a4">چاول</string>
+    <string name="ciw601f">گوشت / مرغی / مچھلی</string>
+    <string name="ciw601i">انڈے</string>
     <string name="vegi">سبزیاں</string>
     <string name="grLeafy">ہرے پتوں والی سبزیاں</string>
     <string name="grVegi">ہرے رنگ کی سبزیاں</string>
@@ -1247,84 +1235,84 @@
     <string name="sinSeed">ایک بیج والے پھل</string>
     <string name="mulSeed">ایک سے زیادہ بیجوں والے پھل</string>
     <string name="othSeed">دوسرے پھل</string>
-    <string name="nw601v">چائے / کافی</string>
-    <string name="nw601c">دالیں اور پھلیاں</string>
-    <string name="nw601e">دودھ / دہی / پنير</string>
-    <string name="nw601q">مکھن / بالائی / آئس کریم</string>
-    <string name="nw601d">خشک میوہ اور بیج</string>
+    <string name="ciw601v">چائے / کافی</string>
+    <string name="ciw601c">دالیں اور پھلیاں</string>
+    <string name="ciw601e">دودھ / دہی / پنير</string>
+    <string name="ciw601q">مکھن / بالائی / آئس کریم</string>
+    <string name="ciw601d">خشک میوہ اور بیج</string>
 
     <!-- Green Leafy vegitables-->
 
-    <string name="nw601j1">پالک</string>
-    <string name="nw601j2">شلجم کے پتے</string>
-    <string name="nw601j3">سلاد کے پتے</string>
-    <string name="nw601j4">بند گوبھی</string>
-    <string name="nw601j5">سرسوں کے پتے</string>
-    <string name="nw601j6">مولی کے پتے</string>
-    <string name="nw601j7">بروکلی</string>
+    <string name="ciw601j1">پالک</string>
+    <string name="ciw601j2">شلجم کے پتے</string>
+    <string name="ciw601j3">سلاد کے پتے</string>
+    <string name="ciw601j4">بند گوبھی</string>
+    <string name="ciw601j5">سرسوں کے پتے</string>
+    <string name="ciw601j6">مولی کے پتے</string>
+    <string name="ciw601j7">بروکلی</string>
 
     <!-- Green vegitables-->
 
-    <string name="nw601m1">کڑوا خربوزہ</string>
-    <string name="nw601m2"> سبز مرچ / ہری مرچ</string>
-    <string name="nw601m3">کھیرا</string>
-    <string name="nw601m4">بھنڈی</string>
-    <string name="nw601m5">گوار کی پھلی</string>
-    <string name="nw601m6">مٹر</string>
-    <string name="nw601m7"> لوکی / کدو</string>
-    <string name="nw601m8">ٹماٹر</string>
-    <string name="nw601m9">سرخ مولی</string>
-    <string name="nw601m10">پیاز</string>
-    <string name="nw601m11">تازہ مکئی</string>
-    <string name="nw601m12">کھمبی / مشرومس</string>
-    <string name="nw601m13">بینگن</string>
-    <string name="nw601m14">گوبھی</string>
-    <string name="nw601m15">چقندر</string>
-    <string name="nw601m16">آلو</string>
+    <string name="ciw601m1">کڑوا خربوزہ</string>
+    <string name="ciw601m2"> سبز مرچ / ہری مرچ</string>
+    <string name="ciw601m3">کھیرا</string>
+    <string name="ciw601m4">بھنڈی</string>
+    <string name="ciw601m5">گوار کی پھلی</string>
+    <string name="ciw601m6">مٹر</string>
+    <string name="ciw601m7"> لوکی / کدو</string>
+    <string name="ciw601m8">ٹماٹر</string>
+    <string name="ciw601m9">سرخ مولی</string>
+    <string name="ciw601m10">پیاز</string>
+    <string name="ciw601m11">تازہ مکئی</string>
+    <string name="ciw601m12">کھمبی / مشرومس</string>
+    <string name="ciw601m13">بینگن</string>
+    <string name="ciw601m14">گوبھی</string>
+    <string name="ciw601m15">چقندر</string>
+    <string name="ciw601m16">آلو</string>
 
     <!-- Red and orange vegi-->
-    <string name="nw601k1">گاجر</string>
-    <string name="nw601k2">میٹھا کدو / اسکواش </string>
-    <string name="nw601k3">لال مرچ</string>
-    <string name="nw601k4">لال شکر قندی / کچالو</string>
+    <string name="ciw601k1">گاجر</string>
+    <string name="ciw601k2">میٹھا کدو / اسکواش </string>
+    <string name="ciw601k3">لال مرچ</string>
+    <string name="ciw601k4">لال شکر قندی / کچالو</string>
 
 
     <!-- Single seed fruits-->
-    <string name="nw601n1">چیری</string>
-    <string name="nw601n2">کھجور</string>
-    <string name="nw601n3">لیچی</string>
-    <string name="nw601n4">آڑو</string>
-    <string name="nw601n5">آلو بخارہ</string>
-    <string name="nw601n6">بیر</string>
-    <string name="nw601n7">سیب</string>
-    <string name="nw601n8">شریفہ</string>
-    <string name="nw601n9">انجیر</string>
-    <string name="nw601n10">سنگترہ</string>
-    <string name="nw601n11">کیوی</string>
-    <string name="nw601n12">تربوز</string>
-    <string name="nw601n13">انار</string>
-    <string name="nw601n14">گووا</string>
-    <string name="nw601n15">چیکو</string>
-    <string name="nw601n16">ناشپاتی</string>
-    <string name="nw601n17">کیلا</string>
-    <string name="nw601n18">ناریل</string>
-    <string name="nw601n19">انگور</string>
-    <string name="nw601n20">شہتوت</string>
-    <string name="nw601n21">اسٹرابیری</string>
+    <string name="ciw601n1">چیری</string>
+    <string name="ciw601n2">کھجور</string>
+    <string name="ciw601n3">لیچی</string>
+    <string name="ciw601n4">آڑو</string>
+    <string name="ciw601n5">آلو بخارہ</string>
+    <string name="ciw601n6">بیر</string>
+    <string name="ciw601n7">سیب</string>
+    <string name="ciw601n8">شریفہ</string>
+    <string name="ciw601n9">انجیر</string>
+    <string name="ciw601n10">سنگترہ</string>
+    <string name="ciw601n11">کیوی</string>
+    <string name="ciw601n12">تربوز</string>
+    <string name="ciw601n13">انار</string>
+    <string name="ciw601n14">گووا</string>
+    <string name="ciw601n15">چیکو</string>
+    <string name="ciw601n16">ناشپاتی</string>
+    <string name="ciw601n17">کیلا</string>
+    <string name="ciw601n18">ناریل</string>
+    <string name="ciw601n19">انگور</string>
+    <string name="ciw601n20">شہتوت</string>
+    <string name="ciw601n21">اسٹرابیری</string>
 
 
     <!-- Multiple seed fruits-->
-    <string name="nw601l1">خوبانی</string>
-    <string name="nw601l2">آم</string>
-    <string name="nw601l3">پپیتہ</string>
-    <string name="nw601l4">گرما</string>
-    <string name="nw601l5">املوک</string>
+    <string name="ciw601l1">خوبانی</string>
+    <string name="ciw601l2">آم</string>
+    <string name="ciw601l3">پپیتہ</string>
+    <string name="ciw601l4">گرما</string>
+    <string name="ciw601l5">املوک</string>
 
 
-    <string name="nw601b1">سفید شکر قندی / کچالو</string>
-    <string name="nw601b2">شلجم</string>
-    <string name="nw601b3">مولی</string>
-    <string name="nw601b4">اروی</string>
+    <string name="ciw601b1">سفید شکر قندی / کچالو</string>
+    <string name="ciw601b2">شلجم</string>
+    <string name="ciw601b3">مولی</string>
+    <string name="ciw601b4">اروی</string>
 
 
     <string name="_1"> ناشتہ سے پہلے </string>
@@ -1392,66 +1380,66 @@
     <string name="cih7a04">۔H707 - کیاآپ ان پروگرامز کی وضاحت کرسکتے ہیں ؟</string>
     <string name="cih7a05">۔H708 - گزشتہ 12 مہینوں کے درمیان آپ نے کتنے پیسے وصل کئے؟</string>
     <string name="cih7a06">۔H709 - گزشتہ مہیا کی گئی سہولت میں سے کتنے پیسوں سے آپ نے کھانا خریدا تھا؟</string>
-    <string name="nw201">۔W201 - آپ کی تاریخ پیدائش کیا ہے ؟</string>
-    <string name="nw202">۔W202 - برائے مہربانی اپنی عمر بتایئے۔ آپکی گزشتہ سالگرہ پر آپکی عمر کتنی تھی. </string>
-    <string name="nw203"> ۔W203 - اطمینان کیجئے کہ جوابدہندہ کی عمر 49-15 سال ہے </string>
-    <string name="nw204">۔W204 - کیا اس وقت آپ  شادی شدہ ہیں؟</string>
-    <string name="nw205">۔W205 - کیا کبھی آپ کی شادی ہوئی ؟</string>
-    <string name="nw206">۔W206 - شادی کے وقت آپ کی عمر کیا تھی؟</string>
-    <string name="nw207">۔W207 - کیا آپ کبھی حاملہ ہوئی ہیں؟</string>
-    <string name="nw208">۔W208 - کیا آپ ابھی حاملہ ہیں؟</string>
-    <string name="nw209">۔W209 - موجودہ حمل کے دوران ،کیا آپ کو فولاد کی گولیا ں یا وٹامن کی گولیاں جس میں فولاد شامل ہو دی گئیں یا آپ نے خریدیں؟ </string>
-    <string name="nw210">۔W210 - اگر ہاں ،خریدی یا فراہم کی گئیں ؟</string>
-    <string name="nw211">۔W211 - آپ اپنی زندگی میں کتنی مرتبہ حاملہ ہوئیں؟ (بشمول موجودہ حمل) </string>
-    <string name="nw212">۔W212 -آپ کی زندگی میں کل کتنی زچگیاں ہوئیں؟ </string>
-    <string name="nw213">۔W213 - پہلے بچے کی پیدائش کے وقت آپ کی عمر کیاتھی؟</string>
-    <string name="nw301b"> نے گزشتہ حمل کےدوران کسی سے اپنا طبی معائنہ کرایا تھا؟</string>
-    <string name="nw302">۔W302 - آپ نے کس سے معائنہ کروایاتھا؟</string>
-    <string name="nw303">۔W303 - آپ نے یہ معائنہ کہاں کروایا تھا؟</string>
-    <string name="nw304">۔W304 - جب آپ نے گزشتہ حمل کے دوران  پہلی دفعہ معائنہ کروایا ،تو آپ کاحمل  کتنے ہفتوں یا مہینہ کا تھا؟</string>
-    <string name="nw305">۔W305 - گزشتہ حمل کے دوران آپ نے کتنی مرتبہ اپنا معائنہ کروایا؟</string>
-    <string name="nw306">۔W306 - آپ کے حمل کے دوران طبی معائنہ کے وقت کیا مندرجہ ذیل میں سے کوئی عمل کم از کم ایک دفعہ کیا تھا </string>
+    <string name="ciw201">۔W201 - آپ کی تاریخ پیدائش کیا ہے ؟</string>
+    <string name="ciw202">۔W202 - برائے مہربانی اپنی عمر بتایئے۔ آپکی گزشتہ سالگرہ پر آپکی عمر کتنی تھی. </string>
+    <string name="ciw203"> ۔W203 - اطمینان کیجئے کہ جوابدہندہ کی عمر 49-15 سال ہے </string>
+    <string name="ciw204">۔W204 - کیا اس وقت آپ  شادی شدہ ہیں؟</string>
+    <string name="ciw205">۔W205 - کیا کبھی آپ کی شادی ہوئی ؟</string>
+    <string name="ciw206">۔W206 - شادی کے وقت آپ کی عمر کیا تھی؟</string>
+    <string name="ciw207">۔W207 - کیا آپ کبھی حاملہ ہوئی ہیں؟</string>
+    <string name="ciw208">۔W208 - کیا آپ ابھی حاملہ ہیں؟</string>
+    <string name="ciw209">۔W209 - موجودہ حمل کے دوران ،کیا آپ کو فولاد کی گولیا ں یا وٹامن کی گولیاں جس میں فولاد شامل ہو دی گئیں یا آپ نے خریدیں؟ </string>
+    <string name="ciw210">۔W210 - اگر ہاں ،خریدی یا فراہم کی گئیں ؟</string>
+    <string name="ciw211">۔W211 - آپ اپنی زندگی میں کتنی مرتبہ حاملہ ہوئیں؟ (بشمول موجودہ حمل) </string>
+    <string name="ciw212">۔W212 -آپ کی زندگی میں کل کتنی زچگیاں ہوئیں؟ </string>
+    <string name="ciw213">۔W213 - پہلے بچے کی پیدائش کے وقت آپ کی عمر کیاتھی؟</string>
+    <string name="ciw301b"> نے گزشتہ حمل کےدوران کسی سے اپنا طبی معائنہ کرایا تھا؟</string>
+    <string name="ciw302">۔W302 - آپ نے کس سے معائنہ کروایاتھا؟</string>
+    <string name="ciw303">۔W303 - آپ نے یہ معائنہ کہاں کروایا تھا؟</string>
+    <string name="ciw304">۔W304 - جب آپ نے گزشتہ حمل کے دوران  پہلی دفعہ معائنہ کروایا ،تو آپ کاحمل  کتنے ہفتوں یا مہینہ کا تھا؟</string>
+    <string name="ciw305">۔W305 - گزشتہ حمل کے دوران آپ نے کتنی مرتبہ اپنا معائنہ کروایا؟</string>
+    <string name="ciw306">۔W306 - آپ کے حمل کے دوران طبی معائنہ کے وقت کیا مندرجہ ذیل میں سے کوئی عمل کم از کم ایک دفعہ کیا تھا </string>
 
-    <string name="nw307">۔W307 - کیا آپ کے پاس حفاظتی ٹیکہ جات سے متعلق کوئی کارڈ یا دستیاویزات موجود ہے ؟ اگر ہاں  تو پوچھیں کیا میں دیکھ سکتی ہوں</string>
-    <string name="nw308">۔W308 - جب آپ حمل سے تھیں تو کیا آپ نے بازو پر تشنج سے بچاؤ کے ٹیکے لگوائے تھے  ؟</string>
-    <string name="nw309">۔W309 - آپ نے دوران حمل کتنی مرتبہ ،تشنج کی بیماری سے بچانے والے ٹیکے لگوائے تھے؟</string>
+    <string name="ciw307">۔W307 - کیا آپ کے پاس حفاظتی ٹیکہ جات سے متعلق کوئی کارڈ یا دستیاویزات موجود ہے ؟ اگر ہاں  تو پوچھیں کیا میں دیکھ سکتی ہوں</string>
+    <string name="ciw308">۔W308 - جب آپ حمل سے تھیں تو کیا آپ نے بازو پر تشنج سے بچاؤ کے ٹیکے لگوائے تھے  ؟</string>
+    <string name="ciw309">۔W309 - آپ نے دوران حمل کتنی مرتبہ ،تشنج کی بیماری سے بچانے والے ٹیکے لگوائے تھے؟</string>
 
-    <string name="nw310">۔W310 - کیا آپ نے کبھی حمل کے دوارن فولاد کی گولیاں استعمال کیں؟</string>
-    <string name="nw311">۔W311 - آپ کو حمل کے دوران فولاد کی گولیا ں استعمال کرنے کا مشورہ کس نے دیا ؟</string>
-    <string name="nw312">۔W312 - آپ نے حمل کے دوران فولاد کی گولیاں کہاں سے حاصل کیں؟</string>
-    <string name="nw313">۔W313 - آپ حمل کے دوارن فولاد کی گولیاں کتنی مرتبہ استعمال کرتی تھیں؟</string>
-    <string name="nw314">۔W314 - کتنے مہینے یا کتنے دنوں تک آپ (آئرن فولک )گولیوں کا استعمال کرتی رہی تھی؟</string>
-    <string name="nw315">۔W315 - کیا آپ نے کبھی دوران حمل مائکرونیوٹرینٹ اشیاء کا استعمال کیاتھا؟</string>
-    <string name="nw316">۔W316 - آپ کو حمل کے دوران  مائکرونیوٹرینٹ اشیاء استعمال کرنے کا مشورہ کس نے دیا؟</string>
-    <string name="nw317">۔W317 - آپ نے حمل کے دوران  مائکرونیوٹرینٹ اشیاء کہاں سے حاصل کیں؟</string>
-    <string name="nw318">۔W318 - آپ نےعموماً کتنی دفعہ حمل کے دوران  مائکرونیوٹرینٹ اشیاء کا استعمال کیا؟</string>
-    <string name="nw319">۔W319 - آپ کتنے مہینوں یا دنوں تک  مائکرونیوٹرینٹ اشیاء کھاتی رہی تھیں؟</string>
-    <string name="nw320">۔W320 - جب آپ حمل سے تھیں تو کیا آپ نے کبھی کیلشیم کی گولیاں استعمال کی تھیں؟</string>
-    <string name="nw321">۔W321 - آپ کو حمل کے دوران کیلشیم کی گولیا ں استعمال کرنے کا مشورہ کس نے دیا ؟</string>
-    <string name="nw322">۔W322 - آپ نے حمل کے دوران کیلشیم کی گولیاں کہاں سے حاصل کیں؟</string>
-    <string name="nw323">۔W323 - آپ حمل کے دوران کیلیشم کی گولیاں کتنی بار کھاتی تھی؟</string>
-    <string name="nw324">۔W324 - آپ کتنے مہینوں یا دنوں تک کیلیشم کی گولیاں کھاتی رہی تھی؟</string>
-    <string name="nw325">۔W325 - کیاآپ کو حمل کے دوران پیٹ کے کیڑوں کو ختم کرنے والی گولیاں دی گئی تھی؟</string>
-    <string name="nw326">۔W326 - کیا آپ نے گزشتہ حمل کے دوران محسوس کیا کہ شام کے وقت آپ کو دیکھنے میں مشکل ہورہی تھی؟</string>
-    <string name="nw327">۔W327 - لیڈی ہیلتھ ورکر نے آخری مرتبہ آپ کے گھر کا دورہ کب کیا تھا؟</string>
-    <string name="nw328">۔W328 - آپ کو کتنی مرتبہ لیڈی ہیلتھ ورکر ملنے آتی ہے/آپ کے گھر کا کتنی مرتبہ دورہ کرتی ہے؟</string>
-    <string name="nw329">۔W329 - لیڈی ہیلتھ ورکر کے گزشتہ دورے کا مقصد کیاتھا؟</string>
-    <string name="nw330">۔W330 - آخری دفعہ لیڈی ہیلتھ ورکرنےکب صحت اور غذائیت کے متعلق سیشن دیا تھا؟</string>
-    <string name="nw331">۔W331 - کیاآپ نے کبھی صحت اور غذائیت کے متعلق کسی سیشن میں شرکت کی تھی؟</string>
-    <string name="nw332">۔W332 - آپ عموماً کتنی دفعہ ان سیشن میں شرکت کرتی تھیں؟</string>
-    <string name="nw401">  ۔W401 -(۔Name) کی زچگی کس نے کروائی تھی </string>
-    <string name="nw402"> ۔W402 - (۔Name) کو کس نے زچگی کے دوران مدد کروائی تھی </string>
-    <string name="nw40301">۔W40301 -زچگی کیسے ہوئ تھی؟ </string>
-    <string name="nw40301a">زچگی نارمل ہوئ تھی</string>
-    <string name="nw40301b">زچگی کسی آواز یا ویکیوم کے زریعہ ہوئ تھی </string>
-    <string name="nw40301c">۔زچگی بڑے آپریشن سے ہوئ تھی </string>
-    <string name="nw403">۔W403 - آپ کے بچے (۔Name) کی پیدائش کس جگہ واقع ہوئی تھی؟ </string>
-    <string name="nw404">۔W404 - جب آپ کے بچے (۔Name) کی پیدائش ہوئی تھی ،کیاوہ بہت بڑا تھا،اوسطاً سے بڑا، اوسطً سے چھوٹایا پھر بہت چھوٹا؟</string>
-    <string name="nw405">۔W405 - کیا پیدائش کے وقت بچے کا وزن کیاگیا تھا؟؟</string>
-    <string name="nw406">۔W406 - آپ کے بچے (۔Name) کا وزن کتنا تھا؟</string>
-    <string name="nw407">۔W407 - کیا پیدائش سے ایک گھنٹے کےاندر، بچے (نام) کو براہ راست سینے یا چھاتی سے لگایا گیاتھا؟</string>
-    <string name="nw408">۔W408 - کیا بچے کو پیدائش کے بعدفوراًخشک اورصاف کیاگیاتھا؟</string>
-    <string name="nw409">۔W409 - بچے کو سینےیاچھاتی سے لگانے سے پہلے کیا بچہ کو لپیٹا گیا تھا؟</string>
+    <string name="ciw310">۔W310 - کیا آپ نے کبھی حمل کے دوارن فولاد کی گولیاں استعمال کیں؟</string>
+    <string name="ciw311">۔W311 - آپ کو حمل کے دوران فولاد کی گولیا ں استعمال کرنے کا مشورہ کس نے دیا ؟</string>
+    <string name="ciw312">۔W312 - آپ نے حمل کے دوران فولاد کی گولیاں کہاں سے حاصل کیں؟</string>
+    <string name="ciw313">۔W313 - آپ حمل کے دوارن فولاد کی گولیاں کتنی مرتبہ استعمال کرتی تھیں؟</string>
+    <string name="ciw314">۔W314 - کتنے مہینے یا کتنے دنوں تک آپ (آئرن فولک )گولیوں کا استعمال کرتی رہی تھی؟</string>
+    <string name="ciw315">۔W315 - کیا آپ نے کبھی دوران حمل مائکرونیوٹرینٹ اشیاء کا استعمال کیاتھا؟</string>
+    <string name="ciw316">۔W316 - آپ کو حمل کے دوران  مائکرونیوٹرینٹ اشیاء استعمال کرنے کا مشورہ کس نے دیا؟</string>
+    <string name="ciw317">۔W317 - آپ نے حمل کے دوران  مائکرونیوٹرینٹ اشیاء کہاں سے حاصل کیں؟</string>
+    <string name="ciw318">۔W318 - آپ نےعموماً کتنی دفعہ حمل کے دوران  مائکرونیوٹرینٹ اشیاء کا استعمال کیا؟</string>
+    <string name="ciw319">۔W319 - آپ کتنے مہینوں یا دنوں تک  مائکرونیوٹرینٹ اشیاء کھاتی رہی تھیں؟</string>
+    <string name="ciw320">۔W320 - جب آپ حمل سے تھیں تو کیا آپ نے کبھی کیلشیم کی گولیاں استعمال کی تھیں؟</string>
+    <string name="ciw321">۔W321 - آپ کو حمل کے دوران کیلشیم کی گولیا ں استعمال کرنے کا مشورہ کس نے دیا ؟</string>
+    <string name="ciw322">۔W322 - آپ نے حمل کے دوران کیلشیم کی گولیاں کہاں سے حاصل کیں؟</string>
+    <string name="ciw323">۔W323 - آپ حمل کے دوران کیلیشم کی گولیاں کتنی بار کھاتی تھی؟</string>
+    <string name="ciw324">۔W324 - آپ کتنے مہینوں یا دنوں تک کیلیشم کی گولیاں کھاتی رہی تھی؟</string>
+    <string name="ciw325">۔W325 - کیاآپ کو حمل کے دوران پیٹ کے کیڑوں کو ختم کرنے والی گولیاں دی گئی تھی؟</string>
+    <string name="ciw326">۔W326 - کیا آپ نے گزشتہ حمل کے دوران محسوس کیا کہ شام کے وقت آپ کو دیکھنے میں مشکل ہورہی تھی؟</string>
+    <string name="ciw327">۔W327 - لیڈی ہیلتھ ورکر نے آخری مرتبہ آپ کے گھر کا دورہ کب کیا تھا؟</string>
+    <string name="ciw328">۔W328 - آپ کو کتنی مرتبہ لیڈی ہیلتھ ورکر ملنے آتی ہے/آپ کے گھر کا کتنی مرتبہ دورہ کرتی ہے؟</string>
+    <string name="ciw329">۔W329 - لیڈی ہیلتھ ورکر کے گزشتہ دورے کا مقصد کیاتھا؟</string>
+    <string name="ciw330">۔W330 - آخری دفعہ لیڈی ہیلتھ ورکرنےکب صحت اور غذائیت کے متعلق سیشن دیا تھا؟</string>
+    <string name="ciw331">۔W331 - کیاآپ نے کبھی صحت اور غذائیت کے متعلق کسی سیشن میں شرکت کی تھی؟</string>
+    <string name="ciw332">۔W332 - آپ عموماً کتنی دفعہ ان سیشن میں شرکت کرتی تھیں؟</string>
+    <string name="ciw401">  ۔W401 -(۔Name) کی زچگی کس نے کروائی تھی </string>
+    <string name="ciw402"> ۔W402 - (۔Name) کو کس نے زچگی کے دوران مدد کروائی تھی </string>
+    <string name="ciw40301">۔W40301 -زچگی کیسے ہوئ تھی؟ </string>
+    <string name="ciw40301a">زچگی نارمل ہوئ تھی</string>
+    <string name="ciw40301b">زچگی کسی آواز یا ویکیوم کے زریعہ ہوئ تھی </string>
+    <string name="ciw40301c">۔زچگی بڑے آپریشن سے ہوئ تھی </string>
+    <string name="ciw403">۔W403 - آپ کے بچے (۔Name) کی پیدائش کس جگہ واقع ہوئی تھی؟ </string>
+    <string name="ciw404">۔W404 - جب آپ کے بچے (۔Name) کی پیدائش ہوئی تھی ،کیاوہ بہت بڑا تھا،اوسطاً سے بڑا، اوسطً سے چھوٹایا پھر بہت چھوٹا؟</string>
+    <string name="ciw405">۔W405 - کیا پیدائش کے وقت بچے کا وزن کیاگیا تھا؟؟</string>
+    <string name="ciw406">۔W406 - آپ کے بچے (۔Name) کا وزن کتنا تھا؟</string>
+    <string name="ciw407">۔W407 - کیا پیدائش سے ایک گھنٹے کےاندر، بچے (نام) کو براہ راست سینے یا چھاتی سے لگایا گیاتھا؟</string>
+    <string name="ciw408">۔W408 - کیا بچے کو پیدائش کے بعدفوراًخشک اورصاف کیاگیاتھا؟</string>
+    <string name="ciw409">۔W409 - بچے کو سینےیاچھاتی سے لگانے سے پہلے کیا بچہ کو لپیٹا گیا تھا؟</string>
     <string name="nb410">۔W410 - پیدائش کے کتنے عرصے بعد بچے (۔Name) کو پہلی مرتبہ نہلایاگیاتھا؟</string>
     "
     <string name="nb410info">۔W410 - اگر پیدائش کے فوراً بعد یا ایک گھنٹہ کے اندر نہلایاگیا تو 000 ریکارڈ کریں
@@ -1460,16 +1448,16 @@
     اور اگر 24 کھنٹوں میں ،تو کوشش کریں کہ درست وقت کا پتہ لگائیں کہ 24 گھنٹوں سے کم یا ایک دن</string>
     <string name="nb411">۔W411 - آنونال  کٹنے کے بعد سے لے کر اس کے جھٹرنے تک کیاآپ نے کچھ لگایاتھا؟</string>
     <string name="nb412">۔W412 - آنونال پر کیا لگایاگیاتھا؟</string>
-    <string name="nw413">۔W413- اگر کلورہیکسیڈین کا استعمال کیا گیا تھا تو جواب دہندہ سے اس کی فراہمی کے زرائع کے بارے میں پوچھیں۔</string>
-    <string name="nw414">۔W414- کیا زچگی کے بعد کسی نے آپ کی صحت کا معائنہ کیا </string>
-    <string name="nw415">۔W415 - زچگی کے بعد کس نے آپ کی صحت کا معائنہ کیاتھا؟</string>
-    <string name="nw416">۔W416- بچے کی پیدائش کے کتنے عرصے بعد آپ کامعائنہ ہوا؟یا کیا گیا؟</string>
-    <string name="nw417">۔W417 - اس طرح کا معائنہ کتنی مرتبہ ہوا؟</string>
-    <string name="nw418">۔W418 - اس معائنہ کا مقصد کیا تھا؟</string>
-    <string name="nw419">۔W419 - کیا کسی نے آپ کے بچہ کی صحت کا معائنہ کیاِ؟</string>
-    <string name="nw420">۔W420 - آپ کے نومولود بچے کی صحت کا معائنہ کس نے کیاتھا؟</string>
-    <string name="nw421">۔W421 - بچے کی پیدائش کے کتنے عرصے بعد بچہ کامعائنہ ہوا؟</string>
-    <string name="nw422">۔W422 - اس طرح کا معائنہ کتنی مرتبہ ہوا؟</string>
+    <string name="ciw413">۔W413- اگر کلورہیکسیڈین کا استعمال کیا گیا تھا تو جواب دہندہ سے اس کی فراہمی کے زرائع کے بارے میں پوچھیں۔</string>
+    <string name="ciw414">۔W414- کیا زچگی کے بعد کسی نے آپ کی صحت کا معائنہ کیا </string>
+    <string name="ciw415">۔W415 - زچگی کے بعد کس نے آپ کی صحت کا معائنہ کیاتھا؟</string>
+    <string name="ciw416">۔W416- بچے کی پیدائش کے کتنے عرصے بعد آپ کامعائنہ ہوا؟یا کیا گیا؟</string>
+    <string name="ciw417">۔W417 - اس طرح کا معائنہ کتنی مرتبہ ہوا؟</string>
+    <string name="ciw418">۔W418 - اس معائنہ کا مقصد کیا تھا؟</string>
+    <string name="ciw419">۔W419 - کیا کسی نے آپ کے بچہ کی صحت کا معائنہ کیاِ؟</string>
+    <string name="ciw420">۔W420 - آپ کے نومولود بچے کی صحت کا معائنہ کس نے کیاتھا؟</string>
+    <string name="ciw421">۔W421 - بچے کی پیدائش کے کتنے عرصے بعد بچہ کامعائنہ ہوا؟</string>
+    <string name="ciw422">۔W422 - اس طرح کا معائنہ کتنی مرتبہ ہوا؟</string>
 
 
     <!-- Start from here-->

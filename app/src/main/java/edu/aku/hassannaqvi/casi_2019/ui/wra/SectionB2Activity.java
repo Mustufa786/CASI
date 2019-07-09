@@ -58,145 +58,145 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
     }
 
     public void setupViews() {
-        bi.nw301.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        bi.ciw301.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 ValidateForm();
-                if (bi.nw301a.isChecked()) {
-                    //bi.fldGrpnw302.setVisibility(View.VISIBLE);
-                    ClearClass.ClearAllFields(bi.fldGrpnw302, true);
-                    ClearClass.ClearAllFields(bi.fldGrpnw302check, true);
-                    ClearClass.ClearAllFields(bi.fldGrpnw306check, true);
+                if (bi.ciw301a.isChecked()) {
+                    //bi.fldGrpciw302.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldGrpciw302, true);
+                    ClearClass.ClearAllFields(bi.fldGrpciw302check, true);
+                    ClearClass.ClearAllFields(bi.fldGrpciw306check, true);
                 } else {
-                    ClearClass.ClearAllFields(bi.fldGrpnw302, false);
-                    ClearClass.ClearAllFields(bi.fldGrpnw302check, false);
-                    ClearClass.ClearAllFields(bi.fldGrpnw306check, false);
+                    ClearClass.ClearAllFields(bi.fldGrpciw302, false);
+                    ClearClass.ClearAllFields(bi.fldGrpciw302check, false);
+                    ClearClass.ClearAllFields(bi.fldGrpciw306check, false);
 
                 }
             }
         });
 
-        bi.nw303.setOnCheckedChangeListener(this);
-        bi.nw304w.addTextChangedListener(this);
-        bi.nw304m.addTextChangedListener(this);
-        bi.nw305.addTextChangedListener(this);
-        bi.nw307.setOnCheckedChangeListener(this);
+        bi.ciw303.setOnCheckedChangeListener(this);
+        bi.ciw304w.addTextChangedListener(this);
+        bi.ciw304m.addTextChangedListener(this);
+        bi.ciw305.addTextChangedListener(this);
+        bi.ciw307.setOnCheckedChangeListener(this);
 
 
-        bi.nw306i.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        bi.ciw306i.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (bi.nw306i.isChecked()) {
+                if (bi.ciw306i.isChecked()) {
 
-                    bi.nw306a.setChecked(false);
-                    bi.nw306b.setChecked(false);
-                    bi.nw306c.setChecked(false);
-                    bi.nw306d.setChecked(false);
-                    bi.nw306e.setChecked(false);
-                    bi.nw306f.setChecked(false);
-                    bi.nw306g.setChecked(false);
-                    bi.nw306h.setChecked(false);
-                    bi.nw30696.setChecked(false);
+                    bi.ciw306a.setChecked(false);
+                    bi.ciw306b.setChecked(false);
+                    bi.ciw306c.setChecked(false);
+                    bi.ciw306d.setChecked(false);
+                    bi.ciw306e.setChecked(false);
+                    bi.ciw306f.setChecked(false);
+                    bi.ciw306g.setChecked(false);
+                    bi.ciw306h.setChecked(false);
+                    bi.ciw30696.setChecked(false);
 
-                    bi.nw306a.setEnabled(false);
-                    bi.nw306b.setEnabled(false);
-                    bi.nw306c.setEnabled(false);
-                    bi.nw306d.setEnabled(false);
-                    bi.nw306e.setEnabled(false);
-                    bi.nw306f.setEnabled(false);
-                    bi.nw306g.setEnabled(false);
-                    bi.nw306h.setEnabled(false);
-                    bi.nw30696.setEnabled(false);
+                    bi.ciw306a.setEnabled(false);
+                    bi.ciw306b.setEnabled(false);
+                    bi.ciw306c.setEnabled(false);
+                    bi.ciw306d.setEnabled(false);
+                    bi.ciw306e.setEnabled(false);
+                    bi.ciw306f.setEnabled(false);
+                    bi.ciw306g.setEnabled(false);
+                    bi.ciw306h.setEnabled(false);
+                    bi.ciw30696.setEnabled(false);
                 } else {
-                    bi.nw306a.setEnabled(true);
-                    bi.nw306b.setEnabled(true);
-                    bi.nw306c.setEnabled(true);
-                    bi.nw306d.setEnabled(true);
-                    bi.nw306e.setEnabled(true);
-                    bi.nw306f.setEnabled(true);
-                    bi.nw306g.setEnabled(true);
-                    bi.nw306h.setEnabled(true);
-                    bi.nw30696.setEnabled(true);
+                    bi.ciw306a.setEnabled(true);
+                    bi.ciw306b.setEnabled(true);
+                    bi.ciw306c.setEnabled(true);
+                    bi.ciw306d.setEnabled(true);
+                    bi.ciw306e.setEnabled(true);
+                    bi.ciw306f.setEnabled(true);
+                    bi.ciw306g.setEnabled(true);
+                    bi.ciw306h.setEnabled(true);
+                    bi.ciw30696.setEnabled(true);
                 }
             }
         });
-        bi.nw308.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        bi.ciw308.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 ValidateForm();
-                if (bi.nw308a.isChecked()) {
+                if (bi.ciw308a.isChecked()) {
 
-                    //bi.fldGrpnw309.setVisibility(View.VISIBLE);
-                    ClearClass.ClearAllFields(bi.fldGrpnw309, true);
+                    //bi.fldGrpciw309.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldGrpciw309, true);
 
                 } else {
 
-                    ClearClass.ClearAllFields(bi.fldGrpnw309, false);
+                    ClearClass.ClearAllFields(bi.fldGrpciw309, false);
 
                 }
             }
         });
 
-        bi.nw309.addTextChangedListener(this);
-        bi.nw311.setOnCheckedChangeListener(this);
-        bi.nw313.setOnCheckedChangeListener(this);
-        bi.nw314m.addTextChangedListener(this);
-        bi.nw314d.addTextChangedListener(this);
-        bi.nw316.setOnCheckedChangeListener(this);
-        bi.nw318.setOnCheckedChangeListener(this);
-        bi.nw319m.addTextChangedListener(this);
-        bi.nw319d.addTextChangedListener(this);
-        bi.nw321.setOnCheckedChangeListener(this);
-        bi.nw323.setOnCheckedChangeListener(this);
-        bi.nw324m.addTextChangedListener(this);
-        bi.nw324d.addTextChangedListener(this);
-        bi.nw325.setOnCheckedChangeListener(this);
-        bi.nw326.setOnCheckedChangeListener(this);
+        bi.ciw309.addTextChangedListener(this);
+        bi.ciw311.setOnCheckedChangeListener(this);
+        bi.ciw313.setOnCheckedChangeListener(this);
+        bi.ciw314m.addTextChangedListener(this);
+        bi.ciw314d.addTextChangedListener(this);
+        bi.ciw316.setOnCheckedChangeListener(this);
+        bi.ciw318.setOnCheckedChangeListener(this);
+        bi.ciw319m.addTextChangedListener(this);
+        bi.ciw319d.addTextChangedListener(this);
+        bi.ciw321.setOnCheckedChangeListener(this);
+        bi.ciw323.setOnCheckedChangeListener(this);
+        bi.ciw324m.addTextChangedListener(this);
+        bi.ciw324d.addTextChangedListener(this);
+        bi.ciw325.setOnCheckedChangeListener(this);
+        bi.ciw326.setOnCheckedChangeListener(this);
 
-        bi.nw310.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        bi.ciw310.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 ValidateForm();
-                if (bi.nw310a.isChecked()) {
+                if (bi.ciw310a.isChecked()) {
                     ClearClass.ClearAllFields(bi.fldGrpnb210, true);
-                    ClearClass.ClearAllFields(bi.fldGrpnw312, true);
+                    ClearClass.ClearAllFields(bi.fldGrpciw312, true);
                     //bi.fldGrpnb210.setVisibility(View.VISIBLE);
                 } else {
                     ClearClass.ClearAllFields(bi.fldGrpnb210, false);
-                    ClearClass.ClearAllFields(bi.fldGrpnw312, false);
+                    ClearClass.ClearAllFields(bi.fldGrpciw312, false);
 
                 }
             }
         });
 
-        bi.nw315.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        bi.ciw315.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 ValidateForm();
-                if (bi.nw315a.isChecked()) {
-                    //bi.fldGrpnw318.setVisibility(View.VISIBLE);
-                    ClearClass.ClearAllFields(bi.fldGrpnw318, true);
-                    ClearClass.ClearAllFields(bi.fldGrpnw317, true);
+                if (bi.ciw315a.isChecked()) {
+                    //bi.fldGrpciw318.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldGrpciw318, true);
+                    ClearClass.ClearAllFields(bi.fldGrpciw317, true);
                 } else {
-                    ClearClass.ClearAllFields(bi.fldGrpnw318, false);
-                    ClearClass.ClearAllFields(bi.fldGrpnw317, false);
+                    ClearClass.ClearAllFields(bi.fldGrpciw318, false);
+                    ClearClass.ClearAllFields(bi.fldGrpciw317, false);
 
                 }
             }
         });
 
 
-        bi.nw320.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        bi.ciw320.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 ValidateForm();
-                if (bi.nw320a.isChecked()) {
-                    //bi.fldGrpnw323.setVisibility(View.VISIBLE);
-                    ClearClass.ClearAllFields(bi.fldGrpnw323, true);
-                    ClearClass.ClearAllFields(bi.fldGrpnw322, true);
+                if (bi.ciw320a.isChecked()) {
+                    //bi.fldGrpciw323.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(bi.fldGrpciw323, true);
+                    ClearClass.ClearAllFields(bi.fldGrpciw322, true);
                 } else {
-                    ClearClass.ClearAllFields(bi.fldGrpnw323, false);
-                    ClearClass.ClearAllFields(bi.fldGrpnw322, false);
+                    ClearClass.ClearAllFields(bi.fldGrpciw323, false);
+                    ClearClass.ClearAllFields(bi.fldGrpciw322, false);
 
                 }
             }
@@ -204,7 +204,7 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
 
 
 //        Setting name of women
-        bi.nw301Txt.setText(getString(R.string.nw301a) + " " + SectionB1Activity.wraName + " " + getString(R.string.nw301b));
+        bi.ciw301Txt.setText(getString(R.string.ciw301a) + " " + SectionB1Activity.wraName + " " + getString(R.string.ciw301b));
     }
 
     public void AutoCompleteFields() {
@@ -216,393 +216,393 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
 
             JSONB2ModelClass jsonB2 = JSONUtilClass.getModelFromJSON(mwraContract.getsB2(), JSONB2ModelClass.class);
 
-            if (!jsonB2.getnw301().equals("0")) {
-                bi.nw301.check(
-                        jsonB2.getnw301().equals("1") ? bi.nw301a.getId() :
-                                bi.nw301b.getId()
+            if (!jsonB2.getciw301().equals("0")) {
+                bi.ciw301.check(
+                        jsonB2.getciw301().equals("1") ? bi.ciw301a.getId() :
+                                bi.ciw301b.getId()
                 );
             }
-            if (!jsonB2.getnw302a().equals("0")) {
-                bi.nw302a.setChecked(true);
+            if (!jsonB2.getciw302a().equals("0")) {
+                bi.ciw302a.setChecked(true);
             }
-            if (!jsonB2.getnw302b().equals("0")) {
-                bi.nw302b.setChecked(true);
+            if (!jsonB2.getciw302b().equals("0")) {
+                bi.ciw302b.setChecked(true);
             }
-            if (!jsonB2.getnw302c().equals("0")) {
-                bi.nw302c.setChecked(true);
+            if (!jsonB2.getciw302c().equals("0")) {
+                bi.ciw302c.setChecked(true);
             }
-            if (!jsonB2.getnw302d().equals("0")) {
-                bi.nw302d.setChecked(true);
+            if (!jsonB2.getciw302d().equals("0")) {
+                bi.ciw302d.setChecked(true);
             }
-            if (!jsonB2.getnw302e().equals("0")) {
-                bi.nw302e.setChecked(true);
+            if (!jsonB2.getciw302e().equals("0")) {
+                bi.ciw302e.setChecked(true);
             }
-            if (!jsonB2.getnw302f().equals("0")) {
-                bi.nw302f.setChecked(true);
+            if (!jsonB2.getciw302f().equals("0")) {
+                bi.ciw302f.setChecked(true);
             }
-            if (!jsonB2.getnw302g().equals("0")) {
-                bi.nw302g.setChecked(true);
+            if (!jsonB2.getciw302g().equals("0")) {
+                bi.ciw302g.setChecked(true);
             }
-            if (!jsonB2.getnw302h().equals("0")) {
-                bi.nw302h.setChecked(true);
+            if (!jsonB2.getciw302h().equals("0")) {
+                bi.ciw302h.setChecked(true);
             }
-            if (!jsonB2.getnw30296().equals("0")) {
-                bi.nw30296.setChecked(true);
-                bi.nw30296x.setText(jsonB2.getnw30296x());
+            if (!jsonB2.getciw30296().equals("0")) {
+                bi.ciw30296.setChecked(true);
+                bi.ciw30296x.setText(jsonB2.getciw30296x());
             }
 
-            if (!jsonB2.getnw303().equals("0")) {
-                bi.nw303.check(
-                        jsonB2.getnw303().equals("1") ? bi.nw303a.getId() :
-                                jsonB2.getnw303().equals("2") ? bi.nw303b.getId() :
-                                        jsonB2.getnw303().equals("3") ? bi.nw303c.getId() :
-                                                jsonB2.getnw303().equals("4") ? bi.nw303d.getId() :
-                                                        jsonB2.getnw303().equals("5") ? bi.nw303e.getId() :
-                                                                jsonB2.getnw303().equals("6") ? bi.nw303f.getId() :
-                                                                        jsonB2.getnw303().equals("7") ? bi.nw303g.getId() :
-                                                                                jsonB2.getnw303().equals("8") ? bi.nw303h.getId() :
-                                                                                        jsonB2.getnw303().equals("9") ? bi.nw303i.getId() :
-                                                                                                jsonB2.getnw303().equals("10") ? bi.nw303j.getId() :
-                                                                                                        bi.nw30396.getId()
+            if (!jsonB2.getciw303().equals("0")) {
+                bi.ciw303.check(
+                        jsonB2.getciw303().equals("1") ? bi.ciw303a.getId() :
+                                jsonB2.getciw303().equals("2") ? bi.ciw303b.getId() :
+                                        jsonB2.getciw303().equals("3") ? bi.ciw303c.getId() :
+                                                jsonB2.getciw303().equals("4") ? bi.ciw303d.getId() :
+                                                        jsonB2.getciw303().equals("5") ? bi.ciw303e.getId() :
+                                                                jsonB2.getciw303().equals("6") ? bi.ciw303f.getId() :
+                                                                        jsonB2.getciw303().equals("7") ? bi.ciw303g.getId() :
+                                                                                jsonB2.getciw303().equals("8") ? bi.ciw303h.getId() :
+                                                                                        jsonB2.getciw303().equals("9") ? bi.ciw303i.getId() :
+                                                                                                jsonB2.getciw303().equals("10") ? bi.ciw303j.getId() :
+                                                                                                        bi.ciw30396.getId()
                 );
 
-                bi.nw303961x.setText(jsonB2.getnw303961x());
-                bi.nw303962x.setText(jsonB2.getnw303962x());
-                bi.nw303963x.setText(jsonB2.getnw303963x());
+                bi.ciw303961x.setText(jsonB2.getciw303961x());
+                bi.ciw303962x.setText(jsonB2.getciw303962x());
+                bi.ciw303963x.setText(jsonB2.getciw303963x());
             }
 
-            bi.nw304w.setText(jsonB2.getnw304());
-            if (!jsonB2.getnw30498().equals("0")) {
-                bi.nw30498.setChecked(true);
+            bi.ciw304w.setText(jsonB2.getciw304());
+            if (!jsonB2.getciw30498().equals("0")) {
+                bi.ciw30498.setChecked(true);
             }
 
-            bi.nw305.setText(jsonB2.getnw304());
-            if (!jsonB2.getnw305().equals("0")) {
-                bi.nw30598.setChecked(true);
+            bi.ciw305.setText(jsonB2.getciw304());
+            if (!jsonB2.getciw305().equals("0")) {
+                bi.ciw30598.setChecked(true);
             }
 
-            if (!jsonB2.getnw306a().equals("0")) {
-                bi.nw306a.setChecked(true);
+            if (!jsonB2.getciw306a().equals("0")) {
+                bi.ciw306a.setChecked(true);
             }
-            if (!jsonB2.getnw306b().equals("0")) {
-                bi.nw306b.setChecked(true);
+            if (!jsonB2.getciw306b().equals("0")) {
+                bi.ciw306b.setChecked(true);
             }
-            if (!jsonB2.getnw306c().equals("0")) {
-                bi.nw306c.setChecked(true);
+            if (!jsonB2.getciw306c().equals("0")) {
+                bi.ciw306c.setChecked(true);
             }
-            if (!jsonB2.getnw306d().equals("0")) {
-                bi.nw306d.setChecked(true);
+            if (!jsonB2.getciw306d().equals("0")) {
+                bi.ciw306d.setChecked(true);
             }
-            if (!jsonB2.getnw306e().equals("0")) {
-                bi.nw306e.setChecked(true);
+            if (!jsonB2.getciw306e().equals("0")) {
+                bi.ciw306e.setChecked(true);
             }
-            if (!jsonB2.getnw306f().equals("0")) {
-                bi.nw306f.setChecked(true);
+            if (!jsonB2.getciw306f().equals("0")) {
+                bi.ciw306f.setChecked(true);
             }
-            if (!jsonB2.getnw306g().equals("0")) {
-                bi.nw306g.setChecked(true);
+            if (!jsonB2.getciw306g().equals("0")) {
+                bi.ciw306g.setChecked(true);
             }
-            if (!jsonB2.getnw306h().equals("0")) {
-                bi.nw306h.setChecked(true);
+            if (!jsonB2.getciw306h().equals("0")) {
+                bi.ciw306h.setChecked(true);
             }
-            if (!jsonB2.getnw306i().equals("0")) {
-                bi.nw306i.setChecked(true);
+            if (!jsonB2.getciw306i().equals("0")) {
+                bi.ciw306i.setChecked(true);
             }
-            if (!jsonB2.getnw30696().equals("0")) {
-                bi.nw30696.setChecked(true);
-                bi.nw30696x.setText(jsonB2.getnw30696x());
-            }
-
-            if (!jsonB2.getnw307().equals("0")) {
-                bi.nw307.check(
-                        jsonB2.getnw307().equals("1") ? bi.nw307a.getId() :
-                                jsonB2.getnw307().equals("2") ? bi.nw307b.getId() :
-                                        jsonB2.getnw307().equals("3") ? bi.nw307c.getId() :
-                                                bi.nw30798.getId());
+            if (!jsonB2.getciw30696().equals("0")) {
+                bi.ciw30696.setChecked(true);
+                bi.ciw30696x.setText(jsonB2.getciw30696x());
             }
 
-            if (!jsonB2.getnw308().equals("0")) {
-                bi.nw308.check(
-                        jsonB2.getnw308().equals("1") ? bi.nw308a.getId() :
-                                jsonB2.getnw308().equals("2") ? bi.nw308b.getId() :
-                                        bi.nw30898.getId());
+            if (!jsonB2.getciw307().equals("0")) {
+                bi.ciw307.check(
+                        jsonB2.getciw307().equals("1") ? bi.ciw307a.getId() :
+                                jsonB2.getciw307().equals("2") ? bi.ciw307b.getId() :
+                                        jsonB2.getciw307().equals("3") ? bi.ciw307c.getId() :
+                                                bi.ciw30798.getId());
             }
 
-            if (jsonB2.getnw309().equals("98")) {
-                bi.nw30998.setChecked(true);
+            if (!jsonB2.getciw308().equals("0")) {
+                bi.ciw308.check(
+                        jsonB2.getciw308().equals("1") ? bi.ciw308a.getId() :
+                                jsonB2.getciw308().equals("2") ? bi.ciw308b.getId() :
+                                        bi.ciw30898.getId());
+            }
+
+            if (jsonB2.getciw309().equals("98")) {
+                bi.ciw30998.setChecked(true);
             } else {
-                bi.nw309.setText(jsonB2.getnw309());
+                bi.ciw309.setText(jsonB2.getciw309());
             }
 
-            if (!jsonB2.getnw310().equals("0")) {
-                bi.nw310.check(
-                        jsonB2.getnw310().equals("1") ? bi.nw310a.getId() :
-                                bi.nw310b.getId());
+            if (!jsonB2.getciw310().equals("0")) {
+                bi.ciw310.check(
+                        jsonB2.getciw310().equals("1") ? bi.ciw310a.getId() :
+                                bi.ciw310b.getId());
             }
 
-            if (!jsonB2.getnw311().equals("0")) {
-                bi.nw311.check(
-                        jsonB2.getnw311().equals("1") ? bi.nw311a.getId() :
-                                jsonB2.getnw311().equals("2") ? bi.nw311b.getId() :
-                                        jsonB2.getnw311().equals("3") ? bi.nw311c.getId() :
-                                                jsonB2.getnw311().equals("4") ? bi.nw311d.getId() :
-                                                        jsonB2.getnw311().equals("5") ? bi.nw311e.getId() :
-                                                                jsonB2.getnw311().equals("6") ? bi.nw311f.getId() :
-                                                                        jsonB2.getnw311().equals("7") ? bi.nw311g.getId() :
-                                                                                jsonB2.getnw311().equals("8") ? bi.nw311h.getId() :
-                                                                                        bi.nw31196.getId()
+            if (!jsonB2.getciw311().equals("0")) {
+                bi.ciw311.check(
+                        jsonB2.getciw311().equals("1") ? bi.ciw311a.getId() :
+                                jsonB2.getciw311().equals("2") ? bi.ciw311b.getId() :
+                                        jsonB2.getciw311().equals("3") ? bi.ciw311c.getId() :
+                                                jsonB2.getciw311().equals("4") ? bi.ciw311d.getId() :
+                                                        jsonB2.getciw311().equals("5") ? bi.ciw311e.getId() :
+                                                                jsonB2.getciw311().equals("6") ? bi.ciw311f.getId() :
+                                                                        jsonB2.getciw311().equals("7") ? bi.ciw311g.getId() :
+                                                                                jsonB2.getciw311().equals("8") ? bi.ciw311h.getId() :
+                                                                                        bi.ciw31196.getId()
                 );
-                bi.nw31196x.setText(jsonB2.getnw31196x());
+                bi.ciw31196x.setText(jsonB2.getciw31196x());
             }
 
-            if (!jsonB2.getnw312a().equals("0")) {
-                bi.nw312a.setChecked(true);
+            if (!jsonB2.getciw312a().equals("0")) {
+                bi.ciw312a.setChecked(true);
             }
-            if (!jsonB2.getnw312b().equals("0")) {
-                bi.nw312b.setChecked(true);
+            if (!jsonB2.getciw312b().equals("0")) {
+                bi.ciw312b.setChecked(true);
             }
-            if (!jsonB2.getnw312c().equals("0")) {
-                bi.nw312c.setChecked(true);
+            if (!jsonB2.getciw312c().equals("0")) {
+                bi.ciw312c.setChecked(true);
             }
-            if (!jsonB2.getnw312d().equals("0")) {
-                bi.nw312d.setChecked(true);
+            if (!jsonB2.getciw312d().equals("0")) {
+                bi.ciw312d.setChecked(true);
             }
-            if (!jsonB2.getnw312e().equals("0")) {
-                bi.nw312e.setChecked(true);
+            if (!jsonB2.getciw312e().equals("0")) {
+                bi.ciw312e.setChecked(true);
             }
-            if (!jsonB2.getnw312f().equals("0")) {
-                bi.nw312f.setChecked(true);
+            if (!jsonB2.getciw312f().equals("0")) {
+                bi.ciw312f.setChecked(true);
             }
-            if (!jsonB2.getnw312g().equals("0")) {
-                bi.nw312g.setChecked(true);
+            if (!jsonB2.getciw312g().equals("0")) {
+                bi.ciw312g.setChecked(true);
             }
-            if (!jsonB2.getnw312h().equals("0")) {
-                bi.nw312h.setChecked(true);
+            if (!jsonB2.getciw312h().equals("0")) {
+                bi.ciw312h.setChecked(true);
             }
-            if (!jsonB2.getnw312i().equals("0")) {
-                bi.nw312i.setChecked(true);
+            if (!jsonB2.getciw312i().equals("0")) {
+                bi.ciw312i.setChecked(true);
             }
-            if (!jsonB2.getnw312j().equals("0")) {
-                bi.nw312j.setChecked(true);
+            if (!jsonB2.getciw312j().equals("0")) {
+                bi.ciw312j.setChecked(true);
             }
-            if (!jsonB2.getnw312k().equals("0")) {
-                bi.nw312k.setChecked(true);
+            if (!jsonB2.getciw312k().equals("0")) {
+                bi.ciw312k.setChecked(true);
             }
-            if (!jsonB2.getnw312l().equals("0")) {
-                bi.nw312l.setChecked(true);
+            if (!jsonB2.getciw312l().equals("0")) {
+                bi.ciw312l.setChecked(true);
             }
-            if (!jsonB2.getnw312m().equals("0")) {
-                bi.nw312m.setChecked(true);
+            if (!jsonB2.getciw312m().equals("0")) {
+                bi.ciw312m.setChecked(true);
             }
-            if (!jsonB2.getnw312961().equals("0")) {
-                bi.nw312961.setChecked(true);
+            if (!jsonB2.getciw312961().equals("0")) {
+                bi.ciw312961.setChecked(true);
             }
-            if (!jsonB2.getnw312962().equals("0")) {
-                bi.nw312962.setChecked(true);
+            if (!jsonB2.getciw312962().equals("0")) {
+                bi.ciw312962.setChecked(true);
             }
-            if (!jsonB2.getnw312963().equals("0")) {
-                bi.nw312963.setChecked(true);
+            if (!jsonB2.getciw312963().equals("0")) {
+                bi.ciw312963.setChecked(true);
             }
-            bi.nw312961x.setText(jsonB2.getnw312961x());
-            bi.nw312962x.setText(jsonB2.getnw312962x());
-            bi.nw312963x.setText(jsonB2.getnw312963x());
+            bi.ciw312961x.setText(jsonB2.getciw312961x());
+            bi.ciw312962x.setText(jsonB2.getciw312962x());
+            bi.ciw312963x.setText(jsonB2.getciw312963x());
 
-            if (!jsonB2.getnw313().equals("0")) {
-                bi.nw313.check(
-                        jsonB2.getnw313().equals("1") ? bi.nw313a.getId() :
-                                jsonB2.getnw313().equals("2") ? bi.nw313b.getId() :
-                                        jsonB2.getnw313().equals("3") ? bi.nw313c.getId() :
-                                                jsonB2.getnw313().equals("4") ? bi.nw313d.getId() :
-                                                        bi.nw313e.getId()
-                );
-            }
-
-            bi.nw314m.setText(jsonB2.getnw314m());
-            bi.nw314d.setText(jsonB2.getnw314d());
-
-            if (!jsonB2.getnw315().equals("0")) {
-                bi.nw315.check(
-                        jsonB2.getnw315().equals("1") ? bi.nw315a.getId() :
-                                bi.nw315b.getId());
-            }
-
-            if (!jsonB2.getnw316().equals("0")) {
-                bi.nw316.check(
-                        jsonB2.getnw316().equals("1") ? bi.nw316a.getId() :
-                                jsonB2.getnw316().equals("2") ? bi.nw316b.getId() :
-                                        jsonB2.getnw316().equals("3") ? bi.nw316c.getId() :
-                                                jsonB2.getnw316().equals("4") ? bi.nw316d.getId() :
-                                                        jsonB2.getnw316().equals("5") ? bi.nw316e.getId() :
-                                                                jsonB2.getnw316().equals("6") ? bi.nw316f.getId() :
-                                                                        jsonB2.getnw316().equals("7") ? bi.nw316g.getId() :
-                                                                                jsonB2.getnw316().equals("8") ? bi.nw316h.getId() :
-                                                                                        bi.nw31696.getId()
-                );
-                bi.nw31696x.setText(jsonB2.getnw31696x());
-            }
-
-            if (!jsonB2.getnw317a().equals("0")) {
-                bi.nw317a.setChecked(true);
-            }
-            if (!jsonB2.getnw317b().equals("0")) {
-                bi.nw317b.setChecked(true);
-            }
-            if (!jsonB2.getnw317c().equals("0")) {
-                bi.nw317c.setChecked(true);
-            }
-            if (!jsonB2.getnw317d().equals("0")) {
-                bi.nw317d.setChecked(true);
-            }
-            if (!jsonB2.getnw317e().equals("0")) {
-                bi.nw317e.setChecked(true);
-            }
-            if (!jsonB2.getnw317f().equals("0")) {
-                bi.nw317f.setChecked(true);
-            }
-            if (!jsonB2.getnw317g().equals("0")) {
-                bi.nw317g.setChecked(true);
-            }
-            if (!jsonB2.getnw317h().equals("0")) {
-                bi.nw317h.setChecked(true);
-            }
-            if (!jsonB2.getnw317i().equals("0")) {
-                bi.nw317i.setChecked(true);
-            }
-            if (!jsonB2.getnw317j().equals("0")) {
-                bi.nw317j.setChecked(true);
-            }
-            if (!jsonB2.getnw317k().equals("0")) {
-                bi.nw317k.setChecked(true);
-            }
-            if (!jsonB2.getnw317l().equals("0")) {
-                bi.nw317l.setChecked(true);
-            }
-            if (!jsonB2.getnw317m().equals("0")) {
-                bi.nw317m.setChecked(true);
-            }
-            if (!jsonB2.getnw317961().equals("0")) {
-                bi.nw317961.setChecked(true);
-            }
-            if (!jsonB2.getnw317962().equals("0")) {
-                bi.nw317962.setChecked(true);
-            }
-            if (!jsonB2.getnw317963().equals("0")) {
-                bi.nw317963.setChecked(true);
-            }
-            bi.nw317961x.setText(jsonB2.getnw317961x());
-            bi.nw317962x.setText(jsonB2.getnw317962x());
-            bi.nw317963x.setText(jsonB2.getnw317963x());
-
-            if (!jsonB2.getnw318().equals("0")) {
-                bi.nw318.check(
-                        jsonB2.getnw318().equals("1") ? bi.nw318a.getId() :
-                                jsonB2.getnw318().equals("2") ? bi.nw318b.getId() :
-                                        jsonB2.getnw318().equals("3") ? bi.nw318c.getId() :
-                                                jsonB2.getnw318().equals("4") ? bi.nw318d.getId() :
-                                                        bi.nw318e.getId()
+            if (!jsonB2.getciw313().equals("0")) {
+                bi.ciw313.check(
+                        jsonB2.getciw313().equals("1") ? bi.ciw313a.getId() :
+                                jsonB2.getciw313().equals("2") ? bi.ciw313b.getId() :
+                                        jsonB2.getciw313().equals("3") ? bi.ciw313c.getId() :
+                                                jsonB2.getciw313().equals("4") ? bi.ciw313d.getId() :
+                                                        bi.ciw313e.getId()
                 );
             }
 
-            bi.nw319m.setText(jsonB2.getnw319m());
-            bi.nw319d.setText(jsonB2.getnw319d());
+            bi.ciw314m.setText(jsonB2.getciw314m());
+            bi.ciw314d.setText(jsonB2.getciw314d());
 
-            if (!jsonB2.getnw320().equals("0")) {
-                bi.nw320.check(
-                        jsonB2.getnw320().equals("1") ? bi.nw320a.getId() :
-                                bi.nw320b.getId());
+            if (!jsonB2.getciw315().equals("0")) {
+                bi.ciw315.check(
+                        jsonB2.getciw315().equals("1") ? bi.ciw315a.getId() :
+                                bi.ciw315b.getId());
             }
 
-
-            if (!jsonB2.getnw321().equals("0")) {
-                bi.nw321.check(
-                        jsonB2.getnw321().equals("1") ? bi.nw321a.getId() :
-                                jsonB2.getnw321().equals("2") ? bi.nw321b.getId() :
-                                        jsonB2.getnw321().equals("3") ? bi.nw321c.getId() :
-                                                jsonB2.getnw321().equals("4") ? bi.nw321d.getId() :
-                                                        jsonB2.getnw321().equals("5") ? bi.nw321e.getId() :
-                                                                jsonB2.getnw321().equals("6") ? bi.nw321f.getId() :
-                                                                        jsonB2.getnw321().equals("7") ? bi.nw321g.getId() :
-                                                                                jsonB2.getnw321().equals("8") ? bi.nw321h.getId() :
-                                                                                        bi.nw32196.getId()
+            if (!jsonB2.getciw316().equals("0")) {
+                bi.ciw316.check(
+                        jsonB2.getciw316().equals("1") ? bi.ciw316a.getId() :
+                                jsonB2.getciw316().equals("2") ? bi.ciw316b.getId() :
+                                        jsonB2.getciw316().equals("3") ? bi.ciw316c.getId() :
+                                                jsonB2.getciw316().equals("4") ? bi.ciw316d.getId() :
+                                                        jsonB2.getciw316().equals("5") ? bi.ciw316e.getId() :
+                                                                jsonB2.getciw316().equals("6") ? bi.ciw316f.getId() :
+                                                                        jsonB2.getciw316().equals("7") ? bi.ciw316g.getId() :
+                                                                                jsonB2.getciw316().equals("8") ? bi.ciw316h.getId() :
+                                                                                        bi.ciw31696.getId()
                 );
-                bi.nw32196x.setText(jsonB2.getnw32196x());
+                bi.ciw31696x.setText(jsonB2.getciw31696x());
             }
 
-            if (!jsonB2.getnw322a().equals("0")) {
-                bi.nw322a.setChecked(true);
+            if (!jsonB2.getciw317a().equals("0")) {
+                bi.ciw317a.setChecked(true);
             }
-            if (!jsonB2.getnw322b().equals("0")) {
-                bi.nw322b.setChecked(true);
+            if (!jsonB2.getciw317b().equals("0")) {
+                bi.ciw317b.setChecked(true);
             }
-            if (!jsonB2.getnw322c().equals("0")) {
-                bi.nw322c.setChecked(true);
+            if (!jsonB2.getciw317c().equals("0")) {
+                bi.ciw317c.setChecked(true);
             }
-            if (!jsonB2.getnw322d().equals("0")) {
-                bi.nw322d.setChecked(true);
+            if (!jsonB2.getciw317d().equals("0")) {
+                bi.ciw317d.setChecked(true);
             }
-            if (!jsonB2.getnw322e().equals("0")) {
-                bi.nw322e.setChecked(true);
+            if (!jsonB2.getciw317e().equals("0")) {
+                bi.ciw317e.setChecked(true);
             }
-            if (!jsonB2.getnw322f().equals("0")) {
-                bi.nw322f.setChecked(true);
+            if (!jsonB2.getciw317f().equals("0")) {
+                bi.ciw317f.setChecked(true);
             }
-            if (!jsonB2.getnw322g().equals("0")) {
-                bi.nw322g.setChecked(true);
+            if (!jsonB2.getciw317g().equals("0")) {
+                bi.ciw317g.setChecked(true);
             }
-            if (!jsonB2.getnw322h().equals("0")) {
-                bi.nw322h.setChecked(true);
+            if (!jsonB2.getciw317h().equals("0")) {
+                bi.ciw317h.setChecked(true);
             }
-            if (!jsonB2.getnw322i().equals("0")) {
-                bi.nw322i.setChecked(true);
+            if (!jsonB2.getciw317i().equals("0")) {
+                bi.ciw317i.setChecked(true);
             }
-            if (!jsonB2.getnw322j().equals("0")) {
-                bi.nw322j.setChecked(true);
+            if (!jsonB2.getciw317j().equals("0")) {
+                bi.ciw317j.setChecked(true);
             }
-            if (!jsonB2.getnw322k().equals("0")) {
-                bi.nw322k.setChecked(true);
+            if (!jsonB2.getciw317k().equals("0")) {
+                bi.ciw317k.setChecked(true);
             }
-            if (!jsonB2.getnw322l().equals("0")) {
-                bi.nw322l.setChecked(true);
+            if (!jsonB2.getciw317l().equals("0")) {
+                bi.ciw317l.setChecked(true);
             }
-            if (!jsonB2.getnw322m().equals("0")) {
-                bi.nw322m.setChecked(true);
+            if (!jsonB2.getciw317m().equals("0")) {
+                bi.ciw317m.setChecked(true);
             }
-            if (!jsonB2.getnw322961().equals("0")) {
-                bi.nw322961.setChecked(true);
+            if (!jsonB2.getciw317961().equals("0")) {
+                bi.ciw317961.setChecked(true);
             }
-            if (!jsonB2.getnw322962().equals("0")) {
-                bi.nw322962.setChecked(true);
+            if (!jsonB2.getciw317962().equals("0")) {
+                bi.ciw317962.setChecked(true);
             }
-            if (!jsonB2.getnw322963().equals("0")) {
-                bi.nw322963.setChecked(true);
+            if (!jsonB2.getciw317963().equals("0")) {
+                bi.ciw317963.setChecked(true);
             }
-            bi.nw322961x.setText(jsonB2.getnw322961x());
-            bi.nw322962x.setText(jsonB2.getnw322962x());
-            bi.nw322963x.setText(jsonB2.getnw322963x());
+            bi.ciw317961x.setText(jsonB2.getciw317961x());
+            bi.ciw317962x.setText(jsonB2.getciw317962x());
+            bi.ciw317963x.setText(jsonB2.getciw317963x());
 
-            if (!jsonB2.getnw323().equals("0")) {
-                bi.nw323.check(
-                        jsonB2.getnw323().equals("1") ? bi.nw323a.getId() :
-                                jsonB2.getnw323().equals("2") ? bi.nw323b.getId() :
-                                        jsonB2.getnw323().equals("3") ? bi.nw323c.getId() :
-                                                jsonB2.getnw323().equals("4") ? bi.nw323d.getId() :
-                                                        bi.nw323e.getId()
+            if (!jsonB2.getciw318().equals("0")) {
+                bi.ciw318.check(
+                        jsonB2.getciw318().equals("1") ? bi.ciw318a.getId() :
+                                jsonB2.getciw318().equals("2") ? bi.ciw318b.getId() :
+                                        jsonB2.getciw318().equals("3") ? bi.ciw318c.getId() :
+                                                jsonB2.getciw318().equals("4") ? bi.ciw318d.getId() :
+                                                        bi.ciw318e.getId()
                 );
             }
 
-            bi.nw324m.setText(jsonB2.getnw324m());
-            bi.nw324d.setText(jsonB2.getnw324d());
+            bi.ciw319m.setText(jsonB2.getciw319m());
+            bi.ciw319d.setText(jsonB2.getciw319d());
 
-            if (!jsonB2.getnw325().equals("0")) {
-                bi.nw325.check(
-                        jsonB2.getnw325().equals("1") ? bi.nw325a.getId() :
-                                bi.nw325b.getId());
+            if (!jsonB2.getciw320().equals("0")) {
+                bi.ciw320.check(
+                        jsonB2.getciw320().equals("1") ? bi.ciw320a.getId() :
+                                bi.ciw320b.getId());
             }
-            if (!jsonB2.getnw326().equals("0")) {
-                bi.nw326.check(
-                        jsonB2.getnw326().equals("1") ? bi.nw326a.getId() :
-                                jsonB2.getnw326().equals("2") ? bi.nw326b.getId() :
-                                        bi.nw32698.getId());
+
+
+            if (!jsonB2.getciw321().equals("0")) {
+                bi.ciw321.check(
+                        jsonB2.getciw321().equals("1") ? bi.ciw321a.getId() :
+                                jsonB2.getciw321().equals("2") ? bi.ciw321b.getId() :
+                                        jsonB2.getciw321().equals("3") ? bi.ciw321c.getId() :
+                                                jsonB2.getciw321().equals("4") ? bi.ciw321d.getId() :
+                                                        jsonB2.getciw321().equals("5") ? bi.ciw321e.getId() :
+                                                                jsonB2.getciw321().equals("6") ? bi.ciw321f.getId() :
+                                                                        jsonB2.getciw321().equals("7") ? bi.ciw321g.getId() :
+                                                                                jsonB2.getciw321().equals("8") ? bi.ciw321h.getId() :
+                                                                                        bi.ciw32196.getId()
+                );
+                bi.ciw32196x.setText(jsonB2.getciw32196x());
+            }
+
+            if (!jsonB2.getciw322a().equals("0")) {
+                bi.ciw322a.setChecked(true);
+            }
+            if (!jsonB2.getciw322b().equals("0")) {
+                bi.ciw322b.setChecked(true);
+            }
+            if (!jsonB2.getciw322c().equals("0")) {
+                bi.ciw322c.setChecked(true);
+            }
+            if (!jsonB2.getciw322d().equals("0")) {
+                bi.ciw322d.setChecked(true);
+            }
+            if (!jsonB2.getciw322e().equals("0")) {
+                bi.ciw322e.setChecked(true);
+            }
+            if (!jsonB2.getciw322f().equals("0")) {
+                bi.ciw322f.setChecked(true);
+            }
+            if (!jsonB2.getciw322g().equals("0")) {
+                bi.ciw322g.setChecked(true);
+            }
+            if (!jsonB2.getciw322h().equals("0")) {
+                bi.ciw322h.setChecked(true);
+            }
+            if (!jsonB2.getciw322i().equals("0")) {
+                bi.ciw322i.setChecked(true);
+            }
+            if (!jsonB2.getciw322j().equals("0")) {
+                bi.ciw322j.setChecked(true);
+            }
+            if (!jsonB2.getciw322k().equals("0")) {
+                bi.ciw322k.setChecked(true);
+            }
+            if (!jsonB2.getciw322l().equals("0")) {
+                bi.ciw322l.setChecked(true);
+            }
+            if (!jsonB2.getciw322m().equals("0")) {
+                bi.ciw322m.setChecked(true);
+            }
+            if (!jsonB2.getciw322961().equals("0")) {
+                bi.ciw322961.setChecked(true);
+            }
+            if (!jsonB2.getciw322962().equals("0")) {
+                bi.ciw322962.setChecked(true);
+            }
+            if (!jsonB2.getciw322963().equals("0")) {
+                bi.ciw322963.setChecked(true);
+            }
+            bi.ciw322961x.setText(jsonB2.getciw322961x());
+            bi.ciw322962x.setText(jsonB2.getciw322962x());
+            bi.ciw322963x.setText(jsonB2.getciw322963x());
+
+            if (!jsonB2.getciw323().equals("0")) {
+                bi.ciw323.check(
+                        jsonB2.getciw323().equals("1") ? bi.ciw323a.getId() :
+                                jsonB2.getciw323().equals("2") ? bi.ciw323b.getId() :
+                                        jsonB2.getciw323().equals("3") ? bi.ciw323c.getId() :
+                                                jsonB2.getciw323().equals("4") ? bi.ciw323d.getId() :
+                                                        bi.ciw323e.getId()
+                );
+            }
+
+            bi.ciw324m.setText(jsonB2.getciw324m());
+            bi.ciw324d.setText(jsonB2.getciw324d());
+
+            if (!jsonB2.getciw325().equals("0")) {
+                bi.ciw325.check(
+                        jsonB2.getciw325().equals("1") ? bi.ciw325a.getId() :
+                                bi.ciw325b.getId());
+            }
+            if (!jsonB2.getciw326().equals("0")) {
+                bi.ciw326.check(
+                        jsonB2.getciw326().equals("1") ? bi.ciw326a.getId() :
+                                jsonB2.getciw326().equals("2") ? bi.ciw326b.getId() :
+                                        bi.ciw32698.getId());
             }
         }
     }
@@ -658,559 +658,559 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
     private boolean ValidateForm() {
 
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nw301, bi.nw301a, getString(R.string.nw301b) + " " + SectionB1Activity.wraName + " " + getString(R.string.nw301a))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.ciw301, bi.ciw301a, getString(R.string.ciw301b) + " " + SectionB1Activity.wraName + " " + getString(R.string.ciw301a))) {
             return false;
         }
 
-        if (bi.nw301a.isChecked()) {
-            if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpnw302check, bi.nw302a, getString(R.string.nw302))) {
+        if (bi.ciw301a.isChecked()) {
+            if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpciw302check, bi.ciw302a, getString(R.string.ciw302))) {
                 return false;
             }
-            if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpnw302check, bi.nw30296, bi.nw30296x, getString(R.string.nw302) + " - " + getString(R.string.other))) {
+            if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpciw302check, bi.ciw30296, bi.ciw30296x, getString(R.string.ciw302) + " - " + getString(R.string.other))) {
                 return false;
             }
-            if (!ValidatorClass.EmptyRadioButton(this, bi.nw303, bi.nw303a, getString(R.string.nw303))) {
+            if (!ValidatorClass.EmptyRadioButton(this, bi.ciw303, bi.ciw303a, getString(R.string.ciw303))) {
                 return false;
             }
-            if (!ValidatorClass.EmptyRadioButton(this, bi.nw303, bi.nw303f, bi.nw303961x, getString(R.string.nw303) + " - " + getString(R.string.nw303f))) {
+            if (!ValidatorClass.EmptyRadioButton(this, bi.ciw303, bi.ciw303f, bi.ciw303961x, getString(R.string.ciw303) + " - " + getString(R.string.ciw303f))) {
                 return false;
             }
-            if (!ValidatorClass.EmptyRadioButton(this, bi.nw303, bi.nw303j, bi.nw303962x, getString(R.string.nw303) + " - " + getString(R.string.nw303j))) {
+            if (!ValidatorClass.EmptyRadioButton(this, bi.ciw303, bi.ciw303j, bi.ciw303962x, getString(R.string.ciw303) + " - " + getString(R.string.ciw303j))) {
                 return false;
             }
-            if (!ValidatorClass.EmptyRadioButton(this, bi.nw303, bi.nw30396, bi.nw303963x, getString(R.string.nw303) + " - " + getString(R.string.other))) {
+            if (!ValidatorClass.EmptyRadioButton(this, bi.ciw303, bi.ciw30396, bi.ciw303963x, getString(R.string.ciw303) + " - " + getString(R.string.other))) {
                 return false;
             }
 
-            if (!ValidatorClass.EmptyRadioButton(this, bi.nw304, bi.nw304a, getString(R.string.nw304))) {
+            if (!ValidatorClass.EmptyRadioButton(this, bi.ciw304, bi.ciw304a, getString(R.string.ciw304))) {
                 return false;
             }
-            if (bi.nw304a.isChecked()) {
-                if (!ValidatorClass.EmptyTextBox(this, bi.nw304w, getString(R.string.nw304) + " - " + getString(R.string.week))) {
+            if (bi.ciw304a.isChecked()) {
+                if (!ValidatorClass.EmptyTextBox(this, bi.ciw304w, getString(R.string.ciw304) + " - " + getString(R.string.week))) {
                     return false;
                 }
 
-                if (bi.nw304m.getText().toString().equals("0")) {
-                    if (!ValidatorClass.RangeTextBox(this, bi.nw304w, 2, 44, getString(R.string.nw304), " weeks")) {
+                if (bi.ciw304m.getText().toString().equals("0")) {
+                    if (!ValidatorClass.RangeTextBox(this, bi.ciw304w, 2, 44, getString(R.string.ciw304), " weeks")) {
                         return false;
                     }
                 } else {
-                    if (!ValidatorClass.RangeTextBox(this, bi.nw304w, 0, 44, getString(R.string.nw304), " weeks")) {
+                    if (!ValidatorClass.RangeTextBox(this, bi.ciw304w, 0, 44, getString(R.string.ciw304), " weeks")) {
                         return false;
                     }
                 }
             }
 
-            if (bi.nw304b.isChecked()) {
+            if (bi.ciw304b.isChecked()) {
 
-                if (!ValidatorClass.EmptyTextBox(this, bi.nw304m, getString(R.string.nw304) + " - " + getString(R.string.months))) {
+                if (!ValidatorClass.EmptyTextBox(this, bi.ciw304m, getString(R.string.ciw304) + " - " + getString(R.string.months))) {
                     return false;
                 }
 
-                if (bi.nw304w.getText().toString().equals("0")) {
-                    if (!ValidatorClass.RangeTextBox(this, bi.nw304m, 1, 9, getString(R.string.nw203), " months")) {
+                if (bi.ciw304w.getText().toString().equals("0")) {
+                    if (!ValidatorClass.RangeTextBox(this, bi.ciw304m, 1, 9, getString(R.string.ciw203), " months")) {
                         return false;
                     }
                 } else {
-                    if (!ValidatorClass.RangeTextBox(this, bi.nw304m, 0, 9, getString(R.string.nw203), " months")) {
+                    if (!ValidatorClass.RangeTextBox(this, bi.ciw304m, 0, 9, getString(R.string.ciw203), " months")) {
                         return false;
                     }
                 }
 
-                if (bi.nw304w.getText().toString().equals("0") && bi.nw304m.getText().toString().equals("0")) {
-                    Toast.makeText(this, "ERROR(invalid): " + "All can not be zero" + getString(R.string.nw304), Toast.LENGTH_LONG).show();
-                    bi.nw304w.setError("All can not be zero");
-                    bi.nw304w.setError("All can not be zero");
-                    Log.i(SectionB2Activity.class.getSimpleName(), "nw304" + ": This data is Required!");
+                if (bi.ciw304w.getText().toString().equals("0") && bi.ciw304m.getText().toString().equals("0")) {
+                    Toast.makeText(this, "ERROR(invalid): " + "All can not be zero" + getString(R.string.ciw304), Toast.LENGTH_LONG).show();
+                    bi.ciw304w.setError("All can not be zero");
+                    bi.ciw304w.setError("All can not be zero");
+                    Log.i(SectionB2Activity.class.getSimpleName(), "ciw304" + ": This data is Required!");
                     return false;
                 } else {
-                    bi.nw304w.setError(null);
-                    bi.nw304m.setError(null);
+                    bi.ciw304w.setError(null);
+                    bi.ciw304m.setError(null);
 
                 }
             }
 
-            if (!bi.nw30598.isChecked()) {
-                if (!ValidatorClass.EmptyTextBox(this, bi.nw305, getString(R.string.nw305) + " - " + getString(R.string.times))) {
+            if (!bi.ciw30598.isChecked()) {
+                if (!ValidatorClass.EmptyTextBox(this, bi.ciw305, getString(R.string.ciw305) + " - " + getString(R.string.times))) {
                     return false;
                 }
-                if (!ValidatorClass.RangeTextBox(this, bi.nw305, 1, 15, getString(R.string.nw305), " times")) {
+                if (!ValidatorClass.RangeTextBox(this, bi.ciw305, 1, 15, getString(R.string.ciw305), " times")) {
                     return false;
                 }
             }
-            if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpnw306check, bi.nw306a, getString(R.string.nw306))) {
+            if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpciw306check, bi.ciw306a, getString(R.string.ciw306))) {
                 return false;
             }
 
-            if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpnw306check, bi.nw30696, bi.nw30696x, getString(R.string.nw306) + " - " + getString(R.string.other))) {
+            if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpciw306check, bi.ciw30696, bi.ciw30696x, getString(R.string.ciw306) + " - " + getString(R.string.other))) {
                 return false;
             }
 
         }
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nw307, bi.nw307a, getString(R.string.nw307))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.ciw307, bi.ciw307a, getString(R.string.ciw307))) {
             return false;
         }
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nw308, bi.nw308a, getString(R.string.nw308))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.ciw308, bi.ciw308a, getString(R.string.ciw308))) {
             return false;
         }
 
-        if (bi.nw308a.isChecked()) {
-            if (!bi.nw30998.isChecked()) {
-                if (!ValidatorClass.EmptyTextBox(this, bi.nw309, getString(R.string.nw309) + " - " + getString(R.string.times))) {
+        if (bi.ciw308a.isChecked()) {
+            if (!bi.ciw30998.isChecked()) {
+                if (!ValidatorClass.EmptyTextBox(this, bi.ciw309, getString(R.string.ciw309) + " - " + getString(R.string.times))) {
                     return false;
                 }
 
-                if (!ValidatorClass.RangeTextBox(this, bi.nw309, 1, 5, getString(R.string.nw203), " times")) {
+                if (!ValidatorClass.RangeTextBox(this, bi.ciw309, 1, 5, getString(R.string.ciw203), " times")) {
                     return false;
                 }
             }
         }
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nw310, bi.nw310a, getString(R.string.nw310))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.ciw310, bi.ciw310a, getString(R.string.ciw310))) {
             return false;
         }
 
-        if (bi.nw310a.isChecked()) {
+        if (bi.ciw310a.isChecked()) {
 
 
-            if (!ValidatorClass.EmptyRadioButton(this, bi.nw311, bi.nw311a, getString(R.string.nw311))) {
+            if (!ValidatorClass.EmptyRadioButton(this, bi.ciw311, bi.ciw311a, getString(R.string.ciw311))) {
                 return false;
             }
-            if (!ValidatorClass.EmptyRadioButton(this, bi.nw311, bi.nw31196, bi.nw31196x, getString(R.string.nw311))) {
+            if (!ValidatorClass.EmptyRadioButton(this, bi.ciw311, bi.ciw31196, bi.ciw31196x, getString(R.string.ciw311))) {
                 return false;
             }
-            if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpnw312, bi.nw312a, getString(R.string.nw312))) {
+            if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpciw312, bi.ciw312a, getString(R.string.ciw312))) {
                 return false;
             }
-            if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpnw312, bi.nw312961, bi.nw312961x, getString(R.string.nw312))) {
-                return false;
-            }
-
-            if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpnw312, bi.nw312962, bi.nw312962x, getString(R.string.nw312))) {
+            if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpciw312, bi.ciw312961, bi.ciw312961x, getString(R.string.ciw312))) {
                 return false;
             }
 
-            if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpnw312, bi.nw312963, bi.nw312963x, getString(R.string.nw312))) {
+            if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpciw312, bi.ciw312962, bi.ciw312962x, getString(R.string.ciw312))) {
                 return false;
             }
 
-            if (!ValidatorClass.EmptyRadioButton(this, bi.nw313, bi.nw313a, getString(R.string.nw313))) {
+            if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpciw312, bi.ciw312963, bi.ciw312963x, getString(R.string.ciw312))) {
                 return false;
             }
 
-            if (!ValidatorClass.EmptyTextBox(this, bi.nw314m, getString(R.string.nw314) + " - " + getString(R.string.months))) {
+            if (!ValidatorClass.EmptyRadioButton(this, bi.ciw313, bi.ciw313a, getString(R.string.ciw313))) {
                 return false;
             }
 
-            if (!ValidatorClass.EmptyTextBox(this, bi.nw314d, getString(R.string.nw314) + " - " + getString(R.string.day))) {
+            if (!ValidatorClass.EmptyTextBox(this, bi.ciw314m, getString(R.string.ciw314) + " - " + getString(R.string.months))) {
                 return false;
             }
 
-            if (!ValidatorClass.RangeTextBox(this, bi.nw314m, 0, 11, getString(R.string.nw314), " months")) {
+            if (!ValidatorClass.EmptyTextBox(this, bi.ciw314d, getString(R.string.ciw314) + " - " + getString(R.string.day))) {
                 return false;
             }
 
-            if (!ValidatorClass.RangeTextBox(this, bi.nw314d, 0, 29, getString(R.string.nw314), " days")) {
+            if (!ValidatorClass.RangeTextBox(this, bi.ciw314m, 0, 11, getString(R.string.ciw314), " months")) {
                 return false;
             }
 
-            if (bi.nw314m.getText().toString().equals("0") && bi.nw314d.getText().toString().equals("0")) {
-                Toast.makeText(this, "ERROR(invalid): " + "All can not be zero" + getString(R.string.nw314), Toast.LENGTH_LONG).show();
-                bi.nw314m.setError("All can not be zero");
-                bi.nw314d.setError("All can not be zero");
-                Log.i(SectionB2Activity.class.getSimpleName(), "nw314" + ": This data is Required!");
+            if (!ValidatorClass.RangeTextBox(this, bi.ciw314d, 0, 29, getString(R.string.ciw314), " days")) {
+                return false;
+            }
+
+            if (bi.ciw314m.getText().toString().equals("0") && bi.ciw314d.getText().toString().equals("0")) {
+                Toast.makeText(this, "ERROR(invalid): " + "All can not be zero" + getString(R.string.ciw314), Toast.LENGTH_LONG).show();
+                bi.ciw314m.setError("All can not be zero");
+                bi.ciw314d.setError("All can not be zero");
+                Log.i(SectionB2Activity.class.getSimpleName(), "ciw314" + ": This data is Required!");
                 return false;
             } else {
-                bi.nw314m.setError(null);
-                bi.nw314d.setError(null);
+                bi.ciw314m.setError(null);
+                bi.ciw314d.setError(null);
 
             }
 
         }
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nw315, bi.nw315a, getString(R.string.nw315))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.ciw315, bi.ciw315a, getString(R.string.ciw315))) {
             return false;
         }
 
-        if (bi.nw315a.isChecked()) {
-            if (!ValidatorClass.EmptyRadioButton(this, bi.nw316, bi.nw316a, getString(R.string.nw316))) {
+        if (bi.ciw315a.isChecked()) {
+            if (!ValidatorClass.EmptyRadioButton(this, bi.ciw316, bi.ciw316a, getString(R.string.ciw316))) {
                 return false;
             }
-            if (!ValidatorClass.EmptyRadioButton(this, bi.nw316, bi.nw31696, bi.nw31696x, getString(R.string.nw316))) {
+            if (!ValidatorClass.EmptyRadioButton(this, bi.ciw316, bi.ciw31696, bi.ciw31696x, getString(R.string.ciw316))) {
                 return false;
             }
-            if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpnw317, bi.nw317a, getString(R.string.nw317))) {
+            if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpciw317, bi.ciw317a, getString(R.string.ciw317))) {
                 return false;
             }
-            if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpnw317, bi.nw317961, bi.nw317961x, getString(R.string.nw317))) {
-                return false;
-            }
-
-            if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpnw317, bi.nw317962, bi.nw317962x, getString(R.string.nw317))) {
+            if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpciw317, bi.ciw317961, bi.ciw317961x, getString(R.string.ciw317))) {
                 return false;
             }
 
-            if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpnw317, bi.nw317963, bi.nw317963x, getString(R.string.nw317))) {
+            if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpciw317, bi.ciw317962, bi.ciw317962x, getString(R.string.ciw317))) {
+                return false;
+            }
+
+            if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpciw317, bi.ciw317963, bi.ciw317963x, getString(R.string.ciw317))) {
                 return false;
             }
 
 
-            if (!ValidatorClass.EmptyRadioButton(this, bi.nw318, bi.nw318a, getString(R.string.nw318))) {
+            if (!ValidatorClass.EmptyRadioButton(this, bi.ciw318, bi.ciw318a, getString(R.string.ciw318))) {
                 return false;
             }
 
-            if (!ValidatorClass.EmptyTextBox(this, bi.nw319m, getString(R.string.nw319) + " - " + getString(R.string.month))) {
+            if (!ValidatorClass.EmptyTextBox(this, bi.ciw319m, getString(R.string.ciw319) + " - " + getString(R.string.month))) {
                 return false;
             }
 
-            if (!ValidatorClass.EmptyTextBox(this, bi.nw319d, getString(R.string.nw319) + " - " + getString(R.string.day))) {
+            if (!ValidatorClass.EmptyTextBox(this, bi.ciw319d, getString(R.string.ciw319) + " - " + getString(R.string.day))) {
                 return false;
             }
 
-            if (!ValidatorClass.RangeTextBox(this, bi.nw319m, 0, 11, getString(R.string.nw319), " months")) {
+            if (!ValidatorClass.RangeTextBox(this, bi.ciw319m, 0, 11, getString(R.string.ciw319), " months")) {
                 return false;
             }
 
-            if (!ValidatorClass.RangeTextBox(this, bi.nw319d, 0, 29, getString(R.string.nw319), " days")) {
+            if (!ValidatorClass.RangeTextBox(this, bi.ciw319d, 0, 29, getString(R.string.ciw319), " days")) {
                 return false;
             }
 
-            if (bi.nw319m.getText().toString().equals("0") && bi.nw319d.getText().toString().equals(" 0")) {
-                Toast.makeText(this, "ERROR(invalid): " + "All can not be zero" + getString(R.string.nw319), Toast.LENGTH_LONG).show();
-                bi.nw319m.setError("All can not be zero");
-                bi.nw319d.setError("All can not be zero");
-                Log.i(SectionB2Activity.class.getSimpleName(), "nw319" + ": This data is Required!");
+            if (bi.ciw319m.getText().toString().equals("0") && bi.ciw319d.getText().toString().equals(" 0")) {
+                Toast.makeText(this, "ERROR(invalid): " + "All can not be zero" + getString(R.string.ciw319), Toast.LENGTH_LONG).show();
+                bi.ciw319m.setError("All can not be zero");
+                bi.ciw319d.setError("All can not be zero");
+                Log.i(SectionB2Activity.class.getSimpleName(), "ciw319" + ": This data is Required!");
                 return false;
             } else {
-                bi.nw319m.setError(null);
-                bi.nw319d.setError(null);
+                bi.ciw319m.setError(null);
+                bi.ciw319d.setError(null);
 
             }
 
         }
 
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nw320, bi.nw320a, getString(R.string.nw320))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.ciw320, bi.ciw320a, getString(R.string.ciw320))) {
             return false;
         }
 
-        if (bi.nw320a.isChecked()) {
+        if (bi.ciw320a.isChecked()) {
 
 
-            if (!ValidatorClass.EmptyRadioButton(this, bi.nw321, bi.nw321a, getString(R.string.nw321))) {
+            if (!ValidatorClass.EmptyRadioButton(this, bi.ciw321, bi.ciw321a, getString(R.string.ciw321))) {
                 return false;
             }
-            if (!ValidatorClass.EmptyRadioButton(this, bi.nw321, bi.nw32196, bi.nw32196x, getString(R.string.nw321))) {
+            if (!ValidatorClass.EmptyRadioButton(this, bi.ciw321, bi.ciw32196, bi.ciw32196x, getString(R.string.ciw321))) {
                 return false;
             }
-            if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpnw322, bi.nw322a, getString(R.string.nw322))) {
+            if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpciw322, bi.ciw322a, getString(R.string.ciw322))) {
                 return false;
             }
-            if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpnw322, bi.nw322961, bi.nw322961x, getString(R.string.nw322))) {
-                return false;
-            }
-
-            if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpnw322, bi.nw322962, bi.nw322962x, getString(R.string.nw322))) {
+            if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpciw322, bi.ciw322961, bi.ciw322961x, getString(R.string.ciw322))) {
                 return false;
             }
 
-            if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpnw322, bi.nw322963, bi.nw322963x, getString(R.string.nw322))) {
+            if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpciw322, bi.ciw322962, bi.ciw322962x, getString(R.string.ciw322))) {
+                return false;
+            }
+
+            if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpciw322, bi.ciw322963, bi.ciw322963x, getString(R.string.ciw322))) {
                 return false;
             }
 
 
-            if (!ValidatorClass.EmptyRadioButton(this, bi.nw323, bi.nw323a, getString(R.string.nw323))) {
+            if (!ValidatorClass.EmptyRadioButton(this, bi.ciw323, bi.ciw323a, getString(R.string.ciw323))) {
                 return false;
             }
 
-            if (!ValidatorClass.EmptyTextBox(this, bi.nw324m, getString(R.string.nw324) + " - " + getString(R.string.month))) {
+            if (!ValidatorClass.EmptyTextBox(this, bi.ciw324m, getString(R.string.ciw324) + " - " + getString(R.string.month))) {
                 return false;
             }
 
-            if (!ValidatorClass.EmptyTextBox(this, bi.nw324d, getString(R.string.nw324) + " - " + getString(R.string.day))) {
+            if (!ValidatorClass.EmptyTextBox(this, bi.ciw324d, getString(R.string.ciw324) + " - " + getString(R.string.day))) {
                 return false;
             }
 
-            if (!ValidatorClass.RangeTextBox(this, bi.nw324m, 0, 11, getString(R.string.nw324), " months")) {
+            if (!ValidatorClass.RangeTextBox(this, bi.ciw324m, 0, 11, getString(R.string.ciw324), " months")) {
                 return false;
             }
 
-            if (!ValidatorClass.RangeTextBox(this, bi.nw324d, 0, 29, getString(R.string.nw324), " days")) {
+            if (!ValidatorClass.RangeTextBox(this, bi.ciw324d, 0, 29, getString(R.string.ciw324), " days")) {
                 return false;
             }
 
-            if (bi.nw324m.getText().toString().equals("0") && bi.nw324d.getText().toString().equals("0")) {
-                Toast.makeText(this, "ERROR(invalid): " + "All can not be zero" + getString(R.string.nw324), Toast.LENGTH_LONG).show();
-                bi.nw324m.setError("All can not be zero");
+            if (bi.ciw324m.getText().toString().equals("0") && bi.ciw324d.getText().toString().equals("0")) {
+                Toast.makeText(this, "ERROR(invalid): " + "All can not be zero" + getString(R.string.ciw324), Toast.LENGTH_LONG).show();
+                bi.ciw324m.setError("All can not be zero");
 
-                bi.nw324d.setError("All can not be zero");
-                Log.i(SectionB2Activity.class.getSimpleName(), "nw324" + ": This data is Required!");
+                bi.ciw324d.setError("All can not be zero");
+                Log.i(SectionB2Activity.class.getSimpleName(), "ciw324" + ": This data is Required!");
                 return false;
             } else {
-                bi.nw324m.setError(null);
-                bi.nw324d.setError(null);
+                bi.ciw324m.setError(null);
+                bi.ciw324d.setError(null);
 
             }
 
         }
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.nw325, bi.nw325a, getString(R.string.nw325))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.ciw325, bi.ciw325a, getString(R.string.ciw325))) {
             return false;
         }
 
-        return ValidatorClass.EmptyRadioButton(this, bi.nw326, bi.nw326a, getString(R.string.nw326));
+        return ValidatorClass.EmptyRadioButton(this, bi.ciw326, bi.ciw326a, getString(R.string.ciw326));
     }
 
     private void SaveDraft() throws JSONException {
 
-//       nw301
+//       ciw301
         JSONObject sB2 = new JSONObject();
 
         if (backPressed) {
             sB2.put("updatedate_ciw3", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
         }
 
-        sB2.put("nw301", bi.nw301a.isChecked() ? "1"
-                : bi.nw301b.isChecked() ? "2"
+        sB2.put("ciw301", bi.ciw301a.isChecked() ? "1"
+                : bi.ciw301b.isChecked() ? "2"
                 : "0");
 
-//       nw302
-        sB2.put("nw302a", bi.nw302a.isChecked() ? "1" : "0");
-        sB2.put("nw302b", bi.nw302b.isChecked() ? "2" : "0");
-        sB2.put("nw302c", bi.nw302c.isChecked() ? "3" : "0");
-        sB2.put("nw302d", bi.nw302d.isChecked() ? "4" : "0");
-        sB2.put("nw302e", bi.nw302e.isChecked() ? "5" : "0");
-        sB2.put("nw302f", bi.nw302f.isChecked() ? "6" : "0");
-        sB2.put("nw302g", bi.nw302g.isChecked() ? "7" : "0");
-        sB2.put("nw302h", bi.nw302h.isChecked() ? "8" : "0");
-        sB2.put("nw30296", bi.nw30296.isChecked() ? "96" : "0");
+//       ciw302
+        sB2.put("ciw302a", bi.ciw302a.isChecked() ? "1" : "0");
+        sB2.put("ciw302b", bi.ciw302b.isChecked() ? "2" : "0");
+        sB2.put("ciw302c", bi.ciw302c.isChecked() ? "3" : "0");
+        sB2.put("ciw302d", bi.ciw302d.isChecked() ? "4" : "0");
+        sB2.put("ciw302e", bi.ciw302e.isChecked() ? "5" : "0");
+        sB2.put("ciw302f", bi.ciw302f.isChecked() ? "6" : "0");
+        sB2.put("ciw302g", bi.ciw302g.isChecked() ? "7" : "0");
+        sB2.put("ciw302h", bi.ciw302h.isChecked() ? "8" : "0");
+        sB2.put("ciw30296", bi.ciw30296.isChecked() ? "96" : "0");
 
-        sB2.put("nw30296x", bi.nw30296x.getText().toString());
+        sB2.put("ciw30296x", bi.ciw30296x.getText().toString());
 
-//      nw303
-        sB2.put("nw303", bi.nw303a.isChecked() ? "1"
-                : bi.nw303b.isChecked() ? "2"
-                : bi.nw303c.isChecked() ? "3"
-                : bi.nw303d.isChecked() ? "4"
-                : bi.nw303e.isChecked() ? "5"
-                : bi.nw303f.isChecked() ? "961"
-                : bi.nw303g.isChecked() ? "7"
-                : bi.nw303h.isChecked() ? "8"
-                : bi.nw303i.isChecked() ? "9"
-                : bi.nw303j.isChecked() ? "962"
-                : bi.nw30396.isChecked() ? "963"
+//      ciw303
+        sB2.put("ciw303", bi.ciw303a.isChecked() ? "1"
+                : bi.ciw303b.isChecked() ? "2"
+                : bi.ciw303c.isChecked() ? "3"
+                : bi.ciw303d.isChecked() ? "4"
+                : bi.ciw303e.isChecked() ? "5"
+                : bi.ciw303f.isChecked() ? "961"
+                : bi.ciw303g.isChecked() ? "7"
+                : bi.ciw303h.isChecked() ? "8"
+                : bi.ciw303i.isChecked() ? "9"
+                : bi.ciw303j.isChecked() ? "962"
+                : bi.ciw30396.isChecked() ? "963"
                 : "0");
-        sB2.put("nw303961x", bi.nw303961x.getText().toString());
-        sB2.put("nw303962x", bi.nw303962x.getText().toString());
-        sB2.put("nw303963x", bi.nw303963x.getText().toString());
+        sB2.put("ciw303961x", bi.ciw303961x.getText().toString());
+        sB2.put("ciw303962x", bi.ciw303962x.getText().toString());
+        sB2.put("ciw303963x", bi.ciw303963x.getText().toString());
 
-//        nw304
-        sB2.put("nw304", bi.nw304a.isChecked() ? "1" : bi.nw304b.isChecked() ? "2" : bi.nw30498.isChecked() ? "98" : "0");
-        sB2.put("nw304w", bi.nw304w.getText().toString());
-        sB2.put("nw304m", bi.nw304m.getText().toString());
+//        ciw304
+        sB2.put("ciw304", bi.ciw304a.isChecked() ? "1" : bi.ciw304b.isChecked() ? "2" : bi.ciw30498.isChecked() ? "98" : "0");
+        sB2.put("ciw304w", bi.ciw304w.getText().toString());
+        sB2.put("ciw304m", bi.ciw304m.getText().toString());
 
-//        nw204
-        sB2.put("nw305", bi.nw305.getText().toString());
-        sB2.put("nw30598", bi.nw30598.isChecked() ? "98" : "0");
+//        ciw204
+        sB2.put("ciw305", bi.ciw305.getText().toString());
+        sB2.put("ciw30598", bi.ciw30598.isChecked() ? "98" : "0");
 
-//      nw306
-        sB2.put("nw306a", bi.nw306a.isChecked() ? "1" : "0");
-        sB2.put("nw306b", bi.nw306b.isChecked() ? "2" : "0");
-        sB2.put("nw306c", bi.nw306c.isChecked() ? "3" : "0");
-        sB2.put("nw306d", bi.nw306d.isChecked() ? "4" : "0");
-        sB2.put("nw306e", bi.nw306e.isChecked() ? "5" : "0");
-        sB2.put("nw306f", bi.nw306f.isChecked() ? "6" : "0");
-        sB2.put("nw306g", bi.nw306g.isChecked() ? "7" : "0");
-        sB2.put("nw306h", bi.nw306h.isChecked() ? "8" : "0");
-        sB2.put("nw306i", bi.nw306i.isChecked() ? "9" : "0");
-        sB2.put("nw30696", bi.nw30696.isChecked() ? "96" : "0");
-        sB2.put("nw30696x", bi.nw30696x.getText().toString());
+//      ciw306
+        sB2.put("ciw306a", bi.ciw306a.isChecked() ? "1" : "0");
+        sB2.put("ciw306b", bi.ciw306b.isChecked() ? "2" : "0");
+        sB2.put("ciw306c", bi.ciw306c.isChecked() ? "3" : "0");
+        sB2.put("ciw306d", bi.ciw306d.isChecked() ? "4" : "0");
+        sB2.put("ciw306e", bi.ciw306e.isChecked() ? "5" : "0");
+        sB2.put("ciw306f", bi.ciw306f.isChecked() ? "6" : "0");
+        sB2.put("ciw306g", bi.ciw306g.isChecked() ? "7" : "0");
+        sB2.put("ciw306h", bi.ciw306h.isChecked() ? "8" : "0");
+        sB2.put("ciw306i", bi.ciw306i.isChecked() ? "9" : "0");
+        sB2.put("ciw30696", bi.ciw30696.isChecked() ? "96" : "0");
+        sB2.put("ciw30696x", bi.ciw30696x.getText().toString());
 
-//        nw307
-        sB2.put("nw307", bi.nw307a.isChecked() ? "1"
-                : bi.nw307b.isChecked() ? "2"
-                : bi.nw307c.isChecked() ? "3"
-                : bi.nw30798.isChecked() ? "98"
+//        ciw307
+        sB2.put("ciw307", bi.ciw307a.isChecked() ? "1"
+                : bi.ciw307b.isChecked() ? "2"
+                : bi.ciw307c.isChecked() ? "3"
+                : bi.ciw30798.isChecked() ? "98"
                 : "0");
-//        nw308
-        sB2.put("nw308", bi.nw308a.isChecked() ? "1"
-                : bi.nw308b.isChecked() ? "2"
-                : bi.nw30898.isChecked() ? "98"
+//        ciw308
+        sB2.put("ciw308", bi.ciw308a.isChecked() ? "1"
+                : bi.ciw308b.isChecked() ? "2"
+                : bi.ciw30898.isChecked() ? "98"
                 : "0");
-//        nw309
+//        ciw309
 
-        sB2.put("nw309", bi.nw30998.isChecked() ? "98" : bi.nw309.getText().toString());
-//        sB2.put("nw30998", bi.nw30998.isChecked() ? "98" : "0");
+        sB2.put("ciw309", bi.ciw30998.isChecked() ? "98" : bi.ciw309.getText().toString());
+//        sB2.put("ciw30998", bi.ciw30998.isChecked() ? "98" : "0");
 
-//        nw310
-        sB2.put("nw310", bi.nw310a.isChecked() ? "1"
-                : bi.nw310b.isChecked() ? "2"
-                : "0");
-
-//          nw311
-        sB2.put("nw311", bi.nw311a.isChecked() ? "1"
-                : bi.nw311b.isChecked() ? "2"
-                : bi.nw311c.isChecked() ? "3"
-                : bi.nw311d.isChecked() ? "4"
-                : bi.nw311e.isChecked() ? "5"
-                : bi.nw311f.isChecked() ? "6"
-                : bi.nw311g.isChecked() ? "7"
-                : bi.nw311h.isChecked() ? "8"
-                : bi.nw31196.isChecked() ? "96"
-                : "0");
-        sB2.put("nw31196x", bi.nw31196x.getText().toString());
-//        nw312
-        sB2.put("nw312a", bi.nw312a.isChecked() ? "1" : "0");
-        sB2.put("nw312b", bi.nw312b.isChecked() ? "2" : "0");
-        sB2.put("nw312c", bi.nw312c.isChecked() ? "3" : "0");
-        sB2.put("nw312d", bi.nw312d.isChecked() ? "4" : "0");
-        sB2.put("nw312e", bi.nw312e.isChecked() ? "5" : "0");
-        sB2.put("nw312f", bi.nw312f.isChecked() ? "6" : "0");
-        sB2.put("nw312g", bi.nw312g.isChecked() ? "7" : "0");
-        sB2.put("nw312h", bi.nw312h.isChecked() ? "8" : "0");
-        sB2.put("nw312i", bi.nw312i.isChecked() ? "9" : "0");
-        sB2.put("nw312j", bi.nw312j.isChecked() ? "10" : "0");
-        sB2.put("nw312k", bi.nw312k.isChecked() ? "11" : "0");
-        sB2.put("nw312l", bi.nw312l.isChecked() ? "12" : "0");
-        sB2.put("nw312m", bi.nw312m.isChecked() ? "13" : "0");
-        sB2.put("nw312961", bi.nw312961.isChecked() ? "961" : "0");
-        sB2.put("nw312962", bi.nw312962.isChecked() ? "962" : "0");
-        sB2.put("nw312963", bi.nw312963.isChecked() ? "963" : "0");
-
-        sB2.put("nw312961x", bi.nw312961x.getText().toString());
-        sB2.put("nw312962x", bi.nw312962x.getText().toString());
-        sB2.put("nw312963x", bi.nw312963x.getText().toString());
-
-//         nw313
-        sB2.put("nw313", bi.nw313a.isChecked() ? "1"
-                : bi.nw313b.isChecked() ? "2"
-                : bi.nw313c.isChecked() ? "3"
-                : bi.nw313d.isChecked() ? "4"
-                : bi.nw313e.isChecked() ? "5"
+//        ciw310
+        sB2.put("ciw310", bi.ciw310a.isChecked() ? "1"
+                : bi.ciw310b.isChecked() ? "2"
                 : "0");
 
-//        nw314
-        sB2.put("nw314m", bi.nw314m.getText().toString());
-        sB2.put("nw314d", bi.nw314d.getText().toString());
+//          ciw311
+        sB2.put("ciw311", bi.ciw311a.isChecked() ? "1"
+                : bi.ciw311b.isChecked() ? "2"
+                : bi.ciw311c.isChecked() ? "3"
+                : bi.ciw311d.isChecked() ? "4"
+                : bi.ciw311e.isChecked() ? "5"
+                : bi.ciw311f.isChecked() ? "6"
+                : bi.ciw311g.isChecked() ? "7"
+                : bi.ciw311h.isChecked() ? "8"
+                : bi.ciw31196.isChecked() ? "96"
+                : "0");
+        sB2.put("ciw31196x", bi.ciw31196x.getText().toString());
+//        ciw312
+        sB2.put("ciw312a", bi.ciw312a.isChecked() ? "1" : "0");
+        sB2.put("ciw312b", bi.ciw312b.isChecked() ? "2" : "0");
+        sB2.put("ciw312c", bi.ciw312c.isChecked() ? "3" : "0");
+        sB2.put("ciw312d", bi.ciw312d.isChecked() ? "4" : "0");
+        sB2.put("ciw312e", bi.ciw312e.isChecked() ? "5" : "0");
+        sB2.put("ciw312f", bi.ciw312f.isChecked() ? "6" : "0");
+        sB2.put("ciw312g", bi.ciw312g.isChecked() ? "7" : "0");
+        sB2.put("ciw312h", bi.ciw312h.isChecked() ? "8" : "0");
+        sB2.put("ciw312i", bi.ciw312i.isChecked() ? "9" : "0");
+        sB2.put("ciw312j", bi.ciw312j.isChecked() ? "10" : "0");
+        sB2.put("ciw312k", bi.ciw312k.isChecked() ? "11" : "0");
+        sB2.put("ciw312l", bi.ciw312l.isChecked() ? "12" : "0");
+        sB2.put("ciw312m", bi.ciw312m.isChecked() ? "13" : "0");
+        sB2.put("ciw312961", bi.ciw312961.isChecked() ? "961" : "0");
+        sB2.put("ciw312962", bi.ciw312962.isChecked() ? "962" : "0");
+        sB2.put("ciw312963", bi.ciw312963.isChecked() ? "963" : "0");
 
-        //        nw315
-        sB2.put("nw315", bi.nw315a.isChecked() ? "1"
-                : bi.nw315b.isChecked() ? "2"
+        sB2.put("ciw312961x", bi.ciw312961x.getText().toString());
+        sB2.put("ciw312962x", bi.ciw312962x.getText().toString());
+        sB2.put("ciw312963x", bi.ciw312963x.getText().toString());
+
+//         ciw313
+        sB2.put("ciw313", bi.ciw313a.isChecked() ? "1"
+                : bi.ciw313b.isChecked() ? "2"
+                : bi.ciw313c.isChecked() ? "3"
+                : bi.ciw313d.isChecked() ? "4"
+                : bi.ciw313e.isChecked() ? "5"
                 : "0");
 
-//        nw316
+//        ciw314
+        sB2.put("ciw314m", bi.ciw314m.getText().toString());
+        sB2.put("ciw314d", bi.ciw314d.getText().toString());
 
-        sB2.put("nw316", bi.nw316a.isChecked() ? "1"
-                : bi.nw316b.isChecked() ? "2"
-                : bi.nw316c.isChecked() ? "3"
-                : bi.nw316d.isChecked() ? "4"
-                : bi.nw316e.isChecked() ? "5"
-                : bi.nw316f.isChecked() ? "6"
-                : bi.nw316g.isChecked() ? "7"
-                : bi.nw316h.isChecked() ? "8"
-                : bi.nw31696.isChecked() ? "96"
-                : "0");
-        sB2.put("nw31696x", bi.nw31696x.getText().toString());
-
-//        nw317
-        sB2.put("nw317a", bi.nw317a.isChecked() ? "1" : "0");
-        sB2.put("nw317b", bi.nw317b.isChecked() ? "2" : "0");
-        sB2.put("nw317c", bi.nw317c.isChecked() ? "3" : "0");
-        sB2.put("nw317d", bi.nw317d.isChecked() ? "4" : "0");
-        sB2.put("nw317e", bi.nw317e.isChecked() ? "5" : "0");
-        sB2.put("nw317f", bi.nw317f.isChecked() ? "6" : "0");
-        sB2.put("nw317g", bi.nw317g.isChecked() ? "7" : "0");
-        sB2.put("nw317h", bi.nw317h.isChecked() ? "8" : "0");
-        sB2.put("nw317i", bi.nw317i.isChecked() ? "9" : "0");
-        sB2.put("nw317j", bi.nw317j.isChecked() ? "10" : "0");
-        sB2.put("nw317k", bi.nw317k.isChecked() ? "11" : "0");
-        sB2.put("nw317l", bi.nw317l.isChecked() ? "12" : "0");
-        sB2.put("nw317m", bi.nw317m.isChecked() ? "13" : "0");
-        sB2.put("nw317961", bi.nw317961.isChecked() ? "961" : "0");
-        sB2.put("nw317962", bi.nw317962.isChecked() ? "962" : "0");
-        sB2.put("nw317963", bi.nw317963.isChecked() ? "963" : "0");
-
-        sB2.put("nw317961x", bi.nw317961x.getText().toString());
-        sB2.put("nw317962x", bi.nw317962x.getText().toString());
-        sB2.put("nw317963x", bi.nw317963x.getText().toString());
-
-
-//        nw318
-        sB2.put("nw318", bi.nw318a.isChecked() ? "1"
-                : bi.nw318b.isChecked() ? "2"
-                : bi.nw318c.isChecked() ? "3"
-                : bi.nw318d.isChecked() ? "4"
-                : bi.nw318e.isChecked() ? "5"
+        //        ciw315
+        sB2.put("ciw315", bi.ciw315a.isChecked() ? "1"
+                : bi.ciw315b.isChecked() ? "2"
                 : "0");
 
-//        nw319
-        sB2.put("nw319m", bi.nw319m.getText().toString());
-        sB2.put("nw319d", bi.nw319d.getText().toString());
+//        ciw316
 
-//        nw320
-        sB2.put("nw320", bi.nw320a.isChecked() ? "1"
-                : bi.nw320b.isChecked() ? "2"
+        sB2.put("ciw316", bi.ciw316a.isChecked() ? "1"
+                : bi.ciw316b.isChecked() ? "2"
+                : bi.ciw316c.isChecked() ? "3"
+                : bi.ciw316d.isChecked() ? "4"
+                : bi.ciw316e.isChecked() ? "5"
+                : bi.ciw316f.isChecked() ? "6"
+                : bi.ciw316g.isChecked() ? "7"
+                : bi.ciw316h.isChecked() ? "8"
+                : bi.ciw31696.isChecked() ? "96"
+                : "0");
+        sB2.put("ciw31696x", bi.ciw31696x.getText().toString());
+
+//        ciw317
+        sB2.put("ciw317a", bi.ciw317a.isChecked() ? "1" : "0");
+        sB2.put("ciw317b", bi.ciw317b.isChecked() ? "2" : "0");
+        sB2.put("ciw317c", bi.ciw317c.isChecked() ? "3" : "0");
+        sB2.put("ciw317d", bi.ciw317d.isChecked() ? "4" : "0");
+        sB2.put("ciw317e", bi.ciw317e.isChecked() ? "5" : "0");
+        sB2.put("ciw317f", bi.ciw317f.isChecked() ? "6" : "0");
+        sB2.put("ciw317g", bi.ciw317g.isChecked() ? "7" : "0");
+        sB2.put("ciw317h", bi.ciw317h.isChecked() ? "8" : "0");
+        sB2.put("ciw317i", bi.ciw317i.isChecked() ? "9" : "0");
+        sB2.put("ciw317j", bi.ciw317j.isChecked() ? "10" : "0");
+        sB2.put("ciw317k", bi.ciw317k.isChecked() ? "11" : "0");
+        sB2.put("ciw317l", bi.ciw317l.isChecked() ? "12" : "0");
+        sB2.put("ciw317m", bi.ciw317m.isChecked() ? "13" : "0");
+        sB2.put("ciw317961", bi.ciw317961.isChecked() ? "961" : "0");
+        sB2.put("ciw317962", bi.ciw317962.isChecked() ? "962" : "0");
+        sB2.put("ciw317963", bi.ciw317963.isChecked() ? "963" : "0");
+
+        sB2.put("ciw317961x", bi.ciw317961x.getText().toString());
+        sB2.put("ciw317962x", bi.ciw317962x.getText().toString());
+        sB2.put("ciw317963x", bi.ciw317963x.getText().toString());
+
+
+//        ciw318
+        sB2.put("ciw318", bi.ciw318a.isChecked() ? "1"
+                : bi.ciw318b.isChecked() ? "2"
+                : bi.ciw318c.isChecked() ? "3"
+                : bi.ciw318d.isChecked() ? "4"
+                : bi.ciw318e.isChecked() ? "5"
+                : "0");
+
+//        ciw319
+        sB2.put("ciw319m", bi.ciw319m.getText().toString());
+        sB2.put("ciw319d", bi.ciw319d.getText().toString());
+
+//        ciw320
+        sB2.put("ciw320", bi.ciw320a.isChecked() ? "1"
+                : bi.ciw320b.isChecked() ? "2"
                 : "0");
 
 
-//        nw321
+//        ciw321
 
-        sB2.put("nw321", bi.nw321a.isChecked() ? "1"
-                : bi.nw321b.isChecked() ? "2"
-                : bi.nw321c.isChecked() ? "3"
-                : bi.nw321d.isChecked() ? "4"
-                : bi.nw321e.isChecked() ? "5"
-                : bi.nw321f.isChecked() ? "6"
-                : bi.nw321g.isChecked() ? "7"
-                : bi.nw321h.isChecked() ? "8"
-                : bi.nw32196.isChecked() ? "96"
+        sB2.put("ciw321", bi.ciw321a.isChecked() ? "1"
+                : bi.ciw321b.isChecked() ? "2"
+                : bi.ciw321c.isChecked() ? "3"
+                : bi.ciw321d.isChecked() ? "4"
+                : bi.ciw321e.isChecked() ? "5"
+                : bi.ciw321f.isChecked() ? "6"
+                : bi.ciw321g.isChecked() ? "7"
+                : bi.ciw321h.isChecked() ? "8"
+                : bi.ciw32196.isChecked() ? "96"
                 : "0");
-        sB2.put("nw32196x", bi.nw32196x.getText().toString());
+        sB2.put("ciw32196x", bi.ciw32196x.getText().toString());
 
-//        nw322
-        sB2.put("nw322a", bi.nw322a.isChecked() ? "1" : "0");
-        sB2.put("nw322b", bi.nw322b.isChecked() ? "2" : "0");
-        sB2.put("nw322c", bi.nw322c.isChecked() ? "3" : "0");
-        sB2.put("nw322d", bi.nw322d.isChecked() ? "4" : "0");
-        sB2.put("nw322e", bi.nw322e.isChecked() ? "5" : "0");
-        sB2.put("nw322f", bi.nw322f.isChecked() ? "6" : "0");
-        sB2.put("nw322g", bi.nw322g.isChecked() ? "7" : "0");
-        sB2.put("nw322h", bi.nw322h.isChecked() ? "8" : "0");
-        sB2.put("nw322i", bi.nw322i.isChecked() ? "9" : "0");
-        sB2.put("nw322j", bi.nw322j.isChecked() ? "10" : "0");
-        sB2.put("nw322k", bi.nw322k.isChecked() ? "11" : "0");
-        sB2.put("nw322l", bi.nw322l.isChecked() ? "12" : "0");
-        sB2.put("nw322m", bi.nw322m.isChecked() ? "13" : "0");
-        sB2.put("nw322961", bi.nw322961.isChecked() ? "961" : "0");
-        sB2.put("nw322962", bi.nw322962.isChecked() ? "962" : "0");
-        sB2.put("nw322963", bi.nw322963.isChecked() ? "963" : "0");
+//        ciw322
+        sB2.put("ciw322a", bi.ciw322a.isChecked() ? "1" : "0");
+        sB2.put("ciw322b", bi.ciw322b.isChecked() ? "2" : "0");
+        sB2.put("ciw322c", bi.ciw322c.isChecked() ? "3" : "0");
+        sB2.put("ciw322d", bi.ciw322d.isChecked() ? "4" : "0");
+        sB2.put("ciw322e", bi.ciw322e.isChecked() ? "5" : "0");
+        sB2.put("ciw322f", bi.ciw322f.isChecked() ? "6" : "0");
+        sB2.put("ciw322g", bi.ciw322g.isChecked() ? "7" : "0");
+        sB2.put("ciw322h", bi.ciw322h.isChecked() ? "8" : "0");
+        sB2.put("ciw322i", bi.ciw322i.isChecked() ? "9" : "0");
+        sB2.put("ciw322j", bi.ciw322j.isChecked() ? "10" : "0");
+        sB2.put("ciw322k", bi.ciw322k.isChecked() ? "11" : "0");
+        sB2.put("ciw322l", bi.ciw322l.isChecked() ? "12" : "0");
+        sB2.put("ciw322m", bi.ciw322m.isChecked() ? "13" : "0");
+        sB2.put("ciw322961", bi.ciw322961.isChecked() ? "961" : "0");
+        sB2.put("ciw322962", bi.ciw322962.isChecked() ? "962" : "0");
+        sB2.put("ciw322963", bi.ciw322963.isChecked() ? "963" : "0");
 
-        sB2.put("nw322961x", bi.nw322961x.getText().toString());
-        sB2.put("nw322962x", bi.nw322962x.getText().toString());
-        sB2.put("nw322963x", bi.nw322963x.getText().toString());
+        sB2.put("ciw322961x", bi.ciw322961x.getText().toString());
+        sB2.put("ciw322962x", bi.ciw322962x.getText().toString());
+        sB2.put("ciw322963x", bi.ciw322963x.getText().toString());
 
 
-//        nw323
-        sB2.put("nw323", bi.nw323a.isChecked() ? "1"
-                : bi.nw323b.isChecked() ? "2"
-                : bi.nw323c.isChecked() ? "3"
-                : bi.nw323d.isChecked() ? "4"
-                : bi.nw323e.isChecked() ? "5"
+//        ciw323
+        sB2.put("ciw323", bi.ciw323a.isChecked() ? "1"
+                : bi.ciw323b.isChecked() ? "2"
+                : bi.ciw323c.isChecked() ? "3"
+                : bi.ciw323d.isChecked() ? "4"
+                : bi.ciw323e.isChecked() ? "5"
                 : "0");
 
-//        nw324
-        sB2.put("nw324m", bi.nw324m.getText().toString());
-        sB2.put("nw324d", bi.nw324d.getText().toString());
+//        ciw324
+        sB2.put("ciw324m", bi.ciw324m.getText().toString());
+        sB2.put("ciw324d", bi.ciw324d.getText().toString());
 
-//        nw325
-        sB2.put("nw325", bi.nw325a.isChecked() ? "1"
-                : bi.nw325b.isChecked() ? "2"
+//        ciw325
+        sB2.put("ciw325", bi.ciw325a.isChecked() ? "1"
+                : bi.ciw325b.isChecked() ? "2"
                 : "0");
-//        nw326
-        sB2.put("nw326", bi.nw326a.isChecked() ? "1"
-                : bi.nw326b.isChecked() ? "2"
-                : bi.nw32698.isChecked() ? "98"
+//        ciw326
+        sB2.put("ciw326", bi.ciw326a.isChecked() ? "1"
+                : bi.ciw326b.isChecked() ? "2"
+                : bi.ciw32698.isChecked() ? "98"
                 : "0");
 
         MainApp.mc.setsB2(String.valueOf(sB2));
