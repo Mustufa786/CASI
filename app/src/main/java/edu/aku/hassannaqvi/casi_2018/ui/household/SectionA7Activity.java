@@ -1,5 +1,6 @@
 package edu.aku.hassannaqvi.casi_2018.ui.household;
 
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -12,6 +13,7 @@ import edu.aku.hassannaqvi.casi_2018.R;
 import edu.aku.hassannaqvi.casi_2018.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2018.core.MainApp;
 import edu.aku.hassannaqvi.casi_2018.databinding.ActivitySectionA7Binding;
+import edu.aku.hassannaqvi.casi_2018.ui.viewMem.ViewMemberActivity;
 import edu.aku.hassannaqvi.casi_2018.validation.ValidatorClass;
 
 public class SectionA7Activity extends AppCompatActivity {
@@ -19,12 +21,17 @@ public class SectionA7Activity extends AppCompatActivity {
 
     ActivitySectionA7Binding bi;
 
+    //Long rowId;
+    DatabaseHelper db;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_a7);
         bi.setCallback(this);
+
+        db = new DatabaseHelper(this);
     }
 
     public void BtnContinue() {
@@ -33,14 +40,29 @@ public class SectionA7Activity extends AppCompatActivity {
         MainApp.validateFlag = true;
 
         if (formValidation()) {
-//        if (true) {
+
             try {
                 SaveDraft();
             } catch (JSONException e) {
                 e.printStackTrace();
             }
             if (UpdateDB()) {
+                if (SectionA1Activity.editFormFlag) {
+                    startActivity(new Intent(this, ViewMemberActivity.class)
+                            .putExtra("flagEdit", false)
+                            .putExtra("comingBack", true)
+                            .putExtra("cluster", MainApp.fc.getClusterNo())
+                            .putExtra("hhno", MainApp.fc.getHhNo())
+                    );
 
+                } else {
+
+                    if (!MainApp.UpdateSummary(this, db, 1)) {
+                        Toast.makeText(this, "Summary Table not update!!", Toast.LENGTH_SHORT).show();
+                    }
+
+                    startActivity(new Intent(this, ViewMemberActivity.class).putExtra("activity", 3));
+                }
 
             }
         }
@@ -49,68 +71,23 @@ public class SectionA7Activity extends AppCompatActivity {
     }
 
     public void BtnEnd() {
-
-////        Validation Boolean
-//        MainApp.validateFlag = true;
-//
-//        flag = true;
-//        //Toast.makeText(this, "Processing End Section", Toast.LENGTH_SHORT).show();
-//        if (formValidation()) {
-//
-//            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
-//                    SectionA1Activity.this);
-//            alertDialogBuilder
-//                    .setMessage("Do you want to Exit??")
-//                    .setCancelable(false)
-//                    .setPositiveButton("Yes",
-//                            new DialogInterface.OnClickListener() {
-//                                public void onClick(DialogInterface dialog,
-//                                                    int id) {
-//                                    try {
-//                                        SaveDraft();
-//                                    } catch (JSONException e) {
-//                                        e.printStackTrace();
-//                                    }
-//                                    if (UpdateDB()) {
-//
-//                                        finish();
-//
-//                                        if (editFormFlag) {
-//                                            startActivity(new Intent(SectionA1Activity.this, ViewMemberActivity.class)
-//                                                    .putExtra("flagEdit", false)
-//                                                    .putExtra("comingBack", true)
-//                                                    .putExtra("cluster", MainApp.fc.getClusterNo())
-//                                                    .putExtra("hhno", MainApp.fc.getHhNo())
-//                                            );
-//                                        } else {
-//                                            startActivity(new Intent(SectionA1Activity.this, EndingActivity.class).putExtra("complete", false));
-//                                        }
-//
-//                                    } else {
-//                                        Toast.makeText(SectionA1Activity.this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
-//                                    }
-//                                }
-//                            });
-//            alertDialogBuilder.setNegativeButton("No",
-//                    new DialogInterface.OnClickListener() {
-//                        public void onClick(DialogInterface dialog, int id) {
-//                            dialog.cancel();
-//                        }
-//                    });
-//            AlertDialog alert = alertDialogBuilder.create();
-//            alert.show();
-//        }
+        if (SectionA1Activity.editFormFlag) {
+            startActivity(new Intent(this, ViewMemberActivity.class)
+                    .putExtra("flagEdit", false)
+                    .putExtra("comingBack", true)
+                    .putExtra("cluster", MainApp.fc.getClusterNo())
+                    .putExtra("hhno", MainApp.fc.getHhNo())
+            );
+        } else {
+            MainApp.endActivity(this, this);
+        }
     }
 
     private boolean UpdateDB() {
 
-        //Long rowId;
-        DatabaseHelper db = new DatabaseHelper(this);
-
         int updcount = db.updateSA7();
 
         if (updcount == 1) {
-
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
@@ -120,7 +97,6 @@ public class SectionA7Activity extends AppCompatActivity {
 
 
     private boolean formValidation() {
-
         return ValidatorClass.EmptyCheckingContainer(this, bi.fldGrpSectionH7);
     }
 
