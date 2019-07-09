@@ -253,7 +253,7 @@ public class SpecimenInfoActivity extends AppCompatActivity {
             }
 
             if (UpdateDB()) {
-                //Toast.makeText(this, "Starting Ending Section", Toast.LENGTH_SHORT).show();
+
                 finish();
 
                 if (MainActivity.ftype.equals("B")) {
@@ -456,7 +456,7 @@ public class SpecimenInfoActivity extends AppCompatActivity {
                 MainApp.smc.set_ID(String.valueOf(updcount));
 
                 if (updcount != 0) {
-                    //Toast.makeText(this, "Updating Database... Successful!", Toast.LENGTH_SHORT).show();
+
 
                     MainApp.smc.setUID(
                             (MainApp.smc.getDeviceID() + MainApp.smc.get_ID()));
@@ -479,7 +479,7 @@ public class SpecimenInfoActivity extends AppCompatActivity {
                 MainApp.wsc.set_ID(String.valueOf(updcount));
 
                 if (updcount != 0) {
-                    //Toast.makeText(this, "Updating Database... Successful!", Toast.LENGTH_SHORT).show();
+
 
                     MainApp.wsc.setUID(
                             (MainApp.wsc.getDeviceID() + MainApp.wsc.get_ID()));

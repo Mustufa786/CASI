@@ -465,7 +465,7 @@ public class SectionD1Activity extends Menu2Activity implements TextWatcher, Rad
 //        Validation Boolean
         MainApp.validateFlag = true;
 
-        //Toast.makeText(this, "Processing This Section", Toast.LENGTH_SHORT).show();
+
         if (formValidation()) {
             try {
                 SaveDraft();
@@ -473,7 +473,7 @@ public class SectionD1Activity extends Menu2Activity implements TextWatcher, Rad
                 e.printStackTrace();
             }
             if (UpdateDB()) {
-                //Toast.makeText(this, "Starting Ending Section", Toast.LENGTH_SHORT).show();
+
 /*
                 if (counter == MainApp.all_members.size()) {
 
@@ -531,7 +531,7 @@ public class SectionD1Activity extends Menu2Activity implements TextWatcher, Rad
                 e.printStackTrace();
             }
             if (UpdateDB()) {
-                //Toast.makeText(this, "Starting Ending Section", Toast.LENGTH_SHORT).show();
+
 
                 //finish();
 
@@ -545,7 +545,7 @@ public class SectionD1Activity extends Menu2Activity implements TextWatcher, Rad
 
     private boolean formValidation() {
 
-        //Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
+
 
         if (endflag) {
 
@@ -721,7 +721,7 @@ public class SectionD1Activity extends Menu2Activity implements TextWatcher, Rad
     }
 
     private void SaveDraft() throws JSONException {
-        //Toast.makeText(this, "Saving Draft for  This Section", Toast.LENGTH_SHORT).show();
+
 
         MainApp.emc = new EligibleMembersContract();
 
@@ -774,7 +774,7 @@ public class SectionD1Activity extends Menu2Activity implements TextWatcher, Rad
         MainApp.emc.setsA3(String.valueOf(sA3));
 
 
-        Toast.makeText(this, "Validation Successful! - Saving Draft...", Toast.LENGTH_SHORT).show();
+
 
     }
 
@@ -787,7 +787,7 @@ public class SectionD1Activity extends Menu2Activity implements TextWatcher, Rad
         MainApp.emc.set_ID(String.valueOf(updcount));
 
         if (updcount != 0) {
-            //Toast.makeText(this, "Updating Database... Successful!", Toast.LENGTH_SHORT).show();
+
 
             MainApp.emc.set_UID(
                     (MainApp.emc.getDeviceId() + MainApp.emc.get_ID()));

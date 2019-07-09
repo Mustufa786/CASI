@@ -1108,7 +1108,7 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
 //        Validation Boolean
         MainApp.validateFlag = true;
 
-        //Toast.makeText(this, "Processing This Section", Toast.LENGTH_SHORT).show();
+
         if (ValidateForm()) {
             try {
                 SaveDraft();
@@ -1116,7 +1116,7 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                 e.printStackTrace();
             }
             if (UpdateDB()) {
-                //Toast.makeText(this, "Starting Ending Section", Toast.LENGTH_SHORT).show();
+
 
                 MainApp.nuCount = 1;
                 MainApp.count = 1;
@@ -1307,7 +1307,7 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                 e.printStackTrace();
             }
             if (UpdateDB()) {
-                //Toast.makeText(this, "Starting Ending Section", Toast.LENGTH_SHORT).show();
+
 
                 //finish();
 

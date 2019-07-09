@@ -191,7 +191,7 @@ public class AntrhoInfoActivity extends Activity {
             SaveDraft();
 
             if (UpdateDB()) {
-                //Toast.makeText(this, "Starting Ending Section", Toast.LENGTH_SHORT).show();
+
                 finish();
 
                 startActivity(new Intent(this, SectionD1Activity.class));

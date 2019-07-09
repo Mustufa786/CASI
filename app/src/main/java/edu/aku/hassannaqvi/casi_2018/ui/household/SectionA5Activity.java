@@ -321,7 +321,7 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
 //        Validation Boolean
         MainApp.validateFlag = true;
 
-        //Toast.makeText(this, "Processing This Section", Toast.LENGTH_SHORT).show();
+
         if (formValidation()) {
             try {
                 SaveDraft();
@@ -329,8 +329,6 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
                 e.printStackTrace();
             }
             if (UpdateDB()) {
-                //Toast.makeText(this, "Starting Ending Section", Toast.LENGTH_SHORT).show();
-
                 if (recipientCounter > 0) {
 
                     if (recipientCounter < prevRecipientCounter) {
@@ -367,65 +365,11 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
                         startActivity(new Intent(this, SectionA7Activity.class).putExtra("recCounter", recipientCounter));
                     }
                 }
-                /*
-                else if (deceasedCounter > 0) {
-//                    startActivity(new Intent(this, SectionH8Activity.class));
-
-                    if (deceasedCounter < prevDeceasedCounter) {
-
-                        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
-                                SectionA5Activity.this);
-                        alertDialogBuilder
-                                .setMessage("In previous you saved " + prevDeceasedCounter + " Deceased.\n" +
-                                        "Do you want to continue it?")
-                                .setCancelable(false)
-                                .setPositiveButton("Yes",
-                                        new DialogInterface.OnClickListener() {
-                                            public void onClick(DialogInterface dialog,
-                                                                int id) {
-
-                                                deceasedCounter = prevDeceasedCounter;
-                                                finish();
-//                                                startActivity(new Intent(SectionA5Activity.this, SectionH8Activity.class));
-                                                startActivity(new Intent(SectionA5Activity.this, SectionH8infoActivity.class));
-                                            }
-                                        });
-                        alertDialogBuilder.setNegativeButton("Cancel",
-                                new DialogInterface.OnClickListener() {
-                                    public void onClick(DialogInterface dialog, int id) {
-                                        dialog.cancel();
-
-                                    }
-                                });
-                        AlertDialog alert = alertDialogBuilder.create();
-                        alert.show();
-
-                    } else {
-                        finish();
-//                        startActivity(new Intent(SectionA5Activity.this, SectionH8Activity.class));
-                        startActivity(new Intent(SectionA5Activity.this, SectionH8infoActivity.class));
-                    }
-
-                }
-                */
                 else {
                     finish();
                     if (SectionA1Activity.editFormFlag) {
                         startActivity(new Intent(this, SectionH8infoActivity.class));
-
-                       /* startActivity(new Intent(this, ViewMemberActivity.class)
-                                .putExtra("flagEdit", false)
-                                .putExtra("comingBack", true)
-                                .putExtra("cluster", MainApp.fc.getClusterNo())
-                                .putExtra("hhno", MainApp.fc.getHhNo())
-                        );*/
                     } else {
-/*
-                        if (!MainApp.UpdateSummary(this, db, 1)) {
-                            Toast.makeText(this, "Summary Table not update!!", Toast.LENGTH_SHORT).show();
-                        }*/
-
-//                        startActivity(new Intent(this, ViewMemberActivity.class).putExtra("activity", 1));
                         startActivity(new Intent(this, SectionH8infoActivity.class));
                     }
                 }
@@ -462,7 +406,6 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
 
 
     private void SaveDraft() throws JSONException {
-        //Toast.makeText(this, "Saving Draft for  This Section", Toast.LENGTH_SHORT).show();
 
         JSONObject sA5 = new JSONObject();
         if (SectionA1Activity.editFormFlag) {
@@ -627,8 +570,6 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
         // Set summary fields
         MainApp.sumc = MainApp.AddSummary(MainApp.fc, 1);
 
-        Toast.makeText(this, "Validation Successful! - Saving Draft...", Toast.LENGTH_SHORT).show();
-
     }
 
     private boolean UpdateDB() {
@@ -639,7 +580,6 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
         int updcount = db.updateSA5();
 
         if (updcount == 1) {
-            //Toast.makeText(this, "Updating Database... Successful!", Toast.LENGTH_SHORT).show();
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();

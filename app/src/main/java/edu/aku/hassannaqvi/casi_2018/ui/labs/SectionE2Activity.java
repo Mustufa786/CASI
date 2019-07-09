@@ -549,7 +549,7 @@ public class SectionE2Activity extends AppCompatActivity {
 //        Validation Boolean
         MainApp.validateFlag = true;
 
-        //Toast.makeText(this, "Processing This Section", Toast.LENGTH_SHORT).show();
+
         if (formValidation()) {
             try {
                 SaveDraft();
@@ -558,7 +558,7 @@ public class SectionE2Activity extends AppCompatActivity {
             }
 
             if (UpdateDB()) {
-                //Toast.makeText(this, "Starting Ending Section", Toast.LENGTH_SHORT).show();
+
 
                 finish();
 
@@ -578,7 +578,7 @@ public class SectionE2Activity extends AppCompatActivity {
         }
 
         if (UpdateDB()) {
-            //Toast.makeText(this, "Starting Ending Section", Toast.LENGTH_SHORT).show();
+
 
             //finish();
 
@@ -593,7 +593,7 @@ public class SectionE2Activity extends AppCompatActivity {
 
         int scanChar;
 
-        //Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
+
         if (!(bi.ne201a.isChecked() || bi.ne201b.isChecked() || bi.ne201c.isChecked() || bi.ne201d.isChecked()
                 || bi.ne201e.isChecked() || bi.ne201f.isChecked())) {
             Toast.makeText(this, "ERROR(empty): " + getString(R.string.ne201), Toast.LENGTH_SHORT).show();
@@ -947,7 +947,7 @@ public class SectionE2Activity extends AppCompatActivity {
     }
 
     private void SaveDraft() throws JSONException {
-        //Toast.makeText(this, "Saving Draft for  This Section", Toast.LENGTH_SHORT).show();
+
 
         MainApp.wsc = new WaterSpecimenContract();
         MainApp.wsc.setDevicetagID(MainApp.getTagName(this));
@@ -1015,7 +1015,7 @@ public class SectionE2Activity extends AppCompatActivity {
         fc.setAppversion(MainApp.wsc.getAppversion());
         MainApp.sumc = MainApp.AddSummary(fc, 6);
 
-        Toast.makeText(this, "Validation Successful! - Saving Draft...", Toast.LENGTH_SHORT).show();
+
 
 
     }
@@ -1028,7 +1028,7 @@ public class SectionE2Activity extends AppCompatActivity {
         MainApp.wsc.set_ID(String.valueOf(updcount));
 
         if (updcount != 0) {
-            //Toast.makeText(this, "Updating Database... Successful!", Toast.LENGTH_SHORT).show();
+
 
             MainApp.wsc.setUID(
                     (MainApp.wsc.getDeviceID() + MainApp.wsc.get_ID()));

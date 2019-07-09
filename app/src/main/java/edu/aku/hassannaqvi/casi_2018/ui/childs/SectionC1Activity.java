@@ -486,7 +486,7 @@ public class SectionC1Activity extends AddMember_MenuActivity implements TextWat
                 e.printStackTrace();
             }
             if (UpdateDB()) {
-                //Toast.makeText(this, "Starting Ending Section", Toast.LENGTH_SHORT).show();
+
 
                 //finish();
                 if (editChildFlag) {
@@ -508,7 +508,7 @@ public class SectionC1Activity extends AddMember_MenuActivity implements TextWat
     }
 
     private boolean formValidation() {
-        //Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
+
 
 //        cic101
 
@@ -701,7 +701,7 @@ public class SectionC1Activity extends AddMember_MenuActivity implements TextWat
     }
 
     private void SaveDraft() throws JSONException {
-        //Toast.makeText(this, "Saving Draft for  This Section", Toast.LENGTH_SHORT).show();
+
 
         JSONObject sC1 = new JSONObject();
 
@@ -827,7 +827,7 @@ public class SectionC1Activity extends AddMember_MenuActivity implements TextWat
             MainApp.cc.set_ID(String.valueOf(updcount));
 
             if (updcount != 0) {
-                //Toast.makeText(this, "Updating Database... Successful!", Toast.LENGTH_SHORT).show();
+
 
                 MainApp.cc.setUID(
                         (MainApp.cc.getDeviceID() + MainApp.cc.get_ID()));

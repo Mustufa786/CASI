@@ -397,7 +397,7 @@ public class SectionE1Activity extends AppCompatActivity {
 //        Validation Boolean
         MainApp.validateFlag = true;
 
-        //Toast.makeText(this, "Processing This Section", Toast.LENGTH_SHORT).show();
+
         if (formValidation()) {
             try {
                 SaveDraft();
@@ -492,7 +492,7 @@ public class SectionE1Activity extends AppCompatActivity {
             e.printStackTrace();
         }
         if (UpdateDB()) {
-            //Toast.makeText(this, "Starting Ending Section", Toast.LENGTH_SHORT).show();
+
 
             //finish();
 
@@ -505,7 +505,7 @@ public class SectionE1Activity extends AppCompatActivity {
 
     private boolean formValidation() {
 
-        //Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
+
         int scanChar;
 
         if (!ValidatorClass.EmptySpinner(this, bi.ne103, getString(R.string.neselected))) {
@@ -701,7 +701,7 @@ public class SectionE1Activity extends AppCompatActivity {
     }
 
     private void SaveDraft() throws JSONException {
-        //Toast.makeText(this, "Saving Draft for  This Section", Toast.LENGTH_SHORT).show();
+
 
         MainApp.smc = new SpecimenContract();
         MainApp.smc.setDevicetagID(MainApp.getTagName(this));
@@ -754,7 +754,7 @@ public class SectionE1Activity extends AppCompatActivity {
         fc.setAppversion(MainApp.smc.getAppversion());
         MainApp.sumc = MainApp.AddSummary(fc, 5);
 
-        Toast.makeText(this, "Validation Successful! - Saving Draft...", Toast.LENGTH_SHORT).show();
+
 
     }
 
@@ -767,7 +767,7 @@ public class SectionE1Activity extends AppCompatActivity {
         MainApp.smc.set_ID(String.valueOf(updcount));
 
         if (updcount != 0) {
-            //Toast.makeText(this, "Updating Database... Successful!", Toast.LENGTH_SHORT).show();
+
 
             MainApp.smc.setUID(
                     (MainApp.smc.getDeviceID() + MainApp.smc.get_ID()));

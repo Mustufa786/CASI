@@ -230,7 +230,7 @@ public class MicroResultsActivity extends AppCompatActivity {
 //        Validation Boolean
         MainApp.validateFlag = true;
 
-        //Toast.makeText(this, "Processing This Section", Toast.LENGTH_SHORT).show();
+
         if (formValidation()) {
             try {
                 SaveDraft();
@@ -239,7 +239,7 @@ public class MicroResultsActivity extends AppCompatActivity {
             }
 
             if (UpdateDB()) {
-                //Toast.makeText(this, "Starting Ending Section", Toast.LENGTH_SHORT).show();
+
 
                 finish();
 
@@ -259,7 +259,7 @@ public class MicroResultsActivity extends AppCompatActivity {
         }
 
         if (UpdateDB()) {
-            //Toast.makeText(this, "Starting Ending Section", Toast.LENGTH_SHORT).show();
+
 
             //finish();
 
@@ -274,7 +274,7 @@ public class MicroResultsActivity extends AppCompatActivity {
 
         int scanChar;
 
-        //Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
+
         if (!ValidatorClass.EmptyTextBox(this, binding.cih102, getString(R.string.cih102))) {
             return false;
         }
@@ -383,7 +383,7 @@ public class MicroResultsActivity extends AppCompatActivity {
     }
 
     private void SaveDraft() throws JSONException {
-        //Toast.makeText(this, "Saving Draft for  This Section", Toast.LENGTH_SHORT).show();
+
 
         MainApp.msc = new MicroContract();
         MainApp.msc.setDevicetagID(MainApp.getTagName(this));
@@ -414,7 +414,7 @@ public class MicroResultsActivity extends AppCompatActivity {
 
         MainApp.msc.setsM(String.valueOf(sE1));
 
-        Toast.makeText(this, "Validation Successful! - Saving Draft...", Toast.LENGTH_SHORT).show();
+
 
 
     }
@@ -428,7 +428,7 @@ public class MicroResultsActivity extends AppCompatActivity {
         MainApp.msc.set_ID(String.valueOf(updcount));
 
         if (updcount != 0) {
-            //Toast.makeText(this, "Updating Database... Successful!", Toast.LENGTH_SHORT).show();
+
 
             MainApp.msc.setUID(
                     (MainApp.msc.getDeviceID() + MainApp.msc.get_ID()));

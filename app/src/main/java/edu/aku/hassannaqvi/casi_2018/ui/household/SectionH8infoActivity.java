@@ -66,7 +66,7 @@ public class SectionH8infoActivity extends AppCompatActivity {
     }
 
     private void SaveDraft() throws JSONException {
-        //Toast.makeText(this, "Saving Draft for  This Section", Toast.LENGTH_SHORT).show();
+
 
 
         JSONA5ModelClass jsonA5 = JSONUtilClass.getModelFromJSON(MainApp.fc.getsA5(), JSONA5ModelClass.class);
@@ -87,7 +87,7 @@ public class SectionH8infoActivity extends AppCompatActivity {
         // Set summary fields
         MainApp.sumc = MainApp.AddSummary(MainApp.fc, 1);
 
-        Toast.makeText(this, "Validation Successful! - Saving Draft...", Toast.LENGTH_SHORT).show();
+
 
     }
 
@@ -99,7 +99,7 @@ public class SectionH8infoActivity extends AppCompatActivity {
         int updcount = db.updateSA5();
 
         if (updcount == 1) {
-            //Toast.makeText(this, "Updating Database... Successful!", Toast.LENGTH_SHORT).show();
+
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
@@ -137,7 +137,7 @@ public class SectionH8infoActivity extends AppCompatActivity {
 //        Validation Boolean
         MainApp.validateFlag = true;
 
-        //Toast.makeText(this, "Processing This Section", Toast.LENGTH_SHORT).show();
+
         if (formValidation()) {
             try {
                 SaveDraft();

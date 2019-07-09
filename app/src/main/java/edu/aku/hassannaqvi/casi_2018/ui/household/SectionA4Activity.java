@@ -578,7 +578,7 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
 //        Validation Boolean
         MainApp.validateFlag = true;
 
-        //Toast.makeText(this, "Processing This Section", Toast.LENGTH_SHORT).show();
+
         if (formValidation()) {
             try {
                 SaveDraft();
@@ -586,7 +586,7 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
                 e.printStackTrace();
             }
             if (UpdateDB()) {
-                //Toast.makeText(this, "Starting Ending Section", Toast.LENGTH_SHORT).show();
+
 
                 finish();
 
@@ -596,8 +596,6 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }
         }
-
-        //startActivity(new Intent(this, SectionA5Activity.class));
     }
 
     public void BtnEnd() {
@@ -621,7 +619,7 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
 
 
     private boolean formValidation() {
-        //Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
+
 
         if (!ValidatorClass.EmptyRadioButton(this, binding.cih301, binding.cih301a, getString(R.string.cih301))) {
             return false;
@@ -845,7 +843,6 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
     }
 
     private void SaveDraft() throws JSONException {
-        //Toast.makeText(this, "Saving Draft for  This Section", Toast.LENGTH_SHORT).show();
 
 
         JSONObject sA4 = new JSONObject();
@@ -1072,7 +1069,7 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
         MainApp.fc.setsA4(String.valueOf(sA4));
 
 
-        //Toast.makeText(this, "Validation Successful! - Saving Draft...", Toast.LENGTH_SHORT).show();
+        //
 
     }
 
@@ -1084,7 +1081,7 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
         int updcount = db.updateSA4();
 
         if (updcount == 1) {
-            //Toast.makeText(this, "Updating Database... Successful!", Toast.LENGTH_SHORT).show();
+
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
@@ -1132,9 +1129,4 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
 
 
     }
-
-   /* @Override
-    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-        formValidation();
-    }*/
 }

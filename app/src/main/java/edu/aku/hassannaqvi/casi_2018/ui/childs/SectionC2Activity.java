@@ -678,7 +678,7 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
 //        Validation Boolean
         MainApp.validateFlag = true;
 
-        //Toast.makeText(this, "Processing This Section", Toast.LENGTH_SHORT).show();
+
         if (ValidateForm()) {
             try {
                 SaveDraft();
@@ -986,7 +986,7 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
     }
 
     private void SaveDraft() throws JSONException {
-        //Toast.makeText(this, "Saving Draft for  This Section", Toast.LENGTH_SHORT).show();
+
 
         JSONObject sC2 = new JSONObject();
         if (backPressed) {
@@ -1242,7 +1242,7 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
         int updcount = db.updateSC2();
 
         if (updcount == 1) {
-            //Toast.makeText(this, "Updating Database... Successful!", Toast.LENGTH_SHORT).show();
+
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();

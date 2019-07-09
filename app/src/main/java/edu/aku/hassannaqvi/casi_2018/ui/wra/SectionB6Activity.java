@@ -175,7 +175,7 @@ public class SectionB6Activity extends Menu2Activity {
     }
 
     private void SaveDraft() throws JSONException {
-        //Toast.makeText(this, "Saving Draft for  This Section", Toast.LENGTH_SHORT).show();
+
 
 
         MainApp.nc = new NutritionContract();
@@ -267,7 +267,7 @@ public class SectionB6Activity extends Menu2Activity {
             MainApp.nc.set_ID(String.valueOf(updcount));
 
             if (updcount != 0) {
-                //Toast.makeText(this, "Updating Database... Successful!", Toast.LENGTH_SHORT).show();
+
 
                 MainApp.nc.set_UID(
                         (MainApp.nc.getDeviceId() + MainApp.nc.get_ID()));

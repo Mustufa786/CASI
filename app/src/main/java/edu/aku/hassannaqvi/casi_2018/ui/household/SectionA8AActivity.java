@@ -245,7 +245,7 @@ public class SectionA8AActivity extends AppCompatActivity {
 //        Validation Boolean
         MainApp.validateFlag = true;
 
-        //Toast.makeText(this, "Processing This Section", Toast.LENGTH_SHORT).show();
+
         if (ValidateForm()) {
             try {
                 SaveDraft();
@@ -253,7 +253,7 @@ public class SectionA8AActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
             if (UpdateDB()) {
-                //Toast.makeText(this, "Starting Ending Section", Toast.LENGTH_SHORT).show();
+
 
                 finish();
 
@@ -338,7 +338,7 @@ public class SectionA8AActivity extends AppCompatActivity {
 
     private boolean ValidateForm() {
 
-        //Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
+
 
         if (!SectionA1Activity.editFormFlag) {
             if (!ValidatorClass.EmptySpinner(this, bi.cih7a02, getString(R.string.cih7a02))) {
@@ -394,7 +394,7 @@ public class SectionA8AActivity extends AppCompatActivity {
     }
 
     private void SaveDraft() throws JSONException {
-        //Toast.makeText(this, "Saving Draft for  This Section", Toast.LENGTH_SHORT).show();
+
 
         JSONObject sA8a = new JSONObject();
 
@@ -457,7 +457,7 @@ public class SectionA8AActivity extends AppCompatActivity {
         // Set summary fields
         MainApp.sumc = MainApp.AddSummary(MainApp.fc, 1);
 
-        Toast.makeText(this, "Validation Successful! - Saving Draft...", Toast.LENGTH_SHORT).show();
+
 
     }
 
@@ -480,7 +480,7 @@ public class SectionA8AActivity extends AppCompatActivity {
             MainApp.rc.set_ID(String.valueOf(updcount));
 
             if (updcount != 0) {
-                //Toast.makeText(this, "Updating Database... Successful!", Toast.LENGTH_SHORT).show();
+
 
                 MainApp.rc.set_UID(
                         (MainApp.rc.getDeviceId() + MainApp.rc.get_ID()));
