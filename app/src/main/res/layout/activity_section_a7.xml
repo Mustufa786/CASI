@@ -96,7 +96,8 @@
                     android:textColor="@android:color/white"
                     android:visibility='@{cih701a.checked? View.VISIBLE : View.GONE}' />
 
-                <Spinner
+                <EditText
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:id="@+id/cih70103"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -173,7 +174,8 @@
                     android:textColor="@android:color/white"
                     android:visibility='@{cih702a.checked? View.VISIBLE : View.GONE}' />
 
-                <Spinner
+                <EditText
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:id="@+id/cih70203"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -251,7 +253,8 @@
                     android:textColor="@android:color/white"
                     android:visibility='@{cih703a.checked? View.VISIBLE : View.GONE}' />
 
-                <Spinner
+                <EditText
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:id="@+id/cih70303"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -330,7 +333,8 @@
                     android:textColor="@android:color/white"
                     android:visibility='@{cih704a.checked? View.VISIBLE : View.GONE}' />
 
-                <Spinner
+                <EditText
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:id="@+id/cih70403"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -407,7 +411,8 @@
                     android:textColor="@android:color/white"
                     android:visibility='@{cih705a.checked? View.VISIBLE : View.GONE}' />
 
-                <Spinner
+                <EditText
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:id="@+id/cih70503"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -484,7 +489,8 @@
                     android:textColor="@android:color/white"
                     android:visibility='@{cih706a.checked? View.VISIBLE : View.GONE}' />
 
-                <Spinner
+                <EditText
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:id="@+id/cih70603"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -561,7 +567,8 @@
                     android:textColor="@android:color/white"
                     android:visibility='@{cih707a.checked? View.VISIBLE : View.GONE}' />
 
-                <Spinner
+                <EditText
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:id="@+id/cih70703"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -641,7 +648,8 @@
                     android:textColor="@android:color/white"
                     android:visibility='@{cih708a.checked? View.VISIBLE : View.GONE}' />
 
-                <Spinner
+                <EditText
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:id="@+id/cih70803"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -719,7 +727,8 @@
                     android:textColor="@android:color/white"
                     android:visibility='@{cih709a.checked? View.VISIBLE : View.GONE}' />
 
-                <Spinner
+                <EditText
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:id="@+id/cih70903"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -796,7 +805,8 @@
                     android:textColor="@android:color/white"
                     android:visibility='@{cih710a.checked? View.VISIBLE : View.GONE}' />
 
-                <Spinner
+                <EditText
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:id="@+id/cih71003"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -875,7 +885,8 @@
                     android:textColor="@android:color/white"
                     android:visibility='@{cih711a.checked? View.VISIBLE : View.GONE}' />
 
-                <Spinner
+                <EditText
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:id="@+id/cih71103"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -954,7 +965,8 @@
                     android:textColor="@android:color/white"
                     android:visibility='@{cih712a.checked? View.VISIBLE : View.GONE}' />
 
-                <Spinner
+                <EditText
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:id="@+id/cih71203"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -1032,7 +1044,8 @@
                     android:textColor="@android:color/white"
                     android:visibility='@{cih713a.checked? View.VISIBLE : View.GONE}' />
 
-                <Spinner
+                <EditText
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:id="@+id/cih71303"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
