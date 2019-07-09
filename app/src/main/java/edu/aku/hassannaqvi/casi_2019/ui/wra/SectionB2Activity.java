@@ -658,7 +658,6 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
     private boolean ValidateForm() {
 
 
-
         if (!ValidatorClass.EmptyRadioButton(this, bi.nw301, bi.nw301a, getString(R.string.nw301b) + " " + SectionB1Activity.wraName + " " + getString(R.string.nw301a))) {
             return false;
         }
@@ -683,8 +682,10 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
                 return false;
             }
 
-
-            if (!bi.nw30498.isChecked()) {
+            if (!ValidatorClass.EmptyRadioButton(this, bi.nw304, bi.nw304a, getString(R.string.nw304))) {
+                return false;
+            }
+            if (bi.nw304a.isChecked()) {
                 if (!ValidatorClass.EmptyTextBox(this, bi.nw304w, getString(R.string.nw304) + " - " + getString(R.string.week))) {
                     return false;
                 }
@@ -698,6 +699,9 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
                         return false;
                     }
                 }
+            }
+
+            if (bi.nw304b.isChecked()) {
 
                 if (!ValidatorClass.EmptyTextBox(this, bi.nw304m, getString(R.string.nw304) + " - " + getString(R.string.months))) {
                     return false;
@@ -724,7 +728,6 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
                     bi.nw304m.setError(null);
 
                 }
-
             }
 
             if (!bi.nw30598.isChecked()) {
@@ -734,9 +737,7 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
                 if (!ValidatorClass.RangeTextBox(this, bi.nw305, 1, 15, getString(R.string.nw305), " times")) {
                     return false;
                 }
-
             }
-
             if (!ValidatorClass.EmptyCheckBox(this, bi.fldGrpnw306check, bi.nw306a, getString(R.string.nw306))) {
                 return false;
             }
@@ -746,8 +747,6 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
             }
 
         }
-
-
         if (!ValidatorClass.EmptyRadioButton(this, bi.nw307, bi.nw307a, getString(R.string.nw307))) {
             return false;
         }
@@ -1006,12 +1005,10 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
         sB2.put("nw303962x", bi.nw303962x.getText().toString());
         sB2.put("nw303963x", bi.nw303963x.getText().toString());
 
-
 //        nw304
+        sB2.put("nw304", bi.nw304a.isChecked() ? "1" : bi.nw304b.isChecked() ? "2" : bi.nw30498.isChecked() ? "98" : "0");
         sB2.put("nw304w", bi.nw304w.getText().toString());
         sB2.put("nw304m", bi.nw304m.getText().toString());
-        sB2.put("nw30498", bi.nw30498.isChecked() ? "98" : "0");
-
 
 //        nw204
         sB2.put("nw305", bi.nw305.getText().toString());

@@ -376,10 +376,18 @@
                         android:layout_marginTop="5dp"
                         android:text="@string/nw304info" />
 
-                    <LinearLayout
+                    <RadioGroup
+                        android:id="@+id/nw304"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
+
+
+                        <RadioButton
+                            android:id="@+id/nw304a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/week" />
 
                         <EditText
                             android:id="@+id/nw304w"
@@ -387,17 +395,17 @@
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="1dp"
                             android:layout_weight="1"
-                            android:enabled='@{nw30498.checked ? false : true}'
                             android:hint="@string/week"
                             android:inputType="number"
                             android:maxLength="2"
-                            android:text='@{nw30498.checked ? "" : nw304w.getText.toString}' />
+                            android:text='@{!nw304a.checked ? "" : nw304w.getText.toString}'
+                            android:visibility='@{nw304a.checked? View.VISIBLE : View.GONE}' />
 
-                        <View
-                            android:layout_width="2dp"
+                        <RadioButton
+                            android:id="@+id/nw304b"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:background="@color/colorPrimaryDark" />
-
+                            android:text="@string/months" />
 
                         <EditText
                             android:id="@+id/nw304m"
@@ -405,19 +413,20 @@
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="1dp"
                             android:layout_weight="1"
-                            android:enabled='@{nw30498.checked ? false : true}'
                             android:hint="@string/months"
                             android:inputType="number"
                             android:maxLength="1"
-                            android:text='@{nw30498.checked ? "" : nw304m.getText.toString}' />
+                            android:text='@{!nw304b.checked ? "" : nw304m.getText.toString}'
+                            android:visibility='@{nw304b.checked? View.VISIBLE : View.GONE}' />
 
-                    </LinearLayout>
+                        <RadioButton
+                            android:id="@+id/nw30498"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dkn" />
 
-                    <CheckBox
-                        android:id="@+id/nw30498"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/dkn" />
+                    </RadioGroup>
+
 
                     <TextView
                         android:layout_width="match_parent"
