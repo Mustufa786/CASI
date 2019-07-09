@@ -319,6 +319,7 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
 //        Validation Boolean
         MainApp.validateFlag = true;
 
+
         if (formValidation()) {
             try {
                 SaveDraft();

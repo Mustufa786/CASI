@@ -6,10 +6,14 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
+import com.edittextpicker.aliazaz.EditTextPicker;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 import edu.aku.hassannaqvi.casi_2018.R;
 import edu.aku.hassannaqvi.casi_2018.core.DatabaseHelper;
@@ -33,7 +37,21 @@ public class SectionA7Activity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_a7);
         bi.setCallback(this);
 
-        db = new DatabaseHelper(this);
+        setUIContent();
+    }
+
+    private void setUIContent() {
+
+        ArrayList<EditTextPicker> pickers = new ArrayList<>(Arrays.asList(
+                bi.cih70102, bi.cih70202, bi.cih70302, bi.cih70402, bi.cih70502
+                , bi.cih70602, bi.cih70702, bi.cih70802, bi.cih70902, bi.cih71002
+                , bi.cih71102, bi.cih71202, bi.cih71302
+        ));
+        for (int i = 0; i < pickers.size(); i++) {
+            pickers.get(i).setMaxvalue(MainApp.all_members.size());
+        }
+
+
     }
 
     public void BtnContinue() {
