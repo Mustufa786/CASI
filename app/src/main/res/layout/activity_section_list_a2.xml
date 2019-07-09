@@ -140,14 +140,16 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="50"
                                     android:text="F"
-                                    android:textAlignment="center" />
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorAccent" />
 
                                 <TextView
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="50"
                                     android:text="M"
-                                    android:textAlignment="center" />
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorAccent" />
 
                             </LinearLayout>
 
@@ -200,14 +202,16 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="50"
                                     android:text="F"
-                                    android:textAlignment="center" />
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorAccent" />
 
                                 <TextView
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="50"
                                     android:text="M"
-                                    android:textAlignment="center" />
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorAccent" />
 
                             </LinearLayout>
 
@@ -261,14 +265,16 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="50"
                                     android:text="F"
-                                    android:textAlignment="center" />
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorAccent" />
 
                                 <TextView
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="50"
                                     android:text="M"
-                                    android:textAlignment="center" />
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorAccent" />
 
                             </LinearLayout>
 
