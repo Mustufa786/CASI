@@ -112,11 +112,6 @@
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name=".ui.household.SectionA8AActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme1"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
-        <activity
             android:name=".ui.wra.SectionB1AActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"
@@ -188,11 +183,6 @@
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name=".ui.household.SectionH8Activity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme1"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
-        <activity
             android:name=".ui.mainUI.MenuActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
@@ -238,11 +228,6 @@
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="stateVisible|adjustPan" />
         <activity android:name=".ui.household.DeceasedCountActivity" />
-        <activity
-            android:name=".ui.household.SectionH8infoActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme1"
-            android:windowSoftInputMode="stateVisible|adjustPan" />
         <activity
             android:name=".ui.syncUI.SyncActivity"
             android:screenOrientation="portrait" />

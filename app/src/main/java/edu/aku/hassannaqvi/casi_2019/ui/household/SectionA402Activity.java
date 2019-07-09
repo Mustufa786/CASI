@@ -1,6 +1,7 @@
 package edu.aku.hassannaqvi.casi_2019.ui.household;
 
 import android.content.Intent;
+import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
@@ -30,7 +31,9 @@ public class SectionA402Activity extends AppCompatActivity implements RadioGroup
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_section_a402);
+
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_section_a402);
+        binding.setCallback(this);
         db = new DatabaseHelper(this);
 
         setListeners();
