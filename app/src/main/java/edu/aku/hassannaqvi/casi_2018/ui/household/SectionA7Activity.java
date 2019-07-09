@@ -20,10 +20,8 @@ import edu.aku.hassannaqvi.casi_2018.validation.ValidatorClass;
 
 public class SectionA7Activity extends AppCompatActivity {
 
-
     ActivitySectionA7Binding bi;
 
-    //Long rowId;
     DatabaseHelper db;
 
     @Override

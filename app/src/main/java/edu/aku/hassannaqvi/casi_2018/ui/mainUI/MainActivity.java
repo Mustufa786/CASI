@@ -122,7 +122,7 @@ public class MainActivity extends MenuActivity {
                         editorDownload.commit();
 
                         Toast.makeText(context, "New App downloaded!!", Toast.LENGTH_SHORT).show();
-                        mainBinding.lblAppVersion.setText("NNS APP New Version " + newVer + "  Downloaded.");
+                        mainBinding.lblAppVersion.setText("CASI APP New Version " + newVer + "  Downloaded.");
 
                         ActivityManager am = (ActivityManager) getSystemService(ACTIVITY_SERVICE);
                         List<ActivityManager.RunningTaskInfo> taskInfo = am.getRunningTasks(1);
@@ -332,20 +332,20 @@ public class MainActivity extends MenuActivity {
                 file = new File(Environment.getExternalStorageDirectory() + File.separator + fileName, versionAppContract.getPathname());
 
                 if (file.exists()) {
-                    mainBinding.lblAppVersion.setText("NNS APP New Version " + newVer + "  Downloaded.");
+                    mainBinding.lblAppVersion.setText("CASI APP New Version " + newVer + "  Downloaded.");
 //                    InstallNewApp(newVer, preVer);
                     showDialog(newVer, preVer);
                 } else {
                     NetworkInfo networkInfo = ((ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE)).getActiveNetworkInfo();
                     if (networkInfo != null && networkInfo.isConnected()) {
 
-                        mainBinding.lblAppVersion.setText("NNS APP New Version " + newVer + " Downloading..");
+                        mainBinding.lblAppVersion.setText("CASI APP New Version " + newVer + " Downloading..");
                         downloadManager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);
                         Uri uri = Uri.parse(MainApp._UPDATE_URL + versionAppContract.getPathname());
                         DownloadManager.Request request = new DownloadManager.Request(uri);
                         request.setDestinationInExternalPublicDir(fileName, versionAppContract.getPathname())
                                 .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
-                                .setTitle("Downloading NNS new App ver." + newVer);
+                                .setTitle("Downloading CASI new App ver." + newVer);
                         refID = downloadManager.enqueue(request);
 
                         editorDownload.putLong("refID", refID);
@@ -353,7 +353,7 @@ public class MainActivity extends MenuActivity {
                         editorDownload.commit();
 
                     } else {
-                        mainBinding.lblAppVersion.setText("NNS APP New Version " + newVer + "  Available..\n(Can't download.. Internet connectivity issue!!)");
+                        mainBinding.lblAppVersion.setText("CASI APP New Version " + newVer + "  Available..\n(Can't download.. Internet connectivity issue!!)");
                     }
                 }
 
@@ -401,28 +401,6 @@ public class MainActivity extends MenuActivity {
         } else {
             Toast.makeText(this, "Sync data!!", Toast.LENGTH_SHORT).show();
         }
-    }
-
-    private void InstallNewApp(String newVer, String prvVer) {
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
-                MainActivity.this);
-        alertDialogBuilder
-                .setMessage("A new version of NNS-2018 App is available!\n" +
-                        "NNS App " + newVer + " is now available. Your are currently using older version " + prvVer + ".\nInstall new version to use this app.")
-                .setCancelable(true)
-                .setIcon(R.mipmap.ic_launcher)
-                .setPositiveButton("UPDATE!!",
-                        new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog,
-                                                int id) {
-                                Intent intent = new Intent(Intent.ACTION_VIEW);
-                                intent.setDataAndType(Uri.fromFile(file), "application/vnd.android.package-archive");
-                                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                                startActivity(intent);
-                            }
-                        });
-        AlertDialog alert = alertDialogBuilder.create();
-        alert.show();
     }
 
     private void OpenFormFun() {
@@ -831,8 +809,8 @@ public class MainActivity extends MenuActivity {
 
             return new AlertDialog.Builder(getActivity())
                     .setIcon(R.drawable.exclamation)
-                    .setTitle("NNS-2018 APP is available!")
-                    .setMessage("NNS App " + newVer + " is now available. Your are currently using older version " + preVer + ".\nInstall new version to use this app.")
+                    .setTitle("CASI-2019 APP is available!")
+                    .setMessage("CASI App " + newVer + " is now available. Your are currently using older version " + preVer + ".\nInstall new version to use this app.")
                     .setPositiveButton("INSTALL!!",
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int whichButton) {
