@@ -227,7 +227,6 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateVisible|adjustPan" />
-        <activity android:name=".ui.household.DeceasedCountActivity" />
         <activity
             android:name=".ui.syncUI.SyncActivity"
             android:screenOrientation="portrait" />
