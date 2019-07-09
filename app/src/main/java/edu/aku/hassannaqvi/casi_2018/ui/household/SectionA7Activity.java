@@ -213,6 +213,8 @@ public class SectionA7Activity extends AppCompatActivity {
         secH7.put("cih714", bi.cih714.getText().toString());
         secH7.put("cih715", bi.cih715.getText().toString());
 
+        MainApp.fc.setsA7(secH7.toString());
+
 
     }
 

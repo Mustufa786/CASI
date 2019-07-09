@@ -349,7 +349,7 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
                                                 finish();
 
                                                 startActivity(new Intent(SectionA5Activity.this,
-                                                        SectionA8AActivity.class).putExtra("recCounter", recipientCounter));
+                                                        SectionA7Activity.class).putExtra("recCounter", recipientCounter));
                                             }
                                         });
                         alertDialogBuilder.setNegativeButton("Cancel",
@@ -364,7 +364,7 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
 
                     } else {
                         finish();
-                        startActivity(new Intent(this, SectionA8AActivity.class).putExtra("recCounter", recipientCounter));
+                        startActivity(new Intent(this, SectionA7Activity.class).putExtra("recCounter", recipientCounter));
                     }
                 }
                 /*

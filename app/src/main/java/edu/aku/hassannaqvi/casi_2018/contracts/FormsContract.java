@@ -31,15 +31,7 @@ public class FormsContract {
 
     private String sA7 = ""; //
 
-    public String getsA7() {
-        return sA7;
-    }
 
-    private String sA5 = ""; //
-
-    public void setsA7(String sA7) {
-        this.sA7 = sA7;
-    }
     private String endtime = "";
     private String count = "";
     private String respLineNo = "";
@@ -128,6 +120,13 @@ public class FormsContract {
 
     }
 
+    private String sA5 = ""; //
+
+    /*public A1Model toA1Model(String jsonStr) {
+        Gson gson = new GsonBuilder().create();
+        return gson.fromJson(jsonStr, A1Model.class);
+    }*/
+
     public FormsContract Hydrate1(Cursor cursor, int type) {
         this._ID = cursor.getString(cursor.getColumnIndex(FormsTable._ID));
         this._UID = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_UID));
@@ -170,68 +169,6 @@ public class FormsContract {
 
         return this;
 
-    }
-
-    /*public A1Model toA1Model(String jsonStr) {
-        Gson gson = new GsonBuilder().create();
-        return gson.fromJson(jsonStr, A1Model.class);
-    }*/
-
-    public JSONObject toJSONObject() throws JSONException {
-
-        JSONObject json = new JSONObject();
-
-        json.put(FormsTable._ID, this._ID == null ? JSONObject.NULL : this._ID);
-        json.put(FormsTable.COLUMN_UID, this._UID == null ? JSONObject.NULL : this._UID);
-        json.put(FormsTable.COLUMN_FORMDATE, this.formDate == null ? JSONObject.NULL : this.formDate);
-        json.put(FormsTable.COLUMN_USER, this.user == null ? JSONObject.NULL : this.user);
-        json.put(FormsTable.COLUMN_RESP_LNO, this.respLineNo == null ? JSONObject.NULL : this.respLineNo);
-        json.put(FormsTable.COLUMN_CLUSTER_NO, this.clusterNo == null ? JSONObject.NULL : this.clusterNo);
-        json.put(FormsTable.COLUMN_HH_NO, this.hhNo == null ? JSONObject.NULL : this.hhNo);
-
-        json.put(FormsTable.COLUMN_ISTATUS, this.istatus == null ? JSONObject.NULL : this.istatus);
-        json.put(FormsTable.COLUMN_ISTATUS88x, this.istatus88x == null ? JSONObject.NULL : this.istatus88x);
-        json.put(FormsTable.COLUMN_ISTATUSHH, this.istatusHH == null ? JSONObject.NULL : this.istatusHH);
-        json.put(FormsTable.COLUMN_GPSELEV, this.gpsElev == null ? JSONObject.NULL : this.gpsElev);
-
-
-        if (!this.sA1.equals("")) {
-
-            json.put(FormsTable.COLUMN_SA1, this.sA1.equals("") ? JSONObject.NULL : new JSONObject(this.sA1));
-        }
-
-
-        if (!this.count.equals("")) {
-
-            json.put(FormsTable.COLUMN_COUNT, this.count.equals("") ? JSONObject.NULL : new JSONObject(this.count));
-        }
-
-
-        if (!this.sA4.equals("")) {
-
-            json.put(FormsTable.COLUMN_SA4, this.sA4.equals("") ? JSONObject.NULL : new JSONObject(this.sA4));
-        }
-        if (!this.sA5.equals("")) {
-
-            json.put(FormsTable.COLUMN_SA5, this.sA5.equals("") ? JSONObject.NULL : new JSONObject(this.sA5));
-        }
-        if (!this.sA7.equals("")) {
-
-            json.put(FormsTable.COLUMN_SA7, this.sA7.equals("") ? JSONObject.NULL : new JSONObject(this.sA7));
-        }
-        json.put(FormsTable.COLUMN_END_TIME, this.endtime == null ? JSONObject.NULL : this.endtime);
-        json.put(FormsTable.COLUMN_GPSLAT, this.gpsLat == null ? JSONObject.NULL : this.gpsLat);
-        json.put(FormsTable.COLUMN_GPSLNG, this.gpsLng == null ? JSONObject.NULL : this.gpsLng);
-        json.put(FormsTable.COLUMN_GPSDATE, this.gpsDT == null ? JSONObject.NULL : this.gpsDT);
-        json.put(FormsTable.COLUMN_GPSACC, this.gpsAcc == null ? JSONObject.NULL : this.gpsAcc);
-        json.put(FormsTable.COLUMN_DEVICEID, this.deviceID == null ? JSONObject.NULL : this.deviceID);
-        json.put(FormsTable.COLUMN_DEVICETAGID, this.devicetagID == null ? JSONObject.NULL : this.devicetagID);
-        /*json.put(FormsTable.COLUMN_SYNCED, this.synced == null ? JSONObject.NULL : this.synced);
-        json.put(FormsTable.COLUMN_SYNCED_DATE, this.synced_date == null ? JSONObject.NULL : this.synced_date);*/
-        json.put(FormsTable.COLUMN_APP_VERSION, this.appversion == null ? JSONObject.NULL : this.appversion);
-
-
-        return json;
     }
 
     public String getRespLineNo() {
@@ -440,6 +377,71 @@ public class FormsContract {
 
     public void setIstatusHH(String istatusHH) {
         this.istatusHH = istatusHH;
+    }
+
+    public JSONObject toJSONObject() throws JSONException {
+
+        JSONObject json = new JSONObject();
+
+        json.put(FormsTable._ID, this._ID == null ? JSONObject.NULL : this._ID);
+        json.put(FormsTable.COLUMN_UID, this._UID == null ? JSONObject.NULL : this._UID);
+        json.put(FormsTable.COLUMN_FORMDATE, this.formDate == null ? JSONObject.NULL : this.formDate);
+        json.put(FormsTable.COLUMN_USER, this.user == null ? JSONObject.NULL : this.user);
+        json.put(FormsTable.COLUMN_RESP_LNO, this.respLineNo == null ? JSONObject.NULL : this.respLineNo);
+        json.put(FormsTable.COLUMN_CLUSTER_NO, this.clusterNo == null ? JSONObject.NULL : this.clusterNo);
+        json.put(FormsTable.COLUMN_HH_NO, this.hhNo == null ? JSONObject.NULL : this.hhNo);
+
+        json.put(FormsTable.COLUMN_ISTATUS, this.istatus == null ? JSONObject.NULL : this.istatus);
+        json.put(FormsTable.COLUMN_ISTATUS88x, this.istatus88x == null ? JSONObject.NULL : this.istatus88x);
+        json.put(FormsTable.COLUMN_ISTATUSHH, this.istatusHH == null ? JSONObject.NULL : this.istatusHH);
+        json.put(FormsTable.COLUMN_GPSELEV, this.gpsElev == null ? JSONObject.NULL : this.gpsElev);
+
+
+        if (!this.sA1.equals("")) {
+
+            json.put(FormsTable.COLUMN_SA1, this.sA1.equals("") ? JSONObject.NULL : new JSONObject(this.sA1));
+        }
+
+
+        if (!this.count.equals("")) {
+
+            json.put(FormsTable.COLUMN_COUNT, this.count.equals("") ? JSONObject.NULL : new JSONObject(this.count));
+        }
+
+
+        if (!this.sA4.equals("")) {
+
+            json.put(FormsTable.COLUMN_SA4, this.sA4.equals("") ? JSONObject.NULL : new JSONObject(this.sA4));
+        }
+        if (!this.sA5.equals("")) {
+
+            json.put(FormsTable.COLUMN_SA5, this.sA5.equals("") ? JSONObject.NULL : new JSONObject(this.sA5));
+        }
+        if (!this.sA7.equals("")) {
+
+            json.put(FormsTable.COLUMN_SA7, this.sA7.equals("") ? JSONObject.NULL : new JSONObject(this.sA7));
+        }
+        json.put(FormsTable.COLUMN_END_TIME, this.endtime == null ? JSONObject.NULL : this.endtime);
+        json.put(FormsTable.COLUMN_GPSLAT, this.gpsLat == null ? JSONObject.NULL : this.gpsLat);
+        json.put(FormsTable.COLUMN_GPSLNG, this.gpsLng == null ? JSONObject.NULL : this.gpsLng);
+        json.put(FormsTable.COLUMN_GPSDATE, this.gpsDT == null ? JSONObject.NULL : this.gpsDT);
+        json.put(FormsTable.COLUMN_GPSACC, this.gpsAcc == null ? JSONObject.NULL : this.gpsAcc);
+        json.put(FormsTable.COLUMN_DEVICEID, this.deviceID == null ? JSONObject.NULL : this.deviceID);
+        json.put(FormsTable.COLUMN_DEVICETAGID, this.devicetagID == null ? JSONObject.NULL : this.devicetagID);
+        /*json.put(FormsTable.COLUMN_SYNCED, this.synced == null ? JSONObject.NULL : this.synced);
+        json.put(FormsTable.COLUMN_SYNCED_DATE, this.synced_date == null ? JSONObject.NULL : this.synced_date);*/
+        json.put(FormsTable.COLUMN_APP_VERSION, this.appversion == null ? JSONObject.NULL : this.appversion);
+
+
+        return json;
+    }
+
+    public String getsA7() {
+        return sA7;
+    }
+
+    public void setsA7(String sA7) {
+        this.sA7 = sA7;
     }
 
     public static abstract class FormsTable implements BaseColumns {
