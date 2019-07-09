@@ -416,7 +416,7 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
 
     public boolean formValidation() {
 
-        //Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
+
 
 //        cih101
         if (!ValidatorClass.EmptyTextBox(this, binding.cih101, getString(R.string.cih101))) {
@@ -493,7 +493,7 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
     }
 
     private void SaveDraft() throws JSONException {
-        //Toast.makeText(this, "Saving Draft for  This Section", Toast.LENGTH_SHORT).show();
+
 
         JSONObject sA1 = new JSONObject();
 
@@ -608,7 +608,7 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
             MainApp.fc.set_ID(String.valueOf(updcount));
 
             if (updcount != 0) {
-                //Toast.makeText(this, "Updating Database... Successful!", Toast.LENGTH_SHORT).show();
+
 
                 MainApp.fc.setUID(
                         (MainApp.fc.getDeviceID() + MainApp.fc.get_ID()));

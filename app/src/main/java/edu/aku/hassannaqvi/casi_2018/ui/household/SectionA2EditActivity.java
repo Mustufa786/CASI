@@ -907,7 +907,7 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
 //        Validation Boolean
         MainApp.validateFlag = true;
 
-        //Toast.makeText(this, "Processing This Section", Toast.LENGTH_SHORT).show();
+
         if (formValidation()) {
             try {
                 SaveDraft();

@@ -71,7 +71,7 @@ public class MotherEndingActivity extends AppCompatActivity {
 
     public void BtnEnd() {
 
-        //Toast.makeText(this, "Processing This Section", Toast.LENGTH_SHORT).show();
+
         if (formValidation()) {
             SaveDraft();
             if (UpdateDB()) {
@@ -105,7 +105,7 @@ public class MotherEndingActivity extends AppCompatActivity {
 
 
     private void SaveDraft() {
-        //Toast.makeText(this, "Saving Draft for  This Section", Toast.LENGTH_SHORT).show();
+
 
 
         MainApp.mc.setMstatus(binding.istatusa.isChecked() ? "1"
@@ -121,7 +121,7 @@ public class MotherEndingActivity extends AppCompatActivity {
         // Set summary fields
         MainApp.sumc = MainApp.AddSummary(MainApp.fc, 2);
 
-        //Toast.makeText(this, "Validation Successful! - Saving Draft...", Toast.LENGTH_SHORT).show();
+        //
     }
 
     private boolean UpdateDB() {
@@ -142,7 +142,7 @@ public class MotherEndingActivity extends AppCompatActivity {
     }
 
     private boolean formValidation() {
-        //Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
+
 
         if (!ValidatorClass.EmptyRadioButton(this, binding.istatus, binding.istatusa, getString(R.string.istatus))) {
             return false;

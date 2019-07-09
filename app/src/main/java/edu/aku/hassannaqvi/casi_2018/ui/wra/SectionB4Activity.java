@@ -432,7 +432,7 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
 //        Validation Boolean
         MainApp.validateFlag = true;
 
-        //Toast.makeText(this, "Processing This Section", Toast.LENGTH_SHORT).show();
+
         if (formValidation()) {
             try {
                 SaveDraft();
@@ -473,7 +473,7 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
 
     public boolean formValidation() {
 
-        //Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
+
 
         if (!ValidatorClass.EmptyRadioButton(this, binding.nw401, binding.nw401a, getString(R.string.nw401))) {
             return false;
@@ -614,7 +614,7 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
 
 
     private void SaveDraft() throws JSONException {
-        //Toast.makeText(this, "Saving Draft for  This Section", Toast.LENGTH_SHORT).show();
+
 
         JSONObject sB4 = new JSONObject();
 
@@ -766,7 +766,7 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
         MainApp.mc.setsB4(String.valueOf(sB4));
 
 
-        //Toast.makeText(this, "Validation Successful! - Saving Draft...", Toast.LENGTH_SHORT).show();
+        //
 
     }
 
@@ -778,7 +778,7 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
         int updcount = db.updateSB4();
 
         if (updcount == 1) {
-            //Toast.makeText(this, "Updating Database... Successful!", Toast.LENGTH_SHORT).show();
+
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();

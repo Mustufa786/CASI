@@ -113,7 +113,7 @@ public class AnthroEndingActivity extends AppCompatActivity {
         fc.setAppversion(MainApp.emc.getApp_ver());
         MainApp.sumc = MainApp.AddSummary(fc, 4);
 
-        Toast.makeText(this, "Validation Successful! - Saving Draft...", Toast.LENGTH_SHORT).show();
+
     }
 
     private boolean UpdateDB() {

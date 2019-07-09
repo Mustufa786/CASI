@@ -283,7 +283,7 @@ public class SectionB1AActivity extends AppCompatActivity implements TextWatcher
 
     public void BtnContinue() {
 
-        //Toast.makeText(this, "Processing This Section", Toast.LENGTH_SHORT).show();
+
         if (ValidateForm()) {
             try {
                 SaveDraft();
@@ -377,7 +377,7 @@ public class SectionB1AActivity extends AppCompatActivity implements TextWatcher
 
     private boolean ValidateForm() {
 
-        //Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
+
 
         if (!ValidatorClass.EmptyTextBox(this, bi.nw217d, getString(R.string.nw217))) {
             return false;
@@ -528,7 +528,7 @@ public class SectionB1AActivity extends AppCompatActivity implements TextWatcher
     }
 
     private void SaveDraft() throws JSONException {
-        //Toast.makeText(this, "Saving Draft for  This Section", Toast.LENGTH_SHORT).show();
+
       /*  if (!bi.nw217y.getText().toString().isEmpty() && !bi.nw217m.getText().toString().isEmpty() && !bi.nw217d.getText().toString().isEmpty()) {
             if (!bi.nw217d.getText().toString().equals("98") && !bi.nw217m.getText().toString().equals("98")) {
                 date = DateUtils.getCalendarDate(bi.nw217d.getText().toString(), bi.nw217m.getText().toString(), bi.nw217y.getText().toString());
@@ -665,7 +665,7 @@ public class SectionB1AActivity extends AppCompatActivity implements TextWatcher
         MainApp.oc.set_ID(String.valueOf(updcount));
 
         if (updcount != 0) {
-            //Toast.makeText(this, "Updating Database... Successful!", Toast.LENGTH_SHORT).show();
+
 
             MainApp.oc.set_UID(
                     (MainApp.oc.getDeviceId() + MainApp.oc.get_ID()));

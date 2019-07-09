@@ -82,7 +82,7 @@ public class EndingActivity extends AddMember_MenuActivity {
 
     public void BtnEnd() {
 
-        //Toast.makeText(this, "Processing This Section", Toast.LENGTH_SHORT).show();
+
         if (formValidation()) {
             SaveDraft();
             if (UpdateDB()) {
@@ -109,7 +109,7 @@ public class EndingActivity extends AddMember_MenuActivity {
     }
 
     private void SaveDraft() {
-        //Toast.makeText(this, "Saving Draft for  This Section", Toast.LENGTH_SHORT).show();
+
 
         MainApp.fc.setIstatus(
                 binding.istatusa.isChecked() ? "1"
@@ -126,7 +126,7 @@ public class EndingActivity extends AddMember_MenuActivity {
         MainApp.fc.setEndtime(new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()));
 
 
-        //Toast.makeText(this, "Validation Successful! - Saving Draft...", Toast.LENGTH_SHORT).show();
+        //
     }
 
     private boolean UpdateDB() {
@@ -135,7 +135,7 @@ public class EndingActivity extends AddMember_MenuActivity {
         int updcount = db.updateEnding();
 
         if (updcount == 1) {
-            //Toast.makeText(this, "Updating Database... Successful!", Toast.LENGTH_SHORT).show();
+
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();

@@ -379,7 +379,7 @@ public class SectionA2ListActivity extends AppCompatActivity {
 
     public void BtnContinue() {
 
-        //Toast.makeText(this, "Processing This Section", Toast.LENGTH_SHORT).show();
+
         if (formValidation()) {
             try {
                 SaveDraft();
@@ -387,7 +387,7 @@ public class SectionA2ListActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
             if (UpdateDB()) {
-                //Toast.makeText(this, "Starting Ending Section", Toast.LENGTH_SHORT).show();
+
 
 
                 AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
@@ -435,7 +435,7 @@ public class SectionA2ListActivity extends AppCompatActivity {
     public void BtnAddMore() {
 
         MainApp.flag_head = true;
-        //Toast.makeText(this, "Processing This Section", Toast.LENGTH_SHORT).show();
+
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
                 SectionA2ListActivity.this);
         alertDialogBuilder
@@ -479,7 +479,7 @@ public class SectionA2ListActivity extends AppCompatActivity {
     }
 
     private void SaveDraft() throws JSONException {
-        //Toast.makeText(this, "Saving Draft for  This Section", Toast.LENGTH_SHORT).show();
+
 
         JSONObject count = new JSONObject();
 
@@ -495,7 +495,7 @@ public class SectionA2ListActivity extends AppCompatActivity {
 
         MainApp.fc.setCount(String.valueOf(count));
 
-        Toast.makeText(this, "Validation Successful! - Saving Draft...", Toast.LENGTH_SHORT).show();
+
     }
 
     private boolean UpdateDB() {

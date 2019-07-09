@@ -225,7 +225,7 @@ public class SectionB3Activity extends Menu2Activity implements TextWatcher, Rad
 
     public boolean formValidation() {
 
-        //Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
+
 
 //        nw327
         if (!ValidatorClass.EmptyRadioButton(this, binding.nw327, binding.nw327a, getString(R.string.nw327))) {
@@ -281,7 +281,7 @@ public class SectionB3Activity extends Menu2Activity implements TextWatcher, Rad
 
 
     private void SaveDraft() throws JSONException {
-        //Toast.makeText(this, "Saving Draft for  This Section", Toast.LENGTH_SHORT).show();
+
 
         JSONObject sB3 = new JSONObject();
 

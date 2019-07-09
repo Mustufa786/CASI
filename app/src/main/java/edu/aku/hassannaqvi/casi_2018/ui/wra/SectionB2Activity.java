@@ -612,7 +612,7 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
 //        Validation Boolean
         MainApp.validateFlag = true;
 
-        //Toast.makeText(this, "Processing This Section", Toast.LENGTH_SHORT).show();
+
         if (ValidateForm()) {
             try {
                 SaveDraft();
@@ -620,7 +620,7 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
                 e.printStackTrace();
             }
             if (UpdateDB()) {
-                //Toast.makeText(this, "Starting Ending Section", Toast.LENGTH_SHORT).show();
+
 
                 backPressed = true;
 
@@ -657,7 +657,7 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
 
     private boolean ValidateForm() {
 
-        //Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
+
 
         if (!ValidatorClass.EmptyRadioButton(this, bi.nw301, bi.nw301a, getString(R.string.nw301b) + " " + SectionB1Activity.wraName + " " + getString(R.string.nw301a))) {
             return false;
@@ -964,7 +964,7 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
     }
 
     private void SaveDraft() throws JSONException {
-        //Toast.makeText(this, "Saving Draft for  This Section", Toast.LENGTH_SHORT).show();
+
 //       nw301
         JSONObject sB2 = new JSONObject();
 
@@ -1219,7 +1219,7 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
         MainApp.mc.setsB2(String.valueOf(sB2));
 
 
-        //Toast.makeText(this, "Validation Successful! - Saving Draft...", Toast.LENGTH_SHORT).show();
+        //
 
     }
 
@@ -1233,7 +1233,7 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
         int updcount = db.updateSB2();
 
         if (updcount == 1) {
-            //Toast.makeText(this, "Updating Database... Successful!", Toast.LENGTH_SHORT).show();
+
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();

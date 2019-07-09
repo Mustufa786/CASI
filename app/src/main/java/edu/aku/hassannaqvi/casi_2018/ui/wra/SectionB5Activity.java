@@ -315,7 +315,7 @@ public class SectionB5Activity extends Menu2Activity implements TextWatcher, Rad
 
     private boolean ValidateForm() {
 
-        //Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
+
 
         if (!ValidatorClass.EmptyRadioButton(this, binding.nw414, binding.nw414a, getString(R.string.nw414))) {
             return false;
@@ -469,7 +469,7 @@ public class SectionB5Activity extends Menu2Activity implements TextWatcher, Rad
     }
 
     private void SaveDraft() throws JSONException {
-        //Toast.makeText(this, "Saving Draft for  This Section", Toast.LENGTH_SHORT).show();
+
 
         JSONObject sB5 = new JSONObject();
 
@@ -567,7 +567,7 @@ public class SectionB5Activity extends Menu2Activity implements TextWatcher, Rad
         int updcount = db.updateSB5();
 
         if (updcount == 1) {
-            //Toast.makeText(this, "Updating Database... Successful!", Toast.LENGTH_SHORT).show();
+
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
