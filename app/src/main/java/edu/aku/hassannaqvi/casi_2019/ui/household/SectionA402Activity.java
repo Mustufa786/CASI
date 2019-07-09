@@ -276,7 +276,6 @@ public class SectionA402Activity extends AppCompatActivity implements RadioGroup
 //        Validation Boolean
         MainApp.validateFlag = true;
 
-
         if (formValidation()) {
             try {
                 SaveDraft();
@@ -414,6 +413,9 @@ public class SectionA402Activity extends AppCompatActivity implements RadioGroup
         sA4.put("cih324e", binding.cih324e.getText().toString());
         sA4.put("cih324f", binding.cih324f.getText().toString());
         sA4.put("cih324g", binding.cih324g.getText().toString());
+
+
+        MainApp.fc.setsA402(sA4.toString());
 
 
     }
