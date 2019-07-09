@@ -10,7 +10,7 @@
 
         <variable
             name="callback"
-            type="edu.aku.hassannaqvi.casi_2018.ui.anthro.AntrhoInfoActivity" />
+            type="edu.aku.hassannaqvi.casi_2019.ui.anthro.AntrhoInfoActivity" />
     </data>
 
     <ScrollView

@@ -9,11 +9,11 @@
 
         <variable
             name="callback"
-            type="edu.aku.hassannaqvi.casi_2018.ui.household.SectionA2Activity" />
+            type="edu.aku.hassannaqvi.casi_2019.ui.household.SectionA2Activity" />
 
         <variable
             name="name"
-            type="edu.aku.hassannaqvi.casi_2018.core.MainApp.SetNameClass" />
+            type="edu.aku.hassannaqvi.casi_2019.core.MainApp.SetNameClass" />
     </data>
 
     <LinearLayout

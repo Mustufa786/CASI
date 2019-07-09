@@ -9,7 +9,7 @@
 
         <variable
             name="callback"
-            type="edu.aku.hassannaqvi.casi_2018.ui.childs.SectionC2Activity" />
+            type="edu.aku.hassannaqvi.casi_2019.ui.childs.SectionC2Activity" />
     </data>
 
     <LinearLayout
