@@ -112,11 +112,6 @@
             android:theme="@style/AppTheme1"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.casi_2019.ui.household.SectionA8AActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme1"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
-        <activity
             android:name="edu.aku.hassannaqvi.casi_2019.ui.wra.SectionB1AActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"

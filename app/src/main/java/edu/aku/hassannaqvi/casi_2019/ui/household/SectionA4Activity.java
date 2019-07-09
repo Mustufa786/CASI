@@ -590,7 +590,7 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
 
                 finish();
 
-                startActivity(new Intent(this, SectionA5Activity.class));
+                startActivity(new Intent(this, SectionA402Activity.class));
 
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();

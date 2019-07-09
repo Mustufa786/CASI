@@ -29,6 +29,9 @@ public class FormsContract {
     private String sA1 = "";     // Info Section
     private String sA4 = ""; // sA4
 
+
+    private String sA402 = ""; // sA4
+
     private String sA7 = ""; //
 
 
@@ -68,6 +71,7 @@ public class FormsContract {
         this.gpsElev = jsonObject.getString(FormsTable.COLUMN_GPSELEV);
         this.sA1 = jsonObject.getString(FormsTable.COLUMN_SA1);
         this.sA4 = jsonObject.getString(FormsTable.COLUMN_SA4);
+        this.sA402 = jsonObject.getString(FormsTable.COLUMN_SA402);
         this.sA5 = jsonObject.getString(FormsTable.COLUMN_SA5);
         this.sA7 = jsonObject.getString(FormsTable.COLUMN_SA7);
         this.endtime = jsonObject.getString(FormsTable.COLUMN_END_TIME);
@@ -100,6 +104,7 @@ public class FormsContract {
         this.gpsElev = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_GPSELEV));
         this.sA1 = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SA1));
         this.sA4 = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SA4));
+        this.sA402 = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SA402));
         this.sA5 = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SA5));
         this.sA7 = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SA7));
         this.endtime = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_END_TIME));
@@ -134,6 +139,9 @@ public class FormsContract {
         //this.gpsElev = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_GPSELEV));
         if (type == 1 || type == 4) {
             this.sA4 = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SA4));
+        }
+        if (type == 1 || type == 402) {
+            this.sA4 = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SA402));
         }
         if (type == 1 || type == 5) {
             this.sA5 = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SA5));
@@ -379,6 +387,14 @@ public class FormsContract {
         this.istatusHH = istatusHH;
     }
 
+    public String getsA402() {
+        return sA402;
+    }
+
+    public void setsA402(String sA402) {
+        this.sA402 = sA402;
+    }
+
     public JSONObject toJSONObject() throws JSONException {
 
         JSONObject json = new JSONObject();
@@ -412,6 +428,10 @@ public class FormsContract {
         if (!this.sA4.equals("")) {
 
             json.put(FormsTable.COLUMN_SA4, this.sA4.equals("") ? JSONObject.NULL : new JSONObject(this.sA4));
+        }
+        if (!this.sA402.equals("")) {
+
+            json.put(FormsTable.COLUMN_SA402, this.sA402.equals("") ? JSONObject.NULL : new JSONObject(this.sA402));
         }
         if (!this.sA5.equals("")) {
 
@@ -459,6 +479,7 @@ public class FormsContract {
 
         public static final String COLUMN_SA1 = "sa1";
         public static final String COLUMN_SA4 = "sa4";
+        public static final String COLUMN_SA402 = "sa402";
         public static final String COLUMN_SA5 = "sa5";
         public static final String COLUMN_SA7 = "sa7";
         public static final String COLUMN_END_TIME = "endtime";

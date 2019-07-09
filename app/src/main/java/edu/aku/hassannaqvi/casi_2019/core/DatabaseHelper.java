@@ -105,6 +105,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             FormsTable.COLUMN_GPSELEV + " TEXT," +
             FormsTable.COLUMN_SA1 + " TEXT," +
             FormsTable.COLUMN_SA4 + " TEXT," +
+            FormsTable.COLUMN_SA402 + " TEXT," +
             FormsTable.COLUMN_SA5 + " TEXT," +
             FormsTable.COLUMN_SA7 + " TEXT," +
             FormsTable.COLUMN_END_TIME + " TEXT," +
@@ -685,6 +686,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 FormsTable.COLUMN_CLUSTER_NO,
                 FormsTable.COLUMN_SA1,
                 FormsTable.COLUMN_SA4,
+                FormsTable.COLUMN_SA402,
                 FormsTable.COLUMN_SA5,
                 FormsTable.COLUMN_SA7,
                 FormsTable.COLUMN_END_TIME,
@@ -1560,6 +1562,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
         if (type == 0 || type == 4) {
             values.put(FormsTable.COLUMN_SA4, fc.getsA4());
+        }
+        if (type == 0 || type == 4) {
+            values.put(FormsTable.COLUMN_SA402, fc.getsA402());
         }
         if (type == 0 || type == 5) {
             values.put(FormsTable.COLUMN_SA5, fc.getsA5());
@@ -2781,6 +2786,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 FormsTable.COLUMN_CLUSTER_NO,
                 FormsTable.COLUMN_SA1,
                 FormsTable.COLUMN_SA4,
+                FormsTable.COLUMN_SA402,
                 FormsTable.COLUMN_SA5,
                 FormsTable.COLUMN_SA7,
                 FormsTable.COLUMN_END_TIME,
@@ -2902,6 +2908,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 FormsTable.COLUMN_CLUSTER_NO,
                 FormsTable.COLUMN_SA1,
                 FormsTable.COLUMN_SA4,
+                FormsTable.COLUMN_SA402,
                 FormsTable.COLUMN_SA5,
                 FormsTable.COLUMN_END_TIME,
                 FormsTable.COLUMN_COUNT,
@@ -2976,6 +2983,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 FormsTable.COLUMN_CLUSTER_NO,
                 FormsTable.COLUMN_SA1,
                 FormsTable.COLUMN_SA4,
+                FormsTable.COLUMN_SA402,
                 FormsTable.COLUMN_SA5,
                 FormsTable.COLUMN_SA7,
                 FormsTable.COLUMN_END_TIME,
@@ -3039,6 +3047,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 FormsTable.COLUMN_CLUSTER_NO,
                 FormsTable.COLUMN_SA1,
                 FormsTable.COLUMN_SA4,
+                FormsTable.COLUMN_SA402,
                 FormsTable.COLUMN_SA5,
                 FormsTable.COLUMN_SA7,
                 FormsTable.COLUMN_END_TIME,
@@ -4325,6 +4334,50 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return allFC;
     }
 
+    public FormsContract getsA402() {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor c = null;
+        String[] columns = {
+                FormsTable._ID,
+                FormsTable.COLUMN_UID,
+                FormsTable.COLUMN_SA402
+        };
+
+
+        String whereClause = FormsTable.COLUMN_UID + "=?";
+        String[] whereArgs = new String[]{MainApp.fc.getUID()};
+        String groupBy = null;
+        String having = null;
+
+        String orderBy =
+                FormsTable._ID + " ASC";
+
+        FormsContract allFC = new FormsContract();
+        try {
+            c = db.query(
+                    FormsTable.TABLE_NAME,  // The table to query
+                    columns,                   // The columns to return
+                    whereClause,               // The columns for the WHERE clause
+                    whereArgs,                 // The values for the WHERE clause
+                    groupBy,                   // don't group the rows
+                    having,                    // don't filter by row groups
+                    orderBy                    // The sort order
+            );
+            while (c.moveToNext()) {
+                FormsContract fc = new FormsContract();
+                allFC = fc.Hydrate1(c, 402);
+            }
+        } finally {
+            if (c != null) {
+                c.close();
+            }
+            if (db != null) {
+                db.close();
+            }
+        }
+        return allFC;
+    }
+
     public FormsContract getsA5() {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor c = null;
@@ -5178,6 +5231,24 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 // New value for one column
         ContentValues values = new ContentValues();
         values.put(FormsTable.COLUMN_SA4, MainApp.fc.getsA4());
+
+// Which row to update, based on the ID
+        String selection = FormsTable._ID + " = ?";
+        String[] selectionArgs = {MainApp.fc.get_ID()};
+
+        int count = db.update(FormsTable.TABLE_NAME,
+                values,
+                selection,
+                selectionArgs);
+        return count;
+    }
+
+    public int updateSA402() {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+// New value for one column
+        ContentValues values = new ContentValues();
+        values.put(FormsTable.COLUMN_SA402, MainApp.fc.getsA402());
 
 // Which row to update, based on the ID
         String selection = FormsTable._ID + " = ?";

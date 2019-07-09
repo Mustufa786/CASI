@@ -1,10 +1,12 @@
 package edu.aku.hassannaqvi.casi_2019.ui.household;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -13,8 +15,10 @@ import edu.aku.hassannaqvi.casi_2019.JSONModels.JSONA4ModelClass;
 import edu.aku.hassannaqvi.casi_2019.R;
 import edu.aku.hassannaqvi.casi_2019.contracts.FormsContract;
 import edu.aku.hassannaqvi.casi_2019.core.DatabaseHelper;
+import edu.aku.hassannaqvi.casi_2019.core.MainApp;
 import edu.aku.hassannaqvi.casi_2019.databinding.ActivitySectionA402Binding;
 import edu.aku.hassannaqvi.casi_2019.other.JSONUtilClass;
+import edu.aku.hassannaqvi.casi_2019.ui.viewMem.ViewMemberActivity;
 import edu.aku.hassannaqvi.casi_2019.validation.ClearClass;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
@@ -35,7 +39,7 @@ public class SectionA402Activity extends AppCompatActivity implements RadioGroup
 
     private void autoPopulate() {
 
-        FormsContract formContract = db.getsA4();
+        FormsContract formContract = db.getsA402();
         if (!formContract.getsA4().equals("")) {
 
             JSONA4ModelClass jsonA4 = JSONUtilClass.getModelFromJSON(formContract.getsA4(), JSONA4ModelClass.class);
@@ -264,6 +268,60 @@ public class SectionA402Activity extends AppCompatActivity implements RadioGroup
         return true;
     }
 
+    public void BtnContinue() {
+
+//        Validation Boolean
+        MainApp.validateFlag = true;
+
+
+        if (formValidation()) {
+            try {
+                SaveDraft();
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            if (UpdateDB()) {
+
+
+                finish();
+
+                startActivity(new Intent(this, SectionA5Activity.class));
+
+            } else {
+                Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
+
+    private boolean UpdateDB() {
+
+        //Long rowId;
+        DatabaseHelper db = new DatabaseHelper(this);
+
+        int updcount = db.updateSA402();
+
+        if (updcount == 1) {
+
+            return true;
+        } else {
+            Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+    }
+
+    public void BtnEnd() {
+        if (SectionA1Activity.editFormFlag) {
+            startActivity(new Intent(this, ViewMemberActivity.class)
+                    .putExtra("flagEdit", false)
+                    .putExtra("comingBack", true)
+                    .putExtra("cluster", MainApp.fc.getClusterNo())
+                    .putExtra("hhno", MainApp.fc.getHhNo())
+            );
+        } else {
+            MainApp.endActivity(this, this);
+        }
+    }
+
     @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
 
@@ -356,4 +414,10 @@ public class SectionA402Activity extends AppCompatActivity implements RadioGroup
 
 
     }
+
+    @Override
+    public void onBackPressed() {
+        Toast.makeText(this, "You can't go back.", Toast.LENGTH_SHORT).show();
+    }
+
 }

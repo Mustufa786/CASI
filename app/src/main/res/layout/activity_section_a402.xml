@@ -13,6 +13,7 @@
             android:layout_height="wrap_content">
 
             <LinearLayout
+                android:layoutDirection="rtl"
                 android:id="@+id/fldGrpSectionA402"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -706,6 +707,49 @@
                         android:inputType="number"
                         android:maxLength="3"
                         android:text='@{cih323a.checked ? cih324g.getText.toString : ""}' />
+
+                </LinearLayout>
+                <!--  = = = = =  END OF FORM FIELDS  = = = = = -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="80dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_Continue"
+                        style="@style/buttons"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#1ed61e"
+                        android:onClick="@{() -> callback.BtnContinue()}"
+                        android:text="@string/nextSection"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/btn_End"
+                        style="@style/buttons"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/red"
+                        android:onClick="@{() -> callback.BtnEnd()}"
+                        android:text="@string/end_interview"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        style="@style/buttons"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/red"
+                        android:onClick="intentWifi"
+                        android:text="Connect to Device"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+
 
                 </LinearLayout>
             </LinearLayout>
