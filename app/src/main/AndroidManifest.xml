@@ -29,13 +29,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
-        <activity android:name=".ui.household.SectionA402Activity"></activity>
+        <activity android:name=".ui.childs.SectionC6Activity"></activity>
+        <activity android:name=".ui.household.SectionA402Activity" />
         <activity android:name=".ui.household.SectionA7Activity" />
         <activity
             android:name=".ui.mainUI.SplashscreenActivity"
-            android:screenOrientation="portrait">
-
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".ui.mainUI.LoginActivity"
             android:screenOrientation="portrait"

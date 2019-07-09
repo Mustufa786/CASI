@@ -161,6 +161,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             ChildTable.COLUMN_SC3 + " TEXT," +
             ChildTable.COLUMN_SC4 + " TEXT," +
             ChildTable.COLUMN_SC5 + " TEXT," +
+            ChildTable.COLUMN_SC6 + " TEXT," +
             ChildTable.COLUMN_DEVICEID + " TEXT," +
             ChildTable.COLUMN_DEVICETAGID + " TEXT," +
             ChildTable.COLUMN_SYNCED + " TEXT," +
@@ -1959,6 +1960,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             values.put(ChildTable.COLUMN_SC3, cc.getsC3());
             values.put(ChildTable.COLUMN_SC4, cc.getsC4());
             values.put(ChildTable.COLUMN_SC5, cc.getsC5());
+            values.put(ChildTable.COLUMN_SC6, cc.getsC6());
             values.put(ChildTable.COLUMN_DEVICEID, cc.getDeviceID());
             values.put(ChildTable.COLUMN_DEVICETAGID, cc.getDevicetagID());
             values.put(ChildTable.COLUMN_SYNCED, cc.getSynced());
@@ -3381,6 +3383,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 ChildTable.COLUMN_SC3,
                 ChildTable.COLUMN_SC4,
                 ChildTable.COLUMN_SC5,
+                ChildTable.COLUMN_SC6,
                 ChildTable.COLUMN_DEVICEID,
                 ChildTable.COLUMN_DEVICETAGID,
                 ChildTable.COLUMN_SYNCED,
@@ -5376,6 +5379,24 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 // New value for one column
         ContentValues values = new ContentValues();
         values.put(ChildTable.COLUMN_SC5, MainApp.cc.getsC5());
+
+// Which row to update, based on the ID
+        String selection = ChildTable.COLUMN__ID + " = ?";
+        String[] selectionArgs = {String.valueOf(MainApp.cc.get_ID())};
+
+        int count = db.update(ChildTable.TABLE_NAME,
+                values,
+                selection,
+                selectionArgs);
+        return count;
+    }
+
+    public int updateSC6() {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+// New value for one column
+        ContentValues values = new ContentValues();
+        values.put(ChildTable.COLUMN_SC6, MainApp.cc.getsC6());
 
 // Which row to update, based on the ID
         String selection = ChildTable.COLUMN__ID + " = ?";
