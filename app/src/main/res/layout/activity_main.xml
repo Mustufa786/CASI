@@ -34,7 +34,8 @@
                 android:background="@color/lightOrange"
                 android:textAlignment="center"
                 android:textColor="@color/darkRed"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:visibility="gone" />
 
             <TextView
                 android:id="@+id/lblheader"
