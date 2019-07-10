@@ -87,8 +87,8 @@
                     android:orientation="horizontal">
 
                     <EditText
-                        style="@style/textInput"
                         android:id="@+id/cih102"
+                        style="@style/textInput"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
@@ -303,8 +303,8 @@
                         android:orientation="horizontal">
 
                         <EditText
-                            style="@style/textInput"
                             android:id="@+id/cih108"
+                            style="@style/textInput"
                             android:layout_width="0dp"
                             android:layout_marginTop="5dp"
                             android:layout_marginRight="10dp"
@@ -341,10 +341,9 @@
 
                         <TextView
                             android:id="@+id/hhName"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:enabled="false"
-                            android:paddingLeft="10dp" />
+                            style="@style/sub"
+                            android:padding="10dp"
+                            android:textAlignment="center" />
 
                         <CheckBox
                             android:id="@+id/checkHHHeadpresent"

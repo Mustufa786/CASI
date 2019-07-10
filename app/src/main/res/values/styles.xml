@@ -208,7 +208,6 @@
         <item name="android:padding">10dp</item>
         <item name="android:typeface">serif</item>
         <item name="android:layout_margin">8dp</item>
-        <item name="android:background">@drawable/et_style</item>
         <item name="android:textColorHint">@color/colorPrimaryAlpha</item>
 
     </style>

@@ -43,7 +43,7 @@
         <activity
             android:name=".ui.mainUI.LoginActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:windowSoftInputMode="stateVisible|adjustPan" />
         <activity
             android:name=".ui.childs.SectionC6Activity"
