@@ -7,13 +7,14 @@
         android:id="@+id/menu_wifiDirect"
         android:orderInCategory="1"
         android:title="Connect to device"
+        android:visible="false"
         app:showAsAction="never" />
 
     <item
-        android:visible="false"
         android:id="@+id/menu_addMember"
         android:orderInCategory="1"
         android:title="Add New Member"
+        android:visible="false"
         app:showAsAction="never" />
 
 

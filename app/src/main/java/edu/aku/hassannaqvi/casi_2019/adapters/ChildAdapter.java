@@ -2,7 +2,6 @@ package edu.aku.hassannaqvi.casi_2019.adapters;
 
 import android.content.Context;
 import android.databinding.DataBindingUtil;
-import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -30,6 +29,7 @@ public class ChildAdapter extends RecyclerView.Adapter<ChildAdapter.ChildViewHol
     JSONModelClass json;
     DatabaseHelper db;
     private List<FamilyMembersContract> childList;
+    private Context mContext;
 
     public ChildAdapter(Context mContext, List<FamilyMembersContract> childList) {
         json = new JSONModelClass();
@@ -37,6 +37,8 @@ public class ChildAdapter extends RecyclerView.Adapter<ChildAdapter.ChildViewHol
 
         childExistList = new ArrayList<>();
         db = new DatabaseHelper(mContext);
+
+        this.mContext = mContext;
     }
 
     @Override
@@ -66,7 +68,7 @@ public class ChildAdapter extends RecyclerView.Adapter<ChildAdapter.ChildViewHol
         for (int item : childExistList) {
 //                        binding.recyclerChild.getChildAt(item).setBackgroundColor(getResources().getColor(R.color.softgreen));
             if (position == item)
-                this.holder.itemView.setBackgroundColor(Color.parseColor("#80cbc4"));
+                this.holder.itemView.setBackgroundColor(mContext.getResources().getColor(R.color.colorRedsub));
         }
     }
 
@@ -84,15 +86,12 @@ public class ChildAdapter extends RecyclerView.Adapter<ChildAdapter.ChildViewHol
             childBinding = DataBindingUtil.bind(itemView);
         }
 
-
         public void bindUser(FamilyMembersContract child) {
             json = JSONUtilClass.getModelFromJSON(child.getsA2(), JSONModelClass.class);
             childBinding.childName.setText(json.getName().toUpperCase());
             childBinding.Age.setText("Age: " + json.getAge());
             childBinding.na204.setText(json.getGender().equals("1") ? "Male" : "Female");
-            //childBinding.childmName.setText(json.getMotherName().equals("") ? "..." : json.getMotherName());
-
-
+            childBinding.childmName.setText(json.getMothername().equals("") ? "..." : json.getMothername());
         }
     }
 

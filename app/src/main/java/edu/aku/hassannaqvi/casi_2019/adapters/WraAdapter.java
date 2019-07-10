@@ -2,7 +2,6 @@ package edu.aku.hassannaqvi.casi_2019.adapters;
 
 import android.content.Context;
 import android.databinding.DataBindingUtil;
-import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -61,7 +60,7 @@ public class WraAdapter extends RecyclerView.Adapter<WraAdapter.WraViewHolder> {
         }
         for (int item : WraAdapter.wraExistList) {
             if (position == item)
-                this.holder.itemView.setBackgroundColor(Color.parseColor("#80cbc4"));
+                this.holder.itemView.setBackgroundColor(mContext.getResources().getColor(R.color.colorRedsub));
         }
 
     }

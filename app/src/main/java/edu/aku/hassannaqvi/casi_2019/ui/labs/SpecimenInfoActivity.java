@@ -539,27 +539,27 @@ public class SpecimenInfoActivity extends AppCompatActivity {
                     json = JSONUtilClass.getModelFromJSON(fm.getsA2(), JSONModelClass.class);
                     date = fm.getFormDate();
                     if ((Integer.valueOf(json.getAge()) > 14 && Integer.valueOf(json.getAge()) < 50)
-                            && json.getGender().equals("2") && json.getNh210().equals("1")) {
+                            && json.getGender().equals("2") && json.getcih210().equals("1")) {
                         fm.setType("1");
                         MainApp.mwra.add(fm);
                         MainApp.all_members.add(fm);
                         addIfNotExists(MainApp.all_members, fm);
                     }
                     if ((Integer.valueOf(json.getAge()) >= 10 && (Integer.valueOf(json.getAge()) < 20))
-                            && json.getGender().equals("2") && json.getNh210().equals("1") && json.getMaritalStatus().equals("5")) {
+                            && json.getGender().equals("2") && json.getcih210().equals("1") && json.getMaritalStatus().equals("5")) {
                         fm.setType("4");
                         MainApp.adolescents.add(fm);
                         MainApp.all_members.add(fm);
                         addIfNotExists(MainApp.all_members, fm);
                     }
                     if ((Integer.valueOf(json.getAge()) >= 6 && (Integer.valueOf(json.getAge()) < 13))
-                            && json.getNh210().equals("1")) {
+                            && json.getcih210().equals("1")) {
                         fm.setType("3");
                         MainApp.minors.add(fm);
                         MainApp.all_members.add(fm);
                         addIfNotExists(MainApp.all_members, fm);
                     }
-                    if (Integer.valueOf(json.getAge()) < 6 && json.getNh210().equals("1")) {
+                    if (Integer.valueOf(json.getAge()) < 6 && json.getcih210().equals("1")) {
                         fm.setType("2");
                         MainApp.childUnder5.add(fm);
                         MainApp.all_members.add(fm);

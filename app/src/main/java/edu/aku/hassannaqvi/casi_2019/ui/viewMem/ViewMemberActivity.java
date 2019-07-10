@@ -980,7 +980,6 @@ public class ViewMemberActivity extends MenuActivity {
                         public void run() {
 
                             if (MainApp.all_members_1.size() > 0) {
-                                Toast.makeText(mContext, "Members Found..", Toast.LENGTH_SHORT).show();
                                 binding.fldGrpviewlist.setVisibility(View.VISIBLE);
                                 viewWraList();
                                 viewChildList();
