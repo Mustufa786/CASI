@@ -208,8 +208,15 @@ public class SectionA7Activity extends AppCompatActivity {
         secH7.put("cih71302", bi.cih71302.getText().toString());
         secH7.put("cih71303", bi.cih71303.getText().toString());
 
-        secH7.put("cih714", bi.cih714.getText().toString());
-        secH7.put("cih715", bi.cih715.getText().toString());
+        secH7.put("cih714", bi.cih714a.isChecked() ? "1"
+                : bi.cih714b.isChecked() ? "2" : "0");
+
+        secH7.put("cih714x", bi.cih714x.getText().toString());
+        secH7.put("cih715", bi.cih715a.isChecked() ? "1"
+                : bi.cih715b.isChecked() ? "2" : "0");
+
+        secH7.put("cih714x", bi.cih714x.getText().toString());
+        secH7.put("cih715x", bi.cih715x.getText().toString());
 
         MainApp.fc.setsA7(secH7.toString());
 

@@ -20,10 +20,10 @@
             android:layout_height="wrap_content">
 
             <LinearLayout
-                android:layoutDirection="rtl"
                 android:id="@+id/fldGrpSectionH7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layoutDirection="rtl"
                 android:orientation="vertical">
 
 
@@ -74,9 +74,6 @@
                     android:visibility='@{cih701a.checked? View.VISIBLE : View.GONE}' />
 
                 <com.edittextpicker.aliazaz.EditTextPicker
-                    app:maxValue="4"
-                    app:minValue="0"
-                    app:type="range"
                     android:id="@+id/cih70102"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -84,7 +81,10 @@
                     android:inputType="number"
                     android:maxLength="2"
                     android:text='@{cih701a.checked? cih70102.getText.toString : "" }'
-                    android:visibility='@{cih701a.checked? View.VISIBLE : View.GONE}' />
+                    android:visibility='@{cih701a.checked? View.VISIBLE : View.GONE}'
+                    app:maxValue="4"
+                    app:minValue="0"
+                    app:type="range" />
 
 
                 <TextView
@@ -98,10 +98,10 @@
                     android:visibility='@{cih701a.checked? View.VISIBLE : View.GONE}' />
 
                 <EditText
-                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:id="@+id/cih70103"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:spinnerMode="dialog"
                     android:visibility='@{cih701a.checked? View.VISIBLE : View.GONE}' />
 
@@ -153,9 +153,6 @@
                     android:visibility='@{cih702a.checked? View.VISIBLE : View.GONE}' />
 
                 <com.edittextpicker.aliazaz.EditTextPicker
-                    app:maxValue="4"
-                    app:minValue="0"
-                    app:type="range"
                     android:id="@+id/cih70202"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -163,7 +160,10 @@
                     android:inputType="number"
                     android:maxLength="2"
                     android:text='@{cih702a.checked? cih70202.getText.toString : "" }'
-                    android:visibility='@{cih702a.checked? View.VISIBLE : View.GONE}' />
+                    android:visibility='@{cih702a.checked? View.VISIBLE : View.GONE}'
+                    app:maxValue="4"
+                    app:minValue="0"
+                    app:type="range" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -176,10 +176,10 @@
                     android:visibility='@{cih702a.checked? View.VISIBLE : View.GONE}' />
 
                 <EditText
-                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:id="@+id/cih70203"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:spinnerMode="dialog"
                     android:visibility='@{cih702a.checked? View.VISIBLE : View.GONE}' />
 
@@ -231,9 +231,6 @@
                     android:visibility='@{cih703a.checked? View.VISIBLE : View.GONE}' />
 
                 <com.edittextpicker.aliazaz.EditTextPicker
-                    app:maxValue="4"
-                    app:minValue="0"
-                    app:type="range"
                     android:id="@+id/cih70302"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -241,7 +238,10 @@
                     android:inputType="number"
                     android:maxLength="2"
                     android:text='@{cih703a.checked? cih70302.getText.toString : "" }'
-                    android:visibility='@{cih703a.checked? View.VISIBLE : View.GONE}' />
+                    android:visibility='@{cih703a.checked? View.VISIBLE : View.GONE}'
+                    app:maxValue="4"
+                    app:minValue="0"
+                    app:type="range" />
 
 
                 <TextView
@@ -255,10 +255,10 @@
                     android:visibility='@{cih703a.checked? View.VISIBLE : View.GONE}' />
 
                 <EditText
-                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:id="@+id/cih70303"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:spinnerMode="dialog"
                     android:visibility='@{cih703a.checked? View.VISIBLE : View.GONE}' />
 
@@ -311,9 +311,6 @@
                     android:visibility='@{cih704a.checked? View.VISIBLE : View.GONE}' />
 
                 <com.edittextpicker.aliazaz.EditTextPicker
-                    app:maxValue="4"
-                    app:minValue="0"
-                    app:type="range"
                     android:id="@+id/cih70402"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -321,7 +318,10 @@
                     android:inputType="number"
                     android:maxLength="2"
                     android:text='@{cih704a.checked? cih70402.getText.toString : "" }'
-                    android:visibility='@{cih704a.checked? View.VISIBLE : View.GONE}' />
+                    android:visibility='@{cih704a.checked? View.VISIBLE : View.GONE}'
+                    app:maxValue="4"
+                    app:minValue="0"
+                    app:type="range" />
 
 
                 <TextView
@@ -335,10 +335,10 @@
                     android:visibility='@{cih704a.checked? View.VISIBLE : View.GONE}' />
 
                 <EditText
-                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:id="@+id/cih70403"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:spinnerMode="dialog"
                     android:visibility='@{cih704a.checked? View.VISIBLE : View.GONE}' />
 
@@ -390,9 +390,6 @@
                     android:visibility='@{cih705a.checked? View.VISIBLE : View.GONE}' />
 
                 <com.edittextpicker.aliazaz.EditTextPicker
-                    app:maxValue="4"
-                    app:minValue="0"
-                    app:type="range"
                     android:id="@+id/cih70502"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -400,7 +397,10 @@
                     android:inputType="number"
                     android:maxLength="2"
                     android:text='@{cih705a.checked? cih70502.getText.toString : "" }'
-                    android:visibility='@{cih705a.checked? View.VISIBLE : View.GONE}' />
+                    android:visibility='@{cih705a.checked? View.VISIBLE : View.GONE}'
+                    app:maxValue="4"
+                    app:minValue="0"
+                    app:type="range" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -413,10 +413,10 @@
                     android:visibility='@{cih705a.checked? View.VISIBLE : View.GONE}' />
 
                 <EditText
-                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:id="@+id/cih70503"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:spinnerMode="dialog"
                     android:visibility='@{cih705a.checked? View.VISIBLE : View.GONE}' />
 
@@ -468,9 +468,6 @@
                     android:visibility='@{cih707a.checked? View.VISIBLE : View.GONE}' />
 
                 <com.edittextpicker.aliazaz.EditTextPicker
-                    app:maxValue="4"
-                    app:minValue="0"
-                    app:type="range"
                     android:id="@+id/cih70602"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -478,7 +475,10 @@
                     android:inputType="number"
                     android:maxLength="2"
                     android:text='@{cih706a.checked? cih70602.getText.toString : "" }'
-                    android:visibility='@{cih706a.checked? View.VISIBLE : View.GONE}' />
+                    android:visibility='@{cih706a.checked? View.VISIBLE : View.GONE}'
+                    app:maxValue="4"
+                    app:minValue="0"
+                    app:type="range" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -491,10 +491,10 @@
                     android:visibility='@{cih706a.checked? View.VISIBLE : View.GONE}' />
 
                 <EditText
-                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:id="@+id/cih70603"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:spinnerMode="dialog"
                     android:visibility='@{cih706a.checked? View.VISIBLE : View.GONE}' />
 
@@ -546,9 +546,6 @@
                     android:visibility='@{cih707a.checked? View.VISIBLE : View.GONE}' />
 
                 <com.edittextpicker.aliazaz.EditTextPicker
-                    app:maxValue="4"
-                    app:minValue="0"
-                    app:type="range"
                     android:id="@+id/cih70702"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -556,7 +553,10 @@
                     android:inputType="number"
                     android:maxLength="2"
                     android:text='@{cih707a.checked? cih70702.getText.toString : "" }'
-                    android:visibility='@{cih707a.checked? View.VISIBLE : View.GONE}' />
+                    android:visibility='@{cih707a.checked? View.VISIBLE : View.GONE}'
+                    app:maxValue="4"
+                    app:minValue="0"
+                    app:type="range" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -569,10 +569,10 @@
                     android:visibility='@{cih707a.checked? View.VISIBLE : View.GONE}' />
 
                 <EditText
-                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:id="@+id/cih70703"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:spinnerMode="dialog"
                     android:visibility='@{cih707a.checked? View.VISIBLE : View.GONE}' />
 
@@ -626,9 +626,6 @@
 
 
                 <com.edittextpicker.aliazaz.EditTextPicker
-                    app:maxValue="4"
-                    app:minValue="0"
-                    app:type="range"
                     android:id="@+id/cih70802"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -636,7 +633,10 @@
                     android:inputType="number"
                     android:maxLength="2"
                     android:text='@{cih708a.checked? cih70802.getText.toString : "" }'
-                    android:visibility='@{cih708a.checked? View.VISIBLE : View.GONE}' />
+                    android:visibility='@{cih708a.checked? View.VISIBLE : View.GONE}'
+                    app:maxValue="4"
+                    app:minValue="0"
+                    app:type="range" />
 
 
                 <TextView
@@ -650,10 +650,10 @@
                     android:visibility='@{cih708a.checked? View.VISIBLE : View.GONE}' />
 
                 <EditText
-                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:id="@+id/cih70803"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:spinnerMode="dialog"
                     android:visibility='@{cih708a.checked? View.VISIBLE : View.GONE}' />
 
@@ -705,9 +705,6 @@
                     android:visibility='@{cih709a.checked? View.VISIBLE : View.GONE}' />
 
                 <com.edittextpicker.aliazaz.EditTextPicker
-                    app:maxValue="4"
-                    app:minValue="0"
-                    app:type="range"
                     android:id="@+id/cih70902"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -715,7 +712,10 @@
                     android:inputType="number"
                     android:maxLength="2"
                     android:text='@{cih709a.checked? cih70902.getText.toString : "" }'
-                    android:visibility='@{cih709a.checked? View.VISIBLE : View.GONE}' />
+                    android:visibility='@{cih709a.checked? View.VISIBLE : View.GONE}'
+                    app:maxValue="4"
+                    app:minValue="0"
+                    app:type="range" />
 
 
                 <TextView
@@ -729,10 +729,10 @@
                     android:visibility='@{cih709a.checked? View.VISIBLE : View.GONE}' />
 
                 <EditText
-                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:id="@+id/cih70903"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:spinnerMode="dialog"
                     android:visibility='@{cih709a.checked? View.VISIBLE : View.GONE}' />
 
@@ -784,9 +784,6 @@
                     android:visibility='@{cih710a.checked? View.VISIBLE : View.GONE}' />
 
                 <com.edittextpicker.aliazaz.EditTextPicker
-                    app:maxValue="4"
-                    app:minValue="0"
-                    app:type="range"
                     android:id="@+id/cih71002"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -794,7 +791,10 @@
                     android:inputType="number"
                     android:maxLength="2"
                     android:text='@{cih710a.checked? cih71002.getText.toString : "" }'
-                    android:visibility='@{cih710a.checked? View.VISIBLE : View.GONE}' />
+                    android:visibility='@{cih710a.checked? View.VISIBLE : View.GONE}'
+                    app:maxValue="4"
+                    app:minValue="0"
+                    app:type="range" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -807,10 +807,10 @@
                     android:visibility='@{cih710a.checked? View.VISIBLE : View.GONE}' />
 
                 <EditText
-                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:id="@+id/cih71003"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:spinnerMode="dialog"
                     android:visibility='@{cih710a.checked? View.VISIBLE : View.GONE}' />
 
@@ -863,9 +863,6 @@
                     android:visibility='@{cih711a.checked? View.VISIBLE : View.GONE}' />
 
                 <com.edittextpicker.aliazaz.EditTextPicker
-                    app:maxValue="4"
-                    app:minValue="0"
-                    app:type="range"
                     android:id="@+id/cih71102"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -873,7 +870,10 @@
                     android:inputType="number"
                     android:maxLength="2"
                     android:text='@{cih711a.checked? cih71102.getText.toString : "" }'
-                    android:visibility='@{cih711a.checked? View.VISIBLE : View.GONE}' />
+                    android:visibility='@{cih711a.checked? View.VISIBLE : View.GONE}'
+                    app:maxValue="4"
+                    app:minValue="0"
+                    app:type="range" />
 
 
                 <TextView
@@ -887,10 +887,10 @@
                     android:visibility='@{cih711a.checked? View.VISIBLE : View.GONE}' />
 
                 <EditText
-                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:id="@+id/cih71103"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:spinnerMode="dialog"
                     android:visibility='@{cih711a.checked? View.VISIBLE : View.GONE}' />
 
@@ -943,9 +943,6 @@
                     android:visibility='@{cih712a.checked? View.VISIBLE : View.GONE}' />
 
                 <com.edittextpicker.aliazaz.EditTextPicker
-                    app:maxValue="4"
-                    app:minValue="0"
-                    app:type="range"
                     android:id="@+id/cih71202"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -953,7 +950,10 @@
                     android:inputType="number"
                     android:maxLength="2"
                     android:text='@{cih712a.checked? cih71202.getText.toString : "" }'
-                    android:visibility='@{cih712a.checked? View.VISIBLE : View.GONE}' />
+                    android:visibility='@{cih712a.checked? View.VISIBLE : View.GONE}'
+                    app:maxValue="4"
+                    app:minValue="0"
+                    app:type="range" />
 
 
                 <TextView
@@ -967,10 +967,10 @@
                     android:visibility='@{cih712a.checked? View.VISIBLE : View.GONE}' />
 
                 <EditText
-                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:id="@+id/cih71203"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:spinnerMode="dialog"
                     android:visibility='@{cih712a.checked? View.VISIBLE : View.GONE}' />
 
@@ -1023,9 +1023,6 @@
                     android:visibility='@{cih713a.checked? View.VISIBLE : View.GONE}' />
 
                 <com.edittextpicker.aliazaz.EditTextPicker
-                    app:maxValue="4"
-                    app:minValue="0"
-                    app:type="range"
                     android:id="@+id/cih71302"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -1033,7 +1030,10 @@
                     android:inputType="number"
                     android:maxLength="2"
                     android:text='@{cih713a.checked? cih71302.getText.toString : "" }'
-                    android:visibility='@{cih713a.checked? View.VISIBLE : View.GONE}' />
+                    android:visibility='@{cih713a.checked? View.VISIBLE : View.GONE}'
+                    app:maxValue="4"
+                    app:minValue="0"
+                    app:type="range" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -1046,14 +1046,15 @@
                     android:visibility='@{cih713a.checked? View.VISIBLE : View.GONE}' />
 
                 <EditText
-                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:id="@+id/cih71303"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:spinnerMode="dialog"
                     android:visibility='@{cih713a.checked? View.VISIBLE : View.GONE}' />
 
                 <!--====cih714===-->
+
 
                 <TextView
                     android:layout_width="match_parent"
@@ -1064,14 +1065,36 @@
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/white" />
 
-
-                <EditText
+                <RadioGroup
                     android:id="@+id/cih714"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
-                    android:hint="@string/other"
-                    android:inputType="text" />
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/cih714a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yes" />
+
+                    <EditText
+                        android:id="@+id/cih714x"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
+                        android:hint="@string/other"
+                        android:inputType="text"
+                        android:text='@{cih714a.checked? cih714x.getText.toString : "" }'
+                        android:visibility='@{cih714a.checked? View.VISIBLE : View.GONE}' />
+
+                    <RadioButton
+                        android:id="@+id/cih714b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no" />
+
+                </RadioGroup>
+
 
                 <!--====cih715===-->
 
@@ -1084,14 +1107,35 @@
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/white" />
 
-
-                <EditText
+                <RadioGroup
                     android:id="@+id/cih715"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
-                    android:hint="@string/other"
-                    android:inputType="text" />
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/cih715a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yes" />
+
+                    <EditText
+                        android:id="@+id/cih715x"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
+                        android:hint="@string/other"
+                        android:inputType="text"
+                        android:text='@{cih715a.checked? cih715x.getText.toString : "" }'
+                        android:visibility='@{cih715a.checked? View.VISIBLE : View.GONE}' />
+
+                    <RadioButton
+                        android:id="@+id/cih715b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no" />
+
+                </RadioGroup>
 
 
                 <!--  = = = = =  END OF FORM FIELDS  = = = = = -->
