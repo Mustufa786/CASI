@@ -577,6 +577,7 @@
                                 android:enabled="@{cic40596.checked ? true : false}"
                                 android:hint="@string/cic4049601"
                                 android:inputType="textCapWords"
+                                android:tag="cic40596"
                                 android:text='@{cic40596.checked ? cic40596x.getText.toString : ""}' />
 
                         </LinearLayout>
@@ -1102,6 +1103,7 @@
                                 android:enabled="@{cic41096.checked ? true : false}"
                                 android:hint="@string/other"
                                 android:inputType="textCapWords"
+                                android:tag="cic41096"
                                 android:text='@{cic41096.checked ? cic41096x.getText.toString : ""}' />
 
                         </LinearLayout>
@@ -1629,6 +1631,7 @@
                                 android:enabled="@{cic41596.checked? true : false}"
                                 android:hint="@string/other"
                                 android:inputType="text"
+                                android:tag="cic41596"
                                 android:text='@{cic41596.checked ? cic41596x.getText.toString : ""}' />
                         </LinearLayout>
 

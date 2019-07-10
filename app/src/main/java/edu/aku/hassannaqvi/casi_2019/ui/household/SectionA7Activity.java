@@ -35,6 +35,8 @@ public class SectionA7Activity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_a7);
         bi.setCallback(this);
 
+        db = new DatabaseHelper(this);
+
         setUIContent();
     }
 
