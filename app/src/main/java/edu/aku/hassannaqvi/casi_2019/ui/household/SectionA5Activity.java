@@ -39,10 +39,9 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
         public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
             if (binding.cih403a.isChecked() || binding.cih403b.isChecked() || binding.cih403c.isChecked()) {
                 ClearClass.ClearAllFields(binding.fldGrcih404, false);
-                ClearClass.ClearAllFields(binding.fldGrpcih405, false);
             } else {
                 ClearClass.ClearAllFields(binding.fldGrcih404, true);
-                ClearClass.ClearAllFields(binding.fldGrpcih405, true);
+
             }
         }
     };
@@ -70,11 +69,9 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 //formValidation();
                 if (!(checkedId == R.id.cih401a)) {
-
                     ClearClass.ClearAllFields(binding.fldGrpcih402, false);
-
                 } else {
-                    formValidation();
+
                     ClearClass.ClearAllFields(binding.fldGrpcih402, true);
                 }
             }
@@ -88,24 +85,10 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-
-                    binding.cih403a.setEnabled(false);
-                    binding.cih403b.setEnabled(false);
-                    binding.cih403c.setEnabled(false);
-                    binding.cih403d.setEnabled(false);
-
-                    binding.cih403a.setChecked(false);
-                    binding.cih403b.setChecked(false);
-                    binding.cih403c.setChecked(false);
-                    binding.cih403d.setChecked(false);
-
+                    ClearClass.ClearAllFields(binding.fldGrcih403check, false);
                 } else {
+                    ClearClass.ClearAllFields(binding.fldGrcih403check, true);
 
-
-                    binding.cih403a.setEnabled(true);
-                    binding.cih403b.setEnabled(true);
-                    binding.cih403c.setEnabled(true);
-                    binding.cih403d.setEnabled(true);
                 }
             }
         });
@@ -113,7 +96,7 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
         binding.cih404.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                formValidation();
+
                 if (checkedId == R.id.cih404b) {
                     ClearClass.ClearAllFields(binding.fldGrpcih405, false);
 
@@ -126,21 +109,10 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    binding.cih405a.setEnabled(false);
-                    binding.cih405b.setEnabled(false);
-                    binding.cih405c.setEnabled(false);
-                    binding.cih405d.setEnabled(false);
-
-                    binding.cih405a.setChecked(false);
-                    binding.cih405b.setChecked(false);
-                    binding.cih405c.setChecked(false);
-                    binding.cih405d.setChecked(false);
-
+                    ClearClass.ClearAllFields(binding.fldGrpcih405check, false);
                 } else {
-                    binding.cih405a.setEnabled(true);
-                    binding.cih405b.setEnabled(true);
-                    binding.cih405c.setEnabled(true);
-                    binding.cih405d.setEnabled(true);
+                    ClearClass.ClearAllFields(binding.fldGrpcih405check, true);
+
                 }
             }
         });
@@ -148,30 +120,126 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
         binding.cih501.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                formValidation();
-                if (checkedId == R.id.cih501d || checkedId == R.id.cih50196) {
-                    ClearClass.ClearAllFields(binding.fldGrcih602, false);
-                    ClearClass.ClearAllFields(binding.fldGrnc502, false);
 
+                if (checkedId == R.id.cih501d || checkedId == R.id.cih50196) {
+                    ClearClass.ClearAllFields(binding.fldGrnc502, false);
                 } else {
-                    ClearClass.ClearAllFields(binding.fldGrcih602, true);
                     ClearClass.ClearAllFields(binding.fldGrnc502, true);
 
                 }
             }
         });
 
+        binding.cih601.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                if (checkedId == binding.cih601b.getId()) {
+                    ClearClass.ClearAllFields(binding.fldGrpcih602, false);
+                } else {
+                    ClearClass.ClearAllFields(binding.fldGrpcih602, true);
+                }
+            }
+        });
+        binding.cih603.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                if (checkedId == binding.cih603b.getId()) {
+                    ClearClass.ClearAllFields(binding.fldGrpcih604, false);
+                } else {
+                    ClearClass.ClearAllFields(binding.fldGrpcih604, true);
+                }
+            }
+        });
+        binding.cih605.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                if (checkedId == binding.cih605b.getId()) {
+                    ClearClass.ClearAllFields(binding.fleGrpcih606, false);
+                } else {
+                    ClearClass.ClearAllFields(binding.fleGrpcih606, true);
+                }
+            }
+        });
+        binding.cih607.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                if (checkedId == binding.cih607b.getId()) {
+                    ClearClass.ClearAllFields(binding.fldGrpcih608, false);
+                } else {
+                    ClearClass.ClearAllFields(binding.fldGrpcih608, true);
+                }
+            }
+        });
+        binding.cih609.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                if (checkedId == binding.cih609b.getId()) {
+                    ClearClass.ClearAllFields(binding.fldGrpcih610, false);
+                } else {
+                    ClearClass.ClearAllFields(binding.fldGrpcih610, true);
+                }
+            }
+        });
+        binding.cih611.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                if (checkedId == binding.cih611b.getId()) {
+                    ClearClass.ClearAllFields(binding.fldGrpcih612, false);
+                } else {
+                    ClearClass.ClearAllFields(binding.fldGrpcih612, true);
+                }
+            }
+        });
+        binding.cih613.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                if (checkedId == binding.cih613b.getId()) {
+                    ClearClass.ClearAllFields(binding.fldGrpcih614, false);
+                } else {
+                    ClearClass.ClearAllFields(binding.fldGrpcih614, true);
+                }
+            }
+        });
+        binding.cih615.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                if (checkedId == binding.cih615b.getId()) {
+                    ClearClass.ClearAllFields(binding.fldGrpcih616, false);
+                } else {
+                    ClearClass.ClearAllFields(binding.fldGrpcih616, true);
+                }
+            }
+        });
+        binding.cih617.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                if (checkedId == binding.cih617b.getId()) {
+                    ClearClass.ClearAllFields(binding.fldGrpcih618, false);
+                } else {
+                    ClearClass.ClearAllFields(binding.fldGrpcih618, true);
+                }
+            }
+        });
 //        Listeners
-        binding.cih402.setOnCheckedChangeListener(this);
-        binding.cih40601.setOnCheckedChangeListener(this);
-        binding.cih40602.setOnCheckedChangeListener(this);
-        binding.cih40603.setOnCheckedChangeListener(this);
-        binding.cih40604.setOnCheckedChangeListener(this);
-        binding.cih40605.setOnCheckedChangeListener(this);
-        binding.cih40696.setOnCheckedChangeListener(this);
-        //binding.cih501.setOnCheckedChangeListener(this);
-        binding.cih502.setOnCheckedChangeListener(this);
-        binding.cih503.setOnCheckedChangeListener(this);
+//        binding.cih402.setOnCheckedChangeListener(this);
+//        binding.cih40601.setOnCheckedChangeListener(this);
+//        binding.cih40602.setOnCheckedChangeListener(this);
+//        binding.cih40603.setOnCheckedChangeListener(this);
+//        binding.cih40604.setOnCheckedChangeListener(this);
+//        binding.cih40605.setOnCheckedChangeListener(this);
+//        binding.cih40696.setOnCheckedChangeListener(this);
+//        //binding.cih501.setOnCheckedChangeListener(this);
+//        binding.cih502.setOnCheckedChangeListener(this);
+//        binding.cih503.setOnCheckedChangeListener(this);
 
 //        Validation Boolean
         MainApp.validateFlag = false;
@@ -577,7 +645,7 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
 
     @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
-        formValidation();
+
     }
 
 

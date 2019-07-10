@@ -749,17 +749,6 @@
                         android:text="@string/end_interview"
                         android:textColor="@color/white" />
 
-                    <Button
-                        style="@style/buttons"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="@color/red"
-                        android:onClick="intentWifi"
-                        android:text="Connect to Device"
-                        android:textColor="@color/white"
-                        android:visibility="gone" />
-
 
                 </LinearLayout>
             </LinearLayout>
