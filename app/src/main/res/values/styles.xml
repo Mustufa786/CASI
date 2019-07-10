@@ -341,6 +341,19 @@
 
     </style>
 
+    <style name="checkbox3" parent="">
+        <item name="android:layout_gravity">right</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:drawableStart">?android:attr/listChoiceIndicatorMultiple</item>
+        <item name="android:background">@color/zxing_transparent</item>
+        <item name="android:padding">4dp</item>
+
+    </style>
+
     <style name="AppTheme.AppBarOverlay" parent="android:Widget.Material.Light.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="android:Widget.Material.Light" />

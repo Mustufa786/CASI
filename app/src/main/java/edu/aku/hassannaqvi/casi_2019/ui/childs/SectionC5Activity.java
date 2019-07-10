@@ -307,7 +307,6 @@ public class SectionC5Activity extends Menu2Activity implements TextWatcher, Rad
 
     }
 
-
     @Override
     public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 

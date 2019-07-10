@@ -40,6 +40,7 @@ import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.ScrollView;
@@ -63,6 +64,7 @@ import edu.aku.hassannaqvi.casi_2019.contracts.EnumBlockContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.UCsContract;
 import edu.aku.hassannaqvi.casi_2019.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2019.core.MainApp;
+import edu.aku.hassannaqvi.casi_2019.ui.syncUI.SyncActivity;
 
 import static java.lang.Thread.sleep;
 
@@ -88,22 +90,9 @@ public class LoginActivity extends MenuActivity implements LoaderCallbacks<Curso
     private static final long MINIMUM_TIME_BETWEEN_UPDATES = 1000; // in Milliseconds
     // Id to identify a Telephone permission request.
     private static final int MY_PERMISSIONS_REQUEST_READ_CONTACTS = 0;
-    private static final int MY_PERMISSIONS_REQUEST_GET_ACCOUNTS = 1;
     private static final int MY_PERMISSIONS_REQUEST_READ_PHONE_STATE = 2;
-    private static final int MY_PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION = 3;
-    private static final int MY_PERMISSIONS_REQUEST_ACCESS_COARSE_LOCATION = 4;
-    private static final int MY_PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE = 5;
-    private static final int MY_PERMISSIONS_REQUEST_CAMERA = 6;
     protected static LocationManager locationManager;
     static boolean flag = true;
-    // Spinners
-    ArrayAdapter<String> dataAdapter;
-    ArrayList<String> lablesTalukas;
-    Collection<EnumBlockContract> TalukasList;
-    Map<String, String> talukasMap;
-    ArrayList<String> lablesUCs;
-    Collection<UCsContract> UcsList;
-    Map<String, String> ucsMap;
     // UI references.
     @BindView(R.id.login_progress)
     ProgressBar mProgressView;
@@ -113,29 +102,20 @@ public class LoginActivity extends MenuActivity implements LoaderCallbacks<Curso
     EditText mEmailView;
     @BindView(R.id.password)
     EditText mPasswordView;
-    @BindView(R.id.txt_password)
-    TextView txt_password;
     @BindView(R.id.txtinstalldate)
     TextView txtinstalldate;
     @BindView(R.id.email_sign_in_button)
-    Button mEmailSignInButton;
-    @BindView(R.id.SyncActivity)
-    Button SyncActivity;
-    @BindView(R.id.spUCs)
-    Spinner spUCs;
-    @BindView(R.id.spTaluka)
-    Spinner spTalukas;
+    ImageButton mEmailSignInButton;
     @BindView(R.id.syncData)
-    Button syncData;
+    ImageButton syncData;
     @BindView(R.id.showPassword)
     ImageView showPassword;
     @BindView(R.id.testing)
     TextView testing;
+
     SharedPreferences sharedPref;
     SharedPreferences.Editor editor;
-    String DirectoryName;
     DatabaseHelper db;
-    String dtToday = new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime());
     private UserLoginTask mAuthTask = null;
     private int clicks;
 
@@ -255,7 +235,7 @@ public class LoginActivity extends MenuActivity implements LoaderCallbacks<Curso
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_loginnew);
         ButterKnife.bind(this);
 //        MainApp.deviceContract = new DeviceContract();
 
@@ -337,16 +317,15 @@ public class LoginActivity extends MenuActivity implements LoaderCallbacks<Curso
 
             }
         });
-        SyncActivity.setOnClickListener(new OnClickListener() {
+        syncData.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LoginActivity.this, edu.aku.hassannaqvi.casi_2019.ui.syncUI.SyncActivity.class));
+                startActivity(new Intent(LoginActivity.this, SyncActivity.class));
             }
         });
 
 
 //        DB backup
-
         dbBackup();
 
 
@@ -355,58 +334,6 @@ public class LoginActivity extends MenuActivity implements LoaderCallbacks<Curso
             testing.setVisibility(View.GONE);
         } else {
             testing.setVisibility(View.VISIBLE);
-        }
-    }
-
-    private void requestReadContactPermission() {
-        if (ActivityCompat.shouldShowRequestPermissionRationale(this,
-                Manifest.permission.READ_CONTACTS)) {
-            // Provide an additional rationale to the user if the permission was not granted
-            // and the user would benefit from additional context for the use of the permission.
-            // For example if the user has previously denied the permission.
-            new AlertDialog.Builder(LoginActivity.this)
-                    .setTitle("Permission Request")
-                    .setMessage("permission read contacts rationale")
-                    .setCancelable(false)
-                    .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int which) {
-                            //re-request
-                            ActivityCompat.requestPermissions(LoginActivity.this,
-                                    new String[]{Manifest.permission.READ_CONTACTS},
-                                    MY_PERMISSIONS_REQUEST_READ_CONTACTS);
-                        }
-                    })
-                    .show();
-        } else {
-            // READ_PHONE_STATE permission has not been granted yet. Request it directly.
-            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_CONTACTS},
-                    MY_PERMISSIONS_REQUEST_READ_CONTACTS);
-        }
-    }
-
-    private void requestGetAccountsPermission() {
-        if (ActivityCompat.shouldShowRequestPermissionRationale(this,
-                Manifest.permission.GET_ACCOUNTS)) {
-            // Provide an additional rationale to the user if the permission was not granted
-            // and the user would benefit from additional context for the use of the permission.
-            // For example if the user has previously denied the permission.
-            new AlertDialog.Builder(LoginActivity.this)
-                    .setTitle("Permission Request")
-                    .setMessage("permission get accounts rationale")
-                    .setCancelable(false)
-                    .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int which) {
-                            //re-request
-                            ActivityCompat.requestPermissions(LoginActivity.this,
-                                    new String[]{Manifest.permission.GET_ACCOUNTS},
-                                    MY_PERMISSIONS_REQUEST_GET_ACCOUNTS);
-                        }
-                    })
-                    .show();
-        } else {
-            // READ_PHONE_STATE permission has not been granted yet. Request it directly.
-            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.GET_ACCOUNTS},
-                    MY_PERMISSIONS_REQUEST_GET_ACCOUNTS);
         }
     }
 
@@ -554,19 +481,6 @@ public class LoginActivity extends MenuActivity implements LoaderCallbacks<Curso
 
     }
 
-    private void alertAlert(String msg) {
-        new AlertDialog.Builder(LoginActivity.this)
-                .setTitle("Permission Request")
-                .setMessage(msg)
-                .setCancelable(false)
-                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        // do somthing here
-                    }
-                })
-                .show();
-    }
-
     private void populateAutoComplete() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_CONTACTS)
@@ -585,84 +499,6 @@ public class LoginActivity extends MenuActivity implements LoaderCallbacks<Curso
 
         }
     }
-
-    /*public void dbBackup() {
-
-        sharedPref = getSharedPreferences("src", MODE_PRIVATE);
-        editor = sharedPref.edit();
-
-        if (sharedPref.getBoolean("flag", false)) {
-
-            String dt = sharedPref.getString("dt", new SimpleDateFormat("dd-MM-yy").format(new Date()).toString());
-
-            if (dt != new SimpleDateFormat("dd-MM-yy").format(new Date()).toString()) {
-                editor.putString("dt", new SimpleDateFormat("dd-MM-yy").format(new Date()).toString());
-
-                editor.commit();
-            }
-
-            File folder = new File(Environment.getExternalStorageDirectory() + File.separator + DatabaseHelper.PROJECT_NAME);
-            boolean success = true;
-            if (!folder.exists()) {
-                success = folder.mkdirs();
-            }
-            if (success) {
-
-                DirectoryName = folder.getPath() + File.separator + sharedPref.getString("dt", "");
-                folder = new File(DirectoryName);
-                if (!folder.exists()) {
-                    success = folder.mkdirs();
-                }
-                if (success) {
-
-                    try {
-                        File dbFile = new File(this.getDatabasePath(DatabaseHelper.DATABASE_NAME).getPath());
-                        FileInputStream fis = new FileInputStream(dbFile);
-
-                        String outFileName = DirectoryName + File.separator +
-                                DatabaseHelper.DB_NAME;
-
-                        // Open the empty db as the output stream
-                        OutputStream output = new FileOutputStream(outFileName);
-
-                        // Transfer bytes from the inputfile to the outputfile
-                        byte[] buffer = new byte[1024];
-                        int length;
-                        while ((length = fis.read(buffer)) > 0) {
-                            output.write(buffer, 0, length);
-                        }
-                        // Close the streams
-                        output.flush();
-                        output.close();
-                        fis.close();
-                    } catch (IOException e) {
-                        Log.e("dbBackup:", e.getMessage());
-                    }
-
-                }
-
-            } else {
-                Toast.makeText(this, "Not create folder", Toast.LENGTH_SHORT).show();
-            }
-        }
-
-    }*/
-
-
-    /*public void onSyncDataClick() {
-
-        // Require permissions INTERNET & ACCESS_NETWORK_STATE
-        *//*ConnectivityManager connMgr = (ConnectivityManager)
-                getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
-        if (networkInfo != null && networkInfo.isConnected()) {
-
-            new syncData(this).execute();
-
-        } else {
-            Toast.makeText(this, "No network connection available.", Toast.LENGTH_SHORT).show();
-        }*//*
-    }*/
 
     /**
      * Attempts to sign in or register the account specified by the login form.
@@ -813,7 +649,6 @@ public class LoginActivity extends MenuActivity implements LoaderCallbacks<Curso
                 @Override
                 public void run() {
                     mPasswordView.setTransformationMethod(new PasswordTransformationMethod());
-                    txt_password.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_lock_black_24dp, 0, 0, 0);
                 }
             }, 1000);
 
@@ -828,19 +663,10 @@ public class LoginActivity extends MenuActivity implements LoaderCallbacks<Curso
                 @Override
                 public void run() {
                     mPasswordView.setTransformationMethod(null);
-                    txt_password.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_lock_open_black_24dp, 0, 0, 0);
                 }
             }, 1000);
 
         }
-    }
-
-    public void gotoMain(View v) {
-
-        finish();
-
-        Intent im = new Intent(LoginActivity.this, MainActivity.class);
-        startActivity(im);
     }
 
     public void showCredits(View view) {
@@ -852,9 +678,9 @@ public class LoginActivity extends MenuActivity implements LoaderCallbacks<Curso
             Toast.makeText(this, "TEAM CREDITS: " +
                             "\r\nHassan Naqvi, " +
                             "Ali Azaz, " +
-                            "Gul Sanober, " +
-                            "Ramsha Ahmed, " +
-                            "Javed Khan",
+                            "Mustufa Ansari, " +
+                            "Waqar Farooqui, " +
+                            "Fazal",
                     Toast.LENGTH_LONG)
                     .show();
         }
@@ -1016,157 +842,6 @@ public class LoginActivity extends MenuActivity implements LoaderCallbacks<Curso
             showProgress(false);
         }
     }
-
-    /*public class syncData extends AsyncTask<String, String, String> {
-
-        private Context mContext;
-
-        public syncData(Context mContext) {
-            this.mContext = mContext;
-        }
-
-        @Override
-        protected String doInBackground(String... strings) {
-            runOnUiThread(new Runnable() {
-
-                @Override
-                public void run() {
-                    Toast.makeText(LoginActivity.this, "Sync Enum Blocks", Toast.LENGTH_LONG).show();
-                    new GetAllData(mContext, "EnumBlock").execute();
-                    Toast.makeText(LoginActivity.this, "Sync Users", Toast.LENGTH_LONG).show();
-                    new GetAllData(mContext, "User").execute();
-                    Toast.makeText(LoginActivity.this, "Sync Users", Toast.LENGTH_LONG).show();
-                    new GetAllData(mContext, "BLRandom").execute();
-                    Toast.makeText(LoginActivity.this, "Sync App Version", Toast.LENGTH_LONG).show();
-                    new GetAllData(mContext, "VersionApp").execute();
-                }
-            });
-
-
-            return null;
-        }
-
-        @Override
-        protected void onPostExecute(String s) {
-            new Handler().postDelayed(new Runnable() {
-
-                @Override
-                public void run() {
-
-//                    populateSpinner(mContext);
-
-                    editor.putBoolean("flag", true);
-                    editor.commit();
-
-                    dbBackup();
-
-                }
-            }, 1200);
-        }
-    }*/
-
-    /*public void syncServer() {
-
-        // Require permissions INTERNET & ACCESS_NETWORK_STATE
-        ConnectivityManager connMgr = (ConnectivityManager)
-                getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
-        if (networkInfo != null && networkInfo.isConnected()) {
-
-            DatabaseHelper db = new DatabaseHelper(this);
-            //syncStatus.setText(null);
-            Toast.makeText(getApplicationContext(), "Syncing Forms", Toast.LENGTH_SHORT).show();
-            new SyncAllData(
-                    this,
-                    "Forms",
-                    "updateSyncedForms",
-                    FormsContract.class,
-                    MainApp._HOST_URL + FormsContract.FormsTable._URL,
-                    db.getUnsyncedForms(), this.findViewById(R.id.syncStatus)
-            ).execute();
-
-            Toast.makeText(getApplicationContext(), "Syncing Family Members", Toast.LENGTH_SHORT).show();
-            new SyncAllData(
-                    this,
-                    "Family Members",
-                    "updateSyncedFamilyMembers",
-                    FamilyMembersContract.class,
-                    MainApp._HOST_URL + FamilyMembersContract.familyMembers._URL,
-                    db.getUnsyncedFamilyMembers(), this.findViewById(R.id.syncStatus)
-            ).execute();
-
-            Toast.makeText(getApplicationContext(), "Syncing WRAs", Toast.LENGTH_SHORT).show();
-            new SyncAllData(
-                    this,
-                    "WRAs",
-                    "updateSyncedMWRAForm",
-                    MWRAContract.class,
-                    MainApp._HOST_URL + MWRAContract.MWRATable._URL,
-                    db.getUnsyncedMWRA(), this.findViewById(R.id.syncStatus)
-            ).execute();
-
-            Toast.makeText(getApplicationContext(), "Syncing Children", Toast.LENGTH_SHORT).show();
-            new SyncAllData(
-                    this,
-                    "Children",
-                    "updateSyncedChildForm",
-                    ChildContract.class,
-                    MainApp._HOST_URL + ChildContract.ChildTable._URL,
-                    db.getUnsyncedChildForms(), this.findViewById(R.id.syncStatus)
-            ).execute();
-
-            Toast.makeText(getApplicationContext(), "Syncing Eligibles", Toast.LENGTH_SHORT).show();
-            new SyncAllData(
-                    this,
-                    "Eligibles",
-                    "updateSyncedEligibles",
-                    EligibleMembersContract.class,
-                    MainApp._HOST_URL + EligibleMembersContract.eligibleMembers._URL,
-                    db.getUnsyncedEligbleMembers(), this.findViewById(R.id.syncStatus)
-            ).execute();
-
-            Toast.makeText(getApplicationContext(), "Syncing Outcomes", Toast.LENGTH_SHORT).show();
-            new SyncAllData(
-                    this,
-                    "Outcomes",
-                    "updateSyncedOutcomeForm",
-                    OutcomeContract.class,
-                    MainApp._HOST_URL + OutcomeContract.outcomeTable._URL,
-                    db.getUnsyncedOutcome(), this.findViewById(R.id.syncStatus)
-            ).execute();
-
-            Toast.makeText(getApplicationContext(), "Syncing Recepients", Toast.LENGTH_SHORT).show();
-            new SyncAllData(
-                    this,
-                    "Recepients",
-                    "updateSyncedRecepientsForm",
-                    RecipientsContract.class,
-                    MainApp._HOST_URL + RecipientsContract.RecipientsTable._URL,
-                    db.getUnsyncedRecipients(), this.findViewById(R.id.syncStatus)
-            ).execute();
-
-            Toast.makeText(getApplicationContext(), "Syncing Nutrition", Toast.LENGTH_SHORT).show();
-            new SyncAllData(
-                    this,
-                    "Nutrition",
-                    "updateSyncedNutrition",
-                    NutritionContract.class,
-                    MainApp._HOST_URL + NutritionContract.NutritionTable._URL,
-                    db.getUnsyncedNutrition(), this.findViewById(R.id.syncStatus)
-            ).execute();
-
-            SharedPreferences syncPref = getSharedPreferences("SyncInfo", Context.MODE_PRIVATE);
-            SharedPreferences.Editor editor = syncPref.edit();
-
-            editor.putString("LastUpSyncServer", dtToday);
-
-            editor.apply();
-
-        } else {
-            Toast.makeText(this, "No network connection available.", Toast.LENGTH_SHORT).show();
-        }
-
-    }*/
 
 }
 
