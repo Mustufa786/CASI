@@ -55,7 +55,7 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (i == R.id.cih303b || i == R.id.cih303c) {
-                    formValidation();
+//                    formValidation();
                     ClearClass.ClearAllFields(binding.fldGrcih304, false);
                 } else {
                     ClearClass.ClearAllFields(binding.fldGrcih304, true);
@@ -96,7 +96,7 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
         binding.cih305.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                formValidation();
+//                formValidation();
                 if (checkedId == R.id.cih305b) {
                     ClearClass.ClearAllFields(binding.fldGrpcih305, false);
                 } else {
@@ -112,10 +112,9 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
         binding.cih307.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                formValidation();
+//                formValidation();
                 if (i == R.id.cih307h || i == R.id.cih307i) {
                     ClearClass.ClearAllFields(binding.fldGrpcih308, false);
-                    //  ClearClass.ClearAllFields(binding.fldGrpcih309,true);
                 } else {
                     ClearClass.ClearAllFields(binding.fldGrpcih308, true);
                 }
@@ -126,11 +125,10 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
         binding.cih308.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                formValidation();
+//                formValidation();
                 if (checkedId == R.id.cih308b) {
                     ClearClass.ClearAllFields(binding.fldGrpcih309, false);
                 } else {
-//                    binding.fldGrpcih309.setVisibility(View.VISIBLE);
                     ClearClass.ClearAllFields(binding.fldGrpcih309, true);
 
                 }
@@ -175,7 +173,7 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
         binding.cih315.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                formValidation();
+//                formValidation();
                 if (binding.cih315a.isChecked()) {
                     ClearClass.ClearAllFields(binding.fldGrpcih316, true);
                 } else {
@@ -634,7 +632,6 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
             return false;
         }
 
-
         if (!ValidatorClass.EmptyRadioButton(this, binding.cih303a, binding.cih303a1, getString(R.string.cih303a))) {
             return false;
         }
@@ -1090,7 +1087,7 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
 
     @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
-        formValidation();
+//        formValidation();
     }
 
     @Override
@@ -1116,7 +1113,7 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
 
                         runOnUiThread(new Runnable() {
                             public void run() {
-                                formValidation();
+//                                formValidation();
                             }
                         });
 

@@ -130,7 +130,7 @@ public class SectionA402Activity extends AppCompatActivity implements RadioGroup
         binding.cih321.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                formValidation();
+//                formValidation();
                 if (i == R.id.cih321b) {
                     ClearClass.ClearAllFields(binding.fldGrpcih322, false);
 
@@ -147,7 +147,7 @@ public class SectionA402Activity extends AppCompatActivity implements RadioGroup
         binding.cih323.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                formValidation();
+//                formValidation();
                 if (i == R.id.cih323b) {
                     ClearClass.ClearAllFields(binding.fldGrpcih324, false);
                 } else {

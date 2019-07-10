@@ -68,13 +68,12 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
         binding.cih401.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                //formValidation();
                 if (!(checkedId == R.id.cih401a)) {
 
                     ClearClass.ClearAllFields(binding.fldGrpcih402, false);
 
                 } else {
-                    formValidation();
+//                    formValidation();
                     ClearClass.ClearAllFields(binding.fldGrpcih402, true);
                 }
             }
@@ -113,7 +112,7 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
         binding.cih404.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                formValidation();
+//                formValidation();
                 if (checkedId == R.id.cih404b) {
                     ClearClass.ClearAllFields(binding.fldGrpcih405, false);
 
@@ -148,7 +147,7 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
         binding.cih501.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                formValidation();
+//                formValidation();
                 if (checkedId == R.id.cih501d || checkedId == R.id.cih50196) {
                     ClearClass.ClearAllFields(binding.fldGrcih602, false);
                     ClearClass.ClearAllFields(binding.fldGrnc502, false);
@@ -565,7 +564,7 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
 
                         runOnUiThread(new Runnable() {
                             public void run() {
-                                formValidation();
+//                                formValidation();
                             }
                         });
 
@@ -577,7 +576,7 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
 
     @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
-        formValidation();
+//        formValidation();
     }
 
 
