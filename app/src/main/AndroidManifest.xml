@@ -185,7 +185,6 @@
         <activity
             android:name=".ui.labs.SpecimenInfoActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateVisible|adjustPan" />
         <activity
             android:name=".WifiDirect.WiFiDirectActivity"
