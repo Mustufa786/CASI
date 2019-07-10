@@ -187,7 +187,6 @@ public class ViewMemberActivity extends MenuActivity {
 
     }
 
-
     private void initializingLists() {
 
         MainApp.all_members_1 = new ArrayList<>();
@@ -237,7 +236,7 @@ public class ViewMemberActivity extends MenuActivity {
         new populateChildRecyclerView(this).execute();
 
         binding.recyclerChild.addOnItemTouchListener(
-                new ViewMemRecyclerItemClickListener(getApplicationContext(), new ViewMemRecyclerItemClickListener.OnItemClickListener() {
+                new ViewMemRecyclerItemClickListener(ViewMemberActivity.this, new ViewMemRecyclerItemClickListener.OnItemClickListener() {
                     @Override
                     public void onItemClick(View view, final int position) {
                         // TODO Handle item click
@@ -295,7 +294,7 @@ public class ViewMemberActivity extends MenuActivity {
         new populateWraRecyclerView(this).execute();
 
         binding.recyclerMwra.addOnItemTouchListener(
-                new ViewMemRecyclerItemClickListener(getApplicationContext(), new ViewMemRecyclerItemClickListener.OnItemClickListener() {
+                new ViewMemRecyclerItemClickListener(ViewMemberActivity.this, new ViewMemRecyclerItemClickListener.OnItemClickListener() {
                     @Override
                     public void onItemClick(View view, final int position) {
                         // TODO Handle item click
@@ -356,7 +355,7 @@ public class ViewMemberActivity extends MenuActivity {
     }
 
     private void viewOthList() {
-        new populateOtherRecyclerView().execute();
+        new populateOtherRecyclerView(this).execute();
     }
 
     public void BtnCheckEnm() {
@@ -423,8 +422,7 @@ public class ViewMemberActivity extends MenuActivity {
                     if (MainApp.childNA.size() > 0) {
                         SectionC1Activity.isNA = true;
                         GetIntent = new Intent(this, SectionC1Activity.class);
-                    }
-                    else if (MainApp.childUnder5_Del.size() > 0) {
+                    } else if (MainApp.childUnder5_Del.size() > 0) {
                         for (FamilyMembersContract familyMembersContract : MainApp.childUnder5_Del) {
                             if (!familyMembersContract.getMotherId().equals("00")) {
                                 for (FamilyMembersContract familyMembersContract1 : MainApp.members_f_m) {
@@ -668,7 +666,7 @@ public class ViewMemberActivity extends MenuActivity {
     }
 
     public void intentWifi(View view) {
-        Intent wifidirect = new Intent(getApplicationContext(), WiFiDirectActivity.class);
+        Intent wifidirect = new Intent(ViewMemberActivity.this, WiFiDirectActivity.class);
         startActivity(wifidirect);
     }
 
@@ -766,7 +764,7 @@ public class ViewMemberActivity extends MenuActivity {
                     adolescentsAdapter = new AdolescentsAdapter(MainApp.adolescents_1);
                     if (adolescentsAdapter.getItemCount() > 0) {
                         binding.noadolfound.setVisibility(View.GONE);
-                        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
+                        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(mContext);
                         binding.recyclerAdol.setLayoutManager(mLayoutManager);
                         binding.recyclerAdol.setItemAnimator(new DefaultItemAnimator());
                         binding.recyclerAdol.setAdapter(adolescentsAdapter);
@@ -815,7 +813,7 @@ public class ViewMemberActivity extends MenuActivity {
                     wraAdapter = new WraAdapter(mContext, MainApp.mwra_1);
                     if (wraAdapter.getItemCount() > 0) {
                         binding.nowrafound.setVisibility(View.GONE);
-                        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
+                        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(mContext);
                         binding.recyclerMwra.setLayoutManager(mLayoutManager);
                         binding.recyclerMwra.setItemAnimator(new DefaultItemAnimator());
                         binding.recyclerMwra.setAdapter(wraAdapter);
@@ -844,7 +842,10 @@ public class ViewMemberActivity extends MenuActivity {
 
     public class populateOtherRecyclerView extends AsyncTask<String, String, String> {
 
-        public populateOtherRecyclerView() {
+        Context mContext;
+
+        public populateOtherRecyclerView(Context mContext) {
+            this.mContext = mContext;
         }
 
         @Override
@@ -859,7 +860,7 @@ public class ViewMemberActivity extends MenuActivity {
 
                     if (othersAdapter.getItemCount() > 0) {
                         binding.othersfound.setVisibility(View.GONE);
-                        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
+                        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(mContext);
                         binding.recyclerOthers.setLayoutManager(mLayoutManager);
                         binding.recyclerOthers.setItemAnimator(new DefaultItemAnimator());
                         binding.recyclerOthers.setAdapter(othersAdapter);
@@ -899,7 +900,7 @@ public class ViewMemberActivity extends MenuActivity {
 
                     if (childAdapter.getItemCount() > 0) {
                         binding.nochildfound.setVisibility(View.GONE);
-                        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
+                        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(mContext);
                         binding.recyclerChild.setLayoutManager(mLayoutManager);
                         binding.recyclerChild.setItemAnimator(new DefaultItemAnimator());
                         binding.recyclerChild.setAdapter(childAdapter);

@@ -7,28 +7,28 @@ import com.google.gson.annotations.SerializedName;
  */
 
 public class JSONModelClass {
-    @SerializedName("nh202")
+    @SerializedName("cih202")
     private String name = "";
     private String age = "";
-    @SerializedName("nh2SerialNo")
+    @SerializedName("cih2SerialNo")
     private String serialNo = "";
-    @SerializedName("nh207")
+    @SerializedName("cih207")
     private String maritalStatus = "";
-    @SerializedName("nh204")
+    @SerializedName("cih204")
     private String gender = "";
     private String mothername = "";
-    private String nh210;
+    private String cih210;
 
     public JSONModelClass() {
 
     }
 
-    public String getNh210() {
-        return nh210;
+    public String getcih210() {
+        return cih210;
     }
 
-    public void setNh210(String nh210) {
-        this.nh210 = nh210;
+    public void setcih210(String cih210) {
+        this.cih210 = cih210;
     }
 
     public String getMothername() {
