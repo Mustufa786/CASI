@@ -60,9 +60,7 @@
 
                 <EditText
                     android:id="@+id/na202"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="1dp"
+                    style="@style/textInput"
                     android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
                     android:hint="@string/na202"
                     android:maxLength="25" />
@@ -365,9 +363,7 @@
 
                         <EditText
                             android:id="@+id/cih2doby"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="1dp"
+                            style="@style/textInput"
                             android:hint="@string/year2"
                             android:inputType="number"
                             android:maxLength="4"
@@ -394,9 +390,7 @@
 
                         <EditText
                             android:id="@+id/cih2dobm"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="1dp"
+                            style="@style/textInput"
                             android:hint="@string/month"
                             android:inputType="number"
                             android:maxLength="2"
@@ -422,10 +416,7 @@
 
                         <EditText
                             android:id="@+id/cih2dobd"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="1dp"
-                            android:digits="0123456789"
+                            style="@style/textInput"
                             android:hint="@string/day"
                             android:inputType="number"
                             android:maxLength="2"
@@ -475,9 +466,7 @@
 
                             <EditText
                                 android:id="@+id/cih2agey"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="1dp"
+                                style="@style/textInput"
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:hint="@string/year"
@@ -809,9 +798,7 @@
 
                     <EditText
                         android:id="@+id/cih2occ96x"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="1dp"
+                        style="@style/textInput"
                         android:digits="abcdefghijklkmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                         android:hint="@string/other"
                         android:inputType="textCapWords"

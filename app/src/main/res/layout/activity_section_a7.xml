@@ -76,8 +76,6 @@
                 <com.edittextpicker.aliazaz.EditTextPicker
                     style="@style/textInput"
                     android:id="@+id/cih70102"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:hint="@string/benef"
                     android:inputType="number"
                     android:maxLength="2"
@@ -100,8 +98,7 @@
 
                 <EditText
                     android:id="@+id/cih70103"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/textInput"
                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:spinnerMode="dialog"
                     android:visibility='@{cih701a.checked? View.VISIBLE : View.GONE}' />
@@ -155,8 +152,7 @@
 
                 <com.edittextpicker.aliazaz.EditTextPicker
                     android:id="@+id/cih70202"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/textInput"
                     android:hint="@string/benef"
                     android:inputType="number"
                     android:maxLength="2"
@@ -178,8 +174,7 @@
 
                 <EditText
                     android:id="@+id/cih70203"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/textInput"
                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:spinnerMode="dialog"
                     android:visibility='@{cih702a.checked? View.VISIBLE : View.GONE}' />
@@ -233,8 +228,7 @@
 
                 <com.edittextpicker.aliazaz.EditTextPicker
                     android:id="@+id/cih70302"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/textInput"
                     android:hint="@string/benef"
                     android:inputType="number"
                     android:maxLength="2"
@@ -257,8 +251,7 @@
 
                 <EditText
                     android:id="@+id/cih70303"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/textInput"
                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:spinnerMode="dialog"
                     android:visibility='@{cih703a.checked? View.VISIBLE : View.GONE}' />
@@ -313,8 +306,7 @@
 
                 <com.edittextpicker.aliazaz.EditTextPicker
                     android:id="@+id/cih70402"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/textInput"
                     android:hint="@string/benef"
                     android:inputType="number"
                     android:maxLength="2"
@@ -337,8 +329,7 @@
 
                 <EditText
                     android:id="@+id/cih70403"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/textInput"
                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:spinnerMode="dialog"
                     android:visibility='@{cih704a.checked? View.VISIBLE : View.GONE}' />
@@ -392,8 +383,7 @@
 
                 <com.edittextpicker.aliazaz.EditTextPicker
                     android:id="@+id/cih70502"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/textInput"
                     android:hint="@string/benef"
                     android:inputType="number"
                     android:maxLength="2"
@@ -415,8 +405,7 @@
 
                 <EditText
                     android:id="@+id/cih70503"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/textInput"
                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:spinnerMode="dialog"
                     android:visibility='@{cih705a.checked? View.VISIBLE : View.GONE}' />
@@ -470,8 +459,7 @@
 
                 <com.edittextpicker.aliazaz.EditTextPicker
                     android:id="@+id/cih70602"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/textInput"
                     android:hint="@string/benef"
                     android:inputType="number"
                     android:maxLength="2"
@@ -493,8 +481,7 @@
 
                 <EditText
                     android:id="@+id/cih70603"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/textInput"
                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:spinnerMode="dialog"
                     android:visibility='@{cih706a.checked? View.VISIBLE : View.GONE}' />
@@ -548,8 +535,7 @@
 
                 <com.edittextpicker.aliazaz.EditTextPicker
                     android:id="@+id/cih70702"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/textInput"
                     android:hint="@string/benef"
                     android:inputType="number"
                     android:maxLength="2"
@@ -571,8 +557,7 @@
 
                 <EditText
                     android:id="@+id/cih70703"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/textInput"
                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:spinnerMode="dialog"
                     android:visibility='@{cih707a.checked? View.VISIBLE : View.GONE}' />
@@ -628,8 +613,7 @@
 
                 <com.edittextpicker.aliazaz.EditTextPicker
                     android:id="@+id/cih70802"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/textInput"
                     android:hint="@string/benef"
                     android:inputType="number"
                     android:maxLength="2"
@@ -652,8 +636,7 @@
 
                 <EditText
                     android:id="@+id/cih70803"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/textInput"
                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:spinnerMode="dialog"
                     android:visibility='@{cih708a.checked? View.VISIBLE : View.GONE}' />
@@ -707,8 +690,7 @@
 
                 <com.edittextpicker.aliazaz.EditTextPicker
                     android:id="@+id/cih70902"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/textInput"
                     android:hint="@string/benef"
                     android:inputType="number"
                     android:maxLength="2"
@@ -731,8 +713,7 @@
 
                 <EditText
                     android:id="@+id/cih70903"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/textInput"
                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:spinnerMode="dialog"
                     android:visibility='@{cih709a.checked? View.VISIBLE : View.GONE}' />
@@ -786,8 +767,7 @@
 
                 <com.edittextpicker.aliazaz.EditTextPicker
                     android:id="@+id/cih71002"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/textInput"
                     android:hint="@string/benef"
                     android:inputType="number"
                     android:maxLength="2"
@@ -809,8 +789,7 @@
 
                 <EditText
                     android:id="@+id/cih71003"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/textInput"
                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:spinnerMode="dialog"
                     android:visibility='@{cih710a.checked? View.VISIBLE : View.GONE}' />
@@ -865,8 +844,7 @@
 
                 <com.edittextpicker.aliazaz.EditTextPicker
                     android:id="@+id/cih71102"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/textInput"
                     android:hint="@string/benef"
                     android:inputType="number"
                     android:maxLength="2"
@@ -889,8 +867,7 @@
 
                 <EditText
                     android:id="@+id/cih71103"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/textInput"
                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:spinnerMode="dialog"
                     android:visibility='@{cih711a.checked? View.VISIBLE : View.GONE}' />
@@ -945,8 +922,7 @@
 
                 <com.edittextpicker.aliazaz.EditTextPicker
                     android:id="@+id/cih71202"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/textInput"
                     android:hint="@string/benef"
                     android:inputType="number"
                     android:maxLength="2"
@@ -969,8 +945,7 @@
 
                 <EditText
                     android:id="@+id/cih71203"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/textInput"
                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:spinnerMode="dialog"
                     android:visibility='@{cih712a.checked? View.VISIBLE : View.GONE}' />
@@ -1025,8 +1000,7 @@
 
                 <com.edittextpicker.aliazaz.EditTextPicker
                     android:id="@+id/cih71302"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/textInput"
                     android:hint="@string/benef"
                     android:inputType="number"
                     android:maxLength="2"
@@ -1048,8 +1022,7 @@
 
                 <EditText
                     android:id="@+id/cih71303"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/textInput"
                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
                     android:spinnerMode="dialog"
                     android:visibility='@{cih713a.checked? View.VISIBLE : View.GONE}' />
@@ -1080,8 +1053,7 @@
 
                     <EditText
                         android:id="@+id/cih714x"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/textInput"
                         android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
                         android:hint="@string/other"
                         android:inputType="text"
@@ -1122,8 +1094,7 @@
 
                     <EditText
                         android:id="@+id/cih715x"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/textInput"
                         android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
                         android:hint="@string/other"
                         android:inputType="text"

@@ -134,9 +134,7 @@
 
                 <EditText
                     android:id="@+id/cih30196x"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
+                    style="@style/textInput"
                     android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
                     android:enabled="@{cih30196.checked ? true : false}"
                     android:hint="@string/other"
@@ -186,9 +184,7 @@
 
                 <EditText
                     android:id="@+id/cih30296x"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
+                    style="@style/textInput"
                     android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
                     android:enabled="@{cih30296.checked ? true : false}"
                     android:hint="@string/other"
@@ -411,9 +407,7 @@
 
                     <EditText
                         android:id="@+id/cih30396x"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
+                        style="@style/textInput"
                         android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
                         android:enabled="@{cih30396.checked ? true : false}"
                         android:hint="@string/other"
@@ -439,8 +433,7 @@
 
                     <EditText
                         android:id="@+id/cih304"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/textInput"
                         android:hint="@string/cih304min"
                         android:inputType="number"
                         android:maxLength="3" />
@@ -585,9 +578,7 @@
 
                     <EditText
                         android:id="@+id/cih30696x"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="1dp"
+                        style="@style/textInput"
                         android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
                         android:enabled="@{cih30696.checked ? true : false}"
                         android:hint="@string/other"
@@ -719,9 +710,7 @@
 
                     <EditText
                         android:id="@+id/cih30796x"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="1dp"
+                        style="@style/textInput"
                         android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
                         android:enabled="@{cih30796.checked ? true : false}"
                         android:hint="@string/other"
@@ -791,9 +780,7 @@
 
                         <EditText
                             android:id="@+id/cih309"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="1dp"
+                            style="@style/textInput"
                             android:digits="1234567890"
                             android:hint="@string/cih309"
                             android:inputType="number"
@@ -887,9 +874,7 @@
 
                 <EditText
                     android:id="@+id/cih31096x"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
+                    style="@style/textInput"
                     android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
                     android:enabled="@{cih31096.checked ? true : false}"
                     android:hint="@string/other"
@@ -2196,9 +2181,7 @@
 
                     <EditText
                         android:id="@+id/cih31396x"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
+                        style="@style/textInput"
                         android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
                         android:enabled='@{cih31396.checked ? true : false}'
                         android:hint="@string/other"
@@ -2321,9 +2304,7 @@
 
                 <EditText
                     android:id="@+id/cih31496x"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
+                    style="@style/textInput"
                     android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
                     android:enabled="@{cih31496.checked ? true : false}"
                     android:hint="@string/other"
@@ -2380,9 +2361,7 @@
 
                 <EditText
                     android:id="@+id/cih31596x"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
+                    style="@style/textInput"
                     android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
                     android:enabled="@{cih31596.checked ? true : false}"
                     android:hint="@string/other"
@@ -2581,9 +2560,7 @@
 
                     <EditText
                         android:id="@+id/cih31796x"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
+                        style="@style/textInput"
                         android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
                         android:enabled="@{cih31796.checked ? true : false}"
                         android:hint="@string/other"

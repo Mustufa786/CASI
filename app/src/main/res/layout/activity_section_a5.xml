@@ -549,9 +549,7 @@
 
                     <EditText
                         android:id="@+id/cih40696x"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
+                        style="@style/textInput"
                         android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
                         android:enabled='@{cih40696a.checked ? true : false}'
                         android:hint="@string/other"
@@ -650,9 +648,7 @@
 
                         <EditText
                             android:id="@+id/cih50196x"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
+                            style="@style/textInput"
                             android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
                             android:enabled='@{cih50196.checked ? true : false}'
                             android:hint="@string/other"
