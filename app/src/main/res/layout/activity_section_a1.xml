@@ -341,9 +341,7 @@
 
                         <TextView
                             android:id="@+id/hhName"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:enabled="false"
+                            style="@style/sub"
                             android:paddingLeft="10dp" />
 
                         <CheckBox
