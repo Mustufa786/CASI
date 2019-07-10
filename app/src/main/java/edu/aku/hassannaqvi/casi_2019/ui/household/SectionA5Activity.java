@@ -633,7 +633,7 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
 
                         runOnUiThread(new Runnable() {
                             public void run() {
-                                formValidation();
+//                                formValidation();
                             }
                         });
 
