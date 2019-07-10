@@ -206,9 +206,7 @@
 
                             <EditText
                                 android:id="@+id/cic201y"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="1dp"
+                                style="@style/textInput"
                                 android:hint="@string/year"
                                 android:inputType="number"
                                 android:maxLength="4"
@@ -234,9 +232,7 @@
 
                             <EditText
                                 android:id="@+id/cic201m"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="1dp"
+                                style="@style/textInput"
                                 android:hint="@string/months"
                                 android:inputType="number"
                                 android:maxLength="2"
@@ -264,11 +260,9 @@
 
                             <EditText
                                 android:id="@+id/cic201d"
-                                android:layout_width="match_parent"
+                                style="@style/textInput"
                                 android:layout_height="0dp"
-                                android:layout_marginBottom="1dp"
                                 android:layout_weight="1"
-                                android:digits="0123456789"
                                 android:hint="@string/day"
                                 android:inputType="number"
                                 android:maxLength="2"
@@ -356,8 +350,7 @@
 
                         <EditText
                             android:id="@+id/cic203"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/textInput"
                             android:layout_weight="1"
                             android:hint="@string/cic203a"
                             android:inputType="number"

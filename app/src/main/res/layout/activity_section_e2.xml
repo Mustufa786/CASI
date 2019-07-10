@@ -126,8 +126,7 @@
 
                         <EditText
                             android:id="@+id/ne20301"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/textInput"
                             android:layout_weight="1"
                             android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-"
                             android:enabled="false"
@@ -226,8 +225,7 @@
 
                         <EditText
                             android:id="@+id/ne20302"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/textInput"
                             android:layout_weight="1"
                             android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-"
                             android:enabled="false"
@@ -325,8 +323,7 @@
 
                         <EditText
                             android:id="@+id/ne20303"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/textInput"
                             android:layout_weight="1"
                             android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-"
                             android:enabled="false"
@@ -424,8 +421,7 @@
 
                         <EditText
                             android:id="@+id/ne20304"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/textInput"
                             android:layout_weight="1"
                             android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-"
                             android:enabled="false"
@@ -523,8 +519,7 @@
 
                         <EditText
                             android:id="@+id/ne20305"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/textInput"
                             android:layout_weight="1"
                             android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-"
                             android:enabled="false"
@@ -635,8 +630,7 @@
 
                                 <EditText
                                     android:id="@+id/ne2030601"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    style="@style/textInput"
                                     android:layout_weight="1"
                                     android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-"
                                     android:enabled="false"
@@ -726,8 +720,7 @@
 
                                 <EditText
                                     android:id="@+id/ne2030602"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    style="@style/textInput"
                                     android:layout_weight="1"
                                     android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-"
                                     android:enabled="false"
@@ -817,8 +810,7 @@
 
                                 <EditText
                                     android:id="@+id/ne2030603"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    style="@style/textInput"
                                     android:layout_weight="1"
                                     android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-"
                                     android:enabled="false"
@@ -908,8 +900,7 @@
 
                                 <EditText
                                     android:id="@+id/ne2030604"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    style="@style/textInput"
                                     android:layout_weight="1"
                                     android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-"
                                     android:enabled="false"

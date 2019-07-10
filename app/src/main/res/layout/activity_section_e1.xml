@@ -158,8 +158,7 @@
 
                         <EditText
                             android:id="@+id/ne105"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/textInput"
                             android:layout_weight="1"
                             android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-"
                             android:inputType="textCapCharacters"
@@ -193,9 +192,7 @@
                             <io.blackbox_vision.datetimepickeredittext.view.DatePickerInputEditText
                                 android:id="@+id/ne104d"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="2dp"
-                                android:layout_marginBottom="2dp"
+                                style="@style/textInput"
                                 android:layout_weight="4"
                                 android:focusable="false"
                                 android:hint="DD/MM/YYYY"
@@ -223,8 +220,7 @@
                             <io.blackbox_vision.datetimepickeredittext.view.TimePickerEditText
                                 android:id="@+id/ne104t"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="2dp"
+                                style="@style/textInput"
                                 android:layout_weight="4"
                                 android:focusable="false"
                                 android:hint="HH:MM"
@@ -252,8 +248,7 @@
 
                         <EditText
                             android:id="@+id/ne106"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/textInput"
                             android:hint="@string/hb_result"
                             android:inputType="numberDecimal"
                             android:maxLength="4" />
@@ -392,8 +387,7 @@
 
                         <EditText
                             android:id="@+id/ne109"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/textInput"
                             android:layout_weight="1"
                             android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-"
                             android:inputType="textCapCharacters"
@@ -427,9 +421,7 @@
                             <io.blackbox_vision.datetimepickeredittext.view.DatePickerInputEditText
                                 android:id="@+id/ne108d"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="2dp"
-                                android:layout_marginBottom="2dp"
+                                style="@style/textInput"
                                 android:layout_weight="4"
                                 android:focusable="false"
                                 android:hint="DD/MM/YYYY"
@@ -457,8 +449,7 @@
                             <io.blackbox_vision.datetimepickeredittext.view.TimePickerEditText
                                 android:id="@+id/ne108t"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="2dp"
+                                style="@style/textInput"
                                 android:layout_weight="4"
                                 android:focusable="false"
                                 android:hint="HH:MM"

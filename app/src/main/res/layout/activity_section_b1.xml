@@ -177,9 +177,7 @@
 
                             <EditText
                                 android:id="@+id/ciw201years"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="1dp"
+                                style="@style/textInput"
                                 android:hint="@string/year2"
                                 android:inputType="number"
                                 android:maxLength="4"
@@ -208,9 +206,7 @@
 
                             <EditText
                                 android:id="@+id/ciw201months"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="1dp"
+                                style="@style/textInput"
                                 android:hint="@string/month"
                                 android:inputType="number"
                                 android:maxLength="2"
@@ -236,9 +232,7 @@
 
                             <EditText
                                 android:id="@+id/ciw201days"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="1dp"
+                                style="@style/textInput"
                                 android:digits="0123456789"
                                 android:hint="@string/day"
                                 android:inputType="number"
@@ -271,8 +265,7 @@
 
                     <EditText
                         android:id="@+id/ciw202"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/textInput"
                         android:hint="@string/ciw202a"
                         android:inputType="number"
                         android:maxLength="2"
@@ -417,8 +410,7 @@
 
                             <EditText
                                 android:id="@+id/ciw206"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                style="@style/textInput"
                                 android:hint="@string/ciw206"
                                 android:inputType="number"
                                 android:maxLength="2"
@@ -788,8 +780,7 @@
 
                                     <EditText
                                         android:id="@+id/ciw211"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
+                                        style="@style/textInput"
                                         android:hint="@string/ciw211"
                                         android:inputType="number"
                                         android:maxLength="2"
@@ -813,8 +804,7 @@
 
                                         <EditText
                                             android:id="@+id/ciw212"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
+                                            style="@style/textInput"
                                             android:hint="@string/ciw212"
                                             android:inputType="number"
                                             android:maxLength="2"
@@ -848,8 +838,7 @@
 
                                             <EditText
                                                 android:id="@+id/ciw213"
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
+                                                style="@style/textInput"
                                                 android:hint="@string/ciw213"
                                                 android:inputType="number"
                                                 android:maxLength="2"
@@ -875,8 +864,7 @@
                                             <EditText
 
                                                 android:id="@+id/ciw214"
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
+                                                style="@style/textInput"
                                                 android:hint="@string/ciw214"
                                                 android:inputType="number"
                                                 android:maxLength="2"
@@ -894,8 +882,7 @@
 
                                             <EditText
                                                 android:id="@+id/ciw215"
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
+                                                style="@style/textInput"
                                                 android:hint="@string/ciw215"
                                                 android:inputType="number"
                                                 android:maxLength="2"

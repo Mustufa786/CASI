@@ -82,9 +82,7 @@
 
             <EditText
                 android:id="@+id/nd1w"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                style="@style/textInput"
                 android:hint="@string/nd1w"
                 android:inputType="numberDecimal"
                 android:maxLength="6" />
@@ -107,9 +105,7 @@
 
                 <EditText
                     android:id="@+id/nd1w1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
+                    style="@style/textInput"
                     android:hint="@string/nd1w"
                     android:inputType="numberDecimal"
                     android:maxLength="6"
@@ -130,9 +126,7 @@
 
             <EditText
                 android:id="@+id/nd1h"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                style="@style/textInput"
                 android:hint="@string/nd1h"
                 android:inputType="numberDecimal"
                 android:maxLength="5" />
@@ -156,9 +150,7 @@
 
                 <EditText
                     android:id="@+id/nd1h1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
+                    style="@style/textInput"
                     android:hint="@string/nd1h"
                     android:inputType="numberDecimal"
                     android:maxLength="5"
@@ -178,9 +170,7 @@
 
             <EditText
                 android:id="@+id/nd1muac"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                style="@style/textInput"
                 android:hint="@string/nd1muac"
                 android:inputType="numberDecimal"
                 android:maxLength="4" />
@@ -203,9 +193,7 @@
 
                 <EditText
                     android:id="@+id/nd1muac1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
+                    style="@style/textInput"
                     android:hint="@string/nd1muac"
                     android:inputType="numberDecimal"
                     android:maxLength="4"

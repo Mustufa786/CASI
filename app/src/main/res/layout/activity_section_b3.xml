@@ -75,10 +75,7 @@
 
                     <EditText
                         android:id="@+id/ciw327m"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:digits="0123456789"
+                        style="@style/textInput"
                         android:enabled='@{ciw327a.checked ? true : false}'
                         android:hint="@string/months"
                         android:inputType="number"
@@ -95,10 +92,8 @@
 
                     <EditText
                         android:id="@+id/ciw327d"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/textInput"
                         android:layout_marginTop="5dp"
-                        android:digits="0123456789"
                         android:enabled='@{ciw327b.checked ? true : false}'
                         android:hint="@string/day"
                         android:inputType="number"
@@ -193,9 +188,7 @@
 
                         <EditText
                             android:id="@+id/ciw32896x"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
+                            style="@style/textInput"
                             android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
                             android:enabled='@{ciw32896.checked ? true : false}'
                             android:hint="@string/other"

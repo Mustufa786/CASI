@@ -102,10 +102,7 @@
 
                         <EditText
                             android:id="@+id/ciw217d"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="1dp"
-                            android:digits="0123456789"
+                            style="@style/textInput"
                             android:hint="@string/day"
                             android:inputType="number"
                             android:maxLength="2"
@@ -131,9 +128,7 @@
 
                         <EditText
                             android:id="@+id/ciw217m"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="1dp"
+                            style="@style/textInput"
                             android:hint="@string/month"
                             android:inputType="number"
                             android:maxLength="2"
@@ -159,9 +154,7 @@
 
                         <EditText
                             android:id="@+id/ciw217y"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="1dp"
+                            style="@style/textInput"
                             android:hint="@string/year2"
                             android:inputType="number"
                             android:maxLength="4"
@@ -342,8 +335,7 @@
 
                                 <EditText
                                     android:id="@+id/ciw221y"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    style="@style/textInput"
                                     android:layout_weight="1"
                                     android:gravity="center"
                                     android:hint="@string/year"
@@ -352,8 +344,7 @@
 
                                 <EditText
                                     android:id="@+id/ciw221m"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    style="@style/textInput"
                                     android:layout_weight="1"
                                     android:gravity="center"
                                     android:hint="@string/months"
@@ -362,8 +353,7 @@
 
                                 <EditText
                                     android:id="@+id/ciw221d"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    style="@style/textInput"
                                     android:layout_weight="1"
                                     android:gravity="center"
                                     android:hint="@string/day"
@@ -440,8 +430,7 @@
 
                                 <EditText
                                     android:id="@+id/ciw222y"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    style="@style/textInput"
                                     android:layout_weight="1"
                                     android:gravity="center"
                                     android:hint="@string/year"
@@ -450,8 +439,7 @@
 
                                 <EditText
                                     android:id="@+id/ciw222m"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    style="@style/textInput"
                                     android:layout_weight="1"
                                     android:gravity="center"
                                     android:hint="@string/months"
@@ -460,8 +448,7 @@
 
                                 <EditText
                                     android:id="@+id/ciw222d"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    style="@style/textInput"
                                     android:layout_weight="1"
                                     android:gravity="center"
                                     android:hint="@string/day"
