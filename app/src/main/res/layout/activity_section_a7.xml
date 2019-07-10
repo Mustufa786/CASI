@@ -74,6 +74,7 @@
                     android:visibility='@{cih701a.checked? View.VISIBLE : View.GONE}' />
 
                 <com.edittextpicker.aliazaz.EditTextPicker
+                    style="@style/textInput"
                     android:id="@+id/cih70102"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
