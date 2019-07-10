@@ -82,7 +82,7 @@ public class MainApp extends Application {
     public static String _IP2 = "58.65.211.13"; // Test PHP server
     public static String _IP = "43.245.131.159"; // Test PHP server
     public static String _HOST_URL = "http://" + MainApp._IP + ":" + MainApp._PORT + "/nns/api/";
-    public static String _UPDATE_URL = "http://" + MainApp._IP + ":" + MainApp._PORT + "/nns/app/survey/";
+    public static String _UPDATE_URL = "http://" + MainApp._IP + ":" + MainApp._PORT + "/casi/app/survey/";
     public static String deviceId;
 
     public static Boolean admin = false;
