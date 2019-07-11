@@ -46,11 +46,6 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
         }
     };
     DatabaseHelper db;
-    int recipientCounter = 0;
-    int prevRecipientCounter = 0;
-    Boolean backPressed = false;
-    int prevDeceasedCounter = 0;
-    String cih801, cih802;
     private Timer timer = new Timer();
 
     @Override
@@ -229,17 +224,6 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
                 }
             }
         });
-//        Listeners
-//        binding.cih402.setOnCheckedChangeListener(this);
-//        binding.cih40601.setOnCheckedChangeListener(this);
-//        binding.cih40602.setOnCheckedChangeListener(this);
-//        binding.cih40603.setOnCheckedChangeListener(this);
-//        binding.cih40604.setOnCheckedChangeListener(this);
-//        binding.cih40605.setOnCheckedChangeListener(this);
-//        binding.cih40696.setOnCheckedChangeListener(this);
-//        //binding.cih501.setOnCheckedChangeListener(this);
-//        binding.cih502.setOnCheckedChangeListener(this);
-//        binding.cih503.setOnCheckedChangeListener(this);
 
 //        Validation Boolean
         MainApp.validateFlag = false;
@@ -371,14 +355,6 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
                 );
             }
 
-            if (!jsonA5.getcih801().equals("0")) {
-                cih801 = jsonA5.getcih801().equals("1") ? "1" :
-                        "2";
-            }
-            if (!jsonA5.getcih802().equals("")) {
-                cih802 = jsonA5.getcih802();
-            }
-
         }
     }
 
@@ -386,7 +362,6 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
 
 //        Validation Boolean
         MainApp.validateFlag = true;
-
 
         if (formValidation()) {
             try {
@@ -584,11 +559,6 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
                 : binding.cih618b.isChecked() ? "2"
                 : binding.cih618c.isChecked() ? "3"
                 : "0");
-
-        if (SectionA1Activity.editFormFlag) {
-            sA5.put("cih801", cih801);
-            sA5.put("cih802", cih802);
-        }
 
         MainApp.fc.setsA5(String.valueOf(sA5));
 

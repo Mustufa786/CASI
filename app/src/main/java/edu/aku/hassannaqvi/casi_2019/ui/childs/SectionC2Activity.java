@@ -84,7 +84,7 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
         public void onCheckedChanged(RadioGroup group, int checkedId) {
 
 
-            ValidateForm();
+//            ValidateForm();
 
             if (isoneYes()) {
                 //bi.fldGrpcic218.setVisibility(View.GONE);
@@ -106,7 +106,7 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
         @Override
         public void onCheckedChanged(RadioGroup group, int checkedId) {
 
-            ValidateForm();
+//            ValidateForm();
             if (group == bi.cic215b) {
                 if (bi.cic215ba.isChecked()) {
                     //ClearClass.ClearAllFields(bi.cic215bx, true);
@@ -1273,7 +1273,7 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
         bi.cic206.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                ValidateForm();
+//                ValidateForm();
                 if (bi.cic206a.isChecked()) {
                     //bi.fldGrpcic207.setVisibility(View.VISIBLE);
                     ClearClass.ClearAllFields(bi.fldGrpcic207, true);
@@ -1299,7 +1299,7 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
         bi.cic208.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                ValidateForm();
+//                ValidateForm();
                 if (bi.cic208b.isChecked()) {
                     //bi.fldGrpcic209.setVisibility(View.VISIBLE);
                     ClearClass.ClearAllFields(bi.fldGrpcic209, true);
@@ -1315,7 +1315,7 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
         bi.cic210.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                ValidateForm();
+//                ValidateForm();
                 if (bi.cic210a.isChecked()) {
                     //bi.fldGrpcic211.setVisibility(View.VISIBLE);
                     ClearClass.ClearAllFields(bi.fldGrpcic211, true);
@@ -1331,7 +1331,7 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
         bi.cic212.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                ValidateForm();
+//                ValidateForm();
                 if (bi.cic212a.isChecked()) {
                     //bi.fldGrpcic212a.setVisibility(View.GONE);
                     ClearClass.ClearAllFields(bi.fldGrpcic212a, false);
@@ -1447,7 +1447,7 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
     @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
 
-        ValidateForm();
+//        ValidateForm();
     }
 
     /*@Override

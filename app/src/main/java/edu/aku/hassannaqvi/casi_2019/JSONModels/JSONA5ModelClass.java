@@ -329,36 +329,4 @@ public class JSONA5ModelClass {
     public void setcih609(String cih609) {
         this.cih609 = cih609;
     }
-
-    public String getcih701() {
-        return cih701;
-    }
-
-    public void setcih701(String cih701) {
-        this.cih701 = cih701;
-    }
-
-    public String getcih702() {
-        return cih702;
-    }
-
-    public void setcih702(String cih702) {
-        this.cih702 = cih702;
-    }
-
-    public String getcih801() {
-        return cih801;
-    }
-
-    public void setcih801(String cih801) {
-        this.cih801 = cih801;
-    }
-
-    public String getcih802() {
-        return cih802;
-    }
-
-    public void setcih802(String cih802) {
-        this.cih802 = cih802;
-    }
 }
