@@ -12,11 +12,14 @@ import org.json.JSONObject;
 import java.text.SimpleDateFormat;
 import java.util.Timer;
 
+import edu.aku.hassannaqvi.casi_2019.JSONModels.JSONC4ModelClass;
 import edu.aku.hassannaqvi.casi_2019.R;
+import edu.aku.hassannaqvi.casi_2019.contracts.ChildContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.FamilyMembersContract;
 import edu.aku.hassannaqvi.casi_2019.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2019.core.MainApp;
 import edu.aku.hassannaqvi.casi_2019.databinding.ActivitySectionC4Binding;
+import edu.aku.hassannaqvi.casi_2019.other.JSONUtilClass;
 import edu.aku.hassannaqvi.casi_2019.ui.mainUI.Menu2Activity;
 import edu.aku.hassannaqvi.casi_2019.ui.viewMem.ViewMemberActivity;
 import edu.aku.hassannaqvi.casi_2019.ui.wra.SectionB1Activity;
@@ -79,6 +82,8 @@ public class SectionC4Activity extends Menu2Activity {
 
 //        //        Assigning data to UI binding
         binding.setCallback(this);
+
+        setupViews();
 
 
     }
@@ -188,273 +193,337 @@ public class SectionC4Activity extends Menu2Activity {
 //        Validation Boolean
         MainApp.validateFlag = false;
 
-//        autoPopulateFields();
+        autoPopulateFields();
 
     }
 
-//    private void autoPopulateFields() {
-//        ChildContract childContract = db.getsC4();
-//
-//        if (!childContract.getsC4().equals("")) {
-//
-//            JSONC4ModelClass jsonC4 = JSONUtilClass.getModelFromJSON(childContract.getsC4(), JSONC4ModelClass.class);
-//
-//            if (!jsonC4.getcic401().equals("0")) {
-//                binding.cic401.check(
-//                        jsonC4.getcic401().equals("1") ? binding.cic401a.getId()
-//                                : binding.cic401b.getId());
-//            }
-//            if (!jsonC4.getcic402().equals("0")) {
-//                binding.cic402.check(
-//                        jsonC4.getcic402().equals("1") ? binding.cic402a.getId()
-//                                : binding.cic402b.getId());
-//            }
-//            if (!jsonC4.getcic403().equals("0")) {
-//                binding.cic403.check(
-//                        jsonC4.getcic403().equals("1") ? binding.cic403a.getId()
-//                                : jsonC4.getcic403().equals("2") ? binding.cic403b.getId()
-//                                : jsonC4.getcic403().equals("3") ? binding.cic403c.getId()
-//                                : jsonC4.getcic403().equals("4") ? binding.cic403d.getId()
-//                                : jsonC4.getcic403().equals("5") ? binding.cic403e.getId()
-//                                : jsonC4.getcic403().equals("961") ? binding.cic40396.getId()
-//                );
-//            }
-//            binding.cic40396x.setText(jsonC4.getcic4039601x());
-//
-//
-//            if (!jsonC4.getcic404a().equals("0")) {
-//                binding.cic404a.setChecked(true);
-//            }
-//            if (!jsonC4.getcic404b().equals("0")) {
-//                binding.cic404b.setChecked(true);
-//            }
-//            if (!jsonC4.getcic404c().equals("0")) {
-//                binding.cic404c.setChecked(true);
-//            }
-//            if (!jsonC4.getcic404d().equals("0")) {
-//                binding.cic404d.setChecked(true);
-//            }
-//            if (!jsonC4.getcic404e().equals("0")) {
-//                binding.cic404e.setChecked(true);
-//            }
-//            if (!jsonC4.getcic404f().equals("0")) {
-//                binding.cic404f.setChecked(true);
-//            }
-//            if (!jsonC4.getcic404g().equals("0")) {
-//                binding.cic404g.setChecked(true);
-//            }
-//            if (!jsonC4.getcic404h().equals("0")) {
-//                binding.cic404h.setChecked(true);
-//            }
-//            if (!jsonC4.getcic404i().equals("0")) {
-//                binding.cic404i.setChecked(true);
-//            }
-//            if (!jsonC4.getcic404j().equals("0")) {
-//                binding.cic404j.setChecked(true);
-//            }
-//            if (!jsonC4.getNc404k().equals("0")) {
-//                binding.cic404k.setChecked(true);
-//            }
-//            if (!jsonC4.getNc404l().equals("0")) {
-//                binding.cic404l.setChecked(true);
-//            }
-//            if (!jsonC4.getNc404m().equals("0")) {
-//                binding.cic404m.setChecked(true);
-//            }
-//            if (!jsonC4.getcic40496().equals("0")) {
-//                binding.cic4049601.setChecked(true);
-//            }
-//            if (!jsonC4.getNc4049602().equals("0")) {
-//                binding.cic4049602.setChecked(true);
-//            }
-//            if (!jsonC4.getNc4049603().equals("0")) {
-//                binding.cic4049603.setChecked(true);
-//            }
-//
-//            binding.cic4049601x.setText(jsonC4.getcic40496x());
-//            binding.cic4049602x.setText(jsonC4.getcic40496x());
-//            binding.cic4049603x.setText(jsonC4.getcic40496x());
-//
-//
-////            C405
-//
-//
-//            if (!jsonC4.getcic405().equals("0")) {
-//                binding.cic405.check(
-//                        jsonC4.getcic405().equals("1") ? binding.cic405a.getId()
-//                                : binding.cic405b.getId());
-//            }
-//            if (!jsonC4.getcic406().equals("0")) {
-//                binding.cic406.check(
-//                        jsonC4.getcic406().equals("1") ? binding.cic406a.getId()
-//                                : binding.cic406b.getId());
-//            }
-//            if (!jsonC4.getcic407().equals("0")) {
-//                binding.cic407.check(
-//                        jsonC4.getcic407().equals("1") ? binding.cic407a.getId()
-//                                : jsonC4.getcic407().equals("2") ? binding.cic407b.getId()
-//                                : jsonC4.getcic407().equals("3") ? binding.cic407c.getId()
-//                                : jsonC4.getcic407().equals("4") ? binding.cic407d.getId()
-//                                : jsonC4.getcic407().equals("5") ? binding.cic407e.getId()
-//                                : jsonC4.getcic407().equals("961") ? binding.cic4079601.getId()
-//                                : jsonC4.getcic407().equals("6") ? binding.cic407f.getId()
-//                                : jsonC4.getcic407().equals("7") ? binding.cic407g.getId()
-//                                : jsonC4.getcic407().equals("8") ? binding.cic407h.getId()
-//                                : jsonC4.getcic407().equals("9") ? binding.cic407i.getId()
-//                                : jsonC4.getcic407().equals("10") ? binding.cic407j.getId()
-//                                : jsonC4.getcic407().equals("962") ? binding.cic4079602.getId()
-//                                : jsonC4.getcic407().equals("11") ? binding.cic407k.getId()
-//                                : jsonC4.getcic407().equals("12") ? binding.cic407l.getId()
-//                                : jsonC4.getcic407().equals("13") ? binding.cic407m.getId()
-//                                : binding.cic4079603.getId());
-//            }
-//            binding.cic4079601x.setText(jsonC4.getcic4079601x());
-//            binding.cic4079602x.setText(jsonC4.getcic4079602x());
-//            binding.cic4079603x.setText(jsonC4.getcic4079603x());
-//
-//
-//            if (!jsonC4.getcic408b().equals("0")) {
-//                binding.cic408b.setChecked(true);
-//            }
-//
-//            if (!jsonC4.getcic408e().equals("0")) {
-//                binding.cic408e.setChecked(true);
-//            }
-//            if (!jsonC4.getcic408f().equals("0")) {
-//                binding.cic408f.setChecked(true);
-//            }
-//            if (!jsonC4.getcic408g().equals("0")) {
-//                binding.cic408g.setChecked(true);
-//            }
-//            if (!jsonC4.getcic408h().equals("0")) {
-//                binding.cic408h.setChecked(true);
-//            }
-//            if (!jsonC4.getcic408i().equals("0")) {
-//                binding.cic408i.setChecked(true);
-//            }
-//            if (!jsonC4.getcic408j().equals("0")) {
-//                binding.cic408j.setChecked(true);
-//            }
-//            if (!jsonC4.getcic4089601().equals("0")) {
-//                binding.cic4089601.setChecked(true);
-//            }
-//
-//            binding.cic4089601x.setText(jsonC4.getcic40496x());
-////            C409
-//            if (!jsonC4.getcic409().equals("0")) {
-//                binding.cic409.check(
-//                        jsonC4.getcic409().equals("1") ? binding.cic409a.getId()
-//                                : binding.cic409b.getId());
-//            }
-//            if (!jsonC4.getcic410().equals("0")) {
-//                binding.cic410.check(
-//                        jsonC4.getcic410().equals("1") ? binding.cic410a.getId()
-//                                : binding.cic410b.getId());
-//            }
-//            if (!jsonC4.getcic411().equals("0")) {
-//                binding.cic411.check(
-//                        jsonC4.getcic411().equals("1") ? binding.cic411a.getId()
-//                                : jsonC4.getcic411().equals("2") ? binding.cic411b.getId()
-//                                : jsonC4.getcic411().equals("3") ? binding.cic411c.getId()
-//                                : jsonC4.getcic411().equals("4") ? binding.cic411d.getId()
-//                                : jsonC4.getcic411().equals("5") ? binding.cic411e.getId()
-//                                : jsonC4.getcic411().equals("961") ? binding.cic4119601.getId()
-//                                : jsonC4.getcic411().equals("6") ? binding.cic411f.getId()
-//                                : jsonC4.getcic411().equals("7") ? binding.cic411g.getId()
-//                                : jsonC4.getcic411().equals("8") ? binding.cic411h.getId()
-//                                : jsonC4.getcic411().equals("9") ? binding.cic411i.getId()
-//                                : jsonC4.getcic411().equals("10") ? binding.cic411j.getId()
-//                                : jsonC4.getcic411().equals("962") ? binding.cic4119602.getId()
-//                                : jsonC4.getcic411().equals("11") ? binding.cic411k.getId()
-//                                : jsonC4.getcic411().equals("12") ? binding.cic411l.getId()
-//                                : jsonC4.getcic411().equals("13") ? binding.cic411m.getId()
-//                                : binding.cic4119603.getId());
-//            }
-//            binding.cic4119601x.setText(jsonC4.getcic4119601x());
-//            binding.cic4119602x.setText(jsonC4.getcic4119602x());
-//            binding.cic4119603x.setText(jsonC4.getcic4119603x());
-//
-//            if (!jsonC4.getcic412a().equals("0")) {
-//                binding.cic412b.setChecked(true);
-//            }
-//            if (!jsonC4.getcic412b().equals("0")) {
-//                binding.cic412c.setChecked(true);
-//            }
-//            if (!jsonC4.getcic412c().equals("0")) {
-//                binding.cic412e.setChecked(true);
-//            }
-//            if (!jsonC4.getcic412d().equals("0")) {
-//                binding.cic412f.setChecked(true);
-//            }
-//            if (!jsonC4.getcic412e().equals("0")) {
-//                binding.cic412g.setChecked(true);
-//            }
-//            if (!jsonC4.getcic412f().equals("0")) {
-//                binding.cic412h.setChecked(true);
-//            }
-//            if (!jsonC4.getcic412g().equals("0")) {
-//                binding.cic412i.setChecked(true);
-//            }
-//            if (!jsonC4.getcic412h().equals("0")) {
-//                binding.cic412j.setChecked(true);
-//            }
-//
-//            if (!jsonC4.getcic4129601().equals("0")) {
-//                binding.cic4129601.setChecked(true);
-//            }
-//
-//            binding.cic4129601x.setText(jsonC4.getcic40496x());
-//
-//            if (!jsonC4.getcic413().equals("0")) {
-//                binding.cic413.check(
-//                        jsonC4.getcic413().equals("1") ? binding.cic413a.getId()
-//                                : jsonC4.getcic413().equals("2") ? binding.cic413b.getId()
-//                                : binding.cic41398.getId());
-//            }
-//            if (!jsonC4.getcic414().equals("0")) {
-//                binding.cic414.check(
-//                        jsonC4.getcic414().equals("1") ? binding.cic414a.getId()
-//                                : jsonC4.getcic414().equals("2") ? binding.cic414b.getId()
-//                                : binding.cic41498.getId());
-//            }
-//            if (!jsonC4.getcic415().equals("0")) {
-//                binding.cic415.check(
-//                        jsonC4.getcic415().equals("1") ? binding.cic415a.getId()
-//                                : jsonC4.getcic415().equals("2") ? binding.cic415b.getId()
-//                                : binding.cic41598.getId());
-//            }
-//            binding.cic416.setText(jsonC4.getcic416());
-//
-//            if (!jsonC4.getcic417().equals("0")) {
-//                binding.cic417.check(
-//                        jsonC4.getcic417().equals("1") ? binding.cic417a.getId()
-//                                : jsonC4.getcic417().equals("2") ? binding.cic417b.getId()
-//                                : jsonC4.getcic417().equals("3") ? binding.cic417c.getId()
-//                                : jsonC4.getcic417().equals("4") ? binding.cic417d.getId()
-//                                : binding.cic417e.getId());
-//            }
-//            if (!jsonC4.getcic418().equals("0")) {
-//                binding.cic418.check(
-//                        jsonC4.getcic418().equals("1") ? binding.cic418a.getId()
-//                                : binding.cic418b.getId()
-//                );
-//            }
-//            if (!jsonC4.getcic419().equals("0")) {
-//                binding.cic419.check(
-//                        jsonC4.getcic419().equals("1") ? binding.cic419a.getId()
-//                                : jsonC4.getcic419().equals("2") ? binding.cic419b.getId()
-//                                : jsonC4.getcic419().equals("3") ? binding.cic419c.getId()
-//                                : jsonC4.getcic419().equals("4") ? binding.cic419d.getId()
-//                                : binding.cic419e.getId());
-//            }
-//
-//            binding.cic420m.setText(jsonC4.getcic420m());
-//
-//            binding.cic420d.setText(jsonC4.getcic420d());
-//
-//
-//        }
-//    }
+    private void autoPopulateFields() {
+        ChildContract childContract = db.getsC4();
+
+        if (!childContract.getsC4().equals("")) {
+
+            JSONC4ModelClass jsonC4 = JSONUtilClass.getModelFromJSON(childContract.getsC4(), JSONC4ModelClass.class);
+
+            if (!jsonC4.getcic401().equals("0")) {
+                binding.cic401.check(
+                        jsonC4.getcic401().equals("1") ? binding.cic401a.getId()
+                                : binding.cic401b.getId());
+            }
+            if (!jsonC4.getcic402().equals("0")) {
+                binding.cic402.check(
+                        jsonC4.getcic402().equals("1") ? binding.cic402a.getId()
+                                : binding.cic402b.getId());
+            }
+            if (!jsonC4.getcic403().equals("0")) {
+                binding.cic403.check(
+                        jsonC4.getcic403().equals("1") ? binding.cic403a.getId()
+                                : jsonC4.getcic403().equals("2") ? binding.cic403b.getId()
+                                : jsonC4.getcic403().equals("3") ? binding.cic403c.getId()
+                                : jsonC4.getcic403().equals("4") ? binding.cic403d.getId()
+                                : jsonC4.getcic403().equals("5") ? binding.cic403e.getId()
+                                : binding.cic40396.getId()
+                );
+            }
+            binding.cic40396x.setText(jsonC4.getcic4039601x());
+
+
+            if (!jsonC4.getcic404a().equals("0")) {
+                binding.cic404a.setChecked(true);
+            }
+            if (!jsonC4.getcic404b().equals("0")) {
+                binding.cic404b.setChecked(true);
+            }
+            if (!jsonC4.getcic404c().equals("0")) {
+                binding.cic404c.setChecked(true);
+            }
+            if (!jsonC4.getcic404d().equals("0")) {
+                binding.cic404d.setChecked(true);
+            }
+            if (!jsonC4.getcic404e().equals("0")) {
+                binding.cic404e.setChecked(true);
+            }
+            if (!jsonC4.getcic404f().equals("0")) {
+                binding.cic404f.setChecked(true);
+            }
+            if (!jsonC4.getcic404g().equals("0")) {
+                binding.cic404g.setChecked(true);
+            }
+            if (!jsonC4.getcic404h().equals("0")) {
+                binding.cic404h.setChecked(true);
+            }
+            if (!jsonC4.getcic404i().equals("0")) {
+                binding.cic404i.setChecked(true);
+            }
+            if (!jsonC4.getcic404j().equals("0")) {
+                binding.cic404j.setChecked(true);
+            }
+            if (!jsonC4.getcic404k().equals("0")) {
+                binding.cic404k.setChecked(true);
+            }
+            if (!jsonC4.getcic404l().equals("0")) {
+                binding.cic404l.setChecked(true);
+            }
+            if (!jsonC4.getcic404m().equals("0")) {
+                binding.cic404m.setChecked(true);
+            }
+            if (!jsonC4.getcic40496().equals("0")) {
+                binding.cic4049601.setChecked(true);
+            }
+            if (!jsonC4.getcic4049602().equals("0")) {
+                binding.cic4049602.setChecked(true);
+            }
+            if (!jsonC4.getcic4049603().equals("0")) {
+                binding.cic4049603.setChecked(true);
+            }
+
+            binding.cic4049601x.setText(jsonC4.getcic40496x());
+            binding.cic4049602x.setText(jsonC4.getcic40496x());
+            binding.cic4049603x.setText(jsonC4.getcic40496x());
+
+
+//            C405
+
+
+            if (!jsonC4.getCic405a().equals("0")) {
+                binding.cic405a.setChecked(true);
+            }
+            if (!jsonC4.getCic405b().equals("0")) {
+                binding.cic405b.setChecked(true);
+            }
+            if (!jsonC4.getCic405c().equals("0")) {
+                binding.cic405c.setChecked(true);
+            }
+            if (!jsonC4.getCic405d().equals("0")) {
+                binding.cic405d.setChecked(true);
+            }
+            if (!jsonC4.getCic405e().equals("0")) {
+                binding.cic405e.setChecked(true);
+            }
+            if (!jsonC4.getCic405e().equals("0")) {
+                binding.cic405e.setChecked(true);
+            }
+            if (!jsonC4.getCic405f().equals("0")) {
+                binding.cic405f.setChecked(true);
+            }
+            if (!jsonC4.getCic405g().equals("0")) {
+                binding.cic405g.setChecked(true);
+            }
+            if (!jsonC4.getCic405h().equals("0")) {
+                binding.cic405h.setChecked(true);
+            }
+            if (!jsonC4.getCic405i().equals("0")) {
+                binding.cic405i.setChecked(true);
+            }
+            if (!jsonC4.getCic405j().equals("0")) {
+                binding.cic405j.setChecked(true);
+            }
+            if (!jsonC4.getCic40596().equals("0")) {
+                binding.cic40596.setChecked(true);
+            }
+
+            binding.cic40596x.setText(jsonC4.getCic40596x());
+
+            if (!jsonC4.getcic406().equals("0")) {
+                binding.cic406.check(
+                        jsonC4.getcic406().equals("1") ? binding.cic406a.getId()
+                                : binding.cic406b.getId());
+            }
+            if (!jsonC4.getcic407().equals("0")) {
+                binding.cic407.check(
+                        jsonC4.getcic407().equals("1") ? binding.cic407a.getId()
+                                : binding.cic407b.getId());
+            }
+            if (!jsonC4.getCic408().equals("0")) {
+                binding.cic408.check(
+                        jsonC4.getCic408().equals("1") ? binding.cic408a.getId()
+                                : jsonC4.getCic408().equals("2") ? binding.cic408b.getId()
+                                : jsonC4.getCic408().equals("3") ? binding.cic408c.getId()
+                                : jsonC4.getCic408().equals("4") ? binding.cic408d.getId()
+                                : jsonC4.getCic408().equals("5") ? binding.cic408e.getId()
+                                : binding.cic40896.getId());
+            }
+
+            binding.cic40896x.setText(jsonC4.getCic40896x());
+
+
+//            C409
+            if (!jsonC4.getcic409().equals("0")) {
+                binding.cic409.check(
+                        jsonC4.getcic409().equals("1") ? binding.cic409a.getId()
+                                : jsonC4.getcic409().equals("2") ? binding.cic409b.getId()
+                                : jsonC4.getcic409().equals("3") ? binding.cic409c.getId()
+                                : jsonC4.getcic409().equals("4") ? binding.cic409d.getId()
+                                : jsonC4.getcic409().equals("5") ? binding.cic409e.getId()
+                                : jsonC4.getcic409().equals("961") ? binding.cic4099601.getId()
+                                : jsonC4.getcic409().equals("6") ? binding.cic409f.getId()
+                                : jsonC4.getcic409().equals("7") ? binding.cic409g.getId()
+                                : jsonC4.getcic409().equals("8") ? binding.cic409h.getId()
+                                : jsonC4.getcic409().equals("9") ? binding.cic409i.getId()
+                                : jsonC4.getcic409().equals("10") ? binding.cic409j.getId()
+                                : jsonC4.getcic409().equals("962") ? binding.cic4099602.getId()
+                                : jsonC4.getcic409().equals("11") ? binding.cic409k.getId()
+                                : jsonC4.getcic409().equals("12") ? binding.cic409l.getId()
+                                : jsonC4.getcic409().equals("13") ? binding.cic409m.getId()
+                                : binding.cic4099603.getId());
+
+                binding.cic4099601x.setText(jsonC4.getCic4049601x());
+                binding.cic4099602x.setText(jsonC4.getCic4049602x());
+                binding.cic4099603x.setText(jsonC4.getCic4099603x());
+            }
+            if (!jsonC4.getCic410a().equals("0")) {
+                binding.cic410a.setChecked(true);
+            }
+            if (!jsonC4.getCic410b().equals("0")) {
+                binding.cic410b.setChecked(true);
+            }
+            if (!jsonC4.getCic410b().equals("0")) {
+                binding.cic410b.setChecked(true);
+            }
+            if (!jsonC4.getCic410c().equals("0")) {
+                binding.cic410c.setChecked(true);
+            }
+            if (!jsonC4.getCic410d().equals("0")) {
+                binding.cic410d.setChecked(true);
+            }
+            if (!jsonC4.getCic410e().equals("0")) {
+                binding.cic410e.setChecked(true);
+            }
+            if (!jsonC4.getCic410a().equals("0")) {
+                binding.cic410f.setChecked(true);
+            }
+            if (!jsonC4.getCic410g().equals("0")) {
+                binding.cic410g.setChecked(true);
+            }
+            if (!jsonC4.getCic41096().equals("0")) {
+                binding.cic41096.setChecked(true);
+            }
+            binding.cic41096x.setText(jsonC4.getCic41096x());
+
+            if (!jsonC4.getcic411().equals("0")) {
+                binding.cic411.check(
+                        jsonC4.getcic411().equals("1") ? binding.cic411a.getId()
+                                : binding.cic411b.getId());
+            }
+            if (!jsonC4.getcic411().equals("0")) {
+                binding.cic411.check(
+                        jsonC4.getcic411().equals("1") ? binding.cic411a.getId()
+                                : binding.cic411b.getId());
+            }
+            if (!jsonC4.getCic412().equals("0")) {
+                binding.cic412.check(
+                        jsonC4.getCic412().equals("1") ? binding.cic412a.getId()
+                                : binding.cic412b.getId());
+            }
+            if (!jsonC4.getcic413().equals("0")) {
+                binding.cic413.check(
+                        jsonC4.getcic413().equals("1") ? binding.cic413a.getId()
+                                : jsonC4.getcic413().equals("2") ? binding.cic413b.getId()
+                                : jsonC4.getcic413().equals("3") ? binding.cic413c.getId()
+                                : jsonC4.getcic413().equals("4") ? binding.cic413d.getId()
+                                : jsonC4.getcic413().equals("5") ? binding.cic413e.getId()
+                                : binding.cic41396.getId());
+            }
+            if (!jsonC4.getcic414().equals("0")) {
+                binding.cic414.check(
+                        jsonC4.getcic413().equals("1") ? binding.cic413a.getId()
+                                : jsonC4.getcic413().equals("2") ? binding.cic414b.getId()
+                                : jsonC4.getcic413().equals("3") ? binding.cic414c.getId()
+                                : jsonC4.getcic413().equals("4") ? binding.cic414d.getId()
+                                : jsonC4.getcic413().equals("5") ? binding.cic414e.getId()
+                                : jsonC4.getcic413().equals("6") ? binding.cic414f.getId()
+                                : jsonC4.getcic413().equals("7") ? binding.cic414g.getId()
+                                : jsonC4.getcic413().equals("8") ? binding.cic414h.getId()
+                                : jsonC4.getcic413().equals("9") ? binding.cic414i.getId()
+                                : jsonC4.getcic413().equals("10") ? binding.cic414j.getId()
+                                : jsonC4.getcic413().equals("11") ? binding.cic414k.getId()
+                                : jsonC4.getcic413().equals("12") ? binding.cic414l.getId()
+                                : jsonC4.getcic413().equals("13") ? binding.cic414m.getId()
+                                : jsonC4.getcic413().equals("961") ? binding.cic4149601.getId()
+                                : jsonC4.getcic413().equals("962") ? binding.cic4149602.getId()
+                                : binding.cic4149603.getId());
+                binding.cic4149601x.setText(jsonC4.getCic4149601x());
+                binding.cic4149602x.setText(jsonC4.getCic4149602x());
+                binding.cic4149603x.setText(jsonC4.getCic4149603x());
+
+
+            }
+
+            if (!jsonC4.getCic415a().equals("0")) {
+                binding.cic415a.setChecked(true);
+            }
+            if (!jsonC4.getCic415b().equals("0")) {
+                binding.cic415b.setChecked(true);
+            }
+            if (!jsonC4.getCic415c().equals("0")) {
+                binding.cic415c.setChecked(true);
+            }
+            if (!jsonC4.getCic415d().equals("0")) {
+                binding.cic415d.setChecked(true);
+            }
+            if (!jsonC4.getCic415e().equals("0")) {
+                binding.cic415e.setChecked(true);
+            }
+            if (!jsonC4.getCic415f().equals("0")) {
+                binding.cic415f.setChecked(true);
+            }
+            if (!jsonC4.getCic415g().equals("0")) {
+                binding.cic415g.setChecked(true);
+            }
+            if (!jsonC4.getCic415h().equals("0")) {
+                binding.cic415h.setChecked(true);
+            }
+            if (!jsonC4.getCic41596().equals("0")) {
+                binding.cic41596.setChecked(true);
+            }
+            binding.cic41596x.setText(jsonC4.getCic41596x());
+
+
+            if (!jsonC4.getcic416().equals("0")) {
+                binding.cic416.check(
+                        jsonC4.getcic416().equals("1") ? binding.cic416a.getId()
+                                : jsonC4.getcic416().equals("2") ? binding.cic416b.getId()
+                                : binding.cic41698.getId());
+            }
+            if (!jsonC4.getcic417().equals("0")) {
+                binding.cic417.check(
+                        jsonC4.getcic417().equals("1") ? binding.cic417a.getId()
+                                : jsonC4.getcic417().equals("2") ? binding.cic417b.getId()
+                                : binding.cic41798.getId());
+            }
+            if (!jsonC4.getcic418().equals("0")) {
+                binding.cic418.check(
+                        jsonC4.getcic418().equals("1") ? binding.cic418a.getId()
+                                : jsonC4.getcic418().equals("2") ? binding.cic418b.getId()
+                                : binding.cic41898.getId());
+            }
+            if (!jsonC4.getCic420().equals("0")) {
+                binding.cic420.check(
+                        jsonC4.getCic420().equals("1") ? binding.cic420a.getId()
+                                : jsonC4.getCic420().equals("2") ? binding.cic420b.getId()
+                                : jsonC4.getCic420().equals("3") ? binding.cic420c.getId()
+                                : jsonC4.getCic420().equals("4") ? binding.cic420d.getId()
+                                : binding.cic420e.getId());
+            }
+
+            if (!jsonC4.getCic421().equals("0")) {
+                binding.cic418.check(
+                        jsonC4.getCic421().equals("1") ? binding.cic421a.getId()
+                                : binding.cic421b.getId());
+            }
+            if (!jsonC4.getCic422().equals("0")) {
+                binding.cic422.check(
+                        jsonC4.getCic422().equals("1") ? binding.cic422a.getId()
+                                : jsonC4.getCic422().equals("2") ? binding.cic422b.getId()
+                                : jsonC4.getCic422().equals("2") ? binding.cic422c.getId()
+                                : jsonC4.getCic422().equals("2") ? binding.cic422d.getId()
+                                : binding.cic422e.getId());
+            }
+
+            binding.cic423d.setText(jsonC4.getCic423d());
+            binding.cic423m.setText(jsonC4.getCic423m());
+        }
+
+    }
 
 
     @Override

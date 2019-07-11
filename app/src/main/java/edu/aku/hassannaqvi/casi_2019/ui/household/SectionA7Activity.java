@@ -15,10 +15,13 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import edu.aku.hassannaqvi.casi_2019.JSONModels.JSONA7ModelClass;
 import edu.aku.hassannaqvi.casi_2019.R;
+import edu.aku.hassannaqvi.casi_2019.contracts.FormsContract;
 import edu.aku.hassannaqvi.casi_2019.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2019.core.MainApp;
 import edu.aku.hassannaqvi.casi_2019.databinding.ActivitySectionA7Binding;
+import edu.aku.hassannaqvi.casi_2019.other.JSONUtilClass;
 import edu.aku.hassannaqvi.casi_2019.ui.viewMem.ViewMemberActivity;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
@@ -38,6 +41,146 @@ public class SectionA7Activity extends AppCompatActivity {
         db = new DatabaseHelper(this);
 
         setUIContent();
+        autoPopulate();
+    }
+
+    private void autoPopulate() {
+        FormsContract formContract = db.getsA7();
+
+        if (!formContract.getsA7().equals("")) {
+            JSONA7ModelClass jsonA7 = JSONUtilClass.getModelFromJSON(formContract.getsA7(), JSONA7ModelClass.class);
+
+            if (!jsonA7.getCih701().equals("0")) {
+                bi.cih701.check(jsonA7.getCih701().equals("1") ? bi.cih701a.getId()
+                        : bi.cih701a.getId());
+            }
+
+            bi.cih70102.setText(jsonA7.getCih70102());
+            bi.cih70103.setText(jsonA7.getCih70103());
+
+
+            if (!jsonA7.getCih702().equals("0")) {
+                bi.cih702.check(jsonA7.getCih701().equals("1") ? bi.cih702a.getId()
+                        : bi.cih702a.getId());
+            }
+
+            bi.cih70202.setText(jsonA7.getCih70202());
+            bi.cih70203.setText(jsonA7.getCih70203());
+
+
+            if (!jsonA7.getCih703().equals("0")) {
+                bi.cih703.check(jsonA7.getCih703().equals("1") ? bi.cih703a.getId()
+                        : bi.cih703a.getId());
+            }
+
+            bi.cih70302.setText(jsonA7.getCih70302());
+            bi.cih70303.setText(jsonA7.getCih70303());
+
+
+            if (!jsonA7.getCih704().equals("0")) {
+                bi.cih704.check(jsonA7.getCih704().equals("1") ? bi.cih704a.getId()
+                        : bi.cih704a.getId());
+            }
+
+            bi.cih70402.setText(jsonA7.getCih70402());
+            bi.cih70403.setText(jsonA7.getCih70403());
+
+
+            if (!jsonA7.getCih705().equals("0")) {
+                bi.cih705.check(jsonA7.getCih705().equals("1") ? bi.cih705a.getId()
+                        : bi.cih705a.getId());
+            }
+
+            bi.cih70502.setText(jsonA7.getCih70502());
+            bi.cih70503.setText(jsonA7.getCih70503());
+
+
+            if (!jsonA7.getCih706().equals("0")) {
+                bi.cih706.check(jsonA7.getCih706().equals("1") ? bi.cih706a.getId()
+                        : bi.cih706a.getId());
+            }
+
+            bi.cih70602.setText(jsonA7.getCih70602());
+            bi.cih70603.setText(jsonA7.getCih70603());
+
+
+            if (!jsonA7.getCih707().equals("0")) {
+                bi.cih707.check(jsonA7.getCih707().equals("1") ? bi.cih707a.getId()
+                        : bi.cih707a.getId());
+            }
+
+            bi.cih70702.setText(jsonA7.getCih70702());
+            bi.cih70703.setText(jsonA7.getCih70703());
+
+
+            if (!jsonA7.getCih708().equals("0")) {
+                bi.cih708.check(jsonA7.getCih708().equals("1") ? bi.cih708a.getId()
+                        : bi.cih708a.getId());
+            }
+
+            bi.cih70802.setText(jsonA7.getCih70802());
+            bi.cih70803.setText(jsonA7.getCih70803());
+
+
+            if (!jsonA7.getCih709().equals("0")) {
+                bi.cih709.check(jsonA7.getCih701().equals("1") ? bi.cih709a.getId()
+                        : bi.cih709a.getId());
+            }
+
+            bi.cih70902.setText(jsonA7.getCih70902());
+            bi.cih70903.setText(jsonA7.getCih70903());
+
+
+            if (!jsonA7.getCih710().equals("0")) {
+                bi.cih710.check(jsonA7.getCih710().equals("1") ? bi.cih710a.getId()
+                        : bi.cih710a.getId());
+            }
+
+            bi.cih71002.setText(jsonA7.getCih71002());
+            bi.cih71003.setText(jsonA7.getCih71003());
+
+
+            if (!jsonA7.getCih711().equals("0")) {
+                bi.cih711.check(jsonA7.getCih711().equals("1") ? bi.cih711a.getId()
+                        : bi.cih711a.getId());
+            }
+
+            bi.cih71102.setText(jsonA7.getCih71102());
+            bi.cih71103.setText(jsonA7.getCih71103());
+
+
+            if (!jsonA7.getCih712().equals("0")) {
+                bi.cih712.check(jsonA7.getCih712().equals("1") ? bi.cih712a.getId()
+                        : bi.cih712a.getId());
+            }
+
+            bi.cih71202.setText(jsonA7.getCih71202());
+            bi.cih71203.setText(jsonA7.getCih71203());
+
+
+            if (!jsonA7.getCih713().equals("0")) {
+                bi.cih713.check(jsonA7.getCih713().equals("1") ? bi.cih713a.getId()
+                        : bi.cih713a.getId());
+            }
+
+            bi.cih71302.setText(jsonA7.getCih71302());
+            bi.cih71303.setText(jsonA7.getCih71303());
+
+            if (!jsonA7.getCih714().equals("0")) {
+                bi.cih714.check(jsonA7.getCih714().equals("1") ? bi.cih714a.getId()
+                        : bi.cih714a.getId());
+            }
+
+            bi.cih714x.setText(jsonA7.getCih714x());
+
+            if (!jsonA7.getCih715().equals("0")) {
+                bi.cih715.check(jsonA7.getCih715().equals("1") ? bi.cih715a.getId()
+                        : bi.cih715a.getId());
+            }
+
+            bi.cih715x.setText(jsonA7.getCih715x());
+
+        }
     }
 
     private void setUIContent() {

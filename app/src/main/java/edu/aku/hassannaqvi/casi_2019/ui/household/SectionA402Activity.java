@@ -45,7 +45,7 @@ public class SectionA402Activity extends AppCompatActivity implements RadioGroup
         FormsContract formContract = db.getsA402();
         if (!formContract.getsA4().equals("")) {
 
-            JSONA4ModelClass jsonA4 = JSONUtilClass.getModelFromJSON(formContract.getsA4(), JSONA4ModelClass.class);
+            JSONA4ModelClass jsonA4 = JSONUtilClass.getModelFromJSON(formContract.getsA402(), JSONA4ModelClass.class);
             if (!jsonA4.getcih318().equals("0")) {
                 binding.cih318.check(
                         jsonA4.getcih318().equals("1") ? binding.cih318a.getId() :

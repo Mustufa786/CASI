@@ -34,6 +34,7 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
     ActivitySectionA4Binding binding;
     DatabaseHelper db;
     private Timer timer = new Timer();
+    boolean backPressed = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -585,6 +586,7 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
             }
             if (UpdateDB()) {
 
+                backPressed = true;
 
                 finish();
 
