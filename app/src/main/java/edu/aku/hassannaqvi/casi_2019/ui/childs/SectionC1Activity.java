@@ -154,7 +154,7 @@ public class SectionC1Activity extends AddMember_MenuActivity implements TextWat
 
                                 runOnUiThread(new Runnable() {
                                     public void run() {
-                                        formValidation();
+//                                        formValidation();
                                     }
                                     //}
                                 });
@@ -911,7 +911,7 @@ public class SectionC1Activity extends AddMember_MenuActivity implements TextWat
 
                         runOnUiThread(new Runnable() {
                             public void run() {
-                                formValidation();
+//                                formValidation();
                             }
                             //}
                         });
@@ -959,6 +959,6 @@ public class SectionC1Activity extends AddMember_MenuActivity implements TextWat
 
     @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
-        formValidation();
+//        formValidation();
     }
 }

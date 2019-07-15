@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
+import edu.aku.hassannaqvi.casi_2019.JSONModels.JSONA2ModelClass;
 import edu.aku.hassannaqvi.casi_2019.JSONModels.JSONModelClass;
 import edu.aku.hassannaqvi.casi_2019.R;
 import edu.aku.hassannaqvi.casi_2019.contracts.FamilyMembersContract;
@@ -76,6 +77,17 @@ public class ChildAdapter extends RecyclerView.Adapter<ChildAdapter.ChildViewHol
         return childList.size() > 0 ? childList.size() : 0;
     }
 
+    private String setupMotherName(FamilyMembersContract child) {
+        ArrayList<FamilyMembersContract> childContract = db.getMotherForChild(child.get_UID(), child.getHhNo(), child.getEnmNo());
+        for (FamilyMembersContract mother : childContract) {
+            JSONA2ModelClass jsonA2 = JSONUtilClass.getModelFromJSON(mother.getsA2(), JSONA2ModelClass.class);
+            if (jsonA2.getcih2SerialNo().equals(json.getMothername()))
+                return jsonA2.getcih212();
+        }
+
+        return "";
+    }
+
     public class ChildViewHolder extends RecyclerView.ViewHolder {
 
         ChildAdapterBinding childBinding;
@@ -90,7 +102,7 @@ public class ChildAdapter extends RecyclerView.Adapter<ChildAdapter.ChildViewHol
             childBinding.childName.setText(json.getName().toUpperCase());
             childBinding.Age.setText("Age: " + json.getAge());
             childBinding.na204.setText(json.getGender().equals("1") ? "Male" : "Female");
-            childBinding.childmName.setText(json.getMothername().equals("") ? "..." : json.getMothername());
+            childBinding.childmName.setText(json.getMothername().equals("") ? "..." : setupMotherName(child));
         }
     }
 

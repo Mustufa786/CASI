@@ -897,7 +897,6 @@ public class ViewMemberActivity extends MenuActivity {
 //              Set Recycler View
                     childAdapter = new ChildAdapter(mContext, MainApp.childUnder5_1);
 
-
                     if (childAdapter.getItemCount() > 0) {
                         binding.nochildfound.setVisibility(View.GONE);
                         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(mContext);
