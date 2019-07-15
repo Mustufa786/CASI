@@ -936,25 +936,16 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                 family.setAv("1");
             }
 
-
             //MWRA
             if ((Age >= 15 && Age < 50) && family.getna204().equals("2")) {
                 if (binding.cih2mse.isChecked()) {
                     MainApp.membersCount.setWra(MainApp.membersCount.getWra() + 1);
-                    /*if (binding.cih210a.isChecked()) {
-                        family.setAv("1");
-                    }*/
                 } else {
                     MainApp.membersCount.setMwra(MainApp.membersCount.getMwra() + 1);
-                    /*if (binding.cih210a.isChecked()) {
-                        family.setAv("1");
-                    }*/
-
                 }
                 if (binding.cih210a.isChecked()) {
                     MainApp.mwra.add(family);
                 }
-                //MainApp.adolescents.add(family);
             }
             //Adolescent
             if ((Age >= 10 && Age < 20) && binding.cih2mse.isChecked()) {
@@ -970,9 +961,6 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
 
                 // Add data in list
                 MainApp.adolescents.add(family);
-                /*if (binding.cih210a.isChecked()) {
-                    family.setAv("1");
-                }*/
             }
             //Children < 5
             else if (Age < 6) {
@@ -998,12 +986,7 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                 } else {
                     MainApp.childUnder5.add(family);
                     MainApp.childUnder5_Del.add(family);
-
-                    //MainApp.adolescents.add(family);
                 }
-                /*if (Age < 2) {
-                    MainApp.childUnder2Check.add(family);
-                }*/
 
                 if (Age < 6 && family.getMotherId().equals("00")) {
                     MainApp.childNA.add(family);
@@ -1035,7 +1018,6 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
 
         }
 
-        //
     }
 
     private boolean UpdateDB() {
