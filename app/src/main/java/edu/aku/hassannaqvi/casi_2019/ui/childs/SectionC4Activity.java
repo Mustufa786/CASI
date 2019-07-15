@@ -34,6 +34,7 @@ public class SectionC4Activity extends Menu2Activity {
     Boolean backPressed = false;
     private Timer timer = new Timer();
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -588,11 +589,11 @@ public class SectionC4Activity extends Menu2Activity {
 
 
         if (formValidation()) {
-//            try {
-//                SaveDraft();
-//            } catch (JSONException e) {
-//                e.printStackTrace();
-//            }
+            try {
+                SaveDraft();
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
             if (UpdateDB()) {
                 backPressed = true;
 

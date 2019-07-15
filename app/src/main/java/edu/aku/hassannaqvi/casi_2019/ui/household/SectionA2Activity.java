@@ -1179,13 +1179,16 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                 return false;
             }
 
-            if (!ValidatorClass.EmptyRadioButton(this, binding.cih2occ, binding.cih2occa, getString(R.string.cih2occ))) {
-                return false;
+            if (Age >= 10) {
+                if (!ValidatorClass.EmptyRadioButton(this, binding.cih2occ, binding.cih2occa, getString(R.string.cih2occ))) {
+                    return false;
+                }
+
+                if (!ValidatorClass.EmptyRadioButton(this, binding.cih2occ, binding.cih2occ96, binding.cih2occ96x, getString(R.string.cih2occ))) {
+                    return false;
+                }
             }
 
-            if (!ValidatorClass.EmptyRadioButton(this, binding.cih2occ, binding.cih2occ96, binding.cih2occ96x, getString(R.string.cih2occ))) {
-                return false;
-            }
             if (!ValidatorClass.EmptyRadioButton(this, binding.cih210, binding.cih210a, getString(R.string.cih210))) {
                 return false;
             }

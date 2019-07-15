@@ -210,18 +210,18 @@ public class SectionC6Activity extends AppCompatActivity {
         JSONObject sB6 = new JSONObject();
 
         if (backPressed) {
-            sB6.put("updatedate_cic6", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
+            sB6.put("updatedate_cic5", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
         }
 
-        sB6.put("cic601", bi.ciw501.getText().toString());
-        sB6.put("cic602", bi.ciw502a.isChecked() ? "1"
+        sB6.put("cic501", bi.ciw501.getText().toString());
+        sB6.put("cic502", bi.ciw502a.isChecked() ? "1"
                 : bi.ciw502b.isChecked() ? "2"
                 : bi.ciw502c.isChecked() ? "3"
                 : "0");
 
-        sB6.put("cic6030101", bi.ciw5030101.getText().toString());
-        sB6.put("cic6030198", bi.ciw5030198.isChecked() ? "98" : "0");
-        sB6.put("cic6030102", bi.ciw5030102a.isChecked() ? "1"
+        sB6.put("cic5030101", bi.ciw5030101.getText().toString());
+        sB6.put("cic5030198", bi.ciw5030198.isChecked() ? "98" : "0");
+        sB6.put("cic5030102", bi.ciw5030102a.isChecked() ? "1"
                 : bi.ciw5030102b.isChecked() ? "2"
                 : bi.ciw5030102c.isChecked() ? "3"
                 : bi.ciw5030102d.isChecked() ? "4"
@@ -231,14 +231,14 @@ public class SectionC6Activity extends AppCompatActivity {
                 : bi.ciw5030102h.isChecked() ? "8"
                 : bi.ciw5030102i.isChecked() ? "9"
                 : "0");
-        sB6.put("cic6030103", bi.ciw5030103a.isChecked() ? "1"
+        sB6.put("cic5030103", bi.ciw5030103a.isChecked() ? "1"
                 : bi.ciw5030103b.isChecked() ? "2"
                 : "0");
 
 
-        sB6.put("cic6030201", bi.ciw5030201.getText().toString());
-        sB6.put("cic6030298", bi.ciw5030298.isChecked() ? "98" : "0");
-        sB6.put("cic6030202", bi.ciw5030202a.isChecked() ? "1"
+        sB6.put("cic5030201", bi.ciw5030201.getText().toString());
+        sB6.put("cic5030298", bi.ciw5030298.isChecked() ? "98" : "0");
+        sB6.put("cic5030202", bi.ciw5030202a.isChecked() ? "1"
                 : bi.ciw5030202b.isChecked() ? "2"
                 : bi.ciw5030202c.isChecked() ? "3"
                 : bi.ciw5030202d.isChecked() ? "4"
@@ -248,12 +248,12 @@ public class SectionC6Activity extends AppCompatActivity {
                 : bi.ciw5030202h.isChecked() ? "8"
                 : bi.ciw5030202i.isChecked() ? "9"
                 : "0");
-        sB6.put("cic6030203", bi.ciw5030203a.isChecked() ? "1"
+        sB6.put("cic5030203", bi.ciw5030203a.isChecked() ? "1"
                 : bi.ciw5030203b.isChecked() ? "2"
                 : "0");
-        sB6.put("cic6030301", bi.ciw5030301.getText().toString());
-        sB6.put("cic6030398", bi.ciw5030398.isChecked() ? "98" : "0");
-        sB6.put("cic6030302", bi.ciw5030302a.isChecked() ? "1"
+        sB6.put("cic5030301", bi.ciw5030301.getText().toString());
+        sB6.put("cic5030398", bi.ciw5030398.isChecked() ? "98" : "0");
+        sB6.put("cic5030302", bi.ciw5030302a.isChecked() ? "1"
                 : bi.ciw5030302b.isChecked() ? "2"
                 : bi.ciw5030302c.isChecked() ? "3"
                 : bi.ciw5030302d.isChecked() ? "4"
@@ -263,14 +263,14 @@ public class SectionC6Activity extends AppCompatActivity {
                 : bi.ciw5030302h.isChecked() ? "8"
                 : bi.ciw5030302i.isChecked() ? "9"
                 : "0");
-        sB6.put("cic6030303", bi.ciw5030303a.isChecked() ? "1"
+        sB6.put("cic5030303", bi.ciw5030303a.isChecked() ? "1"
                 : bi.ciw5030303b.isChecked() ? "2"
                 : "0");
 
 
-        sB6.put("cic6030401", bi.ciw5030401.getText().toString());
-        sB6.put("cic6030498", bi.ciw5030498.isChecked() ? "98" : "0");
-        sB6.put("cic6030402", bi.ciw5030402a.isChecked() ? "1"
+        sB6.put("cic5030401", bi.ciw5030401.getText().toString());
+        sB6.put("cic5030498", bi.ciw5030498.isChecked() ? "98" : "0");
+        sB6.put("cic5030402", bi.ciw5030402a.isChecked() ? "1"
                 : bi.ciw5030402b.isChecked() ? "2"
                 : bi.ciw5030402c.isChecked() ? "3"
                 : bi.ciw5030402d.isChecked() ? "4"
@@ -280,14 +280,14 @@ public class SectionC6Activity extends AppCompatActivity {
                 : bi.ciw5030402h.isChecked() ? "8"
                 : bi.ciw5030402i.isChecked() ? "9"
                 : "0");
-        sB6.put("cic6030403", bi.ciw5030403a.isChecked() ? "1"
+        sB6.put("cic5030403", bi.ciw5030403a.isChecked() ? "1"
                 : bi.ciw5030403b.isChecked() ? "2"
                 : "0");
 
 
-        sB6.put("cic6030501", bi.ciw5030501.getText().toString());
-        sB6.put("cic6030598", bi.ciw5030598.isChecked() ? "98" : "0");
-        sB6.put("cic6030502", bi.ciw5030502a.isChecked() ? "1"
+        sB6.put("cic5030501", bi.ciw5030501.getText().toString());
+        sB6.put("cic5030598", bi.ciw5030598.isChecked() ? "98" : "0");
+        sB6.put("cic5030502", bi.ciw5030502a.isChecked() ? "1"
                 : bi.ciw5030502b.isChecked() ? "2"
                 : bi.ciw5030502c.isChecked() ? "3"
                 : bi.ciw5030502d.isChecked() ? "4"
@@ -297,14 +297,14 @@ public class SectionC6Activity extends AppCompatActivity {
                 : bi.ciw5030502h.isChecked() ? "8"
                 : bi.ciw5030502i.isChecked() ? "9"
                 : "0");
-        sB6.put("cic6030503", bi.ciw5030503a.isChecked() ? "1"
+        sB6.put("cic5030503", bi.ciw5030503a.isChecked() ? "1"
                 : bi.ciw5030503b.isChecked() ? "2"
                 : "0");
 
 
-        sB6.put("cic6030601", bi.ciw5030601.getText().toString());
-        sB6.put("cic6030698", bi.ciw5030698.isChecked() ? "98" : "0");
-        sB6.put("cic6030602", bi.ciw5030602a.isChecked() ? "1"
+        sB6.put("cic5030601", bi.ciw5030601.getText().toString());
+        sB6.put("cic5030698", bi.ciw5030698.isChecked() ? "98" : "0");
+        sB6.put("cic5030602", bi.ciw5030602a.isChecked() ? "1"
                 : bi.ciw5030602b.isChecked() ? "2"
                 : bi.ciw5030602c.isChecked() ? "3"
                 : bi.ciw5030602d.isChecked() ? "4"
@@ -314,13 +314,13 @@ public class SectionC6Activity extends AppCompatActivity {
                 : bi.ciw5030602h.isChecked() ? "8"
                 : bi.ciw5030602i.isChecked() ? "9"
                 : "0");
-        sB6.put("cic6030603", bi.ciw5030603a.isChecked() ? "1"
+        sB6.put("cic5030603", bi.ciw5030603a.isChecked() ? "1"
                 : bi.ciw5030603b.isChecked() ? "2"
                 : "0");
 
-        sB6.put("cic6030701", bi.ciw5030701.getText().toString());
-        sB6.put("cic6030798", bi.ciw5030798.isChecked() ? "98" : "0");
-        sB6.put("cic6030702", bi.ciw5030702a.isChecked() ? "1"
+        sB6.put("cic5030701", bi.ciw5030701.getText().toString());
+        sB6.put("cic5030798", bi.ciw5030798.isChecked() ? "98" : "0");
+        sB6.put("cic5030702", bi.ciw5030702a.isChecked() ? "1"
                 : bi.ciw5030702b.isChecked() ? "2"
                 : bi.ciw5030702c.isChecked() ? "3"
                 : bi.ciw5030702d.isChecked() ? "4"
@@ -330,13 +330,13 @@ public class SectionC6Activity extends AppCompatActivity {
                 : bi.ciw5030702h.isChecked() ? "8"
                 : bi.ciw5030702i.isChecked() ? "9"
                 : "0");
-        sB6.put("cic6030703", bi.ciw5030703a.isChecked() ? "1"
+        sB6.put("cic5030703", bi.ciw5030703a.isChecked() ? "1"
                 : bi.ciw5030703b.isChecked() ? "2"
                 : "0");
 
-        sB6.put("cic6030801", bi.ciw5030801.getText().toString());
-        sB6.put("cic6030898", bi.ciw5030898.isChecked() ? "98" : "0");
-        sB6.put("cic6030802", bi.ciw5030802a.isChecked() ? "1"
+        sB6.put("cic5030801", bi.ciw5030801.getText().toString());
+        sB6.put("cic5030898", bi.ciw5030898.isChecked() ? "98" : "0");
+        sB6.put("cic5030802", bi.ciw5030802a.isChecked() ? "1"
                 : bi.ciw5030802b.isChecked() ? "2"
                 : bi.ciw5030802c.isChecked() ? "3"
                 : bi.ciw5030802d.isChecked() ? "4"
@@ -346,7 +346,7 @@ public class SectionC6Activity extends AppCompatActivity {
                 : bi.ciw5030802h.isChecked() ? "8"
                 : bi.ciw5030802i.isChecked() ? "9"
                 : "0");
-        sB6.put("cic6030803", bi.ciw5030803a.isChecked() ? "1"
+        sB6.put("cic5030803", bi.ciw5030803a.isChecked() ? "1"
                 : bi.ciw5030803b.isChecked() ? "2"
                 : "0");
 
