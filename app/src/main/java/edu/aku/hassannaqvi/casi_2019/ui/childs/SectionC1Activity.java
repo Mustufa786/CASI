@@ -410,6 +410,7 @@ public class SectionC1Activity extends AddMember_MenuActivity implements TextWat
         Toast.makeText(this, "You can't go back.", Toast.LENGTH_SHORT).show();
     }
 
+    //
     public void BtnContinue() {
 
 //        Validation Boolean

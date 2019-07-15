@@ -248,9 +248,10 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                         binding.cih2edu.clearCheck();
                         binding.fldGrpcih2edu.setVisibility(View.VISIBLE);
                         binding.fldGrpcih2ms.setVisibility(View.GONE);
-                        binding.fldGrpcih2occ.setVisibility(View.VISIBLE);
                         binding.cih2mse.setChecked(true);
 
+                        binding.fldGrpcih2occ.setVisibility(View.GONE);
+                        binding.cih2occ.clearCheck();
                         binding.fldGrpfid.setVisibility(View.VISIBLE);
                         binding.fldGrpmid.setVisibility(View.VISIBLE);
 
@@ -271,13 +272,13 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                         binding.cih2edui.setEnabled(false);
                         binding.cih2edui.setChecked(false);
 
-                        binding.cih2occa.setEnabled(true);
-                        binding.cih2occb.setEnabled(true);
-                        binding.cih2occc.setEnabled(true);
-                        binding.cih2occd.setEnabled(true);
-                        binding.cih2occe.setEnabled(true);
-                        binding.cih2occg.setEnabled(true);
-                        binding.cih2occh.setEnabled(true);
+//                        binding.cih2occa.setEnabled(true);
+//                        binding.cih2occb.setEnabled(true);
+//                        binding.cih2occc.setEnabled(true);
+//                        binding.cih2occd.setEnabled(true);
+//                        binding.cih2occe.setEnabled(true);
+//                        binding.cih2occg.setEnabled(true);
+//                        binding.cih2occh.setEnabled(true);
 
                        /* if (!flag) {
                             if (!family.getna204().equals("1")) {
@@ -288,13 +289,13 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                             }
                         }*/
 
-                        binding.cih2occ96.setEnabled(true);
-                        binding.cih2occ96x.setEnabled(true);
-
-                        binding.cih2occf.setEnabled(false);
-                        binding.cih2occf.setChecked(false);
-                        binding.cih2occj.setEnabled(false);
-                        binding.cih2occj.setChecked(false);
+//                        binding.cih2occ96.setEnabled(true);
+//                        binding.cih2occ96x.setEnabled(true);
+//
+//                        binding.cih2occf.setEnabled(false);
+//                        binding.cih2occf.setChecked(false);
+//                        binding.cih2occj.setEnabled(false);
+//                        binding.cih2occj.setChecked(false);
 
                     } else if (Age > 5 && Age < 10) {
                         binding.cih2occ.clearCheck();
@@ -302,7 +303,9 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                         binding.cih2ms.clearCheck();
                         binding.fldGrpcih2edu.setVisibility(View.VISIBLE);
                         binding.fldGrpcih2ms.setVisibility(View.GONE);
-                        binding.fldGrpcih2occ.setVisibility(View.VISIBLE);
+
+                        binding.fldGrpcih2occ.setVisibility(View.GONE);
+                        binding.cih2occ.clearCheck();
 
                         binding.fldGrpfid.setVisibility(View.GONE);
                         binding.fldGrpmid.setVisibility(View.GONE);
@@ -327,13 +330,13 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                         binding.cih2edui.setEnabled(false);
                         binding.cih2edui.setChecked(false);
 
-                        binding.cih2occa.setEnabled(true);
-                        binding.cih2occb.setEnabled(true);
-                        binding.cih2occc.setEnabled(true);
-                        binding.cih2occd.setEnabled(true);
-                        binding.cih2occe.setEnabled(true);
-                        binding.cih2occg.setEnabled(true);
-                        binding.cih2occh.setEnabled(true);
+//                        binding.cih2occa.setEnabled(true);
+//                        binding.cih2occb.setEnabled(true);
+//                        binding.cih2occc.setEnabled(true);
+//                        binding.cih2occd.setEnabled(true);
+//                        binding.cih2occe.setEnabled(true);
+//                        binding.cih2occg.setEnabled(true);
+//                        binding.cih2occh.setEnabled(true);
                         //binding.cih2occi.setEnabled(true);
 
                         /*if (!flag) {
@@ -345,13 +348,13 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                             }
                         }
 */
-                        binding.cih2occ96.setEnabled(true);
-                        binding.cih2occ96x.setEnabled(true);
-
-                        binding.cih2occf.setEnabled(false);
-                        binding.cih2occf.setChecked(false);
-                        binding.cih2occj.setEnabled(false);
-                        binding.cih2occj.setChecked(false);
+//                        binding.cih2occ96.setEnabled(true);
+//                        binding.cih2occ96x.setEnabled(true);
+//
+//                        binding.cih2occf.setEnabled(false);
+//                        binding.cih2occf.setChecked(false);
+//                        binding.cih2occj.setEnabled(false);
+//                        binding.cih2occj.setChecked(false);
 
                     } else if (Age >= 10 && Age < 14) {
                         binding.cih2occ.clearCheck();
