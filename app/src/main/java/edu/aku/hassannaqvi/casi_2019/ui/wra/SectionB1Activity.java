@@ -9,6 +9,7 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -786,6 +787,30 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
             }
         });
 
+        bi.nb101.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                if (i == 0) return;
+
+                // Getting child from roaster
+                for (FamilyMembersContract fmc : MainApp.childUnder5) {
+                    if (fmc.getMotherId().equals(wraMap.get(bi.nb101.getSelectedItem().toString()).getSerialNo())) {
+                        roasterChildrens++;
+                    }
+                }
+                bi.ciw211.setMinvalue(roasterChildrens);
+                bi.ciw212.setMinvalue(roasterChildrens);
+                bi.ciw214.setMinvalue(roasterChildrens);
+                bi.ciw215.setMinvalue(roasterChildrens);
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+
     }
 
     public void setupViews() {
@@ -831,17 +856,6 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
         }
 
         bi.nb101.setAdapter(new ArrayAdapter<>(this, R.layout.item_style, lstMwra));
-
-        // Getting child from roaster
-        for (FamilyMembersContract fmc : MainApp.childUnder5) {
-            if (fmc.getMotherId().equals(wraMap.get(bi.nb101.getSelectedItem().toString()).getSerialNo())) {
-                roasterChildrens++;
-            }
-        }
-        bi.ciw211.setMinvalue(roasterChildrens);
-        bi.ciw212.setMinvalue(roasterChildrens);
-        bi.ciw214.setMinvalue(roasterChildrens);
-        bi.ciw215.setMinvalue(roasterChildrens);
 
     }
 

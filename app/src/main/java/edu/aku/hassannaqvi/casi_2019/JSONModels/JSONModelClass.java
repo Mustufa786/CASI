@@ -16,6 +16,7 @@ public class JSONModelClass {
     private String maritalStatus = "";
     @SerializedName("cih204")
     private String gender = "";
+    @SerializedName("cih212")
     private String mothername = "";
     private String cih210;
 
