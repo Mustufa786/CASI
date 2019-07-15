@@ -221,7 +221,7 @@ public class SectionC1Activity extends AddMember_MenuActivity implements TextWat
 
                 } else {
                     for (FamilyMembersContract fmc : MainApp.childUnder5) {
-                        if (MainApp.mc == null || fmc.getMotherId().equals(MainApp.mc.getB1SerialNo())) {
+                        if (fmc.getMotherId().equals(MainApp.mc.getB1SerialNo())) {
                             childMap.put(fmc.getName() + "-" + fmc.getSerialNo(), fmc);
                             childU5.add(fmc.getName() + "-" + fmc.getSerialNo());
                             counterPerMom++;

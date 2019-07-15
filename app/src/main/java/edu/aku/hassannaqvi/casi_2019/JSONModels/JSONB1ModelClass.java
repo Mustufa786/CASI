@@ -38,9 +38,19 @@ public class JSONB1ModelClass {
     private String ciw216aa = "";
     @SerializedName("ciw11801")
     private String ciw11801 = "";
+    @SerializedName("no_child")
+    private String no_child = "";
 
     public JSONB1ModelClass() {
 
+    }
+
+    public String getNo_child() {
+        return no_child;
+    }
+
+    public void setNo_child(String no_child) {
+        this.no_child = no_child;
     }
 
     public String getciw11801() {

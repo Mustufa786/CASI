@@ -122,7 +122,7 @@ public abstract class ValidatorClass {
         return true;
     }
 
-    private static boolean EmptyEditTextPicker(Context context, EditText txt, String msg) {
+    public static boolean EmptyEditTextPicker(Context context, EditText txt, String msg) {
         String messageConv = "";
         boolean flag = true;
         if (!((EditTextPicker) txt).isEmptyTextBox()) {

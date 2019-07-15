@@ -66,6 +66,19 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
     int prevDeliveries = 0;
     Calendar dob = Calendar.getInstance();
     long agebyDob = 0;
+    @BindViews({R.id.ciw21001, R.id.ciw21002})
+    List<RadioGroup> ciw210a;
+    @BindViews({R.id.ciw21003, R.id.ciw21098, R.id.ciw21099})
+    List<RadioGroup> ciw210b;
+    @BindViews({R.id.ciw21001a, R.id.ciw21002a})
+    List<RadioButton> ciw210aYes;
+    @BindViews({R.id.ciw21003a, R.id.ciw21098a, R.id.ciw21099a})
+    List<RadioButton> ciw210bYes;
+    Boolean endflag = false;
+    String LOG_TAG = SectionB1Activity.class.getName();
+    @BindViews({R.id.ciw201days, R.id.ciw201months, R.id.ciw201years})
+    List<EditText> grpDob;
+    int roasterChildrens = 0;
     public TextWatcher age = new TextWatcher() {
         @Override
         public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -119,18 +132,6 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
         }
 
     };
-    @BindViews({R.id.ciw21001, R.id.ciw21002})
-    List<RadioGroup> ciw210a;
-    @BindViews({R.id.ciw21003, R.id.ciw21098, R.id.ciw21099})
-    List<RadioGroup> ciw210b;
-    @BindViews({R.id.ciw21001a, R.id.ciw21002a})
-    List<RadioButton> ciw210aYes;
-    @BindViews({R.id.ciw21003a, R.id.ciw21098a, R.id.ciw21099a})
-    List<RadioButton> ciw210bYes;
-    Boolean endflag = false;
-    String LOG_TAG = SectionB1Activity.class.getName();
-    @BindViews({R.id.ciw201days, R.id.ciw201months, R.id.ciw201years})
-    List<EditText> grpDob;
     private Timer timer = new Timer();
 
     @Override
@@ -149,10 +150,6 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
 
         this.setTitle(getResources().getString(R.string.nbheading));
 
-
-//        setupViews();
-
-
 //        Validation Boolean
         MainApp.validateFlag = false;
 
@@ -165,8 +162,6 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
             if (getIntent().getBooleanExtra("checkflag", true)) {
                 AutoPopulate(getIntent().getStringExtra("formUid"), getIntent().getStringExtra("fmUid"));
                 backPressed = true;
-            } else {
-
             }
 
         } else {
@@ -242,9 +237,6 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                     bi.ciw212.setEnabled(true);
                     bi.ciw214.setEnabled(true);
                     bi.ciw215.setEnabled(true);
-                    /*bi.ciw216a.setEnabled(true);
-                    bi.ciw216b.setEnabled(true);
-                    bi.ciw216aa.setEnabled(true);*/
                     bi.ciw213.setEnabled(true);
 
                 } else {
@@ -286,11 +278,6 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                     bi.ciw212.setText(null);
                     bi.ciw214.setEnabled(false);
                     bi.ciw215.setEnabled(false);
-                  /*  bi.ciw216a.setEnabled(false);
-                    bi.ciw216b.setEnabled(false);
-                    bi.ciw216.clearCheck();
-                    bi.ciw216aa.setEnabled(false);
-                    bi.ciw216aa.setText(null);*/
                     bi.ciw213.setEnabled(false);
                     bi.ciw213.setText(null);
 
@@ -298,18 +285,6 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
             }
         });
 
-        /*bi.ciw216.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                if (bi.ciw216a.isChecked()) {
-                    bi.ciw216aa.setEnabled(true);
-                } else {
-                    bi.ciw216aa.setEnabled(false);
-                    bi.ciw216aa.setText(null);
-                }
-            }
-        });
-*/
         bi.ciw204.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -339,9 +314,6 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                     bi.ciw212.setEnabled(true);
                     bi.ciw214.setEnabled(true);
                     bi.ciw215.setEnabled(true);
-                   /* bi.ciw216a.setEnabled(true);
-                    bi.ciw216b.setEnabled(true);
-                    bi.ciw216aa.setEnabled(true);*/
                     bi.ciw213.setEnabled(true);
 
                 } else {
@@ -375,11 +347,6 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                     bi.ciw212.setText(null);
                     bi.ciw214.setEnabled(false);
                     bi.ciw215.setEnabled(false);
-                    /*bi.ciw216a.setEnabled(false);
-                    bi.ciw216b.setEnabled(false);
-                    bi.ciw216.clearCheck();
-                    bi.ciw216aa.setEnabled(false);
-                    bi.ciw216aa.setText(null);*/
                     bi.ciw213.setEnabled(false);
                     bi.ciw213.setText(null);
 
@@ -399,9 +366,6 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                     bi.ciw212.setEnabled(true);
                     bi.ciw215.setEnabled(true);
                     bi.ciw214.setEnabled(true);
-                    /*bi.ciw216a.setEnabled(true);
-                    bi.ciw216b.setEnabled(true);
-                    bi.ciw216aa.setEnabled(true);*/
                     bi.ciw215.setEnabled(true);
                     bi.ciw213.setEnabled(true);
                     bi.ciw208a.setEnabled(true);
@@ -432,11 +396,6 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                     bi.ciw212.setText(null);
                     bi.ciw215.setEnabled(false);
                     bi.ciw214.setEnabled(false);
-                    /*bi.ciw216a.setEnabled(false);
-                    bi.ciw216b.setEnabled(false);
-                    bi.ciw216.clearCheck();
-                    bi.ciw216aa.setEnabled(false);
-                    bi.ciw216aa.setText(null);*/
                     bi.ciw213.setEnabled(false);
                     bi.ciw213.setText(null);
                     bi.ciw208a.setEnabled(false);
@@ -477,9 +436,6 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                     bi.ciw212.setEnabled(true);
                     bi.ciw215.setEnabled(true);
                     bi.ciw214.setEnabled(true);
-                   /* bi.ciw216a.setEnabled(true);
-                    bi.ciw216b.setEnabled(true);
-                    bi.ciw216aa.setEnabled(true);*/
                     bi.ciw213.setEnabled(true);
                     bi.ciw208a.setEnabled(true);
                     bi.ciw208b.setEnabled(true);
@@ -503,11 +459,6 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                     bi.ciw212.setText(null);
                     bi.ciw215.setText(null);
                     bi.ciw214.setEnabled(false);
-                    /*bi.ciw216a.setEnabled(false);
-                    bi.ciw216b.setEnabled(false);
-                    bi.ciw216.clearCheck();
-                    bi.ciw216aa.setEnabled(false);
-                    bi.ciw216aa.setText(null);*/
                     bi.ciw213.setEnabled(false);
                     bi.ciw213.setText(null);
                     bi.ciw208a.setEnabled(false);
@@ -545,31 +496,30 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (bi.ciw207a.isChecked() && bi.ciw208a.isChecked()) {
-                    if (bi.ciw211.getText().toString().equals("1")) {
-                        bi.ciw212.setEnabled(false);
-                        bi.ciw213.setEnabled(false);
-                        //bi.ciw214.setEnabled(false);
-                        bi.ciw215.setEnabled(false);
-                        /*bi.ciw216a.setEnabled(false);
-                        bi.ciw216b.setEnabled(false);
-                        bi.ciw216aa.setEnabled(false);*/
-                        bi.ciw212.setText("0");
-                        bi.ciw213.setText(null);
-                        //bi.ciw214.setText(null);
-                        bi.ciw215.setText(null);
-                        /*bi.ciw216.clearCheck();
-                        bi.ciw216aa.setText(null);*/
+                if (bi.ciw207b.isChecked()) return;
 
-                    } else {
-                        bi.ciw212.setEnabled(true);
-                        bi.ciw213.setEnabled(true);
-                        bi.ciw214.setEnabled(true);
-                        bi.ciw215.setEnabled(true);
-                       /* bi.ciw216a.setEnabled(true);
-                        bi.ciw216b.setEnabled(true);
-                        bi.ciw216aa.setEnabled(true);*/
-                    }
+                if (bi.ciw211.getText().toString().isEmpty()) return;
+                int totalPreg = Integer.valueOf(bi.ciw211.getText().toString());
+                bi.ciw212.setMaxvalue(bi.ciw208a.isChecked() ? totalPreg - 1 : totalPreg);
+                bi.ciw214.setMaxvalue(totalPreg);
+
+                if (bi.ciw211.getText().toString().equals("0")) {
+                    bi.ciw212.setEnabled(false);
+                    bi.ciw212.setText(null);
+
+                    bi.ciw213.setEnabled(false);
+                    bi.ciw213.setText(null);
+
+                    bi.ciw214.setEnabled(false);
+                    bi.ciw214.setText(null);
+
+                    bi.ciw215.setEnabled(false);
+                    bi.ciw215.setText(null);
+                } else {
+                    bi.ciw212.setEnabled(true);
+                    bi.ciw213.setEnabled(true);
+                    bi.ciw214.setEnabled(true);
+                    bi.ciw215.setEnabled(true);
                 }
 
             }
@@ -589,63 +539,23 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
 
-                if (bi.ciw207a.isChecked() && bi.ciw208a.isChecked() && bi.ciw211.getText().toString().equals("1")) {
+                /*if (bi.ciw207a.isChecked() && bi.ciw208a.isChecked() && bi.ciw211.getText().toString().equals("1")) {
                     if (bi.ciw212.getText().toString().equals("0")) {
                         bi.ciw213.setEnabled(false);
                         bi.ciw213.setText(null);
-
-                        /*bi.ciw214.setEnabled(false);
-                        bi.ciw214.setText(null);
-                        bi.ciw215.setEnabled(false);
-                        bi.ciw215.setText(null);*/
-
-                       /* bi.ciw216a.setEnabled(false);
-                        bi.ciw216b.setEnabled(false);
-                        bi.ciw216.clearCheck();
-                        bi.ciw216aa.setEnabled(false);
-                        bi.ciw216aa.setText(null);*/
-
                     } else {
-
                         bi.ciw213.setEnabled(true);
-
-                        /*bi.ciw214.setEnabled(true);
-                        bi.ciw215.setEnabled(true);*/
-
-                        /*bi.ciw216a.setEnabled(true);
-                        bi.ciw216b.setEnabled(true);
-                        bi.ciw216aa.setEnabled(true);*/
-
                     }
                 } else if (bi.ciw207a.isChecked() && !bi.ciw208a.isChecked() && bi.ciw211.getText().toString().equals("1")) {
                     if (bi.ciw212.getText().toString().equals("0")) {
                         bi.ciw213.setEnabled(false);
                         bi.ciw213.setText(null);
-
-                        /*bi.ciw214.setEnabled(false);
-                        bi.ciw214.setText(null);
-                        bi.ciw215.setEnabled(false);
-                        bi.ciw215.setText(null);*/
-
-                        /*bi.ciw216a.setEnabled(false);
-                        bi.ciw216b.setEnabled(false);
-                        bi.ciw216.clearCheck();
-                        bi.ciw216aa.setEnabled(false);
-                        bi.ciw216aa.setText(null);
-*/
                     } else {
-
                         bi.ciw213.setEnabled(true);
-
-                        /*bi.ciw214.setEnabled(true);
-                        bi.ciw215.setEnabled(true);*/
-
-                       /* bi.ciw216a.setEnabled(true);
-                        bi.ciw216b.setEnabled(true);
-                        bi.ciw216aa.setEnabled(true);*/
-
                     }
-                }
+                }*/
+
+
             }
 
             @Override
@@ -653,7 +563,6 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
 
             }
         });
-
 
         bi.ciw214.addTextChangedListener(new TextWatcher() {
             @Override
@@ -664,7 +573,7 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
 
-                if (bi.ciw214.getText().toString().equals("0")) {
+                /*if (bi.ciw214.getText().toString().equals("0")) {
                     bi.ciw215.setEnabled(false);
                     bi.ciw215.setText(null);
 
@@ -674,7 +583,18 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
 
                 } else {
                     bi.ciw215.setEnabled(true);
+                }*/
+
+                if (bi.ciw214.getText().toString().isEmpty()) return;
+
+                if (bi.ciw214.getText().toString().equals("0")) {
+                    bi.ciw215.setEnabled(false);
+                    bi.ciw215.setText(null);
+                } else {
+                    bi.ciw215.setEnabled(true);
                 }
+
+                bi.ciw215.setMaxvalue(Integer.valueOf(bi.ciw214.getText().toString()));
             }
 
             @Override
@@ -846,7 +766,6 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
         bi.ciw213.addTextChangedListener(this);
         bi.ciw214.addTextChangedListener(this);
         bi.ciw215.addTextChangedListener(this);
-        //bi.ciw216aa.addTextChangedListener(this);
 
         bi.na11801.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -863,7 +782,6 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                     bi.ciw21003.clearCheck();
                     bi.ciw21098.clearCheck();
                     bi.ciw21099.clearCheck();
-                    //bi.ciw216.clearCheck();
                 }
             }
         });
@@ -872,15 +790,12 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
 
     public void setupViews() {
 
-
 //      Get intent
         if (getIntent().getBooleanExtra("reBackComing", true)) {
             if (getIntent().getBooleanExtra("mwraFlag", false)) {
                 lstMwra.remove(getIntent().getStringExtra("wraName"));
-                //      Increment WRA COUNTER
+                // Increment WRA COUNTER
                 WRAcounter++;
-
-//                WRAsize = MainApp.mwra.size();
 
             } else {
                 wraMap = new HashMap<>();
@@ -913,63 +828,20 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                 lstMwra.add(MainApp.mwra.get(i).getName() + "-" + MainApp.mwra.get(i).getSerialNo());
             }
 
-//            WRAsize = MainApp.mwra.size();
-
         }
-
 
         bi.nb101.setAdapter(new ArrayAdapter<>(this, R.layout.item_style, lstMwra));
 
-        /*bi.nb101.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if (bi.nb101.getSelectedItemPosition() != 0) {
-                    for (FamilyMembersContract fmc : MainApp.childUnder2Check) {
-                        childCheck = fmc.getMotherId().equals(wraMap.get(bi.nb101.getSelectedItem().toString()).getSerialNo());
-                        if (childCheck) {
-                            break;
-                        }
-                    }
-                }
+        // Getting child from roaster
+        for (FamilyMembersContract fmc : MainApp.childUnder5) {
+            if (fmc.getMotherId().equals(wraMap.get(bi.nb101.getSelectedItem().toString()).getSerialNo())) {
+                roasterChildrens++;
             }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });*/
-    }
-
-    private void GetDataFromForm(String uuid) {
-        /*if (getIntent().getIntExtra("under2Size", 0) > 0) {
-            childCheck = true;
-        } else {
-            Collection<DeceasedContract> deceasedContracts = db.getDeceasedMembersCount(uuid);
-            for (DeceasedContract deceasedContract : deceasedContracts) {
-                JSONH8ModelClass jsonh8ModelClass = JSONUtilClass.getModelFromJSON(deceasedContract.getsH8(), JSONH8ModelClass.class);
-                if (jsonh8ModelClass.getMwraSerial().equals(MainApp.mc.getB1SerialNo())) {
-                    childCheck = true;
-                    break;
-                }
-            }
-        }*/
-
-        bi.nb101.setVisibility(View.GONE);
-        bi.nb101a.setVisibility(View.VISIBLE);
-
-        MainApp.fc = db.getAutoPopulateFormForWRA(uuid);
-
-        FamilyMembersContract MWR = (FamilyMembersContract) getIntent().getSerializableExtra("fmClass");
-
-        wraMap = new HashMap<>();
-        lstMwra = new ArrayList<>();
-
-        lstMwra.add("....");
-
-        /*for (FamilyMembersContract wra : MWR) {
-            wraMap.put(wra.getName() + "-" + wra.getSerialNo(), wra);
-            lstMwra.add(wra.getName() + "-" + wra.getSerialNo());
-        }*/
+        }
+        bi.ciw211.setMinvalue(roasterChildrens);
+        bi.ciw212.setMinvalue(roasterChildrens);
+        bi.ciw214.setMinvalue(roasterChildrens);
+        bi.ciw215.setMinvalue(roasterChildrens);
 
     }
 
@@ -1078,14 +950,10 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
 
             bi.ciw215.setText(jsonB1.getciw215());
 
-
-           /* if (!jsonB1.getciw216().equals("0")) {
-                bi.ciw216.check(
-                        jsonB1.getciw216().equals("1") ? bi.ciw216a.getId() :
-                                bi.ciw216b.getId()
-                );
-            }
-            bi.ciw216aa.setText(jsonB1.getciw216aa());*/
+            bi.ciw211.setMinvalue(Integer.valueOf(jsonB1.getNo_child()));
+            bi.ciw212.setMinvalue(Integer.valueOf(jsonB1.getNo_child()));
+            bi.ciw214.setMinvalue(Integer.valueOf(jsonB1.getNo_child()));
+            bi.ciw215.setMinvalue(Integer.valueOf(jsonB1.getNo_child()));
 
         }
 
@@ -1095,7 +963,6 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
 
 //        Validation Boolean
         MainApp.validateFlag = true;
-
 
         if (ValidateForm()) {
             try {
@@ -1120,52 +987,7 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                 if (bi.ciw203a.isChecked()) {
                     if (bi.ciw204a.isChecked() || bi.ciw205a.isChecked()) {
                         if (bi.ciw207a.isChecked()) {
-                            /*if (bi.ciw216a.isChecked()) {
-                                if (Integer.valueOf(bi.ciw216aa.getText().toString()) > 0) {
 
-                                    if (Integer.valueOf(bi.ciw216aa.getText().toString()) < prevMiscarriages) {
-
-                                        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
-                                                SectionB1Activity.this);
-                                        alertDialogBuilder
-                                                .setMessage("In previous you saved " + prevMiscarriages + " Miscarriage.\n" +
-                                                        "Do you want to continue it?")
-                                                .setCancelable(false)
-                                                .setPositiveButton("Yes",
-                                                        new DialogInterface.OnClickListener() {
-                                                            public void onClick(DialogInterface dialog,
-                                                                                int id) {
-
-                                                                MainApp.totalPregnancy = prevMiscarriages;
-
-                                                                startActivityForResult(new Intent(SectionB1Activity.this, SectionB1AActivity.class)
-                                                                        .putExtra("backPressed", classPassName.equals(SectionB1AActivity.class.getName())), 1);
-                                                            }
-                                                        });
-                                        alertDialogBuilder.setNegativeButton("Cancel",
-                                                new DialogInterface.OnClickListener() {
-                                                    public void onClick(DialogInterface dialog, int id) {
-                                                        dialog.cancel();
-
-                                                    }
-                                                });
-                                        AlertDialog alert = alertDialogBuilder.create();
-                                        alert.show();
-
-                                    } else {
-                                        MainApp.totalPregnancy = Integer.valueOf(bi.ciw214.getText().toString());
-
-                                        startActivityForResult(new Intent(this, SectionB1AActivity.class)
-                                                .putExtra("backPressed", classPassName.equals(SectionB1AActivity.class.getName())), 1);
-
-                                    }
-                                }
-
-                            } else if (childCheck) {
-                                startActivity(new Intent(this, SectionB2Activity.class));
-                            } else {
-                                redirectCondition();
-                            }*/
                             MainApp.currentlyPregnant = bi.ciw208a.isChecked() ? 1 : bi.ciw208b.isChecked() ? 2 : 0; // when women is currently pregnant outcome should be open according to totalPregnencies-1
 
                             if (Integer.valueOf(bi.ciw214.getText().toString()) > 0) {
@@ -1208,12 +1030,6 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                                 redirectCondition();
                             }
 
-                            /*if (MainApp.totalPregnancy > 0) {
-                                startActivity(new Intent(this, SectionB1AActivity.class));
-                            } else {
-                                redirectCondition();
-                            }*/
-
                         } else {
                             redirectCondition();
                         }
@@ -1254,10 +1070,7 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                 startActivityForResult(new Intent(this, SectionB6Activity.class)
                         .putExtra("backPressed", classPassName.equals(SectionB6Activity.class.getName())), 1);
 
-            }/* else if (!db.getNutritionCount()) {
-                startActivityForResult(new Intent(this, SectionB6Activity.class)
-                        .putExtra("backPressed", classPassName.equals(SectionB6Activity.class.getName())), 1);
-            }*/ else {
+            } else {
                 finish();
                 startActivity(new Intent(this, ViewMemberActivity.class)
                         .putExtra("flagEdit", false)
@@ -1267,9 +1080,6 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                 );
             }
         } else {
-//            if (SectionB1Activity.WRAcounter == MainApp.mwra.size()
-//                    &&
-//                    MainApp.B6Flag) {
             if (wraMap.get(bi.nb101.getSelectedItem().toString()).getKishSelected().equals("1")) {
                 startActivityForResult(new Intent(this, SectionB6Activity.class)
                         .putExtra("backPressed", classPassName.equals(SectionB6Activity.class.getName())), 1);
@@ -1378,7 +1188,6 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                 sB1.put("wra_lno", wraMap.get(bi.nb101.getSelectedItem().toString()).getSerialNo());
 
             }
-//            MainApp.mc.set_UID(MainApp.mc.get_UID());
         }
 
         sB1.put("ciw11801", bi.na11801a.isChecked() ? "1" : bi.na11801b.isChecked() ? "2" : "0");
@@ -1418,12 +1227,8 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
         sB1.put("ciw213", bi.ciw213.getText().toString());
         sB1.put("ciw214", bi.ciw214.getText().toString());
         sB1.put("ciw215", bi.ciw215.getText().toString());
-       /* sB1.put("ciw216", bi.ciw216a.isChecked() ? "1" : bi.ciw216b.isChecked() ? "2" : "0");
-        sB1.put("ciw216aa", bi.ciw216aa.getText().toString());*/
 
-        /*if (bi.ciw216a.isChecked() && !bi.ciw216aa.getText().toString().isEmpty()) {
-            MainApp.totalPregnancy = Integer.valueOf(bi.ciw216aa.getText().toString());
-        }*/
+        sB1.put("no_child", roasterChildrens);
 
         MainApp.mc.setsB1(String.valueOf(sB1));
 
@@ -1527,10 +1332,7 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
 
     @Override
     public void afterTextChanged(Editable s) {
-
-
     }
-
 
     @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -1653,7 +1455,7 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
 
                             }
 
-                            if (!ValidatorClass.EmptyTextBox(this, bi.ciw211, getString(R.string.ciw211))) {
+                            /*if (!ValidatorClass.EmptyTextBox(this, bi.ciw211, getString(R.string.ciw211))) {
                                 return false;
                             }
 
@@ -1717,12 +1519,38 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                                 } else {
                                     bi.ciw214.setError("null");
                                 }
+                            }*/
+
+                            if (!ValidatorClass.EmptyEditTextPicker(this, bi.ciw211, getString(R.string.ciw211)))
+                                return false;
+
+                            if (bi.ciw211.getText().toString().equals("0")) return true;
+
+                            if (!ValidatorClass.EmptyEditTextPicker(this, bi.ciw212, getString(R.string.ciw212)))
+                                return false;
+
+                            if (!ValidatorClass.EmptyTextBox(this, bi.ciw213, getString(R.string.ciw213))) {
+                                return false;
                             }
+
+                            if (!ValidatorClass.EmptyTextBox(this, bi.ciw213, getString(R.string.ciw213))) {
+                                return false;
+                            }
+
+                            if (!ValidatorClass.RangeTextBox(this, bi.ciw213, Integer.valueOf(bi.ciw206.getText().toString()), Integer.valueOf(bi.ciw202.getText().toString()), getString(R.string.ciw213), " years")) {
+                                return false;
+                            }
+
+                            if (!ValidatorClass.EmptyEditTextPicker(this, bi.ciw214, getString(R.string.ciw214)))
+                                return false;
+
+                            if (bi.ciw214.getText().toString().equals("0")) return true;
+
+                            return ValidatorClass.EmptyEditTextPicker(this, bi.ciw215, getString(R.string.ciw215));
 
 
                         }
 
-                        //}
                     }
 
                 }

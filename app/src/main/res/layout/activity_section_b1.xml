@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="edu.aku.hassannaqvi.casi_2019.ui.wra.SectionB1Activity">
 
@@ -778,13 +779,16 @@
                                         android:textAppearance="?android:attr/textAppearanceLarge"
                                         android:textColor="@android:color/white" />
 
-                                    <EditText
+                                    <com.edittextpicker.aliazaz.EditTextPicker
                                         android:id="@+id/ciw211"
                                         style="@style/textInput"
                                         android:hint="@string/ciw211"
                                         android:inputType="number"
                                         android:maxLength="2"
-                                        android:text='@{na11801a.checked ? ciw211.getText.toString : "" }' />
+                                        android:text='@{na11801a.checked ? ciw211.getText.toString : "" }'
+                                        app:maxValue="20"
+                                        app:minValue="1"
+                                        app:type="range" />
 
                                     <!--209-->
                                     <LinearLayout
@@ -802,13 +806,16 @@
                                             android:textAppearance="?android:attr/textAppearanceLarge"
                                             android:textColor="@android:color/white" />
 
-                                        <EditText
+                                        <com.edittextpicker.aliazaz.EditTextPicker
                                             android:id="@+id/ciw212"
                                             style="@style/textInput"
                                             android:hint="@string/ciw212"
                                             android:inputType="number"
                                             android:maxLength="2"
-                                            android:text='@{na11801a.checked ? ciw212.getText.toString : "" }' />
+                                            android:text='@{na11801a.checked ? ciw212.getText.toString : "" }'
+                                            app:maxValue="20"
+                                            app:minValue="1"
+                                            app:type="range" />
 
                                         <LinearLayout
                                             android:id="@+id/fldGrpciw213"
@@ -861,14 +868,16 @@
                                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                                 android:textColor="@android:color/white" />
 
-                                            <EditText
-
+                                            <com.edittextpicker.aliazaz.EditTextPicker
                                                 android:id="@+id/ciw214"
                                                 style="@style/textInput"
                                                 android:hint="@string/ciw214"
                                                 android:inputType="number"
                                                 android:maxLength="2"
-                                                android:text='@{na11801a.checked ? ciw214.getText.toString : "" }' />
+                                                android:text='@{na11801a.checked ? ciw214.getText.toString : "" }'
+                                                app:maxValue="20"
+                                                app:minValue="0"
+                                                app:type="range" />
 
 
                                             <TextView
@@ -880,13 +889,16 @@
                                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                                 android:textColor="@android:color/white" />
 
-                                            <EditText
+                                            <com.edittextpicker.aliazaz.EditTextPicker
                                                 android:id="@+id/ciw215"
                                                 style="@style/textInput"
                                                 android:hint="@string/ciw215"
                                                 android:inputType="number"
                                                 android:maxLength="2"
-                                                android:text='@{na11801a.checked ? ciw215.getText.toString : "" }' />
+                                                android:text='@{na11801a.checked ? ciw215.getText.toString : "" }'
+                                                app:maxValue="20"
+                                                app:minValue="0"
+                                                app:type="range" />
 
 
                                             <!--<TextView
@@ -950,13 +962,6 @@
 -->
 
                                         </LinearLayout>
-
-
-                                        <!--211-->
-
-
-                                        <!--ciw210-->
-
 
                                     </LinearLayout>
 
