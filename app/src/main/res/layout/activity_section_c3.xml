@@ -503,20 +503,20 @@
 
                         </RadioGroup>
 
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/pink_100"
+                            android:gravity="center"
+                            android:text="@string/cic3src"
+                            android:textColor="@color/colorPrimaryDark" />
+
                         <RadioGroup
                             android:id="@+id/cic3p1src"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/_2sdp"
                             android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="0.65"
-                                android:background="@color/pink_100"
-                                android:text="@string/cic3src"
-                                android:textColor="@color/colorPrimaryDark" />
 
                             <RadioButton
                                 android:id="@+id/cic3p1srca"
@@ -579,6 +579,15 @@
 
                         </RadioGroup>
 
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/pink_100"
+                            android:gravity="center"
+                            android:text="@string/cic3src"
+                            android:textColor="@color/colorPrimaryDark" />
+
+
                         <RadioGroup
                             android:id="@+id/cic3pcv1src"
                             android:layout_width="match_parent"
@@ -586,13 +595,6 @@
                             android:layout_marginTop="@dimen/_2sdp"
                             android:orientation="horizontal">
 
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="0.65"
-                                android:background="@color/pink_100"
-                                android:text="@string/cic3src"
-                                android:textColor="@color/colorPrimaryDark" />
 
                             <RadioButton
                                 android:id="@+id/cic3pcv1srca"
