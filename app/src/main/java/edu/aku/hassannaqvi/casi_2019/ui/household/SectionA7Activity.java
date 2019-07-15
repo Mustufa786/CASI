@@ -40,6 +40,8 @@ public class SectionA7Activity extends AppCompatActivity {
 
         db = new DatabaseHelper(this);
 
+        this.setTitle(R.string.sectionA7);
+
         setUIContent();
         autoPopulate();
     }
