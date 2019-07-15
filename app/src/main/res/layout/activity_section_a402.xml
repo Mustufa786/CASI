@@ -23,10 +23,10 @@
             android:layout_height="wrap_content">
 
             <LinearLayout
-                android:layoutDirection="rtl"
                 android:id="@+id/fldGrpSectionA402"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layoutDirection="rtl"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -403,17 +403,14 @@
                     android:textColor="@android:color/white" />
 
                 <com.edittextpicker.aliazaz.EditTextPicker
-                    app:defaultValue=""
-                    app:maxValue="15"
-                    app:minValue="1"
-                    app:type="range"
                     android:id="@+id/cih320"
                     style="@style/textInput"
-                    android:digits="01234567890"
                     android:hint="@string/cih320"
                     android:inputType="number"
-                    android:maxLength="2" />
-
+                    android:maxLength="2"
+                    app:maxValue="15"
+                    app:minValue="1"
+                    app:type="range" />
 
                 <!-- 21 -->
                 <TextView
