@@ -171,14 +171,17 @@ public class SectionA7Activity extends AppCompatActivity {
                         : bi.cih714a.getId());
             }
 
-            bi.cih714x.setText(jsonA7.getCih714x());
+            bi.cih71402.setText(jsonA7.getCih71402());
+            bi.cih71403.setText(jsonA7.getCih71403());
 
             if (!jsonA7.getCih715().equals("0")) {
                 bi.cih715.check(jsonA7.getCih715().equals("1") ? bi.cih715a.getId()
                         : bi.cih715a.getId());
             }
 
-            bi.cih715x.setText(jsonA7.getCih715x());
+            bi.cih71502.setText(jsonA7.getCih71502());
+            bi.cih71503.setText(jsonA7.getCih71503());
+
 
         }
     }
@@ -351,15 +354,16 @@ public class SectionA7Activity extends AppCompatActivity {
         secH7.put("cih71302", bi.cih71302.getText().toString());
         secH7.put("cih71303", bi.cih71303.getText().toString());
 
-        secH7.put("cih714", bi.cih714a.isChecked() ? "1"
+        secH7.put("cih71401", bi.cih714a.isChecked() ? "1"
                 : bi.cih714b.isChecked() ? "2" : "0");
+        secH7.put("cih71402", bi.cih71402.getText().toString());
+        secH7.put("cih71403", bi.cih71403.getText().toString());
 
-        secH7.put("cih714x", bi.cih714x.getText().toString());
-        secH7.put("cih715", bi.cih715a.isChecked() ? "1"
+        secH7.put("cih71501", bi.cih715a.isChecked() ? "1"
                 : bi.cih715b.isChecked() ? "2" : "0");
+        secH7.put("cih71502", bi.cih71502.getText().toString());
+        secH7.put("cih71503", bi.cih71503.getText().toString());
 
-        secH7.put("cih714x", bi.cih714x.getText().toString());
-        secH7.put("cih715x", bi.cih715x.getText().toString());
 
         MainApp.fc.setsA7(secH7.toString());
 

@@ -211,8 +211,7 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
                                                 jsonA4.getcih301().equals("4") ? binding.cih301d.getId() :
                                                         jsonA4.getcih301().equals("5") ? binding.cih301e.getId() :
                                                                 jsonA4.getcih301().equals("6") ? binding.cih301f.getId() :
-                                                                        jsonA4.getcih301().equals("7") ? binding.cih301g.getId() :
-                                                                                binding.cih30196.getId()
+                                                                        binding.cih30196.getId()
                 );
             }
             binding.cih30196x.setText(jsonA4.getcih30196x());
@@ -852,7 +851,6 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
                 : binding.cih301d.isChecked() ? "4"
                 : binding.cih301e.isChecked() ? "5"
                 : binding.cih301f.isChecked() ? "6"
-                : binding.cih301g.isChecked() ? "7"
                 : binding.cih30196.isChecked() ? "96"
                 : "0");
         sA4.put("cih30196x", binding.cih30196x.getText().toString());

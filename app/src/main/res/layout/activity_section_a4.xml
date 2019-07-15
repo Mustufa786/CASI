@@ -113,14 +113,6 @@
                         android:layout_marginBottom="1dp"
                         android:text="@string/cih301f" />
 
-                    <RadioButton
-                        android:id="@+id/cih301g"
-                        style="@style/radiobutton"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="1dp"
-                        android:text="@string/cih301g" />
-
 
                     <RadioButton
                         android:id="@+id/cih30196"

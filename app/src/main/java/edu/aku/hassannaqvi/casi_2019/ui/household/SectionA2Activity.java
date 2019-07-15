@@ -700,14 +700,14 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                     if (MainApp.gender == 1) {
                         binding.na204a.setEnabled(false);
                         binding.na204a.setChecked(false);
-                        binding.na204c.setEnabled(false);
-                        binding.na204c.setChecked(false);
+//                        binding.na204c.setEnabled(false);
+//                        binding.na204c.setChecked(false);
                         binding.na204b.setEnabled(true);
                     } else {
                         binding.na204a.setEnabled(true);
                         binding.na204b.setEnabled(false);
-                        binding.na204c.setEnabled(false);
-                        binding.na204c.setChecked(false);
+//                        binding.na204c.setEnabled(false);
+//                        binding.na204c.setChecked(false);
                         binding.na204b.setChecked(false);
                     }
 
@@ -718,7 +718,7 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                     binding.na204.clearCheck();
                     binding.na204a.setEnabled(true);
                     binding.na204b.setEnabled(true);
-                    binding.na204c.setEnabled(true);
+//                    binding.na204c.setEnabled(true);
                 }
             }
         });
@@ -821,7 +821,7 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
 
             MainApp.fmc.setSerialNo(String.valueOf(MainApp.serial_no));
             MainApp.fmc.setna204(binding.na204a.isChecked() ? "1" : binding.na204b.isChecked() ? "2"
-                    : binding.na204c.isChecked() ? "3" : "0");
+                    : "0");
             MainApp.fmc.setName(binding.na202.getText().toString());
             MainApp.fmc.setRealtionHH(binding.na203a.isChecked() ? "1" : binding.na203b.isChecked() ? "2" : binding.na203c.isChecked() ? "3" : binding.na203d.isChecked() ? "4"
                     : binding.na203e.isChecked() ? "5" : binding.na203f.isChecked() ? "6" : binding.na203g.isChecked() ? "7" : binding.na203h.isChecked() ? "8"
@@ -1070,7 +1070,6 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
     }
 
     private boolean formValidation() {
-
 
 
         if (flag) {

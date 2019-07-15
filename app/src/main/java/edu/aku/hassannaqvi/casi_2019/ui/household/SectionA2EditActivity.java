@@ -132,7 +132,7 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
         JSONA2ModelClass jsonB2 = JSONUtilClass.getModelFromJSON(MainApp.fmc.getsA2(), JSONA2ModelClass.class);
 
         binding.na204.check(MainApp.fmc.getna204().equals("1") ? binding.na204a.getId()
-                : MainApp.fmc.getna204().equals("2") ? binding.na204b.getId() : binding.na204c.getId());
+                : binding.na204b.getId());
         binding.na202.setText(MainApp.fmc.getName());
         binding.na203.check(MainApp.fmc.getRealtionHH().equals("1") ? binding.na203a.getId() :
                 MainApp.fmc.getRealtionHH().equals("2") ? binding.na203b.getId() :
@@ -934,7 +934,7 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
     private void SaveDraft() throws JSONException {
 
         MainApp.fmc.setna204(binding.na204a.isChecked() ? "1" : binding.na204b.isChecked() ? "2"
-                : binding.na204c.isChecked() ? "3" : "0");
+                : "0");
         MainApp.fmc.setName(binding.na202.getText().toString());
         MainApp.fmc.setRealtionHH(binding.na203a.isChecked() ? "1" : binding.na203b.isChecked() ? "2" : binding.na203c.isChecked() ? "3" : binding.na203d.isChecked() ? "4"
                 : binding.na203e.isChecked() ? "5" : binding.na203f.isChecked() ? "6" : binding.na203g.isChecked() ? "7" : binding.na203h.isChecked() ? "8"

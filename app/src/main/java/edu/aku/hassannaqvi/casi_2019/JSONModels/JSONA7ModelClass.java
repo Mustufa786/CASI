@@ -57,14 +57,57 @@ public class JSONA7ModelClass {
     private String cih71303 = "";
 
     private String cih714 = "";
-    private String cih714x = "";
+    private String cih71402 = "";
+    private String cih71403 = "";
+
     private String cih715 = "";
-    private String cih715x = "";
+    private String cih71502 = "";
+    private String cih71503 = "";
+
 
     public String getCih701() {
         return cih701;
     }
 
+    public String getCih71402() {
+        return cih71402;
+    }
+
+    public void setCih71402(String cih71402) {
+        this.cih71402 = cih71402;
+    }
+
+    public String getCih71403() {
+        return cih71403;
+    }
+
+    public void setCih71403(String cih71403) {
+        this.cih71403 = cih71403;
+    }
+
+    public String getCih715() {
+        return cih715;
+    }
+
+    public void setCih715(String cih715) {
+        this.cih715 = cih715;
+    }
+
+    public String getCih71502() {
+        return cih71502;
+    }
+
+    public void setCih71502(String cih71502) {
+        this.cih71502 = cih71502;
+    }
+
+    public String getCih71503() {
+        return cih71503;
+    }
+
+    public void setCih71503(String cih71503) {
+        this.cih71503 = cih71503;
+    }
     public void setCih701(String cih701) {
         this.cih701 = cih701;
     }
@@ -381,29 +424,6 @@ public class JSONA7ModelClass {
         this.cih714 = cih714;
     }
 
-    public String getCih714x() {
-        return cih714x;
-    }
-
-    public void setCih714x(String cih714x) {
-        this.cih714x = cih714x;
-    }
-
-    public String getCih715() {
-        return cih715;
-    }
-
-    public void setCih715(String cih715) {
-        this.cih715 = cih715;
-    }
-
-    public String getCih715x() {
-        return cih715x;
-    }
-
-    public void setCih715x(String cih715x) {
-        this.cih715x = cih715x;
-    }
 
 
 }
