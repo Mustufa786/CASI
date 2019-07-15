@@ -48,7 +48,7 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:windowSoftInputMode="stateVisible|adjustPan" />
         <activity
-            android:name=".ui.childs.SectionC6Activity"
+            android:name=".ui.childs.SectionC5Activity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateHidden">
 
@@ -152,11 +152,6 @@
         <activity
             android:name=".ui.wra.SectionB6Activity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
-        <activity
-            android:name=".ui.childs.SectionC5Activity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name=".ui.childs.SectionC2Activity"

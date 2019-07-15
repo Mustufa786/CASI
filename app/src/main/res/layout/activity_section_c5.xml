@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="edu.aku.hassannaqvi.src_preg.ui.SectionC5Activity">
+    tools:context="ui.wra.SectionC5Activity">
 
     <data>
 
@@ -17,50 +18,20 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:background="@color/colorPrimaryDark"
-            android:gravity="center"
-            android:text="@string/cic5heading"
-            android:textSize="40sp"
-            android:visibility="gone" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="@color/colorPrimary" />
-
-        <TextView
-            android:id="@+id/textName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/pink_100"
-            android:gravity="center"
-            android:padding="0dp"
-            android:textColor="@color/colorPrimaryDark" />
-
-        <TextView
-            style="@style/sub"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            android:padding="0dp"
-            android:text="@string/cic5info" />
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <LinearLayout
+                android:id="@+id/fldGrpSectionB6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:animateLayoutChanges="true"
                 android:layoutDirection="rtl"
                 android:orientation="vertical">
-                <!-- 3 -->
 
+                <!--cic501-->
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -70,45 +41,17 @@
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/white" />
 
-                <RadioGroup
+                <com.edittextpicker.aliazaz.EditTextPicker
                     android:id="@+id/cic501"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <RadioButton
-                        android:id="@+id/cic501a"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/cic501a" />
+                    style="@style/textInput"
+                    android:hint="@string/cic501h"
+                    android:inputType="number"
+                    app:maxValue="7"
+                    app:minValue="1"
+                    app:type="range" />
 
 
-                    <RadioButton
-                        android:id="@+id/cic501b"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/cic501b" />
-
-                    <RadioButton
-                        android:id="@+id/cic501c"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/cic501c" />
-
-                    <RadioButton
-                        android:id="@+id/cic501d"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/cic501d" />
-
-                </RadioGroup>
-
-                <!-- 4 -->
-
+                <!--cic502-->
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -126,227 +69,1422 @@
 
                     <RadioButton
                         android:id="@+id/cic502a"
+                        style="@style/radiobutton"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
                         android:layout_weight="1"
                         android:text="@string/cic502a" />
 
-
                     <RadioButton
                         android:id="@+id/cic502b"
+                        style="@style/radiobutton"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
                         android:layout_weight="1"
                         android:text="@string/cic502b" />
 
                     <RadioButton
                         android:id="@+id/cic502c"
+                        style="@style/radiobutton"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
                         android:layout_weight="1"
                         android:text="@string/cic502c" />
 
-                    <RadioButton
-                        android:id="@+id/cic502d"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/cic502d" />
-
                 </RadioGroup>
 
-                <!-- 5 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/pink_100"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="@string/cic5h1"
+                    android:textColor="@color/colorPrimaryDark" />
 
+                <!--cic50301-->
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:background="@color/colorPrimary"
-                    android:text="@string/cic503"
+                    android:text="@string/cic50301"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/white" />
 
-                <RadioGroup
-                    android:id="@+id/cic503"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/pink_100"
+                    android:padding="2dp"
+                    android:text="@string/cic503h1"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <CheckBox
+                    android:id="@+id/cic5030198"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="-1"
+                    android:text="@string/notEaten" />
+
+                <LinearLayout
+                    android:id="@+id/fldGrpcic50301"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <RadioButton
-                        android:id="@+id/cic503a"
+                    <com.edittextpicker.aliazaz.EditTextPicker
+                        android:id="@+id/cic5030101"
+                        style="@style/textInput"
+                        android:inputType="number"
+                        app:defaultValue="99"
+                        app:maxValue="7"
+                        app:minValue="1"
+                        app:type="range" />
+
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/cic503a" />
+                        android:background="@color/pink_100"
+                        android:padding="2dp"
+                        android:text="@string/cic503h2"
+                        android:textColor="@color/colorPrimaryDark" />
 
-
-                    <RadioButton
-                        android:id="@+id/cic503b"
+                    <RadioGroup
+                        android:id="@+id/cic5030102"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/cic503b" />
+                        android:orientation="vertical">
 
-                    <RadioButton
-                        android:id="@+id/cic503c"
+                        <RadioButton
+                            android:id="@+id/cic5030102a"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2a" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030102b"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2b" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030102c"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2c" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030102d"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2d" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030102e"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2e" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030102f"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2f" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030102g"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2g" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030102h"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2h" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030102i"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2i" />
+
+                    </RadioGroup>
+
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/cic503c" />
+                        android:background="@color/pink_100"
+                        android:padding="2dp"
+                        android:text="@string/cic503h3"
+                        android:textColor="@color/colorPrimaryDark" />
 
-                    <RadioButton
-                        android:id="@+id/cic503d"
+                    <RadioGroup
+                        android:id="@+id/cic5030103"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/cic503d" />
+                        android:orientation="vertical">
 
-                </RadioGroup>
+                        <RadioButton
+                            android:id="@+id/cic5030103a"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/yes" />
 
-                <!-- 6 -->
+                        <RadioButton
+                            android:id="@+id/cic5030103b"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/no" />
 
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+                <!--cic50302-->
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:background="@color/colorPrimary"
-                    android:text="@string/cic504"
+                    android:text="@string/cic50302"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/white" />
 
-                <RadioGroup
-                    android:id="@+id/cic504"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/pink_100"
+                    android:padding="2dp"
+                    android:text="@string/cic503h1"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <CheckBox
+                    android:id="@+id/cic5030298"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="-1"
+                    android:text="@string/notEaten" />
+
+                <LinearLayout
+                    android:id="@+id/fldGrpcic50302"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <RadioButton
-                        android:id="@+id/cic504a"
+                    <com.edittextpicker.aliazaz.EditTextPicker
+                        android:id="@+id/cic5030201"
+                        style="@style/textInput"
+                        android:inputType="number"
+                        app:maxValue="7"
+                        app:minValue="1"
+                        app:type="range" />
+
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/cic504a" />
+                        android:background="@color/pink_100"
+                        android:padding="2dp"
+                        android:text="@string/cic503h2"
+                        android:textColor="@color/colorPrimaryDark" />
 
-
-                    <RadioButton
-                        android:id="@+id/cic504b"
+                    <RadioGroup
+                        android:id="@+id/cic5030202"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/cic504b" />
+                        android:orientation="vertical">
 
-                    <RadioButton
-                        android:id="@+id/cic504c"
+                        <RadioButton
+                            android:id="@+id/cic5030202a"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2a" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030202b"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2b" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030202c"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2c" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030202d"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2d" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030202e"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2e" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030202f"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2f" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030202g"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2g" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030202h"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2h" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030202i"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2i" />
+
+                    </RadioGroup>
+
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/cic504c" />
+                        android:background="@color/pink_100"
+                        android:padding="2dp"
+                        android:text="@string/cic503h3"
+                        android:textColor="@color/colorPrimaryDark" />
 
-                    <RadioButton
-                        android:id="@+id/cic504d"
+                    <RadioGroup
+                        android:id="@+id/cic5030203"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/cic504d" />
+                        android:orientation="vertical">
 
-                </RadioGroup>
+                        <RadioButton
+                            android:id="@+id/cic5030203a"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/yes" />
 
-                <!-- 7 -->
+                        <RadioButton
+                            android:id="@+id/cic5030203b"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/no" />
 
+                    </RadioGroup>
+                </LinearLayout>
+
+
+                <!--cic50303-->
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:background="@color/colorPrimary"
-                    android:text="@string/cic505"
+                    android:text="@string/cic50303"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/white" />
 
-                <RadioGroup
-                    android:id="@+id/cic505"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/pink_100"
+                    android:padding="2dp"
+                    android:text="@string/cic503h1"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <CheckBox
+                    android:id="@+id/cic5030398"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="-1"
+                    android:text="@string/notEaten" />
+
+                <LinearLayout
+                    android:id="@+id/fldGrpcic50303"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <RadioButton
-                        android:id="@+id/cic505a"
+                    <com.edittextpicker.aliazaz.EditTextPicker
+                        android:id="@+id/cic5030301"
+                        style="@style/textInput"
+                        android:inputType="number"
+                        app:maxValue="7"
+                        app:minValue="1"
+                        app:type="range" />
+
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/cic505a" />
+                        android:background="@color/pink_100"
+                        android:padding="2dp"
+                        android:text="@string/cic503h2"
+                        android:textColor="@color/colorPrimaryDark" />
 
-
-                    <RadioButton
-                        android:id="@+id/cic505b"
+                    <RadioGroup
+                        android:id="@+id/cic5030302"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/cic505b" />
+                        android:orientation="vertical">
 
-                    <RadioButton
-                        android:id="@+id/cic505c"
+                        <RadioButton
+                            android:id="@+id/cic5030302a"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2a" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030302b"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2b" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030302c"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2c" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030302d"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2d" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030302e"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2e" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030302f"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2f" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030302g"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2g" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030302h"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2h" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030302i"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2i" />
+
+                    </RadioGroup>
+
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/cic505c" />
+                        android:background="@color/pink_100"
+                        android:padding="2dp"
+                        android:text="@string/cic503h3"
+                        android:textColor="@color/colorPrimaryDark" />
 
-                    <RadioButton
-                        android:id="@+id/cic505d"
+                    <RadioGroup
+                        android:id="@+id/cic5030303"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/cic505d" />
+                        android:orientation="vertical">
 
-                </RadioGroup>
+                        <RadioButton
+                            android:id="@+id/cic5030303a"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/yes" />
 
-                <!-- 8 -->
+                        <RadioButton
+                            android:id="@+id/cic5030303b"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/no" />
 
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+
+                <!--cic50304-->
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:background="@color/colorPrimary"
-                    android:text="@string/cic506"
+                    android:text="@string/cic50304"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/white" />
 
-                <RadioGroup
-                    android:id="@+id/cic506"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/pink_100"
+                    android:padding="2dp"
+                    android:text="@string/cic503h1"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <CheckBox
+                    android:id="@+id/cic5030498"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="-1"
+                    android:text="@string/notEaten" />
+
+                <LinearLayout
+                    android:id="@+id/fldGrpcic50304"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <RadioButton
-                        android:id="@+id/cic506a"
+                    <com.edittextpicker.aliazaz.EditTextPicker
+                        android:id="@+id/cic5030401"
+                        style="@style/textInput"
+                        android:inputType="number"
+                        app:maxValue="7"
+                        app:minValue="1"
+                        app:type="range" />
+
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/cic506a" />
+                        android:background="@color/pink_100"
+                        android:padding="2dp"
+                        android:text="@string/cic503h2"
+                        android:textColor="@color/colorPrimaryDark" />
 
-
-                    <RadioButton
-                        android:id="@+id/cic506b"
+                    <RadioGroup
+                        android:id="@+id/cic5030402"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/cic506b" />
+                        android:orientation="vertical">
 
-                    <RadioButton
-                        android:id="@+id/cic506c"
+                        <RadioButton
+                            android:id="@+id/cic5030402a"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2a" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030402b"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2b" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030402c"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2c" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030402d"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2d" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030402e"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2e" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030402f"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2f" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030402g"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2g" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030402h"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2h" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030402i"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2i" />
+
+                    </RadioGroup>
+
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/cic506c" />
+                        android:background="@color/pink_100"
+                        android:padding="2dp"
+                        android:text="@string/cic503h3"
+                        android:textColor="@color/colorPrimaryDark" />
 
-
-                    <RadioButton
-                        android:id="@+id/cic506d"
+                    <RadioGroup
+                        android:id="@+id/cic5030403"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/cic506d" />
+                        android:orientation="vertical">
 
-                </RadioGroup>
+                        <RadioButton
+                            android:id="@+id/cic5030403a"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/yes" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030403b"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/no" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+
+                <!--cic50305-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/cic50305"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/pink_100"
+                    android:padding="2dp"
+                    android:text="@string/cic503h1"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <CheckBox
+                    android:id="@+id/cic5030598"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="-1"
+                    android:text="@string/notEaten" />
+
+                <LinearLayout
+                    android:id="@+id/fldGrpcic50305"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
+                        android:id="@+id/cic5030501"
+                        style="@style/textInput"
+                        android:inputType="number"
+                        app:maxValue="7"
+                        app:minValue="1"
+                        app:type="range" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/pink_100"
+                        android:padding="2dp"
+                        android:text="@string/cic503h2"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <RadioGroup
+                        android:id="@+id/cic5030502"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/cic5030502a"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2a" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030502b"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2b" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030502c"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2c" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030502d"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2d" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030502e"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2e" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030502f"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2f" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030502g"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2g" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030502h"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2h" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030502i"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2i" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/pink_100"
+                        android:padding="2dp"
+                        android:text="@string/cic503h3"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <RadioGroup
+                        android:id="@+id/cic5030503"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/cic5030503a"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/yes" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030503b"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/no" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+                <!--cic50306-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/cic50306"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/pink_100"
+                    android:padding="2dp"
+                    android:text="@string/cic503h1"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <CheckBox
+                    android:id="@+id/cic5030698"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="-1"
+                    android:text="@string/notEaten" />
+
+                <LinearLayout
+                    android:id="@+id/fldGrpcic50306"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
+                        android:id="@+id/cic5030601"
+                        style="@style/textInput"
+                        android:inputType="number"
+                        app:maxValue="7"
+                        app:minValue="1"
+                        app:type="range" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/pink_100"
+                        android:padding="2dp"
+                        android:text="@string/cic503h2"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <RadioGroup
+                        android:id="@+id/cic5030602"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/cic5030602a"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2a" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030602b"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2b" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030602c"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2c" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030602d"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2d" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030602e"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2e" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030602f"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2f" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030602g"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2g" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030602h"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2h" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030602i"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2i" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/pink_100"
+                        android:padding="2dp"
+                        android:text="@string/cic503h3"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <RadioGroup
+                        android:id="@+id/cic5030603"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/cic5030603a"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/yes" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030603b"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/no" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+
+                <!--cic50307-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/cic50307"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/pink_100"
+                    android:padding="2dp"
+                    android:text="@string/cic503h1"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <CheckBox
+                    android:id="@+id/cic5030798"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="-1"
+                    android:text="@string/notEaten" />
+
+                <LinearLayout
+                    android:id="@+id/fldGrpcic50307"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
+                        android:id="@+id/cic5030701"
+                        style="@style/textInput"
+                        android:inputType="number"
+                        app:maxValue="7"
+                        app:minValue="1"
+                        app:type="range" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/pink_100"
+                        android:padding="2dp"
+                        android:text="@string/cic503h2"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <RadioGroup
+                        android:id="@+id/cic5030702"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/cic5030702a"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2a" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030702b"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2b" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030702c"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2c" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030702d"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2d" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030702e"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2e" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030702f"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2f" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030702g"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2g" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030702h"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2h" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030702i"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2i" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/pink_100"
+                        android:padding="2dp"
+                        android:text="@string/cic503h3"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <RadioGroup
+                        android:id="@+id/cic5030703"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/cic5030703a"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/yes" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030703b"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/no" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+
+                <!--cic50308-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/cic50308"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/pink_100"
+                    android:padding="2dp"
+                    android:text="@string/cic503h1"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <CheckBox
+                    android:id="@+id/cic5030898"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="-1"
+                    android:text="@string/notEaten" />
+
+                <LinearLayout
+                    android:id="@+id/fldGrpcic50308"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
+                        android:id="@+id/cic5030801"
+                        style="@style/textInput"
+                        android:inputType="number"
+                        app:maxValue="7"
+                        app:minValue="1"
+                        app:type="range" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/pink_100"
+                        android:padding="2dp"
+                        android:text="@string/cic503h2"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <RadioGroup
+                        android:id="@+id/cic5030802"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/cic5030802a"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2a" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030802b"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2b" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030802c"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2c" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030802d"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2d" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030802e"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2e" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030802f"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2f" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030802g"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2g" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030802h"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2h" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030802i"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cic503h2i" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/pink_100"
+                        android:padding="2dp"
+                        android:text="@string/cic503h3"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <RadioGroup
+                        android:id="@+id/cic5030803"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/cic5030803a"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/yes" />
+
+                        <RadioButton
+                            android:id="@+id/cic5030803b"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/no" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
 
 
                 <!--  = = = = =  END OF FORM FIELDS  = = = = = -->
@@ -385,6 +1523,6 @@
             </LinearLayout>
 
         </ScrollView>
-
     </LinearLayout>
 </layout>
+

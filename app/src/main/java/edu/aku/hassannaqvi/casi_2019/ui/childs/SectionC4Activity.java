@@ -597,7 +597,7 @@ public class SectionC4Activity extends Menu2Activity {
                 backPressed = true;
 
                 if (SectionC1Activity.ageInMontsbyDob > 23 && SectionC1Activity.ageInMontsbyDob < 60) {
-                    startActivity(new Intent(this, SectionC6Activity.class)
+                    startActivity(new Intent(this, SectionC5Activity.class)
                             .putExtra("selectedChild", selectedChild));
                 } else {
 

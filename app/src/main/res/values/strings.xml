@@ -1121,7 +1121,6 @@
     <string name="cic420c">۔گذشتہ3 ماہ میں</string>
     <string name="cic420d"> گذشتہ 6 ماہ میں </string>
     <string name="cic420e"> ایک سال پہلے </string>
-
     <string name="cic421"> کیا (۔Name) کو کبھی(مائکرو نیوٹرینٹ پائوڈر) ایم این پی دیا گیا؟ </string>
     <string name="cic422">۔C419 - اکثر (۔Name) کو کتنی مرتبہ ایم این پی دیا گیا؟</string>
     <string name="cic422a"> روزانہ </string>
@@ -1129,44 +1128,9 @@
     <string name="cic422c"> ہفتہ میں دو دفعہ </string>
     <string name="cic422d"> مہینہ میں ایک دفعہ </string>
     <string name="cic422e"> کبھی کبھار </string>
-
     <string name="cic423"> (۔Name) کو کتنے مہینوں یا دنوں تک ایم این پی دیا گیا؟َ</string>
     <string name="cic423a"> مہینوں </string>
     <string name="cic423b"> دنوں </string>
-
-    <string name="cic5heading"> سیکشن سی 5 : بچہ کی معذوری  </string>
-    <string name="cic5info"> (صرف59-24 مہینے کے بچوں کے لیےماں سے پوچھیں ) </string>
-
-    <string name="cic501a"> دیکھنے میں کوئی مشکل نہیں </string>
-    <string name="cic501b"> دیکھنے میں کچھ مشکل ہے</string>
-    <string name="cic501c"> دیکھنے میں بہت مشکل ہے </string>
-    <string name="cic501d"> بلکل نہیں دیکھ سکتا </string>
-
-    <string name="cic502a"> سننے میں کوئی مشکل نہیں </string>
-    <string name="cic502b"> سننے میں کچھ مشکل ہے </string>
-    <string name="cic502c"> سننے میں بہت مشکل ہے </string>
-    <string name="cic502d"> بلکل نہیں سن سکتا </string>
-
-    <string name="cic503a"> چلنے میں کوئی مشکل نہیں</string>
-    <string name="cic503b"> چلنے میں کچھ مشکل ہے </string>
-    <string name="cic503c"> چلنے میں بہت مشکل ہے </string>
-    <string name="cic503d"> بلکل نہیں چل سکتا </string>
-
-    <string name="cic504a"> یاد رکھنے میں کوئی مشکل نہیں</string>
-    <string name="cic504b"> یاد رکھنے میں کچھ مشکل ہے </string>
-    <string name="cic504c">  یاد رکھنے میں بہت مشکل ہے </string>
-    <string name="cic504d"> بلکل نہیں یاد رکھ سکتا </string>
-
-    <string name="cic505a"> اپنی دیکھ بھال کرنے میں کوئی مشکل نہیں </string>
-    <string name="cic505b"> اپنی دیکھ بھال کرنے میں کچھ مشکل ہے </string>
-    <string name="cic505c"> اپنی دیکھ بھال کرنے میں بہت مشکل ہے </string>
-    <string name="cic505d"> اپنی دیکھ بھال بلکل نہیں کر سکتا </string>
-
-
-    <string name="cic506a"> کوئی مشکل نہیں </string>
-    <string name="cic506b"> بات چیت کرنے میں کوئی مشکل نہیں </string>
-    <string name="cic506c"> بات چیت کرنے میں بہت مشکل ہے</string>
-    <string name="cic506d"> بلکل نہیں بات چیت کر سکتا </string>
 
 
     <string name="ciw311a"> گائنا کولوجسٹ </string>
@@ -1498,8 +1462,6 @@
     <!--<string name="cic406">۔C406 - کیا آپ نے (۔Name)کا نمونیہ (ARI)کی بیماری کا علاج کروایا ؟</string>-->
     <!--<string name="cic407">۔C407 - آپ نے (۔Name) کا نمونیہ (ARI)کی بیماری کا علاج کہاں سے کروایا ؟</string>-->
 
-    <string name="cic501">۔C501 - کیا آپ کےبچےکو دیکھنے میں مشکل پیش آتی ہے یہا ں تک کے چشمہ بھی پہنا ہو؟</string>
-    <string name="cic502">۔C502 - کیا آپ کےبچےکو سننےمیں مشکل پیش آتی ہیں یہاں تک کے کانوں والی مشین لگی ہوئی ہو؟</string>
     <string name="cic503">۔C503 - کیا آپ کےبچےکو چلنے یا چڑھنے کے دوران کوئی مشکلات پیش آتی ہے؟</string>
     <string name="cic504">۔C504 - کیا آپ کےبچےکو یاد رکھنے اور توجہ دینے میں کوئی مشکلات پیش آتی ہے؟</string>
     <string name="cic505">۔C505 - کیا آپ کےبچےکو اپنے دیکھ بھال( مثلاً: ہاتھ منہ دھونا ،وغیرہ) میں مشکل پیش آتی ہے؟</string>
@@ -1684,6 +1646,36 @@
     <string name="ciw50306"> دودھ، دودھ سے بنی ہوئی دیگر اشیاء (دہی،پنیر) </string>
     <string name="ciw50307"> چینی, شہد </string>
     <string name="ciw50308"> کوئی تیل، چکنائی </string>
+
+    <!--Child Section 5-->
+    <string name="cich"> سال کےسیکشن 5: خواتین کے مختلف اقسام کے کھانوں کا استعمال </string>
+    <string name="cic501"> آپ کے بچے نے کل دن اور رات کے دوران کھانا کھا یا ؟ </string>
+    <string name="cic501h"> کھانے </string>
+    <string name="cic502">  کیا یہ معمول کے مطابق ہے ؟ </string>
+    <string name="cic502a"> معمول سے کم </string>
+    <string name="cic502b"> معمول کے مطابق </string>
+    <string name="cic502c"> معمول سے ذیادہ </string>
+    <string name="cic5h1"> پچھلے 7 دنوں کے دوران کتنے دن آپ نے یہ کھانے کے گروپ کھائے؟ </string>
+    <string name="cic503h1"> پچھلے 7 دنوں کے دوران کتنے دن یہ کھانے کے گروپ کھائے؟ </string>
+    <string name="cic503h2"> پچھلے 7 دنوں کے دوران ان کھانے کے گروپ کا زریعہ کیا تھا؟ </string>
+    <string name="cic503h2a"> اپنی فصل/ باغ </string>
+    <string name="cic503h2b"> سنٹرل مارکیٹ سے خرید </string>
+    <string name="cic503h2c"> مقامی مارکیٹ/ دکان سے خرید </string>
+    <string name="cic503h2d"> کھانے کے لیے کام کرنا </string>
+    <string name="cic503h2e"> ادھار/قرضہ </string>
+    <string name="cic503h2f"> پروسی/دوستوں کی طرف سے تحفہ </string>
+    <string name="cic503h2g"> غذا کی امداد </string>
+    <string name="cic503h2h"> اشیاء کی تجارت </string>
+    <string name="cic503h2i"> پچھلے 7 دنوں میں نہیں کھایا </string>
+    <string name="cic503h3"> کیا کل آپ یا آپ کے گھر کے دوسرے افراد نے یہ کھانے کے گروپ کھائے؟ </string>
+    <string name="cic50301"> مثلاً روٹی ,جو،جوار، چاول ،گندم،شکرقندی، آلو وغیرہ </string>
+    <string name="cic50302"> تمام قسم کی دالیں اور پھلی بیج وغیرہ </string>
+    <string name="cic50303"> سبزیاں </string>
+    <string name="cic50304"> پھل </string>
+    <string name="cic50305"> کوئی بھی گوشت, مچھلی, انڈے </string>
+    <string name="cic50306"> دودھ، دودھ سے بنی ہوئی دیگر اشیاء (دہی،پنیر) </string>
+    <string name="cic50307"> چینی, شہد </string>
+    <string name="cic50308"> کوئی تیل، چکنائی </string>
 
 
 </resources>
