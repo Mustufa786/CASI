@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.Toast;
 
 import org.json.JSONException;
@@ -18,6 +20,7 @@ import edu.aku.hassannaqvi.casi_2019.core.MainApp;
 import edu.aku.hassannaqvi.casi_2019.databinding.ActivitySectionC6Binding;
 import edu.aku.hassannaqvi.casi_2019.ui.viewMem.ViewMemberActivity;
 import edu.aku.hassannaqvi.casi_2019.ui.wra.SectionB1Activity;
+import edu.aku.hassannaqvi.casi_2019.validation.ClearClass;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
 public class SectionC6Activity extends AppCompatActivity {
@@ -36,7 +39,127 @@ public class SectionC6Activity extends AppCompatActivity {
         bi.setCallback(this);
 
         //Get Intent
-        selectedChild = (FamilyMembersContract) getIntent().getSerializableExtra("selectedChild");
+//        selectedChild = (FamilyMembersContract) getIntent().getSerializableExtra("selectedChild");
+
+        setUIContent();
+    }
+
+    private void setUIContent() {
+
+        bi.ciw5030198.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+                if (isChecked) {
+                    ClearClass.ClearAllFields(bi.fldGrpciw50301, false);
+                    bi.fldGrpciw50301.setVisibility(View.GONE);
+
+                } else {
+                    ClearClass.ClearAllFields(bi.fldGrpciw50301, true);
+                    bi.fldGrpciw50301.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+        bi.ciw5030298.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+                if (isChecked) {
+                    ClearClass.ClearAllFields(bi.fldGrpciw50302, false);
+                    bi.fldGrpciw50302.setVisibility(View.GONE);
+
+                } else {
+                    ClearClass.ClearAllFields(bi.fldGrpciw50302, true);
+                    bi.fldGrpciw50302.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+        bi.ciw5030398.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+                if (isChecked) {
+                    ClearClass.ClearAllFields(bi.fldGrpciw50303, false);
+                    bi.fldGrpciw50303.setVisibility(View.GONE);
+
+                } else {
+                    ClearClass.ClearAllFields(bi.fldGrpciw50303, true);
+                    bi.fldGrpciw50303.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+        bi.ciw5030498.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+                if (isChecked) {
+                    ClearClass.ClearAllFields(bi.fldGrpciw50304, false);
+                    bi.fldGrpciw50304.setVisibility(View.GONE);
+
+                } else {
+                    ClearClass.ClearAllFields(bi.fldGrpciw50304, true);
+                    bi.fldGrpciw50304.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+        bi.ciw5030598.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+                if (isChecked) {
+                    ClearClass.ClearAllFields(bi.fldGrpciw50305, false);
+                    bi.fldGrpciw50305.setVisibility(View.GONE);
+
+                } else {
+                    ClearClass.ClearAllFields(bi.fldGrpciw50305, true);
+                    bi.fldGrpciw50305.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+        bi.ciw5030698.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+                if (isChecked) {
+                    ClearClass.ClearAllFields(bi.fldGrpciw50306, false);
+                    bi.fldGrpciw50306.setVisibility(View.GONE);
+
+                } else {
+                    ClearClass.ClearAllFields(bi.fldGrpciw50306, true);
+                    bi.fldGrpciw50306.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+        bi.ciw5030798.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+                if (isChecked) {
+                    ClearClass.ClearAllFields(bi.fldGrpciw50307, false);
+                    bi.fldGrpciw50307.setVisibility(View.GONE);
+
+                } else {
+                    ClearClass.ClearAllFields(bi.fldGrpciw50307, true);
+                    bi.fldGrpciw50307.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+        bi.ciw5030898.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+                if (isChecked) {
+                    ClearClass.ClearAllFields(bi.fldGrpciw50308, false);
+                    bi.fldGrpciw50308.setVisibility(View.GONE);
+
+                } else {
+                    ClearClass.ClearAllFields(bi.fldGrpciw50308, true);
+                    bi.fldGrpciw50308.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
+
     }
 
     public void BtnContinue() {
@@ -97,6 +220,7 @@ public class SectionC6Activity extends AppCompatActivity {
                 : "0");
 
         sB6.put("cic6030101", bi.ciw5030101.getText().toString());
+        sB6.put("cic6030198", bi.ciw5030198.isChecked() ? "98" : "0");
         sB6.put("cic6030102", bi.ciw5030102a.isChecked() ? "1"
                 : bi.ciw5030102b.isChecked() ? "2"
                 : bi.ciw5030102c.isChecked() ? "3"
@@ -113,6 +237,7 @@ public class SectionC6Activity extends AppCompatActivity {
 
 
         sB6.put("cic6030201", bi.ciw5030201.getText().toString());
+        sB6.put("cic6030298", bi.ciw5030298.isChecked() ? "98" : "0");
         sB6.put("cic6030202", bi.ciw5030202a.isChecked() ? "1"
                 : bi.ciw5030202b.isChecked() ? "2"
                 : bi.ciw5030202c.isChecked() ? "3"
@@ -127,6 +252,7 @@ public class SectionC6Activity extends AppCompatActivity {
                 : bi.ciw5030203b.isChecked() ? "2"
                 : "0");
         sB6.put("cic6030301", bi.ciw5030301.getText().toString());
+        sB6.put("cic6030398", bi.ciw5030398.isChecked() ? "98" : "0");
         sB6.put("cic6030302", bi.ciw5030302a.isChecked() ? "1"
                 : bi.ciw5030302b.isChecked() ? "2"
                 : bi.ciw5030302c.isChecked() ? "3"
@@ -143,6 +269,7 @@ public class SectionC6Activity extends AppCompatActivity {
 
 
         sB6.put("cic6030401", bi.ciw5030401.getText().toString());
+        sB6.put("cic6030498", bi.ciw5030498.isChecked() ? "98" : "0");
         sB6.put("cic6030402", bi.ciw5030402a.isChecked() ? "1"
                 : bi.ciw5030402b.isChecked() ? "2"
                 : bi.ciw5030402c.isChecked() ? "3"
@@ -159,6 +286,7 @@ public class SectionC6Activity extends AppCompatActivity {
 
 
         sB6.put("cic6030501", bi.ciw5030501.getText().toString());
+        sB6.put("cic6030598", bi.ciw5030598.isChecked() ? "98" : "0");
         sB6.put("cic6030502", bi.ciw5030502a.isChecked() ? "1"
                 : bi.ciw5030502b.isChecked() ? "2"
                 : bi.ciw5030502c.isChecked() ? "3"
@@ -175,6 +303,7 @@ public class SectionC6Activity extends AppCompatActivity {
 
 
         sB6.put("cic6030601", bi.ciw5030601.getText().toString());
+        sB6.put("cic6030698", bi.ciw5030698.isChecked() ? "98" : "0");
         sB6.put("cic6030602", bi.ciw5030602a.isChecked() ? "1"
                 : bi.ciw5030602b.isChecked() ? "2"
                 : bi.ciw5030602c.isChecked() ? "3"
@@ -190,6 +319,7 @@ public class SectionC6Activity extends AppCompatActivity {
                 : "0");
 
         sB6.put("cic6030701", bi.ciw5030701.getText().toString());
+        sB6.put("cic6030798", bi.ciw5030798.isChecked() ? "98" : "0");
         sB6.put("cic6030702", bi.ciw5030702a.isChecked() ? "1"
                 : bi.ciw5030702b.isChecked() ? "2"
                 : bi.ciw5030702c.isChecked() ? "3"
@@ -205,6 +335,7 @@ public class SectionC6Activity extends AppCompatActivity {
                 : "0");
 
         sB6.put("cic6030801", bi.ciw5030801.getText().toString());
+        sB6.put("cic6030898", bi.ciw5030898.isChecked() ? "98" : "0");
         sB6.put("cic6030802", bi.ciw5030802a.isChecked() ? "1"
                 : bi.ciw5030802b.isChecked() ? "2"
                 : bi.ciw5030802c.isChecked() ? "3"

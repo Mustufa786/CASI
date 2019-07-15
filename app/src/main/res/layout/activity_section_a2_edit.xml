@@ -273,14 +273,14 @@
                         android:text="@string/female" />
 
 
-                    <RadioButton
-                        android:id="@+id/na204c"
-                        style="@style/radiobutton"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="1dp"
-                        android:layout_weight="1"
-                        android:text="@string/na204c" />
+                    <!--<RadioButton-->
+                    <!--android:id="@+id/na204c"-->
+                    <!--style="@style/radiobutton"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="1dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="@string/na204c" />-->
 
 
                 </RadioGroup>

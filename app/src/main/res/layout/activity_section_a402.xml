@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
 
@@ -402,7 +402,11 @@
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/white" />
 
-                <EditText
+                <com.edittextpicker.aliazaz.EditTextPicker
+                    app:defaultValue=""
+                    app:maxValue="15"
+                    app:minValue="1"
+                    app:type="range"
                     android:id="@+id/cih320"
                     style="@style/textInput"
                     android:digits="01234567890"

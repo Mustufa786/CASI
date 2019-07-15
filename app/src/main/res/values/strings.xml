@@ -37,6 +37,7 @@
     <string name="anthrod"> گھر پر ابھی موجود نہیں </string>
     <string name="date"> تاریخ</string>
     <string name="time">وقت </string>
+    <string name="notEaten"> نہیں کھا یا  </string>
 
     <string name="istatusha"> مکمل</string>
     <string name="istatushb">گھرانے کا کوئی فرد یا باصلاحیت جواب دہندہ گھر پر موجود نہیں تھا</string>
@@ -223,12 +224,19 @@
     <string name="cih3heading"> سیکشن ایچ 3 : سماجی امداد کے حوالے سے معلومات </string>
     <string name="cih3sub">یہ سیکشن گھر کے سربراہ سے یا گھر میں کم سے کم 18 سال یا اس سے ذائد عمر کے کسی سمجھدار شخص سے پوچھا جائیگا </string>
     <string name="cih301a"> اردو </string>
-    <string name="cih301b"> پنجابی </string>
-    <string name="cih301c"> سند ھی </string>
-    <string name="cih301d"> پشتو </string>
-    <string name="cih301e"> بلوچی </string>
-    <string name="cih301f"> سرائیکی </string>
-    <string name="cih301g"> ھند کو  </string>
+    <string name="cih301b"> شینا   </string>
+    <string name="cih301c">ھنزی /بروشسکی</string>
+    <string name="cih301d"> ار/ چترالی کھو </string>
+    <string name="cih301e"> واخی </string>
+    <string name="cih301f"> فارسی </string>
+    <string name="cih301g"> پشتو </string>
+    <string name="cih301h"> دری </string>
+    <string name="cih301i"> ازبیکی </string>
+    <string name="cih301j"> رشین   </string>
+    <string name="cih301k"> تاجک </string>
+    <string name="cih301l"> شغنی </string>
+    <string name="cih301m"> اشکاشیمی </string>
+
 
     <string name="cih302a"> اپنا </string>
     <string name="cih302b"> کرائے کا </string>
@@ -1608,21 +1616,26 @@
     <string name="often"> کبھی کبھار (پچھلے 4 ہفتوں کے دوران تین سے دس مرتبہ) </string>
     <string name="cih601"> پچھلے 4 ہفتوں کے دوران کیا کبھی آپ فکرمند تھےکہ آپ کے گھر میں اتنا کھانا نہیں ہوگا کہ آپ اور آپ کے گھر کے دوسرے افراد کھا سکیں؟ </string>
     <string name="cih602"> کتنی مرتبہ ایسا ہوا؟ </string>
-    <string name="cih603"> In the past four weeks, were you or any household member not able to eat the kinds of foods you preferred because of a lack of resources? </string>
+    <string name="cih603"> پچھلے 4 ہفتوں کے دوران کیا کبھی ایسا وقت آیا جب آپ یا آپکے گھر کے دوسرے افراد دیگر وسائل کی کمی کی وجہ سے وہ کھانا نہیں کھا پائے جو آپ کھانا چاہتےتھے؟   </string>
     <string name="cih604"> کتنی مرتبہ ایسا ہوا؟ </string>
-    <string name="cih605"> In the past four weeks, did you or any household member have to eat a limited variety of foods due to a lack of resources? </string>
+    <string name="cih605"> پچھلے 4 ہفتوں کے دوران کیا کبھی ایسا وقت آیا جب آپ یا آپکے گھر کے دوسرے افراد نے وسائل کی کمی کی وجہ سے صرف چند اقسام کے کھانے کھائے ہوں </string>
     <string name="cih606"> کتنی مرتبہ ایسا ہوا؟ </string>
-    <string name="cih607"> In the past four weeks, did you or any household member have to eat some foods that you really did not want to eat because of a lack of resources to obtain other types of food? </string>
+    <string name="cih607">پچھلے 4 ہفتوں کے دوران کیا کبھی ایسا وقت آیا جب آپ یا آپکے گھر کے دوسرے افراد نے وسائل کی کمی کی وجہ سے وہ کھانا کھایا جو آپ نہیں کھانا چاہتےتھے؟       </string>
     <string name="cih608"> کتنی مرتبہ ایسا ہوا؟ </string>
-    <string name="cih609"> In the past four weeks, did you or any household member have to eat a smaller meal than you felt you needed because there was not enough food? </string>
+    <string name="cih609"> پچھلے 4 ہفتوں کے دوران کیا کبھی ایسا وقت آیا جب آپ یا گھر کے دوسرے افراد نے کھا نے کی کمی کی وجہ سے کم کھانا کھایا ہو؟  </string>
     <string name="cih610"> کتنی مرتبہ ایسا ہوا؟ </string>
-    <string name="cih611"> In the past four weeks, did you or any other household member have to eat fewer meals in a day because there was not enough food? </string>
+    <string name="cih611"> پچھلے 4 ہفتوں کے دوران کیا کبھی ایسا وقت آیا جب آپ یا گھر کے دوسرے افراد نے کھا نے کی کمی کی وجہ سے ایک دن میں  کم کھانا کھایا ہو ؟   </string>
     <string name="cih612"> کتنی مرتبہ ایسا ہوا؟ </string>
-    <string name="cih613"> In the past four weeks, was there ever no food to eat of any kind in your household because of lack of resources to get food? </string>
+    <string name="cih613"> پچھلے 4 ہفتوں کے دوران کیا کبھی ایسا وقت آیا جب آپکے گھر
+میں وسائل کی کمی کی وجہ سے کسی قسم کا کوئی  کھانا  نہیں
+ہو؟
+ </string>
     <string name="cih614"> کتنی مرتبہ ایسا ہوا؟ </string>
-    <string name="cih615"> In the past four weeks, did you or any household member go to sleep at night hungry because there was not enough food? </string>
+    <string name="cih615"> پچھلے 4 ہفتوں کے دوران کیا کبھی ایسا وقت آیا جب آپ یا گھر کے دوسرے افراد نے کھا نے کی کمی کی وجہ سے رات میں اڑ بھوکا سونا پ
+ہو
+ </string>
     <string name="cih616"> کتنی مرتبہ ایسا ہوا؟ </string>
-    <string name="cih617"> In the past four weeks, did you or any household member go a whole day and night without eating anything because there was not enough food? </string>
+    <string name="cih617"> پچھلے 4 ہفتوں کے دوران کیا کبھی ایسا وقت آیا جب آپ یا گھر کے دوسرے افراد کھا نے کی کمی کی وجہ سے پورے دن اور رات میں کچھ بھی نہ کھایا ہو </string>
     <string name="cih618"> کتنی مرتبہ ایسا ہوا؟ </string>
 
     <!--Section A7-->
@@ -1634,7 +1647,7 @@
     <string name="cih704"> خواتین کے لیے سپرسیریل, گندم سویا </string>
     <string name="cih705"> گندم </string>
     <string name="cih706"> نقد رقم </string>
-    <string name="cih707"> کیش وا ئو چر . </string>
+    <string name="cih707"> کیش  وا ئو چر     </string>
     <string name="cih708"> کھانے کا وا ئو چر </string>
     <string name="cih709"> امداد سے متعلق صحت, دوائیاں </string>
     <string name="cih710"> تعلیم سے متعلق امداد (فیس, یونیفورم, کتابیں ) </string>
@@ -1647,9 +1660,9 @@
     <string name="ciw501"> آپ کے بچے نے کل دن اور رات کے دوران کھانا کھا یا ؟ </string>
     <string name="ciw501h"> کھانے </string>
     <string name="ciw502">  کیا یہ معمول کے مطابق ہے ؟ </string>
-    <string name="ciw502a"> کم </string>
-    <string name="ciw502b"> ایک </string>
-    <string name="ciw502c"> زیادہ </string>
+    <string name="ciw502a"> معمول سے کم </string>
+    <string name="ciw502b"> معمول کے مطابق </string>
+    <string name="ciw502c"> معمول سے ذیادہ </string>
     <string name="ciw5h1"> پچھلے 7 دنوں کے دوران کتنے دن آپ نے یہ کھانے کے گروپ کھائے؟ </string>
     <string name="ciw503h1"> پچھلے 7 دنوں کے دوران کتنے دن یہ کھانے کے گروپ کھائے؟ </string>
     <string name="ciw503h2"> پچھلے 7 دنوں کے دوران ان کھانے کے گروپ کا زریعہ کیا تھا؟ </string>

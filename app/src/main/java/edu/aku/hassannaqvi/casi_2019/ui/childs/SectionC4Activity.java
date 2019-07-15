@@ -3,6 +3,7 @@ package edu.aku.hassannaqvi.casi_2019.ui.childs;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
@@ -22,8 +23,6 @@ import edu.aku.hassannaqvi.casi_2019.databinding.ActivitySectionC4Binding;
 import edu.aku.hassannaqvi.casi_2019.other.JSONUtilClass;
 import edu.aku.hassannaqvi.casi_2019.ui.mainUI.Menu2Activity;
 import edu.aku.hassannaqvi.casi_2019.ui.viewMem.ViewMemberActivity;
-import edu.aku.hassannaqvi.casi_2019.ui.wra.SectionB1Activity;
-import edu.aku.hassannaqvi.casi_2019.validation.ClearClass;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
 public class SectionC4Activity extends Menu2Activity {
@@ -44,41 +43,41 @@ public class SectionC4Activity extends Menu2Activity {
         db = new DatabaseHelper(this);
 
         this.setTitle(getResources().getString(R.string.cic4heading));
-
-        if (SectionC1Activity.editChildFlag) {
-            binding.textName.setText(SectionC1Activity.selectedChildName + " : " + getString(R.string.childname)
-                    + "\n\n" + SectionC1Activity.editMotherName + " : " + getString(R.string.cic212a));
-        } else {
-            if (!SectionC1Activity.isNA) {
-                binding.textName.setText(SectionC1Activity.selectedChildName + " : " + getString(R.string.childname)
-                        + "\n\n" + SectionB1Activity.wraName + " : " + getString(R.string.cic212a));
-            } else {
-                binding.textName.setText(SectionC1Activity.selectedChildName + " : " + getString(R.string.childname)
-                        + "\n\n" + SectionC1Activity.careTaker + " : " + getString(R.string.cih113));
-            }
-        }
-
-        binding.txtcic401.setText(binding.txtcic401.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        binding.txtcic402.setText(binding.txtcic402.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        binding.txtcic403.setText(binding.txtcic403.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        binding.txtcic404.setText(binding.txtcic404.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        binding.txtcic405.setText(binding.txtcic405.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        binding.txtcic406.setText(binding.txtcic406.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        binding.txtcic407.setText(binding.txtcic407.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        binding.txtcic408.setText(binding.txtcic408.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        binding.txtcic409.setText(binding.txtcic409.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        binding.txtcic410.setText(binding.txtcic410.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        binding.txtcic411.setText(binding.txtcic411.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        binding.txtcic412.setText(binding.txtcic412.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        binding.txtcic413.setText(binding.txtcic413.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        binding.txtcic414.setText(binding.txtcic414.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        binding.txtcic415.setText(binding.txtcic415.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        binding.txtcic416.setText(binding.txtcic416.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        binding.txtcic417.setText(binding.txtcic417.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        binding.txtcic418.setText(binding.txtcic418.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        binding.txtcic419.setText(binding.txtcic419.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        binding.txtcic420.setText(binding.txtcic420.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-
+//
+//        if (SectionC1Activity.editChildFlag) {
+//            binding.textName.setText(SectionC1Activity.selectedChildName + " : " + getString(R.string.childname)
+//                    + "\n\n" + SectionC1Activity.editMotherName + " : " + getString(R.string.cic212a));
+//        } else {
+//            if (!SectionC1Activity.isNA) {
+//                binding.textName.setText(SectionC1Activity.selectedChildName + " : " + getString(R.string.childname)
+//                        + "\n\n" + SectionB1Activity.wraName + " : " + getString(R.string.cic212a));
+//            } else {
+//                binding.textName.setText(SectionC1Activity.selectedChildName + " : " + getString(R.string.childname)
+//                        + "\n\n" + SectionC1Activity.careTaker + " : " + getString(R.string.cih113));
+//            }
+//        }
+//
+//        binding.txtcic401.setText(binding.txtcic401.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic402.setText(binding.txtcic402.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic403.setText(binding.txtcic403.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic404.setText(binding.txtcic404.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic405.setText(binding.txtcic405.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic406.setText(binding.txtcic406.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic407.setText(binding.txtcic407.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic408.setText(binding.txtcic408.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic409.setText(binding.txtcic409.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic410.setText(binding.txtcic410.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic411.setText(binding.txtcic411.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic412.setText(binding.txtcic412.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic413.setText(binding.txtcic413.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic414.setText(binding.txtcic414.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic415.setText(binding.txtcic415.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic416.setText(binding.txtcic416.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic417.setText(binding.txtcic417.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic418.setText(binding.txtcic418.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic419.setText(binding.txtcic419.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//        binding.txtcic420.setText(binding.txtcic420.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+//
 
 //        //        Assigning data to UI binding
         binding.setCallback(this);
@@ -92,11 +91,22 @@ public class SectionC4Activity extends Menu2Activity {
         binding.cic401.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                formValidation();
-                if (!binding.cic401a.isChecked()) {
-                    ClearClass.ClearAllFields(binding.fldGrcic402, false);
+                if (binding.cic401a.isChecked()) {
+
+                    binding.fldGrpcic402.setVisibility(View.VISIBLE);
+                    binding.fldGrpcic403.setVisibility(View.VISIBLE);
+                    binding.fldGrcic404.setVisibility(View.VISIBLE);
+                    binding.fldGrpcic405.setVisibility(View.VISIBLE);
+                    binding.fldGrcic406.setVisibility(View.VISIBLE);
+
                 } else {
-                    ClearClass.ClearAllFields(binding.fldGrcic402, true);
+
+                    binding.fldGrpcic402.setVisibility(View.GONE);
+                    binding.fldGrpcic403.setVisibility(View.GONE);
+                    binding.fldGrcic404.setVisibility(View.GONE);
+                    binding.fldGrpcic405.setVisibility(View.GONE);
+                    binding.fldGrcic406.setVisibility(View.GONE);
+
 
                 }
             }
@@ -104,13 +114,18 @@ public class SectionC4Activity extends Menu2Activity {
         binding.cic402.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                formValidation();
+
                 if (!binding.cic402a.isChecked()) {
-                    ClearClass.ClearAllFields(binding.fldGrpcic403, false);
-                    ClearClass.ClearAllFields(binding.fldGrcic404, true);
+                    binding.fldGrpcic403.setVisibility(View.VISIBLE);
+                    binding.fldGrcic404.setVisibility(View.GONE);
+                    binding.fldGrpcic405.setVisibility(View.GONE);
+                    binding.fldGrcic406.setVisibility(View.GONE);
+
                 } else {
-                    ClearClass.ClearAllFields(binding.fldGrpcic403, true);
-                    ClearClass.ClearAllFields(binding.fldGrcic404, false);
+                    binding.fldGrpcic403.setVisibility(View.GONE);
+                    binding.fldGrcic404.setVisibility(View.VISIBLE);
+                    binding.fldGrpcic405.setVisibility(View.VISIBLE);
+                    binding.fldGrcic406.setVisibility(View.VISIBLE);
 
                 }
             }
@@ -119,11 +134,18 @@ public class SectionC4Activity extends Menu2Activity {
         binding.cic406.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                formValidation();
+
                 if (binding.cic406a.isChecked()) {
-                    ClearClass.ClearAllFields(binding.fldGrpcic406, true);
+                    binding.fldGrpcic407.setVisibility(View.VISIBLE);
+                    binding.fldGrpcic408.setVisibility(View.VISIBLE);
+                    binding.fldGrpcic409.setVisibility(View.VISIBLE);
+                    binding.fldGrpcic410.setVisibility(View.VISIBLE);
+
                 } else {
-                    ClearClass.ClearAllFields(binding.fldGrpcic406, false);
+                    binding.fldGrpcic407.setVisibility(View.GONE);
+                    binding.fldGrpcic408.setVisibility(View.GONE);
+                    binding.fldGrpcic409.setVisibility(View.GONE);
+                    binding.fldGrpcic410.setVisibility(View.GONE);
 
                 }
             }
@@ -131,14 +153,18 @@ public class SectionC4Activity extends Menu2Activity {
         binding.cic407.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                formValidation();
-                if (binding.cic407a.isChecked()) {
-                    ClearClass.ClearAllFields(binding.fldGrpcic408, false);
-                    ClearClass.ClearAllFields(binding.fldGrpcic409, true);
-                } else {
-                    ClearClass.ClearAllFields(binding.fldGrpcic408, true);
-                    ClearClass.ClearAllFields(binding.fldGrpcic409, false);
 
+                if (binding.cic407a.isChecked()) {
+
+                    binding.fldGrpcic408.setVisibility(View.GONE);
+                    binding.fldGrpcic409.setVisibility(View.VISIBLE);
+                    binding.fldGrpcic410.setVisibility(View.VISIBLE);
+
+
+                } else {
+                    binding.fldGrpcic408.setVisibility(View.VISIBLE);
+                    binding.fldGrpcic409.setVisibility(View.GONE);
+                    binding.fldGrpcic410.setVisibility(View.GONE);
                 }
             }
         });
@@ -146,11 +172,22 @@ public class SectionC4Activity extends Menu2Activity {
         binding.cic411.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                formValidation();
+
                 if (binding.cic411b.isChecked()) {
-                    ClearClass.ClearAllFields(binding.fldGrpcic412, false);
+
+                    binding.fldGrpcic412.setVisibility(View.GONE);
+                    binding.fldGrpcic413.setVisibility(View.GONE);
+                    binding.fldGrpnc14.setVisibility(View.GONE);
+                    binding.fldGrpcic415.setVisibility(View.GONE);
+                    binding.fldGrpcic416.setVisibility(View.GONE);
+
                 } else {
-                    ClearClass.ClearAllFields(binding.fldGrpcic412, true);
+
+                    binding.fldGrpcic412.setVisibility(View.VISIBLE);
+                    binding.fldGrpcic413.setVisibility(View.VISIBLE);
+                    binding.fldGrpnc14.setVisibility(View.VISIBLE);
+                    binding.fldGrpcic415.setVisibility(View.VISIBLE);
+                    binding.fldGrpcic416.setVisibility(View.VISIBLE);
 
                 }
             }
@@ -158,21 +195,21 @@ public class SectionC4Activity extends Menu2Activity {
         binding.cic412.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                formValidation();
-                if (binding.cic412a.isChecked()) {
-                    ClearClass.ClearAllFields(binding.fldGrpcic413, false);
-                    ClearClass.ClearAllFields(binding.fldGrpnc14, true);
-                } else {
-                    ClearClass.ClearAllFields(binding.fldGrpcic413, true);
-                    ClearClass.ClearAllFields(binding.fldGrpnc14, false);
 
+                if (binding.cic412a.isChecked()) {
+                    binding.fldGrpcic413.setVisibility(View.GONE);
+                    binding.fldGrpnc14.setVisibility(View.GONE);
+                } else {
+
+                    binding.fldGrpcic413.setVisibility(View.VISIBLE);
+                    binding.fldGrpnc14.setVisibility(View.VISIBLE);
                 }
             }
         });
 
 
         //Get Intent
-        selectedChild = (FamilyMembersContract) getIntent().getSerializableExtra("selectedChild");
+//        selectedChild = (FamilyMembersContract) getIntent().getSerializableExtra("selectedChild");
 
 //        binding.cic403.setOnCheckedChangeListener(this);
 //        binding.cic404a.setOnCheckedChangeListener(this);
@@ -193,7 +230,7 @@ public class SectionC4Activity extends Menu2Activity {
 //        Validation Boolean
         MainApp.validateFlag = false;
 
-        autoPopulateFields();
+//        autoPopulateFields();
 
     }
 
@@ -560,7 +597,7 @@ public class SectionC4Activity extends Menu2Activity {
                 backPressed = true;
 
                 if (SectionC1Activity.ageInMontsbyDob > 23 && SectionC1Activity.ageInMontsbyDob < 60) {
-                    startActivity(new Intent(this, SectionC5Activity.class)
+                    startActivity(new Intent(this, SectionC6Activity.class)
                             .putExtra("selectedChild", selectedChild));
                 } else {
 

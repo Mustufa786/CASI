@@ -65,9 +65,11 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
                 //formValidation();
                 if (!(checkedId == R.id.cih401a)) {
                     ClearClass.ClearAllFields(binding.fldGrpcih402, false);
+                    ClearClass.ClearAllFields(binding.fldGrcih404, true);
                 } else {
 
                     ClearClass.ClearAllFields(binding.fldGrpcih402, true);
+                    ClearClass.ClearAllFields(binding.fldGrcih404, false);
                 }
             }
         });
@@ -228,9 +230,9 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
 //        Validation Boolean
         MainApp.validateFlag = false;
 
-        if (SectionA1Activity.editFormFlag) {
-            AutoPopulate();
-        }
+//        if (SectionA1Activity.editFormFlag) {
+//            AutoPopulate();
+//        }
     }
 
     private void AutoPopulate() {
