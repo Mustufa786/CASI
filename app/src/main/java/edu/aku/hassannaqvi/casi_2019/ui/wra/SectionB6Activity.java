@@ -44,7 +44,7 @@ public class SectionB6Activity extends Menu2Activity {
         db = new DatabaseHelper(this);
         bi.setCallback(this);
 
-        this.setTitle(getResources().getString(R.string.ciw5h));
+        this.setTitle(getResources().getString(R.string.sectionB6));
 
         setListners();
 

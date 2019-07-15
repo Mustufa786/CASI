@@ -38,6 +38,7 @@ public class SectionC5Activity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_c5);
         bi.setCallback(this);
 
+        this.setTitle(R.string.sectionC3);
         //Get Intent
         selectedChild = (FamilyMembersContract) getIntent().getSerializableExtra("selectedChild");
 

@@ -36,6 +36,8 @@ public class SectionA402Activity extends AppCompatActivity implements RadioGroup
         binding.setCallback(this);
         db = new DatabaseHelper(this);
 
+        this.setTitle(getResources().getString(R.string.cih3heading));
+
         setListeners();
         autoPopulate();
     }
