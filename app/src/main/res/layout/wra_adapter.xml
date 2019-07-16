@@ -62,7 +62,7 @@
                 android:paddingRight="@dimen/_8sdp"
                 android:paddingBottom="@dimen/_5sdp"
                 android:text="Married"
-                android:textColor="@color/colorPrimaryBeta"
+                android:textColor="@color/dullBlack"
                 android:textSize="14sp"
                 android:textStyle="italic" />
 

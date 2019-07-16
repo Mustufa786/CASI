@@ -13,6 +13,7 @@ public class JSONA1ModelClass {
     private String cih104 = "";
     private String cih105 = "";
     private String cih106 = "";
+    private String cih111 = "";
     private String cih113 = "";
     private String cih115 = "";
     private String cih213 = "";
@@ -224,5 +225,13 @@ public class JSONA1ModelClass {
 
     public void setcih11996x(String cih11996x) {
         this.cih11996x = cih11996x;
+    }
+
+    public String getcih111() {
+        return cih111;
+    }
+
+    public void setcih111(String cih111) {
+        this.cih111 = cih111;
     }
 }

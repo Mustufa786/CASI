@@ -124,6 +124,7 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
             binding.cih105.setText(jsonA1.getcih105());
             binding.cih106.setText(jsonA1.getcih106());
 
+            binding.cih111.setText(jsonA1.getcih111());
             binding.cih113.setText(jsonA1.getcih113());
             binding.cih115.setText(jsonA1.getcih115());
             binding.cih213.setText(jsonA1.getcih213());
@@ -415,7 +416,6 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
     }
 
     public boolean formValidation() {
-
 
 
 //        cih101

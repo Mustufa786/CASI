@@ -82,7 +82,7 @@ public class ChildAdapter extends RecyclerView.Adapter<ChildAdapter.ChildViewHol
         for (FamilyMembersContract mother : childContract) {
             JSONA2ModelClass jsonA2 = JSONUtilClass.getModelFromJSON(mother.getsA2(), JSONA2ModelClass.class);
             if (jsonA2.getcih2SerialNo().equals(json.getMothername()))
-                return jsonA2.getcih212();
+                return jsonA2.getcih202().toUpperCase();
         }
 
         return "";
