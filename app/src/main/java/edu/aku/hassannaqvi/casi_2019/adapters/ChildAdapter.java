@@ -78,7 +78,7 @@ public class ChildAdapter extends RecyclerView.Adapter<ChildAdapter.ChildViewHol
     }
 
     private String setupMotherName(FamilyMembersContract child) {
-        ArrayList<FamilyMembersContract> childContract = db.getMotherForChild(child.get_UID(), child.getHhNo(), child.getEnmNo());
+        ArrayList<FamilyMembersContract> childContract = db.getMotherForChild(child.get_UUID(), child.getHhNo(), child.getEnmNo());
         for (FamilyMembersContract mother : childContract) {
             JSONA2ModelClass jsonA2 = JSONUtilClass.getModelFromJSON(mother.getsA2(), JSONA2ModelClass.class);
             if (jsonA2.getcih2SerialNo().equals(json.getMothername()))

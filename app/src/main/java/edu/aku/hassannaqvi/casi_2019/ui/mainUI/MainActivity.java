@@ -409,37 +409,8 @@ public class MainActivity extends MenuActivity {
         LocationManager mlocManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         if (mlocManager.isProviderEnabled(LocationManager.GPS_PROVIDER) || tagValues.get("org") == null || tagValues.get("org").equals("5")) {
 
-            if (tagValues.get("org").equals("5") && !mlocManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
-
-                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
-                        MainActivity.this);
-                alertDialogBuilder
-                        .setMessage("Do you want to enable the GPS in your device?")
-                        .setCancelable(false)
-                        .setPositiveButton("Enable",
-                                new DialogInterface.OnClickListener() {
-                                    public void onClick(DialogInterface dialog,
-                                                        int id) {
-                                        Intent callGPSSettingIntent = new Intent(
-                                                android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS);
-                                        startActivity(callGPSSettingIntent);
-                                    }
-                                });
-                alertDialogBuilder.setNegativeButton("Cancel",
-                        new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int id) {
-                                dialog.cancel();
-                                Intent oF = new Intent(MainActivity.this, SectionA1Activity.class);
-                                startActivity(oF);
-                            }
-                        });
-                AlertDialog alert = alertDialogBuilder.create();
-                alert.show();
-
-            } else {
-                Intent oF = new Intent(MainActivity.this, SectionA1Activity.class);
-                startActivity(oF);
-            }
+            Intent oF = new Intent(MainActivity.this, SectionA1Activity.class);
+            startActivity(oF);
 
         } else {
             AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
@@ -465,45 +436,6 @@ public class MainActivity extends MenuActivity {
             AlertDialog alert = alertDialogBuilder.create();
             alert.show();
         }
-
-        // if (sharedPref.getString("tagName", null) != "" && sharedPref.getString("tagName", null) != null && !MainApp.userName.equals("0000")) {
-//            startActivity(oF);
-       /* } else {
-
-            builder = new AlertDialog.Builder(MainActivity.this);
-            ImageView img = new ImageView(getApplicationContext());
-            img.setImageResource(R.drawable.tagimg);
-            img.setPadding(0, 15, 0, 15);
-            builder.setCustomTitle(img);
-
-            final EditText input = new EditText(MainActivity.this);
-            input.setInputType(InputType.TYPE_CLASS_TEXT);
-            builder.setView(input);
-
-
-            builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    m_Text = input.getText().toString();
-                    if (!m_Text.equals("")) {
-                        editor.putString("tagName", m_Text);
-                        editor.commit();
-
-                        if (!MainApp.userName.equals("0000")) {
-                            startActivity(oF);
-                        }
-                    }
-                }
-            });
-            builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    dialog.cancel();
-                }
-            });
-
-            builder.show();
-        }*/
     }
 
     public void openViewMember(Boolean flag) {
