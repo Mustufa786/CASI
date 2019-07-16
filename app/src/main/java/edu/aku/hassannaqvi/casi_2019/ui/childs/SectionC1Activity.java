@@ -444,7 +444,7 @@ public class SectionC1Activity extends AddMember_MenuActivity implements TextWat
                             .putExtra("backPressed", backPressed));
 
                 } else if (ageInMontsbyDob >= 24 && ageInMontsbyDob < 60) {
-                    startActivity(new Intent(this, SectionC3Activity.class)
+                    startActivity(new Intent(this, SectionC5Activity.class)
                             .putExtra("selectedChild", editChildFlag ? getIntent().getSerializableExtra("childFMClass") :
                                     childMap.get(binding.cic101.getSelectedItem().toString()))
                             .putExtra("backPressed", backPressed));

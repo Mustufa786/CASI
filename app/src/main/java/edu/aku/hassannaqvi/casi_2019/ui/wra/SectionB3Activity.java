@@ -48,7 +48,6 @@ public class SectionB3Activity extends Menu2Activity implements TextWatcher, Rad
         binding.textName.setText("Selected Woman : " + SectionB1Activity.wraName);
 
 //        Skip Patterns
-
         binding.ciw327.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
@@ -343,14 +342,11 @@ public class SectionB3Activity extends Menu2Activity implements TextWatcher, Rad
         int updcount = db.updateSB3();
 
         if (updcount == 1) {
-
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
             return false;
         }
-
-        //return true;
 
     }
 

@@ -1441,33 +1441,33 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                             return false;
                         }
 
-                        if (bi.ciw207a.isChecked()) {
+                        if (bi.ciw207b.isChecked()) return true;
 
-                            if (!ValidatorClass.EmptyRadioButton(this, bi.ciw208, bi.ciw208a, getString(R.string.ciw208))) {
+                        if (!ValidatorClass.EmptyRadioButton(this, bi.ciw208, bi.ciw208a, getString(R.string.ciw208))) {
+                            return false;
+                        }
+
+                        if (bi.ciw208a.isChecked()) {
+
+                            if (!ValidatorClass.EmptyRadioButton(this, bi.ciw209, bi.ciw209a, getString(R.string.ciw210))) {
                                 return false;
                             }
 
-                            if (bi.ciw208a.isChecked()) {
+                            if (bi.ciw209a.isChecked()) {
 
-                                if (!ValidatorClass.EmptyRadioButton(this, bi.ciw209, bi.ciw209a, getString(R.string.ciw210))) {
-                                    return false;
-                                }
-
-                                if (bi.ciw209a.isChecked()) {
-
-                                    if (!bi.ciw21098a.isChecked() && !bi.ciw21099a.isChecked() && !bi.ciw21003a.isChecked()) {
-                                        if (!ValidatorClass.EmptyRadioButton(this, bi.ciw21001, bi.ciw21001a, getString(R.string.ciw21001))) {
-                                            return false;
-                                        }
-
-                                        if (!ValidatorClass.EmptyRadioButton(this, bi.ciw21002, bi.ciw21002a, getString(R.string.ciw21002))) {
-                                            return false;
-                                        }
-
+                                if (!bi.ciw21098a.isChecked() && !bi.ciw21099a.isChecked() && !bi.ciw21003a.isChecked()) {
+                                    if (!ValidatorClass.EmptyRadioButton(this, bi.ciw21001, bi.ciw21001a, getString(R.string.ciw21001))) {
+                                        return false;
                                     }
-                                }
 
+                                    if (!ValidatorClass.EmptyRadioButton(this, bi.ciw21002, bi.ciw21002a, getString(R.string.ciw21002))) {
+                                        return false;
+                                    }
+
+                                }
                             }
+
+                        }
 
                             /*if (!ValidatorClass.EmptyTextBox(this, bi.ciw211, getString(R.string.ciw211))) {
                                 return false;
@@ -1535,35 +1535,33 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                                 }
                             }*/
 
-                            if (!ValidatorClass.EmptyEditTextPicker(this, bi.ciw211, getString(R.string.ciw211)))
-                                return false;
+                        if (!ValidatorClass.EmptyEditTextPicker(this, bi.ciw211, getString(R.string.ciw211)))
+                            return false;
 
-                            if (bi.ciw211.getText().toString().equals("0")) return true;
+                        if (bi.ciw211.getText().toString().equals("0")) return true;
 
-                            if (!ValidatorClass.EmptyEditTextPicker(this, bi.ciw212, getString(R.string.ciw212)))
-                                return false;
+                        if (!ValidatorClass.EmptyEditTextPicker(this, bi.ciw212, getString(R.string.ciw212)))
+                            return false;
 
-                            if (!ValidatorClass.EmptyTextBox(this, bi.ciw213, getString(R.string.ciw213))) {
-                                return false;
-                            }
-
-                            if (!ValidatorClass.EmptyTextBox(this, bi.ciw213, getString(R.string.ciw213))) {
-                                return false;
-                            }
-
-                            if (!ValidatorClass.RangeTextBox(this, bi.ciw213, Integer.valueOf(bi.ciw206.getText().toString()), Integer.valueOf(bi.ciw202.getText().toString()), getString(R.string.ciw213), " years")) {
-                                return false;
-                            }
-
-                            if (!ValidatorClass.EmptyEditTextPicker(this, bi.ciw214, getString(R.string.ciw214)))
-                                return false;
-
-                            if (bi.ciw214.getText().toString().equals("0")) return true;
-
-                            return ValidatorClass.EmptyEditTextPicker(this, bi.ciw215, getString(R.string.ciw215));
-
-
+                        if (!ValidatorClass.EmptyTextBox(this, bi.ciw213, getString(R.string.ciw213))) {
+                            return false;
                         }
+
+                        if (!ValidatorClass.EmptyTextBox(this, bi.ciw213, getString(R.string.ciw213))) {
+                            return false;
+                        }
+
+                        if (!ValidatorClass.RangeTextBox(this, bi.ciw213, Integer.valueOf(bi.ciw206.getText().toString()), Integer.valueOf(bi.ciw202.getText().toString()), getString(R.string.ciw213), " years")) {
+                            return false;
+                        }
+
+                        if (!ValidatorClass.EmptyEditTextPicker(this, bi.ciw214, getString(R.string.ciw214)))
+                            return false;
+
+                        if (bi.ciw214.getText().toString().equals("0")) return true;
+
+                        return ValidatorClass.EmptyEditTextPicker(this, bi.ciw215, getString(R.string.ciw215));
+
 
                     }
 

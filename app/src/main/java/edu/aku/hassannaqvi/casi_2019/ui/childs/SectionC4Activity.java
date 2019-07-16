@@ -598,24 +598,17 @@ public class SectionC4Activity extends Menu2Activity {
             if (UpdateDB()) {
                 backPressed = true;
 
-                if (SectionC1Activity.ageInMontsbyDob > 23 && SectionC1Activity.ageInMontsbyDob < 60) {
-                    startActivity(new Intent(this, SectionC5Activity.class)
-                            .putExtra("selectedChild", selectedChild));
+                if (SectionC1Activity.editChildFlag) {
+                    finish();
+                    startActivity(new Intent(this, ViewMemberActivity.class)
+                            .putExtra("flagEdit", false)
+                            .putExtra("comingBack", true)
+                            .putExtra("cluster", MainApp.cc.getClusterno())
+                            .putExtra("hhno", MainApp.cc.getHhno())
+                    );
                 } else {
-
-                    if (SectionC1Activity.editChildFlag) {
-                        finish();
-                        startActivity(new Intent(this, ViewMemberActivity.class)
-                                .putExtra("flagEdit", false)
-                                .putExtra("comingBack", true)
-                                .putExtra("cluster", MainApp.cc.getClusterno())
-                                .putExtra("hhno", MainApp.cc.getHhno())
-                        );
-                    } else {
-                        startActivity(new Intent(this, ChildEndingActivity.class)
-                                //.putExtra("checkingFlag", false)
-                                .putExtra("complete", true));
-                    }
+                    startActivity(new Intent(this, ChildEndingActivity.class)
+                            .putExtra("complete", true));
                 }
 
             } else {

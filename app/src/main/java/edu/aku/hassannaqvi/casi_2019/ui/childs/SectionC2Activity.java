@@ -690,7 +690,7 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
 //                finish();
                 backPressed = true;
 
-                startActivity(new Intent(this, SectionC5Activity.class)
+                startActivity(new Intent(this, SectionC3Activity.class)
                         .putExtra("selectedChild", selectedChild));
 
             } else {
