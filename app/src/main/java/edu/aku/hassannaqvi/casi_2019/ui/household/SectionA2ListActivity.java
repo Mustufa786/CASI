@@ -389,7 +389,6 @@ public class SectionA2ListActivity extends AppCompatActivity {
             if (UpdateDB()) {
 
 
-
                 AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
                         SectionA2ListActivity.this);
                 alertDialogBuilder

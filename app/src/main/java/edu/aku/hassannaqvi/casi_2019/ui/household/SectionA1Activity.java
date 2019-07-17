@@ -274,13 +274,11 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
                 if (!selected.equals("")) {
 
                     String[] selSplit = selected.split("\\|");
-
                     binding.cih103.setText(selSplit[0]);
                     binding.cih104.setText(selSplit[1].equals("") ? "----" : selSplit[1]);
                     binding.cih105.setText(selSplit[2].equals("") ? "----" : selSplit[2]);
                     binding.cih106.setText(selSplit[3]);
                     binding.cih107.setText(enumBlockContract.getEbcode());
-
                     binding.fldGrpcih101.setVisibility(View.VISIBLE);
                     MainApp.cluster_no = binding.cih102.getText().toString();
 
@@ -321,7 +319,6 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
                 e.printStackTrace();
             }
             if (UpdateDB()) {
-
                 new Thread(new Runnable() {
                     public void run() {
                         while (progressStatus < 100) {

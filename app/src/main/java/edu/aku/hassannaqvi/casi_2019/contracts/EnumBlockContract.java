@@ -73,6 +73,7 @@ public class EnumBlockContract {
         public static final String COLUMN_GEO_AREA = "geoarea";
         public static final String COLUMN_CLUSTER_AREA = "cluster";
 
-        public static final String _URI = "enumblock.php";
+        //        public static final String _URI = "enumblock.php";
+        public static final String _URI = "clusters.php";
     }
 }
