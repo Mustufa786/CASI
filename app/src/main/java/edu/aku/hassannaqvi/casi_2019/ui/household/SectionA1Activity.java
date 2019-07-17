@@ -279,7 +279,6 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
                     binding.cih104.setText(selSplit[1].equals("") ? "----" : selSplit[1]);
                     binding.cih105.setText(selSplit[2].equals("") ? "----" : selSplit[2]);
                     binding.cih106.setText(selSplit[3]);
-                    binding.cih107.setText(enumBlockContract.getEbcode());
 
                     binding.fldGrpcih101.setVisibility(View.VISIBLE);
                     MainApp.cluster_no = binding.cih102.getText().toString();
@@ -538,7 +537,6 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
         sA1.put("hhss", MainApp.selectedHead.getSelStructure());
         sA1.put("hhheadpresent", binding.checkHHHeadpresent.isChecked() ? "1" : "2");
         sA1.put("hhheadpresentnew", binding.newHHheadname.getText().toString());
-        sA1.put("enumNo", binding.cih107.getText().toString());
 
         sA1.put("cih101", binding.cih101.getText().toString());
 
@@ -735,7 +733,6 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
                         binding.cih104.setText(selSplit[1].equals("") ? "----" : selSplit[1]);
                         binding.cih105.setText(selSplit[2].equals("") ? "----" : selSplit[2]);
                         binding.cih106.setText(selSplit[3]);
-                        binding.cih107.setText(enumBlockContract.getEbcode());
 
                         binding.fldGrpcih101.setVisibility(View.VISIBLE);
                         MainApp.cluster_no = binding.cih102.getText().toString();

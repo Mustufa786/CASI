@@ -249,44 +249,6 @@
 
                     </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-                            <!--cih105-->
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
-                                android:layout_marginBottom="8dp"
-                                android:layout_weight="35"
-                                android:background="@color/colorPrimary"
-                                android:gravity="center_horizontal|center_vertical"
-                                android:text="@string/cih102"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/white" />
-
-                            <TextView
-                                android:id="@+id/cih107"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
-                                android:layout_marginBottom="4dp"
-                                android:layout_weight="60"
-                                android:background="@color/pink_100"
-                                android:gravity="center_horizontal|center_vertical"
-                                android:textColor="@color/colorPrimaryDark"
-                                android:textSize="20sp" />
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
                     <!--cih108-->
                     <TextView
                         android:layout_width="match_parent"
@@ -406,7 +368,7 @@
                             android:id="@+id/cih111"
                             style="@style/textInput"
                             android:hint="@string/cih111"
-                            app:maxDate="CR_DATE" />
+                            app:maxDate="20/07/2019" />
 
                         <!--cih115-->
                         <TextView
