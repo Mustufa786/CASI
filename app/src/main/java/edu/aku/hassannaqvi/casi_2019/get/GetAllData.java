@@ -21,7 +21,6 @@ import java.util.List;
 import edu.aku.hassannaqvi.casi_2019.adapters.SyncListAdapter;
 import edu.aku.hassannaqvi.casi_2019.contracts.BLRandomContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.EnumBlockContract;
-import edu.aku.hassannaqvi.casi_2019.contracts.FamilyMembersContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.UsersContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.VersionAppContract;
 import edu.aku.hassannaqvi.casi_2019.core.DatabaseHelper;
@@ -140,10 +139,10 @@ public class GetAllData extends AsyncTask<String, String, String> {
                     url = new URL(MainApp._UPDATE_URL + VersionAppContract.VersionAppTable._URI);
                     position = 3;
                     break;
-                case "FamilyMembers":
-                    url = new URL(MainApp._UPDATE_URL + FamilyMembersContract.familyMembers._URI);
-                    position = 4;
-                    break;
+//                case "FamilyMembers":
+//                    url = new URL(MainApp._UPDATE_URL + FamilyMembersContract.familyMembers._URI);
+//                    position = 4;
+//                    break;
             }
 
             urlConnection = (HttpURLConnection) url.openConnection();
