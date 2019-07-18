@@ -39,6 +39,7 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
         public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
             if (binding.cih403a.isChecked() || binding.cih403b.isChecked() || binding.cih403c.isChecked()) {
                 ClearClass.ClearAllFields(binding.fldGrcih404, true);
+
             } else {
                 ClearClass.ClearAllFields(binding.fldGrcih404, true);
 
@@ -82,7 +83,7 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    ClearClass.ClearAllFields(binding.fldGrcih403check, true);
+                    ClearClass.ClearAllFields(binding.fldGrcih403check, false);
                 } else {
                     ClearClass.ClearAllFields(binding.fldGrcih403check, true);
                 }
@@ -105,7 +106,7 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    ClearClass.ClearAllFields(binding.fldGrpcih405check, true);
+                    ClearClass.ClearAllFields(binding.fldGrpcih405check, false);
                 } else {
                     ClearClass.ClearAllFields(binding.fldGrpcih405check, true);
 

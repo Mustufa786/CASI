@@ -99,11 +99,11 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/pink_100"
+                    android:background="@color/darkPink"
                     android:gravity="center"
                     android:padding="2dp"
                     android:text="@string/cic5h1"
-                    android:textColor="@color/colorPrimaryDark" />
+                    android:textColor="@color/white" />
 
                 <!--cic50301-->
                 <TextView

@@ -5,6 +5,7 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
@@ -53,13 +54,16 @@ public class SectionB5Activity extends Menu2Activity implements TextWatcher, Rad
         binding.ciw414.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                formValidation();
+//                formValidation();
                 if (i == R.id.ciw414b) {
 
                     ClearClass.ClearAllFields(binding.fldGrpciw415, false);
+                    binding.fldGrpciw415.setVisibility(View.GONE);
+
 
                 } else {
                     ClearClass.ClearAllFields(binding.fldGrpciw415, true);
+                    binding.fldGrpciw415.setVisibility(View.VISIBLE);
                 }
             }
         });
@@ -67,12 +71,14 @@ public class SectionB5Activity extends Menu2Activity implements TextWatcher, Rad
         binding.ciw419.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                formValidation();
+//                formValidation();
                 if (i == R.id.ciw419b) {
 
                     ClearClass.ClearAllFields(binding.fldGrpciw420, false);
+                    binding.fldGrpciw420.setVisibility(View.GONE);
                 } else {
                     ClearClass.ClearAllFields(binding.fldGrpciw420, true);
+                    binding.fldGrpciw420.setVisibility(View.VISIBLE);
                 }
             }
         });
