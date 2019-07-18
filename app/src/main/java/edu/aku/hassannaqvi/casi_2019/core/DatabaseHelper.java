@@ -74,7 +74,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             + UsersTable.ROW_PASSWORD + " TEXT,"
             + UsersTable.FULL_NAME + " TEXT,"
             + UsersTable.TEAM_NO + " TEXT,"
-            + UsersTable.ORG_ID + " TEXT"
+            + UsersTable.COUNTRY_ID + " TEXT"
             + " );";
     public static final String SQL_CREATE_BL_RANDOM = "CREATE TABLE " + singleRandomHH.TABLE_NAME + "("
             + singleRandomHH.COLUMN_ID + " TEXT,"
@@ -1393,7 +1393,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 values.put(UsersTable.ROW_PASSWORD, user.getPassword());
                 values.put(UsersTable.FULL_NAME, user.getFULL_NAME());
                 values.put(UsersTable.TEAM_NO, user.getTEAM_NO());
-                values.put(UsersTable.ORG_ID, user.getORG_ID());
+                values.put(UsersTable.COUNTRY_ID, user.getCOUNTRY_ID());
                 db.insert(UsersTable.TABLE_NAME, null, values);
             }
 
@@ -1415,7 +1415,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 JSONObject jsonObjectDT = jsonArray.getJSONObject(i);
 
                 switch (jsonObjectDT.getString("project_name")) {
-                    case "NNS 2018 - Team Leaders":
+                    case "Central Asia Stunting Initiative 2019 - Team Leaders":
                         BLRandomInsertion(jsonObjectDT, db);
                         break;
                     case "Central Asia Stunting Initiative 2019":
@@ -1535,7 +1535,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 UsersTable.ROW_USERNAME,
                 UsersTable.FULL_NAME,
                 UsersTable.TEAM_NO,
-                UsersTable.ORG_ID,
+                UsersTable.COUNTRY_ID,
                 UsersTable.ROW_PASSWORD
         };
 
