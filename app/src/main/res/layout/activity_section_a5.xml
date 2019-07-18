@@ -565,8 +565,9 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="16dp"
-                    android:background="@color/colorPrimaryDark"
+                    android:background="@color/darkPink"
                     android:gravity="center"
+                    android:textColor="@color/white"
                     android:text="@string/na6heading"
                     android:textSize="40sp" />
 
@@ -790,8 +791,9 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="16dp"
-                    android:background="@color/colorPrimaryDark"
+                    android:background="@color/darkPink"
                     android:gravity="center"
+                    android:textColor="@color/white"
                     android:text="@string/cih6heading"
                     android:textSize="40sp" />
 

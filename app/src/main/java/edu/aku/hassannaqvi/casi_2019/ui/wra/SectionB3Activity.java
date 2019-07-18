@@ -5,6 +5,7 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
@@ -51,11 +52,15 @@ public class SectionB3Activity extends Menu2Activity implements TextWatcher, Rad
         binding.ciw327.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                formValidation();
+//                formValidation();
                 if (i == R.id.ciw32798) {
                     ClearClass.ClearAllFields(binding.fldGrciw328, false);
+                    binding.fldGrciw328.setVisibility(View.GONE);
                     ClearClass.ClearAllFields(binding.fldGrpciw329, false);
+                    binding.fldGrpciw329.setVisibility(View.GONE);
                 } else {
+                    binding.fldGrciw328.setVisibility(View.VISIBLE);
+                    binding.fldGrpciw329.setVisibility(View.VISIBLE);
                     ClearClass.ClearAllFields(binding.fldGrciw328, true);
                     ClearClass.ClearAllFields(binding.fldGrpciw329, true);
                 }
@@ -65,11 +70,13 @@ public class SectionB3Activity extends Menu2Activity implements TextWatcher, Rad
         binding.ciw330.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                formValidation();
+//                formValidation();
                 if (i == R.id.ciw330d) {
+                    binding.fldGrciw331.setVisibility(View.GONE);
                     ClearClass.ClearAllFields(binding.fldGrciw331, false);
 
                 } else {
+                    binding.fldGrciw331.setVisibility(View.VISIBLE);
                     ClearClass.ClearAllFields(binding.fldGrciw331, true);
                 }
             }
@@ -78,12 +85,14 @@ public class SectionB3Activity extends Menu2Activity implements TextWatcher, Rad
         binding.ciw331.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                formValidation();
+//                formValidation();
                 if (i == R.id.ciw331b) {
                     ClearClass.ClearAllFields(binding.fldGrciw332, false);
+                    binding.fldGrciw332.setVisibility(View.GONE);
 
 //                    binding.ciw332.clearCheck();
                 } else {
+                    binding.fldGrciw332.setVisibility(View.VISIBLE);
                     ClearClass.ClearAllFields(binding.fldGrciw332, true);
 
                 }

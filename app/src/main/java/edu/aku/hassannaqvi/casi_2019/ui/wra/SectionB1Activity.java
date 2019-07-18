@@ -211,7 +211,7 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
         bi.ciw203.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                ValidateForm();
+//                ValidateForm();
                 if (bi.ciw203a.isChecked()) {
                     bi.ciw204a.setEnabled(true);
                     bi.ciw204b.setEnabled(true);
@@ -289,7 +289,7 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
         bi.ciw204.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                ValidateForm();
+//                ValidateForm();
                 if (bi.ciw204a.isChecked()) {
                     bi.ciw205a.setEnabled(false);
                     bi.ciw205b.setEnabled(false);
@@ -358,7 +358,7 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
         bi.ciw205.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                ValidateForm();
+//                ValidateForm();
                 if (bi.ciw205a.isChecked()) {
                     bi.ciw206.setEnabled(true);
                     bi.ciw207a.setEnabled(true);
@@ -430,7 +430,7 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
         bi.ciw207.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                ValidateForm();
+//                ValidateForm();
                 if (checkedId == R.id.ciw207a) {
 
                     bi.ciw211.setEnabled(true);
@@ -608,7 +608,7 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
         bi.ciw208.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                ValidateForm();
+//                ValidateForm();
                 if (checkedId == R.id.ciw208a) {
                     bi.ciw209a.setEnabled(true);
                     bi.ciw209b.setEnabled(true);
@@ -668,7 +668,7 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
         bi.ciw209.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                ValidateForm();
+//                ValidateForm();
                 if (checkedId == R.id.ciw209a) {
                     bi.ciw21001a.setEnabled(true);
                     bi.ciw21002a.setEnabled(true);
@@ -708,7 +708,7 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
         RadioGroup.OnCheckedChangeListener ciw210aListener = new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                ValidateForm();
+//                ValidateForm();
                 if (isoneYes()) {
                     bi.ciw21003a.setEnabled(false);
                     bi.ciw21003b.setEnabled(false);
@@ -735,7 +735,7 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
 
-                ValidateForm();
+//                ValidateForm();
                 if (isoneYes2()) {
                     bi.ciw21001a.setEnabled(false);
                     bi.ciw21001b.setEnabled(false);

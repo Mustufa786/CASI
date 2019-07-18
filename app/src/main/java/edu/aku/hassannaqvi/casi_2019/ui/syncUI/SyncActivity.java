@@ -478,12 +478,12 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
 
     public class syncData extends AsyncTask<String, String, String> {
 
-        String orgID;
+        String countryID;
         private Context mContext;
 
-        public syncData(Context mContext, String orgID) {
+        public syncData(Context mContext, String countryID) {
             this.mContext = mContext;
-            this.orgID = orgID;
+            this.countryID = countryID;
         }
 
         @Override
@@ -501,7 +501,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
                         model.setstatusID(0);
                         list.add(model);
                     }
-                    new GetAllData(mContext, "EnumBlock", syncListAdapter, list).execute(orgID);
+                    new GetAllData(mContext, "EnumBlock", syncListAdapter, list).execute(countryID);
                     bi.noItem.setVisibility(View.GONE);
 
 //                  getting Users!!
@@ -512,7 +512,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
                         model.setstatusID(0);
                         list.add(model);
                     }
-                    new GetAllData(mContext, "User", syncListAdapter, list).execute(orgID);
+                    new GetAllData(mContext, "User", syncListAdapter, list).execute(countryID);
 
 //                   getting BL Random
                     Toast.makeText(SyncActivity.this, "Sync BL Random", Toast.LENGTH_SHORT).show();
@@ -521,7 +521,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
                         model.setstatusID(0);
                         list.add(model);
                     }
-                    new GetAllData(mContext, "BLRandom", syncListAdapter, list).execute(orgID);
+                    new GetAllData(mContext, "BLRandom", syncListAdapter, list).execute(countryID);
 
 //                    Getting App Version
                     Toast.makeText(SyncActivity.this, "Sync App Version", Toast.LENGTH_SHORT).show();
@@ -531,8 +531,6 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
                         list.add(model);
                     }
                     new GetAllData(mContext, "VersionApp", syncListAdapter, list).execute();
-                    /*Toast.makeText(Menu2Activity.this, "Sync Family Members", Toast.LENGTH_LONG).show();
-                    new GetAllData(mContext, "FamilyMembers").execute();*/
 
                     listActivityCreated = false;
                 }

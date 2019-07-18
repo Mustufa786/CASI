@@ -140,7 +140,7 @@ public class SyncDevice extends AsyncTask<Void, Integer, String> {
                         sharedPref = context.getSharedPreferences("tagName", MODE_PRIVATE);
                         editor = sharedPref.edit();
                         editor.putString("tagName", tag);
-                        editor.putString("orgID", jsonObject.getString("id_org"));
+                        editor.putString("countryID", jsonObject.getString("country_id"));
                         editor.commit();
 
                         if (flag) {

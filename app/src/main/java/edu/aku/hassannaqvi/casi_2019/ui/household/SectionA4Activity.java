@@ -5,6 +5,7 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
@@ -58,8 +59,10 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
                 if (i == R.id.cih303b || i == R.id.cih303c) {
 //                    formValidation();
                     ClearClass.ClearAllFields(binding.fldGrcih304, false);
+                    binding.fldGrcih304.setVisibility(View.GONE);
                 } else {
                     ClearClass.ClearAllFields(binding.fldGrcih304, true);
+                    binding.fldGrcih304.setVisibility(View.VISIBLE);
                 }
             }
         });
@@ -116,7 +119,9 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
 //                formValidation();
                 if (i == R.id.cih307h || i == R.id.cih307i) {
                     ClearClass.ClearAllFields(binding.fldGrpcih308, false);
+                    binding.fldGrpcih308.setVisibility(View.GONE);
                 } else {
+                    binding.fldGrpcih308.setVisibility(View.VISIBLE);
                     ClearClass.ClearAllFields(binding.fldGrpcih308, true);
                 }
             }
@@ -129,8 +134,10 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
 //                formValidation();
                 if (checkedId == R.id.cih308b) {
                     ClearClass.ClearAllFields(binding.fldGrpcih309, false);
+                    binding.fldGrpcih309.setVisibility(View.GONE);
                 } else {
                     ClearClass.ClearAllFields(binding.fldGrpcih309, true);
+                    binding.fldGrpcih309.setVisibility(View.VISIBLE);
 
                 }
             }
@@ -177,8 +184,10 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
 //                formValidation();
                 if (binding.cih315a.isChecked()) {
                     ClearClass.ClearAllFields(binding.fldGrpcih316, true);
+                    binding.fldGrpcih316.setVisibility(View.VISIBLE);
                 } else {
                     ClearClass.ClearAllFields(binding.fldGrpcih316, false);
+                    binding.fldGrpcih316.setVisibility(View.GONE);
                 }
             }
         });
