@@ -24,6 +24,7 @@ import edu.aku.hassannaqvi.casi_2019.other.JSONUtilClass;
 import edu.aku.hassannaqvi.casi_2019.ui.mainUI.Menu2Activity;
 import edu.aku.hassannaqvi.casi_2019.ui.viewMem.ViewMemberActivity;
 import edu.aku.hassannaqvi.casi_2019.ui.wra.SectionB1Activity;
+import edu.aku.hassannaqvi.casi_2019.validation.ClearClass;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
 public class SectionC4Activity extends Menu2Activity {
@@ -176,7 +177,6 @@ public class SectionC4Activity extends Menu2Activity {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
 
                 if (binding.cic411b.isChecked()) {
-
                     binding.fldGrpcic412.setVisibility(View.GONE);
                     binding.fldGrpcic413.setVisibility(View.GONE);
                     binding.fldGrpnc14.setVisibility(View.GONE);
@@ -200,11 +200,49 @@ public class SectionC4Activity extends Menu2Activity {
 
                 if (binding.cic412a.isChecked()) {
                     binding.fldGrpcic413.setVisibility(View.GONE);
-                    binding.fldGrpnc14.setVisibility(View.GONE);
-                } else {
-
-                    binding.fldGrpcic413.setVisibility(View.VISIBLE);
                     binding.fldGrpnc14.setVisibility(View.VISIBLE);
+                    binding.fldGrpcic415.setVisibility(View.VISIBLE);
+                } else {
+                    binding.fldGrpcic413.setVisibility(View.VISIBLE);
+                    binding.fldGrpnc14.setVisibility(View.GONE);
+                    binding.fldGrpcic415.setVisibility(View.GONE);
+
+                }
+            }
+        });
+
+        binding.cic418.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                if (checkedId == binding.cic418b.getId()) {
+                    binding.fldGrpcic419.setVisibility(View.GONE);
+                    ClearClass.ClearAllFields(binding.fldGrpcic419, false);
+                    binding.fldGrpcic420.setVisibility(View.GONE);
+                    ClearClass.ClearAllFields(binding.fldGrpcic420, false);
+                } else {
+                    binding.fldGrpcic419.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(binding.fldGrpcic419, true);
+                    binding.fldGrpcic420.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(binding.fldGrpcic420, true);
+                }
+            }
+        });
+
+        binding.cic421.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                if (checkedId == binding.cic421b.getId()) {
+                    binding.fldGrpcic422.setVisibility(View.GONE);
+                    binding.fldGrpcic423.setVisibility(View.GONE);
+                    ClearClass.ClearAllFields(binding.fldGrpcic422, false);
+                    ClearClass.ClearAllFields(binding.fldGrpcic423, false);
+                } else {
+                    binding.fldGrpcic422.setVisibility(View.VISIBLE);
+                    binding.fldGrpcic423.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(binding.fldGrpcic422, true);
+                    ClearClass.ClearAllFields(binding.fldGrpcic423, true);
                 }
             }
         });
