@@ -18,7 +18,7 @@ public class UsersContract {
     String ROW_PASSWORD;
     String FULL_NAME;
     String TEAM_NO;
-    String ORG_ID;
+    String COUNTRY_ID;
 
     public UsersContract() {
         // Default Constructor
@@ -71,12 +71,12 @@ public class UsersContract {
         this.TEAM_NO = TEAM_NO;
     }
 
-    public String getORG_ID() {
-        return ORG_ID;
+    public String getCOUNTRY_ID() {
+        return COUNTRY_ID;
     }
 
-    public void setORG_ID(String ORG_ID) {
-        this.ORG_ID = ORG_ID;
+    public void setCOUNTRY_ID(String COUNTRY_ID) {
+        this.COUNTRY_ID = COUNTRY_ID;
     }
 
     public UsersContract Sync(JSONObject jsonObject) throws JSONException {
@@ -84,7 +84,7 @@ public class UsersContract {
         this.ROW_PASSWORD = jsonObject.getString(UsersTable.ROW_PASSWORD);
         this.FULL_NAME = jsonObject.getString(UsersTable.FULL_NAME);
         this.TEAM_NO = jsonObject.getString(UsersTable.TEAM_NO);
-        this.ORG_ID = jsonObject.getString(UsersTable.ORG_ID);
+        this.COUNTRY_ID = jsonObject.getString(UsersTable.COUNTRY_ID);
         return this;
 
     }
@@ -95,7 +95,7 @@ public class UsersContract {
         this.ROW_PASSWORD = cursor.getString(cursor.getColumnIndex(UsersTable.ROW_PASSWORD));
         this.FULL_NAME = cursor.getString(cursor.getColumnIndex(UsersTable.FULL_NAME));
         this.TEAM_NO = cursor.getString(cursor.getColumnIndex(UsersTable.TEAM_NO));
-        this.ORG_ID = cursor.getString(cursor.getColumnIndex(UsersTable.ORG_ID));
+        this.COUNTRY_ID = cursor.getString(cursor.getColumnIndex(UsersTable.COUNTRY_ID));
         return this;
 
     }
@@ -109,7 +109,7 @@ public class UsersContract {
         json.put(UsersTable.ROW_PASSWORD, this.ROW_PASSWORD == null ? JSONObject.NULL : this.ROW_PASSWORD);
         json.put(UsersTable.FULL_NAME, this.FULL_NAME == null ? JSONObject.NULL : this.FULL_NAME);
         json.put(UsersTable.TEAM_NO, this.TEAM_NO == null ? JSONObject.NULL : this.TEAM_NO);
-        json.put(UsersTable.ORG_ID, this.ORG_ID == null ? JSONObject.NULL : this.ORG_ID);
+        json.put(UsersTable.COUNTRY_ID, this.COUNTRY_ID == null ? JSONObject.NULL : this.COUNTRY_ID);
         return json;
     }
 
@@ -121,7 +121,7 @@ public class UsersContract {
         public static final String ROW_PASSWORD = "password";
         public static final String FULL_NAME = "full_name";
         public static final String TEAM_NO = "teamno";
-        public static final String ORG_ID = "id_org";
+        public static final String COUNTRY_ID = "country_id";
 
         public static final String _URI = "users.php";
     }

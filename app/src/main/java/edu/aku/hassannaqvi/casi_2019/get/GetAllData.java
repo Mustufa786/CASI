@@ -169,7 +169,7 @@ public class GetAllData extends AsyncTask<String, String, String> {
                             DataOutputStream wr = new DataOutputStream(urlConnection.getOutputStream());
                             JSONObject json = new JSONObject();
                             try {
-                                json.put("id_org", args[0]);
+                                json.put("country_id", args[0]);
                             } catch (JSONException e1) {
                                 e1.printStackTrace();
                             }
