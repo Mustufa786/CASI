@@ -220,7 +220,7 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
 
 
 //        Setting name of women
-        bi.ciw301Txt.setText(getString(R.string.ciw301a) + " " + SectionB1Activity.wraName + " " + getString(R.string.ciw301b));
+        bi.ciw301Txt.setText(getString(R.string.ciw301a) + " " + SectionB1Activity.wraName + " " + getString(R.string.ciw301));
     }
 
     public void AutoCompleteFields() {
@@ -674,7 +674,7 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
     private boolean ValidateForm() {
 
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.ciw301, bi.ciw301a, getString(R.string.ciw301b) + " " + SectionB1Activity.wraName + " " + getString(R.string.ciw301a))) {
+        if (!ValidatorClass.EmptyRadioButton(this, bi.ciw301, bi.ciw301a, getString(R.string.ciw301) + " " + SectionB1Activity.wraName + " " + getString(R.string.ciw301a))) {
             return false;
         }
 
