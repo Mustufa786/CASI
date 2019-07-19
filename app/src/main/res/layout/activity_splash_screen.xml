@@ -20,7 +20,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             android:contentDescription="casi"
-            android:src="@drawable/nns_2018_linelisting_logo"
+            android:src="@drawable/nns_2018_survey"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
