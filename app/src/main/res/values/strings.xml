@@ -1097,7 +1097,7 @@
     <string name="cic414l"> دوکان /بازار/مفت تقسیم کرنے والوں سے </string>
     <string name="cic414m"> روایتی تجربہ کار </string>
     <string name="cic4149603"> دیگر وضاحت کریں </string>
-    <string name="cic415">C412(۔Name) کوبخارکے علاج کے لئے کون کونسی دواء دی گئی </string>
+    <string name="cic415">۔C412 -(۔Name) کوبخارکے علاج کے لئے کون کونسی دواء دی گئی </string>
     <string name="cic415sub1"> گولیاں یا شربت </string>
     <string name="cic415a"> اینٹی بائیوٹک </string>
     <string name="cic415b"> دست روکنے والی ادویات </string>
@@ -1109,26 +1109,26 @@
     <string name="cic415g"> نس کے ذریعہ </string>
     <string name="cic415h"> گھر یلو ادویات یا ہربل ادویات </string>
     <string name="cic4159601"> کچھ اور </string>
-    <string name="cic416">C413  کیا بچہ (۔Name) کوگزشتہ چھ مہینوں میں پیٹ کے کیٹرے مارنے والی دوا دی گئی تھیں </string>
-    <string name="cic417">C414  کیا بچہ (۔Name) کو گزشتہ چھ مہینے کے دوران رات میں کم نظر آتا ہے </string>
+    <string name="cic416">۔C413 -  کیا بچہ (۔Name) کوگزشتہ چھ مہینوں میں پیٹ کے کیٹرے مارنے والی دوا دی گئی تھیں </string>
+    <string name="cic417">۔C414 -  کیا بچہ (۔Name) کو گزشتہ چھ مہینے کے دوران رات میں کم نظر آتا ہے </string>
     <string name="cic418">۔C415 - کیا بچہ (۔Name) کو کبھی وٹامن اے کے قطرے پلائے گئے ہیں؟</string>
     <string name="cic419">۔C416 - (۔Name) کو کتنی وٹامن اے کی اضافی خوراکیں دی گئی؟</string>
     <string name="cic419a"> خوراکیں </string>
 
-    <string name="cic420">C417 آخری بار (۔Name) کو وٹامن اے کی خوراک کب دی گئی تھی؟</string>
+    <string name="cic420">۔C417 - آخری بار (۔Name) کو وٹامن اے کی خوراک کب دی گئی تھی؟</string>
     <string name="cic420a"> ایک ہفتہ پہلے </string>
     <string name="cic420b"> ایک ماہ پہلے </string>
     <string name="cic420c">۔گذشتہ3 ماہ میں</string>
     <string name="cic420d"> گذشتہ 6 ماہ میں </string>
     <string name="cic420e"> ایک سال پہلے </string>
-    <string name="cic421">C418 کیا (۔Name) کو کبھی(مائکرو نیوٹرینٹ پائوڈر) ایم این پی دیا گیا؟ </string>
+    <string name="cic421">۔C418 - کیا (۔Name) کو کبھی(مائکرو نیوٹرینٹ پائوڈر) ایم این پی دیا گیا؟ </string>
     <string name="cic422">۔C419 - اکثر (۔Name) کو کتنی مرتبہ ایم این پی دیا گیا؟</string>
     <string name="cic422a"> روزانہ </string>
     <string name="cic422b"> ہفتہ میں ایک دفعہ </string>
     <string name="cic422c"> ہفتہ میں دو دفعہ </string>
     <string name="cic422d"> مہینہ میں ایک دفعہ </string>
     <string name="cic422e"> کبھی کبھار </string>
-    <string name="cic423">C420 (۔Name) کو کتنے مہینوں یا دنوں تک ایم این پی دیا گیا؟َ</string>
+    <string name="cic423">۔C420 - (۔Name) کو کتنے مہینوں یا دنوں تک ایم این پی دیا گیا؟َ</string>
     <string name="cic423a"> مہینوں </string>
     <string name="cic423b"> دنوں </string>
 
