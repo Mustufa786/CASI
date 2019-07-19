@@ -94,7 +94,6 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
         });
         setAdapter();
         setUploadAdapter();
-        bi.btnSwitchServer.setText(MainApp._IP2);
     }
 
     public void onSyncDataClick() {
