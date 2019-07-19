@@ -366,7 +366,7 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
         MainApp.validateFlag = true;
 
         flag = true;
-        //Toast.makeText(this, "Processing End Section", Toast.LENGTH_SHORT).show();
+        //
         if (formValidation()) {
 
             AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(

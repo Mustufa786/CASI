@@ -80,30 +80,6 @@ public class AntrhoInfoActivity extends Activity {
         hh = new ArrayList<>();
         json = new JSONModelClass();
 
-        /*if(MainActivity.ftype.equals("A"))
-        {
-            binding.fldGrpQR.setVisibility(View.VISIBLE);
-            binding.fldGrpHC.setVisibility(View.GONE);
-            binding.fldGrpHT.setVisibility(View.VISIBLE);
-            binding.hcCode.setText(null);
-            binding.fldGrpWT.setVisibility(View.VISIBLE);
-        }else if(MainActivity.ftype.equals("B")){
-            binding.fldGrpQR.setVisibility(View.VISIBLE);
-            binding.fldGrpHC.setVisibility(View.VISIBLE);
-            binding.fldGrpHT.setVisibility(View.GONE);
-            binding.htCode.setText(null);
-            binding.fldGrpWT.setVisibility(View.GONE);
-            binding.wtCode.setText(null);
-        }else if(MainActivity.ftype.equals("W"))
-        {
-            binding.fldGrpQR.setVisibility(View.GONE);
-            binding.hcCode.setText(null);
-            binding.htCode.setText(null);
-            binding.wtCode.setText(null);
-        }
-
-*/
-        //slcMem = new ArrayList<>();
         binding.cih102.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
@@ -185,7 +161,7 @@ public class AntrhoInfoActivity extends Activity {
 
     public void BtnContinue() {
 
-        Toast.makeText(this, "Processing This Section", Toast.LENGTH_SHORT).show();
+
         if (formValidation()) {
 
             SaveDraft();
@@ -205,13 +181,13 @@ public class AntrhoInfoActivity extends Activity {
 
     public void BtnEnd() {
 
-        Toast.makeText(this, "Processing End Section", Toast.LENGTH_SHORT).show();
+
         if (formValidation()) {
 
             SaveDraft();
 
             if (UpdateDB()) {
-                Toast.makeText(this, "Starting Ending Section", Toast.LENGTH_SHORT).show();
+
 
                 finish();
 
@@ -225,7 +201,6 @@ public class AntrhoInfoActivity extends Activity {
 
     public boolean formValidation() {
 
-        Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
 
 //        cih102
         if (!ValidatorClass.EmptyTextBox(this, binding.cih102, getString(R.string.cih102))) {
@@ -321,14 +296,12 @@ public class AntrhoInfoActivity extends Activity {
     }
 
     private void SaveDraft() {
-        Toast.makeText(this, "Saving Draft for  This Section", Toast.LENGTH_SHORT).show();
 
         enm_no = binding.cih102.getText().toString();
         hh_no = binding.cih108.getText().toString().toUpperCase();
         //hc_code = binding.hcCode.getText().toString();
         ht_code = binding.htCode.getText().toString();
         wt_code = binding.wtCode.getText().toString();
-
 
     }
 

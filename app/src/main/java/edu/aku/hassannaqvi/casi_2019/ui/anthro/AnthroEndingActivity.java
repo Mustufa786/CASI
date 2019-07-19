@@ -63,7 +63,7 @@ public class AnthroEndingActivity extends AppCompatActivity {
 
     public void BtnEnd() {
 
-        Toast.makeText(this, "Processing This Section", Toast.LENGTH_SHORT).show();
+
         if (formValidation()) {
             SaveDraft();
             if (UpdateDB()) {
@@ -92,7 +92,7 @@ public class AnthroEndingActivity extends AppCompatActivity {
     }
 
     private void SaveDraft() {
-        Toast.makeText(this, "Saving Draft for  This Section", Toast.LENGTH_SHORT).show();
+
 
         MainApp.emc.setIstatus(binding.istatusa.isChecked() ? "1"
                 : binding.istatusb.isChecked() ? "2"
@@ -133,7 +133,6 @@ public class AnthroEndingActivity extends AppCompatActivity {
     }
 
     private boolean formValidation() {
-        Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
 
 
         return ValidatorClass.EmptyRadioButton(this, binding.istatus, binding.istatusa, getString(R.string.istatus));
