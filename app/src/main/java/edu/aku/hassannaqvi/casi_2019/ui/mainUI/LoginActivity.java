@@ -37,31 +37,25 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.ScrollView;
-import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import edu.aku.hassannaqvi.casi_2019.R;
-import edu.aku.hassannaqvi.casi_2019.contracts.EnumBlockContract;
-import edu.aku.hassannaqvi.casi_2019.contracts.UCsContract;
 import edu.aku.hassannaqvi.casi_2019.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2019.core.MainApp;
 import edu.aku.hassannaqvi.casi_2019.ui.syncUI.SyncActivity;
@@ -112,6 +106,9 @@ public class LoginActivity extends MenuActivity implements LoaderCallbacks<Curso
     ImageView showPassword;
     @BindView(R.id.testing)
     TextView testing;
+
+    @BindView(R.id.signup)
+    Button signup;
 
     SharedPreferences sharedPref;
     SharedPreferences.Editor editor;
@@ -321,6 +318,14 @@ public class LoginActivity extends MenuActivity implements LoaderCallbacks<Curso
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(LoginActivity.this, SyncActivity.class));
+            }
+        });
+
+        signup.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(LoginActivity.this, SignupActivity.class));
             }
         });
 
