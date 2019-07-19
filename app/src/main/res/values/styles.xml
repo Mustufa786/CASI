@@ -295,7 +295,6 @@
         <item name="android:textSize">24sp</item>
         <item name="android:typeface">serif</item>
         <item name="android:padding">8dp</item>
-
     </style>
 
     <style name="radiobutton" parent="android:Widget.Material.Light.CompoundButton.RadioButton">
