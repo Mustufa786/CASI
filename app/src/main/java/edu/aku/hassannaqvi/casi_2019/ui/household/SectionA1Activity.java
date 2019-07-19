@@ -647,12 +647,12 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
                                         public void onClick(DialogInterface dialog, int id) {
                                             dialog.cancel();
 
-                                            finish();
-                                            startActivity(new Intent(SectionA1Activity.this, ViewMemberActivity.class)
-                                                    .putExtra("comingBack", true)
-                                                    .putExtra("flagEdit", false)
-                                                    .putExtra("cluster", binding.cih102.getText().toString())
-                                                    .putExtra("hhno", binding.cih108.getText().toString()));
+//                                            finish();
+//                                            startActivity(new Intent(SectionA1Activity.this, ViewMemberActivity.class)
+//                                                    .putExtra("comingBack", true)
+//                                                    .putExtra("flagEdit", false)
+//                                                    .putExtra("cluster", binding.cih102.getText().toString())
+//                                                    .putExtra("hhno", binding.cih108.getText().toString()));
                                         }
                                     })
                             .setNegativeButton("۔دوبارہ فارم شروح کرنا ہے",
