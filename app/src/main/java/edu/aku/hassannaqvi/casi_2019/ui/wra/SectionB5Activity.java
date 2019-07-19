@@ -263,7 +263,12 @@ public class SectionB5Activity extends Menu2Activity implements TextWatcher, Rad
 
 //                finish();
 
-                startActivity(new Intent(this, SectionB6Activity.class));
+                if (MainApp.mc.getKishSelectWRA()) {
+                    startActivity(new Intent(this, SectionB6Activity.class));
+                } else {
+                    startActivity(new Intent(this, MotherEndingActivity.class)
+                            .putExtra("complete", true));
+                }
 
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();

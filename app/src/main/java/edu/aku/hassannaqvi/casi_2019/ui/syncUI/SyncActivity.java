@@ -395,25 +395,6 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
 
     }
 
-    public void SwitchServer(View v) {
-
-        if (MainApp._IP == "58.65.211.13") {
-            bi.btnSwitchServer.setText("Server 1");
-        } else {
-            bi.btnSwitchServer.setText("Server 2");
-        }
-
-        String temp_ip = MainApp._IP2;
-        MainApp._IP2 = MainApp._IP;
-        MainApp._IP = temp_ip;
-
-        //Toast.makeText(this, MainApp._IP, Toast.LENGTH_SHORT).show();
-
-
-        MainApp._HOST_URL = "http://" + MainApp._IP + ":" + MainApp._PORT + "/nns/api/";
-        MainApp._UPDATE_URL = "http://" + MainApp._IP + ":" + MainApp._PORT + "/nns/app/survey/";
-    }
-
     public void dbBackup() {
 
         sharedPref = getSharedPreferences("src", MODE_PRIVATE);
