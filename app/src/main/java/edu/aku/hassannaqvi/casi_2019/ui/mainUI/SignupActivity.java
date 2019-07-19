@@ -1,5 +1,6 @@
 package edu.aku.hassannaqvi.casi_2019.ui.mainUI;
 
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -78,8 +79,8 @@ public class SignupActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
             if (UpdateDB()) {
-
-//                finish();
+                startActivity(new Intent(this, LoginActivity.class));
+                finish();
 
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
