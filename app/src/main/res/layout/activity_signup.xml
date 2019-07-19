@@ -61,68 +61,25 @@
 
             </android.support.design.widget.TextInputLayout>
 
-
-            <EditText
-                android:id="@+id/designation"
+            <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:background="@drawable/shapeemail"
-                android:drawableLeft="@drawable/ic_person_black1_24dp"
-                android:drawablePadding="10dp"
-                android:hint="Designation"
-                android:padding="15dp"
-                android:textColor="@color/colorPrimaryDark1"
-                android:textColorHighlight="@color/black"
-                android:textColorHint="@color/black" />
+                android:textColorHint="@color/black">
 
-            <EditText
-                android:id="@+id/userName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:background="@drawable/shapeemail"
-                android:drawableLeft="@drawable/ic_person_black1_24dp"
-                android:drawablePadding="10dp"
-                android:hint="User Name"
-                android:padding="15dp"
-                android:textColor="@color/colorPrimaryDark1"
-                android:textColorHighlight="@color/black"
-                android:textColorHint="@color/black" />
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/designation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/ic_person_black1_24dp"
+                    android:drawablePadding="10dp"
+                    android:hint="Designation"
+                    android:padding="10dp"
+                    android:textColor="@color/colorPrimaryDark1" />
 
-            <EditText
-                android:id="@+id/password"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:background="@drawable/shapeemail"
-                android:drawableLeft="@drawable/ic_lock_black1_24dp"
-                android:drawablePadding="10dp"
-                android:hint="Password"
-                android:imeOptions="actionUnspecified"
-                android:inputType="textPassword"
-                android:maxLines="1"
-                android:padding="15dp"
-                android:textColor="@color/colorPrimaryDark1"
-                android:textColorHighlight="@color/black"
-                android:textColorHint="@color/black" />
-
-            <EditText
-                android:id="@+id/cPassword"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:background="@drawable/shapeemail"
-                android:drawableLeft="@drawable/ic_lock_black1_24dp"
-                android:drawablePadding="10dp"
-                android:hint="Confirm Password"
-                android:imeOptions="actionUnspecified"
-                android:inputType="textPassword"
-                android:maxLines="1"
-                android:padding="15dp"
-                android:textColor="@color/colorPrimaryDark1"
-                android:textColorHighlight="@color/black"
-                android:textColorHint="@color/black" />
+            </android.support.design.widget.TextInputLayout>
 
             <Spinner
                 android:id="@+id/countries"
@@ -133,6 +90,71 @@
 
             </Spinner>
 
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/shapeemail"
+                android:textColorHint="@color/black">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/userName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/ic_person_black1_24dp"
+                    android:drawablePadding="10dp"
+                    android:hint="User Name"
+                    android:padding="10dp"
+                    android:textColor="@color/colorPrimaryDark1" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/shapeemail"
+                android:textColorHint="@color/black">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/ic_person_black1_24dp"
+                    android:drawablePadding="10dp"
+                    android:hint="Password"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textColor="@color/colorPrimaryDark1" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/shapeemail"
+                android:textColorHint="@color/black">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/cPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/ic_person_black1_24dp"
+                    android:drawablePadding="10dp"
+                    android:hint="Confirm Password"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textColor="@color/colorPrimaryDark1" />
+
+            </android.support.design.widget.TextInputLayout>
 
             <Button
                 android:id="@+id/submitBtn"
@@ -150,6 +172,5 @@
 
 
     </ScrollView>
-
 
 </layout>
