@@ -107,9 +107,7 @@
         <activity
             android:name=".ui.household.SectionA5Activity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize|stateHidden">
-
-        </activity>
+            android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name=".ui.household.SectionA1Activity"
             android:screenOrientation="portrait"
@@ -216,14 +214,10 @@
         <activity
             android:name=".ui.syncUI.SyncActivity"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".ui.mainUI.SignupActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme1NoActionBar">
-
-
-        </activity>
+            android:theme="@style/AppTheme1NoActionBar" />
         <activity
             android:name=".ui.mainUI.DashboardActivity"
             android:screenOrientation="portrait" />
