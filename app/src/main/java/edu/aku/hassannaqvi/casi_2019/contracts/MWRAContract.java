@@ -34,6 +34,7 @@ public class MWRAContract {
     private String sB5 = "";
     private String sB6 = "";
     private String sb2flag = "";
+    private boolean kishSelectWRA;
 
     private String cluster = "";
     private String hhno = "";
@@ -45,10 +46,12 @@ public class MWRAContract {
     public MWRAContract() {
     }
 
-    public MWRAContract(MWRAContract ec) {
-        this.b1SerialNo = ec.getB1SerialNo();
+    public boolean getKishSelectWRA() {
+        return kishSelectWRA;
+    }
 
-
+    public void setKishSelectWRA(boolean kishSelectWRA) {
+        this.kishSelectWRA = kishSelectWRA;
     }
 
     public String getFMUID() {
@@ -362,12 +365,11 @@ public class MWRAContract {
             json.put(MWRATable.COLUMN_SB5, this.sB5.equals("") ? JSONObject.NULL : new JSONObject(this.sB5));
         }
 
-        /*if (!this.sB6.equals("")) {
+        if (!this.sB6.equals("")) {
             json.put(MWRATable.COLUMN_SB6, this.sB6.equals("") ? JSONObject.NULL : new JSONObject(this.sB6));
-        }*/
+        }
 
         json.put(MWRATable.COLUMN_SB2FLAG, this.sb2flag == null ? JSONObject.NULL : this.sb2flag);
-        json.put(MWRATable.COLUMN_SB6, this.sB6 == null ? JSONObject.NULL : this.sB6);
 
         /*json.put(MWRATable.COLUMN_SYNCED, this.synced == null ? JSONObject.NULL : this.synced);
         json.put(MWRATable.COLUMN_SYNCEDDATE, this.syncedDate == null ? JSONObject.NULL : this.syncedDate);*/

@@ -803,6 +803,11 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                 bi.ciw214.setMinvalue(roasterChildrens);
                 bi.ciw215.setMinvalue(roasterChildrens);
 
+                if (wraMap.get(bi.nb101.getSelectedItem().toString()).getKishSelected().equals("1"))
+                    MainApp.mc.setKishSelectWRA(true);
+                else
+                    MainApp.mc.setKishSelectWRA(false);
+
             }
 
             @Override
@@ -1080,7 +1085,7 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
 
     public void redirectCondition() {
         if (editWRAFlag) {
-            if (MainApp.mc.getsB6().equals("1")) {
+            if (!MainApp.mc.getsB6().equals("")) {
                 startActivityForResult(new Intent(this, SectionB6Activity.class)
                         .putExtra("backPressed", classPassName.equals(SectionB6Activity.class.getName())), 1);
 
@@ -1094,7 +1099,7 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                 );
             }
         } else {
-            if (wraMap.get(bi.nb101.getSelectedItem().toString()).getKishSelected().equals("1")) {
+            if (MainApp.mc.getKishSelectWRA()) {
                 startActivityForResult(new Intent(this, SectionB6Activity.class)
                         .putExtra("backPressed", classPassName.equals(SectionB6Activity.class.getName())), 1);
             } else {
