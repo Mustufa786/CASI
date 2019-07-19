@@ -739,18 +739,18 @@
     <string name="ciw406c"> کارڈ سے </string>
     <string name="ciw406r"> یاد کر کے </string>
 
-    <string name="nb410a"> ایک گھنٹے سے بھی کم وقت میں </string>
-    <string name="nb410h"> گھنٹوں میں </string>
-    <string name="nb410d"> دنوں </string>
-    <string name="nb41097"> کبھی نہیں </string>
-    <string name="nb41098"> معلوم نہیں /یاد نہیں </string>
+    <string name="ciw410a"> ایک گھنٹے سے بھی کم وقت میں </string>
+    <string name="ciw410h"> گھنٹوں میں </string>
+    <string name="ciw410d"> دنوں </string>
+    <string name="ciw41097"> کبھی نہیں </string>
+    <string name="ciw41098"> معلوم نہیں /یاد نہیں </string>
 
-    <string name="nb412a"> کلورو ہیکزیڈن </string>
-    <string name="nb412b"> دوسری جراثیم کش ادویات  (الکوحل/اسپرٹ،جنیش وائلٹ) </string>
-    <string name="nb412c">سُرما </string>
-    <string name="nb412d"> سرسوں  کا تیل </string>
-    <string name="nb412e"> راکھ </string>
-    <string name="nb412f"> گوبر </string>
+    <string name="ciw412a"> کلورو ہیکزیڈن </string>
+    <string name="ciw412b"> دوسری جراثیم کش ادویات  (الکوحل/اسپرٹ،جنیش وائلٹ) </string>
+    <string name="ciw412c">سُرما </string>
+    <string name="ciw412d"> سرسوں  کا تیل </string>
+    <string name="ciw412e"> راکھ </string>
+    <string name="ciw412f"> گوبر </string>
 
 
     <string name="ciw413sub1"> بپلک میڈیکل سیکٹر </string>
@@ -1413,14 +1413,13 @@
     <string name="ciw407">۔W407 - کیا پیدائش سے ایک گھنٹے کےاندر، بچے (نام) کو براہ راست سینے یا چھاتی سے لگایا گیاتھا؟</string>
     <string name="ciw408">۔W408 - کیا بچے کو پیدائش کے بعدفوراًخشک اورصاف کیاگیاتھا؟</string>
     <string name="ciw409">۔W409 - بچے کو سینےیاچھاتی سے لگانے سے پہلے کیا بچہ کو لپیٹا گیا تھا؟</string>
-    <string name="nb410">۔W410 - پیدائش کے کتنے عرصے بعد بچے (۔Name) کو پہلی مرتبہ نہلایاگیاتھا؟</string>
-    "
-    <string name="nb410info">۔W410 - اگر پیدائش کے فوراً بعد یا ایک گھنٹہ کے اندر نہلایاگیا تو 000 ریکارڈ کریں
+    <string name="ciw410">۔W410 - پیدائش کے کتنے عرصے بعد بچے (۔Name) کو پہلی مرتبہ نہلایاگیاتھا؟</string>
+    <string name="ciw410info">۔W410 - اگر پیدائش کے فوراً بعد یا ایک گھنٹہ کے اندر نہلایاگیا تو 000 ریکارڈ کریں
     اگر 24 گھنٹے سے کم وقت میں نہلایا تو گھنٹے ریکارڈ کریں
     اگر پہلے ایک دن یا ایک دن بعد نہلایا گیا توپوچھیں بچے کو پیدائش کے کتنے گھنٹہ بعد نہلایا؟ زچگی کے بعد سے پہلی بار نہلانے تک کا درست وقت کا پتہ لگائے
     اور اگر 24 کھنٹوں میں ،تو کوشش کریں کہ درست وقت کا پتہ لگائیں کہ 24 گھنٹوں سے کم یا ایک دن</string>
-    <string name="nb411">۔W411 - آنونال  کٹنے کے بعد سے لے کر اس کے جھٹرنے تک کیاآپ نے کچھ لگایاتھا؟</string>
-    <string name="nb412">۔W412 - آنونال پر کیا لگایاگیاتھا؟</string>
+    <string name="ciw411">۔W411 - آنونال  کٹنے کے بعد سے لے کر اس کے جھٹرنے تک کیاآپ نے کچھ لگایاتھا؟</string>
+    <string name="ciw412">۔W412 - آنونال پر کیا لگایاگیاتھا؟</string>
     <string name="ciw413">۔W413- اگر کلورہیکسیڈین کا استعمال کیا گیا تھا تو جواب دہندہ سے اس کی فراہمی کے زرائع کے بارے میں پوچھیں۔</string>
     <string name="ciw414">۔W414- کیا زچگی کے بعد کسی نے آپ کی صحت کا معائنہ کیا </string>
     <string name="ciw415">۔W415 - زچگی کے بعد کس نے آپ کی صحت کا معائنہ کیاتھا؟</string>
