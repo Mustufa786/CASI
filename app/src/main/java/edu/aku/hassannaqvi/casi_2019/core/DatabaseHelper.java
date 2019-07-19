@@ -74,7 +74,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             + UsersTable._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
             + UsersTable.ROW_USERNAME + " TEXT,"
             + UsersTable.ROW_PASSWORD + " TEXT,"
-            + UsersTable.FULL_NAME + " TEXT,"
             + UsersTable.TEAM_NO + " TEXT,"
             + UsersTable.COUNTRY_ID + " TEXT"
             + " );";
@@ -1407,7 +1406,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
                 values.put(UsersContract.UsersTable.ROW_USERNAME, user.getUserName());
                 values.put(UsersTable.ROW_PASSWORD, user.getPassword());
-                values.put(UsersTable.FULL_NAME, user.getFULL_NAME());
                 values.put(UsersTable.TEAM_NO, user.getTEAM_NO());
                 values.put(UsersTable.COUNTRY_ID, user.getCOUNTRY_ID());
                 db.insert(UsersTable.TABLE_NAME, null, values);
@@ -1549,7 +1547,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String[] columns = {
                 UsersTable._ID,
                 UsersTable.ROW_USERNAME,
-                UsersTable.FULL_NAME,
                 UsersTable.TEAM_NO,
                 UsersTable.COUNTRY_ID,
                 UsersTable.ROW_PASSWORD

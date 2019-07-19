@@ -16,7 +16,6 @@ public class UsersContract {
     Long _ID;
     String ROW_USERNAME;
     String ROW_PASSWORD;
-    String FULL_NAME;
     String TEAM_NO;
     String COUNTRY_ID;
 
@@ -55,14 +54,6 @@ public class UsersContract {
         this.ROW_PASSWORD = password;
     }
 
-    public String getFULL_NAME() {
-        return FULL_NAME;
-    }
-
-    public void setFULL_NAME(String FULL_NAME) {
-        this.FULL_NAME = FULL_NAME;
-    }
-
     public String getTEAM_NO() {
         return TEAM_NO;
     }
@@ -82,7 +73,6 @@ public class UsersContract {
     public UsersContract Sync(JSONObject jsonObject) throws JSONException {
         this.ROW_USERNAME = jsonObject.getString(UsersTable.ROW_USERNAME);
         this.ROW_PASSWORD = jsonObject.getString(UsersTable.ROW_PASSWORD);
-        this.FULL_NAME = jsonObject.getString(UsersTable.FULL_NAME);
         this.TEAM_NO = jsonObject.getString(UsersTable.TEAM_NO);
         this.COUNTRY_ID = jsonObject.getString(UsersTable.COUNTRY_ID);
         return this;
@@ -93,7 +83,6 @@ public class UsersContract {
         this._ID = cursor.getLong(cursor.getColumnIndex(UsersTable._ID));
         this.ROW_USERNAME = cursor.getString(cursor.getColumnIndex(UsersTable.ROW_USERNAME));
         this.ROW_PASSWORD = cursor.getString(cursor.getColumnIndex(UsersTable.ROW_PASSWORD));
-        this.FULL_NAME = cursor.getString(cursor.getColumnIndex(UsersTable.FULL_NAME));
         this.TEAM_NO = cursor.getString(cursor.getColumnIndex(UsersTable.TEAM_NO));
         this.COUNTRY_ID = cursor.getString(cursor.getColumnIndex(UsersTable.COUNTRY_ID));
         return this;
@@ -107,7 +96,6 @@ public class UsersContract {
         json.put(UsersTable._ID, this._ID == null ? JSONObject.NULL : this._ID);
         json.put(UsersTable.ROW_USERNAME, this.ROW_USERNAME == null ? JSONObject.NULL : this.ROW_USERNAME);
         json.put(UsersTable.ROW_PASSWORD, this.ROW_PASSWORD == null ? JSONObject.NULL : this.ROW_PASSWORD);
-        json.put(UsersTable.FULL_NAME, this.FULL_NAME == null ? JSONObject.NULL : this.FULL_NAME);
         json.put(UsersTable.TEAM_NO, this.TEAM_NO == null ? JSONObject.NULL : this.TEAM_NO);
         json.put(UsersTable.COUNTRY_ID, this.COUNTRY_ID == null ? JSONObject.NULL : this.COUNTRY_ID);
         return json;
@@ -119,7 +107,6 @@ public class UsersContract {
         public static final String _ID = "id";
         public static final String ROW_USERNAME = "username";
         public static final String ROW_PASSWORD = "password";
-        public static final String FULL_NAME = "full_name";
         public static final String TEAM_NO = "teamno";
         public static final String COUNTRY_ID = "country_id";
 
