@@ -3,6 +3,7 @@ package edu.aku.hassannaqvi.casi_2019.validation;
 import android.content.Context;
 import android.graphics.Color;
 import android.support.design.widget.TextInputEditText;
+import android.support.v7.widget.AppCompatEditText;
 import android.support.v7.widget.CardView;
 import android.text.TextUtils;
 import android.util.Log;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -31,7 +33,7 @@ import edu.aku.hassannaqvi.casi_2019.core.MainApp;
 
 public abstract class ValidatorClass {
 
-    public static boolean EmptyCheckingContainer(Context context, LinearLayout lv) {
+    public static boolean EmptyCheckingContainer(Context context, ViewGroup lv) {
 
         for (int i = 0; i < lv.getChildCount(); i++) {
             View view = lv.getChildAt(i);
@@ -51,13 +53,8 @@ public abstract class ValidatorClass {
             }
 
             if (view instanceof CardView) {
-                for (int j = 0; j < ((CardView) view).getChildCount(); j++) {
-                    View view1 = ((CardView) view).getChildAt(j);
-                    if (view1 instanceof LinearLayout) {
-                        if (!EmptyCheckingContainer(context, (LinearLayout) view1)) {
-                            return false;
-                        }
-                    }
+                if (!EmptyCheckingContainer(context, (ViewGroup) view)) {
+                    return false;
                 }
             } else if (view instanceof RadioGroup) {
 
@@ -89,6 +86,9 @@ public abstract class ValidatorClass {
                 if (view instanceof EditTextPicker) {
                     if (!EmptyEditTextPicker(context, (EditText) view, getString(context, getIDComponent(view))))
                         return false;
+                } else if (view instanceof AppCompatEditText) {
+                    if (!EmptyTextBox(context, (AppCompatEditText) view, getString(context, getIDComponent(view))))
+                        return false;
                 } else {
                     if (!EmptyTextBox(context, (EditText) view, getString(context, getIDComponent(view)))) {
                         return false;
@@ -106,18 +106,22 @@ public abstract class ValidatorClass {
 
                 if (length > 0) {
                     if (((LinearLayout) view).getChildAt(0) instanceof CheckBox) {
-                        if (!EmptyCheckBox(context, ((LinearLayout) view),
+                        if (!EmptyCheckBox(context, (ViewGroup) view,
                                 (CheckBox) ((LinearLayout) view).getChildAt(0),
                                 getString(context, getIDComponent(((LinearLayout) view).getChildAt(0))))) {
                             return false;
                         }
-                    } else if (!EmptyCheckingContainer(context, (LinearLayout) view)) {
+                    } else if (!EmptyCheckingContainer(context, (ViewGroup) view)) {
                         return false;
                     }
-                } else if (!EmptyCheckingContainer(context, (LinearLayout) view)) {
+                } else if (!EmptyCheckingContainer(context, (ViewGroup) view)) {
                     return false;
                 }
 
+            } else if (view instanceof FrameLayout) {
+                if (!EmptyCheckingContainer(context, (ViewGroup) view)) {
+                    return false;
+                }
             }
         }
         return true;
@@ -434,7 +438,7 @@ public abstract class ValidatorClass {
         }
     }
 
-    public static boolean EmptyCheckBox(Context context, LinearLayout container, CheckBox cbx, String msg) {
+    public static boolean EmptyCheckBox(Context context, ViewGroup container, CheckBox cbx, String msg) {
 
         Boolean flag = false;
         for (int i = 0; i < container.getChildCount(); i++) {

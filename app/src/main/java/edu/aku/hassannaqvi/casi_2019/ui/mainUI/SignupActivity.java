@@ -30,8 +30,8 @@ public class SignupActivity extends AppCompatActivity {
 
     HashMap<String, String> coutryMap = new HashMap<String, String>() {{
 
-        put("Pakistan", "1");
-        put("Afghanistan", "2");
+        put("Afghanistan", "1");
+        put("Pakistan", "2");
         put("Tajikistan", "3");
 
     }};
@@ -79,8 +79,6 @@ public class SignupActivity extends AppCompatActivity {
             }
             if (UpdateDB()) {
 
-//                finish();
-
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }
@@ -90,9 +88,7 @@ public class SignupActivity extends AppCompatActivity {
     }
 
     private boolean formValidation() {
-
         return ValidatorClass.EmptyCheckingContainer(this, bi.signUpSection);
-
     }
 
     private void SaveDraft() throws JSONException {
