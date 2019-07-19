@@ -40,6 +40,7 @@ import edu.aku.hassannaqvi.casi_2019.contracts.NutritionContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.OutcomeContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.RecipientsContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.SerialContract;
+import edu.aku.hassannaqvi.casi_2019.contracts.SignupContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.SpecimenContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.SummaryContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.UsersContract;
@@ -109,6 +110,7 @@ public class MainApp extends Application {
     public static String cluster_no = "";
     public static Boolean flag_head = false;
 
+    public static SignupContract signContract;
     //    Ali
     public static FamilyMembersContract fmc;
     public static SpecimenContract smc;

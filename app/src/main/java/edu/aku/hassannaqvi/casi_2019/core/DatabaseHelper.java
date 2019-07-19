@@ -44,6 +44,8 @@ import edu.aku.hassannaqvi.casi_2019.contracts.RecipientsContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.RecipientsContract.RecipientsTable;
 import edu.aku.hassannaqvi.casi_2019.contracts.SerialContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.SerialContract.singleSerial;
+import edu.aku.hassannaqvi.casi_2019.contracts.SignupContract;
+import edu.aku.hassannaqvi.casi_2019.contracts.SignupContract.SignUpTable;
 import edu.aku.hassannaqvi.casi_2019.contracts.SpecimenContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.SummaryContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.SummaryContract.singleSum;
@@ -90,6 +92,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             + singleRandomHH.COLUMN_RANDOM_TYPE + " TEXT,"
             + singleRandomHH.COLUMN_ASSIGNED_HH + " TEXT,"
             + singleRandomHH.COLUMN_SNO_HH + " TEXT );";
+
+
+    public static final String SQL_CREATE_SIGNUP = "CREATE TABLE " + SignUpTable.TABLE_NAME + "("
+            + SignUpTable._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+            + SignUpTable.FULLNAME + " TEXT,"
+            + SignUpTable.USERNAME + " TEXT,"
+            + SignUpTable.DESIGNATION + " TEXT,"
+            + SignUpTable.PASSWORD + " TEXT,"
+            + SignUpTable.COUNTRY_ID +
+            " TEXT );";
 
     private static final String SQL_CREATE_FORMS = "CREATE TABLE "
             + FormsTable.TABLE_NAME + "("
@@ -422,6 +434,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                     "ON f._uid = w._uuid group by f._uid order by f.formdate DESC;";
 
     private static final String SQL_DELETE_USERS = "DROP TABLE IF EXISTS " + UsersContract.UsersTable.TABLE_NAME;
+    private static final String SQL_SIGNUP_TABLE = "DROP TABLE IF EXISTS " + SignUpTable.TABLE_NAME;
     private static final String SQL_DELETE_FORMS = "DROP TABLE IF EXISTS " + FormsTable.TABLE_NAME;
     private static final String SQL_DELETE_CHILD_FORMS = "DROP TABLE IF EXISTS " + ChildContract.ChildTable.TABLE_NAME;
     private static final String SQL_DELETE_SINGLE = "DROP TABLE IF EXISTS " + singleSerial.TABLE_NAME;
@@ -465,6 +478,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(SQL_CREATE_WATER_SPECIMEN_MEMBERS);
         db.execSQL(SQL_CREATE_MICRO);
         db.execSQL(SQL_CREATE_SUMMARY);
+        db.execSQL(SQL_CREATE_SIGNUP);
+
     }
 
     @Override
@@ -486,6 +501,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(SQL_DELETE_NUTRITION);
         db.execSQL(SQL_DELETE_DECEASED);
         db.execSQL(SQL_CREATE_NUTRITION);
+        db.execSQL(SQL_SIGNUP_TABLE);
     }
 
     public void syncEnumBlocks(JSONArray Enumlist) {
@@ -1649,6 +1665,28 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                     new String[]{fc.getUID()}
             );
         }
+        return newRowId;
+    }
+
+    public Long addSignUpForm(SignupContract fc) {
+
+        // Gets the data repository in write mode
+        SQLiteDatabase db = this.getWritableDatabase();
+
+// Create a new map of values, where column names are the keys
+        ContentValues values = new ContentValues();
+        values.put(SignUpTable.FULLNAME, fc.getFullName());
+        values.put(SignUpTable.DESIGNATION, fc.getDesignation());
+        values.put(SignUpTable.USERNAME, fc.getUserName());
+        values.put(SignUpTable.PASSWORD, fc.getPassword());
+        values.put(SignUpTable.COUNTRY_ID, fc.getCountryId());
+
+        // Insert the new row, returning the primary key value of the new row
+        long newRowId;
+        newRowId = db.insert(
+                SignUpTable.TABLE_NAME,
+                null,
+                values);
         return newRowId;
     }
 

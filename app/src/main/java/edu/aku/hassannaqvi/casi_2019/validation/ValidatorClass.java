@@ -2,6 +2,7 @@ package edu.aku.hassannaqvi.casi_2019.validation;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.support.design.widget.TextInputEditText;
 import android.support.v7.widget.CardView;
 import android.text.TextUtils;
 import android.util.Log;
@@ -164,6 +165,22 @@ public abstract class ValidatorClass {
         }
     }
 
+    public static boolean EmptyTextBox(Context context, TextInputEditText txt, String msg) {
+        if (TextUtils.isEmpty(txt.getText().toString().trim())) {
+            if (MainApp.validateFlag) {
+                Toast.makeText(context, "ERROR(empty): " + msg, Toast.LENGTH_SHORT).show();
+            }
+            txt.setError("This data is Required! ");    // Set Error on last radio button
+//            txt.requestFocus();
+            Log.i(context.getClass().getName(), context.getResources().getResourceEntryName(txt.getId()) + ": This data is Required!");
+            return false;
+        } else {
+            txt.setError(null);
+            txt.clearFocus();
+            return true;
+        }
+    }
+
     public static boolean RangeTextBox(Context context, EditText txt, int min, int max, String msg, String type) {
 
         if (Integer.valueOf(txt.getText().toString().trim()) < min || Integer.valueOf(txt.getText().toString().trim()) > max) {
@@ -259,7 +276,7 @@ public abstract class ValidatorClass {
     }
 
     public static boolean EmptySpinner(Context context, Spinner spin, String msg) {
-        if (spin.getSelectedItem() == "....") {
+        if (spin.getSelectedItemPosition() == 0) {
             if (MainApp.validateFlag) {
                 Toast.makeText(context, "ERROR(Empty)" + msg, Toast.LENGTH_SHORT).show();
             }
