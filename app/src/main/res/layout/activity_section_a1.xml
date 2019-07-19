@@ -96,7 +96,7 @@
                         android:layout_weight="60"
                         android:hint="@string/cih102a"
                         android:inputType="number"
-                        android:maxLength="4" />
+                        android:maxLength="6" />
 
                     <Button
                         android:id="@+id/checkClusterBtn"
