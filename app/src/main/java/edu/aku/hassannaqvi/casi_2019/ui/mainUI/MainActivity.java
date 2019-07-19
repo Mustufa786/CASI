@@ -531,63 +531,6 @@ public class MainActivity extends MenuActivity {
 
     }
 
-
-    /*public void openD(View v) {
-        Intent iD = new Intent(this, SectionDActivity.class);
-        startActivity(iD);
-    }
-
-    public void openE(View v) {
-        Intent iE = new Intent(this, SectionEActivity.class);
-        startActivity(iE);
-    }
-
-    public void openF(View v) {
-        Intent iF = new Intent(this, SectionFActivity.class);
-        startActivity(iF);
-    }
-
-    public void openG(View v) {
-        Intent iG = new Intent(this, SectionGActivity.class);
-        startActivity(iG);
-    }
-
-    public void openI(View v) {
-        Intent iI = new Intent(this, SectionIActivity.class);
-        startActivity(iI);
-    }
-
-    public void openJ(View v) {
-        Intent iJ = new Intent(this, SectionJActivity.class);
-        startActivity(iJ);
-    }
-
-    public void openK(View v) {
-        Intent iK = new Intent(this, SectionKActivity.class);
-        startActivity(iK);
-    }
-
-    public void openL(View v) {
-        Intent iL = new Intent(this, SectionLActivity.class);
-        startActivity(iL);
-    }
-
-    public void openM(View v) {
-        Intent iM = new Intent(this, SectionMActivity.class);
-        startActivity(iM);
-    }
-
-
-    public void openHA(View v) {
-        Intent iB = new Intent(this, SectionHAActivity.class);
-        startActivity(iB);
-    }
-
-    public void openHB(View v) {
-        Intent iB = new Intent(this, SectionHBActivity.class);
-        startActivity(iB);
-    }*/
-
     public void testGPS(View v) {
 
         SharedPreferences sharedPref = getSharedPreferences("GPSCoordinates", Context.MODE_PRIVATE);

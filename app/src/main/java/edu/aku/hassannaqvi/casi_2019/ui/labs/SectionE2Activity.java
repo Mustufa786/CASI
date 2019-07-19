@@ -965,39 +965,39 @@ public class SectionE2Activity extends AppCompatActivity {
 
         sE1.put("ne_selected_water", String.valueOf(SpecimenInfoActivity.selected));
         sE1.put("start_time", SpecimenInfoActivity.datetime);
-        sE1.put("ne201a", bi.ne201a.isChecked() ? "1" : "2");
-        sE1.put("ne20201", bi.ne20201a.isChecked() ? "1" : bi.ne20201b.isChecked() ? "2" : "0");
-        sE1.put("ne20301", bi.ne20301.getText().toString());
+        sE1.put("cine201a", bi.ne201a.isChecked() ? "1" : "2");
+        sE1.put("cine20201", bi.ne20201a.isChecked() ? "1" : bi.ne20201b.isChecked() ? "2" : "0");
+        sE1.put("cine20301", bi.ne20301.getText().toString());
 
-        sE1.put("ne201b", bi.ne201b.isChecked() ? "1" : "2");
-        sE1.put("ne20202", bi.ne20202a.isChecked() ? "1" : bi.ne20202b.isChecked() ? "2" : "0");
-        sE1.put("ne20302", bi.ne20302.getText().toString());
+        sE1.put("cine201b", bi.ne201b.isChecked() ? "1" : "2");
+        sE1.put("cine20202", bi.ne20202a.isChecked() ? "1" : bi.ne20202b.isChecked() ? "2" : "0");
+        sE1.put("cine20302", bi.ne20302.getText().toString());
 
-        sE1.put("ne201c", bi.ne201c.isChecked() ? "1" : "2");
-        sE1.put("ne20203", bi.ne20203a.isChecked() ? "1" : bi.ne20203b.isChecked() ? "2" : "0");
-        sE1.put("ne20303", bi.ne20303.getText().toString());
+        sE1.put("cine201c", bi.ne201c.isChecked() ? "1" : "2");
+        sE1.put("cine20203", bi.ne20203a.isChecked() ? "1" : bi.ne20203b.isChecked() ? "2" : "0");
+        sE1.put("cine20303", bi.ne20303.getText().toString());
 
-        sE1.put("ne201d", bi.ne201d.isChecked() ? "1" : "2");
-        sE1.put("ne20204", bi.ne20204a.isChecked() ? "1" : bi.ne20204b.isChecked() ? "2" : "0");
-        sE1.put("ne20304", bi.ne20304.getText().toString());
+        sE1.put("cine201d", bi.ne201d.isChecked() ? "1" : "2");
+        sE1.put("cine20204", bi.ne20204a.isChecked() ? "1" : bi.ne20204b.isChecked() ? "2" : "0");
+        sE1.put("cine20304", bi.ne20304.getText().toString());
 
-        sE1.put("ne201e", bi.ne201e.isChecked() ? "1" : "2");
-        sE1.put("ne20205", bi.ne20205a.isChecked() ? "1" : bi.ne20205b.isChecked() ? "2" : "0");
-        sE1.put("ne20305", bi.ne20305.getText().toString());
+        sE1.put("cine201e", bi.ne201e.isChecked() ? "1" : "2");
+        sE1.put("cine20205", bi.ne20205a.isChecked() ? "1" : bi.ne20205b.isChecked() ? "2" : "0");
+        sE1.put("cine20305", bi.ne20305.getText().toString());
 
-        sE1.put("ne201f", bi.ne201f.isChecked() ? "1" : "2");
+        sE1.put("cine201f", bi.ne201f.isChecked() ? "1" : "2");
 
-        sE1.put("ne2020601", bi.ne2020601a.isChecked() ? "1" : bi.ne2020601b.isChecked() ? "2" : "0");
-        sE1.put("ne2030601", bi.ne2030601.getText().toString());
+        sE1.put("cine2020601", bi.ne2020601a.isChecked() ? "1" : bi.ne2020601b.isChecked() ? "2" : "0");
+        sE1.put("cine2030601", bi.ne2030601.getText().toString());
 
-        sE1.put("ne2020602", bi.ne2020602a.isChecked() ? "1" : bi.ne2020602b.isChecked() ? "2" : "0");
-        sE1.put("ne2030602", bi.ne2030602.getText().toString());
+        sE1.put("cine2020602", bi.ne2020602a.isChecked() ? "1" : bi.ne2020602b.isChecked() ? "2" : "0");
+        sE1.put("cine2030602", bi.ne2030602.getText().toString());
 
-        sE1.put("ne2020603", bi.ne2020603a.isChecked() ? "1" : bi.ne2020603b.isChecked() ? "2" : "0");
-        sE1.put("ne2030603", bi.ne2030603.getText().toString());
+        sE1.put("cine2020603", bi.ne2020603a.isChecked() ? "1" : bi.ne2020603b.isChecked() ? "2" : "0");
+        sE1.put("cine2030603", bi.ne2030603.getText().toString());
 
-        sE1.put("ne2020604", bi.ne2020604a.isChecked() ? "1" : bi.ne2020604b.isChecked() ? "2" : "0");
-        sE1.put("ne2030604", bi.ne2030604.getText().toString());
+        sE1.put("cine2020604", bi.ne2020604a.isChecked() ? "1" : bi.ne2020604b.isChecked() ? "2" : "0");
+        sE1.put("cine2030604", bi.ne2030604.getText().toString());
 
         sE1.put("end_time", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
 

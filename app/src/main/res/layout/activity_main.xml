@@ -129,7 +129,6 @@
                 android:onClick="@{() -> callback.openForm()}"
                 android:text="OPEN FORM" />
 
-
             <Button
                 android:id="@+id/openB"
                 style="@style/Widget.AppCompat.Button.Colored"
@@ -140,9 +139,7 @@
                 android:background="#1565C0"
                 android:elevation="5dp"
                 android:onClick="openB"
-                android:text="OPEN Anthropometry Section"
-                android:visibility="gone" />
-
+                android:text="OPEN Anthropometry Section" />
 
             <Button
                 android:id="@+id/openSpecimen"
@@ -154,9 +151,7 @@
                 android:background="#1565C0"
                 android:elevation="5dp"
                 android:onClick="@{() -> callback.openSpecimen()}"
-                android:text="OPEN BLOOD / URINE SPECIMEN COLLECTION FORM"
-                android:visibility="gone" />
-
+                android:text="OPEN BLOOD / URINE SPECIMEN COLLECTION FORM" />
 
             <Button
                 android:id="@+id/openWaterSpecimen"
@@ -194,8 +189,7 @@
                 android:background="#1565C0"
                 android:elevation="5dp"
                 android:onClick="@{() -> callback.openDashboard()}"
-                android:text="OPEN DASHBOARD"
-                android:visibility="gone" />
+                android:text="OPEN DASHBOARD" />
 
             <Button
                 style="@style/Widget.AppCompat.Button.Colored"
@@ -208,7 +202,6 @@
                 android:onClick="@{(v) -> callback.openViewMember(true)}"
                 android:text="View Members"
                 android:visibility="gone" />
-
 
             <Button
                 android:id="@+id/syncServer"
@@ -294,7 +287,6 @@
                     android:onClick="testGPS"
                     android:text="Test GPS Coordinates" />
             </LinearLayout>
-
 
         </LinearLayout>
     </ScrollView>

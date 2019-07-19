@@ -243,7 +243,7 @@ public class SpecimenInfoActivity extends AppCompatActivity {
 
     public void BtnContinue() {
 
-        Toast.makeText(this, "Processing This Section", Toast.LENGTH_SHORT).show();
+
         if (formValidation()) {
 
             try {
@@ -280,7 +280,7 @@ public class SpecimenInfoActivity extends AppCompatActivity {
 
     public void BtnEnd() {
 
-        Toast.makeText(this, "Processing End Section", Toast.LENGTH_SHORT).show();
+
         if (formValidation()) {
 
             try {
@@ -291,7 +291,7 @@ public class SpecimenInfoActivity extends AppCompatActivity {
             }
 
             if (UpdateDB()) {
-                Toast.makeText(this, "Starting Ending Section", Toast.LENGTH_SHORT).show();
+
 
                 finish();
 
@@ -305,7 +305,6 @@ public class SpecimenInfoActivity extends AppCompatActivity {
 
     public boolean formValidation() {
 
-        Toast.makeText(this, "Validating This Section ", Toast.LENGTH_SHORT).show();
 
 //        cih102
         if (!ValidatorClass.EmptyTextBox(this, binding.cih102, getString(R.string.cih102))) {
@@ -374,7 +373,6 @@ public class SpecimenInfoActivity extends AppCompatActivity {
     }
 
     private void SaveDraft() throws JSONException {
-        Toast.makeText(this, "Saving Draft for  This Section", Toast.LENGTH_SHORT).show();
 
 
         if (MainActivity.ftype.equals("B")) {
@@ -400,8 +398,8 @@ public class SpecimenInfoActivity extends AppCompatActivity {
                 MainApp.smc.setHhno(binding.cih108.getText().toString().toUpperCase());
 
                 JSONObject sE1 = new JSONObject();
-                sE1.put("ne_selected_blood", binding.neselecteda.isChecked() ? "1" : binding.neselectedb.isChecked() ? "2" : "0");
-                sE1.put("ne_consent", binding.na11802a.isChecked() ? "1" : binding.na11802b.isChecked() ? "2" : "0");
+                sE1.put("cine_selected_blood", binding.neselecteda.isChecked() ? "1" : binding.neselectedb.isChecked() ? "2" : "0");
+                sE1.put("cine_consent", binding.na11802a.isChecked() ? "1" : binding.na11802b.isChecked() ? "2" : "0");
                 sE1.put("start_time", dateTime);
                 sE1.put("end_time", new SimpleDateFormat("dd-MM-yyyy").format(System.currentTimeMillis()));
 
@@ -432,7 +430,7 @@ public class SpecimenInfoActivity extends AppCompatActivity {
 
 
                 JSONObject sE1 = new JSONObject();
-                sE1.put("ne_selected_water", binding.neselecteda.isChecked() ? "1" : binding.neselectedb.isChecked() ? "2" : "0");
+                sE1.put("cine_selected_water", binding.neselecteda.isChecked() ? "1" : binding.neselectedb.isChecked() ? "2" : "0");
                 sE1.put("start_time", dateTime);
                 sE1.put("end_time", new SimpleDateFormat("dd-MM-yyyy").format(System.currentTimeMillis()));
 

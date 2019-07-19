@@ -210,18 +210,18 @@
     <string name="na4subHeading"> وزن کا دوبارہ اندراج کریں</string>
     <string name="na5subHeading"> لمبائی کا دوبارہ اندراج کریں</string>
     <string name="na6subHeading"> ۔MUAC  کا دوبارہ اندراج کریں</string>
-    <string name="nd101sno"> لائن نمبر </string>
-    <string name="nd1w"> وزن(کلو گرام) </string>
-    <string name="nd1h"> لمبائی (سینٹی میٹر) </string>
-    <string name="nd1muac"> (سینٹی میٹر) MUAC </string>
-    <string name="nd1bcgscar"> BCG Scar </string>0
-    <string name="nd1bcgscarifo"> (for u-5) </string>
-    <string name="nd1g"> Goiter </string>
-    <string name="nd1ginfo"> (for MWRA and Adolescent) </string>
-    <string name="nd1ca"> Clinical Anemia </string>
-    <string name="nd1cainfo"> (for MWRA and Adolescent) </string>
-    <string name="nd1o"> Odeama </string>
-    <string name="nd1oinfo"> (for MWRA) </string>
+    <string name="cid101sno"> لائن نمبر </string>
+    <string name="cid1w"> وزن(کلو گرام) </string>
+    <string name="cid1h"> لمبائی (سینٹی میٹر) </string>
+    <string name="cid1muac"> (سینٹی میٹر) MUAC </string>
+    <string name="cid1bcgscar"> BCG Scar </string>0
+    <string name="cid1bcgscarifo"> (for u-5) </string>
+    <string name="cid1g"> Goiter </string>
+    <string name="cid1ginfo"> (for MWRA and Adolescent) </string>
+    <string name="cid1ca"> Clinical Anemia </string>
+    <string name="cid1cainfo"> (for MWRA and Adolescent) </string>
+    <string name="cid1o"> Odeama </string>
+    <string name="cid1oinfo"> (for MWRA) </string>
 
 
     <string name="cih3heading"> سیکشن ایچ 3 : سماجی امداد کے حوالے سے معلومات </string>

@@ -416,7 +416,7 @@ public class SectionC1Activity extends AddMember_MenuActivity implements TextWat
 //        Validation Boolean
         MainApp.validateFlag = true;
 
-        Toast.makeText(this, "Processing This Section", Toast.LENGTH_SHORT).show();
+
         if (formValidation()) {
             try {
                 SaveDraft();

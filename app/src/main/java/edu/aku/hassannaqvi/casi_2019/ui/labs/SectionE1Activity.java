@@ -718,27 +718,27 @@ public class SectionE1Activity extends AppCompatActivity {
 
         JSONObject sE1 = new JSONObject();
 
-        sE1.put("ne_selected_blood", String.valueOf(SpecimenInfoActivity.selected));
-        sE1.put("ne_consent", String.valueOf(SpecimenInfoActivity.consent));
+        sE1.put("cine_selected_blood", String.valueOf(SpecimenInfoActivity.selected));
+        sE1.put("cine_consent", String.valueOf(SpecimenInfoActivity.consent));
         sE1.put("start_time", SpecimenInfoActivity.datetime);
 
         if (MainActivity.ftype.equals("B")) {
             sE1.put("hc_code", SpecimenInfoActivity.hc_code);
         }
 
-        sE1.put("ne102", bi.ne102.getSelectedItem().toString());
-        sE1.put("ne103", originalPositions.get(bi.ne103.getSelectedItemPosition()));
-        sE1.put("ne104", bi.ne104a.isChecked() ? "1" : bi.ne104b.isChecked() ? "2" : "0");
-        sE1.put("ne105", bi.ne105.getText().toString());
-        sE1.put("ne104d", bi.ne104d.getText().toString());
-        sE1.put("ne104t", bi.ne104t.getText().toString());
-        sE1.put("ne106", bi.ne106.getText().toString());
-        sE1.put("ne107", bi.ne107a.isChecked() ? "1" : bi.ne107b.isChecked() ? "2" : "0");
-        sE1.put("ne108", bi.ne108a.isChecked() ? "1" : bi.ne108b.isChecked() ? "2" : "0");
-        sE1.put("ne109", bi.ne109.getText().toString());
-        sE1.put("ne108d", bi.ne108d.getText().toString());
-        sE1.put("ne108t", bi.ne108t.getText().toString());
-        sE1.put("ne110", bi.ne110a.isChecked() ? "1" : bi.ne110b.isChecked() ? "2" : "0");
+        sE1.put("cine102", bi.ne102.getSelectedItem().toString());
+        sE1.put("cine103", originalPositions.get(bi.ne103.getSelectedItemPosition()));
+        sE1.put("cine104", bi.ne104a.isChecked() ? "1" : bi.ne104b.isChecked() ? "2" : "0");
+        sE1.put("cine105", bi.ne105.getText().toString());
+        sE1.put("cine104d", bi.ne104d.getText().toString());
+        sE1.put("cine104t", bi.ne104t.getText().toString());
+        sE1.put("cine106", bi.ne106.getText().toString());
+        sE1.put("cine107", bi.ne107a.isChecked() ? "1" : bi.ne107b.isChecked() ? "2" : "0");
+        sE1.put("cine108", bi.ne108a.isChecked() ? "1" : bi.ne108b.isChecked() ? "2" : "0");
+        sE1.put("cine109", bi.ne109.getText().toString());
+        sE1.put("cine108d", bi.ne108d.getText().toString());
+        sE1.put("cine108t", bi.ne108t.getText().toString());
+        sE1.put("cine110", bi.ne110a.isChecked() ? "1" : bi.ne110b.isChecked() ? "2" : "0");
         sE1.put("end_time", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
 
         MainApp.smc.setsE1(String.valueOf(sE1));
