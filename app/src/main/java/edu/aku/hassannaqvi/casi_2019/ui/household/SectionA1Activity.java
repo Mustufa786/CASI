@@ -713,7 +713,7 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
 
             Boolean loginFlag = false;
             int clus = Integer.valueOf(binding.cih102.getText().toString());
-            if (clus < 6000) {
+            if (clus < 600000) {
                 loginFlag = !(MainApp.userName.equals("test1234") || MainApp.userName.equals("dmu@aku") || MainApp.userName.substring(0, 4).equals("user"));
             } else {
                 loginFlag = MainApp.userName.equals("test1234") || MainApp.userName.equals("dmu@aku") || MainApp.userName.substring(0, 4).equals("user");

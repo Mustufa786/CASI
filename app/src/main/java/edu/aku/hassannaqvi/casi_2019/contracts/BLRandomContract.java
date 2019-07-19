@@ -48,12 +48,12 @@ public class BLRandomContract {
         this.LUID = jsonObject.getString(singleRandomHH.COLUMN_LUID);
         this.subVillageCode = jsonObject.getString(singleRandomHH.COLUMN_ENUM_BLOCK_CODE);
         this.structure = jsonObject.getString(singleRandomHH.COLUMN_STRUCTURE_NO);
-
         this.structure = String.format("%04d", Integer.valueOf(this.structure));
 
         this.extension = jsonObject.getString(singleRandomHH.COLUMN_FAMILY_EXT_CODE);
-        this.hh = jsonObject.getString(singleRandomHH.COLUMN_STRUCTURE_NO)
-                + "-" + jsonObject.getString(singleRandomHH.COLUMN_FAMILY_EXT_CODE);
+        this.extension = String.format("%03d", Integer.valueOf(this.extension));
+
+        this.hh = structure + "-" + extension;
         this.randomDT = jsonObject.getString(singleRandomHH.COLUMN_RANDOMDT);
         this.hhhead = jsonObject.getString(singleRandomHH.COLUMN_HH_HEAD);
         this.contact = jsonObject.getString(singleRandomHH.COLUMN_CONTACT);

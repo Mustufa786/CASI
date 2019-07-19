@@ -189,7 +189,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             ");";
     final String SQL_CREATE_TALUKA = "CREATE TABLE " + EnumBlockTable.TABLE_NAME + " (" +
             EnumBlockTable._ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
-            EnumBlockTable.COLUMN_EB_CODE + " TEXT, " +
+            EnumBlockTable.COLUMN_COUNTRY_ID + " TEXT, " +
             EnumBlockTable.COLUMN_GEO_AREA + " TEXT, " +
             EnumBlockTable.COLUMN_CLUSTER_AREA + " TEXT " +
             ");";
@@ -515,7 +515,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
                 ContentValues values = new ContentValues();
 
-                values.put(EnumBlockTable.COLUMN_EB_CODE, Vc.getEbcode());
+                values.put(EnumBlockTable.COLUMN_COUNTRY_ID, Vc.getEbcode());
                 values.put(EnumBlockTable.COLUMN_GEO_AREA, Vc.getGeoarea());
                 values.put(EnumBlockTable.COLUMN_CLUSTER_AREA, Vc.getCluster());
 
@@ -1221,7 +1221,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         Cursor c = null;
         String[] columns = {
                 EnumBlockTable._ID,
-                EnumBlockTable.COLUMN_EB_CODE,
+                EnumBlockTable.COLUMN_COUNTRY_ID,
                 EnumBlockTable.COLUMN_GEO_AREA,
                 EnumBlockTable.COLUMN_CLUSTER_AREA
         };
