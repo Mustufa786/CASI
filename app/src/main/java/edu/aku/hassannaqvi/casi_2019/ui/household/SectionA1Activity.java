@@ -515,8 +515,6 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
 
         if (MainApp.usersContract != null) {
             sA1.put("userid", MainApp.usersContract.getUserID());
-            sA1.put("fullname", MainApp.usersContract.getFULL_NAME());
-            sA1.put("teamNo", MainApp.usersContract.getTEAM_NO());
         }
         String imei = "";
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
