@@ -39,13 +39,13 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
     ActivitySectionB4Binding binding;
     DatabaseHelper db;
     Boolean backPressed = false;
-    @BindViews({R.id.nb412b, R.id.nb412c, R.id.nb412d, R.id.nb412e, R.id.nb412f, R.id.nb41296})
-    List<CheckBox> rd_nb412;
+    @BindViews({R.id.ciw412b, R.id.ciw412c, R.id.ciw412d, R.id.ciw412e, R.id.ciw412f, R.id.ciw41296})
+    List<CheckBox> rd_ciw412;
     CheckBox.OnCheckedChangeListener check = new CompoundButton.OnCheckedChangeListener() {
         @Override
         public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
             if (isoneYes()) {
-                if (!binding.nb412a.isChecked()) {
+                if (!binding.ciw412a.isChecked()) {
                     ClearClass.ClearAllFields(binding.fldGrpciw413, false);
                     binding.fldGrpciw413.setVisibility(View.GONE);
                 }
@@ -67,7 +67,7 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
         db = new DatabaseHelper(this);
         binding.setCallback(this);
 
-        /*for (CheckBox ck : rd_nb412) {
+        /*for (CheckBox ck : rd_ciw412) {
             ck.setOnCheckedChangeListener(check);
         }*/
 
@@ -148,64 +148,64 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
                 binding.ciw406rx.setText(null);
             }
         });
-        binding.nb411.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        binding.ciw411.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 //formValidation();
-                if (checkedId == R.id.nb411b || checkedId == R.id.nb41198) {
+                if (checkedId == R.id.ciw411b || checkedId == R.id.ciw41198) {
 
-                    ClearClass.ClearAllFields(binding.fldGrpnb412, false);
-                    binding.fldGrpnb412.setVisibility(View.GONE);
-                    ClearClass.ClearAllFields(binding.fldGrpnb412check, false);
+                    ClearClass.ClearAllFields(binding.fldGrpciw412, false);
+                    binding.fldGrpciw412.setVisibility(View.GONE);
+                    ClearClass.ClearAllFields(binding.fldGrpciw412check, false);
 
                 } else {
-                    binding.fldGrpnb412.setVisibility(View.VISIBLE);
-                    ClearClass.ClearAllFields(binding.fldGrpnb412, true);
-                    ClearClass.ClearAllFields(binding.fldGrpnb412check, true);
+                    binding.fldGrpciw412.setVisibility(View.VISIBLE);
+                    ClearClass.ClearAllFields(binding.fldGrpciw412, true);
+                    ClearClass.ClearAllFields(binding.fldGrpciw412check, true);
                 }
             }
         });
-        binding.nb41298.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        binding.ciw41298.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 //                formValidation();
                 if (isChecked) {
-                    binding.nb412a.setEnabled(false);
-                    binding.nb412b.setEnabled(false);
-                    binding.nb412c.setEnabled(false);
-                    binding.nb412d.setEnabled(false);
-                    binding.nb412e.setEnabled(false);
-                    binding.nb412f.setEnabled(false);
-                    binding.nb41296.setEnabled(false)
+                    binding.ciw412a.setEnabled(false);
+                    binding.ciw412b.setEnabled(false);
+                    binding.ciw412c.setEnabled(false);
+                    binding.ciw412d.setEnabled(false);
+                    binding.ciw412e.setEnabled(false);
+                    binding.ciw412f.setEnabled(false);
+                    binding.ciw41296.setEnabled(false)
                     ;
 
-                    binding.nb412a.setChecked(false);
-                    binding.nb412b.setChecked(false);
-                    binding.nb412c.setChecked(false);
-                    binding.nb412d.setChecked(false);
-                    binding.nb412e.setChecked(false);
-                    binding.nb412f.setChecked(false);
-                    binding.nb41296.setChecked(false);
+                    binding.ciw412a.setChecked(false);
+                    binding.ciw412b.setChecked(false);
+                    binding.ciw412c.setChecked(false);
+                    binding.ciw412d.setChecked(false);
+                    binding.ciw412e.setChecked(false);
+                    binding.ciw412f.setChecked(false);
+                    binding.ciw41296.setChecked(false);
 
-                    binding.nb41296x.setText(null);
-                    if (!binding.nb412a.isChecked()) {
+                    binding.ciw41296x.setText(null);
+                    if (!binding.ciw412a.isChecked()) {
                         ClearClass.ClearAllFields(binding.fldGrpciw413, false);
                         binding.fldGrpciw413.setVisibility(View.GONE);
                     }
 
                 } else {
-                    binding.nb412a.setEnabled(true);
-                    binding.nb412b.setEnabled(true);
-                    binding.nb412c.setEnabled(true);
-                    binding.nb412d.setEnabled(true);
-                    binding.nb412e.setEnabled(true);
-                    binding.nb412f.setEnabled(true);
-                    binding.nb41296.setEnabled(true);
+                    binding.ciw412a.setEnabled(true);
+                    binding.ciw412b.setEnabled(true);
+                    binding.ciw412c.setEnabled(true);
+                    binding.ciw412d.setEnabled(true);
+                    binding.ciw412e.setEnabled(true);
+                    binding.ciw412f.setEnabled(true);
+                    binding.ciw41296.setEnabled(true);
                 }
             }
         });
 
-        binding.nb412a.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        binding.ciw412a.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
@@ -226,7 +226,7 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
         binding.ciw407.setOnCheckedChangeListener(this);
         binding.ciw408.setOnCheckedChangeListener(this);
         binding.ciw409.setOnCheckedChangeListener(this);
-        binding.nb410.setOnCheckedChangeListener(this);
+        binding.ciw410.setOnCheckedChangeListener(this);
         binding.ciw413.setOnCheckedChangeListener(this);
 
 //        Validation Boolean
@@ -366,50 +366,50 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
                 );
             }
 
-            binding.nb410h.setText(jsonB4.getciw410h());
-            binding.nb410d.setText(jsonB4.getciw410d());
+            binding.ciw410h.setText(jsonB4.getciw410h());
+            binding.ciw410d.setText(jsonB4.getciw410d());
 
             if (!jsonB4.getciw410().equals("0")) {
-                binding.nb410.check(
-                        jsonB4.getciw410().equals("1") ? binding.nb410a.getId() :
-                                jsonB4.getciw410().equals("2") ? binding.nb410b.getId() :
-                                        jsonB4.getciw410().equals("2") ? binding.nb41097.getId() :
-                                                binding.nb41098.getId()
+                binding.ciw410.check(
+                        jsonB4.getciw410().equals("1") ? binding.ciw410a.getId() :
+                                jsonB4.getciw410().equals("2") ? binding.ciw410b.getId() :
+                                        jsonB4.getciw410().equals("2") ? binding.ciw41097.getId() :
+                                                binding.ciw41098.getId()
                 );
             }
 
             if (!jsonB4.getciw411().equals("0")) {
-                binding.nb411.check(
-                        jsonB4.getciw411().equals("1") ? binding.nb411a.getId() :
-                                jsonB4.getciw411().equals("2") ? binding.nb411b.getId() :
-                                        binding.nb41198.getId()
+                binding.ciw411.check(
+                        jsonB4.getciw411().equals("1") ? binding.ciw411a.getId() :
+                                jsonB4.getciw411().equals("2") ? binding.ciw411b.getId() :
+                                        binding.ciw41198.getId()
                 );
             }
 
             if (!jsonB4.getciw412a().equals("0")) {
-                binding.nb412a.setChecked(true);
+                binding.ciw412a.setChecked(true);
             }
             if (!jsonB4.getciw412b().equals("0")) {
-                binding.nb412b.setChecked(true);
+                binding.ciw412b.setChecked(true);
             }
             if (!jsonB4.getciw412c().equals("0")) {
-                binding.nb412c.setChecked(true);
+                binding.ciw412c.setChecked(true);
             }
             if (!jsonB4.getciw412d().equals("0")) {
-                binding.nb412d.setChecked(true);
+                binding.ciw412d.setChecked(true);
             }
             if (!jsonB4.getciw412e().equals("0")) {
-                binding.nb412e.setChecked(true);
+                binding.ciw412e.setChecked(true);
             }
             if (!jsonB4.getciw412f().equals("0")) {
-                binding.nb412f.setChecked(true);
+                binding.ciw412f.setChecked(true);
             }
             if (!jsonB4.getciw41298().equals("0")) {
-                binding.nb41298.setChecked(true);
+                binding.ciw41298.setChecked(true);
             }
             if (!jsonB4.getciw41296().equals("0")) {
-                binding.nb41296.setChecked(true);
-                binding.nb41296x.setText(jsonB4.getciw41296x());
+                binding.ciw41296.setChecked(true);
+                binding.ciw41296x.setText(jsonB4.getciw41296x());
             }
 
             if (!jsonB4.getciw413().equals("0")) {
@@ -557,44 +557,44 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
         if (!ValidatorClass.EmptyRadioButton(this, binding.ciw409, binding.ciw409a, getString(R.string.ciw409))) {
             return false;
         }
-        // nb410
-        if (!ValidatorClass.EmptyRadioButton(this, binding.nb410, binding.nb410a, getString(R.string.nb410))) {
+        // ciw410
+        if (!ValidatorClass.EmptyRadioButton(this, binding.ciw410, binding.ciw410a, getString(R.string.ciw410))) {
             return false;
         }
 
 
-        if (binding.nb410b.isChecked()) {
-            if (!ValidatorClass.EmptyTextBox(this, binding.nb410h, getString(R.string.nb410) + " - " + getString(R.string.nb410h))) {
+        if (binding.ciw410b.isChecked()) {
+            if (!ValidatorClass.EmptyTextBox(this, binding.ciw410h, getString(R.string.ciw410) + " - " + getString(R.string.ciw410h))) {
                 return false;
             }
 
-            if (!ValidatorClass.RangeTextBox(this, binding.nb410h, 1, 24, getString(R.string.nb410), " hours")) {
-                return false;
-            }
-        }
-
-        if (binding.nb410c.isChecked()) {
-            if (!ValidatorClass.EmptyTextBox(this, binding.nb410d, getString(R.string.nb410) + " - " + getString(R.string.nb410d))) {
-                return false;
-            }
-
-            if (!ValidatorClass.RangeTextBox(this, binding.nb410d, 1, 30, getString(R.string.nb410), " days")) {
+            if (!ValidatorClass.RangeTextBox(this, binding.ciw410h, 1, 24, getString(R.string.ciw410), " hours")) {
                 return false;
             }
         }
 
+        if (binding.ciw410c.isChecked()) {
+            if (!ValidatorClass.EmptyTextBox(this, binding.ciw410d, getString(R.string.ciw410) + " - " + getString(R.string.ciw410d))) {
+                return false;
+            }
 
-        if (!ValidatorClass.EmptyRadioButton(this, binding.nb411, binding.nb411a, getString(R.string.nb411))) {
+            if (!ValidatorClass.RangeTextBox(this, binding.ciw410d, 1, 30, getString(R.string.ciw410), " days")) {
+                return false;
+            }
+        }
+
+
+        if (!ValidatorClass.EmptyRadioButton(this, binding.ciw411, binding.ciw411a, getString(R.string.ciw411))) {
             return false;
         }
 
-        if (binding.nb411a.isChecked()) {
-            // nb412
-            if (!ValidatorClass.EmptyCheckBox(this, binding.fldGrpnb412check, binding.nb41296, binding.nb41296x, getString(R.string.nb412))) {
+        if (binding.ciw411a.isChecked()) {
+            // ciw412
+            if (!ValidatorClass.EmptyCheckBox(this, binding.fldGrpciw412check, binding.ciw41296, binding.ciw41296x, getString(R.string.ciw412))) {
                 return false;
             }
             // ciw413
-            if (binding.nb412a.isChecked()) {
+            if (binding.ciw412a.isChecked()) {
                 if (!ValidatorClass.EmptyRadioButton(this, binding.ciw413, binding.ciw413a, getString(R.string.cic403))) {
                     return false;
                 }
@@ -711,36 +711,36 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
                 : "0");
 
 
-//        nb410
-        sB4.put("ciw410h", binding.nb410h.getText().toString());
-        sB4.put("ciw410d", binding.nb410d.getText().toString());
-        sB4.put("ciw410", binding.nb410a.isChecked() ? "1"
-                : binding.nb410b.isChecked() ? "2"
-                : binding.nb410c.isChecked() ? "3"
-                : binding.nb41097.isChecked() ? "97"
-                : binding.nb41098.isChecked() ? "98"
+//        ciw410
+        sB4.put("ciw410h", binding.ciw410h.getText().toString());
+        sB4.put("ciw410d", binding.ciw410d.getText().toString());
+        sB4.put("ciw410", binding.ciw410a.isChecked() ? "1"
+                : binding.ciw410b.isChecked() ? "2"
+                : binding.ciw410c.isChecked() ? "3"
+                : binding.ciw41097.isChecked() ? "97"
+                : binding.ciw41098.isChecked() ? "98"
                 : "0");
 
-//        nb411
-        sB4.put("ciw411", binding.nb411a.isChecked() ? "1"
-                : binding.nb411b.isChecked() ? "2"
-                : binding.nb41198.isChecked() ? "98"
+//        ciw411
+        sB4.put("ciw411", binding.ciw411a.isChecked() ? "1"
+                : binding.ciw411b.isChecked() ? "2"
+                : binding.ciw41198.isChecked() ? "98"
                 : "0");
 
-//      nb412
-        sB4.put("ciw412a", binding.nb412a.isChecked() ? "1" : "0");
-        sB4.put("ciw412b", binding.nb412b.isChecked() ? "2" : "0");
-        sB4.put("ciw412c", binding.nb412c.isChecked() ? "3" : "0");
-        sB4.put("ciw412d", binding.nb412d.isChecked() ? "4" : "0");
-        sB4.put("ciw412e", binding.nb412e.isChecked() ? "5" : "0");
-        sB4.put("ciw412f", binding.nb412f.isChecked() ? "6" : "0");
-        sB4.put("ciw41298", binding.nb41298.isChecked() ? "98" : "0");
-        sB4.put("ciw41296", binding.nb41296.isChecked() ? "96" : "0");
+//      ciw412
+        sB4.put("ciw412a", binding.ciw412a.isChecked() ? "1" : "0");
+        sB4.put("ciw412b", binding.ciw412b.isChecked() ? "2" : "0");
+        sB4.put("ciw412c", binding.ciw412c.isChecked() ? "3" : "0");
+        sB4.put("ciw412d", binding.ciw412d.isChecked() ? "4" : "0");
+        sB4.put("ciw412e", binding.ciw412e.isChecked() ? "5" : "0");
+        sB4.put("ciw412f", binding.ciw412f.isChecked() ? "6" : "0");
+        sB4.put("ciw41298", binding.ciw41298.isChecked() ? "98" : "0");
+        sB4.put("ciw41296", binding.ciw41296.isChecked() ? "96" : "0");
 
-        sB4.put("ciw41296x", binding.nb41296x.getText().toString());
+        sB4.put("ciw41296x", binding.ciw41296x.getText().toString());
 
 
-        //        nb413
+        //        ciw413
         sB4.put("ciw413", binding.ciw413a.isChecked() ? "1"
                 : binding.ciw413b.isChecked() ? "2"
                 : binding.ciw413c.isChecked() ? "3"
@@ -806,7 +806,7 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
 
                         runOnUiThread(new Runnable() {
                             public void run() {
-                                formValidation();
+//                                formValidation();
                             }
                         });
 
@@ -837,14 +837,14 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
 
     @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
-        formValidation();
+//        formValidation();
     }
 
 
     public boolean isoneYes() {
 
         int i = 0;
-        for (CheckBox rg : rd_nb412) {
+        for (CheckBox rg : rd_ciw412) {
             if (rg.isChecked())
                 return true;
         }
