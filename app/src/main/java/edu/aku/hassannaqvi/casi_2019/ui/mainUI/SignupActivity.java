@@ -94,8 +94,13 @@ public class SignupActivity extends AppCompatActivity {
         if (!ValidatorClass.EmptyCheckingContainer(this, bi.signUpSection))
             return false;
 
-        if (bi.password.length() != 8) {
+        if (bi.password.getText().toString().length() != 8) {
             bi.password.setError("Password length requires 8 alphanumeric characters!");
+            return false;
+        }
+
+        if (!bi.password.getText().toString().equals(bi.cPassword.getText().toString())) {
+            bi.password.setError("Password not match!");
             return false;
         }
 
