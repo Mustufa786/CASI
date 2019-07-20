@@ -26,7 +26,7 @@ public class SignupActivity extends AppCompatActivity {
 
     String[] countries = new String[]{
 
-            "- Select Country - ", "Pakistan", "Afghanistan", "Tajikistan"
+            "- Select Country - ", "Afghanistan", "Pakistan", "Tajikistan"
     };
 
     HashMap<String, String> coutryMap = new HashMap<String, String>() {{
@@ -91,7 +91,15 @@ public class SignupActivity extends AppCompatActivity {
     }
 
     private boolean formValidation() {
-        return ValidatorClass.EmptyCheckingContainer(this, bi.signUpSection);
+        if (!ValidatorClass.EmptyCheckingContainer(this, bi.signUpSection))
+            return false;
+
+        if (bi.password.length() != 8) {
+            bi.password.setError("Password length requires 8 alphanumeric characters!");
+            return false;
+        }
+
+        return true;
     }
 
     private void SaveDraft() throws JSONException {
