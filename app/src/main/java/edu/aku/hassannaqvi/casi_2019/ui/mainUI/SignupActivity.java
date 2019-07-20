@@ -3,6 +3,7 @@ package edu.aku.hassannaqvi.casi_2019.ui.mainUI;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
@@ -11,6 +12,8 @@ import android.widget.Toast;
 
 import org.json.JSONException;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 
 import edu.aku.hassannaqvi.casi_2019.R;
@@ -94,7 +97,7 @@ public class SignupActivity extends AppCompatActivity {
         if (!ValidatorClass.EmptyCheckingContainer(this, bi.signUpSection))
             return false;
 
-        if (bi.password.getText().toString().length() != 8) {
+        if (bi.password.getText().toString().length() < 8) {
             bi.password.setError("Password length requires 8 alphanumeric characters!");
             return false;
         }
@@ -115,6 +118,9 @@ public class SignupActivity extends AppCompatActivity {
         MainApp.signContract.setDesignation(bi.designation.getText().toString());
         MainApp.signContract.setPassword(bi.password.getText().toString());
         MainApp.signContract.setCountryId(countryId);
+        MainApp.signContract.setDeviceID(Settings.Secure.getString(getApplicationContext().getContentResolver(),
+                Settings.Secure.ANDROID_ID));
+        MainApp.signContract.setFormDate(new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()));
 
 
     }

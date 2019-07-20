@@ -99,6 +99,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             + SignUpTable.DESIGNATION + " TEXT,"
             + SignUpTable.PASSWORD + " TEXT,"
             + SignUpTable.COUNTRY_ID + " TEXT, "
+            + SignUpTable.COLUMN_DEVICEID + " TEXT, "
+            + SignUpTable.COLUMN_FORMDATE + " TEXT, "
             + SignUpTable.COLUMN_SYNCED + " TEXT, "
             + SignUpTable.COLUMN_SYNCED_DATE + " TEXT " +
             ");";
@@ -805,6 +807,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 SignUpTable.USERNAME,
                 SignUpTable.PASSWORD,
                 SignUpTable.COUNTRY_ID,
+                SignUpTable.COLUMN_DEVICEID,
+                SignUpTable.COLUMN_FORMDATE,
         };
 
         String whereClause = SignUpTable.COLUMN_SYNCED + " is null OR " + SignUpTable.COLUMN_SYNCED + " = '' ";
@@ -1690,6 +1694,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(SignUpTable.USERNAME, fc.getUserName());
         values.put(SignUpTable.PASSWORD, fc.getPassword());
         values.put(SignUpTable.COUNTRY_ID, fc.getCountryId());
+        values.put(SignUpTable.COLUMN_DEVICEID, fc.getDeviceID());
+        values.put(SignUpTable.COLUMN_FORMDATE, fc.getFormDate());
 
         // Insert the new row, returning the primary key value of the new row
         long newRowId;

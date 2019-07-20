@@ -257,7 +257,6 @@ public class SectionA7Activity extends AppCompatActivity {
     private boolean UpdateDB() {
 
         int updcount = db.updateSA7();
-
         if (updcount == 1) {
             return true;
         } else {
