@@ -98,12 +98,12 @@ public class SignupActivity extends AppCompatActivity {
             return false;
 
         if (bi.userName.getText().toString().length() < 8) {
-            bi.password.setError("Username length requires max 8 characters!");
+            bi.userName.setError("Username length requires min 8 characters!");
             return false;
         }
 
         if (bi.password.getText().toString().length() < 8) {
-            bi.password.setError("Password length requires max 8 alphanumeric characters!");
+            bi.password.setError("Password length requires min 8 alphanumeric characters!");
             return false;
         }
 
