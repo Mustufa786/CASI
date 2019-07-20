@@ -24,16 +24,6 @@
             android:layoutDirection="rtl"
             android:orientation="vertical">
 
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="2dp"
-                android:background="@color/colorPrimaryDark"
-                android:gravity="center"
-                android:text="@string/na1heading"
-                android:textSize="40sp" />
             <!--cih102-->
             <TextView
                 android:layout_width="match_parent"
@@ -58,7 +48,7 @@
                     android:layout_weight="60"
                     android:hint="@string/cih102a"
                     android:inputType="number"
-                    android:maxLength="4" />
+                    android:maxLength="6" />
 
                 <Button
                     android:id="@+id/checkEnmBtn"
