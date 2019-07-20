@@ -168,6 +168,11 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
         } else {
             setupViews();
         }
+
+        if (!backPressed) {
+            MainApp.mc = new MWRAContract();
+        }
+
     }
 
     public void setupSkips() {
@@ -1152,7 +1157,7 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
         JSONObject sB1 = new JSONObject();
 
         if (!backPressed) {
-            MainApp.mc = new MWRAContract();
+//            MainApp.mc = new MWRAContract();
             MainApp.mc.setDevicetagID(MainApp.fc.getDevicetagID());
             MainApp.mc.setFormDate(MainApp.fc.getFormDate());
             MainApp.mc.setUser(MainApp.fc.getUser());

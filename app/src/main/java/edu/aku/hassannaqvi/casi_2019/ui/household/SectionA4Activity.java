@@ -103,9 +103,11 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
 //                formValidation();
                 if (checkedId == R.id.cih305b) {
                     ClearClass.ClearAllFields(binding.fldGrpcih305, false);
+                    binding.fldGrpcih305.setVisibility(View.GONE);
                 } else {
                     ClearClass.ClearAllFields(binding.fldGrpcih305, true);
                     binding.cih30696x.setEnabled(false);
+                    binding.fldGrpcih305.setVisibility(View.VISIBLE);
                 }
             }
         });

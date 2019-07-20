@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
@@ -39,7 +40,10 @@ public class SectionA402Activity extends AppCompatActivity implements RadioGroup
         this.setTitle(getResources().getString(R.string.cih3heading));
 
         setListeners();
-        autoPopulate();
+
+        if (SectionA1Activity.editFormFlag) {
+            autoPopulate();
+        }
     }
 
     private void autoPopulate() {
@@ -135,11 +139,12 @@ public class SectionA402Activity extends AppCompatActivity implements RadioGroup
 //                formValidation();
                 if (i == R.id.cih321b) {
                     ClearClass.ClearAllFields(binding.fldGrpcih322, false);
-
+                    binding.fldGrpcih322.setVisibility(View.GONE);
                 } else {
                     ClearClass.ClearAllFields(binding.fldGrpcih322, true);
                     binding.cih322acr.setEnabled(false);
                     binding.cih322can.setEnabled(false);
+                    binding.fldGrpcih322.setVisibility(View.VISIBLE);
                 }
             }
         });
@@ -152,8 +157,10 @@ public class SectionA402Activity extends AppCompatActivity implements RadioGroup
 //                formValidation();
                 if (i == R.id.cih323b) {
                     ClearClass.ClearAllFields(binding.fldGrpcih324, false);
+                    binding.fldGrpcih324.setVisibility(View.GONE);
                 } else {
                     ClearClass.ClearAllFields(binding.fldGrpcih324, true);
+                    binding.fldGrpcih324.setVisibility(View.VISIBLE);
                 }
             }
         });
