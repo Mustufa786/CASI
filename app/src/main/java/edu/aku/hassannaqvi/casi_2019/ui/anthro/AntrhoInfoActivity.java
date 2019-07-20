@@ -61,6 +61,8 @@ public class AntrhoInfoActivity extends Activity {
         db = new DatabaseHelper(this);
         binding.setCallback(this);
 
+        this.setTitle(getString(R.string.na1heading));
+
         SetupViewFunctionality();
 
     }

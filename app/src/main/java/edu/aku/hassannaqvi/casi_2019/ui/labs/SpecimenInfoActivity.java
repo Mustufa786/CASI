@@ -85,6 +85,7 @@ public class SpecimenInfoActivity extends AppCompatActivity {
         /*SectionE1Activity.members.clear();
         SectionE1Activity.membersMap.clear();*/
 
+        this.setTitle(getString(R.string.na1heading));
 
     }
 
