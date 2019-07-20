@@ -19,14 +19,14 @@ import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 
+import edu.aku.hassannaqvi.casi_2019.contracts.AnthrosMembersContract;
+import edu.aku.hassannaqvi.casi_2019.contracts.AnthrosMembersContract.AnthrosMembers;
 import edu.aku.hassannaqvi.casi_2019.contracts.BLRandomContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.BLRandomContract.singleRandomHH;
 import edu.aku.hassannaqvi.casi_2019.contracts.ChildContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.ChildContract.ChildTable;
 import edu.aku.hassannaqvi.casi_2019.contracts.DeceasedContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.DeviceContract;
-import edu.aku.hassannaqvi.casi_2019.contracts.EligibleMembersContract;
-import edu.aku.hassannaqvi.casi_2019.contracts.EligibleMembersContract.eligibleMembers;
 import edu.aku.hassannaqvi.casi_2019.contracts.EnumBlockContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.EnumBlockContract.EnumBlockTable;
 import edu.aku.hassannaqvi.casi_2019.contracts.FamilyMembersContract;
@@ -324,30 +324,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             VersionAppTable.COLUMN_PATH_NAME + " TEXT " +
             ");";
 
-    final String SQL_CREATE_ELIGIBLE_MEMBERS = "CREATE TABLE " + eligibleMembers.TABLE_NAME + " (" +
-            eligibleMembers.COLUMN__ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
-            eligibleMembers.COLUMN_UID + " TEXT," +
-            eligibleMembers.COLUMN_UUID + " TEXT," +
-            eligibleMembers.COLUMN_FM_UID + " TEXT," +
-            eligibleMembers.COLUMN_PROJECTNAME + " TEXT," +
-            eligibleMembers.COLUMN_FORMDATE + " TEXT," +
-            eligibleMembers.COLUMN_DEVICEID + " TEXT," +
-            eligibleMembers.COLUMN_DEVICETAGID + " TEXT," +
-            eligibleMembers.COLUMN_USER + " TEXT," +
-            eligibleMembers.COLUMN_APPVERSION + " TEXT," +
-            eligibleMembers.COLUMN_ENM_NO + " TEXT," +
-            eligibleMembers.COLUMN_HH_NO + " TEXT," +
-            eligibleMembers.COLUMN_DOB + " TEXT," +
-            eligibleMembers.COLUMN_AGE + " TEXT," +
-            eligibleMembers.COLUMN_na204 + " TEXT," +
-            eligibleMembers.COLUMN_SA3 + " TEXT," +
-            eligibleMembers.COLUMN_ISTATUS + " TEXT," +
-            eligibleMembers.COLUMN_ISTATUS88x + " TEXT," +
-            eligibleMembers.COLUMN_END_TIME + " TEXT," +
-            eligibleMembers.COLUMN_SYNCED + " TEXT," +
-            eligibleMembers.COLUMN_SYNCEDDATE + " TEXT" +
-
-            ");";
+    private static final String SQL_DELETE_ELIGIBLE_MEMBERS = "DROP TABLE IF EXISTS " + AnthrosMembersContract.AnthrosMembers.TABLE_NAME;
 
 
     final String SQL_CREATE_SPECIMEN_MEMBERS = "CREATE TABLE " + SpecimenContract.SpecimenTable.TABLE_NAME + " (" +
@@ -440,7 +417,30 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String SQL_DELETE_SINGLE = "DROP TABLE IF EXISTS " + singleSerial.TABLE_NAME;
     private static final String SQL_DELETE_TALUKAS = "DROP TABLE IF EXISTS " + EnumBlockTable.TABLE_NAME;
     private static final String SQL_DELETE_UCS = "DROP TABLE IF EXISTS " + UCsTable.TABLE_NAME;
-    private static final String SQL_DELETE_ELIGIBLE_MEMBERS = "DROP TABLE IF EXISTS " + eligibleMembers.TABLE_NAME;
+    final String SQL_CREATE_ELIGIBLE_MEMBERS = "CREATE TABLE " + AnthrosMembersContract.AnthrosMembers.TABLE_NAME + " (" +
+            AnthrosMembersContract.AnthrosMembers.COLUMN__ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
+            AnthrosMembersContract.AnthrosMembers.COLUMN_UID + " TEXT," +
+            AnthrosMembersContract.AnthrosMembers.COLUMN_UUID + " TEXT," +
+            AnthrosMembersContract.AnthrosMembers.COLUMN_FM_UID + " TEXT," +
+            AnthrosMembersContract.AnthrosMembers.COLUMN_PROJECTNAME + " TEXT," +
+            AnthrosMembersContract.AnthrosMembers.COLUMN_FORMDATE + " TEXT," +
+            AnthrosMembersContract.AnthrosMembers.COLUMN_DEVICEID + " TEXT," +
+            AnthrosMembersContract.AnthrosMembers.COLUMN_DEVICETAGID + " TEXT," +
+            AnthrosMembersContract.AnthrosMembers.COLUMN_USER + " TEXT," +
+            AnthrosMembersContract.AnthrosMembers.COLUMN_APPVERSION + " TEXT," +
+            AnthrosMembersContract.AnthrosMembers.COLUMN_ENM_NO + " TEXT," +
+            AnthrosMembersContract.AnthrosMembers.COLUMN_HH_NO + " TEXT," +
+            AnthrosMembersContract.AnthrosMembers.COLUMN_DOB + " TEXT," +
+            AnthrosMembersContract.AnthrosMembers.COLUMN_AGE + " TEXT," +
+            AnthrosMembersContract.AnthrosMembers.COLUMN_na204 + " TEXT," +
+            AnthrosMembersContract.AnthrosMembers.COLUMN_SA3 + " TEXT," +
+            AnthrosMembersContract.AnthrosMembers.COLUMN_ISTATUS + " TEXT," +
+            AnthrosMembersContract.AnthrosMembers.COLUMN_ISTATUS88x + " TEXT," +
+            AnthrosMembersContract.AnthrosMembers.COLUMN_END_TIME + " TEXT," +
+            AnthrosMembersContract.AnthrosMembers.COLUMN_SYNCED + " TEXT," +
+            AnthrosMembersContract.AnthrosMembers.COLUMN_SYNCEDDATE + " TEXT" +
+
+            ");";
     private static final String SQL_DELETE_MWRAS = "DROP TABLE IF EXISTS " + MWRATable.TABLE_NAME;
     private static final String SQL_DELETE_OUTCOME = "DROP TABLE IF EXISTS " + outcomeTable.TABLE_NAME;
     private static final String SQL_DELETE_FAMILYMEMBERS = "DROP TABLE IF EXISTS " + familyMembers.TABLE_NAME;
@@ -967,21 +967,21 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor c = null;
         String[] columns = {
-                eligibleMembers.COLUMN__ID,
-                eligibleMembers.COLUMN_FM_UID,
+                AnthrosMembersContract.AnthrosMembers.COLUMN__ID,
+                AnthrosMembersContract.AnthrosMembers.COLUMN_FM_UID,
         };
-        String whereClause = eligibleMembers.COLUMN_FM_UID + " =? ";
+        String whereClause = AnthrosMembersContract.AnthrosMembers.COLUMN_FM_UID + " =? ";
         String[] whereArgs = {uid};
         String groupBy = null;
         String having = null;
 
         String orderBy =
-                eligibleMembers.COLUMN_FM_UID + " DESC";
+                AnthrosMembers.COLUMN_FM_UID + " DESC";
 
         Boolean allFC = false;
         try {
             c = db.query(
-                    eligibleMembers.TABLE_NAME,  // The table to query
+                    AnthrosMembersContract.AnthrosMembers.TABLE_NAME,  // The table to query
                     columns,                   // The columns to return
                     whereClause,               // The columns for the WHERE clause
                     whereArgs,                 // The values for the WHERE clause
@@ -2096,41 +2096,41 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
 
-    public Long addEligibleMember(EligibleMembersContract ec) {
+    public Long addEligibleMember(AnthrosMembersContract ec) {
 
         // Gets the data repository in write mode
         SQLiteDatabase db = this.getWritableDatabase();
 
 // Create a new map of values, where column names are the keys
         ContentValues values = new ContentValues();
-        values.put(eligibleMembers.COLUMN_PROJECTNAME, ec.getProjectName());
-        //values.put(eligibleMembers.COLUMN__ID, ec.get_ID());
-        values.put(eligibleMembers.COLUMN_UID, ec.get_UID());
-        values.put(eligibleMembers.COLUMN_UUID, ec.get_UUID());
-        values.put(eligibleMembers.COLUMN_FM_UID, ec.getFmuid());
-        values.put(eligibleMembers.COLUMN_FORMDATE, ec.getFormDate());
-        values.put(eligibleMembers.COLUMN_DEVICEID, ec.getDeviceId());
-        values.put(eligibleMembers.COLUMN_DEVICETAGID, ec.getDevicetagID());
-        values.put(eligibleMembers.COLUMN_USER, ec.getUser());
-        values.put(eligibleMembers.COLUMN_APPVERSION, ec.getApp_ver());
-        values.put(eligibleMembers.COLUMN_ENM_NO, ec.getEnm_no());
-        values.put(eligibleMembers.COLUMN_HH_NO, ec.getHh_no());
-        values.put(eligibleMembers.COLUMN_DOB, ec.getDob());
-        values.put(eligibleMembers.COLUMN_AGE, ec.getAge());
-        values.put(eligibleMembers.COLUMN_na204, ec.getna204());
-        values.put(eligibleMembers.COLUMN_SA3, ec.getsA3());
-        values.put(eligibleMembers.COLUMN_ISTATUS, ec.getIstatus());
-        values.put(eligibleMembers.COLUMN_ISTATUS88x, ec.getIstatus88x());
-        values.put(eligibleMembers.COLUMN_SYNCED, ec.getSynced());
-        values.put(eligibleMembers.COLUMN_SYNCEDDATE, ec.getSyncedDate());
-        values.put(eligibleMembers.COLUMN_END_TIME, ec.getEnd_time());
+        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_PROJECTNAME, ec.getProjectName());
+        //values.put(AnthrosMembers.COLUMN__ID, ec.get_ID());
+        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_UID, ec.get_UID());
+        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_UUID, ec.get_UUID());
+        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_FM_UID, ec.getFmuid());
+        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_FORMDATE, ec.getFormDate());
+        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_DEVICEID, ec.getDeviceId());
+        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_DEVICETAGID, ec.getDevicetagID());
+        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_USER, ec.getUser());
+        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_APPVERSION, ec.getApp_ver());
+        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_ENM_NO, ec.getEnm_no());
+        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_HH_NO, ec.getHh_no());
+        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_DOB, ec.getDob());
+        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_AGE, ec.getAge());
+        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_na204, ec.getna204());
+        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_SA3, ec.getsA3());
+        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_ISTATUS, ec.getIstatus());
+        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_ISTATUS88x, ec.getIstatus88x());
+        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_SYNCED, ec.getSynced());
+        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_SYNCEDDATE, ec.getSyncedDate());
+        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_END_TIME, ec.getEnd_time());
 
 
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
         newRowId = db.insert(
-                eligibleMembers.TABLE_NAME,
-                eligibleMembers.COLUMN_NAME_NULLABLE,
+                AnthrosMembersContract.AnthrosMembers.TABLE_NAME,
+                AnthrosMembersContract.AnthrosMembers.COLUMN_NAME_NULLABLE,
                 values);
         return newRowId;
     }
@@ -2562,20 +2562,20 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 whereArgs);
     }
 
-    public void updateSyncedEligibles(String id) {
+    public void updateSyncedAnthros(String id) {
         SQLiteDatabase db = this.getReadableDatabase();
 
 // New value for one column
         ContentValues values = new ContentValues();
-        values.put(eligibleMembers.COLUMN_SYNCED, true);
-        values.put(eligibleMembers.COLUMN_SYNCEDDATE, new Date().toString());
+        values.put(AnthrosMembers.COLUMN_SYNCED, true);
+        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_SYNCEDDATE, new Date().toString());
 
 // Which row to update, based on the title
-        String where = eligibleMembers.COLUMN__ID + " = ?";
+        String where = AnthrosMembersContract.AnthrosMembers.COLUMN__ID + " = ?";
         String[] whereArgs = {id};
 
         int count = db.update(
-                eligibleMembers.TABLE_NAME,
+                AnthrosMembers.TABLE_NAME,
                 values,
                 where,
                 whereArgs);
@@ -2882,13 +2882,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 // New value for one column
         ContentValues values = new ContentValues();
-        values.put(eligibleMembers.COLUMN_UID, MainApp.emc.get_UID());
+        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_UID, MainApp.emc.get_UID());
 
 // Which row to update, based on the ID
-        String selection = eligibleMembers.COLUMN__ID + " = ?";
+        String selection = AnthrosMembersContract.AnthrosMembers.COLUMN__ID + " = ?";
         String[] selectionArgs = {String.valueOf(MainApp.emc.get_ID())};
 
-        int count = db.update(eligibleMembers.TABLE_NAME,
+        int count = db.update(AnthrosMembersContract.AnthrosMembers.TABLE_NAME,
                 values,
                 selection,
                 selectionArgs);
@@ -3752,44 +3752,44 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return cursorCount > 0;
     }
 
-    public Collection<EligibleMembersContract> getUnsyncedEligbleMembers() {
+    public Collection<AnthrosMembersContract> getUnsyncedEligbleMembers() {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor c = null;
         String[] columns = {
-                eligibleMembers.COLUMN__ID,
-                eligibleMembers.COLUMN_UID,
-                eligibleMembers.COLUMN_UUID,
-                eligibleMembers.COLUMN_FM_UID,
-                eligibleMembers.COLUMN_FORMDATE,
-                eligibleMembers.COLUMN_DEVICEID,
-                eligibleMembers.COLUMN_DEVICETAGID,
-                eligibleMembers.COLUMN_USER,
-                eligibleMembers.COLUMN_APPVERSION,
-                eligibleMembers.COLUMN_ENM_NO,
-                eligibleMembers.COLUMN_HH_NO,
-                eligibleMembers.COLUMN_DOB,
-                eligibleMembers.COLUMN_AGE,
-                eligibleMembers.COLUMN_na204,
-                eligibleMembers.COLUMN_SA3,
-                eligibleMembers.COLUMN_ISTATUS,
-                eligibleMembers.COLUMN_ISTATUS88x,
-                eligibleMembers.COLUMN_SYNCED,
-                eligibleMembers.COLUMN_SYNCEDDATE,
-                eligibleMembers.COLUMN_END_TIME,
+                AnthrosMembersContract.AnthrosMembers.COLUMN__ID,
+                AnthrosMembersContract.AnthrosMembers.COLUMN_UID,
+                AnthrosMembersContract.AnthrosMembers.COLUMN_UUID,
+                AnthrosMembersContract.AnthrosMembers.COLUMN_FM_UID,
+                AnthrosMembersContract.AnthrosMembers.COLUMN_FORMDATE,
+                AnthrosMembersContract.AnthrosMembers.COLUMN_DEVICEID,
+                AnthrosMembersContract.AnthrosMembers.COLUMN_DEVICETAGID,
+                AnthrosMembersContract.AnthrosMembers.COLUMN_USER,
+                AnthrosMembersContract.AnthrosMembers.COLUMN_APPVERSION,
+                AnthrosMembersContract.AnthrosMembers.COLUMN_ENM_NO,
+                AnthrosMembersContract.AnthrosMembers.COLUMN_HH_NO,
+                AnthrosMembersContract.AnthrosMembers.COLUMN_DOB,
+                AnthrosMembersContract.AnthrosMembers.COLUMN_AGE,
+                AnthrosMembersContract.AnthrosMembers.COLUMN_na204,
+                AnthrosMembersContract.AnthrosMembers.COLUMN_SA3,
+                AnthrosMembersContract.AnthrosMembers.COLUMN_ISTATUS,
+                AnthrosMembersContract.AnthrosMembers.COLUMN_ISTATUS88x,
+                AnthrosMembersContract.AnthrosMembers.COLUMN_SYNCED,
+                AnthrosMembersContract.AnthrosMembers.COLUMN_SYNCEDDATE,
+                AnthrosMembersContract.AnthrosMembers.COLUMN_END_TIME,
 
         };
-        String whereClause = eligibleMembers.COLUMN_SYNCED + " is null OR " + eligibleMembers.COLUMN_SYNCED + " = '' ";
+        String whereClause = AnthrosMembersContract.AnthrosMembers.COLUMN_SYNCED + " is null OR " + AnthrosMembersContract.AnthrosMembers.COLUMN_SYNCED + " = '' ";
         String[] whereArgs = null;
         String groupBy = null;
         String having = null;
 
         String orderBy =
-                eligibleMembers.COLUMN__ID + " ASC";
+                AnthrosMembersContract.AnthrosMembers.COLUMN__ID + " ASC";
 
-        Collection<EligibleMembersContract> allFC = new ArrayList<EligibleMembersContract>();
+        Collection<AnthrosMembersContract> allFC = new ArrayList<AnthrosMembersContract>();
         try {
             c = db.query(
-                    eligibleMembers.TABLE_NAME,  // The table to query
+                    AnthrosMembersContract.AnthrosMembers.TABLE_NAME,  // The table to query
                     columns,                   // The columns to return
                     whereClause,               // The columns for the WHERE clause
                     whereArgs,                 // The values for the WHERE clause
@@ -3798,7 +3798,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                     orderBy                    // The sort order
             );
             while (c.moveToNext()) {
-                EligibleMembersContract fc = new EligibleMembersContract();
+                AnthrosMembersContract fc = new AnthrosMembersContract();
                 allFC.add(fc.Hydrate(c));
             }
         } finally {
@@ -5616,15 +5616,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 // New value for one column
         ContentValues values = new ContentValues();
-        values.put(eligibleMembers.COLUMN_ISTATUS, MainApp.emc.getIstatus());
-        //values.put(eligibleMembers.COLUMN_ISTATUS88x, MainApp.emc.getIstatus88x());
-        values.put(eligibleMembers.COLUMN_END_TIME, MainApp.emc.getEnd_time());
+        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_ISTATUS, MainApp.emc.getIstatus());
+        //values.put(AnthrosMembers.COLUMN_ISTATUS88x, MainApp.emc.getIstatus88x());
+        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_END_TIME, MainApp.emc.getEnd_time());
 
 // Which row to update, based on the ID
-        String selection = eligibleMembers.COLUMN__ID + " =? ";
+        String selection = AnthrosMembersContract.AnthrosMembers.COLUMN__ID + " =? ";
         String[] selectionArgs = {String.valueOf(MainApp.emc.get_ID())};
 
-        int count = db.update(eligibleMembers.TABLE_NAME,
+        int count = db.update(AnthrosMembersContract.AnthrosMembers.TABLE_NAME,
                 values,
                 selection,
                 selectionArgs);

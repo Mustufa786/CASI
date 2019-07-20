@@ -28,10 +28,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import edu.aku.hassannaqvi.casi_2019.contracts.AnthrosMembersContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.BLRandomContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.ChildContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.DeceasedContract;
-import edu.aku.hassannaqvi.casi_2019.contracts.EligibleMembersContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.FamilyMembersContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.FormsContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.MWRAContract;
@@ -118,7 +118,7 @@ public class MainApp extends Application {
     public static MicroContract msc;
 
     public static DeceasedContract dc;
-    public static EligibleMembersContract emc;
+    public static AnthrosMembersContract emc;
     public static List<FamilyMembersContract> members_f_m;
     public static List<FamilyMembersContract> respList;
     public static List<FamilyMembersContract> all_members;

@@ -153,14 +153,17 @@ public class SyncDevice extends AsyncTask<Void, Integer, String> {
                     }
                 }
             } else {
-                delegate.processFinish(true);
+                if (flag) {
+                    delegate.processFinish(true);
+                }
             }
-//            Toast.makeText(context,  " synced: " + sSynced + "\r\n\r\n Errors: " + sSyncedError, Toast.LENGTH_SHORT).show();
 
         } catch (JSONException e) {
             e.printStackTrace();
             Toast.makeText(context, "Failed to get TAG ID " + result, Toast.LENGTH_SHORT).show();
-            delegate.processFinish(true);
+            if (flag) {
+                delegate.processFinish(true);
+            }
         }
     }
 

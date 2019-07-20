@@ -45,6 +45,7 @@ public class SyncAllData extends AsyncTask<Void, Integer, String> {
     private Class contractClass;
     private Collection dbData;
     private TextView syncStatus;
+    private final static String NO_RECORDS = "No new records to sync";
 
 
     public SyncAllData(Context context, String syncClass, String updateSyncClass, Class contractClass, String url, Collection dbData, View syncStatus) {
@@ -195,7 +196,7 @@ public class SyncAllData extends AsyncTask<Void, Integer, String> {
           /*  uploadlist.get(position).setstatus("Completed");
             uploadlist.get(position).setstatusID(3);
             adapter.updatesyncList(uploadlist);*/
-            return "No new records to sync";
+            return NO_RECORDS;
         }
         /*uploadlist.get(position).setstatus("Completed");
         uploadlist.get(position).setstatusID(3);
@@ -265,12 +266,13 @@ public class SyncAllData extends AsyncTask<Void, Integer, String> {
 
         } catch (JSONException e) {
             e.printStackTrace();
-            Toast.makeText(mContext, "Failed Sync " + result, Toast.LENGTH_SHORT).show();
+            if (!result.equals(NO_RECORDS))
+                Toast.makeText(mContext, "Failed Sync " + result, Toast.LENGTH_SHORT).show();
 
             pd.setMessage(result);
             pd.setTitle(syncClass + " Sync Failed");
 //            pd.show();
-            if (result.equals("No new records to sync")) {
+            if (result.equals(NO_RECORDS)) {
                 uploadlist.get(position).setmessage(result);
                 uploadlist.get(position).setstatus("Not processed");
                 uploadlist.get(position).setstatusID(4);

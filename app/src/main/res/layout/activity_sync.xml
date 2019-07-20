@@ -64,7 +64,6 @@
                 android:layout_marginRight="2dp"
                 android:background="@color/colorPrimary"
                 android:elevation="2dp"
-                android:enabled="false"
                 android:padding="16dp"
                 android:text="@string/btnUpload"
                 android:textColor="@color/white"

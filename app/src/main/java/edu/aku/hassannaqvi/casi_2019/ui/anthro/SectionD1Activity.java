@@ -30,7 +30,7 @@ import java.util.TimerTask;
 
 import edu.aku.hassannaqvi.casi_2019.JSONModels.JSONModelClass;
 import edu.aku.hassannaqvi.casi_2019.R;
-import edu.aku.hassannaqvi.casi_2019.contracts.EligibleMembersContract;
+import edu.aku.hassannaqvi.casi_2019.contracts.AnthrosMembersContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.FamilyMembersContract;
 import edu.aku.hassannaqvi.casi_2019.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2019.core.MainApp;
@@ -720,7 +720,7 @@ public class SectionD1Activity extends Menu2Activity implements TextWatcher, Rad
     private void SaveDraft() throws JSONException {
 
 
-        MainApp.emc = new EligibleMembersContract();
+        MainApp.emc = new AnthrosMembersContract();
 
         MainApp.emc.setDevicetagID(MainApp.getTagName(this));
         MainApp.emc.setFormDate(slecMem.getFormDate());
