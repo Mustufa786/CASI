@@ -98,8 +98,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             + SignUpTable.USERNAME + " TEXT,"
             + SignUpTable.DESIGNATION + " TEXT,"
             + SignUpTable.PASSWORD + " TEXT,"
-            + SignUpTable.COUNTRY_ID +
-            " TEXT );";
+            + SignUpTable.COUNTRY_ID + " TEXT, "
+            + SignUpTable.COLUMN_SYNCED + " TEXT, "
+            + SignUpTable.COLUMN_SYNCED_DATE + " TEXT " +
+            ");";
 
     private static final String SQL_CREATE_FORMS = "CREATE TABLE "
             + FormsTable.TABLE_NAME + "("
@@ -793,34 +795,48 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return null;
     }
 
+    public Collection<SignupContract> getUnsyncedSignups() {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor c = null;
+        String[] columns = {
+                SignUpTable._ID,
+                SignUpTable.FULLNAME,
+                SignUpTable.DESIGNATION,
+                SignUpTable.USERNAME,
+                SignUpTable.PASSWORD,
+                SignUpTable.COUNTRY_ID,
+        };
 
-    /*public Collection<FamilyMembersContract> getAllMembersByHH(String cluster, String hh) {
-        Collection<FamilyMembersContract> fmList = new ArrayList<>();
-        // Select All Query
-        String selectQuery = "SELECT fm.* FROM " + familyMembers.TABLE_NAME + " fm Left Join " + eligibleMembers.TABLE_NAME + " e on "
-                + "fm." + familyMembers.COLUMN_UUID + " =  e." + eligibleMembers.COLUMN_UUID
-                + " and fm." + familyMembers.COLUMN_UID + " =  e." + eligibleMembers.COLUMN_UUID
-                + " where fm." + familyMembers.COLUMN_CLUSTER_NO + " = '" + cluster + "'"
-                + " and fm." + familyMembers.COLUMN_HH_NO + " = '" + hh + "'"
-                + " and e." + eligibleMembers.COLUMN_ISTATUS + " != '1'"
-                + " or e." + eligibleMembers.COLUMN_ISTATUS + " IS NULL"
+        String whereClause = SignUpTable.COLUMN_SYNCED + " is null OR " + SignUpTable.COLUMN_SYNCED + " = '' ";
+        String[] whereArgs = null;
+        String groupBy = null;
+        String having = null;
+        String orderBy = null;
 
-                ;
-
-        SQLiteDatabase db = this.getWritableDatabase();
-        Cursor c = db.rawQuery(selectQuery, null);
-
-        // looping through all rows and adding to list
-        if (c.moveToFirst()) {
-            do {
-                FamilyMembersContract fc = new FamilyMembersContract();
-                fmList.add(fc.Hydrate(c));
-            } while (c.moveToNext());
+        Collection<SignupContract> allLC = new ArrayList<>();
+        try {
+            c = db.query(
+                    SignUpTable.TABLE_NAME,  // The table to query
+                    columns,                   // The columns to return
+                    whereClause,               // The columns for the WHERE clause
+                    whereArgs,                 // The values for the WHERE clause
+                    groupBy,                   // don't group the rows
+                    having,                    // don't filter by row groups
+                    orderBy                    // The sort order
+            );
+            while (c.moveToNext()) {
+                allLC.add(new SignupContract().Hydrate(c));
             }
-
-        // return contact list
-        return fmList;
-        }*/
+        } finally {
+            if (c != null) {
+                c.close();
+            }
+            if (db != null) {
+                db.close();
+            }
+        }
+        return allLC;
+    }
 
     public ArrayList<FamilyMembersContract> getAllHHforAnthro(String cluster, String hh) {
         SQLiteDatabase db = this.getReadableDatabase();
@@ -2599,6 +2615,25 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         int count = db.update(
                 singleSerial.TABLE_NAME,
+                values,
+                where,
+                whereArgs);
+    }
+
+    public void updateSyncedSignup(String id) {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+// New value for one column
+        ContentValues values = new ContentValues();
+        values.put(SignUpTable.COLUMN_SYNCED, true);
+        values.put(SignUpTable.COLUMN_SYNCED_DATE, new Date().toString());
+
+// Which row to update, based on the title
+        String where = SignUpTable._ID + " = ?";
+        String[] whereArgs = {id};
+
+        int count = db.update(
+                SignUpTable.TABLE_NAME,
                 values,
                 where,
                 whereArgs);

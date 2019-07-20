@@ -43,7 +43,10 @@ public class SectionA7Activity extends AppCompatActivity {
         this.setTitle(R.string.sectionA7);
 
         setUIContent();
-        autoPopulate();
+
+        if (SectionA1Activity.editFormFlag) {
+            autoPopulate();
+        }
     }
 
     private void autoPopulate() {

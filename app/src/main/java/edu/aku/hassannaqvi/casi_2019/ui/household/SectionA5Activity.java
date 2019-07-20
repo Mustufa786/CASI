@@ -230,9 +230,9 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
 //        Validation Boolean
         MainApp.validateFlag = false;
 
-//        if (SectionA1Activity.editFormFlag) {
-//            AutoPopulate();
-//        }
+        if (SectionA1Activity.editFormFlag) {
+            AutoPopulate();
+        }
     }
 
     private void AutoPopulate() {

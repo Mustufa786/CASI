@@ -1593,9 +1593,7 @@
 ہو؟
  </string>
     <string name="cih614">  ۔H607a- کتنی مرتبہ ایسا ہوا؟ </string>
-    <string name="cih615">  ۔H608 -پچھلے 4 ہفتوں کے دوران کیا کبھی ایسا وقت آیا جب آپ یا گھر کے دوسرے افراد نے کھا نے کی کمی کی وجہ سے رات میں اڑ بھوکا سونا پ
-ہو
- </string>
+    <string name="cih615">  ۔H608 -پچھلے 4 ہفتوں کے دوران کیا کبھی ایسا وقت آیا جب آپ یا گھر کے دوسرے افراد نے کھا نے کی کمی کی وجہ سے رات میں بھوکا سونا پڑا ہو؟</string>
     <string name="cih616">  ۔H608a- کتنی مرتبہ ایسا ہوا؟ </string>
     <string name="cih617">  ۔H609 -پچھلے 4 ہفتوں کے دوران کیا کبھی ایسا وقت آیا جب آپ یا گھر کے دوسرے افراد کھا نے کی کمی کی وجہ سے پورے دن اور رات میں کچھ بھی نہ کھایا ہو </string>
     <string name="cih618">  ۔H609a- کتنی مرتبہ ایسا ہوا؟ </string>
@@ -1603,8 +1601,8 @@
     <!--Section A7-->
     <string name="benef"> وصول کنندہ کی تعداد </string>
     <string name="source">ذریعہ</string>
-    <string name="cih701">  ۔H701 -بچوں کے لیے RUSF /وا وامم </string>
-    <string name="cih702">  ۔H702- بچوں کے لیے RUTF </string>
+    <string name="cih701">  ۔RUSF H701 -بچوں کے لیے /وا وامم </string>
+    <string name="cih702">  ۔RUTF H702 - بچوں کے لیے </string>
     <string name="cih703">  ۔H703- بچوں کے لیے (مائکرو نیوٹرینٹ پائوڈر) ایم این پی </string>
     <string name="cih704">  ۔H704- خواتین کے لیے سپرسیریل, گندم سویا </string>
     <string name="cih705">  ۔H705- گندم </string>
