@@ -137,6 +137,7 @@
                     android:orientation="vertical">
 
                     <com.edittextpicker.aliazaz.EditTextPicker
+                        android:hint="@string/daysQuan"
                         android:id="@+id/ciw5030101"
                         style="@style/textInput"
                         android:inputType="number"
@@ -311,6 +312,7 @@
                     android:orientation="vertical">
 
                     <com.edittextpicker.aliazaz.EditTextPicker
+                        android:hint="@string/daysQuan"
                         android:id="@+id/ciw5030201"
                         style="@style/textInput"
                         android:inputType="number"
@@ -483,6 +485,7 @@
                     android:orientation="vertical">
 
                     <com.edittextpicker.aliazaz.EditTextPicker
+                        android:hint="@string/daysQuan"
                         android:id="@+id/ciw5030301"
                         style="@style/textInput"
                         android:inputType="number"
@@ -657,6 +660,7 @@
                     android:orientation="vertical">
 
                     <com.edittextpicker.aliazaz.EditTextPicker
+                        android:hint="@string/daysQuan"
                         android:id="@+id/ciw5030401"
                         style="@style/textInput"
                         android:inputType="number"
@@ -829,6 +833,7 @@
                     android:orientation="vertical">
 
                     <com.edittextpicker.aliazaz.EditTextPicker
+                        android:hint="@string/daysQuan"
                         android:id="@+id/ciw5030501"
                         style="@style/textInput"
                         android:inputType="number"
@@ -1003,6 +1008,7 @@
 
                     <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/ciw5030601"
+                        android:hint="@string/daysQuan"
                         style="@style/textInput"
                         android:inputType="number"
                         app:maxValue="7"
@@ -1174,6 +1180,7 @@
                     android:orientation="vertical">
 
                     <com.edittextpicker.aliazaz.EditTextPicker
+                        android:hint="@string/daysQuan"
                         android:id="@+id/ciw5030701"
                         style="@style/textInput"
                         android:inputType="number"
@@ -1346,6 +1353,7 @@
                     android:orientation="vertical">
 
                     <com.edittextpicker.aliazaz.EditTextPicker
+                        android:hint="@string/daysQuan"
                         android:id="@+id/ciw5030801"
                         style="@style/textInput"
                         android:inputType="number"
