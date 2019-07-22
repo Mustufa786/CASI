@@ -463,13 +463,13 @@ public class ViewMemberActivity extends MenuActivity {
                                 ||
                                 SectionB1Activity.lstMwra.size() == 1) {
 
+                            //removing wra from spinner
                             if (MainApp.mc != null) {
                                 SectionB1Activity.WRAcounter++;
                                 SectionB1Activity.lstMwra.remove(SectionB1Activity.wraName);
                             }
 
                             SectionC1Activity.isNA = false;
-//                            SectionC1Activity.childU5.remove(SectionC1Activity.selectedChildName);
                             SectionC1Activity.counter = 1;
                             SectionC1Activity.counterPerMom = 0;
                             SectionC1Activity.counterPerNA = 0;

@@ -310,7 +310,8 @@
                         android:id="@+id/fldGrpciw204"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:visibility="@{ciw203a.checked ? View.VISIBLE : View.GONE}">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -348,7 +349,8 @@
                             android:id="@+id/fldGrpciw205"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            android:visibility="@{ciw204b.checked ? View.VISIBLE : View.GONE}">
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -390,7 +392,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
-                            android:visibility="@{ciw205a.checked ? View.VISIBLE : View.GONE}">
+                            android:visibility="@{ciw205a.checked || ciw204a.checked ? View.VISIBLE : View.GONE}">
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -456,7 +458,8 @@
                                 android:id="@+id/fldGrpciw208"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical">
+                                android:orientation="vertical"
+                                android:visibility="@{ciw207a.checked ? View.VISIBLE : View.GONE}">
 
 
                                 <TextView
@@ -495,7 +498,8 @@
                                     android:id="@+id/fldGrpciw209"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:orientation="vertical">
+                                    android:orientation="vertical"
+                                    android:visibility="@{ciw208a.checked ? View.VISIBLE : View.GONE}">
 
                                     <TextView
                                         android:layout_width="match_parent"
@@ -844,7 +848,8 @@
                                                 android:padding="2dp"
                                                 android:text=""
                                                 android:textColor="@color/colorPrimaryDark"
-                                                android:textSize="18sp" />
+                                                android:textSize="18sp"
+                                                android:visibility="gone" />
 
                                             <EditText
                                                 android:id="@+id/ciw213"

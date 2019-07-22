@@ -188,14 +188,7 @@ public class SectionC1Activity extends AddMember_MenuActivity implements TextWat
     private void setupViews() {
         if (getIntent().getBooleanExtra("reBackComing", true)) {
             if (getIntent().getBooleanExtra("childFlag", false)) {
-//                childU5.remove(getIntent().getStringExtra("name"));
                 counter++;
-
-                /*if (isNA) {
-                    NAChildsize = MainApp.childNA.size();
-                } else {
-                    Childsize = MainApp.childUnder5.size();
-                }*/
 
             } else {
 

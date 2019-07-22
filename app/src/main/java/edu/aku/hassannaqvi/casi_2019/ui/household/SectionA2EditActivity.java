@@ -1119,12 +1119,12 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
             }
         }
 
-        // Add data in list for all members
-        MainApp.all_members.add(MainApp.fmc);
-
         /*End*/
 
         MainApp.fmc.setAgeInYear(String.valueOf(Age));
+
+        // Add data in list for all members
+        MainApp.all_members.add(MainApp.fmc);
 
         MainApp.familyMembersList.set(position, MainApp.fmc);
 

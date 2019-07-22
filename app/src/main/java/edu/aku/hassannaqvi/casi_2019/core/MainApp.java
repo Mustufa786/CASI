@@ -142,8 +142,7 @@ public class MainApp extends Application {
 
     public static BLRandomContract selectedHead;
     public static int serial_no;
-    public static Boolean B6Flag = true;
-    public static Boolean B2B6Flag = false;
+
     // fro section A2
     public static List<FamilyMembersContract> familyMembersList;
 
@@ -153,15 +152,12 @@ public class MainApp extends Application {
 
     // Gul Sanober
     public static int totalPregnancy = 0;
-    public static int currentlyPregnant = 0;
     public static int count = 1;
     public static boolean flag = false;
     public static int outcome = 0;
     public static String lineNo = "";
     public static int status = 0;
     public static String DeviceURL = "devices.php";
-
-    public static int nuCount = 1;
 
     public static Boolean validateFlag = false;
 

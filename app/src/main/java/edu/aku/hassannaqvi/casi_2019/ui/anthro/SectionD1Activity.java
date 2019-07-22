@@ -124,12 +124,6 @@ public class SectionD1Activity extends Menu2Activity implements TextWatcher, Rad
 //                            binding.fldGrpbcgScar.setVisibility(View.GONE);
                             ClearClass.ClearAllFields(binding.fldGrpbcgScar, false);
 
-//                            binding.fldGrpgoiter.setVisibility(View.VISIBLE);
-                            ClearClass.ClearAllFields(binding.fldGrpgoiter, true);
-
-//                            binding.fldGrpca.setVisibility(View.VISIBLE);
-                            ClearClass.ClearAllFields(binding.fldGrpca, true);
-
 //                            binding.fldGrpode.setVisibility(View.GONE);
                             ClearClass.ClearAllFields(binding.fldGrpode, false);
                             break;
@@ -139,12 +133,6 @@ public class SectionD1Activity extends Menu2Activity implements TextWatcher, Rad
 //                            binding.fldGrpbcgScar.setVisibility(View.VISIBLE);
                             ClearClass.ClearAllFields(binding.fldGrpbcgScar, true);
 
-//                            binding.fldGrpgoiter.setVisibility(View.VISIBLE);
-                            ClearClass.ClearAllFields(binding.fldGrpgoiter, true);
-
-//                            binding.fldGrpca.setVisibility(View.VISIBLE);
-                            ClearClass.ClearAllFields(binding.fldGrpca, true);
-
 //                            binding.fldGrpode.setVisibility(View.VISIBLE);
                             ClearClass.ClearAllFields(binding.fldGrpode, true);
                             break;
@@ -153,12 +141,6 @@ public class SectionD1Activity extends Menu2Activity implements TextWatcher, Rad
 
 //                            binding.fldGrpbcgScar.setVisibility(View.GONE);
                             ClearClass.ClearAllFields(binding.fldGrpbcgScar, false);
-
-//                            binding.fldGrpgoiter.setVisibility(View.VISIBLE);
-                            ClearClass.ClearAllFields(binding.fldGrpgoiter, true);
-
-//                            binding.fldGrpca.setVisibility(View.VISIBLE);
-                            ClearClass.ClearAllFields(binding.fldGrpca, true);
 
 //                            binding.fldGrpode.setVisibility(View.GONE);
                             ClearClass.ClearAllFields(binding.fldGrpode, false);
@@ -543,7 +525,6 @@ public class SectionD1Activity extends Menu2Activity implements TextWatcher, Rad
     private boolean formValidation() {
 
 
-
         if (endflag) {
 
             return ValidatorClass.EmptySpinner(this, binding.cid101, getString(R.string.cid101sno));
@@ -628,16 +609,7 @@ public class SectionD1Activity extends Menu2Activity implements TextWatcher, Rad
                 if (!ValidatorClass.EmptyRadioButton(this, binding.cid1bcgscar, binding.cid1bcgscara, getString(R.string.cid1bcgscar))) {
                     return false;
                 }
-            }
-            if (!ValidatorClass.EmptyRadioButton(this, binding.cid1g, binding.cid1ga, getString(R.string.cid1g))) {
-                return false;
-            }
 
-            if (!ValidatorClass.EmptyRadioButton(this, binding.cid1ca, binding.cid1caa, getString(R.string.cid1ca))) {
-                return false;
-            }
-
-            if (slc_type == 2) {
                 return ValidatorClass.EmptyRadioButton(this, binding.cid1o, binding.cid1oa, getString(R.string.cid1o));
             }
         }
@@ -754,12 +726,6 @@ public class SectionD1Activity extends Menu2Activity implements TextWatcher, Rad
             sA3.put("cid1bcgscar", binding.cid1bcgscara.isChecked() ? "1"
                     : binding.cid1bcgscarb.isChecked() ? "2" : "0");
 
-            sA3.put("cid1g", binding.cid1ga.isChecked() ? "1"
-                    : binding.cid1gb.isChecked() ? "2" : "0");
-
-            sA3.put("cid1ca", binding.cid1caa.isChecked() ? "1"
-                    : binding.cid1cab.isChecked() ? "2" : "0");
-
             sA3.put("cid1o", binding.cid1oa.isChecked() ? "1"
                     : binding.cid1ob.isChecked() ? "2" : "0");
 
@@ -769,8 +735,6 @@ public class SectionD1Activity extends Menu2Activity implements TextWatcher, Rad
 
 
         MainApp.emc.setsA3(String.valueOf(sA3));
-
-
 
 
     }

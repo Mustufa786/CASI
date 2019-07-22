@@ -83,7 +83,7 @@
             <EditText
                 android:id="@+id/cid1w"
                 style="@style/textInput"
-                android:hint="@string/cid1w"
+                android:hint="XXX.XX"
                 android:inputType="numberDecimal"
                 android:maxLength="6" />
 
@@ -106,7 +106,7 @@
                 <EditText
                     android:id="@+id/cid1w1"
                     style="@style/textInput"
-                    android:hint="@string/cid1w"
+                    android:hint="XXX.XX"
                     android:inputType="numberDecimal"
                     android:maxLength="6"
                     android:visibility="visible"
@@ -127,7 +127,7 @@
             <EditText
                 android:id="@+id/cid1h"
                 style="@style/textInput"
-                android:hint="@string/cid1h"
+                android:hint="XXX.X"
                 android:inputType="numberDecimal"
                 android:maxLength="5" />
 
@@ -151,7 +151,7 @@
                 <EditText
                     android:id="@+id/cid1h1"
                     style="@style/textInput"
-                    android:hint="@string/cid1h"
+                    android:hint="XXX.X"
                     android:inputType="numberDecimal"
                     android:maxLength="5"
                     android:visibility="visible"
@@ -171,7 +171,7 @@
             <EditText
                 android:id="@+id/cid1muac"
                 style="@style/textInput"
-                android:hint="@string/cid1muac"
+                android:hint="XX.X"
                 android:inputType="numberDecimal"
                 android:maxLength="4" />
 
@@ -194,7 +194,7 @@
                 <EditText
                     android:id="@+id/cid1muac1"
                     style="@style/textInput"
-                    android:hint="@string/cid1muac"
+                    android:hint="XX.X"
                     android:inputType="numberDecimal"
                     android:maxLength="4"
                     android:visibility="visible"
@@ -233,84 +233,6 @@
 
                     <RadioButton
                         android:id="@+id/cid1bcgscarb"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/no" />
-
-                </RadioGroup>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/fldGrpgoiter"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:background="@color/colorPrimary"
-                    android:text="@string/cid1g"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textColor="@android:color/white" />
-
-                <RadioGroup
-                    android:id="@+id/cid1g"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-                        android:id="@+id/cid1ga"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/yes" />
-
-                    <RadioButton
-                        android:id="@+id/cid1gb"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/no" />
-
-                </RadioGroup>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/fldGrpca"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:background="@color/colorPrimary"
-                    android:text="@string/cid1ca"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textColor="@android:color/white" />
-
-                <RadioGroup
-                    android:id="@+id/cid1ca"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-                        android:id="@+id/cid1caa"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/yes" />
-
-                    <RadioButton
-                        android:id="@+id/cid1cab"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"

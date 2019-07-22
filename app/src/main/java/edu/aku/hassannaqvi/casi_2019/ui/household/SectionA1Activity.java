@@ -194,10 +194,6 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
         MainApp.IsHead = false;
         MainApp.IsResp = false;
 
-//        Checking B6 Section
-        MainApp.B6Flag = true;
-        MainApp.B2B6Flag = false;
-
 //        Listener
 
         binding.cih102.addTextChangedListener(new TextWatcher() {

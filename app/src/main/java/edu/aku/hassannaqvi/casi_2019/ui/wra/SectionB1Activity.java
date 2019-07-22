@@ -101,7 +101,7 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
 
                     agebyDob = DateUtils.ageInYearByDOB(dob);
 
-                    bi.txtAge.setVisibility(View.VISIBLE);
+                    bi.txtAge.setVisibility(View.GONE);
                     bi.txtAge.setText("Age by Date of Birth : " + agebyDob + " years");
 
                 } else if (!bi.ciw201years.getText().toString().equals("9998") &&
@@ -111,13 +111,13 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                             bi.ciw201years.getText().toString());
                     agebyDob = DateUtils.ageInYearByDOB(dob);
 
-                    bi.txtAge.setVisibility(View.VISIBLE);
+                    bi.txtAge.setVisibility(View.GONE);
                     bi.txtAge.setText("Age by Date of Birth : " + agebyDob + " years");
 
                 } else if (!bi.ciw201years.getText().toString().equals("9998")) {
                     agebyDob = DateUtils.ageInYearByDOB(bi.ciw201years.getText().toString());
 
-                    bi.txtAge.setVisibility(View.VISIBLE);
+                    bi.txtAge.setVisibility(View.GONE);
                     bi.txtAge.setText("Age by Date of Birth : " + agebyDob + " years");
 
                 } else {
@@ -217,146 +217,21 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
         bi.ciw203.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-//                ValidateForm();
-                if (bi.ciw203a.isChecked()) {
-                    bi.ciw204a.setEnabled(true);
-                    bi.ciw204b.setEnabled(true);
-                    bi.ciw205a.setEnabled(true);
-                    bi.ciw205b.setEnabled(true);
-                    bi.ciw206.setEnabled(true);
-                    bi.ciw207a.setEnabled(true);
-                    bi.ciw207b.setEnabled(true);
-                    bi.ciw208a.setEnabled(true);
-                    bi.ciw208b.setEnabled(true);
-                    bi.ciw209a.setEnabled(true);
-                    bi.ciw209b.setEnabled(true);
-                    bi.ciw21001a.setEnabled(true);
-                    bi.ciw21002a.setEnabled(true);
-                    bi.ciw21003a.setEnabled(true);
-                    bi.ciw21098a.setEnabled(true);
-                    bi.ciw21099a.setEnabled(true);
-                    bi.ciw21001b.setEnabled(true);
-                    bi.ciw21002b.setEnabled(true);
-                    bi.ciw21003b.setEnabled(true);
-                    bi.ciw21098b.setEnabled(true);
-                    bi.ciw21099b.setEnabled(true);
-                    bi.ciw211.setEnabled(true);
-                    bi.ciw212.setEnabled(true);
-                    bi.ciw214.setEnabled(true);
-                    bi.ciw215.setEnabled(true);
-                    bi.ciw213.setEnabled(true);
-
-                } else {
-                    bi.ciw204a.setEnabled(false);
-                    bi.ciw204b.setEnabled(false);
-                    bi.ciw204.clearCheck();
-                    bi.ciw205a.setEnabled(false);
-                    bi.ciw205b.setEnabled(false);
-                    bi.ciw205.clearCheck();
-                    bi.ciw206.setEnabled(false);
-                    bi.ciw206.setText(null);
-                    bi.ciw207a.setEnabled(false);
-                    bi.ciw207b.setEnabled(false);
-                    bi.ciw207.clearCheck();
-                    bi.ciw208a.setEnabled(false);
-                    bi.ciw208b.setEnabled(false);
-                    bi.ciw208.clearCheck();
-                    bi.ciw209a.setEnabled(false);
-                    bi.ciw209b.setEnabled(false);
-                    bi.ciw209.clearCheck();
-                    bi.ciw21001.clearCheck();
-                    bi.ciw21002.clearCheck();
-                    bi.ciw21003.clearCheck();
-                    bi.ciw21098.clearCheck();
-                    bi.ciw21099.clearCheck();
-                    bi.ciw21001a.setEnabled(false);
-                    bi.ciw21002a.setEnabled(false);
-                    bi.ciw21003a.setEnabled(false);
-                    bi.ciw21098a.setEnabled(false);
-                    bi.ciw21099a.setEnabled(false);
-                    bi.ciw21001b.setEnabled(false);
-                    bi.ciw21002b.setEnabled(false);
-                    bi.ciw21003b.setEnabled(false);
-                    bi.ciw21098b.setEnabled(false);
-                    bi.ciw21099b.setEnabled(false);
-                    bi.ciw211.setEnabled(false);
-                    bi.ciw211.setText(null);
-                    bi.ciw212.setEnabled(false);
-                    bi.ciw212.setText(null);
-                    bi.ciw214.setEnabled(false);
-                    bi.ciw215.setEnabled(false);
-                    bi.ciw213.setEnabled(false);
-                    bi.ciw213.setText(null);
-
-                }
+                if (checkedId == bi.ciw203a.getId())
+                    ClearClass.ClearAllFields(bi.fldGrpciw204, true);
+                else
+                    ClearClass.ClearAllFields(bi.fldGrpciw204, false);
             }
         });
 
         bi.ciw204.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-//                ValidateForm();
-                if (bi.ciw204a.isChecked()) {
-                    bi.ciw205a.setEnabled(false);
-                    bi.ciw205b.setEnabled(false);
+                if (bi.ciw204a.isChecked())
+                    ClearClass.ClearAllFields(bi.fldGrpciw206, true);
+                else {
                     bi.ciw205.clearCheck();
-                    bi.ciw206.setEnabled(true);
-                    bi.ciw207a.setEnabled(true);
-                    bi.ciw207b.setEnabled(true);
-                    bi.ciw208a.setEnabled(true);
-                    bi.ciw208b.setEnabled(true);
-                    bi.ciw209a.setEnabled(true);
-                    bi.ciw209b.setEnabled(true);
-                    bi.ciw21001a.setEnabled(true);
-                    bi.ciw21002a.setEnabled(true);
-                    bi.ciw21003a.setEnabled(true);
-                    bi.ciw21098a.setEnabled(true);
-                    bi.ciw21099a.setEnabled(true);
-                    bi.ciw21001b.setEnabled(true);
-                    bi.ciw21002b.setEnabled(true);
-                    bi.ciw21003b.setEnabled(true);
-                    bi.ciw21098b.setEnabled(true);
-                    bi.ciw21099b.setEnabled(true);
-                    bi.ciw211.setEnabled(true);
-                    bi.ciw212.setEnabled(true);
-                    bi.ciw214.setEnabled(true);
-                    bi.ciw215.setEnabled(true);
-                    bi.ciw213.setEnabled(true);
-
-                } else {
-
-                    bi.ciw205a.setEnabled(true);
-                    bi.ciw205b.setEnabled(true);
-                    bi.ciw206.setEnabled(false);
-                    bi.ciw206.setText(null);
-                    bi.ciw207a.setEnabled(false);
-                    bi.ciw207b.setEnabled(false);
-                    bi.ciw207.clearCheck();
-                    bi.ciw208a.setEnabled(false);
-                    bi.ciw208b.setEnabled(false);
-                    bi.ciw208.clearCheck();
-                    bi.ciw209a.setEnabled(false);
-                    bi.ciw209b.setEnabled(false);
-                    bi.ciw209.clearCheck();
-                    bi.ciw21001.clearCheck();
-                    bi.ciw21002.clearCheck();
-                    bi.ciw21003.clearCheck();
-                    bi.ciw21098.clearCheck();
-                    bi.ciw21099.clearCheck();
-                    bi.ciw21001.setEnabled(false);
-                    bi.ciw21002.setEnabled(false);
-                    bi.ciw21003.setEnabled(false);
-                    bi.ciw21098.setEnabled(false);
-                    bi.ciw21099.setEnabled(false);
-                    bi.ciw211.setEnabled(false);
-                    bi.ciw211.setText(null);
-                    bi.ciw212.setEnabled(false);
-                    bi.ciw212.setText(null);
-                    bi.ciw214.setEnabled(false);
-                    bi.ciw215.setEnabled(false);
-                    bi.ciw213.setEnabled(false);
-                    bi.ciw213.setText(null);
-
+                    ClearClass.ClearAllFields(bi.fldGrpciw206, false);
                 }
             }
         });
@@ -364,8 +239,10 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
         bi.ciw205.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                if (bi.ciw205b.isChecked())
+                if (bi.ciw205a.isChecked())
                     ClearClass.ClearAllFields(bi.fldGrpciw206, true);
+                else
+                    ClearClass.ClearAllFields(bi.fldGrpciw206, false);
             }
         });
 
@@ -375,59 +252,9 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if (checkedId == R.id.ciw207a) {
-
-                    bi.ciw211.setEnabled(true);
-                    bi.ciw212.setEnabled(true);
-                    bi.ciw215.setEnabled(true);
-                    bi.ciw214.setEnabled(true);
-                    bi.ciw213.setEnabled(true);
-                    bi.ciw208a.setEnabled(true);
-                    bi.ciw208b.setEnabled(true);
-                    bi.ciw209a.setEnabled(true);
-                    bi.ciw209b.setEnabled(true);
-                    bi.ciw21001a.setEnabled(true);
-                    bi.ciw21002a.setEnabled(true);
-                    bi.ciw21003a.setEnabled(true);
-                    bi.ciw21098a.setEnabled(true);
-                    bi.ciw21099a.setEnabled(true);
-                    bi.ciw21001b.setEnabled(true);
-                    bi.ciw21002b.setEnabled(true);
-                    bi.ciw21003b.setEnabled(true);
-                    bi.ciw21098b.setEnabled(true);
-                    bi.ciw21099b.setEnabled(true);
+                    ClearClass.ClearAllFields(bi.fldGrpciw208, true);
                 } else {
-                    bi.ciw211.setEnabled(false);
-                    bi.ciw211.setText(null);
-                    bi.ciw212.setEnabled(false);
-                    bi.ciw215.setEnabled(false);
-                    bi.ciw212.setText(null);
-                    bi.ciw215.setText(null);
-                    bi.ciw214.setEnabled(false);
-                    bi.ciw213.setEnabled(false);
-                    bi.ciw213.setText(null);
-                    bi.ciw208a.setEnabled(false);
-                    bi.ciw208b.setEnabled(false);
-                    bi.ciw208.clearCheck();
-                    bi.ciw209a.setEnabled(false);
-                    bi.ciw209b.setEnabled(false);
-                    bi.ciw209.clearCheck();
-                    bi.ciw21001.clearCheck();
-                    bi.ciw21002.clearCheck();
-                    bi.ciw21003.clearCheck();
-                    bi.ciw21098.clearCheck();
-                    bi.ciw21099.clearCheck();
-
-                    bi.ciw21001a.setEnabled(false);
-                    bi.ciw21002a.setEnabled(false);
-                    bi.ciw21003a.setEnabled(false);
-                    bi.ciw21098a.setEnabled(false);
-                    bi.ciw21099a.setEnabled(false);
-
-                    bi.ciw21001b.setEnabled(false);
-                    bi.ciw21002b.setEnabled(false);
-                    bi.ciw21003b.setEnabled(false);
-                    bi.ciw21098b.setEnabled(false);
-                    bi.ciw21099b.setEnabled(false);
+                    ClearClass.ClearAllFields(bi.fldGrpciw208, false);
                 }
             }
         });
@@ -553,57 +380,9 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
             public void onCheckedChanged(RadioGroup group, int checkedId) {
 //                ValidateForm();
                 if (checkedId == R.id.ciw208a) {
-                    bi.ciw209a.setEnabled(true);
-                    bi.ciw209b.setEnabled(true);
-
-                    bi.ciw21001a.setEnabled(true);
-                    bi.ciw21002a.setEnabled(true);
-                    bi.ciw21003a.setEnabled(true);
-                    bi.ciw21098a.setEnabled(true);
-                    bi.ciw21099a.setEnabled(true);
-
-                    bi.ciw21001b.setEnabled(true);
-                    bi.ciw21002b.setEnabled(true);
-                    bi.ciw21003b.setEnabled(true);
-                    bi.ciw21098b.setEnabled(true);
-                    bi.ciw21099b.setEnabled(true);
+                    ClearClass.ClearAllFields(bi.fldGrpciw209, true);
                 } else {
-                    bi.ciw209a.setEnabled(false);
-                    bi.ciw209b.setEnabled(false);
-                    bi.ciw209.clearCheck();
-
-                    bi.ciw21001.clearCheck();
-                    bi.ciw21002.clearCheck();
-                    bi.ciw21003.clearCheck();
-                    bi.ciw21098.clearCheck();
-                    bi.ciw21099.clearCheck();
-                    bi.ciw21001.clearCheck();
-                    bi.ciw21002.clearCheck();
-                    bi.ciw21003.clearCheck();
-                    bi.ciw21098.clearCheck();
-                    bi.ciw21099.clearCheck();
-
-                    bi.ciw21001a.setEnabled(false);
-                    bi.ciw21002a.setEnabled(false);
-                    bi.ciw21003a.setEnabled(false);
-                    bi.ciw21098a.setEnabled(false);
-                    bi.ciw21099a.setEnabled(false);
-
-                    bi.ciw21001b.setEnabled(false);
-                    bi.ciw21002b.setEnabled(false);
-                    bi.ciw21003b.setEnabled(false);
-                    bi.ciw21098b.setEnabled(false);
-                    bi.ciw21099b.setEnabled(false);
-
-                    bi.ciw211.setText(null);
-                    bi.ciw212.setEnabled(true);
-                    bi.ciw212.setText(null);
-                    bi.ciw213.setEnabled(true);
-                    bi.ciw213.setText(null);
-                    bi.ciw214.setText(null);
-                    bi.ciw214.setEnabled(true);
-                    bi.ciw215.setText(null);
-                    bi.ciw215.setEnabled(true);
+                    ClearClass.ClearAllFields(bi.fldGrpciw209, false);
                 }
 
             }
@@ -934,8 +713,6 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
             }
             if (UpdateDB()) {
 
-
-                MainApp.nuCount = 1;
                 MainApp.count = 1;
 
                 frontPressed = true;
@@ -950,10 +727,9 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                     if (bi.ciw204a.isChecked() || bi.ciw205a.isChecked()) {
                         if (bi.ciw207a.isChecked()) {
 
-                            MainApp.currentlyPregnant = bi.ciw208a.isChecked() ? 1 : bi.ciw208b.isChecked() ? 2 : 0; // when women is currently pregnant outcome should be open according to totalPregnencies-1
-
+                            // when women is currently pregnant outcome should be open according to totalPregnencies - 1
                             if (Integer.valueOf(bi.ciw214.getText().toString()) > 0) {
-                                if (Integer.valueOf(bi.ciw214.getText().toString()) == 1 && MainApp.currentlyPregnant == 1) {
+                                if (Integer.valueOf(bi.ciw214.getText().toString()) == 1 && bi.ciw208a.isChecked()) {
                                     redirectCondition();
                                 } else if (Integer.valueOf(bi.ciw214.getText().toString()) < prevDeliveries) {
 
@@ -983,7 +759,7 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                                     alert.show();
 
                                 } else {
-                                    MainApp.totalPregnancy = Integer.valueOf(bi.ciw214.getText().toString());
+                                    MainApp.totalPregnancy = bi.ciw208a.isChecked() ? Integer.valueOf(bi.ciw214.getText().toString()) - 1 : Integer.valueOf(bi.ciw214.getText().toString());
                                     startActivityForResult(new Intent(this, SectionB1AActivity.class)
                                             .putExtra("backPressed", classPassName.equals(SectionB1AActivity.class.getName())), 1);
 

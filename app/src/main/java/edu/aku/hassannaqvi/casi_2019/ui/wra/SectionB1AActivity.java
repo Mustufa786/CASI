@@ -73,9 +73,7 @@ public class SectionB1AActivity extends AppCompatActivity implements TextWatcher
 
         bi.textName.setText("Selected Woman : " + SectionB1Activity.wraName);
         int totalPregnancy = MainApp.totalPregnancy;
-        if (MainApp.currentlyPregnant == 1) {
-            totalPregnancy = MainApp.totalPregnancy - 1;
-        }
+
         bi.count.setText("Pregnancy No " + MainApp.count + " out of " + totalPregnancy);
 
         for (EditText ed : grpDate) {
@@ -291,7 +289,6 @@ public class SectionB1AActivity extends AppCompatActivity implements TextWatcher
                 e.printStackTrace();
             }
             if (UpdateDB()) {
-                MainApp.nuCount = 1;
 
                 if (bi.ciw218d.isChecked() && !twinFlag) {
 
@@ -303,13 +300,8 @@ public class SectionB1AActivity extends AppCompatActivity implements TextWatcher
                     startActivity(i);
 
                 } else {
-                    MainApp.count++;
-                    int totalPregnancy = MainApp.totalPregnancy;
-                    if (MainApp.currentlyPregnant == 1) {
-                        totalPregnancy = MainApp.totalPregnancy - 1;
-                    }
 
-                    if (MainApp.count > totalPregnancy) {
+                    if (MainApp.count >= MainApp.totalPregnancy) {
 
                         MainApp.count = 1;
 
@@ -333,7 +325,7 @@ public class SectionB1AActivity extends AppCompatActivity implements TextWatcher
                                 }
                             } else {
 
-                                if (MainApp.mc.getsB6().equals("1")) {
+                                if (MainApp.mc.getKishSelectWRA()) {
                                     startActivityForResult(new Intent(this, SectionB6Activity.class)
                                             .putExtra("backPressed", classPassName.equals(SectionB6Activity.class.getName())), 1);
                                 } else {
@@ -344,6 +336,9 @@ public class SectionB1AActivity extends AppCompatActivity implements TextWatcher
                         }
 
                     } else {
+
+                        MainApp.count++;
+
                         startActivityForResult(new Intent(this, SectionB1AActivity.class)
                                 .putExtra("backPressed", classPassName.equals(SectionB1AActivity.class.getName())), 1);
                     }

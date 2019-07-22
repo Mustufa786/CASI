@@ -102,7 +102,7 @@ public class SectionA2ListActivity extends AppCompatActivity {
         new populateRecyclerView(this).execute();
 
         //        Recycler click listener
-        binding.recyclerNoMembers.addOnItemTouchListener(new RecyclerItemClickListener(getApplicationContext(), new RecyclerItemClickListener.OnItemClickListener() {
+        binding.recyclerNoMembers.addOnItemTouchListener(new RecyclerItemClickListener(SectionA2ListActivity.this, new RecyclerItemClickListener.OnItemClickListener() {
                     Boolean delFlag = true;
 
                     @Override
@@ -136,7 +136,7 @@ public class SectionA2ListActivity extends AppCompatActivity {
                                                             }*/
 
                                                             finish();
-                                                            startActivity(new Intent(getApplicationContext(), SectionA2Activity.class)
+                                                            startActivity(new Intent(SectionA2ListActivity.this, SectionA2Activity.class)
                                                                     .putExtra("data", MainApp.familyMembersList.get(position))
                                                                     .putExtra("pos", position));
 
@@ -187,7 +187,7 @@ public class SectionA2ListActivity extends AppCompatActivity {
                                                         public void onClick(DialogInterface dialog,
                                                                             int id) {
                                                             finish();
-                                                            startActivity(new Intent(getApplicationContext(), SectionA2EditActivity.class)
+                                                            startActivity(new Intent(SectionA2ListActivity.this, SectionA2EditActivity.class)
                                                                     .putExtra("data", MainApp.familyMembersList.get(position))
                                                                     .putExtra("pos", position));
                                                         }
@@ -407,11 +407,11 @@ public class SectionA2ListActivity extends AppCompatActivity {
                                             } else {
                                                 finish();
                                                 respLineNo = "";
-                                                startActivity(new Intent(getApplicationContext(), SectionA4Activity.class));
-                                                //                                           startActivity(new Intent(getApplicationContext(), ViewMemberActivity.class).putExtra("activity", 1));
+//                                                startActivity(new Intent(SectionA2ListActivity.this, SectionA4Activity.class));
+                                                startActivity(new Intent(SectionA2ListActivity.this, ViewMemberActivity.class).putExtra("activity", 3));
                                             }
                                         } else {
-                                            startActivity(new Intent(getApplicationContext(), ViewMemberActivity.class).putExtra("activity", 6));
+                                            startActivity(new Intent(SectionA2ListActivity.this, ViewMemberActivity.class).putExtra("activity", 6));
                                         }
 
                                     }
@@ -755,7 +755,7 @@ public class SectionA2ListActivity extends AppCompatActivity {
 
 //              Set Recycler View
                     mAdapter = new FamilyMembersAdapter(MainApp.familyMembersList);
-                    RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
+                    RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(SectionA2ListActivity.this);
                     binding.recyclerNoMembers.setLayoutManager(mLayoutManager);
                     binding.recyclerNoMembers.setItemAnimator(new DefaultItemAnimator());
                     binding.recyclerNoMembers.setAdapter(mAdapter);

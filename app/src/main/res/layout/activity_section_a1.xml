@@ -368,6 +368,7 @@
                             android:id="@+id/cih111"
                             style="@style/textInput"
                             android:hint="@string/cih111"
+                            app:dateFormat="dd-MM-yyyy"
                             app:minDate="20/07/2019" />
 
                         <!--cih115-->

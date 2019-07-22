@@ -1004,12 +1004,12 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                 }
             }
 
-            // Add data in list for all members
-            MainApp.all_members.add(family);
-
             /*End*/
 
             family.setAgeInYear(String.valueOf(Age));
+
+            // Add data in list for all members
+            MainApp.all_members.add(family);
 
             MainApp.familyMembersList.set(position, family);
 

@@ -642,10 +642,6 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
 
 //                finish();
 
-                if (!MainApp.B2B6Flag) {
-                    MainApp.B2B6Flag = true;
-                }
-
                 startActivity(new Intent(this, SectionB3Activity.class));
 
             } else {

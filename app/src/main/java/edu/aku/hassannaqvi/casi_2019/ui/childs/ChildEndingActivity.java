@@ -68,8 +68,6 @@ public class ChildEndingActivity extends AppCompatActivity {
             }
         }
 
-//        flagNAChild = SectionC1Activity.counterPerMom <= 0;
-
     }
 
     public void BtnEnd() {
@@ -82,7 +80,7 @@ public class ChildEndingActivity extends AppCompatActivity {
 //                finish();
 
                 SectionC1Activity.childU5.remove(SectionC1Activity.selectedChildName);
-                //MainApp.childUnder5_Del.remove(MainApp.cc);
+
                 for (FamilyMembersContract fmc : MainApp.childUnder5_Del) {
                     if (MainApp.cc.getC1SerialNo().equals(fmc.getSerialNo())) {
                         MainApp.childUnder5_Del.remove(fmc);
