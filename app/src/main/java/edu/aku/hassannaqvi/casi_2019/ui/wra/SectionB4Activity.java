@@ -534,11 +534,15 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
                     if (!ValidatorClass.EmptyTextBox(this, binding.ciw406cx, getString(R.string.ciw406) + " - " + getString(R.string.ciw406c))) {
                         return false;
                     }
+                    if (!ValidatorClass.RangeTextBox(this, binding.ciw406cx, 0.5, 10.0, getString(R.string.ciw406) + " - " + getString(R.string.ciw406c), ""))
+                        return false;
                 }
                 if (binding.ciw406r.isChecked()) {
                     if (!ValidatorClass.EmptyTextBox(this, binding.ciw406rx, getString(R.string.ciw406) + " - " + getString(R.string.ciw406r))) {
                         return false;
                     }
+                    if (!ValidatorClass.RangeTextBox(this, binding.ciw406rx, 0.5, 10.0, getString(R.string.ciw406) + " - " + getString(R.string.ciw406c), ""))
+                        return false;
                 }
 
             }
