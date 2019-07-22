@@ -11,8 +11,7 @@ public class Summary {
             member,
             wra,
             child,
-            blood,
-            water;
+            hb;
 
     public Summary(Cursor c) {
         this.formdate = c.getString(c.getColumnIndex("formdate"));
@@ -23,8 +22,7 @@ public class Summary {
         this.member = c.getString(c.getColumnIndex("member"));
         this.wra = c.getString(c.getColumnIndex("wra"));
         this.child = c.getString(c.getColumnIndex("child"));
-        this.blood = c.getString(c.getColumnIndex("blood"));
-        this.water = c.getString(c.getColumnIndex("water"));
+        this.hb = c.getString(c.getColumnIndex("hb"));
     }
 
     public static String[] GetHeaders() {
@@ -35,8 +33,7 @@ public class Summary {
                 "MEMBER",
                 "WRA",
                 "CHILD",
-                "BLOOD",
-                "WATER",
+                "HB",
                 "USER",
                 "ISTATUS"
         };
@@ -50,8 +47,7 @@ public class Summary {
                 summary.getMember(),
                 summary.getWra(),
                 summary.getChild(),
-                summary.getBlood(),
-                summary.getWater(),
+                summary.getHb(),
                 summary.getUser(),
                 GetIstatus(summary.getIstatus())
         };
@@ -110,12 +106,8 @@ public class Summary {
         return child;
     }
 
-    public String getBlood() {
-        return blood;
-    }
-
-    public String getWater() {
-        return water;
+    public String getHb() {
+        return hb;
     }
 
 }

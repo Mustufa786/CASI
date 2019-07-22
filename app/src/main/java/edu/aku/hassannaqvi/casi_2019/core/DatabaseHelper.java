@@ -398,7 +398,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                     "count(distinct fm.uid) member, " +
                     "count(distinct m.uid) wra,\n" +
                     "count(distinct c._uid) child,\n" +
-                    "CASE WHEN count(distinct s._uid) > 0 THEN 'YES' ELSE 'NO' END HB,\n" +
+                    "CASE WHEN count(distinct s._uid) > 0 THEN 'YES' ELSE 'NO' END hb\n" +
                     "FROM forms f\n" +
                     "LEFT JOIN mwra m\n" +
                     "ON f._uid = m.uuid\n" +
