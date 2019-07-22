@@ -42,6 +42,7 @@ import edu.aku.hassannaqvi.casi_2019.other.JSONUtilClass;
 import edu.aku.hassannaqvi.casi_2019.ui.household.SectionA2ListActivity;
 import edu.aku.hassannaqvi.casi_2019.ui.mainUI.AddMember_MenuActivity;
 import edu.aku.hassannaqvi.casi_2019.ui.viewMem.ViewMemberActivity;
+import edu.aku.hassannaqvi.casi_2019.validation.ClearClass;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
 public class SectionB1Activity extends AddMember_MenuActivity implements TextWatcher, RadioGroup.OnCheckedChangeListener {
@@ -363,70 +364,8 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
         bi.ciw205.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-//                ValidateForm();
-                if (bi.ciw205a.isChecked()) {
-                    bi.ciw206.setEnabled(true);
-                    bi.ciw207a.setEnabled(true);
-                    bi.ciw207b.setEnabled(true);
-                    bi.ciw211.setEnabled(true);
-                    bi.ciw212.setEnabled(true);
-                    bi.ciw215.setEnabled(true);
-                    bi.ciw214.setEnabled(true);
-                    bi.ciw215.setEnabled(true);
-                    bi.ciw213.setEnabled(true);
-                    bi.ciw208a.setEnabled(true);
-                    bi.ciw208b.setEnabled(true);
-                    bi.ciw209a.setEnabled(true);
-                    bi.ciw209b.setEnabled(true);
-//                    w213
-                    bi.ciw21001a.setEnabled(true);
-                    bi.ciw21002a.setEnabled(true);
-                    bi.ciw21003a.setEnabled(true);
-                    bi.ciw21098a.setEnabled(true);
-                    bi.ciw21099a.setEnabled(true);
-                    bi.ciw21001b.setEnabled(true);
-                    bi.ciw21002b.setEnabled(true);
-                    bi.ciw21003b.setEnabled(true);
-                    bi.ciw21098b.setEnabled(true);
-                    bi.ciw21099b.setEnabled(true);
-
-                } else {
-                    bi.ciw206.setEnabled(false);
-                    bi.ciw206.setText(null);
-                    bi.ciw207a.setEnabled(false);
-                    bi.ciw207b.setEnabled(false);
-                    bi.ciw207.clearCheck();
-                    bi.ciw211.setEnabled(false);
-                    bi.ciw211.setText(null);
-                    bi.ciw212.setEnabled(false);
-                    bi.ciw212.setText(null);
-                    bi.ciw215.setEnabled(false);
-                    bi.ciw214.setEnabled(false);
-                    bi.ciw213.setEnabled(false);
-                    bi.ciw213.setText(null);
-                    bi.ciw208a.setEnabled(false);
-                    bi.ciw208b.setEnabled(false);
-                    bi.ciw208.clearCheck();
-                    bi.ciw209a.setEnabled(false);
-                    bi.ciw209b.setEnabled(false);
-                    bi.ciw209.clearCheck();
-                    bi.ciw21001.clearCheck();
-                    bi.ciw21002.clearCheck();
-                    bi.ciw21003.clearCheck();
-                    bi.ciw21098.clearCheck();
-                    bi.ciw21099.clearCheck();
-                    bi.ciw21001a.setEnabled(false);
-                    bi.ciw21002a.setEnabled(false);
-                    bi.ciw21003a.setEnabled(false);
-                    bi.ciw21098a.setEnabled(false);
-                    bi.ciw21099a.setEnabled(false);
-                    bi.ciw21001b.setEnabled(false);
-                    bi.ciw21002b.setEnabled(false);
-                    bi.ciw21003b.setEnabled(false);
-                    bi.ciw21098b.setEnabled(false);
-                    bi.ciw21099b.setEnabled(false);
-
-                }
+                if (bi.ciw205b.isChecked())
+                    ClearClass.ClearAllFields(bi.fldGrpciw206, true);
             }
         });
 
@@ -435,7 +374,6 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
         bi.ciw207.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-//                ValidateForm();
                 if (checkedId == R.id.ciw207a) {
 
                     bi.ciw211.setEnabled(true);
@@ -1077,10 +1015,6 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                     }
                 }
 
-                //startActivity(new Intent(this, SectionC1Activity.class));
-
-//                finish();
-
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }
@@ -1361,7 +1295,7 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
     @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
 
-        ValidateForm();
+//        ValidateForm();
     }
 
     private boolean ValidateForm() {

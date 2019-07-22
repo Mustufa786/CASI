@@ -67,7 +67,7 @@ public class SectionC3Activity extends Menu2Activity implements RadioGroup.OnChe
         binding.cic302.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                formValidation();
+//                formValidation();
                 if (checkedId == R.id.cic302b) {
                     ClearClass.ClearAllFields(binding.fldGrpcic303parent, false);
 
@@ -127,7 +127,7 @@ public class SectionC3Activity extends Menu2Activity implements RadioGroup.OnChe
         binding.cic305.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                formValidation();
+//                formValidation();
                 if (binding.cic305b.isChecked() || binding.cic30598.isChecked()) {
 //                    binding.cic306.clearCheck();
                     ClearClass.ClearAllFields(binding.fldGrpcic305, false);
@@ -800,7 +800,7 @@ public class SectionC3Activity extends Menu2Activity implements RadioGroup.OnChe
 
     @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
-        formValidation();
+//        formValidation();
     }
 }
 

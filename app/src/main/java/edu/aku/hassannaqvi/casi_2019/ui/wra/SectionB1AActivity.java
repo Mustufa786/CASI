@@ -313,15 +313,11 @@ public class SectionB1AActivity extends AppCompatActivity implements TextWatcher
 
                         MainApp.count = 1;
 
-//                        if (yearsBydob <= 2 && MainApp.status > 0) {
                         if (childisUnder2AndAlive) {
                             startActivity(new Intent(this, SectionB2Activity.class));
                         } else {
                             if (SectionB1Activity.editWRAFlag) {
-                                /*if (!db.getNutritionCount()) {
-                                    startActivityForResult(new Intent(this, SectionB6Activity.class)
-                                            .putExtra("backPressed", classPassName.equals(SectionB6Activity.class.getName())), 1);
-                                } else*/
+
                                 if (MainApp.mc.getsB6().equals("1")) {
                                     startActivityForResult(new Intent(this, SectionB6Activity.class)
                                             .putExtra("backPressed", classPassName.equals(SectionB6Activity.class.getName())), 1);
@@ -336,9 +332,7 @@ public class SectionB1AActivity extends AppCompatActivity implements TextWatcher
                                     );
                                 }
                             } else {
-                                /*if (SectionB1Activity.WRAcounter == MainApp.mwra.size()
-                                        &&
-                                        MainApp.B6Flag) {*/
+
                                 if (MainApp.mc.getsB6().equals("1")) {
                                     startActivityForResult(new Intent(this, SectionB6Activity.class)
                                             .putExtra("backPressed", classPassName.equals(SectionB6Activity.class.getName())), 1);
@@ -358,7 +352,6 @@ public class SectionB1AActivity extends AppCompatActivity implements TextWatcher
             }
         }
 
-        //startActivity(new Intent(this, SectionB2Activity.class));
     }
 
     public void BtnEnd() {

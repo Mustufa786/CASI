@@ -398,7 +398,7 @@ public class SectionB3Activity extends Menu2Activity implements TextWatcher, Rad
 
                         runOnUiThread(new Runnable() {
                             public void run() {
-                                formValidation();
+//                                formValidation();
                             }
                         });
 
@@ -410,7 +410,7 @@ public class SectionB3Activity extends Menu2Activity implements TextWatcher, Rad
 
     @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
-        formValidation();
+//        formValidation();
     }
 
 }

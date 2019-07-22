@@ -1277,7 +1277,7 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
 
     @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
-        ValidateForm();
+//        ValidateForm();
     }
 
     @Override
@@ -1302,7 +1302,7 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
 
                         SectionB2Activity.this.runOnUiThread(new Runnable() {
                             public void run() {
-                                ValidateForm();
+//                                ValidateForm();
                             }
                             //}
                         });
