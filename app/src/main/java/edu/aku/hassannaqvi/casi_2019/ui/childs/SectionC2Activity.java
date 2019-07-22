@@ -1275,23 +1275,7 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
             public void onCheckedChanged(RadioGroup group, int checkedId) {
 //                ValidateForm();
                 if (bi.cic206a.isChecked()) {
-                    //bi.fldGrpcic207.setVisibility(View.VISIBLE);
                     ClearClass.ClearAllFields(bi.fldGrpcic207, true);
-
-                } else {
-                    ClearClass.ClearAllFields(bi.fldGrpcic207, false);
-                    /*bi.fldGrpcic207.setVisibility(View.GONE);
-                    bi.cic207.clearCheck();
-                    bi.cic207d.setText(null);
-                    bi.cic207h.setText(null);
-                    bi.cic208.clearCheck();
-                    bi.cic209.clearCheck();
-                    bi.cic20996x.setText(null);
-                    bi.cic210.clearCheck();
-                    bi.cic211.clearCheck();
-                    bi.cic21196x.setText(null);
-                    bi.cic212.clearCheck();
-*/
                 }
             }
         });
@@ -1301,13 +1285,7 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
             public void onCheckedChanged(RadioGroup group, int checkedId) {
 //                ValidateForm();
                 if (bi.cic208b.isChecked()) {
-                    //bi.fldGrpcic209.setVisibility(View.VISIBLE);
-                    ClearClass.ClearAllFields(bi.fldGrpcic209, true);
-                } else {
-                    ClearClass.ClearAllFields(bi.fldGrpcic209, false);
-                    /*bi.fldGrpcic209.setVisibility(View.GONE);
                     bi.cic209.clearCheck();
-                    bi.cic20996x.setText(null);*/
                 }
             }
         });
@@ -1317,13 +1295,12 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
             public void onCheckedChanged(RadioGroup group, int checkedId) {
 //                ValidateForm();
                 if (bi.cic210a.isChecked()) {
-                    //bi.fldGrpcic211.setVisibility(View.VISIBLE);
+                    bi.fldGrpcic211.setVisibility(View.VISIBLE);
                     ClearClass.ClearAllFields(bi.fldGrpcic211, true);
                 } else {
                     ClearClass.ClearAllFields(bi.fldGrpcic211, false);
-                    /*bi.fldGrpcic211.setVisibility(View.GONE);
-                    bi.cic211.clearCheck();
-                    bi.cic21196x.setText(null);*/
+                    bi.fldGrpcic211.setVisibility(View.GONE);
+                    bi.cic21196x.setText(null);
                 }
             }
         });
@@ -1333,29 +1310,15 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
             public void onCheckedChanged(RadioGroup group, int checkedId) {
 //                ValidateForm();
                 if (bi.cic212a.isChecked()) {
-                    //bi.fldGrpcic212a.setVisibility(View.GONE);
-                    ClearClass.ClearAllFields(bi.fldGrpcic212a, false);
-                    //bi.cic21201.clearCheck();
+                    bi.fldGrpcic212a.setVisibility(View.GONE);
+//                    ClearClass.ClearAllFields(bi.fldGrpcic212a, false);
+                    bi.cic21201.clearCheck();
                 } else {
-                    //bi.fldGrpcic212a.setVisibility(View.VISIBLE);
-                    ClearClass.ClearAllFields(bi.fldGrpcic212a, true);
+                    bi.fldGrpcic212a.setVisibility(View.VISIBLE);
+//                    ClearClass.ClearAllFields(bi.fldGrpcic212a, true);
                 }
             }
         });
-        /*bi.cic20198.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked) {
-                    ClearClass.ClearAllFields(bi.fldGrpyear, false);
-                    ClearClass.ClearAllFields(bi.fldGrpmonths, false);
-                    ClearClass.ClearAllFields(bi.fldGrpdays, false);
-                } else {
-                    ClearClass.ClearAllFields(bi.fldGrpyear, true);
-                    ClearClass.ClearAllFields(bi.fldGrpmonths, true);
-                    ClearClass.ClearAllFields(bi.fldGrpdays, true);
-                }
-            }
-        });*/
         bi.cic21199.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -1389,22 +1352,6 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
                 }
             }
         });
-
-
-
-        /*bi.cic218.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                if(bi.cic218a.isChecked())
-                {
-                    bi.fldGrpcic219.setVisibility(View.VISIBLE);
-                }else{
-                    bi.fldGrpcic219.setVisibility(View.GONE);
-                    bi.cic219.clearCheck();
-                    bi.cic219x.setText(null);
-                }
-            }
-        });*/
 
         for (CheckBox chk : grpcic211) {
             chk.setOnCheckedChangeListener(check2);

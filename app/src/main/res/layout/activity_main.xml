@@ -151,7 +151,7 @@
                 android:background="#1565C0"
                 android:elevation="5dp"
                 android:onClick="@{() -> callback.openSpecimen()}"
-                android:text="OPEN BLOOD / URINE SPECIMEN COLLECTION FORM" />
+                android:text="OPEN HB SPECIMEN COLLECTION FORM" />
 
             <Button
                 android:id="@+id/openWaterSpecimen"

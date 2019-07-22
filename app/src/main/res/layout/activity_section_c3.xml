@@ -1328,6 +1328,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
+
                             <RadioButton
                                 android:id="@+id/cic3m2a"
                                 android:layout_width="0dp"
@@ -1353,6 +1354,7 @@
                             android:gravity="center"
                             android:text="@string/cic3src"
                             android:textColor="@color/colorPrimaryDark" />
+
                         <RadioGroup
                             android:id="@+id/cic3m2src"
                             android:layout_width="match_parent"
@@ -1433,8 +1435,8 @@
                     android:id="@+id/fldGrpcic305"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <!--android:visibility="@{cic305a.checked ? View.VISIBLE : View.GONE}"-->
+                    android:orientation="vertical"
+                    android:visibility="@{cic305a.checked ? View.VISIBLE : View.GONE}">
 
                     <TextView
                         android:id="@+id/txtcic306"

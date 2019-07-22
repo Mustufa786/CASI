@@ -107,7 +107,8 @@
                         android:id="@+id/fldGrpcic207"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:visibility="@{cic206a.checked ? View.VISIBLE : View.GONE}">
 
 
                         <TextView
@@ -217,7 +218,8 @@
                             android:id="@+id/fldGrpcic209"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            android:visibility="@{cic208a.checked ? View.VISIBLE : View.GONE}">
 
                             <TextView
                                 android:id="@+id/txtcic209"
@@ -325,7 +327,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="1dp"
-
                             android:orientation="vertical">
 
                             <TextView

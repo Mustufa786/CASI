@@ -127,13 +127,8 @@ public class SectionC3Activity extends Menu2Activity implements RadioGroup.OnChe
         binding.cic305.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-//                formValidation();
-                if (binding.cic305b.isChecked() || binding.cic30598.isChecked()) {
-//                    binding.cic306.clearCheck();
-                    ClearClass.ClearAllFields(binding.fldGrpcic305, false);
-                } else {
-                    ClearClass.ClearAllFields(binding.fldGrpcic305, true);
-                }
+                if (i == binding.cic305a.getId())
+                    binding.cic306.clearCheck();
             }
         });
 
