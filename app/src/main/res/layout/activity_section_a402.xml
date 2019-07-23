@@ -481,7 +481,7 @@
                             android:enabled="@{cih322a.checked ? true : false}"
                             android:hint="@string/cih322acr"
                             android:inputType="numberDecimal"
-                            android:maxLength="6"
+                            android:maxLength="4"
                             android:text='@{cih322a.checked ? cih322acr.getText.toString : ""}' />
 
                         <RadioButton
@@ -496,7 +496,7 @@
                             android:enabled="@{cih322b.checked ? true : false}"
                             android:hint="@string/cih322can"
                             android:inputType="numberDecimal"
-                            android:maxLength="6"
+                            android:maxLength="4"
                             android:text='@{cih322b.checked ? cih322can.getText.toString : ""}' />
 
                         <RadioButton
