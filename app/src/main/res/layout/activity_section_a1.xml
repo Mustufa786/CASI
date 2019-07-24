@@ -369,6 +369,7 @@
                             style="@style/textInput"
                             android:hint="@string/cih111"
                             app:dateFormat="dd-MM-yyyy"
+                            app:maxDate="CR_DATE"
                             app:minDate="20/07/2019" />
 
                         <!--cih115-->
