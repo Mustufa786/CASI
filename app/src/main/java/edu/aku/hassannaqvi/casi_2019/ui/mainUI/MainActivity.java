@@ -159,7 +159,7 @@ public class MainActivity extends MenuActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        changeLanguage();
+//        changeLanguage();
 
         setContentView(R.layout.activity_main);
 
@@ -422,7 +422,7 @@ public class MainActivity extends MenuActivity {
     }
 
     private void permissiongrantedStuff() {
-        /*if (versionAppContract.getVersioncode() != null) {
+        if (versionAppContract.getVersioncode() != null) {
             if (MainApp.versionCode < Integer.valueOf(versionAppContract.getVersioncode())) {
                 if (sharedPrefDownload.getBoolean("flag", true) && file.exists()) {
                     showDialog(newVer, preVer);
@@ -434,8 +434,7 @@ public class MainActivity extends MenuActivity {
             }
         } else {
             Toast.makeText(this, "Sync data!!", Toast.LENGTH_SHORT).show();
-        }*/
-        OpenFormFun();
+        }
     }
 
     private void OpenFormFun() {

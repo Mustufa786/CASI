@@ -56,6 +56,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import edu.aku.hassannaqvi.casi_2019.R;
+import edu.aku.hassannaqvi.casi_2019.contracts.VersionAppContract;
 import edu.aku.hassannaqvi.casi_2019.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2019.core.MainApp;
 import edu.aku.hassannaqvi.casi_2019.ui.syncUI.SyncActivity;
@@ -325,7 +326,11 @@ public class LoginActivity extends MenuActivity implements LoaderCallbacks<Curso
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(LoginActivity.this, SignupActivity.class));
+                VersionAppContract versionAppContract = db.getVersionApp();
+                if (versionAppContract != null)
+                    startActivity(new Intent(LoginActivity.this, SignupActivity.class));
+                else
+                    Toast.makeText(LoginActivity.this, "Please download data first!!", Toast.LENGTH_SHORT).show();
             }
         });
 
