@@ -72,8 +72,6 @@ dependencies {
     implementation 'com.github.AliAzaz:Edittext-Library:1.0.4'
 
 }
-
-
 configurations.all {
     resolutionStrategy.eachDependency { DependencyResolveDetails details ->
         def requested = details.requested
@@ -84,3 +82,5 @@ configurations.all {
         }
     }
 }
+
+

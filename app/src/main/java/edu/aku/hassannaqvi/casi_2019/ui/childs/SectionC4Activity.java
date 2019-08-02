@@ -59,7 +59,7 @@ public class SectionC4Activity extends Menu2Activity {
                         + "\n\n" + SectionC1Activity.careTaker + " : " + getString(R.string.cih113));
             }
         }
-
+//
         binding.txtcic401.setText(binding.txtcic401.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
         binding.txtcic402.setText(binding.txtcic402.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
         binding.txtcic403.setText(binding.txtcic403.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
@@ -95,25 +95,21 @@ public class SectionC4Activity extends Menu2Activity {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if (binding.cic401a.isChecked()) {
-
                     binding.fldGrpcic402.setVisibility(View.VISIBLE);
                     binding.fldGrpcic403.setVisibility(View.VISIBLE);
                     binding.fldGrcic404.setVisibility(View.VISIBLE);
                     binding.fldGrpcic405.setVisibility(View.VISIBLE);
-                    binding.fldGrcic406.setVisibility(View.VISIBLE);
+
 
                 } else {
-
                     binding.fldGrpcic402.setVisibility(View.GONE);
-                    ClearClass.ClearAllFields(binding.fldGrpcic402, true);
+                    ClearClass.ClearAllFields(binding.fldGrpcic402, null);
                     binding.fldGrpcic403.setVisibility(View.GONE);
-                    ClearClass.ClearAllFields(binding.fldGrpcic403, true);
+                    ClearClass.ClearAllFields(binding.fldGrpcic403, null);
                     binding.fldGrcic404.setVisibility(View.GONE);
-                    ClearClass.ClearAllFields(binding.fldGrcic404, true);
+                    ClearClass.ClearAllFields(binding.fldGrcic404, null);
                     binding.fldGrpcic405.setVisibility(View.GONE);
-                    ClearClass.ClearAllFields(binding.fldGrpcic405, true);
-                    binding.fldGrcic406.setVisibility(View.GONE);
-                    ClearClass.ClearAllFields(binding.fldGrcic406, true);
+                    ClearClass.ClearAllFields(binding.fldGrpcic405, null);
                 }
             }
         });
@@ -124,18 +120,15 @@ public class SectionC4Activity extends Menu2Activity {
                 if (!binding.cic402a.isChecked()) {
                     binding.fldGrpcic403.setVisibility(View.VISIBLE);
                     binding.fldGrcic404.setVisibility(View.GONE);
-                    ClearClass.ClearAllFields(binding.fldGrcic404, true);
+                    ClearClass.ClearAllFields(binding.fldGrcic404, null);
                     binding.fldGrpcic405.setVisibility(View.GONE);
-                    ClearClass.ClearAllFields(binding.fldGrpcic405, true);
-                    binding.fldGrcic406.setVisibility(View.GONE);
-                    ClearClass.ClearAllFields(binding.fldGrcic406, true);
+                    ClearClass.ClearAllFields(binding.fldGrpcic405, null);
 
                 } else {
                     binding.fldGrpcic403.setVisibility(View.GONE);
-                    ClearClass.ClearAllFields(binding.fldGrpcic403, true);
+                    ClearClass.ClearAllFields(binding.fldGrpcic403, null);
                     binding.fldGrcic404.setVisibility(View.VISIBLE);
                     binding.fldGrpcic405.setVisibility(View.VISIBLE);
-                    binding.fldGrcic406.setVisibility(View.VISIBLE);
 
                 }
             }
@@ -144,7 +137,6 @@ public class SectionC4Activity extends Menu2Activity {
         binding.cic406.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-
                 if (binding.cic406a.isChecked()) {
                     binding.fldGrpcic407.setVisibility(View.VISIBLE);
                     binding.fldGrpcic408.setVisibility(View.VISIBLE);
@@ -159,7 +151,7 @@ public class SectionC4Activity extends Menu2Activity {
                     binding.fldGrpcic409.setVisibility(View.GONE);
                     binding.cic409.clearCheck();
                     binding.fldGrpcic410.setVisibility(View.GONE);
-                    ClearClass.ClearAllFields(binding.fldGrpcic410, true);
+                    ClearClass.ClearAllFields(binding.fldGrpcic410, null);
 
                 }
             }
@@ -169,19 +161,17 @@ public class SectionC4Activity extends Menu2Activity {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
 
                 if (binding.cic407a.isChecked()) {
-
                     binding.fldGrpcic408.setVisibility(View.GONE);
                     binding.cic408.clearCheck();
                     binding.fldGrpcic409.setVisibility(View.VISIBLE);
                     binding.fldGrpcic410.setVisibility(View.VISIBLE);
-
 
                 } else {
                     binding.fldGrpcic408.setVisibility(View.VISIBLE);
                     binding.fldGrpcic409.setVisibility(View.GONE);
                     binding.cic409.clearCheck();
                     binding.fldGrpcic410.setVisibility(View.GONE);
-                    ClearClass.ClearAllFields(binding.fldGrpcic410, true);
+                    ClearClass.ClearAllFields(binding.fldGrpcic410, null);
                 }
             }
         });
@@ -198,16 +188,12 @@ public class SectionC4Activity extends Menu2Activity {
                     binding.fldGrpnc14.setVisibility(View.GONE);
                     binding.cic414.clearCheck();
                     binding.fldGrpcic415.setVisibility(View.GONE);
-                    ClearClass.ClearAllFields(binding.fldGrpcic415, true);
-                    binding.fldGrpcic416.setVisibility(View.GONE);
-                    binding.cic416.clearCheck();
+                    ClearClass.ClearAllFields(binding.fldGrpcic415, null);
                 } else {
-
                     binding.fldGrpcic412.setVisibility(View.VISIBLE);
                     binding.fldGrpcic413.setVisibility(View.VISIBLE);
                     binding.fldGrpnc14.setVisibility(View.VISIBLE);
                     binding.fldGrpcic415.setVisibility(View.VISIBLE);
-                    binding.fldGrpcic416.setVisibility(View.VISIBLE);
 
                 }
             }
@@ -226,7 +212,7 @@ public class SectionC4Activity extends Menu2Activity {
                     binding.fldGrpnc14.setVisibility(View.GONE);
                     binding.cic414.clearCheck();
                     binding.fldGrpcic415.setVisibility(View.GONE);
-                    ClearClass.ClearAllFields(binding.fldGrpcic415, true);
+                    ClearClass.ClearAllFields(binding.fldGrpcic415, null);
 
                 }
             }
@@ -238,14 +224,14 @@ public class SectionC4Activity extends Menu2Activity {
 
                 if (checkedId == binding.cic418b.getId()) {
                     binding.fldGrpcic419.setVisibility(View.GONE);
-                    ClearClass.ClearAllFields(binding.fldGrpcic419, false);
+                    ClearClass.ClearAllFields(binding.fldGrpcic419, null);
                     binding.fldGrpcic420.setVisibility(View.GONE);
-                    ClearClass.ClearAllFields(binding.fldGrpcic420, false);
+                    ClearClass.ClearAllFields(binding.fldGrpcic420, null);
                 } else {
                     binding.fldGrpcic419.setVisibility(View.VISIBLE);
-                    ClearClass.ClearAllFields(binding.fldGrpcic419, true);
+                    ClearClass.ClearAllFields(binding.fldGrpcic419, null);
                     binding.fldGrpcic420.setVisibility(View.VISIBLE);
-                    ClearClass.ClearAllFields(binding.fldGrpcic420, true);
+                    ClearClass.ClearAllFields(binding.fldGrpcic420, null);
                 }
             }
         });
@@ -257,13 +243,13 @@ public class SectionC4Activity extends Menu2Activity {
                 if (checkedId == binding.cic421b.getId()) {
                     binding.fldGrpcic422.setVisibility(View.GONE);
                     binding.fldGrpcic423.setVisibility(View.GONE);
-                    ClearClass.ClearAllFields(binding.fldGrpcic422, false);
-                    ClearClass.ClearAllFields(binding.fldGrpcic423, false);
+                    ClearClass.ClearAllFields(binding.fldGrpcic422, null);
+                    ClearClass.ClearAllFields(binding.fldGrpcic423, null);
                 } else {
                     binding.fldGrpcic422.setVisibility(View.VISIBLE);
                     binding.fldGrpcic423.setVisibility(View.VISIBLE);
-                    ClearClass.ClearAllFields(binding.fldGrpcic422, true);
-                    ClearClass.ClearAllFields(binding.fldGrpcic423, true);
+                    ClearClass.ClearAllFields(binding.fldGrpcic422, null);
+                    ClearClass.ClearAllFields(binding.fldGrpcic423, null);
                 }
             }
         });
@@ -276,7 +262,7 @@ public class SectionC4Activity extends Menu2Activity {
 //        binding.cic404a.setOnCheckedChangeListener(this);
 //        binding.cic407.setOnCheckedChangeListener(this);
 //        binding.cic408b.setOnCheckedChangeListener(this);
-//        binding.cic411.setOnCheckedChangeListener(this);
+//        binding.cic411.setOnCheckedChangeListener(this);hid
 //        binding.cic412b.setOnCheckedChangeListener(this);
 //        binding.cic413.setOnCheckedChangeListener(this);
 //        binding.cic414.setOnCheckedChangeListener(this);

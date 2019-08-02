@@ -1284,7 +1284,7 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
 //                ValidateForm();
-                if (bi.cic208b.isChecked()) {
+                if (!bi.cic208b.isChecked()) {
                     bi.cic209.clearCheck();
                 }
             }
