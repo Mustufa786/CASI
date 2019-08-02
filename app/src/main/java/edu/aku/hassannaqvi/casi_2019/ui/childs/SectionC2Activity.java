@@ -744,7 +744,7 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
                 return false;
             }
 
-            if (bi.cic208b.isChecked()) {
+            if (!bi.cic208a.isChecked()) {
 
                 if (!ValidatorClass.EmptyRadioButton(this, bi.cic209, bi.cic209a, getString(R.string.cic209))) {
                     return false;
@@ -1284,7 +1284,7 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
 //                ValidateForm();
-                if (!bi.cic208b.isChecked()) {
+                if (bi.cic208a.isChecked()) {
                     bi.cic209.clearCheck();
                 }
             }
