@@ -14,6 +14,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.database.Cursor;
 import android.databinding.DataBindingUtil;
 import android.graphics.Color;
@@ -53,6 +54,7 @@ import java.util.Collection;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 
 import butterknife.BindView;
@@ -156,6 +158,9 @@ public class MainActivity extends MenuActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        changeLanguage();
+
         setContentView(R.layout.activity_main);
 
         ButterKnife.bind(this);
@@ -364,6 +369,36 @@ public class MainActivity extends MenuActivity {
         }
 
         registerReceiver(broadcastReceiver, new IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE));
+
+    }
+
+    void changeLanguage() {
+
+        String countryCode = MainApp.usersContract != null ? MainApp.usersContract.getCOUNTRY_ID() : "2";
+        String lang = null, country = null;
+
+        switch (countryCode) {
+            case "1":
+                lang = "ps";
+                country = "AF";
+                break;
+            case "2":
+                lang = null;
+                break;
+
+        }
+
+        if (lang == null) {
+            lang = "en";
+            country = "US";
+        }
+        Locale locale = new Locale(lang, country);
+
+        Locale.setDefault(locale);
+        Configuration config = new Configuration();
+        config.locale = locale;
+        this.getResources().updateConfiguration(config, this.getResources().getDisplayMetrics());
+        this.getResources().getConfiguration().setLayoutDirection(Locale.ENGLISH);
 
     }
 
