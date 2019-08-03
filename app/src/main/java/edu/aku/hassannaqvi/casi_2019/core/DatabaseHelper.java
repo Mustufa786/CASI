@@ -65,8 +65,8 @@ import edu.aku.hassannaqvi.casi_2019.other.Summary;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
-    public static final String DATABASE_NAME = "gsed_2019.db";
-    public static final String PROJECT_NAME = "gsed_2019";
+    public static final String DATABASE_NAME = "casi_2019.db";
+    public static final String PROJECT_NAME = "casi_2019";
     private static final int DATABASE_VERSION = 1;
     public static final String DB_NAME = DATABASE_NAME.replace(".", "_" + MainApp.versionName + "_" + DATABASE_VERSION + "_copy.");
 
