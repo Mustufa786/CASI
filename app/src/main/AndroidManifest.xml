@@ -24,7 +24,7 @@
     <application
         android:name=".core.MainApp"
         android:allowBackup="true"
-        android:icon="@drawable/nns_2018_survey"
+        android:icon="@drawable/casi_logo_text"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
