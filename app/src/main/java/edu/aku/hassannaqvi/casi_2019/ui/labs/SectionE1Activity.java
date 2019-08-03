@@ -196,21 +196,21 @@ public class SectionE1Activity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (bi.ne104a.isChecked()) {
-                    ClearClass.ClearAllFields(bi.fldGrpbloodyes, true);
+                    ClearClass.ClearAllFields(bi.fldGrpbloodyes, null);
                     bi.ne104d.setEnabled(true);
                     bi.ne104t.setEnabled(true);
 
-                    ClearClass.ClearAllFields(bi.fldGrpbloodno, false);
+                    ClearClass.ClearAllFields(bi.fldGrpbloodno, null);
 
                     bi.btnScanBL.setEnabled(true);
                 } else {
-                    ClearClass.ClearAllFields(bi.fldGrpbloodyes, false);
+                    ClearClass.ClearAllFields(bi.fldGrpbloodyes, null);
                     bi.ne104d.setEnabled(false);
                     bi.ne104t.setEnabled(false);
                     bi.ne104d.setText(null);
                     bi.ne104t.setText(null);
                     bi.btnScanBL.setEnabled(false);
-                    ClearClass.ClearAllFields(bi.fldGrpbloodno, true);
+                    ClearClass.ClearAllFields(bi.fldGrpbloodno, null);
                 }
             }
         });
@@ -219,19 +219,19 @@ public class SectionE1Activity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (bi.ne108a.isChecked()) {
-                    ClearClass.ClearAllFields(bi.fldGrpurineyes, true);
+                    ClearClass.ClearAllFields(bi.fldGrpurineyes, null);
                     bi.ne108d.setEnabled(true);
                     bi.ne108t.setEnabled(true);
 
-                    ClearClass.ClearAllFields(bi.fldGrpurinno, false);
+                    ClearClass.ClearAllFields(bi.fldGrpurinno, null);
                     bi.btnScanUR.setEnabled(true);
                 } else {
-                    ClearClass.ClearAllFields(bi.fldGrpurineyes, false);
+                    ClearClass.ClearAllFields(bi.fldGrpurineyes, null);
                     bi.ne108d.setEnabled(false);
                     bi.ne108t.setEnabled(false);
                     bi.ne108d.setText(null);
                     bi.ne108t.setText(null);
-                    ClearClass.ClearAllFields(bi.fldGrpurinno, true);
+                    ClearClass.ClearAllFields(bi.fldGrpurinno, null);
                     bi.btnScanUR.setEnabled(false);
                 }
             }

@@ -496,7 +496,14 @@ public class MainApp extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        TypefaceUtil.overrideFont(getApplicationContext(), "SERIF", "fonts/JameelNooriNastaleeq.ttf"); // font from assets: "assets/fonts/Roboto-Regular.ttf
+        TypefaceUtil.overrideFont(getApplicationContext(), "SERIF", "fonts/JameelNooriNastaleeq.ttf");
+
+        // font from assets: font for Farsi
+//        TypefaceUtil.overrideFont(getApplicationContext(), "SERIF", "fonts/farsi.ttf");
+
+        //font for Tajik
+//        TypefaceUtil.overrideFont(getApplicationContext(), "SERIF", "fonts/Arimo-Regular.ttf");
+
 
         deviceId = Settings.Secure.getString(getApplicationContext().getContentResolver(),
                 Settings.Secure.ANDROID_ID);

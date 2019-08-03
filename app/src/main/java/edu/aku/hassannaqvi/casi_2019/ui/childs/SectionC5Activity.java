@@ -52,11 +52,10 @@ public class SectionC5Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
                 if (isChecked) {
-                    ClearClass.ClearAllFields(bi.fldGrpcic50301, false);
+                    ClearClass.ClearAllFields(bi.fldGrpcic50301, null);
                     bi.fldGrpcic50301.setVisibility(View.GONE);
 
                 } else {
-                    ClearClass.ClearAllFields(bi.fldGrpcic50301, true);
                     bi.fldGrpcic50301.setVisibility(View.VISIBLE);
                 }
             }
@@ -66,11 +65,11 @@ public class SectionC5Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
                 if (isChecked) {
-                    ClearClass.ClearAllFields(bi.fldGrpcic50302, false);
+                    ClearClass.ClearAllFields(bi.fldGrpcic50302, null);
                     bi.fldGrpcic50302.setVisibility(View.GONE);
 
                 } else {
-                    ClearClass.ClearAllFields(bi.fldGrpcic50302, true);
+
                     bi.fldGrpcic50302.setVisibility(View.VISIBLE);
                 }
             }
@@ -80,11 +79,10 @@ public class SectionC5Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
                 if (isChecked) {
-                    ClearClass.ClearAllFields(bi.fldGrpcic50303, false);
+                    ClearClass.ClearAllFields(bi.fldGrpcic50303, null);
                     bi.fldGrpcic50303.setVisibility(View.GONE);
 
                 } else {
-                    ClearClass.ClearAllFields(bi.fldGrpcic50303, true);
                     bi.fldGrpcic50303.setVisibility(View.VISIBLE);
                 }
             }
@@ -94,11 +92,11 @@ public class SectionC5Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
                 if (isChecked) {
-                    ClearClass.ClearAllFields(bi.fldGrpcic50304, false);
+                    ClearClass.ClearAllFields(bi.fldGrpcic50304, null);
                     bi.fldGrpcic50304.setVisibility(View.GONE);
 
                 } else {
-                    ClearClass.ClearAllFields(bi.fldGrpcic50304, true);
+
                     bi.fldGrpcic50304.setVisibility(View.VISIBLE);
                 }
             }
@@ -108,11 +106,11 @@ public class SectionC5Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
                 if (isChecked) {
-                    ClearClass.ClearAllFields(bi.fldGrpcic50305, false);
+                    ClearClass.ClearAllFields(bi.fldGrpcic50305, null);
                     bi.fldGrpcic50305.setVisibility(View.GONE);
 
                 } else {
-                    ClearClass.ClearAllFields(bi.fldGrpcic50305, true);
+
                     bi.fldGrpcic50305.setVisibility(View.VISIBLE);
                 }
             }
@@ -122,11 +120,11 @@ public class SectionC5Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
                 if (isChecked) {
-                    ClearClass.ClearAllFields(bi.fldGrpcic50306, false);
+                    ClearClass.ClearAllFields(bi.fldGrpcic50306, null);
                     bi.fldGrpcic50306.setVisibility(View.GONE);
 
                 } else {
-                    ClearClass.ClearAllFields(bi.fldGrpcic50306, true);
+
                     bi.fldGrpcic50306.setVisibility(View.VISIBLE);
                 }
             }
@@ -136,11 +134,11 @@ public class SectionC5Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
                 if (isChecked) {
-                    ClearClass.ClearAllFields(bi.fldGrpcic50307, false);
+                    ClearClass.ClearAllFields(bi.fldGrpcic50307, null);
                     bi.fldGrpcic50307.setVisibility(View.GONE);
 
                 } else {
-                    ClearClass.ClearAllFields(bi.fldGrpcic50307, true);
+
                     bi.fldGrpcic50307.setVisibility(View.VISIBLE);
                 }
             }
@@ -150,11 +148,11 @@ public class SectionC5Activity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
                 if (isChecked) {
-                    ClearClass.ClearAllFields(bi.fldGrpcic50308, false);
+                    ClearClass.ClearAllFields(bi.fldGrpcic50308, null);
                     bi.fldGrpcic50308.setVisibility(View.GONE);
 
                 } else {
-                    ClearClass.ClearAllFields(bi.fldGrpcic50308, true);
+
                     bi.fldGrpcic50308.setVisibility(View.VISIBLE);
                 }
             }

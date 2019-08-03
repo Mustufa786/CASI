@@ -57,12 +57,11 @@ public class SectionB5Activity extends Menu2Activity implements TextWatcher, Rad
 //                formValidation();
                 if (i == R.id.ciw414b) {
 
-                    ClearClass.ClearAllFields(binding.fldGrpciw415, false);
+                    ClearClass.ClearAllFields(binding.fldGrpciw415, null);
                     binding.fldGrpciw415.setVisibility(View.GONE);
 
 
                 } else {
-                    ClearClass.ClearAllFields(binding.fldGrpciw415, true);
                     binding.fldGrpciw415.setVisibility(View.VISIBLE);
                 }
             }
@@ -74,10 +73,10 @@ public class SectionB5Activity extends Menu2Activity implements TextWatcher, Rad
 //                formValidation();
                 if (i == R.id.ciw419b) {
 
-                    ClearClass.ClearAllFields(binding.fldGrpciw420, false);
+                    ClearClass.ClearAllFields(binding.fldGrpciw420, null);
                     binding.fldGrpciw420.setVisibility(View.GONE);
                 } else {
-                    ClearClass.ClearAllFields(binding.fldGrpciw420, true);
+
                     binding.fldGrpciw420.setVisibility(View.VISIBLE);
                 }
             }

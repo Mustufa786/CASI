@@ -62,7 +62,7 @@ public class SectionB6Activity extends Menu2Activity {
                     bi.fldGrpciw50301.setVisibility(View.GONE);
 
                 } else {
-                    ClearClass.ClearAllFields(bi.fldGrpciw50301, true);
+
                     bi.fldGrpciw50301.setVisibility(View.VISIBLE);
                 }
             }
@@ -76,7 +76,7 @@ public class SectionB6Activity extends Menu2Activity {
                     bi.fldGrpciw50302.setVisibility(View.GONE);
 
                 } else {
-                    ClearClass.ClearAllFields(bi.fldGrpciw50302, true);
+
                     bi.fldGrpciw50302.setVisibility(View.VISIBLE);
                 }
             }
@@ -90,7 +90,7 @@ public class SectionB6Activity extends Menu2Activity {
                     bi.fldGrpciw50303.setVisibility(View.GONE);
 
                 } else {
-                    ClearClass.ClearAllFields(bi.fldGrpciw50303, true);
+
                     bi.fldGrpciw50303.setVisibility(View.VISIBLE);
                 }
             }
@@ -104,7 +104,7 @@ public class SectionB6Activity extends Menu2Activity {
                     bi.fldGrpciw50304.setVisibility(View.GONE);
 
                 } else {
-                    ClearClass.ClearAllFields(bi.fldGrpciw50304, true);
+
                     bi.fldGrpciw50304.setVisibility(View.VISIBLE);
                 }
             }
@@ -118,7 +118,7 @@ public class SectionB6Activity extends Menu2Activity {
                     bi.fldGrpciw50305.setVisibility(View.GONE);
 
                 } else {
-                    ClearClass.ClearAllFields(bi.fldGrpciw50305, true);
+
                     bi.fldGrpciw50305.setVisibility(View.VISIBLE);
                 }
             }
@@ -132,7 +132,7 @@ public class SectionB6Activity extends Menu2Activity {
                     bi.fldGrpciw50306.setVisibility(View.GONE);
 
                 } else {
-                    ClearClass.ClearAllFields(bi.fldGrpciw50306, true);
+
                     bi.fldGrpciw50306.setVisibility(View.VISIBLE);
                 }
             }
@@ -142,11 +142,11 @@ public class SectionB6Activity extends Menu2Activity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
                 if (isChecked) {
-                    ClearClass.ClearAllFields(bi.fldGrpciw50307, false);
+                    ClearClass.ClearAllFields(bi.fldGrpciw50307, null);
                     bi.fldGrpciw50307.setVisibility(View.GONE);
 
                 } else {
-                    ClearClass.ClearAllFields(bi.fldGrpciw50307, true);
+
                     bi.fldGrpciw50307.setVisibility(View.VISIBLE);
                 }
             }
@@ -156,11 +156,11 @@ public class SectionB6Activity extends Menu2Activity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
                 if (isChecked) {
-                    ClearClass.ClearAllFields(bi.fldGrpciw50308, false);
+                    ClearClass.ClearAllFields(bi.fldGrpciw50308, null);
                     bi.fldGrpciw50308.setVisibility(View.GONE);
 
                 } else {
-                    ClearClass.ClearAllFields(bi.fldGrpciw50308, true);
+
                     bi.fldGrpciw50308.setVisibility(View.VISIBLE);
                 }
             }

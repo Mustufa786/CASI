@@ -119,7 +119,6 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
                 if (checkedId == R.id.ciw405a) {
 
 
-                    ClearClass.ClearAllFields(binding.fldGrpciw406, true);
                     binding.fldGrpciw406.setVisibility(View.VISIBLE);
                     binding.ciw406cx.setText(null);
                     binding.ciw406rx.setText(null);
@@ -130,7 +129,7 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
                 } else {
 //                    binding.fldGrpciw406.setVisibility(View.VISIBLE);
 
-                    ClearClass.ClearAllFields(binding.fldGrpciw406, false);
+                    ClearClass.ClearAllFields(binding.fldGrpciw406, null);
                     binding.fldGrpciw406.setVisibility(View.GONE);
                     binding.ciw406cx.setText(null);
                     binding.ciw406rx.setText(null);
@@ -154,14 +153,12 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
                 //formValidation();
                 if (checkedId == R.id.ciw411b || checkedId == R.id.ciw41198) {
 
-                    ClearClass.ClearAllFields(binding.fldGrpciw412, false);
+                    ClearClass.ClearAllFields(binding.fldGrpciw412, null);
                     binding.fldGrpciw412.setVisibility(View.GONE);
-                    ClearClass.ClearAllFields(binding.fldGrpciw412check, false);
+                    ClearClass.ClearAllFields(binding.fldGrpciw412check, null);
 
                 } else {
                     binding.fldGrpciw412.setVisibility(View.VISIBLE);
-                    ClearClass.ClearAllFields(binding.fldGrpciw412, true);
-                    ClearClass.ClearAllFields(binding.fldGrpciw412check, true);
                 }
             }
         });
@@ -209,10 +206,10 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    ClearClass.ClearAllFields(binding.fldGrpciw413, true);
+
                     binding.fldGrpciw413.setVisibility(View.VISIBLE);
                 } else {
-                    ClearClass.ClearAllFields(binding.fldGrpciw413, false);
+                    ClearClass.ClearAllFields(binding.fldGrpciw413, null);
                     binding.fldGrpciw413.setVisibility(View.GONE);
                 }
             }

@@ -138,10 +138,10 @@ public class SectionA402Activity extends AppCompatActivity implements RadioGroup
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
 //                formValidation();
                 if (i == R.id.cih321b) {
-                    ClearClass.ClearAllFields(binding.fldGrpcih322, false);
+                    ClearClass.ClearAllFields(binding.fldGrpcih322, null);
                     binding.fldGrpcih322.setVisibility(View.GONE);
                 } else {
-                    ClearClass.ClearAllFields(binding.fldGrpcih322, true);
+
                     binding.cih322acr.setEnabled(false);
                     binding.cih322can.setEnabled(false);
                     binding.fldGrpcih322.setVisibility(View.VISIBLE);
@@ -156,10 +156,9 @@ public class SectionA402Activity extends AppCompatActivity implements RadioGroup
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
 //                formValidation();
                 if (i == R.id.cih323b) {
-                    ClearClass.ClearAllFields(binding.fldGrpcih324, false);
+                    ClearClass.ClearAllFields(binding.fldGrpcih324, null);
                     binding.fldGrpcih324.setVisibility(View.GONE);
                 } else {
-                    ClearClass.ClearAllFields(binding.fldGrpcih324, true);
                     binding.fldGrpcih324.setVisibility(View.VISIBLE);
                 }
             }
