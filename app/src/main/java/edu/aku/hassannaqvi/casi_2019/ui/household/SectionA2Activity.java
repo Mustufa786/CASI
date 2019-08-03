@@ -727,9 +727,9 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
         });
 
         if (MainApp.othergender == 3) {
-            ClearClass.ClearAllFields(binding.fldGrpcih2ms, false);
+            ClearClass.ClearAllFields(binding.fldGrpcih2ms, null);
         } else {
-            ClearClass.ClearAllFields(binding.fldGrpcih2ms, true);
+            ClearClass.ClearAllFields(binding.fldGrpcih2ms, null);
         }
 
 

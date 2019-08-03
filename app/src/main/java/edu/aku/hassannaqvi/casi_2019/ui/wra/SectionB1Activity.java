@@ -218,9 +218,8 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if (checkedId == bi.ciw203a.getId())
-                    ClearClass.ClearAllFields(bi.fldGrpciw204, true);
-                else
-                    ClearClass.ClearAllFields(bi.fldGrpciw204, false);
+                    ClearClass.ClearAllFields(bi.fldGrpciw204, null);
+
             }
         });
 
@@ -228,10 +227,10 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if (bi.ciw204a.isChecked())
-                    ClearClass.ClearAllFields(bi.fldGrpciw206, true);
+                    ClearClass.ClearAllFields(bi.fldGrpciw206, null);
                 else {
                     bi.ciw205.clearCheck();
-                    ClearClass.ClearAllFields(bi.fldGrpciw206, false);
+                    ClearClass.ClearAllFields(bi.fldGrpciw206, null);
                 }
             }
         });
@@ -240,9 +239,8 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if (bi.ciw205a.isChecked())
-                    ClearClass.ClearAllFields(bi.fldGrpciw206, true);
-                else
-                    ClearClass.ClearAllFields(bi.fldGrpciw206, false);
+                    ClearClass.ClearAllFields(bi.fldGrpciw206, null);
+
             }
         });
 
@@ -252,9 +250,7 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if (checkedId == R.id.ciw207a) {
-                    ClearClass.ClearAllFields(bi.fldGrpciw208, true);
-                } else {
-                    ClearClass.ClearAllFields(bi.fldGrpciw208, false);
+                    ClearClass.ClearAllFields(bi.fldGrpciw208, null);
                 }
             }
         });

@@ -54,15 +54,13 @@ public class SectionB3Activity extends Menu2Activity implements TextWatcher, Rad
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
 //                formValidation();
                 if (i == R.id.ciw32798) {
-                    ClearClass.ClearAllFields(binding.fldGrciw328, false);
+                    ClearClass.ClearAllFields(binding.fldGrciw328, null);
                     binding.fldGrciw328.setVisibility(View.GONE);
-                    ClearClass.ClearAllFields(binding.fldGrpciw329, false);
+                    ClearClass.ClearAllFields(binding.fldGrpciw329, null);
                     binding.fldGrpciw329.setVisibility(View.GONE);
                 } else {
                     binding.fldGrciw328.setVisibility(View.VISIBLE);
                     binding.fldGrpciw329.setVisibility(View.VISIBLE);
-                    ClearClass.ClearAllFields(binding.fldGrciw328, true);
-                    ClearClass.ClearAllFields(binding.fldGrpciw329, true);
                 }
             }
         });
@@ -73,11 +71,11 @@ public class SectionB3Activity extends Menu2Activity implements TextWatcher, Rad
 //                formValidation();
                 if (i == R.id.ciw330d) {
                     binding.fldGrciw331.setVisibility(View.GONE);
-                    ClearClass.ClearAllFields(binding.fldGrciw331, false);
+                    ClearClass.ClearAllFields(binding.fldGrciw331, null);
 
                 } else {
                     binding.fldGrciw331.setVisibility(View.VISIBLE);
-                    ClearClass.ClearAllFields(binding.fldGrciw331, true);
+
                 }
             }
         });
@@ -87,13 +85,13 @@ public class SectionB3Activity extends Menu2Activity implements TextWatcher, Rad
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
 //                formValidation();
                 if (i == R.id.ciw331b) {
-                    ClearClass.ClearAllFields(binding.fldGrciw332, false);
+                    ClearClass.ClearAllFields(binding.fldGrciw332, null);
                     binding.fldGrciw332.setVisibility(View.GONE);
 
 //                    binding.ciw332.clearCheck();
                 } else {
                     binding.fldGrciw332.setVisibility(View.VISIBLE);
-                    ClearClass.ClearAllFields(binding.fldGrciw332, true);
+
 
                 }
             }

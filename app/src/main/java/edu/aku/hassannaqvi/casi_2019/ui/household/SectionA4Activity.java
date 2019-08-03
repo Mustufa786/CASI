@@ -58,10 +58,10 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (i == R.id.cih303b || i == R.id.cih303c) {
 //                    formValidation();
-                    ClearClass.ClearAllFields(binding.fldGrcih304, false);
+                    ClearClass.ClearAllFields(binding.fldGrcih304, null);
                     binding.fldGrcih304.setVisibility(View.GONE);
                 } else {
-                    ClearClass.ClearAllFields(binding.fldGrcih304, true);
+
                     binding.fldGrcih304.setVisibility(View.VISIBLE);
                 }
             }
@@ -102,10 +102,9 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
             public void onCheckedChanged(RadioGroup group, int checkedId) {
 //                formValidation();
                 if (checkedId == R.id.cih305b) {
-                    ClearClass.ClearAllFields(binding.fldGrpcih305, false);
+                    ClearClass.ClearAllFields(binding.fldGrpcih305, null);
                     binding.fldGrpcih305.setVisibility(View.GONE);
                 } else {
-                    ClearClass.ClearAllFields(binding.fldGrpcih305, true);
                     binding.cih30696x.setEnabled(false);
                     binding.fldGrpcih305.setVisibility(View.VISIBLE);
                 }
@@ -120,11 +119,11 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
 //                formValidation();
                 if (i == R.id.cih307h || i == R.id.cih307i) {
-                    ClearClass.ClearAllFields(binding.fldGrpcih308, false);
+                    ClearClass.ClearAllFields(binding.fldGrpcih308, null);
                     binding.fldGrpcih308.setVisibility(View.GONE);
                 } else {
                     binding.fldGrpcih308.setVisibility(View.VISIBLE);
-                    ClearClass.ClearAllFields(binding.fldGrpcih308, true);
+
                 }
             }
         });
@@ -135,10 +134,10 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
             public void onCheckedChanged(RadioGroup group, int checkedId) {
 //                formValidation();
                 if (checkedId == R.id.cih308b) {
-                    ClearClass.ClearAllFields(binding.fldGrpcih309, false);
+                    ClearClass.ClearAllFields(binding.fldGrpcih309, null);
                     binding.fldGrpcih309.setVisibility(View.GONE);
                 } else {
-                    ClearClass.ClearAllFields(binding.fldGrpcih309, true);
+
                     binding.fldGrpcih309.setVisibility(View.VISIBLE);
 
                 }

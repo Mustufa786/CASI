@@ -122,28 +122,28 @@ public class SectionD1Activity extends Menu2Activity implements TextWatcher, Rad
                         case 1: // MWRA
 
 //                            binding.fldGrpbcgScar.setVisibility(View.GONE);
-                            ClearClass.ClearAllFields(binding.fldGrpbcgScar, false);
+                            ClearClass.ClearAllFields(binding.fldGrpbcgScar, null);
 
 //                            binding.fldGrpode.setVisibility(View.GONE);
-                            ClearClass.ClearAllFields(binding.fldGrpode, false);
+                            ClearClass.ClearAllFields(binding.fldGrpode, null);
                             break;
 
                         case 2: // U5
 
 //                            binding.fldGrpbcgScar.setVisibility(View.VISIBLE);
-                            ClearClass.ClearAllFields(binding.fldGrpbcgScar, true);
+                            ClearClass.ClearAllFields(binding.fldGrpbcgScar, null);
 
 //                            binding.fldGrpode.setVisibility(View.VISIBLE);
-                            ClearClass.ClearAllFields(binding.fldGrpode, true);
+                            ClearClass.ClearAllFields(binding.fldGrpode, null);
                             break;
 
                         case 3: // Adolescent
 
 //                            binding.fldGrpbcgScar.setVisibility(View.GONE);
-                            ClearClass.ClearAllFields(binding.fldGrpbcgScar, false);
+                            ClearClass.ClearAllFields(binding.fldGrpbcgScar, null);
 
 //                            binding.fldGrpode.setVisibility(View.GONE);
-                            ClearClass.ClearAllFields(binding.fldGrpode, false);
+                            ClearClass.ClearAllFields(binding.fldGrpode, null);
                             break;
                     }
                 }

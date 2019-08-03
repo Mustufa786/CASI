@@ -65,14 +65,11 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
 //                ValidateForm();
                 if (bi.ciw301a.isChecked()) {
                     bi.fldGrpciw302.setVisibility(View.VISIBLE);
-                    ClearClass.ClearAllFields(bi.fldGrpciw302, true);
-                    ClearClass.ClearAllFields(bi.fldGrpciw302check, true);
-                    ClearClass.ClearAllFields(bi.fldGrpciw306check, true);
                 } else {
                     bi.fldGrpciw302.setVisibility(View.GONE);
-                    ClearClass.ClearAllFields(bi.fldGrpciw302, false);
-                    ClearClass.ClearAllFields(bi.fldGrpciw302check, false);
-                    ClearClass.ClearAllFields(bi.fldGrpciw306check, false);
+                    ClearClass.ClearAllFields(bi.fldGrpciw302, null);
+                    ClearClass.ClearAllFields(bi.fldGrpciw302check, null);
+                    ClearClass.ClearAllFields(bi.fldGrpciw306check, null);
 
                 }
             }
@@ -161,16 +158,14 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
             public void onCheckedChanged(RadioGroup group, int checkedId) {
 //                ValidateForm();
                 if (bi.ciw310a.isChecked()) {
-                    ClearClass.ClearAllFields(bi.fldGrpnb210, true);
                     bi.fldGrpnb210.setVisibility(View.VISIBLE);
-                    ClearClass.ClearAllFields(bi.fldGrpciw312, true);
                     bi.fldGrpciw312.setVisibility(View.VISIBLE);
                     //bi.fldGrpnb210.setVisibility(View.VISIBLE);
                 } else {
                     bi.fldGrpnb210.setVisibility(View.GONE);
                     bi.fldGrpciw312.setVisibility(View.GONE);
-                    ClearClass.ClearAllFields(bi.fldGrpnb210, false);
-                    ClearClass.ClearAllFields(bi.fldGrpciw312, false);
+                    ClearClass.ClearAllFields(bi.fldGrpnb210, null);
+                    ClearClass.ClearAllFields(bi.fldGrpciw312, null);
 
                 }
             }
@@ -182,15 +177,13 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
 //                ValidateForm();
                 if (bi.ciw315a.isChecked()) {
                     //bi.fldGrpciw318.setVisibility(View.VISIBLE);
-                    ClearClass.ClearAllFields(bi.fldGrpciw318, true);
                     bi.fldGrpciw318.setVisibility(View.VISIBLE);
-                    ClearClass.ClearAllFields(bi.fldGrpciw317, true);
                     bi.fldGrpciw317.setVisibility(View.VISIBLE);
                 } else {
                     bi.fldGrpciw318.setVisibility(View.GONE);
                     bi.fldGrpciw317.setVisibility(View.GONE);
-                    ClearClass.ClearAllFields(bi.fldGrpciw318, false);
-                    ClearClass.ClearAllFields(bi.fldGrpciw317, false);
+                    ClearClass.ClearAllFields(bi.fldGrpciw318, null);
+                    ClearClass.ClearAllFields(bi.fldGrpciw317, null);
 
                 }
             }
@@ -203,16 +196,14 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
 //                ValidateForm();
                 if (bi.ciw320a.isChecked()) {
                     //bi.fldGrpciw323.setVisibility(View.VISIBLE);
-                    ClearClass.ClearAllFields(bi.fldGrpciw323, true);
-                    ClearClass.ClearAllFields(bi.fldGrpciw322, true);
                     bi.fldGrpciw323.setVisibility(View.VISIBLE);
                     bi.fldGrpciw322.setVisibility(View.VISIBLE);
                 } else {
                     bi.fldGrpciw323.setVisibility(View.GONE);
                     bi.fldGrpciw322.setVisibility(View.GONE);
 
-                    ClearClass.ClearAllFields(bi.fldGrpciw323, false);
-                    ClearClass.ClearAllFields(bi.fldGrpciw322, false);
+                    ClearClass.ClearAllFields(bi.fldGrpciw323, null);
+                    ClearClass.ClearAllFields(bi.fldGrpciw322, null);
 
                 }
             }
