@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.InputType;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -30,7 +29,6 @@ import edu.aku.hassannaqvi.casi_2019.core.MainApp;
 import edu.aku.hassannaqvi.casi_2019.databinding.ActivityAntrhoInfoBinding;
 import edu.aku.hassannaqvi.casi_2019.other.JSONUtilClass;
 import edu.aku.hassannaqvi.casi_2019.ui.household.EndingActivity;
-import edu.aku.hassannaqvi.casi_2019.ui.mainUI.MainActivity;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
 
@@ -225,31 +223,7 @@ public class AntrhoInfoActivity extends Activity {
 
         int scanChar;
 
-        /*if(MainActivity.ftype.equals("B")) {
-            if (!ValidatorClass.EmptyTextBox(this, binding.hcCode, getString(R.string.hc))) {
-                return false;
-            }
-
-            if (binding.hcCode.getText().toString().contains("§")) {
-                scanChar = 7;
-            } else {
-                scanChar = 6;
-            }
-
-            if (binding.hcCode.getText().length() != scanChar || !binding.hcCode.getText().toString().contains("-")
-                    || !binding.hcCode.getText().toString().contains("HC")) {
-                Toast.makeText(this, "ERROR(invalid)" + getString(R.string.hc), Toast.LENGTH_SHORT).show();
-                binding.hcCode.setError("Invalid Number..");
-
-                Log.i(TAG, "hcCode: Invalid number");
-                return false;
-            } else {
-                binding.hcCode.setError(null);
-            }
-        }
-
-        */
-        if (MainActivity.ftype.equals("A")) {
+        /*if (MainActivity.ftype.equals("A")) {
             if (!ValidatorClass.EmptyTextBox(this, binding.htCode, getString(R.string.ht))) {
                 return false;
             }
@@ -291,7 +265,7 @@ public class AntrhoInfoActivity extends Activity {
             } else {
                 binding.wtCode.setError(null);
             }
-        }
+        }*/
 
 
         return true;
@@ -321,7 +295,8 @@ public class AntrhoInfoActivity extends Activity {
             hh = db.getAllHHforAnthro(binding.cih102.getText().toString(), binding.cih108.getText().toString().toUpperCase());
             if (hh.size() > 0) {
                 populateMembers(hh.get(hh.size() - 1).get_UUID(), hh.get(hh.size() - 1).getFormDate());
-            }
+            } else
+                Toast.makeText(this, "HH Not found.", Toast.LENGTH_SHORT).show();
         } else {
             Toast.makeText(this, "Not found.", Toast.LENGTH_SHORT).show();
         }
