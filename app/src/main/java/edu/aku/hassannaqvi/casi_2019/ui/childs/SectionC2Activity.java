@@ -88,13 +88,11 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
 
             if (isoneYes()) {
                 //bi.fldGrpcic218.setVisibility(View.GONE);
-                ClearClass.ClearAllFields(bi.fldGrpcic218, false);
-                ClearClass.ClearAllFields(bi.fldGrpcic219, true);
+                ClearClass.ClearAllFields(bi.fldGrpcic218, null);
                 //bi.fldGrpcic219.setVisibility(View.VISIBLE);
                 //bi.cic218.clearCheck();
             } else {
-                ClearClass.ClearAllFields(bi.fldGrpcic218, true);
-                ClearClass.ClearAllFields(bi.fldGrpcic219, false);
+                ClearClass.ClearAllFields(bi.fldGrpcic219, null);
                 //bi.fldGrpcic218.setVisibility(View.VISIBLE);
                 //bi.fldGrpcic219.setVisibility(View.VISIBLE);
             }
