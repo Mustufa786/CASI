@@ -425,7 +425,7 @@ public class SectionD1Activity extends Menu2Activity implements TextWatcher, Rad
 
         for (FamilyMembersContract fmc : family) {
             json = JSONUtilClass.getModelFromJSON(fmc.getsA2(), JSONModelClass.class);
-            membersMap.put(json.getName() + "_" + json.getSerialNo(), new SelectedMem(type, fmc, json.getSerialNo()));
+            membersMap.put(json.getName() + "_" + json.getSerialNo(), new SelectedMem(type, fmc, json.getSerialNo(), json.getYear(), json.getMonth(), json.getDay()));
             members.add(json.getName() + "_" + json.getSerialNo());
         }
 
@@ -711,7 +711,14 @@ public class SectionD1Activity extends Menu2Activity implements TextWatcher, Rad
         sA3.put("ht_code", AntrhoInfoActivity.ht_code);
         sA3.put("wt_code", AntrhoInfoActivity.wt_code);
         sA3.put("cid101", binding.cid101.getSelectedItem().toString());
-        sA3.put("cid101Serial", membersMap.get(binding.cid101.getSelectedItem()).getFmc().getSerialNo());
+
+        SelectedMem selectedMem = membersMap.get(binding.cid101.getSelectedItem());
+
+        sA3.put("cid101Serial", selectedMem.getFmc().getSerialNo());
+        String[] dob = selectedMem.getFmc().getAge().split("-");
+        sA3.put("cid101y", dob[0]);
+        sA3.put("cid101m", dob[1]);
+        sA3.put("cid101d", dob[2]);
 
         sA3.put("cid1Serial", String.valueOf(counter));
 
@@ -807,10 +814,11 @@ public class SectionD1Activity extends Menu2Activity implements TextWatcher, Rad
         FamilyMembersContract fmc;
 
 
-        public SelectedMem(int type, FamilyMembersContract fmc, String SerialNo) {
+        public SelectedMem(int type, FamilyMembersContract fmc, String SerialNo, String year, String month, String day) {
             this.type = type;
             this.fmc = fmc;
             this.fmc.setSerialNo(SerialNo);
+            this.fmc.setAge(year + "-" + month + "-" + day);
         }
 
         public int getType() {

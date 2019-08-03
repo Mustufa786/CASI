@@ -18,6 +18,12 @@ public class JSONModelClass {
     private String gender = "";
     @SerializedName("cih212")
     private String mothername = "";
+    @SerializedName("cih2doby")
+    private String year = "";
+    @SerializedName("cih2dobm")
+    private String month = "";
+    @SerializedName("cih2dobd")
+    private String day = "";
     private String cih210;
 
     public JSONModelClass() {
@@ -78,5 +84,29 @@ public class JSONModelClass {
 
     public void setGender(String gender) {
         this.gender = gender;
+    }
+
+    public String getYear() {
+        return year;
+    }
+
+    public void setYear(String year) {
+        this.year = year;
+    }
+
+    public String getMonth() {
+        return month;
+    }
+
+    public void setMonth(String month) {
+        this.month = month;
+    }
+
+    public String getDay() {
+        return day;
+    }
+
+    public void setDay(String day) {
+        this.day = day;
     }
 }
