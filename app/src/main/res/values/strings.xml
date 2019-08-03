@@ -1,9 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <!--URDU-->
-
-
-    <string name="app_name"> CENTRAL ASIA STUNTING INITIATIVE 2019 </string>
+    <string name="app_name"> CENTRAL ASIA STUNTING INITIATIVE 2019 - URDU</string>
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
@@ -16,7 +13,6 @@
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_field_required">This field is required</string>
     <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
-
     <string name="end_interview">اختتام </string>
     <string name="start_interview"> انٹروہو شروع کریں </string>
     <string name="nextSection"> اگلا سیکشن </string>
@@ -33,7 +29,6 @@
     <string name="istatusg"> عمر کی وجہ سے نااہل </string>
     <string name="cic3response"> Response </string>
     <string name="cic3src"> Source </string>
-
     <string name="anthrostatus">Assessment Status</string>
     <string name="anthroa">مکمل</string>
     <string name="anthrob">نا مکمل</string>
@@ -42,7 +37,6 @@
     <string name="date"> تاریخ</string>
     <string name="time">وقت </string>
     <string name="notEaten"> نہیں کھا یا  </string>
-
     <string name="istatusha"> مکمل</string>
     <string name="istatushb">گھرانے کا کوئی فرد یا باصلاحیت جواب دہندہ گھر پر موجود نہیں تھا</string>
     <string name="istatushc">گھرانہ کے تمام افراد لمبے عرصے کے لیے گھر سے غیر حاضر تھے </string>
@@ -50,10 +44,7 @@
     <string name="istatushe">خالی گھر/گھر کا پتہ نہ تھا</string>
     <string name="istatushf">گھر نہیں ملا</string>
     <string name="istatushg">جزوی مکمل</string>
-
     <!-- String related to section headings -->
-
-
     <!-- Strings that are fixed for all apps -->
     <string name="title_activity_splashscreen">SplashscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
@@ -69,7 +60,6 @@
     <string name="dkn2"> معلوم نہیں / یاد نہیں</string>
     <string name="none">پانی گھر پر موجود ہے یا پانی گھر پر فراہم کیا جاتا ہے </string>
     <string name="nofood">ان میں سے کچھ بھی نہیں کھایا</string>
-
     <string name="count"> تعداد </string>
     <string name="other"> دیگر وضاحت کریں </string>
     <string name="other1"> وضاحت کریں </string>
@@ -88,8 +78,6 @@
     <string name="explain">وضاحت کریں  </string>
     <string name="selected1">کیا یہ گھرانہ خون اور پیشاب کے نمونے لینے کے لیے منتخب کیا گیا ہے؟ </string>
     <string name="selected2">کیا یہ گھرانہ پانی کے نمونے لینے کے لیے منتخب کیا گیا ہے؟ </string>
-
-
     <string name="sectionC3">سیکشن سی 3: مختلف اقسام کے کھانوں کا استعمال 2-5 سال  کے بچوں لیے   </string>
     <string name="sectionA7">سیکشن ایچ 7: امداد/ پروگرام تک رسا ئ</string>
     <string name="sectionB6">سال کےسیکشن 5:  خواتین کے مختلف اقسام کے کھانوں کا استعمال</string>
@@ -136,8 +124,6 @@
     <string name="na201"> Line number </string>
     <string name="na202Info"> براہ مہربانی پہلے مجھے ان سب کانام بتائیں جو عام طور پر یہاں رہتے ہیں خاندان کے سربراہ سے شروع کریں </string>
     <string name="na202"> نام </string>
-
-
     <string name="na203a">سربراہ </string>
     <string name="na203b">خاوند/ بیوی </string>
     <string name="na203c">بیٹا / بیٹی </string>
@@ -155,8 +141,6 @@
     <string name="na203o">یتیم </string>
     <string name="na20396">دیگر (کوئی رشتہ دار نہیں) </string>
     <string name="na20398">  معلوم نہیں </string>
-
-
     <string name="resp"> کیا یہ جواب دہندہ ہے؟</string>
     <string name="cih211"> والد کا نام </string>
     <string name="cih212"> والدہ کا نام </string>
@@ -164,7 +148,6 @@
     <string name="childname"> بچے کا نام</string>
     <string name="na204"> جنس </string>
     <string name="na204c">مخنث</string>
-
     <string name="cih2edu"> ۔H208- تعلیم </string>
     <string name="cih2edua"> کوئی نہیں</string>
     <string name="cih2edub"> پری پرائمری</string>
@@ -193,11 +176,9 @@
     <string name="cih2msd">  الگ رہتا/ رہتی ہو  </string>
     <string name="cih2mse">کنوارہ/کنواری </string>
     <string name="cih210">  ۔H210-(۔Name) کیا اس وقت موجود ہے </string>
-
     <string name="cih2u5"> Record line No. for child under five years </string>
     <string name="h2adol"> Record line No. for Adolescent 10-19 years </string>
     <string name="h2mwra"> Record line No. for Married women 15-49 years</string>
-
     <string name="cih213"> ۔H213- گھر کے سربراہ کا فون نمبر </string>
     <string name="cih2mw"> شادی شدہ خواتین </string>
     <string name="na2ad"> نوعمر افراد </string>
@@ -226,8 +207,6 @@
     <string name="cid1cainfo"> (for MWRA and Adolescent) </string>
     <string name="cid1o"> Odeama </string>
     <string name="cid1oinfo"> (for MWRA) </string>
-
-
     <string name="cih3heading"> سیکشن ایچ 3 : سماجی امداد کے حوالے سے معلومات </string>
     <string name="cih3sub">یہ سیکشن گھر کے سربراہ سے یا گھر میں کم سے کم 18 سال یا اس سے ذائد عمر کے کسی سمجھدار شخص سے پوچھا جائیگا </string>
     <string name="cih301a"> اردو </string>
@@ -249,7 +228,6 @@
 
     <string name="cih302a"> اپنا </string>
     <string name="cih302b"> کرائے کا </string>
-
     <!--<string name="cih303sub"> میونسپل کمیٹی کا پانی کاکنکشن  </string>-->
     <string name="cih303a"> میونسپل کمیٹی کا پانی کاکنکشن </string>
     <string name="cih303b">گھر میں کانلکا </string>
@@ -268,19 +246,14 @@
     <string name="cih303o"> سطح والا پانی(دریا،جھیل ،ڈیم،تالاب/ ندی/نہر کا پانی) </string>
     <string name="cih303p"> فلٹیرشن پلانٹ </string>
     <string name="cih303q"> بوتل کا پانی </string>
-
     <string name="cih304"> ۔H304 - آپکوپانی کے اہم ذریعے تک پہنچنے میں اور وہاں سے پانی لے کر گھر آنے تک کتنا وقت لگتا ہے  </string>
     <string name="cih304min">وقت منٹوں میں لکھیں</string>
-
-
     <string name="cih306a">  ابالتے ہیں </string>
     <string name="cih306b"> بلیچ/کلورین ملاتے ہیں </string>
     <string name="cih306c"> کپڑے کے ذریعہ چھانتے ہیں </string>
     <string name="cih306d">  پانی کا فلٹر استعمال کرتے ہیں </string>
     <string name="cih306e"> سورج کی شعاعوں سے /دھوپ میں رکھتے ہیں  </string>
     <string name="cih306f"> برتن میں پانی ڈال کر ٹہرنے کا انتظار کرتے ہیں </string>
-
-
     <string name="cih307info"> فلش یا انڈیل کر پانی ڈالنے والا </string>
     <string name="cih307a"> فلش سیوریج کے نظام سے منسلک </string>
     <string name="cih307b"> فلش سپٹک ٹینک سے منسلک </string>
@@ -292,11 +265,7 @@
     <string name="cih307g"> گڑھے والا کھلاہوا لیٹرین </string>
     <string name="cih307h"> بالٹی والا ٹوائلٹ </string>
     <string name="cih307i"> کوئی سہولت نہیں /جھاڑیوں/زمین پر </string>
-
-
     <string name="cih309a"> گھرانوں کی تعداد </string>
-
-
     <string name="cih310a"> بچہ لیٹرین استعمال کرتا ہے </string>
     <string name="cih310b"> پاخانہ لیٹرین سے بہادیتے ہیں </string>
     <string name="cih310c"> پاخانہ نالی /گھڑھے سے بہادیتے ہیں  </string>
@@ -304,7 +273,6 @@
     <string name="cih310e"> کھلا پڑا رہتا ہے </string>
     <string name="cih310f"> زمین میں دبا دیتے ہیں </string>
     <string name="cih310g"> پانچ سال سے کم عمر کوئی بچہ نہیں ہے </string>
-
     <string name="cih31101"> بجلی </string>
     <string name="cih31102"> ریڈیو </string>
     <string name="cih31103">ٹیلی وژن </string>
@@ -324,7 +292,6 @@
     <string name="cih31117"> کمپیوٹر/لیپ ٹاپ  </string>
     <string name="cih31118">انٹرنیٹ کا کنکشن </string>
     <string name="cih31119"> ڈیش /کیبل نیٹ ورک </string>
-
     <string name="cih312a"> گھڑی </string>
     <string name="cih312b"> موبائل  </string>
     <string name="cih312c"> سائیکل </string>
@@ -334,8 +301,6 @@
     <string name="cih312g"> ٹریکٹر </string>
     <string name="cih312h">موٹر کے ساتھ کشتی</string>
     <string name="cih312i">موٹر کے بغیر کشتی </string>
-
-
     <string name="cih313a"> بلب </string>
     <string name="cih313b"> ٹیوب لائٹ </string>
     <string name="cih313ca"> </string>
@@ -343,7 +308,6 @@
     <string name="cih313d"> انرجی سیور </string>
     <string name="cih313e"> موم بتی </string>
     <string name="cih313f"> لالٹین </string>
-
     <string name="cih314a"> بجلی </string>
     <string name="cih314b"> ایل –پی-جی سیلنڈر </string>
     <string name="cih314c"> قدرتی گیس </string>
@@ -355,18 +319,15 @@
     <string name="cih314i"> تنکے/جھاڑیاں/گھاس پھونس </string>
     <string name="cih314j"> جانوروں کا گوبر(اوپلے) </string>
     <string name="cih314k"> گھر میں کھانا نہیں پکتا</string>
-
     <string name="cih315a"> گھر کے اندر </string>
     <string name="cih315b"> علیحدہ عمارت میں </string>
     <string name="cih315c"> بیرونی جگہ </string>
-
     <string name="cih317info"> قدرتی فرش </string>
     <string name="cih317a"> مٹی/چکنی مٹی/زمین/ریت </string>
     <string name="cih317b"> جانوروں کا گوبر </string>
     <string name="cih317info1"> بنیادی /ابتدائی فرش </string>
     <string name="cih317c"> لکٹری کے تختے </string>
     <string name="cih317d"> کھجور  یاناریل کے پتے /بانس </string>
-
     <string name="cih317info2"> تیار فرش </string>
     <string name="cih317e">لکڑی کا فرش یا پالش والی لکڑی</string>
     <string name="cih317f">لکڑی کی پلائی یا لکڑی کے ٹائلز   </string>
@@ -375,7 +336,6 @@
     <string name="cih317i"> قالین </string>
     <string name="cih317j"> اینٹیں </string>
     <string name="cih317k"> چونے کا پتھر </string>
-
     <string name="cih318info"> قدرتی چھت </string>
     <string name="cih318a"> کوئی چھت نہیں </string>
     <string name="cih318b"> گھاس پھونس /کھجو ر کے پتے </string>
@@ -393,7 +353,6 @@
     <string name="cih318l">  سیمنٹ آر سی سی(پکی چھت) </string>
     <string name="cih318m"> چھت میں استعمال ہونے والے ٹائلز </string>
     <string name="cih318n"> اینٹیں </string>
-
     <string name="cih319sub">قدرتی دیواریں    </string>
     <string name="cih319a"> کوئی دیوار نہیں </string>
     <string name="cih319b"> کھجور کے درخت  /بانس </string>
@@ -416,8 +375,7 @@
     <string name="cih320a"> کمرے </string>
     <string name="cih322acr"> ایکٹر </string>
     <string name="cih322can"> کنال </string>
-    <string name="cih324info"> ایک ایک کر کے جانوروں کے نام پوچھیں اور شمار کنندہ مشاہدہ کرے
-  اگر کوئی نہیں تو 000 لکھیں </string>
+    <string name="cih324info"> ایک ایک کر کے جانوروں کے نام پوچھیں اور شمار کنندہ مشاہدہ کرےاگر کوئی نہیں تو 000 لکھیں </string>
     <string name="cih324a"> مال مویشی (گائے اور بیل) </string>
     <string name="cih324b"> گھوڑے/گدھے/خچر </string>
     <string name="cih324c"> بکریاں </string>
@@ -431,23 +389,18 @@
     <string name="cih401b">رہائش گاہ پلاٹ /صحن میں موجود نہیں </string>
     <string name="cih401c">دیکھنے کی اجازت نہیں  ملی</string>
     <string name="cih401d"> کوئی اور وجہ </string>
-
     <string name="cih402a"> پانی موجود ہے </string>
     <string name="cih402b"> پانی موجود نہیں ہے </string>
-
     <string name="cih403a"> صابن </string>
     <string name="cih403b"> ڈیٹرجنٹ(پاوڈر/ مائع/پیسٹ) </string>
     <string name="cih403c"> مائع صابن </string>
     <string name="cih403d"> راکھ /مٹی /ریت </string>
     <string name="cih403e"> کوئی نہیں </string>
-
-
     <string name="cih405a"> صابن </string>
     <string name="cih405b"> ڈیٹرجنٹ(پاوڈر/ مائع/پیسٹ) </string>
     <string name="cih405c"> مائع صابن </string>
     <string name="cih405d"> راکھ /مٹی /ریت </string>
     <string name="cih405e"> کوئی نہیں </string>
-
     <string name="cih40601"> کھانا بنانے سے پہلے </string>
     <string name="cih40602"> کھانا کھانے سے پہلے </string>
     <string name="cih40603"> بچے کو کھانا کھلانے سے پہلے </string>
@@ -456,8 +409,6 @@
     <string name="cih406info"> یہ از خود وضاحت پر مشتمل سوال ہیں اس لئے جواب دہندہ کو جواب پڑھ کر نہ سنائیں </string>
     <string name="cih406info1"> جواب دہندہ کا جواب سننے کے بعد آپ اُس مزید پوچھں کیا کسی اور وجہ سے بھی صابن سے ہاتھ دھوتے ہیں اور سوال پوچھتےرہیں جب تک کہ جوابدہندہ یہ نہ کہے ،کہ اور کچھ نہیں ۔Y لکھیں اس صورت میں کہ جواب دہندہ کوئی خاص وجہ بتائے اور N لکھیں اس صورت میں کہ جواب دہندہ کوئی خاص وجہ نہ بتائے </string>
     <string name="na6heading"> سیکشن 5: نمک میں آیوڈین کی مقدار جاننے کا ٹیسٹ </string>
-
-
     <string name="na601info"> چیک کیاگیا نمک </string>
     <string name="na601a"> 0 پی پی ایم ک(کوئی ردعمل/کیمیائی تبدیلی نہیں) </string>
     <string name="na601b"> 0 اور 15 پی پی ایم کے درمیان </string>
@@ -470,11 +421,9 @@
     <string name="na602a"> پاوڈر </string>
     <string name="na602b"> دانےدار </string>
     <string name="na602c"> خام نمک </string>
-
     <string name="na603c"> مشاہدہ نہیں کیا </string>
     <string name="na603d"> برنی میں نمک </string>
     <string name="na7heading">سیکشن ایچ 6: غذائی قلت کےتجربات کی معلومات   </string>
-
     <string name="cih501info"> چیک کیاگیا نمک </string>
     <string name="cih501a"> 0 پی پی ایم (کوئی ردعمل/کیمیائی تبدیلی نہیں) </string>
     <string name="cih501b"> 0 اور 15 پی پی ایم کے درمیان </string>
@@ -482,31 +431,24 @@
     <string name="cih501info1"> نمک چیک نہیں کیاگیا </string>
     <string name="cih501d"> گھر میں نمک نہیں تھا </string>
     <string name="cih502info"> دوقطرے ٹیسٹ سلوشن کے نمک پرڈالیں اور30 سیکنڈ کے لیے رک جائیں اور کلر چارٹ سے رنگ کا موازنہ کریں اور ریکارڈ کریں جوابات (1،2،3،) ٹیسٹ کے نتائج کے مطابق نتیجہ(2،1 یا 3 ) ریکارڈ کریں </string>
-
     <string name="cih502info1"> ساخت </string>
     <string name="cih502a"> پاوڈر </string>
     <string name="cih502b"> دانےدار </string>
     <string name="cih502c"> خام نمک </string>
-
     <string name="cih503c"> مشاہدہ نہیں کیا </string>
     <string name="cih503d"> برنی میں نمک </string>
     <string name="cih6heading">سیکشن ایچ 6: غذائی قلت کےتجربات کی معلومات   </string>
     <string name="cih6info"> میں آپ سے کھانے اور غذا کےبارے میں چند سوالات پوچھوں گا پچھلے 12 مہینوں کے دوران کسی موقع پر جب: </string>
-
-
     <string name="na8heading"> سیکشن ایچ 7: سوشل سیفٹی نیٹ    </string>
     <string name="na8info"> میں آپ سے مختلف بیرونی معاشی امدادی پروگرام کے بارے میں پوچھوں گا جو گھر کی سطح پرامداد مہیا کرتے ہیں۔بیرونی امداد سے میرا مطلب حکومتی ادارے یا غیر سرکاری ادارے جیسے مذہبی فلاحی یا سماجی ادارے ہیں۔اس میں وہ امداد شامل نہیں ہے جو فیملی دیگر رشتہ دار ،دوست یا پڑوسیوں سے حاصل ہوتی ہے ۔ </string>
-
     <string name="cih702a"> وصول کردہ کانمبر </string>
     <string name="na8aheading"> سیکشن 7:امداد وصول کرنے والے افراد کی معلومات </string>
-    <string name="cih7a01info"> وصول کرنے والا
-    سیکشن A2 سے دیکھ کر لکھیں </string>
+    <string name="cih7a01info"> وصول کرنے والاسیکشن A2 سے دیکھ کر لکھیں </string>
     <string name="cih7a01"> Line No </string>
     <string name="cih7a02"> امداد وصول کرنے والے کا نام </string>
     <string name="cih7a03"> وصول کی جانے والی امداد کی مدت </string>
     <string name="cih7a03y"> YY </string>
     <string name="cih7a03m"> MM </string>
-
     <string name="cih7a04a"> غیر مشروط ادائیگی </string>
     <string name="cih7a04b"> وسیلہ حق </string>
     <string name="cih7a04c"> وسیلہ تعلیم </string>
@@ -517,30 +459,20 @@
     <string name="cih7a04h"> بے نظیر انکم سپورٹ پروگرام </string>
     <string name="cih7a04i"> کارکن فلاح بہبود کے فنڈ </string>
     <string name="cih7a04j"> نیشنل انکم سپورٹ پروگرام </string>
-
     <string name="nbinfo"> ماڈیول بی: خاتون کا سوالنامہ جس کی عمر 49-15 سال ہو </string>
     <string name="nbinfo1"> Instructions: To be filled for all MWRAs </string>
     <string name="nbheading"> سیکشن ڈبلیو 2: تولیدی معلومات </string>
     <string name="nb101"> خاتون کانام </string>
     <string name="nb102"> شادی شدہ خاتون کالائن نمبر سیکشن A2 سے دیکھ کر لکھیں </string>
-
     <string name="ciw201sub1"> اگر دن معلوم نہیں تو 98 لکھیں </string>
     <string name="ciw201sub2"> اگر مہینہ معلوم نہیں تو 98 لکھیں </string>
     <string name="ciw201sub3"> اگر سال معلوم نہیں تو 9998 لکھیں </string>
-
     <string name="ciw202a"> عمر سالوں میں </string>
-
-
     <string name="ciw204info"> (بشمول موجودہ حمل) </string>
     <string name="ciw204a"> حمل کی تعداد </string>
-
     <string name="ciw206info"> IF FIRST PREGNANCY AFTER MARRIAGE THEN GO TO SECTION B2 </string>
-
     <string name="ciw206a"> عمر سالوں میں </string>
-
     <string name="nb1aheading"> پچھلے پانچ سالوں میں تمام حمل کی معلومات  </string>
-
-
     <string name="ciw217"> حمل کے نتیجے کی تاریخ </string>
     <string name="ciw218"> نتیجہ </string>
     <string name="ciw218a"> حمل ضائع </string>
@@ -549,7 +481,6 @@
     <string name="ciw218d"> جڑواں بچوں کی پیدائش </string>
     <string name="ciw218e"> جڑواں مردہ بچوں کی پیدائش </string>
     <string name="ciw218f"> ایک زندہ ایک مردہ بچوں کی پیدائش </string>
-
     <string name="ciw220"> بچے کی موجودہ صورت حال </string>
     <string name="ciw220a"> حیات </string>
     <string name="ciw220b"> فوت </string>
@@ -563,16 +494,13 @@
     <string name="ciw222y"> سال </string>
     <string name="ciw222m"> ماہ </string>
     <string name="ciw222d"> دن </string>
-
     <string name="nb1a03"> بچے کا نمبر </string>
-
     <string name="nb2heading"> سیکشن ڈبلیو 3: حمل کے دوران کیے گئے طبی معانئے کی معلومات </string>
     <string name="nb2subHeading">یہ حصہ ہر اُس خاتون کا بھرا جائے گا جس کی عمر 49-15 سال ہے اور گذشتہ 2 سال میں زندہ بچے کی پیدائش ہوئی ہو  </string>
     <string name="nb2sub"> یہ حصہ ہر اُس خاتون کا بھرا جائے گا جس کی عمر 49-15 سال ہے اور گذشتہ 2 سال میں زندہ بچے کی پیدائش ہوئی ہو  </string>
     <string name="ciw301">۔W301 - نے گزشتہ حمل کےدوران کسی سے اپنا طبی معائنہ کرایا تھا؟</string>
     <string name="ciw301a">۔W301 - کیا </string>
-    <string name="ciw302info"> مزید پوچھیں :کوئی اور
-    مزید پوچھیں :معائنہ کرنے والے کے بارے میں مزید پوچھیں اور تمام جوابات کو ریکادڑ کریں </string>
+    <string name="ciw302info"> مزید پوچھیں :کوئی اورمزید پوچھیں :معائنہ کرنے والے کے بارے میں مزید پوچھیں اور تمام جوابات کو ریکادڑ کریں </string>
     <string name="ciw302a"> گائنا کالوجسٹ </string>
     <string name="ciw302b"> کوئی دوسرا ڈاکٹر </string>
     <string name="ciw302c"> نرس </string>
@@ -581,35 +509,25 @@
     <string name="ciw302f"> کیمونٹی مڈوائف </string>
     <string name="ciw302g"> لیڈی ہیلتھ وزیٹر </string>
     <string name="ciw302h"> دائی </string>
-
-
     <string name="ciw303sub1"> گھر </string>
-
     <string name="ciw303a"> جواب دہندہ کے گھر پر </string>
     <string name="ciw303b"> کسی اور کے گھر پر  </string>
     <string name="ciw303sub2"> بپلک میڈیکل سیکٹر </string>
-
     <string name="ciw303c"> سرکاری ہسپتال  </string>
     <string name="ciw303d">سرکاری کلینک </string>
     <string name="ciw303e">ماں اور بچہ کا صحت مرکز   </string>
     <string name="ciw303f">  دیگر  سرکاری</string>
     <string name="ciw303sub3">نجی ہسپتال/سیکٹر </string>
-
     <string name="ciw303g"> پرائیوٹ ہسپتال </string>
     <string name="ciw303h"> نجی  کلینک </string>
     <string name="ciw303i"> نجی زچہ و بچہ سینٹر </string>
     <string name="ciw303j"> دیگرنجی  </string>
     <string name="ciw303k">  جگہ کا نام </string>
     <string name="ciw303l"> </string>
-
-
     <string name="ciw304info"> جواب نوٹ کریں جیسے جوابدہندہ نے بتایا ہے ۔اگر 9 مہینے یا اس زیادہ ہے تو "9" ریکارڈ کریں </string>
-
-
     <string name="ciw305info"> مزید پوچھیں: حمل کے معائنہ کے وزٹ کی تعداد کے بارے میں مزید پوچھیں ،اگر کوئی تعداد بتائی ہے تو جو کم سے کم نمبر وہ لکھیں </string>
     <string name="ciw305a"> معائنوں کی تعداد </string>
     <string name="ciw305b"> معلوم نہیں </string>
-
     <string name="ciw306info">(ہر انتخاب کے بارے میں پوچھیں اور تمام مثبت جواب کو دائرہ کریں ) </string>
     <string name="ciw306a"> کیا آپ کا وزن کیاگیا </string>
     <string name="ciw306b"> کیاآپ کا بلڈپریشر چیک کیاگیا </string>
@@ -620,56 +538,43 @@
     <string name="ciw306g"> ماں کا دودھ پلانے کے بارے میں مشورہ ملا </string>
     <string name="ciw306h"> فیملی پلاننگ کے بارے میں مشورہ ملا </string>
     <string name="ciw306i">  کوئی نہیں </string>
-
-    <string name="ciw307info"> اگر آپ کے پاس موجود ہے تو پوچھیں کیا میں دیکھ سکتی ہوں
-    اگر کارڈ موجود ہے تو درج ذیل سوالات کے جوابات کا پتہ کریں </string>
+    <string name="ciw307info"> اگر آپ کے پاس موجود ہے تو پوچھیں کیا میں دیکھ سکتی ہوں اگر کارڈ موجود ہے تو درج ذیل سوالات کے جوابات کا پتہ کریں </string>
     <string name="ciw307a"> ہاں (کارڈ اور دیگر دستاویزات دیکھے) </string>
     <string name="ciw307b"> ہاں (کارڈ اور دیگر دستاویزات نہیں دیکھے) </string>
-
     <string name="nb210"> اگر ہاں ہے تو کسی نے دی یا خریدی </string>
     <string name="nb21001"> کلینک پر ملی </string>
     <string name="nb21002"> خریدی </string>
     <string name="nb21003"> نہ ملی نہ خریدی </string>
     <string name="nb21004"> جواب نہیں دیا </string>
-
     <string name="ciw313a"> روزانہ </string>
     <string name="ciw313b"> ہفتے میں ایک مرتبہ </string>
     <string name="ciw313c"> ہفتے میں دو مرتبہ </string>
     <string name="ciw313d"> ہرمہینے </string>
     <string name="ciw313e"> کبھی کبھار </string>
-
     <string name="ciw314m"> مہینے </string>
     <string name="ciw314d"> دنوں </string>
-
     <string name="ciw318a"> روزانہ </string>
     <string name="ciw318b"> ہفتے میں ایک مرتبہ </string>
     <string name="ciw318c"> ہفتے میں دو مرتبہ </string>
     <string name="ciw318d"> ہرمہینے </string>
     <string name="ciw318e"> کبھی کبھار </string>
-
     <string name="ciw319m"> مہینے </string>
     <string name="ciw319d"> دنوں </string>
-
     <string name="ciw323a"> روزانہ </string>
     <string name="ciw323b"> ہفتے میں ایک مرتبہ </string>
     <string name="ciw323c"> ہفتے میں دو مرتبہ </string>
     <string name="ciw323d"> ہرمہینے </string>
     <string name="ciw323e"> کبھی کبھار </string>
-
     <string name="ciw324m"> مہینے </string>
     <string name="ciw324d"> دنوں </string>
-
     <string name="nb3heading"> Section W3 LHW Coverage </string>
-
     <string name="ciw327m"> مہینوں </string>
     <string name="ciw327d"> دنوں </string>
-
     <string name="ciw328a"> ہرہفتے </string>
     <string name="ciw328b"> ہر پندرہ دن بعد </string>
     <string name="ciw328c"> ہر مہینے </string>
     <string name="ciw328d"> کبھی کبھار </string>
     <string name="ciw328e"> صرف پولیو پلانے کے لیے </string>
-
     <string name="ciw329a"> صحت اور غذائیت کا سیشن </string>
     <string name="ciw329b"> مانع حمل کی فراہمی </string>
     <string name="ciw329c"> صحت مرکز جانے کا مشورہ </string>
@@ -678,21 +583,17 @@
     <string name="ciw329f"> ماں کا علاج </string>
     <string name="ciw329g"> بچے کا علاج </string>
     <string name="ciw329h"> اضافی خوراک کی فراہمی </string>
-
     <string name="ciw330a"> پچھلے مہینے </string>
     <string name="ciw330b"> تین مہینے پہلے </string>
     <string name="ciw330c"> گزشتہ 6 مہینوں میں </string>
-
     <string name="ciw332a"> ہرماہ </string>
     <string name="ciw332b"> ہر تین ماہ بعد </string>
     <string name="ciw332c"> 6 مہینے میں </string>
     <string name="ciw332d"> سال میں ایک بار </string>
     <string name="nb4heading">  سیکشن ڈبلیو 4: زچگی اور زچگی کے بعد کرائے گئے طبی معائنہ کے معلومات</string>
     <string name="nb4subheading">یہ حصہ ہر اُس خاتون کا بھرا جائے گا جس کی عمر 49-15 سال ہے اور گذشتہ 2 سال میں زندہ بچے کی پیدائش ہوئی ہو</string>
-
     <string name="ciw401sub">Health professional</string>
     <string name="ciw401a"> ڈاکٹر </string>
-
     <string name="ciw401c">  مڈ وائف  </string>
     <string name="ciw401sub1">other person</string>
     <string name="ciw401d"> نرس </string>
@@ -701,10 +602,7 @@
     <string name="ciw401b">لیڈی ہیلتھ وزیٹر </string>
     <string name="ciw401g">دوست /رشتہ دار </string>
     <string name="ciw401h">گائنا کالوجسٹ  </string>
-
-
-    <string name="ciw402info"> پوچھیں : کوئی اور
-    پوچھیں: زچگی میں مدد کروانے والوں کانام پوچھیں اور تمام جوابات لکھیں۔ </string>
+    <string name="ciw402info"> پوچھیں : کوئی اور پوچھیں: زچگی میں مدد کروانے والوں کانام پوچھیں اور تمام جوابات لکھیں۔ </string>
     <string name="ciw402a"> ڈاکٹر </string>
     <string name="ciw402b">  لیڈی ہیلتھ وزیٹر </string>
     <string name="ciw402info1"> other person </string>
@@ -715,8 +613,6 @@
     <string name="ciw402g"> دوست /رشتہ دار </string>
     <string name="ciw402h">گائنا کالوجسٹ </string>
     <string name="ciw40299"> کوئی بھی نہیں </string>
-
-
     <string name="ciw403info"> پیدائش  کی جگہ کو شناخت کرنے کے لیے سوالات پوچھیں </string>
     <string name="ciw403info1"> گھر </string>
     <string name="ciw403a"> جواب دہندہ کے گھر پر </string>
@@ -733,32 +629,25 @@
     <string name="ciw403j"> دیگرنجی  صحت مرکز </string>
     <string name="ciw403k"> جگہ کا نام </string>
     <string name="ciw403info4"> (دیگر کی صورت میں جگہ کا نام لکھیں) </string>
-
-
     <string name="ciw404a"> بہت بڑا </string>
     <string name="ciw404b"> اوسطً سے بڑا </string>
     <string name="ciw404c"> اوسطً </string>
     <string name="ciw404d"> اوسطً سے چھوٹا </string>
     <string name="ciw404e"> بہت چھوٹا </string>
-
     <string name="ciw406info"> اگر کارڈ دستیاب ہوتوکارڈ سے وزن کو ریکارڈ کریں </string>
     <string name="ciw406c"> کارڈ سے </string>
     <string name="ciw406r"> یاد کر کے </string>
-
     <string name="ciw410a"> ایک گھنٹے سے بھی کم وقت میں </string>
     <string name="ciw410h"> گھنٹوں میں </string>
     <string name="ciw410d"> دنوں </string>
     <string name="ciw41097"> کبھی نہیں </string>
     <string name="ciw41098"> معلوم نہیں /یاد نہیں </string>
-
     <string name="ciw412a"> کلورو ہیکزیڈن </string>
     <string name="ciw412b"> دوسری جراثیم کش ادویات  (الکوحل/اسپرٹ،جنیش وائلٹ) </string>
     <string name="ciw412c">سُرما </string>
     <string name="ciw412d"> سرسوں  کا تیل </string>
     <string name="ciw412e"> راکھ </string>
     <string name="ciw412f"> گوبر </string>
-
-
     <string name="ciw413sub1"> بپلک میڈیکل سیکٹر </string>
     <string name="ciw413a">سرکاری ہسپتال </string>
     <string name="ciw413b">  سرکاری صحت سینٹر</string>
@@ -777,10 +666,7 @@
     <string name="ciw413m"> روایتی تجربہ کار </string>
     <string name="ciw413961"> دوسرے عوامی وضاحت کریں</string>
     <string name="ciw413962"> دیگر نجی  (وضاحت کریں) </string>
-
-
     <string name="nb5heading"> SECTION B5: POST NATAL CARE (For all MWRA with at least one delivery REF B1 Q6) </string>
-
     <!--<string name="ciw415"> زچگی کے بعد کس نے آپ کی صحت کا معائنہ کیاتھا؟ </string>-->
     <string name="ciw415a"> گائنا کولوجسٹ </string>
     <string name="ciw415b"> کوئی اور ڈاکٹر </string>
@@ -789,16 +675,13 @@
     <string name="ciw415e"> لیڈی ہیلتھ ورکر </string>
     <string name="ciw415f"> لیڈی ہیلتھ وزیٹر </string>
     <string name="ciw415g"> دائی </string>
-
     <string name="ciw416a"> اگر ایک دن سے کم ہے (گھنٹے درج کریں) </string>
     <string name="ciw416b"> اگر ایک ہفتے سے کم ہے (دن درج کریں) </string>
     <string name="ciw416c"> دوسری صورت میں ہفتہ ریکارڈ کریں </string>
     <string name="ciw416h"> گھنٹے </string>
     <string name="ciw416d"> دنوں </string>
     <string name="ciw416w"> ہفتے </string>
-
     <string name="ciw417a"> کتنی مرتبہ </string>
-
     <string name="ciw418a"> غذا کے بارے میں مشورہ دینا </string>
     <string name="ciw418b"> ماں کے دودھ اور آئی وائی سی ایف کا مشورہ دینا </string>
     <string name="ciw418c"> فیملی پلاننگ کے بارے میں مشورہ دینا </string>
@@ -808,7 +691,6 @@
     <string name="ciw418g"> اضافی خوراک کی فراہمی </string>
     <string name="ciw418h"> مانع حمل کی فراہمی </string>
     <string name="ciw418i"> کچھ اور وضاحت کریں </string>
-
     <string name="ciw420a"> بچے کے ڈاکٹرنے </string>
     <string name="ciw420b"> کسی اور ڈاکٹر نے </string>
     <string name="ciw420c"> نرس </string>
@@ -816,14 +698,12 @@
     <string name="ciw420e"> لیڈی ہیلتھ ورکر </string>
     <string name="ciw420f"> لیڈی ہیلتھ وزیٹر </string>
     <string name="ciw420g"> دائی </string>
-
     <string name="ciw421a"> اگر ایک دن سے کم ہے (گھنٹہ ریکارڈ بتائیں) </string>
     <string name="ciw421b"> اگر ایک ہفتے سے کم ہے (دن ریکارڈ بتائیں) </string>
     <string name="ciw421c"> دوسری صورت میں ہفتہ ریکارڈ کریں </string>
     <string name="ciw421h"> گھنٹے </string>
     <string name="ciw421d"> دنوں </string>
     <string name="ciw421w"> ہفتے </string>
-
     <string name="ciw422a"> کتنی مرتبہ </string>
     <string name="ciw423"> اس معائنہ کا مقصد کیاتھا </string>
     <string name="ciw423a"> حفاظتی ٹیکہ </string>
@@ -834,7 +714,6 @@
     <string name="ciw423f"> کوئی اور </string>
     <string name="nb6heading"> سیکشن ڈبلیو5: خواتین کے مختلف اقسام کے کھانوں کا استعمال </string>
     <string name="ciw5heading"> سیکشن ڈبلیو5: خواتین کے مختلف اقسام کے کھانوں کا استعمال </string>
-
     <string name="cic1info"> ماڈیول سی: پانچ سال سے کمر عمر بچے کی غذائی معلومات </string>
     <string name="cic1heading"> سیکشن سی 1:پانچ سال سے کم عمر بچوں کی معلومات  </string>
     <string name="cic1info1"> ماڈیول سی پانچ سال سے کم عمر بچوں کا بھرا جائے گا،اور کچھ مخصوص حصہ عمر کے حساب سے گھرمیں موجود بچوں کا بھرا جائے گا </string>
@@ -846,8 +725,6 @@
     اگر نہیں ،تو ایونٹ کلینڈر استعمال کر کے بچے کی عمر کی شمار کریں </string>"
     <string name="cic103a"> ہاں ،دیکھا </string>
     <string name="cic103b"> ہاں ،نہیں دیکھا </string>
-
-
     <string name="cic2heading"> سیکشن سی 2: نومولود اور چھوٹے بچوں کی غذا کے بارے میں معلومات </string>
     <string name="cic2_child_name"> بچے کا نام </string>
     <string name="cic2_line_no"> بچے کالائن نمبر </string>
@@ -859,23 +736,18 @@
     <string name="cic202a"> ایک سال سے کم </string>
     <string name="cic202b"> ایک سال سے زیادہ یا دو سال سے کم  </string>
     <string name="cic202c"> دو سال سے پانچ سال کے درمیان  </string>
-
-
     <string name="cic203a">  ۔C203 - مکمل مہینوں میں عمر </string>
     <string name="cic204">  ۔C204- کو چیک کریں۔C203اور C201,C202,ڈیٹا کی یکسانیت یا مطابقت  کی تصدیق کرنے کے لِئے سوال نمبر </string>
     <string name="cic204a">۔C204A- کیاC201میں درج کردہ عمر کے سال C202 میں بتائی گئی عمر کے سالوں سے مطابقت رکھتے ہیں؟ ۔</string>
     <string name="cic204b">۔C204B- کیا سوال نمبر1 میں درج کردہ پیدائش کا سال اور مہینہC203 میں بتائی گئی عمر کے مہینوں سے مطابقت یا یکسانیت رکھتے ہیں؟ ۔</string>
     <string name="cic205"> کیا بچہ 24 مہینوں سے کم ہے  </string>
-
     <string name="cic207a">  فوراً </string>
     <string name="cic207b">  گھنٹے </string>
     <string name="cic207c">  دن </string>
     <string name="cic209a">اس دودھ کو خراب سمجھتی ہیں</string>
     <string name="cic209b">بچے کی بیماری کا خوف</string>
     <string name="cic209c">گاڑھاپن</string>
-
     <string name="cic211info">  ۔C211 - پوچھیں : کچھ اور بھی  کوئی  چیز پینے کے لئے نہیں دی "99" اس صورت میں لکھا جائے گا جب بتائی گئی چیزوں میں نہیں پوچھی گئی ہو</string>
-
     <string name="cic211a"> دودھ (ماں کےدودھ علاوہ)</string>
     <string name="cic211b">سادہ  پانی </string>
     <string name="cic211c">چینی یا گلوکوز کا پانی</string>
@@ -887,22 +759,18 @@
     <string name="cic211i"> شہد </string>
     <string name="cic211j">دوائیاں</string>
     <string name="cic21199">پینے کے لئے کچھ بھی نہیں دیا</string>
-
-
     <string name="cic212a">  کبھی کبھار بچے کو ماں کا دودھ دوسرے طریقے سے دیا جاتا ہے جیسے کہ کپ اور چمچ سے۔ ایسا اس وقت ہوتا ہے جب ماں ہر وقت بچے کے ساتھ نہ رہ سکتی ہو۔ کبھی کبھار جب ماں بچے کو دودھ نہیں پلا سکتی اس صورت میں کوئی دوسری خاتون بچے کو اپنا دودھ پلاتی ہیں –کیا (۔Name) نے گزشتہ کل دن اور رات اس طرح سے دودھ پیا ہے۔ </string>
     <string name="cic213">کیا (۔Name) کو گزشتہ کل (دن اور رات) وٹامن  یا کسی اور دوائی کے قطرے دیئے گئے ہیں؟ </string>
     <string name="cic214"> کیا (۔Name) نے گزشتہ کل (دن اور رات)  اوآرایس استعمال کیا ہے؟ </string>
     <string name="cic215"> ۔C215 - کیا (۔Name) نے گزشتہ کل( دن اور رات) پینے کی اشیا استعمال کی ہیں ؟ </string>
     <string name="cic215a">  سادہ پانی </string>
     <string name="cic215b">  فارمولا ملک </string>
-
     <string name="cic215d">  جوس یا جوس کے مشروبات </string>
     <string name="cic215e">  صاف سوپ (کسی بھی طرح کا) </string>
     <string name="cic215f">  دہی </string>
     <string name="cic215g">  پتلا دلیہ </string>
     <string name="cic215h">  کوئی دیگر مائعات جیسے کے (گرائپ واٹر، چائے، چاول والا پانی) </string>
     <string name="cic215i"> کوئی اور مشروب /مائع </string>
-
     <string name="cic217">۔C217 -  کیا (۔Name) ے گزشتہ کل دن اور رات  گھر میں یا گھر سے باہر کچھ کھایا- اگر ہاں تو مندرجہ زیل میں سے تفصیلات نوٹ کریں۔ </string>
     <string name="cic217a"> روٹی چاول،نوڈلس،کچھٹری،اور خوراک جو اناج سے بنی ہو </string>
     <string name="cic217b"> کدو،گاجر،اسکوئش یامیٹھاآلو یا جو کہ اندر سے پیلا یا نارنجی ہو </string>
@@ -924,17 +792,13 @@
     <string name="cic218">  ۔C218 - کیا (۔Name) نے گزشتہ کل(دن اوررات) کوئی نیم ٹھوس غذا استعمال کی؟</string>
     <string name="cic219">  ۔C219 -   (۔Name) نے گزشتہ کل( دن اوررات)  کتنی بارنیم ٹھوس غذا استعمال کی؟</string>
     <string name="cic220">  ۔C220 -  کیا (۔Name) نے گزشتہ کل( دن اوررات )،بوتل سے جس میں نپل لگی ہو کچھ پیا؟</string>
-
     <string name="cic221a">بوتل کے ساتھ(فامولادودھ)</string>
     <string name="cic221b">مویشیوں کا دودھ</string>
     <string name="cic221c">ماں کا نکلا ہوا  دودھ</string>
-
     <string name="cic222"> ۔C222 - آپ کو فارمولا دودھ استعمال کرنے کے لیے کس نے مشورہ دیا</string>
     <string name="cic222a">صحت مہیا کرنے والا</string>
     <string name="cic222b">فارمیسی/فارمیسٹ</string>
     <string name="cic222c">رشتہ دار</string>
-
-
     <string name="cic3heading"> سیکشن سی 3: حفاظتی ٹیکہ جات کی معلومات </string>
     <string name="cic3info"> اس سیکشن میں صرف ان بچوں کا اندراج ہوگا جو 5 سال سے چھوٹے ہیں </string>
     <string name="cic301">  ۔C301 - بچے کی عمر مہینوں میں لکھیں </string>
@@ -942,7 +806,6 @@
     <string name="cic301b"> عمر 12-23 </string>
     <string name="cic301c"> عمر 24-35 </string>
     <string name="cic301d"> عمر 36-59 </string>
-
     <string name="cic303a"> ہاں ،صرف کارڈ دیکھاہے </string>
     <string name="cic303b"> ہاں ،صرف دستاویزات دیکھے ہیں </string>
     <string name="cic303c"> ہاں ، کارڈ اور دستاویزات  دونوں دیکھےہیں</string>
@@ -983,18 +846,14 @@
     <string name="cic3m2dt"> DD-MM-YYYY </string>
     <string name="cic305">۔C305- کیا بچہ(۔Name) نےکبھی پولیو مہم کے دوران پولیو سے بچاؤ کے قطر ے پیئے ہیں؟ </string>
     <string name="cic306">۔C306- کیابچے (۔Name) کو پچھلی  پولیو مہم میں پولیو کے قطرے پلائے گئے تھے؟</string>
-
     <string name="cic307a"> پہلے دو ہفتے </string>
     <string name="cic307b"> بعد میں </string>
     <string name="cic308"> ۔C308- کیا بچے کو PENTA کے ٹیکے لگوائے جو کہ انجکشن کی صورت میں ران یا کولہوں میں لگائےجاتے ہیں اور اکثرپولیو کے قطروں کے ساتھ دئے جاتے ہیں </string>
     <string name="cic309">۔C309 - ۔ PENTA۔ کے ٹیکے کتنی دفعہ لگوائے تھے۔ </string>
     <string name="cic310"> ۔ C310 - کیا بچے کو PCV کے ٹیکے لگوائے جو کہ انجکشن کی صورت میں ران یا کولہوں میں لگائےجاتے ہیں اور اکثرپولیو کے قطروں کے ساتھ دئے جاتے ہیں </string>
-
     <string name="cic312">  ۔C312- کیابچے (۔Name) کو Measles کا ا نجکشن لگوایا جو خسرہ سے بچاؤ کے لیے ہوتا ہے جو کہ بازو میں 9 مہینے یا اس سے بڑی عمر میں لگایا جاتا ہے </string>
     <string name="cic313">۔C313- ۔ Mesasles۔ کے ٹیکے کتنی دفعہ لگوائے تھے۔ </string>
-
     <string name="cic315">۔C315- کیا بچہ(۔Name) نےکبھی پولیو سے بچاؤ کے قطر ے پیے ہیں </string>
-
     <string name="cic4heading"> سیکشن سی 4:امراض اور علاج حاصل کرنے کے رویے </string>
     <string name="cic401">  ۔C401 -  کیا (۔Name) کو گزشتہ دو ہفتوں کے دوران اسہال(دست) ہوئے؟ </string>
     <string name="cic402">  ۔C402 - کیا آپ نے (۔Name) کا اسہال(دست) کی بیماری کا علاج کروایا؟ </string>
@@ -1024,8 +883,6 @@
     <string name="cic404l"> دوکان /بازار/گلی </string>
     <string name="cic404m"> روایتی تجربہ کار </string>
     <string name="cic4049603"> دیگر وضاحت کریں </string>
-
-
     <string name="cic405">  ۔C404 - (نام)کو   اسہال(دست) کی بیماری کے علاج کے لئے کون کونسی دواء دی گئی؟ </string>
     <string name="cic405a"> نمکول (او آر ایس) </string>
     <string name="cic405sub1"> گولیاں یا شربت </string>
@@ -1068,7 +925,6 @@
     <string name="cic409l"> دوکان /بازار/مفت تقسیم کرنے والوں سے </string>
     <string name="cic409m"> روایتی تجربہ کار</string>
     <string name="cic4099603"> دیگر وضاحت کریں </string>
-
     <string name="cic410">  ۔C408 - (۔Name)کونمونیہ (ari)کی بیماری کے علاج کے لئے کون کونسی دواء دی گئی؟</string>
     <string name="cic410sub1"> گولیاں یا شربت </string>
     <string name="cic410a"> اینٹی بائیوٹک </string>
@@ -1120,7 +976,6 @@
     <string name="cic418">۔C415 - کیا بچہ (۔Name) کو کبھی وٹامن اے کے قطرے پلائے گئے ہیں؟</string>
     <string name="cic419">۔C416 - (۔Name) کو کتنی وٹامن اے کی اضافی خوراکیں دی گئی؟</string>
     <string name="cic419a"> خوراکیں </string>
-
     <string name="cic420">۔C417 - آخری بار (۔Name) کو وٹامن اے کی خوراک کب دی گئی تھی؟</string>
     <string name="cic420a"> ایک ہفتہ پہلے </string>
     <string name="cic420b"> ایک ماہ پہلے </string>
@@ -1137,8 +992,6 @@
     <string name="cic423">۔C420 - (۔Name) کو کتنے مہینوں یا دنوں تک ایم این پی دیا گیا؟َ</string>
     <string name="cic423a"> مہینوں </string>
     <string name="cic423b"> دنوں </string>
-
-
     <string name="ciw311a"> گائنا کولوجسٹ </string>
     <string name="ciw311b">کوئی دوسرا ڈاکٹر </string>
     <string name="ciw311c"> نرس </string>
@@ -1147,8 +1000,6 @@
     <string name="ciw311f">کیمونٹی مڈوائف </string>
     <string name="ciw311g"> لیڈی ہیلتھ وزیٹر</string>
     <string name="ciw311h"> دائی </string>
-
-
     <string name="ciw312sub1"> بپلک میڈیکل سیکٹر</string>
     <string name="ciw312sub2">  نجی ہسپتال/سیکٹر</string>
     <string name="ciw312sub3">  دیگر زرائع</string>
@@ -1175,8 +1026,6 @@
     <string name="ciw321f">کیمونٹی مڈوائف </string>
     <string name="ciw321g"> لیڈی ہیلتھ وزیٹر</string>
     <string name="ciw321h"> دائی </string>
-
-
     <string name="ciw214">۔W214 - گذشتہ پانچ سالوں کے دوران ہونے والے حمل کی تعداد (بشمول موجودہ حمل)</string>
     <string name="ciw215">۔W215 - گذشتہ پانچ سالوں کے دوران آپ کی کتنی زچگیاں ہوئیں؟</string>
     <string name="ciw205time"> زچگیوں کی تعداد </string>
@@ -1189,14 +1038,10 @@
     <string name="ciw21702"> حمل کے نتیجہ کی تاریخ </string>
     <string name="ciw21701a"> حمل ضائع </string>
     <string name="ciw21701b"> مردہ بچے کی پیدائش </string>
-
     <string name="ciw21001">کلینک پر ملی</string>
     <string name="ciw21002">خریدی</string>
     <string name="ciw21003">نہ ملی نہ خریدی</string>
-
-
     <string name="ciw601">Yesterday during the day or night, did you eat or drink:</string>
-
     <!-- Foods-->
     <string name="ciw601a1">روٹی</string>
     <string name="ciw601a2">دلیہ / اناج / کارن فلیکس</string>
@@ -1218,9 +1063,7 @@
     <string name="ciw601e">دودھ / دہی / پنير</string>
     <string name="ciw601q">مکھن / بالائی / آئس کریم</string>
     <string name="ciw601d">خشک میوہ اور بیج</string>
-
     <!-- Green Leafy vegitables-->
-
     <string name="ciw601j1">پالک</string>
     <string name="ciw601j2">شلجم کے پتے</string>
     <string name="ciw601j3">سلاد کے پتے</string>
@@ -1228,9 +1071,7 @@
     <string name="ciw601j5">سرسوں کے پتے</string>
     <string name="ciw601j6">مولی کے پتے</string>
     <string name="ciw601j7">بروکلی</string>
-
     <!-- Green vegitables-->
-
     <string name="ciw601m1">کڑوا خربوزہ</string>
     <string name="ciw601m2"> سبز مرچ / ہری مرچ</string>
     <string name="ciw601m3">کھیرا</string>
@@ -1247,14 +1088,11 @@
     <string name="ciw601m14">گوبھی</string>
     <string name="ciw601m15">چقندر</string>
     <string name="ciw601m16">آلو</string>
-
     <!-- Red and orange vegi-->
     <string name="ciw601k1">گاجر</string>
     <string name="ciw601k2">میٹھا کدو / اسکواش </string>
     <string name="ciw601k3">لال مرچ</string>
     <string name="ciw601k4">لال شکر قندی / کچالو</string>
-
-
     <!-- Single seed fruits-->
     <string name="ciw601n1">چیری</string>
     <string name="ciw601n2">کھجور</string>
@@ -1277,22 +1115,16 @@
     <string name="ciw601n19">انگور</string>
     <string name="ciw601n20">شہتوت</string>
     <string name="ciw601n21">اسٹرابیری</string>
-
-
     <!-- Multiple seed fruits-->
     <string name="ciw601l1">خوبانی</string>
     <string name="ciw601l2">آم</string>
     <string name="ciw601l3">پپیتہ</string>
     <string name="ciw601l4">گرما</string>
     <string name="ciw601l5">املوک</string>
-
-
     <string name="ciw601b1">سفید شکر قندی / کچالو</string>
     <string name="ciw601b2">شلجم</string>
     <string name="ciw601b3">مولی</string>
     <string name="ciw601b4">اروی</string>
-
-
     <string name="_1"> ناشتہ سے پہلے </string>
     <string name="_2"> ناشتہ </string>
     <string name="_3"> ناشتہ اور دوپہر کے کھانے کے درمیان </string>
@@ -1300,7 +1132,6 @@
     <string name="_5"> دوپہر اور رات کے کھانے کے درمیان </string>
     <string name="_6"> رات کا کھانا </string>
     <string name="_7"> رات کے کھانے اور سونے کے درمیان  </string>
-
     <string name="food1">Grains, White Roots and Tubers, and Plantains</string>
     <string name="food2">Pulses (Beans, Peas, and Lentils)</string>
     <string name="food3">Nuts and Seeds</string>
@@ -1311,7 +1142,6 @@
     <string name="food8">Other Vitamin A-rich Fruits and Vegetables</string>
     <string name="food9">Other Vegetables</string>
     <string name="food10">Other Fruits</string>
-
     <string name="na111">۔H117 - یہ گھر کس قسم کے نمونےکے لیے منتخب کیاگیا ہے؟</string>
     <string name="na112">۔H118 - کیااجازت لی گئی ؟</string>
     <string name="na203">۔H203 - گھر کے سربراہ سے رشتہ ؟</string>
@@ -1354,7 +1184,6 @@
     <string name="cih505">۔H505 - کیا آپ کے گھر میں تقویت بخش غذائیت سے بھرپور خوردنی تیل/گھی استعمال ہوتا ہے؟</string>
     <string name="na601">۔H601 - ہم چیک کرنا چاہتے ہیں کہ کیاآپ کا گھرانہ آیوڈین ملا نمک استعمال کرتا ہے کیا ہم اس نمک کا نمونہ لے سکتے ہیں جو آپ اپنے کھانا پکانے میں استعمال کرتی ہیں؟</string>
     <string name="na603">۔H603 - "ہانڈی " کانشنا ن نمک کی تھیلی پر چھپا ہے یا نہیں؟</string>
-
     <string name="cih7a04">۔H707 - کیاآپ ان پروگرامز کی وضاحت کرسکتے ہیں ؟</string>
     <string name="cih7a05">۔H708 - گزشتہ 12 مہینوں کے درمیان آپ نے کتنے پیسے وصل کئے؟</string>
     <string name="cih7a06">۔H709 - گزشتہ مہیا کی گئی سہولت میں سے کتنے پیسوں سے آپ نے کھانا خریدا تھا؟</string>
@@ -1371,18 +1200,14 @@
     <string name="ciw211">۔W211 - آپ اپنی زندگی میں کتنی مرتبہ حاملہ ہوئیں؟ (بشمول موجودہ حمل) </string>
     <string name="ciw212">۔W212 -آپ کی زندگی میں کل کتنی زچگیاں ہوئیں؟ </string>
     <string name="ciw213">۔W213 - پہلے بچے کی پیدائش کے وقت آپ کی عمر کیاتھی؟</string>
-
-
     <string name="ciw302">۔W302 - آپ نے کس سے معائنہ کروایاتھا؟</string>
     <string name="ciw303">۔W303 - آپ نے یہ معائنہ کہاں کروایا تھا؟</string>
     <string name="ciw304">۔W304 - جب آپ نے گزشتہ حمل کے دوران  پہلی دفعہ معائنہ کروایا ،تو آپ کاحمل  کتنے ہفتوں یا مہینہ کا تھا؟</string>
     <string name="ciw305">۔W305 - گزشتہ حمل کے دوران آپ نے کتنی مرتبہ اپنا معائنہ کروایا؟</string>
     <string name="ciw306">۔W306 - آپ کے حمل کے دوران طبی معائنہ کے وقت کیا مندرجہ ذیل میں سے کوئی عمل کم از کم ایک دفعہ کیا تھا </string>
-
     <string name="ciw307">۔W307 - کیا آپ کے پاس حفاظتی ٹیکہ جات سے متعلق کوئی کارڈ یا دستیاویزات موجود ہے ؟ اگر ہاں  تو پوچھیں کیا میں دیکھ سکتی ہوں</string>
     <string name="ciw308">۔W308 - جب آپ حمل سے تھیں تو کیا آپ نے بازو پر تشنج سے بچاؤ کے ٹیکے لگوائے تھے  ؟</string>
     <string name="ciw309">۔W309 - آپ نے دوران حمل کتنی مرتبہ ،تشنج کی بیماری سے بچانے والے ٹیکے لگوائے تھے؟</string>
-
     <string name="ciw310">۔W310 - کیا آپ نے کبھی حمل کے دوارن فولاد کی گولیاں استعمال کیں؟</string>
     <string name="ciw311">۔W311 - آپ کو حمل کے دوران فولاد کی گولیا ں استعمال کرنے کا مشورہ کس نے دیا ؟</string>
     <string name="ciw312">۔W312 - آپ نے حمل کے دوران فولاد کی گولیاں کہاں سے حاصل کیں؟</string>
@@ -1436,13 +1261,10 @@
     <string name="ciw420">۔W420 - آپ کے نومولود بچے کی صحت کا معائنہ کس نے کیاتھا؟</string>
     <string name="ciw421">۔W421 - بچے کی پیدائش کے کتنے عرصے بعد بچہ کامعائنہ ہوا؟</string>
     <string name="ciw422">۔W422 - اس طرح کا معائنہ کتنی مرتبہ ہوا؟</string>
-
-
     <!-- Start from here-->
     <string name="nw501">۔W501 - اب میں آپ کی خوراک کے بارے میں پوچھنا چاہوں گی جو آپ نے پچھلے 24 گھنٹوں کے دوران کھائی تھی؟</string>
-
-    <string name="cic104">۔C104 - کیا بچہ (
-    ۔Name) کا نادرا میں اندراج کردیاگیاہے؟</string>
+    <string name="cic104">۔C104 - کیا بچہ (Name) کا نادرا میں اندراج کردیاگیاہے؟</string>
+    ۔
     <string name="cic203">۔C203 - (۔Name) کتنے مہینے کا ہے ؟
     (مکمل عمر مہینوں میں ریکارڈ کریں )</string>
     <string name="cic206">۔C206 - کیا بچہ(۔Name) کو کبھی ماں کا دودھ پلایا گیا ہے ؟</string>
@@ -1467,18 +1289,13 @@
     <!--<string name="cic405">۔C405 - کیا (۔Name) کو گزشتہ دو ہفتوں کے دوران نمونیہ (ARI) ہوا ؟</string>-->
     <!--<string name="cic406">۔C406 - کیا آپ نے (۔Name)کا نمونیہ (ARI)کی بیماری کا علاج کروایا ؟</string>-->
     <!--<string name="cic407">۔C407 - آپ نے (۔Name) کا نمونیہ (ARI)کی بیماری کا علاج کہاں سے کروایا ؟</string>-->
-
     <string name="cic503">۔C503 - کیا آپ کےبچےکو چلنے یا چڑھنے کے دوران کوئی مشکلات پیش آتی ہے؟</string>
     <string name="cic504">۔C504 - کیا آپ کےبچےکو یاد رکھنے اور توجہ دینے میں کوئی مشکلات پیش آتی ہے؟</string>
     <string name="cic505">۔C505 - کیا آپ کےبچےکو اپنے دیکھ بھال( مثلاً: ہاتھ منہ دھونا ،وغیرہ) میں مشکل پیش آتی ہے؟</string>
     <string name="cic506">۔C506 - کیااپنی روز مرہ کی زبان استعمال کرتے ہوئے آپ کےبچےکو بات چیت میں (مثلاً کسی کو بات سمجھاتے وقت یا کسی کی بات سمجھتے وقت) دشواری پیش آتی ہے ؟</string>
-
-
     <string name="hc">Scan HemoCue Machine QR Code</string>
     <string name="ht">Scan Height Machine QR Code</string>
     <string name="wt">Scan Weight Machine QR Code</string>
-
-
     <string name="cih8heading"> اموات کے بارے میں معلومات</string>
     <string name="cih801"> ۔H801 - گذشتہ 5 سالوں کے دوران کیا اس گھر میں کسی گھر کے فرد کی موت واقع ہوئی</string>
     <string name="cih802">۔H802 - وفات پانے والوں کی تعداد</string>
@@ -1493,7 +1310,6 @@
     <string name="cih8msc">طلاق یافتہ</string>
     <string name="cih8msd">الگ رہتا/رہتی ہو</string>
     <string name="cih8mse">غیر شادی شدہ</string>
-
     <string name="cih807">۔H807 - وفات کے وقت عمر</string>
     <string name="cih808"> ۔H808 - وفات کی تاریخ</string>
     <string name="cih809"> ۔H809 - وفات کی جگہ </string>
@@ -1501,7 +1317,6 @@
     <string name="cih809b"> ہسپتال </string>
     <string name="cih809c"> راستے میں </string>
     <string name="cih80996"> دیگر </string>
-
     <string name="enable_p2p_button">Enable Wifi Direct</string>
     <string name="discover_peers_button">Discover</string>
     <string name="connect_peer_button">Connect</string>
@@ -1516,8 +1331,6 @@
     <string name="group_owner_text">"Am I the Group Owner? "</string>
     <string name="label_me">THIS DEVICE</string>
     <string name="label_peers">NEAR-BY DEVICES</string>
-
-
     <!-- Module E-->
     <string name="ne1heading"> سیکشن ای 1: خون ،پیشاب اور ہیموگلوبن کے نمونے </string>
     <string name="ne101">  ۔E107-لائن نمبر</string>
@@ -1573,11 +1386,8 @@
     <string name="ne20301h">Total Coliform Count (If TNTC, write 999)</string>
     <string name="ne20301fa">If TNTC, write 999</string>
     <string name="ne20301i">Total E-Coli Count</string>
-
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
-
     <!--Section A5 CASI-->
     <string name="rare"> کبھی کبھار (پچھلے 4 ہفتوں کے دوران ایک سے دو مرتبہ) </string>
     <string name="stime"> کبھی کبھار (پچھلے 4 ہفتوں کے دوران تین سے دس مرتبہ) </string>
@@ -1594,16 +1404,12 @@
     <string name="cih610">  ۔H605a- کتنی مرتبہ ایسا ہوا؟ </string>
     <string name="cih611">  ۔H606 -پچھلے 4 ہفتوں کے دوران کیا کبھی ایسا وقت آیا جب آپ یا گھر کے دوسرے افراد نے کھا نے کی کمی کی وجہ سے ایک دن میں  کم کھانا کھایا ہو ؟   </string>
     <string name="cih612">  ۔H606a- کتنی مرتبہ ایسا ہوا؟ </string>
-    <string name="cih613">  ۔H607 -پچھلے 4 ہفتوں کے دوران کیا کبھی ایسا وقت آیا جب آپکے گھر
-میں وسائل کی کمی کی وجہ سے کسی قسم کا کوئی  کھانا  نہیں
-ہو؟
- </string>
+    <string name="cih613"> پچھلے 4 ہفتوں کے دوران کیا کبھی ایسا وقت آیا جب آپکے گھر میں وسائل کی کمی کی وجہ سے کسی قسم کا کوئی کھانا نہیں ہو؟ H607 </string>
     <string name="cih614">  ۔H607a- کتنی مرتبہ ایسا ہوا؟ </string>
     <string name="cih615">  ۔H608 -پچھلے 4 ہفتوں کے دوران کیا کبھی ایسا وقت آیا جب آپ یا گھر کے دوسرے افراد نے کھا نے کی کمی کی وجہ سے رات میں بھوکا سونا پڑا ہو؟</string>
     <string name="cih616">  ۔H608a- کتنی مرتبہ ایسا ہوا؟ </string>
     <string name="cih617">  ۔H609 -پچھلے 4 ہفتوں کے دوران کیا کبھی ایسا وقت آیا جب آپ یا گھر کے دوسرے افراد کھا نے کی کمی کی وجہ سے پورے دن اور رات میں کچھ بھی نہ کھایا ہو </string>
     <string name="cih618">  ۔H609a- کتنی مرتبہ ایسا ہوا؟ </string>
-
     <!--Section A7-->
     <string name="benef"> وصول کنندہ کی تعداد </string>
     <string name="source">ذریعہ</string>
@@ -1620,7 +1426,6 @@
     <string name="cih711">  ۔H711- زرعی امداد (بیج, کھاد, اوذار) </string>
     <string name="cih712">  ۔H712- جانوروں کے لیے اشیا (دوائیاں,کھانا) </string>
     <string name="cih713">  ۔H713- غذا کے باے میں مشورہ </string>
-
     <!--Women Section 5-->
     <string name="ciw5h"> سال کےسیکشن 5: خواتین کے مختلف اقسام کے کھانوں کا استعمال </string>
     <string name="ciw501">  ۔W501- آپ کے بچے نے کل دن اور رات کے دوران کھانا کھا یا ؟ </string>
@@ -1650,7 +1455,6 @@
     <string name="ciw50306">  ۔W50306- دودھ، دودھ سے بنی ہوئی دیگر اشیاء (دہی،پنیر) </string>
     <string name="ciw50307">  ۔W50307- چینی, شہد </string>
     <string name="ciw50308">  ۔W50308- کوئی تیل، چکنائی </string>
-
     <!--Child Section 5-->
     <string name="cich"> سال کےسیکشن 5: خواتین کے مختلف اقسام کے کھانوں کا استعمال </string>
     <string name="cic501">  ۔C501- آپ کے بچے نے کل دن اور رات کے دوران کھانا کھا یا ؟ </string>
@@ -1680,6 +1484,5 @@
     <string name="cic50306">  ۔C50306- دودھ، دودھ سے بنی ہوئی دیگر اشیاء (دہی،پنیر) </string>
     <string name="cic50307">  ۔C50307- چینی, شہد </string>
     <string name="cic50308">  ۔C50308- کوئی تیل، چکنائی </string>
-
 
 </resources>
