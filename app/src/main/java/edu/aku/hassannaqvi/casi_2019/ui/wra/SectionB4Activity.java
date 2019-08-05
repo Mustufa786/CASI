@@ -173,8 +173,7 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
                     binding.ciw412d.setEnabled(false);
                     binding.ciw412e.setEnabled(false);
                     binding.ciw412f.setEnabled(false);
-                    binding.ciw41296.setEnabled(false)
-                    ;
+                    binding.ciw41296.setEnabled(false);
 
                     binding.ciw412a.setChecked(false);
                     binding.ciw412b.setChecked(false);
@@ -186,7 +185,7 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
 
                     binding.ciw41296x.setText(null);
                     if (!binding.ciw412a.isChecked()) {
-                        ClearClass.ClearAllFields(binding.fldGrpciw413, false);
+                        ClearClass.ClearAllFields(binding.fldGrpciw413, null);
                         binding.fldGrpciw413.setVisibility(View.GONE);
                     }
 
