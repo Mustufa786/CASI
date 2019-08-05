@@ -3,11 +3,10 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     def versionPropsFile = file('version.properties')
+
     dataBinding {
         enabled = true
     }
-
-
     if (versionPropsFile.canRead()) {
         Properties versionProps = new Properties()
 
@@ -22,11 +21,8 @@ android {
             applicationId "edu.aku.hassannaqvi.casi_2019"
             minSdkVersion 21
             targetSdkVersion 28
-
-            vectorDrawables.useSupportLibrary = true
-
             versionCode code
-            versionName "0.1"
+            versionName "1.0"
             testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         }
     } else {

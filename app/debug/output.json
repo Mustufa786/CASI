@@ -3,11 +3,11 @@
     "outputType": {
       "type": "APK"
     },
-    "apkInfo": {
+    "apkData": {
       "type": "MAIN",
       "splits": [],
-      "versionCode": 6475,
-      "versionName": "1.5",
+      "versionCode": 460,
+      "versionName": "1.0",
       "enabled": true,
       "outputFile": "app-debug.apk",
       "fullName": "debug",
