@@ -55,30 +55,26 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
     @BindViews({R.id.cic211a, R.id.cic211b, R.id.cic211c, R.id.cic211d, R.id.cic211e, R.id.cic211f,
             R.id.cic211g, R.id.cic211h, R.id.cic211i, R.id.cic211j})
     List<CheckBox> grpcic211;
-    @BindViews({R.id.cic215a, R.id.cic215b, R.id.cic215c, R.id.cic215d, R.id.cic215e, R.id.cic215f,
-            R.id.cic215g, R.id.cic215h, R.id.cic215i, R.id.cic217a, R.id.cic217b, R.id.cic217c,
+    @BindViews({R.id.cic217a, R.id.cic217b, R.id.cic217c,
             R.id.cic217d, R.id.cic217e, R.id.cic217f, R.id.cic217g, R.id.cic217h, R.id.cic217i,
             R.id.cic217j, R.id.cic217k, R.id.cic217l, R.id.cic217m, R.id.cic217n, R.id.cic217o,
             R.id.cic217p, R.id.cic217q})
-    List<RadioGroup> grpcic215;
-    @BindViews({R.id.cic215aa, R.id.cic215ba, R.id.cic215ca, R.id.cic215da, R.id.cic215ea, R.id.cic215fa,
-            R.id.cic215ga, R.id.cic215ha, R.id.cic215ia, R.id.cic217aa, R.id.cic217ba, R.id.cic217ca,
+    List<RadioGroup> grpcic217;
+    @BindViews({R.id.cic217aa, R.id.cic217ba, R.id.cic217ca,
             R.id.cic217da, R.id.cic217ea, R.id.cic217fa, R.id.cic217ga, R.id.cic217ha, R.id.cic217ia,
             R.id.cic217ja, R.id.cic217ka, R.id.cic217la, R.id.cic217ma, R.id.cic217na, R.id.cic217oa,
             R.id.cic217pa, R.id.cic217qa})
-    List<RadioButton> cic215yes;
-    @BindViews({R.id.cic215ab, R.id.cic215bb, R.id.cic215cb, R.id.cic215db, R.id.cic215eb, R.id.cic215fb,
-            R.id.cic215gb, R.id.cic215hb, R.id.cic215ib, R.id.cic217ab, R.id.cic217bb, R.id.cic217cb,
+    List<RadioButton> cic217yes;
+    @BindViews({R.id.cic217ab, R.id.cic217bb, R.id.cic217cb,
             R.id.cic217db, R.id.cic217eb, R.id.cic217fb, R.id.cic217gb, R.id.cic217hb, R.id.cic217ib,
             R.id.cic217jb, R.id.cic217kb, R.id.cic217lb, R.id.cic217mb, R.id.cic217nb, R.id.cic217ob,
             R.id.cic217pb, R.id.cic217qb})
-    List<RadioButton> cic215no;
-    @BindViews({R.id.cic215a98, R.id.cic215b98, R.id.cic215c98, R.id.cic215d98, R.id.cic215e98, R.id.cic215f98,
-            R.id.cic215g98, R.id.cic215h98, R.id.cic215i98, R.id.cic217a98, R.id.cic217b98, R.id.cic217c98,
+    List<RadioButton> cic217no;
+    @BindViews({R.id.cic217a98, R.id.cic217b98, R.id.cic217c98,
             R.id.cic217d98, R.id.cic217e98, R.id.cic217f98, R.id.cic217g98, R.id.cic217h98, R.id.cic217i98,
             R.id.cic217j98, R.id.cic217k98, R.id.cic217l98, R.id.cic217m98, R.id.cic217n98, R.id.cic217o98,
             R.id.cic217p98, R.id.cic217q98})
-    List<RadioButton> cic215dkn;
+    List<RadioButton> cic217dkn;
     public RadioGroup.OnCheckedChangeListener check = new RadioGroup.OnCheckedChangeListener() {
         @Override
         public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -86,15 +82,15 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
 
 //            ValidateForm();
 
-            if (isoneYes()) {
-                //bi.fldGrpcic218.setVisibility(View.GONE);
+            if (isoneYes() || isAlldkn()) {
+                bi.fldGrpcic218.setVisibility(View.GONE);
                 ClearClass.ClearAllFields(bi.fldGrpcic218, null);
-                //bi.fldGrpcic219.setVisibility(View.VISIBLE);
-                //bi.cic218.clearCheck();
+                bi.fldGrpcic219.setVisibility(View.VISIBLE);
+                bi.cic218.clearCheck();
             } else {
                 ClearClass.ClearAllFields(bi.fldGrpcic219, null);
-                //bi.fldGrpcic218.setVisibility(View.VISIBLE);
-                //bi.fldGrpcic219.setVisibility(View.VISIBLE);
+                bi.fldGrpcic218.setVisibility(View.VISIBLE);
+                bi.fldGrpcic219.setVisibility(View.GONE);
             }
 
 
@@ -914,13 +910,13 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
             return false;
         }
 
-        if (isAllNo() || isAlldkn() || (!isoneYes())) {
+        if (isAllNo()) {
             if (!ValidatorClass.EmptyRadioButton(this, bi.cic218, bi.cic218a, getString(R.string.cic218))) {
                 return false;
             }
         }
 
-        if ((isAllNo() || isAlldkn()) && bi.cic218a.isChecked()) {
+        if ((isAllNo()) && bi.cic218a.isChecked()) {
             Toast.makeText(this, "ERROR: " + getString(R.string.cic218) + "Atleast one should be Yes", Toast.LENGTH_SHORT).show();
             bi.cic218a.setError(getString(R.string.cic218));
             Log.i(SectionC2Activity.class.getSimpleName(), "cic218: This data is Required!");
@@ -938,7 +934,7 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
                 bi.cic218a.setError(null);
             }
 */
-        if (isoneYes()) {
+        if (isoneYes() || isAlldkn()) {
             if (!ValidatorClass.EmptyRadioButton(this, bi.cic219, bi.cic219a, bi.cic219x, getString(R.string.cic219))) {
                 return false;
             }
@@ -1354,7 +1350,7 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
         for (CheckBox chk : grpcic211) {
             chk.setOnCheckedChangeListener(check2);
         }
-        for (RadioGroup rg : grpcic215) {
+        for (RadioGroup rg : grpcic217) {
             rg.setOnCheckedChangeListener(check);
         }
 
@@ -1387,6 +1383,16 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
                 }
             }
         });
+
+        bi.cic218.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                if (checkedId == bi.cic218a.getId()) {
+                    bi.cic218a.setError("Please check previous questions!");
+                }
+            }
+        });
     }
 
     @Override
@@ -1403,7 +1409,7 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
     public boolean isoneYes() {
 
         int i = 0;
-        for (RadioButton rg : cic215yes) {
+        for (RadioButton rg : cic217yes) {
             if (rg.isChecked())
                 return true;
         }
@@ -1416,25 +1422,25 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
     public boolean isAlldkn() {
 
         int i = 0;
-        for (RadioButton rg : cic215dkn) {
+        for (RadioButton rg : cic217dkn) {
             if (rg.isChecked())
                 i++;
         }
 
         // Show answer here
-        return i == cic215dkn.size();
+        return i == cic217dkn.size();
     }
 
     public boolean isAllNo() {
 
         int i = 0;
-        for (RadioButton rg : cic215no) {
+        for (RadioButton rg : cic217no) {
             if (rg.isChecked())
                 i++;
         }
 
         // Show answer here
-        return i == cic215no.size();
+        return i == cic217no.size();
     }
 
 

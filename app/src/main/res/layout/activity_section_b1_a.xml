@@ -15,9 +15,9 @@
 
 
     <LinearLayout
-        android:layoutDirection="rtl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
         android:orientation="vertical">
 
 
@@ -97,15 +97,16 @@
                             android:layout_height="wrap_content"
                             android:background="@color/pink_100"
                             android:gravity="center"
-                            android:text="@string/day"
+                            android:text="@string/year2"
                             android:textColor="@color/colorPrimaryDark" />
 
+
                         <EditText
-                            android:id="@+id/ciw217d"
+                            android:id="@+id/ciw217y"
                             style="@style/textInput"
-                            android:hint="@string/day"
+                            android:hint="@string/year2"
                             android:inputType="number"
-                            android:maxLength="2"
+                            android:maxLength="4"
                             android:visibility="visible" />
 
                     </LinearLayout>
@@ -148,16 +149,15 @@
                             android:layout_height="wrap_content"
                             android:background="@color/pink_100"
                             android:gravity="center"
-                            android:text="@string/year2"
+                            android:text="@string/day"
                             android:textColor="@color/colorPrimaryDark" />
 
-
                         <EditText
-                            android:id="@+id/ciw217y"
+                            android:id="@+id/ciw217d"
                             style="@style/textInput"
-                            android:hint="@string/year2"
+                            android:hint="@string/day"
                             android:inputType="number"
-                            android:maxLength="4"
+                            android:maxLength="2"
                             android:visibility="visible" />
 
                     </LinearLayout>
