@@ -886,7 +886,6 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
 
         sA4.put("cih303a", binding.cih303a1.isChecked() ? "1"
                 : binding.cih303a2.isChecked() ? "2"
-                : binding.cih303a2.isChecked() ? "2"
                 : "0");
 
         sA4.put("cih303", binding.cih303b.isChecked() ? "1"
@@ -909,7 +908,9 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
                 : "0");
         sA4.put("cih30396x", binding.cih30396x.getText().toString());
 
-        sA4.put("cih304", binding.cih30498.isChecked() ? "998" : binding.cih30499.isChecked() ? "000" : binding.cih304.getText().toString());
+        sA4.put("cih304", binding.cih30498.isChecked() ? "998"
+                : binding.cih30499.isChecked() ? "000"
+                : binding.cih304.getText().toString());
 
         sA4.put("cih305", binding.cih305a.isChecked() ? "1"
                 : binding.cih305b.isChecked() ? "2"

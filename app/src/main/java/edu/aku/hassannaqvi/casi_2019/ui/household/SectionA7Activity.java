@@ -323,12 +323,6 @@ public class SectionA7Activity extends AppCompatActivity {
         secH7.put("cih70803", bi.cih70803.getText().toString());
 
 
-        secH7.put("cih70801", bi.cih708a.isChecked() ? "1"
-                : bi.cih708b.isChecked() ? "2" : "0");
-        secH7.put("cih70802", bi.cih70802.getText().toString());
-        secH7.put("cih70803", bi.cih70803.getText().toString());
-
-
         secH7.put("cih70901", bi.cih709a.isChecked() ? "1"
                 : bi.cih709b.isChecked() ? "2" : "0");
         secH7.put("cih70902", bi.cih70902.getText().toString());
