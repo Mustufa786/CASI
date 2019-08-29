@@ -115,7 +115,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             FormsTable.COLUMN_RESP_LNO + " TEXT," +
             FormsTable.COLUMN_HH_NO + " TEXT," +
             FormsTable.COLUMN_CLUSTER_NO + " TEXT," +
-
             FormsTable.COLUMN_GPSELEV + " TEXT," +
             FormsTable.COLUMN_SA1 + " TEXT," +
             FormsTable.COLUMN_SA4 + " TEXT," +

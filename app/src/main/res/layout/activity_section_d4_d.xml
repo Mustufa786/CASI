@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data>
+
+        <variable
+            name="callback"
+            type="edu.aku.hassannaqvi.casi_2019.ui.wra.SectionD4DActivity" />
+    </data>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/cidd407"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/white" />
+
+                <RadioGroup
+                    android:id="@+id/cidd407"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/cidd407a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/yes" />
+
+                    <RadioButton
+                        android:id="@+id/cidd407b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/no" />
+
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/cidd408a"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/cidd408a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/cidd408a"
+                    android:inputType="textMultiLine" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/cidd408b"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/cidd408b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/cidd408b"
+                    android:inputType="textMultiLine" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/cidd408c"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/cidd408c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/cidd408c"
+                    android:inputType="textMultiLine" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/cidd408d"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/cidd408d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/cidd408d"
+                    android:inputType="textMultiLine" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/cidd409"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/white" />
+
+                <RadioGroup
+                    android:id="@+id/cidd409"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/cidd409a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/cidd409a" />
+
+                    <RadioButton
+                        android:id="@+id/cidd409b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/cidd409b" />
+
+                    <RadioButton
+                        android:id="@+id/cidd409c"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/cidd409c" />
+
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/cidd410"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/white" />
+
+                <RadioGroup
+                    android:id="@+id/cidd410"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/cidd410a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/cidd410a" />
+
+                    <RadioButton
+                        android:id="@+id/cidd410b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/cidd410b" />
+
+                    <RadioButton
+                        android:id="@+id/cidd410c"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/cidd410c" />
+
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/cidd411"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/white" />
+
+                <RadioGroup
+                    android:id="@+id/cidd411"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/cidd411a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/cidd411a" />
+
+                    <RadioButton
+                        android:id="@+id/cidd411b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/cidd411b" />
+
+                    <RadioButton
+                        android:id="@+id/cidd411c"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/cidd411c" />
+
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/cidd412"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/white" />
+
+                <RadioGroup
+                    android:id="@+id/cidd412"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/cidd412a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/cidd412a" />
+
+                    <RadioButton
+                        android:id="@+id/cidd412b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/cidd412b" />
+
+                    <RadioButton
+                        android:id="@+id/cidd412c"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/cidd412c" />
+
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/cidd413"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/white" />
+
+                <RadioGroup
+                    android:id="@+id/cidd413"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/cidd413a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/cidd413a" />
+
+                    <RadioButton
+                        android:id="@+id/cidd413b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/cidd413b" />
+
+                    <RadioButton
+                        android:id="@+id/cidd413c"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/cidd413c" />
+
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/cidd414"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/white" />
+
+                <RadioGroup
+                    android:id="@+id/cidd414"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/cidd414a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/cidd414a" />
+
+                    <RadioButton
+                        android:id="@+id/cidd414b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/cidd414b" />
+
+                    <RadioButton
+                        android:id="@+id/cidd414c"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/cidd414c" />
+
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/cidd415"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/white" />
+
+                <RadioGroup
+                    android:id="@+id/cidd415"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/cidd415a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/cidd415a" />
+
+                    <RadioButton
+                        android:id="@+id/cidd415b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/cidd415b" />
+
+                    <RadioButton
+                        android:id="@+id/cidd415c"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/cidd415c" />
+
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="80dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_Continue"
+                    style="@style/buttons"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#1ed61e"
+                    android:onClick="@{() -> callback.BtnContinue()}"
+                    android:text="@string/saveMember"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btn_End"
+                    style="@style/buttons"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/red"
+                    android:onClick="@{() -> callback.BtnEnd()}"
+                    android:text="@string/end_interview"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</layout>

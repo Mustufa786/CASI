@@ -170,7 +170,7 @@ public class AntrhoInfoActivity extends Activity {
 
                 finish();
 
-                startActivity(new Intent(this, SectionD1Activity.class));
+                startActivity(new Intent(this, SectionAnth1Activity.class));
 
 
             } else {

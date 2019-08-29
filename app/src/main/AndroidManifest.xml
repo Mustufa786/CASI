@@ -29,6 +29,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
+        <activity android:name=".ui.wra.SectionD4DActivity"></activity>
+        <activity android:name=".ui.wra.SectionD4CActivity" />
+        <activity android:name=".ui.wra.SectionD4BActivity" />
+        <activity android:name=".ui.wra.SectionD4AActivity" />
+        <activity android:name=".ui.wra.SectionD3BActivity" />
+        <activity android:name=".ui.wra.SectionD3AActivity" />
+        <activity android:name=".ui.wra.SectionD2AActivity" />
+        <activity android:name=".ui.wra.SectionD2BActivity" />
         <activity
             android:name=".ui.mainUI.SplashscreenActivity"
             android:screenOrientation="portrait"
@@ -39,7 +47,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".ui.mainUI.LoginActivity"
@@ -49,15 +56,10 @@
         <activity
             android:name=".ui.childs.SectionC5Activity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize|stateHidden">
-
-        </activity>
+            android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name=".ui.childs.SectionC4Activity"
-            android:screenOrientation="portrait">
-
-
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.household.SectionA402Activity"
             android:screenOrientation="portrait"
@@ -111,7 +113,7 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name=".ui.anthro.SectionD1Activity"
+            android:name=".ui.anthro.SectionAnth1Activity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
@@ -154,7 +156,7 @@
             android:name=".ui.childs.SectionC2Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
-            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+            android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name=".ui.childs.SectionC3Activity"
             android:screenOrientation="portrait"

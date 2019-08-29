@@ -209,7 +209,7 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if (b) {
-                    bi.cic207h.setEnabled(true);
+                    bi.cic207hh4.setEnabled(true);
                     bi.cic207d.setEnabled(false);
                     bi.cic207d.setText(null);
                 } else {
@@ -709,7 +709,6 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
     }
 
     private boolean ValidateForm() {
-
 
         if (!ValidatorClass.EmptyRadioButton(this, bi.cic206, bi.cic206a, getString(R.string.cic206))) {
             return false;

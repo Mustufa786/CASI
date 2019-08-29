@@ -188,7 +188,6 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
                         ClearClass.ClearAllFields(binding.fldGrpciw413, null);
                         binding.fldGrpciw413.setVisibility(View.GONE);
                     }
-
                 } else {
                     binding.ciw412a.setEnabled(true);
                     binding.ciw412b.setEnabled(true);
@@ -205,7 +204,6 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-
                     binding.fldGrpciw413.setVisibility(View.VISIBLE);
                 } else {
                     ClearClass.ClearAllFields(binding.fldGrpciw413, null);

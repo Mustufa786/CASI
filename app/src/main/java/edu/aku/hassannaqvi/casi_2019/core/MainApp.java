@@ -80,13 +80,13 @@ public class MainApp extends Application {
     public static final long MILLISECONDS_IN_9MONTH = MILLIS_IN_SECOND * SECONDS_IN_MINUTE * MINUTES_IN_HOUR * HOURS_IN_DAY * DAYS_IN_9MONTH;
     private static final long DAYS_IN_2_YEAR = 365 * 2;
     public static final long MILLISECONDS_IN_2Years = MILLIS_IN_SECOND * SECONDS_IN_MINUTE * MINUTES_IN_HOUR * HOURS_IN_DAY * DAYS_IN_2_YEAR;
-    public static String _IP2 = "58.65.211.13"; // Test PHP server
+    //    public static String _IP2 = "58.65.211.13"; // Test PHP server
     //    public static String _IP = "43.245.131.159"; // Test PHP server
-    //public static String _IP = "f38158"; // Test PHP server
-    public static String _IP = "vcoe1.aku.edu"; // Live PHP server
+    public static String _IP = "f38158"; // Test PHP server
+//    public static String _IP = "vcoe1.aku.edu"; // Live PHP server
 
-    public static String _HOST_URL = "https://" + MainApp._IP + ":" + MainApp._PORT + "/casi/api/";
-    public static String _UPDATE_URL = "https://" + MainApp._IP + ":" + MainApp._PORT + "/casi/app/";
+    public static String _HOST_URL = "http://" + MainApp._IP + "/casi/api/";
+    public static String _UPDATE_URL = "http://" + MainApp._IP + "/casi/app/";
     public static String deviceId;
 
     public static Boolean admin = false;

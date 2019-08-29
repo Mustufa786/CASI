@@ -34,20 +34,20 @@ import edu.aku.hassannaqvi.casi_2019.contracts.AnthrosMembersContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.FamilyMembersContract;
 import edu.aku.hassannaqvi.casi_2019.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2019.core.MainApp;
-import edu.aku.hassannaqvi.casi_2019.databinding.ActivitySectionD1Binding;
+import edu.aku.hassannaqvi.casi_2019.databinding.ActivitySectionAnth1Binding;
 import edu.aku.hassannaqvi.casi_2019.other.JSONUtilClass;
 import edu.aku.hassannaqvi.casi_2019.ui.mainUI.Menu2Activity;
 import edu.aku.hassannaqvi.casi_2019.validation.ClearClass;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
-public class SectionD1Activity extends Menu2Activity implements TextWatcher, RadioGroup.OnCheckedChangeListener, CompoundButton.OnCheckedChangeListener {
+public class SectionAnth1Activity extends Menu2Activity implements TextWatcher, RadioGroup.OnCheckedChangeListener, CompoundButton.OnCheckedChangeListener {
 
     static List<String> members;
     static Map<String, SelectedMem> membersMap;
     static String name;
     static int counter = 1;
     private final long DELAY = 500;
-    ActivitySectionD1Binding binding;
+    ActivitySectionAnth1Binding binding;
     DatabaseHelper db;
     int slc_type;
     JSONModelClass json;
@@ -62,7 +62,7 @@ public class SectionD1Activity extends Menu2Activity implements TextWatcher, Rad
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_section_d1);
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_section_anth1);
         db = new DatabaseHelper(this);
 
         this.setTitle(getResources().getString(R.string.nd1heading));
@@ -477,7 +477,7 @@ public class SectionD1Activity extends Menu2Activity implements TextWatcher, Rad
                         "MUAC: " + binding.cid1muac.getText().toString() + "\n";
 
                 AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
-                        SectionD1Activity.this);
+                        SectionAnth1Activity.this);
                 alertDialogBuilder
                         .setMessage("Are you sure to confirm these reading's?\n\n" + readings)
                         .setCancelable(false)
@@ -486,7 +486,7 @@ public class SectionD1Activity extends Menu2Activity implements TextWatcher, Rad
                                     public void onClick(DialogInterface dialog,
                                                         int id) {
                                         finish();
-                                        startActivity(new Intent(SectionD1Activity.this, AnthroEndingActivity.class).putExtra("complete", true));
+                                        startActivity(new Intent(SectionAnth1Activity.this, AnthroEndingActivity.class).putExtra("complete", true));
                                     }
                                 });
                 alertDialogBuilder.setNegativeButton("Cancel",
