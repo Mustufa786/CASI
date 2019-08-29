@@ -30,25 +30,25 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:background="@color/colorPrimary"
-                    android:text="@string/cidd405"
+                    android:text="@string/cid405"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/white" />
 
                 <RadioGroup
-                    android:id="@+id/cidd405"
+                    android:id="@+id/cid405"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <RadioButton
-                        android:id="@+id/cidd405a"
+                        android:id="@+id/cid405a"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="@string/yes" />
 
                     <RadioButton
-                        android:id="@+id/cidd405b"
+                        android:id="@+id/cid405b"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -69,15 +69,15 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:background="@color/colorPrimary"
-                    android:text="@string/cidd406a"
+                    android:text="@string/cid40602"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/white" />
 
                 <EditText
-                    android:id="@+id/cidd406a"
+                    android:id="@+id/cid40602"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/cidd406a"
+                    android:hint="@string/cid40602"
                     android:inputType="textMultiLine" />
 
                 <TextView
@@ -85,15 +85,15 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:background="@color/colorPrimary"
-                    android:text="@string/cidd406b"
+                    android:text="@string/cid40603"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/white" />
 
                 <EditText
-                    android:id="@+id/cidd406b"
+                    android:id="@+id/cid40603"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/cidd406b"
+                    android:hint="@string/cid40603"
                     android:inputType="textMultiLine" />
 
                 <TextView
@@ -101,15 +101,15 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:background="@color/colorPrimary"
-                    android:text="@string/cidd406c"
+                    android:text="@string/cid40604"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/white" />
 
                 <EditText
-                    android:id="@+id/cidd406c"
+                    android:id="@+id/cid40604"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/cidd406c"
+                    android:hint="@string/cid40604"
                     android:inputType="textMultiLine" />
 
                 <TextView
@@ -117,15 +117,15 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:background="@color/colorPrimary"
-                    android:text="@string/cidd406d"
+                    android:text="@string/cid40605"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/white" />
 
                 <EditText
-                    android:id="@+id/cidd406d"
+                    android:id="@+id/cid40605"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/cidd406d"
+                    android:hint="@string/cid40605"
                     android:inputType="textMultiLine" />
 
             </LinearLayout>

@@ -21,160 +21,160 @@
             android:layoutDirection="rtl"
             android:orientation="vertical">
 
-            <!--            cidd201-->
+            <!--            cid201-->
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:background="@color/colorPrimary"
-                android:text="@string/cidd201"
+                android:text="@string/cid201"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textColor="@android:color/white" />
 
             <RadioGroup
-                android:id="@+id/cidd201"
+                android:id="@+id/cid201"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <RadioButton
-                    android:id="@+id/cidd201a"
+                    android:id="@+id/cid201a"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/cidd201a" />
+                    android:text="@string/cid201a" />
 
                 <RadioButton
-                    android:id="@+id/cidd201b"
+                    android:id="@+id/cid201b"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/cidd201b" />
+                    android:text="@string/cid201b" />
 
                 <RadioButton
-                    android:id="@+id/cidd201c"
+                    android:id="@+id/cid201c"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/cidd201c" />
+                    android:text="@string/cid201c" />
 
             </RadioGroup>
 
-            <!--            cidd202-->
+            <!--            cid202-->
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:background="@color/colorPrimary"
-                android:text="@string/cidd202"
+                android:text="@string/cid202"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textColor="@android:color/white" />
 
             <RadioGroup
-                android:id="@+id/cidd202"
+                android:id="@+id/cid202"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <RadioButton
-                    android:id="@+id/cidd202a"
+                    android:id="@+id/cid202a"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/cidd202a" />
+                    android:text="@string/cid202a" />
 
                 <RadioButton
-                    android:id="@+id/cidd202b"
+                    android:id="@+id/cid202b"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/cidd202b" />
+                    android:text="@string/cid202b" />
 
                 <RadioButton
-                    android:id="@+id/cidd202c"
+                    android:id="@+id/cid202c"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/cidd202c" />
+                    android:text="@string/cid202c" />
 
             </RadioGroup>
 
-            <!--            cidd203-->
+            <!--            cid203-->
             <LinearLayout
-                android:id="@+id/fldGrpcidd203"
+                android:id="@+id/fldGrpcid203"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:visibility='@{cidd202a.checked? View.VISIBLE : View.GONE}'>
+                android:visibility='@{cid202a.checked? View.VISIBLE : View.GONE}'>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:background="@color/colorPrimary"
-                    android:text="@string/cidd203"
+                    android:text="@string/cid203"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/white" />
 
                 <RadioGroup
-                    android:id="@+id/cidd203"
+                    android:id="@+id/cid203"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <RadioButton
-                        android:id="@+id/cidd203a"
+                        android:id="@+id/cid203a"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/cidd203a" />
+                        android:text="@string/cid203a" />
 
                     <RadioButton
-                        android:id="@+id/cidd203b"
+                        android:id="@+id/cid203b"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/cidd203b" />
+                        android:text="@string/cid203b" />
 
                     <RadioButton
-                        android:id="@+id/cidd203c"
+                        android:id="@+id/cid203c"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/cidd203c" />
+                        android:text="@string/cid203c" />
 
                 </RadioGroup>
             </LinearLayout>
 
 
-            <!--            cidd204-->
+            <!--            cid204-->
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:background="@color/colorPrimary"
-                android:text="@string/cidd204"
+                android:text="@string/cid204"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textColor="@android:color/white" />
 
             <RadioGroup
-                android:id="@+id/cidd204"
+                android:id="@+id/cid204"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <RadioButton
-                    android:id="@+id/cidd204a"
+                    android:id="@+id/cid204a"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/yes" />
 
                 <RadioButton
-                    android:id="@+id/cidd204b"
+                    android:id="@+id/cid204b"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -194,36 +194,36 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:background="@color/colorPrimary"
-                    android:text="@string/cidd206"
+                    android:text="@string/cid206"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/white" />
 
                 <RadioGroup
-                    android:id="@+id/cidd206"
+                    android:id="@+id/cid206"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <RadioButton
-                        android:id="@+id/cidd206a"
+                        android:id="@+id/cid206a"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/cidd206a" />
+                        android:text="@string/cid206a" />
 
                     <RadioButton
-                        android:id="@+id/cidd206b"
+                        android:id="@+id/cid206b"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/cidd206b" />
+                        android:text="@string/cid206b" />
 
                     <RadioButton
-                        android:id="@+id/cidd206c"
+                        android:id="@+id/cid206c"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/cidd206c" />
+                        android:text="@string/cid206c" />
 
                 </RadioGroup>
 
@@ -232,36 +232,36 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:background="@color/colorPrimary"
-                    android:text="@string/cidd207"
+                    android:text="@string/cid207"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/white" />
 
                 <RadioGroup
-                    android:id="@+id/cidd207"
+                    android:id="@+id/cid207"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <RadioButton
-                        android:id="@+id/cidd207a"
+                        android:id="@+id/cid207a"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/cidd207a" />
+                        android:text="@string/cid207a" />
 
                     <RadioButton
-                        android:id="@+id/cidd207b"
+                        android:id="@+id/cid207b"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/cidd207b" />
+                        android:text="@string/cid207b" />
 
                     <RadioButton
-                        android:id="@+id/cidd207c"
+                        android:id="@+id/cid207c"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/cidd207c" />
+                        android:text="@string/cid207c" />
 
                 </RadioGroup>
 

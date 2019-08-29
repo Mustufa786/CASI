@@ -1482,4 +1482,319 @@
     <string name="cic50306">  ۔C50306-لبنیات و محصولات لبنیات (شیر، ماست، پنیر، دیگر مصولات شیر)  </string>
     <string name="cic50307">  ۔C50307- شکر و عسل </string>
     <string name="cic50308">  ۔C50308- روغن، چربی ها </string>
+
+
+    <!--New Sections-->
+    <string name="cid201"> آیا شما عادات غذایی خود را در هنگام شیردهی تغییر می دهید؟D201 </string>
+    <string name="cid201a"> یک </string>
+    <string name="cid201b"> دو </string>
+    <string name="cid201c"> سه </string>
+
+    <string name="cid202"> آیا شما عادات غذایی خود را در حاملگی تغییر می دهید؟ D202 </string>
+    <string name="cid202a"> بلی </string>
+    <string name="cid202b"> نخیر </string>
+    <string name="cid202c"> انکار کرد </string>
+    <string name="cid202d"> نمی داند/جواب نداد </string>
+
+    <string name="cid203"> آیا شما غذا کم می خورید یا زیاد ؟ D203 </string>
+    <string name="cid203a"> کم </string>
+    <string name="cid203b"> زیاد </string>
+    <string name="cid203c"> انکار کرد </string>
+    <string name="cid203d"> نمی داند/جواب نداد </string>
+
+    <string name="cid204"> D204 آیا شما کدام غذاها یا مایعات " گرم" یا " سرد" در هنگام حاملگی می خوردید یا هم امتناع می ورزیدید؟ </string>
+    <string name="cid204a"> بلی </string>
+    <string name="cid204b"> نخیر </string>
+
+    <string name="cid20502"> کدام غذاها، معایات یا دیگر (دارو خانگی، گیاهی، یا ادویه)؟ لطفاً لیست کنید؟D205b </string>
+
+
+    <string name="cid20503a"> 1=امتناع می ورزد D205c </string>
+    <string name="cid20503b"> 2 = مصرف می نمود D205c </string>
+
+
+    <string name="cid20504"> چرا امتناع می ورزید؟ D205d </string>
+    <string name="cid20504a"> دلبدی/استفراغ </string>
+    <string name="cid20504b"> ترس درد های شکم/ اسهال </string>
+    <string name="cid20504c"> ترس سقط جنین </string>
+    <string name="cid20504d"> ترس فشار بلند </string>
+    <string name="cid20504e"> ترس مشکلات جنینی </string>
+    <string name="cid20504f"> ترس ولادت سخت </string>
+    <string name="cid20504g"> حساسیت (طفل) </string>
+    <string name="cid20504h"> تب/ریزش (مادر) </string>
+    <string name="cid20504i"> تب/ ریزش (طفل) </string>
+    <string name="cid20504j"> افزایش جسامت جنین </string>
+    <string name="cid20504k"> توانای خرید </string>
+    <string name="cid20504l"> دیگر ( لطفاً مشخص کنید) </string>
+
+    <string name="cid206"> به نظرتان غذا خوردن زیاد در دوران حاملگی خوب است؟ D206 </string>
+    <string name="cid206a"> خوب نیست </string>
+    <string name="cid206b"> مطمئین نیست </string>
+    <string name="cid206c"> خوب </string>
+
+    <string name="cid207"> چقدر مشکل است برایتان که در دوران حاملگی بیشتر غذا بخورید؟ D207 </string>
+    <string name="cid207a"> خوب نیست </string>
+    <string name="cid207b"> مطمئین نیست </string>
+    <string name="cid207c"> خوب </string>
+
+
+    <string name="cid3h1"> از شما در مورد تغذی شما در زمان شیرمادر دهی بعضی سوالات را می پرسم. لطفاً برایم بگوید، اگر شما ضرورت به وضاحت در مورد کدام سوال داشته باشید. اگر کدام سوال دارید، میتوانید آزادانه بپرسید. </string>
+
+
+    <string name="cid301"> آیا شما عادات غذایی خود را در هنگام شیردهی تغییر می دهید؟ D301 </string>
+    <string name="cid301a"> بلی </string>
+    <string name="cid301b"> نخیر </string>
+    <string name="cid301d"> انکار کرد </string>
+    <string name="cid301c"> نمی داند/جواب نداد </string>
+
+    <string name="cid302"> آیا شما غذای کم می خورید یا زیاد ؟ D302 </string>
+    <string name="cid302a"> کم </string>
+    <string name="cid302b"> زیاد </string>
+    <string name="cid302c"> انکار کرد </string>
+    <string name="cid302d"> نمی داند/جواب نداد </string>
+
+    <string name="cid303"> آیا شما کدام غذاها یا مایعات " گرم" یا " سرد" در هنگام شیردهی مادر می خورید D303 </string>
+    <string name="cid303a"> بلی </string>
+    <string name="cid303b"> نخیر </string>
+
+    <string name="cid30402"> کدام غذاها، معایات یا دیگر (دارو خانگی، گیاهی، یا ادویه)؟ لطفاً لیست کنید D304b </string>
+
+    <string name="cid30403a"> =1 امتناع می ورزید D304 </string>
+    <string name="cid30403b"> 2 = مصرف می نمود D304 </string>
+
+    <string name="cid30404"> چرا امتناع می ورزید؟ </string>
+    <string name="cid30404a"> دلبدی/استفراغ </string>
+    <string name="cid30404b"> ترس درد های شکم/ اسهال </string>
+    <string name="cid30404c"> ترس فشار بلند </string>
+    <string name="cid30404d"> حساسیت (طفل) </string>
+    <string name="cid30404e"> تب/ریزش (مادر) </string>
+    <string name="cid30404f"> تب/ ریزش (طفل) </string>
+    <string name="cid30404g"> توانای خرید </string>
+    <string name="cid30404h"> دیگر ( لطفاً مشخص کنید) </string>
+
+
+    <string name="cid305"> به نظرتان چی اندازه غذا خوردن زیاد در دوران شیردهی خوب است؟D305 </string>
+    <string name="cid305a"> خوب نیست </string>
+    <string name="cid305b"> مطمئین نیست </string>
+    <string name="cid305c"> خوب </string>
+
+    <string name="cid306"> چقدر مشکل است برایتان که در دوران شیردهی بیشتر غذا بخورید؟D306 </string>
+    <string name="cid306a"> خوب نیست </string>
+    <string name="cid306b"> مطمئین نیست </string>
+    <string name="cid306c"> خوب </string>
+
+
+    <string name="cid307"> به نظر شما چه اندازه خوب است که طفل برای شش ماه تنها با شیر مادر تغذی شود؟D307 </string>
+    <string name="cid307a"> خوب نیست </string>
+    <string name="cid307b"> مطمئین نیست </string>
+    <string name="cid307c"> خوب </string>
+
+    <string name="cid308"> چقدر مشکل است برایتان که در شش ماه تنها با شیرمادر طفل تان را تغذی کنید؟D308 </string>
+    <string name="cid308a"> خوب نیست </string>
+    <string name="cid308b"> مطمئین نیست </string>
+    <string name="cid308c"> خوب </string>
+
+    <string name="cid309"> چه اندازه خوب است که نظر به خواست طفل تان شیرمادر بدهید، یعنی زمانیکه طفل می خواهد تغذیه شود، شیر مادر بدهید؟D309 </string>
+    <string name="cid309a"> خوب نیست </string>
+    <string name="cid309b"> مطمئین نیست </string>
+    <string name="cid309c"> خوب </string>
+
+    <string name="cid310"> چقدر مشکل است که طفل تان را در وقت ضرورت شان با شیرمادر تغذی کنید؟D310 </string>
+    <string name="cid310a"> خوب نیست </string>
+    <string name="cid310b"> مطمئین نیست </string>
+    <string name="cid310c"> خوب </string>
+
+    <string name="cid311"> چه اندازه مطمئین در وقت شیردهی (شیر مادر) احساس می کنید؟D311 </string>
+    <string name="cid311a"> خوب نیست </string>
+    <string name="cid311b"> مطمئین نیست </string>
+    <string name="cid311c"> خوب </string>
+
+    <string name="cid312"> چه اندازه مطمئین احساس می نمایید که شیرتان را ذخیره کنید تا کسی دیگر به طفل تان بدهد.D312 </string>
+    <string name="cid312a"> خوب نیست </string>
+    <string name="cid312b"> مطمئین نیست </string>
+    <string name="cid312c"> خوب </string>
+
+
+    <string name="cid401"> آیا شما از کدام غذاها یا مایعات "گرم" در هنگام تغذی متمم امتناع می ورزید؟D401 </string>
+
+
+    <string name="cid40202"> کدام مریضی؟ (یک خط را برای یک مریضی انتخاب کنید)D402b </string>
+
+
+    <string name="cid40203"> غذاهای "گرم" که امتناع می ورزید؟(لطفاً لیست کنید)D402c </string>
+
+
+    <string name="cid40204"> مایعات "گرم" که امتناع می ورزید؟(لطفاً لیست کنید)D402d </string>
+
+
+    <string name="cid40205"> اگر دیگر(دارو های خانگی، گیاهی، مساله ها، ادویه ها، لطفاً لیست کنید)D402e </string>
+
+
+    <string name="cid403"> آیا شما از کدام غذاها یا مایعات " سرد " در هنگام تغذی متمم امتناع می ورزید؟ </string>
+
+
+    <string name="cid40402"> کدام مریضی؟ (یک خط را برای یک مریضی انتخاب کنید) </string>
+
+
+    <string name="cid40403"> غذاهای " سرد " که امتناع می ورزید؟(لطفاً لیست کنید) </string>
+
+
+    <string name="cid40404"> مایعات " سرد " که امتناع می ورزید؟(لطفاً لیست کنید) </string>
+
+
+    <string name="cid40405"> اگر دیگر(دارو های خانگی، گیاهی، مساله ها، ادویه ها، لطفاً لیست کنید) </string>
+
+
+    <string name="cid405"> آیا شما از کدام غذاها یا مایعات " داغ درمانی " در هنگام تغذی متمم امتناع می ورزید؟D405 </string>
+
+
+    <string name="cid40602"> کدام مریضی؟ (یک خط را برای یک مریضی انتخاب کنید)D406b </string>
+
+
+    <string name="cid40603"> غذاهای " داغ درمانی " که امتناع می ورزید؟(لطفاً لیست کنید)D406c </string>
+
+
+    <string name="cid40604"> مایعات " داغ درمانی " که امتناع می ورزید؟(لطفاً لیست کنید)D406d </string>
+
+
+    <string name="cid40605"> اگر دیگر(دارو های خانگی، گیاهی، مساله ها، ادویه ها، لطفاً لیست کنید)D406e </string>
+
+
+    <string name="cid407"> آیا شما از کدام غذاها یا مایعات "سرماخوردگی" در هنگام تغذی متمم امتناع می ورزید؟ </string>
+
+
+    <string name="cid40802"> کدام مریضی؟ (یک خط را برای یک مریضی انتخاب کنید) </string>
+
+
+    <string name="cid40803"> غذاهای " سرد درمانی " که امتناع می ورزید؟(لطفاً لیست کنید) </string>
+
+
+    <string name="cid40804"> مایعات " سرد درمانی " که امتناع می ورزید؟(لطفاً لیست کنید) </string>
+
+
+    <string name="cid40805"> اگر دیگر(دارو های خانگی، گیاهی، مساله ها، ادویه ها، لطفاً لیست کنید) </string>
+
+
+    <string name="cid409"> در وقت آماده سازی غذای طفل تان، چه اندازه خود را مطمئین احساس می کنید؟D409 </string>
+    <string name="cid409a"> مطمئین نیست </string>
+    <string name="cid409b"> مطمئین نیست </string>
+    <string name="cid409c"> مطمئین </string>
+
+    <string name="cid410"> به نظرتان چه اندازه خوب است که هر روز غذاهای مختلف به طفل تان بدهید؟D410 </string>
+    <string name="cid410a"> مطمئین نیست </string>
+    <string name="cid410b"> مطمئین نیست </string>
+    <string name="cid410c"> مطمئین </string>
+
+    <string name="cid411"> چقدر مشکل است که به طفل تان هر روز غذاهای مختلف بدهید؟D411 </string>
+    <string name="cid411a"> مطمئین نیست </string>
+    <string name="cid411b"> مطمئین نیست </string>
+    <string name="cid411c"> مطمئین </string>
+
+    <string name="cid412"> به نظرتان چه اندازه خوب است که چندین مراتبه در روز به طفل تان غذا بدهید؟D412 </string>
+    <string name="cid412a"> مطمئین نیست </string>
+    <string name="cid412b"> مطمئین نیست </string>
+    <string name="cid412c"> مطمئین </string>
+
+    <string name="cid413"> چقدر مشکل است برایتان که طفل خود را چندین مراتبه در روز غذا بدهید؟D413 </string>
+    <string name="cid413a"> مطمئین نیست </string>
+    <string name="cid413b"> مطمئین نیست </string>
+    <string name="cid413c"> مطمئین </string>
+
+    <string name="cid414"> به نظرتان چه اندازه خوب است که شیردهی مادر بعد از شش ماه هم ادامه یابد؟D414 </string>
+    <string name="cid414a"> مطمئین نیست </string>
+    <string name="cid414b"> مطمئین نیست </string>
+    <string name="cid414c"> مطمئین </string>
+
+    <string name="cid415"> چقدر مشکل است برایتان که شیردهی مادر بعد از شش ماه ادامه یابد؟D415 </string>
+    <string name="cid415a"> مطمئین نیست </string>
+    <string name="cid415b"> مطمئین نیست </string>
+    <string name="cid415c"> مطمئین </string>
+
+
+    <string name="cid501"> آیا سبزی ها و میوه ها را با آب پاگ می شوید؟D501 </string>
+
+
+    <string name="cid502"> شما چگونه غذاهای تازه خراب شوینده مانند گوشت خام، گوشت مرغ و غذای های بحری را نگه داری می کنید؟D502 </string>
+    <string name="cid502a"> در یخچال/صندوق سرد </string>
+    <string name="cid502b"> پوشیده </string>
+    <string name="cid502c"> دیگر </string>
+    <string name="cid502d"> نمی داند/جواب نداد </string>
+
+
+    <string name="cid601"> آیا قبل از مکتب امروز چای صبح خوردید؟D601 </string>
+
+
+    <string name="cid602"> در کدام وقت؟D602 </string>
+    <string name="cid602a"> بین 9 – 6 صبح </string>
+    <string name="cid602b"> بین 9 تا چاشت </string>
+    <string name="cid602c"> بین چاشت تا 3 بعد ظهر </string>
+    <string name="cid602d"> نمی داند/جواب نداد </string>
+
+    <string name="cid603"> در کجا چای صبح را خوردید؟D603 </string>
+    <string name="cid603a"> در خانه </string>
+    <string name="cid603b"> در مکتب </string>
+    <string name="cid603c"> جای دیگر </string>
+
+
+    <string name="cid604"> اگر مصاحبه قبل از چاشت اجرا می شد، بپرسید:آیا دیروز نان چاشت خوردید؟ اگر مصاحبه بعد چاشت اجرا می شد، بپرسید: آیا امروز نان چاشت خوردید؟D604 </string>
+
+
+    <string name="cid605"> در کدام وقت؟D605 </string>
+    <string name="cid605a"> بین 9 صبح تا چاشت </string>
+    <string name="cid605b"> بین چاشت تا 3 بعد چاشت </string>
+    <string name="cid605c"> بین 6 – 3 بعد چاشت </string>
+
+    <string name="cid606"> کی نان چاشت را آماده می سازد؟D606 </string>
+    <string name="cid606a"> والدین در خانه </string>
+    <string name="cid606b"> کفریای مکتب </string>
+    <string name="cid606c"> با جیب خرچ، نان چاشت می خرد </string>
+
+
+    <string name="cid607"> آیا دیروز نان شب خوردید؟D607 </string>
+
+
+    <string name="cid608"> در کدام وقت؟D608 </string>
+    <string name="cid608a"> بین 6 – 3 بعد چاشت </string>
+    <string name="cid608b"> بین 9 – 6 بعد چاشت </string>
+    <string name="cid608c"> بین 9 بعد چاشت تا نیم شب </string>
+
+
+    <string name="cid609"> در کجا؟ D609 </string>
+    <string name="cid609a"> در خانه </string>
+    <string name="cid609b"> در مکتب </string>
+    <string name="cid609c"> دیگر جای </string>
+
+    <string name="cid610"> آیا دیروز در هنگام شب یا روز در بین وعده های غذایی، میان غذا خوردید؟D610 </string>
+
+
+    <string name="cid611"> چی خورده بودید؟این سوال یک سوال بازاست.D611 </string>
+
+    <string name="cid612"> آیا دیروز در هنگام شب یا روز، با پول خود تان غذا خریده بودید؟D612 </string>
+
+
+    <string name="cid613"> چه خریده بودید؟ این سوال یک سوال باز است.D613 </string>
+
+    <string name="cid614"> آن غذاها را از کجا خریده بودید؟D614 </string>
+
+
+    <string name="cid615"> به نظرتان چه اندازه خوب است که چای صبح قبل از مکتب خورده شود؟D615 </string>
+    <string name="cid615a"> خوب نیست </string>
+    <string name="cid615b"> مطمئین نیست </string>
+    <string name="cid615c"> خوب </string>
+
+    <string name="cid616"> چقدر مشکل است که چای صبح را قبل از رفتن به مکتب بخورید؟D616 </string>
+    <string name="cid616a"> مشکل نیست </string>
+    <string name="cid616b"> مطمئین نیست </string>
+    <string name="cid616c"> مشکل </string>
+
+    <string name="cid617"> به نظر چه اندازه خوب است که غذا های متنوغ در وعده غذایی خورده شود؟D617 </string>
+    <string name="cid617a"> خوب نیست </string>
+    <string name="cid617b"> مطمئین نیست </string>
+    <string name="cid617c"> خوب </string>
+
+    <string name="cid618"> چقدر مشکل است که غذاهای متنوع در وعده غذایی بخورید؟D618 </string>
+    <string name="cid618a"> خوب نیست </string>
+    <string name="cid618b"> مطمئین نیست </string>
+    <string name="cid618c"> خوب </string>
+
 </resources>
