@@ -40,6 +40,7 @@ public class MWRAContract {
     private String sB11 = "";
     private String sb2flag = "";
     private boolean kishSelectWRA;
+    private boolean kishSelectMWRA;
     private String cluster = "";
     private String hhno = "";
 
@@ -294,6 +295,14 @@ public class MWRAContract {
 
     public void setHhno(String hhno) {
         this.hhno = hhno;
+    }
+
+    public boolean getKishSelectMWRA() {
+        return kishSelectMWRA;
+    }
+
+    public void setKishSelectMWRA(boolean kishSelectMWRA) {
+        this.kishSelectMWRA = kishSelectMWRA;
     }
 
     public MWRAContract Sync(JSONObject jsonObject) throws JSONException {

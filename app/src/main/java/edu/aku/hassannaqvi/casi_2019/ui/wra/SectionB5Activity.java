@@ -25,6 +25,8 @@ import edu.aku.hassannaqvi.casi_2019.databinding.ActivitySectionB5Binding;
 import edu.aku.hassannaqvi.casi_2019.other.JSONUtilClass;
 import edu.aku.hassannaqvi.casi_2019.ui.mainUI.Menu2Activity;
 import edu.aku.hassannaqvi.casi_2019.ui.viewMem.ViewMemberActivity;
+import edu.aku.hassannaqvi.casi_2019.ui.wra.secWRAD4.SectionD2AActivity;
+import edu.aku.hassannaqvi.casi_2019.ui.wra.secWRAD4.SectionD3AActivity;
 import edu.aku.hassannaqvi.casi_2019.validation.ClearClass;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
@@ -264,6 +266,12 @@ public class SectionB5Activity extends Menu2Activity implements TextWatcher, Rad
 
                 if (MainApp.mc.getKishSelectWRA()) {
                     startActivity(new Intent(this, SectionB6Activity.class));
+                } else if (MainApp.mc.getKishSelectMWRA()) {
+                    finish();
+                    if (SectionB1Activity.isCurrentlyPreg)
+                        startActivity(new Intent(this, SectionD2AActivity.class));
+                    else
+                        startActivity(new Intent(this, SectionD3AActivity.class));
                 } else {
                     startActivity(new Intent(this, MotherEndingActivity.class)
                             .putExtra("complete", true));
