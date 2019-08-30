@@ -29,7 +29,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
-        <activity android:name=".ui.childs.SectionS1"></activity>
+        <activity android:name=".ui.household.SectionD6Activity"></activity>
         <activity
             android:name=".ui.mainUI.SplashscreenActivity"
             android:screenOrientation="portrait"
