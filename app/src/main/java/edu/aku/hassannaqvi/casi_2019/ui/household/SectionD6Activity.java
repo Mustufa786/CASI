@@ -50,11 +50,11 @@ public class SectionD6Activity extends AppCompatActivity {
     private boolean UpdateDB() {
 
         DatabaseHelper db = new DatabaseHelper(this);
-        long updcount = db.addD4WRA(MainApp.d4WRAc);
+        long updcount = db.addD6Adoles(MainApp.d6Adolesc);
         if (updcount != 0) {
-            MainApp.d4WRAc.set_ID(String.valueOf(updcount));
-            MainApp.d4WRAc.set_UID(
-                    (MainApp.d4WRAc.getDeviceId() + MainApp.d4WRAc.get_ID()));
+            MainApp.d6Adolesc.set_ID(String.valueOf(updcount));
+            MainApp.d6Adolesc.set_UID(
+                    (MainApp.d6Adolesc.getDeviceId() + MainApp.d6Adolesc.get_ID()));
             db.updateDWraID();
             return true;
         } else {
