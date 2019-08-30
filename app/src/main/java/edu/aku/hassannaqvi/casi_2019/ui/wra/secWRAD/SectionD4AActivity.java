@@ -9,11 +9,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
 import org.json.JSONException;
+import org.json.JSONObject;
 
 import edu.aku.hassannaqvi.casi_2019.R;
 import edu.aku.hassannaqvi.casi_2019.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2019.core.MainApp;
 import edu.aku.hassannaqvi.casi_2019.databinding.ActivitySectionD4ABinding;
+import edu.aku.hassannaqvi.casi_2019.other.JsonUtils;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
 public class SectionD4AActivity extends AppCompatActivity {
@@ -84,6 +86,23 @@ public class SectionD4AActivity extends AppCompatActivity {
     }
 
     private void SaveDraft() throws JSONException {
+
+        JSONObject sB9 = new JSONObject();
+        if (!MainApp.isAttitudeCheck) {
+            sB9.put("cid401", bi.cid401a.isChecked() ? "1"
+                    : bi.cid401b.isChecked() ? "2"
+                    : "0");
+            MainApp.mc.setsB9(String.valueOf(sB9));
+        } else {
+            sB9.put("cid40202", bi.cid40202.getText().toString());
+            sB9.put("cid40203", bi.cid40203.getText().toString());
+            sB9.put("cid40204", bi.cid40204.getText().toString());
+            sB9.put("cid40205", bi.cid40205.getText().toString());
+            JSONObject merged = JsonUtils.mergeJSONObjects(new JSONObject(MainApp.mc.getsB9()), sB9);
+            MainApp.mc.setsB9(String.valueOf(merged));
+        }
+
+
     }
 
     private boolean UpdateDB() {
