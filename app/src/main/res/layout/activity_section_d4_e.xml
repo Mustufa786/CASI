@@ -3,6 +3,8 @@
 
     <data>
 
+        <import type="android.view.View" />
+
         <variable
             name="callback"
             type="edu.aku.hassannaqvi.casi_2019.ui.wra.secWRAD.SectionD4EActivity" />
