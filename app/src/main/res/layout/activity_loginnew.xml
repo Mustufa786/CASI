@@ -201,7 +201,6 @@
 
                 </android.support.constraint.ConstraintLayout>
 
-
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -220,7 +219,6 @@
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
                     app:layout_constraintVertical_bias="0.966" />
 
-
                 <Button
                     android:id="@+id/signup"
                     android:layout_width="match_parent"
@@ -237,7 +235,6 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
-
                 <TextView
                     android:id="@+id/txtinstalldate"
                     android:layout_width="match_parent"
@@ -253,11 +250,11 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
-
             </android.support.constraint.ConstraintLayout>
 
 
         </ScrollView>
+
     </LinearLayout>
 
 </layout>

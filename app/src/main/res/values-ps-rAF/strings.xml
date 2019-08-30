@@ -1734,6 +1734,7 @@
     <string name="cid603a"> در خانه </string>
     <string name="cid603b"> در مکتب </string>
     <string name="cid603c"> جای دیگر </string>
+    <string name="cid603d"> نمی داند/جواب نداد </string>
 
 
     <string name="cid604"> اگر مصاحبه قبل از چاشت اجرا می شد، بپرسید:آیا دیروز نان چاشت خوردید؟ اگر مصاحبه بعد چاشت اجرا می شد، بپرسید: آیا امروز نان چاشت خوردید؟D604 </string>
@@ -1775,7 +1776,6 @@
     <string name="cid613"> چه خریده بودید؟ این سوال یک سوال باز است.D613 </string>
 
     <string name="cid614"> آن غذاها را از کجا خریده بودید؟D614 </string>
-
 
     <string name="cid615"> به نظرتان چه اندازه خوب است که چای صبح قبل از مکتب خورده شود؟D615 </string>
     <string name="cid615a"> خوب نیست </string>
