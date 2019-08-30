@@ -32,6 +32,7 @@ import edu.aku.hassannaqvi.casi_2019.contracts.AnthrosMembersContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.BLRandomContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.ChildContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.D4WRAContract;
+import edu.aku.hassannaqvi.casi_2019.contracts.D6AdolesContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.DeceasedContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.FamilyMembersContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.FormsContract;
@@ -157,7 +158,7 @@ public class MainApp extends Application {
     public static Map<Integer, FamilyMembersContract> familyMembersClicked;
 
     public static D4WRAContract d4WRAc;
-    public static D4WRAContract d6Adolesc;
+    public static D6AdolesContract d6Adolesc;
     public static String dWraType;
     // Gul Sanober
     public static int totalPregnancy = 0;

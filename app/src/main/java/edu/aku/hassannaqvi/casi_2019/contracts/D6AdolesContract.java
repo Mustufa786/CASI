@@ -22,10 +22,8 @@ public class D6AdolesContract {
     private String devicetagID = "";
     private String user = "";
     private String app_ver = "";
-    private String b1SerialNo = "";
+    private String fmSerialNo = "";
     private String sD6 = "";
-    private String cluster = "";
-    private String hhno = "";
     private String synced = "";
     private String syncedDate = "";
 
@@ -124,12 +122,12 @@ public class D6AdolesContract {
         this.syncedDate = syncedDate;
     }
 
-    public String getB1SerialNo() {
-        return b1SerialNo;
+    public String getFmSerialNo() {
+        return fmSerialNo;
     }
 
-    public void setB1SerialNo(String b1SerialNo) {
-        this.b1SerialNo = b1SerialNo;
+    public void setFmSerialNo(String fmSerialNo) {
+        this.fmSerialNo = fmSerialNo;
     }
 
     public String getDevicetagID() {
@@ -138,22 +136,6 @@ public class D6AdolesContract {
 
     public void setDevicetagID(String devicetagID) {
         this.devicetagID = devicetagID;
-    }
-
-    public String getCluster() {
-        return cluster;
-    }
-
-    public void setCluster(String cluster) {
-        this.cluster = cluster;
-    }
-
-    public String getHhno() {
-        return hhno;
-    }
-
-    public void setHhno(String hhno) {
-        this.hhno = hhno;
     }
 
     public D6AdolesContract Sync(JSONObject jsonObject) throws JSONException {
@@ -167,7 +149,7 @@ public class D6AdolesContract {
         this.devicetagID = jsonObject.getString(D6AdolesTable.COLUMN_DEVICETAGID);
         this.user = jsonObject.getString(D6AdolesTable.COLUMN_USER);
         this.app_ver = jsonObject.getString(D6AdolesTable.COLUMN_APP_VER);
-        this.b1SerialNo = jsonObject.getString(D6AdolesTable.COLUMN_DSERIALNO);
+        this.fmSerialNo = jsonObject.getString(D6AdolesTable.COLUMN_FMSERIALNO);
         this.sD6 = jsonObject.getString(D6AdolesTable.COLUMN_SD6);
         this.synced = jsonObject.getString(D6AdolesTable.COLUMN_SYNCED);
         this.syncedDate = jsonObject.getString(D6AdolesTable.COLUMN_SYNCEDDATE);
@@ -192,7 +174,7 @@ public class D6AdolesContract {
 
         this.formDate = cursor.getString(cursor.getColumnIndex(D6AdolesTable.COLUMN_FORMDATE));
         this.devicetagID = cursor.getString(cursor.getColumnIndex(D6AdolesTable.COLUMN_DEVICETAGID));
-        this.b1SerialNo = cursor.getString(cursor.getColumnIndex(D6AdolesTable.COLUMN_DSERIALNO));
+        this.fmSerialNo = cursor.getString(cursor.getColumnIndex(D6AdolesTable.COLUMN_FMSERIALNO));
         this.synced = cursor.getString(cursor.getColumnIndex(D6AdolesTable.COLUMN_SYNCED));
         this.syncedDate = cursor.getString(cursor.getColumnIndex(D6AdolesTable.COLUMN_SYNCEDDATE));
 
@@ -215,7 +197,7 @@ public class D6AdolesContract {
         json.put(D6AdolesTable.COLUMN_DEVICETAGID, this.devicetagID == null ? JSONObject.NULL : this.devicetagID);
         json.put(D6AdolesTable.COLUMN_USER, this.user == null ? JSONObject.NULL : this.user);
         json.put(D6AdolesTable.COLUMN_APP_VER, this.app_ver == null ? JSONObject.NULL : this.app_ver);
-        json.put(D6AdolesTable.COLUMN_DSERIALNO, this.b1SerialNo == null ? JSONObject.NULL : this.b1SerialNo);
+        json.put(D6AdolesTable.COLUMN_FMSERIALNO, this.fmSerialNo == null ? JSONObject.NULL : this.fmSerialNo);
 
         if (!this.sD6.equals("")) {
             json.put(D6AdolesTable.COLUMN_SD6, this.sD6.equals("") ? JSONObject.NULL : new JSONObject(this.sD6));
@@ -238,7 +220,7 @@ public class D6AdolesContract {
         public static final String COLUMN_DEVICETAGID = "devicetagid";
         public static final String COLUMN_USER = "user";
         public static final String COLUMN_APP_VER = "app_ver";
-        public static final String COLUMN_DSERIALNO = "dserialno";
+        public static final String COLUMN_FMSERIALNO = "fmserialno";
         public static final String COLUMN_SD6 = "sd6";
         public static final String COLUMN_SYNCED = "synced";
         public static final String COLUMN_SYNCEDDATE = "synceddate";

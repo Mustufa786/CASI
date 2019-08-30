@@ -54,7 +54,7 @@ public class SectionD3BActivity extends AppCompatActivity {
         MainApp.d4WRAc.setApp_ver(MainApp.fc.getAppversion());
         MainApp.d4WRAc.set_UUID(MainApp.fc.getUID());
         MainApp.d4WRAc.setfType(MainApp.WRAD3B);
-        MainApp.d4WRAc.setB1SerialNo(String.valueOf(MainApp.dwraSerial_no));
+        MainApp.d4WRAc.setD1SerialNo(String.valueOf(MainApp.dwraSerial_no));
 
         JSONObject dwraC = new JSONObject();
         dwraC.put("cid30402", bi.cid30402.getText().toString());

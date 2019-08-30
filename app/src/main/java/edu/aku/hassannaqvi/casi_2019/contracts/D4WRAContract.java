@@ -23,7 +23,7 @@ public class D4WRAContract {
     private String user = "";
     private String app_ver = "";
     private String fType = "";
-    private String b1SerialNo = "";
+    private String d1SerialNo = "";
     private String sD1 = "";
     private String cluster = "";
     private String hhno = "";
@@ -134,12 +134,12 @@ public class D4WRAContract {
         this.syncedDate = syncedDate;
     }
 
-    public String getB1SerialNo() {
-        return b1SerialNo;
+    public String getD1SerialNo() {
+        return d1SerialNo;
     }
 
-    public void setB1SerialNo(String b1SerialNo) {
-        this.b1SerialNo = b1SerialNo;
+    public void setD1SerialNo(String b1SerialNo) {
+        this.d1SerialNo = b1SerialNo;
     }
 
     public String getDevicetagID() {
@@ -178,7 +178,7 @@ public class D4WRAContract {
         this.devicetagID = jsonObject.getString(D4WRATable.COLUMN_DEVICETAGID);
         this.user = jsonObject.getString(D4WRATable.COLUMN_USER);
         this.app_ver = jsonObject.getString(D4WRATable.COLUMN_APP_VER);
-        this.b1SerialNo = jsonObject.getString(D4WRATable.COLUMN_DSERIALNO);
+        this.d1SerialNo = jsonObject.getString(D4WRATable.COLUMN_DSERIALNO);
         this.sD1 = jsonObject.getString(D4WRATable.COLUMN_SD1);
         this.synced = jsonObject.getString(D4WRATable.COLUMN_SYNCED);
         this.syncedDate = jsonObject.getString(D4WRATable.COLUMN_SYNCEDDATE);
@@ -204,7 +204,7 @@ public class D4WRAContract {
 
         this.formDate = cursor.getString(cursor.getColumnIndex(D4WRATable.COLUMN_FORMDATE));
         this.devicetagID = cursor.getString(cursor.getColumnIndex(D4WRATable.COLUMN_DEVICETAGID));
-        this.b1SerialNo = cursor.getString(cursor.getColumnIndex(D4WRATable.COLUMN_DSERIALNO));
+        this.d1SerialNo = cursor.getString(cursor.getColumnIndex(D4WRATable.COLUMN_DSERIALNO));
         this.synced = cursor.getString(cursor.getColumnIndex(D4WRATable.COLUMN_SYNCED));
         this.syncedDate = cursor.getString(cursor.getColumnIndex(D4WRATable.COLUMN_SYNCEDDATE));
 
@@ -228,7 +228,7 @@ public class D4WRAContract {
         json.put(D4WRATable.COLUMN_DEVICETAGID, this.devicetagID == null ? JSONObject.NULL : this.devicetagID);
         json.put(D4WRATable.COLUMN_USER, this.user == null ? JSONObject.NULL : this.user);
         json.put(D4WRATable.COLUMN_APP_VER, this.app_ver == null ? JSONObject.NULL : this.app_ver);
-        json.put(D4WRATable.COLUMN_DSERIALNO, this.b1SerialNo == null ? JSONObject.NULL : this.b1SerialNo);
+        json.put(D4WRATable.COLUMN_DSERIALNO, this.d1SerialNo == null ? JSONObject.NULL : this.d1SerialNo);
 
         if (!this.sD1.equals("")) {
             json.put(D4WRATable.COLUMN_SD1, this.sD1.equals("") ? JSONObject.NULL : new JSONObject(this.sD1));

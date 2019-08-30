@@ -1814,7 +1814,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(D4WRATable.COLUMN_FM_UID, fmc.getFMUID());
         values.put(D4WRATable.COLUMN_FORMDATE, fmc.getFormDate());
         values.put(D4WRATable.COLUMN_SD1, fmc.getsD1());
-        values.put(D4WRATable.COLUMN_DSERIALNO, fmc.getB1SerialNo());
+        values.put(D4WRATable.COLUMN_DSERIALNO, fmc.getD1SerialNo());
         values.put(D4WRATable.COLUMN_FTYPE, fmc.getfType());
         values.put(D4WRATable.COLUMN_FORMDATE, fmc.getFormDate());
         values.put(D4WRATable.COLUMN_USER, fmc.getUser());
@@ -1846,7 +1846,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(D6AdolesTable.COLUMN_FM_UID, fmc.getFMUID());
         values.put(D6AdolesTable.COLUMN_FORMDATE, fmc.getFormDate());
         values.put(D6AdolesTable.COLUMN_SD6, fmc.getsD6());
-        values.put(D6AdolesTable.COLUMN_DSERIALNO, fmc.getB1SerialNo());
+        values.put(D6AdolesTable.COLUMN_FMSERIALNO, fmc.getFmSerialNo());
         values.put(D6AdolesTable.COLUMN_FORMDATE, fmc.getFormDate());
         values.put(D6AdolesTable.COLUMN_USER, fmc.getUser());
         values.put(D6AdolesTable.COLUMN_DEVICETAGID, fmc.getDevicetagID());
