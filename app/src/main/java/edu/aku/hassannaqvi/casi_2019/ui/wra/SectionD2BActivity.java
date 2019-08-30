@@ -137,4 +137,8 @@ public class SectionD2BActivity extends AppCompatActivity {
         return ValidatorClass.EmptyCheckingContainer(this, bi.fldGrpSectionD2B);
     }
 
+    @Override
+    public void onBackPressed() {
+        Toast.makeText(this, "You can't go back", Toast.LENGTH_SHORT).show();
+    }
 }

@@ -8,10 +8,13 @@ import android.view.View;
 import android.widget.Toast;
 
 import org.json.JSONException;
+import org.json.JSONObject;
 
 import edu.aku.hassannaqvi.casi_2019.R;
+import edu.aku.hassannaqvi.casi_2019.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2019.core.MainApp;
 import edu.aku.hassannaqvi.casi_2019.databinding.ActivitySectionD2ABinding;
+import edu.aku.hassannaqvi.casi_2019.other.JsonUtils;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
 public class SectionD2AActivity extends AppCompatActivity {
@@ -35,6 +38,8 @@ public class SectionD2AActivity extends AppCompatActivity {
             bi.fldGrpSectionD2A.setVisibility(View.VISIBLE);
         }
 
+        MainApp.dWraType = getIntent().getStringExtra("fType");
+
 
     }
 
@@ -50,10 +55,9 @@ public class SectionD2AActivity extends AppCompatActivity {
                     startActivity(new Intent(this, SectionD2BActivity.class).putExtra("fType", "d2b"));
                 else
                     startActivity(new Intent(this, SectionD3AActivity.class)
-                            .putExtra("fType", MainApp.dWraType));
+                            .putExtra("fType", "d3a"));
                 MainApp.isAttitudeCheck = false;
                 finish();
-
 
             } else {
                 Toast.makeText(this, "Error in updating DB", Toast.LENGTH_SHORT).show();
@@ -65,10 +69,52 @@ public class SectionD2AActivity extends AppCompatActivity {
 
     private boolean UpdateDB() {
 
-        return true;
+        //Long rowId;
+        DatabaseHelper db = new DatabaseHelper(this);
+
+        int updcount = db.updateSB7();
+
+        if (updcount == 1) {
+            return true;
+        } else {
+            Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
+            return false;
+        }
     }
 
     private void SaveDraft() throws JSONException {
+
+        JSONObject sB7 = new JSONObject();
+        if (!MainApp.isAttitudeCheck) {
+            sB7.put("cid201", bi.cid201a.isChecked() ? "1"
+                    : bi.cid201b.isChecked() ? "2"
+                    : bi.cid201c.isChecked() ? "3"
+                    : "0");
+            sB7.put("cid202", bi.cid202a.isChecked() ? "1"
+                    : bi.cid202b.isChecked() ? "2"
+                    : bi.cid202c.isChecked() ? "3"
+                    : "0");
+            sB7.put("cid203", bi.cid203a.isChecked() ? "1"
+                    : bi.cid203b.isChecked() ? "2"
+                    : bi.cid203c.isChecked() ? "3"
+                    : "0");
+            sB7.put("cid204", bi.cid204a.isChecked() ? "1"
+                    : bi.cid204b.isChecked() ? "2"
+                    : "0");
+            MainApp.mc.setsB7(String.valueOf(sB7));
+        } else {
+            sB7.put("cid206", bi.cid206a.isChecked() ? "1"
+                    : bi.cid206b.isChecked() ? "2"
+                    : bi.cid206c.isChecked() ? "3"
+                    : "0");
+            sB7.put("cid207", bi.cid207a.isChecked() ? "1"
+                    : bi.cid207b.isChecked() ? "2"
+                    : bi.cid207c.isChecked() ? "3"
+                    : "0");
+            JSONObject merged = JsonUtils.mergeJSONObjects(new JSONObject(MainApp.mc.getsB7()), sB7);
+            MainApp.mc.setsB7(String.valueOf(merged));
+        }
+
 
     }
 

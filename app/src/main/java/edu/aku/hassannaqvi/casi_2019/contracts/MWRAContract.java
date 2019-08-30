@@ -33,18 +33,64 @@ public class MWRAContract {
     private String sB4 = "";
     private String sB5 = "";
     private String sB6 = "";
+    private String sB7 = "";
+    private String sB8 = "";
+    private String sB9 = "";
+    private String sB10 = "";
+    private String sB11 = "";
     private String sb2flag = "";
     private boolean kishSelectWRA;
-
     private String cluster = "";
     private String hhno = "";
-
 
     private String synced = "";
     private String syncedDate = "";
 
     public MWRAContract() {
     }
+
+
+    public String getsB11() {
+        return sB11;
+    }
+
+    public void setsB11(String sB11) {
+        this.sB11 = sB11;
+    }
+
+
+    public String getsB7() {
+        return sB7;
+    }
+
+    public void setsB7(String sB7) {
+        this.sB7 = sB7;
+    }
+
+    public String getsB8() {
+        return sB8;
+    }
+
+    public void setsB8(String sB8) {
+        this.sB8 = sB8;
+    }
+
+    public String getsB9() {
+        return sB9;
+    }
+
+    public void setsB9(String sB9) {
+        this.sB9 = sB9;
+    }
+
+    public String getsB10() {
+        return sB10;
+    }
+
+    public void setsB10(String sB10) {
+        this.sB10 = sB10;
+    }
+
 
     public boolean getKishSelectWRA() {
         return kishSelectWRA;
@@ -264,13 +310,16 @@ public class MWRAContract {
         this.b1SerialNo = jsonObject.getString(MWRATable.COLUMN_B1SERIALNO);
         this.sB1 = jsonObject.getString(MWRATable.COLUMN_SB1);
         this.sB2 = jsonObject.getString(MWRATable.COLUMN_SB2);
-
         this.sb2flag = jsonObject.getString(MWRATable.COLUMN_SB2FLAG);
-
         this.sB3 = jsonObject.getString(MWRATable.COLUMN_SB3);
         this.sB4 = jsonObject.getString(MWRATable.COLUMN_SB4);
         this.sB5 = jsonObject.getString(MWRATable.COLUMN_SB5);
         this.sB6 = jsonObject.getString(MWRATable.COLUMN_SB6);
+        this.sB7 = jsonObject.getString(MWRATable.COLUMN_SB7);
+        this.sB8 = jsonObject.getString(MWRATable.COLUMN_SB8);
+        this.sB9 = jsonObject.getString(MWRATable.COLUMN_SB9);
+        this.sB10 = jsonObject.getString(MWRATable.COLUMN_SB10);
+        this.sB11 = jsonObject.getString(MWRATable.COLUMN_SB11);
         this.synced = jsonObject.getString(MWRATable.COLUMN_SYNCED);
         this.syncedDate = jsonObject.getString(MWRATable.COLUMN_SYNCEDDATE);
         this.mstatus = jsonObject.getString(MWRATable.COLUMN_MSTATUS);
@@ -313,6 +362,13 @@ public class MWRAContract {
         }
         if (type == 0 || type == 5) {
             this.sB5 = cursor.getString(cursor.getColumnIndex(MWRATable.COLUMN_SB5));
+        }
+        if (type == 0 || type == 6) {
+            this.sB7 = cursor.getString(cursor.getColumnIndex(MWRATable.COLUMN_SB7));
+            this.sB8 = cursor.getString(cursor.getColumnIndex(MWRATable.COLUMN_SB8));
+            this.sB9 = cursor.getString(cursor.getColumnIndex(MWRATable.COLUMN_SB9));
+            this.sB10 = cursor.getString(cursor.getColumnIndex(MWRATable.COLUMN_SB10));
+            this.sB11 = cursor.getString(cursor.getColumnIndex(MWRATable.COLUMN_SB11));
         }
         if (type == 0) {
             this.synced = cursor.getString(cursor.getColumnIndex(MWRATable.COLUMN_SYNCED));
@@ -368,6 +424,21 @@ public class MWRAContract {
         if (!this.sB6.equals("")) {
             json.put(MWRATable.COLUMN_SB6, this.sB6.equals("") ? JSONObject.NULL : new JSONObject(this.sB6));
         }
+        if (!this.sB7.equals("")) {
+            json.put(MWRATable.COLUMN_SB7, this.sB7.equals("") ? JSONObject.NULL : new JSONObject(this.sB7));
+        }
+        if (!this.sB8.equals("")) {
+            json.put(MWRATable.COLUMN_SB8, this.sB8.equals("") ? JSONObject.NULL : new JSONObject(this.sB8));
+        }
+        if (!this.sB9.equals("")) {
+            json.put(MWRATable.COLUMN_SB9, this.sB9.equals("") ? JSONObject.NULL : new JSONObject(this.sB9));
+        }
+        if (!this.sB10.equals("")) {
+            json.put(MWRATable.COLUMN_SB10, this.sB10.equals("") ? JSONObject.NULL : new JSONObject(this.sB10));
+        }
+        if (!this.sB11.equals("")) {
+            json.put(MWRATable.COLUMN_SB11, this.sB11.equals("") ? JSONObject.NULL : new JSONObject(this.sB11));
+        }
 
         json.put(MWRATable.COLUMN_SB2FLAG, this.sb2flag == null ? JSONObject.NULL : this.sb2flag);
 
@@ -403,6 +474,11 @@ public class MWRAContract {
         public static final String COLUMN_SB4 = "sb4";
         public static final String COLUMN_SB5 = "sb5";
         public static final String COLUMN_SB6 = "sb6";
+        public static final String COLUMN_SB7 = "sb7";
+        public static final String COLUMN_SB8 = "sb8";
+        public static final String COLUMN_SB9 = "sb9";
+        public static final String COLUMN_SB10 = "sb10";
+        public static final String COLUMN_SB11 = "sb11";
         public static final String COLUMN_SB2FLAG = "sb2flag";
         public static final String COLUMN_SYNCED = "synced";
         public static final String COLUMN_SYNCEDDATE = "synceddate";
