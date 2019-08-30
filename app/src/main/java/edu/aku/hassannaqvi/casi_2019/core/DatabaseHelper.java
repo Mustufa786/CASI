@@ -25,6 +25,8 @@ import edu.aku.hassannaqvi.casi_2019.contracts.BLRandomContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.BLRandomContract.singleRandomHH;
 import edu.aku.hassannaqvi.casi_2019.contracts.ChildContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.ChildContract.ChildTable;
+import edu.aku.hassannaqvi.casi_2019.contracts.D4WRAContract;
+import edu.aku.hassannaqvi.casi_2019.contracts.D4WRAContract.D4WRATable;
 import edu.aku.hassannaqvi.casi_2019.contracts.DeceasedContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.DeviceContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.EnumBlockContract;
@@ -105,6 +107,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             + SignUpTable.COLUMN_SYNCED_DATE + " TEXT " +
             ");";
 
+
     private static final String SQL_CREATE_FORMS = "CREATE TABLE "
             + FormsTable.TABLE_NAME + "("
             + FormsTable._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
@@ -150,6 +153,23 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             familyMembers.COLUMN_HH_NO + " TEXT," +
             familyMembers.COLUMN_AV + " TEXT," +
             familyMembers.COLUMN_KISH_SELECTED + " TEXT," +
+            familyMembers.COLUMN_DEVICEID + " TEXT," +
+            familyMembers.COLUMN_DEVICETAGID + " TEXT," +
+            familyMembers.COLUMN_APP_VERSION + " TEXT," +
+            familyMembers.COLUMN_SYNCED + " TEXT," +
+            familyMembers.COLUMN_SYNCED_DATE + " TEXT," +
+            familyMembers.COLUMN_FLAG + " TEXT"
+            + " );";
+    private static final String SQL_CREATE_DWRA = "CREATE TABLE "
+            + D4WRATable.TABLE_NAME + "("
+            + D4WRATable.COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+            + D4WRATable.COLUMN_PROJECTNAME + " TEXT,"
+            + D4WRATable.COLUMN_UID + " TEXT UNIQUE," +
+            D4WRATable.COLUMN_UUID + " TEXT," +
+            D4WRATable.COLUMN_FORMDATE + " TEXT," +
+            D4WRATable.COLUMN_USER + " TEXT," +
+            D4WRATable.COLUMN_SD1 + " TEXT," +
+            D4WRATable.COLUMN_FTYPE + " TEXT," +
             familyMembers.COLUMN_DEVICEID + " TEXT," +
             familyMembers.COLUMN_DEVICETAGID + " TEXT," +
             familyMembers.COLUMN_APP_VERSION + " TEXT," +
@@ -479,6 +499,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(SQL_CREATE_MICRO);
         db.execSQL(SQL_CREATE_SUMMARY);
         db.execSQL(SQL_CREATE_SIGNUP);
+        db.execSQL(SQL_CREATE_DWRA);
 
     }
 
@@ -501,6 +522,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(SQL_DELETE_NUTRITION);
         db.execSQL(SQL_DELETE_DECEASED);
         db.execSQL(SQL_CREATE_NUTRITION);
+        db.execSQL(SQL_CREATE_DWRA);
         db.execSQL(SQL_SIGNUP_TABLE);
     }
 
@@ -1787,6 +1809,37 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return newRowId;
     }
 
+    public Long addD4WRA(D4WRAContract fmc) {
+
+        // Gets the data repository in write mode
+        SQLiteDatabase db = this.getWritableDatabase();
+
+// Create a new map of values, where column names are the keys
+        ContentValues values = new ContentValues();
+        values.put(D4WRATable.COLUMN_PROJECTNAME, fmc.getProjectName());
+        values.put(D4WRATable.COLUMN_UID, fmc.get_UID());
+        values.put(D4WRATable.COLUMN_UUID, fmc.get_UUID());
+        values.put(D4WRATable.COLUMN_FORMDATE, fmc.getFormDate());
+        values.put(D4WRATable.COLUMN_SD1, fmc.getsD1());
+        values.put(D4WRATable.COLUMN_DSERIALNO, fmc.getB1SerialNo());
+        values.put(D4WRATable.COLUMN_FTYPE, fmc.getfType());
+        values.put(D4WRATable.COLUMN_FORMDATE, fmc.getFormDate());
+        values.put(D4WRATable.COLUMN_USER, fmc.getUser());
+        values.put(D4WRATable.COLUMN_DEVICETAGID, fmc.getDevicetagID());
+        values.put(D4WRATable.COLUMN_DEVICEID, fmc.getDeviceId());
+        values.put(D4WRATable.COLUMN_SYNCED, fmc.getSynced());
+        values.put(D4WRATable.COLUMN_SYNCEDDATE, fmc.getSyncedDate());
+        values.put(D4WRATable.COLUMN_APP_VER, fmc.getApp_ver());
+
+        // Insert the new row, returning the primary key value of the new row
+        long newRowId;
+        newRowId = db.insert(
+                D4WRATable.TABLE_NAME,
+                null,
+                values);
+        return newRowId;
+    }
+
     public Long addDevice(DeviceContract dc) {
 
         // Gets the data repository in write mode
@@ -2674,6 +2727,24 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String[] selectionArgs = {String.valueOf(MainApp.fmc.get_ID())};
 
         int count = db.update(familyMembers.TABLE_NAME,
+                values,
+                selection,
+                selectionArgs);
+        return count;
+    }
+
+    public int updateDWraID() {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+// New value for one column
+        ContentValues values = new ContentValues();
+        values.put(D4WRATable.COLUMN_UID, MainApp.d4WRAc.get_UID());
+
+// Which row to update, based on the ID
+        String selection = D4WRATable.COLUMN_ID + " = ?";
+        String[] selectionArgs = {String.valueOf(MainApp.fmc.get_ID())};
+
+        int count = db.update(D4WRATable.TABLE_NAME,
                 values,
                 selection,
                 selectionArgs);

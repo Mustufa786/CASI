@@ -31,6 +31,7 @@ import java.util.Map;
 import edu.aku.hassannaqvi.casi_2019.contracts.AnthrosMembersContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.BLRandomContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.ChildContract;
+import edu.aku.hassannaqvi.casi_2019.contracts.D4WRAContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.DeceasedContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.FamilyMembersContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.FormsContract;
@@ -85,6 +86,7 @@ public class MainApp extends Application {
     public static String _IP = "f38158"; // Test PHP server
 //    public static String _IP = "vcoe1.aku.edu"; // Live PHP server
 
+    public static boolean isAttitudeCheck = false;
     public static String _HOST_URL = "http://" + MainApp._IP + "/casi/api/";
     public static String _UPDATE_URL = "http://" + MainApp._IP + "/casi/app/";
     public static String deviceId;
@@ -143,6 +145,7 @@ public class MainApp extends Application {
 
     public static BLRandomContract selectedHead;
     public static int serial_no;
+    public static int dwraSerial_no;
 
     // fro section A2
     public static List<FamilyMembersContract> familyMembersList;
@@ -151,6 +154,8 @@ public class MainApp extends Application {
     public static List<Integer> flagClicked;
     public static Map<Integer, FamilyMembersContract> familyMembersClicked;
 
+    public static D4WRAContract d4WRAc;
+    public static String dWraType;
     // Gul Sanober
     public static int totalPregnancy = 0;
     public static int count = 1;

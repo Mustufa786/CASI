@@ -29,7 +29,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
-        <activity android:name=".ui.wra.SectionD4DActivity"></activity>
+        <activity android:name=".ui.wra.SectionD4EActivity"></activity>
+        <activity android:name=".ui.wra.SectionD4DActivity" />
         <activity android:name=".ui.wra.SectionD4CActivity" />
         <activity android:name=".ui.wra.SectionD4BActivity" />
         <activity android:name=".ui.wra.SectionD4AActivity" />

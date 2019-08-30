@@ -16,6 +16,7 @@
 
 
         <LinearLayout
+            android:id="@+id/fldGrpSectionD2A"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layoutDirection="rtl"
@@ -184,7 +185,7 @@
 
 
             <LinearLayout
-                android:id="@+id/fldGrpCheck"
+                android:id="@+id/fldGrpAttitudeCheck"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -276,6 +277,7 @@
                 android:layout_marginTop="80dp"
                 android:orientation="horizontal">
 
+
                 <Button
                     android:id="@+id/btn_Continue"
                     style="@style/buttons"
@@ -284,7 +286,7 @@
                     android:layout_weight="1"
                     android:background="#1ed61e"
                     android:onClick="@{() -> callback.BtnContinue()}"
-                    android:text="@string/saveMember"
+                    android:text="@string/nextSection"
                     android:textColor="@color/white" />
 
                 <Button
