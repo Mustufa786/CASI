@@ -856,8 +856,7 @@
                     android:background="#1ed61e"
                     android:onClick="@{() -> callback.BtnContinue()}"
                     android:text="@string/nextSection"
-                    android:textColor="@color/white"
-                    android:visibility="@{na11801b.checked ? View.GONE : View.VISIBLE}" />
+                    android:textColor="@color/white" />
 
                 <Button
                     android:id="@+id/btn_End"

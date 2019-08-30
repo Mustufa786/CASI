@@ -197,7 +197,7 @@
                         android:id="@+id/cid2050496x"
                         style="@style/textInput"
                         android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
-                        android:enabled='@{cih31396.checked ? true : false}'
+                        android:enabled='@{cid2050496.checked ? true : false}'
                         android:hint="@string/other"
                         android:text='@{cid2050496.checked ? cid2050496x.getText.toString : ""}' />
 
