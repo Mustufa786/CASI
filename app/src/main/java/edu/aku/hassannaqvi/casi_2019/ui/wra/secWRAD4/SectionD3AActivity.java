@@ -1,17 +1,21 @@
 package edu.aku.hassannaqvi.casi_2019.ui.wra.secWRAD4;
 
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.Toast;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import edu.aku.hassannaqvi.casi_2019.R;
+import edu.aku.hassannaqvi.casi_2019.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2019.core.MainApp;
 import edu.aku.hassannaqvi.casi_2019.databinding.ActivitySectionD3ABinding;
 import edu.aku.hassannaqvi.casi_2019.other.JsonUtils;
+import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
 public class SectionD3AActivity extends AppCompatActivity {
 
@@ -20,9 +24,42 @@ public class SectionD3AActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_d3_a);
         bi.setCallback(this);
+
+
+        if (MainApp.isAttitudeCheck) {
+            bi.fldGrpAttitudeCheck.setVisibility(View.VISIBLE);
+            bi.fldGrpSectionD3A.setVisibility(View.GONE);
+        } else {
+            bi.fldGrpAttitudeCheck.setVisibility(View.GONE);
+            bi.fldGrpSectionD3A.setVisibility(View.VISIBLE);
+        }
+
+    }
+
+    public void BtnContinue() {
+        if (formValidation()) {
+            try {
+                SaveDraft();
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            if (UpdateDB()) {
+                if (!MainApp.isAttitudeCheck)
+                    startActivity(new Intent(this, SectionD3BActivity.class).putExtra("fType", "d3b"));
+                else
+                    startActivity(new Intent(this, SectionD4AActivity.class)
+                            .putExtra("fType", "d4a"));
+                MainApp.isAttitudeCheck = false;
+                MainApp.dwraSerial_no = 0;
+                finish();
+            } else {
+                Toast.makeText(this, "Error in updating DB", Toast.LENGTH_SHORT).show();
+            }
+        }
+
+
     }
 
     private void SaveDraft() throws JSONException {
@@ -79,6 +116,27 @@ public class SectionD3AActivity extends AppCompatActivity {
         }
 
 
+    }
+
+
+    private boolean formValidation() {
+
+        return ValidatorClass.EmptyCheckingContainer(this, bi.fldGrpSectionD3A);
+    }
+
+    private boolean UpdateDB() {
+
+        //Long rowId;
+        DatabaseHelper db = new DatabaseHelper(this);
+
+        int updcount = db.updateSB8();
+
+        if (updcount == 1) {
+            return true;
+        } else {
+            Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
+            return false;
+        }
     }
 
     @Override

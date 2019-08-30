@@ -17,6 +17,7 @@
 
 
         <LinearLayout
+            android:id="@+id/fldGrpSectionD3A"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layoutDirection="rtl"
@@ -145,7 +146,7 @@
 
 
             <LinearLayout
-                android:id="@+id/fldGrpCheck"
+                android:id="@+id/fldGrpAttitudeCheck"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"

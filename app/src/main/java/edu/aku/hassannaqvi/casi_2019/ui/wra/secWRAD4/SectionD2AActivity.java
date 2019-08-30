@@ -38,7 +38,6 @@ public class SectionD2AActivity extends AppCompatActivity {
             bi.fldGrpSectionD2A.setVisibility(View.VISIBLE);
         }
 
-        MainApp.dWraType = getIntent().getStringExtra("fType");
 
 
     }
@@ -51,16 +50,14 @@ public class SectionD2AActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
             if (UpdateDB()) {
-                Intent route;
                 if (!MainApp.isAttitudeCheck)
-                    route = new Intent(this, SectionD2BActivity.class).putExtra("fType", "d2b");
+                    startActivity(new Intent(this, SectionD2BActivity.class).putExtra("fType", "d2b"));
                 else
-                    route = new Intent(this, SectionD3AActivity.class)
-                            .putExtra("fType", "d3a");
+                    startActivity(new Intent(this, SectionD3AActivity.class)
+                    );
                 MainApp.isAttitudeCheck = false;
                 MainApp.dwraSerial_no = 0;
                 finish();
-                startActivity(route);
 
             } else {
                 Toast.makeText(this, "Error in updating DB", Toast.LENGTH_SHORT).show();
