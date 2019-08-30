@@ -25,8 +25,8 @@ import edu.aku.hassannaqvi.casi_2019.databinding.ActivitySectionB5Binding;
 import edu.aku.hassannaqvi.casi_2019.other.JSONUtilClass;
 import edu.aku.hassannaqvi.casi_2019.ui.mainUI.Menu2Activity;
 import edu.aku.hassannaqvi.casi_2019.ui.viewMem.ViewMemberActivity;
-import edu.aku.hassannaqvi.casi_2019.ui.wra.secWRAD4.SectionD2AActivity;
-import edu.aku.hassannaqvi.casi_2019.ui.wra.secWRAD4.SectionD3AActivity;
+import edu.aku.hassannaqvi.casi_2019.ui.wra.secWRAD.SectionD2AActivity;
+import edu.aku.hassannaqvi.casi_2019.ui.wra.secWRAD.SectionD3AActivity;
 import edu.aku.hassannaqvi.casi_2019.validation.ClearClass;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 

@@ -1,4 +1,4 @@
-package edu.aku.hassannaqvi.casi_2019.ui.wra.secWRAD4;
+package edu.aku.hassannaqvi.casi_2019.ui.wra.secWRAD;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;

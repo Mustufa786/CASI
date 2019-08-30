@@ -1,4 +1,4 @@
-package edu.aku.hassannaqvi.casi_2019.ui.wra.secWRAD4;
+package edu.aku.hassannaqvi.casi_2019.ui.wra.secWRAD;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -42,7 +42,7 @@ public class SectionD4BActivity extends AppCompatActivity {
                 finish();
                 startActivity(new Intent(this, SectionD4CActivity.class)
                         .putExtra("fType", "d4c"));
-                MainApp.dwraSerial_no = 0;
+                MainApp.dwraSerial_no = 1;
             }
         }
 

@@ -42,8 +42,8 @@ import edu.aku.hassannaqvi.casi_2019.other.JSONUtilClass;
 import edu.aku.hassannaqvi.casi_2019.ui.household.SectionA2ListActivity;
 import edu.aku.hassannaqvi.casi_2019.ui.mainUI.AddMember_MenuActivity;
 import edu.aku.hassannaqvi.casi_2019.ui.viewMem.ViewMemberActivity;
-import edu.aku.hassannaqvi.casi_2019.ui.wra.secWRAD4.SectionD2AActivity;
-import edu.aku.hassannaqvi.casi_2019.ui.wra.secWRAD4.SectionD3AActivity;
+import edu.aku.hassannaqvi.casi_2019.ui.wra.secWRAD.SectionD2AActivity;
+import edu.aku.hassannaqvi.casi_2019.ui.wra.secWRAD.SectionD3AActivity;
 import edu.aku.hassannaqvi.casi_2019.validation.ClearClass;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 

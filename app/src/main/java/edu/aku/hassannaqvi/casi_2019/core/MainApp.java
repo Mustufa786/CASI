@@ -171,6 +171,14 @@ public class MainApp extends Application {
 
     protected static LocationManager locationManager;
 
+    public static final String WRAD2B = "d2b";
+    public static final String WRAD3B = "d3b";
+    public static final String WRAD4A = "d4a";
+    public static final String WRAD4B = "d4b";
+    public static final String WRAD4C = "d4c";
+    public static final String WRAD4D = "d4d";
+
+
     public static int monthsBetweenDates(Date startDate, Date endDate) {
 
         Calendar start = Calendar.getInstance();
