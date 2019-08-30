@@ -6,16 +6,18 @@ import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import edu.aku.hassannaqvi.casi_2019.R;
+import edu.aku.hassannaqvi.casi_2019.contracts.D4WRAContract;
 import edu.aku.hassannaqvi.casi_2019.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2019.core.MainApp;
 import edu.aku.hassannaqvi.casi_2019.databinding.ActivitySectionD4ABinding;
-import edu.aku.hassannaqvi.casi_2019.other.JsonUtils;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
 public class SectionD4AActivity extends AppCompatActivity {
@@ -30,6 +32,26 @@ public class SectionD4AActivity extends AppCompatActivity {
         bi.setCallback(this);
 
         MainApp.dWraType = getIntent().getStringExtra("fType");
+
+        if (!MainApp.isAttitudeCheck) {
+            bi.fldGrpcid401.setVisibility(View.VISIBLE);
+        } else {
+            bi.fldGrpcid401.setVisibility(View.GONE);
+        }
+
+        bi.cid401.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                if (checkedId == bi.cid401a.getId()) {
+                    bi.fldGrpCheck.setVisibility(View.VISIBLE);
+                    bi.btnAddMore.setVisibility(View.VISIBLE);
+                } else {
+                    bi.fldGrpCheck.setVisibility(View.GONE);
+                    bi.btnAddMore.setVisibility(View.GONE);
+                }
+            }
+        });
     }
 
     public void BtnContinue() {
@@ -44,6 +66,7 @@ public class SectionD4AActivity extends AppCompatActivity {
                 startActivity(new Intent(this, SectionD4BActivity.class)
                         .putExtra("fType", "d4b"));
                 MainApp.dwraSerial_no = 1;
+                MainApp.isAttitudeCheck = false;
             }
         }
 
@@ -68,6 +91,7 @@ public class SectionD4AActivity extends AppCompatActivity {
                                                 int id) {
                                 finish();
                                 if (UpdateDB()) {
+                                    MainApp.isAttitudeCheck = true;
                                     startActivity(new Intent(SectionD4AActivity.this, SectionD4AActivity.class)
                                             .putExtra("fType", "d4a"));
                                 }
@@ -88,20 +112,27 @@ public class SectionD4AActivity extends AppCompatActivity {
     private void SaveDraft() throws JSONException {
 
         JSONObject sB9 = new JSONObject();
+        MainApp.d4WRAc = new D4WRAContract();
+        MainApp.d4WRAc.setDevicetagID(MainApp.fc.getDevicetagID());
+        MainApp.d4WRAc.setFormDate(MainApp.fc.getFormDate());
+        MainApp.d4WRAc.setUser(MainApp.fc.getUser());
+        MainApp.d4WRAc.setDeviceId(MainApp.fc.getDeviceID());
+        MainApp.d4WRAc.setApp_ver(MainApp.fc.getAppversion());
+        MainApp.d4WRAc.set_UUID(MainApp.fc.getUID());
+        MainApp.d4WRAc.setfType(MainApp.WRAD3B);
+        MainApp.d4WRAc.setB1SerialNo(String.valueOf(MainApp.dwraSerial_no));
         if (!MainApp.isAttitudeCheck) {
             sB9.put("cid401", bi.cid401a.isChecked() ? "1"
                     : bi.cid401b.isChecked() ? "2"
                     : "0");
-            MainApp.mc.setsB9(String.valueOf(sB9));
-        } else {
-            sB9.put("cid40202", bi.cid40202.getText().toString());
-            sB9.put("cid40203", bi.cid40203.getText().toString());
-            sB9.put("cid40204", bi.cid40204.getText().toString());
-            sB9.put("cid40205", bi.cid40205.getText().toString());
-            JSONObject merged = JsonUtils.mergeJSONObjects(new JSONObject(MainApp.mc.getsB9()), sB9);
-            MainApp.mc.setsB9(String.valueOf(merged));
         }
+        sB9.put("cid40202", bi.cid40202.getText().toString());
+        sB9.put("cid40203", bi.cid40203.getText().toString());
+        sB9.put("cid40204", bi.cid40204.getText().toString());
+        sB9.put("cid40205", bi.cid40205.getText().toString());
+        MainApp.d4WRAc.setsD1(String.valueOf(sB9));
 
+        MainApp.dwraSerial_no++;
 
     }
 
@@ -123,7 +154,7 @@ public class SectionD4AActivity extends AppCompatActivity {
     }
 
     public void BtnEnd() {
-        MainApp.endActivity(this, this);
+        MainApp.endActivityMother(this, this, false);
     }
 
     private boolean formValidation() {

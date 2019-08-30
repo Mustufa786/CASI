@@ -132,8 +132,9 @@ public class SectionD3BActivity extends AppCompatActivity {
     }
 
     public void BtnEnd() {
-        MainApp.endActivity(this, this);
+        MainApp.endActivityMother(this, this, false);
     }
+
 
     private boolean formValidation() {
         return ValidatorClass.EmptyCheckingContainer(this, bi.fldGrpSectionD3B);

@@ -15,6 +15,7 @@
         tools:context=".ui.wra.secWRAD.SectionD4EActivity">
 
         <LinearLayout
+            android:id="@+id/fldGrpSectionD4E"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layoutDirection="rtl"

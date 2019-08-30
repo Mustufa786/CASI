@@ -128,4 +128,9 @@ public class SectionD2AActivity extends AppCompatActivity {
 
         Toast.makeText(this, "You can't go back", Toast.LENGTH_SHORT).show();
     }
+
+    public void BtnEnd() {
+        MainApp.endActivityMother(this, this, false);
+    }
+
 }
