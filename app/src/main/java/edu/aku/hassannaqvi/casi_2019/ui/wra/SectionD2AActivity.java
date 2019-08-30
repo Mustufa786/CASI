@@ -57,6 +57,7 @@ public class SectionD2AActivity extends AppCompatActivity {
                     startActivity(new Intent(this, SectionD3AActivity.class)
                             .putExtra("fType", "d3a"));
                 MainApp.isAttitudeCheck = false;
+                MainApp.dwraSerial_no = 0;
                 finish();
 
             } else {

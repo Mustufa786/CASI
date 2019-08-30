@@ -227,7 +227,9 @@
                         android:layout_weight="1"
                         android:text="@string/cid306c" />
 
-                </RadioGroup>  <!--            cid307-->
+                </RadioGroup>
+
+                <!--            cid307-->
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -340,7 +342,9 @@
                         android:layout_weight="1"
                         android:text="@string/cid309c" />
 
-                </RadioGroup>  <!--            cid310-->
+                </RadioGroup>
+
+                <!--            cid310-->
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -377,7 +381,9 @@
                         android:layout_weight="1"
                         android:text="@string/cid310c" />
 
-                </RadioGroup>  <!--            cid311-->
+                </RadioGroup>
+
+                <!--            cid311-->
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -414,7 +420,8 @@
                         android:layout_weight="1"
                         android:text="@string/cid311c" />
 
-                </RadioGroup>  <!--            cid312-->
+                </RadioGroup>
+                <!--            cid312-->
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
