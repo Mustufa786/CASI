@@ -2742,12 +2742,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return count;
     }
 
-    public int updateFamilyMemberKishFlag(String uuid, String fmUID) {
+    public int updateFamilyMemberKishFlag(String uuid, String fmUID, String kishField) {
         SQLiteDatabase db = this.getReadableDatabase();
 
 // New value for one column
         ContentValues values = new ContentValues();
-        values.put(familyMembers.COLUMN_KISH_SELECTED, "1");
+        values.put(kishField, "1");
 
 // Which row to update, based on the ID
         String selection = familyMembers.COLUMN_UUID + " = ? AND " + familyMembers.COLUMN_UID + " = ?";

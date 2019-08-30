@@ -49,6 +49,7 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
 
     List<String> mothersSerials, fathersSerials;
     Map<String, String> mothersMap, fathersMap;
+    Map<String, FamilyMembersContract> motherChildMap;
     int position = 0;
     int Age = 0;
     long agebyDob = 0;
@@ -649,6 +650,7 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
         mothersList = new ArrayList<>();
         mothersSerials = new ArrayList<>();
         mothersMap = new HashMap<>();
+        motherChildMap = new HashMap<>();
 
         mothersList.add("....");
         mothersList.add("N/A");
@@ -673,6 +675,8 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                 mothersList.add(mem.getName());
                 mothersSerials.add(mem.getSerialNo());
                 mothersMap.put(mem.getName() + "_" + mem.getSerialNo(), mem.getSerialNo());
+
+                motherChildMap.put(mem.getName() + "_" + mem.getSerialNo(), mem);
             }
         }
 
@@ -988,9 +992,13 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                     MainApp.childUnder5_Del.add(family);
                 }
 
-                if (Age < 6 && family.getMotherId().equals("00")) {
+                if (family.getMotherId().equals("00")) {
                     MainApp.childNA.add(family);
+                } else {
+                    MainApp.mwraChild.add(motherChildMap.get(binding.cih212.getSelectedItem().toString() + "_" + mothersSerials.get(mothersList.indexOf(binding.cih212.getSelectedItem().toString()) - 1)));
                 }
+
+
             }
 
             if (Age >= 15) {
@@ -1002,6 +1010,10 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                 if (binding.cih210a.isChecked()) {
                     MainApp.respList.add(family);
                 }
+            }
+
+            if (Age >= 5 && Age <= 19) {
+                MainApp.adolesUnderAge.add(family);
             }
 
             /*End*/
