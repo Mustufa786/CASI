@@ -67,7 +67,8 @@ public class SectionD2BActivity extends AppCompatActivity {
                                                 int id) {
                                 finish();
                                 if (UpdateDB()) {
-                                    startActivity(new Intent(SectionD2BActivity.this, SectionD2BActivity.class));
+                                    startActivity(new Intent(SectionD2BActivity.this, SectionD2BActivity.class)
+                                            .putExtra("fType", "d3b"));
                                 }
                             }
                         });
@@ -131,6 +132,11 @@ public class SectionD2BActivity extends AppCompatActivity {
         dwraC.put("cid2050496x", bi.cid2050496x.getText().toString());
         MainApp.d4WRAc.setsD1(String.valueOf(dwraC));
 
+    }
+
+
+    public void BtnEnd() {
+        MainApp.endActivity(this, this);
     }
 
     private boolean formValidation() {

@@ -15,6 +15,7 @@
 
 
         <LinearLayout
+            android:id="@+id/fldGrpSectionD4A"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layoutDirection="rtl"
@@ -138,6 +139,17 @@
                 android:orientation="horizontal">
 
                 <Button
+                    android:id="@+id/btn_AddMore"
+                    style="@style/buttons"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:onClick="@{() -> callback.BtnAddMore()}"
+                    android:text="@string/addMember"
+                    android:textColor="@color/white" />
+
+                <Button
                     android:id="@+id/btn_Continue"
                     style="@style/buttons"
                     android:layout_width="0dp"
@@ -145,7 +157,7 @@
                     android:layout_weight="1"
                     android:background="#1ed61e"
                     android:onClick="@{() -> callback.BtnContinue()}"
-                    android:text="@string/saveMember"
+                    android:text="@string/nextSection"
                     android:textColor="@color/white" />
 
                 <Button
