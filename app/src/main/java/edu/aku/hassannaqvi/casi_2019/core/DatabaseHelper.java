@@ -153,6 +153,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             familyMembers.COLUMN_HH_NO + " TEXT," +
             familyMembers.COLUMN_AV + " TEXT," +
             familyMembers.COLUMN_KISH_SELECTED + " TEXT," +
+            familyMembers.COLUMN_KISH_SELECTED_MWRA_D + " TEXT," +
+            familyMembers.COLUMN_KISH_SELECTED_ADOLESCENT + " TEXT," +
             familyMembers.COLUMN_DEVICEID + " TEXT," +
             familyMembers.COLUMN_DEVICETAGID + " TEXT," +
             familyMembers.COLUMN_APP_VERSION + " TEXT," +
@@ -170,12 +172,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             D4WRATable.COLUMN_USER + " TEXT," +
             D4WRATable.COLUMN_SD1 + " TEXT," +
             D4WRATable.COLUMN_FTYPE + " TEXT," +
-            familyMembers.COLUMN_DEVICEID + " TEXT," +
-            familyMembers.COLUMN_DEVICETAGID + " TEXT," +
-            familyMembers.COLUMN_APP_VERSION + " TEXT," +
-            familyMembers.COLUMN_SYNCED + " TEXT," +
-            familyMembers.COLUMN_SYNCED_DATE + " TEXT," +
-            familyMembers.COLUMN_FLAG + " TEXT"
+            D4WRATable.COLUMN_DEVICEID + " TEXT," +
+            D4WRATable.COLUMN_DEVICETAGID + " TEXT," +
+            D4WRATable.COLUMN_APP_VER + " TEXT," +
+            D4WRATable.COLUMN_SYNCED + " TEXT," +
+            D4WRATable.COLUMN_SYNCEDDATE + " TEXT"
             + " );";
 
     private static final String SQL_CREATE_CHILD_FORMS = "CREATE TABLE "
@@ -624,6 +625,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             values.put(familyMembers.COLUMN_AV, fm.getAv());
             values.put(familyMembers.COLUMN_FLAG, fm.getDelflag());
             values.put(familyMembers.COLUMN_KISH_SELECTED, fm.getKishSelected());
+            values.put(familyMembers.COLUMN_KISH_SELECTED_MWRA_D, fm.getKishMWRASelected());
+            values.put(familyMembers.COLUMN_KISH_SELECTED_ADOLESCENT, fm.getKishAdolsSelected());
             values.put(familyMembers.COLUMN_SYNCED, fm.getSynced());
             values.put(familyMembers.COLUMN_SYNCED_DATE, fm.getSyncedDate());
 
@@ -633,47 +636,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             db.close();
         }
     }
-
- /*   public void syncBLRandom(JSONArray BLlist) {
-        SQLiteDatabase db = this.getWritableDatabase();
-//        db.delete(singleRandomHH.TABLE_NAME, null, null);
-        try {
-            JSONArray jsonArray = BLlist;
-            for (int i = 0; i < jsonArray.length(); i++) {
-                JSONObject jsonObjectCC = jsonArray.getJSONObject(i);
-
-                BLRandomContract Vc = new BLRandomContract();
-                Vc.Sync(jsonObjectCC);
-
-                ContentValues values = new ContentValues();
-                values.put(singleRandomHH.COLUMN_ID, Vc.get_ID());
-                values.put(singleRandomHH.COLUMN_LUID, Vc.getLUID());
-                values.put(singleRandomHH.COLUMN_STRUCTURE_NO, Vc.getStructure());
-                values.put(singleRandomHH.COLUMN_FAMILY_EXT_CODE, Vc.getExtension());
-                values.put(singleRandomHH.COLUMN_HH, Vc.getHh());
-                values.put(singleRandomHH.COLUMN_ENUM_BLOCK_CODE, Vc.getSubVillageCode());
-                values.put(singleRandomHH.COLUMN_RANDOMDT, Vc.getRandomDT());
-                values.put(singleRandomHH.COLUMN_HH_HEAD, Vc.getHhhead());
-                values.put(singleRandomHH.COLUMN_CONTACT, Vc.getContact());
-                values.put(singleRandomHH.COLUMN_HH_SELECTED_STRUCT, Vc.getSelStructure());
-                values.put(singleRandomHH.COLUMN_SNO_HH, Vc.getSno());
-
-                if (CheckBLRandomExist(Vc.getLUID(), Vc.getSubVillageCode(), Vc.getStructure(), Vc.getExtension())) {
-                    db.update(
-                            singleRandomHH.TABLE_NAME,
-                            values,
-                            singleRandomHH.COLUMN_LUID + " =? AND " + singleRandomHH.COLUMN_ENUM_BLOCK_CODE + " =? AND " + singleRandomHH.COLUMN_STRUCTURE_NO + " =? AND " + singleRandomHH.COLUMN_FAMILY_EXT_CODE + " =?",
-                            new String[]{Vc.getLUID(), Vc.getSubVillageCode(), Vc.getStructure(), Vc.getExtension()}
-                    );
-                } else {
-                    db.insert(singleRandomHH.TABLE_NAME, null, values);
-                }
-            }
-        } catch (Exception e) {
-        } finally {
-            db.close();
-        }
-    }*/
 
     public void syncBLRandom(JSONArray BLlist) {
         SQLiteDatabase db = this.getWritableDatabase();
@@ -882,6 +844,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 familyMembers.COLUMN_SYNCED_DATE,
                 familyMembers.COLUMN_FLAG,
                 familyMembers.COLUMN_KISH_SELECTED,
+                familyMembers.COLUMN_KISH_SELECTED_MWRA_D,
+                familyMembers.COLUMN_KISH_SELECTED_ADOLESCENT,
                 familyMembers.COLUMN_APP_VERSION
 
         };
@@ -941,6 +905,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 familyMembers.COLUMN_SYNCED_DATE,
                 familyMembers.COLUMN_FLAG,
                 familyMembers.COLUMN_KISH_SELECTED,
+                familyMembers.COLUMN_KISH_SELECTED_MWRA_D,
+                familyMembers.COLUMN_KISH_SELECTED_ADOLESCENT,
                 familyMembers.COLUMN_APP_VERSION
 
         };
@@ -1107,6 +1073,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 familyMembers.COLUMN_APP_VERSION,
                 familyMembers.COLUMN_FLAG,
                 familyMembers.COLUMN_KISH_SELECTED,
+                familyMembers.COLUMN_KISH_SELECTED_MWRA_D,
+                familyMembers.COLUMN_KISH_SELECTED_ADOLESCENT,
 
         };
 
@@ -1166,6 +1134,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 familyMembers.COLUMN_APP_VERSION,
                 familyMembers.COLUMN_FLAG,
                 familyMembers.COLUMN_KISH_SELECTED,
+                familyMembers.COLUMN_KISH_SELECTED_MWRA_D,
+                familyMembers.COLUMN_KISH_SELECTED_ADOLESCENT,
 
         };
 
@@ -1798,6 +1768,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(familyMembers.COLUMN_APP_VERSION, fmc.getApp_ver());
         values.put(familyMembers.COLUMN_FLAG, fmc.getDelflag());
         values.put(familyMembers.COLUMN_KISH_SELECTED, fmc.getKishSelected());
+        values.put(familyMembers.COLUMN_KISH_SELECTED_ADOLESCENT, fmc.getKishAdolsSelected());
+        values.put(familyMembers.COLUMN_KISH_SELECTED_MWRA_D, fmc.getKishMWRASelected());
 
 
         // Insert the new row, returning the primary key value of the new row
@@ -1819,6 +1791,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(D4WRATable.COLUMN_PROJECTNAME, fmc.getProjectName());
         values.put(D4WRATable.COLUMN_UID, fmc.get_UID());
         values.put(D4WRATable.COLUMN_UUID, fmc.get_UUID());
+        values.put(D4WRATable.COLUMN_FM_UID, fmc.getFMUID());
         values.put(D4WRATable.COLUMN_FORMDATE, fmc.getFormDate());
         values.put(D4WRATable.COLUMN_SD1, fmc.getsD1());
         values.put(D4WRATable.COLUMN_DSERIALNO, fmc.getB1SerialNo());
@@ -2787,6 +2760,42 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return count;
     }
 
+    public int updateFamilyMemberMWRAKishFlag(String uuid, String fmUID) {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+// New value for one column
+        ContentValues values = new ContentValues();
+        values.put(familyMembers.COLUMN_KISH_SELECTED_MWRA_D, "1");
+
+// Which row to update, based on the ID
+        String selection = familyMembers.COLUMN_UUID + " = ? AND " + familyMembers.COLUMN_UID + " = ?";
+        String[] selectionArgs = {uuid, fmUID};
+
+        int count = db.update(familyMembers.TABLE_NAME,
+                values,
+                selection,
+                selectionArgs);
+        return count;
+    }
+
+    public int updateFamilyMemberAdoleKishFlag(String uuid, String fmUID) {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+// New value for one column
+        ContentValues values = new ContentValues();
+        values.put(familyMembers.COLUMN_KISH_SELECTED_ADOLESCENT, "1");
+
+// Which row to update, based on the ID
+        String selection = familyMembers.COLUMN_UUID + " = ? AND " + familyMembers.COLUMN_UID + " = ?";
+        String[] selectionArgs = {uuid, fmUID};
+
+        int count = db.update(familyMembers.TABLE_NAME,
+                values,
+                selection,
+                selectionArgs);
+        return count;
+    }
+
     public int updateDeceasedMemberID() {
         SQLiteDatabase db = this.getReadableDatabase();
 
@@ -3319,6 +3328,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 familyMembers.COLUMN_APP_VERSION,
                 familyMembers.COLUMN_FLAG,
                 familyMembers.COLUMN_KISH_SELECTED,
+                familyMembers.COLUMN_KISH_SELECTED_MWRA_D,
+                familyMembers.COLUMN_KISH_SELECTED_ADOLESCENT,
         };
         String whereClause = familyMembers.COLUMN_SYNCED + " is null OR " + familyMembers.COLUMN_SYNCED + " = '' ";
         String[] whereArgs = null;
@@ -3368,6 +3379,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 familyMembers.COLUMN_ENM_NO,
                 familyMembers.COLUMN_FLAG,
                 familyMembers.COLUMN_KISH_SELECTED,
+                familyMembers.COLUMN_KISH_SELECTED_MWRA_D,
+                familyMembers.COLUMN_KISH_SELECTED_ADOLESCENT,
                 familyMembers.COLUMN_SA2,
                 familyMembers.COLUMN_DEVICETAGID,
                 familyMembers.COLUMN_DEVICEID,

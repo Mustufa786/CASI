@@ -18,18 +18,13 @@ public class D4WRAContract {
     private String _UUID = "";
     private String FMUID = "";
     private String formDate = "";
-    private String updatedate = "";
     private String deviceId = "";
     private String devicetagID = "";
     private String user = "";
     private String app_ver = "";
-    private String mstatus = "";
-    private String mstatus88x = "";
     private String fType = "";
     private String b1SerialNo = "";
     private String sD1 = "";
-    private String sb2flag = "";
-    private boolean kishSelectWRA;
     private String cluster = "";
     private String hhno = "";
     private String synced = "";
@@ -45,14 +40,6 @@ public class D4WRAContract {
 
     public void setfType(String fType) {
         this.fType = fType;
-    }
-
-    public boolean getKishSelectWRA() {
-        return kishSelectWRA;
-    }
-
-    public void setKishSelectWRA(boolean kishSelectWRA) {
-        this.kishSelectWRA = kishSelectWRA;
     }
 
     public String getFMUID() {
@@ -163,38 +150,6 @@ public class D4WRAContract {
         this.devicetagID = devicetagID;
     }
 
-    public String getMstatus() {
-        return mstatus;
-    }
-
-    public void setMstatus(String mstatus) {
-        this.mstatus = mstatus;
-    }
-
-    public String getMstatus88x() {
-        return mstatus88x;
-    }
-
-    public void setMstatus88x(String mstatus88x) {
-        this.mstatus88x = mstatus88x;
-    }
-
-    public String getUpdatedate() {
-        return updatedate;
-    }
-
-    public void setUpdatedate(String updatedate) {
-        this.updatedate = updatedate;
-    }
-
-    public String getSb2flag() {
-        return sb2flag;
-    }
-
-    public void setSb2flag(String sb2flag) {
-        this.sb2flag = sb2flag;
-    }
-
     public String getCluster() {
         return cluster;
     }
@@ -227,8 +182,6 @@ public class D4WRAContract {
         this.sD1 = jsonObject.getString(D4WRATable.COLUMN_SD1);
         this.synced = jsonObject.getString(D4WRATable.COLUMN_SYNCED);
         this.syncedDate = jsonObject.getString(D4WRATable.COLUMN_SYNCEDDATE);
-        this.mstatus = jsonObject.getString(D4WRATable.COLUMN_MSTATUS);
-        this.mstatus88x = jsonObject.getString(D4WRATable.COLUMN_MSTATUS88x);
 
 
         return this;
@@ -254,29 +207,8 @@ public class D4WRAContract {
         this.b1SerialNo = cursor.getString(cursor.getColumnIndex(D4WRATable.COLUMN_DSERIALNO));
         this.synced = cursor.getString(cursor.getColumnIndex(D4WRATable.COLUMN_SYNCED));
         this.syncedDate = cursor.getString(cursor.getColumnIndex(D4WRATable.COLUMN_SYNCEDDATE));
-        this.mstatus = cursor.getString(cursor.getColumnIndex(D4WRATable.COLUMN_MSTATUS));
-        this.mstatus88x = cursor.getString(cursor.getColumnIndex(D4WRATable.COLUMN_MSTATUS88x));
-//        if (type == 0 || type == 1) {
-//
-////        }
-//        }
-//        if (type == 0 || type == 2) {
-//            this.sb2flag = cursor.getString(cursor.getColumnIndex(D4WRATable.COLUMN_SB2FLAG));
-//        }
-//        if (type == 0 || type == 3) {
-//
-//        }
-//        if (type == 0 || type == 4) {
-//
-//        }
-//        if (type == 0 || type == 5) {
-//
-//        }
-//        if (type == 0) {
-
 
         return this;
-
     }
 
 
@@ -291,8 +223,6 @@ public class D4WRAContract {
         json.put(D4WRATable.COLUMN_FM_UID, this.FMUID == null ? JSONObject.NULL : this.FMUID);
         json.put(D4WRATable.COLUMN_FORMDATE, this.formDate == null ? JSONObject.NULL : this.formDate);
 
-//        json.put(D4WRATable.COLUMN_UPDATEDATE, this.updatedate == null ? JSONObject.NULL : this.updatedate);
-
         json.put(D4WRATable.COLUMN_DEVICEID, this.deviceId == null ? JSONObject.NULL : this.deviceId);
         json.put(D4WRATable.COLUMN_FTYPE, this.fType == null ? JSONObject.NULL : this.fType);
         json.put(D4WRATable.COLUMN_DEVICETAGID, this.devicetagID == null ? JSONObject.NULL : this.devicetagID);
@@ -303,33 +233,6 @@ public class D4WRAContract {
         if (!this.sD1.equals("")) {
             json.put(D4WRATable.COLUMN_SD1, this.sD1.equals("") ? JSONObject.NULL : new JSONObject(this.sD1));
         }
-
-//        if (!this.sB2.equals("")) {
-//            json.put(D4WRATable.COLUMN_SB2, this.sB2.equals("") ? JSONObject.NULL : new JSONObject(this.sB2));
-//        }
-//
-//        if (!this.sB3.equals("")) {
-//            json.put(D4WRATable.COLUMN_SB3, this.sB3.equals("") ? JSONObject.NULL : new JSONObject(this.sB3));
-//        }
-//
-//        if (!this.sB4.equals("")) {
-//            json.put(D4WRATable.COLUMN_SB4, this.sB4.equals("") ? JSONObject.NULL : new JSONObject(this.sB4));
-//        }
-//
-//        if (!this.sB5.equals("")) {
-//            json.put(D4WRATable.COLUMN_SB5, this.sB5.equals("") ? JSONObject.NULL : new JSONObject(this.sB5));
-//        }
-//
-//        if (!this.sB6.equals("")) {
-//            json.put(D4WRATable.COLUMN_SB6, this.sB6.equals("") ? JSONObject.NULL : new JSONObject(this.sB6));
-//        }
-
-
-        /*json.put(D4WRATable.COLUMN_SYNCED, this.synced == null ? JSONObject.NULL : this.synced);
-        json.put(D4WRATable.COLUMN_SYNCEDDATE, this.syncedDate == null ? JSONObject.NULL : this.syncedDate);*/
-        json.put(D4WRATable.COLUMN_MSTATUS, this.mstatus == null ? JSONObject.NULL : this.mstatus);
-        json.put(D4WRATable.COLUMN_MSTATUS88x, this.mstatus88x == null ? JSONObject.NULL : this.mstatus88x);
-
 
         return json;
     }
@@ -344,20 +247,20 @@ public class D4WRAContract {
         public static final String COLUMN_UUID = "uuid";
         public static final String COLUMN_FM_UID = "fmuid";
         public static final String COLUMN_FORMDATE = "formdate";
-        public static final String COLUMN_UPDATEDATE = "updatedate";
         public static final String COLUMN_DEVICEID = "deviceid";
         public static final String COLUMN_FTYPE = "fType";
         public static final String COLUMN_DEVICETAGID = "devicetagid";
         public static final String COLUMN_USER = "user";
         public static final String COLUMN_APP_VER = "app_ver";
         public static final String COLUMN_DSERIALNO = "dserialno";
-        public static final String COLUMN_SD1 = "sd";
+        public static final String COLUMN_SD1 = "sd1";
         public static final String COLUMN_SYNCED = "synced";
         public static final String COLUMN_SYNCEDDATE = "synceddate";
-        public static final String COLUMN_MSTATUS = "mstatus";
-        public static final String COLUMN_MSTATUS88x = "mstatus88x";
 
-
-        public static String _URL = "wras.php";
+        public static String _URL1 = "d205.php";
+        public static String _URL2 = "d304.php";
+        public static String _URL3 = "d401.php";
+        public static String _URL4 = "d403.php";
+        public static String _URL5 = "d405.php";
     }
 }

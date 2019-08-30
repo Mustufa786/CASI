@@ -48,6 +48,8 @@ public class FamilyMembersContract implements Serializable {
     private String resp = "";
     private String type = "";
     private String kishSelected = "";
+    private String kishMWRASelected = "";
+    private String kishAdolsSelected = "";
 
     public FamilyMembersContract() {
     }
@@ -299,6 +301,22 @@ public class FamilyMembersContract implements Serializable {
         this.kishSelected = kishSelected;
     }
 
+    public String getKishMWRASelected() {
+        return kishMWRASelected;
+    }
+
+    public void setKishMWRASelected(String kishMWRASelected) {
+        this.kishMWRASelected = kishMWRASelected;
+    }
+
+    public String getKishAdolsSelected() {
+        return kishAdolsSelected;
+    }
+
+    public void setKishAdolsSelected(String kishAdolsSelected) {
+        this.kishAdolsSelected = kishAdolsSelected;
+    }
+
     public FamilyMembersContract Sync(JSONObject jsonObject) throws JSONException {
 
         this._ID = jsonObject.getString(familyMembers.COLUMN_ID);
@@ -315,6 +333,8 @@ public class FamilyMembersContract implements Serializable {
         this.devicetagID = jsonObject.getString(familyMembers.COLUMN_DEVICETAGID);
         this.delflag = jsonObject.getString(familyMembers.COLUMN_FLAG);
         this.kishSelected = jsonObject.getString(familyMembers.COLUMN_KISH_SELECTED);
+        this.kishMWRASelected = jsonObject.getString(familyMembers.COLUMN_KISH_SELECTED_MWRA_D);
+        this.kishAdolsSelected = jsonObject.getString(familyMembers.COLUMN_KISH_SELECTED_ADOLESCENT);
 
         return this;
 
@@ -336,6 +356,8 @@ public class FamilyMembersContract implements Serializable {
         this.devicetagID = cursor.getString(cursor.getColumnIndex(familyMembers.COLUMN_DEVICETAGID));
         this.delflag = cursor.getString(cursor.getColumnIndex(familyMembers.COLUMN_FLAG));
         this.kishSelected = cursor.getString(cursor.getColumnIndex(familyMembers.COLUMN_KISH_SELECTED));
+        this.kishMWRASelected = cursor.getString(cursor.getColumnIndex(familyMembers.COLUMN_KISH_SELECTED_MWRA_D));
+        this.kishAdolsSelected = cursor.getString(cursor.getColumnIndex(familyMembers.COLUMN_KISH_SELECTED_ADOLESCENT));
 
         return this;
 
@@ -358,6 +380,8 @@ public class FamilyMembersContract implements Serializable {
         json.put(familyMembers.COLUMN_AV, this.av == null ? JSONObject.NULL : this.av);
         json.put(familyMembers.COLUMN_FLAG, this.delflag == null ? JSONObject.NULL : this.delflag);
         json.put(familyMembers.COLUMN_KISH_SELECTED, this.kishSelected == null ? JSONObject.NULL : this.kishSelected);
+        json.put(familyMembers.COLUMN_KISH_SELECTED_MWRA_D, this.kishMWRASelected == null ? JSONObject.NULL : this.kishMWRASelected);
+        json.put(familyMembers.COLUMN_KISH_SELECTED_ADOLESCENT, this.kishAdolsSelected == null ? JSONObject.NULL : this.kishAdolsSelected);
         if (this.sA2 != null && !this.sA2.equals("")) {
             json.put(familyMembers.COLUMN_SA2, this.sA2.equals("") ? JSONObject.NULL : new JSONObject(this.sA2));
         }
@@ -390,6 +414,8 @@ public class FamilyMembersContract implements Serializable {
         public static final String COLUMN_AV = "av";
         public static final String COLUMN_FLAG = "delflag";
         public static final String COLUMN_KISH_SELECTED = "kish_sel";
+        public static final String COLUMN_KISH_SELECTED_MWRA_D = "kish_sel_mwra";
+        public static final String COLUMN_KISH_SELECTED_ADOLESCENT = "kish_sel_adols";
 
         public static final String COLUMN_SYNCED = "synced";
         public static final String COLUMN_SYNCED_DATE = "sync_date";
