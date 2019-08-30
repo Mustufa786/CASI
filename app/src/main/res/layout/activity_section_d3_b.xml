@@ -5,14 +5,14 @@
 
         <variable
             name="callback"
-            type="edu.aku.hassannaqvi.casi_2019.ui.wra.secWRAD4.SectionD3BActivity" />
+            type="edu.aku.hassannaqvi.casi_2019.ui.wra.secWRAD.SectionD3BActivity" />
     </data>
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.wra.secWRAD4.SectionD3BActivity">
+        tools:context=".ui.wra.secWRAD.SectionD3BActivity">
 
 
         <LinearLayout

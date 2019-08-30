@@ -1,4 +1,4 @@
-package edu.aku.hassannaqvi.casi_2019.ui.wra.secWRAD4;
+package edu.aku.hassannaqvi.casi_2019.ui.wra.secWRAD;
 
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
@@ -39,7 +39,6 @@ public class SectionD2AActivity extends AppCompatActivity {
         }
 
 
-
     }
 
     public void BtnContinue() {
@@ -50,14 +49,15 @@ public class SectionD2AActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
             if (UpdateDB()) {
+                Intent route;
                 if (!MainApp.isAttitudeCheck)
-                    startActivity(new Intent(this, SectionD2BActivity.class).putExtra("fType", "d2b"));
+                    route = new Intent(this, SectionD2BActivity.class);
                 else
-                    startActivity(new Intent(this, SectionD3AActivity.class)
-                    );
+                    route = new Intent(this, SectionD3AActivity.class);
                 MainApp.isAttitudeCheck = false;
-                MainApp.dwraSerial_no = 0;
+                MainApp.dwraSerial_no = 1;
                 finish();
+                startActivity(route);
 
             } else {
                 Toast.makeText(this, "Error in updating DB", Toast.LENGTH_SHORT).show();

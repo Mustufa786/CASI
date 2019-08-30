@@ -1,4 +1,4 @@
-package edu.aku.hassannaqvi.casi_2019.ui.wra.secWRAD4;
+package edu.aku.hassannaqvi.casi_2019.ui.wra.secWRAD;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -27,8 +27,6 @@ public class SectionD3BActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_d3_b);
         bi.setCallback(this);
-
-        MainApp.dWraType = getIntent().getStringExtra("fType");
     }
 
     public void BtnContinue() {
@@ -48,8 +46,6 @@ public class SectionD3BActivity extends AppCompatActivity {
     }
 
     private void SaveDraft() throws JSONException {
-
-        MainApp.dwraSerial_no++;
         MainApp.d4WRAc = new D4WRAContract();
         MainApp.d4WRAc.setDevicetagID(MainApp.fc.getDevicetagID());
         MainApp.d4WRAc.setFormDate(MainApp.fc.getFormDate());
@@ -57,7 +53,7 @@ public class SectionD3BActivity extends AppCompatActivity {
         MainApp.d4WRAc.setDeviceId(MainApp.fc.getDeviceID());
         MainApp.d4WRAc.setApp_ver(MainApp.fc.getAppversion());
         MainApp.d4WRAc.set_UUID(MainApp.fc.getUID());
-        MainApp.d4WRAc.setfType(MainApp.dWraType);
+        MainApp.d4WRAc.setfType(MainApp.WRAD3B);
         MainApp.d4WRAc.setB1SerialNo(String.valueOf(MainApp.dwraSerial_no));
 
         JSONObject dwraC = new JSONObject();
@@ -78,6 +74,7 @@ public class SectionD3BActivity extends AppCompatActivity {
         dwraC.put("cid30405", bi.cid30405.getText().toString());
         MainApp.d4WRAc.setsD1(String.valueOf(dwraC));
 
+        MainApp.dwraSerial_no++;
     }
 
 

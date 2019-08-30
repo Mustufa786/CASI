@@ -29,7 +29,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
-        <activity android:name=".ui.childs.SectionS1"></activity>
+        <activity android:name=".ui.household.SectionD6Activity"></activity>
         <activity
             android:name=".ui.mainUI.SplashscreenActivity"
             android:screenOrientation="portrait"
@@ -152,47 +152,47 @@
             android:windowSoftInputMode="adjustResize|stateHidden" />
 
         <activity
-            android:name=".ui.wra.secWRAD4.SectionD2AActivity"
+            android:name=".ui.wra.secWRAD.SectionD2AActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name=".ui.wra.secWRAD4.SectionD2BActivity"
+            android:name=".ui.wra.secWRAD.SectionD2BActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name=".ui.wra.secWRAD4.SectionD3AActivity"
+            android:name=".ui.wra.secWRAD.SectionD3AActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name=".ui.wra.secWRAD4.SectionD3BActivity"
+            android:name=".ui.wra.secWRAD.SectionD3BActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name=".ui.wra.secWRAD4.SectionD4AActivity"
+            android:name=".ui.wra.secWRAD.SectionD4AActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name=".ui.wra.secWRAD4.SectionD4EActivity"
+            android:name=".ui.wra.secWRAD.SectionD4EActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name=".ui.wra.secWRAD4.SectionD4BActivity"
+            android:name=".ui.wra.secWRAD.SectionD4BActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name=".ui.wra.secWRAD4.SectionD4CActivity"
+            android:name=".ui.wra.secWRAD.SectionD4CActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name=".ui.wra.secWRAD4.SectionD4DActivity"
+            android:name=".ui.wra.secWRAD.SectionD4DActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateHidden" />

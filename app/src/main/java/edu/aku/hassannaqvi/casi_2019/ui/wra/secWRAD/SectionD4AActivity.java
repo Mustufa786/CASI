@@ -1,4 +1,4 @@
-package edu.aku.hassannaqvi.casi_2019.ui.wra.secWRAD4;
+package edu.aku.hassannaqvi.casi_2019.ui.wra.secWRAD;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -14,20 +14,19 @@ import org.json.JSONObject;
 import edu.aku.hassannaqvi.casi_2019.R;
 import edu.aku.hassannaqvi.casi_2019.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2019.core.MainApp;
-import edu.aku.hassannaqvi.casi_2019.databinding.ActivitySectionD4BBinding;
+import edu.aku.hassannaqvi.casi_2019.databinding.ActivitySectionD4ABinding;
 import edu.aku.hassannaqvi.casi_2019.other.JsonUtils;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
-public class SectionD4BActivity extends AppCompatActivity {
+public class SectionD4AActivity extends AppCompatActivity {
 
-
-    ActivitySectionD4BBinding bi;
+    ActivitySectionD4ABinding bi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_d4_b);
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_d4_a);
         bi.setCallback(this);
 
         MainApp.dWraType = getIntent().getStringExtra("fType");
@@ -42,9 +41,9 @@ public class SectionD4BActivity extends AppCompatActivity {
             }
             if (UpdateDB()) {
                 finish();
-                startActivity(new Intent(this, SectionD4CActivity.class)
-                        .putExtra("fType", "d4c"));
-                MainApp.dwraSerial_no = 0;
+                startActivity(new Intent(this, SectionD4BActivity.class)
+                        .putExtra("fType", "d4b"));
+                MainApp.dwraSerial_no = 1;
             }
         }
 
@@ -59,7 +58,7 @@ public class SectionD4BActivity extends AppCompatActivity {
             }
         }
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
-                SectionD4BActivity.this);
+                SectionD4AActivity.this);
         alertDialogBuilder
                 .setMessage("Are you sure to add new Entry?")
                 .setCancelable(false)
@@ -69,8 +68,8 @@ public class SectionD4BActivity extends AppCompatActivity {
                                                 int id) {
                                 finish();
                                 if (UpdateDB()) {
-                                    startActivity(new Intent(SectionD4BActivity.this, SectionD4BActivity.class)
-                                            .putExtra("fType", "d4b"));
+                                    startActivity(new Intent(SectionD4AActivity.this, SectionD4AActivity.class)
+                                            .putExtra("fType", "d4a"));
                                 }
                             }
                         });
@@ -88,19 +87,19 @@ public class SectionD4BActivity extends AppCompatActivity {
 
     private void SaveDraft() throws JSONException {
 
-        JSONObject sB10 = new JSONObject();
+        JSONObject sB9 = new JSONObject();
         if (!MainApp.isAttitudeCheck) {
-            sB10.put("cid403", bi.cid403a.isChecked() ? "1"
-                    : bi.cid403b.isChecked() ? "2"
+            sB9.put("cid401", bi.cid401a.isChecked() ? "1"
+                    : bi.cid401b.isChecked() ? "2"
                     : "0");
-            MainApp.mc.setsB10(String.valueOf(sB10));
+            MainApp.mc.setsB9(String.valueOf(sB9));
         } else {
-            sB10.put("cid40402", bi.cid40402.getText().toString());
-            sB10.put("cid40403", bi.cid40403.getText().toString());
-            sB10.put("cid40404", bi.cid40404.getText().toString());
-            sB10.put("cid40405", bi.cid40405.getText().toString());
-            JSONObject merged = JsonUtils.mergeJSONObjects(new JSONObject(MainApp.mc.getsB10()), sB10);
-            MainApp.mc.setsB10(String.valueOf(merged));
+            sB9.put("cid40202", bi.cid40202.getText().toString());
+            sB9.put("cid40203", bi.cid40203.getText().toString());
+            sB9.put("cid40204", bi.cid40204.getText().toString());
+            sB9.put("cid40205", bi.cid40205.getText().toString());
+            JSONObject merged = JsonUtils.mergeJSONObjects(new JSONObject(MainApp.mc.getsB9()), sB9);
+            MainApp.mc.setsB9(String.valueOf(merged));
         }
 
 
@@ -128,7 +127,7 @@ public class SectionD4BActivity extends AppCompatActivity {
     }
 
     private boolean formValidation() {
-        return ValidatorClass.EmptyCheckingContainer(this, bi.fldGrpSectionD4B);
+        return ValidatorClass.EmptyCheckingContainer(this, bi.fldGrpSectionD4A);
     }
 
     @Override

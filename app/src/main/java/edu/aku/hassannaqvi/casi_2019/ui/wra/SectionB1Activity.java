@@ -42,6 +42,8 @@ import edu.aku.hassannaqvi.casi_2019.other.JSONUtilClass;
 import edu.aku.hassannaqvi.casi_2019.ui.household.SectionA2ListActivity;
 import edu.aku.hassannaqvi.casi_2019.ui.mainUI.AddMember_MenuActivity;
 import edu.aku.hassannaqvi.casi_2019.ui.viewMem.ViewMemberActivity;
+import edu.aku.hassannaqvi.casi_2019.ui.wra.secWRAD.SectionD2AActivity;
+import edu.aku.hassannaqvi.casi_2019.ui.wra.secWRAD.SectionD3AActivity;
 import edu.aku.hassannaqvi.casi_2019.validation.ClearClass;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
@@ -135,6 +137,7 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
 
     };
     private Timer timer = new Timer();
+    public static boolean isCurrentlyPreg = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -526,6 +529,11 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                 else
                     MainApp.mc.setKishSelectWRA(false);
 
+                if (wraMap.get(bi.nb101.getSelectedItem().toString()).getKishMWRASelected().equals("1"))
+                    MainApp.mc.setKishSelectMWRA(true);
+                else
+                    MainApp.mc.setKishSelectMWRA(false);
+
             }
 
             @Override
@@ -813,6 +821,12 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
             if (MainApp.mc.getKishSelectWRA()) {
                 startActivityForResult(new Intent(this, SectionB6Activity.class)
                         .putExtra("backPressed", classPassName.equals(SectionB6Activity.class.getName())), 1);
+            } else if (MainApp.mc.getKishSelectMWRA()) {
+                finish();
+                if (bi.ciw208a.isChecked())
+                    startActivity(new Intent(this, SectionD2AActivity.class));
+                else
+                    startActivity(new Intent(this, SectionD3AActivity.class));
             } else {
                 startActivity(new Intent(this, MotherEndingActivity.class)
                         .putExtra("complete", true));
@@ -959,6 +973,8 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
         sB1.put("ciw215", bi.ciw215.getText().toString());
 
         sB1.put("no_child", roasterChildrens);
+
+        isCurrentlyPreg = bi.ciw208a.isChecked();
 
         MainApp.mc.setsB1(String.valueOf(sB1));
 

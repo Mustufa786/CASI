@@ -1,4 +1,4 @@
-package edu.aku.hassannaqvi.casi_2019.ui.childs;
+package edu.aku.hassannaqvi.casi_2019.ui.household;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -9,21 +9,20 @@ import org.json.JSONObject;
 
 import edu.aku.hassannaqvi.casi_2019.R;
 import edu.aku.hassannaqvi.casi_2019.core.MainApp;
-import edu.aku.hassannaqvi.casi_2019.databinding.ActivitySectionS1Binding;
+import edu.aku.hassannaqvi.casi_2019.databinding.ActivitySectionD6Binding;
 
-public class SectionS1 extends AppCompatActivity {
+public class SectionD6Activity extends AppCompatActivity {
 
-    ActivitySectionS1Binding binding;
+    ActivitySectionD6Binding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_section_s1);
+        setContentView(R.layout.activity_section_d6);
     }
 
 
     private void SaveDraft() throws JSONException {
-
 
         JSONObject sS1 = new JSONObject();
 
@@ -86,7 +85,6 @@ public class SectionS1 extends AppCompatActivity {
 
 
         MainApp.cc.setsC1(String.valueOf(sS1));
-
 
     }
 

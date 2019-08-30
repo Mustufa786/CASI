@@ -6,7 +6,7 @@
 
         <variable
             name="callback"
-            type="edu.aku.hassannaqvi.casi_2019.ui.wra.secWRAD4.SectionD4DActivity" />
+            type="edu.aku.hassannaqvi.casi_2019.ui.wra.secWRAD.SectionD4DActivity" />
     </data>
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
