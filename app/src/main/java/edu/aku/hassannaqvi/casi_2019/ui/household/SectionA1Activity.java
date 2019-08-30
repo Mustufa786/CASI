@@ -187,6 +187,8 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
         MainApp.childUnder2Check = new ArrayList<>();
         MainApp.childNA = new ArrayList<>();
         MainApp.mwra = new ArrayList<>();
+        MainApp.mwraChild = new ArrayList<>();
+        MainApp.adolesUnderAge = new ArrayList<>();
         MainApp.adolescents = new ArrayList<>();
         MainApp.serial_no = 0;
 

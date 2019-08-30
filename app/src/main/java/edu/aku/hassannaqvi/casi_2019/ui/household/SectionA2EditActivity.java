@@ -47,6 +47,7 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
     List<String> mothersList, fathersList;
     List<String> mothersSerials, fathersSerials;
     Map<String, String> mothersMap, fathersMap;
+    Map<String, FamilyMembersContract> mothersChildMap;
     int position = 0;
     int Age = 0;
     long agebyDob = 0;
@@ -368,11 +369,18 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
             }*/
 
 //            if (Age < 6 && MainApp.fmc.getMotherId().equals("00") && jsonB2.getcih210().equals("1")) {
-            if (Age < 6 && MainApp.fmc.getMotherId().equals("00")) {
+            if (MainApp.fmc.getMotherId().equals("00")) {
 //                MainApp.childNA.add(MainApp.fmc);
                 for (byte i = 0; i < MainApp.childNA.size(); i++) {
                     if (MainApp.childNA.get(i).getSerialNo().equals(MainApp.fmc.getSerialNo())) {
                         MainApp.childNA.remove(i);
+                        break;
+                    }
+                }
+            } else {
+                for (byte i = 0; i < MainApp.mwraChild.size(); i++) {
+                    if (MainApp.mwraChild.get(i).getSerialNo().equals(mothersSerials.get(mothersList.indexOf(binding.cih212.getSelectedItem().toString()) - 1))) {
+                        MainApp.mwraChild.remove(i);
                         break;
                     }
                 }
@@ -406,6 +414,14 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
         for (byte i = 0; i < MainApp.all_members.size(); i++) {
             if (MainApp.all_members.get(i).getSerialNo().equals(MainApp.fmc.getSerialNo())) {
                 MainApp.all_members.remove(i);
+                break;
+            }
+        }
+
+        // Add data in list for Adolescent
+        for (byte i = 0; i < MainApp.adolesUnderAge.size(); i++) {
+            if (MainApp.adolesUnderAge.get(i).getSerialNo().equals(MainApp.fmc.getSerialNo())) {
+                MainApp.adolesUnderAge.remove(i);
                 break;
             }
         }
@@ -873,6 +889,7 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
         mothersList = new ArrayList<>();
         mothersSerials = new ArrayList<>();
         mothersMap = new HashMap<>();
+        mothersChildMap = new HashMap<>();
 
         mothersList.add("....");
         mothersList.add("N/A");
@@ -897,6 +914,8 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
                 mothersList.add(mem.getName());
                 mothersSerials.add(mem.getSerialNo());
                 mothersMap.put(mem.getName() + "_" + mem.getSerialNo(), mem.getSerialNo());
+
+                mothersChildMap.put(mem.getName() + "_" + mem.getSerialNo(), mem);
             }
         }
 
@@ -1103,8 +1122,10 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
 
             }*/
 
-            if (Age < 6 && MainApp.fmc.getMotherId().equals("00")) {
+            if (MainApp.fmc.getMotherId().equals("00")) {
                 MainApp.childNA.add(MainApp.fmc);
+            } else {
+                MainApp.mwraChild.add(mothersChildMap.get(binding.cih212.getSelectedItem().toString() + "_" + mothersSerials.get(mothersList.indexOf(binding.cih212.getSelectedItem().toString()) - 1)));
             }
         }
 
@@ -1117,6 +1138,10 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
             if (binding.cih210a.isChecked()) {
                 MainApp.respList.add(MainApp.fmc);
             }
+        }
+
+        if (Age >= 5 && Age <= 19) {
+            MainApp.adolesUnderAge.add(MainApp.fmc);
         }
 
         /*End*/

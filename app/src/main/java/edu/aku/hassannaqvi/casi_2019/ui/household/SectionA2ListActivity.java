@@ -506,15 +506,20 @@ public class SectionA2ListActivity extends AppCompatActivity {
 
             if (!SectionA1Activity.editFormFlag && SectionA1Activity.reBackFlag && MainApp.mwra.size() > 0) {
                 int counter = KishGrid.KishGridProcess(Integer.valueOf(MainApp.selectedHead.getSno()), MainApp.mwra.size());
-                updcount = db.updateFamilyMemberKishFlag(MainApp.mwra.get(counter - 1).get_UUID(), MainApp.mwra.get(counter - 1).get_UID());
 
-                if (updcount == 1) {
-                    MainApp.mwra.get(counter - 1).setKishSelected("1");
-                    return true;
-                } else {
-                    Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
-                    return false;
-                }
+                updcount = db.updateFamilyMemberKishFlag(MainApp.mwra.get(counter - 1).get_UUID(),
+                        MainApp.mwra.get(counter - 1).get_UID(),
+                        FamilyMembersContract.familyMembers.COLUMN_KISH_SELECTED);
+
+                if (updcount == 1) MainApp.mwra.get(counter - 1).setKishSelected("1");
+                else return false;
+
+                updcount = db.updateFamilyMemberKishFlag(MainApp.mwraChild.get(counter - 1).get_UUID(),
+                        MainApp.mwraChild.get(counter - 1).get_UID(),
+                        FamilyMembersContract.familyMembers.COLUMN_KISH_SELECTED_MWRA_D);
+
+                if (updcount == 1) MainApp.mwra.get(counter - 1).setKishMWRASelected("1");
+                else return false;
             }
             return true;
 
