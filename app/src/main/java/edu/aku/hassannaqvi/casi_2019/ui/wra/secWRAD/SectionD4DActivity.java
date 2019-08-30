@@ -61,11 +61,10 @@ public class SectionD4DActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
             if (UpdateDB()) {
-                finish();
-                startActivity(new Intent(this, SectionD4EActivity.class)
-                        .putExtra("fType", "d4e"));
                 MainApp.dwraSerial_no = 1;
                 MainApp.isAttitudeCheck = false;
+                finish();
+                startActivity(new Intent(this, SectionD4EActivity.class));
             }
         }
 
@@ -136,7 +135,7 @@ public class SectionD4DActivity extends AppCompatActivity {
         MainApp.d4WRAc.setDeviceId(MainApp.fc.getDeviceID());
         MainApp.d4WRAc.setApp_ver(MainApp.fc.getAppversion());
         MainApp.d4WRAc.set_UUID(MainApp.fc.getUID());
-        MainApp.d4WRAc.setfType(MainApp.WRAD3B);
+        MainApp.d4WRAc.setfType(MainApp.WRAD4D);
         MainApp.d4WRAc.setB1SerialNo(String.valueOf(MainApp.dwraSerial_no));
         if (!MainApp.isAttitudeCheck) {
             sB12.put("cid407", bi.cid407a.isChecked() ? "1"

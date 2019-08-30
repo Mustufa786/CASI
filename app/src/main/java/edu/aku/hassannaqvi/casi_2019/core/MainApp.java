@@ -157,6 +157,7 @@ public class MainApp extends Application {
     public static Map<Integer, FamilyMembersContract> familyMembersClicked;
 
     public static D4WRAContract d4WRAc;
+    public static D4WRAContract d6Adolesc;
     public static String dWraType;
     // Gul Sanober
     public static int totalPregnancy = 0;
