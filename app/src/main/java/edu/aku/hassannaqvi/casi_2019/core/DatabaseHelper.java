@@ -27,6 +27,8 @@ import edu.aku.hassannaqvi.casi_2019.contracts.ChildContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.ChildContract.ChildTable;
 import edu.aku.hassannaqvi.casi_2019.contracts.D4WRAContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.D4WRAContract.D4WRATable;
+import edu.aku.hassannaqvi.casi_2019.contracts.D6AdolesContract;
+import edu.aku.hassannaqvi.casi_2019.contracts.D6AdolesContract.D6AdolesTable;
 import edu.aku.hassannaqvi.casi_2019.contracts.DeceasedContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.DeviceContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.EnumBlockContract;
@@ -38,6 +40,7 @@ import edu.aku.hassannaqvi.casi_2019.contracts.FormsContract.FormsTable;
 import edu.aku.hassannaqvi.casi_2019.contracts.MWRAContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.MWRAContract.MWRATable;
 import edu.aku.hassannaqvi.casi_2019.contracts.MicroContract;
+import edu.aku.hassannaqvi.casi_2019.contracts.MicroContract.MicroTable;
 import edu.aku.hassannaqvi.casi_2019.contracts.NutritionContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.NutritionContract.NutritionTable;
 import edu.aku.hassannaqvi.casi_2019.contracts.OutcomeContract;
@@ -49,6 +52,7 @@ import edu.aku.hassannaqvi.casi_2019.contracts.SerialContract.singleSerial;
 import edu.aku.hassannaqvi.casi_2019.contracts.SignupContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.SignupContract.SignUpTable;
 import edu.aku.hassannaqvi.casi_2019.contracts.SpecimenContract;
+import edu.aku.hassannaqvi.casi_2019.contracts.SpecimenContract.SpecimenTable;
 import edu.aku.hassannaqvi.casi_2019.contracts.SummaryContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.SummaryContract.singleSum;
 import edu.aku.hassannaqvi.casi_2019.contracts.UCsContract;
@@ -58,6 +62,7 @@ import edu.aku.hassannaqvi.casi_2019.contracts.UsersContract.UsersTable;
 import edu.aku.hassannaqvi.casi_2019.contracts.VersionAppContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.VersionAppContract.VersionAppTable;
 import edu.aku.hassannaqvi.casi_2019.contracts.WaterSpecimenContract;
+import edu.aku.hassannaqvi.casi_2019.contracts.WaterSpecimenContract.WaterSpecimenTable;
 import edu.aku.hassannaqvi.casi_2019.other.Summary;
 
 
@@ -177,6 +182,21 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             D4WRATable.COLUMN_APP_VER + " TEXT," +
             D4WRATable.COLUMN_SYNCED + " TEXT," +
             D4WRATable.COLUMN_SYNCEDDATE + " TEXT"
+            + " );";
+    private static final String SQL_CREATE_DADOLES = "CREATE TABLE "
+            + D6AdolesTable.TABLE_NAME + "("
+            + D6AdolesTable.COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+            + D6AdolesTable.COLUMN_PROJECTNAME + " TEXT,"
+            + D6AdolesTable.COLUMN_UID + " TEXT UNIQUE," +
+            D6AdolesTable.COLUMN_UUID + " TEXT," +
+            D6AdolesTable.COLUMN_FORMDATE + " TEXT," +
+            D6AdolesTable.COLUMN_USER + " TEXT," +
+            D6AdolesTable.COLUMN_SD6 + " TEXT," +
+            D6AdolesTable.COLUMN_DEVICEID + " TEXT," +
+            D6AdolesTable.COLUMN_DEVICETAGID + " TEXT," +
+            D6AdolesTable.COLUMN_APP_VER + " TEXT," +
+            D6AdolesTable.COLUMN_SYNCED + " TEXT," +
+            D6AdolesTable.COLUMN_SYNCEDDATE + " TEXT"
             + " );";
 
     private static final String SQL_CREATE_CHILD_FORMS = "CREATE TABLE "
@@ -346,64 +366,64 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             VersionAppTable.COLUMN_PATH_NAME + " TEXT " +
             ");";
 
-    private static final String SQL_DELETE_ELIGIBLE_MEMBERS = "DROP TABLE IF EXISTS " + AnthrosMembersContract.AnthrosMembers.TABLE_NAME;
+    private static final String SQL_DELETE_ELIGIBLE_MEMBERS = "DROP TABLE IF EXISTS " + AnthrosMembers.TABLE_NAME;
 
 
-    final String SQL_CREATE_SPECIMEN_MEMBERS = "CREATE TABLE " + SpecimenContract.SpecimenTable.TABLE_NAME + " (" +
-            SpecimenContract.SpecimenTable.COLUMN__ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
-            SpecimenContract.SpecimenTable.COLUMN__UID + " TEXT," +
-            SpecimenContract.SpecimenTable.COLUMN__UUID + " TEXT," +
-            SpecimenContract.SpecimenTable.COLUMN_FM_UID + " TEXT," +
-            SpecimenContract.SpecimenTable.COLUMN_LINENO + " TEXT," +
-            SpecimenContract.SpecimenTable.COLUMN_PROJECTNAME + " TEXT," +
-            SpecimenContract.SpecimenTable.COLUMN_FORMDATE + " TEXT," +
-            SpecimenContract.SpecimenTable.COLUMN_DEVICEID + " TEXT," +
-            SpecimenContract.SpecimenTable.COLUMN_DEVICETAGID + " TEXT," +
-            SpecimenContract.SpecimenTable.COLUMN_USER + " TEXT," +
-            SpecimenContract.SpecimenTable.COLUMN_APPVERSION + " TEXT," +
-            SpecimenContract.SpecimenTable.COLUMN_CLUSTER + " TEXT," +
-            SpecimenContract.SpecimenTable.COLUMN_HH + " TEXT," +
-            SpecimenContract.SpecimenTable.COLUMN_SE1 + " TEXT," +
-            SpecimenContract.SpecimenTable.COLUMN_SYNCED + " TEXT," +
-            SpecimenContract.SpecimenTable.COLUMN_SYNCED_DATE + " TEXT" +
-
-            ");";
-
-
-    final String SQL_CREATE_WATER_SPECIMEN_MEMBERS = "CREATE TABLE " + WaterSpecimenContract.WaterSpecimenTable.TABLE_NAME + " (" +
-            WaterSpecimenContract.WaterSpecimenTable.COLUMN__ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
-            WaterSpecimenContract.WaterSpecimenTable.COLUMN__UID + " TEXT," +
-            WaterSpecimenContract.WaterSpecimenTable.COLUMN__UUID + " TEXT," +
-            WaterSpecimenContract.WaterSpecimenTable.COLUMN_PROJECTNAME + " TEXT," +
-            WaterSpecimenContract.WaterSpecimenTable.COLUMN_FORMDATE + " TEXT," +
-            WaterSpecimenContract.WaterSpecimenTable.COLUMN_DEVICEID + " TEXT," +
-            WaterSpecimenContract.WaterSpecimenTable.COLUMN_DEVICETAGID + " TEXT," +
-            WaterSpecimenContract.WaterSpecimenTable.COLUMN_USER + " TEXT," +
-            WaterSpecimenContract.WaterSpecimenTable.COLUMN_APPVERSION + " TEXT," +
-            WaterSpecimenContract.WaterSpecimenTable.COLUMN_CLUSTER + " TEXT," +
-            WaterSpecimenContract.WaterSpecimenTable.COLUMN_HH + " TEXT," +
-            WaterSpecimenContract.WaterSpecimenTable.COLUMN_SE2 + " TEXT," +
-            WaterSpecimenContract.WaterSpecimenTable.COLUMN_SYNCED + " TEXT," +
-            WaterSpecimenContract.WaterSpecimenTable.COLUMN_SYNCED_DATE + " TEXT" +
+    final String SQL_CREATE_SPECIMEN_MEMBERS = "CREATE TABLE " + SpecimenTable.TABLE_NAME + " (" +
+            SpecimenTable.COLUMN__ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
+            SpecimenTable.COLUMN__UID + " TEXT," +
+            SpecimenTable.COLUMN__UUID + " TEXT," +
+            SpecimenTable.COLUMN_FM_UID + " TEXT," +
+            SpecimenTable.COLUMN_LINENO + " TEXT," +
+            SpecimenTable.COLUMN_PROJECTNAME + " TEXT," +
+            SpecimenTable.COLUMN_FORMDATE + " TEXT," +
+            SpecimenTable.COLUMN_DEVICEID + " TEXT," +
+            SpecimenTable.COLUMN_DEVICETAGID + " TEXT," +
+            SpecimenTable.COLUMN_USER + " TEXT," +
+            SpecimenTable.COLUMN_APPVERSION + " TEXT," +
+            SpecimenTable.COLUMN_CLUSTER + " TEXT," +
+            SpecimenTable.COLUMN_HH + " TEXT," +
+            SpecimenTable.COLUMN_SE1 + " TEXT," +
+            SpecimenTable.COLUMN_SYNCED + " TEXT," +
+            SpecimenTable.COLUMN_SYNCED_DATE + " TEXT" +
 
             ");";
 
-    final String SQL_CREATE_MICRO = "CREATE TABLE " + MicroContract.MicroTable.TABLE_NAME + " (" +
-            MicroContract.MicroTable.COLUMN__ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
-            MicroContract.MicroTable.COLUMN__UID + " TEXT," +
-            MicroContract.MicroTable.COLUMN__UUID + " TEXT," +
-            MicroContract.MicroTable.COLUMN_WUID + " TEXT," +
-            MicroContract.MicroTable.COLUMN_PROJECTNAME + " TEXT," +
-            MicroContract.MicroTable.COLUMN_FORMDATE + " TEXT," +
-            MicroContract.MicroTable.COLUMN_DEVICEID + " TEXT," +
-            MicroContract.MicroTable.COLUMN_DEVICETAGID + " TEXT," +
-            MicroContract.MicroTable.COLUMN_USER + " TEXT," +
-            MicroContract.MicroTable.COLUMN_APPVERSION + " TEXT," +
-            MicroContract.MicroTable.COLUMN_CLUSTER + " TEXT," +
-            MicroContract.MicroTable.COLUMN_HH + " TEXT," +
-            MicroContract.MicroTable.COLUMN_SM + " TEXT," +
-            MicroContract.MicroTable.COLUMN_SYNCED + " TEXT," +
-            MicroContract.MicroTable.COLUMN_SYNCED_DATE + " TEXT" +
+
+    final String SQL_CREATE_WATER_SPECIMEN_MEMBERS = "CREATE TABLE " + WaterSpecimenTable.TABLE_NAME + " (" +
+            WaterSpecimenTable.COLUMN__ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
+            WaterSpecimenTable.COLUMN__UID + " TEXT," +
+            WaterSpecimenTable.COLUMN__UUID + " TEXT," +
+            WaterSpecimenTable.COLUMN_PROJECTNAME + " TEXT," +
+            WaterSpecimenTable.COLUMN_FORMDATE + " TEXT," +
+            WaterSpecimenTable.COLUMN_DEVICEID + " TEXT," +
+            WaterSpecimenTable.COLUMN_DEVICETAGID + " TEXT," +
+            WaterSpecimenTable.COLUMN_USER + " TEXT," +
+            WaterSpecimenTable.COLUMN_APPVERSION + " TEXT," +
+            WaterSpecimenTable.COLUMN_CLUSTER + " TEXT," +
+            WaterSpecimenTable.COLUMN_HH + " TEXT," +
+            WaterSpecimenTable.COLUMN_SE2 + " TEXT," +
+            WaterSpecimenTable.COLUMN_SYNCED + " TEXT," +
+            WaterSpecimenTable.COLUMN_SYNCED_DATE + " TEXT" +
+
+            ");";
+
+    final String SQL_CREATE_MICRO = "CREATE TABLE " + MicroTable.TABLE_NAME + " (" +
+            MicroTable.COLUMN__ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
+            MicroTable.COLUMN__UID + " TEXT," +
+            MicroTable.COLUMN__UUID + " TEXT," +
+            MicroTable.COLUMN_WUID + " TEXT," +
+            MicroTable.COLUMN_PROJECTNAME + " TEXT," +
+            MicroTable.COLUMN_FORMDATE + " TEXT," +
+            MicroTable.COLUMN_DEVICEID + " TEXT," +
+            MicroTable.COLUMN_DEVICETAGID + " TEXT," +
+            MicroTable.COLUMN_USER + " TEXT," +
+            MicroTable.COLUMN_APPVERSION + " TEXT," +
+            MicroTable.COLUMN_CLUSTER + " TEXT," +
+            MicroTable.COLUMN_HH + " TEXT," +
+            MicroTable.COLUMN_SM + " TEXT," +
+            MicroTable.COLUMN_SYNCED + " TEXT," +
+            MicroTable.COLUMN_SYNCED_DATE + " TEXT" +
 
             ");";
 
@@ -438,28 +458,28 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String SQL_DELETE_SINGLE = "DROP TABLE IF EXISTS " + singleSerial.TABLE_NAME;
     private static final String SQL_DELETE_TALUKAS = "DROP TABLE IF EXISTS " + EnumBlockTable.TABLE_NAME;
     private static final String SQL_DELETE_UCS = "DROP TABLE IF EXISTS " + UCsTable.TABLE_NAME;
-    final String SQL_CREATE_ELIGIBLE_MEMBERS = "CREATE TABLE " + AnthrosMembersContract.AnthrosMembers.TABLE_NAME + " (" +
-            AnthrosMembersContract.AnthrosMembers.COLUMN__ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
-            AnthrosMembersContract.AnthrosMembers.COLUMN_UID + " TEXT," +
-            AnthrosMembersContract.AnthrosMembers.COLUMN_UUID + " TEXT," +
-            AnthrosMembersContract.AnthrosMembers.COLUMN_FM_UID + " TEXT," +
-            AnthrosMembersContract.AnthrosMembers.COLUMN_PROJECTNAME + " TEXT," +
-            AnthrosMembersContract.AnthrosMembers.COLUMN_FORMDATE + " TEXT," +
-            AnthrosMembersContract.AnthrosMembers.COLUMN_DEVICEID + " TEXT," +
-            AnthrosMembersContract.AnthrosMembers.COLUMN_DEVICETAGID + " TEXT," +
-            AnthrosMembersContract.AnthrosMembers.COLUMN_USER + " TEXT," +
-            AnthrosMembersContract.AnthrosMembers.COLUMN_APPVERSION + " TEXT," +
-            AnthrosMembersContract.AnthrosMembers.COLUMN_ENM_NO + " TEXT," +
-            AnthrosMembersContract.AnthrosMembers.COLUMN_HH_NO + " TEXT," +
-            AnthrosMembersContract.AnthrosMembers.COLUMN_DOB + " TEXT," +
-            AnthrosMembersContract.AnthrosMembers.COLUMN_AGE + " TEXT," +
-            AnthrosMembersContract.AnthrosMembers.COLUMN_na204 + " TEXT," +
-            AnthrosMembersContract.AnthrosMembers.COLUMN_SA3 + " TEXT," +
-            AnthrosMembersContract.AnthrosMembers.COLUMN_ISTATUS + " TEXT," +
-            AnthrosMembersContract.AnthrosMembers.COLUMN_ISTATUS88x + " TEXT," +
-            AnthrosMembersContract.AnthrosMembers.COLUMN_END_TIME + " TEXT," +
-            AnthrosMembersContract.AnthrosMembers.COLUMN_SYNCED + " TEXT," +
-            AnthrosMembersContract.AnthrosMembers.COLUMN_SYNCEDDATE + " TEXT" +
+    final String SQL_CREATE_ELIGIBLE_MEMBERS = "CREATE TABLE " + AnthrosMembers.TABLE_NAME + " (" +
+            AnthrosMembers.COLUMN__ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
+            AnthrosMembers.COLUMN_UID + " TEXT," +
+            AnthrosMembers.COLUMN_UUID + " TEXT," +
+            AnthrosMembers.COLUMN_FM_UID + " TEXT," +
+            AnthrosMembers.COLUMN_PROJECTNAME + " TEXT," +
+            AnthrosMembers.COLUMN_FORMDATE + " TEXT," +
+            AnthrosMembers.COLUMN_DEVICEID + " TEXT," +
+            AnthrosMembers.COLUMN_DEVICETAGID + " TEXT," +
+            AnthrosMembers.COLUMN_USER + " TEXT," +
+            AnthrosMembers.COLUMN_APPVERSION + " TEXT," +
+            AnthrosMembers.COLUMN_ENM_NO + " TEXT," +
+            AnthrosMembers.COLUMN_HH_NO + " TEXT," +
+            AnthrosMembers.COLUMN_DOB + " TEXT," +
+            AnthrosMembers.COLUMN_AGE + " TEXT," +
+            AnthrosMembers.COLUMN_na204 + " TEXT," +
+            AnthrosMembers.COLUMN_SA3 + " TEXT," +
+            AnthrosMembers.COLUMN_ISTATUS + " TEXT," +
+            AnthrosMembers.COLUMN_ISTATUS88x + " TEXT," +
+            AnthrosMembers.COLUMN_END_TIME + " TEXT," +
+            AnthrosMembers.COLUMN_SYNCED + " TEXT," +
+            AnthrosMembers.COLUMN_SYNCEDDATE + " TEXT" +
 
             ");";
     private static final String SQL_DELETE_MWRAS = "DROP TABLE IF EXISTS " + MWRATable.TABLE_NAME;
@@ -957,10 +977,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor c = null;
         String[] columns = {
-                AnthrosMembersContract.AnthrosMembers.COLUMN__ID,
-                AnthrosMembersContract.AnthrosMembers.COLUMN_FM_UID,
+                AnthrosMembers.COLUMN__ID,
+                AnthrosMembers.COLUMN_FM_UID,
         };
-        String whereClause = AnthrosMembersContract.AnthrosMembers.COLUMN_FM_UID + " =? ";
+        String whereClause = AnthrosMembers.COLUMN_FM_UID + " =? ";
         String[] whereArgs = {uid};
         String groupBy = null;
         String having = null;
@@ -971,7 +991,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         Boolean allFC = false;
         try {
             c = db.query(
-                    AnthrosMembersContract.AnthrosMembers.TABLE_NAME,  // The table to query
+                    AnthrosMembers.TABLE_NAME,  // The table to query
                     columns,                   // The columns to return
                     whereClause,               // The columns for the WHERE clause
                     whereArgs,                 // The values for the WHERE clause
@@ -1000,35 +1020,35 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         Cursor c = null;
         String[] columns = {
 
-                WaterSpecimenContract.WaterSpecimenTable.COLUMN__ID,
-                WaterSpecimenContract.WaterSpecimenTable.COLUMN__UID,
-                WaterSpecimenContract.WaterSpecimenTable.COLUMN__UUID,
-                WaterSpecimenContract.WaterSpecimenTable.COLUMN_FORMDATE,
-                WaterSpecimenContract.WaterSpecimenTable.COLUMN_USER,
-                WaterSpecimenContract.WaterSpecimenTable.COLUMN_HH,
-                WaterSpecimenContract.WaterSpecimenTable.COLUMN_CLUSTER,
-                WaterSpecimenContract.WaterSpecimenTable.COLUMN_SE2,
-                WaterSpecimenContract.WaterSpecimenTable.COLUMN_DEVICETAGID,
-                WaterSpecimenContract.WaterSpecimenTable.COLUMN_DEVICEID,
-                WaterSpecimenContract.WaterSpecimenTable.COLUMN_SYNCED,
-                WaterSpecimenContract.WaterSpecimenTable.COLUMN_SYNCED_DATE,
-                WaterSpecimenContract.WaterSpecimenTable.COLUMN_APPVERSION
+                WaterSpecimenTable.COLUMN__ID,
+                WaterSpecimenTable.COLUMN__UID,
+                WaterSpecimenTable.COLUMN__UUID,
+                WaterSpecimenTable.COLUMN_FORMDATE,
+                WaterSpecimenTable.COLUMN_USER,
+                WaterSpecimenTable.COLUMN_HH,
+                WaterSpecimenTable.COLUMN_CLUSTER,
+                WaterSpecimenTable.COLUMN_SE2,
+                WaterSpecimenTable.COLUMN_DEVICETAGID,
+                WaterSpecimenTable.COLUMN_DEVICEID,
+                WaterSpecimenTable.COLUMN_SYNCED,
+                WaterSpecimenTable.COLUMN_SYNCED_DATE,
+                WaterSpecimenTable.COLUMN_APPVERSION
 
         };
 
-        String whereClause = WaterSpecimenContract.WaterSpecimenTable.COLUMN_CLUSTER + "=? AND "
-                + WaterSpecimenContract.WaterSpecimenTable.COLUMN_HH + "=?";
+        String whereClause = WaterSpecimenTable.COLUMN_CLUSTER + "=? AND "
+                + WaterSpecimenTable.COLUMN_HH + "=?";
         String[] whereArgs = new String[]{cluster, hh};
         String groupBy = null;
         String having = null;
 
         String orderBy =
-                WaterSpecimenContract.WaterSpecimenTable.COLUMN__ID + " DESC Limit 1";
+                WaterSpecimenTable.COLUMN__ID + " DESC Limit 1";
 
         Collection<WaterSpecimenContract> allBL = new ArrayList<>();
         try {
             c = db.query(
-                    WaterSpecimenContract.WaterSpecimenTable.TABLE_NAME,  // The table to query
+                    WaterSpecimenTable.TABLE_NAME,  // The table to query
                     columns,                   // The columns to return
                     whereClause,               // The columns for the WHERE clause
                     whereArgs,                 // The values for the WHERE clause
@@ -1813,6 +1833,37 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return newRowId;
     }
 
+    public Long addD6Adoles(D6AdolesContract fmc) {
+
+        // Gets the data repository in write mode
+        SQLiteDatabase db = this.getWritableDatabase();
+
+// Create a new map of values, where column names are the keys
+        ContentValues values = new ContentValues();
+        values.put(D6AdolesTable.COLUMN_PROJECTNAME, fmc.getProjectName());
+        values.put(D6AdolesTable.COLUMN_UID, fmc.get_UID());
+        values.put(D6AdolesTable.COLUMN_UUID, fmc.get_UUID());
+        values.put(D6AdolesTable.COLUMN_FM_UID, fmc.getFMUID());
+        values.put(D6AdolesTable.COLUMN_FORMDATE, fmc.getFormDate());
+        values.put(D6AdolesTable.COLUMN_SD6, fmc.getsD6());
+        values.put(D6AdolesTable.COLUMN_DSERIALNO, fmc.getB1SerialNo());
+        values.put(D6AdolesTable.COLUMN_FORMDATE, fmc.getFormDate());
+        values.put(D6AdolesTable.COLUMN_USER, fmc.getUser());
+        values.put(D6AdolesTable.COLUMN_DEVICETAGID, fmc.getDevicetagID());
+        values.put(D6AdolesTable.COLUMN_DEVICEID, fmc.getDeviceId());
+        values.put(D6AdolesTable.COLUMN_SYNCED, fmc.getSynced());
+        values.put(D6AdolesTable.COLUMN_SYNCEDDATE, fmc.getSyncedDate());
+        values.put(D6AdolesTable.COLUMN_APP_VER, fmc.getApp_ver());
+
+        // Insert the new row, returning the primary key value of the new row
+        long newRowId;
+        newRowId = db.insert(
+                D6AdolesTable.TABLE_NAME,
+                null,
+                values);
+        return newRowId;
+    }
+
     public Long addDevice(DeviceContract dc) {
 
         // Gets the data repository in write mode
@@ -1841,28 +1892,28 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 // Create a new map of values, where column names are the keys
         ContentValues values = new ContentValues();
-        values.put(SpecimenContract.SpecimenTable.COLUMN_PROJECTNAME, fmc.getProjectName());
-        values.put(SpecimenContract.SpecimenTable.COLUMN__UID, fmc.getUID());
-        values.put(SpecimenContract.SpecimenTable.COLUMN__UUID, fmc.getUUID());
-        values.put(SpecimenContract.SpecimenTable.COLUMN_FM_UID, fmc.getFMUID());
-        values.put(SpecimenContract.SpecimenTable.COLUMN_FORMDATE, fmc.getFormDate());
-        values.put(SpecimenContract.SpecimenTable.COLUMN_USER, fmc.getUser());
-        values.put(SpecimenContract.SpecimenTable.COLUMN_LINENO, fmc.getLineNo());
-        values.put(SpecimenContract.SpecimenTable.COLUMN_CLUSTER, fmc.getClusterno());
-        values.put(SpecimenContract.SpecimenTable.COLUMN_HH, fmc.getHhno());
-        values.put(SpecimenContract.SpecimenTable.COLUMN_SE1, fmc.getsE1());
-        values.put(SpecimenContract.SpecimenTable.COLUMN_DEVICETAGID, fmc.getDevicetagID());
-        values.put(SpecimenContract.SpecimenTable.COLUMN_DEVICEID, fmc.getDeviceID());
-        values.put(SpecimenContract.SpecimenTable.COLUMN_SYNCED, fmc.getSynced());
-        values.put(SpecimenContract.SpecimenTable.COLUMN_SYNCED_DATE, fmc.getSynced_date());
-        values.put(SpecimenContract.SpecimenTable.COLUMN_APPVERSION, fmc.getAppversion());
+        values.put(SpecimenTable.COLUMN_PROJECTNAME, fmc.getProjectName());
+        values.put(SpecimenTable.COLUMN__UID, fmc.getUID());
+        values.put(SpecimenTable.COLUMN__UUID, fmc.getUUID());
+        values.put(SpecimenTable.COLUMN_FM_UID, fmc.getFMUID());
+        values.put(SpecimenTable.COLUMN_FORMDATE, fmc.getFormDate());
+        values.put(SpecimenTable.COLUMN_USER, fmc.getUser());
+        values.put(SpecimenTable.COLUMN_LINENO, fmc.getLineNo());
+        values.put(SpecimenTable.COLUMN_CLUSTER, fmc.getClusterno());
+        values.put(SpecimenTable.COLUMN_HH, fmc.getHhno());
+        values.put(SpecimenTable.COLUMN_SE1, fmc.getsE1());
+        values.put(SpecimenTable.COLUMN_DEVICETAGID, fmc.getDevicetagID());
+        values.put(SpecimenTable.COLUMN_DEVICEID, fmc.getDeviceID());
+        values.put(SpecimenTable.COLUMN_SYNCED, fmc.getSynced());
+        values.put(SpecimenTable.COLUMN_SYNCED_DATE, fmc.getSynced_date());
+        values.put(SpecimenTable.COLUMN_APPVERSION, fmc.getAppversion());
 
 
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
         newRowId = db.insert(
-                SpecimenContract.SpecimenTable.TABLE_NAME,
-                SpecimenContract.SpecimenTable.COLUMN_NAME_NULLABLE,
+                SpecimenTable.TABLE_NAME,
+                SpecimenTable.COLUMN_NAME_NULLABLE,
                 values);
         return newRowId;
     }
@@ -1874,28 +1925,28 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 // Create a new map of values, where column names are the keys
         ContentValues values = new ContentValues();
-        values.put(WaterSpecimenContract.WaterSpecimenTable.COLUMN_PROJECTNAME, fmc.getProjectName());
-        values.put(WaterSpecimenContract.WaterSpecimenTable.COLUMN__UID, fmc.getUID());
-        values.put(WaterSpecimenContract.WaterSpecimenTable.COLUMN__UUID, fmc.getUUID());
-        //values.put(WaterSpecimenContract.MicroTable.COLUMN_FM_UID, fmc.getFMUID());
-        values.put(WaterSpecimenContract.WaterSpecimenTable.COLUMN_FORMDATE, fmc.getFormDate());
-        values.put(WaterSpecimenContract.WaterSpecimenTable.COLUMN_USER, fmc.getUser());
-        //values.put(SpecimenContract.SpecimenTable.COLUMN_WUID, fmc.getLineNo());
-        values.put(WaterSpecimenContract.WaterSpecimenTable.COLUMN_CLUSTER, fmc.getClusterno());
-        values.put(WaterSpecimenContract.WaterSpecimenTable.COLUMN_HH, fmc.getHhno());
-        values.put(WaterSpecimenContract.WaterSpecimenTable.COLUMN_SE2, fmc.getsE2());
-        values.put(WaterSpecimenContract.WaterSpecimenTable.COLUMN_DEVICETAGID, fmc.getDevicetagID());
-        values.put(WaterSpecimenContract.WaterSpecimenTable.COLUMN_DEVICEID, fmc.getDeviceID());
-        values.put(WaterSpecimenContract.WaterSpecimenTable.COLUMN_SYNCED, fmc.getSynced());
-        values.put(WaterSpecimenContract.WaterSpecimenTable.COLUMN_SYNCED_DATE, fmc.getSynced_date());
-        values.put(WaterSpecimenContract.WaterSpecimenTable.COLUMN_APPVERSION, fmc.getAppversion());
+        values.put(WaterSpecimenTable.COLUMN_PROJECTNAME, fmc.getProjectName());
+        values.put(WaterSpecimenTable.COLUMN__UID, fmc.getUID());
+        values.put(WaterSpecimenTable.COLUMN__UUID, fmc.getUUID());
+        //values.put(MicroTable.COLUMN_FM_UID, fmc.getFMUID());
+        values.put(WaterSpecimenTable.COLUMN_FORMDATE, fmc.getFormDate());
+        values.put(WaterSpecimenTable.COLUMN_USER, fmc.getUser());
+        //values.put(SpecimenTable.COLUMN_WUID, fmc.getLineNo());
+        values.put(WaterSpecimenTable.COLUMN_CLUSTER, fmc.getClusterno());
+        values.put(WaterSpecimenTable.COLUMN_HH, fmc.getHhno());
+        values.put(WaterSpecimenTable.COLUMN_SE2, fmc.getsE2());
+        values.put(WaterSpecimenTable.COLUMN_DEVICETAGID, fmc.getDevicetagID());
+        values.put(WaterSpecimenTable.COLUMN_DEVICEID, fmc.getDeviceID());
+        values.put(WaterSpecimenTable.COLUMN_SYNCED, fmc.getSynced());
+        values.put(WaterSpecimenTable.COLUMN_SYNCED_DATE, fmc.getSynced_date());
+        values.put(WaterSpecimenTable.COLUMN_APPVERSION, fmc.getAppversion());
 
 
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
         newRowId = db.insert(
-                WaterSpecimenContract.WaterSpecimenTable.TABLE_NAME,
-                WaterSpecimenContract.WaterSpecimenTable.COLUMN_NAME_NULLABLE,
+                WaterSpecimenTable.TABLE_NAME,
+                WaterSpecimenTable.COLUMN_NAME_NULLABLE,
                 values);
         return newRowId;
     }
@@ -1908,27 +1959,27 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 // Create a new map of values, where column names are the keys
         ContentValues values = new ContentValues();
-        values.put(MicroContract.MicroTable.COLUMN_PROJECTNAME, fmc.getProjectName());
-        values.put(MicroContract.MicroTable.COLUMN__UID, fmc.getUID());
-        values.put(MicroContract.MicroTable.COLUMN__UUID, fmc.getUUID());
-        values.put(MicroContract.MicroTable.COLUMN_WUID, fmc.getWUID());
-        values.put(MicroContract.MicroTable.COLUMN_FORMDATE, fmc.getFormDate());
-        values.put(MicroContract.MicroTable.COLUMN_USER, fmc.getUser());
-        values.put(MicroContract.MicroTable.COLUMN_CLUSTER, fmc.getClusterno());
-        values.put(MicroContract.MicroTable.COLUMN_HH, fmc.getHhno());
-        values.put(MicroContract.MicroTable.COLUMN_SM, fmc.getsM());
-        values.put(MicroContract.MicroTable.COLUMN_DEVICETAGID, fmc.getDevicetagID());
-        values.put(MicroContract.MicroTable.COLUMN_DEVICEID, fmc.getDeviceID());
-        values.put(MicroContract.MicroTable.COLUMN_SYNCED, fmc.getSynced());
-        values.put(MicroContract.MicroTable.COLUMN_SYNCED_DATE, fmc.getSynced_date());
-        values.put(MicroContract.MicroTable.COLUMN_APPVERSION, fmc.getAppversion());
+        values.put(MicroTable.COLUMN_PROJECTNAME, fmc.getProjectName());
+        values.put(MicroTable.COLUMN__UID, fmc.getUID());
+        values.put(MicroTable.COLUMN__UUID, fmc.getUUID());
+        values.put(MicroTable.COLUMN_WUID, fmc.getWUID());
+        values.put(MicroTable.COLUMN_FORMDATE, fmc.getFormDate());
+        values.put(MicroTable.COLUMN_USER, fmc.getUser());
+        values.put(MicroTable.COLUMN_CLUSTER, fmc.getClusterno());
+        values.put(MicroTable.COLUMN_HH, fmc.getHhno());
+        values.put(MicroTable.COLUMN_SM, fmc.getsM());
+        values.put(MicroTable.COLUMN_DEVICETAGID, fmc.getDevicetagID());
+        values.put(MicroTable.COLUMN_DEVICEID, fmc.getDeviceID());
+        values.put(MicroTable.COLUMN_SYNCED, fmc.getSynced());
+        values.put(MicroTable.COLUMN_SYNCED_DATE, fmc.getSynced_date());
+        values.put(MicroTable.COLUMN_APPVERSION, fmc.getAppversion());
 
 
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
         newRowId = db.insert(
-                MicroContract.MicroTable.TABLE_NAME,
-                MicroContract.MicroTable.COLUMN_NAME_NULLABLE,
+                MicroTable.TABLE_NAME,
+                MicroTable.COLUMN_NAME_NULLABLE,
                 values);
         return newRowId;
     }
@@ -1939,13 +1990,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 // New value for one column
         ContentValues values = new ContentValues();
-        values.put(SpecimenContract.SpecimenTable.COLUMN__UID, MainApp.smc.getUID());
+        values.put(SpecimenTable.COLUMN__UID, MainApp.smc.getUID());
 
 // Which row to update, based on the ID
-        String selection = SpecimenContract.SpecimenTable.COLUMN__ID + " = ?";
+        String selection = SpecimenTable.COLUMN__ID + " = ?";
         String[] selectionArgs = {String.valueOf(MainApp.smc.get_ID())};
 
-        int count = db.update(SpecimenContract.SpecimenTable.TABLE_NAME,
+        int count = db.update(SpecimenTable.TABLE_NAME,
                 values,
                 selection,
                 selectionArgs);
@@ -1957,13 +2008,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 // New value for one column
         ContentValues values = new ContentValues();
-        values.put(WaterSpecimenContract.WaterSpecimenTable.COLUMN__UID, MainApp.wsc.getUID());
+        values.put(WaterSpecimenTable.COLUMN__UID, MainApp.wsc.getUID());
 
 // Which row to update, based on the ID
-        String selection = WaterSpecimenContract.WaterSpecimenTable.COLUMN__ID + " = ?";
+        String selection = WaterSpecimenTable.COLUMN__ID + " = ?";
         String[] selectionArgs = {String.valueOf(MainApp.wsc.get_ID())};
 
-        int count = db.update(WaterSpecimenContract.WaterSpecimenTable.TABLE_NAME,
+        int count = db.update(WaterSpecimenTable.TABLE_NAME,
                 values,
                 selection,
                 selectionArgs);
@@ -1976,13 +2027,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 // New value for one column
         ContentValues values = new ContentValues();
-        values.put(MicroContract.MicroTable.COLUMN__UID, MainApp.msc.getUID());
+        values.put(MicroTable.COLUMN__UID, MainApp.msc.getUID());
 
 // Which row to update, based on the ID
-        String selection = MicroContract.MicroTable.COLUMN__ID + " = ?";
+        String selection = MicroTable.COLUMN__ID + " = ?";
         String[] selectionArgs = {String.valueOf(MainApp.msc.get_ID())};
 
-        int count = db.update(MicroContract.MicroTable.TABLE_NAME,
+        int count = db.update(MicroTable.TABLE_NAME,
                 values,
                 selection,
                 selectionArgs);
@@ -2133,34 +2184,34 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 // Create a new map of values, where column names are the keys
         ContentValues values = new ContentValues();
-        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_PROJECTNAME, ec.getProjectName());
+        values.put(AnthrosMembers.COLUMN_PROJECTNAME, ec.getProjectName());
         //values.put(AnthrosMembers.COLUMN__ID, ec.get_ID());
-        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_UID, ec.get_UID());
-        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_UUID, ec.get_UUID());
-        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_FM_UID, ec.getFmuid());
-        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_FORMDATE, ec.getFormDate());
-        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_DEVICEID, ec.getDeviceId());
-        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_DEVICETAGID, ec.getDevicetagID());
-        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_USER, ec.getUser());
-        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_APPVERSION, ec.getApp_ver());
-        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_ENM_NO, ec.getEnm_no());
-        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_HH_NO, ec.getHh_no());
-        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_DOB, ec.getDob());
-        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_AGE, ec.getAge());
-        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_na204, ec.getna204());
-        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_SA3, ec.getsA3());
-        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_ISTATUS, ec.getIstatus());
-        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_ISTATUS88x, ec.getIstatus88x());
-        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_SYNCED, ec.getSynced());
-        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_SYNCEDDATE, ec.getSyncedDate());
-        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_END_TIME, ec.getEnd_time());
+        values.put(AnthrosMembers.COLUMN_UID, ec.get_UID());
+        values.put(AnthrosMembers.COLUMN_UUID, ec.get_UUID());
+        values.put(AnthrosMembers.COLUMN_FM_UID, ec.getFmuid());
+        values.put(AnthrosMembers.COLUMN_FORMDATE, ec.getFormDate());
+        values.put(AnthrosMembers.COLUMN_DEVICEID, ec.getDeviceId());
+        values.put(AnthrosMembers.COLUMN_DEVICETAGID, ec.getDevicetagID());
+        values.put(AnthrosMembers.COLUMN_USER, ec.getUser());
+        values.put(AnthrosMembers.COLUMN_APPVERSION, ec.getApp_ver());
+        values.put(AnthrosMembers.COLUMN_ENM_NO, ec.getEnm_no());
+        values.put(AnthrosMembers.COLUMN_HH_NO, ec.getHh_no());
+        values.put(AnthrosMembers.COLUMN_DOB, ec.getDob());
+        values.put(AnthrosMembers.COLUMN_AGE, ec.getAge());
+        values.put(AnthrosMembers.COLUMN_na204, ec.getna204());
+        values.put(AnthrosMembers.COLUMN_SA3, ec.getsA3());
+        values.put(AnthrosMembers.COLUMN_ISTATUS, ec.getIstatus());
+        values.put(AnthrosMembers.COLUMN_ISTATUS88x, ec.getIstatus88x());
+        values.put(AnthrosMembers.COLUMN_SYNCED, ec.getSynced());
+        values.put(AnthrosMembers.COLUMN_SYNCEDDATE, ec.getSyncedDate());
+        values.put(AnthrosMembers.COLUMN_END_TIME, ec.getEnd_time());
 
 
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
         newRowId = db.insert(
-                AnthrosMembersContract.AnthrosMembers.TABLE_NAME,
-                AnthrosMembersContract.AnthrosMembers.COLUMN_NAME_NULLABLE,
+                AnthrosMembers.TABLE_NAME,
+                AnthrosMembers.COLUMN_NAME_NULLABLE,
                 values);
         return newRowId;
     }
@@ -2407,15 +2458,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 // New value for one column
         ContentValues values = new ContentValues();
-        values.put(MicroContract.MicroTable.COLUMN_SYNCED, true);
-        values.put(MicroContract.MicroTable.COLUMN_SYNCED_DATE, new Date().toString());
+        values.put(MicroTable.COLUMN_SYNCED, true);
+        values.put(MicroTable.COLUMN_SYNCED_DATE, new Date().toString());
 
 // Which row to update, based on the title
-        String where = MicroContract.MicroTable.COLUMN__ID + " = ?";
+        String where = MicroTable.COLUMN__ID + " = ?";
         String[] whereArgs = {id};
 
         int count = db.update(
-                MicroContract.MicroTable.TABLE_NAME,
+                MicroTable.TABLE_NAME,
                 values,
                 where,
                 whereArgs);
@@ -2463,15 +2514,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 // New value for one column
         ContentValues values = new ContentValues();
-        values.put(SpecimenContract.SpecimenTable.COLUMN_SYNCED, true);
-        values.put(SpecimenContract.SpecimenTable.COLUMN_SYNCED_DATE, new Date().toString());
+        values.put(SpecimenTable.COLUMN_SYNCED, true);
+        values.put(SpecimenTable.COLUMN_SYNCED_DATE, new Date().toString());
 
 // Which row to update, based on the title
-        String where = SpecimenContract.SpecimenTable.COLUMN__ID + " = ?";
+        String where = SpecimenTable.COLUMN__ID + " = ?";
         String[] whereArgs = {id};
 
         int count = db.update(
-                SpecimenContract.SpecimenTable.TABLE_NAME,
+                SpecimenTable.TABLE_NAME,
                 values,
                 where,
                 whereArgs);
@@ -2482,15 +2533,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 // New value for one column
         ContentValues values = new ContentValues();
-        values.put(WaterSpecimenContract.WaterSpecimenTable.COLUMN_SYNCED, true);
-        values.put(WaterSpecimenContract.WaterSpecimenTable.COLUMN_SYNCED_DATE, new Date().toString());
+        values.put(WaterSpecimenTable.COLUMN_SYNCED, true);
+        values.put(WaterSpecimenTable.COLUMN_SYNCED_DATE, new Date().toString());
 
 // Which row to update, based on the title
-        String where = WaterSpecimenContract.WaterSpecimenTable.COLUMN__ID + " = ?";
+        String where = WaterSpecimenTable.COLUMN__ID + " = ?";
         String[] whereArgs = {id};
 
         int count = db.update(
-                WaterSpecimenContract.WaterSpecimenTable.TABLE_NAME,
+                WaterSpecimenTable.TABLE_NAME,
                 values,
                 where,
                 whereArgs);
@@ -2598,10 +2649,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 // New value for one column
         ContentValues values = new ContentValues();
         values.put(AnthrosMembers.COLUMN_SYNCED, true);
-        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_SYNCEDDATE, new Date().toString());
+        values.put(AnthrosMembers.COLUMN_SYNCEDDATE, new Date().toString());
 
 // Which row to update, based on the title
-        String where = AnthrosMembersContract.AnthrosMembers.COLUMN__ID + " = ?";
+        String where = AnthrosMembers.COLUMN__ID + " = ?";
         String[] whereArgs = {id};
 
         int count = db.update(
@@ -2966,13 +3017,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 // New value for one column
         ContentValues values = new ContentValues();
-        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_UID, MainApp.emc.get_UID());
+        values.put(AnthrosMembers.COLUMN_UID, MainApp.emc.get_UID());
 
 // Which row to update, based on the ID
-        String selection = AnthrosMembersContract.AnthrosMembers.COLUMN__ID + " = ?";
+        String selection = AnthrosMembers.COLUMN__ID + " = ?";
         String[] selectionArgs = {String.valueOf(MainApp.emc.get_ID())};
 
-        int count = db.update(AnthrosMembersContract.AnthrosMembers.TABLE_NAME,
+        int count = db.update(AnthrosMembers.TABLE_NAME,
                 values,
                 selection,
                 selectionArgs);
@@ -3643,36 +3694,36 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor c = null;
         String[] columns = {
-                SpecimenContract.SpecimenTable.COLUMN__ID,
-                SpecimenContract.SpecimenTable.COLUMN__UID,
-                SpecimenContract.SpecimenTable.COLUMN__UUID,
-                SpecimenContract.SpecimenTable.COLUMN_FM_UID,
-                SpecimenContract.SpecimenTable.COLUMN_FORMDATE,
-                SpecimenContract.SpecimenTable.COLUMN_USER,
-                SpecimenContract.SpecimenTable.COLUMN_LINENO,
-                SpecimenContract.SpecimenTable.COLUMN_HH,
-                SpecimenContract.SpecimenTable.COLUMN_CLUSTER,
-                SpecimenContract.SpecimenTable.COLUMN_SE1,
-                SpecimenContract.SpecimenTable.COLUMN_DEVICEID,
-                SpecimenContract.SpecimenTable.COLUMN_DEVICETAGID,
-                SpecimenContract.SpecimenTable.COLUMN_SYNCED,
-                SpecimenContract.SpecimenTable.COLUMN_SYNCED_DATE,
-                SpecimenContract.SpecimenTable.COLUMN_APPVERSION,
+                SpecimenTable.COLUMN__ID,
+                SpecimenTable.COLUMN__UID,
+                SpecimenTable.COLUMN__UUID,
+                SpecimenTable.COLUMN_FM_UID,
+                SpecimenTable.COLUMN_FORMDATE,
+                SpecimenTable.COLUMN_USER,
+                SpecimenTable.COLUMN_LINENO,
+                SpecimenTable.COLUMN_HH,
+                SpecimenTable.COLUMN_CLUSTER,
+                SpecimenTable.COLUMN_SE1,
+                SpecimenTable.COLUMN_DEVICEID,
+                SpecimenTable.COLUMN_DEVICETAGID,
+                SpecimenTable.COLUMN_SYNCED,
+                SpecimenTable.COLUMN_SYNCED_DATE,
+                SpecimenTable.COLUMN_APPVERSION,
 
 
         };
-        String whereClause = SpecimenContract.SpecimenTable.COLUMN_SYNCED + " is null OR " + SpecimenContract.SpecimenTable.COLUMN_SYNCED + " = '' ";
+        String whereClause = SpecimenTable.COLUMN_SYNCED + " is null OR " + SpecimenTable.COLUMN_SYNCED + " = '' ";
         String[] whereArgs = null;
         String groupBy = null;
         String having = null;
 
         String orderBy =
-                SpecimenContract.SpecimenTable.COLUMN__ID + " ASC";
+                SpecimenTable.COLUMN__ID + " ASC";
 
         Collection<SpecimenContract> allFC = new ArrayList<SpecimenContract>();
         try {
             c = db.query(
-                    SpecimenContract.SpecimenTable.TABLE_NAME,  // The table to query
+                    SpecimenTable.TABLE_NAME,  // The table to query
                     columns,                   // The columns to return
                     whereClause,               // The columns for the WHERE clause
                     whereArgs,                 // The values for the WHERE clause
@@ -3699,36 +3750,36 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor c = null;
         String[] columns = {
-                WaterSpecimenContract.WaterSpecimenTable.COLUMN__ID,
-                WaterSpecimenContract.WaterSpecimenTable.COLUMN__UID,
-                WaterSpecimenContract.WaterSpecimenTable.COLUMN__UUID,
-                //WaterSpecimenContract.MicroTable.COLUMN_FM_UID,
-                WaterSpecimenContract.WaterSpecimenTable.COLUMN_FORMDATE,
-                WaterSpecimenContract.WaterSpecimenTable.COLUMN_USER,
-                //WaterSpecimenContract.MicroTable.COLUMN_WUID,
-                WaterSpecimenContract.WaterSpecimenTable.COLUMN_HH,
-                WaterSpecimenContract.WaterSpecimenTable.COLUMN_CLUSTER,
-                WaterSpecimenContract.WaterSpecimenTable.COLUMN_SE2,
-                WaterSpecimenContract.WaterSpecimenTable.COLUMN_DEVICEID,
-                WaterSpecimenContract.WaterSpecimenTable.COLUMN_DEVICETAGID,
-                WaterSpecimenContract.WaterSpecimenTable.COLUMN_SYNCED,
-                WaterSpecimenContract.WaterSpecimenTable.COLUMN_SYNCED_DATE,
-                WaterSpecimenContract.WaterSpecimenTable.COLUMN_APPVERSION,
+                WaterSpecimenTable.COLUMN__ID,
+                WaterSpecimenTable.COLUMN__UID,
+                WaterSpecimenTable.COLUMN__UUID,
+                //MicroTable.COLUMN_FM_UID,
+                WaterSpecimenTable.COLUMN_FORMDATE,
+                WaterSpecimenTable.COLUMN_USER,
+                //MicroTable.COLUMN_WUID,
+                WaterSpecimenTable.COLUMN_HH,
+                WaterSpecimenTable.COLUMN_CLUSTER,
+                WaterSpecimenTable.COLUMN_SE2,
+                WaterSpecimenTable.COLUMN_DEVICEID,
+                WaterSpecimenTable.COLUMN_DEVICETAGID,
+                WaterSpecimenTable.COLUMN_SYNCED,
+                WaterSpecimenTable.COLUMN_SYNCED_DATE,
+                WaterSpecimenTable.COLUMN_APPVERSION,
 
 
         };
-        String whereClause = WaterSpecimenContract.WaterSpecimenTable.COLUMN_SYNCED + " is null OR " + WaterSpecimenContract.WaterSpecimenTable.COLUMN_SYNCED + " = '' ";
+        String whereClause = WaterSpecimenTable.COLUMN_SYNCED + " is null OR " + WaterSpecimenTable.COLUMN_SYNCED + " = '' ";
         String[] whereArgs = null;
         String groupBy = null;
         String having = null;
 
         String orderBy =
-                WaterSpecimenContract.WaterSpecimenTable.COLUMN__ID + " ASC";
+                WaterSpecimenTable.COLUMN__ID + " ASC";
 
         Collection<WaterSpecimenContract> allFC = new ArrayList<WaterSpecimenContract>();
         try {
             c = db.query(
-                    WaterSpecimenContract.WaterSpecimenTable.TABLE_NAME,  // The table to query
+                    WaterSpecimenTable.TABLE_NAME,  // The table to query
                     columns,                   // The columns to return
                     whereClause,               // The columns for the WHERE clause
                     whereArgs,                 // The values for the WHERE clause
@@ -3755,37 +3806,37 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor c = null;
         String[] columns = {
-                MicroContract.MicroTable.COLUMN__ID,
-                MicroContract.MicroTable.COLUMN__UID,
-                MicroContract.MicroTable.COLUMN__UUID,
-                MicroContract.MicroTable.COLUMN_WUID,
-                MicroContract.MicroTable.COLUMN_FORMDATE,
-                MicroContract.MicroTable.COLUMN_USER,
-                MicroContract.MicroTable.COLUMN_HH,
-                MicroContract.MicroTable.COLUMN_WUID,
-                MicroContract.MicroTable.COLUMN_CLUSTER,
-                MicroContract.MicroTable.COLUMN_SM,
-                MicroContract.MicroTable.COLUMN_DEVICEID,
-                MicroContract.MicroTable.COLUMN_DEVICETAGID,
-                MicroContract.MicroTable.COLUMN_SYNCED,
-                MicroContract.MicroTable.COLUMN_SYNCED_DATE,
-                MicroContract.MicroTable.COLUMN_APPVERSION,
+                MicroTable.COLUMN__ID,
+                MicroTable.COLUMN__UID,
+                MicroTable.COLUMN__UUID,
+                MicroTable.COLUMN_WUID,
+                MicroTable.COLUMN_FORMDATE,
+                MicroTable.COLUMN_USER,
+                MicroTable.COLUMN_HH,
+                MicroTable.COLUMN_WUID,
+                MicroTable.COLUMN_CLUSTER,
+                MicroTable.COLUMN_SM,
+                MicroTable.COLUMN_DEVICEID,
+                MicroTable.COLUMN_DEVICETAGID,
+                MicroTable.COLUMN_SYNCED,
+                MicroTable.COLUMN_SYNCED_DATE,
+                MicroTable.COLUMN_APPVERSION,
 
 
         };
-        String whereClause = MicroContract.MicroTable.COLUMN_SYNCED + " is null OR "
-                + MicroContract.MicroTable.COLUMN_SYNCED + " = '' ";
+        String whereClause = MicroTable.COLUMN_SYNCED + " is null OR "
+                + MicroTable.COLUMN_SYNCED + " = '' ";
         String[] whereArgs = null;
         String groupBy = null;
         String having = null;
 
         String orderBy =
-                MicroContract.MicroTable.COLUMN__ID + " ASC";
+                MicroTable.COLUMN__ID + " ASC";
 
         Collection<MicroContract> allFC = new ArrayList<MicroContract>();
         try {
             c = db.query(
-                    MicroContract.MicroTable.TABLE_NAME,  // The table to query
+                    MicroTable.TABLE_NAME,  // The table to query
                     columns,                   // The columns to return
                     whereClause,               // The columns for the WHERE clause
                     whereArgs,                 // The values for the WHERE clause
@@ -3844,40 +3895,40 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor c = null;
         String[] columns = {
-                AnthrosMembersContract.AnthrosMembers.COLUMN__ID,
-                AnthrosMembersContract.AnthrosMembers.COLUMN_UID,
-                AnthrosMembersContract.AnthrosMembers.COLUMN_UUID,
-                AnthrosMembersContract.AnthrosMembers.COLUMN_FM_UID,
-                AnthrosMembersContract.AnthrosMembers.COLUMN_FORMDATE,
-                AnthrosMembersContract.AnthrosMembers.COLUMN_DEVICEID,
-                AnthrosMembersContract.AnthrosMembers.COLUMN_DEVICETAGID,
-                AnthrosMembersContract.AnthrosMembers.COLUMN_USER,
-                AnthrosMembersContract.AnthrosMembers.COLUMN_APPVERSION,
-                AnthrosMembersContract.AnthrosMembers.COLUMN_ENM_NO,
-                AnthrosMembersContract.AnthrosMembers.COLUMN_HH_NO,
-                AnthrosMembersContract.AnthrosMembers.COLUMN_DOB,
-                AnthrosMembersContract.AnthrosMembers.COLUMN_AGE,
-                AnthrosMembersContract.AnthrosMembers.COLUMN_na204,
-                AnthrosMembersContract.AnthrosMembers.COLUMN_SA3,
-                AnthrosMembersContract.AnthrosMembers.COLUMN_ISTATUS,
-                AnthrosMembersContract.AnthrosMembers.COLUMN_ISTATUS88x,
-                AnthrosMembersContract.AnthrosMembers.COLUMN_SYNCED,
-                AnthrosMembersContract.AnthrosMembers.COLUMN_SYNCEDDATE,
-                AnthrosMembersContract.AnthrosMembers.COLUMN_END_TIME,
+                AnthrosMembers.COLUMN__ID,
+                AnthrosMembers.COLUMN_UID,
+                AnthrosMembers.COLUMN_UUID,
+                AnthrosMembers.COLUMN_FM_UID,
+                AnthrosMembers.COLUMN_FORMDATE,
+                AnthrosMembers.COLUMN_DEVICEID,
+                AnthrosMembers.COLUMN_DEVICETAGID,
+                AnthrosMembers.COLUMN_USER,
+                AnthrosMembers.COLUMN_APPVERSION,
+                AnthrosMembers.COLUMN_ENM_NO,
+                AnthrosMembers.COLUMN_HH_NO,
+                AnthrosMembers.COLUMN_DOB,
+                AnthrosMembers.COLUMN_AGE,
+                AnthrosMembers.COLUMN_na204,
+                AnthrosMembers.COLUMN_SA3,
+                AnthrosMembers.COLUMN_ISTATUS,
+                AnthrosMembers.COLUMN_ISTATUS88x,
+                AnthrosMembers.COLUMN_SYNCED,
+                AnthrosMembers.COLUMN_SYNCEDDATE,
+                AnthrosMembers.COLUMN_END_TIME,
 
         };
-        String whereClause = AnthrosMembersContract.AnthrosMembers.COLUMN_SYNCED + " is null OR " + AnthrosMembersContract.AnthrosMembers.COLUMN_SYNCED + " = '' ";
+        String whereClause = AnthrosMembers.COLUMN_SYNCED + " is null OR " + AnthrosMembers.COLUMN_SYNCED + " = '' ";
         String[] whereArgs = null;
         String groupBy = null;
         String having = null;
 
         String orderBy =
-                AnthrosMembersContract.AnthrosMembers.COLUMN__ID + " ASC";
+                AnthrosMembers.COLUMN__ID + " ASC";
 
         Collection<AnthrosMembersContract> allFC = new ArrayList<AnthrosMembersContract>();
         try {
             c = db.query(
-                    AnthrosMembersContract.AnthrosMembers.TABLE_NAME,  // The table to query
+                    AnthrosMembers.TABLE_NAME,  // The table to query
                     columns,                   // The columns to return
                     whereClause,               // The columns for the WHERE clause
                     whereArgs,                 // The values for the WHERE clause
@@ -5740,15 +5791,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 // New value for one column
         ContentValues values = new ContentValues();
-        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_ISTATUS, MainApp.emc.getIstatus());
+        values.put(AnthrosMembers.COLUMN_ISTATUS, MainApp.emc.getIstatus());
         //values.put(AnthrosMembers.COLUMN_ISTATUS88x, MainApp.emc.getIstatus88x());
-        values.put(AnthrosMembersContract.AnthrosMembers.COLUMN_END_TIME, MainApp.emc.getEnd_time());
+        values.put(AnthrosMembers.COLUMN_END_TIME, MainApp.emc.getEnd_time());
 
 // Which row to update, based on the ID
-        String selection = AnthrosMembersContract.AnthrosMembers.COLUMN__ID + " =? ";
+        String selection = AnthrosMembers.COLUMN__ID + " =? ";
         String[] selectionArgs = {String.valueOf(MainApp.emc.get_ID())};
 
-        int count = db.update(AnthrosMembersContract.AnthrosMembers.TABLE_NAME,
+        int count = db.update(AnthrosMembers.TABLE_NAME,
                 values,
                 selection,
                 selectionArgs);

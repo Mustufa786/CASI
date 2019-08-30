@@ -178,6 +178,7 @@ public class MainApp extends Application {
     public static final String WRAD4B = "d4b";
     public static final String WRAD4C = "d4c";
     public static final String WRAD4D = "d4d";
+    public static final String WRAD6 = "d6";
 
 
     public static int monthsBetweenDates(Date startDate, Date endDate) {
