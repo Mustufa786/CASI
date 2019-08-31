@@ -52,11 +52,13 @@ public class SectionD3AActivity extends AppCompatActivity {
                         route = new Intent(this, SectionD3BActivity.class);
                     else
                         route = new Intent(this, SectionD4AActivity.class);
+                    MainApp.isAttitudeCheck = false;
+                    MainApp.dwraSerial_no = 1;
                 } else {
-                    route = new Intent(this, SectionD4AActivity.class);
+                    route = new Intent(this, SectionD3AActivity.class);
+                    MainApp.isAttitudeCheck = true;
                 }
-                MainApp.isAttitudeCheck = false;
-                MainApp.dwraSerial_no = 1;
+
                 finish();
 
                 startActivity(route);
@@ -76,10 +78,12 @@ public class SectionD3AActivity extends AppCompatActivity {
             sB8.put("cid301", bi.cid301a.isChecked() ? "1"
                     : bi.cid301b.isChecked() ? "2"
                     : bi.cid301c.isChecked() ? "3"
+                    : bi.cid30198.isChecked() ? "98"
                     : "0");
             sB8.put("cid302", bi.cid302a.isChecked() ? "1"
                     : bi.cid302b.isChecked() ? "2"
                     : bi.cid302c.isChecked() ? "3"
+                    : bi.cid30298.isChecked() ? "98"
                     : "0");
             sB8.put("cid303", bi.cid303a.isChecked() ? "1"
                     : bi.cid303b.isChecked() ? "2"
