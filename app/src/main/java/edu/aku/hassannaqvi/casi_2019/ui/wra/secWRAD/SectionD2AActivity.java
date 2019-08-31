@@ -69,8 +69,14 @@ public class SectionD2AActivity extends AppCompatActivity {
                     MainApp.isAttitudeCheck = false;
                     MainApp.dwraSerial_no = 1;
                 } else {
-                    route = new Intent(this, SectionD2AActivity.class);
-                    MainApp.isAttitudeCheck = true;
+                    if (bi.cid204.getVisibility() == View.VISIBLE) {
+                        route = new Intent(this, SectionD2AActivity.class);
+                        MainApp.isAttitudeCheck = true;
+                    } else {
+                        route = new Intent(this, SectionD3AActivity.class);
+                        MainApp.isAttitudeCheck = false;
+                        MainApp.dwraSerial_no = 1;
+                    }
                 }
 
                 finish();
