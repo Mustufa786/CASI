@@ -2776,9 +2776,27 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 // Which row to update, based on the ID
         String selection = D4WRATable.COLUMN_ID + " = ?";
-        String[] selectionArgs = {String.valueOf(MainApp.fmc.get_ID())};
+        String[] selectionArgs = {String.valueOf(MainApp.d4WRAc.get_ID())};
 
         int count = db.update(D4WRATable.TABLE_NAME,
+                values,
+                selection,
+                selectionArgs);
+        return count;
+    }
+
+    public int updateD6AdolesID() {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+// New value for one column
+        ContentValues values = new ContentValues();
+        values.put(D6AdolesTable.COLUMN_UID, MainApp.d6Adolesc.get_UID());
+
+// Which row to update, based on the ID
+        String selection = D6AdolesTable.COLUMN_ID + " = ?";
+        String[] selectionArgs = {String.valueOf(MainApp.d6Adolesc.get_ID())};
+
+        int count = db.update(D6AdolesTable.TABLE_NAME,
                 values,
                 selection,
                 selectionArgs);

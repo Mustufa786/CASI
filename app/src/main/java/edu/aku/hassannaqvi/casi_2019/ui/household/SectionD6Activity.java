@@ -79,7 +79,7 @@ public class SectionD6Activity extends AppCompatActivity {
             MainApp.d6Adolesc.set_ID(String.valueOf(updcount));
             MainApp.d6Adolesc.set_UID(
                     (MainApp.d6Adolesc.getDeviceId() + MainApp.d6Adolesc.get_ID()));
-            db.updateDWraID();
+            db.updateD6AdolesID();
             return true;
         } else {
             Toast.makeText(this, "Error in updating DB", Toast.LENGTH_SHORT).show();
