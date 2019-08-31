@@ -151,7 +151,7 @@
                     android:layout_weight="1"
                     android:background="@color/colorPrimary"
                     android:onClick="@{() -> callback.BtnAddMore()}"
-                    android:text="@string/addMember"
+                    android:text="@string/addMore"
                     android:textColor="@color/white" />
 
                 <Button
