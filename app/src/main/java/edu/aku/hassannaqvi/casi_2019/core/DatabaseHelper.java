@@ -526,6 +526,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(SQL_CREATE_SUMMARY);
         db.execSQL(SQL_CREATE_SIGNUP);
         db.execSQL(SQL_CREATE_DWRA);
+        db.execSQL(SQL_CREATE_DADOLES);
 
     }
 
@@ -547,9 +548,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(SQL_DELETE_BLRANDOM);
         db.execSQL(SQL_DELETE_NUTRITION);
         db.execSQL(SQL_DELETE_DECEASED);
-        db.execSQL(SQL_CREATE_NUTRITION);
+        /*db.execSQL(SQL_CREATE_NUTRITION);
         db.execSQL(SQL_CREATE_DWRA);
-        db.execSQL(SQL_SIGNUP_TABLE);
+        db.execSQL(SQL_SIGNUP_TABLE);*/
     }
 
     public void syncEnumBlocks(JSONArray Enumlist) {

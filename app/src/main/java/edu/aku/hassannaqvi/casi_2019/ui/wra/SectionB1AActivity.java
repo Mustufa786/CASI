@@ -330,8 +330,7 @@ public class SectionB1AActivity extends AppCompatActivity implements TextWatcher
                                 if (MainApp.mc.getKishSelectWRA()) {
                                     startActivityForResult(new Intent(this, SectionB6Activity.class)
                                             .putExtra("backPressed", classPassName.equals(SectionB6Activity.class.getName())), 1);
-                                }
-                                if (MainApp.mc.getKishSelectMWRA()) {
+                                } else if (MainApp.mc.getKishSelectMWRA()) {
                                     finish();
                                     if (SectionB1Activity.isCurrentlyPreg)
                                         startActivity(new Intent(this, SectionD2AActivity.class));

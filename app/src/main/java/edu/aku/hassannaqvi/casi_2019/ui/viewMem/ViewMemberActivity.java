@@ -648,9 +648,12 @@ public class ViewMemberActivity extends MenuActivity {
     }
 
     private Intent getAdolesActivity() {
-        int counter = KishGrid.KishGridProcess(Integer.valueOf(MainApp.selectedHead.getSno()), MainApp.adolesUnderAge.size());
-
-        return new Intent(this, SectionD6Activity.class).putExtra("adolescent", MainApp.adolesUnderAge.get(counter - 1));
+        if (MainApp.adolesUnderAge.size() > 0) {
+            int counter = KishGrid.KishGridProcess(Integer.valueOf(MainApp.selectedHead.getSno()), MainApp.adolesUnderAge.size());
+            return new Intent(this, SectionD6Activity.class).putExtra("adolescent", MainApp.adolesUnderAge.get(counter - 1));
+        } else {
+            return new Intent(this, EndingActivity.class).putExtra("complete", false);
+        }
 
     }
 

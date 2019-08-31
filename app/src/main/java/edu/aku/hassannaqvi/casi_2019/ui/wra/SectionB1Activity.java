@@ -252,9 +252,7 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
         bi.ciw207.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                if (checkedId == R.id.ciw207a) {
-                    ClearClass.ClearAllFields(bi.fldGrpciw208, null);
-                }
+                ClearClass.ClearAllFields(bi.fldGrpciw208, null);
             }
         });
 

@@ -36,7 +36,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:background="@color/colorPrimary"
-                    android:text="@string/cih113"
+                    android:text="@string/respName"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/white" />
 
@@ -49,6 +49,14 @@
                     android:gravity="center" />
 
             </LinearLayout>
+
+            <TextView
+                android:id="@+id/adolesName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black_overlay"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
 
             <!--cid601-->
             <TextView
@@ -63,8 +71,7 @@
             <RadioGroup
                 android:id="@+id/cid601"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_height="wrap_content">
 
                 <RadioButton
                     android:id="@+id/cid601a"
@@ -91,7 +98,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="1dp"
                     android:layout_weight="1"
-                    android:text="@string/no" />
+                    android:text="@string/dkn" />
             </RadioGroup>
 
 
@@ -167,8 +174,7 @@
                 <RadioGroup
                     android:id="@+id/cid603"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:layout_height="wrap_content">
 
                     <RadioButton
                         android:id="@+id/cid603a"
@@ -224,8 +230,7 @@
             <RadioGroup
                 android:id="@+id/cid604"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_height="wrap_content">
 
                 <RadioButton
                     android:id="@+id/cid604a"
@@ -252,7 +257,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="1dp"
                     android:layout_weight="1"
-                    android:text="@string/no" />
+                    android:text="@string/dkn" />
             </RadioGroup>
 
 
@@ -276,8 +281,7 @@
                 <RadioGroup
                     android:id="@+id/cid605"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:layout_height="wrap_content">
 
                     <RadioButton
                         android:id="@+id/cid605a"
@@ -329,8 +333,7 @@
                 <RadioGroup
                     android:id="@+id/cid606"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:layout_height="wrap_content">
 
                     <RadioButton
                         android:id="@+id/cid606a"
@@ -394,8 +397,7 @@
             <RadioGroup
                 android:id="@+id/cid607"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_height="wrap_content">
 
                 <RadioButton
                     android:id="@+id/cid607a"
@@ -422,7 +424,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="1dp"
                     android:layout_weight="1"
-                    android:text="@string/no" />
+                    android:text="@string/dkn" />
             </RadioGroup>
 
             <!--cid608-->
@@ -560,7 +562,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="1dp"
                     android:layout_weight="1"
-                    android:text="@string/no" />
+                    android:text="@string/dkn" />
             </RadioGroup>
 
             <!--cid611-->
@@ -576,10 +578,7 @@
             <EditText
                 android:id="@+id/cid611"
                 style="@style/textInput"
-                android:hint="@string/cid611">
-
-                <requestFocus />
-            </EditText>
+                android:hint="@string/cid611" />
 
             <!--cid612-->
             <TextView
@@ -621,7 +620,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="1dp"
                     android:layout_weight="1"
-                    android:text="@string/no" />
+                    android:text="@string/dkn" />
             </RadioGroup>
 
             <!--cid613-->
@@ -637,10 +636,7 @@
             <EditText
                 android:id="@+id/cid613"
                 style="@style/textInput"
-                android:hint="@string/cid613">
-
-                <requestFocus />
-            </EditText>
+                android:hint="@string/cid613" />
 
             <!--cid614-->
             <TextView
@@ -682,7 +678,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="1dp"
                     android:layout_weight="1"
-                    android:text="@string/no" />
+                    android:text="@string/other" />
             </RadioGroup>
 
             <TextView

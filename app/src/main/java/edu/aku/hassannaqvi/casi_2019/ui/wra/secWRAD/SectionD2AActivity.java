@@ -31,6 +31,7 @@ public class SectionD2AActivity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_d2_a);
         bi.setCallback(this);
 
+        this.setTitle(getString(R.string.cid2h));
 
         if (MainApp.isAttitudeCheck) {
             bi.fldGrpAttitudeCheck.setVisibility(View.VISIBLE);

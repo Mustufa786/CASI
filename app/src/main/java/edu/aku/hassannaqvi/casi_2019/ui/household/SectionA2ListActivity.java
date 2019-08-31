@@ -515,14 +515,16 @@ public class SectionA2ListActivity extends AppCompatActivity {
                 if (updcount == 1) MainApp.mwra.get(counter - 1).setKishSelected("1");
                 else return false;
 
-                counter = KishGrid.KishGridProcess(Integer.valueOf(MainApp.selectedHead.getSno()), MainApp.mwraChild.size());
+                if (MainApp.mwraChild.size() > 0) {
+                    counter = KishGrid.KishGridProcess(Integer.valueOf(MainApp.selectedHead.getSno()), MainApp.mwraChild.size());
 
-                updcount = db.updateFamilyMemberKishFlag(MainApp.mwraChild.get(counter - 1).get_UUID(),
-                        MainApp.mwraChild.get(counter - 1).get_UID(),
-                        FamilyMembersContract.familyMembers.COLUMN_KISH_SELECTED_MWRA_D);
+                    updcount = db.updateFamilyMemberKishFlag(MainApp.mwraChild.get(counter - 1).get_UUID(),
+                            MainApp.mwraChild.get(counter - 1).get_UID(),
+                            FamilyMembersContract.familyMembers.COLUMN_KISH_SELECTED_MWRA_D);
 
-                if (updcount == 1) MainApp.mwra.get(counter - 1).setKishMWRASelected("1");
-                else return false;
+                    if (updcount == 1) MainApp.mwra.get(counter - 1).setKishMWRASelected("1");
+                    else return false;
+                }
             }
             return true;
 

@@ -96,6 +96,7 @@
     <string name="cih110"> ٹیم لیڈر کا نام اور نمبر </string>
     <string name="na106"> انٹرویو کی تاریخ اور وقت </string>
     <string name="cih113">  ۔H113 - جواب دہندہ کا نام </string>
+    <string name="respName"> جواب دہندہ کا نام </string>
     <string name="cih111">   انٹرویو کی تاریخ   </string>
     <string name="na107"> جواب دہندہ کا نام </string>
     <string name="nw2info">یہ حصہ ہر اُس خاتون کا بھرا جائے گا جس کی عمر 49-15 سال ہے</string>
@@ -1487,6 +1488,10 @@
 
 
     <!--New Sections-->
+    <string name="cid2h">رفتارها و عادات تغذی (برگرفته شده از FAO)</string>
+    <string name="cid3h">رفتارها و عادات غذایی شیردهی مادر ( 6 – 0 ماهه)</string>
+    <string name="cid4h">رفتارها و عادات تغذیوی غذاهای متمم ( 23 – 6 ماهه)</string>
+    <string name="cid6h">رفتارها و عادات غذای اطفال سنین مکتب و نو بالغی</string>
     <string name="cid201">۔D201- آیا شما عادات غذایی خود را در هنگام شیردهی تغییر می دهید؟ </string>
     <string name="cid201a"> یک </string>
     <string name="cid201b"> دو </string>

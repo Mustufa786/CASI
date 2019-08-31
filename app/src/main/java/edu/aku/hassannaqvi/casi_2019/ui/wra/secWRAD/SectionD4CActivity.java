@@ -29,7 +29,7 @@ public class SectionD4CActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_d4_c);
         bi.setCallback(this);
-
+        this.setTitle(getString(R.string.cid4h));
         MainApp.dWraType = getIntent().getStringExtra("fType");
 
         if (!MainApp.isAttitudeCheck) {

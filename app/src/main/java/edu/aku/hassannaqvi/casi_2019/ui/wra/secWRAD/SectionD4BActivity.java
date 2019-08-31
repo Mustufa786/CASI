@@ -31,7 +31,7 @@ public class SectionD4BActivity extends AppCompatActivity {
 
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_d4_b);
         bi.setCallback(this);
-
+        this.setTitle(getString(R.string.cid4h));
         MainApp.dWraType = getIntent().getStringExtra("fType");
 
         if (!MainApp.isAttitudeCheck) {

@@ -35,6 +35,7 @@ public class SectionD6Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_d6);
         bi.setCallback(this);
+        this.setTitle(getString(R.string.cid6h));
 
         fmc = (FamilyMembersContract) getIntent().getSerializableExtra("adolescent");
 
@@ -42,7 +43,7 @@ public class SectionD6Activity extends AppCompatActivity {
         respName.add("....");
         respMap = new HashMap<>();
 
-        if (fmc.getAgeInYear().equals("15")) {
+        if (Integer.valueOf(fmc.getAgeInYear()) < 15) {
             bi.fldGrpresp.setVisibility(View.VISIBLE);
 
             for (FamilyMembersContract fmc : MainApp.respList) {
@@ -53,6 +54,8 @@ public class SectionD6Activity extends AppCompatActivity {
             bi.resp.setAdapter(new ArrayAdapter<>(this, R.layout.item_style, respName));
 
         }
+
+        bi.adolesName.setText(fmc.getName().toUpperCase());
 
     }
 
@@ -101,47 +104,49 @@ public class SectionD6Activity extends AppCompatActivity {
 
         JSONObject sD6 = new JSONObject();
 
-        sD6.put("respName", bi.resp.getSelectedItem().toString());
-        sD6.put("resp_lno", respMap.get(bi.resp.getSelectedItem().toString()).getSerialNo());
-        sD6.put("resp_uid", respMap.get(bi.resp.getSelectedItem().toString()).get_UID());
+        if (Integer.valueOf(fmc.getAgeInYear()) < 15) {
+            sD6.put("respName", bi.resp.getSelectedItem().toString());
+            sD6.put("resp_lno", respMap.get(bi.resp.getSelectedItem().toString()).getSerialNo());
+            sD6.put("resp_uid", respMap.get(bi.resp.getSelectedItem().toString()).get_UID());
+        }
 
         sD6.put("cid601", bi.cid601a.isChecked() ? "1"
                 : bi.cid601b.isChecked() ? "2"
-                : bi.cid601c.isChecked() ? "3"
+                : bi.cid601c.isChecked() ? "98"
                 : "0");
         sD6.put("cid602", bi.cid602a.isChecked() ? "1"
                 : bi.cid602b.isChecked() ? "2"
                 : bi.cid602c.isChecked() ? "3"
-                : bi.cid602d.isChecked() ? "4"
+                : bi.cid602d.isChecked() ? "98"
                 : "0");
         sD6.put("cid603", bi.cid603a.isChecked() ? "1"
                 : bi.cid603b.isChecked() ? "2"
                 : bi.cid603c.isChecked() ? "3"
-                : bi.cid603d.isChecked() ? "4"
+                : bi.cid603d.isChecked() ? "98"
                 : "0");
         sD6.put("cid604", bi.cid604a.isChecked() ? "1"
                 : bi.cid604b.isChecked() ? "2"
-                : bi.cid604c.isChecked() ? "3"
+                : bi.cid604c.isChecked() ? "98"
                 : "0");
         sD6.put("cid605", bi.cid605a.isChecked() ? "1"
                 : bi.cid605b.isChecked() ? "2"
                 : bi.cid605c.isChecked() ? "3"
-                : bi.cid605d.isChecked() ? "4"
+                : bi.cid605d.isChecked() ? "98"
                 : "0");
         sD6.put("cid606", bi.cid606a.isChecked() ? "1"
                 : bi.cid606b.isChecked() ? "2"
                 : bi.cid606c.isChecked() ? "3"
                 : bi.cid606d.isChecked() ? "4"
-                : bi.cid606e.isChecked() ? "5"
+                : bi.cid606e.isChecked() ? "98"
                 : "0");
         sD6.put("cid607", bi.cid607a.isChecked() ? "1"
                 : bi.cid607b.isChecked() ? "2"
-                : bi.cid607c.isChecked() ? "3"
+                : bi.cid607c.isChecked() ? "98"
                 : "0");
         sD6.put("cid608", bi.cid608a.isChecked() ? "1"
                 : bi.cid608b.isChecked() ? "2"
                 : bi.cid608c.isChecked() ? "3"
-                : bi.cid608d.isChecked() ? "4"
+                : bi.cid608d.isChecked() ? "98"
                 : "0");
         sD6.put("cid609", bi.cid609a.isChecked() ? "1"
                 : bi.cid609b.isChecked() ? "2"
@@ -149,17 +154,17 @@ public class SectionD6Activity extends AppCompatActivity {
                 : "0");
         sD6.put("cid610", bi.cid610a.isChecked() ? "1"
                 : bi.cid610b.isChecked() ? "2"
-                : bi.cid610c.isChecked() ? "3"
+                : bi.cid610c.isChecked() ? "98"
                 : "0");
         sD6.put("cid611", bi.cid611.getText().toString());
         sD6.put("cid612", bi.cid612a.isChecked() ? "1"
                 : bi.cid612b.isChecked() ? "2"
-                : bi.cid612c.isChecked() ? "3"
+                : bi.cid612c.isChecked() ? "98"
                 : "0");
         sD6.put("cid613", bi.cid613.getText().toString());
         sD6.put("cid614", bi.cid614a.isChecked() ? "1"
                 : bi.cid614b.isChecked() ? "2"
-                : bi.cid614c.isChecked() ? "3"
+                : bi.cid614c.isChecked() ? "96"
                 : "0");
         sD6.put("cid615", bi.cid615a.isChecked() ? "1"
                 : bi.cid615b.isChecked() ? "2"
@@ -183,7 +188,20 @@ public class SectionD6Activity extends AppCompatActivity {
     }
 
     public void BtnEnd() {
-        MainApp.endActivityMother(this, this, false);
+        if (Integer.valueOf(fmc.getAgeInYear()) < 15) {
+            if (!ValidatorClass.EmptySpinner(this, bi.resp, getString(R.string.respName)))
+                return;
+        }
+
+        try {
+            SaveDraft();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        if (UpdateDB()) {
+            startActivity(new Intent(this, EndingActivity.class).putExtra("complete", false));
+        }
+
     }
 
     private boolean formValidation() {

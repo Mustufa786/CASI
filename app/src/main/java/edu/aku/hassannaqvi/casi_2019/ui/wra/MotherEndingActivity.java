@@ -1,7 +1,5 @@
 package edu.aku.hassannaqvi.casi_2019.ui.wra;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
@@ -137,7 +135,7 @@ public class MotherEndingActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
+        /*AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
                 MotherEndingActivity.this);
         alertDialogBuilder
                 .setMessage("Are you sure to go BACK??")
@@ -156,7 +154,10 @@ public class MotherEndingActivity extends AppCompatActivity {
                     }
                 });
         AlertDialog alert = alertDialogBuilder.create();
-        alert.show();
+        alert.show();*/
+
+        Toast.makeText(getApplicationContext(), "You Can't go back", Toast.LENGTH_LONG).show();
+
     }
 
 

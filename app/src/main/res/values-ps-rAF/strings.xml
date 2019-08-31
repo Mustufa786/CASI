@@ -97,6 +97,7 @@
     <string name="cih110"> نام رهبر تیم و شماره </string>
     <string name="na106"> تاریخ و زمان مصاحبه </string>
     <string name="cih113">  ۔H113 -نام جواب دهنده </string>
+    <string name="respName"> نام جواب دهنده </string>
     <string name="cih111"> تاریخ مصاحبه   </string>
     <string name="na107"> نام جواب دهنده </string>
     <string name="nw2info">این بخش با هر زن 49 تا 15 ساله پر خواهد شد</string>
@@ -1485,6 +1486,10 @@
 
 
     <!--New Sections-->
+    <string name="cid2h">رفتارها و عادات تغذی (برگرفته شده از FAO)</string>
+    <string name="cid3h">رفتارها و عادات غذایی شیردهی مادر ( 6 – 0 ماهه)</string>
+    <string name="cid4h">رفتارها و عادات تغذیوی غذاهای متمم ( 23 – 6 ماهه)</string>
+    <string name="cid6h">رفتارها و عادات غذای اطفال سنین مکتب و نو بالغی</string>
     <string name="cid201"> ۔D201- آیا شما عادات غذایی خود را در هنگام شیردهی تغییر می دهید؟</string>
     <string name="cid201a"> یک </string>
     <string name="cid201b"> دو </string>

@@ -590,14 +590,16 @@ public class SectionC3Activity extends Menu2Activity implements RadioGroup.OnChe
     public void onBackPressed() {
         //  Toast.makeText(this, "You can't go back.", Toast.LENGTH_SHORT).show();
 
-        try {
+       /* try {
             SaveDraft();
             UpdateDB();
         } catch (JSONException e) {
             e.printStackTrace();
         }
 
-        super.onBackPressed();
+        super.onBackPressed();*/
+
+        Toast.makeText(getApplicationContext(), "You Can't go back", Toast.LENGTH_LONG).show();
     }
 
     private void SaveDraft() throws JSONException {

@@ -28,6 +28,8 @@ public class SectionD2BActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_d2_b);
         bi.setCallback(this);
+
+        this.setTitle(getString(R.string.cid2h));
     }
 
     public void BtnContinue() {
