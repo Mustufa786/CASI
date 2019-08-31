@@ -34,10 +34,10 @@ public class SectionD2AActivity extends AppCompatActivity {
 
         if (MainApp.isAttitudeCheck) {
             bi.fldGrpAttitudeCheck.setVisibility(View.VISIBLE);
-            bi.fldGrpSectionD2A.setVisibility(View.GONE);
+            bi.fldGrpCheck.setVisibility(View.GONE);
         } else {
             bi.fldGrpAttitudeCheck.setVisibility(View.GONE);
-            bi.fldGrpSectionD2A.setVisibility(View.VISIBLE);
+            bi.fldGrpCheck.setVisibility(View.VISIBLE);
 
         }
 

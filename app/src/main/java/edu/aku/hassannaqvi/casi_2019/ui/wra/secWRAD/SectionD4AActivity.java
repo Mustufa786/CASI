@@ -77,7 +77,7 @@ public class SectionD4AActivity extends AppCompatActivity {
             try {
                 SaveDraft();
             } catch (JSONException e) {
-                e.printStackTrace();
+//                e.printStackTrace();
             }
         }
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(

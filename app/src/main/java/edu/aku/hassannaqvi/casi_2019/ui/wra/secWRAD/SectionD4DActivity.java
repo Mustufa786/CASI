@@ -41,7 +41,6 @@ public class SectionD4DActivity extends AppCompatActivity {
         bi.cid407.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-
                 if (checkedId == bi.cid407a.getId()) {
                     bi.fldGrpCheck.setVisibility(View.VISIBLE);
                     bi.btnAddMore.setVisibility(View.VISIBLE);
