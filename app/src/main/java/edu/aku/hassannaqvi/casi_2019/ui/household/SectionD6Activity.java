@@ -4,10 +4,16 @@ import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 import edu.aku.hassannaqvi.casi_2019.R;
 import edu.aku.hassannaqvi.casi_2019.contracts.D6AdolesContract;
@@ -15,13 +21,14 @@ import edu.aku.hassannaqvi.casi_2019.contracts.FamilyMembersContract;
 import edu.aku.hassannaqvi.casi_2019.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2019.core.MainApp;
 import edu.aku.hassannaqvi.casi_2019.databinding.ActivitySectionD6Binding;
-import edu.aku.hassannaqvi.casi_2019.ui.labs.SectionE1Activity;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
 public class SectionD6Activity extends AppCompatActivity {
 
     ActivitySectionD6Binding bi;
     FamilyMembersContract fmc;
+    Map<String, FamilyMembersContract> respMap;
+    ArrayList<String> respName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +37,23 @@ public class SectionD6Activity extends AppCompatActivity {
         bi.setCallback(this);
 
         fmc = (FamilyMembersContract) getIntent().getSerializableExtra("adolescent");
+
+        respName = new ArrayList<>();
+        respName.add("....");
+        respMap = new HashMap<>();
+
+        if (fmc.getAgeInYear().equals("15")) {
+            bi.fldGrpresp.setVisibility(View.VISIBLE);
+
+            for (FamilyMembersContract fmc : MainApp.respList) {
+                respName.add(fmc.getName() + "-" + fmc.getSerialNo());
+                respMap.put(fmc.getName() + "-" + fmc.getSerialNo(), fmc);
+            }
+
+            bi.resp.setAdapter(new ArrayAdapter<>(this, R.layout.item_style, respName));
+
+        }
+
     }
 
     public void BtnContinue() {
@@ -41,7 +65,7 @@ public class SectionD6Activity extends AppCompatActivity {
             }
             if (UpdateDB()) {
                 finish();
-                startActivity(new Intent(this, SectionE1Activity.class));
+                startActivity(new Intent(this, EndingActivity.class).putExtra("complete", true));
             }
         }
 
@@ -76,6 +100,11 @@ public class SectionD6Activity extends AppCompatActivity {
         MainApp.d6Adolesc.setFmSerialNo(fmc.getSerialNo());
 
         JSONObject sD6 = new JSONObject();
+
+        sD6.put("respName", bi.resp.getSelectedItem().toString());
+        sD6.put("resp_lno", respMap.get(bi.resp.getSelectedItem().toString()).getSerialNo());
+        sD6.put("resp_uid", respMap.get(bi.resp.getSelectedItem().toString()).get_UID());
+
         sD6.put("cid601", bi.cid601a.isChecked() ? "1"
                 : bi.cid601b.isChecked() ? "2"
                 : bi.cid601c.isChecked() ? "3"

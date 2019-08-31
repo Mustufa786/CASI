@@ -37,9 +37,11 @@ import edu.aku.hassannaqvi.casi_2019.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2019.core.MainApp;
 import edu.aku.hassannaqvi.casi_2019.databinding.ActivityViewMemberBinding;
 import edu.aku.hassannaqvi.casi_2019.other.JSONUtilClass;
+import edu.aku.hassannaqvi.casi_2019.other.KishGrid;
 import edu.aku.hassannaqvi.casi_2019.ui.childs.SectionC1Activity;
 import edu.aku.hassannaqvi.casi_2019.ui.household.EndingActivity;
 import edu.aku.hassannaqvi.casi_2019.ui.household.SectionA1Activity;
+import edu.aku.hassannaqvi.casi_2019.ui.household.SectionD6Activity;
 import edu.aku.hassannaqvi.casi_2019.ui.mainUI.MainActivity;
 import edu.aku.hassannaqvi.casi_2019.ui.mainUI.MenuActivity;
 import edu.aku.hassannaqvi.casi_2019.ui.wra.SectionB1Activity;
@@ -433,7 +435,7 @@ public class ViewMemberActivity extends MenuActivity {
 
                                             break;
                                         } else {
-                                            GetIntent = new Intent(this, EndingActivity.class).putExtra("complete", true);
+                                            GetIntent = getAdolesActivity();
 
                                             break;
                                         }
@@ -447,10 +449,10 @@ public class ViewMemberActivity extends MenuActivity {
 
 
                     } else {
-                        GetIntent = new Intent(this, EndingActivity.class).putExtra("complete", true);
+                        GetIntent = getAdolesActivity();
                     }
                 } else {
-                    GetIntent = new Intent(this, EndingActivity.class).putExtra("complete", true);
+                    GetIntent = getAdolesActivity();
                 }
                 break;
 
@@ -488,7 +490,7 @@ public class ViewMemberActivity extends MenuActivity {
 
                                                     break;
                                                 } else {
-                                                    GetIntent = new Intent(this, EndingActivity.class).putExtra("complete", true);
+                                                    GetIntent = getAdolesActivity();
 
                                                     break;
                                                 }
@@ -501,7 +503,7 @@ public class ViewMemberActivity extends MenuActivity {
                                 }
 
                             } else {
-                                GetIntent = new Intent(this, EndingActivity.class).putExtra("complete", true);
+                                GetIntent = getAdolesActivity();
                             }
                         } else {
 
@@ -571,7 +573,7 @@ public class ViewMemberActivity extends MenuActivity {
                                                 GetIntent = new Intent(this, SectionC1Activity.class);
                                                 break;
                                             } else {
-                                                GetIntent = new Intent(this, EndingActivity.class).putExtra("complete", true);
+                                                GetIntent = getAdolesActivity();
                                                 break;
                                             }
                                         }
@@ -584,7 +586,7 @@ public class ViewMemberActivity extends MenuActivity {
 
 
                         } else {
-                            GetIntent = new Intent(this, EndingActivity.class).putExtra("complete", true);
+                            GetIntent = getAdolesActivity();
                         }
                     } else {
                         GetIntent = new Intent(this, SectionB1Activity.class)
@@ -599,7 +601,7 @@ public class ViewMemberActivity extends MenuActivity {
                     SectionC1Activity.counterPerMom = 0;
                     SectionC1Activity.counterPerNA = 0;
 
-                    GetIntent = new Intent(this, EndingActivity.class).putExtra("complete", true);
+                    GetIntent = getAdolesActivity();
                 } else {
                     GetIntent = new Intent(this, SectionB1Activity.class)
                             .putExtra("mwraFlag", true)
@@ -624,10 +626,10 @@ public class ViewMemberActivity extends MenuActivity {
                             GetIntent = new Intent(this, SectionC1Activity.class)
                                     .putExtra("reBackComing", false);
                         } else {
-                            GetIntent = new Intent(this, EndingActivity.class).putExtra("complete", true);
+                            GetIntent = getAdolesActivity();
                         }
                     } else {
-                        GetIntent = new Intent(this, EndingActivity.class).putExtra("complete", true);
+                        GetIntent = getAdolesActivity();
                     }
                 } else {
                     SectionC1Activity.isNA = false;
@@ -636,12 +638,19 @@ public class ViewMemberActivity extends MenuActivity {
                 }
                 break;
             default:
-                GetIntent = new Intent(this, EndingActivity.class).putExtra("complete", true);
+                GetIntent = getAdolesActivity();
                 break;
         }
 
         finish();
         startActivity(GetIntent);
+
+    }
+
+    private Intent getAdolesActivity() {
+        int counter = KishGrid.KishGridProcess(Integer.valueOf(MainApp.selectedHead.getSno()), MainApp.adolesUnderAge.size());
+
+        return new Intent(this, SectionD6Activity.class).putExtra("adolescent", MainApp.adolesUnderAge.get(counter - 1));
 
     }
 
