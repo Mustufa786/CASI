@@ -66,11 +66,13 @@ public class SectionD2AActivity extends AppCompatActivity {
                         route = new Intent(this, SectionD2BActivity.class);
                     else
                         route = new Intent(this, SectionD3AActivity.class);
+                    MainApp.isAttitudeCheck = false;
+                    MainApp.dwraSerial_no = 1;
                 } else {
-                    route = new Intent(this, SectionD3AActivity.class);
+                    route = new Intent(this, SectionD2AActivity.class);
+                    MainApp.isAttitudeCheck = true;
                 }
-                MainApp.isAttitudeCheck = false;
-                MainApp.dwraSerial_no = 1;
+
                 finish();
                 startActivity(route);
 
