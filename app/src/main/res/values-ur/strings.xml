@@ -1510,8 +1510,8 @@
 
     <string name="cid20502">۔D205b- کدام غذاها، معایات یا دیگر (دارو خانگی، گیاهی، یا ادویه)؟ لطفاً لیست کنید؟ </string>
 
-    <string name="cid20503a"> 1=امتناع می ورزد D205c </string>
-    <string name="cid20503b"> 2 = مصرف می نمود D205c </string>
+    <string name="cid20503a"> 1=امتناع می ورزد  </string>
+    <string name="cid20503b"> 2= مصرف می نمود  </string>
 
 
     <string name="cid20504">۔D205d- چرا امتناع می ورزید؟  </string>
@@ -1560,8 +1560,8 @@
 
     <string name="cid30402">۔D304b- کدام غذاها، معایات یا دیگر (دارو خانگی، گیاهی، یا ادویه)؟ لطفاً لیست کنید  </string>
 
-    <string name="cid30403a"> =1 امتناع می ورزید D304 </string>
-    <string name="cid30403b"> 2 = مصرف می نمود D304 </string>
+    <string name="cid30403a"> 1= امتناع می ورزید </string>
+    <string name="cid30403b"> 2= مصرف می نمود  </string>
 
     <string name="cid30404">۔D304d- چرا امتناع می ورزید؟ </string>
     <string name="cid30404a"> دلبدی/استفراغ </string>
