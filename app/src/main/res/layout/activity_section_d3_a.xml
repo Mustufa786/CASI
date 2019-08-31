@@ -67,6 +67,13 @@
                         android:layout_weight="1"
                         android:text="@string/cid301c" />
 
+                    <RadioButton
+                        android:id="@+id/cid30198"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/dkn" />
+
                 </RadioGroup>
                 <!--            cid302-->
                 <LinearLayout
@@ -111,6 +118,13 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="@string/cid302c" />
+
+                        <RadioButton
+                            android:id="@+id/cid30298"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/dkn" />
 
                     </RadioGroup>
                 </LinearLayout>

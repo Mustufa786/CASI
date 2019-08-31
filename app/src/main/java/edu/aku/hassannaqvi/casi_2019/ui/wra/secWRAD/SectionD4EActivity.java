@@ -122,6 +122,16 @@ public class SectionD4EActivity extends AppCompatActivity {
                 : bi.cid415b.isChecked() ? "2"
                 : bi.cid415c.isChecked() ? "3"
                 : "0");
+        sB13.put("cid501", bi.cid501a.isChecked() ? "1"
+                : bi.cid501b.isChecked() ? "2"
+                : bi.cid50198.isChecked() ? "98"
+                : "0");
+        sB13.put("cid502", bi.cid502a.isChecked() ? "1"
+                : bi.cid502b.isChecked() ? "2"
+                : bi.cid50296.isChecked() ? "96"
+                : bi.cid50298.isChecked() ? "98"
+                : "0");
+        sB13.put("cid50296x", bi.cid50296x.getText().toString());
 
         MainApp.d4WRAc.setsD1(String.valueOf(sB13));
 

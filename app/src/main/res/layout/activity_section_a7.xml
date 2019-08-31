@@ -176,7 +176,6 @@
                     android:id="@+id/cih70203"
                     style="@style/textInput"
                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
-                    android:spinnerMode="dialog"
                     android:visibility='@{cih702a.checked? View.VISIBLE : View.GONE}' />
 
                 <!--====cih703===-->
@@ -253,7 +252,6 @@
                     android:id="@+id/cih70303"
                     style="@style/textInput"
                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
-                    android:spinnerMode="dialog"
                     android:visibility='@{cih703a.checked? View.VISIBLE : View.GONE}' />
 
 
@@ -331,7 +329,6 @@
                     android:id="@+id/cih70403"
                     style="@style/textInput"
                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
-                    android:spinnerMode="dialog"
                     android:visibility='@{cih704a.checked? View.VISIBLE : View.GONE}' />
 
                 <!--====cih705===-->
