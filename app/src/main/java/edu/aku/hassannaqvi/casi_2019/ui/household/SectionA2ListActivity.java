@@ -386,18 +386,19 @@ public class SectionA2ListActivity extends AppCompatActivity {
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-            if (UpdateDB()) {
 
 
-                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
-                        SectionA2ListActivity.this);
-                alertDialogBuilder
-                        .setMessage("Are you sure to continue for next section?")
-                        .setCancelable(false)
-                        .setPositiveButton("Ok",
-                                new DialogInterface.OnClickListener() {
-                                    public void onClick(DialogInterface dialog,
-                                                        int id) {
+            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
+                    SectionA2ListActivity.this);
+            alertDialogBuilder
+                    .setMessage("Are you sure to continue for next section?")
+                    .setCancelable(false)
+                    .setPositiveButton("Ok",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog,
+                                                    int id) {
+
+                                    if (UpdateDB()) {
 
                                         if (SectionA1Activity.reBackFlag) {
                                             if (!MainApp.IsHead && !SectionA1Activity.editFormFlag) {
@@ -414,20 +415,20 @@ public class SectionA2ListActivity extends AppCompatActivity {
                                             startActivity(new Intent(SectionA2ListActivity.this, ViewMemberActivity.class).putExtra("activity", 6));
                                         }
 
+                                    } else {
+                                        Toast.makeText(SectionA2ListActivity.this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
                                     }
-                                });
-                alertDialogBuilder.setNegativeButton("Cancel",
-                        new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int id) {
-                                dialog.cancel();
-                            }
-                        });
-                AlertDialog alert = alertDialogBuilder.create();
-                alert.show();
+                                }
+                            });
+            alertDialogBuilder.setNegativeButton("Cancel",
+                    new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            dialog.cancel();
+                        }
+                    });
+            AlertDialog alert = alertDialogBuilder.create();
+            alert.show();
 
-            } else {
-                Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
-            }
         }
     }
 
@@ -513,6 +514,8 @@ public class SectionA2ListActivity extends AppCompatActivity {
 
                 if (updcount == 1) MainApp.mwra.get(counter - 1).setKishSelected("1");
                 else return false;
+
+                counter = KishGrid.KishGridProcess(Integer.valueOf(MainApp.selectedHead.getSno()), MainApp.mwraChild.size());
 
                 updcount = db.updateFamilyMemberKishFlag(MainApp.mwraChild.get(counter - 1).get_UUID(),
                         MainApp.mwraChild.get(counter - 1).get_UID(),
