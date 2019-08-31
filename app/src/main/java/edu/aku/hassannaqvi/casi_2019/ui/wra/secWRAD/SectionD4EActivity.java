@@ -14,6 +14,9 @@ import edu.aku.hassannaqvi.casi_2019.contracts.D4WRAContract;
 import edu.aku.hassannaqvi.casi_2019.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2019.core.MainApp;
 import edu.aku.hassannaqvi.casi_2019.databinding.ActivitySectionD4EBinding;
+import edu.aku.hassannaqvi.casi_2019.ui.viewMem.ViewMemberActivity;
+import edu.aku.hassannaqvi.casi_2019.ui.wra.MotherEndingActivity;
+import edu.aku.hassannaqvi.casi_2019.ui.wra.SectionB1Activity;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
 public class SectionD4EActivity extends AppCompatActivity {
@@ -36,9 +39,19 @@ public class SectionD4EActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
             if (UpdateDB()) {
-                finish();
-                startActivity(new Intent(this, SectionD4DActivity.class)
-                        .putExtra("fType", "d4d"));
+                if (SectionB1Activity.editWRAFlag) {
+                    finish();
+                    startActivity(new Intent(this, ViewMemberActivity.class)
+                            .putExtra("flagEdit", false)
+                            .putExtra("comingBack", true)
+                            .putExtra("cluster", MainApp.mc.getCluster())
+                            .putExtra("hhno", MainApp.mc.getHhno())
+                    );
+                } else {
+                    startActivity(new Intent(this, MotherEndingActivity.class)
+                            .putExtra("checkingFlag", true)
+                            .putExtra("complete", true));
+                }
 
             }
         }
