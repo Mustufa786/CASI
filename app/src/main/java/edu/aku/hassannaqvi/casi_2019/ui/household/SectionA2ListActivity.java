@@ -408,8 +408,8 @@ public class SectionA2ListActivity extends AppCompatActivity {
                                             } else {
                                                 finish();
                                                 respLineNo = "";
-//                                                startActivity(new Intent(SectionA2ListActivity.this, SectionA4Activity.class));
-                                                startActivity(new Intent(SectionA2ListActivity.this, ViewMemberActivity.class).putExtra("activity", 3));
+                                                startActivity(new Intent(SectionA2ListActivity.this, SectionA4Activity.class));
+//                                                startActivity(new Intent(SectionA2ListActivity.this, ViewMemberActivity.class).putExtra("activity", 3));
                                             }
                                         } else {
                                             startActivity(new Intent(SectionA2ListActivity.this, ViewMemberActivity.class).putExtra("activity", 6));
