@@ -32,6 +32,8 @@ import edu.aku.hassannaqvi.casi_2019.other.DateUtils;
 import edu.aku.hassannaqvi.casi_2019.other.JSONUtilClass;
 import edu.aku.hassannaqvi.casi_2019.ui.household.SectionA2Activity;
 import edu.aku.hassannaqvi.casi_2019.ui.viewMem.ViewMemberActivity;
+import edu.aku.hassannaqvi.casi_2019.ui.wra.secWRAD.SectionD2AActivity;
+import edu.aku.hassannaqvi.casi_2019.ui.wra.secWRAD.SectionD3AActivity;
 import edu.aku.hassannaqvi.casi_2019.validation.ClearClass;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
@@ -328,6 +330,13 @@ public class SectionB1AActivity extends AppCompatActivity implements TextWatcher
                                 if (MainApp.mc.getKishSelectWRA()) {
                                     startActivityForResult(new Intent(this, SectionB6Activity.class)
                                             .putExtra("backPressed", classPassName.equals(SectionB6Activity.class.getName())), 1);
+                                }
+                                if (MainApp.mc.getKishSelectMWRA()) {
+                                    finish();
+                                    if (SectionB1Activity.isCurrentlyPreg)
+                                        startActivity(new Intent(this, SectionD2AActivity.class));
+                                    else
+                                        startActivity(new Intent(this, SectionD3AActivity.class));
                                 } else {
                                     startActivity(new Intent(this, MotherEndingActivity.class)
                                             .putExtra("complete", true));
