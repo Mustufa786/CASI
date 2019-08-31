@@ -5,6 +5,7 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import org.json.JSONException;
@@ -15,6 +16,7 @@ import edu.aku.hassannaqvi.casi_2019.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2019.core.MainApp;
 import edu.aku.hassannaqvi.casi_2019.databinding.ActivitySectionD2ABinding;
 import edu.aku.hassannaqvi.casi_2019.other.JsonUtils;
+import edu.aku.hassannaqvi.casi_2019.validation.ClearClass;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
 public class SectionD2AActivity extends AppCompatActivity {
@@ -36,8 +38,17 @@ public class SectionD2AActivity extends AppCompatActivity {
         } else {
             bi.fldGrpAttitudeCheck.setVisibility(View.GONE);
             bi.fldGrpSectionD2A.setVisibility(View.VISIBLE);
+
         }
 
+        bi.cid202.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                if (checkedId != bi.cid202a.getId()) {
+                    ClearClass.ClearAllFields(bi.fldGrpcid203, null);
+                }
+            }
+        });
 
     }
 
@@ -50,10 +61,14 @@ public class SectionD2AActivity extends AppCompatActivity {
             }
             if (UpdateDB()) {
                 Intent route;
-                if (!MainApp.isAttitudeCheck)
-                    route = new Intent(this, SectionD2BActivity.class);
-                else
-                    route = new Intent(this, SectionD3AActivity.class);
+                if (bi.cid204a.isChecked()) {
+                    if (!MainApp.isAttitudeCheck)
+                        route = new Intent(this, SectionD2BActivity.class);
+                    else
+                        route = new Intent(this, SectionD3AActivity.class);
+                } else {
+                    route = new Intent(this, SectionD3BActivity.class);
+                }
                 MainApp.isAttitudeCheck = false;
                 MainApp.dwraSerial_no = 1;
                 finish();

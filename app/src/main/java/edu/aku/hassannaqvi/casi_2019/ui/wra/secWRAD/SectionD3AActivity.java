@@ -47,10 +47,14 @@ public class SectionD3AActivity extends AppCompatActivity {
             }
             if (UpdateDB()) {
                 Intent route;
-                if (!MainApp.isAttitudeCheck)
-                    route = new Intent(this, SectionD3BActivity.class);
-                else
+                if (bi.cid303a.isChecked()) {
+                    if (!MainApp.isAttitudeCheck)
+                        route = new Intent(this, SectionD3BActivity.class);
+                    else
+                        route = new Intent(this, SectionD4AActivity.class);
+                } else {
                     route = new Intent(this, SectionD4AActivity.class);
+                }
                 MainApp.isAttitudeCheck = false;
                 MainApp.dwraSerial_no = 1;
                 finish();

@@ -46,11 +46,10 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
         public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
             if (isoneYes()) {
                 if (!binding.ciw412a.isChecked()) {
-                    ClearClass.ClearAllFields(binding.fldGrpciw413, false);
+                    ClearClass.ClearAllFields(binding.fldGrpciw413, null);
                     binding.fldGrpciw413.setVisibility(View.GONE);
                 }
             } else {
-                ClearClass.ClearAllFields(binding.fldGrpciw413, true);
                 binding.fldGrpciw413.setVisibility(View.VISIBLE);
             }
         }
