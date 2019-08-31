@@ -93,10 +93,12 @@ public class SectionD2AActivity extends AppCompatActivity {
             sB7.put("cid202", bi.cid202a.isChecked() ? "1"
                     : bi.cid202b.isChecked() ? "2"
                     : bi.cid202c.isChecked() ? "3"
+                    : bi.cid20298.isChecked() ? "98"
                     : "0");
             sB7.put("cid203", bi.cid203a.isChecked() ? "1"
                     : bi.cid203b.isChecked() ? "2"
                     : bi.cid203c.isChecked() ? "3"
+                    : bi.cid20398.isChecked() ? "98"
                     : "0");
             sB7.put("cid204", bi.cid204a.isChecked() ? "1"
                     : bi.cid204b.isChecked() ? "2"

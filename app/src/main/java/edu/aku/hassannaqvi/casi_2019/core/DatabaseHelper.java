@@ -262,6 +262,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             MWRATable.COLUMN_SB4 + " TEXT," +
             MWRATable.COLUMN_SB5 + " TEXT," +
             MWRATable.COLUMN_SB6 + " TEXT," +
+            MWRATable.COLUMN_SB7 + " TEXT," +
+            MWRATable.COLUMN_SB8 + " TEXT," +
+            MWRATable.COLUMN_SB9 + " TEXT," +
+            MWRATable.COLUMN_SB10 + " TEXT," +
+            MWRATable.COLUMN_SB11 + " TEXT," +
             MWRATable.COLUMN_SB2FLAG + " TEXT," +
             MWRATable.COLUMN_SYNCED + " TEXT," +
             MWRATable.COLUMN_MSTATUS + " TEXT," +
@@ -2243,6 +2248,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             values.put(MWRATable.COLUMN_SB4, mc.getsB4());
             values.put(MWRATable.COLUMN_SB5, mc.getsB5());
             values.put(MWRATable.COLUMN_SB6, mc.getsB6());
+            values.put(MWRATable.COLUMN_SB7, mc.getsB6());
+            values.put(MWRATable.COLUMN_SB8, mc.getsB6());
+            values.put(MWRATable.COLUMN_SB9, mc.getsB6());
+            values.put(MWRATable.COLUMN_SB10, mc.getsB6());
+            values.put(MWRATable.COLUMN_SB11, mc.getsB6());
             values.put(MWRATable.COLUMN_SB2FLAG, mc.getSb2flag());
             values.put(MWRATable.COLUMN_SYNCED, mc.getSynced());
             values.put(MWRATable.COLUMN_SYNCEDDATE, mc.getSyncedDate());
@@ -3971,6 +3981,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 MWRATable.COLUMN_SB4,
                 MWRATable.COLUMN_SB5,
                 MWRATable.COLUMN_SB6,
+                MWRATable.COLUMN_SB7,
+                MWRATable.COLUMN_SB8,
+                MWRATable.COLUMN_SB9,
+                MWRATable.COLUMN_SB10,
+                MWRATable.COLUMN_SB11,
                 MWRATable.COLUMN_SB2FLAG,
                 MWRATable.COLUMN_MSTATUS,
                 MWRATable.COLUMN_MSTATUS88x,
@@ -4075,6 +4090,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 MWRATable.COLUMN_SB4,
                 MWRATable.COLUMN_SB5,
                 MWRATable.COLUMN_SB6,
+                MWRATable.COLUMN_SB7,
+                MWRATable.COLUMN_SB8,
+                MWRATable.COLUMN_SB9,
+                MWRATable.COLUMN_SB10,
+                MWRATable.COLUMN_SB11,
                 MWRATable.COLUMN_SB2FLAG,
                 MWRATable.COLUMN_MSTATUS,
                 MWRATable.COLUMN_MSTATUS88x,
