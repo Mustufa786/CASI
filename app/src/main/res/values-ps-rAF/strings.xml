@@ -854,16 +854,16 @@
     <string name="cic313">۔C313- ۔ چند بار واکسن اعمال شد Mesasles۔ </string>
     <string name="cic315">۔C315- آیا تا به حال واکسن فلج اطفال دارید؟ </string>
     <string name="cic4heading">بخش C5: مریضی و رفتار جستجوی مراقبت (CS) </string>
-    <string name="cic401">  ۔C401 - آیا طفل در دو هفته گذشته طفل اسهال داشته است؟ </string>
-    <string name="cic402">  ۔C402 - آیا در جستجوی تداوی اسهال برآمدید؟  </string>
-    <string name="cic403">  ۔C402a - چرا در جستجوی تداوی اسهال نبرآمدید؟   </string>
+    <string name="cic401">  ۔C501 - آیا طفل در دو هفته گذشته طفل اسهال داشته است؟ </string>
+    <string name="cic402">  ۔C502 - آیا در جستجوی تداوی اسهال برآمدید؟  </string>
+    <string name="cic403">  ۔C502a - چرا در جستجوی تداوی اسهال نبرآمدید؟   </string>
     <string name="cic403a"> این مرض را مشکل زا نمی داند       </string>
     <string name="cic403b">  نداشتن پول    </string>
     <string name="cic403c">    نداشتن وقت   </string>
     <string name="cic403d"> دوری راه از امکانات صحی    </string>
     <string name="cic403e"> کسی خانه برای همراهی نبود     </string>
     <string name="cic404sub1">بخش صحت عامه </string>
-    <string name="cic404"> ۔C403- در کجا تداوی اسهال را جستجو کردید؟  </string>
+    <string name="cic404"> ۔C503- در کجا تداوی اسهال را جستجو کردید؟  </string>
     <string name="cic404a"> شفاخانه دولتی  </string>
     <string name="cic404b">مرکز صحی دولتی  </string>
     <string name="cic404c"> پوسته صحی دولتی  </string>
@@ -882,7 +882,7 @@
     <string name="cic404l"> دوکان/مارکیت/ روی سرک  </string>
     <string name="cic404m"> دایه محلی </string>
     <string name="cic4049603"> دیگر(مشخص کنید)  </string>
-    <string name="cic405">  ۔C404 برای تداوی اسهال چه داده شده بود؟ </string>
+    <string name="cic405">  ۔C504 برای تداوی اسهال چه داده شده بود؟ </string>
     <string name="cic405a"> ORS  </string>
     <string name="cic405sub1">تابلیت یا شربت</string>
     <string name="cic405b"> انتی بیوتیک  </string>
@@ -896,15 +896,15 @@
     <string name="cic405i"> داخل وریدی (Intravenous IV) </string>
     <string name="cic405j">دوای خانگی/دوای گیاهی </string>
     <string name="cic4059601"> کچھ اور </string>
-    <string name="cic406">  ۔C405 - آیا طفل شما در دو هفته گذشته مشکلات تنفسی داشته است؟</string>
-    <string name="cic407">  ۔C406 - آیا شما برای تداوی مشکلات تنفسی  طفل تان تلاش کردید؟</string>
-    <string name="cic408">  ۔C406a - چرا شما تداوی مشکلات تنفسی را جستجو نکردید؟</string>
+    <string name="cic406">  ۔C505 - آیا طفل شما در دو هفته گذشته مشکلات تنفسی داشته است؟</string>
+    <string name="cic407">  ۔C506 - آیا شما برای تداوی مشکلات تنفسی  طفل تان تلاش کردید؟</string>
+    <string name="cic408">  ۔C506a - چرا شما تداوی مشکلات تنفسی را جستجو نکردید؟</string>
     <string name="cic408a">این مرض را مشکل زا نمی داند     </string>
     <string name="cic408b"> نداشتن پول     </string>
     <string name="cic408c">   نداشتن وقت      </string>
     <string name="cic408d">دوری راه از امکانات صحی     </string>
     <string name="cic408e">کسی خانه برای همراهی نبود     </string>
-    <string name="cic409">  ۔C407 در کجا تداوی مشکلات تنفسی  را جستجو کردید؟</string>
+    <string name="cic409">  ۔C507 در کجا تداوی مشکلات تنفسی  را جستجو کردید؟</string>
     <string name="cic409sub1"> بخش صحت عامه </string>
     <string name="cic409a"> شفاخانه دولتی  </string>
     <string name="cic409b"> مرکز صحی دولتی </string>
@@ -924,7 +924,7 @@
     <string name="cic409l"> دوکان/مارکیت/ روی سرک  </string>
     <string name="cic409m"> دایه محلی </string>
     <string name="cic4099603"> دیگر(مشخص کنید)  </string>
-    <string name="cic410">408 جواب های متعدد - برای تداوی مشکلات تنفسی چه داده شده بود؟  </string>
+    <string name="cic410">508 جواب های متعدد - برای تداوی مشکلات تنفسی چه داده شده بود؟  </string>
     <string name="cic410sub1">تابلیت یا شربت </string>
     <string name="cic410a"> انتی بیوتیک  </string>
     <string name="cic410b"> تابلیت یا شربت نا معلوم  </string>
@@ -935,10 +935,10 @@
     <string name="cic410f"> داخل وریدی (Intravenous IV) </string>
     <string name="cic410g"> دوای خانگی/دوای گیاهی  </string>
     <string name="cic4109601"> دیگر (مشخص کنید  </string>
-    <string name="cic411">  ۔C409 -آیا طفل شما در دو هفته گذشته تب داشته است؟</string>
-    <string name="cic412">  ۔C410 -آیا شما برای تداوی تب  طفل تان تلاش کردید؟</string>
-    <string name="cic413">  ۔C410a - چرا شما تداوی تب را جستجو نکردید؟ </string>
-    <string name="cic414">  ۔C411 - در کجا تداوی تب  را جستجو کردید؟</string>
+    <string name="cic411">  ۔C509 -آیا طفل شما در دو هفته گذشته تب داشته است؟</string>
+    <string name="cic412">  ۔C510 -آیا شما برای تداوی تب  طفل تان تلاش کردید؟</string>
+    <string name="cic413">  ۔C510a - چرا شما تداوی تب را جستجو نکردید؟ </string>
+    <string name="cic414">  ۔C511 - در کجا تداوی تب  را جستجو کردید؟</string>
     <string name="cic414sub1"> بخش صحت عامه </string>
     <string name="cic414a">شفاخانه دولتی  </string>
     <string name="cic414b"> مرکز صحی دولتی  </string>
@@ -958,7 +958,7 @@
     <string name="cic414l"> دوکان/مارکیت/ روی سرک  </string>
     <string name="cic414m"> دایه محلی  </string>
     <string name="cic4149603">دیگر(مشخص کنید)  </string>
-    <string name="cic415">۔C412 -(۔Name) برای تداوی تب چه داده شده بود؟ </string>
+    <string name="cic415">۔C512 -(۔Name) برای تداوی تب چه داده شده بود؟ </string>
     <string name="cic415sub1">تابلیت یا شربت </string>
     <string name="cic415a">انتی بیوتیک   </string>
     <string name="cic415b"> تابلیت یا شربت نا معلوم  </string>
@@ -970,25 +970,25 @@
     <string name="cic415g"> داخل وریدی (Intravenous IV) </string>
     <string name="cic415h"> دوای خانگی/دوای گیاهی  </string>
     <string name="cic4159601"> دیگر (مشخص کنید)  </string>
-    <string name="cic416">۔C413 - آیا به (نام طفل) در شش ماه گذشته ادویه برای کرم روده (کرم دل) داده است؟)  </string>
-    <string name="cic417">۔C414 - آیا (نام طفل) در شش ماه گذشته، احساس شب کوری (مشکل دید واضح در تاریکی) کرده است؟ </string>
-    <string name="cic418">۔C415 - آیا گاهی به (نام طفل) متممه ویتامین  A داده شده است؟</string>
+    <string name="cic416">۔C513 - آیا به (نام طفل) در شش ماه گذشته ادویه برای کرم روده (کرم دل) داده است؟)  </string>
+    <string name="cic417">۔C514 - آیا (نام طفل) در شش ماه گذشته، احساس شب کوری (مشکل دید واضح در تاریکی) کرده است؟ </string>
+    <string name="cic418">۔C515 - آیا گاهی به (نام طفل) متممه ویتامین  A داده شده است؟</string>
     <string name="cic419">۔C416 - چند دوز ویتامین A به (نام طفل) داده شده است؟</string>
     <string name="cic419a"> دوز  </string>
-    <string name="cic420">۔C417 آخرین دوز ویتامین A به (نام طفل) چه وقت داده شده بود؟</string>
+    <string name="cic420">۔C517 آخرین دوز ویتامین A به (نام طفل) چه وقت داده شده بود؟</string>
     <string name="cic420a"> یک هفته قبل  </string>
     <string name="cic420b">یک ماه قبل  </string>
     <string name="cic420c">۔3 ماه قبل </string>
     <string name="cic420d"> 6 ماه قبل  </string>
     <string name="cic420e"> بیشتر از یک سال قبل  </string>
-    <string name="cic421">۔C418 آیا گاهی (نام طفل) پودر مایکرونیوترینت ها (MNP) گرفته است؟ </string>
-    <string name="cic422">۔C419 -آیا گاهی (نام طفل) پودر مایکرونیوترینت ها (MNP) گرفته است؟</string>
+    <string name="cic421">۔C518 آیا گاهی (نام طفل) پودر مایکرونیوترینت ها (MNP) گرفته است؟ </string>
+    <string name="cic422">۔C519 -آیا گاهی (نام طفل) پودر مایکرونیوترینت ها (MNP) گرفته است؟</string>
     <string name="cic422a"> روزانه  </string>
     <string name="cic422b"> هفته یکبار  </string>
     <string name="cic422c"> یکبار هر دو هفته  </string>
     <string name="cic422d"> ماهانهہ </string>
     <string name="cic422e"> نادراً  </string>
-    <string name="cic423">۔C420 - چند ماه یا روز (نام طفل) پودر مایکرونیوترینت ها (MNP) گرفته است؟</string>
+    <string name="cic423">۔C520 - چند ماه یا روز (نام طفل) پودر مایکرونیوترینت ها (MNP) گرفته است؟</string>
     <string name="cic423a"> ماه ها  </string>
     <string name="cic423b"> روز ها  </string>
     <string name="ciw311a"> داکتر ولادی نسای  </string>
@@ -1277,13 +1277,13 @@
     <string name="cic217k"> غذا هایکه از لوبیا، نخود، باقلی، خسته ها و دانه تهیه می شود؟</string>
     <string name="cic221">۔C221 -چه (نام طفل) از بوتل با چوشک دار نوشیده است؟</string>
     <string name="cic223">۔C223 -آیا (نام طفل) روز گذشته در جریان روز یا شب کدام ادویه، متممه های منرال ها یا ویتامین ها را خورده است؟</string>
-    <string name="cic302">۔C302 - آیا سند ملی معافیت طفل یا سند های معافیت از یک ارایه کننده صحی شخصی برای (نام طفال) دارید؟</string>
-    <string name="cic303">۔C303 - امکان دارد، من کارت (ها) و یا دیگر سند را ببینم؟</string>
-    <string name="cic303info">۔C303 - اریخچه واکسن را با هر کارت یا کارت داده شده یادداشت کنید؟ (ج) در صورتی که کارت تاریخ واکسیناسیون را نداشته باشد، 44 در ستون اردن بنویسید</string>
-    <string name="cic307">۔C307 - اولین قطره فلج اطفال در 2 هفته اول پس از زایمان داده شد؟</string>
-    <string name="cic311">۔C311 - چگونه کودک با PCV واکسینه شد؟</string>
-    <string name="cic314">۔C314 -آیا تا به حال از اجتناب از فلج اطفال (IPV) استفاده کرده اید؟</string>
-    <string name="cic316">۔C316 -یا کودک (.Name) در آخرین مبارزه با فلج اطفال قطره فلج اطفال گرفت؟</string>
+    <string name="cic302">۔C402 - آیا سند ملی معافیت طفل یا سند های معافیت از یک ارایه کننده صحی شخصی برای (نام طفال) دارید؟</string>
+    <string name="cic303">۔C403 - امکان دارد، من کارت (ها) و یا دیگر سند را ببینم؟</string>
+    <string name="cic303info">۔C403 - اریخچه واکسن را با هر کارت یا کارت داده شده یادداشت کنید؟ (ج) در صورتی که کارت تاریخ واکسیناسیون را نداشته باشد، 44 در ستون اردن بنویسید</string>
+    <string name="cic307">۔C407 - اولین قطره فلج اطفال در 2 هفته اول پس از زایمان داده شد؟</string>
+    <string name="cic311">۔C411 - چگونه کودک با PCV واکسینه شد؟</string>
+    <string name="cic314">۔C414 -آیا تا به حال از اجتناب از فلج اطفال (IPV) استفاده کرده اید؟</string>
+    <string name="cic316">۔C416 -یا کودک (.Name) در آخرین مبارزه با فلج اطفال قطره فلج اطفال گرفت؟</string>
     <!--<string name="cic404">۔C404 -برای تداوی اسهال چه داده شده بود؟</string>-->
     <!--<string name="cic405">۔C405 -آیا طفل شما در دو هفته گذشته مشکلات تنفسی داشته است؟</string>-->
     <!--<string name="cic406">۔C406 -آیا شما برای تداوی مشکلات تنفسی  طفل تان تلاش کردید؟</string>-->
@@ -1456,9 +1456,9 @@
     <string name="ciw50308">  ۔W50308- روغن، چربی ها </string>
     <!--Child Section 5-->
     <string name="cich"> بخش C3: مصرف غذا و تنوع رژیم غذایی برای اطفال 2 – 5 ساله </string>
-    <string name="cic501">  ۔C501- چند مراتبه دیروز غذا خوردید: ؟ </string>
+    <string name="cic501">  ۔C301- چند مراتبه دیروز غذا خوردید: ؟ </string>
     <string name="cic501h"> غذا  </string>
-    <string name="cic502">  ۔C502-  با روند معمولی چگونه مقایسه می شود؟ </string>
+    <string name="cic502">  ۔C302-  با روند معمولی چگونه مقایسه می شود؟ </string>
     <string name="cic502a"> کم </string>
     <string name="cic502b"> یکسان </string>
     <string name="cic502c"> زیاد  </string>
@@ -1475,14 +1475,14 @@
     <string name="cic503h2h">  داد ستد کالا یا تجارت اجناس یا خدمات</string>
     <string name="cic503h2i"> در 7 روی گذشته نخورده است  </string>
     <string name="cic503h3"> آیا شما یا کدام عضو خانواده تان این گروپ های غذای را خورده است؟ </string>
-    <string name="cic50301">  ۔C50301- حبوبات (نان، گندم، برنج، جواری، وغیره) و تیوبرها (کچالو، کچالو شرین، وغیره)  </string>
+    <string name="cic50301">  ۔C30301- حبوبات (نان، گندم، برنج، جواری، وغیره) و تیوبرها (کچالو، کچالو شرین، وغیره)  </string>
     <string name="cic50302">  ۔C50302- دانه ها و خسته ها (لوبیا، باقلی، نخود، جلغوزه پاکستانی، وغیره) </string>
-    <string name="cic50303">  ۔C50303- سبزی ها </string>
-    <string name="cic50304">  ۔C50304- میوه ها </string>
-    <string name="cic50305">  ۔C50305- گوشت، ماهی و تخم مرغ (تمام انواع) </string>
-    <string name="cic50306">  ۔C50306-لبنیات و محصولات لبنیات (شیر، ماست، پنیر، دیگر مصولات شیر)  </string>
-    <string name="cic50307">  ۔C50307- شکر و عسل </string>
-    <string name="cic50308">  ۔C50308- روغن، چربی ها </string>
+    <string name="cic50303">  ۔C30303- سبزی ها </string>
+    <string name="cic50304">  ۔C30304- میوه ها </string>
+    <string name="cic50305">  ۔C30305- گوشت، ماهی و تخم مرغ (تمام انواع) </string>
+    <string name="cic50306">  ۔C30306-لبنیات و محصولات لبنیات (شیر، ماست، پنیر، دیگر مصولات شیر)  </string>
+    <string name="cic50307">  ۔C30307- شکر و عسل </string>
+    <string name="cic50308">  ۔C30308- روغن، چربی ها </string>
 
 
     <!--New Sections-->
@@ -1594,20 +1594,20 @@
     <string name="cid307b"> مطمئین نیست </string>
     <string name="cid307c"> خوب </string>
 
-    <string name="cid308">۔D308-  چقدر مشکل است برایتان که در شش ماه تنها با شیرمادر طفل تان را تغذی کنید؟ </string>
-    <string name="cid308a"> خوب نیست </string>
+    <string name="cid308">۔D308- چقدر مشکل است برایتان که در شش ماه تنها با شیرمادر طفل تان را تغذی کنید؟ </string>
+    <string name="cid308a"> مشکل نیست   </string>
     <string name="cid308b"> مطمئین نیست </string>
-    <string name="cid308c"> خوب </string>
+    <string name="cid308c"> مشکل است  </string>
 
-    <string name="cid309">۔D309-  چه اندازه خوب است که نظر به خواست طفل تان شیرمادر بدهید، یعنی زمانیکه طفل می خواهد تغذیه شود، شیر مادر بدهید؟ </string>
+    <string name="cid309">۔D309- چه اندازه خوب است که نظر به خواست طفل تان شیرمادر بدهید، یعنی زمانیکه طفل می خواهد تغذیه شود، شیر مادر بدهید؟ </string>
     <string name="cid309a"> خوب نیست </string>
     <string name="cid309b"> مطمئین نیست </string>
     <string name="cid309c"> خوب </string>
 
-    <string name="cid310">۔D310-  چقدر مشکل است که طفل تان را در وقت ضرورت شان با شیرمادر تغذی کنید؟ </string>
-    <string name="cid310a"> خوب نیست </string>
+    <string name="cid310">۔D310- چقدر مشکل است که طفل تان را در وقت ضرورت شان با شیرمادر تغذی کنید؟ </string>
+    <string name="cid310a"> مشکل نیست  </string>
     <string name="cid310b"> مطمئین نیست </string>
-    <string name="cid310c"> خوب </string>
+    <string name="cid310c"> مشکل است </string>
 
     <string name="cid311">۔D311-  چه اندازه مطمئین در وقت شیردهی (شیر مادر) احساس می کنید؟ </string>
     <string name="cid311a"> خوب نیست </string>
@@ -1680,40 +1680,40 @@
     <string name="cid40805">۔D408-5-  اگر دیگر(دارو های خانگی، گیاهی، مساله ها، ادویه ها، لطفاً لیست کنید) </string>
 
 
-    <string name="cid409">۔D409-  در وقت آماده سازی غذای طفل تان، چه اندازه خود را مطمئین احساس می کنید؟ </string>
+    <string name="cid409">۔D409- در وقت آماده سازی غذای طفل تان، چه اندازه خود را مطمئین احساس می کنید؟</string>
     <string name="cid409a"> مطمئین نیست </string>
     <string name="cid409b"> مطمئین نیست </string>
     <string name="cid409c"> مطمئین </string>
 
-    <string name="cid410">۔D410-  به نظرتان چه اندازه خوب است که هر روز غذاهای مختلف به طفل تان بدهید؟ </string>
-    <string name="cid410a"> مطمئین نیست </string>
-    <string name="cid410b"> مطمئین نیست </string>
+    <string name="cid410">۔D410- به نظرتان چه اندازه خوب است که هر روز غذاهای مختلف به طفل تان بدهید؟ </string>
+    <string name="cid410a"> خوب نیست  </string>
+    <string name="cid410b"> مطمئین نیست  </string>
     <string name="cid410c"> مطمئین </string>
 
-    <string name="cid411">۔D411-  چقدر مشکل است که به طفل تان هر روز غذاهای مختلف بدهید؟ </string>
-    <string name="cid411a"> مطمئین نیست </string>
-    <string name="cid411b"> مطمئین نیست </string>
-    <string name="cid411c"> مطمئین </string>
+    <string name="cid411">۔D411- چقدر مشکل است که به طفل تان هر روز غذاهای مختلف بدهید؟ </string>
+    <string name="cid411a"> مشکل نیست  </string>
+    <string name="cid411b">کمی است، کمی نیست  </string>
+    <string name="cid411c"> مشکل   </string>
 
-    <string name="cid412">۔D412-  به نظرتان چه اندازه خوب است که چندین مراتبه در روز به طفل تان غذا بدهید؟ </string>
+    <string name="cid412">۔D412- به نظرتان چه اندازه خوب است که چندین مراتبه در روز به طفل تان غذا بدهید؟ </string>
     <string name="cid412a"> مطمئین نیست </string>
     <string name="cid412b"> مطمئین نیست </string>
-    <string name="cid412c"> مطمئین </string>
+    <string name="cid412c"> خوب  </string>
 
-    <string name="cid413">۔D413-  چقدر مشکل است برایتان که طفل خود را چندین مراتبه در روز غذا بدهید؟ </string>
-    <string name="cid413a"> مطمئین نیست </string>
+    <string name="cid413">۔D413- چقدر مشکل است برایتان که طفل خود را چندین مراتبه در روز غذا بدهید؟ </string>
+    <string name="cid413a">  مشکل نیست </string>
     <string name="cid413b"> مطمئین نیست </string>
-    <string name="cid413c"> مطمئین </string>
+    <string name="cid413c"> مشکل </string>
 
-    <string name="cid414">۔D414-  به نظرتان چه اندازه خوب است که شیردهی مادر بعد از شش ماه هم ادامه یابد؟ </string>
-    <string name="cid414a"> مطمئین نیست </string>
+    <string name="cid414">۔D414- به نظرتان چه اندازه خوب است که شیردهی مادر بعد از شش ماه هم ادامه یابد؟ </string>
+    <string name="cid414a">خوب نیست</string>
     <string name="cid414b"> مطمئین نیست </string>
-    <string name="cid414c"> مطمئین </string>
+    <string name="cid414c"> خوب </string>
 
-    <string name="cid415">۔D415-  چقدر مشکل است برایتان که شیردهی مادر بعد از شش ماه ادامه یابد؟ </string>
-    <string name="cid415a"> مطمئین نیست </string>
+    <string name="cid415">۔D415- چقدر مشکل است برایتان که شیردهی مادر بعد از شش ماه ادامه یابد؟ </string>
+    <string name="cid415a">  مشکل نیست  </string>
     <string name="cid415b"> مطمئین نیست </string>
-    <string name="cid415c"> مطمئین </string>
+    <string name="cid415c"> مشکل </string>
 
 
     <string name="cid501">۔D501-  آیا سبزی ها و میوه ها را با آب پاگ می شوید؟ </string>

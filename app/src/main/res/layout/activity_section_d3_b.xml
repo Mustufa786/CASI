@@ -93,9 +93,11 @@
 
             <!--            cid30404-->
             <LinearLayout
+                android:id="@+id/fldGrpcid30404"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:visibility='@{cid30403a.checked? View.VISIBLE  : View.GONE}'>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -135,7 +137,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="1dp"
                         android:layout_weight="1"
-                        android:text="@string/cid30404d" />
+                        android:text="@string/cid30404c" />
 
                     <RadioButton
                         android:id="@+id/cid30404d"

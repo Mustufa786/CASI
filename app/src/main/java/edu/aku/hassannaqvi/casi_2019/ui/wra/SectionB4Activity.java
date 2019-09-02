@@ -41,19 +41,6 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
     Boolean backPressed = false;
     @BindViews({R.id.ciw412b, R.id.ciw412c, R.id.ciw412d, R.id.ciw412e, R.id.ciw412f, R.id.ciw41296})
     List<CheckBox> rd_ciw412;
-    CheckBox.OnCheckedChangeListener check = new CompoundButton.OnCheckedChangeListener() {
-        @Override
-        public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-            if (isoneYes()) {
-                if (!binding.ciw412a.isChecked()) {
-                    ClearClass.ClearAllFields(binding.fldGrpciw413, null);
-                    binding.fldGrpciw413.setVisibility(View.GONE);
-                }
-            } else {
-                binding.fldGrpciw413.setVisibility(View.VISIBLE);
-            }
-        }
-    };
     private Timer timer = new Timer();
 
     @Override
@@ -151,7 +138,6 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 //formValidation();
                 if (checkedId == R.id.ciw411b || checkedId == R.id.ciw41198) {
-
                     ClearClass.ClearAllFields(binding.fldGrpciw412, null);
                     binding.fldGrpciw412.setVisibility(View.GONE);
                     ClearClass.ClearAllFields(binding.fldGrpciw412check, null);
@@ -173,7 +159,6 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
                     binding.ciw412e.setEnabled(false);
                     binding.ciw412f.setEnabled(false);
                     binding.ciw41296.setEnabled(false);
-
                     binding.ciw412a.setChecked(false);
                     binding.ciw412b.setChecked(false);
                     binding.ciw412c.setChecked(false);
@@ -181,12 +166,7 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
                     binding.ciw412e.setChecked(false);
                     binding.ciw412f.setChecked(false);
                     binding.ciw41296.setChecked(false);
-
                     binding.ciw41296x.setText(null);
-                    if (!binding.ciw412a.isChecked()) {
-                        ClearClass.ClearAllFields(binding.fldGrpciw413, null);
-                        binding.fldGrpciw413.setVisibility(View.GONE);
-                    }
                 } else {
                     binding.ciw412a.setEnabled(true);
                     binding.ciw412b.setEnabled(true);

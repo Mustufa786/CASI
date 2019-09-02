@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import org.json.JSONException;
@@ -16,6 +17,7 @@ import edu.aku.hassannaqvi.casi_2019.contracts.D4WRAContract;
 import edu.aku.hassannaqvi.casi_2019.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2019.core.MainApp;
 import edu.aku.hassannaqvi.casi_2019.databinding.ActivitySectionD3BBinding;
+import edu.aku.hassannaqvi.casi_2019.validation.ClearClass;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
 public class SectionD3BActivity extends AppCompatActivity {
@@ -29,6 +31,17 @@ public class SectionD3BActivity extends AppCompatActivity {
         bi.setCallback(this);
 
         this.setTitle(getString(R.string.cid3h));
+
+
+        bi.cid30403.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                if (checkedId != bi.cid30403a.getId()) {
+                    ClearClass.ClearAllFields(bi.fldGrpcid30404, null);
+                }
+            }
+        });
     }
 
     public void BtnContinue() {
