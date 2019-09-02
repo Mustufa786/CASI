@@ -217,7 +217,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
                     this,
                     "Adole",
                     "updateDAdoleSyncedForms",
-                    MWRAContract.class,
+                    D6AdolesContract.class,
                     MainApp._HOST_URL + D6AdolesContract.D6AdolesTable._URL,
                     db.getUnsyncedAdoles(), this.findViewById(R.id.syncStatus), 2, uploadListAdapter, uploadlist
             ).execute();
