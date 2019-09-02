@@ -179,8 +179,11 @@ public class MainApp extends Application {
     public static final String WRAD4B = "d4b";
     public static final String WRAD4C = "d4c";
     public static final String WRAD4D = "d4d";
+    public static final String WRAD4E = "d4e";
     public static final String WRAD6 = "d6";
+    public static final String[] D4WRATypes = {WRAD2B, WRAD3B, WRAD4A, WRAD4B, WRAD4C, WRAD4D};
 
+    public static final String[] D4WRAURLS = D4WRAContract.D4WRATable.urls;
 
     public static int monthsBetweenDates(Date startDate, Date endDate) {
 

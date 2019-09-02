@@ -188,7 +188,7 @@ public class D4WRAContract {
 
     }
 
-    public D4WRAContract Hydrate(Cursor cursor, int type) {
+    public D4WRAContract Hydrate(Cursor cursor) {
 
         this._ID = cursor.getString(cursor.getColumnIndex(D4WRATable.COLUMN_ID));
         this._UID = cursor.getString(cursor.getColumnIndex(D4WRATable.COLUMN_UID));
@@ -260,7 +260,10 @@ public class D4WRAContract {
         public static String _URL1 = "d205.php";
         public static String _URL2 = "d304.php";
         public static String _URL3 = "d401.php";
-        public static String _URL4 = "d403.php";
-        public static String _URL5 = "d405.php";
+        public static String _URL4 = "d402.php";
+        public static String _URL5 = "d403.php";
+        public static String _URL6 = "d404.php";
+
+        public static String[] urls = {_URL1, _URL2, _URL3, _URL4, _URL5, _URL6};
     }
 }

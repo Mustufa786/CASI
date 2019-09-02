@@ -33,6 +33,7 @@ import edu.aku.hassannaqvi.casi_2019.adapters.SyncListAdapter;
 import edu.aku.hassannaqvi.casi_2019.adapters.Upload_list_adapter;
 import edu.aku.hassannaqvi.casi_2019.contracts.AnthrosMembersContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.ChildContract;
+import edu.aku.hassannaqvi.casi_2019.contracts.D4WRAContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.FamilyMembersContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.FormsContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.MWRAContract;
@@ -199,6 +200,18 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
                     MainApp._HOST_URL + MWRAContract.MWRATable._URL,
                     db.getUnsyncedMWRA(), this.findViewById(R.id.syncStatus), 2, uploadListAdapter, uploadlist
             ).execute();
+
+            for (int i = 0; i < MainApp.D4WRAURLS.length; i++) {
+                new SyncAllData(
+                        this,
+                        "DWRA",
+                        "updateDWRASyncedForm",
+                        D4WRAContract.class,
+                        MainApp._HOST_URL + D4WRAContract.D4WRATable.urls[i],
+                        db.getUnsyncedDWRA(MainApp.D4WRATypes[i]), this.findViewById(R.id.syncStatus), 2, uploadListAdapter, uploadlist
+                ).execute();
+            }
+
 
 //            Toast.makeText(getApplicationContext(), "Syncing Children", Toast.LENGTH_SHORT).show();
             if (uploadlistActivityCreated) {

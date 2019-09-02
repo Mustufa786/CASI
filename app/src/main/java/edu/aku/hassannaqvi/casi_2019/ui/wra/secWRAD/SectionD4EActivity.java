@@ -10,7 +10,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import edu.aku.hassannaqvi.casi_2019.R;
-import edu.aku.hassannaqvi.casi_2019.contracts.D4WRAContract;
 import edu.aku.hassannaqvi.casi_2019.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2019.core.MainApp;
 import edu.aku.hassannaqvi.casi_2019.databinding.ActivitySectionD4EBinding;
@@ -85,14 +84,7 @@ public class SectionD4EActivity extends AppCompatActivity {
 
     private void SaveDraft() throws JSONException {
 
-        MainApp.d4WRAc = new D4WRAContract();
-        MainApp.d4WRAc.setDevicetagID(MainApp.fc.getDevicetagID());
-        MainApp.d4WRAc.setFormDate(MainApp.fc.getFormDate());
-        MainApp.d4WRAc.setUser(MainApp.fc.getUser());
-        MainApp.d4WRAc.setDeviceId(MainApp.fc.getDeviceID());
-        MainApp.d4WRAc.setApp_ver(MainApp.fc.getAppversion());
-        MainApp.d4WRAc.set_UUID(MainApp.fc.getUID());
-        MainApp.d4WRAc.setfType(MainApp.WRAD3B);
+//
         JSONObject sB13 = new JSONObject();
 
         sB13.put("cid409", bi.cid409a.isChecked() ? "1"
@@ -134,7 +126,7 @@ public class SectionD4EActivity extends AppCompatActivity {
                 : "0");
         sB13.put("cid50296x", bi.cid50296x.getText().toString());
 
-        MainApp.d4WRAc.setsD1(String.valueOf(sB13));
+        MainApp.mc.setsB9(String.valueOf(sB13));
 
     }
 

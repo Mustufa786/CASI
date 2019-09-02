@@ -2444,6 +2444,25 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 whereArgs);
     }
 
+    public void updateDWRASyncedForm(String id) {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+// New value for one column
+        ContentValues values = new ContentValues();
+        values.put(D4WRATable.COLUMN_SYNCED, true);
+        values.put(D4WRATable.COLUMN_SYNCEDDATE, new Date().toString());
+
+// Which row to update, based on the title
+        String where = D4WRATable._ID + " = ?";
+        String[] whereArgs = {id};
+
+        int count = db.update(
+                D4WRATable.TABLE_NAME,
+                values,
+                where,
+                whereArgs);
+    }
+
 
     public void updateSyncedChildForm(String id) {
         SQLiteDatabase db = this.getReadableDatabase();
@@ -4045,6 +4064,63 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
         return allFC;
     }
+
+    public Collection<D4WRAContract> getUnsyncedDWRA(String formType) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor c = null;
+        String[] columns = {
+                D4WRATable.COLUMN_ID,
+                D4WRATable.COLUMN_UID,
+                D4WRATable.COLUMN_UUID,
+                D4WRATable.COLUMN_FM_UID,
+                D4WRATable.COLUMN_FORMDATE,
+                D4WRATable.COLUMN_DEVICEID,
+                D4WRATable.COLUMN_FTYPE,
+                D4WRATable.COLUMN_DEVICETAGID,
+                D4WRATable.COLUMN_USER,
+                D4WRATable.COLUMN_APP_VER,
+                D4WRATable.COLUMN_DSERIALNO,
+                D4WRATable.COLUMN_SD1,
+                D4WRATable.COLUMN_SYNCED,
+                D4WRATable.COLUMN_SYNCEDDATE,
+
+        };
+        String whereClause = MWRATable.COLUMN_SYNCED
+                + " is null OR "
+                + MWRATable.COLUMN_SYNCED + " = '' AND " + D4WRATable.COLUMN_FTYPE + " =? ";
+        String[] whereArgs = {formType};
+        String groupBy = null;
+        String having = null;
+
+        String orderBy =
+                D4WRATable.COLUMN_ID + " ASC";
+
+        Collection<D4WRAContract> allFC = new ArrayList<D4WRAContract>();
+        try {
+            c = db.query(
+                    MWRATable.TABLE_NAME,  // The table to query
+                    columns,                   // The columns to return
+                    whereClause,               // The columns for the WHERE clause
+                    whereArgs,                 // The values for the WHERE clause
+                    groupBy,                   // don't group the rows
+                    having,                    // don't filter by row groups
+                    orderBy                    // The sort order
+            );
+            while (c.moveToNext()) {
+                D4WRAContract fc = new D4WRAContract();
+                allFC.add(fc.Hydrate(c));
+            }
+        } finally {
+            if (c != null) {
+                c.close();
+            }
+            if (db != null) {
+                db.close();
+            }
+        }
+        return allFC;
+    }
+
 
     public Collection<DeviceContract> getUnsyncedDeviceInfo() {
         SQLiteDatabase db = this.getReadableDatabase();
