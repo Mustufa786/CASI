@@ -2444,6 +2444,25 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 whereArgs);
     }
 
+    public void updateDAdoleSyncedForms(String id) {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+// New value for one column
+        ContentValues values = new ContentValues();
+        values.put(D6AdolesTable.COLUMN_SYNCED, true);
+        values.put(D6AdolesTable.COLUMN_SYNCEDDATE, new Date().toString());
+
+// Which row to update, based on the title
+        String where = D6AdolesTable._ID + " = ?";
+        String[] whereArgs = {id};
+
+        int count = db.update(
+                D6AdolesTable.TABLE_NAME,
+                values,
+                where,
+                whereArgs);
+    }
+
     public void updateDWRASyncedForm(String id) {
         SQLiteDatabase db = this.getReadableDatabase();
 
@@ -4053,6 +4072,59 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             while (c.moveToNext()) {
                 MWRAContract fc = new MWRAContract();
                 allFC.add(fc.Hydrate(c, 0));
+            }
+        } finally {
+            if (c != null) {
+                c.close();
+            }
+            if (db != null) {
+                db.close();
+            }
+        }
+        return allFC;
+    }
+
+    public Collection<D6AdolesContract> getUnsyncedAdoles() {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor c = null;
+        String[] columns = {
+                D6AdolesTable.COLUMN_ID,
+                D6AdolesTable.COLUMN_UID,
+                D6AdolesTable.COLUMN_UUID,
+                D6AdolesTable.COLUMN_FM_UID,
+                D6AdolesTable.COLUMN_FORMDATE,
+                D6AdolesTable.COLUMN_DEVICEID,
+                D6AdolesTable.COLUMN_DEVICETAGID,
+                D6AdolesTable.COLUMN_USER,
+                D6AdolesTable.COLUMN_APP_VER,
+                D6AdolesTable.COLUMN_FMSERIALNO,
+                D6AdolesTable.COLUMN_SD6,
+                D6AdolesTable.COLUMN_SYNCED,
+                D6AdolesTable.COLUMN_SYNCEDDATE,
+
+        };
+        String whereClause = D6AdolesTable.COLUMN_SYNCED + " is null OR " + D6AdolesTable.COLUMN_SYNCED + " = '' ";
+        String[] whereArgs = null;
+        String groupBy = null;
+        String having = null;
+
+        String orderBy =
+                D6AdolesTable.COLUMN_ID + " ASC";
+
+        Collection<D6AdolesContract> allFC = new ArrayList<D6AdolesContract>();
+        try {
+            c = db.query(
+                    D6AdolesTable.TABLE_NAME,  // The table to query
+                    columns,                   // The columns to return
+                    whereClause,               // The columns for the WHERE clause
+                    whereArgs,                 // The values for the WHERE clause
+                    groupBy,                   // don't group the rows
+                    having,                    // don't filter by row groups
+                    orderBy                    // The sort order
+            );
+            while (c.moveToNext()) {
+                D6AdolesContract fc = new D6AdolesContract();
+                allFC.add(fc.Hydrate(c));
             }
         } finally {
             if (c != null) {

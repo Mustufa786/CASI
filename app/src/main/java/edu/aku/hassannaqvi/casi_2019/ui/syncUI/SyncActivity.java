@@ -34,6 +34,7 @@ import edu.aku.hassannaqvi.casi_2019.adapters.Upload_list_adapter;
 import edu.aku.hassannaqvi.casi_2019.contracts.AnthrosMembersContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.ChildContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.D4WRAContract;
+import edu.aku.hassannaqvi.casi_2019.contracts.D6AdolesContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.FamilyMembersContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.FormsContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.MWRAContract;
@@ -212,6 +213,14 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
                 ).execute();
             }
 
+            new SyncAllData(
+                    this,
+                    "Adole",
+                    "updateDAdoleSyncedForms",
+                    MWRAContract.class,
+                    MainApp._HOST_URL + D6AdolesContract.D6AdolesTable._URL,
+                    db.getUnsyncedAdoles(), this.findViewById(R.id.syncStatus), 2, uploadListAdapter, uploadlist
+            ).execute();
 
 //            Toast.makeText(getApplicationContext(), "Syncing Children", Toast.LENGTH_SHORT).show();
             if (uploadlistActivityCreated) {
