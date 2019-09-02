@@ -83,6 +83,7 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
     @BindViews({R.id.ciw201days, R.id.ciw201months, R.id.ciw201years})
     List<EditText> grpDob;
     int roasterChildrens = 0;
+    boolean childUnder2Check = false;
     public TextWatcher age = new TextWatcher() {
         @Override
         public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -517,6 +518,12 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                         roasterChildrens++;
                     }
                 }
+                for (FamilyMembersContract fmc : MainApp.childUnder2) {
+                    if (fmc.getMotherId().equals(wraMap.get(bi.nb101.getSelectedItem().toString()).getSerialNo())) {
+                        childUnder2Check = true;
+                        break;
+                    }
+                }
                 bi.ciw211.setMinvalue(roasterChildrens);
                 bi.ciw212.setMinvalue(roasterChildrens);
                 bi.ciw214.setMinvalue(roasterChildrens);
@@ -733,9 +740,9 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                             if (Integer.valueOf(bi.ciw214.getText().toString()) > 0) {
                                 if (Integer.valueOf(bi.ciw214.getText().toString()) == 1 && bi.ciw208a.isChecked()) {
                                     redirectCondition();
-                                } else if (Integer.valueOf(bi.ciw214.getText().toString()) < prevDeliveries) {
+                                } else if (childUnder2Check) {
 
-                                    AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
+                                    /*AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
                                             SectionB1Activity.this);
                                     alertDialogBuilder
                                             .setMessage("In previous you saved " + prevDeliveries + " Pregnancies.\n" +
@@ -758,12 +765,16 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                                                 }
                                             });
                                     AlertDialog alert = alertDialogBuilder.create();
-                                    alert.show();
+                                    alert.show();*/
+
+                                    startActivity(new Intent(this, SectionB2Activity.class));
 
                                 } else {
-                                    MainApp.totalPregnancy = bi.ciw208a.isChecked() ? Integer.valueOf(bi.ciw214.getText().toString()) - 1 : Integer.valueOf(bi.ciw214.getText().toString());
+                                    /*MainApp.totalPregnancy = bi.ciw208a.isChecked() ? Integer.valueOf(bi.ciw214.getText().toString()) - 1 : Integer.valueOf(bi.ciw214.getText().toString());
                                     startActivityForResult(new Intent(this, SectionB1AActivity.class)
-                                            .putExtra("backPressed", classPassName.equals(SectionB1AActivity.class.getName())), 1);
+                                            .putExtra("backPressed", classPassName.equals(SectionB1AActivity.class.getName())), 1);*/
+
+                                    redirectCondition();
 
                                 }
                             } else {
