@@ -139,7 +139,7 @@
     <string name="na203k">بھانجا / بھانجی / بھتیجا / بھتیجی</string>
     <string name="na203l">دیگر اقاریب  </string>
     <string name="na203m">فرزندی، فرزند رضای، فرزند خوانده </string>
-    <string name="na203n"> (خدمه (که یکجا زندگی کند</string>
+    <string name="na203n"> خدمه (که یکجا زندگی کند)</string>
     <string name="na203o">یتیم </string>
     <string name="na20396">دیگر (بدون نسبت)،  </string>
     <string name="na20398">  نسبت را نمی داند. </string>
@@ -153,9 +153,9 @@
     <string name="cih2edu"> ۔H208- . تحصیل   </string>
     <string name="cih2edua"> هیچ</string>
     <string name="cih2edub"> (Pre – Primary) پیش ابتدایی</string>
-    <string name="cih2educ">(ابتدایی  (5-1</string>
-    <string name="cih2edud"> (متوسطه (8-6</string>
-    <string name="cih2edue"> (ثانوی (9 – 10</string>
+    <string name="cih2educ">ابتدایی  (5-1) </string>
+    <string name="cih2edud"> متوسطه (8-6) </string>
+    <string name="cih2edue">ثانوی (9 – 10)</string>
     <string name="cih2eduf">  (intermediate) وسطی</string>
     <string name="cih2edug"> فراغت </string>
     <string name="cih2eduh"> ماستر</string>
@@ -279,7 +279,7 @@
     <string name="cih31105"> یخچال   </string>
     <string name="cih31106">الماری  </string>
     <string name="cih31107">چوکی  </string>
-    <string name="cih31108">(سرد کننده اتاق (کولر</string>
+    <string name="cih31108">سرد کننده اتاق (کولر)</string>
     <string name="cih31109"> ای سی  </string>
     <string name="cih31110">ماشین کالا شوی </string>
     <string name="cih31111"> بمبه آب  </string>
@@ -301,7 +301,7 @@
     <string name="cih312h">کشتی خد موتر </string>
     <string name="cih312i">کشتی بغیر موتر </string>
     <string name="cih313a"> گروپ  </string>
-    <string name="cih313b">(نیون (گروپ دراز  </string>
+    <string name="cih313b"> نیون (گروپ دراز)</string>
     <string name="cih313ca"> </string>
     <string name="cih313c">گروپ های  LED </string>
     <string name="cih313d">گروپ های کم مصرف انرژی  </string>
@@ -380,7 +380,7 @@
     <string name="cih324c"> بز ها  </string>
     <string name="cih324d"> گوسفند  </string>
     <string name="cih324e">مرغ داری  </string>
-    <string name="cih324f">(گاو وحشی (بافلو  </string>
+    <string name="cih324f"> گاو وحشی (بافلو)</string>
     <string name="cih324g"> شترها  </string>
     <string name="na5heading"> بخش H4: دست شوی (HW) </string>
     <string name="cih401a"> مشاهده شد   </string>
@@ -391,7 +391,7 @@
     <string name="cih402a"> آب موجود بود  </string>
     <string name="cih402b"> آب موجود نبود  </string>
     <string name="cih403a"> صابون  </string>
-    <string name="cih403b">(شوینده ها (پودری، مایع، خمیری  </string>
+    <string name="cih403b">شوینده ها (پودری، مایع، خمیری) </string>
     <string name="cih403c">صابون مایع  </string>
     <string name="cih403d"> خاکستر/ریگ/گل  </string>
     <string name="cih403e"> هیچکدام </string>

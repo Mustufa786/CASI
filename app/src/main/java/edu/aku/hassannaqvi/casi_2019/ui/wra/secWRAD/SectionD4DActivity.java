@@ -20,6 +20,8 @@ import edu.aku.hassannaqvi.casi_2019.core.MainApp;
 import edu.aku.hassannaqvi.casi_2019.databinding.ActivitySectionD4DBinding;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
+import static edu.aku.hassannaqvi.casi_2019.core.MainApp.D4WRAQUESTIONS;
+
 public class SectionD4DActivity extends AppCompatActivity {
 
 
@@ -150,6 +152,7 @@ public class SectionD4DActivity extends AppCompatActivity {
 
         MainApp.dwraSerial_no++;
 
+        D4WRAQUESTIONS.add(new MainApp.DRWRAQues("cid407", (bi.cid407a.isChecked() ? "1" : bi.cid407b.isChecked() ? "2" : "0")));
 
     }
 

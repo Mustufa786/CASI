@@ -182,8 +182,25 @@ public class MainApp extends Application {
     public static final String WRAD4E = "d4e";
     public static final String WRAD6 = "d6";
     public static final String[] D4WRATypes = {WRAD2B, WRAD3B, WRAD4A, WRAD4B, WRAD4C, WRAD4D};
-
     public static final String[] D4WRAURLS = D4WRAContract.D4WRATable.urls;
+    public static ArrayList<DRWRAQues> D4WRAQUESTIONS;
+
+    public static final class DRWRAQues {
+        String quesNo, response;
+
+        public DRWRAQues(String quesNo, String response) {
+            this.quesNo = quesNo;
+            this.response = response;
+        }
+
+        public String getQuesNo() {
+            return quesNo;
+        }
+
+        public String getResponse() {
+            return response;
+        }
+    }
 
     public static int monthsBetweenDates(Date startDate, Date endDate) {
 

@@ -61,16 +61,15 @@ public class SectionD4EActivity extends AppCompatActivity {
 
     private boolean UpdateDB() {
 
+        //Long rowId;
         DatabaseHelper db = new DatabaseHelper(this);
-        long updcount = db.addD4WRA(MainApp.d4WRAc);
-        if (updcount != 0) {
-            MainApp.d4WRAc.set_ID(String.valueOf(updcount));
-            MainApp.d4WRAc.set_UID(
-                    (MainApp.d4WRAc.getDeviceId() + MainApp.d4WRAc.get_ID()));
-            db.updateDWraID();
+
+        int updcount = db.updateSB9();
+
+        if (updcount == 1) {
             return true;
         } else {
-            Toast.makeText(this, "Error in updating DB", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
             return false;
         }
 
@@ -84,8 +83,11 @@ public class SectionD4EActivity extends AppCompatActivity {
 
     private void SaveDraft() throws JSONException {
 
-//
         JSONObject sB13 = new JSONObject();
+
+        for (MainApp.DRWRAQues drwraQues : MainApp.D4WRAQUESTIONS) {
+            sB13.put(drwraQues.getQuesNo(), drwraQues.getResponse());
+        }
 
         sB13.put("cid409", bi.cid409a.isChecked() ? "1"
                 : bi.cid409b.isChecked() ? "2"

@@ -13,12 +13,16 @@ import android.widget.Toast;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
+
 import edu.aku.hassannaqvi.casi_2019.R;
 import edu.aku.hassannaqvi.casi_2019.contracts.D4WRAContract;
 import edu.aku.hassannaqvi.casi_2019.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2019.core.MainApp;
 import edu.aku.hassannaqvi.casi_2019.databinding.ActivitySectionD4ABinding;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
+
+import static edu.aku.hassannaqvi.casi_2019.core.MainApp.D4WRAQUESTIONS;
 
 public class SectionD4AActivity extends AppCompatActivity {
 
@@ -54,6 +58,8 @@ public class SectionD4AActivity extends AppCompatActivity {
                 }
             }
         });
+
+        D4WRAQUESTIONS = new ArrayList<>();
     }
 
     public void BtnContinue() {
@@ -135,6 +141,8 @@ public class SectionD4AActivity extends AppCompatActivity {
         MainApp.d4WRAc.setsD1(String.valueOf(sB9));
 
         MainApp.dwraSerial_no++;
+
+        D4WRAQUESTIONS.add(new MainApp.DRWRAQues("cid401", (bi.cid401a.isChecked() ? "1" : bi.cid401b.isChecked() ? "2" : "0")));
 
     }
 
