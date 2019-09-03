@@ -1052,7 +1052,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_marginBottom="1dp"
-                                android:enabled="false"
                                 android:text="@string/ciw413a" />
 
                             <RadioButton
@@ -1060,7 +1059,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_marginBottom="1dp"
-                                android:enabled="false"
                                 android:text="@string/ciw413b" />
 
 
@@ -1069,7 +1067,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_marginBottom="1dp"
-                                android:enabled="false"
                                 android:text="@string/ciw413c" />
 
                             <RadioButton
@@ -1077,7 +1074,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_marginBottom="1dp"
-                                android:enabled="false"
                                 android:text="@string/ciw413d" />
 
                             <RadioButton
@@ -1085,7 +1081,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_marginBottom="1dp"
-                                android:enabled="false"
                                 android:text="@string/ciw413e" />
 
                             <RadioButton
@@ -1093,7 +1088,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_marginBottom="1dp"
-                                android:enabled="false"
                                 android:text="@string/other" />
 
                             <EditText
@@ -1119,7 +1113,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_marginBottom="1dp"
-                                android:enabled="false"
                                 android:text="@string/ciw413f" />
 
                             <RadioButton
@@ -1127,7 +1120,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_marginBottom="1dp"
-                                android:enabled="false"
                                 android:text="@string/ciw413g" />
 
                             <RadioButton
@@ -1135,7 +1127,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_marginBottom="1dp"
-                                android:enabled="false"
                                 android:text="@string/ciw413h" />
 
                             <RadioButton
@@ -1143,7 +1134,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_marginBottom="1dp"
-                                android:enabled="false"
                                 android:text="@string/ciw413i" />
 
                             <RadioButton
@@ -1151,7 +1141,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_marginBottom="1dp"
-                                android:enabled="false"
                                 android:text="@string/ciw413j" />
 
                             <RadioButton
@@ -1159,7 +1148,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_marginBottom="1dp"
-                                android:enabled="false"
                                 android:text="@string/other" />
 
                             <EditText
@@ -1185,7 +1173,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_marginBottom="1dp"
-                                android:enabled="false"
                                 android:text="@string/ciw413k" />
 
                             <RadioButton
@@ -1193,7 +1180,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_marginBottom="1dp"
-                                android:enabled="false"
                                 android:text="@string/ciw413l" />
 
                             <RadioButton
@@ -1201,7 +1187,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_marginBottom="1dp"
-                                android:enabled="false"
                                 android:text="@string/ciw413m" />
 
                             <RadioButton
@@ -1209,7 +1194,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_marginBottom="1dp"
-                                android:enabled="false"
                                 android:text="@string/other" />
 
                         </RadioGroup>
