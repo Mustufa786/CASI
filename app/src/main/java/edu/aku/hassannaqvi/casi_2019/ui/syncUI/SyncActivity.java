@@ -201,26 +201,6 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
                     db.getUnsyncedMWRA(), this.findViewById(R.id.syncStatus), 2, uploadListAdapter, uploadlist
             ).execute();
 
-            for (int i = 0; i < MainApp.D4WRAURLS.length; i++) {
-                new SyncAllData(
-                        this,
-                        "DWRA",
-                        "updateDWRASyncedForm",
-                        D4WRAContract.class,
-                        MainApp._HOST_URL + D4WRAContract.D4WRATable.urls[i],
-                        db.getUnsyncedDWRA(MainApp.D4WRATypes[i]), this.findViewById(R.id.syncStatus), 2, uploadListAdapter, uploadlist
-                ).execute();
-            }
-
-            new SyncAllData(
-                    this,
-                    "Adole",
-                    "updateDAdoleSyncedForms",
-                    D6AdolesContract.class,
-                    MainApp._HOST_URL + D6AdolesContract.D6AdolesTable._URL,
-                    db.getUnsyncedAdoles(), this.findViewById(R.id.syncStatus), 2, uploadListAdapter, uploadlist
-            ).execute();
-
 //            Toast.makeText(getApplicationContext(), "Syncing Children", Toast.LENGTH_SHORT).show();
             if (uploadlistActivityCreated) {
                 uploadmodel = new SyncModel();
@@ -250,21 +230,6 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
                     MainApp._HOST_URL + AnthrosMembersContract.AnthrosMembers._URL,
                     db.getUnsyncedEligbleMembers(), this.findViewById(R.id.syncStatus), 4, uploadListAdapter, uploadlist
             ).execute();
-
-//            Toast.makeText(getApplicationContext(), "Syncing Outcomes", Toast.LENGTH_SHORT).show();
-            /*if (uploadlistActivityCreated) {
-                uploadmodel = new SyncModel();
-                uploadmodel.setstatusID(0);
-                uploadlist.add(uploadmodel);
-            }
-            new SyncAllData(
-                    this,
-                    "Outcomes",
-                    "updateSyncedOutcomeForm",
-                    OutcomeContract.class,
-                    MainApp._HOST_URL + OutcomeContract.outcomeTable._URL,
-                    db.getUnsyncedOutcome(), this.findViewById(R.id.syncStatus), 5, uploadListAdapter, uploadlist
-            ).execute();*/
 
 //            Toast.makeText(getApplicationContext(), "Syncing New Users", Toast.LENGTH_SHORT).show();
             if (uploadlistActivityCreated) {
@@ -296,7 +261,6 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
                     db.getUnsyncedSpecimenForms(), this.findViewById(R.id.syncStatus), 6, uploadListAdapter, uploadlist
             ).execute();
 
-            /*Toast.makeText(getApplicationContext(), "Syncing Blood Specimen", Toast.LENGTH_SHORT).show();
             if (uploadlistActivityCreated) {
                 uploadmodel = new SyncModel();
                 uploadmodel.setstatusID(0);
@@ -304,45 +268,30 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
             }
             new SyncAllData(
                     this,
-                    "WaterSpecimen",
-                    "updateSyncedWaterSpecimen",
-                    WaterSpecimenContract.class,
-                    MainApp._HOST_URL + WaterSpecimenContract.WaterSpecimenTable._URL,
-                    db.getUnsyncedWaterSpecimenForms(), this.findViewById(R.id.syncStatus), 8, uploadListAdapter, uploadlist
+                    "Adolescent",
+                    "updateDAdoleSyncedForms",
+                    D6AdolesContract.class,
+                    MainApp._HOST_URL + D6AdolesContract.D6AdolesTable._URL,
+                    db.getUnsyncedAdoles(), this.findViewById(R.id.syncStatus), 7, uploadListAdapter, uploadlist
             ).execute();
 
-            Toast.makeText(getApplicationContext(), "Syncing Micro Results", Toast.LENGTH_SHORT).show();
-            if (uploadlistActivityCreated) {
-                uploadmodel = new SyncModel();
-                uploadmodel.setstatusID(0);
-                uploadlist.add(uploadmodel);
+            for (int i = 0; i < MainApp.D4WRAURLS.length; i++) {
+                if (uploadlistActivityCreated) {
+                    uploadmodel = new SyncModel();
+                    uploadmodel.setstatusID(0);
+                    uploadlist.add(uploadmodel);
+                }
+                new SyncAllData(
+                        this,
+                        "DWRA_" + MainApp.D4WRATypes[i].toUpperCase(),
+                        "updateDWRASyncedForm",
+                        D4WRAContract.class,
+                        MainApp._HOST_URL + D4WRAContract.D4WRATable.urls[i],
+                        db.getUnsyncedDWRA(MainApp.D4WRATypes[i]), this.findViewById(R.id.syncStatus), 8 + i, uploadListAdapter, uploadlist
+                ).execute();
             }
-            new SyncAllData(
-                    this,
-                    "Micro",
-                    "updateSyncedMicroForm",
-                    MicroContract.class,
-                    MainApp._HOST_URL + MicroContract.MicroTable._URL,
-                    db.getUnsyncedMicroForms(), this.findViewById(R.id.syncStatus), 11, uploadListAdapter, uploadlist
-            ).execute();*/
 
 
-/*
-            Toast.makeText(getApplicationContext(), "Syncing Summary", Toast.LENGTH_SHORT).show();
-            if (uploadlistActivityCreated){
-                uploadmodel = new SyncModel();
-                uploadmodel.setstatusID(0);
-                uploadlist.add(uploadmodel);
-            }
-            new SyncAllData(
-                    this,
-                    "Summary",
-                    "updateSyncedSummaryForm",
-                    SummaryContract.class,
-                    MainApp._HOST_URL + SummaryContract.singleSum._URL,
-                    db.getUnsyncedSummary(), this.findViewById(R.id.syncStatus),9,uploadListAdapter,uploadlist
-            ).execute();
-            */
             uploadlistActivityCreated = false;
 
             SharedPreferences syncPref = getSharedPreferences("SyncInfo", Context.MODE_PRIVATE);

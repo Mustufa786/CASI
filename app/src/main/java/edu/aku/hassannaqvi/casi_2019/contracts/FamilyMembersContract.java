@@ -381,7 +381,7 @@ public class FamilyMembersContract implements Serializable {
         json.put(familyMembers.COLUMN_FLAG, this.delflag == null ? JSONObject.NULL : this.delflag);
         json.put(familyMembers.COLUMN_KISH_SELECTED, this.kishSelected == null ? JSONObject.NULL : this.kishSelected);
         json.put(familyMembers.COLUMN_KISH_SELECTED_MWRA_D, this.kishMWRASelected == null ? JSONObject.NULL : this.kishMWRASelected);
-        json.put(familyMembers.COLUMN_KISH_SELECTED_ADOLESCENT, this.kishAdolsSelected == null ? JSONObject.NULL : this.kishAdolsSelected);
+//        json.put(familyMembers.COLUMN_KISH_SELECTED_ADOLESCENT, this.kishAdolsSelected == null ? JSONObject.NULL : this.kishAdolsSelected);
         if (this.sA2 != null && !this.sA2.equals("")) {
             json.put(familyMembers.COLUMN_SA2, this.sA2.equals("") ? JSONObject.NULL : new JSONObject(this.sA2));
         }
