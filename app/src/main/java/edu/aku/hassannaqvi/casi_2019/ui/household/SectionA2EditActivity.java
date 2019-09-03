@@ -1083,11 +1083,11 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
             }
             MainApp.membersCount.setMembers(2, memType);
 
-            // Add data in list
-            MainApp.adolescents.add(MainApp.fmc);
-            /*if (binding.cih210a.isChecked()) {
-                MainApp.fmc.setAv("1");
-            }*/
+            if (binding.cih210a.isChecked()) {
+                // Add data in list
+                MainApp.adolescents.add(MainApp.fmc);
+            }
+
         }
 
         //Children < 5
@@ -1106,26 +1106,22 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
             }*/
 
             // Add data in list
-            if (Age < 2) {
-                MainApp.childUnder2.add(MainApp.fmc);
-                MainApp.childUnder2Check.add(MainApp.fmc);
-                MainApp.childUnder5.add(MainApp.fmc);
-                MainApp.childUnder5_Del.add(MainApp.fmc);
-            } else {
-                MainApp.childUnder5.add(MainApp.fmc);
-                MainApp.childUnder5_Del.add(MainApp.fmc);
+            if (binding.cih210a.isChecked()) {
+                if (Age < 2) {
+                    MainApp.childUnder2.add(MainApp.fmc);
+                    MainApp.childUnder2Check.add(MainApp.fmc);
+                    MainApp.childUnder5.add(MainApp.fmc);
+                    MainApp.childUnder5_Del.add(MainApp.fmc);
+                } else {
+                    MainApp.childUnder5.add(MainApp.fmc);
+                    MainApp.childUnder5_Del.add(MainApp.fmc);
+                }
 
-                //MainApp.adolescents.add(MainApp.fmc);
-            }
-            /*if (Age < 2) {
-                MainApp.childUnder2Check.add(MainApp.fmc);
-
-            }*/
-
-            if (MainApp.fmc.getMotherId().equals("00")) {
-                MainApp.childNA.add(MainApp.fmc);
-            } else {
-                MainApp.mwraChild.add(mothersChildMap.get(binding.cih212.getSelectedItem().toString() + "_" + mothersSerials.get(mothersList.indexOf(binding.cih212.getSelectedItem().toString()) - 1)));
+                if (MainApp.fmc.getMotherId().equals("00")) {
+                    MainApp.childNA.add(MainApp.fmc);
+                } else {
+                    MainApp.mwraChild.add(mothersChildMap.get(binding.cih212.getSelectedItem().toString() + "_" + mothersSerials.get(mothersList.indexOf(binding.cih212.getSelectedItem().toString()) - 1)));
+                }
             }
         }
 
@@ -1140,8 +1136,10 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
             }
         }
 
-        if (Age >= 5 && Age <= 19) {
-            MainApp.adolesUnderAge.add(MainApp.fmc);
+        if (binding.cih210a.isChecked()) {
+            if (Age >= 5 && Age <= 19) {
+                MainApp.adolesUnderAge.add(MainApp.fmc);
+            }
         }
 
         /*End*/
