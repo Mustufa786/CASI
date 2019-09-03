@@ -763,7 +763,7 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
                     return false;
                 }
 
-                if (!ValidatorClass.RangeTextBox(this, bi.ciw309, 1, 5, getString(R.string.ciw203), " times")) {
+                if (!ValidatorClass.RangeTextBox(this, bi.ciw309, 1, 5, getString(R.string.ciw309), " times")) {
                     return false;
                 }
             }
