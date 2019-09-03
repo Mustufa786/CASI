@@ -60,11 +60,10 @@ public class SectionB6Activity extends Menu2Activity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
                 if (isChecked) {
-                    ClearClass.ClearAllFields(bi.fldGrpciw50301, false);
+                    ClearClass.ClearAllFields(bi.fldGrpciw50301, null);
                     bi.fldGrpciw50301.setVisibility(View.GONE);
 
                 } else {
-
                     bi.fldGrpciw50301.setVisibility(View.VISIBLE);
                 }
             }
@@ -74,7 +73,7 @@ public class SectionB6Activity extends Menu2Activity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
                 if (isChecked) {
-                    ClearClass.ClearAllFields(bi.fldGrpciw50302, false);
+                    ClearClass.ClearAllFields(bi.fldGrpciw50302, null);
                     bi.fldGrpciw50302.setVisibility(View.GONE);
 
                 } else {
@@ -88,7 +87,7 @@ public class SectionB6Activity extends Menu2Activity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
                 if (isChecked) {
-                    ClearClass.ClearAllFields(bi.fldGrpciw50303, false);
+                    ClearClass.ClearAllFields(bi.fldGrpciw50303, null);
                     bi.fldGrpciw50303.setVisibility(View.GONE);
 
                 } else {
@@ -102,7 +101,7 @@ public class SectionB6Activity extends Menu2Activity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
                 if (isChecked) {
-                    ClearClass.ClearAllFields(bi.fldGrpciw50304, false);
+                    ClearClass.ClearAllFields(bi.fldGrpciw50304, null);
                     bi.fldGrpciw50304.setVisibility(View.GONE);
 
                 } else {
@@ -116,7 +115,7 @@ public class SectionB6Activity extends Menu2Activity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
                 if (isChecked) {
-                    ClearClass.ClearAllFields(bi.fldGrpciw50305, false);
+                    ClearClass.ClearAllFields(bi.fldGrpciw50305, null);
                     bi.fldGrpciw50305.setVisibility(View.GONE);
 
                 } else {
@@ -130,7 +129,7 @@ public class SectionB6Activity extends Menu2Activity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
                 if (isChecked) {
-                    ClearClass.ClearAllFields(bi.fldGrpciw50306, false);
+                    ClearClass.ClearAllFields(bi.fldGrpciw50306, null);
                     bi.fldGrpciw50306.setVisibility(View.GONE);
 
                 } else {
@@ -217,7 +216,7 @@ public class SectionB6Activity extends Menu2Activity {
                     .putExtra("hhno", MainApp.mc.getHhno())
             );
         } else {
-            MainApp.endActivityMother(this, this, false);
+            MainApp.endActivityMother(this, this, null);
         }
     }
 
