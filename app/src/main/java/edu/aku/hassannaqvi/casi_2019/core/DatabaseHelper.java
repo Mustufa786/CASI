@@ -191,6 +191,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             + D6AdolesTable.COLUMN_PROJECTNAME + " TEXT,"
             + D6AdolesTable.COLUMN_UID + " TEXT UNIQUE," +
             D6AdolesTable.COLUMN_UUID + " TEXT," +
+            D6AdolesTable.COLUMN_FM_UID + " TEXT," +
+            D6AdolesTable.COLUMN_FMSERIALNO + " TEXT," +
             D6AdolesTable.COLUMN_FORMDATE + " TEXT," +
             D6AdolesTable.COLUMN_USER + " TEXT," +
             D6AdolesTable.COLUMN_SD6 + " TEXT," +
