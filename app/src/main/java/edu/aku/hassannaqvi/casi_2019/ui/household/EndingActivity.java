@@ -93,7 +93,6 @@ public class EndingActivity extends AddMember_MenuActivity {
                 MainApp.mc = null;
                 MainApp.cc = null;
                 MainApp.oc = null;
-                MainApp.rc = null;
                 MainApp.dc = null;
                 MainApp.fmc = null;
 

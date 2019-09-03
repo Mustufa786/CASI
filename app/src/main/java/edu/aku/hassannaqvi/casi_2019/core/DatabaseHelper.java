@@ -173,10 +173,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             + D4WRATable.COLUMN_PROJECTNAME + " TEXT,"
             + D4WRATable.COLUMN_UID + " TEXT UNIQUE," +
             D4WRATable.COLUMN_UUID + " TEXT," +
+            D4WRATable.COLUMN_FM_UID + " TEXT," +
+            D4WRATable.COLUMN_DSERIALNO + " TEXT," +
+            D4WRATable.COLUMN_FTYPE + " TEXT," +
             D4WRATable.COLUMN_FORMDATE + " TEXT," +
             D4WRATable.COLUMN_USER + " TEXT," +
             D4WRATable.COLUMN_SD1 + " TEXT," +
-            D4WRATable.COLUMN_FTYPE + " TEXT," +
             D4WRATable.COLUMN_DEVICEID + " TEXT," +
             D4WRATable.COLUMN_DEVICETAGID + " TEXT," +
             D4WRATable.COLUMN_APP_VER + " TEXT," +
@@ -371,7 +373,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             VersionAppTable.COLUMN_PATH_NAME + " TEXT " +
             ");";
 
-    private static final String SQL_DELETE_ELIGIBLE_MEMBERS = "DROP TABLE IF EXISTS " + AnthrosMembers.TABLE_NAME;
+    private static final String SQL_DELETE_ANTHROS_MEMBERS = "DROP TABLE IF EXISTS " + AnthrosMembers.TABLE_NAME;
 
 
     final String SQL_CREATE_SPECIMEN_MEMBERS = "CREATE TABLE " + SpecimenTable.TABLE_NAME + " (" +
@@ -460,10 +462,19 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String SQL_SIGNUP_TABLE = "DROP TABLE IF EXISTS " + SignUpTable.TABLE_NAME;
     private static final String SQL_DELETE_FORMS = "DROP TABLE IF EXISTS " + FormsTable.TABLE_NAME;
     private static final String SQL_DELETE_CHILD_FORMS = "DROP TABLE IF EXISTS " + ChildContract.ChildTable.TABLE_NAME;
-    private static final String SQL_DELETE_SINGLE = "DROP TABLE IF EXISTS " + singleSerial.TABLE_NAME;
+    private static final String SQL_DELETE_SERIAL = "DROP TABLE IF EXISTS " + singleSerial.TABLE_NAME;
     private static final String SQL_DELETE_TALUKAS = "DROP TABLE IF EXISTS " + EnumBlockTable.TABLE_NAME;
     private static final String SQL_DELETE_UCS = "DROP TABLE IF EXISTS " + UCsTable.TABLE_NAME;
-    final String SQL_CREATE_ELIGIBLE_MEMBERS = "CREATE TABLE " + AnthrosMembers.TABLE_NAME + " (" +
+    private static final String SQL_DELETE_D4WRA = "DROP TABLE IF EXISTS " + D4WRATable.TABLE_NAME;
+    private static final String SQL_DELETE_MWRAS = "DROP TABLE IF EXISTS " + MWRATable.TABLE_NAME;
+    private static final String SQL_DELETE_OUTCOME = "DROP TABLE IF EXISTS " + outcomeTable.TABLE_NAME;
+    private static final String SQL_DELETE_FAMILYMEMBERS = "DROP TABLE IF EXISTS " + familyMembers.TABLE_NAME;
+    private static final String SQL_DELETE_RECIENPTS = "DROP TABLE IF EXISTS " + RecipientsTable.TABLE_NAME;
+    private static final String SQL_DELETE_NUTRITION = "DROP TABLE IF EXISTS " + NutritionTable.TABLE_NAME;
+    private static final String SQL_DELETE_DECEASED = "DROP TABLE IF EXISTS " + DeceasedContract.DeceasedTable.TABLE_NAME;
+    private static final String SQL_DELETE_BLRANDOM = "DROP TABLE IF EXISTS " + BLRandomContract.singleRandomHH.TABLE_NAME;
+    private static final String SQL_DELETE_VERSIONAPP = "DROP TABLE IF EXISTS " + VersionAppTable.TABLE_NAME;
+    final String SQL_CREATE_ANTHROS_MEMBERS = "CREATE TABLE " + AnthrosMembers.TABLE_NAME + " (" +
             AnthrosMembers.COLUMN__ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
             AnthrosMembers.COLUMN_UID + " TEXT," +
             AnthrosMembers.COLUMN_UUID + " TEXT," +
@@ -487,14 +498,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             AnthrosMembers.COLUMN_SYNCEDDATE + " TEXT" +
 
             ");";
-    private static final String SQL_DELETE_MWRAS = "DROP TABLE IF EXISTS " + MWRATable.TABLE_NAME;
-    private static final String SQL_DELETE_OUTCOME = "DROP TABLE IF EXISTS " + outcomeTable.TABLE_NAME;
-    private static final String SQL_DELETE_FAMILYMEMBERS = "DROP TABLE IF EXISTS " + familyMembers.TABLE_NAME;
-    private static final String SQL_DELETE_RECIENPTS = "DROP TABLE IF EXISTS " + RecipientsTable.TABLE_NAME;
-    private static final String SQL_DELETE_NUTRITION = "DROP TABLE IF EXISTS " + NutritionTable.TABLE_NAME;
-    private static final String SQL_DELETE_DECEASED = "DROP TABLE IF EXISTS " + DeceasedContract.DeceasedTable.TABLE_NAME;
-    private static final String SQL_DELETE_BLRANDOM = "DROP TABLE IF EXISTS " + BLRandomContract.singleRandomHH.TABLE_NAME;
-    private static final String SQL_DELETE_VERSIONAPP = "DROP TABLE IF EXISTS " + VersionAppTable.TABLE_NAME;
 
     private final String TAG = "DatabaseHelper";
     public String spDateT = new SimpleDateFormat("dd-MM-yy").format(new Date().getTime());
@@ -511,15 +514,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(SQL_CREATE_SERIAL);
         db.execSQL(SQL_CREATE_TALUKA);
         db.execSQL(SQL_CREATE_UC);
-        db.execSQL(SQL_CREATE_ELIGIBLE_MEMBERS);
+        db.execSQL(SQL_CREATE_ANTHROS_MEMBERS);
         db.execSQL(SQL_CREATE_MWRAS);
-        db.execSQL(SQL_CREATE_OUTCOME);
         db.execSQL(SQL_CREATE_FAMILY_MEMEBERS);
-        db.execSQL(SQL_CREATE_RECIPIENTS);
         db.execSQL(SQL_CREATE_VERSIONAPP);
         db.execSQL(SQL_CREATE_BL_RANDOM);
-        db.execSQL(SQL_CREATE_NUTRITION);
-        db.execSQL(SQL_CREATE_DECEASED);
         db.execSQL(SQL_CREATE_SPECIMEN_MEMBERS);
         db.execSQL(SQL_CREATE_WATER_SPECIMEN_MEMBERS);
         db.execSQL(SQL_CREATE_MICRO);
@@ -527,30 +526,22 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(SQL_CREATE_SIGNUP);
         db.execSQL(SQL_CREATE_DWRA);
         db.execSQL(SQL_CREATE_DADOLES);
-
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
         db.execSQL(SQL_DELETE_USERS);
-        db.execSQL(SQL_DELETE_USERS);
         db.execSQL(SQL_DELETE_FORMS);
         db.execSQL(SQL_DELETE_CHILD_FORMS);
-        db.execSQL(SQL_DELETE_SINGLE);
+        db.execSQL(SQL_DELETE_SERIAL);
         db.execSQL(SQL_DELETE_TALUKAS);
         db.execSQL(SQL_DELETE_UCS);
-        db.execSQL(SQL_DELETE_ELIGIBLE_MEMBERS);
+        db.execSQL(SQL_DELETE_ANTHROS_MEMBERS);
         db.execSQL(SQL_DELETE_MWRAS);
-        db.execSQL(SQL_DELETE_OUTCOME);
         db.execSQL(SQL_DELETE_FAMILYMEMBERS);
-        db.execSQL(SQL_DELETE_RECIENPTS);
         db.execSQL(SQL_DELETE_VERSIONAPP);
         db.execSQL(SQL_DELETE_BLRANDOM);
-        db.execSQL(SQL_DELETE_NUTRITION);
-        db.execSQL(SQL_DELETE_DECEASED);
-        /*db.execSQL(SQL_CREATE_NUTRITION);
-        db.execSQL(SQL_CREATE_DWRA);
-        db.execSQL(SQL_SIGNUP_TABLE);*/
+        db.execSQL(SQL_DELETE_D4WRA);
     }
 
     public void syncEnumBlocks(JSONArray Enumlist) {
@@ -1822,7 +1813,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(D4WRATable.COLUMN_SD1, fmc.getsD1());
         values.put(D4WRATable.COLUMN_DSERIALNO, fmc.getD1SerialNo());
         values.put(D4WRATable.COLUMN_FTYPE, fmc.getfType());
-        values.put(D4WRATable.COLUMN_FORMDATE, fmc.getFormDate());
         values.put(D4WRATable.COLUMN_USER, fmc.getUser());
         values.put(D4WRATable.COLUMN_DEVICETAGID, fmc.getDevicetagID());
         values.put(D4WRATable.COLUMN_DEVICEID, fmc.getDeviceId());
@@ -4157,9 +4147,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 D4WRATable.COLUMN_SYNCEDDATE,
 
         };
-        String whereClause = MWRATable.COLUMN_SYNCED
-                + " is null OR "
-                + MWRATable.COLUMN_SYNCED + " = '' AND " + D4WRATable.COLUMN_FTYPE + " =? ";
+        String whereClause = "(" + D4WRATable.COLUMN_SYNCED + " is null OR " + D4WRATable.COLUMN_SYNCED + " = '') AND " + D4WRATable.COLUMN_FTYPE + " =? ";
         String[] whereArgs = {formType};
         String groupBy = null;
         String having = null;
@@ -4170,7 +4158,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         Collection<D4WRAContract> allFC = new ArrayList<D4WRAContract>();
         try {
             c = db.query(
-                    MWRATable.TABLE_NAME,  // The table to query
+                    D4WRATable.TABLE_NAME,  // The table to query
                     columns,                   // The columns to return
                     whereClause,               // The columns for the WHERE clause
                     whereArgs,                 // The values for the WHERE clause

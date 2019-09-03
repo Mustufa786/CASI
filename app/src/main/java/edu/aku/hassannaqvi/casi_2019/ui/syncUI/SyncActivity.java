@@ -38,7 +38,6 @@ import edu.aku.hassannaqvi.casi_2019.contracts.D6AdolesContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.FamilyMembersContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.FormsContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.MWRAContract;
-import edu.aku.hassannaqvi.casi_2019.contracts.OutcomeContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.RecipientsContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.SignupContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.SpecimenContract;
@@ -253,7 +252,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
             ).execute();
 
 //            Toast.makeText(getApplicationContext(), "Syncing Outcomes", Toast.LENGTH_SHORT).show();
-            if (uploadlistActivityCreated) {
+            /*if (uploadlistActivityCreated) {
                 uploadmodel = new SyncModel();
                 uploadmodel.setstatusID(0);
                 uploadlist.add(uploadmodel);
@@ -265,7 +264,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
                     OutcomeContract.class,
                     MainApp._HOST_URL + OutcomeContract.outcomeTable._URL,
                     db.getUnsyncedOutcome(), this.findViewById(R.id.syncStatus), 5, uploadListAdapter, uploadlist
-            ).execute();
+            ).execute();*/
 
 //            Toast.makeText(getApplicationContext(), "Syncing New Users", Toast.LENGTH_SHORT).show();
             if (uploadlistActivityCreated) {
@@ -279,7 +278,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
                     "updateSyncedSignup",
                     RecipientsContract.class,
                     MainApp._HOST_URL + SignupContract.SignUpTable._URL,
-                    db.getUnsyncedSignups(), this.findViewById(R.id.syncStatus), 6, uploadListAdapter, uploadlist
+                    db.getUnsyncedSignups(), this.findViewById(R.id.syncStatus), 5, uploadListAdapter, uploadlist
             ).execute();
 
 //            Toast.makeText(getApplicationContext(), "Syncing Blood Specimen", Toast.LENGTH_SHORT).show();
@@ -294,7 +293,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
                     "updateSyncedSpecimen",
                     SpecimenContract.class,
                     MainApp._HOST_URL + SpecimenContract.SpecimenTable._URL,
-                    db.getUnsyncedSpecimenForms(), this.findViewById(R.id.syncStatus), 7, uploadListAdapter, uploadlist
+                    db.getUnsyncedSpecimenForms(), this.findViewById(R.id.syncStatus), 6, uploadListAdapter, uploadlist
             ).execute();
 
             /*Toast.makeText(getApplicationContext(), "Syncing Blood Specimen", Toast.LENGTH_SHORT).show();
