@@ -47,6 +47,9 @@ public class SectionD6Activity extends AppCompatActivity {
             bi.fldGrpresp.setVisibility(View.VISIBLE);
 
             for (FamilyMembersContract fmc : MainApp.respList) {
+
+                if (fmc.getna204().equals("1")) return;
+
                 respName.add(fmc.getName() + "-" + fmc.getSerialNo());
                 respMap.put(fmc.getName() + "-" + fmc.getSerialNo(), fmc);
             }
