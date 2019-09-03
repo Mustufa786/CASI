@@ -522,8 +522,16 @@ public class SectionA2ListActivity extends AppCompatActivity {
                             MainApp.mwraChild.get(counter - 1).get_UID(),
                             FamilyMembersContract.familyMembers.COLUMN_KISH_SELECTED_MWRA_D);
 
-                    if (updcount == 1) MainApp.mwra.get(counter - 1).setKishMWRASelected("1");
-                    else return false;
+                    if (updcount == 1) {
+
+                        for (int i = 0; i < MainApp.mwra.size(); i++) {
+                            if (MainApp.mwra.get(i).get_UID().equals(MainApp.mwraChild.get(counter - 1).get_UID())) {
+                                MainApp.mwra.get(i).setKishMWRASelected("1");
+                                break;
+                            }
+                        }
+
+                    } else return false;
                 }
             }
             return true;
