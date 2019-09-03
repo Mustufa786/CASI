@@ -983,7 +983,6 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                 // Add data in list
 
                 if (binding.cih210a.isChecked()) {
-
                     if (Age < 2) {
                         MainApp.childUnder2.add(family);
                         MainApp.childUnder2Check.add(family);
@@ -993,13 +992,15 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                         MainApp.childUnder5.add(family);
                         MainApp.childUnder5_Del.add(family);
                     }
+                }
 
-                    if (family.getMotherId().equals("00")) {
+                if (family.getMotherId().equals("00")) {
+                    if (binding.cih210a.isChecked()) {
                         MainApp.childNA.add(family);
-                    } else {
-                        MainApp.mwraChild.add(motherChildMap.get(binding.cih212.getSelectedItem().toString() + "_" + mothersSerials.get(mothersList.indexOf(binding.cih212.getSelectedItem().toString()) - 1)));
                     }
-
+                } else {
+                    if (Age < 5)
+                        MainApp.mwraChild.add(motherChildMap.get(binding.cih212.getSelectedItem().toString() + "_" + mothersSerials.get(mothersList.indexOf(binding.cih212.getSelectedItem().toString()) - 1)));
                 }
 
 

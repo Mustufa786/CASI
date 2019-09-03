@@ -1116,13 +1116,17 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
                     MainApp.childUnder5.add(MainApp.fmc);
                     MainApp.childUnder5_Del.add(MainApp.fmc);
                 }
-
-                if (MainApp.fmc.getMotherId().equals("00")) {
-                    MainApp.childNA.add(MainApp.fmc);
-                } else {
-                    MainApp.mwraChild.add(mothersChildMap.get(binding.cih212.getSelectedItem().toString() + "_" + mothersSerials.get(mothersList.indexOf(binding.cih212.getSelectedItem().toString()) - 1)));
-                }
             }
+
+            if (MainApp.fmc.getMotherId().equals("00")) {
+                if (binding.cih210a.isChecked())
+                    MainApp.childNA.add(MainApp.fmc);
+
+            } else {
+                if (Age < 5)
+                    MainApp.mwraChild.add(mothersChildMap.get(binding.cih212.getSelectedItem().toString() + "_" + mothersSerials.get(mothersList.indexOf(binding.cih212.getSelectedItem().toString()) - 1)));
+            }
+
         }
 
         if (Age >= 15) {
