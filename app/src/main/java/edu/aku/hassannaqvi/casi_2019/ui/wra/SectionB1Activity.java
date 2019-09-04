@@ -140,6 +140,8 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
     private Timer timer = new Timer();
     public static boolean isCurrentlyPreg = false;
 
+    public static boolean userCountryTajik = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -177,6 +179,10 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
         if (!backPressed) {
             MainApp.mc = new MWRAContract();
         }
+
+        HashMap<String, String> tagVal = MainApp.getTagValues(this);
+        String country = tagVal.get("org") != null ? tagVal.get("org").equals("null") ? "0" : tagVal.get("org").equals("") ? "0" : tagVal.get("org") : "0";
+        userCountryTajik = Integer.valueOf(country) == 3;
 
     }
 
@@ -832,6 +838,14 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                         .putExtra("backPressed", classPassName.equals(SectionB6Activity.class.getName())), 1);
             } else if (MainApp.mc.getKishSelectMWRA()) {
                 finish();
+
+                if (userCountryTajik) {
+                    startActivity(new Intent(this, MotherEndingActivity.class)
+                            .putExtra("complete", true));
+
+                    return;
+                }
+
                 if (bi.ciw208a.isChecked())
                     startActivity(new Intent(this, SectionD2AActivity.class));
                 else

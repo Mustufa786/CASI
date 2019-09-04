@@ -30,6 +30,8 @@ import edu.aku.hassannaqvi.casi_2019.ui.wra.secWRAD.SectionD3AActivity;
 import edu.aku.hassannaqvi.casi_2019.validation.ClearClass;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
+import static edu.aku.hassannaqvi.casi_2019.ui.wra.SectionB1Activity.userCountryTajik;
+
 public class SectionB5Activity extends Menu2Activity implements TextWatcher, RadioGroup.OnCheckedChangeListener {
 
     private final long DELAY = 1000;
@@ -268,6 +270,14 @@ public class SectionB5Activity extends Menu2Activity implements TextWatcher, Rad
                     startActivity(new Intent(this, SectionB6Activity.class));
                 } else if (MainApp.mc.getKishSelectMWRA()) {
                     finish();
+
+                    if (userCountryTajik) {
+                        startActivity(new Intent(this, MotherEndingActivity.class)
+                                .putExtra("complete", true));
+
+                        return;
+                    }
+
                     if (SectionB1Activity.isCurrentlyPreg)
                         startActivity(new Intent(this, SectionD2AActivity.class));
                     else
