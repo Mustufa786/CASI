@@ -836,21 +836,14 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
             if (MainApp.mc.getKishSelectWRA()) {
                 startActivityForResult(new Intent(this, SectionB6Activity.class)
                         .putExtra("backPressed", classPassName.equals(SectionB6Activity.class.getName())), 1);
-            } else if (MainApp.mc.getKishSelectMWRA()) {
+            } else if (MainApp.mc.getKishSelectMWRA() && !userCountryTajik) {
                 finish();
-
-                if (userCountryTajik) {
-                    startActivity(new Intent(this, MotherEndingActivity.class)
-                            .putExtra("complete", true));
-
-                    return;
-                }
-
                 if (bi.ciw208a.isChecked())
                     startActivity(new Intent(this, SectionD2AActivity.class));
                 else
                     startActivity(new Intent(this, SectionD3AActivity.class));
             } else {
+                finish();
                 startActivity(new Intent(this, MotherEndingActivity.class)
                         .putExtra("complete", true));
             }

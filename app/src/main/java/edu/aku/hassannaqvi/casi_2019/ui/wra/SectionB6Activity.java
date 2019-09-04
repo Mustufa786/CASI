@@ -190,21 +190,14 @@ public class SectionB6Activity extends Menu2Activity {
             }
             if (UpdateDB()) {
                 backPressed = true;
-                if (MainApp.mc.getKishSelectMWRA()) {
+                if (MainApp.mc.getKishSelectMWRA() && !userCountryTajik) {
                     finish();
-
-                    if (userCountryTajik) {
-                        startActivity(new Intent(this, MotherEndingActivity.class)
-                                .putExtra("complete", true));
-
-                        return;
-                    }
-
                     if (SectionB1Activity.isCurrentlyPreg)
                         startActivity(new Intent(this, SectionD2AActivity.class));
                     else
                         startActivity(new Intent(this, SectionD3AActivity.class));
                 } else {
+                    finish();
                     startActivity(new Intent(this, MotherEndingActivity.class)
                             .putExtra("complete", true));
                 }

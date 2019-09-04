@@ -268,21 +268,14 @@ public class SectionB5Activity extends Menu2Activity implements TextWatcher, Rad
 
                 if (MainApp.mc.getKishSelectWRA()) {
                     startActivity(new Intent(this, SectionB6Activity.class));
-                } else if (MainApp.mc.getKishSelectMWRA()) {
+                } else if (MainApp.mc.getKishSelectMWRA() && !userCountryTajik) {
                     finish();
-
-                    if (userCountryTajik) {
-                        startActivity(new Intent(this, MotherEndingActivity.class)
-                                .putExtra("complete", true));
-
-                        return;
-                    }
-
                     if (SectionB1Activity.isCurrentlyPreg)
                         startActivity(new Intent(this, SectionD2AActivity.class));
                     else
                         startActivity(new Intent(this, SectionD3AActivity.class));
                 } else {
+                    finish();
                     startActivity(new Intent(this, MotherEndingActivity.class)
                             .putExtra("complete", true));
                 }
