@@ -220,10 +220,10 @@
     <string name="cih301g"> پشتو </string>
     <string name="cih301h"> دری </string>
     <string name="cih301i"> ازبیکی </string>
-    <string name="cih301j"> رشین    </string>
-    <string name="cih301k"> تاجک </string>
-    <string name="cih301l"> شغنی </string>
-    <string name="cih301m"> اشکاشیمی </string>
+    <!--    <string name="cih301j"> رشین    </string>
+        <string name="cih301k"> تاجک </string>
+        <string name="cih301l"> شغنی </string>
+        <string name="cih301m"> اشکاشیمی </string>-->
     <string name="daysQuan"> تعداد روز</string>
     <string name="cih302a"> شخصی   </string>
     <string name="cih302b"> کرایی </string>
