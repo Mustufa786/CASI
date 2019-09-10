@@ -273,6 +273,62 @@
                             android:text="@string/ciw303e" />
 
                         <RadioButton
+                            android:id="@+id/ciw303l"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:text="@string/ciw303l" />
+
+                        <RadioButton
+                            android:id="@+id/ciw303m"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:text="@string/ciw303m" />
+
+                        <RadioButton
+                            android:id="@+id/ciw303n"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:text="@string/ciw303n" />
+
+                        <RadioButton
+                            android:id="@+id/ciw303o"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:text="@string/ciw303o" />
+
+                        <RadioButton
+                            android:id="@+id/ciw303p"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:text="@string/ciw303p" />
+
+                        <RadioButton
+                            android:id="@+id/ciw303q"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:text="@string/ciw303q" />
+
+                        <RadioButton
+                            android:id="@+id/ciw303r"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:text="@string/ciw303r" />
+
+                        <RadioButton
+                            android:id="@+id/ciw303s"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:text="@string/ciw303s" />
+
+                        <RadioButton
                             android:id="@+id/ciw303f"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -682,6 +738,7 @@
                 </LinearLayout>
 
 
+                <!--ciw310-->
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -690,7 +747,6 @@
                     android:text="@string/ciw310"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="@android:color/white" />
-
 
                 <RadioGroup
                     android:id="@+id/ciw310"
@@ -717,12 +773,62 @@
                 </RadioGroup>
 
                 <!--ciw311-->
-
                 <LinearLayout
                     android:id="@+id/fldGrpnb210"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
+
+                    <!--ciw31001-->
+                    <LinearLayout
+                        android:id="@+id/fldGrpciw310"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:background="@color/colorPrimary"
+                            android:text="@string/ciw31001"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@android:color/white" />
+
+                        <RadioGroup
+                            android:id="@+id/ciw31001"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/ciw31001a"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                android:layout_weight="1"
+                                android:text="@string/ciw31001a" />
+
+                            <RadioButton
+                                android:id="@+id/ciw31001b"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                android:layout_weight="1"
+                                android:text="@string/ciw31001b" />
+
+                            <RadioButton
+                                android:id="@+id/ciw31001c"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                android:layout_weight="1"
+                                android:text="@string/ciw31001c" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
 
                     <TextView
                         android:layout_width="match_parent"
@@ -1924,9 +2030,8 @@
 
 
                 </LinearLayout>
+
                 <!--ciw325-->
-
-
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -1959,6 +2064,48 @@
                         android:text="@string/no" />
 
                 </RadioGroup>
+
+                <!--ciw32501-->
+                <LinearLayout
+                    android:id="@+id/fldGrpciw325"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@color/colorPrimary"
+                        android:text="@string/ciw32501"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/white" />
+
+                    <RadioGroup
+                        android:id="@+id/ciw32501"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/ciw32501a"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/yes" />
+
+                        <RadioButton
+                            android:id="@+id/ciw32501b"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/no" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
 
                 <!--ciw326-->
 

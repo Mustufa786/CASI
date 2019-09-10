@@ -79,6 +79,10 @@ public class SectionC1Activity extends AddMember_MenuActivity implements TextWat
     JSONC1ModelClass jsonC1;
     private Timer timer = new Timer();
 
+
+    public static boolean userCountryTajik_Child = false;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -110,6 +114,12 @@ public class SectionC1Activity extends AddMember_MenuActivity implements TextWat
         } else {
             setupViews();
         }
+
+
+        HashMap<String, String> tagVal = MainApp.getTagValues(this);
+        String country = tagVal.get("org") != null ? tagVal.get("org").equals("null") ? "0" : tagVal.get("org").equals("") ? "0" : tagVal.get("org") : "0";
+        userCountryTajik_Child = Integer.valueOf(country) == 3;
+
     }
 
     public void setupSkips() {

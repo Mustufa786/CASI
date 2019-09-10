@@ -36,6 +36,8 @@ import edu.aku.hassannaqvi.casi_2019.ui.wra.SectionB1Activity;
 import edu.aku.hassannaqvi.casi_2019.validation.ClearClass;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
+import static edu.aku.hassannaqvi.casi_2019.ui.childs.SectionC1Activity.userCountryTajik_Child;
+
 public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnCheckedChangeListener, TextWatcher {
 
     private final long DELAY = 1000;
@@ -267,6 +269,14 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
         });
 
         autoPopulateFields();
+
+
+        /*Only for Tajik*/
+        if (userCountryTajik_Child) {
+            bi.fldGrpC217e.setVisibility(View.GONE);
+            bi.fldGrpC217n.setVisibility(View.GONE);
+        }
+
 
     }
 
@@ -857,8 +867,10 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
             return false;
         }
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.cic217e, bi.cic217ea, getString(R.string.cic217e))) {
-            return false;
+        if (!userCountryTajik_Child) {
+            if (!ValidatorClass.EmptyRadioButton(this, bi.cic217e, bi.cic217ea, getString(R.string.cic217e))) {
+                return false;
+            }
         }
 
         if (!ValidatorClass.EmptyRadioButton(this, bi.cic217f, bi.cic217fa, getString(R.string.cic217f))) {
@@ -897,16 +909,18 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
             return false;
         }
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.cic217o, bi.cic217oa, getString(R.string.cic217o))) {
-            return false;
-        }
+        if (!userCountryTajik_Child) {
+            if (!ValidatorClass.EmptyRadioButton(this, bi.cic217o, bi.cic217oa, getString(R.string.cic217o))) {
+                return false;
+            }
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.cic217p, bi.cic217pa, getString(R.string.cic217p))) {
-            return false;
-        }
+            if (!ValidatorClass.EmptyRadioButton(this, bi.cic217p, bi.cic217pa, getString(R.string.cic217p))) {
+                return false;
+            }
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.cic217q, bi.cic217qa, getString(R.string.cic217q))) {
-            return false;
+            if (!ValidatorClass.EmptyRadioButton(this, bi.cic217q, bi.cic217qa, getString(R.string.cic217q))) {
+                return false;
+            }
         }
 
         if (isAllNo()) {

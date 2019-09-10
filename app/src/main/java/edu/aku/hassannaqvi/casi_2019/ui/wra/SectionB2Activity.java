@@ -30,6 +30,8 @@ import edu.aku.hassannaqvi.casi_2019.ui.viewMem.ViewMemberActivity;
 import edu.aku.hassannaqvi.casi_2019.validation.ClearClass;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
+import static edu.aku.hassannaqvi.casi_2019.ui.wra.SectionB1Activity.userCountryTajik;
+
 public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnCheckedChangeListener, TextWatcher {
 
     private final long DELAY = 1000;
@@ -55,6 +57,22 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
         MainApp.validateFlag = false;
 
         AutoCompleteFields();
+
+
+        /*For Tajik Visibility*/
+        bi.ciw303l.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        bi.ciw303m.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        bi.ciw303n.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        bi.ciw303o.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        bi.ciw303p.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        bi.ciw303q.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        bi.ciw303r.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        bi.ciw303s.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        bi.ciw303i.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        bi.ciw30396.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        bi.fldGrpciw310.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        bi.fldGrpciw325.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+
 
     }
 
@@ -149,7 +167,6 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
         bi.ciw323.setOnCheckedChangeListener(this);
         bi.ciw324m.addTextChangedListener(this);
         bi.ciw324d.addTextChangedListener(this);
-        bi.ciw325.setOnCheckedChangeListener(this);
         bi.ciw326.setOnCheckedChangeListener(this);
 
         bi.ciw310.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -204,6 +221,19 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
                     ClearClass.ClearAllFields(bi.fldGrpciw323, null);
                     ClearClass.ClearAllFields(bi.fldGrpciw322, null);
 
+                }
+            }
+        });
+
+        bi.ciw325.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i == bi.ciw325a.getId()) {
+                    if (!userCountryTajik) return;
+                    bi.fldGrpciw325.setVisibility(View.VISIBLE);
+                } else {
+                    bi.ciw32501.clearCheck();
+                    bi.fldGrpciw325.setVisibility(View.GONE);
                 }
             }
         });
@@ -264,12 +294,20 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
                                         jsonB2.getciw303().equals("3") ? bi.ciw303c.getId() :
                                                 jsonB2.getciw303().equals("4") ? bi.ciw303d.getId() :
                                                         jsonB2.getciw303().equals("5") ? bi.ciw303e.getId() :
-                                                                jsonB2.getciw303().equals("6") ? bi.ciw303f.getId() :
+                                                                jsonB2.getciw303().equals("961") ? bi.ciw303f.getId() :
                                                                         jsonB2.getciw303().equals("7") ? bi.ciw303g.getId() :
                                                                                 jsonB2.getciw303().equals("8") ? bi.ciw303h.getId() :
                                                                                         jsonB2.getciw303().equals("9") ? bi.ciw303i.getId() :
-                                                                                                jsonB2.getciw303().equals("10") ? bi.ciw303j.getId() :
-                                                                                                        bi.ciw30396.getId()
+                                                                                                jsonB2.getciw303().equals("962") ? bi.ciw303j.getId() :
+                                                                                                        jsonB2.getciw303().equals("11") ? bi.ciw303l.getId() :
+                                                                                                                jsonB2.getciw303().equals("12") ? bi.ciw303m.getId() :
+                                                                                                                        jsonB2.getciw303().equals("13") ? bi.ciw303n.getId() :
+                                                                                                                                jsonB2.getciw303().equals("14") ? bi.ciw303o.getId() :
+                                                                                                                                        jsonB2.getciw303().equals("15") ? bi.ciw303p.getId() :
+                                                                                                                                                jsonB2.getciw303().equals("16") ? bi.ciw303q.getId() :
+                                                                                                                                                        jsonB2.getciw303().equals("17") ? bi.ciw303r.getId() :
+                                                                                                                                                                jsonB2.getciw303().equals("18") ? bi.ciw303s.getId() :
+                                                                                                                                                                        bi.ciw30396.getId()
                 );
 
                 bi.ciw303961x.setText(jsonB2.getciw303961x());
@@ -344,6 +382,13 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
                 bi.ciw310.check(
                         jsonB2.getciw310().equals("1") ? bi.ciw310a.getId() :
                                 bi.ciw310b.getId());
+            }
+
+            if (!jsonB2.getciw31001().equals("0")) {
+                bi.ciw31001.check(
+                        jsonB2.getciw31001().equals("1") ? bi.ciw31001a.getId() :
+                                jsonB2.getciw31001().equals("2") ? bi.ciw31001b.getId() :
+                                        bi.ciw31001c.getId());
             }
 
             if (!jsonB2.getciw311().equals("0")) {
@@ -604,6 +649,12 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
                         jsonB2.getciw325().equals("1") ? bi.ciw325a.getId() :
                                 bi.ciw325b.getId());
             }
+
+            if (!jsonB2.getciw32501().equals("0")) {
+                bi.ciw32501.check(
+                        jsonB2.getciw32501().equals("1") ? bi.ciw32501a.getId() :
+                                bi.ciw32501b.getId());
+            }
             if (!jsonB2.getciw326().equals("0")) {
                 bi.ciw326.check(
                         jsonB2.getciw326().equals("1") ? bi.ciw326a.getId() :
@@ -774,6 +825,13 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
         }
 
         if (bi.ciw310a.isChecked()) {
+
+
+            if (userCountryTajik) {
+                if (!ValidatorClass.EmptyRadioButton(this, bi.ciw31001, bi.ciw31001a, getString(R.string.ciw31001))) {
+                    return false;
+                }
+            }
 
 
             if (!ValidatorClass.EmptyRadioButton(this, bi.ciw311, bi.ciw311a, getString(R.string.ciw311))) {
@@ -961,6 +1019,12 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
             return false;
         }
 
+        if (bi.ciw325a.isChecked() && userCountryTajik) {
+            if (!ValidatorClass.EmptyRadioButton(this, bi.ciw32501, bi.ciw32501a, getString(R.string.ciw32501))) {
+                return false;
+            }
+        }
+
         return ValidatorClass.EmptyRadioButton(this, bi.ciw326, bi.ciw326a, getString(R.string.ciw326));
     }
 
@@ -1001,6 +1065,14 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
                 : bi.ciw303h.isChecked() ? "8"
                 : bi.ciw303i.isChecked() ? "9"
                 : bi.ciw303j.isChecked() ? "962"
+                : bi.ciw303l.isChecked() ? "11"
+                : bi.ciw303m.isChecked() ? "12"
+                : bi.ciw303n.isChecked() ? "13"
+                : bi.ciw303o.isChecked() ? "14"
+                : bi.ciw303p.isChecked() ? "15"
+                : bi.ciw303q.isChecked() ? "16"
+                : bi.ciw303r.isChecked() ? "17"
+                : bi.ciw303s.isChecked() ? "18"
                 : bi.ciw30396.isChecked() ? "963"
                 : "0");
         sB2.put("ciw303961x", bi.ciw303961x.getText().toString());
@@ -1048,6 +1120,12 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
 //        ciw310
         sB2.put("ciw310", bi.ciw310a.isChecked() ? "1"
                 : bi.ciw310b.isChecked() ? "2"
+                : "0");
+
+//        ciw31001
+        sB2.put("ciw31001", bi.ciw31001a.isChecked() ? "1"
+                : bi.ciw31001b.isChecked() ? "2"
+                : bi.ciw31001c.isChecked() ? "3"
                 : "0");
 
 //          ciw311
@@ -1208,6 +1286,10 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
 //        ciw325
         sB2.put("ciw325", bi.ciw325a.isChecked() ? "1"
                 : bi.ciw325b.isChecked() ? "2"
+                : "0");
+//        ciw32501
+        sB2.put("ciw32501", bi.ciw32501a.isChecked() ? "1"
+                : bi.ciw32501b.isChecked() ? "2"
                 : "0");
 //        ciw326
         sB2.put("ciw326", bi.ciw326a.isChecked() ? "1"

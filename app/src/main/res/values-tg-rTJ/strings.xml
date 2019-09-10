@@ -100,7 +100,7 @@
     <string name="cih110">Ном ва рақами роҳбари гурӯҳ </string>
     <string name="na106"> Сана ва вақти пурсиш </string>
     <string name="cih113">  ۔H113 -Номи мусоҳиб: </string>
-    <string name="respName"> جواب دہندہ کا نام </string>
+    <string name="respName">  Номи мусоҳиб  </string>
     <string name="cih111">   Санаи мусоҳиба:  </string>
     <string name="cih115"> Синну соли пурраи </string>
     <string name="cih115a"> мусоҳиб </string>
@@ -217,7 +217,7 @@
     <string name="cih301h"> Русӣ </string>
     <string name="cih301i"> Қирғизӣ </string>
 
-    <string name="daysQuan"> دنوں کی تعداد</string>
+    <string name="daysQuan"> Миқдори рӯзҳо</string>
 
     <string name="cih302">۔H302 - Намуди моликият</string>
     <string name="cih302a"> Хусусӣ </string>
@@ -454,7 +454,7 @@
     <string name="cih504">۔H504 - کیا آپ کے گھر میں تقویت بخش  غذائیت سے بھرپور آٹا استعمال ہوتا ہے؟</string>
     <string name="cih505">۔H505 - کیا آپ کے گھر میں تقویت بخش غذائیت سے بھرپور خوردنی تیل/گھی استعمال ہوتا ہے؟</string>
 
-    <string name="na6heading"> سیکشن 5: نمک میں آیوڈین کی مقدار جاننے کا ٹیسٹ </string>
+    <string name="na6heading">  H5: НАМАКИ ЙОДДОР (SI) </string>
 
     <string name="na601">۔H601 -Мо мехостем намакатонро санҷида бинем, ки оё дар таркиби он йод мавҷуд аст ё нест. Лутфан ба ман камтар аз намаке, ки бо он барои хонаводаатон хӯрок мепазед, диҳед. </string>
     <string name="na603">۔H603 - Бинед, ки оё халтаи намак чопи “Намаки Йоддор” дорад ё не? </string>
@@ -607,31 +607,43 @@
     <string name="ciw301">۔W301 -Оё дар вақти бо (ном) ҳомиладор будан ягон кас шуморо аз назар гузаронд?</string>
     <string name="ciw301a">۔W301 - Ҳа  </string>
     <string name="ciw302info"> Ҳамаи ҷавобҳоро нависед </string>
+
     <string name="ciw302">۔W302 -Кӣ шуморо аз назар гузаронд?</string>
-    <string name="ciw302a">Духтур </string>
-    <string name="ciw302b"> Ҳамшираи шавқат </string>
-    <string name="ciw302c"> Акушерка </string>
-    <string name="ciw302d">Акушер-гинеколог </string>
-    <string name="ciw302e">Фельдшер </string>
-    <string name="ciw302f">Хеш/дугона </string>
-    <string name="ciw302g">Момодоя анъанавӣ </string>
-    <string name="ciw302h"> Корманди худихтиёри тиб </string>
+    <string name="ciw302a"> Духтури ҳамрозаи занон   </string>
+    <string name="ciw302b"> Духтури дигар  </string>
+    <string name="ciw302c"> Ҳамшираи шавқат   </string>
+    <string name="ciw302d"> Акушер-гинеколог    </string>
+    <string name="ciw302e"> Фельдшер    </string>
+    <string name="ciw302f"> Хеш/дугона/ҳамсоя    </string>
+    <string name="ciw302g"> Момодояи анъанавӣ    </string>
+    <string name="ciw302h"> Корманди худихтиёри тиб (волонтер)  </string>
+
     <string name="ciw303">۔W303 -Шумо барои муоинаи то таваллуд ба куҷо рафтед?</string>
-    <string name="ciw303sub1"> گھر </string>
-    <string name="ciw303a"> جواب دہندہ کے گھر پر </string>
-    <string name="ciw303b"> کسی اور کے گھر پر  </string>
-    <string name="ciw303sub2"> بپلک میڈیکل سیکٹر </string>
-    <string name="ciw303c"> سرکاری ہسپتال  </string>
-    <string name="ciw303d">سرکاری کلینک </string>
-    <string name="ciw303e">ماں اور بچہ کا صحت مرکز   </string>
-    <string name="ciw303f">  دیگر  سرکاری</string>
-    <string name="ciw303sub3">نجی ہسپتال/سیکٹر </string>
-    <string name="ciw303g"> پرائیوٹ ہسپتال </string>
-    <string name="ciw303h"> نجی  کلینک </string>
-    <string name="ciw303i"> نجی زچہ و بچہ سینٹر </string>
-    <string name="ciw303j"> دیگرنجی  </string>
-    <string name="ciw303k">  جگہ کا نام </string>
-    <string name="ciw303l"> </string>
+    <string name="ciw303sub1"> Хона </string>
+    <string name="ciw303a">   Дар хонаи худ  </string>
+    <string name="ciw303b">   Дар хонаи дигар </string>
+
+    <string name="ciw303sub2"> Бахши давлатӣ </string>
+    <string name="ciw303c"> Маркази саломатӣ </string>
+    <string name="ciw303d"> Маркази саломатии деҳотӣ </string>
+    <string name="ciw303e"> Беморхонаи деҳотӣ  </string>
+    <string name="ciw303f"> Дигар (аниқ кунед)</string>
+    <string name="ciw303l">Маркази саломатии ноҳиявӣ </string>
+    <string name="ciw303m">Маркази саломатии репродуктивии ноҳиявӣ </string>
+    <string name="ciw303n">Беморхонаи ноҳиявӣ  </string>
+    <string name="ciw303o">Маркази саломатии шаҳрӣ </string>
+    <string name="ciw303p">Беморхонаи шаҳрӣ </string>
+    <string name="ciw303q">Маркази саломатии репродуктивии вилоятӣ </string>
+    <string name="ciw303r">Беморхонаи вилоятӣ  </string>
+    <string name="ciw303s">Диспансер </string>
+
+    <string name="ciw303sub3">  Бахши хусусӣ </string>
+    <string name="ciw303g">     Баморхонаи хусусӣ   </string>
+    <string name="ciw303h">     Клиника      </string>
+    <string name="ciw303i">       </string>
+    <string name="ciw303j">  Хусусии дигар (аниқ кунед)</string>
+    <string name="ciw303k">   </string>
+
     <string name="ciw304">۔W304 -ҲАНГОМЕ, КИ БОРИ АВВАЛ ШУМО БАРОИ ҲОМИЛАДОРИИ ОХИРОН АЗ МУОИНА ГУЗАШТЕД, ДАР КАДОМ МОҲИ ҲОМИЛАДОРӢ ҚАРОР ДОШТЕД?</string>
     <string name="ciw304info">Ҷавоби мусоҳибро нависед. Агар ҷавоб 9 моҳ бошад ё дертар рақами 9 нависед.   </string>
     <string name="ciw305">۔W305 - Дар давоми ҳамин ҳомиладорӣ чанд маротиба ҳамагӣ аз муоинаи то таваллуд гузаштед?</string>
@@ -656,15 +668,21 @@
     <string name="ciw308">۔W308 -Оё дар вақти ҳомиладорӣ бо (ном) шумо сӯзандоруи кузоз ки барои пешгирӣ намудани касалии tetanus, яъне кашиши кудак дар даст ё китф карда мешавад мешавад гирифтед?</string>
     <string name="ciw309">۔W309 -Шумо чанд маротиба сӯзандоруи кузозро гирифтед? </string>
     <string name="ciw310">۔W310 -Оё дар давоми ин ҳомиладорӣ шумо таблеткаҳои туршии фолат-ро истеъмол кардед?</string>
+    <string name="ciw31001">W310a - Дар кадом вақти ҳомиладорӣ шумо оҳан кислотаи фолеаро истеъмол кардан сар кардед?</string>
+    <string name="ciw31001a">Триместри 1 (се моҳи аввал) </string>
+    <string name="ciw31001b">Триместри 2 (се моҳи мобайн)</string>
+    <string name="ciw31001c">Триместри 3 (се моҳо охир)</string>
+
     <string name="ciw311">۔W311 Кӣ ба шумо маслиҳат дод, ки таблеткаҳои туршии фолатродар вақти ҳомиладорӣ истеъмол кунед?</string>
-    <string name="ciw311a"> Духтур</string>
-    <string name="ciw311b">Ҳамшираи шавқат </string>
-    <string name="ciw311c"> Акушерка </string>
-    <string name="ciw311d"> Акушер-гинеколог</string>
-    <string name="ciw311e"> Фельдшер </string>
-    <string name="ciw311f">Хеш/дугона </string>
-    <string name="ciw311g"> Момодоя анъанавӣر</string>
-    <string name="ciw311h"> Корманди худихтиёри тиб </string>
+    <string name="ciw311a"> Духтури ҳамрозаи занон   </string>
+    <string name="ciw311b"> Духтури дигар  </string>
+    <string name="ciw311c"> Ҳамшираи шавқат   </string>
+    <string name="ciw311d"> Акушер-гинеколог    </string>
+    <string name="ciw311e"> Фельдшер    </string>
+    <string name="ciw311f"> Хеш/дугона/ҳамсоя    </string>
+    <string name="ciw311g"> Момодояи анъанавӣ    </string>
+    <string name="ciw311h"> Корманди худихтиёри тиб (волонтер)  </string>
+
     <string name="ciw312">۔W312 -Дар вақти ҳомиладорӣ шумо чӣ қадар зуд таблеткаҳои туршии фолат-роистеъмол кардед? </string>
     <string name="ciw312sub1"> Бахши давлатӣ</string>
     <string name="ciw312a">  Маркази саломатӣ</string>
@@ -684,6 +702,7 @@
     <string name="ciw312k">   Диспансер </string>
     <string name="ciw312l">  Корманди худихтиёри тиб  </string>
     <string name="ciw312m">   Беморхона/дармонгоҳи хусусӣ   </string>
+
     <string name="ciw313">۔W313 - آپ حمل کے دوارن فولاد کی گولیاں کتنی مرتبہ استعمال کرتی تھیں؟</string>
     <string name="ciw313a"> Якбор дар як руз </string>
     <string name="ciw313b">Якбор дар як ҳафта </string>
@@ -726,17 +745,18 @@
     <string name="ciw324m"> Моҳ </string>
     <string name="ciw324d"> Руз  </string>
     <string name="ciw325">۔W325 - Оё ба шумо дар вақти ҳомиладорӣ доруи зидди кирм доданд? </string>
+    <string name="ciw32501">۔W325a - Оё шумо доруи зидди кирмро истеъмол кардед? </string>
     <string name="ciw326">۔W326 -Оё дар вақти ҳомиладории охирон шумо шабкурӣ доштед? (мушкилӣ бо биноӣ дар торикӣ)</string>
-    <string name="ciw327">۔W327 -Кай бори охир корманди тибби оилавӣ ба хонаатон ташриф овардааст?  </string>
+    <string name="ciw327">۔W327 -Чанд вақт пеш бори охир корманди тибби оилавӣ ба хонаатон ташриф овардааст?  </string>
     <string name="ciw327m"> Моҳ  </string>
     <string name="ciw327d"> Руз  </string>
-    <string name="ciw328">۔W328 - Чӣ қадар зуд корманди тибби оилавӣба хонаатон ташриф меорад? </string>
+    <string name="ciw328">۔W328 - Чӣ қадар зуд корманди тибби оилавӣ ба хонаатон ташриф меорад? </string>
     <string name="ciw328a"> Ҳар ҳафта </string>
     <string name="ciw328b"> Як бор дар ду ҳафта</string>
     <string name="ciw328c">Ҳар моҳ </string>
     <string name="ciw328d"> Баъзан </string>
     <string name="ciw328e"> Фақат дар вақти эмкунӣ (фалаҷ)</string>
-    <string name="ciw329">۔W329 -Бори охир корманди тибби оилавӣбо кадом мақсад ба хонаатон ташриф овард? </string>
+    <string name="ciw329">۔W329 -Бори охир корманди тибби оилавӣ бо кадом мақсад ба хонаатон ташриф овард? </string>
     <string name="ciw329a"> Маълумот оиди саломатӣ ва ғизо </string>
     <string name="ciw329b">Таъминоти усулҳои пешгирии ҳомиладорӣ</string>
     <string name="ciw329c"> Фиристодан ба HFC </string>
@@ -745,7 +765,7 @@
     <string name="ciw329f">Табобати модар </string>
     <string name="ciw329g">Табобати кудак </string>
     <string name="ciw329h">Таъминоти ғизо </string>
-    <string name="ciw330">۔W330 -Кай бори охиркорманди тибби оилавӣоиди саломатӣ ва ғизо суҳбат гузаронд?</string>
+    <string name="ciw330">۔W330 -Кай бори охир корманди тибби оилавӣ оиди саломатӣ ва ғизо суҳбат гузаронд?</string>
     <string name="ciw330a">Моҳи гузашта </string>
     <string name="ciw330b">Чор моҳ пеш </string>
     <string name="ciw330c">Дар давоми шаш моҳи охир </string>
@@ -761,12 +781,12 @@
     <string name="ciw401sub">Корманди тиб</string>
     <string name="ciw401">  ۔W401 Кӣ таваллуди (НОМ)-ро қабул кард? </string>
     <string name="ciw401a"> Духтур </string>
-    <string name="ciw401c"> Акушерка  </string>
-    <string name="ciw401sub1">Дигар шахс</string>
+    <string name="ciw401b"> Акушерка  </string>
+    <string name="ciw401c"> Ҳамшираи шавқат </string>
     <string name="ciw401d"> Акушер-гинеколог </string>
+    <string name="ciw401sub1">Дигар шахс</string>
     <string name="ciw401e">Момодояи анъанавӣ  </string>
     <string name="ciw401f">Хешу табор/дугона </string>
-    <string name="ciw401b">Ҳамшираи шавқат </string>
     <string name="ciw401g">Момодояи анъанавӣ </string>
     <string name="ciw401h">  гинеколог</string>
     <string name="ciw402"> ۔W402 -Дар вақти таваллудт (НОМ) кӣ ба шумо кумак кард? </string>
@@ -834,7 +854,7 @@
     <string name="ciw412d"> Дигар (аниқ кунед) </string>
     <string name="ciw412e"> راکھ </string>
     <string name="ciw412f"> گوبر </string>
-    <string name="ciw413">۔W413- اگر کلورہیکسیڈین کا استعمال کیا گیا تھا تو جواب دہندہ سے اس کی فراہمی کے زرائع کے بارے میں پوچھیں۔</string>
+    <string name="ciw413">۔W413- Хлориксидин аз куҷо дастрас карда шуд? </string>
     <string name="ciw413sub1"> Корманди тиб </string>
     <string name="ciw413a">Духтур </string>
     <string name="ciw413b"> Ҳамшираи шавқат</string>
@@ -847,13 +867,13 @@
     <string name="ciw413h"> Дигар (аниқ кунед) </string>
     <string name="ciw413i">غیرسرکاری عوامی صحت کارکن </string>
     <string name="ciw413j"> غیر سرکاری موبائل کلینک </string>
-    <string name="ciw413sub3"> دیگر زرائع</string>
+    <string name="ciw413sub3"> Дигар манбаъ</string>
     <string name="ciw413k">رشتہ دار /دوست</string>
     <string name="ciw413l"> دوکان /بازار/مفت تقسیم کرنے والوں سے </string>
     <string name="ciw413m"> روایتی تجربہ کار </string>
     <string name="ciw413961"> دوسرے عوامی وضاحت کریں</string>
     <string name="ciw413962"> دیگر نجی  (وضاحت کریں) </string>
-    <string name="nb5heading"> SECTION B5: POST NATAL CARE (For all MWRA with at least one delivery REF B1 Q6) </string>
+    <string name="nb5heading">  ҚИСМИ W4: ТАВАЛЛУД ВА МУОИНАИ БАЪДИ ТАВАЛЛУД  </string>
     <string name="ciw414">۔W414-Оё ягон кас баъди таваллуд саломатии шуморо санҷид? </string>
     <string name="ciw415">۔W415 - Мақсадимуоина</string>
     <!--<string name="ciw415"> Кӣ баъди таваллуд саломатии шуморо санҷид? </string>-->
@@ -955,7 +975,7 @@
 
 
     <!-- Foods-->
-    <string name="ciw601">Yesterday during the day or night, did you eat or drink:</string>
+    <string name="ciw601">Дирӯз дар давоми рӯз ё шаб, шумо хӯрок хӯрдед ё нӯшидед</string>
     <string name="ciw601a1">روٹی</string>
     <string name="ciw601a2">دلیہ / اناج / کارن فلیکس</string>
     <string name="ciw601a3">نوڈلس / پاستا</string>
@@ -1190,42 +1210,63 @@
     <string name="cic303b"> Ҳа, фақат дигар ҳуҷҷат дида шуд</string>
     <string name="cic303c"> Ҳа, ҳам корт ва ҳам дигар ҳуҷҷат дида шуд</string>
     <string name="cic303d"> Не корт ва не дигар ҳуҷҷат дида шуд </string>
-    <string name="atbirth"> Дар муддати 24 соати баъди таваллуд  </string>
-    <string name="cic3bcg">ОПВ-0 (Қатраи фалаҷ) </string>
+
+    <string name="atbirth"> Баъди 24 соат пас аз таваллуд  </string>
+    <string name="atbirth2"> Дар давоми 3-5 рузи баъди таваллуд  </string>
+    <string name="cic3bcg">Сил (БСЖ)-1 </string>
     <string name="cic3bcgdt"> DD-MM-YYYY </string>
-    <string name="cic3opv0">۔OPV  پولیو پیدائش کے وقت  </string>
+    <string name="cic3opv0"> Фалаҷ 0 </string>
     <string name="cic3opv0dt"> DD-MM-YYYY </string>
-    <string name="at6wks">  6 ہفتوں کی عمر کے وقت </string>
-    <string name="cic3opv1"> ۔OPV 1۔ 6 ہفتوں کی عمر کے وقت </string>
+    <string name="cic3hptb"> Гапатит В </string>
+    <string name="cic3hptdtb"> DD-MM-YYYY </string>
+
+    <string name="at6wks"> Дар 2 моҳагӣ </string>
+    <string name="cic3opv1"> Фалаҷ-1 </string>
     <string name="cic3opv1dt"> DD-MM-YYYY </string>
-    <string name="cic3p1"> ۔Pentavalent 1۔ 6 ہفتوں کی عمر کے وقت </string>
+    <string name="cic3p1"> ПЕНТА-1 </string>
     <string name="cic3p1dt"> DD-MM-YYYY </string>
-    <string name="cic3pcv1"> ۔Pneumococcal 1۔ 6 ہفتوں کی عمر کے وقت </string>
+    <string name="cic3pcv1"> Ротавирус -1 </string>
     <string name="cic3pcv1dt"> DD-MM-YYYY </string>
-    <string name="at10wks"> ۔10 ہفتوں کی عمر کے وقت </string>
-    <string name="cic3opv2"> ۔OPV 2۔ 10 ہفتوں کی عمر کے وقت </string>
+
+    <string name="at10wks"> Дар 3 моҳагӣ </string>
+    <string name="cic3opv2"> Фалаҷ-2 </string>
     <string name="cic3opv2dt"> DD-MM-YYYY </string>
-    <string name="cic3p2"> ۔Pentavalent 2۔ 10 ہفتوں کی عمر کے وقت </string>
+    <string name="cic3p2"> ПЕНТА-2 </string>
     <string name="cic3p2dt"> DD-MM-YYYY </string>
-    <string name="cic3pcv2"> ۔Pneumococcal 2۔ 10 ہفتوں کی عمر کے وقت </string>
+    <string name="cic3pcv2"> Ротавирус -2 </string>
     <string name="cic3pcv2dt"> DD-MM-YYYY </string>
-    <string name="at14wks"> ۔14 ہفتوں کی عمر کے وقت </string>
-    <string name="cic3opv3"> ۔OPV 3۔ 14 ہفتوں کی عمر کے وقت </string>
+
+    <string name="at14wks"> Дар 4 моҳагӣ </string>
+    <string name="cic3opv3"> Фалаҷ -3 </string>
     <string name="cic3opv3dt"> DD-MM-YYYY </string>
-    <string name="cic3p3"> ۔Pentavalent 3۔ 14 ہفتوں کی عمر کے وقت </string>
+    <string name="cic3p3"> ПЕНТА-3  </string>
     <string name="cic3p3dt"> DD-MM-YYYY </string>
-    <string name="cic3pcv3"> ۔Pneumococcal 3۔ 14 ہفتوں کی عمر کے وقت </string>
-    <string name="cic3pcv3dt"> DD-MM-YYYY </string>
-    <string name="cic3ipv"> ۔IPV۔ 14 ہفتوں کی عمر کے وقت </string>
+    <string name="cic3pcv3">  </string>
+    <string name="cic3pcv3dt"> </string>
+    <string name="cic3ipv"> Фалаҷ (ИПВ) </string>
     <string name="cic3ipvdt"> DD-MM-YYYY </string>
-    <string name="at9m"> 9 مہینے کی عمر کے وقت </string>
-    <string name="cic3m1"> ۔Measles 1۔ 9 مہینے کی عمر کے وقت </string>
+
+    <string name="at9m"> Дар 12 моҳагӣ </string>
+    <string name="cic3m1"> СГ (МР)-1 </string>
     <string name="cic3m1dt"> DD-MM-YYYY </string>
-    <string name="at15m">      15 مہینے کی عمر کے وقت </string>
-    <string name="cic3m2"> ۔Measles 2۔ 15 مہینے کی عمر کے وقت </string>
+    <string name="cic3opv4"> Фалаҷ-4 </string>
+    <string name="cic3opv4dt"> DD-MM-YYYY </string>
+
+    <string name="at15m"> Дар 16-22 моҳагӣ </string>
+    <string name="cic3m2"> АКДС </string>
     <string name="cic3m2dt"> DD-MM-YYYY </string>
-    <string name="cic3response"> Response </string>
-    <string name="cic3src"> Source </string>
+
+    <string name="at6years"> 6 солагӣ </string>
+    <string name="cic3dp"> АДС </string>
+    <string name="cic3dpdt"> DD-MM-YYYY </string>
+    <string name="cic3bcg2"> Сил (БСЖ)-2 </string>
+    <string name="cic3bcg2dt"> DD-MM-YYYY </string>
+    <string name="cic3mr2"> СГ (МР) - 2 </string>
+    <string name="cic3mr2dt"> DD-MM-YYYY </string>
+
+    <string name="cic3response"> Ҷавоб </string>
+    <string name="cic3src"> Манбаъ </string>
+
     <string name="cic305">۔C305- کیا بچہ(۔Name) نےکبھی پولیو مہم کے دوران پولیو سے بچاؤ کے قطر ے پیئے ہیں؟ </string>
     <string name="cic306">۔C306- کیابچے (۔Name) کو پچھلی  پولیو مہم میں پولیو کے قطرے پلائے گئے تھے؟</string>
     <string name="cic307">۔C307 - کیا پولیو کے پہلے قطرے بچے کی پیدائش کے بعدپہلے 2 ہفتوں میں دئے گئے تھےیابعد میں ؟</string>
@@ -1244,12 +1285,15 @@
     <string name="cic4heading"> ҚИСМИC4: ФАВТ ВА ТАБОБАТИ БЕМОРИҲО</string>
     <string name="cic401">  ۔C401 -  کیا (۔Name) Кудак дар ду ҳафтаи охир дарунравӣ дошт? </string>
     <string name="cic402">  ۔C402 - Оё шумо барои табобати дарунравӣ ба ягон кас/ҷоймуроҷиаткардед? </string>
-    <string name="cic403">  ۔C402a - آپ نے اسہال(دست) کی بیماری کے لئے علاج کیوں   نہیں کروایا؟   </string>
-    <string name="cic403a"> اس بیماری کو مہلک/خطرناک نہیں سمجھا      </string>
-    <string name="cic403b">  پیسوں کی کمی   </string>
-    <string name="cic403c">     وقت کی کمی   </string>
-    <string name="cic403d"> صحت کے مرکز کا دور ہونا   </string>
-    <string name="cic403e"> ساتھ چلنے کے لئے کوئی نہیں تھا    </string>
+    <string name="cic403">  ۔C402a - Барои чӣ шумо барои табобати дарунравӣ муроҷиат накардед?   </string>
+    <string name="cic403a">       Ин касалиро ҷидди қабул намекунад</string>
+    <string name="cic403b">       Маблағ нест </string>
+    <string name="cic403c">       Вақт нест </string>
+    <string name="cic403d">       Масофаи дур ба муассиаси таббӣ   </string>
+    <string name="cic403e">       Ягон кас дар хона барои бурдан нест  </string>
+    <string name="cic403f">Ба куҷо муроҷиат карданро намедонад</string>
+    <string name="cic403g">Сабабҳои оилавӣ/суннатӣ</string>
+    <string name="cic403h">Ба духтурон/кормандони тиб боварӣ нест</string>
     <string name="cic404sub1"> Бахши давлатӣ </string>
     <string name="cic404">  ۔C403 - Шумо барои табобати дарунравӣ ба куҷо муроҷиат кардед? </string>
     <string name="cic404a">Маркази саломатӣ </string>
@@ -1286,12 +1330,12 @@
     <string name="cic4059601"> Дигар (дигар) </string>
     <string name="cic406">  ۔C405 - Оё кудак дар ду ҳафтаи охир касалии роҳҳои нафас дошт?</string>
     <string name="cic407">  ۔C406 - Оё шумо барои табобати касалии роҳҳои нафас ба ягон кас ё ҷой муроҷиат кардед?</string>
-    <string name="cic408">  ۔C406a - آپ نے نمونیہ (ARI) کے لئے علاج کیوں نہیں کروایا  ؟</string>
-    <string name="cic408a">ا س بیماری کو مہلک/خطرناک نہیں سمجھا     </string>
-    <string name="cic408b"> پیسوں کی کمی    </string>
-    <string name="cic408c">   وقت کی کمی     </string>
-    <string name="cic408d">اصحت کے مرکز کا دور ہونا    </string>
-    <string name="cic408e">اساتھ چلنے کے لئے کوئی نہیں تھا    </string>
+    <string name="cic408">  ۔C406a - Барои чӣ шумо барои табобати табобати сирояти шадиди роҳҳои нафас муроҷиат накардед?   </string>
+    <string name="cic408a">       Ин касалиро ҷидди қабул намекунад</string>
+    <string name="cic408b">       Маблағ нест </string>
+    <string name="cic408c">       Вақт нест </string>
+    <string name="cic408d">       Масофаи дур ба муассиаси таббӣ   </string>
+    <string name="cic408e">       Ягон кас дар хона барои бурдан нест  </string>
     <string name="cic409">  ۔C407 Шумо ба кӣ/куҷо барои табобати касалии роҳҳои нафасмуроҷиат кардед? </string>
     <string name="cic409sub1"> Бахши давлатӣ </string>
     <string name="cic409a">Маркази саломатӣ </string>
@@ -1307,11 +1351,11 @@
     <string name="cic409i">Маркази саломатии репродуктивии вилоятӣ </string>
     <string name="cic409j"> Беморхонаи вилоятӣ </string>
     <string name="cic4099602"> Хусусии дигар (аниқ кунед) </string>
-    <string name="cic409sub3"> دیگر زرائع </string>
+    <string name="cic409sub3"> Дигар манбаъ </string>
     <string name="cic409k"> Баморхонаи хусусӣ</string>
     <string name="cic409l"> Клиника </string>
     <string name="cic409m"> Дорухона</string>
-    <string name="cic4099603"> دیگر وضاحت کریں </string>
+    <string name="cic4099603"> Дигар (аниқ кунед) </string>
     <string name="cic410">  ۔C408 -Барои табобати касалии роҳҳои нафас шумо ба кудак чӣ додед?  </string>
     <string name="cic410sub1">Ҳаб ё сироп </string>
     <string name="cic410a"> اАнтибиотик </string>
@@ -1325,7 +1369,7 @@
     <string name="cic4109601"> Дигар (дигар) </string>
     <string name="cic411">  ۔C409 -Дар давоми ду ҳафтаи охир кудак табларза дошт?</string>
     <string name="cic412">  ۔C410 - Оё шумо барои табобати табларза ба ягон кас ё ҷой муроҷиат кардед? </string>
-    <string name="cic413">  ۔C410a - آپ نے بخار کے لئے علاج کیوں نہیں کروایا  ؟ </string>
+    <string name="cic413">  ۔C410a - Барои чӣ шумо барои табобати табобати табларза муроҷиат накардед? </string>
     <string name="cic414">  ۔C411 - Шумо ба кӣ/куҷо барои табобати табларза муроҷиат кардед?  </string>
     <string name="cic414sub1"> Бахши давлатӣ </string>
     <string name="cic414a">Маркази саломатӣ </string>
@@ -1341,11 +1385,11 @@
     <string name="cic414i">Маркази саломатии репродуктивии вилоятӣ </string>
     <string name="cic414j"> Беморхонаи вилоятӣ </string>
     <string name="cic4149602"> Хусусии дигар (аниқ кунед) </string>
-    <string name="cic414sub3"> دیگر زرائع </string>
+    <string name="cic414sub3"> Дигар манбаъ </string>
     <string name="cic414k"> Баморхонаи хусусӣ</string>
     <string name="cic414l"> Клиника </string>
     <string name="cic414m"> Дорухона</string>
-    <string name="cic4149603"> دیگر وضاحت کریں </string>
+    <string name="cic4149603"> Дигар (аниқ кунед) </string>
     <string name="cic415">۔C412 -Барои табобати табларза шумо ба кудак чӣ додед?   </string>
     <string name="cic415sub1">Ҳаб ё сироп </string>
     <string name="cic415a"> اАнтибиотик </string>
@@ -1356,7 +1400,7 @@
     <string name="cic415e"> Антибиотик </string>
     <string name="cic415f"> Ба дохили рагҳои ворид </string>
     <string name="cic415g">Табобати хонагӣ /гиёҳҳо </string>
-    <string name="cic415h"> گھر یلو ادویات یا ہربل ادویات </string>
+    <string name="cic415h">Табобати хонагӣ /гиёҳҳо </string>
     <string name="cic4159601"> Дигар (дигар) </string>
     <!--<string name="cic4159601">Дигар (дигар) </string>-->
     <string name="cic416">۔C413 -Оё ба (НОМ) дар давоми шаш моҳи охир барои табобати кирми руда ягон дору дода шуд?  </string>

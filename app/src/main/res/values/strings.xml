@@ -526,6 +526,13 @@
     <string name="ciw303j"> دیگرنجی  </string>
     <string name="ciw303k">  جگہ کا نام </string>
     <string name="ciw303l"> </string>
+    <string name="ciw303m"> </string>
+    <string name="ciw303n"> </string>
+    <string name="ciw303o"> </string>
+    <string name="ciw303p"> </string>
+    <string name="ciw303q"> </string>
+    <string name="ciw303r"> </string>
+    <string name="ciw303s"> </string>
     <string name="ciw304info"> جواب نوٹ کریں جیسے جوابدہندہ نے بتایا ہے ۔اگر 9 مہینے یا اس زیادہ ہے تو "9" ریکارڈ کریں </string>
     <string name="ciw305info"> مزید پوچھیں: حمل کے معائنہ کے وزٹ کی تعداد کے بارے میں مزید پوچھیں ،اگر کوئی تعداد بتائی ہے تو جو کم سے کم نمبر وہ لکھیں </string>
     <string name="ciw305a"> معائنوں کی تعداد </string>
@@ -813,6 +820,7 @@
     <string name="cic303c"> ہاں ، کارڈ اور دستاویزات  دونوں دیکھےہیں</string>
     <string name="cic303d"> کوئی کارڈ یا دستاویزات نہیں دیکھے </string>
     <string name="atbirth"> پیدائش پر </string>
+    <string name="atbirth2">  </string>
     <string name="cic3bcg"> بی سی جی </string>
     <string name="cic3bcgdt"> DD-MM-YYYY </string>
     <string name="cic3opv0">۔OPV  پولیو پیدائش کے وقت  </string>
@@ -846,6 +854,21 @@
     <string name="at15m">      15 مہینے کی عمر کے وقت </string>
     <string name="cic3m2"> ۔Measles 2۔ 15 مہینے کی عمر کے وقت </string>
     <string name="cic3m2dt"> DD-MM-YYYY </string>
+
+
+    <string name="cic3hptb"> </string>
+    <string name="cic3hptdtb">  </string>
+    <string name="cic3opv4"> </string>
+    <string name="cic3opv4dt"> </string>
+    <string name="at6years"> </string>
+    <string name="cic3dp"> </string>
+    <string name="cic3dpdt">  </string>
+    <string name="cic3bcg2"> </string>
+    <string name="cic3bcg2dt"> </string>
+    <string name="cic3mr2"> </string>
+    <string name="cic3mr2dt"> </string>
+
+
     <string name="cic305">۔C305- کیا بچہ(۔Name) نےکبھی پولیو مہم کے دوران پولیو سے بچاؤ کے قطر ے پیئے ہیں؟ </string>
     <string name="cic306">۔C306- کیابچے (۔Name) کو پچھلی  پولیو مہم میں پولیو کے قطرے پلائے گئے تھے؟</string>
     <string name="cic307a"> پہلے دو ہفتے </string>
@@ -865,6 +888,10 @@
     <string name="cic403c">     وقت کی کمی   </string>
     <string name="cic403d"> صحت کے مرکز کا دور ہونا   </string>
     <string name="cic403e"> ساتھ چلنے کے لئے کوئی نہیں تھا    </string>
+    <string name="cic403f"> </string>
+    <string name="cic403g"> </string>
+    <string name="cic403h"> </string>
+
     <string name="cic404sub1"> بپلک میڈیکل سیکٹر </string>
     <string name="cic404">  ۔C503 - آپ نے (۔Name) کا اسہال(دست) کی بیماری کا علاج کہاں سے کروایا؟ </string>
     <string name="cic404a"> سرکاری ہسپتال </string>
@@ -1211,6 +1238,11 @@
     <string name="ciw308">۔W308 - جب آپ حمل سے تھیں تو کیا آپ نے بازو پر تشنج سے بچاؤ کے ٹیکے لگوائے تھے  ؟</string>
     <string name="ciw309">۔W309 - آپ نے دوران حمل کتنی مرتبہ ،تشنج کی بیماری سے بچانے والے ٹیکے لگوائے تھے؟</string>
     <string name="ciw310">۔W310 - کیا آپ نے کبھی حمل کے دوارن فولاد کی گولیاں استعمال کیں؟</string>
+    <string name="ciw31001"></string>
+    <string name="ciw31001a"></string>
+    <string name="ciw31001b"></string>
+    <string name="ciw31001c"></string>
+
     <string name="ciw311">۔W311 - آپ کو حمل کے دوران فولاد کی گولیا ں استعمال کرنے کا مشورہ کس نے دیا ؟</string>
     <string name="ciw312">۔W312 - آپ نے حمل کے دوران فولاد کی گولیاں کہاں سے حاصل کیں؟</string>
     <string name="ciw313">۔W313 - آپ حمل کے دوارن فولاد کی گولیاں کتنی مرتبہ استعمال کرتی تھیں؟</string>
@@ -1226,6 +1258,7 @@
     <string name="ciw323">۔W323 - آپ حمل کے دوران کیلیشم کی گولیاں کتنی بار کھاتی تھی؟</string>
     <string name="ciw324">۔W324 - آپ کتنے مہینوں یا دنوں تک کیلیشم کی گولیاں کھاتی رہی تھی؟</string>
     <string name="ciw325">۔W325 - کیاآپ کو حمل کے دوران پیٹ کے کیڑوں کو ختم کرنے والی گولیاں دی گئی تھی؟</string>
+    <string name="ciw32501"></string>
     <string name="ciw326">۔W326 - کیا آپ نے گزشتہ حمل کے دوران محسوس کیا کہ شام کے وقت آپ کو دیکھنے میں مشکل ہورہی تھی؟</string>
     <string name="ciw327">۔W327 - لیڈی ہیلتھ ورکر نے آخری مرتبہ آپ کے گھر کا دورہ کب کیا تھا؟</string>
     <string name="ciw328">۔W328 - آپ کو کتنی مرتبہ لیڈی ہیلتھ ورکر ملنے آتی ہے/آپ کے گھر کا کتنی مرتبہ دورہ کرتی ہے؟</string>

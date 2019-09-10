@@ -3,6 +3,7 @@ package edu.aku.hassannaqvi.casi_2019.ui.childs;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
@@ -26,6 +27,8 @@ import edu.aku.hassannaqvi.casi_2019.ui.viewMem.ViewMemberActivity;
 import edu.aku.hassannaqvi.casi_2019.ui.wra.SectionB1Activity;
 import edu.aku.hassannaqvi.casi_2019.validation.ClearClass;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
+
+import static edu.aku.hassannaqvi.casi_2019.ui.childs.SectionC1Activity.userCountryTajik_Child;
 
 public class SectionC3Activity extends Menu2Activity implements RadioGroup.OnCheckedChangeListener {
 
@@ -139,7 +142,16 @@ public class SectionC3Activity extends Menu2Activity implements RadioGroup.OnChe
 //        Validation Boolean
         MainApp.validateFlag = false;
 
-        autoPopulateFields();
+//        autoPopulateFields();
+
+        if (userCountryTajik_Child) {
+            binding.fldGrpc303d.setVisibility(View.GONE);
+        } else {
+            binding.fldGrpc303d.setVisibility(View.VISIBLE);
+            binding.fldGrpc303a.setVisibility(View.GONE);
+            binding.fldGrpc303b.setVisibility(View.GONE);
+            binding.fldGrpc303c.setVisibility(View.GONE);
+        }
 
     }
 
@@ -649,6 +661,15 @@ public class SectionC3Activity extends Menu2Activity implements RadioGroup.OnChe
                 : "0");
 
 
+//          cic3hptb
+        sC3.put("cic3hptb", binding.cic3hptba.isChecked() ? "1"
+                : binding.cic3hptbb.isChecked() ? "2"
+                : "0");
+        sC3.put("cic3hptbsrc", binding.cic3hptbsrca.isChecked() ? "1"
+                : binding.cic3hptbsrcb.isChecked() ? "2"
+                : "0");
+
+
 //       at age of 6
 
 //          cic3opv1
@@ -749,6 +770,13 @@ public class SectionC3Activity extends Menu2Activity implements RadioGroup.OnChe
                 : binding.cic3m1srcb.isChecked() ? "2"
                 : "0");
 
+        sC3.put("cic3opv4", binding.cic3opv4a.isChecked() ? "1"
+                : binding.cic3opv4b.isChecked() ? "2"
+                : "0");
+        sC3.put("cic3opv4src", binding.cic3opv4srca.isChecked() ? "1"
+                : binding.cic3opv4srcb.isChecked() ? "2"
+                : "0");
+
 
 //at age of 15 months
 //          cic3m2
@@ -757,6 +785,27 @@ public class SectionC3Activity extends Menu2Activity implements RadioGroup.OnChe
                 : "0");
         sC3.put("cic3m2src", binding.cic3m2srca.isChecked() ? "1"
                 : binding.cic3m2srcb.isChecked() ? "2"
+                : "0");
+
+        sC3.put("cic3dp", binding.cic3dpa.isChecked() ? "1"
+                : binding.cic3dpb.isChecked() ? "2"
+                : "0");
+        sC3.put("cic3dpsrc", binding.cic3dpsrca.isChecked() ? "1"
+                : binding.cic3dpsrcb.isChecked() ? "2"
+                : "0");
+
+        sC3.put("cic3bcg2", binding.cic3bcg2a.isChecked() ? "1"
+                : binding.cic3bcg2b.isChecked() ? "2"
+                : "0");
+        sC3.put("cic3bcg2src", binding.cic3bcg2srca.isChecked() ? "1"
+                : binding.cic3bcg2srcb.isChecked() ? "2"
+                : "0");
+
+        sC3.put("cic3mr2", binding.cic3mr2a.isChecked() ? "1"
+                : binding.cic3mr2b.isChecked() ? "2"
+                : "0");
+        sC3.put("cic3mr2src", binding.cic3mr2srca.isChecked() ? "1"
+                : binding.cic3mr2srcb.isChecked() ? "2"
                 : "0");
 
 //        cic305

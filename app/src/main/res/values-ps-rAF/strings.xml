@@ -523,6 +523,13 @@
     <string name="ciw303j"> دیگر(مشخص کنید)  </string>
     <string name="ciw303k">  نام مکان  </string>
     <string name="ciw303l"> </string>
+    <string name="ciw303m"> </string>
+    <string name="ciw303n"> </string>
+    <string name="ciw303o"> </string>
+    <string name="ciw303p"> </string>
+    <string name="ciw303q"> </string>
+    <string name="ciw303r"> </string>
+    <string name="ciw303s"> </string>
     <string name="ciw304info"> همان گونه که جواب دهنده جواب ها را می دهد، درج کنید. اگر 9" ماه " یا بعدتر باشد، 9 ثبت کنید. </string>
     <string name="ciw305info">بپرسید تا تعداد مراتب که مراقبت از ولادت دریافت شده، را پیدا کنید و کمترین تعداد مراتب که مراقبت دریافت نموده است را درج کنید؟ </string>
     <string name="ciw305a">تعداد مراقبت  </string>
@@ -810,6 +817,7 @@
     <string name="cic303c"> بلی، کارت (ها) و سند دیگر دیده شد </string>
     <string name="cic303d">نه کارت و نه سند دیگر دیده شد  </string>
     <string name="atbirth">در هنگام تولد </string>
+    <string name="atbirth2">  </string>
     <string name="cic3bcg"> BCG </string>
     <string name="cic3bcgdt"> DD-MM-YYYY </string>
     <string name="cic3opv0">۔OPV  (دوز هنگام تولد: واکسین قطره ی پولیو)  </string>
@@ -843,6 +851,20 @@
     <string name="at15m">    در سن 15 ماهگی </string>
     <string name="cic3m2">۔دومین دوز واکسین سرخکان Measles - 2</string>
     <string name="cic3m2dt"> DD-MM-YYYY </string>
+
+
+    <string name="cic3hptb"> </string>
+    <string name="cic3hptdtb">  </string>
+    <string name="cic3opv4"> </string>
+    <string name="cic3opv4dt"> </string>
+    <string name="at6years"> </string>
+    <string name="cic3dp"> </string>
+    <string name="cic3dpdt">  </string>
+    <string name="cic3bcg2"> </string>
+    <string name="cic3bcg2dt"> </string>
+    <string name="cic3mr2"> </string>
+    <string name="cic3mr2dt"> </string>
+
     <string name="cic305">۔C305- آیا (نام طفل) گاهی در روز کمپاین ملی معافیت واکسین قطره ی پولیو برای جلوگیری آن گرفته است؟</string>
     <string name="cic306">۔C306-آیا (نام طفل) قطره/واکسین پولیو را آخرین کمپاین پولیو گرفته است؟</string>
     <string name="cic307a"> دو هفته اول </string>
@@ -862,6 +884,10 @@
     <string name="cic403c">    نداشتن وقت   </string>
     <string name="cic403d"> دوری راه از امکانات صحی    </string>
     <string name="cic403e"> کسی خانه برای همراهی نبود     </string>
+    <string name="cic403f"> </string>
+    <string name="cic403g"> </string>
+    <string name="cic403h"> </string>
+
     <string name="cic404sub1">بخش صحت عامه </string>
     <string name="cic404"> ۔C503- در کجا تداوی اسهال را جستجو کردید؟  </string>
     <string name="cic404a"> شفاخانه دولتی  </string>
@@ -1208,6 +1234,11 @@
     <string name="ciw308">۔W308 - وقتیکه شما با (نام طفل) حامله بودید، آیا شما در شانه یا بازوی  تان واکسین تیتانوس که طفل را از اختلاج بعد از ولادت محافظت می کند، شدید؟</string>
     <string name="ciw309">۔W309 - چند بار در جریان حمل با (نام طفل) شما پیچکاری تیتانوس دریافت کردید؟</string>
     <string name="ciw310">۔W310 - آیا گاهی شما آهن فولیک اسید (IFA) در جریان حمل تان گرفته اید؟</string>
+    <string name="ciw31001"></string>
+    <string name="ciw31001a"></string>
+    <string name="ciw31001b"></string>
+    <string name="ciw31001c"></string>
+
     <string name="ciw311">۔W311 - کی شما را وصیت کرد که آهن فولیک اسید (IFA) در جریان حمل تان بگیرد؟</string>
     <string name="ciw312">۔W312 -شما از کجا آهن فولیک اسید (IFA) در جریان حامله گی گرفتید؟</string>
     <string name="ciw313">۔W313 - در جریان بار داری، شما چقدر گاهی آهن فولیک اسید (IFA) می گرفتید؟</string>
@@ -1223,6 +1254,7 @@
     <string name="ciw323">۔W323 -در جریان حمل، شما چقدر گاهی تابلیت های کلسیم می گرفتید؟</string>
     <string name="ciw324">۔W324 - شما چند ماه یا روز تابلیت های کلسیم گرفتید؟</string>
     <string name="ciw325">۔W325 -آیا به شما تابلیت های ضد کرم در جریان بار داری داده شده بود؟</string>
+    <string name="ciw32501"></string>
     <string name="ciw326">۔W326 -آیا شما در جریان حمل احساس کردید که شب کوری ( مشکل دید واضح در تاریکی) دارید؟</string>
     <string name="ciw327">۔W327 - چی زمان آخرین بار CHW خانه شما را بازدید کرد؟</string>
     <string name="ciw328">۔W328 - چقدر گاهی CHW خانه شما را بازدید می کند؟</string>

@@ -27,6 +27,8 @@ import edu.aku.hassannaqvi.casi_2019.ui.wra.SectionB1Activity;
 import edu.aku.hassannaqvi.casi_2019.validation.ClearClass;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
+import static edu.aku.hassannaqvi.casi_2019.ui.childs.SectionC1Activity.userCountryTajik_Child;
+
 public class SectionC4Activity extends Menu2Activity {
 
     private final long DELAY = 1000;
@@ -278,6 +280,19 @@ public class SectionC4Activity extends Menu2Activity {
 
         autoPopulateFields();
 
+        /*Only For Tajik*/
+        if (userCountryTajik_Child) {
+            binding.cic403f.setVisibility(View.GONE);
+            binding.cic403g.setVisibility(View.GONE);
+            binding.cic403h.setVisibility(View.GONE);
+            binding.cic408f.setVisibility(View.GONE);
+            binding.cic408g.setVisibility(View.GONE);
+            binding.cic408h.setVisibility(View.GONE);
+            binding.cic413f.setVisibility(View.GONE);
+            binding.cic413g.setVisibility(View.GONE);
+            binding.cic413h.setVisibility(View.GONE);
+        }
+
     }
 
     private void autoPopulateFields() {
@@ -304,6 +319,9 @@ public class SectionC4Activity extends Menu2Activity {
                                 : jsonC4.getcic403().equals("3") ? binding.cic403c.getId()
                                 : jsonC4.getcic403().equals("4") ? binding.cic403d.getId()
                                 : jsonC4.getcic403().equals("5") ? binding.cic403e.getId()
+                                : jsonC4.getcic403().equals("6") ? binding.cic403f.getId()
+                                : jsonC4.getcic403().equals("7") ? binding.cic403g.getId()
+                                : jsonC4.getcic403().equals("8") ? binding.cic403h.getId()
                                 : binding.cic40396.getId()
                 );
             }
@@ -423,6 +441,9 @@ public class SectionC4Activity extends Menu2Activity {
                                 : jsonC4.getCic408().equals("3") ? binding.cic408c.getId()
                                 : jsonC4.getCic408().equals("4") ? binding.cic408d.getId()
                                 : jsonC4.getCic408().equals("5") ? binding.cic408e.getId()
+                                : jsonC4.getCic405d().equals("6") ? binding.cic408f.getId()
+                                : jsonC4.getCic405d().equals("7") ? binding.cic408g.getId()
+                                : jsonC4.getCic405d().equals("8") ? binding.cic408h.getId()
                                 : binding.cic40896.getId());
             }
 
@@ -504,25 +525,28 @@ public class SectionC4Activity extends Menu2Activity {
                                 : jsonC4.getcic413().equals("3") ? binding.cic413c.getId()
                                 : jsonC4.getcic413().equals("4") ? binding.cic413d.getId()
                                 : jsonC4.getcic413().equals("5") ? binding.cic413e.getId()
+                                : jsonC4.getcic413().equals("6") ? binding.cic413f.getId()
+                                : jsonC4.getcic413().equals("7") ? binding.cic413g.getId()
+                                : jsonC4.getcic413().equals("8") ? binding.cic413h.getId()
                                 : binding.cic41396.getId());
             }
             if (!jsonC4.getcic414().equals("0")) {
                 binding.cic414.check(
-                        jsonC4.getcic413().equals("1") ? binding.cic413a.getId()
-                                : jsonC4.getcic413().equals("2") ? binding.cic414b.getId()
-                                : jsonC4.getcic413().equals("3") ? binding.cic414c.getId()
-                                : jsonC4.getcic413().equals("4") ? binding.cic414d.getId()
-                                : jsonC4.getcic413().equals("5") ? binding.cic414e.getId()
-                                : jsonC4.getcic413().equals("6") ? binding.cic414f.getId()
-                                : jsonC4.getcic413().equals("7") ? binding.cic414g.getId()
-                                : jsonC4.getcic413().equals("8") ? binding.cic414h.getId()
-                                : jsonC4.getcic413().equals("9") ? binding.cic414i.getId()
-                                : jsonC4.getcic413().equals("10") ? binding.cic414j.getId()
-                                : jsonC4.getcic413().equals("11") ? binding.cic414k.getId()
-                                : jsonC4.getcic413().equals("12") ? binding.cic414l.getId()
-                                : jsonC4.getcic413().equals("13") ? binding.cic414m.getId()
-                                : jsonC4.getcic413().equals("961") ? binding.cic4149601.getId()
-                                : jsonC4.getcic413().equals("962") ? binding.cic4149602.getId()
+                        jsonC4.getcic414().equals("1") ? binding.cic414a.getId()
+                                : jsonC4.getcic414().equals("2") ? binding.cic414b.getId()
+                                : jsonC4.getcic414().equals("3") ? binding.cic414c.getId()
+                                : jsonC4.getcic414().equals("4") ? binding.cic414d.getId()
+                                : jsonC4.getcic414().equals("5") ? binding.cic414e.getId()
+                                : jsonC4.getcic414().equals("6") ? binding.cic414f.getId()
+                                : jsonC4.getcic414().equals("7") ? binding.cic414g.getId()
+                                : jsonC4.getcic414().equals("8") ? binding.cic414h.getId()
+                                : jsonC4.getcic414().equals("9") ? binding.cic414i.getId()
+                                : jsonC4.getcic414().equals("10") ? binding.cic414j.getId()
+                                : jsonC4.getcic414().equals("11") ? binding.cic414k.getId()
+                                : jsonC4.getcic414().equals("12") ? binding.cic414l.getId()
+                                : jsonC4.getcic414().equals("13") ? binding.cic414m.getId()
+                                : jsonC4.getcic414().equals("961") ? binding.cic4149601.getId()
+                                : jsonC4.getcic414().equals("962") ? binding.cic4149602.getId()
                                 : binding.cic4149603.getId());
                 binding.cic4149601x.setText(jsonC4.getCic4149601x());
                 binding.cic4149602x.setText(jsonC4.getCic4149602x());
@@ -710,6 +734,9 @@ public class SectionC4Activity extends Menu2Activity {
                 : binding.cic403c.isChecked() ? "3"
                 : binding.cic403d.isChecked() ? "4"
                 : binding.cic403e.isChecked() ? "5"
+                : binding.cic403f.isChecked() ? "6"
+                : binding.cic403g.isChecked() ? "7"
+                : binding.cic403h.isChecked() ? "8"
                 : binding.cic40396.isChecked() ? "961"
                 : "0");
 
@@ -771,6 +798,9 @@ public class SectionC4Activity extends Menu2Activity {
                 : binding.cic408c.isChecked() ? "3"
                 : binding.cic408d.isChecked() ? "4"
                 : binding.cic408e.isChecked() ? "5"
+                : binding.cic408f.isChecked() ? "6"
+                : binding.cic408g.isChecked() ? "7"
+                : binding.cic408h.isChecked() ? "8"
                 : binding.cic40896.isChecked() ? "96"
                 : "0");
         sC4.put("cic40896x", binding.cic40896x.getText().toString());
@@ -830,6 +860,9 @@ public class SectionC4Activity extends Menu2Activity {
                 : binding.cic413c.isChecked() ? "3"
                 : binding.cic413d.isChecked() ? "4"
                 : binding.cic413e.isChecked() ? "5"
+                : binding.cic413f.isChecked() ? "6"
+                : binding.cic413g.isChecked() ? "7"
+                : binding.cic413h.isChecked() ? "8"
                 : binding.cic41396.isChecked() ? "96"
                 : "0");
         sC4.put("cic41396x", binding.cic41396x.getText().toString());

@@ -41,6 +41,7 @@ public class JSONB2ModelClass {
     private String ciw309 = "";
     private String ciw30998 = "";
     private String ciw310 = "";
+    private String ciw31001 = "";
     private String ciw311 = "";
     private String ciw31196x = "";
     private String ciw312a = "";
@@ -116,6 +117,7 @@ public class JSONB2ModelClass {
     private String ciw324m = "";
     private String ciw324d = "";
     private String ciw325 = "";
+    private String ciw32501 = "";
     private String ciw326 = "";
 
 
@@ -1003,11 +1005,27 @@ public class JSONB2ModelClass {
         this.ciw325 = ciw325;
     }
 
+    public String getciw32501() {
+        return ciw32501;
+    }
+
+    public void setciw32501(String ciw32501) {
+        this.ciw32501 = ciw32501;
+    }
+
     public String getciw326() {
         return ciw326;
     }
 
     public void setciw326(String ciw326) {
         this.ciw326 = ciw326;
+    }
+
+    public String getciw31001() {
+        return ciw31001;
+    }
+
+    public void setciw31001(String ciw31001) {
+        this.ciw31001 = ciw31001;
     }
 }
