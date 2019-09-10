@@ -29,6 +29,8 @@ import edu.aku.hassannaqvi.casi_2019.ui.viewMem.ViewMemberActivity;
 import edu.aku.hassannaqvi.casi_2019.validation.ClearClass;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
+import static edu.aku.hassannaqvi.casi_2019.ui.household.SectionA1Activity.userCountryTajik_Home;
+
 public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnCheckedChangeListener, TextWatcher {
 
     private final long DELAY = 1000;
@@ -202,6 +204,14 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
 
         if (SectionA1Activity.editFormFlag) {
             autoPopulate();
+        }
+
+        /*For Tajik*/
+        if (userCountryTajik_Home) {
+
+            binding.fldGrpA4a.setVisibility(View.GONE);
+            binding.fldGrpA4b.setVisibility(View.GONE);
+
         }
 
     }
@@ -809,12 +819,14 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
             return false;
         }
 
-        if (!ValidatorClass.EmptyRadioButton(this, binding.cih312h, binding.cih312h1, getString(R.string.cih312h))) {
-            return false;
-        }
+        if (!userCountryTajik_Home) {
+            if (!ValidatorClass.EmptyRadioButton(this, binding.cih312h, binding.cih312h1, getString(R.string.cih312h))) {
+                return false;
+            }
 
-        if (!ValidatorClass.EmptyRadioButton(this, binding.cih312i, binding.cih312i1, getString(R.string.cih312i))) {
-            return false;
+            if (!ValidatorClass.EmptyRadioButton(this, binding.cih312i, binding.cih312i1, getString(R.string.cih312i))) {
+                return false;
+            }
         }
 
         if (!ValidatorClass.EmptyCheckBox(this, binding.fldGrpna0413check, binding.cih313a, getString(R.string.cih313))) {

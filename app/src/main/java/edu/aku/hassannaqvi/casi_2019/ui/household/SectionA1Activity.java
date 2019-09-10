@@ -66,6 +66,8 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
     int length = 0;
     private Timer timer = new Timer();
 
+    public static boolean userCountryTajik_Home = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -100,6 +102,11 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
 
 //        Validation Boolean
         MainApp.validateFlag = false;
+
+
+        HashMap<String, String> tagVal = MainApp.getTagValues(this);
+        String country = tagVal.get("org") != null ? tagVal.get("org").equals("null") ? "0" : tagVal.get("org").equals("") ? "0" : tagVal.get("org") : "0";
+        userCountryTajik_Home = Integer.valueOf(country) == 3;
 
     }
 
