@@ -600,9 +600,9 @@
     <string name="ciw222y"> Сол  </string>
     <string name="ciw222m"> Моҳ </string>
     <string name="ciw222d"> Рӯз </string>
-    <string name="ciw21001">کلینک پر ملی</string>
-    <string name="ciw21002">خریدی</string>
-    <string name="ciw21003">نہ ملی نہ خریدی</string>
+    <string name="ciw21001">Дар дармонгоҳ доданд</string>
+    <string name="ciw21002">Харид кардам</string>
+    <string name="ciw21003">Не, ҳеҷ гоҳ надоданд ё нахаридам</string>
 
     <string name="nb3heading"> ҚИСМИW3: МУОИНАИ ТО ТАВАЛЛУД </string>
     <string name="ciw301">۔W301 -Оё дар вақти бо (ном) ҳомиладор будан ягон кас шуморо аз назар гузаронд?</string>
