@@ -127,6 +127,92 @@ public abstract class ValidatorClass {
         return true;
     }
 
+    public static boolean EmptyCheckingContainerV2(Context context, ViewGroup lv) {
+
+        for (int i = 0; i < lv.getChildCount(); i++) {
+            View view = lv.getChildAt(i);
+
+            if (view.getVisibility() == View.GONE || !view.isEnabled())
+                continue;
+
+            // use tag for some situations
+            if (view.getTag() != null && view.getTag().equals("-1")) {
+                if (view instanceof EditText)
+                    ((EditText) view).setError(null);
+                else if (view instanceof LinearLayout)
+                    ClearClass.ClearAllFields(view, null);
+                else if (view instanceof CheckBox)
+                    ((CheckBox) view).setError(null);
+
+                continue;
+
+            }
+
+            if (view instanceof CardView) {
+                if (!EmptyCheckingContainerV2(context, (ViewGroup) view)) {
+                    return false;
+                }
+            } else if (view instanceof RadioGroup) {
+
+                boolean radioFlag = false;
+                View v = null;
+                for (byte j = 0; j < ((RadioGroup) view).getChildCount(); j++) {
+                    if (((RadioGroup) view).getChildAt(j) instanceof RadioButton) {
+                        v = ((RadioGroup) view).getChildAt(j);
+                        radioFlag = true;
+                        break;
+                    }
+                }
+
+                if (!radioFlag) continue;
+
+                if (v != null) {
+
+                    String asNamed = getString(context, getIDComponent(view));
+
+                    if (!EmptyRadioButton(context, (RadioGroup) view, (RadioButton) v, asNamed)) {
+                        return false;
+                    }
+                }
+
+            } else if (view instanceof Spinner) {
+                if (!EmptySpinner(context, (Spinner) view, getString(context, getIDComponent(view)))) {
+                    return false;
+                }
+            } else if (view instanceof EditText) {
+                if (view instanceof EditTextPicker) {
+                    if (!EmptyEditTextPicker(context, (EditText) view, getString(context, getIDComponent(view))))
+                        return false;
+                } else {
+                    if (!EmptyTextBox(context, (EditText) view, getString(context, getIDComponent(view)))) {
+                        return false;
+                    }
+                }
+            } else if (view instanceof CheckBox) {
+                if (!((CheckBox) view).isChecked()) {
+                    ((CheckBox) view).setError(getString(context, getIDComponent(view)));
+                    FancyToast.makeText(context, "ERROR(empty): " + getString(context, getIDComponent(view)), FancyToast.LENGTH_SHORT, FancyToast.ERROR, false).show();
+                    return false;
+                }
+            } else if (view instanceof LinearLayout) {
+
+                if (view.getTag() != null && view.getTag().equals("0")) {
+                    if (!EmptyCheckBox(context, ((LinearLayout) view),
+                            (CheckBox) ((LinearLayout) view).getChildAt(0),
+                            getString(context, getIDComponent(((LinearLayout) view).getChildAt(0))))) {
+                        return false;
+                    }
+                } else {
+                    if (!EmptyCheckingContainerV2(context, (LinearLayout) view)) {
+                        return false;
+                    }
+                }
+
+            }
+        }
+        return true;
+    }
+
     public static boolean EmptyEditTextPicker(Context context, EditText txt, String msg) {
         String messageConv = "";
         boolean flag = true;
