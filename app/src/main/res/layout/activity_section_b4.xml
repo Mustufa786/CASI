@@ -1103,7 +1103,8 @@
                             android:background="@color/pink_100"
                             android:gravity="center"
                             android:text="@string/ciw413sub1"
-                            android:textColor="@color/colorPrimaryDark" />
+                            android:textColor="@color/colorPrimaryDark"
+                            android:visibility="gone" />
 
                         <RadioGroup
                             android:id="@+id/ciw413"
@@ -1169,7 +1170,8 @@
                                 android:background="@color/pink_100"
                                 android:gravity="center"
                                 android:text="@string/ciw413sub2"
-                                android:textColor="@color/colorPrimaryDark" />
+                                android:textColor="@color/colorPrimaryDark"
+                                android:visibility="gone" />
 
                             <RadioButton
                                 android:id="@+id/ciw413f"
@@ -1229,7 +1231,8 @@
                                 android:background="@color/pink_100"
                                 android:gravity="center"
                                 android:text="@string/ciw413sub3"
-                                android:textColor="@color/colorPrimaryDark" />
+                                android:textColor="@color/colorPrimaryDark"
+                                android:visibility="gone" />
 
                             <RadioButton
                                 android:id="@+id/ciw413k"
@@ -1251,6 +1254,48 @@
                                 android:layout_height="match_parent"
                                 android:layout_marginBottom="1dp"
                                 android:text="@string/ciw413m" />
+
+                            <RadioButton
+                                android:id="@+id/ciw413n"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                android:text="@string/ciw413n" />
+
+                            <RadioButton
+                                android:id="@+id/ciw413o"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                android:text="@string/ciw413o" />
+
+                            <RadioButton
+                                android:id="@+id/ciw413p"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                android:text="@string/ciw413p" />
+
+                            <RadioButton
+                                android:id="@+id/ciw413q"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                android:text="@string/ciw413q" />
+
+                            <RadioButton
+                                android:id="@+id/ciw413r"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                android:text="@string/ciw413r" />
+
+                            <RadioButton
+                                android:id="@+id/ciw413s"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                android:text="@string/ciw413s" />
 
                             <RadioButton
                                 android:id="@+id/ciw413963"

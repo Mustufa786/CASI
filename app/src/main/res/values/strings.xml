@@ -211,15 +211,15 @@
     <string name="cid1oinfo"> (for MWRA) </string>
     <string name="cih3heading"> سیکشن ایچ 3 : سماجی امداد کے حوالے سے معلومات </string>
     <string name="cih3sub">یہ سیکشن گھر کے سربراہ سے یا گھر میں کم سے کم 18 سال یا اس سے ذائد عمر کے کسی سمجھدار شخص سے پوچھا جائیگا </string>
-    <string name="cih301a"> اردو </string>
-    <string name="cih301b"> شینا   </string>
-    <string name="cih301c">ھنزی /بروشسکی</string>
-    <string name="cih301d"> ار/ چترالی کھو </string>
-    <string name="cih301e"> واخی </string>
-    <string name="cih301f"> فارسی </string>
-    <string name="cih301g"> پشتو </string>
-    <string name="cih301h"> دری </string>
-    <string name="cih301i"> ازبیکی </string>
+    <string name="cih301a"> اردو</string>
+    <string name="cih301b"> شینا</string>
+    <string name="cih301c"> یاسینی بروشسکی</string>
+    <string name="cih301d"> ھنزاٰی بروشسکی</string>
+    <string name="cih301e"> چترالی</string>
+    <string name="cih301f"> کھوار</string>
+    <string name="cih301g"> واخی</string>
+    <string name="cih301h"> </string>
+    <string name="cih301i"> </string>
     <!--<string name="cih301j"> رشین   </string>
     <string name="cih301k"> تاجک </string>
     <string name="cih301l"> شغنی </string>
@@ -681,6 +681,12 @@
     <string name="ciw413k">رشتہ دار /دوست</string>
     <string name="ciw413l"> دوکان /بازار/مفت تقسیم کرنے والوں سے </string>
     <string name="ciw413m"> روایتی تجربہ کار </string>
+    <string name="ciw413n"></string>
+    <string name="ciw413o"></string>
+    <string name="ciw413p"></string>
+    <string name="ciw413q"></string>
+    <string name="ciw413r"></string>
+    <string name="ciw413s"></string>
     <string name="ciw413961"> دوسرے عوامی وضاحت کریں</string>
     <string name="ciw413962"> دیگر نجی  (وضاحت کریں) </string>
     <string name="nb5heading"> SECTION B5: POST NATAL CARE (For all MWRA with at least one delivery REF B1 Q6) </string>
@@ -920,6 +926,10 @@
     <string name="cic404k"> رشتہ دار /دوست </string>
     <string name="cic404l"> دوکان /بازار/گلی </string>
     <string name="cic404m"> روایتی تجربہ کار </string>
+    <string name="cic404n">     </string>
+    <string name="cic404o">    </string>
+    <string name="cic404p">   </string>
+    <string name="cic404q">    </string>
     <string name="cic4049603"> دیگر وضاحت کریں </string>
     <string name="cic405">  ۔C504 - (نام)کو   اسہال(دست) کی بیماری کے علاج کے لئے کون کونسی دواء دی گئی؟ </string>
     <string name="cic405a"> نمکول (او آر ایس) </string>
@@ -963,6 +973,11 @@
     <string name="cic409l"> دوکان /بازار/مفت تقسیم کرنے والوں سے </string>
     <string name="cic409m"> روایتی تجربہ کار</string>
     <string name="cic4099603"> دیگر وضاحت کریں </string>
+    <string name="cic409n">     </string>
+    <string name="cic409o">    </string>
+    <string name="cic409p">   </string>
+    <string name="cic409q">    </string>
+
     <string name="cic410">  ۔C508 - (۔Name)کونمونیہ (ari)کی بیماری کے علاج کے لئے کون کونسی دواء دی گئی؟</string>
     <string name="cic410sub1"> گولیاں یا شربت </string>
     <string name="cic410a"> اینٹی بائیوٹک </string>
@@ -993,6 +1008,11 @@
     <string name="cic414j"> موبائل کلینک </string>
     <string name="cic4149602"> دوسرے نجی دواخانہ </string>
     <string name="cic414sub3"> دیگر زرائع </string>
+    <string name="cic414n">     </string>
+    <string name="cic414o">    </string>
+    <string name="cic414p">   </string>
+    <string name="cic414q">    </string>
+
     <string name="cic414k">رشتہ دار /دوست </string>
     <string name="cic414l"> دوکان /بازار/مفت تقسیم کرنے والوں سے </string>
     <string name="cic414m"> روایتی تجربہ کار </string>
@@ -1056,6 +1076,11 @@
     <string name="ciw312k">   رشتہ دار / دوست </string>
     <string name="ciw312l">  دوکان /بازار/مفت تقسیم کرنے والوں سے  </string>
     <string name="ciw312m">   روایتی تجربہ کار   </string>
+    <string name="ciw312n">      </string>
+    <string name="ciw312o">    </string>
+    <string name="ciw312p">     </string>
+    <string name="ciw312q">      </string>
+
     <string name="ciw321a"> گائنا کولوجسٹ </string>
     <string name="ciw321b">کوئی دوسرا ڈاکٹر </string>
     <string name="ciw321c"> نرس </string>

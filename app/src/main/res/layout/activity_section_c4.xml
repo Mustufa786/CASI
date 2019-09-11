@@ -13,9 +13,9 @@
     </data>
 
     <LinearLayout
-        android:animateLayoutChanges="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
         android:orientation="vertical">
 
 
@@ -283,7 +283,8 @@
                             android:tag="-1"
                             android:text="@string/cic404sub1"
                             android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@color/colorPrimaryDark" />
+                            android:textColor="@color/colorPrimaryDark"
+                            android:visibility="gone" />
 
                         <RadioButton
                             android:id="@+id/cic404a"
@@ -349,7 +350,8 @@
                             android:tag="-1"
                             android:text="@string/cic404sub2"
                             android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@color/colorPrimaryDark" />
+                            android:textColor="@color/colorPrimaryDark"
+                            android:visibility="gone" />
 
                         <RadioButton
                             android:id="@+id/cic404f"
@@ -416,7 +418,8 @@
                             android:tag="-1"
                             android:text="@string/cic404sub3"
                             android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@color/colorPrimaryDark" />
+                            android:textColor="@color/colorPrimaryDark"
+                            android:visibility="gone" />
 
                         <RadioButton
                             android:id="@+id/cic404k"
@@ -441,6 +444,38 @@
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="1dp"
                             android:text="@string/cic404m" />
+
+                        <RadioButton
+                            android:id="@+id/cic404n"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:text="@string/cic404n" />
+
+                        <RadioButton
+                            android:id="@+id/cic404o"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:text="@string/cic404o" />
+
+                        <RadioButton
+                            android:id="@+id/cic404p"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:text="@string/cic404p" />
+
+                        <RadioButton
+                            android:id="@+id/cic404q"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:text="@string/cic404q" />
 
                         <RadioButton
                             android:id="@+id/cic4049603"
@@ -844,7 +879,8 @@
                             android:tag="-1"
                             android:text="@string/cic409sub1"
                             android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@color/colorPrimaryDark" />
+                            android:textColor="@color/colorPrimaryDark"
+                            android:visibility="gone" />
 
                         <RadioButton
                             android:id="@+id/cic409a"
@@ -917,7 +953,8 @@
                             android:tag="-1"
                             android:text="@string/cic409sub2"
                             android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@color/colorPrimaryDark" />
+                            android:textColor="@color/colorPrimaryDark"
+                            android:visibility="gone" />
 
                         <RadioButton
                             android:id="@+id/cic409f"
@@ -989,7 +1026,8 @@
                             android:tag="-1"
                             android:text="@string/cic409sub3"
                             android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@color/colorPrimaryDark" />
+                            android:textColor="@color/colorPrimaryDark"
+                            android:visibility="gone" />
 
                         <RadioButton
                             android:id="@+id/cic409k"
@@ -1017,6 +1055,38 @@
                             android:layout_marginBottom="1dp"
                             android:layout_weight="1"
                             android:text="@string/cic409m" />
+
+                        <RadioButton
+                            android:id="@+id/cic409n"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:text="@string/cic409n" />
+
+                        <RadioButton
+                            android:id="@+id/cic409o"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:text="@string/cic409o" />
+
+                        <RadioButton
+                            android:id="@+id/cic409p"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:text="@string/cic409p" />
+
+                        <RadioButton
+                            android:id="@+id/cic409q"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:text="@string/cic409q" />
 
                         <RadioButton
                             android:id="@+id/cic4099603"
@@ -1395,7 +1465,8 @@
                             android:tag="-1"
                             android:text="@string/cic404sub1"
                             android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@color/colorPrimaryDark" />
+                            android:textColor="@color/colorPrimaryDark"
+                            android:visibility="gone" />
 
                         <RadioButton
                             android:id="@+id/cic414a"
@@ -1467,7 +1538,8 @@
                             android:tag="-1"
                             android:text="@string/cic404sub2"
                             android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@color/colorPrimaryDark" />
+                            android:textColor="@color/colorPrimaryDark"
+                            android:visibility="gone" />
 
                         <RadioButton
                             android:id="@+id/cic414f"
@@ -1539,7 +1611,8 @@
                             android:tag="-1"
                             android:text="@string/cic404sub3"
                             android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@color/colorPrimaryDark" />
+                            android:textColor="@color/colorPrimaryDark"
+                            android:visibility="gone" />
 
                         <RadioButton
                             android:id="@+id/cic414k"
@@ -1567,6 +1640,38 @@
                             android:layout_marginBottom="1dp"
                             android:layout_weight="1"
                             android:text="@string/cic414m" />
+
+                        <RadioButton
+                            android:id="@+id/cic414n"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:text="@string/cic414n" />
+
+                        <RadioButton
+                            android:id="@+id/cic414o"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:text="@string/cic414o" />
+
+                        <RadioButton
+                            android:id="@+id/cic414p"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:text="@string/cic414p" />
+
+                        <RadioButton
+                            android:id="@+id/cic414q"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:text="@string/cic414q" />
 
                         <RadioButton
                             android:id="@+id/cic4149603"

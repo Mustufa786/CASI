@@ -225,6 +225,13 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
 
         binding.ciw412f.setVisibility(!userCountryTajik ? View.VISIBLE : View.GONE);
 
+        binding.ciw413n.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        binding.ciw413o.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        binding.ciw413p.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        binding.ciw413q.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        binding.ciw413r.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        binding.ciw413s.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+
     }
 
 
@@ -427,9 +434,15 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
                                                                                                         jsonB4.getciw413().equals("11") ? binding.ciw413k.getId() :
                                                                                                                 jsonB4.getciw413().equals("12") ? binding.ciw413l.getId() :
                                                                                                                         jsonB4.getciw413().equals("13") ? binding.ciw413m.getId() :
-                                                                                                                                jsonB4.getciw413().equals("961") ? binding.ciw413961.getId() :
-                                                                                                                                        jsonB4.getciw413().equals("962") ? binding.ciw413962.getId() :
-                                                                                                                                                binding.ciw413963.getId()
+                                                                                                                                jsonB4.getciw413().equals("14") ? binding.ciw413n.getId() :
+                                                                                                                                        jsonB4.getciw413().equals("15") ? binding.ciw413o.getId() :
+                                                                                                                                                jsonB4.getciw413().equals("16") ? binding.ciw413p.getId() :
+                                                                                                                                                        jsonB4.getciw413().equals("17") ? binding.ciw413q.getId() :
+                                                                                                                                                                jsonB4.getciw413().equals("18") ? binding.ciw413r.getId() :
+                                                                                                                                                                        jsonB4.getciw413().equals("19") ? binding.ciw413s.getId() :
+                                                                                                                                                                                jsonB4.getciw413().equals("961") ? binding.ciw413961.getId() :
+                                                                                                                                                                                        jsonB4.getciw413().equals("962") ? binding.ciw413962.getId() :
+                                                                                                                                                                                                binding.ciw413963.getId()
                 );
             }
 
@@ -767,6 +780,12 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
                 : binding.ciw413k.isChecked() ? "11"
                 : binding.ciw413l.isChecked() ? "12"
                 : binding.ciw413m.isChecked() ? "13"
+                : binding.ciw413n.isChecked() ? "14"
+                : binding.ciw413o.isChecked() ? "15"
+                : binding.ciw413p.isChecked() ? "16"
+                : binding.ciw413q.isChecked() ? "17"
+                : binding.ciw413r.isChecked() ? "18"
+                : binding.ciw413s.isChecked() ? "19"
                 : binding.ciw413961.isChecked() ? "961"
                 : binding.ciw413962.isChecked() ? "962"
                 : binding.ciw413963.isChecked() ? "963"

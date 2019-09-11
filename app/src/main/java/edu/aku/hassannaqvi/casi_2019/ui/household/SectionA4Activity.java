@@ -232,9 +232,9 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
                                 : jsonA4.getcih301().equals("5") ? binding.cih301e.getId()
                                 : jsonA4.getcih301().equals("6") ? binding.cih301f.getId()
                                 : jsonA4.getcih301().equals("7") ? binding.cih301g.getId()
-                                : jsonA4.getcih301().equals("7") ? binding.cih301h.getId()
+                                /*: jsonA4.getcih301().equals("7") ? binding.cih301h.getId()
                                 : jsonA4.getcih301().equals("9") ? binding.cih301i.getId()
-                                /*: jsonA4.getcih301().equals("10") ? binding.cih301j.getId()
+                                : jsonA4.getcih301().equals("10") ? binding.cih301j.getId()
                                 : jsonA4.getcih301().equals("11") ? binding.cih301k.getId()
                                 : jsonA4.getcih301().equals("12") ? binding.cih301l.getId()
                                 : jsonA4.getcih301().equals("13") ? binding.cih301m.getId()*/
@@ -881,9 +881,9 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
                 : binding.cih301e.isChecked() ? "5"
                 : binding.cih301f.isChecked() ? "6"
                 : binding.cih301g.isChecked() ? "7"
-                : binding.cih301h.isChecked() ? "8"
+                /*: binding.cih301h.isChecked() ? "8"
                 : binding.cih301i.isChecked() ? "9"
-                /*: binding.cih301j.isChecked() ? "10"
+                : binding.cih301j.isChecked() ? "10"
                 : binding.cih301k.isChecked() ? "11"
                 : binding.cih301l.isChecked() ? "12"
                 : binding.cih301m.isChecked() ? "13"*/
