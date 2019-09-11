@@ -220,10 +220,10 @@
     <string name="cih301g"> پشتو </string>
     <string name="cih301h"> دری </string>
     <string name="cih301i"> ازبیکی </string>
-    <!--    <string name="cih301j"> رشین   </string>
-        <string name="cih301k"> تاجک </string>
-        <string name="cih301l"> شغنی </string>
-        <string name="cih301m"> اشکاشیمی </string>-->
+    <!--<string name="cih301j"> رشین   </string>
+    <string name="cih301k"> تاجک </string>
+    <string name="cih301l"> شغنی </string>
+    <string name="cih301m"> اشکاشیمی </string>-->
 
     <string name="daysQuan"> دنوں کی تعداد</string>
 
@@ -637,6 +637,14 @@
     <string name="ciw403i"> نجی زچہ و بچہ سینٹر </string>
     <string name="ciw403j"> دیگرنجی  صحت مرکز </string>
     <string name="ciw403k"> جگہ کا نام </string>
+    <string name="ciw403l"> </string>
+    <string name="ciw403m">  </string>
+    <string name="ciw403n"> </string>
+    <string name="ciw403o"></string>
+    <string name="ciw403p">  </string>
+    <string name="ciw403q">  </string>
+    <string name="ciw403r">  </string>
+    <string name="ciw403s"> </string>
     <string name="ciw403info4"> (دیگر کی صورت میں جگہ کا نام لکھیں) </string>
     <string name="ciw404a"> بہت بڑا </string>
     <string name="ciw404b"> اوسطً سے بڑا </string>
@@ -684,6 +692,7 @@
     <string name="ciw415e"> لیڈی ہیلتھ ورکر </string>
     <string name="ciw415f"> لیڈی ہیلتھ وزیٹر </string>
     <string name="ciw415g"> دائی </string>
+    <string name="ciw415h">   </string>
     <string name="ciw416a"> اگر ایک دن سے کم ہے (گھنٹے درج کریں) </string>
     <string name="ciw416b"> اگر ایک ہفتے سے کم ہے (دن درج کریں) </string>
     <string name="ciw416c"> دوسری صورت میں ہفتہ ریکارڈ کریں </string>

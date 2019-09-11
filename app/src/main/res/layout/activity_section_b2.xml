@@ -948,7 +948,8 @@
                                 android:background="@color/pink_100"
                                 android:text="@string/ciw312sub1"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@color/colorPrimaryDark" />
+                                android:textColor="@color/colorPrimaryDark"
+                                android:visibility="gone" />
 
                             <CheckBox
                                 android:id="@+id/ciw312a"
@@ -1007,7 +1008,8 @@
                                 android:background="@color/pink_100"
                                 android:text="@string/ciw312sub2"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@color/colorPrimaryDark" />
+                                android:textColor="@color/colorPrimaryDark"
+                                android:visibility="gone" />
 
                             <CheckBox
                                 android:id="@+id/ciw312f"
@@ -1066,7 +1068,8 @@
                                 android:background="@color/pink_100"
                                 android:text="@string/ciw312sub3"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@color/colorPrimaryDark" />
+                                android:textColor="@color/colorPrimaryDark"
+                                android:visibility="gone" />
 
                             <CheckBox
                                 android:id="@+id/ciw312k"
@@ -1088,6 +1091,34 @@
                                 android:layout_height="match_parent"
                                 android:layout_marginBottom="1dp"
                                 android:text="@string/ciw312m" />
+
+                            <CheckBox
+                                android:id="@+id/ciw312n"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                android:text="@string/ciw312n" />
+
+                            <CheckBox
+                                android:id="@+id/ciw312o"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                android:text="@string/ciw312o" />
+
+                            <CheckBox
+                                android:id="@+id/ciw312p"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                android:text="@string/ciw312p" />
+
+                            <CheckBox
+                                android:id="@+id/ciw312q"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                android:text="@string/ciw312q" />
 
                             <CheckBox
                                 android:id="@+id/ciw312963"
@@ -1370,7 +1401,8 @@
                                 android:background="@color/pink_100"
                                 android:text="@string/ciw312sub1"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@color/colorPrimaryDark" />
+                                android:textColor="@color/colorPrimaryDark"
+                                android:visibility="gone" />
 
                             <CheckBox
                                 android:id="@+id/ciw317a"
@@ -1429,7 +1461,8 @@
                                 android:background="@color/pink_100"
                                 android:text="@string/ciw312sub2"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@color/colorPrimaryDark" />
+                                android:textColor="@color/colorPrimaryDark"
+                                android:visibility="gone" />
 
                             <CheckBox
                                 android:id="@+id/ciw317f"
@@ -1488,7 +1521,8 @@
                                 android:background="@color/pink_100"
                                 android:text="@string/ciw312sub3"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@color/colorPrimaryDark" />
+                                android:textColor="@color/colorPrimaryDark"
+                                android:visibility="gone" />
 
                             <CheckBox
                                 android:id="@+id/ciw317k"
@@ -1510,6 +1544,34 @@
                                 android:layout_height="match_parent"
                                 android:layout_marginBottom="1dp"
                                 android:text="@string/ciw312m" />
+
+                            <CheckBox
+                                android:id="@+id/ciw317n"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                android:text="@string/ciw312n" />
+
+                            <CheckBox
+                                android:id="@+id/ciw317o"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                android:text="@string/ciw312o" />
+
+                            <CheckBox
+                                android:id="@+id/ciw317p"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                android:text="@string/ciw312p" />
+
+                            <CheckBox
+                                android:id="@+id/ciw317q"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                android:text="@string/ciw312q" />
 
                             <CheckBox
                                 android:id="@+id/ciw317963"
@@ -1778,7 +1840,8 @@
                                 android:background="@color/pink_100"
                                 android:text="@string/ciw312sub1"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@color/colorPrimaryDark" />
+                                android:textColor="@color/colorPrimaryDark"
+                                android:visibility="gone" />
 
                             <CheckBox
                                 android:id="@+id/ciw322a"
@@ -1837,7 +1900,8 @@
                                 android:background="@color/pink_100"
                                 android:text="@string/ciw312sub2"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@color/colorPrimaryDark" />
+                                android:textColor="@color/colorPrimaryDark"
+                                android:visibility="gone" />
 
                             <CheckBox
                                 android:id="@+id/ciw322f"
@@ -1896,7 +1960,8 @@
                                 android:background="@color/pink_100"
                                 android:text="@string/ciw312sub3"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@color/colorPrimaryDark" />
+                                android:textColor="@color/colorPrimaryDark"
+                                android:visibility="gone" />
 
                             <CheckBox
                                 android:id="@+id/ciw322k"
@@ -1918,6 +1983,34 @@
                                 android:layout_height="match_parent"
                                 android:layout_marginBottom="1dp"
                                 android:text="@string/ciw312m" />
+
+                            <CheckBox
+                                android:id="@+id/ciw322n"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                android:text="@string/ciw312n" />
+
+                            <CheckBox
+                                android:id="@+id/ciw322o"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                android:text="@string/ciw312o" />
+
+                            <CheckBox
+                                android:id="@+id/ciw322p"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                android:text="@string/ciw312p" />
+
+                            <CheckBox
+                                android:id="@+id/ciw322q"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="1dp"
+                                android:text="@string/ciw312q" />
 
                             <CheckBox
                                 android:id="@+id/ciw322963"

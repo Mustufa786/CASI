@@ -106,6 +106,7 @@ public class SectionB3Activity extends Menu2Activity implements TextWatcher, Rad
 
         AutoCompleteFields();
 
+
     }
 
     public void AutoCompleteFields() {

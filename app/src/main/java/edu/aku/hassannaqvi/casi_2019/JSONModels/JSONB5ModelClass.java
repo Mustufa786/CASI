@@ -14,6 +14,7 @@ public class JSONB5ModelClass {
     private String ciw415e = "";
     private String ciw415f = "";
     private String ciw415g = "";
+    private String ciw415h = "";
     private String ciw41596 = "";
     private String ciw41596x = "";
     private String ciw416 = "";
@@ -120,6 +121,14 @@ public class JSONB5ModelClass {
 
     public void setciw415g(String ciw415g) {
         this.ciw415g = ciw415g;
+    }
+
+    public String getciw415h() {
+        return ciw415h;
+    }
+
+    public void setciw415h(String ciw415h) {
+        this.ciw415h = ciw415h;
     }
 
     public String getciw41596() {

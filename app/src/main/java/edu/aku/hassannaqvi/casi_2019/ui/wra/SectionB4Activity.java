@@ -33,6 +33,8 @@ import edu.aku.hassannaqvi.casi_2019.ui.viewMem.ViewMemberActivity;
 import edu.aku.hassannaqvi.casi_2019.validation.ClearClass;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
+import static edu.aku.hassannaqvi.casi_2019.ui.wra.SectionB1Activity.userCountryTajik;
+
 public class SectionB4Activity extends Menu2Activity implements TextWatcher, RadioGroup.OnCheckedChangeListener {
 
     private final long DELAY = 1000;
@@ -207,6 +209,22 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
 
         AutoCompleteFields();
 
+        /*For Tajik Visibility*/
+        binding.ciw401h.setVisibility(!userCountryTajik ? View.VISIBLE : View.GONE);
+        binding.ciw402h.setVisibility(!userCountryTajik ? View.VISIBLE : View.GONE);
+
+        binding.ciw403k.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        binding.ciw403l.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        binding.ciw403m.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        binding.ciw403n.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        binding.ciw403o.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        binding.ciw403p.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        binding.ciw403q.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        binding.ciw403r.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        binding.ciw403s.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+
+        binding.ciw412f.setVisibility(!userCountryTajik ? View.VISIBLE : View.GONE);
+
     }
 
 
@@ -272,12 +290,21 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
                                         jsonB4.getciw403().equals("3") ? binding.ciw403c.getId() :
                                                 jsonB4.getciw403().equals("4") ? binding.ciw403d.getId() :
                                                         jsonB4.getciw403().equals("5") ? binding.ciw403e.getId() :
-                                                                jsonB4.getciw403().equals("6") ? binding.ciw403f.getId() :
+                                                                jsonB4.getciw403().equals("961") ? binding.ciw403f.getId() :
                                                                         jsonB4.getciw403().equals("7") ? binding.ciw403g.getId() :
                                                                                 jsonB4.getciw403().equals("8") ? binding.ciw403h.getId() :
                                                                                         jsonB4.getciw403().equals("9") ? binding.ciw403i.getId() :
-                                                                                                jsonB4.getciw403().equals("10") ? binding.ciw403j.getId() :
-                                                                                                        binding.ciw40396.getId()
+                                                                                                jsonB4.getciw403().equals("962") ? binding.ciw403j.getId() :
+                                                                                                        jsonB4.getciw403().equals("11") ? binding.ciw403k.getId() :
+                                                                                                                jsonB4.getciw403().equals("12") ? binding.ciw403l.getId() :
+                                                                                                                        jsonB4.getciw403().equals("13") ? binding.ciw403m.getId() :
+                                                                                                                                jsonB4.getciw403().equals("14") ? binding.ciw403n.getId() :
+                                                                                                                                        jsonB4.getciw403().equals("15") ? binding.ciw403o.getId() :
+                                                                                                                                                jsonB4.getciw403().equals("16") ? binding.ciw403p.getId() :
+                                                                                                                                                        jsonB4.getciw403().equals("17") ? binding.ciw403q.getId() :
+                                                                                                                                                                jsonB4.getciw403().equals("18") ? binding.ciw403r.getId() :
+                                                                                                                                                                        jsonB4.getciw403().equals("19") ? binding.ciw403s.getId() :
+                                                                                                                                                                                binding.ciw40396.getId()
                 );
                 binding.ciw403fx.setText(jsonB4.getciw403fx());
                 binding.ciw403jx.setText(jsonB4.getciw403jx());
@@ -638,6 +665,15 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
                 : binding.ciw403i.isChecked() ? "9"
                 : binding.ciw403j.isChecked() ? "962"
                 : binding.ciw40396.isChecked() ? "963"
+                : binding.ciw403k.isChecked() ? "11"
+                : binding.ciw403l.isChecked() ? "12"
+                : binding.ciw403m.isChecked() ? "13"
+                : binding.ciw403n.isChecked() ? "14"
+                : binding.ciw403o.isChecked() ? "15"
+                : binding.ciw403p.isChecked() ? "16"
+                : binding.ciw403q.isChecked() ? "17"
+                : binding.ciw403r.isChecked() ? "18"
+                : binding.ciw403s.isChecked() ? "19"
                 : "0");
 //       ciw403
 

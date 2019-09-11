@@ -73,6 +73,21 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
         bi.fldGrpciw310.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
         bi.fldGrpciw325.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
 
+        bi.ciw312n.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        bi.ciw312o.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        bi.ciw312p.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        bi.ciw312q.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+
+        bi.ciw317n.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        bi.ciw317o.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        bi.ciw317p.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        bi.ciw317q.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+
+        bi.ciw322n.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        bi.ciw322o.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        bi.ciw322p.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        bi.ciw322q.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+
 
     }
 
@@ -445,6 +460,18 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
             if (!jsonB2.getciw312m().equals("0")) {
                 bi.ciw312m.setChecked(true);
             }
+            if (!jsonB2.getciw312n().equals("0")) {
+                bi.ciw312n.setChecked(true);
+            }
+            if (!jsonB2.getciw312o().equals("0")) {
+                bi.ciw312o.setChecked(true);
+            }
+            if (!jsonB2.getciw312p().equals("0")) {
+                bi.ciw312p.setChecked(true);
+            }
+            if (!jsonB2.getciw312q().equals("0")) {
+                bi.ciw312q.setChecked(true);
+            }
             if (!jsonB2.getciw312961().equals("0")) {
                 bi.ciw312961.setChecked(true);
             }
@@ -530,6 +557,18 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
             }
             if (!jsonB2.getciw317m().equals("0")) {
                 bi.ciw317m.setChecked(true);
+            }
+            if (!jsonB2.getciw317n().equals("0")) {
+                bi.ciw317n.setChecked(true);
+            }
+            if (!jsonB2.getciw317o().equals("0")) {
+                bi.ciw317o.setChecked(true);
+            }
+            if (!jsonB2.getciw317p().equals("0")) {
+                bi.ciw317p.setChecked(true);
+            }
+            if (!jsonB2.getciw317q().equals("0")) {
+                bi.ciw317q.setChecked(true);
             }
             if (!jsonB2.getciw317961().equals("0")) {
                 bi.ciw317961.setChecked(true);
@@ -617,6 +656,18 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
             }
             if (!jsonB2.getciw322m().equals("0")) {
                 bi.ciw322m.setChecked(true);
+            }
+            if (!jsonB2.getciw322n().equals("0")) {
+                bi.ciw322n.setChecked(true);
+            }
+            if (!jsonB2.getciw322o().equals("0")) {
+                bi.ciw322o.setChecked(true);
+            }
+            if (!jsonB2.getciw322p().equals("0")) {
+                bi.ciw322p.setChecked(true);
+            }
+            if (!jsonB2.getciw322q().equals("0")) {
+                bi.ciw322q.setChecked(true);
             }
             if (!jsonB2.getciw322961().equals("0")) {
                 bi.ciw322961.setChecked(true);
@@ -1154,6 +1205,10 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
         sB2.put("ciw312k", bi.ciw312k.isChecked() ? "11" : "0");
         sB2.put("ciw312l", bi.ciw312l.isChecked() ? "12" : "0");
         sB2.put("ciw312m", bi.ciw312m.isChecked() ? "13" : "0");
+        sB2.put("ciw312n", bi.ciw312n.isChecked() ? "14" : "0");
+        sB2.put("ciw312o", bi.ciw312o.isChecked() ? "15" : "0");
+        sB2.put("ciw312p", bi.ciw312p.isChecked() ? "16" : "0");
+        sB2.put("ciw312q", bi.ciw312q.isChecked() ? "17" : "0");
         sB2.put("ciw312961", bi.ciw312961.isChecked() ? "961" : "0");
         sB2.put("ciw312962", bi.ciw312962.isChecked() ? "962" : "0");
         sB2.put("ciw312963", bi.ciw312963.isChecked() ? "963" : "0");
@@ -1207,6 +1262,10 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
         sB2.put("ciw317k", bi.ciw317k.isChecked() ? "11" : "0");
         sB2.put("ciw317l", bi.ciw317l.isChecked() ? "12" : "0");
         sB2.put("ciw317m", bi.ciw317m.isChecked() ? "13" : "0");
+        sB2.put("ciw317n", bi.ciw317n.isChecked() ? "14" : "0");
+        sB2.put("ciw317o", bi.ciw317o.isChecked() ? "15" : "0");
+        sB2.put("ciw317p", bi.ciw317p.isChecked() ? "16" : "0");
+        sB2.put("ciw317q", bi.ciw317q.isChecked() ? "17" : "0");
         sB2.put("ciw317961", bi.ciw317961.isChecked() ? "961" : "0");
         sB2.put("ciw317962", bi.ciw317962.isChecked() ? "962" : "0");
         sB2.put("ciw317963", bi.ciw317963.isChecked() ? "963" : "0");
@@ -1262,6 +1321,10 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
         sB2.put("ciw322k", bi.ciw322k.isChecked() ? "11" : "0");
         sB2.put("ciw322l", bi.ciw322l.isChecked() ? "12" : "0");
         sB2.put("ciw322m", bi.ciw322m.isChecked() ? "13" : "0");
+        sB2.put("ciw322n", bi.ciw322n.isChecked() ? "14" : "0");
+        sB2.put("ciw322o", bi.ciw322o.isChecked() ? "15" : "0");
+        sB2.put("ciw322p", bi.ciw322p.isChecked() ? "16" : "0");
+        sB2.put("ciw322q", bi.ciw322q.isChecked() ? "17" : "0");
         sB2.put("ciw322961", bi.ciw322961.isChecked() ? "961" : "0");
         sB2.put("ciw322962", bi.ciw322962.isChecked() ? "962" : "0");
         sB2.put("ciw322963", bi.ciw322963.isChecked() ? "963" : "0");

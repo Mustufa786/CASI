@@ -57,6 +57,10 @@ public class JSONB2ModelClass {
     private String ciw312k = "";
     private String ciw312l = "";
     private String ciw312m = "";
+    private String ciw312n = "";
+    private String ciw312o = "";
+    private String ciw312p = "";
+    private String ciw312q = "";
     private String ciw312961 = "";
     private String ciw312962 = "";
     private String ciw312963 = "";
@@ -82,6 +86,10 @@ public class JSONB2ModelClass {
     private String ciw317k = "";
     private String ciw317l = "";
     private String ciw317m = "";
+    private String ciw317n = "";
+    private String ciw317o = "";
+    private String ciw317p = "";
+    private String ciw317q = "";
     private String ciw317961 = "";
     private String ciw317962 = "";
     private String ciw317963 = "";
@@ -107,6 +115,10 @@ public class JSONB2ModelClass {
     private String ciw322k = "";
     private String ciw322l = "";
     private String ciw322m = "";
+    private String ciw322n = "";
+    private String ciw322o = "";
+    private String ciw322p = "";
+    private String ciw322q = "";
     private String ciw322961 = "";
     private String ciw322962 = "";
     private String ciw322963 = "";
@@ -123,6 +135,102 @@ public class JSONB2ModelClass {
 
     public JSONB2ModelClass() {
 
+    }
+
+    public String getciw322n() {
+        return ciw322n;
+    }
+
+    public void setciw322n(String ciw322n) {
+        this.ciw322n = ciw322n;
+    }
+
+    public String getciw322o() {
+        return ciw322o;
+    }
+
+    public void setciw322o(String ciw322o) {
+        this.ciw322o = ciw322o;
+    }
+
+    public String getciw322p() {
+        return ciw322p;
+    }
+
+    public void setciw322p(String ciw322p) {
+        this.ciw322p = ciw322p;
+    }
+
+    public String getciw322q() {
+        return ciw322q;
+    }
+
+    public void setciw322q(String ciw322q) {
+        this.ciw322q = ciw322q;
+    }
+
+    public String getciw317n() {
+        return ciw317n;
+    }
+
+    public void setciw317n(String ciw317n) {
+        this.ciw317n = ciw317n;
+    }
+
+    public String getciw317o() {
+        return ciw317o;
+    }
+
+    public void setciw317o(String ciw317o) {
+        this.ciw317o = ciw317o;
+    }
+
+    public String getciw317p() {
+        return ciw317p;
+    }
+
+    public void setciw317p(String ciw317p) {
+        this.ciw317p = ciw317p;
+    }
+
+    public String getciw317q() {
+        return ciw317q;
+    }
+
+    public void setciw317q(String ciw317q) {
+        this.ciw317q = ciw317q;
+    }
+
+    public String getciw312n() {
+        return ciw312n;
+    }
+
+    public void setciw312n(String ciw312n) {
+        this.ciw312n = ciw312n;
+    }
+
+    public String getciw312o() {
+        return ciw312o;
+    }
+
+    public void setciw312o(String ciw312o) {
+        this.ciw312o = ciw312o;
+    }
+
+    public String getciw312p() {
+        return ciw312p;
+    }
+
+    public void setciw312p(String ciw312p) {
+        this.ciw312p = ciw312p;
+    }
+
+    public String getciw312q() {
+        return ciw312q;
+    }
+
+    public void setciw312q(String ciw312q) {
+        this.ciw312q = ciw312q;
     }
 
     public String getciw301() {

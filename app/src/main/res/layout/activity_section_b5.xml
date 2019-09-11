@@ -158,6 +158,13 @@
                             android:text="@string/ciw415g" />
 
                         <CheckBox
+                            android:id="@+id/ciw415h"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:text="@string/ciw415h" />
+
+                        <CheckBox
                             android:id="@+id/ciw41596"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"

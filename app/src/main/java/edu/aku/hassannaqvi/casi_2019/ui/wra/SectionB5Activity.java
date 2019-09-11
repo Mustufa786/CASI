@@ -97,6 +97,10 @@ public class SectionB5Activity extends Menu2Activity implements TextWatcher, Rad
 
         AutoCompleteFields();
 
+
+        /*For Tajik Visibility*/
+        binding.ciw415h.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+
     }
 
     public void AutoCompleteFields() {
@@ -134,6 +138,9 @@ public class SectionB5Activity extends Menu2Activity implements TextWatcher, Rad
             }
             if (!jsonB5.getciw415g().equals("0")) {
                 binding.ciw415g.setChecked(true);
+            }
+            if (!jsonB5.getciw415h().equals("0")) {
+                binding.ciw415h.setChecked(true);
             }
             if (!jsonB5.getciw41596().equals("0")) {
                 binding.ciw41596.setChecked(true);
@@ -477,6 +484,7 @@ public class SectionB5Activity extends Menu2Activity implements TextWatcher, Rad
         sB5.put("ciw415e", binding.ciw415e.isChecked() ? "5" : "0");
         sB5.put("ciw415f", binding.ciw415f.isChecked() ? "6" : "0");
         sB5.put("ciw415g", binding.ciw415g.isChecked() ? "7" : "0");
+        sB5.put("ciw415h", binding.ciw415h.isChecked() ? "8" : "0");
         sB5.put("ciw41596", binding.ciw41596.isChecked() ? "96" : "0");
         sB5.put("ciw41596x", binding.ciw41596x.getText().toString());
 

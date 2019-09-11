@@ -634,6 +634,14 @@
     <string name="ciw403i"> زایشگاه شخصی  </string>
     <string name="ciw403j">دیگر مراکز صحی شخصی (مشخص کنید) </string>
     <string name="ciw403k"> دیگر(مشخص کنید) </string>
+    <string name="ciw403l"> </string>
+    <string name="ciw403m">  </string>
+    <string name="ciw403n"> </string>
+    <string name="ciw403o"></string>
+    <string name="ciw403p">  </string>
+    <string name="ciw403q">  </string>
+    <string name="ciw403r">  </string>
+    <string name="ciw403s"> </string>
     <string name="ciw403info4"> نام مکان  </string>
     <string name="ciw404a"> بسیار بزرگ  </string>
     <string name="ciw404b"> بزرگتر از اوسط  </string>
@@ -681,6 +689,7 @@
     <string name="ciw415e"> قابله  </string>
     <string name="ciw415f"> لیڈی ہیلتھ وزیٹر </string>
     <string name="ciw415g"> دایه محلی  </string>
+    <string name="ciw415h">   </string>
     <string name="ciw416a"> اگر کمتر از 1 روز، ساعات را درج کنید </string>
     <string name="ciw416b"> اگر کمتر از 1 هفته، روزها را درج کنید </string>
     <string name="ciw416c"> در غیر آن، هفته ها را درج کنید </string>
