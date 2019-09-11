@@ -83,6 +83,7 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
     @BindViews({R.id.ciw201days, R.id.ciw201months, R.id.ciw201years})
     List<EditText> grpDob;
     int roasterChildrens = 0;
+    int roasterChildrensUnder2 = 0;
     boolean childUnder2Check = false;
     public TextWatcher age = new TextWatcher() {
         @Override
@@ -290,11 +291,16 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
 
                     bi.ciw215.setEnabled(false);
                     bi.ciw215.setText(null);
+                    bi.ciw216.setEnabled(false);
+                    bi.ciw216.setText(null);
+                    ClearClass.ClearAllFields(bi.ciw21601, false);
                 } else {
                     bi.ciw212.setEnabled(true);
                     bi.ciw213.setEnabled(true);
                     bi.ciw214.setEnabled(true);
                     bi.ciw215.setEnabled(true);
+                    bi.ciw216.setEnabled(true);
+                    ClearClass.ClearAllFields(bi.ciw21601, true);
                 }
 
             }
@@ -365,11 +371,17 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                 if (bi.ciw214.getText().toString().equals("0")) {
                     bi.ciw215.setEnabled(false);
                     bi.ciw215.setText(null);
+                    bi.ciw216.setEnabled(false);
+                    bi.ciw216.setText(null);
+                    ClearClass.ClearAllFields(bi.ciw21601, false);
                 } else {
                     bi.ciw215.setEnabled(true);
+                    bi.ciw216.setEnabled(true);
+                    ClearClass.ClearAllFields(bi.ciw21601, true);
                 }
 
                 bi.ciw215.setMaxvalue(Integer.valueOf(bi.ciw214.getText().toString()));
+                bi.ciw216.setMaxvalue(Integer.valueOf(bi.ciw214.getText().toString()));
             }
 
             @Override
@@ -527,6 +539,7 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                 for (FamilyMembersContract fmc : MainApp.childUnder2) {
                     if (fmc.getMotherId().equals(wraMap.get(bi.nb101.getSelectedItem().toString()).getSerialNo())) {
                         childUnder2Check = true;
+                        roasterChildrensUnder2++;
                         break;
                     }
                 }
@@ -534,6 +547,7 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                 bi.ciw212.setMinvalue(roasterChildrens);
                 bi.ciw214.setMinvalue(roasterChildrens);
                 bi.ciw215.setMinvalue(roasterChildrens);
+                bi.ciw216.setMinvalue(roasterChildrensUnder2);
 
                 if (wraMap.get(bi.nb101.getSelectedItem().toString()).getKishSelected().equals("1"))
                     MainApp.mc.setKishSelectWRA(true);
@@ -705,7 +719,15 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
             }
 
             bi.ciw215.setText(jsonB1.getciw215());
-            bi.ciw216.setText(jsonB1.getciw219());
+            bi.ciw216.setText(jsonB1.getciw216());
+
+
+            if (!jsonB1.getciw21601().equals("0")) {
+                bi.ciw21601.check(
+                        jsonB1.getciw21601().equals("1") ? bi.ciw21601a.getId() :
+                                bi.ciw21601b.getId()
+                );
+            }
 
             bi.ciw211.setMinvalue(Integer.valueOf(jsonB1.getNo_child()));
             bi.ciw212.setMinvalue(Integer.valueOf(jsonB1.getNo_child()));
@@ -748,7 +770,7 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                             if (Integer.valueOf(bi.ciw214.getText().toString()) > 0) {
                                 if (Integer.valueOf(bi.ciw214.getText().toString()) == 1 && bi.ciw208a.isChecked()) {
                                     redirectCondition();
-                                } else if (childUnder2Check) {
+                                } else if (bi.ciw21601a.isChecked()) {
 
                                     /*AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
                                             SectionB1Activity.this);
@@ -990,6 +1012,7 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
         sB1.put("ciw214", bi.ciw214.getText().toString());
         sB1.put("ciw215", bi.ciw215.getText().toString());
         sB1.put("ciw216", bi.ciw216.getText().toString());
+        sB1.put("ciw21601", bi.ciw21601a.isChecked() ? "1" : bi.ciw21601b.isChecked() ? "2" : "0");
 
         sB1.put("no_child", roasterChildrens);
 
@@ -1311,14 +1334,13 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
 
                         if (bi.ciw214.getText().toString().equals("0")) return true;
 
-                        return ValidatorClass.EmptyEditTextPicker(this, bi.ciw215, getString(R.string.ciw215));
-
-                        /*if (!ValidatorClass.EmptyEditTextPicker(this, bi.ciw216, getString(R.string.ciw216)))
+                        if (!ValidatorClass.EmptyEditTextPicker(this, bi.ciw215, getString(R.string.ciw215)))
                             return false;
 
-                        if (!ValidatorClass.EmptyRadioButton(this, bi.ciw21601, bi.ciw21601a, getString(R.string.ciw216a))) {
+                        if (!ValidatorClass.EmptyEditTextPicker(this, bi.ciw216, getString(R.string.ciw216)))
                             return false;
-                        }*/
+
+                        return ValidatorClass.EmptyRadioButton(this, bi.ciw21601, bi.ciw21601a, getString(R.string.ciw216a));
 
 
                     }
