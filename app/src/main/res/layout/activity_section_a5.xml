@@ -109,94 +109,109 @@
                     android:orientation="vertical"
                     android:visibility='@{cih401a.checked? View.VISIBLE : View.GONE}'>
                     <!--cih402-->
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:background="@color/colorPrimary"
-                        android:text="@string/cih402"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:textColor="@android:color/white" />
-
-                    <RadioGroup
-                        android:id="@+id/cih402"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <RadioButton
-                            android:id="@+id/cih402a"
-                            style="@style/radiobutton"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="1dp"
-                            android:text="@string/cih402a" />
-
-                        <RadioButton
-                            android:id="@+id/cih402b"
-                            style="@style/radiobutton"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="1dp"
-                            android:text="@string/cih402b" />
-
-                    </RadioGroup>
-
-                    <!--cih403-->
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:background="@color/colorPrimary"
-                        android:text="@string/cih403"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:textColor="@android:color/white" />
-
                     <LinearLayout
-                        android:id="@+id/fldGrcih403check"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <CheckBox
-                            android:id="@+id/cih403a"
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="1dp"
-                            android:text="@string/cih403a" />
+                            android:layout_marginTop="16dp"
+                            android:background="@color/colorPrimary"
+                            android:text="@string/cih402"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@android:color/white" />
 
-                        <CheckBox
-                            android:id="@+id/cih403b"
+                        <RadioGroup
+                            android:id="@+id/cih402"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="1dp"
-                            android:text="@string/cih403b" />
+                            android:layout_height="wrap_content">
 
-                        <CheckBox
-                            android:id="@+id/cih403c"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="1dp"
-                            android:text="@string/cih403c" />
+                            <RadioButton
+                                android:id="@+id/cih402a"
+                                style="@style/radiobutton"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:text="@string/cih402a" />
 
-                        <CheckBox
-                            android:id="@+id/cih403d"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="1dp"
-                            android:text="@string/cih403d" />
+                            <RadioButton
+                                android:id="@+id/cih402b"
+                                style="@style/radiobutton"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:text="@string/cih402b" />
 
+                        </RadioGroup>
 
                     </LinearLayout>
 
-                    <CheckBox
-                        android:id="@+id/cih403e"
+
+                    <!--cih403-->
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="1dp"
-                        android:tag="-1"
-                        android:text="@string/cih403e" />
+                        android:orientation="vertical">
 
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:background="@color/colorPrimary"
+                            android:text="@string/cih403"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@android:color/white" />
+
+                        <LinearLayout
+                            android:id="@+id/fldGrcih403check"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:id="@+id/cih403a"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:text="@string/cih403a" />
+
+                            <CheckBox
+                                android:id="@+id/cih403b"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:text="@string/cih403b" />
+
+                            <CheckBox
+                                android:id="@+id/cih403c"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:text="@string/cih403c" />
+
+                            <CheckBox
+                                android:id="@+id/cih403d"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:text="@string/cih403d" />
+
+
+                        </LinearLayout>
+
+                        <CheckBox
+                            android:id="@+id/cih403e"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:tag="-1"
+                            android:text="@string/cih403e" />
+
+                    </LinearLayout>
                 </LinearLayout>
+
 
                 <!--cih404-->
                 <LinearLayout
@@ -204,7 +219,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:visibility='@{!cih401a.checked || cih403d.checked || cih403e.checked? View.VISIBLE : View.GONE }'>
+                    android:visibility='@{!cih401a.checked || cih403d.checked? View.VISIBLE : View.GONE }'>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -567,8 +582,8 @@
                     android:layout_marginTop="16dp"
                     android:background="@color/darkPink"
                     android:gravity="center"
-                    android:textColor="@color/white"
                     android:text="@string/na6heading"
+                    android:textColor="@color/white"
                     android:textSize="40sp" />
 
                 <!--cih501-->
@@ -793,16 +808,16 @@
                     android:layout_marginTop="16dp"
                     android:background="@color/darkPink"
                     android:gravity="center"
-                    android:textColor="@color/white"
                     android:text="@string/cih6heading"
+                    android:textColor="@color/white"
                     android:textSize="40sp" />
 
                 <TextView
                     style="@style/sub"
-                    android:visibility="gone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/cih6info" />
+                    android:text="@string/cih6info"
+                    android:visibility="gone" />
 
                 <!--cih601-->
                 <TextView

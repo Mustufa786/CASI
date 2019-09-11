@@ -5,6 +5,7 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.RadioGroup;
@@ -83,9 +84,11 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
+                    binding.fldGrcih404.setVisibility(View.VISIBLE);
                     ClearClass.ClearAllFields(binding.fldGrcih403check, false);
                 } else {
-                    ClearClass.ClearAllFields(binding.fldGrcih403check, true);
+                    binding.fldGrcih404.setVisibility(View.GONE);
+                    ClearClass.ClearAllFields(binding.fldGrcih404, true);
                 }
             }
         });
@@ -389,7 +392,7 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
     }
 
     public boolean formValidation() {
-        return ValidatorClass.EmptyCheckingContainer(this, binding.fldGrpsectionA5);
+        return ValidatorClass.EmptyCheckingContainerV2(this, binding.fldGrpsectionA5);
     }
 
     public void BtnEnd() {
