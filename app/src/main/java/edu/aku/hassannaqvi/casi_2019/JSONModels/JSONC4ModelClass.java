@@ -27,6 +27,10 @@ public class JSONC4ModelClass {
     private String cic404k = "";
     private String cic404l = "";
     private String cic404m = "";
+    private String cic404n = "";
+    private String cic404o = "";
+    private String cic404p = "";
+    private String cic404q = "";
     private String cic4049601 = "";
     private String cic4049601x = "";
     private String cic4049602 = "";
@@ -555,6 +559,38 @@ public class JSONC4ModelClass {
 
     public void setcic404m(String cic404m) {
         this.cic404m = cic404m;
+    }
+
+    public String getcic404n() {
+        return cic404n;
+    }
+
+    public void setcic404n(String cic404n) {
+        this.cic404n = cic404n;
+    }
+
+    public String getcic404o() {
+        return cic404o;
+    }
+
+    public void setcic404o(String cic404o) {
+        this.cic404o = cic404o;
+    }
+
+    public String getcic404p() {
+        return cic404p;
+    }
+
+    public void setcic404p(String cic404p) {
+        this.cic404p = cic404p;
+    }
+
+    public String getcic404q() {
+        return cic404q;
+    }
+
+    public void setcic404q(String cic404q) {
+        this.cic404q = cic404q;
     }
 
     public String getcic4name() {
