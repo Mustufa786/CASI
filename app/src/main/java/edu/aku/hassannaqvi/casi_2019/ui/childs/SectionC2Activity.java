@@ -275,6 +275,7 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
         if (userCountryTajik_Child) {
             bi.fldGrpC217e.setVisibility(View.GONE);
             bi.fldGrpC217n.setVisibility(View.GONE);
+            bi.cic211j.setVisibility(View.GONE);
         }
 
 

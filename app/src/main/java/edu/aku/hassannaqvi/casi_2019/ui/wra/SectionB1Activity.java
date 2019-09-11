@@ -705,11 +705,13 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
             }
 
             bi.ciw215.setText(jsonB1.getciw215());
+            bi.ciw216.setText(jsonB1.getciw219());
 
             bi.ciw211.setMinvalue(Integer.valueOf(jsonB1.getNo_child()));
             bi.ciw212.setMinvalue(Integer.valueOf(jsonB1.getNo_child()));
             bi.ciw214.setMinvalue(Integer.valueOf(jsonB1.getNo_child()));
             bi.ciw215.setMinvalue(Integer.valueOf(jsonB1.getNo_child()));
+            bi.ciw216.setMinvalue(Integer.valueOf(jsonB1.getNo_child()));
 
         }
 
@@ -987,6 +989,7 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
         sB1.put("ciw213", bi.ciw213.getText().toString());
         sB1.put("ciw214", bi.ciw214.getText().toString());
         sB1.put("ciw215", bi.ciw215.getText().toString());
+        sB1.put("ciw216", bi.ciw216.getText().toString());
 
         sB1.put("no_child", roasterChildrens);
 
@@ -1309,6 +1312,13 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                         if (bi.ciw214.getText().toString().equals("0")) return true;
 
                         return ValidatorClass.EmptyEditTextPicker(this, bi.ciw215, getString(R.string.ciw215));
+
+                        /*if (!ValidatorClass.EmptyEditTextPicker(this, bi.ciw216, getString(R.string.ciw216)))
+                            return false;
+
+                        if (!ValidatorClass.EmptyRadioButton(this, bi.ciw21601, bi.ciw21601a, getString(R.string.ciw216a))) {
+                            return false;
+                        }*/
 
 
                     }

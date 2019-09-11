@@ -212,6 +212,8 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
             binding.fldGrpA4a.setVisibility(View.GONE);
             binding.fldGrpA4b.setVisibility(View.GONE);
 
+            binding.cih317d.setVisibility(View.GONE);
+
         }
 
     }

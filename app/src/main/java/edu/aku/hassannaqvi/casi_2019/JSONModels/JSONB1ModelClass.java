@@ -34,6 +34,7 @@ public class JSONB1ModelClass {
     private String ciw213 = "";
     private String ciw214 = "";
     private String ciw215 = "";
+    private String ciw219 = "";
     private String ciw216 = "";
     private String ciw216aa = "";
     @SerializedName("ciw11801")
@@ -259,6 +260,14 @@ public class JSONB1ModelClass {
 
     public void setciw215(String ciw215) {
         this.ciw215 = ciw215;
+    }
+
+    public String getciw219() {
+        return ciw219;
+    }
+
+    public void setciw219(String ciw219) {
+        this.ciw219 = ciw219;
     }
 
     public String getciw216() {

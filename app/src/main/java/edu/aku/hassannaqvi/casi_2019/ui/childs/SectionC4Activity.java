@@ -52,14 +52,14 @@ public class SectionC4Activity extends Menu2Activity {
 //
         if (SectionC1Activity.editChildFlag) {
             binding.textName.setText(SectionC1Activity.selectedChildName + " : " + getString(R.string.childname)
-                    + "\n\n" + SectionC1Activity.editMotherName + " : " + getString(R.string.cic212a));
+                    + "\n\n" + SectionC1Activity.editMotherName);
         } else {
             if (!SectionC1Activity.isNA) {
                 binding.textName.setText(SectionC1Activity.selectedChildName + " : " + getString(R.string.childname)
-                        + "\n\n" + SectionB1Activity.wraName + " : " + getString(R.string.cic212a));
+                        + "\n\n" + SectionB1Activity.wraName);
             } else {
                 binding.textName.setText(SectionC1Activity.selectedChildName + " : " + getString(R.string.childname)
-                        + "\n\n" + SectionC1Activity.careTaker + " : " + getString(R.string.cih113));
+                        + "\n\n" + SectionC1Activity.careTaker);
             }
         }
 //
