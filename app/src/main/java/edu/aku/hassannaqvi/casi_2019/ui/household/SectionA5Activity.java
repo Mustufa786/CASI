@@ -83,7 +83,9 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    ClearClass.ClearAllFields(binding.fldGrcih403check, null);
+                    ClearClass.ClearAllFields(binding.fldGrcih403check, false);
+                } else {
+                    ClearClass.ClearAllFields(binding.fldGrcih403check, true);
                 }
             }
         });
