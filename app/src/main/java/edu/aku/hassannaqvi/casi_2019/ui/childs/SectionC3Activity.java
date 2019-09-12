@@ -465,6 +465,16 @@ public class SectionC3Activity extends Menu2Activity implements RadioGroup.OnChe
             return false;
         }
 
+//        cic3hptb
+        if (userCountryTajik_Child) {
+            if (!ValidatorClass.EmptyRadioButton(this, binding.cic3hptb, binding.cic3hptba, getString(R.string.cic3hptb) + getString(R.string.cic3response))) {
+                return false;
+            }
+            if (!ValidatorClass.EmptyRadioButton(this, binding.cic3hptbsrc, binding.cic3hptbsrca, getString(R.string.cic3hptb) + getString(R.string.cic3src))) {
+                return false;
+            }
+        }
+
 
 //        cic3opv0
         if (!ValidatorClass.EmptyRadioButton(this, binding.cic3opv0, binding.cic3opv0a, getString(R.string.cic3opv0) + getString(R.string.cic3response))) {
@@ -550,11 +560,13 @@ public class SectionC3Activity extends Menu2Activity implements RadioGroup.OnChe
 
 
 //        cic3pcv3
-        if (!ValidatorClass.EmptyRadioButton(this, binding.cic3pcv3, binding.cic3pcv3a, getString(R.string.cic3pcv3) + getString(R.string.cic3response))) {
-            return false;
-        }
-        if (!ValidatorClass.EmptyRadioButton(this, binding.cic3pcv3src, binding.cic3pcv3srca, getString(R.string.cic3pcv3) + getString(R.string.cic3src))) {
-            return false;
+        if (userCountryTajik_Child) {
+            if (!ValidatorClass.EmptyRadioButton(this, binding.cic3pcv3, binding.cic3pcv3a, getString(R.string.cic3pcv3) + getString(R.string.cic3response))) {
+                return false;
+            }
+            if (!ValidatorClass.EmptyRadioButton(this, binding.cic3pcv3src, binding.cic3pcv3srca, getString(R.string.cic3pcv3) + getString(R.string.cic3src))) {
+                return false;
+            }
         }
 
 
@@ -575,6 +587,16 @@ public class SectionC3Activity extends Menu2Activity implements RadioGroup.OnChe
             return false;
         }
 
+        if (userCountryTajik_Child) {
+//        cic3opv4
+            if (!ValidatorClass.EmptyRadioButton(this, binding.cic3opv4, binding.cic3opv4a, getString(R.string.cic3opv4) + getString(R.string.cic3response))) {
+                return false;
+            }
+//        cic3opv4src
+            if (!ValidatorClass.EmptyRadioButton(this, binding.cic3opv4src, binding.cic3opv4srca, getString(R.string.cic3opv4) + getString(R.string.cic3src))) {
+                return false;
+            }
+        }
 
 //        cic3m2dt
         if (!ValidatorClass.EmptyRadioButton(this, binding.cic3m2, binding.cic3m2a, getString(R.string.cic3m2) + getString(R.string.cic3response))) {
@@ -582,6 +604,30 @@ public class SectionC3Activity extends Menu2Activity implements RadioGroup.OnChe
         }
         if (!ValidatorClass.EmptyRadioButton(this, binding.cic3m2src, binding.cic3m2srca, getString(R.string.cic3m2) + getString(R.string.cic3src))) {
             return false;
+        }
+
+        if (userCountryTajik_Child) {
+//        cic3dp
+            if (!ValidatorClass.EmptyRadioButton(this, binding.cic3dp, binding.cic3dpa, getString(R.string.cic3dp) + getString(R.string.cic3response))) {
+                return false;
+            }
+            if (!ValidatorClass.EmptyRadioButton(this, binding.cic3dpsrc, binding.cic3dpsrca, getString(R.string.cic3dp) + getString(R.string.cic3src))) {
+                return false;
+            }
+//        cic3bcg2
+            if (!ValidatorClass.EmptyRadioButton(this, binding.cic3bcg2, binding.cic3bcg2a, getString(R.string.cic3bcg2) + getString(R.string.cic3response))) {
+                return false;
+            }
+            if (!ValidatorClass.EmptyRadioButton(this, binding.cic3bcg2src, binding.cic3bcg2srca, getString(R.string.cic3bcg2) + getString(R.string.cic3src))) {
+                return false;
+            }
+//        cic3mr2
+            if (!ValidatorClass.EmptyRadioButton(this, binding.cic3mr2, binding.cic3mr2a, getString(R.string.cic3mr2) + getString(R.string.cic3response))) {
+                return false;
+            }
+            if (!ValidatorClass.EmptyRadioButton(this, binding.cic3mr2src, binding.cic3mr2srca, getString(R.string.cic3mr2) + getString(R.string.cic3src))) {
+                return false;
+            }
         }
 
 
