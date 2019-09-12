@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:animateLayoutChanges="true"
-            android:layoutDirection="rtl"
+            android:layoutDirection="ltr"
             android:orientation="vertical">
 
             <TextView
@@ -107,7 +107,7 @@
                         android:id="@+id/ne104a"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="1dp"
+                        android:layout_marginStart="1dp"
                         android:layout_weight="1"
                         android:text="@string/yes" />
 
@@ -115,7 +115,7 @@
                         android:id="@+id/ne104b"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="1dp"
+                        android:layout_marginStart="1dp"
                         android:layout_weight="1"
                         android:text="@string/no" />
 
@@ -280,7 +280,7 @@
                             android:id="@+id/ne107a"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="1dp"
+                            android:layout_marginStart="1dp"
                             android:layout_weight="1"
                             android:text="@string/ne107a" />
 
@@ -288,7 +288,7 @@
                             android:id="@+id/ne107b"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="1dp"
+                            android:layout_marginStart="1dp"
                             android:layout_weight="1"
                             android:text="@string/ne107b" />
 
@@ -336,7 +336,7 @@
                         android:id="@+id/ne108a"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="1dp"
+                        android:layout_marginStart="1dp"
                         android:layout_weight="1"
                         android:text="@string/yes" />
 
@@ -344,7 +344,7 @@
                         android:id="@+id/ne108b"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="1dp"
+                        android:layout_marginStart="1dp"
                         android:layout_weight="1"
                         android:text="@string/no" />
 
@@ -485,7 +485,7 @@
                             android:id="@+id/ne110a"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="1dp"
+                            android:layout_marginStart="1dp"
                             android:layout_weight="1"
                             android:text="@string/ne107a" />
 
@@ -493,7 +493,7 @@
                             android:id="@+id/ne110b"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="1dp"
+                            android:layout_marginStart="1dp"
                             android:layout_weight="1"
                             android:text="@string/ne107b" />
 

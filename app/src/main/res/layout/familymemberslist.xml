@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:paddingLeft="16dp"
+    android:paddingStart="16dp"
     android:paddingTop="10dp"
-    android:paddingRight="16dp"
+    android:paddingEnd="16dp"
     android:paddingBottom="10dp">
 
     <RelativeLayout
@@ -26,7 +26,7 @@
         <LinearLayout
             android:layout_width="@dimen/_28sdp"
             android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
             android:orientation="horizontal">
 
             <ImageView
@@ -108,7 +108,7 @@
                 android:layout_alignEnd="@+id/maritalStatus"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="@dimen/_4sdp"
-                android:gravity="right"
+                android:gravity="start"
                 android:text="Line No"
                 android:textColor="@color/colorAccent"
                 android:textSize="18sp"
@@ -125,7 +125,7 @@
                 android:layout_alignEnd="@+id/maritalStatus"
                 android:layout_alignBottom="@+id/mmName"
                 android:layout_alignParentEnd="@id/lineNo"
-                android:gravity="right"
+                android:gravity="start"
                 android:text="na204"
                 android:textColor="@color/colorAccent"
                 android:textSize="18sp"
@@ -141,8 +141,8 @@
                 android:layout_below="@id/na204"
                 android:layout_alignParentStart="false"
                 android:layout_alignParentEnd="true"
-                android:layout_marginRight="8dp"
-                android:gravity="right"
+                android:layout_marginEnd="8dp"
+                android:gravity="start"
                 android:text="M.S"
                 android:textColor="@color/colorAccent"
                 android:textSize="18sp"

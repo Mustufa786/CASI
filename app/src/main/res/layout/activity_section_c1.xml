@@ -46,10 +46,10 @@
             style="@style/buttons"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:layout_marginLeft="10dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="2dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
             android:background="@drawable/button_bg2"
             android:elevation="2dp"
             android:onClick="@{() -> callback.BtnAddMember()}"
@@ -66,7 +66,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:animateLayoutChanges="true"
-                android:layoutDirection="rtl"
+                android:layoutDirection="ltr"
                 android:orientation="vertical">
 
 
@@ -390,7 +390,7 @@
                             android:id="@+id/cic204aa"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="1dp"
+                            android:layout_marginStart="1dp"
                             android:layout_marginTop="1dp"
                             android:layout_weight="1"
                             android:text="@string/yes" />
@@ -426,7 +426,7 @@
                             android:id="@+id/cic204ba"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="1dp"
+                            android:layout_marginStart="1dp"
                             android:layout_marginTop="1dp"
                             android:layout_weight="1"
                             android:text="@string/yes" />
