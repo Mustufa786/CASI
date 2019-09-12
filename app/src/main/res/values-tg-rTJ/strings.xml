@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string name="app_name"> CENTRAL ASIA STUNTING INITIATIVE 2019 </string>
     <!-- Strings related to login -->
     <string name="prompt_email">корбар</string>
@@ -87,19 +86,19 @@
 
     <!-- Strings related to Sections Below -->
     <string name="na1heading"> МАЪЛУМОТ ОИДИ ХОНАВОДА </string>
-    <string name="cih101"> ۔H101 - Номи маҳалли аҳолинишин </string>
-    <string name="cih102"> ۔ H102 Рақами деҳа: </string>
-    <string name="cih102a">۔H107 - Рақами кластер: </string>
+    <string name="cih101"> H101 - Номи маҳалли аҳолинишин </string>
+    <string name="cih102">  H102 Рақами деҳа: </string>
+    <string name="cih102a">H107 - Рақами кластер: </string>
     <string name="cih103"> Вилоят </string>
     <string name="cih104"> Ноҳия </string>
     <string name="cih105">Шаҳр </string>
     <string name="cih106">Деҳа </string>
-    <string name="cih108"> ۔H108- Рақами хонавода: </string>
+    <string name="cih108"> H108- Рақами хонавода: </string>
     <string name="checkHHpresent"> Сарлавҳаи интихобшуда мавҷуд аст </string>
     <string name="na104"> Ном ва рақами саволдиҳанда: </string>
     <string name="cih110">Ном ва рақами роҳбари гурӯҳ </string>
     <string name="na106"> Сана ва вақти пурсиш </string>
-    <string name="cih113">  ۔H113 -Номи мусоҳиб: </string>
+    <string name="cih113">  H113 -Номи мусоҳиб: </string>
     <string name="respName">  Номи мусоҳиб  </string>
     <string name="cih111">   Санаи мусоҳиба:  </string>
     <string name="cih115"> Синну соли пурраи </string>
@@ -123,8 +122,8 @@
     <string name="na119e"> Ба пурсишҳо бовар накунед </string>
     <string name="na119f"> таҷрибаи бади гузашта </string>
     <string name="na119g"> خون اور پیشاب کے نمونے کا لینا </string>
-    <string name="na111">۔H117 - . Мувофиқа гирифта шуд?</string>
-    <string name="na112">۔H118 - .Натиҷаи мусоҳибаи саволнома барои хонавода:</string>
+    <string name="na111">H117 - . Мувофиқа гирифта шуд?</string>
+    <string name="na112">H118 - .Натиҷаи мусоҳибаи саволнома барои хонавода:</string>
 
     <string name="na2heading"> РУИХАТИ АЪЗОИ ХОНАВОДА  </string>
     <string name="na2subHeading"> ХОНАНДАГОНИ ХОНАНДАГОН ДАТА </string>
@@ -132,7 +131,7 @@
     <string name="na201"> Рақами сатр </string>
     <string name="na202Info">  Пеш аз ҳама, лутфан ҳамаи аъзои хонаводае, ки дар ин ҷо сукунат мекунанд аз сардори хонавода сар карда номбар кунед </string>
     <string name="na202"> ном </string>
-    <string name="na203">۔H203 - Хешигарӣ нисбат ба сардори хонавода?</string>
+    <string name="na203">H203 - Хешигарӣ нисбат ба сардори хонавода?</string>
     <string name="na203a">Сардори хонавода </string>
     <string name="na203b">Зан,шавҳар </string>
     <string name="na203c">Писар, Духтар </string>
@@ -150,17 +149,17 @@
     <string name="na203o">Ятим </string>
     <string name="na20396">Дигар (хеш нест) </string>
     <string name="na20398">Намедонам  </string>
-    <string name="na204"> ۔H204 - Ҷинс </string>
+    <string name="na204"> H204 - Ҷинс </string>
     <string name="na204c">مخنث</string>
-    <string name="cih2dob">۔H205 -. Санаи таваллуди (ном) кадом аст?</string>
-    <string name="na2age">۔H206 - . (Ном) чанд сола аст?</string>
-    <string name="cih2ms"> ۔H207-Вазъиятиоилавӣ </string>
+    <string name="cih2dob">H205 -. Санаи таваллуди (ном) кадом аст?</string>
+    <string name="na2age">H206 - . (Ном) чанд сола аст?</string>
+    <string name="cih2ms"> H207-Вазъиятиоилавӣ </string>
     <string name="cih2msa">Оиладор </string>
     <string name="cih2msb">Бева </string>
     <string name="cih2msc">Талоқшуда </string>
     <string name="cih2msd">  Ҷудошуда  </string>
     <string name="cih2mse">Муҷаррад </string>
-    <string name="cih2edu"> ۔H208- МАЪЛУМОТНОКӢ   </string>
+    <string name="cih2edu"> H208- МАЪЛУМОТНОКӢ   </string>
     <string name="cih2edua">Ҳеҷ чиз</string>
     <string name="cih2edub"> Таҳсилоти томактабӣ (кӯдакистон, маркази рушди барвақти кӯдак)</string>
     <string name="cih2educ"> Ибтидоӣ (Синфи 1-4)</string>
@@ -170,7 +169,7 @@
     <string name="cih2edug"> Олии нопурра </string>
     <string name="cih2eduh"> Олӣ </string>
     <string name="cih2edui"> Магистр</string>
-    <string name="cih2occ">  ۔H209- ШУҒЛ  </string>
+    <string name="cih2occ">  H209- ШУҒЛ  </string>
     <string name="cih2occa">Кӯдакито 7 сола</string>
     <string name="cih2occb">Хонандаимактаб</string>
     <string name="cih2occc">Донишҷӯ</string>
@@ -189,8 +188,8 @@
     <string name="cih212a"> номи модар </string>
     <string name="childname"> номи кӯдак </string>
     <string name="resp"> ин мусоҳиб аст? </string>
-    <string name="cih210">  ۔H210. Оё (ном)дар хона аст?</string>
-    <string name="cih213"> ۔H213-Рақами телефони сардори хонавода </string>
+    <string name="cih210">  H210. Оё (ном)дар хона аст?</string>
+    <string name="cih213"> H213-Рақами телефони сардори хонавода </string>
     <string name="cih2mw"> Занон (15-49)   </string>
     <string name="na2ad"> Кӯдакони ноболиғ 10-19  </string>
     <string name="cih2adm"> Мард </string>
@@ -204,7 +203,7 @@
 
     <string name="cih3heading">ҚИСМИH3: ВАЗЪИ ИҶТИМОӢ-ИҚТИСОДӢ </string>
     <string name="cih3sub">Дастурамал: Ин қисм бо сардори хонавода ё аъзое, ки аз 18 сола боло аст пур карда мешавад  </string>
-    <string name="cih301">۔H301 -Забони модарии сардори хонавода кадом аст? </string>
+    <string name="cih301">H301 -Забони модарии сардори хонавода кадом аст? </string>
     <string name="cih301a"> Тоҷикӣ </string>
     <string name="cih301b"> Вахӣ </string>
     <string name="cih301c"> Қирғизӣ  </string>
@@ -217,11 +216,11 @@
 
     <string name="daysQuan"> Миқдори рӯзҳо</string>
 
-    <string name="cih302">۔H302 - Намуди моликият</string>
+    <string name="cih302">H302 - Намуди моликият</string>
     <string name="cih302a"> Хусусӣ </string>
     <string name="cih302b">  Иҷора </string>
 
-    <string name="cih303">۔H303 - Манбаи асосии оби ошомиданӣ барои хонаводаатон чист? </string>
+    <string name="cih303">H303 - Манбаи асосии оби ошомиданӣ барои хонаводаатон чист? </string>
     <string name="cih303a"> Қубури об дар хона </string>
     <string name="cih303b">Қубури об дар ҳавлӣ</string>
     <string name="cih303c"> Қубури об дар ҳавлии ҳамсоя </string>
@@ -239,17 +238,17 @@
     <string name="cih303o">Оби равон (дарё/наҳр/кӯл/ҷуй/канал Канали обёрӣ) </string>
     <string name="cih303p">Дастгоҳи таровиш </string>
     <string name="cih303q"> Оби дар бутилка гирифташуда</string>
-    <string name="cih304"> ۔H304 - Одатан барои рафта расидан, об гирифтан ва баргашта омадан чӣ қадар вақт сарф мешавад? </string>
+    <string name="cih304"> H304 - Одатан барои рафта расидан, об гирифтан ва баргашта омадан чӣ қадар вақт сарф мешавад? </string>
     <string name="cih304min">(Барои оби ошомиданӣ)</string>
-    <string name="cih305">۔H305 - Оё шумо барои безарар кардани об ягон кор чора меандешед?</string>
-    <string name="cih306">۔H306 -Шумо одатан чӣ кор мекунед, ки об барои нӯшидан бехатар бошад?</string>
+    <string name="cih305">H305 - Оё шумо барои безарар кардани об ягон кор чора меандешед?</string>
+    <string name="cih306">H306 -Шумо одатан чӣ кор мекунед, ки об барои нӯшидан бехатар бошад?</string>
     <string name="cih306a"> Ҷӯшонидан </string>
     <string name="cih306b">Ҳамроҳ кардани хлор </string>
     <string name="cih306c"> Аз карбос гузаронидан </string>
     <string name="cih306d"> Истифодаи филтр </string>
     <string name="cih306e"> Дар офтоб нигоҳ доштан  </string>
     <string name="cih306f">Таҳшин кардан </string>
-    <string name="cih307">۔H307 Хонаводаи шумо аз кадом навъи ҳоҷатхона истифода мебарад?</string>
+    <string name="cih307">H307 Хонаводаи шумо аз кадом навъи ҳоҷатхона истифода мебарад?</string>
     <string name="cih307info">Ҳоҷатхонаи обӣ </string>
     <string name="cih307a">Ҳоҷатхонаи обии ҳозиразамон ба канализасия пайваст шуда </string>
     <string name="cih307b"> Ҳоҷатхонаи обии ҳозиразамон ба чоҳи алоҳида пайваст шуда </string>
@@ -261,10 +260,10 @@
     <string name="cih307g"> Ҳоҷатхонаи кофташудаи бе фарш, чуқурии кушода </string>
     <string name="cih307h">Сатили махсус барои ахлот</string>
     <string name="cih307i"> Ҳоҷатхона нест/саҳро/паси буттаҳо </string>
-    <string name="cih308"> ۔H308- Шумо аз ин ҳоҷатхона якҷоя бо дигар хонаводаҳо истифода мебаред? </string>
-    <string name="cih309">۔H309 -Агар Ҳа, чанд хоҷагӣ аз ин ҳоҷатхона истифода мекунанд?</string>
+    <string name="cih308"> H308- Шумо аз ин ҳоҷатхона якҷоя бо дигар хонаводаҳо истифода мебаред? </string>
+    <string name="cih309">H309 -Агар Ҳа, чанд хоҷагӣ аз ин ҳоҷатхона истифода мекунанд?</string>
     <string name="cih309a">Шумора </string>
-    <string name="cih310">۔H310 -Бо ахлоти кӯдаки аз ҳама хурд чӣ кор карда мешавад? </string>
+    <string name="cih310">H310 -Бо ахлоти кӯдаки аз ҳама хурд чӣ кор карда мешавад? </string>
     <string name="cih310a">Кӯдак аз ҳоҷатхона истифода мебарад </string>
     <string name="cih310b">Ба ҳоҷатхона партофта мешавад </string>
     <string name="cih310c">Ба чуқурӣ партофта мешавад  </string>
@@ -272,7 +271,7 @@
     <string name="cih310e"> Дар ҷои кушод партофта мешавад </string>
     <string name="cih310f"> Гур карда мешавад </string>
     <string name="cih310g"> Кӯдаки то 5 сола нест </string>
-    <string name="cih311">۔H311 - Дар хонаводаи Шумо молу амволи зерин ҳаст?:</string>
+    <string name="cih311">H311 - Дар хонаводаи Шумо молу амволи зерин ҳаст?:</string>
     <string name="cih31101"> Қувваи барқ </string>
     <string name="cih31102">  Радио </string>
     <string name="cih31103">Телевизор </string>
@@ -292,7 +291,7 @@
     <string name="cih31117"> Компютер  </string>
     <string name="cih31118"> Интернет </string>
     <string name="cih31119">Антенна/Шабакаи кабелӣ </string>
-    <string name="cih312">۔H312 -Оё ягон кас аз аъзои хонаводаатон ашёҳои зерин дорад: </string>
+    <string name="cih312">H312 -Оё ягон кас аз аъзои хонаводаатон ашёҳои зерин дорад: </string>
     <string name="cih312a"> Соат </string>
     <string name="cih312b"> Телефони мобилӣ  </string>
     <string name="cih312c"> Дучарха </string>
@@ -303,7 +302,7 @@
     <string name="cih312h"></string>
     <string name="cih312i"></string>
 
-    <string name="cih313"> ۔H313 -Мушоҳида кунед, ки барои равшан намудани хона чиро истифода мебаранд? </string>
+    <string name="cih313"> H313 -Мушоҳида кунед, ки барои равшан намудани хона чиро истифода мебаранд? </string>
     <string name="cih313a"> Чароғи барқӣ </string>
     <string name="cih313b"> Чароғи LED </string>
     <string name="cih313ca"> </string>
@@ -311,7 +310,7 @@
     <string name="cih313d">Шам </string>
     <string name="cih313e"> Фонус (фонарик) </string>
     <string name="cih313f"> Дигар (аниқ кунед) </string>
-    <string name="cih314">۔H314 - Шумо дар хонаводаатон барои пухтупаз одатан кадом намуди сӯзишвориро истифода мебаред?</string>
+    <string name="cih314">H314 - Шумо дар хонаводаатон барои пухтупаз одатан кадом намуди сӯзишвориро истифода мебаред?</string>
     <string name="cih314a"> Қувваи барқ </string>
     <string name="cih314b">Гази моеъ </string>
     <string name="cih314c"> Гази табиӣ </string>
@@ -323,12 +322,12 @@
     <string name="cih314i">Хӯса/Бутта/Алаф</string>
     <string name="cih314j"> Пору/тапак </string>
     <string name="cih314k">Дар хона хурок намепазанд</string>
-    <string name="cih315">۔H315 -Пухтупазро одатан дар дохили хона, дар берун ва ё дар утоқи алоҳида мекунанд? </string>
+    <string name="cih315">H315 -Пухтупазро одатан дар дохили хона, дар берун ва ё дар утоқи алоҳида мекунанд? </string>
     <string name="cih315a"> Дар дохили хона </string>
     <string name="cih315b"> Дар бинои алоҳида </string>
     <string name="cih315c"> Дар берун</string>
-    <string name="cih316">۔H316 - Оё шумо утоқи алоҳида, ки ҳамчун ошпазхона истифода бурда мешавад доред?</string>
-    <string name="cih317"> ۔H317 -Масолеҳи сохтмонии асосии ФАРШИ хона:</string>
+    <string name="cih316">H316 - Оё шумо утоқи алоҳида, ки ҳамчун ошпазхона истифода бурда мешавад доред?</string>
+    <string name="cih317"> H317 -Масолеҳи сохтмонии асосии ФАРШИ хона:</string>
     <string name="cih317info">Фарши табиӣ</string>
     <string name="cih317a"> Лой/Гил/Замин/Рег/</string>
     <string name="cih317b"> Пору </string>
@@ -343,7 +342,7 @@
     <string name="cih317i"> Гилем </string>
     <string name="cih317j"> Хишти пухта </string>
     <string name="cih317k">Оҳак </string>
-    <string name="cih318">۔H318 - Масолеҳи сохтмонии асосии БОМИ хона:۔ </string>
+    <string name="cih318">H318 - Масолеҳи сохтмонии асосии БОМИ хона: </string>
     <string name="cih318info"> Боми табиӣ </string>
     <string name="cih318a">Бом нест </string>
     <string name="cih318b">Боми коҳӣ/барги наҳл </string>
@@ -361,7 +360,7 @@
     <string name="cih318l"> Сементи </string>
     <string name="cih318m"> Бомпӯш </string>
     <string name="cih318n"> Хишти пухта </string>
-    <string name="cih319">۔H319 - Масолеҳи сохтмонии асосии деворҳо: </string>
+    <string name="cih319">H319 - Масолеҳи сохтмонии асосии деворҳо: </string>
     <string name="cih319sub">Девори табиӣ    </string>
     <string name="cih319a">Девор нест </string>
     <string name="cih319b">Най/Наҳл/</string>
@@ -381,14 +380,14 @@
     <string name="cih319n">Блоки сементӣ</string>
     <string name="cih319o">Хишт бо рупуш </string>
     <string name="cih319p">Тахтапуш/бомпуш/ </string>
-    <string name="cih320">۔H320 - Дар хонаатон барои хуфтухоб чанд утоқ истифода бурда мешаванд?</string>
+    <string name="cih320">H320 - Дар хонаатон барои хуфтухоб чанд утоқ истифода бурда мешаванд?</string>
     <string name="cih320a">Утоқ </string>
-    <string name="cih321">۔H321 - Оё ягон кас аз хонаводаатон замини корам дорад? </string>
-    <string name="cih322">۔H322 - Агар Ҳа, чанд ҳисса ё гектар замини корам дорад?</string>
+    <string name="cih321">H321 - Оё ягон кас аз хонаводаатон замини корам дорад? </string>
+    <string name="cih322">H322 - Агар Ҳа, чанд ҳисса ё гектар замини корам дорад?</string>
     <string name="cih322acr"> Ҳа </string>
     <string name="cih322can"> Не </string>
-    <string name="cih323">۔H323 -Оё шумо чорво, ҳайвон ва ё мурғ доред?</string>
-    <string name="cih324">۔H324 - Агар Ҳа, хонаводаатон чанд шумора чорво, ҳайвон ва ё мурғ дорад? </string>
+    <string name="cih323">H323 -Оё шумо чорво, ҳайвон ва ё мурғ доред?</string>
+    <string name="cih324">H324 - Агар Ҳа, хонаводаатон чанд шумора чорво, ҳайвон ва ё мурғ дорад? </string>
     <string name="cih324info"> Ҳар як ҷавобро хонда нависед ва агар надошта бошанд 000 нависед.  </string>
     <string name="cih324a">Гов, Барзагов </string>
     <string name="cih324b">Асп/Хар/Хачир </string>
@@ -399,23 +398,23 @@
     <string name="cih324g"> Шутур </string>
 
     <string name="na5heading"> ҚИСМИH4: ШУСТУШУИ ДАСТҲО </string>
-    <string name="cih401">۔H401 - Илтимос, ба ман нишон диҳед, ки аъзоёни хонаводаи шумо дар куҷо даст мешӯянд.</string>
+    <string name="cih401">H401 - Илтимос, ба ман нишон диҳед, ки аъзоёни хонаводаи шумо дар куҷо даст мешӯянд.</string>
     <string name="cih401a">Дида шуд  </string>
     <string name="cih401info">Дида шуд </string>
     <string name="cih401b">Дар даруни бино/ҳавлӣ/кӯча нест </string>
     <string name="cih401c">Барои дидан иҷозат нест</string>
     <string name="cih401d"> Дигар сабаб </string>
-    <string name="cih402">۔H402 -Дар ҷое, ки даст мешӯянд, мавҷуд будани обро дида бароед</string>
+    <string name="cih402">H402 -Дар ҷое, ки даст мешӯянд, мавҷуд будани обро дида бароед</string>
     <string name="cih402a"> Об ҳаст  </string>
     <string name="cih402b">Об нест  </string>
-    <string name="cih403">۔H403 - Мавҷуд будани собун, хокаи ҷомашӯӣ ё дигармаводи шустушӯиро дида бароед.</string>
+    <string name="cih403">H403 - Мавҷуд будани собун, хокаи ҷомашӯӣ ё дигармаводи шустушӯиро дида бароед.</string>
     <string name="cih403a"> Собун  </string>
     <string name="cih403b">Хокаиҷомашӯӣ (хока/моеъ/хамира) </string>
     <string name="cih403c">Собуни моеъ  </string>
     <string name="cih403d"> Хокистар/лой/рег  </string>
     <string name="cih403e"> Ҳеҷ чиз </string>
-    <string name="cih404"> ۔H404 - Оё шумо собун, хокаи ҷомашӯӣ барои шустушуи даст доред? </string>
-    <string name="cih405">۔H405 - Агар Ҳа, метавонед ба ман нишон диҳед? </string>
+    <string name="cih404"> H404 - Оё шумо собун, хокаи ҷомашӯӣ барои шустушуи даст доред? </string>
+    <string name="cih405">H405 - Агар Ҳа, метавонед ба ман нишон диҳед? </string>
     <string name="cih405a"> Собун  </string>
     <string name="cih405b">Хокаиҷомашӯӣ (хока/моеъ/хамира)</string>
     <string name="cih405c"> Собуни моеъ  </string>
@@ -428,11 +427,11 @@
     <string name="cih40605">Баъди истифода намудани ҳоҷатхона </string>
     <string name="cih406info">Ин саволи кушод аст. Ҷавобҳоро нахонед. </string>
     <string name="cih406info1">  </string>
-    <string name="cih406">۔H406 -Дар кадом мавридҳо шумо дастонатонро бо собун мешуед?</string>
+    <string name="cih406">H406 -Дар кадом мавридҳо шумо дастонатонро бо собун мешуед?</string>
     <!--[ЯКЧАНД ҶАВОБ МУМКИН АСТ]   </string>-->
 
 
-    <string name="cih501">۔H501 -  Мо мехостем намакатонро санҷида бинем, ки оё дар таркиби он йод мавҷуд аст ё нест. Лутфан ба ман камтар аз намаке, ки бо он барои хонаводаатон хӯрок мепазед, диҳед </string>
+    <string name="cih501">H501 -  Мо мехостем намакатонро санҷида бинем, ки оё дар таркиби он йод мавҷуд аст ё нест. Лутфан ба ман камтар аз намаке, ки бо он барои хонаводаатон хӯрок мепазед, диҳед </string>
     <string name="cih501info"> Намак санҷида шуд </string>
     <string name="cih501a">0 ppm (реаксия нест) </string>
     <string name="cih501b"> (аз 0 то 15 ppm)</string>
@@ -440,22 +439,22 @@
     <string name="cih501info1">Намак санҷида нашуд </string>
     <string name="cih501d"> Дар хона намак нест </string>
     <string name="cih502info">Ду қатраи маҳлули тестиро илова карда, реаксияи ториктаринро дар давоми 30 сония мушоҳида намуда, бо ҷадвали рангҳо онро муқоиса намоед ва ҷавобҳо (1, 2 ё 3)-ро, ки бо натиҷаи тест дар H501баробар аст, нависед</string>
-    <string name="cih502">۔H502 -Таркиби намаки истифодашударо мушоҳида намоед </string>
+    <string name="cih502">H502 -Таркиби намаки истифодашударо мушоҳида намоед </string>
     <string name="cih502info1"> Таркиб: </string>
     <string name="cih502a"> Хока  </string>
     <string name="cih502b">Дона </string>
     <string name="cih502c"> Маводи хом </string>
-    <string name="cih503">۔H503 - Бинед, ки оё халтаи намак чопи “Намаки Йоддор” дорад ё не? </string>
+    <string name="cih503">H503 - Бинед, ки оё халтаи намак чопи “Намаки Йоддор” дорад ё не? </string>
     <string name="cih503c">Мушоҳида нашуд </string>
     <string name="cih503d">Намак дар даруни зарф</string>
 
-    <string name="cih504">۔H504 - کیا آپ کے گھر میں تقویت بخش  غذائیت سے بھرپور آٹا استعمال ہوتا ہے؟</string>
-    <string name="cih505">۔H505 - کیا آپ کے گھر میں تقویت بخش غذائیت سے بھرپور خوردنی تیل/گھی استعمال ہوتا ہے؟</string>
+    <string name="cih504">H504 - کیا آپ کے گھر میں تقویت بخش  غذائیت سے بھرپور آٹا استعمال ہوتا ہے؟</string>
+    <string name="cih505">H505 - کیا آپ کے گھر میں تقویت بخش غذائیت سے بھرپور خوردنی تیل/گھی استعمال ہوتا ہے؟</string>
 
     <string name="na6heading">  H5: НАМАКИ ЙОДДОР (SI) </string>
 
-    <string name="na601">۔H601 -Мо мехостем намакатонро санҷида бинем, ки оё дар таркиби он йод мавҷуд аст ё нест. Лутфан ба ман камтар аз намаке, ки бо он барои хонаводаатон хӯрок мепазед, диҳед. </string>
-    <string name="na603">۔H603 - Бинед, ки оё халтаи намак чопи “Намаки Йоддор” дорад ё не? </string>
+    <string name="na601">H601 -Мо мехостем намакатонро санҷида бинем, ки оё дар таркиби он йод мавҷуд аст ё нест. Лутфан ба ман камтар аз намаке, ки бо он барои хонаводаатон хӯрок мепазед, диҳед. </string>
+    <string name="na603">H603 - Бинед, ки оё халтаи намак чопи “Намаки Йоддор” дорад ё не? </string>
     <string name="na602info">Ду қатраи маҳлули тестиро илова карда, реаксияи ториктаринро дар давоми 30 сония мушоҳида намуда, бо ҷадвали рангҳо онро муқоиса намоед ва ҷавобҳо (1, 2 ё 3)-ро, ки бо натиҷаи тест дар H501баробар аст, нависед</string>
     <string name="na601info">Намак санҷида шуд</string>
     <string name="na601a">0 ppm (реаксия нест)</string>
@@ -478,24 +477,24 @@
     <string name="rare"> Гоҳ-гоҳ (як ё ду бор дар чор ҳафтаи охир) </string>
     <string name="stime"> Баъзан (аз се то даҳ бор дар чор ҳафтаи охир)  </string>
     <string name="often"> Аксаран (беш аз даҳ бор дар чор ҳафтаи охир) </string>
-    <string name="cih601">  ۔H601 Оё дар чор ҳафтаи охир шумо дар ташвиш будед, ки дар хонаатон хӯроки кофӣ барои хӯрдан набуд? </string>
-    <string name="cih602">  ۔H601a-Ин дар чор ҳафтаи охир чи тез рух дод? </string>
-    <string name="cih603">  ۔H602 -Оё дар чор ҳафтаи охир шумо ё ягон аъзои хонаводаатон натавонистед хӯроки дилхоҳатонро бо сабаби норасоии захира истеъмол кунед?   </string>
-    <string name="cih604">  ۔H602a-Ин дар чор ҳафтаи охир чи тез рух дод? </string>
-    <string name="cih605">  ۔H603 -Оё дар чор ҳафтаи охир шумо ё ягон аъзои хонаводаатон бо сабаби норасоии захира маҷбур будед намудҳои маҳдуди хӯрокворӣ истеъмол намоед? </string>
-    <string name="cih606">  ۔H603a-Ин дар чор ҳафтаи охир чи тез рух дод? </string>
-    <string name="cih607">  ۔H604 -Дар чор ҳафтаи охир оё шумо ё ягон аъзои хонаводаатон бо сабаби норасоии захира маҷбур будед хӯрокҳои нодилхоҳатонро истеъмол намоед?       </string>
-    <string name="cih608">  ۔H604a- Ин дар чор ҳафтаи охир чи тез рух дод? </string>
-    <string name="cih609">  ۔H605Дар чор ҳафтаи охир оё шумо ё ягон аъзои хонаводаатон маҷбур будед баръакси ниёзатон хӯроки камтар истеъмол намоед, зеро хӯрок кофӣ набуд? </string>
-    <string name="cih610">  ۔H605a-Ин дар чор ҳафтаи охир чи тез рух дод?</string>
-    <string name="cih611">  ۔H606 Дарчорҳафтаиохироёшумоёягонаъзоихонаводаатонмаҷбурбудеддарякрӯзазмеъёримуқаррарӣкамтархӯрокхӯред, зерохӯрокикофӣнадоштед? (завтрак, обед, ужин) </string>
-    <string name="cih612">  ۔H606a- Ин дар чор ҳафтаи охир чи тез рух дод?  </string>
+    <string name="cih601">  H601 Оё дар чор ҳафтаи охир шумо дар ташвиш будед, ки дар хонаатон хӯроки кофӣ барои хӯрдан набуд? </string>
+    <string name="cih602">  H601a-Ин дар чор ҳафтаи охир чи тез рух дод? </string>
+    <string name="cih603">  H602 -Оё дар чор ҳафтаи охир шумо ё ягон аъзои хонаводаатон натавонистед хӯроки дилхоҳатонро бо сабаби норасоии захира истеъмол кунед?   </string>
+    <string name="cih604">  H602a-Ин дар чор ҳафтаи охир чи тез рух дод? </string>
+    <string name="cih605">  H603 -Оё дар чор ҳафтаи охир шумо ё ягон аъзои хонаводаатон бо сабаби норасоии захира маҷбур будед намудҳои маҳдуди хӯрокворӣ истеъмол намоед? </string>
+    <string name="cih606">  H603a-Ин дар чор ҳафтаи охир чи тез рух дод? </string>
+    <string name="cih607">  H604 -Дар чор ҳафтаи охир оё шумо ё ягон аъзои хонаводаатон бо сабаби норасоии захира маҷбур будед хӯрокҳои нодилхоҳатонро истеъмол намоед?       </string>
+    <string name="cih608">  H604a- Ин дар чор ҳафтаи охир чи тез рух дод? </string>
+    <string name="cih609">  H605Дар чор ҳафтаи охир оё шумо ё ягон аъзои хонаводаатон маҷбур будед баръакси ниёзатон хӯроки камтар истеъмол намоед, зеро хӯрок кофӣ набуд? </string>
+    <string name="cih610">  H605a-Ин дар чор ҳафтаи охир чи тез рух дод?</string>
+    <string name="cih611">  H606 Дарчорҳафтаиохироёшумоёягонаъзоихонаводаатонмаҷбурбудеддарякрӯзазмеъёримуқаррарӣкамтархӯрокхӯред, зерохӯрокикофӣнадоштед? (завтрак, обед, ужин) </string>
+    <string name="cih612">  H606a- Ин дар чор ҳафтаи охир чи тез рух дод?  </string>
     <string name="cih613"> Дарчорҳафтаиохироёдархонаводаатонягонхӯрокихӯрданӣнабуд, зерошумонатавонистедмаводихӯрокаистеҳсолкунедёбихаред? H607 </string>
-    <string name="cih614">  ۔H607a-Ин дар чор ҳафтаи охир чи тез рух дод? </string>
-    <string name="cih615">  ۔H608 -Дарчорҳафтаиохироёшумоё ягонаъзоихонаводаатоншабгуруснахобкардeд, зерохӯрокикофӣмавҷуднабуд? </string>
-    <string name="cih616">  ۔H608a- Ин дар чор ҳафтаи охир чи тез рух дод? </string>
-    <string name="cih617">  ۔H609 -Дарчорҳафтаиохироёшумоёягонаъзоихонаводаатонтамомирӯзягончизнахӯрдед, зерохӯрокикофӣнадоштед?  </string>
-    <string name="cih618">  ۔H609a- Ин дар чор ҳафтаи охир чи тез рух дод? </string>
+    <string name="cih614">  H607a-Ин дар чор ҳафтаи охир чи тез рух дод? </string>
+    <string name="cih615">  H608 -Дарчорҳафтаиохироёшумоё ягонаъзоихонаводаатоншабгуруснахобкардeд, зерохӯрокикофӣмавҷуднабуд? </string>
+    <string name="cih616">  H608a- Ин дар чор ҳафтаи охир чи тез рух дод? </string>
+    <string name="cih617">  H609 -Дарчорҳафтаиохироёшумоёягонаъзоихонаводаатонтамомирӯзягончизнахӯрдед, зерохӯрокикофӣнадоштед?  </string>
+    <string name="cih618">  H609a- Ин дар чор ҳафтаи охир чи тез рух дод? </string>
 
     <!--Section A7-->
     <string name="benef"> Шумораи Beneficiaries </string>
@@ -514,16 +513,16 @@
     <string name="cih712"> Маҳсулот барои ҳайвонот (доруворӣ, ғизо) </string>
     <string name="cih713"> Омӯзиш оиди ғизо </string>
     <string name="na8heading"> سیکشن ایچ 7: سوشل سیفٹی نیٹ    </string>
-    <string name="na8info"> میں آپ سے مختلف بیرونی معاشی امدادی پروگرام کے بارے میں پوچھوں گا جو گھر کی سطح پرامداد مہیا کرتے ہیں۔بیرونی امداد سے میرا مطلب حکومتی ادارے یا غیر سرکاری ادارے جیسے مذہبی فلاحی یا سماجی ادارے ہیں۔اس میں وہ امداد شامل نہیں ہے جو فیملی دیگر رشتہ دار ،دوست یا پڑوسیوں سے حاصل ہوتی ہے ۔ </string>
+    <string name="na8info"> میں آپ سے مختلف بیرونی معاشی امدادی پروگرام کے بارے میں پوچھوں گا جو گھر کی سطح پرامداد مہیا کرتے ہیںبیرونی امداد سے میرا مطلب حکومتی ادارے یا غیر سرکاری ادارے جیسے مذہبی فلاحی یا سماجی ادارے ہیںاس میں وہ امداد شامل نہیں ہے جو فیملی دیگر رشتہ دار ،دوست یا پڑوسیوں سے حاصل ہوتی ہے  </string>
     <string name="cih702a"> وصول کردہ کانمبر </string>
     <string name="na8aheading"> سیکشن 7:امداد وصول کرنے والے افراد کی معلومات </string>
     <string name="cih7a01info"> وصول کرنے والاسیکشن A2 سے دیکھ کر لکھیں </string>
     <string name="cih7a01"> Line No </string>
     <string name="cih7a02"> امداد وصول کرنے والے کا نام </string>
     <string name="cih7a03"> وصول کی جانے والی امداد کی مدت </string>
-    <string name="cih7a04">۔H707 - کیاآپ ان پروگرامز کی وضاحت کرسکتے ہیں ؟</string>
-    <string name="cih7a05">۔H708 - گزشتہ 12 مہینوں کے درمیان آپ نے کتنے پیسے وصل کئے؟</string>
-    <string name="cih7a06">۔H709 - گزشتہ مہیا کی گئی سہولت میں سے کتنے پیسوں سے آپ نے کھانا خریدا تھا؟</string>
+    <string name="cih7a04">H707 - کیاآپ ان پروگرامز کی وضاحت کرسکتے ہیں ؟</string>
+    <string name="cih7a05">H708 - گزشتہ 12 مہینوں کے درمیان آپ نے کتنے پیسے وصل کئے؟</string>
+    <string name="cih7a06">H709 - گزشتہ مہیا کی گئی سہولت میں سے کتنے پیسوں سے آپ نے کھانا خریدا تھا؟</string>
     <string name="cih7a03y"> YY </string>
     <string name="cih7a03m"> MM </string>
     <string name="cih7a04a"> غیر مشروط ادائیگی </string>
@@ -543,34 +542,34 @@
     <string name="nbheading"> ҚИСМИW2: ТАВАЛЛУДҲО (RH) </string>
     <string name="nb101"> خاتون کانام </string>
     <string name="nb102"> شادی شدہ خاتون کالائن نمبر سیکشن A2 سے دیکھ کر لکھیں </string>
-    <string name="ciw201">۔W201 -Шумо дар кадом моҳу сол таваллуд шудаед?</string>
+    <string name="ciw201">W201 -Шумо дар кадом моҳу сол таваллуд шудаед?</string>
     <string name="ciw201sub1">Агар рӯз маълум набошад, ‘98’ нависед</string>
     <string name="ciw201sub2">Агар моҳ маълум набошад, ‘98’нависед </string>
     <string name="ciw201sub3"> Агар сол маълум набошад, ’9998’ нависед </string>
-    <string name="ciw202">۔W202 -Лутфан гӯед, ки шумо чанд сола ҳастед? Дар рӯзи таваллуди охирин, ки қайд кардед, шумо чанд сола шудед? </string>
+    <string name="ciw202">W202 -Лутфан гӯед, ки шумо чанд сола ҳастед? Дар рӯзи таваллуди охирин, ки қайд кардед, шумо чанд сола шудед? </string>
     <string name="ciw202a">Синну соли пурра </string>
-    <string name="ciw203"> ۔W203 -Агар маълумоти W201 and W202 мувофиқат накунанд, муайян кунед, ки кадоми онҳо дақиқтар аст? </string>
+    <string name="ciw203"> W203 -Агар маълумоти W201 and W202 мувофиқат накунанд, муайян кунед, ки кадоми онҳо дақиқтар аст? </string>
     <string name="ciw204info"> (Аз он ҷумла ҳомиладории ҳозира)</string>
-    <string name="ciw204">۔W204 -Оё шумо оиладор ҳастед? </string>
+    <string name="ciw204">W204 -Оё шумо оиладор ҳастед? </string>
     <string name="ciw204a"> حمل کی تعداد </string>
-    <string name="ciw205">۔W205 -Оё шумо ягон бор оиладор будаед?</string>
+    <string name="ciw205">W205 -Оё шумо ягон бор оиладор будаед?</string>
     <string name="ciw206info"> IF FIRST PREGNANCY AFTER MARRIAGE THEN GO TO SECTION B2 </string>
     <string name="ciw206">W206- Дар вақти бори аввал ба шавҳар баромадан шумо чанд сола будед? </string>
     <string name="ciw206a">Синну соли пурра  </string>
-    <string name="ciw207">۔W207 -Оё шумо ягон бор ҳомиладор будаед?</string>
-    <string name="ciw208">۔W208 - Оё шумо ҳозир ҳомиладор ҳастед?</string>
-    <string name="ciw209">۔W209 - Дар вақти ҳомиладории ҳозира ба шумо таблеткаҳои оҳан, шираи оҳан ва ё витаминҳое, ки дар таркибашон оҳан аст додаанд ва ё харид намудаед? </string>
-    <string name="ciw210">۔W210 -Агар Ҳа, ба шумо доданд ё харид намудед? </string>
-    <string name="ciw211">۔W211 - Дар тули ҳаёт шумо чанд бор ҳомиладор будед? (аз ҷумла ҳомиладории ҳозира) </string>
-    <string name="ciw212">۔W212 -Дар тули ҳаёт шумо чанд бор таваллуд кардед? </string>
-    <string name="ciw213">۔W213 -Дар вақти таваллуди нахустин шумо чанд сола будед?</string>
-    <string name="ciw214">۔W214 -Дар давоми панҷ соли охир шумо чанд бор ҳомиладор будед? </string>
-    <string name="ciw215">۔W215 -Дар давоми панҷ соли охир шумо чанд бор  таваллуд кардед? </string>
+    <string name="ciw207">W207 -Оё шумо ягон бор ҳомиладор будаед?</string>
+    <string name="ciw208">W208 - Оё шумо ҳозир ҳомиладор ҳастед?</string>
+    <string name="ciw209">W209 - Дар вақти ҳомиладории ҳозира ба шумо таблеткаҳои оҳан, шираи оҳан ва ё витаминҳое, ки дар таркибашон оҳан аст додаанд ва ё харид намудаед? </string>
+    <string name="ciw210">W210 -Агар Ҳа, ба шумо доданд ё харид намудед? </string>
+    <string name="ciw211">W211 - Дар тули ҳаёт шумо чанд бор ҳомиладор будед? (аз ҷумла ҳомиладории ҳозира) </string>
+    <string name="ciw212">W212 -Дар тули ҳаёт шумо чанд бор таваллуд кардед? </string>
+    <string name="ciw213">W213 -Дар вақти таваллуди нахустин шумо чанд сола будед?</string>
+    <string name="ciw214">W214 -Дар давоми панҷ соли охир шумо чанд бор ҳомиладор будед? </string>
+    <string name="ciw215">W215 -Дар давоми панҷ соли охир шумо чанд бор  таваллуд кардед? </string>
     <string name="ciw205time"> Шумораи таваллудҳо </string>
-    <string name="ciw216">۔W216 - Дар давоми ду соли охир шумо чанд бор  таваллуд кардед? ۔</string>
+    <string name="ciw216">W216 - Дар давоми ду соли охир шумо чанд бор  таваллуд кардед? </string>
     <string name="ciw216a"> W216a - Дар давоми ду соли охир таваллуди зинда буд?</string>
 
-    <string name="ciw217">۔W217 -  گذشتہ پانچ سالوں کے دوران ہونے والے حمل کی معلومات جن کا نتیجہ  مردہ بچے کی پیدائش /اسقاط حمل ہے  </string>
+    <string name="ciw217">W217 -  گذشتہ پانچ سالوں کے دوران ہونے والے حمل کی معلومات جن کا نتیجہ  مردہ بچے کی پیدائش /اسقاط حمل ہے  </string>
     <string name="nb1aheading">Ҳама маълумот дар бораи ҳомиладорӣ дар панҷ соли охир  </string>
     <!--<string name="ciw217"> . Санаи натиҷа </string>-->
     <string name="ciw217Flag"> Delete Record </string>
@@ -603,11 +602,11 @@
     <string name="ciw21003">Не, ҳеҷ гоҳ надоданд ё нахаридам</string>
 
     <string name="nb3heading"> ҚИСМИW3: МУОИНАИ ТО ТАВАЛЛУД </string>
-    <string name="ciw301">۔W301 -Оё дар вақти бо (ном) ҳомиладор будан ягон кас шуморо аз назар гузаронд?</string>
-    <string name="ciw301a">۔W301 - Ҳа  </string>
+    <string name="ciw301">W301 -Оё дар вақти бо (ном) ҳомиладор будан ягон кас шуморо аз назар гузаронд?</string>
+    <string name="ciw301a">W301 - Ҳа  </string>
     <string name="ciw302info"> Ҳамаи ҷавобҳоро нависед </string>
 
-    <string name="ciw302">۔W302 -Кӣ шуморо аз назар гузаронд?</string>
+    <string name="ciw302">W302 -Кӣ шуморо аз назар гузаронд?</string>
     <string name="ciw302a"> Духтури ҳамрозаи занон   </string>
     <string name="ciw302b"> Духтури дигар  </string>
     <string name="ciw302c"> Ҳамшираи шавқат   </string>
@@ -617,7 +616,7 @@
     <string name="ciw302g"> Момодояи анъанавӣ    </string>
     <string name="ciw302h"> Корманди худихтиёри тиб (волонтер)  </string>
 
-    <string name="ciw303">۔W303 -Шумо барои муоинаи то таваллуд ба куҷо рафтед?</string>
+    <string name="ciw303">W303 -Шумо барои муоинаи то таваллуд ба куҷо рафтед?</string>
     <string name="ciw303sub1"> Хона </string>
     <string name="ciw303a">   Дар хонаи худ  </string>
     <string name="ciw303b">   Дар хонаи дигар </string>
@@ -643,13 +642,13 @@
     <string name="ciw303j">  Хусусии дигар (аниқ кунед)</string>
     <string name="ciw303k">   </string>
 
-    <string name="ciw304">۔W304 -ҲАНГОМЕ, КИ БОРИ АВВАЛ ШУМО БАРОИ ҲОМИЛАДОРИИ ОХИРОН АЗ МУОИНА ГУЗАШТЕД, ДАР КАДОМ МОҲИ ҲОМИЛАДОРӢ ҚАРОР ДОШТЕД?</string>
+    <string name="ciw304">W304 -ҲАНГОМЕ, КИ БОРИ АВВАЛ ШУМО БАРОИ ҲОМИЛАДОРИИ ОХИРОН АЗ МУОИНА ГУЗАШТЕД, ДАР КАДОМ МОҲИ ҲОМИЛАДОРӢ ҚАРОР ДОШТЕД?</string>
     <string name="ciw304info">Ҷавоби мусоҳибро нависед. Агар ҷавоб 9 моҳ бошад ё дертар рақами 9 нависед.   </string>
-    <string name="ciw305">۔W305 - Дар давоми ҳамин ҳомиладорӣ чанд маротиба ҳамагӣ аз муоинаи то таваллуд гузаштед?</string>
+    <string name="ciw305">W305 - Дар давоми ҳамин ҳомиладорӣ чанд маротиба ҳамагӣ аз муоинаи то таваллуд гузаштед?</string>
     <string name="ciw305info"> Шумораи ташрифҳоро пурсида нависед. Агар ҷавоби аниқ набошад, шумораи хурдтарро нависед.  </string>
     <string name="ciw305a"> Шумора </string>
     <string name="ciw305b"> Намедонам </string>
-    <string name="ciw306">۔W306 - Дардоираимуоинатотаваллудишумо, дариндавраиҳомиладорӣ,  </string>
+    <string name="ciw306">W306 - Дардоираимуоинатотаваллудишумо, дариндавраиҳомиладорӣ,  </string>
     <string name="ciw306info">(Ҳар як ҷавобро пурсед ва ҳамаи ҷавобҳоро нависед)</string>
     <string name="ciw306a">Қаду вазнро чен карданд? </string>
     <string name="ciw306b"> Фишори хунро чен карданд? </string>
@@ -660,19 +659,19 @@
     <string name="ciw306g">Оиди синамаконӣ маслиҳат доданд? </string>
     <string name="ciw306h"> Оиди танаффус байни таваллудҳо маслиҳат доданд? </string>
     <string name="ciw306i"> Ҳеҷ чиз  </string>
-    <string name="ciw307">۔W307 - Шумо ягон ҳуҷҷати дигар  доред, ки дар он ҳамаи эмкуниҳои шумо сабт шудаанд?</string>
+    <string name="ciw307">W307 - Шумо ягон ҳуҷҷати дигар  доред, ки дар он ҳамаи эмкуниҳои шумо сабт шудаанд?</string>
     <string name="ciw307info">Агар Ҳа, пурсед: Мумкин ин ҳуҷатро бинам?АГАР КОРТ НИШОН ДОДА ШАВАД, АЗ РУИ ОН БА САВОЛҲОИ ЗЕРИН ҶАВОБ НАВИСЕД.</string>
     <string name="ciw307a"> Ҳа (корт ё дигар ҳуҷат дида шуд) </string>
     <string name="ciw307b"> Дида нашуд </string>
-    <string name="ciw308">۔W308 -Оё дар вақти ҳомиладорӣ бо (ном) шумо сӯзандоруи кузоз ки барои пешгирӣ намудани касалии tetanus, яъне кашиши кудак дар даст ё китф карда мешавад мешавад гирифтед?</string>
-    <string name="ciw309">۔W309 -Шумо чанд маротиба сӯзандоруи кузозро гирифтед? </string>
-    <string name="ciw310">۔W310 -Оё дар давоми ин ҳомиладорӣ шумо таблеткаҳои туршии фолат-ро истеъмол кардед?</string>
+    <string name="ciw308">W308 -Оё дар вақти ҳомиладорӣ бо (ном) шумо сӯзандоруи кузоз ки барои пешгирӣ намудани касалии tetanus, яъне кашиши кудак дар даст ё китф карда мешавад мешавад гирифтед?</string>
+    <string name="ciw309">W309 -Шумо чанд маротиба сӯзандоруи кузозро гирифтед? </string>
+    <string name="ciw310">W310 -Оё дар давоми ин ҳомиладорӣ шумо таблеткаҳои туршии фолат-ро истеъмол кардед?</string>
     <string name="ciw31001">W310a - Дар кадом вақти ҳомиладорӣ шумо оҳан кислотаи фолеаро истеъмол кардан сар кардед?</string>
     <string name="ciw31001a">Триместри 1 (се моҳи аввал) </string>
     <string name="ciw31001b">Триместри 2 (се моҳи мобайн)</string>
     <string name="ciw31001c">Триместри 3 (се моҳо охир)</string>
 
-    <string name="ciw311">۔W311 Кӣ ба шумо маслиҳат дод, ки таблеткаҳои туршии фолатродар вақти ҳомиладорӣ истеъмол кунед?</string>
+    <string name="ciw311">W311 Кӣ ба шумо маслиҳат дод, ки таблеткаҳои туршии фолатродар вақти ҳомиладорӣ истеъмол кунед?</string>
     <string name="ciw311a"> Духтури ҳамрозаи занон   </string>
     <string name="ciw311b"> Духтури дигар  </string>
     <string name="ciw311c"> Ҳамшираи шавқат   </string>
@@ -682,7 +681,7 @@
     <string name="ciw311g"> Момодояи анъанавӣ    </string>
     <string name="ciw311h"> Корманди худихтиёри тиб (волонтер)  </string>
 
-    <string name="ciw312">۔W312 -Дар вақти ҳомиладорӣ шумо чӣ қадар зуд таблеткаҳои туршии фолат-роистеъмол кардед? </string>
+    <string name="ciw312">W312 -Дар вақти ҳомиладорӣ шумо чӣ қадар зуд таблеткаҳои туршии фолат-роистеъмол кардед? </string>
     <string name="ciw312sub1"> Бахши давлатӣ</string>
     <string name="ciw312a">  Маркази саломатӣ</string>
     <string name="ciw312b"> Маркази саломатии деҳотӣ</string>
@@ -706,29 +705,29 @@
     <string name="ciw312p">   Хешу табор/дугона/ҳамсоя   </string>
     <string name="ciw312q">   Мағоза/бозор   </string>
 
-    <string name="ciw313">۔W313 - Дар вақти ҳомиладорӣ шумо чӣ қадар зуд оҳан кислотаи фолеаро истеъмол кардед?</string>
+    <string name="ciw313">W313 - Дар вақти ҳомиладорӣ шумо чӣ қадар зуд оҳан кислотаи фолеаро истеъмол кардед?</string>
     <string name="ciw313a"> Якбор дар як руз </string>
     <string name="ciw313b">Якбор дар як ҳафта </string>
     <string name="ciw313c">Як бор дар ду ҳафта </string>
     <string name="ciw313d">Як бор дар як моҳ </string>
     <string name="ciw313e"> Гоҳ-гоҳ  </string>
-    <string name="ciw314">۔W314 - Дар давоми чанд моҳ ё руз шумо таблеткаҳои туршии фолат-роистеъмол кардед?</string>
+    <string name="ciw314">W314 - Дар давоми чанд моҳ ё руз шумо таблеткаҳои туршии фолат-роистеъмол кардед?</string>
     <string name="ciw314m"> Моҳ </string>
     <string name="ciw314d"> Руз </string>
-    <string name="ciw315">۔W315 - Оё шумо дар вақти ҳомиладорӣ микроэлементҳои ғизонокро истеъмол кардед?</string>
-    <string name="ciw316">۔W316 -Кӣ ба шумо тавсия дод, ки микроэлентҳои ғизонокро дар вақти ҳомиладорӣ истеъмол кунед?</string>
-    <string name="ciw317">۔W317 -Шумо микроэлентҳои ғизонокро дар вақти ҳомиладорӣ аз куҷо дастрас кардед?</string>
-    <string name="ciw318">۔W318 -Дар давоми ҳомиладорӣ шумо чӣ қадар зуд микроэлентҳои ғизонокро истеъмол кардед?</string>
+    <string name="ciw315">W315 - Оё шумо дар вақти ҳомиладорӣ микроэлементҳои ғизонокро истеъмол кардед?</string>
+    <string name="ciw316">W316 -Кӣ ба шумо тавсия дод, ки микроэлентҳои ғизонокро дар вақти ҳомиладорӣ истеъмол кунед?</string>
+    <string name="ciw317">W317 -Шумо микроэлентҳои ғизонокро дар вақти ҳомиладорӣ аз куҷо дастрас кардед?</string>
+    <string name="ciw318">W318 -Дар давоми ҳомиладорӣ шумо чӣ қадар зуд микроэлентҳои ғизонокро истеъмол кардед?</string>
     <string name="ciw318a"> Якбор дар як руз </string>
     <string name="ciw318b"> Якбор дар як ҳафта </string>
     <string name="ciw318c">Як бор дар ду ҳафта </string>
     <string name="ciw318d"> Як бор дар як моҳ </string>
     <string name="ciw318e"> Гоҳ-гоҳ  </string>
-    <string name="ciw319">۔W319 -Дар давоми чанд моҳ ё руз шумо микроэлементҳои ғизонокро истеъмол кардед?</string>
+    <string name="ciw319">W319 -Дар давоми чанд моҳ ё руз шумо микроэлементҳои ғизонокро истеъмол кардед?</string>
     <string name="ciw319m"> Моҳ </string>
     <string name="ciw319d"> Сол  </string>
-    <string name="ciw320">۔W320 -Оё шумо дар вақти ҳомиладорӣ таблеткаҳои калсийро истеъмол кардед?</string>
-    <string name="ciw321">۔W321 - Кӣ ба шумо тавсия дод, ки таблеткаҳои калсийродар вақти ҳомиладорӣ истеъмол кунед?</string>
+    <string name="ciw320">W320 -Оё шумо дар вақти ҳомиладорӣ таблеткаҳои калсийро истеъмол кардед?</string>
+    <string name="ciw321">W321 - Кӣ ба шумо тавсия дод, ки таблеткаҳои калсийродар вақти ҳомиладорӣ истеъмол кунед?</string>
     <string name="ciw321a">Духтур </string>
     <string name="ciw321b">Ҳамшираи шавқат </string>
     <string name="ciw321c"> Акушерка </string>
@@ -737,29 +736,29 @@
     <string name="ciw321f">Хеш/дугона</string>
     <string name="ciw321g">Момодоя анъанавӣ</string>
     <string name="ciw321h"> Корманди худихтиёри тиб </string>
-    <string name="ciw322">۔W322 -Шумо таблеткаҳои калсийродар вақти ҳомиладорӣ аз куҷо дастрас кардед?</string>
-    <string name="ciw323">۔W323 -Дар давоми ҳомиладорӣ шумо чӣ қадар зуд таблеткаҳои калсийро истеъмол кардед?</string>
+    <string name="ciw322">W322 -Шумо таблеткаҳои калсийродар вақти ҳомиладорӣ аз куҷо дастрас кардед?</string>
+    <string name="ciw323">W323 -Дар давоми ҳомиладорӣ шумо чӣ қадар зуд таблеткаҳои калсийро истеъмол кардед?</string>
     <string name="ciw323a"> Якбор дар як руз </string>
     <string name="ciw323b"> Якбор дар як ҳафта </string>
     <string name="ciw323c">Як бор дар ду ҳафта </string>
     <string name="ciw323d"> Як бор дар як моҳ </string>
     <string name="ciw323e">Гоҳ-гоҳ  </string>
-    <string name="ciw324">۔W324 - Дар давоми чанд моҳ ё руз шумо таблеткаҳои калсийроистеъмол кардед?</string>
+    <string name="ciw324">W324 - Дар давоми чанд моҳ ё руз шумо таблеткаҳои калсийроистеъмол кардед?</string>
     <string name="ciw324m"> Моҳ </string>
     <string name="ciw324d"> Руз  </string>
-    <string name="ciw325">۔W325 - Оё ба шумо дар вақти ҳомиладорӣ доруи зидди кирм доданд? </string>
-    <string name="ciw32501">۔W325a - Оё шумо доруи зидди кирмро истеъмол кардед? </string>
-    <string name="ciw326">۔W326 -Оё дар вақти ҳомиладории охирон шумо шабкурӣ доштед? (мушкилӣ бо биноӣ дар торикӣ)</string>
-    <string name="ciw327">۔W327 -Чанд вақт пеш бори охир корманди тибби оилавӣ ба хонаатон ташриф овардааст?  </string>
+    <string name="ciw325">W325 - Оё ба шумо дар вақти ҳомиладорӣ доруи зидди кирм доданд? </string>
+    <string name="ciw32501">W325a - Оё шумо доруи зидди кирмро истеъмол кардед? </string>
+    <string name="ciw326">W326 -Оё дар вақти ҳомиладории охирон шумо шабкурӣ доштед? (мушкилӣ бо биноӣ дар торикӣ)</string>
+    <string name="ciw327">W327 -Чанд вақт пеш бори охир корманди тибби оилавӣ ба хонаатон ташриф овардааст?  </string>
     <string name="ciw327m"> Моҳ  </string>
     <string name="ciw327d"> Руз  </string>
-    <string name="ciw328">۔W328 - Чӣ қадар зуд корманди тибби оилавӣ ба хонаатон ташриф меорад? </string>
+    <string name="ciw328">W328 - Чӣ қадар зуд корманди тибби оилавӣ ба хонаатон ташриф меорад? </string>
     <string name="ciw328a"> Ҳар ҳафта </string>
     <string name="ciw328b"> Як бор дар ду ҳафта</string>
     <string name="ciw328c">Ҳар моҳ </string>
     <string name="ciw328d"> Баъзан </string>
     <string name="ciw328e"> Фақат дар вақти эмкунӣ (фалаҷ)</string>
-    <string name="ciw329">۔W329 -Бори охир корманди тибби оилавӣ бо кадом мақсад ба хонаатон ташриф овард? </string>
+    <string name="ciw329">W329 -Бори охир корманди тибби оилавӣ бо кадом мақсад ба хонаатон ташриф овард? </string>
     <string name="ciw329a"> Маълумот оиди саломатӣ ва ғизо </string>
     <string name="ciw329b">Таъминоти усулҳои пешгирии ҳомиладорӣ</string>
     <string name="ciw329c"> Фиристодан ба HFC </string>
@@ -768,12 +767,12 @@
     <string name="ciw329f">Табобати модар </string>
     <string name="ciw329g">Табобати кудак </string>
     <string name="ciw329h">Таъминоти ғизо </string>
-    <string name="ciw330">۔W330 -Кай бори охир корманди тибби оилавӣ оиди саломатӣ ва ғизо суҳбат гузаронд?</string>
+    <string name="ciw330">W330 -Кай бори охир корманди тибби оилавӣ оиди саломатӣ ва ғизо суҳбат гузаронд?</string>
     <string name="ciw330a">Моҳи гузашта </string>
     <string name="ciw330b">Чор моҳ пеш </string>
     <string name="ciw330c">Дар давоми шаш моҳи охир </string>
-    <string name="ciw331">۔W331 -Оё шумо ягон бор дар сӯҳбатҳои ӯ оиди саломатӣ ва ғизо иштирок кардед?</string>
-    <string name="ciw332">۔W332 -Чӣ қадар зуд шумо дар чунин сӯҳбатҳо иштирок мекунед?</string>
+    <string name="ciw331">W331 -Оё шумо ягон бор дар сӯҳбатҳои ӯ оиди саломатӣ ва ғизо иштирок кардед?</string>
+    <string name="ciw332">W332 -Чӣ қадар зуд шумо дар чунин сӯҳбатҳо иштирок мекунед?</string>
     <string name="ciw332a">Ҳар моҳ</string>
     <string name="ciw332b">Як бор дар чор моҳ </string>
     <string name="ciw332c">Як бор дар шаш моҳ</string>
@@ -782,7 +781,7 @@
     <string name="nb4heading">ҚИСМИ W4:ТАВАЛЛУД ВА МУОИНАИ БАЪДИ ТАВАЛЛУД </string>
     <string name="nb4subheading">(Бо занони қобили таваллуд (15 то 49), ки дар давоми 2 соли охир таваллуд кардаанд,пур карда шавад)</string>
     <string name="ciw401sub">Корманди тиб</string>
-    <string name="ciw401">  ۔W401 Кӣ таваллуди (НОМ)-ро қабул кард? </string>
+    <string name="ciw401">  W401 Кӣ таваллуди (НОМ)-ро қабул кард? </string>
     <string name="ciw401a"> Духтур </string>
     <string name="ciw401b"> Акушерка  </string>
     <string name="ciw401c"> Ҳамшираи шавқат </string>
@@ -792,7 +791,7 @@
     <string name="ciw401f">Хешу табор/дугона </string>
     <string name="ciw401g">Момодояи анъанавӣ </string>
     <string name="ciw401h">  гинеколог</string>
-    <string name="ciw402"> ۔W402 -Дар вақти таваллудт (НОМ) кӣ ба шумо кумак кард? </string>
+    <string name="ciw402"> W402 -Дар вақти таваллудт (НОМ) кӣ ба шумо кумак кард? </string>
     <string name="ciw402info">Ҳамаи онҳое, ки дар вақти таваллуд кумак кардаанд пурсед ва ҳамаи ҷавобҳоро нависед </string>
     <string name="ciw402a"> Духтур </string>
     <string name="ciw402b"> Ҳамшираи шавқат </string>
@@ -828,41 +827,41 @@
     <string name="ciw403q"> Беморхонаи вилоятӣ  </string>
     <string name="ciw403r"> Таваллудхона </string>
     <string name="ciw403s"> Диспансер </string>
-    <string name="ciw40301">۔W40301 -Намуди таваллуд؟ </string>
+    <string name="ciw40301">W40301 -Намуди таваллуд؟ </string>
     <string name="ciw40301a">Маҳбалӣ </string>
     <string name="ciw40301b">Буриши қайсарӣ </string>
-    <string name="ciw40301c">۔Бо вакуум </string>
-    <string name="ciw403">۔W403 - Шумо (НОМ) ро дар кучо тавалллуд кардед? </string>
-    <string name="ciw404">۔W404 -Вақте, ки (НОМ) таваллуд шуд, вай бисёр калон, аз миёна калонтар, миёна, аз миёна хурдтар ё хеле хурд буд?</string>
+    <string name="ciw40301c">Бо вакуум </string>
+    <string name="ciw403">W403 - Шумо (НОМ) ро дар кучо тавалллуд кардед? </string>
+    <string name="ciw404">W404 -Вақте, ки (НОМ) таваллуд шуд, вай бисёр калон, аз миёна калонтар, миёна, аз миёна хурдтар ё хеле хурд буд?</string>
     <string name="ciw404a">Маҳбалӣ  </string>
     <string name="ciw404b">Буриши қайсарӣ</string>
     <string name="ciw404c"> Миёна  </string>
     <string name="ciw404d"> Аз миёна хурд </string>
     <string name="ciw404e"> Бисёр хурд </string>
-    <string name="ciw405">۔W405 -Ҳангоми таваллуд (НОМ)-ро бар кашиданд?</string>
-    <string name="ciw406">۔W406 (НОМ) чанд кило буд?</string>
+    <string name="ciw405">W405 -Ҳангоми таваллуд (НОМ)-ро бар кашиданд?</string>
+    <string name="ciw406">W406 (НОМ) чанд кило буд?</string>
     <string name="ciw406info"> Агар корти тиббӣ дастрас бошад вазнро аз руи он нависед.  </string>
     <string name="ciw406c"> Аз корти тиббӣ </string>
     <string name="ciw406r"> Намедонам </string>
-    <string name="ciw407">۔W407 - Чанд вақт баъд аз таваллуд (НОМ) ро бори аввал шустушӯ карданд? </string>
-    <string name="ciw408">۔W408 - (НОМ) ро баъди таваллуд тоза карданд? </string>
-    <string name="ciw409">۔W409 Пеш аз оне, ки кудакро болои шумо гузоранд, уро  печонданд?</string>
-    <string name="ciw410">۔W410 - Чанд вақт баъд аз таваллуд (НОМ) ро бори аввал шустушӯ карданд? </string>
-    <string name="ciw410info">۔W410 - Агар “фавран” ё камтар аз 1 соат бошад, ‘000’ нависед.</string>
+    <string name="ciw407">W407 - Чанд вақт баъд аз таваллуд (НОМ) ро бори аввал шустушӯ карданд? </string>
+    <string name="ciw408">W408 - (НОМ) ро баъди таваллуд тоза карданд? </string>
+    <string name="ciw409">W409 Пеш аз оне, ки кудакро болои шумо гузоранд, уро  печонданд?</string>
+    <string name="ciw410">W410 - Чанд вақт баъд аз таваллуд (НОМ) ро бори аввал шустушӯ карданд? </string>
+    <string name="ciw410info">W410 - Агар “фавран” ё камтар аз 1 соат бошад, ‘000’ нависед.</string>
     <string name="ciw410a"> Фавран/камтар аз 1 соат </string>
     <string name="ciw410h"> Соат  </string>
     <string name="ciw410d"> Рӯз </string>
     <string name="ciw41097">Ҳеҷ гоҳ  </string>
     <string name="ciw41098">Намедонам/дар хотир надорам </string>
-    <string name="ciw411">۔W411 Баъди он, ки нофро буриданд, ба он ягон чиз молиданд?</string>
-    <string name="ciw412">۔W412 - Ба ноф чиро молиданд?</string>
+    <string name="ciw411">W411 Баъди он, ки нофро буриданд, ба он ягон чиз молиданд?</string>
+    <string name="ciw412">W412 - Ба ноф чиро молиданд?</string>
     <string name="ciw412a"> Хлорексидин </string>
     <string name="ciw412b">Дигар васоили антисептикӣ (машруботи спиртӣ) </string>
     <string name="ciw412c">Хокистар </string>
     <string name="ciw412d"> Пору </string>
     <string name="ciw412e">  </string>
     <string name="ciw412f">  </string>
-    <string name="ciw413">۔W413- Хлориксидин аз куҷо дастрас карда шуд? </string>
+    <string name="ciw413">W413- Хлориксидин аз куҷо дастрас карда шуд? </string>
     <string name="ciw413sub1"> Бахши давлатӣ</string>
     <string name="ciw413sub2">  Бахши хусусӣ</string>
     <string name="ciw413sub3"> Дигар манбаъ </string>
@@ -888,8 +887,8 @@
     <string name="ciw413961"> Дигар (аниқ кунед)</string>
     <string name="ciw413962">Хусусии дигар (аниқ кунед)</string>
     <string name="nb5heading">  ҚИСМИ W4: ТАВАЛЛУД ВА МУОИНАИ БАЪДИ ТАВАЛЛУД  </string>
-    <string name="ciw414">۔W414-Оё ягон кас баъди таваллуд саломатии шуморо санҷид? </string>
-    <string name="ciw415">۔W415 - Мақсадимуоина</string>
+    <string name="ciw414">W414-Оё ягон кас баъди таваллуд саломатии шуморо санҷид? </string>
+    <string name="ciw415">W415 - Мақсадимуоина</string>
     <!--<string name="ciw415"> Кӣ баъди таваллуд саломатии шуморо санҷид? </string>-->
     <string name="ciw415a">Духтури ҳамрозаи занон   </string>
     <string name="ciw415b">Духтури дигар  </string>
@@ -899,16 +898,16 @@
     <string name="ciw415f">Хеш/дугона/ҳамсоя  </string>
     <string name="ciw415g">Момодояи анъанавӣ  </string>
     <string name="ciw415h">Корманди худихтиёри тиб (волонтер)  </string>
-    <string name="ciw416">۔W416- Чӣ қадар зуд баъди таваллуд муоинаи якум гузаронида шуд?</string>
+    <string name="ciw416">W416- Чӣ қадар зуд баъди таваллуд муоинаи якум гузаронида шуд?</string>
     <string name="ciw416a">Агар аз як рӯз камтар бошад, соатро нависед. Агар аз </string>
     <string name="ciw416b">як ҳафта кам бошад, рӯзро нависед.  </string>
     <string name="ciw416c">як ҳафта кам бошад, рӯзро нависед. </string>
     <string name="ciw416h"> Соат </string>
     <string name="ciw416d"> Рӯз </string>
     <string name="ciw416w"> Ҳафта </string>
-    <string name="ciw417">۔W417 -Чанд бор чунин муоинаҳо буданд?</string>
+    <string name="ciw417">W417 -Чанд бор чунин муоинаҳо буданд?</string>
     <string name="ciw417a">Шумора </string>
-    <string name="ciw418">۔W418 - Мақсади муоина</string>
+    <string name="ciw418">W418 - Мақсади муоина</string>
     <string name="ciw418a">Машварат оиди ғизо </string>
     <string name="ciw418b"> Машварат оиди тазими оила </string>
     <string name="ciw418c">Санҷидани ориза </string>
@@ -918,8 +917,8 @@
     <string name="ciw418g">Таъминоти усулҳои пешгирии ҳомиладорӣ  </string>
     <string name="ciw418h"> Таъминоти усулҳои пешгирии ҳомиладорӣ  </string>
     <string name="ciw418i"> Дигар (аниқ кунед) </string>
-    <string name="ciw419">۔W419 - Оё ягон кас саломатии (Ном) ро санҷид? </string>
-    <string name="ciw420">۔W420 - Кӣ саломатии кудакро баъди таваллуд санҷид?</string>
+    <string name="ciw419">W419 - Оё ягон кас саломатии (Ном) ро санҷид? </string>
+    <string name="ciw420">W420 - Кӣ саломатии кудакро баъди таваллуд санҷид?</string>
     <string name="ciw420a"> Духтури кудакона </string>
     <string name="ciw420b">Дигар духтур</string>
     <string name="ciw420c"> Ҳамшираи шавқат </string>
@@ -927,14 +926,14 @@
     <string name="ciw420e">Акушер-гинеколог </string>
     <string name="ciw420f"> Момодояи анъанавӣ </string>
     <string name="ciw420g"> Хешу табор/дугона </string>
-    <string name="ciw421">۔W421 - Чанд вақт баъди таваллуд якумин муоина баргузор гардид?</string>
+    <string name="ciw421">W421 - Чанд вақт баъди таваллуд якумин муоина баргузор гардид?</string>
     <string name="ciw421a">Агар аз як руз камтар бошад, соатро нависед.  </string>
     <string name="ciw421b">  Агар аз як ҳавта камтар бошад, рӯзро нависед.  </string>
     <string name="ciw421c"> Вагарна, ҳафтаро нависед. </string>
     <string name="ciw421h"> Соат  </string>
     <string name="ciw421d"> Рӯз  </string>
     <string name="ciw421w"> Ҳафта </string>
-    <string name="ciw422">۔W422 - Чанд маротиба чунин муоинаҳо буданд? </string>
+    <string name="ciw422">W422 - Чанд маротиба чунин муоинаҳо буданд? </string>
     <string name="ciw422a">Шумора </string>
     <string name="ciw423">Мақсади муоина  </string>
     <string name="ciw423a">Эмкунӣ  </string>
@@ -947,10 +946,10 @@
     <!--Women Section 5-->
 
     <string name="ciw5h"> ҚИСМИ 5: ГУНОГУНИИ ҒИЗОИИ АҚАЛЛӢ БАРОИ ЗАНОНИ ҚОБИЛИ ТАВАЛЛУД </string>
-    <string name="nw501">۔W501 - اب میں آپ کی خوراک کے بارے میں پوچھنا چاہوں گی جو آپ نے پچھلے 24 گھنٹوں کے دوران کھائی تھی؟</string>
+    <string name="nw501">W501 - اب میں آپ کی خوراک کے بارے میں پوچھنا چاہوں گی جو آپ نے پچھلے 24 گھنٹوں کے دوران کھائی تھی؟</string>
     <string name="ciw501"> Дина, шумо чанд бор хурок хурдед?w501 </string>
     <string name="ciw501h"> шумора  </string>
-    <string name="ciw502">  ۔W502- Ин дар муқоиса ба меъёри муқарарӣ чӣ тавр аст? </string>
+    <string name="ciw502">  W502- Ин дар муқоиса ба меъёри муқарарӣ чӣ тавр аст? </string>
     <string name="ciw502a"> камтар </string>
     <string name="ciw502b"> ҳамон </string>
     <string name="ciw502c"> бисёртар  </string>
@@ -1115,16 +1114,16 @@
     <string name="cic1heading"> ҚИСМИ C1: МАЪЛУМОТ ОИДИ КУДАКОНИ ТО 5 СОЛА </string>
     <string name="cic1info1"> Дастурамал:Ин қисм барои ҳамаи кудакони то 2 сола бо модарони онҳо ё касе, ки онҳоро нигоҳубин мекунад, пур карда мешавад.</string>
     <string name="cic1info"> МОДУЛ C:ҒИЗОИ КУДАКОНИ ТО 5 СОЛА  </string>
-    <string name="cic101">  ۔C112 - Номи кудак,Рақами сатри кудак</string>
+    <string name="cic101">  C112 - Номи кудак,Рақами сатри кудак</string>
     <string name="cic101a"> Номи  </string>
     <string name="cic102"> Рақами деҳа: </string>
-    <string name="cic103"> کیا (۔Name) کی پیدائش کا سرٹیفیکٹ بناہوا ہے
+    <string name="cic103"> کیا (Name) کی پیدائش کا سرٹیفیکٹ بناہوا ہے
     اگر نہیں ،تو ایونٹ کلینڈر استعمال کر کے بچے کی عمر کی شمار کریں </string>
 
     <string name="cic103info">اگر ہاں ، تو پوچھیں کیا میں یہ سرٹیفیکٹ دیکھ سکتا ہوں اور بچہ کی عمر مہینوں میں لکھیں </string>
     <string name="cic103a"> ہاں ،دیکھا </string>
     <string name="cic103b"> ہاں ،نہیں دیکھا </string>
-    <string name="cic104">۔C104 - کیا بچہ (Name) کا نادرا میں اندراج کردیاگیاہے؟</string>
+    <string name="cic104">C104 - کیا بچہ (Name) کا نادرا میں اندراج کردیاگیاہے؟</string>
     <string name="cic2heading"> ҚИСМИC2: ҒИЗОИ КУДАКОН ВА ГУНОГУНИИ ҒИЗОӢ  </string>
     <string name="cic2_child_name"> .Номи кудак </string>
     <string name="cic2_line_no">Рақами сатри кудак </string>
@@ -1136,25 +1135,25 @@
     <string name="cic202a">Камтар аз 1 сол </string>
     <string name="cic202b"> Аз 1 то 2 сол  </string>
     <string name="cic202c">2 сол </string>
-    <string name="cic203">۔C203 -(НОМ) чанд моҳа аст?
+    <string name="cic203">C203 -(НОМ) чанд моҳа аст?
     СИННУ СОЛРО БО МОҲ НАВИСЕД.</string>
-    <string name="cic203a">  ۔C203 - Синну сол бо моҳ </string>
-    <string name="cic204">  ۔C204- БАРОИ МУВОФИҚА БУДАНИ МАЪЛУМОТ САВОЛҲОИ C201,C202 ВАC203РО ТАФТИШ КУНЕД. </string>
-    <string name="cic204a">۔C204A- A) ОЁ СОЛ ДАР САВОЛИ C201 БО СИННУ СОЛИ ПУРРА ДАР САВОЛИ C202 МУВОФИҚ АСТ?</string>
-    <string name="cic204b">۔C204B-B) ОЁ СОЛ ВА МОҲ ДАР САВОЛИQ1 БО СИННУ СОЛ БО МОҲ ДАР САВОЛИ C203 МУВОФИҚ АСТ</string>
+    <string name="cic203a">  C203 - Синну сол бо моҳ </string>
+    <string name="cic204">  C204- БАРОИ МУВОФИҚА БУДАНИ МАЪЛУМОТ САВОЛҲОИ C201,C202 ВАC203РО ТАФТИШ КУНЕД. </string>
+    <string name="cic204a">C204A- A) ОЁ СОЛ ДАР САВОЛИ C201 БО СИННУ СОЛИ ПУРРА ДАР САВОЛИ C202 МУВОФИҚ АСТ?</string>
+    <string name="cic204b">C204B-B) ОЁ СОЛ ВА МОҲ ДАР САВОЛИQ1 БО СИННУ СОЛ БО МОҲ ДАР САВОЛИ C203 МУВОФИҚ АСТ</string>
     <string name="cic205"> САВОЛИC203 РО ТАФТИШ КУНЕД. ОЁ КУДАК АЗ 24 МОҲА ХУРДТАР АСТ?  </string>
-    <string name="cic206">۔C206 - Оё ба (НОМ) ягон вақт шири сина додаанд?</string>
-    <string name="cic207">۔C207 - Чанд вақт пас баъди таваллуд шумо ба (НОМ) сина додед?</string>
+    <string name="cic206">C206 - Оё ба (НОМ) ягон вақт шири сина додаанд?</string>
+    <string name="cic207">C207 - Чанд вақт пас баъди таваллуд шумо ба (НОМ) сина додед?</string>
     <string name="cic207a">  Фавран  </string>
     <string name="cic207b">  Соат </string>
     <string name="cic207c">  Руз </string>
-    <string name="cic208">۔C208 -Оё шумо ба (НОМ) шири нахустин (яъне, фила) ро додед?</string>
-    <string name="cic209">۔C209 - Бо чӣ сабаб шумо ба (НОМ) филаро надодед?</string>
+    <string name="cic208">C208 -Оё шумо ба (НОМ) шири нахустин (яъне, фила) ро додед?</string>
+    <string name="cic209">C209 - Бо чӣ сабаб шумо ба (НОМ) филаро надодед?</string>
     <string name="cic209a">Шири вайрон</string>
     <string name="cic209b">Аз касалшавии кудак тарсидам</string>
     <string name="cic209c">Шири ғафс</string>
-    <string name="cic210">۔C210 -Оё ба (НОМ) пеш аз шири сина ягон чиз барои хурдан дода шуд?</string>
-    <string name="cic211">۔C211 -Пеш аз шири сина ба (НОМ) чиро додед?</string>
+    <string name="cic210">C210 -Оё ба (НОМ) пеш аз шири сина ягон чиз барои хурдан дода шуд?</string>
+    <string name="cic211">C211 -Пеш аз шири сина ба (НОМ) чиро додед?</string>
     <string name="cic211info">  Пурсед: Боз ягон чизи дигар?‘Ягон чиз дода нашуд’ (99)фақат дар мавриде навишта мешавад, агар ягон ҷавоби дигар дода нашавад</string>
     <string name="cic211a"> Шир (ба ғайр аз шири сина)</string>
     <string name="cic211b">Об </string>
@@ -1167,13 +1166,13 @@
     <string name="cic211i"> Доруворӣ </string>
     <string name="cic211j"></string>
     <string name="cic21199">Ягон яиз дода нашуд</string>
-    <string name="cic212">۔C212 -Оё (НОМ) дина шабона ё рузона шири сина истеъмол кард?</string>
+    <string name="cic212">C212 -Оё (НОМ) дина шабона ё рузона шири сина истеъмол кард?</string>
     <string name="cic212a">  Баъзан ба кудак шири сина бо усулҳои гуногун дода мешавад. Масалан, бо қошуқ, бо пиёла, бо шиша. Ин дар он мавридҳое шуда метавонад, ки агар модар бо кудак ба таври доимӣ набошад. Баъзан ба кудак зани дигар шири сина медиҳад. Ин дар он ҳолатҳое мешавад, ки агар зан натавонад кудаки худро сина диҳад.  Оё (НОМ) дина шабона ва рузона шири синаро бо ягон аз усулҳои зикршуда истеъмол кардааст?</string>
     <string name="cic213">Ҳозир ман мехоҳам бо шумо оиди доруҳо ва витаминҳое, ки баъзан ба кудак дода мешаванд суҳбат кунам.  </string>
     <string name="cic214"> Оё ба (НОМ) дина шабона ва рузона Регидрон дода шуд? </string>
-    <string name="cic221">۔C221 (НОМ) аз шишаи эмизакдор/чочакдор чӣ нушид?</string>
-    <string name="cic223">۔C223 -Оё (НОМ) дина рузона ё шабона ягон витамин ё доруворӣ истеъмол кард?</string>
-    <string name="cic215"> ۔C215 -Ҳозир ман мехостам бо шумо оиди нушокиҳое, ки ба (НОМ) дина шабона ва рузона дода шуданд, суҳбат кунам. Оё ба (НОМ) дода шуд? </string>
+    <string name="cic221">C221 (НОМ) аз шишаи эмизакдор/чочакдор чӣ нушид?</string>
+    <string name="cic223">C223 -Оё (НОМ) дина рузона ё шабона ягон витамин ё доруворӣ истеъмол кард?</string>
+    <string name="cic215"> C215 -Ҳозир ман мехостам бо шумо оиди нушокиҳое, ки ба (НОМ) дина шабона ва рузона дода шуданд, суҳбат кунам. Оё ба (НОМ) дода шуд? </string>
     <string name="cic215a"> Оби бегаз </string>
     <string name="cic215b"> Ғизои кудакона </string>
     <string name="cic215c">Шир (дар қутӣ, хушк ё ширитоза)</string>
@@ -1188,7 +1187,7 @@
     <string name="cic217b"> Каду, сабзӣ, ёкартошкаи ширин, ки дохилаш зард аст </string>
     <string name="cic217c"> Картошкаи сафед,ё дигар озуқа аз решаҳои сафед </string>
     <string name="cic217d">Сабзавотҳои сабзранги тира</string>
-    <string name="cic217e">  پکاہوا آم،پکا ہو پپیتا،یہ دیگر مقامی وٹامن اے سے بھرپور پھل شامل کریں </string>
+    <string name="cic217e">  </string>
     <string name="cic217f">  Ягон мева ё сабзавот </string>
     <string name="cic217g">  Ҷигар, гурда, дил, шуш ё дигар гушти узвҳо </string>
     <string name="cic217h"> Гӯшти чорво ва мурғ, аз ҷумла гӯшти гов, гӯсфанд, буз, харгӯш, мурғ, мурғобӣ ва дигар паррандаҳо </string>
@@ -1198,29 +1197,29 @@
     <string name="cic217l">  Панир, ёгурт ва дигар маҳсулоти ширӣ </string>
     <string name="cic217m">  Ягон намуди равған, чарб, маска/равғани зард ё хӯрокҳое, ки аз инҳо омода шудаанд. </string>
     <string name="cic217n">  Маҳсулотҳо аз шакар, ба мисоли шоколад, ширинӣ, торт ё кулчақанд </string>
-    <string name="cic217o">  مصالحے ، مرچ، مچھلی پائوڈر وغیرہ </string>
-    <string name="cic217p">  گھونگے یا کیڑے وغیرہ  </string>
-    <string name="cic217q">پام  کے تیل یا گودے سے بنی غذائیں  </string>
-    <string name="cic218">  ۔C218 -Оё (НОМ) дина шабона ё рузона ягон ғизои сахт,  ним-мулоим ва мулоимро истеъмол кард?</string>
-    <string name="cic219">  ۔C219 - Чанд бор (НОМ) дина шабона ё рузона хуроки сахт,  ним-мулоим ва мулоимро истеъмол кард?</string>
-    <string name="cic220">  ۔C220 -  (НОМ) ягон чиз аз шишаи эмизакдор/чочакдор дирӯз ва ё шабона нӯшида буд?</string>
+    <string name="cic217o">  </string>
+    <string name="cic217p">   </string>
+    <string name="cic217q">  </string>
+    <string name="cic218">  C218 -Оё (НОМ) дина шабона ё рузона ягон ғизои сахт,  ним-мулоим ва мулоимро истеъмол кард?</string>
+    <string name="cic219">  C219 - Чанд бор (НОМ) дина шабона ё рузона хуроки сахт,  ним-мулоим ва мулоимро истеъмол кард?</string>
+    <string name="cic220">  C220 -  (НОМ) ягон чиз аз шишаи эмизакдор/чочакдор дирӯз ва ё шабона нӯшида буд?</string>
     <string name="cic221a"> Шири хушк барои кудакон</string>
     <string name="cic221b">Шири ҳайвонот</string>
     <string name="cic221c">Шири сина (дар шиша)</string>
-    <string name="cic222"> ۔C222 -Кӣ ба шумо истифодаи шири хушк барои кудаконро тавсия дод?</string>
+    <string name="cic222"> C222 -Кӣ ба шумо истифодаи шири хушк барои кудаконро тавсия дод?</string>
     <string name="cic222a">Духтур </string>
     <string name="cic222b">Дорусоз</string>
     <string name="cic222c">Хешу табор</string>
     <string name="cic3heading"> ҚИСМИC4: ЭМКУНӢ </string>
     <string name="cic3info"> Дастурамал: Ин қисм барои ҳамаи кудакони то 5 сола пур карда мешавад. </string>
-    <string name="cic301">  ۔C301 Синну соли кудак? Бо моҳ </string>
+    <string name="cic301">  C301 Синну соли кудак? Бо моҳ </string>
     <string name="cic301a"> Синну сол 0-11  </string>
     <string name="cic301b"> Синну сол 12-23 </string>
     <string name="cic301c"> Синну сол 24-35  </string>
     <string name="cic301d"> Синну сол 36-59 </string>
-    <string name="cic302">۔C402 - Кудак корти милии эмкунӣ дорад, ки ҳамаи эмкуниҳои (НОМ) дар он сабт шудааст</string>
-    <string name="cic303">۔C403 - Мумкин аст ман кортр ё ягон ҳуҷҷати дигаре, ки дар эмкунӣ қайд шудааст, бинам</string>
-    <string name="cic303info">۔C403 - دی گئی ہر کارڈ یا پرچہ سے ویکسین کی تاریخ نوٹ کریں؟ (c) اگردن کے کالم میں 44 لکھیں اگر کارڈ میں ویکسین دینے کی تاریخ نہ لکھی ہو</string>
+    <string name="cic302">C402 - Кудак корти милии эмкунӣ дорад, ки ҳамаи эмкуниҳои (НОМ) дар он сабт шудааст</string>
+    <string name="cic303">C403 - Мумкин аст ман кортр ё ягон ҳуҷҷати дигаре, ки дар эмкунӣ қайд шудааст, бинам</string>
+    <string name="cic303info">C403 - دی گئی ہر کارڈ یا پرچہ سے ویکسین کی تاریخ نوٹ کریں؟ (c) اگردن کے کالم میں 44 لکھیں اگر کارڈ میں ویکسین دینے کی تاریخ نہ لکھی ہو</string>
     <string name="cic303a"> Ҳа, фақат корт дида шуд </string>
     <string name="cic303b"> Ҳа, фақат дигар ҳуҷҷат дида шуд</string>
     <string name="cic303c"> Ҳа, ҳам корт ва ҳам дигар ҳуҷҷат дида шуд</string>
@@ -1284,21 +1283,21 @@
 
     <string name="cic305">C305 -Оё (НОМ) прививкаи (эми) фалаҷро дар вақти гузаронидани рӯзи маъракаи миллии эмгузаронӣ,ки кудакро аз касалии фалаҷ эмин медорад,гирифтааст?</string>
     <string name="cic306">C306 -Оё ном қатраи фалаҷро дар вақти маъракаи эмгузаронии охирон гирифт?</string>
-    <string name="cic307">۔C307 - کیا پولیو کے پہلے قطرے بچے کی پیدائش کے بعدپہلے 2 ہفتوں میں دئے گئے تھےیابعد میں ؟</string>
+    <string name="cic307">C307 - کیا پولیو کے پہلے قطرے بچے کی پیدائش کے بعدپہلے 2 ہفتوں میں دئے گئے تھےیابعد میں ؟</string>
     <string name="cic307a"> پہلے دو ہفتے </string>
     <string name="cic307b"> بعد میں </string>
-    <string name="cic308"> ۔C308- کیا بچے کو PENTA کے ٹیکے لگوائے جو کہ انجکشن کی صورت میں ران یا کولہوں میں لگائےجاتے ہیں اور اکثرپولیو کے قطروں کے ساتھ دئے جاتے ہیں </string>
-    <string name="cic309">۔C309 - ۔ PENTA۔ کے ٹیکے کتنی دفعہ لگوائے تھے۔ </string>
-    <string name="cic310"> ۔ C310 - کیا بچے کو PCV کے ٹیکے لگوائے جو کہ انجکشن کی صورت میں ران یا کولہوں میں لگائےجاتے ہیں اور اکثرپولیو کے قطروں کے ساتھ دئے جاتے ہیں </string>
-    <string name="cic311">۔C311 - بچے کو PCV کے ٹیکے کتنی دفعہ لگوائے تھے ؟</string>
-    <string name="cic312">  ۔C312- کیابچے (۔Name) کو Measles کا ا نجکشن لگوایا جو خسرہ سے بچاؤ کے لیے ہوتا ہے جو کہ بازو میں 9 مہینے یا اس سے بڑی عمر میں لگایا جاتا ہے </string>
-    <string name="cic313">۔C313- ۔ Mesasles۔ کے ٹیکے کتنی دفعہ لگوائے تھے۔ </string>
-    <string name="cic314">۔C314 - کیا بچہ(۔Name) کو کبھی پولیو ا نجکشن (IPV)لگایا؟</string>
-    <string name="cic315">۔C315- کیا بچہ(۔Name) نےکبھی پولیو سے بچاؤ کے قطر ے پیے ہیں </string>
-    <string name="cic316">۔C316 - کیابچے (۔Name) کو پچھلے پولیو مہم میں پولیو کے قطرے پلائے گئے تھے؟</string>
+    <string name="cic308"> C308- کیا بچے کو PENTA کے ٹیکے لگوائے جو کہ انجکشن کی صورت میں ران یا کولہوں میں لگائےجاتے ہیں اور اکثرپولیو کے قطروں کے ساتھ دئے جاتے ہیں </string>
+    <string name="cic309">C309 -  PENTA کے ٹیکے کتنی دفعہ لگوائے تھے </string>
+    <string name="cic310">  C310 - کیا بچے کو PCV کے ٹیکے لگوائے جو کہ انجکشن کی صورت میں ران یا کولہوں میں لگائےجاتے ہیں اور اکثرپولیو کے قطروں کے ساتھ دئے جاتے ہیں </string>
+    <string name="cic311">C311 - بچے کو PCV کے ٹیکے کتنی دفعہ لگوائے تھے ؟</string>
+    <string name="cic312">  C312- کیابچے (Name) کو Measles کا ا نجکشن لگوایا جو خسرہ سے بچاؤ کے لیے ہوتا ہے جو کہ بازو میں 9 مہینے یا اس سے بڑی عمر میں لگایا جاتا ہے </string>
+    <string name="cic313">C313-  Mesasles کے ٹیکے کتنی دفعہ لگوائے تھے </string>
+    <string name="cic314">C314 - کیا بچہ(Name) کو کبھی پولیو ا نجکشن (IPV)لگایا؟</string>
+    <string name="cic315">C315- کیا بچہ(Name) نےکبھی پولیو سے بچاؤ کے قطر ے پیے ہیں </string>
+    <string name="cic316">C316 - کیابچے (Name) کو پچھلے پولیو مہم میں پولیو کے قطرے پلائے گئے تھے؟</string>
 
     <string name="cic4heading"> ҚИСМИC4: ФАВТ ВА ТАБОБАТИ БЕМОРИҲО</string>
-    <string name="cic401"> C401 -Кудак дар ду ҳафтаи охир дарунравӣ дошт? </string>
+    <string name="cic401"> C401 - (Name) Кудак дар ду ҳафтаи охир дарунравӣ дошт? </string>
     <string name="cic402"> C402 -Оё шумо барои табобати дарунравӣ ба ягон кас/ҷоймуроҷиаткардед? </string>
     <string name="cic403"> C402a -Барои чӣ шумо барои табобати дарунравӣ муроҷиат накардед?</string>
     <string name="cic403a"> Ин касалиро ҷидди қабул намекунад</string>
@@ -1349,16 +1348,16 @@
     <string name="cic405i"> Ба дохили рагҳои ворид </string>
     <string name="cic405j"> Табобати хонагӣ /гиёҳҳо </string>
     <string name="cic4059601"> Дигар (дигар) </string>
-    <string name="cic406">  ۔C405 - Оё кудак дар ду ҳафтаи охир касалии роҳҳои нафас дошт?</string>
-    <string name="cic407">  ۔C406 - Оё шумо барои табобати касалии роҳҳои нафас ба ягон кас ё ҷой муроҷиат кардед?</string>
-    <string name="cic408">  ۔C406a - Барои чӣ шумо барои табобати табобати сирояти шадиди роҳҳои нафас муроҷиат накардед?   </string>
+    <string name="cic406">  C405 - Оё кудак дар ду ҳафтаи охир касалии роҳҳои нафас дошт?</string>
+    <string name="cic407">  C406 - Оё шумо барои табобати касалии роҳҳои нафас ба ягон кас ё ҷой муроҷиат кардед?</string>
+    <string name="cic408">  C406a - Барои чӣ шумо барои табобати табобати сирояти шадиди роҳҳои нафас муроҷиат накардед?   </string>
     <string name="cic408a">       Ин касалиро ҷидди қабул намекунад</string>
     <string name="cic408b">       Маблағ нест </string>
     <string name="cic408c">       Вақт нест </string>
     <string name="cic408d">       Масофаи дур ба муассиаси таббӣ   </string>
     <string name="cic408e">       Ягон кас дар хона барои бурдан нест  </string>
 
-    <string name="cic409">  ۔C407 Шумо ба кӣ/куҷо барои табобати касалии роҳҳои нафасмуроҷиат кардед? </string>
+    <string name="cic409">  C407 Шумо ба кӣ/куҷо барои табобати касалии роҳҳои нафасмуроҷиат кардед? </string>
     <string name="cic409sub1"> Бахши давлатӣ </string>
     <string name="cic409sub2">Бахши хусусӣ</string>
     <string name="cic409sub3"> Дигар манбаъ </string>
@@ -1383,7 +1382,7 @@
     <string name="cic4099602"> Хусусии дигар (аниқ кунед)  </string>
     <string name="cic4099603"> Дигар (аниқ кунед)  </string>
 
-    <string name="cic410">  ۔C408 -Барои табобати касалии роҳҳои нафас шумо ба кудак чӣ додед?  </string>
+    <string name="cic410">  C408 -Барои табобати касалии роҳҳои нафас шумо ба кудак чӣ додед?  </string>
     <string name="cic410sub1">Ҳаб ё сироп </string>
     <string name="cic410a"> اАнтибиотик </string>
     <string name="cic410b"> Антиперисталтик</string>
@@ -1394,11 +1393,11 @@
     <string name="cic410f"> Ба дохили рагҳои ворид </string>
     <string name="cic410g">Табобати хонагӣ /гиёҳҳо </string>
     <string name="cic4109601"> Дигар (дигар) </string>
-    <string name="cic411">  ۔C409 -Дар давоми ду ҳафтаи охир кудак табларза дошт?</string>
-    <string name="cic412">  ۔C410 - Оё шумо барои табобати табларза ба ягон кас ё ҷой муроҷиат кардед? </string>
-    <string name="cic413">  ۔C410a - Барои чӣ шумо барои табобати табобати табларза муроҷиат накардед? </string>
+    <string name="cic411">  C409 -Дар давоми ду ҳафтаи охир кудак табларза дошт?</string>
+    <string name="cic412">  C410 - Оё шумо барои табобати табларза ба ягон кас ё ҷой муроҷиат кардед? </string>
+    <string name="cic413">  C410a - Барои чӣ шумо барои табобати табобати табларза муроҷиат накардед? </string>
 
-    <string name="cic414">  ۔C411 - Шумо ба кӣ/куҷо барои табобати табларза муроҷиат кардед?  </string>
+    <string name="cic414">  C411 - Шумо ба кӣ/куҷо барои табобати табларза муроҷиат кардед?  </string>
     <string name="cic414sub1"> Бахши давлатӣ </string>
     <string name="cic414sub2">Бахши хусусӣ</string>
     <string name="cic414sub3"> Дигар манбаъ </string>
@@ -1423,7 +1422,7 @@
     <string name="cic4149602"> Хусусии дигар (аниқ кунед)  </string>
     <string name="cic4149603"> Дигар (аниқ кунед)  </string>
 
-    <string name="cic415">۔C412 -Барои табобати табларза шумо ба кудак чӣ додед?   </string>
+    <string name="cic415">C412 -Барои табобати табларза шумо ба кудак чӣ додед?   </string>
     <string name="cic415sub1">Ҳаб ё сироп </string>
     <string name="cic415a"> اАнтибиотик </string>
     <string name="cic415b"> Антиперисталтик</string>
@@ -1436,25 +1435,25 @@
     <string name="cic415h">Табобати хонагӣ /гиёҳҳо </string>
     <string name="cic4159601"> Дигар (дигар) </string>
     <!--<string name="cic4159601">Дигар (дигар) </string>-->
-    <string name="cic416">۔C413 -Оё ба (НОМ) дар давоми шаш моҳи охир барои табобати кирми руда ягон дору дода шуд?  </string>
-    <string name="cic417">۔C414 -  Оё (НОМ) дар давоми шаш моҳи охир шабкурӣ дошт? </string>
-    <string name="cic418">۔C415 -Оё ба (НОМ) ягон бор витамини А дода шудааст?</string>
-    <string name="cic419">۔C416 -Миқдори витамини А, ки ба (НОМ дода шуд, чӣ қадар буд? </string>
+    <string name="cic416">C413 -Оё ба (НОМ) дар давоми шаш моҳи охир барои табобати кирми руда ягон дору дода шуд?  </string>
+    <string name="cic417">C414 -  Оё (НОМ) дар давоми шаш моҳи охир шабкурӣ дошт? </string>
+    <string name="cic418">C415 -Оё ба (НОМ) ягон бор витамини А дода шудааст?</string>
+    <string name="cic419">C416 -Миқдори витамини А, ки ба (НОМ дода шуд, чӣ қадар буд? </string>
     <string name="cic419a"> Миқдор </string>
-    <string name="cic420">۔C417 -Кай бори охир ба (НОМ) витамини А дода шуд?</string>
+    <string name="cic420">C417 -Кай бори охир ба (НОМ) витамини А дода шуд?</string>
     <string name="cic420a">Як ҳафта пеш </string>
     <string name="cic420b"> Як моҳ пеш </string>
     <string name="cic420c">Се моҳ пеш</string>
     <string name="cic420d"> Шаш моҳ пеш</string>
     <string name="cic420e"> Як сол пеш</string>
-    <string name="cic421">۔C418 -Оё ба (НОМ) ягон бор микроэлементҳо дода шудааст? </string>
-    <string name="cic422">۔C419 - Чӣ қадар зуд ба (НОМ) микроэлементҳо дода шуд?</string>
+    <string name="cic421">C418 -Оё ба (НОМ) ягон бор микроэлементҳо дода шудааст? </string>
+    <string name="cic422">C419 - Чӣ қадар зуд ба (НОМ) микроэлементҳо дода шуд?</string>
     <string name="cic422a"> Ҳар руз </string>
     <string name="cic422b"> Якбор дар як ҳафта </string>
     <string name="cic422c"> Якбор дар ду ҳафта  </string>
     <string name="cic422d"> Ҳар моҳ</string>
     <string name="cic422e"> Гоҳ-гоҳ </string>
-    <string name="cic423">۔C420 Чанд моҳ ё руз (НОМ) микроэлементҳоро гирифт?</string>
+    <string name="cic423">C420 Чанд моҳ ё руз (НОМ) микроэлементҳоро гирифт?</string>
     <string name="cic423a"> Моҳ </string>
     <string name="cic423b"> Руз </string>
 
@@ -1466,14 +1465,14 @@
 
     <!--Child Section 5-->
     <string name="cich">ҚИСМИ 5: ГУНОГУНИИ ҒИЗОИИ АҚАЛЛӢ БАРОИ ЗАНОНИ ҚОБИЛИ ТАВАЛЛУД </string>
-    <string name="cic501">  ۔C501-Дина, шумо чанд бор хурок хурдед? </string>
+    <string name="cic501">  C501-Дина, шумо чанд бор хурок хурдед? </string>
     <string name="cic501h"> шумора </string>
-    <string name="cic502">  ۔C502-Ин дар муқоиса ба меъёри муқарарӣ чӣ тавр аст?  </string>
+    <string name="cic502">  C502-Ин дар муқоиса ба меъёри муқарарӣ чӣ тавр аст?  </string>
     <string name="cic502a"> камтар </string>
     <string name="cic502b"> ҳамон тавр </string>
     <string name="cic502c">бисёртар </string>
     <string name="cic5h1"> Дар давоми 7 рӯзи охирчанд рӯз аъзои хонаводаатон ғизоҳои зеринро истеъмол карданд? </string>
-    <string name="cic503">۔C503 - کیا آپ کےبچےکو چلنے یا چڑھنے کے دوران کوئی مشکلات پیش آتی ہے؟</string>
+    <string name="cic503">C503 - کیا آپ کےبچےکو چلنے یا چڑھنے کے دوران کوئی مشکلات پیش آتی ہے؟</string>
     <string name="cic503h1">Шумораи рузҳо, дар давоми 7 рузи охир, ки дар онҳо ин гуруҳи ғизоҳоро истеъмол кардааст? </string>
     <string name="cic503h2"> Манбаъи асосии ин ғизоҳо дар давоми 7 рӯзи охир чӣ буд?</string>
     <string name="cic503h2a"> ҳосили худӣ/маҳсулоти боғӣ</string>
@@ -1486,23 +1485,23 @@
     <string name="cic503h2h">мубодилаи молӣ ё савдои мол/хизматрасониҳо  </string>
     <string name="cic503h2i"> Дар давоми 7 рузи охир истеъмол накардам </string>
     <string name="cic503h3">Дина, шумо ё ягон аъзои дигари хонаводаатон ин гуруҳи ғизоҳоро истеъмол кардааст? </string>
-    <string name="cic50301">  ۔C50301-Хӯрокҳоазғалладона (каша, нон, биринҷ, макаронвағ) варешаҳоисафедвалундаҳо(картошкa,картошкаиширинвағ) </string>
-    <string name="cic50302">  ۔C50302-Боқило (лубиё, нахуд ва марҷумак) </string>
-    <string name="cic50303">  ۔C50303- Сабзавот </string>
-    <string name="cic50304">  ۔C50304- Мевагиҳо </string>
-    <string name="cic50305">  ۔C50305- Гушт, моҳӣ ва тухм (ҳама намудҳо)</string>
-    <string name="cic50306">  ۔C50306-Шир ва маҳсулотҳои ширӣ (шир, ёгурт, панир, дигар маҳсулотҳои ширӣ) </string>
-    <string name="cic50307">  ۔C50307- Шакар, асал </string>
-    <string name="cic50308">  ۔C50308- Равғанҳо, чарбҳо </string>
-    <string name="cic504">۔C504 - کیا آپ کےبچےکو یاد رکھنے اور توجہ دینے میں کوئی مشکلات پیش آتی ہے؟</string>
-    <string name="cic505">۔C505 - کیا آپ کےبچےکو اپنے دیکھ بھال( مثلاً: ہاتھ منہ دھونا ،وغیرہ) میں مشکل پیش آتی ہے؟</string>
-    <string name="cic506">۔C506 - کیااپنی روز مرہ کی زبان استعمال کرتے ہوئے آپ کےبچےکو بات چیت میں (مثلاً کسی کو بات سمجھاتے وقت یا کسی کی بات سمجھتے وقت) دشواری پیش آتی ہے ؟</string>
+    <string name="cic50301">  C50301-Хӯрокҳоазғалладона (каша, нон, биринҷ, макаронвағ) варешаҳоисафедвалундаҳо(картошкa,картошкаиширинвағ) </string>
+    <string name="cic50302">  C50302-Боқило (лубиё, нахуд ва марҷумак) </string>
+    <string name="cic50303">  C50303- Сабзавот </string>
+    <string name="cic50304">  C50304- Мевагиҳо </string>
+    <string name="cic50305">  C50305- Гушт, моҳӣ ва тухм (ҳама намудҳо)</string>
+    <string name="cic50306">  C50306-Шир ва маҳсулотҳои ширӣ (шир, ёгурт, панир, дигар маҳсулотҳои ширӣ) </string>
+    <string name="cic50307">  C50307- Шакар, асал </string>
+    <string name="cic50308">  C50308- Равғанҳо, чарбҳо </string>
+    <string name="cic504">C504 - کیا آپ کےبچےکو یاد رکھنے اور توجہ دینے میں کوئی مشکلات پیش آتی ہے؟</string>
+    <string name="cic505">C505 - کیا آپ کےبچےکو اپنے دیکھ بھال( مثلاً: ہاتھ منہ دھونا ،وغیرہ) میں مشکل پیش آتی ہے؟</string>
+    <string name="cic506">C506 - کیااپنی روز مرہ کی زبان استعمال کرتے ہوئے آپ کےبچےکو بات چیت میں (مثلاً کسی کو بات سمجھاتے وقت یا کسی کی بات سمجھتے وقت) دشواری پیش آتی ہے ؟</string>
 
     <string name="nd1heading"> ҚИСМИD1: АНТРОПОМЕТРИЯ ВА САНҶИШ </string>
     <string name="na3subHeading"> یہ سیکشن گھر کے سربراہ سے یا گھر میں کم سے کم 18 سال یا اس سے ذائد عمر کے کسی سمجھدار شخص سے پوچھا جائیگا </string>
     <string name="na4subHeading"> وزن کا دوبارہ اندراج کریں</string>
     <string name="na5subHeading"> لمبائی کا دوبارہ اندراج کریں</string>
-    <string name="na6subHeading"> ۔MUAC  کا دوبارہ اندراج کریں</string>
+    <string name="na6subHeading"> MUAC  کا دوبارہ اندراج کریں</string>
     <string name="cid101sno"> Сатр # </string>
     <string name="cid1w"> Вазн (кг) </string>
     <string name="cid1h"> Қад/дарозӣ (см) </string>
@@ -1537,7 +1536,7 @@
 
 
     <string name="ne1heading"> MODULE E: САНҶИШИ ГЕМОГЛОБИН </string>
-    <string name="ne101">  ۔E107-Сатр </string>
+    <string name="ne101">  E107-Сатр </string>
     <string name="ne102"> منتخب شدہ فرد کا نام </string>
     <string name="neselected">E105. Гуруҳи аъзои интихобшуда -E103 </string>
     <string-array name="neselected">
@@ -1557,7 +1556,7 @@
     <string name="ne104b"> پیشاب کا نمونہ </string>
     <string name="ne104c"> پوٹ ایچ بی ٹیسٹ </string>
     <string name="barcode">اگر ہاں، تو بار کوڈ اسکین کریں</string>
-    <string name="hb_result">ہیموگلوبن کے نتائج درج کریں۔</string>
+    <string name="hb_result">ہیموگلوبن کے نتائج درج کریں</string>
     <string name="ne104"> کیا نمونہ حاصل کیا گیا تھا؟ </string>
     <string name="ne107"> . Агар Не, сабабро муайян кунед: </string>
     <string name="ne107a"> Дар хона нест </string>
@@ -1579,7 +1578,7 @@
     <string name="ne202f02"> کیا نائٹرک ایسڈ (فیلڈ بلینک) کے لئے پانی کا نمونہ حاصل کیا گیا تھا؟ </string>
     <string name="ne202f03"> کیا بورک ایسڈ (فیلڈ بلینک) کے لئے پانی کا نمونہ حاصل کیا گیا تھا؟ </string>
     <string name="ne202f04"> کیا پلین واٹر (فیلڈ بلینک) کے لئے پانی کا نمونہ حاصل کیا گیا تھا؟ </string>
-    <string name="ne203"> اگر ہاں، تو بار کوڈ اسکین کریں۔ </string>
+    <string name="ne203"> اگر ہاں، تو بار کوڈ اسکین کریں </string>
     <string name="ne20301a"> Scan Petri Film Label</string>
     <string name="ne20301b">Date of Collection</string>
     <string name="ne20301c">Time of Collection</string>
@@ -1594,22 +1593,22 @@
     <!-- TODO: Remove or change this placeholder text -->
 
     <string name="cih8heading"> اموات کے بارے میں معلومات</string>
-    <string name="cih801"> ۔H801 - گذشتہ 5 سالوں کے دوران کیا اس گھر میں کسی گھر کے فرد کی موت واقع ہوئی</string>
-    <string name="cih802">۔H802 - وفات پانے والوں کی تعداد</string>
+    <string name="cih801"> H801 - گذشتہ 5 سالوں کے دوران کیا اس گھر میں کسی گھر کے فرد کی موت واقع ہوئی</string>
+    <string name="cih802">H802 - وفات پانے والوں کی تعداد</string>
     <string name="cih802sub">اگر ہاں تو برائے مہربانی وفات پانے والے کی تفصیل بتائیں</string>
-    <string name="cih803"> ۔H803 - وفات پانے والے کانام</string>
-    <string name="cih804"> ۔H804 - وفات پانے والے کی والدہ کا نام</string>
-    <string name="cih805"> ۔H805 - وفات پانے والے کی والد کا نام</string>
-    <string name="cih806">۔H806 - وفات پانے والے کی جنس</string>
+    <string name="cih803"> H803 - وفات پانے والے کانام</string>
+    <string name="cih804"> H804 - وفات پانے والے کی والدہ کا نام</string>
+    <string name="cih805"> H805 - وفات پانے والے کی والد کا نام</string>
+    <string name="cih806">H806 - وفات پانے والے کی جنس</string>
     <string name="cih8ms">  وفات پانے والے کی ازدواجی حیثیت</string>
     <string name="cih8msa">Оиладор</string>
     <string name="cih8msb">Бева</string>
     <string name="cih8msc">Талоқшуда</string>
     <string name="cih8msd">Ҷудошуда</string>
     <string name="cih8mse">Муҷаррад</string>
-    <string name="cih807">۔H807 - وفات کے وقت عمر</string>
-    <string name="cih808"> ۔H808 - وفات کی تاریخ</string>
-    <string name="cih809"> ۔H809 - وفات کی جگہ </string>
+    <string name="cih807">H807 - وفات کے وقت عمر</string>
+    <string name="cih808"> H808 - وفات کی تاریخ</string>
+    <string name="cih809"> H809 - وفات کی جگہ </string>
     <string name="cih809a"> گھر </string>
     <string name="cih809b"> ہسپتال </string>
     <string name="cih809c"> راستے میں </string>
@@ -1620,34 +1619,34 @@
     <string name="cid3h">رفتارها و عادات غذایی شیردهی مادر ( 6 – 0 ماهه)</string>
     <string name="cid4h">رفتارها و عادات تغذیوی غذاهای متمم ( 23 – 6 ماهه)</string>
     <string name="cid6h">رفتارها و عادات غذای اطفال سنین مکتب و نو بالغی</string>
-    <string name="cid201">۔D201- آیا شما عادات غذایی خود را در هنگام شیردهی تغییر می دهید؟ </string>
+    <string name="cid201">D201- آیا شما عادات غذایی خود را در هنگام شیردهی تغییر می دهید؟ </string>
     <string name="cid201a"> یک </string>
     <string name="cid201b"> دو </string>
     <string name="cid201c"> سه </string>
 
-    <string name="cid202">۔D202- آیا شما عادات غذایی خود را در حاملگی تغییر می دهید؟  </string>
+    <string name="cid202">D202- آیا شما عادات غذایی خود را در حاملگی تغییر می دهید؟  </string>
     <string name="cid202a"> بلی </string>
     <string name="cid202b"> نخیر </string>
     <string name="cid202c"> انکار کرد </string>
     <string name="cid202d"> نمی داند/جواب نداد </string>
 
-    <string name="cid203">۔D203- آیا شما غذا کم می خورید یا زیاد ؟  </string>
+    <string name="cid203">D203- آیا شما غذا کم می خورید یا زیاد ؟  </string>
     <string name="cid203a"> کم </string>
     <string name="cid203b"> زیاد </string>
     <string name="cid203c"> انکار کرد </string>
     <string name="cid203d"> نمی داند/جواب نداد </string>
 
-    <string name="cid204">۔D204-   آیا شما کدام غذاها یا مایعات " گرم" یا " سرد" در هنگام حاملگی می خوردید یا هم امتناع می ورزیدید؟ </string>
+    <string name="cid204">D204-   آیا شما کدام غذاها یا مایعات " گرم" یا " سرد" در هنگام حاملگی می خوردید یا هم امتناع می ورزیدید؟ </string>
     <string name="cid204a"> بلی </string>
     <string name="cid204b"> نخیر </string>
 
-    <string name="cid20502">۔D205b- کدام غذاها، معایات یا دیگر (دارو خانگی، گیاهی، یا ادویه)؟ لطفاً لیست کنید؟ </string>
+    <string name="cid20502">D205b- کدام غذاها، معایات یا دیگر (دارو خانگی، گیاهی، یا ادویه)؟ لطفاً لیست کنید؟ </string>
 
     <string name="cid20503a"> 1=امتناع می ورزد  </string>
     <string name="cid20503b"> 2= مصرف می نمود  </string>
 
 
-    <string name="cid20504">۔D205d- چرا امتناع می ورزید؟  </string>
+    <string name="cid20504">D205d- چرا امتناع می ورزید؟  </string>
     <string name="cid20504a"> دلبدی/استفراغ </string>
     <string name="cid20504b"> ترس درد های شکم/ اسهال </string>
     <string name="cid20504c"> ترس سقط جنین </string>
@@ -1661,12 +1660,12 @@
     <string name="cid20504k"> توانای خرید </string>
     <string name="cid20504l"> دیگر ( لطفاً مشخص کنید) </string>
 
-    <string name="cid206">۔D206- به نظرتان غذا خوردن زیاد در دوران حاملگی خوب است؟  </string>
+    <string name="cid206">D206- به نظرتان غذا خوردن زیاد در دوران حاملگی خوب است؟  </string>
     <string name="cid206a"> خوب نیست </string>
     <string name="cid206b"> مطمئین نیست </string>
     <string name="cid206c"> خوب </string>
 
-    <string name="cid207">۔D207- چقدر مشکل است برایتان که در دوران حاملگی بیشتر غذا بخورید؟  </string>
+    <string name="cid207">D207- چقدر مشکل است برایتان که در دوران حاملگی بیشتر غذا بخورید؟  </string>
     <string name="cid207a"> خوب نیست </string>
     <string name="cid207b"> مطمئین نیست </string>
     <string name="cid207c"> خوب </string>
@@ -1675,28 +1674,28 @@
     <string name="cid3h1"> از شما در مورد تغذی شما در زمان شیرمادر دهی بعضی سوالات را می پرسم. لطفاً برایم بگوید، اگر شما ضرورت به وضاحت در مورد کدام سوال داشته باشید. اگر کدام سوال دارید، میتوانید آزادانه بپرسید. </string>
 
 
-    <string name="cid301">۔D301- آیا شما عادات غذایی خود را در هنگام شیردهی تغییر می دهید؟  </string>
+    <string name="cid301">D301- آیا شما عادات غذایی خود را در هنگام شیردهی تغییر می دهید؟  </string>
     <string name="cid301a"> بلی </string>
     <string name="cid301b"> نخیر </string>
     <string name="cid301d"> انکار کرد </string>
     <string name="cid301c"> نمی داند/جواب نداد </string>
 
-    <string name="cid302">۔D302- آیا شما غذای کم می خورید یا زیاد ؟  </string>
+    <string name="cid302">D302- آیا شما غذای کم می خورید یا زیاد ؟  </string>
     <string name="cid302a"> کم </string>
     <string name="cid302b"> زیاد </string>
     <string name="cid302c"> انکار کرد </string>
     <string name="cid302d"> نمی داند/جواب نداد </string>
 
-    <string name="cid303">۔D303- آیا شما کدام غذاها یا مایعات " گرم" یا " سرد" در هنگام شیردهی مادر می خورید  </string>
+    <string name="cid303">D303- آیا شما کدام غذاها یا مایعات " گرم" یا " سرد" در هنگام شیردهی مادر می خورید  </string>
     <string name="cid303a"> بلی </string>
     <string name="cid303b"> نخیر </string>
 
-    <string name="cid30402">۔D304b- کدام غذاها، معایات یا دیگر (دارو خانگی، گیاهی، یا ادویه)؟ لطفاً لیست کنید  </string>
+    <string name="cid30402">D304b- کدام غذاها، معایات یا دیگر (دارو خانگی، گیاهی، یا ادویه)؟ لطفاً لیست کنید  </string>
 
     <string name="cid30403a"> 1= امتناع می ورزید </string>
     <string name="cid30403b"> 2= مصرف می نمود  </string>
 
-    <string name="cid30404">۔D304d- چرا امتناع می ورزید؟ </string>
+    <string name="cid30404">D304d- چرا امتناع می ورزید؟ </string>
     <string name="cid30404a"> دلبدی/استفراغ </string>
     <string name="cid30404b"> ترس درد های شکم/ اسهال </string>
     <string name="cid30404c"> ترس فشار بلند </string>
@@ -1707,227 +1706,227 @@
     <string name="cid30404h"> دیگر ( لطفاً مشخص کنید) </string>
 
 
-    <string name="cid305">۔D305- به نظرتان چی اندازه غذا خوردن زیاد در دوران شیردهی خوب است؟ </string>
+    <string name="cid305">D305- به نظرتان چی اندازه غذا خوردن زیاد در دوران شیردهی خوب است؟ </string>
     <string name="cid305a"> خوب نیست </string>
     <string name="cid305b"> مطمئین نیست </string>
     <string name="cid305c"> خوب </string>
 
-    <string name="cid306">۔D306- چقدر مشکل است برایتان که در دوران شیردهی بیشتر غذا بخورید؟ </string>
+    <string name="cid306">D306- چقدر مشکل است برایتان که در دوران شیردهی بیشتر غذا بخورید؟ </string>
     <string name="cid306a">مشکل نیست  </string>
     <string name="cid306b"> مطمئین نیست </string>
     <string name="cid306c">  مشکل است </string>
 
 
-    <string name="cid307">۔D307- به نظر شما چه اندازه خوب است که طفل برای شش ماه تنها با شیر مادر تغذی شود؟ </string>
+    <string name="cid307">D307- به نظر شما چه اندازه خوب است که طفل برای شش ماه تنها با شیر مادر تغذی شود؟ </string>
     <string name="cid307a"> خوب نیست </string>
     <string name="cid307b"> مطمئین نیست </string>
     <string name="cid307c"> خوب </string>
 
-    <string name="cid308">۔D308- چقدر مشکل است برایتان که در شش ماه تنها با شیرمادر طفل تان را تغذی کنید؟ </string>
+    <string name="cid308">D308- چقدر مشکل است برایتان که در شش ماه تنها با شیرمادر طفل تان را تغذی کنید؟ </string>
     <string name="cid308a"> مشکل نیست   </string>
     <string name="cid308b"> مطمئین نیست </string>
     <string name="cid308c"> مشکل است  </string>
 
-    <string name="cid309">۔D309- چه اندازه خوب است که نظر به خواست طفل تان شیرمادر بدهید، یعنی زمانیکه طفل می خواهد تغذیه شود، شیر مادر بدهید؟ </string>
+    <string name="cid309">D309- چه اندازه خوب است که نظر به خواست طفل تان شیرمادر بدهید، یعنی زمانیکه طفل می خواهد تغذیه شود، شیر مادر بدهید؟ </string>
     <string name="cid309a"> خوب نیست </string>
     <string name="cid309b"> مطمئین نیست </string>
     <string name="cid309c"> خوب </string>
 
-    <string name="cid310">۔D310- چقدر مشکل است که طفل تان را در وقت ضرورت شان با شیرمادر تغذی کنید؟ </string>
+    <string name="cid310">D310- چقدر مشکل است که طفل تان را در وقت ضرورت شان با شیرمادر تغذی کنید؟ </string>
     <string name="cid310a"> مشکل نیست  </string>
     <string name="cid310b"> مطمئین نیست </string>
     <string name="cid310c"> مشکل است </string>
 
-    <string name="cid311">۔D311- چه اندازه مطمئین در وقت شیردهی (شیر مادر) احساس می کنید؟ </string>
+    <string name="cid311">D311- چه اندازه مطمئین در وقت شیردهی (شیر مادر) احساس می کنید؟ </string>
     <string name="cid311a"> خوب نیست </string>
     <string name="cid311b"> مطمئین نیست </string>
     <string name="cid311c"> خوب </string>
 
 
-    <string name="cid312">۔D312- چه اندازه مطمئین احساس می نمایید که شیرتان را ذخیره کنید تا کسی دیگر به طفل تان بدهد. </string>
+    <string name="cid312">D312- چه اندازه مطمئین احساس می نمایید که شیرتان را ذخیره کنید تا کسی دیگر به طفل تان بدهد. </string>
     <string name="cid312a"> مطمئین نیست </string>
     <string name="cid312b"> مطمئین نیست </string>
     <string name="cid312c"> مطمئین است </string>
 
 
-    <string name="cid401">۔D401- آیا شما از کدام غذاها یا مایعات "گرم" در هنگام تغذی متمم امتناع می ورزید؟ </string>
+    <string name="cid401">D401- آیا شما از کدام غذاها یا مایعات "گرم" در هنگام تغذی متمم امتناع می ورزید؟ </string>
 
 
-    <string name="cid40202">۔D402b- کدام مریضی؟ (یک خط را برای یک مریضی انتخاب کنید) </string>
+    <string name="cid40202">D402b- کدام مریضی؟ (یک خط را برای یک مریضی انتخاب کنید) </string>
 
 
-    <string name="cid40203">۔D402c- غذاهای "گرم" که امتناع می ورزید؟(لطفاً لیست کنید) </string>
+    <string name="cid40203">D402c- غذاهای "گرم" که امتناع می ورزید؟(لطفاً لیست کنید) </string>
 
 
-    <string name="cid40204">۔D402d- مایعات "گرم" که امتناع می ورزید؟(لطفاً لیست کنید) </string>
+    <string name="cid40204">D402d- مایعات "گرم" که امتناع می ورزید؟(لطفاً لیست کنید) </string>
 
 
-    <string name="cid40205">۔D402e- اگر دیگر(دارو های خانگی، گیاهی، مساله ها، ادویه ها، لطفاً لیست کنید) </string>
+    <string name="cid40205">D402e- اگر دیگر(دارو های خانگی، گیاهی، مساله ها، ادویه ها، لطفاً لیست کنید) </string>
 
 
-    <string name="cid403">۔D403- آیا شما از کدام غذاها یا مایعات " سرد " در هنگام تغذی متمم امتناع می ورزید؟ </string>
+    <string name="cid403">D403- آیا شما از کدام غذاها یا مایعات " سرد " در هنگام تغذی متمم امتناع می ورزید؟ </string>
 
 
-    <string name="cid40402">۔D402- کدام مریضی؟ (یک خط را برای یک مریضی انتخاب کنید) </string>
+    <string name="cid40402">D402- کدام مریضی؟ (یک خط را برای یک مریضی انتخاب کنید) </string>
 
 
-    <string name="cid40403">۔D403- غذاهای " سرد " که امتناع می ورزید؟(لطفاً لیست کنید) </string>
+    <string name="cid40403">D403- غذاهای " سرد " که امتناع می ورزید؟(لطفاً لیست کنید) </string>
 
 
-    <string name="cid40404">۔D404- مایعات " سرد " که امتناع می ورزید؟(لطفاً لیست کنید) </string>
+    <string name="cid40404">D404- مایعات " سرد " که امتناع می ورزید؟(لطفاً لیست کنید) </string>
 
 
-    <string name="cid40405">۔D405- اگر دیگر(دارو های خانگی، گیاهی، مساله ها، ادویه ها، لطفاً لیست کنید) </string>
+    <string name="cid40405">D405- اگر دیگر(دارو های خانگی، گیاهی، مساله ها، ادویه ها، لطفاً لیست کنید) </string>
 
 
-    <string name="cid405">۔D405- آیا شما از کدام غذاها یا مایعات " داغ درمانی " در هنگام تغذی متمم امتناع می ورزید؟ </string>
+    <string name="cid405">D405- آیا شما از کدام غذاها یا مایعات " داغ درمانی " در هنگام تغذی متمم امتناع می ورزید؟ </string>
 
 
-    <string name="cid40602">۔D406b- کدام مریضی؟ (یک خط را برای یک مریضی انتخاب کنید) </string>
+    <string name="cid40602">D406b- کدام مریضی؟ (یک خط را برای یک مریضی انتخاب کنید) </string>
 
 
-    <string name="cid40603">۔D406c- غذاهای " داغ درمانی " که امتناع می ورزید؟(لطفاً لیست کنید) </string>
+    <string name="cid40603">D406c- غذاهای " داغ درمانی " که امتناع می ورزید؟(لطفاً لیست کنید) </string>
 
 
-    <string name="cid40604">۔D406d- مایعات " داغ درمانی " که امتناع می ورزید؟(لطفاً لیست کنید) </string>
+    <string name="cid40604">D406d- مایعات " داغ درمانی " که امتناع می ورزید؟(لطفاً لیست کنید) </string>
 
 
-    <string name="cid40605">۔D406e- اگر دیگر(دارو های خانگی، گیاهی، مساله ها، ادویه ها، لطفاً لیست کنید) </string>
+    <string name="cid40605">D406e- اگر دیگر(دارو های خانگی، گیاهی، مساله ها، ادویه ها، لطفاً لیست کنید) </string>
 
 
-    <string name="cid407">۔D407- آیا شما از کدام غذاها یا مایعات "سرماخوردگی" در هنگام تغذی متمم امتناع می ورزید؟ </string>
+    <string name="cid407">D407- آیا شما از کدام غذاها یا مایعات "سرماخوردگی" در هنگام تغذی متمم امتناع می ورزید؟ </string>
 
 
-    <string name="cid40802">۔D408b- کدام مریضی؟ (یک خط را برای یک مریضی انتخاب کنید) </string>
+    <string name="cid40802">D408b- کدام مریضی؟ (یک خط را برای یک مریضی انتخاب کنید) </string>
 
 
-    <string name="cid40803">۔D408c- غذاهای " سرد درمانی " که امتناع می ورزید؟(لطفاً لیست کنید) </string>
+    <string name="cid40803">D408c- غذاهای " سرد درمانی " که امتناع می ورزید؟(لطفاً لیست کنید) </string>
 
 
-    <string name="cid40804">۔D408d- مایعات " سرد درمانی " که امتناع می ورزید؟(لطفاً لیست کنید) </string>
+    <string name="cid40804">D408d- مایعات " سرد درمانی " که امتناع می ورزید؟(لطفاً لیست کنید) </string>
 
 
-    <string name="cid40805">۔D408e- اگر دیگر(دارو های خانگی، گیاهی، مساله ها، ادویه ها، لطفاً لیست کنید) </string>
+    <string name="cid40805">D408e- اگر دیگر(دارو های خانگی، گیاهی، مساله ها، ادویه ها، لطفاً لیست کنید) </string>
 
 
-    <string name="cid409">۔D409- در وقت آماده سازی غذای طفل تان، چه اندازه خود را مطمئین احساس می کنید؟</string>
+    <string name="cid409">D409- در وقت آماده سازی غذای طفل تان، چه اندازه خود را مطمئین احساس می کنید؟</string>
     <string name="cid409a"> مطمئین نیست </string>
     <string name="cid409b"> مطمئین نیست </string>
     <string name="cid409c"> مطمئین </string>
 
-    <string name="cid410">۔D410- به نظرتان چه اندازه خوب است که هر روز غذاهای مختلف به طفل تان بدهید؟ </string>
+    <string name="cid410">D410- به نظرتان چه اندازه خوب است که هر روز غذاهای مختلف به طفل تان بدهید؟ </string>
     <string name="cid410a"> خوب نیست  </string>
     <string name="cid410b"> مطمئین نیست  </string>
     <string name="cid410c"> مطمئین </string>
 
-    <string name="cid411">۔D411- چقدر مشکل است که به طفل تان هر روز غذاهای مختلف بدهید؟ </string>
+    <string name="cid411">D411- چقدر مشکل است که به طفل تان هر روز غذاهای مختلف بدهید؟ </string>
     <string name="cid411a"> مشکل نیست  </string>
     <string name="cid411b">کمی است، کمی نیست  </string>
     <string name="cid411c"> مشکل   </string>
 
-    <string name="cid412">۔D412- به نظرتان چه اندازه خوب است که چندین مراتبه در روز به طفل تان غذا بدهید؟ </string>
+    <string name="cid412">D412- به نظرتان چه اندازه خوب است که چندین مراتبه در روز به طفل تان غذا بدهید؟ </string>
     <string name="cid412a"> مطمئین نیست </string>
     <string name="cid412b"> مطمئین نیست </string>
     <string name="cid412c"> خوب  </string>
 
-    <string name="cid413">۔D413- چقدر مشکل است برایتان که طفل خود را چندین مراتبه در روز غذا بدهید؟ </string>
+    <string name="cid413">D413- چقدر مشکل است برایتان که طفل خود را چندین مراتبه در روز غذا بدهید؟ </string>
     <string name="cid413a">  مشکل نیست </string>
     <string name="cid413b"> مطمئین نیست </string>
     <string name="cid413c"> مشکل </string>
 
-    <string name="cid414">۔D414- به نظرتان چه اندازه خوب است که شیردهی مادر بعد از شش ماه هم ادامه یابد؟ </string>
+    <string name="cid414">D414- به نظرتان چه اندازه خوب است که شیردهی مادر بعد از شش ماه هم ادامه یابد؟ </string>
     <string name="cid414a">خوب نیست</string>
     <string name="cid414b"> مطمئین نیست </string>
     <string name="cid414c"> خوب </string>
 
-    <string name="cid415">۔D415- چقدر مشکل است برایتان که شیردهی مادر بعد از شش ماه ادامه یابد؟ </string>
+    <string name="cid415">D415- چقدر مشکل است برایتان که شیردهی مادر بعد از شش ماه ادامه یابد؟ </string>
     <string name="cid415a">  مشکل نیست  </string>
     <string name="cid415b"> مطمئین نیست </string>
     <string name="cid415c"> مشکل </string>
 
 
-    <string name="cid501">۔D501- آیا سبزی ها و میوه ها را با آب پاگ می شوید؟ </string>
+    <string name="cid501">D501- آیا سبزی ها و میوه ها را با آب پاگ می شوید؟ </string>
 
 
-    <string name="cid502">۔D502- شما چگونه غذاهای تازه خراب شوینده مانند گوشت خام، گوشت مرغ و غذای های بحری را نگه داری می کنید؟ </string>
+    <string name="cid502">D502- شما چگونه غذاهای تازه خراب شوینده مانند گوشت خام، گوشت مرغ و غذای های بحری را نگه داری می کنید؟ </string>
     <string name="cid502a"> در یخچال/صندوق سرد </string>
     <string name="cid502b"> پوشیده </string>
     <string name="cid502c"> دیگر </string>
     <string name="cid502d"> نمی داند/جواب نداد </string>
 
 
-    <string name="cid601">۔D601- آیا قبل از مکتب امروز چای صبح خوردید؟ </string>
+    <string name="cid601">D601- آیا قبل از مکتب امروز چای صبح خوردید؟ </string>
 
 
-    <string name="cid602">۔D602- در کدام وقت؟ </string>
+    <string name="cid602">D602- در کدام وقت؟ </string>
     <string name="cid602a"> بین 9 – 6 صبح </string>
     <string name="cid602b"> بین 9 تا چاشت </string>
     <string name="cid602c"> بین چاشت تا 3 بعد ظهر </string>
     <string name="cid602d"> نمی داند/جواب نداد </string>
 
-    <string name="cid603">۔D603- در کجا چای صبح را خوردید؟ </string>
+    <string name="cid603">D603- در کجا چای صبح را خوردید؟ </string>
     <string name="cid603a"> در خانه </string>
     <string name="cid603b"> در مکتب </string>
     <string name="cid603c"> جای دیگر </string>
 
 
-    <string name="cid604">۔D604- اگر مصاحبه قبل از چاشت اجرا می شد، بپرسید:آیا دیروز نان چاشت خوردید؟ اگر مصاحبه بعد چاشت اجرا می شد، بپرسید: آیا امروز نان چاشت خوردید؟ </string>
+    <string name="cid604">D604- اگر مصاحبه قبل از چاشت اجرا می شد، بپرسید:آیا دیروز نان چاشت خوردید؟ اگر مصاحبه بعد چاشت اجرا می شد، بپرسید: آیا امروز نان چاشت خوردید؟ </string>
 
 
-    <string name="cid605">۔D605- در کدام وقت؟ </string>
+    <string name="cid605">D605- در کدام وقت؟ </string>
     <string name="cid605a"> بین 9 صبح تا چاشت </string>
     <string name="cid605b"> بین چاشت تا 3 بعد چاشت </string>
     <string name="cid605c"> بین 6 – 3 بعد چاشت </string>
 
-    <string name="cid606">۔D606- کی نان چاشت را آماده می سازد؟ </string>
+    <string name="cid606">D606- کی نان چاشت را آماده می سازد؟ </string>
     <string name="cid606a"> والدین در خانه </string>
     <string name="cid606b"> کفریای مکتب </string>
     <string name="cid606c"> با جیب خرچ، نان چاشت می خرد </string>
 
 
-    <string name="cid607">۔D607- آیا دیروز نان شب خوردید؟ </string>
+    <string name="cid607">D607- آیا دیروز نان شب خوردید؟ </string>
 
 
-    <string name="cid608">۔D608- در کدام وقت؟ </string>
+    <string name="cid608">D608- در کدام وقت؟ </string>
     <string name="cid608a"> بین 6 – 3 بعد چاشت </string>
     <string name="cid608b"> بین 9 – 6 بعد چاشت </string>
     <string name="cid608c"> بین 9 بعد چاشت تا نیم شب </string>
 
 
-    <string name="cid609">۔D609- در کجا؟  </string>
+    <string name="cid609">D609- در کجا؟  </string>
     <string name="cid609a"> در خانه </string>
     <string name="cid609b"> در مکتب </string>
     <string name="cid609c"> دیگر جای </string>
 
-    <string name="cid610">۔D610- آیا دیروز در هنگام شب یا روز در بین وعده های غذایی، میان غذا خوردید؟ </string>
+    <string name="cid610">D610- آیا دیروز در هنگام شب یا روز در بین وعده های غذایی، میان غذا خوردید؟ </string>
 
 
-    <string name="cid611">۔D611- چی خورده بودید؟این سوال یک سوال بازاست. </string>
+    <string name="cid611">D611- چی خورده بودید؟این سوال یک سوال بازاست. </string>
 
-    <string name="cid612">۔D612- آیا دیروز در هنگام شب یا روز، با پول خود تان غذا خریده بودید؟ </string>
-
-
-    <string name="cid613">۔D613- چه خریده بودید؟ این سوال یک سوال باز است. </string>
-
-    <string name="cid614">۔D614- آن غذاها را از کجا خریده بودید؟ </string>
+    <string name="cid612">D612- آیا دیروز در هنگام شب یا روز، با پول خود تان غذا خریده بودید؟ </string>
 
 
-    <string name="cid615">۔D615- به نظرتان چه اندازه خوب است که چای صبح قبل از مکتب خورده شود؟ </string>
+    <string name="cid613">D613- چه خریده بودید؟ این سوال یک سوال باز است. </string>
+
+    <string name="cid614">D614- آن غذاها را از کجا خریده بودید؟ </string>
+
+
+    <string name="cid615">D615- به نظرتان چه اندازه خوب است که چای صبح قبل از مکتب خورده شود؟ </string>
     <string name="cid615a"> خوب نیست </string>
     <string name="cid615b"> مطمئین نیست </string>
     <string name="cid615c"> خوب </string>
 
-    <string name="cid616">۔D616- چقدر مشکل است که چای صبح را قبل از رفتن به مکتب بخورید؟ </string>
+    <string name="cid616">D616- چقدر مشکل است که چای صبح را قبل از رفتن به مکتب بخورید؟ </string>
     <string name="cid616a"> مشکل نیست </string>
     <string name="cid616b"> مطمئین نیست </string>
     <string name="cid616c"> مشکل </string>
 
-    <string name="cid617">۔D617- به نظر چه اندازه خوب است که غذا های متنوغ در وعده غذایی خورده شود؟ </string>
+    <string name="cid617">D617- به نظر چه اندازه خوب است که غذا های متنوغ در وعده غذایی خورده شود؟ </string>
     <string name="cid617a"> خوب نیست </string>
     <string name="cid617b"> مطمئین نیست </string>
     <string name="cid617c"> خوب </string>
 
-    <string name="cid618">۔D618- چقدر مشکل است که غذاهای متنوع در وعده غذایی بخورید؟ </string>
+    <string name="cid618">D618- چقدر مشکل است که غذاهای متنوع در وعده غذایی بخورید؟ </string>
     <string name="cid618a"> مشکل نیست  </string>
     <string name="cid618b"> مطمئین نیست </string>
     <string name="cid618c"> مشکل  </string>
