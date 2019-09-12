@@ -106,21 +106,19 @@
     <string name="cih115a"> мусоҳиб </string>
     <string name="na107"> Номи мусоҳиб: </string>
     <string name="nw2info">To be filled for all WRAs 15 to 49 years of age.</string>
-    <string name="na109"> جواب دہندہ کی تعلیم </string>
-    <string name="na110"> جواب دہندہ کا پیشہ </string>
+    <string name="na109"> маълумотнокӣ  (3 СОЛ Ё БЕШТАР)</string>
+    <string name="na110"> Шуғл (3 СОЛ Ё БЕШТАР)* </string>
     <string name="na11101blood"> خون کے نمونے لینے کے لیے </string>
     <string name="na11101urine"> پیشاب  کے نمونے لینے کے لیے </string>
     <string name="na11102water"> پانی کے معیار کو جانچنے کے لیے </string>
-    <string name="na112info"> سوال کنندہ اجازت نامہ جواب دہندہ سمجھانے کے لیے پڑھ کر سنائے گا اور مطالعہ کا مقصد اور انٹرویو کے لیے درکار وقت کے متعلق آگا ہ کرےگا ۔ (سوال کنندہ کو علیحدہ سے اجازت نامہ کی شیٹ مہیا کی جائےگی) </string>
+    <string name="na112info"> Саволдиҳанда мувофиқаро барои мусоҳиб хонда, мақсади пурсиш ва вақти лозимро барои тамом кардани мусоҳиба мефаҳмонад (варақаи алоҳида барои муврфиқа ба саволдиҳанда дода мешавад)</string>
     <string name="na11801">Мувофиқаи лафзӣ </string>
     <string name="na11802"> Мувофиқаи хатӣ </string>
     <string name="na113info"> Агар мусоҳиб барои мусоҳиба розигӣ надиҳад, мусоҳибаро ҚАТЪ намоед ва ба саволи охирони ин қисм гузашта натиҷаи мусоҳибаро нависед.  </string>
     <string name="na113"> Сабаби радкунӣ (ҳамаеро интихоб кунед) </string>
     <string name="na119a"> Inappropriate time </string>
-    <string name="na119b"> Ман манфиатдор нестам
- </string>
-    <string name="na119c"> Талафоти вақт
-</string>
+    <string name="na119b"> Ман манфиатдор нестам</string>
+    <string name="na119c"> Талафоти вақт</string>
     <string name="na119d"> Дахолат ба махфият </string>
     <string name="na119e"> Ба пурсишҳо бовар накунед </string>
     <string name="na119f"> таҷрибаи бади гузашта </string>
@@ -502,10 +500,10 @@
     <!--Section A7-->
     <string name="benef"> Шумораи Beneficiaries </string>
     <string name="source"> Манбаъ\/ ТҒД </string>
-    <string name="cih701"> RUSF /Wawamum for children  </string>
-    <string name="cih702"> RUTF for children </string>
+    <string name="cih701"> RUSF /Wawamum барои кудакон  </string>
+    <string name="cih702"> RUTF барои кудакон </string>
     <string name="cih703"> Микроэлементҳо барои кудакон </string>
-    <string name="cih704"> Super cereal, Wheat Soya Blend for women (Mamta) </string>
+    <string name="cih704"> Super cereal, Wheat Soya Blend барои занон </string>
     <string name="cih705"> Гандум </string>
     <string name="cih706"> Пули нақд </string>
     <string name="cih707"> Пули нақд ҳамчун туҳфа(ваучер) </string>
@@ -568,7 +566,7 @@
     <string name="ciw213">۔W213 -Дар вақти таваллуди нахустин шумо чанд сола будед?</string>
     <string name="ciw214">۔W214 -Дар давоми панҷ соли охир шумо чанд бор ҳомиладор будед? </string>
     <string name="ciw215">۔W215 -Дар давоми панҷ соли охир шумо чанд бор  таваллуд кардед? </string>
-    <string name="ciw205time"> زچگیوں کی تعداد </string>
+    <string name="ciw205time"> Шумораи таваллудҳо </string>
     <string name="ciw216">۔W216 - Дар давоми ду соли охир шумо чанд бор  таваллуд кардед? ۔</string>
     <string name="ciw216a"> W216a - Дар давоми ду соли охир таваллуди зинда буд?</string>
 
@@ -1131,8 +1129,8 @@
     <string name="cic2_child_name"> .Номи кудак </string>
     <string name="cic2_line_no">Рақами сатри кудак </string>
     <string name="cic201">  بچے کی تاریخ َپیدائش</string>
-    <string name="cic201info">اب میں (۔Name) کے بارے میں کچھ سوالات پوچھوں گی (۔Name) کس ماہ اور سال میں میں پیدا ہوا (۔Name)کی پیدائش کا دن بتائیں ر تاریخ پیدائش معلوم نہ ہو تو  پوچھیں کیا بچے کی پیدائش کا یا حفاظتی ٹیکوں کا کارڈ جس میں اس کی تاریخ پیدائش ہو ، موجود ہے اگر کارڈ موجود ہے تو جوابدہندہ سے پوچھ کر اطمینان کر لیں کہ تاریخ پیدائش صحیح ہے۔</string>
-    <string name="cic202">   (НОМ) дар рузи таваллуди охирон чанд сола шуд?
+    <string name="cic201info">АГАР МУСОҲИБ РУЗИ АНИҚИ ТАВАЛЛУДИ КУДАКРО НАДОНАД, ПУРСЕД: Оё (НОМ) корти тиббӣ/эмкунӣ, ки дар он рузи таваллуд қайд карда шудааст дорад? АГАР КОРТИ ТИББӢ/ЭМКУНӢ НИШОН ДОДА ШАВАД ВА МУСОҲИБ ТАСДИҚ КУНАД, КИ МАЪЛУМОТИ КОРТ САҲЕҲ АСТ, РУЗИ ТАВАЛЛУДРО АЗ КОРТ НАВИСЕД</string>
+    <string name="cic202"> (НОМ) дар рузи таваллуди охирон чанд сола шуд?
 
  </string>
     <string name="cic202a">Камтар аз 1 сол </string>
@@ -1185,21 +1183,21 @@
     <string name="cic215g">  Шавлаисероб </string>
     <string name="cic215h"> Дигар ғизои моеъ (номгуи дигар ғизоҳои моеъро, ки дар маҳал ҳастанд, номбар кунед)  </string>
     <string name="cic215i"> Дигар </string>
-    <string name="cic217">۔C217 -  کیا (۔Name) ے گزشتہ کل دن اور رات  گھر میں یا گھر سے باہر کچھ کھایا- اگر ہاں تو مندرجہ زیل میں سے تفصیلات نوٹ کریں۔ </string>
-    <string name="cic217a"> روٹی چاول،نوڈلس،کچھٹری،اور خوراک جو اناج سے بنی ہو </string>
-    <string name="cic217b"> کدو،گاجر،اسکوئش یامیٹھاآلو یا جو کہ اندر سے پیلا یا نارنجی ہو </string>
-    <string name="cic217c"> سفید آلو،شکر قندی یا جڑسے بنائی گئی دوسرے کھانے کے اشیاء </string>
-    <string name="cic217d"> کوئی بھی گہری ہری پتی دار سبزیاں  </string>
+    <string name="cic217"> C217 -Лутфан ҳамаи ғизоҳоеро, ки (НОМ) дина шабона ва рузона дар хона ва ё берун истеъмол кардааст, номбар кунед.</string>
+    <string name="cic217a"> Шавла, нон, биринҷ, макаронёдигархӯрокҳоазғалладона </string>
+    <string name="cic217b"> Каду, сабзӣ, ёкартошкаи ширин, ки дохилаш зард аст </string>
+    <string name="cic217c"> Картошкаи сафед,ё дигар озуқа аз решаҳои сафед </string>
+    <string name="cic217d">Сабзавотҳои сабзранги тира</string>
     <string name="cic217e">  پکاہوا آم،پکا ہو پپیتا،یہ دیگر مقامی وٹامن اے سے بھرپور پھل شامل کریں </string>
-    <string name="cic217f">  کوئی دوسرے پھل یاسبزیاں </string>
-    <string name="cic217g">  جگر گردے،دل یا دوسرے اعضاء کا گوشت </string>
-    <string name="cic217h">  کوئی بھی گوشت جیسے بڑےگوشت بھیڑ،بکری ،مرغی</string>
-    <string name="cic217i">  انڈے </string>
-    <string name="cic217j"> مچھلی  یا خول والی مچھلی تازہ یا  خشک </string>
-    <string name="cic217k"> Шир, ёгурт ва дигар маҳсулоти ширӣ </string>
-    <string name="cic217l">  پنیر دہی  یا دودھ سے بنی  ہوئی دیگر  اشیاء </string>
-    <string name="cic217m">  کوئی تیل، چکنائی، مکھن یا ان سے بنے ہوے کھانے </string>
-    <string name="cic217n">  شکر والی اشیاء جیسے چاکلیٹ، میٹھی ٹافیاں، پیسٹری، کیک اور بسکٹ وغیرہ </string>
+    <string name="cic217f">  Ягон мева ё сабзавот </string>
+    <string name="cic217g">  Ҷигар, гурда, дил, шуш ё дигар гушти узвҳо </string>
+    <string name="cic217h"> Гӯшти чорво ва мурғ, аз ҷумла гӯшти гов, гӯсфанд, буз, харгӯш, мурғ, мурғобӣ ва дигар паррандаҳо </string>
+    <string name="cic217i">  Тухм </string>
+    <string name="cic217j"> Моҳии тарутоза ё хушккардашуда, ё ки ғизои баҳрӣ (ё консервшуда) </string>
+    <string name="cic217k"> Ягон хурок аз лубиё (фасол, боқило) ё нахуди расидагӣ (донаи тарутоза ё хушк), маҳсулоти наск </string>
+    <string name="cic217l">  Панир, ёгурт ва дигар маҳсулоти ширӣ </string>
+    <string name="cic217m">  Ягон намуди равған, чарб, маска/равғани зард ё хӯрокҳое, ки аз инҳо омода шудаанд. </string>
+    <string name="cic217n">  Маҳсулотҳо аз шакар, ба мисоли шоколад, ширинӣ, торт ё кулчақанд </string>
     <string name="cic217o">  مصالحے ، مرچ، مچھلی پائوڈر وغیرہ </string>
     <string name="cic217p">  گھونگے یا کیڑے وغیرہ  </string>
     <string name="cic217q">پام  کے تیل یا گودے سے بنی غذائیں  </string>
@@ -1284,8 +1282,8 @@
     <string name="cic3response"> Ҷавоб </string>
     <string name="cic3src"> Манбаъ </string>
 
-    <string name="cic305">۔C305- کیا بچہ(۔Name) نےکبھی پولیو مہم کے دوران پولیو سے بچاؤ کے قطر ے پیئے ہیں؟ </string>
-    <string name="cic306">۔C306- کیابچے (۔Name) کو پچھلی  پولیو مہم میں پولیو کے قطرے پلائے گئے تھے؟</string>
+    <string name="cic305">C305 -Оё (НОМ) прививкаи (эми) фалаҷро дар вақти гузаронидани рӯзи маъракаи миллии эмгузаронӣ,ки кудакро аз касалии фалаҷ эмин медорад,гирифтааст?</string>
+    <string name="cic306">C306 -Оё ном қатраи фалаҷро дар вақти маъракаи эмгузаронии охирон гирифт?</string>
     <string name="cic307">۔C307 - کیا پولیو کے پہلے قطرے بچے کی پیدائش کے بعدپہلے 2 ہفتوں میں دئے گئے تھےیابعد میں ؟</string>
     <string name="cic307a"> پہلے دو ہفتے </string>
     <string name="cic307b"> بعد میں </string>
@@ -1300,19 +1298,19 @@
     <string name="cic316">۔C316 - کیابچے (۔Name) کو پچھلے پولیو مہم میں پولیو کے قطرے پلائے گئے تھے؟</string>
 
     <string name="cic4heading"> ҚИСМИC4: ФАВТ ВА ТАБОБАТИ БЕМОРИҲО</string>
-    <string name="cic401">  ۔C401 -  کیا (۔Name) Кудак дар ду ҳафтаи охир дарунравӣ дошт? </string>
-    <string name="cic402">  ۔C402 - Оё шумо барои табобати дарунравӣ ба ягон кас/ҷоймуроҷиаткардед? </string>
-    <string name="cic403">  ۔C402a - Барои чӣ шумо барои табобати дарунравӣ муроҷиат накардед?   </string>
-    <string name="cic403a">       Ин касалиро ҷидди қабул намекунад</string>
-    <string name="cic403b">       Маблағ нест </string>
-    <string name="cic403c">       Вақт нест </string>
-    <string name="cic403d">       Масофаи дур ба муассиаси таббӣ   </string>
-    <string name="cic403e">       Ягон кас дар хона барои бурдан нест  </string>
+    <string name="cic401"> C401 -Кудак дар ду ҳафтаи охир дарунравӣ дошт? </string>
+    <string name="cic402"> C402 -Оё шумо барои табобати дарунравӣ ба ягон кас/ҷоймуроҷиаткардед? </string>
+    <string name="cic403"> C402a -Барои чӣ шумо барои табобати дарунравӣ муроҷиат накардед?</string>
+    <string name="cic403a"> Ин касалиро ҷидди қабул намекунад</string>
+    <string name="cic403b"> Маблағ нест </string>
+    <string name="cic403c"> Вақт нест </string>
+    <string name="cic403d"> Масофаи дур ба муассиаси таббӣ   </string>
+    <string name="cic403e"> Ягон кас дар хона барои бурдан нест  </string>
     <string name="cic403f">Ба куҷо муроҷиат карданро намедонад</string>
     <string name="cic403g">Сабабҳои оилавӣ/суннатӣ</string>
     <string name="cic403h">Ба духтурон/кормандони тиб боварӣ нест</string>
 
-    <string name="cic404">  ۔C403 - Шумо барои табобати дарунравӣ ба куҷо муроҷиат кардед? </string>
+    <string name="cic404">  C403 -Шумо барои табобати дарунравӣ ба куҷо муроҷиат кардед? </string>
     <string name="cic404sub1"> Бахши давлатӣ </string>
     <string name="cic404sub2">Бахши хусусӣ</string>
     <string name="cic404sub3"> Дигар манбаъ </string>
@@ -1337,7 +1335,7 @@
     <string name="cic4049602"> Хусусии дигар (аниқ кунед)  </string>
     <string name="cic4049603"> Дигар (аниқ кунед)  </string>
 
-    <string name="cic405">  ۔C404 - Барои табобати дарунравӣ шумо ба кудак чӣ додед?  </string>
+    <string name="cic405">  C404 -Барои табобати дарунравӣ шумо ба кудак чӣ додед? </string>
     <string name="cic405a">Регидрон </string>
     <string name="cic405sub1"> Ҳаб ё сироп </string>
     <string name="cic405b"> Антибиотик </string>
