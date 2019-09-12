@@ -107,6 +107,8 @@ public class LoginActivity extends MenuActivity implements LoaderCallbacks<Curso
     ImageView showPassword;
     @BindView(R.id.testing)
     TextView testing;
+    @BindView(R.id.regionTxt)
+    TextView regionTxt;
 
     @BindView(R.id.signup)
     Button signup;
@@ -344,6 +346,35 @@ public class LoginActivity extends MenuActivity implements LoaderCallbacks<Curso
             testing.setVisibility(View.GONE);
         } else {
             testing.setVisibility(View.VISIBLE);
+        }
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+//      Region Specific Text
+        showRegionText();
+    }
+
+    void showRegionText() {
+        HashMap<String, String> tagVal = MainApp.getTagValues(this);
+        String country = tagVal.get("org") != null ? tagVal.get("org").equals("null") ? "0" : tagVal.get("org").equals("") ? "0" : tagVal.get("org") : "0";
+        switch (Integer.valueOf(country)) {
+            case 1:
+                regionTxt.setText("Afghanistan Region");
+                break;
+            case 2:
+                regionTxt.setText("Pakistan Region");
+                break;
+            case 3:
+                regionTxt.setText("Tajikistan Region");
+                break;
+            default:
+                regionTxt.setText("Neutral Region");
+                break;
+
         }
     }
 

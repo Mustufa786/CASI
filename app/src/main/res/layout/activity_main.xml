@@ -75,6 +75,18 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/lblWelcomeUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="Welcome"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
                 android:id="@+id/recordSummary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

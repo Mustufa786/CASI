@@ -560,7 +560,7 @@ public class SectionC3Activity extends Menu2Activity implements RadioGroup.OnChe
 
 
 //        cic3pcv3
-        if (userCountryTajik_Child) {
+        if (!userCountryTajik_Child) {
             if (!ValidatorClass.EmptyRadioButton(this, binding.cic3pcv3, binding.cic3pcv3a, getString(R.string.cic3pcv3) + getString(R.string.cic3response))) {
                 return false;
             }

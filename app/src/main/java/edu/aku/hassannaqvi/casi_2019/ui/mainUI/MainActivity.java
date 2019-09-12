@@ -370,6 +370,9 @@ public class MainActivity extends MenuActivity {
 
         registerReceiver(broadcastReceiver, new IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE));
 
+//        Welcome Note
+        mainBinding.lblWelcomeUser.setText("Welcome " + MainApp.userName);
+
     }
 
     void changeLanguage() {
