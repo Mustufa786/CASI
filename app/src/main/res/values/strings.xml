@@ -55,8 +55,8 @@
     <!--<string name="female"> занона </string>-->
     <string name="yes"> ҳа </string>
     <string name="no"> Не </string>
-    <string name="card">Мувофиқи корт</string>
-    <string name="recall">Ба гуфти модар</string>
+    <string name="card">Корт</string>
+    <string name="recall">Хотира</string>
     <string name="dkn"> Намедонам </string>
     <string name="dkn2"> Намедонам / ёд надоред</string>
     <string name="none">Об дар хона дастрас аст ё об дар хона дода мешавад </string>
@@ -1228,8 +1228,8 @@
     <string name="cic301b"> Синну сол 12-23 </string>
     <string name="cic301c"> Синну сол 24-35  </string>
     <string name="cic301d"> Синну сол 36-59 </string>
-    <string name="cic302">C402 - Кудак корти милии эмкунӣ дорад, ки ҳамаи эмкуниҳои (НОМ) дар он сабт шудааст</string>
-    <string name="cic303">C403 - Мумкин аст ман кортр ё ягон ҳуҷҷати дигаре, ки дар эмкунӣ қайд шудааст, бинам</string>
+    <string name="cic302">C302 - Кудак корти милии эмкунӣ дорад, ки ҳамаи эмкуниҳои (НОМ) дар он сабт шудааст</string>
+    <string name="cic303">C303 - Мумкин аст ман кортр ё ягон ҳуҷҷати дигаре, ки дар эмкунӣ қайд шудааст, бинам</string>
     <string name="cic303info">C403 - دی گئی ہر کارڈ یا پرچہ سے ویکسین کی تاریخ نوٹ کریں؟ (c) اگردن کے کالم میں 44 لکھیں اگر کارڈ میں ویکسین دینے کی تاریخ نہ لکھی ہو</string>
     <string name="cic303a"> Ҳа, фақат корт дида шуд </string>
     <string name="cic303b"> Ҳа, фақат дигар ҳуҷҷат дида шуд</string>
@@ -1345,6 +1345,7 @@
     <string name="cic4049602"> Хусусии дигар (аниқ кунед)  </string>
     <string name="cic4049603"> Дигар (аниқ кунед)  </string>
 
+
     <string name="cic405">  C404 -Барои табобати дарунравӣ шумо ба кудак чӣ додед? </string>
     <string name="cic405a">Регидрон </string>
     <string name="cic405sub1"> Ҳаб ё сироп </string>
@@ -1362,11 +1363,14 @@
     <string name="cic406">  C405 - Оё кудак дар ду ҳафтаи охир касалии роҳҳои нафас дошт?</string>
     <string name="cic407">  C406 - Оё шумо барои табобати касалии роҳҳои нафас ба ягон кас ё ҷой муроҷиат кардед?</string>
     <string name="cic408">  C406a - Барои чӣ шумо барои табобати табобати сирояти шадиди роҳҳои нафас муроҷиат накардед?   </string>
-    <string name="cic408a">       Ин касалиро ҷидди қабул намекунад</string>
-    <string name="cic408b">       Маблағ нест </string>
-    <string name="cic408c">       Вақт нест </string>
-    <string name="cic408d">       Масофаи дур ба муассиаси таббӣ   </string>
-    <string name="cic408e">       Ягон кас дар хона барои бурдан нест  </string>
+    <string name="cic408a"> Ин касалиро ҷидди қабул намекунад</string>
+    <string name="cic408b"> Ба куҷо муроҷиат карданро намедонад</string>
+    <string name="cic408c"> Маблағ нест</string>
+    <string name="cic408d"> Вақт нест</string>
+    <string name="cic408e"> Масофаи дур ба муассиаси таббӣ</string>
+    <string name="cic408f"> Ягон кас дар хона барои бурдан нест</string>
+    <string name="cic408g"> Сабабҳои оилавӣ/суннатӣ</string>
+    <string name="cic408h"> Ба духтурон/кормандони тиб боварӣ нест</string>
 
     <string name="cic409">  C407 Шумо ба кӣ/куҷо барои табобати касалии роҳҳои нафасмуроҷиат кардед? </string>
     <string name="cic409sub1"> Бахши давлатӣ </string>
@@ -1393,16 +1397,16 @@
     <string name="cic4099602"> Хусусии дигар (аниқ кунед)  </string>
     <string name="cic4099603"> Дигар (аниқ кунед)  </string>
 
-    <string name="cic410">  C408 -Барои табобати касалии роҳҳои нафас шумо ба кудак чӣ додед?  </string>
-    <string name="cic410sub1">Ҳаб ё сироп </string>
-    <string name="cic410a"> اАнтибиотик </string>
-    <string name="cic410b"> Антиперисталтик</string>
-    <string name="cic410sub2"> Цинк </string>
-    <string name="cic410c"> Ҳаб ё сиропи номаълум </string>
-    <string name="cic410d">  Сузандоруи номаълум</string>
-    <string name="cic410e"> Антибиотик </string>
-    <string name="cic410f"> Ба дохили рагҳои ворид </string>
-    <string name="cic410g">Табобати хонагӣ /гиёҳҳо </string>
+    <string name="cic410">  C408 -Барои табобати касалии роҳҳои нафас шумо ба кудак чӣ додед? \n [Якчанд ҷавоб мумкин аст] </string>
+    <string name="cic410sub1">Ҳаб ё сироп</string>
+    <string name="cic410a"> Антибиотик</string>
+    <string name="cic410b">   Ҳаб ё сиропи номаълум</string>
+    <string name="cic410sub2">Сузандору</string>
+    <string name="cic410c">   Антибиотик</string>
+    <string name="cic410d">   Ғайри антибиотик</string>
+    <string name="cic410e">   Сузандоруи номаълум</string>
+    <string name="cic410f">   Ба дохили рагҳои ворид</string>
+    <string name="cic410g">   Табобати хонагӣ /гиёҳҳо</string>
     <string name="cic4109601"> Дигар (дигар) </string>
     <string name="cic411">  C409 -Дар давоми ду ҳафтаи охир кудак табларза дошт?</string>
     <string name="cic412">  C410 - Оё шумо барои табобати табларза ба ягон кас ё ҷой муроҷиат кардед? </string>
@@ -1433,17 +1437,17 @@
     <string name="cic4149602"> Хусусии дигар (аниқ кунед)  </string>
     <string name="cic4149603"> Дигар (аниқ кунед)  </string>
 
-    <string name="cic415">C412 -Барои табобати табларза шумо ба кудак чӣ додед?   </string>
-    <string name="cic415sub1">Ҳаб ё сироп </string>
-    <string name="cic415a"> اАнтибиотик </string>
-    <string name="cic415b"> Антиперисталтик</string>
-    <string name="cic415sub2"> Цинк </string>
-    <string name="cic415c"> Ҳаб ё сиропи номаълум </string>
-    <string name="cic415d">  Сузандоруи номаълум</string>
-    <string name="cic415e"> Антибиотик </string>
-    <string name="cic415f"> Ба дохили рагҳои ворид </string>
-    <string name="cic415g">Табобати хонагӣ /гиёҳҳо </string>
-    <string name="cic415h">Табобати хонагӣ /гиёҳҳо </string>
+    <string name="cic415">C412 -Барои табобати табларза шумо ба кудак чӣ додед?\n [Якчанд ҷавоб мумкин аст]  </string>
+    <string name="cic415sub1">  Ҳаб ё сироп </string>
+    <string name="cic415a">Антибиотик </string>
+    <string name="cic415b">     Антиперисталтик </string>
+    <string name="cic415sub2">  Ҳаб ё сиропи номаълум </string>
+    <string name="cic415c">     Сузандору </string>
+    <string name="cic415d">     Антибиотик </string>
+    <string name="cic415e">     Ғайри антибиотик </string>
+    <string name="cic415f">     Сузандоруи номаълум </string>
+    <string name="cic415g">     Ба дохили рагҳои ворид </string>
+    <string name="cic415h">     Табобати хонагӣ /гиёҳҳо </string>
     <string name="cic4159601"> Дигар (дигар) </string>
     <!--<string name="cic4159601">Дигар (дигар) </string>-->
     <string name="cic416">C413 -Оё ба (НОМ) дар давоми шаш моҳи охир барои табобати кирми руда ягон дору дода шуд?  </string>
@@ -1452,11 +1456,11 @@
     <string name="cic419">C416 -Миқдори витамини А, ки ба (НОМ дода шуд, чӣ қадар буд? </string>
     <string name="cic419a"> Миқдор </string>
     <string name="cic420">C417 -Кай бори охир ба (НОМ) витамини А дода шуд?</string>
-    <string name="cic420a">Як ҳафта пеш </string>
+    <string name="cic420a"> Як ҳафта пеш </string>
     <string name="cic420b"> Як моҳ пеш </string>
-    <string name="cic420c">Се моҳ пеш</string>
-    <string name="cic420d"> Шаш моҳ пеш</string>
-    <string name="cic420e"> Як сол пеш</string>
+    <string name="cic420c"> Дар давоми се моҳи охир </string>
+    <string name="cic420d"> Дар давоми шаш моҳи охир </string>
+    <string name="cic420e"> Беш аз як сол пеш </string>
     <string name="cic421">C418 -Оё ба (НОМ) ягон бор микроэлементҳо дода шудааст? </string>
     <string name="cic422">C419 - Чӣ қадар зуд ба (НОМ) микроэлементҳо дода шуд?</string>
     <string name="cic422a"> Ҳар руз </string>

@@ -1,7 +1,5 @@
 package edu.aku.hassannaqvi.casi_2019.ui.childs;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
@@ -100,7 +98,6 @@ public class ChildEndingActivity extends AppCompatActivity {
     private void SaveDraft() {
 
 
-
         MainApp.cc.setCstatus(binding.istatusa.isChecked() ? "1"
                 : binding.istatusb.isChecked() ? "2"
                 : binding.istatusc.isChecked() ? "3"
@@ -156,26 +153,7 @@ public class ChildEndingActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
-                ChildEndingActivity.this);
-        alertDialogBuilder
-                .setMessage("Are you sure to go BACK??")
-                .setCancelable(false)
-                .setPositiveButton("Ok",
-                        new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog,
-                                                int id) {
-                                ChildEndingActivity.super.onBackPressed();
-                            }
-                        });
-        alertDialogBuilder.setNegativeButton("Cancel",
-                new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                        dialog.cancel();
-                    }
-                });
-        AlertDialog alert = alertDialogBuilder.create();
-        alert.show();
+        Toast.makeText(this, "You can't go back.", Toast.LENGTH_SHORT).show();
     }
 
 

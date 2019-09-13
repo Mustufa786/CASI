@@ -150,9 +150,9 @@ public class SectionC3Activity extends Menu2Activity implements RadioGroup.OnChe
             binding.fldGrpc303d.setVisibility(View.VISIBLE);
             binding.fldGrpc303a.setVisibility(View.GONE);
             binding.fldGrpc303b.setVisibility(View.GONE);
-            binding.fldGrpc303c.setVisibility(View.GONE);
         }
 
+        binding.fldGrpc303c.setVisibility(View.GONE);
     }
 
     private void autoPopulateFields() {

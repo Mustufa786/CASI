@@ -13,14 +13,11 @@ import org.json.JSONObject;
 import java.text.SimpleDateFormat;
 import java.util.Timer;
 
-import edu.aku.hassannaqvi.casi_2019.JSONModels.JSONC4ModelClass;
 import edu.aku.hassannaqvi.casi_2019.R;
-import edu.aku.hassannaqvi.casi_2019.contracts.ChildContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.FamilyMembersContract;
 import edu.aku.hassannaqvi.casi_2019.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2019.core.MainApp;
 import edu.aku.hassannaqvi.casi_2019.databinding.ActivitySectionC4Binding;
-import edu.aku.hassannaqvi.casi_2019.other.JSONUtilClass;
 import edu.aku.hassannaqvi.casi_2019.ui.mainUI.Menu2Activity;
 import edu.aku.hassannaqvi.casi_2019.ui.viewMem.ViewMemberActivity;
 import edu.aku.hassannaqvi.casi_2019.ui.wra.SectionB1Activity;
@@ -28,7 +25,6 @@ import edu.aku.hassannaqvi.casi_2019.validation.ClearClass;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
 import static edu.aku.hassannaqvi.casi_2019.ui.childs.SectionC1Activity.userCountryTajik_Child;
-import static edu.aku.hassannaqvi.casi_2019.ui.wra.SectionB1Activity.userCountryTajik;
 
 public class SectionC4Activity extends Menu2Activity {
 
@@ -43,13 +39,12 @@ public class SectionC4Activity extends Menu2Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_c4);
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_section_c4);
         db = new DatabaseHelper(this);
 
         this.setTitle(getResources().getString(R.string.cic4heading));
-//
+
         if (SectionC1Activity.editChildFlag) {
             binding.textName.setText(SectionC1Activity.selectedChildName + " : " + getString(R.string.childname)
                     + "\n\n" + SectionC1Activity.editMotherName);
@@ -62,7 +57,7 @@ public class SectionC4Activity extends Menu2Activity {
                         + "\n\n" + SectionC1Activity.careTaker);
             }
         }
-//
+
         binding.txtcic401.setText(binding.txtcic401.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
         binding.txtcic402.setText(binding.txtcic402.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
         binding.txtcic403.setText(binding.txtcic403.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
@@ -78,29 +73,12 @@ public class SectionC4Activity extends Menu2Activity {
         binding.txtcic413.setText(binding.txtcic413.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
         binding.txtcic414.setText(binding.txtcic414.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
         binding.txtcic415.setText(binding.txtcic415.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        binding.txtcic416.setText(binding.txtcic416.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        binding.txtcic417.setText(binding.txtcic417.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        binding.txtcic418.setText(binding.txtcic418.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        binding.txtcic419.setText(binding.txtcic419.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
-        binding.txtcic420.setText(binding.txtcic420.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
 
 
-//        //        Assigning data to UI binding
+//      Assigning data to UI binding
         binding.setCallback(this);
 
         setupViews();
-
-        /*Only for Tajik*/
-        if (!userCountryTajik_Child) {
-            binding.cic403f.setVisibility(View.GONE);
-            binding.cic403g.setVisibility(View.GONE);
-            binding.cic403h.setVisibility(View.GONE);
-
-            binding.cic404n.setVisibility(View.GONE);
-            binding.cic404o.setVisibility(View.GONE);
-            binding.cic404p.setVisibility(View.GONE);
-            binding.cic404q.setVisibility(View.GONE);
-        }
 
     }
 
@@ -232,92 +210,70 @@ public class SectionC4Activity extends Menu2Activity {
             }
         });
 
-        binding.cic418.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-
-                if (checkedId == binding.cic418b.getId()) {
-                    binding.fldGrpcic419.setVisibility(View.GONE);
-                    binding.fldGrpcic420.setVisibility(View.GONE);
-                    ClearClass.ClearAllFields(binding.fldGrpcic420, null);
-                    ClearClass.ClearAllFields(binding.fldGrpcic419, null);
-                } else {
-                    binding.fldGrpcic419.setVisibility(View.VISIBLE);
-                    binding.fldGrpcic420.setVisibility(View.VISIBLE);
-
-                }
-            }
-        });
-
-        binding.cic421.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-
-                if (checkedId == binding.cic421b.getId()) {
-                    binding.fldGrpcic422.setVisibility(View.GONE);
-                    binding.fldGrpcic423.setVisibility(View.GONE);
-                    ClearClass.ClearAllFields(binding.fldGrpcic422, null);
-                    ClearClass.ClearAllFields(binding.fldGrpcic423, null);
-                } else {
-                    binding.fldGrpcic422.setVisibility(View.VISIBLE);
-                    binding.fldGrpcic423.setVisibility(View.VISIBLE);
-
-
-                }
-            }
-        });
-
 
         //Get Intent
         selectedChild = (FamilyMembersContract) getIntent().getSerializableExtra("selectedChild");
 
-//        binding.cic403.setOnCheckedChangeListener(this);
-//        binding.cic404a.setOnCheckedChangeListener(this);
-//        binding.cic407.setOnCheckedChangeListener(this);
-//        binding.cic408b.setOnCheckedChangeListener(this);
-//        binding.cic411.setOnCheckedChangeListener(this);hid
-//        binding.cic412b.setOnCheckedChangeListener(this);
-//        binding.cic413.setOnCheckedChangeListener(this);
-//        binding.cic414.setOnCheckedChangeListener(this);
-//        //binding.cic415.setOnCheckedChangeListener(this);
-//        binding.cic416.addTextChangedListener(this);
-//        binding.cic417.setOnCheckedChangeListener(this);
-//        //binding.cic418.setOnCheckedChangeListener(this);
-//        binding.cic419.setOnCheckedChangeListener(this);
-//        binding.cic420m.addTextChangedListener(this);
-//        binding.cic420d.addTextChangedListener(this);
-
 //        Validation Boolean
         MainApp.validateFlag = false;
 
-        autoPopulateFields();
+//        autoPopulateFields();
+
 
         /*Only For Tajik*/
-        binding.cic403f.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        binding.cic403g.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        binding.cic403h.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        binding.cic408f.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        binding.cic408g.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        binding.cic408h.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        binding.cic413f.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        binding.cic413g.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        binding.cic413h.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        binding.cic404n.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        binding.cic404o.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        binding.cic404p.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        binding.cic404q.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        binding.cic409n.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        binding.cic409o.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        binding.cic409p.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        binding.cic409q.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        binding.cic414n.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        binding.cic414o.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        binding.cic414p.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        binding.cic414q.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        binding.cic403f.setVisibility(userCountryTajik_Child ? View.VISIBLE : View.GONE);
+        binding.cic403g.setVisibility(userCountryTajik_Child ? View.VISIBLE : View.GONE);
+        binding.cic403h.setVisibility(userCountryTajik_Child ? View.VISIBLE : View.GONE);
+
+        binding.cic408f.setVisibility(userCountryTajik_Child ? View.VISIBLE : View.GONE);
+        binding.cic408g.setVisibility(userCountryTajik_Child ? View.VISIBLE : View.GONE);
+        binding.cic408h.setVisibility(userCountryTajik_Child ? View.VISIBLE : View.GONE);
+
+        binding.cic413f.setVisibility(userCountryTajik_Child ? View.VISIBLE : View.GONE);
+        binding.cic413g.setVisibility(userCountryTajik_Child ? View.VISIBLE : View.GONE);
+        binding.cic413h.setVisibility(userCountryTajik_Child ? View.VISIBLE : View.GONE);
+
+
+        if (userCountryTajik_Child) {
+
+            binding.cic404.setVisibility(View.GONE);
+            binding.cic40401.setVisibility(View.VISIBLE);
+
+            binding.cic405txt02.setVisibility(View.VISIBLE);
+            binding.cic405txt01.setVisibility(View.GONE);
+
+            binding.cic409.setVisibility(View.GONE);
+            binding.cic40901.setVisibility(View.VISIBLE);
+
+            binding.cic414.setVisibility(View.GONE);
+            binding.cic41401.setVisibility(View.VISIBLE);
+
+            binding.cic415txt02.setVisibility(View.VISIBLE);
+            binding.cic415txt01.setVisibility(View.GONE);
+
+        } else {
+
+            binding.cic404.setVisibility(View.VISIBLE);
+            binding.cic40401.setVisibility(View.GONE);
+
+            binding.cic405txt02.setVisibility(View.GONE);
+            binding.cic405txt01.setVisibility(View.VISIBLE);
+
+            binding.cic409.setVisibility(View.VISIBLE);
+            binding.cic40901.setVisibility(View.GONE);
+
+            binding.cic414.setVisibility(View.VISIBLE);
+            binding.cic41401.setVisibility(View.GONE);
+
+            binding.cic415txt02.setVisibility(View.GONE);
+            binding.cic415txt01.setVisibility(View.VISIBLE);
+
+        }
+
 
     }
 
-    private void autoPopulateFields() {
+    /*private void autoPopulateFields() {
         ChildContract childContract = db.getsC4();
 
         if (!childContract.getsC4().equals("")) {
@@ -350,7 +306,7 @@ public class SectionC4Activity extends Menu2Activity {
             binding.cic40396x.setText(jsonC4.getcic4039601x());
 
 
-            /*if (!jsonC4.getcic404a().equals("0")) {
+            *//*if (!jsonC4.getcic404a().equals("0")) {
                 binding.cic404a.setChecked(true);
             }
             if (!jsonC4.getcic404b().equals("0")) {
@@ -409,7 +365,7 @@ public class SectionC4Activity extends Menu2Activity {
             }
             if (!jsonC4.getcic4049603().equals("0")) {
                 binding.cic4049603.setChecked(true);
-            }*/
+            }*//*
 
             binding.cic4049601x.setText(jsonC4.getcic40496x());
             binding.cic4049602x.setText(jsonC4.getcic40496x());
@@ -672,7 +628,7 @@ public class SectionC4Activity extends Menu2Activity {
             binding.cic423m.setText(jsonC4.getCic423m());
         }
 
-    }
+    }*/
 
 
     @Override
@@ -717,8 +673,8 @@ public class SectionC4Activity extends Menu2Activity {
                             .putExtra("hhno", MainApp.cc.getHhno())
                     );
                 } else {
-                    startActivity(new Intent(this, ChildEndingActivity.class)
-                            .putExtra("complete", true));
+                    startActivity(new Intent(this, SectionC402Activity.class)
+                            .putExtra("selectedChild", selectedChild));
                 }
 
             } else {
@@ -786,29 +742,53 @@ public class SectionC4Activity extends Menu2Activity {
 
 
 //     cic404
-        sC4.put("cic404", binding.cic404a.isChecked() ? "1"
-                : binding.cic404b.isChecked() ? "2"
-                : binding.cic404c.isChecked() ? "3"
-                : binding.cic404d.isChecked() ? "4"
-                : binding.cic404e.isChecked() ? "5"
-                : binding.cic4049601.isChecked() ? "961"
-                : binding.cic404g.isChecked() ? "7"
-                : binding.cic404h.isChecked() ? "8"
-                : binding.cic404i.isChecked() ? "9"
-                : binding.cic404j.isChecked() ? "10"
-                : binding.cic4049602.isChecked() ? "962"
-                : binding.cic404l.isChecked() ? "12"
-                : binding.cic404m.isChecked() ? "13"
-                : binding.cic404n.isChecked() ? "14"
-                : binding.cic404o.isChecked() ? "15"
-                : binding.cic404p.isChecked() ? "16"
-                : binding.cic404q.isChecked() ? "17"
-                : binding.cic4049603.isChecked() ? "963" :
-                "0");
+        if (!userCountryTajik_Child) {
+            sC4.put("cic404",
+                    binding.cic404a.isChecked() ? "1"
+                            : binding.cic404b.isChecked() ? "2"
+                            : binding.cic404c.isChecked() ? "3"
+                            : binding.cic404d.isChecked() ? "4"
+                            : binding.cic404e.isChecked() ? "5"
+                            : binding.cic4049601.isChecked() ? "961"
+                            : binding.cic404g.isChecked() ? "7"
+                            : binding.cic404h.isChecked() ? "8"
+                            : binding.cic404i.isChecked() ? "9"
+                            : binding.cic404j.isChecked() ? "10"
+                            : binding.cic4049602.isChecked() ? "962"
+                            : binding.cic404l.isChecked() ? "12"
+                            : binding.cic404m.isChecked() ? "13"
+                            : binding.cic4049603.isChecked() ? "963" :
+                            "0");
 
-        sC4.put("cic4049601x", binding.cic4049601x.getText().toString());
-        sC4.put("cic4049602x", binding.cic4049602x.getText().toString());
-        sC4.put("cic4049603x", binding.cic4049603x.getText().toString());
+            sC4.put("cic4049601x", binding.cic4049601x.getText().toString());
+            sC4.put("cic4049602x", binding.cic4049602x.getText().toString());
+            sC4.put("cic4049603x", binding.cic4049603x.getText().toString());
+        } else {
+            sC4.put("cic404",
+                    binding.cic40401a.isChecked() ? "1"
+                            : binding.cic40401b.isChecked() ? "2"
+                            : binding.cic40401c.isChecked() ? "3"
+                            : binding.cic40401d.isChecked() ? "4"
+                            : binding.cic40401e.isChecked() ? "5"
+                            : binding.cic404019601.isChecked() ? "961"
+                            : binding.cic40401g.isChecked() ? "7"
+                            : binding.cic40401h.isChecked() ? "8"
+                            : binding.cic40401i.isChecked() ? "9"
+                            : binding.cic40401j.isChecked() ? "10"
+                            : binding.cic404019602.isChecked() ? "962"
+                            : binding.cic40401l.isChecked() ? "12"
+                            : binding.cic40401m.isChecked() ? "13"
+                            : binding.cic40401n.isChecked() ? "14"
+                            : binding.cic40401o.isChecked() ? "15"
+                            : binding.cic40401p.isChecked() ? "16"
+                            : binding.cic40401q.isChecked() ? "17"
+                            : binding.cic404019603.isChecked() ? "963" :
+                            "0");
+
+            sC4.put("cic4049601x", binding.cic404019601x.getText().toString());
+            sC4.put("cic4049602x", binding.cic404019602x.getText().toString());
+            sC4.put("cic4049603x", binding.cic404019603x.getText().toString());
+        }
 
 
 //        cic405
@@ -853,31 +833,55 @@ public class SectionC4Activity extends Menu2Activity {
 
 
 //        cic409
-        sC4.put("cic409", binding.cic409a.isChecked() ? "1"
-                : binding.cic409b.isChecked() ? "2"
-                : binding.cic409c.isChecked() ? "3"
-                : binding.cic409d.isChecked() ? "4"
-                : binding.cic409e.isChecked() ? "5"
-                : binding.cic4099601.isChecked() ? "961"
-                : binding.cic409f.isChecked() ? "6"
-                : binding.cic409g.isChecked() ? "7"
-                : binding.cic409h.isChecked() ? "8"
-                : binding.cic409i.isChecked() ? "9"
-                : binding.cic409j.isChecked() ? "10"
-                : binding.cic4099602.isChecked() ? "962"
-                : binding.cic409k.isChecked() ? "11"
-                : binding.cic409l.isChecked() ? "12"
-                : binding.cic409m.isChecked() ? "13"
-                : binding.cic409n.isChecked() ? "14"
-                : binding.cic409o.isChecked() ? "15"
-                : binding.cic409p.isChecked() ? "16"
-                : binding.cic409q.isChecked() ? "17"
-                : binding.cic4099603.isChecked() ? "963" :
-                "0");
+        if (!userCountryTajik_Child) {
+            sC4.put("cic409", binding.cic409a.isChecked() ? "1"
+                    : binding.cic409b.isChecked() ? "2"
+                    : binding.cic409c.isChecked() ? "3"
+                    : binding.cic409d.isChecked() ? "4"
+                    : binding.cic409e.isChecked() ? "5"
+                    : binding.cic4099601.isChecked() ? "961"
+                    : binding.cic409f.isChecked() ? "6"
+                    : binding.cic409g.isChecked() ? "7"
+                    : binding.cic409h.isChecked() ? "8"
+                    : binding.cic409i.isChecked() ? "9"
+                    : binding.cic409j.isChecked() ? "10"
+                    : binding.cic4099602.isChecked() ? "962"
+                    : binding.cic409k.isChecked() ? "11"
+                    : binding.cic409l.isChecked() ? "12"
+                    : binding.cic409m.isChecked() ? "13"
+                    : binding.cic4099603.isChecked() ? "963" :
+                    "0");
 
-        sC4.put("cic4099601x", binding.cic4099601x.getText().toString());
-        sC4.put("cic4099602x", binding.cic4099602x.getText().toString());
-        sC4.put("cic4099603x", binding.cic4099603x.getText().toString());
+            sC4.put("cic4099601x", binding.cic4099601x.getText().toString());
+            sC4.put("cic4099602x", binding.cic4099602x.getText().toString());
+            sC4.put("cic4099603x", binding.cic4099603x.getText().toString());
+        } else {
+            sC4.put("cic409", binding.cic40901a.isChecked() ? "1"
+                    : binding.cic40901b.isChecked() ? "2"
+                    : binding.cic40901c.isChecked() ? "3"
+                    : binding.cic40901d.isChecked() ? "4"
+                    : binding.cic40901e.isChecked() ? "5"
+                    : binding.cic409019601.isChecked() ? "961"
+                    : binding.cic40901f.isChecked() ? "6"
+                    : binding.cic40901g.isChecked() ? "7"
+                    : binding.cic40901h.isChecked() ? "8"
+                    : binding.cic40901i.isChecked() ? "9"
+                    : binding.cic40901j.isChecked() ? "10"
+                    : binding.cic409019602.isChecked() ? "962"
+                    : binding.cic40901k.isChecked() ? "11"
+                    : binding.cic40901l.isChecked() ? "12"
+                    : binding.cic40901m.isChecked() ? "13"
+                    : binding.cic40901n.isChecked() ? "14"
+                    : binding.cic40901o.isChecked() ? "15"
+                    : binding.cic40901p.isChecked() ? "16"
+                    : binding.cic40901q.isChecked() ? "17"
+                    : binding.cic409019603.isChecked() ? "963" :
+                    "0");
+
+            sC4.put("cic4099601x", binding.cic409019601x.getText().toString());
+            sC4.put("cic4099602x", binding.cic409019602x.getText().toString());
+            sC4.put("cic4099603x", binding.cic409019603x.getText().toString());
+        }
 
 
 //          cic410
@@ -919,31 +923,53 @@ public class SectionC4Activity extends Menu2Activity {
 
 
 //      cic414
-        sC4.put("cic414", binding.cic414a.isChecked() ? "1"
-                : binding.cic414b.isChecked() ? "2"
-                : binding.cic414c.isChecked() ? "3"
-                : binding.cic414d.isChecked() ? "4"
-                : binding.cic414e.isChecked() ? "5"
-                : binding.cic4149601.isChecked() ? "961"
-                : binding.cic414f.isChecked() ? "6"
-                : binding.cic414g.isChecked() ? "7"
-                : binding.cic414h.isChecked() ? "8"
-                : binding.cic414i.isChecked() ? "9"
-                : binding.cic414j.isChecked() ? "10"
-                : binding.cic4149602.isChecked() ? "962"
-                : binding.cic414k.isChecked() ? "11"
-                : binding.cic414l.isChecked() ? "12"
-                : binding.cic414m.isChecked() ? "13"
-                : binding.cic414n.isChecked() ? "14"
-                : binding.cic414o.isChecked() ? "15"
-                : binding.cic414p.isChecked() ? "16"
-                : binding.cic414q.isChecked() ? "17"
-                : binding.cic4149603.isChecked() ? "963" :
-                "0");
+        if (!userCountryTajik_Child) {
+            sC4.put("cic414",
+                    binding.cic414a.isChecked() ? "1"
+                            : binding.cic414b.isChecked() ? "2"
+                            : binding.cic414c.isChecked() ? "3"
+                            : binding.cic414d.isChecked() ? "4"
+                            : binding.cic414e.isChecked() ? "5"
+                            : binding.cic4149601.isChecked() ? "961"
+                            : binding.cic414g.isChecked() ? "7"
+                            : binding.cic414h.isChecked() ? "8"
+                            : binding.cic414i.isChecked() ? "9"
+                            : binding.cic414j.isChecked() ? "10"
+                            : binding.cic4149602.isChecked() ? "962"
+                            : binding.cic414l.isChecked() ? "12"
+                            : binding.cic414m.isChecked() ? "13"
+                            : binding.cic4149603.isChecked() ? "963" :
+                            "0");
 
-        sC4.put("cic4149601x", binding.cic4149601x.getText().toString());
-        sC4.put("cic4149602x", binding.cic4149602x.getText().toString());
-        sC4.put("cic4149603x", binding.cic4149603x.getText().toString());
+            sC4.put("cic4149601x", binding.cic4149601x.getText().toString());
+            sC4.put("cic4149602x", binding.cic4149602x.getText().toString());
+            sC4.put("cic4149603x", binding.cic4149603x.getText().toString());
+        } else {
+            sC4.put("cic414",
+                    binding.cic41401a.isChecked() ? "1"
+                            : binding.cic41401b.isChecked() ? "2"
+                            : binding.cic41401c.isChecked() ? "3"
+                            : binding.cic41401d.isChecked() ? "4"
+                            : binding.cic41401e.isChecked() ? "5"
+                            : binding.cic414019601.isChecked() ? "961"
+                            : binding.cic41401g.isChecked() ? "7"
+                            : binding.cic41401h.isChecked() ? "8"
+                            : binding.cic41401i.isChecked() ? "9"
+                            : binding.cic41401j.isChecked() ? "10"
+                            : binding.cic414019602.isChecked() ? "962"
+                            : binding.cic41401l.isChecked() ? "12"
+                            : binding.cic41401m.isChecked() ? "13"
+                            : binding.cic41401n.isChecked() ? "14"
+                            : binding.cic41401o.isChecked() ? "15"
+                            : binding.cic41401p.isChecked() ? "16"
+                            : binding.cic41401q.isChecked() ? "17"
+                            : binding.cic414019603.isChecked() ? "963" :
+                            "0");
+
+            sC4.put("cic4149601x", binding.cic414019601x.getText().toString());
+            sC4.put("cic4149602x", binding.cic414019602x.getText().toString());
+            sC4.put("cic4149603x", binding.cic414019603x.getText().toString());
+        }
 
 
 //        cic415
@@ -958,62 +984,8 @@ public class SectionC4Activity extends Menu2Activity {
         sC4.put("cic41596", binding.cic41596.isChecked() ? "96" : "0");
         sC4.put("cic41596x", binding.cic41596x.getText().toString());
 
-
-//        cic416
-        sC4.put("cic416", binding.cic416a.isChecked() ? "1"
-                : binding.cic416b.isChecked() ? "2"
-                : binding.cic41698.isChecked() ? "98"
-                : "0");
-
-
-//        cic417
-        sC4.put("cic417", binding.cic417a.isChecked() ? "1"
-                : binding.cic417b.isChecked() ? "2"
-                : binding.cic41798.isChecked() ? "98"
-                : "0");
-
-
-//        cic418
-        sC4.put("cic418", binding.cic418a.isChecked() ? "1"
-                : binding.cic418b.isChecked() ? "2"
-                : binding.cic41898.isChecked() ? "98"
-                : "0");
-
-
-//        cic419
-        sC4.put("cic419", binding.cic419.getText().toString());
-
-
-//        cic420
-        sC4.put("cic420", binding.cic420a.isChecked() ? "1"
-                : binding.cic420b.isChecked() ? "2"
-                : binding.cic420c.isChecked() ? "3"
-                : binding.cic420d.isChecked() ? "4"
-                : binding.cic420e.isChecked() ? "5"
-                : "0");
-
-//        cic421
-        sC4.put("cic421", binding.cic421a.isChecked() ? "1"
-                : binding.cic421b.isChecked() ? "2"
-                : "0");
-
-//        cic422
-        sC4.put("cic422", binding.cic422a.isChecked() ? "1"
-                : binding.cic422b.isChecked() ? "2"
-                : binding.cic422c.isChecked() ? "3"
-                : binding.cic422d.isChecked() ? "4"
-                : binding.cic422e.isChecked() ? "5"
-                : "0");
-
-//        cic423m
-        sC4.put("cic423m", binding.cic423m.getText().toString());
-
-//       cic423a
-        sC4.put("cic423d", binding.cic423d.getText().toString());
-
         MainApp.cc.setsC4(String.valueOf(sC4));
 
-        //
     }
 
     private boolean UpdateDB() {
