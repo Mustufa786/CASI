@@ -60,7 +60,7 @@
     <string name="dkn"> نمی دانم </string>
     <string name="dkn2"> نمی دانم / یاد نہیں</string>
     <string name="none">آب در خانه در دسترس است یا آب در خانه تهیه می شود </string>
-    <string name="nofood">هیچ کدام از آنها خوردند</string>
+    <string name="other2"></string>
     <string name="count"> تعداد  </string>
     <string name="other">دیگر (مشخص نمایید)  </string>
     <string name="other1"> وضاحت کریں </string>
@@ -1475,7 +1475,18 @@
     <string name="cih616">  ۔H608a- چقدر گاهی واقع شده است؟</string>
     <string name="cih617">  ۔H609 -در چهار هفته گذشته آیا گاهی شما یا کدام عضو خانواده شما به علت عدم موجودیت غذا، تمام روز و شب را بدون خوردن غذا مانده اید؟  </string>
     <string name="cih618">  ۔H609a-  چقدر گاهی واقع شده است؟ </string>
+    <string name="cih601b"></string>
+    <string name="cih603b"></string>
+    <string name="cih605b"></string>
+    <string name="cih607b"></string>
+    <string name="cih609b"></string>
+    <string name="cih611b"></string>
+    <string name="cih613b"></string>
+    <string name="cih615b"></string>
+    <string name="cih617b"></string>
+
     <!--Section A7-->
+    <string name="sectionA701">Note: Interviewer will show the Food Products during the interview\n In past 30 days, did anyone in your household receive the following assistance? Ask one by one</string>
     <string name="benef"> تعداد مستفیدین </string>
     <string name="source">منبع</string>
     <string name="cih701">  H701 RUSF یا Wawamum برای اطفال </string>
@@ -1492,6 +1503,7 @@
     <string name="cih712">  ۔H712- محصولات برای حیوانات (ادویه، غذا) </string>
     <string name="cih713">  ۔H713- تعلیم تغذیوی </string>
     <!--Women Section 5-->
+    <string name="sectionB601">(This section will asked from any one WRA of the household)</string>
     <string name="ciw5h"> بخش 5:  مصرف غذا و تنوع رژیم غذای برای زنان سنین حاملگی  </string>
     <string name="ciw501">  ۔W501- چند مراتبه دیروزغذا خوردید: </string>
     <string name="ciw501h"> غذا  </string>
@@ -1521,6 +1533,7 @@
     <string name="ciw50307">  ۔W50307- شکر و عسل</string>
     <string name="ciw50308">  ۔W50308- روغن، چربی ها </string>
     <!--Child Section 5-->
+    <string name="sectionCA01">(For Under 2) </string>
     <string name="cich"> بخش C3: مصرف غذا و تنوع رژیم غذایی برای اطفال 2 – 5 ساله </string>
     <string name="cic501">  ۔C301- چند مراتبه دیروز غذا خوردید: ؟ </string>
     <string name="cic501h"> غذا  </string>

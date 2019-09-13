@@ -13,7 +13,15 @@
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
+        android:orientation="vertical"
         android:layout_height="match_parent">
+
+        <!--Heading-->
+        <TextView
+            style="@style/h_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sectionA701" />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -26,12 +34,10 @@
                 android:layoutDirection="ltr"
                 android:orientation="vertical">
 
-
                 <!--cih701-->
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
                     android:background="@color/colorPrimary"
                     android:text="@string/cih701"
                     android:textAppearance="?android:attr/textAppearanceLarge"

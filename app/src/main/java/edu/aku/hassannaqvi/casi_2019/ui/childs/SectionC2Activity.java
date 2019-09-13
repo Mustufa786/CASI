@@ -273,7 +273,6 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
 
         /*Only for Tajik*/
         if (userCountryTajik_Child) {
-            bi.fldGrpC217e.setVisibility(View.GONE);
             bi.fldGrpC217n.setVisibility(View.GONE);
             bi.cic211j.setVisibility(View.GONE);
         }
@@ -868,11 +867,10 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
             return false;
         }
 
-        if (!userCountryTajik_Child) {
-            if (!ValidatorClass.EmptyRadioButton(this, bi.cic217e, bi.cic217ea, getString(R.string.cic217e))) {
-                return false;
-            }
+        if (!ValidatorClass.EmptyRadioButton(this, bi.cic217e, bi.cic217ea, getString(R.string.cic217e))) {
+            return false;
         }
+
 
         if (!ValidatorClass.EmptyRadioButton(this, bi.cic217f, bi.cic217fa, getString(R.string.cic217f))) {
             return false;
@@ -911,6 +909,8 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
         }
 
         if (!userCountryTajik_Child) {
+
+
             if (!ValidatorClass.EmptyRadioButton(this, bi.cic217o, bi.cic217oa, getString(R.string.cic217o))) {
                 return false;
             }

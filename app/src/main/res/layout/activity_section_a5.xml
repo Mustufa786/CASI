@@ -660,14 +660,14 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="1dp"
-                            android:text="@string/other" />
+                            android:text="@string/other2" />
 
                         <EditText
                             android:id="@+id/cih50196x"
                             style="@style/textInput"
                             android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
                             android:enabled='@{cih50196.checked ? true : false}'
-                            android:hint="@string/other"
+                            android:hint="@string/other2"
                             android:text='@{cih50196.checked ? cih50196x.getText.toString : ""}' />
                     </RadioGroup>
 
@@ -852,7 +852,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="1dp"
                         android:layout_weight="1"
-                        android:text="@string/no" />
+                        android:text="@string/cih601b" />
                 </RadioGroup>
 
                 <!--cih602-->
@@ -943,7 +943,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="1dp"
                         android:layout_weight="1"
-                        android:text="@string/no" />
+                        android:text="@string/cih603b" />
                 </RadioGroup>
 
                 <!--cih604-->
@@ -1034,7 +1034,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="1dp"
                         android:layout_weight="1"
-                        android:text="@string/no" />
+                        android:text="@string/cih605b" />
                 </RadioGroup>
 
                 <!--cih606-->
@@ -1124,7 +1124,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="1dp"
                         android:layout_weight="1"
-                        android:text="@string/no" />
+                        android:text="@string/cih607b" />
                 </RadioGroup>
 
                 <!--cih608-->
@@ -1214,7 +1214,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="1dp"
                         android:layout_weight="1"
-                        android:text="@string/no" />
+                        android:text="@string/cih609b" />
                 </RadioGroup>
 
                 <!--cih610-->
@@ -1306,7 +1306,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="1dp"
                         android:layout_weight="1"
-                        android:text="@string/no" />
+                        android:text="@string/cih611b" />
                 </RadioGroup>
 
                 <!--cih612-->
@@ -1396,7 +1396,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="1dp"
                         android:layout_weight="1"
-                        android:text="@string/no" />
+                        android:text="@string/cih613b" />
                 </RadioGroup>
 
                 <!--cih614-->
@@ -1486,7 +1486,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="1dp"
                         android:layout_weight="1"
-                        android:text="@string/no" />
+                        android:text="@string/cih615b" />
                 </RadioGroup>
 
                 <!--cih616-->
@@ -1576,7 +1576,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="1dp"
                         android:layout_weight="1"
-                        android:text="@string/no" />
+                        android:text="@string/cih617b" />
                 </RadioGroup>
 
                 <!--cih618-->

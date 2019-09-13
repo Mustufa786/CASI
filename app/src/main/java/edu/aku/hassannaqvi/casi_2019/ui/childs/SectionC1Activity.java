@@ -89,7 +89,7 @@ public class SectionC1Activity extends AddMember_MenuActivity implements TextWat
         binding = DataBindingUtil.setContentView(this, R.layout.activity_section_c1);
         ButterKnife.bind(this);
 
-        this.setTitle(getResources().getString(R.string.cic1heading));
+        this.setTitle(getResources().getString(R.string.cic2heading));
         db = new DatabaseHelper(this);
         respName = new ArrayList<>();
         respName.add("....");

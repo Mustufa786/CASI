@@ -405,7 +405,7 @@
                 <com.edittextpicker.aliazaz.EditTextPicker
                     android:id="@+id/cih320"
                     style="@style/textInput"
-                    android:hint="@string/cih320"
+                    android:hint="@string/cih320a"
                     android:inputType="number"
                     android:maxLength="2"
                     app:maxValue="15"

@@ -64,7 +64,6 @@
                         android:id="@+id/txtcic206"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
                         android:background="@color/colorPrimary"
                         android:text="@string/cic206"
                         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -1941,7 +1940,7 @@
                             android:id="@+id/cic219x"
                             style="@style/textInput"
                             android:enabled="@{cic219a.checked ? true : false}"
-                            android:hint="@string/times"
+                            android:hint="@string/times2"
                             android:inputType="number"
                             android:maxLength="2"
                             android:text='@{cic219a.checked ? cic219x.getText.toString : ""}' />

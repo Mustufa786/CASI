@@ -211,8 +211,11 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
 
             binding.fldGrpA4a.setVisibility(View.GONE);
             binding.fldGrpA4b.setVisibility(View.GONE);
-
             binding.cih317d.setVisibility(View.GONE);
+            binding.cih317k.setVisibility(View.GONE);
+            binding.lblPipedWater.setVisibility(View.GONE);
+            binding.fldGrcih303.setVisibility(View.GONE);
+            binding.cih303q.setVisibility(View.GONE);
 
         }
 
@@ -580,17 +583,17 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
             }
             if (!jsonA4.getcih317().equals("0")) {
                 binding.cih317.check(
-                        jsonA4.getcih317().equals("1") ? binding.cih317a.getId() :
-                                jsonA4.getcih317().equals("2") ? binding.cih317b.getId() :
-                                        jsonA4.getcih317().equals("3") ? binding.cih317c.getId() :
-                                                jsonA4.getcih317().equals("4") ? binding.cih317c.getId() :
-                                                        jsonA4.getcih317().equals("5") ? binding.cih317c.getId() :
-                                                                jsonA4.getcih317().equals("6") ? binding.cih317c.getId() :
-                                                                        jsonA4.getcih317().equals("7") ? binding.cih317c.getId() :
-                                                                                jsonA4.getcih317().equals("8") ? binding.cih317c.getId() :
-                                                                                        jsonA4.getcih317().equals("9") ? binding.cih317c.getId() :
-                                                                                                jsonA4.getcih317().equals("10") ? binding.cih317c.getId() :
-                                                                                                        jsonA4.getcih317().equals("11") ? binding.cih317c.getId() :
+                        jsonA4.getcih317().equals("11") ? binding.cih317a.getId() :
+                                jsonA4.getcih317().equals("12") ? binding.cih317b.getId() :
+                                        jsonA4.getcih317().equals("21") ? binding.cih317c.getId() :
+                                                jsonA4.getcih317().equals("22") ? binding.cih317c.getId() :
+                                                        jsonA4.getcih317().equals("31") ? binding.cih317c.getId() :
+                                                                jsonA4.getcih317().equals("32") ? binding.cih317c.getId() :
+                                                                        jsonA4.getcih317().equals("33") ? binding.cih317c.getId() :
+                                                                                jsonA4.getcih317().equals("34") ? binding.cih317c.getId() :
+                                                                                        jsonA4.getcih317().equals("35") ? binding.cih317c.getId() :
+                                                                                                jsonA4.getcih317().equals("36") ? binding.cih317c.getId() :
+                                                                                                        jsonA4.getcih317().equals("37") ? binding.cih317c.getId() :
                                                                                                                 binding.cih31796.getId()
                 );
             }
@@ -1083,17 +1086,17 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
                 : "0");
 
 //        cih317
-        sA4.put("cih317", binding.cih317a.isChecked() ? "1"
-                : binding.cih317b.isChecked() ? "2"
-                : binding.cih317c.isChecked() ? "3"
-                : binding.cih317d.isChecked() ? "4"
-                : binding.cih317e.isChecked() ? "5"
-                : binding.cih317f.isChecked() ? "6"
-                : binding.cih317g.isChecked() ? "7"
-                : binding.cih317h.isChecked() ? "8"
-                : binding.cih317i.isChecked() ? "9"
-                : binding.cih317j.isChecked() ? "10"
-                : binding.cih317k.isChecked() ? "11"
+        sA4.put("cih317", binding.cih317a.isChecked() ? "11"
+                : binding.cih317b.isChecked() ? "12"
+                : binding.cih317c.isChecked() ? "21"
+                : binding.cih317d.isChecked() ? "22"
+                : binding.cih317e.isChecked() ? "31"
+                : binding.cih317f.isChecked() ? "32"
+                : binding.cih317g.isChecked() ? "33"
+                : binding.cih317h.isChecked() ? "34"
+                : binding.cih317i.isChecked() ? "35"
+                : binding.cih317j.isChecked() ? "36"
+                : binding.cih317k.isChecked() ? "37"
                 : binding.cih31796.isChecked() ? "96"
                 : "0");
         sA4.put("cih31796x", binding.cih31796x.getText().toString());

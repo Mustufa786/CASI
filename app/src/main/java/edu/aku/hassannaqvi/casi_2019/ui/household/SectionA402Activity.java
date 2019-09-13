@@ -24,6 +24,8 @@ import edu.aku.hassannaqvi.casi_2019.ui.viewMem.ViewMemberActivity;
 import edu.aku.hassannaqvi.casi_2019.validation.ClearClass;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
+import static edu.aku.hassannaqvi.casi_2019.ui.household.SectionA1Activity.userCountryTajik_Home;
+
 public class SectionA402Activity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener, TextWatcher {
 
     ActivitySectionA402Binding binding;
@@ -54,40 +56,42 @@ public class SectionA402Activity extends AppCompatActivity implements RadioGroup
             JSONA4ModelClass jsonA4 = JSONUtilClass.getModelFromJSON(formContract.getsA402(), JSONA4ModelClass.class);
             if (!jsonA4.getcih318().equals("0")) {
                 binding.cih318.check(
-                        jsonA4.getcih318().equals("1") ? binding.cih318a.getId() :
-                                jsonA4.getcih318().equals("2") ? binding.cih318b.getId() :
-                                        jsonA4.getcih318().equals("3") ? binding.cih318c.getId() :
-                                                jsonA4.getcih318().equals("4") ? binding.cih318d.getId() :
-                                                        jsonA4.getcih318().equals("5") ? binding.cih318e.getId() :
-                                                                jsonA4.getcih318().equals("6") ? binding.cih318f.getId() :
-                                                                        jsonA4.getcih318().equals("7") ? binding.cih318g.getId() :
-                                                                                jsonA4.getcih318().equals("8") ? binding.cih318h.getId() :
-                                                                                        jsonA4.getcih318().equals("9") ? binding.cih318i.getId() :
-                                                                                                jsonA4.getcih318().equals("10") ? binding.cih318j.getId() :
-                                                                                                        jsonA4.getcih318().equals("11") ? binding.cih318k.getId() :
-                                                                                                                jsonA4.getcih318().equals("12") ? binding.cih318l.getId() :
-                                                                                                                        binding.cih31896.getId()
+                        jsonA4.getcih318().equals("11") ? binding.cih318a.getId() :
+                                jsonA4.getcih318().equals("12") ? binding.cih318b.getId() :
+                                        jsonA4.getcih318().equals("13") ? binding.cih318c.getId() :
+                                                jsonA4.getcih318().equals("21") ? binding.cih318d.getId() :
+                                                        jsonA4.getcih318().equals("22") ? binding.cih318e.getId() :
+                                                                jsonA4.getcih318().equals("23") ? binding.cih318f.getId() :
+                                                                        jsonA4.getcih318().equals("24") ? binding.cih318g.getId() :
+                                                                                jsonA4.getcih318().equals("31") ? binding.cih318h.getId() :
+                                                                                        jsonA4.getcih318().equals("32") ? binding.cih318i.getId() :
+                                                                                                jsonA4.getcih318().equals("33") ? binding.cih318j.getId() :
+                                                                                                        jsonA4.getcih318().equals("34") ? binding.cih318k.getId() :
+                                                                                                                jsonA4.getcih318().equals("35") ? binding.cih318l.getId() :
+                                                                                                                        jsonA4.getcih318().equals("36") ? binding.cih318m.getId() :
+                                                                                                                                jsonA4.getcih318().equals("37") ? binding.cih318n.getId() :
+                                                                                                                                        binding.cih31896.getId()
                 );
             }
             binding.cih31896x.setText(jsonA4.getcih31896x());
             if (!jsonA4.getcih319().equals("0")) {
                 binding.cih319.check(
-                        jsonA4.getcih319().equals("1") ? binding.cih319a.getId() :
-                                jsonA4.getcih319().equals("2") ? binding.cih319b.getId() :
-                                        jsonA4.getcih319().equals("3") ? binding.cih319c.getId() :
-                                                jsonA4.getcih319().equals("4") ? binding.cih319d.getId() :
-                                                        jsonA4.getcih319().equals("5") ? binding.cih319e.getId() :
-                                                                jsonA4.getcih319().equals("6") ? binding.cih319f.getId() :
-                                                                        jsonA4.getcih319().equals("7") ? binding.cih319g.getId() :
-                                                                                jsonA4.getcih319().equals("8") ? binding.cih319h.getId() :
-                                                                                        jsonA4.getcih319().equals("9") ? binding.cih319i.getId() :
-                                                                                                jsonA4.getcih319().equals("10") ? binding.cih319j.getId() :
-                                                                                                        jsonA4.getcih319().equals("11") ? binding.cih319k.getId() :
-                                                                                                                jsonA4.getcih319().equals("12") ? binding.cih319l.getId() :
-                                                                                                                        jsonA4.getcih319().equals("13") ? binding.cih319m.getId() :
-                                                                                                                                jsonA4.getcih319().equals("14") ? binding.cih319n.getId() :
-                                                                                                                                        jsonA4.getcih319().equals("15") ? binding.cih319o.getId() :
-                                                                                                                                                jsonA4.getcih319().equals("16") ? binding.cih319p.getId() :
+                        jsonA4.getcih319().equals("11") ? binding.cih319a.getId() :
+                                jsonA4.getcih319().equals("12") ? binding.cih319b.getId() :
+                                        jsonA4.getcih319().equals("13") ? binding.cih319c.getId() :
+                                                jsonA4.getcih319().equals("21") ? binding.cih319d.getId() :
+                                                        jsonA4.getcih319().equals("22") ? binding.cih319e.getId() :
+                                                                jsonA4.getcih319().equals("23") ? binding.cih319f.getId() :
+                                                                        jsonA4.getcih319().equals("24") ? binding.cih319g.getId() :
+                                                                                jsonA4.getcih319().equals("25") ? binding.cih319h.getId() :
+                                                                                        jsonA4.getcih319().equals("26") ? binding.cih319i.getId() :
+                                                                                                jsonA4.getcih319().equals("27") ? binding.cih319j.getId() :
+                                                                                                        jsonA4.getcih319().equals("31") ? binding.cih319k.getId() :
+                                                                                                                jsonA4.getcih319().equals("32") ? binding.cih319l.getId() :
+                                                                                                                        jsonA4.getcih319().equals("33") ? binding.cih319m.getId() :
+                                                                                                                                jsonA4.getcih319().equals("34") ? binding.cih319n.getId() :
+                                                                                                                                        jsonA4.getcih319().equals("35") ? binding.cih319o.getId() :
+                                                                                                                                                jsonA4.getcih319().equals("36") ? binding.cih319p.getId() :
                                                                                                                                                         binding.cih31996.getId()
                 );
             }
@@ -171,6 +175,19 @@ public class SectionA402Activity extends AppCompatActivity implements RadioGroup
         binding.cih324e.addTextChangedListener(this);
         binding.cih324f.addTextChangedListener(this);
         binding.cih324g.addTextChangedListener(this);
+
+
+        /*For Tajik*/
+        if (userCountryTajik_Home) {
+
+            binding.cih318c.setVisibility(View.GONE);
+            binding.cih318n.setVisibility(View.GONE);
+            binding.cih318g.setVisibility(View.GONE);
+
+            binding.cih319c.setVisibility(View.GONE);
+            binding.cih319p.setVisibility(View.GONE);
+
+        }
 
     }
 
@@ -354,41 +371,41 @@ public class SectionA402Activity extends AppCompatActivity implements RadioGroup
 
     private void SaveDraft() throws JSONException {
         JSONObject sA4 = new JSONObject();
-        sA4.put("cih318", binding.cih318a.isChecked() ? "1"
-                : binding.cih318b.isChecked() ? "2"
-                : binding.cih318c.isChecked() ? "3"
-                : binding.cih318d.isChecked() ? "4"
-                : binding.cih318e.isChecked() ? "5"
-                : binding.cih318f.isChecked() ? "6"
-                : binding.cih318g.isChecked() ? "7"
-                : binding.cih318h.isChecked() ? "8"
-                : binding.cih318i.isChecked() ? "9"
-                : binding.cih318j.isChecked() ? "10"
-                : binding.cih318k.isChecked() ? "11"
-                : binding.cih318l.isChecked() ? "12"
-                : binding.cih318m.isChecked() ? "13"
-                : binding.cih318n.isChecked() ? "14"
+        sA4.put("cih318", binding.cih318a.isChecked() ? "11"
+                : binding.cih318b.isChecked() ? "12"
+                : binding.cih318c.isChecked() ? "13"
+                : binding.cih318d.isChecked() ? "21"
+                : binding.cih318e.isChecked() ? "22"
+                : binding.cih318f.isChecked() ? "23"
+                : binding.cih318g.isChecked() ? "24"
+                : binding.cih318h.isChecked() ? "31"
+                : binding.cih318i.isChecked() ? "32"
+                : binding.cih318j.isChecked() ? "33"
+                : binding.cih318k.isChecked() ? "34"
+                : binding.cih318l.isChecked() ? "35"
+                : binding.cih318m.isChecked() ? "36"
+                : binding.cih318n.isChecked() ? "37"
                 : binding.cih31896.isChecked() ? "96"
                 : "0");
         sA4.put("cih31896x", binding.cih31896x.getText().toString());
 
 //          cih319
-        sA4.put("cih319", binding.cih319a.isChecked() ? "1"
-                : binding.cih319b.isChecked() ? "2"
-                : binding.cih319c.isChecked() ? "3"
-                : binding.cih319d.isChecked() ? "4"
-                : binding.cih319e.isChecked() ? "5"
-                : binding.cih319f.isChecked() ? "6"
-                : binding.cih319g.isChecked() ? "7"
-                : binding.cih319h.isChecked() ? "8"
-                : binding.cih319i.isChecked() ? "9"
-                : binding.cih319j.isChecked() ? "10"
-                : binding.cih319k.isChecked() ? "11"
-                : binding.cih319l.isChecked() ? "12"
-                : binding.cih319m.isChecked() ? "13"
-                : binding.cih319n.isChecked() ? "14"
-                : binding.cih319o.isChecked() ? "15"
-                : binding.cih319p.isChecked() ? "16"
+        sA4.put("cih319", binding.cih319a.isChecked() ? "11"
+                : binding.cih319b.isChecked() ? "12"
+                : binding.cih319c.isChecked() ? "13"
+                : binding.cih319d.isChecked() ? "21"
+                : binding.cih319e.isChecked() ? "22"
+                : binding.cih319f.isChecked() ? "23"
+                : binding.cih319g.isChecked() ? "24"
+                : binding.cih319h.isChecked() ? "25"
+                : binding.cih319i.isChecked() ? "26"
+                : binding.cih319j.isChecked() ? "27"
+                : binding.cih319k.isChecked() ? "31"
+                : binding.cih319l.isChecked() ? "32"
+                : binding.cih319m.isChecked() ? "33"
+                : binding.cih319n.isChecked() ? "34"
+                : binding.cih319o.isChecked() ? "35"
+                : binding.cih319p.isChecked() ? "36"
                 : binding.cih31996.isChecked() ? "96"
                 : "0");
         sA4.put("cih31996x", binding.cih31996x.getText().toString());

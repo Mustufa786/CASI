@@ -59,7 +59,7 @@
     <string name="dkn"> معلوم نہیں </string>
     <string name="dkn2"> معلوم نہیں / یاد نہیں</string>
     <string name="none">پانی گھر پر موجود ہے یا پانی گھر پر فراہم کیا جاتا ہے </string>
-    <string name="nofood">ان میں سے کچھ بھی نہیں کھایا</string>
+    <string name="other2"></string>
     <string name="count"> تعداد </string>
     <string name="other"> دیگر وضاحت کریں </string>
     <string name="other1"> وضاحت کریں </string>
@@ -1479,7 +1479,18 @@
     <string name="cih616">  ۔H608a- کتنی مرتبہ ایسا ہوا؟ </string>
     <string name="cih617">  ۔H609 -پچھلے 4 ہفتوں کے دوران کیا کبھی ایسا وقت آیا جب آپ یا گھر کے دوسرے افراد کھا نے کی کمی کی وجہ سے پورے دن اور رات میں کچھ بھی نہ کھایا ہو </string>
     <string name="cih618">  ۔H609a- کتنی مرتبہ ایسا ہوا؟ </string>
+    <string name="cih601b"></string>
+    <string name="cih603b"></string>
+    <string name="cih605b"></string>
+    <string name="cih607b"></string>
+    <string name="cih609b"></string>
+    <string name="cih611b"></string>
+    <string name="cih613b"></string>
+    <string name="cih615b"></string>
+    <string name="cih617b"></string>
+
     <!--Section A7-->
+    <string name="sectionA701">Note: Interviewer will show the Food Products during the interview\n In past 30 days, did anyone in your household receive the following assistance? Ask one by one</string>
     <string name="benef"> وصول کنندہ کی تعداد </string>
     <string name="source">ذریعہ</string>
     <string name="cih701">  ۔RUSF H701 -بچوں کے لیے /وا وامم </string>
@@ -1496,6 +1507,7 @@
     <string name="cih712">  ۔H712- جانوروں کے لیے اشیا (دوائیاں,کھانا) </string>
     <string name="cih713">  ۔H713- غذا کے باے میں مشورہ </string>
     <!--Women Section 5-->
+    <string name="sectionB601">(This section will asked from any one WRA of the household)</string>
     <string name="ciw5h"> سال کےسیکشن 5: خواتین کے مختلف اقسام کے کھانوں کا استعمال </string>
     <string name="ciw501">  ۔W501- آپ کے بچے نے کل دن اور رات کے دوران کھانا کھا یا ؟ </string>
     <string name="ciw501h"> کھانے </string>
@@ -1525,6 +1537,7 @@
     <string name="ciw50307">  ۔W50307- چینی, شہد </string>
     <string name="ciw50308">  ۔W50308- کوئی تیل، چکنائی </string>
     <!--Child Section 5-->
+    <string name="sectionCA01">(For Under 2) </string>
     <string name="cich"> سال کےسیکشن 5: خواتین کے مختلف اقسام کے کھانوں کا استعمال </string>
     <string name="cic501">  ۔C301- آپ کے بچے نے کل دن اور رات کے دوران کھانا کھا یا ؟ </string>
     <string name="cic501h"> کھانے </string>
@@ -1809,6 +1822,7 @@
     <string name="cid603a"> در خانه </string>
     <string name="cid603b"> در مکتب </string>
     <string name="cid603c"> جای دیگر </string>
+    <string name="cid603d"> نمی داند/جواب نداد </string>
 
 
     <string name="cid604">۔D604- اگر مصاحبه قبل از چاشت اجرا می شد، بپرسید:آیا دیروز نان چاشت خوردید؟ اگر مصاحبه بعد چاشت اجرا می شد، بپرسید: آیا امروز نان چاشت خوردید؟ </string>

@@ -255,6 +255,7 @@
                         android:textColor="@android:color/white" />
 
                     <TextView
+                        android:id="@+id/lblPipedWater"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/pink_100"
@@ -830,7 +831,7 @@
                             android:id="@+id/cih309"
                             style="@style/textInput"
                             android:digits="1234567890"
-                            android:hint="@string/cih309"
+                            android:hint="@string/cih309a"
                             android:inputType="number"
                             android:maxLength="2" />
 
