@@ -272,61 +272,31 @@
                             android:layout_marginBottom="1dp"
                             android:text="@string/ciw303e" />
 
+                        <!--961-->
                         <RadioButton
-                            android:id="@+id/ciw303l"
+                            android:id="@+id/ciw303961"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_marginBottom="1dp"
-                            android:text="@string/ciw303l" />
+                            android:text="@string/ciw303961" />
 
-                        <RadioButton
-                            android:id="@+id/ciw303m"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginBottom="1dp"
-                            android:text="@string/ciw303m" />
+                        <EditText
+                            android:id="@+id/ciw303961x"
+                            style="@style/textInput"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:enabled='@{ciw303961.checked ? true : false}'
+                            android:hint="@string/explain"
+                            android:inputType="text"
+                            android:text='@{ciw303961.checked ? ciw303961x.getText.toString : ""}' />
 
-                        <RadioButton
-                            android:id="@+id/ciw303n"
+                        <TextView
+                            android:id="@+id/ciw303txt01"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginBottom="1dp"
-                            android:text="@string/ciw303n" />
-
-                        <RadioButton
-                            android:id="@+id/ciw303o"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginBottom="1dp"
-                            android:text="@string/ciw303o" />
-
-                        <RadioButton
-                            android:id="@+id/ciw303p"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginBottom="1dp"
-                            android:text="@string/ciw303p" />
-
-                        <RadioButton
-                            android:id="@+id/ciw303q"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginBottom="1dp"
-                            android:text="@string/ciw303q" />
-
-                        <RadioButton
-                            android:id="@+id/ciw303r"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginBottom="1dp"
-                            android:text="@string/ciw303r" />
-
-                        <RadioButton
-                            android:id="@+id/ciw303s"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginBottom="1dp"
-                            android:text="@string/ciw303s" />
+                            android:layout_height="wrap_content"
+                            android:background="@color/pink_100"
+                            android:text="@string/ciw303sub3"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/colorPrimaryDark" />
 
                         <RadioButton
                             android:id="@+id/ciw303f"
@@ -334,23 +304,6 @@
                             android:layout_height="match_parent"
                             android:layout_marginBottom="1dp"
                             android:text="@string/ciw303f" />
-
-                        <EditText
-                            android:id="@+id/ciw303961x"
-                            style="@style/textInput"
-                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                            android:enabled='@{ciw303f.checked ? true : false}'
-                            android:hint="@string/explain"
-                            android:inputType="text"
-                            android:text='@{ciw303f.checked ? ciw303961x.getText.toString : ""}' />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@color/pink_100"
-                            android:text="@string/ciw303sub3"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@color/colorPrimaryDark" />
 
                         <RadioButton
                             android:id="@+id/ciw303g"
@@ -366,6 +319,7 @@
                             android:layout_marginBottom="1dp"
                             android:text="@string/ciw303h" />
 
+                        <!--Tajik-->
                         <RadioButton
                             android:id="@+id/ciw303i"
                             android:layout_width="match_parent"
@@ -380,18 +334,70 @@
                             android:layout_marginBottom="1dp"
                             android:text="@string/ciw303j" />
 
+                        <RadioButton
+                            android:id="@+id/ciw303k"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:text="@string/ciw303k" />
+
+                        <RadioButton
+                            android:id="@+id/ciw303l"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:text="@string/ciw303l" />
+
+                        <RadioButton
+                            android:id="@+id/ciw303m"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:text="@string/ciw303m" />
+
+                        <TextView
+                            android:id="@+id/ciw303txt02"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/pink_100"
+                            android:text="@string/ciw303sub3"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/colorPrimaryDark" />
+
+                        <RadioButton
+                            android:id="@+id/ciw303n"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:text="@string/ciw303n" />
+
+                        <RadioButton
+                            android:id="@+id/ciw303o"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:text="@string/ciw303o" />
+
+                        <!--962-->
+                        <RadioButton
+                            android:id="@+id/ciw303962"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:text="@string/ciw303j" />
+
                         <EditText
                             android:id="@+id/ciw303962x"
                             style="@style/textInput"
                             android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                            android:enabled='@{ciw303j.checked ? true : false}'
+                            android:enabled='@{ciw303962.checked ? true : false}'
                             android:hint="@string/explain"
                             android:inputType="text"
-                            android:text='@{ciw303j.checked ? ciw303962x.getText.toString : ""}' />
+                            android:text='@{ciw303962.checked ? ciw303962x.getText.toString : ""}' />
 
-
+                        <!--963-->
                         <RadioButton
-                            android:id="@+id/ciw30396"
+                            android:id="@+id/ciw303963"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_marginBottom="1dp"
@@ -401,9 +407,9 @@
                             android:id="@+id/ciw303963x"
                             style="@style/textInput"
                             android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
-                            android:enabled='@{ciw30396.checked ? true : false}'
-                            android:hint="@string/ciw303k"
-                            android:text='@{ciw30396.checked ? ciw303963x.getText.toString : ""}' />
+                            android:hint="@string/other"
+                            android:text='@{ciw303963.checked ? ciw303963x.getText.toString : ""}'
+                            android:visibility='@{ciw303963.checked ? View.VISIBLE : View.GONE}' />
 
                     </RadioGroup>
 
@@ -948,8 +954,7 @@
                                 android:background="@color/pink_100"
                                 android:text="@string/ciw312sub1"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@color/colorPrimaryDark"
-                                android:visibility="gone" />
+                                android:textColor="@color/colorPrimaryDark" />
 
                             <CheckBox
                                 android:id="@+id/ciw312a"
@@ -964,7 +969,6 @@
                                 android:layout_height="match_parent"
                                 android:layout_marginBottom="1dp"
                                 android:text="@string/ciw312b" />
-
 
                             <CheckBox
                                 android:id="@+id/ciw312c"
@@ -998,18 +1002,19 @@
                                 android:id="@+id/ciw312961x"
                                 style="@style/textInput"
                                 android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
-                                android:enabled='@{ciw312961.checked ? true : false}'
                                 android:hint="@string/other1"
-                                android:text='@{ciw312961.checked ? ciw312961x.getText.toString : ""}' />
+                                android:text='@{ciw312961.checked ? ciw312961x.getText.toString : ""}'
+                                android:visibility='@{ciw312961.checked ? View.VISIBLE : View.GONE}' />
+
 
                             <TextView
+                                android:id="@+id/ciw312txt01"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@color/pink_100"
                                 android:text="@string/ciw312sub2"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@color/colorPrimaryDark"
-                                android:visibility="gone" />
+                                android:textColor="@color/colorPrimaryDark" />
 
                             <CheckBox
                                 android:id="@+id/ciw312f"
@@ -1057,19 +1062,19 @@
                                 android:id="@+id/ciw312962x"
                                 style="@style/textInput"
                                 android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
-                                android:enabled='@{ciw312962.checked ? true : false}'
                                 android:hint="@string/other1"
-                                android:text='@{ciw312962.checked ? ciw312962x.getText.toString : ""}' />
+                                android:text='@{ciw312962.checked ? ciw312962x.getText.toString : ""}'
+                                android:visibility='@{ciw312962.checked ? View.VISIBLE : View.GONE}' />
 
 
                             <TextView
+                                android:id="@+id/ciw312txt02"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@color/pink_100"
                                 android:text="@string/ciw312sub3"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@color/colorPrimaryDark"
-                                android:visibility="gone" />
+                                android:textColor="@color/colorPrimaryDark" />
 
                             <CheckBox
                                 android:id="@+id/ciw312k"
@@ -1077,6 +1082,16 @@
                                 android:layout_height="match_parent"
                                 android:layout_marginBottom="1dp"
                                 android:text="@string/ciw312k" />
+
+
+                            <TextView
+                                android:id="@+id/ciw312txt03"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/pink_100"
+                                android:text="@string/ciw312sub2"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@color/colorPrimaryDark" />
 
                             <CheckBox
                                 android:id="@+id/ciw312l"
@@ -1098,6 +1113,15 @@
                                 android:layout_height="match_parent"
                                 android:layout_marginBottom="1dp"
                                 android:text="@string/ciw312n" />
+
+                            <TextView
+                                android:id="@+id/ciw312txt04"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/pink_100"
+                                android:text="@string/ciw312sub3"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@color/colorPrimaryDark" />
 
                             <CheckBox
                                 android:id="@+id/ciw312o"
@@ -1131,15 +1155,14 @@
                                 android:id="@+id/ciw312963x"
                                 style="@style/textInput"
                                 android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
-                                android:enabled='@{ciw312963.checked ? true : false}'
                                 android:hint="@string/other"
-                                android:text='@{ciw312963.checked ? ciw312963x.getText.toString : ""}' />
+                                android:text='@{ciw312963.checked ? ciw312963x.getText.toString : ""}'
+                                android:visibility='@{ciw312963.checked ? View.VISIBLE : View.GONE}' />
                         </LinearLayout>
 
                     </LinearLayout>
+
                     <!--ciw313-->
-
-
                     <!--<TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -1372,7 +1395,6 @@
                         android:text='@{ciw31696.checked ? ciw31696x.getText.toString : ""}' />
 
                     <!--ciw317-->
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -1401,8 +1423,7 @@
                                 android:background="@color/pink_100"
                                 android:text="@string/ciw312sub1"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@color/colorPrimaryDark"
-                                android:visibility="gone" />
+                                android:textColor="@color/colorPrimaryDark" />
 
                             <CheckBox
                                 android:id="@+id/ciw317a"
@@ -1455,14 +1476,15 @@
                                 android:hint="@string/other1"
                                 android:text='@{ciw317961.checked ? ciw317961x.getText.toString : ""}' />
 
+
                             <TextView
+                                android:id="@+id/ciw317txt01"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@color/pink_100"
                                 android:text="@string/ciw312sub2"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@color/colorPrimaryDark"
-                                android:visibility="gone" />
+                                android:textColor="@color/colorPrimaryDark" />
 
                             <CheckBox
                                 android:id="@+id/ciw317f"
@@ -1516,13 +1538,13 @@
 
 
                             <TextView
+                                android:id="@+id/ciw317txt02"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@color/pink_100"
                                 android:text="@string/ciw312sub3"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@color/colorPrimaryDark"
-                                android:visibility="gone" />
+                                android:textColor="@color/colorPrimaryDark" />
 
                             <CheckBox
                                 android:id="@+id/ciw317k"
@@ -1530,6 +1552,15 @@
                                 android:layout_height="match_parent"
                                 android:layout_marginBottom="1dp"
                                 android:text="@string/ciw312k" />
+
+                            <TextView
+                                android:id="@+id/ciw317txt03"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/pink_100"
+                                android:text="@string/ciw312sub2"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@color/colorPrimaryDark" />
 
                             <CheckBox
                                 android:id="@+id/ciw317l"
@@ -1551,6 +1582,15 @@
                                 android:layout_height="match_parent"
                                 android:layout_marginBottom="1dp"
                                 android:text="@string/ciw312n" />
+
+                            <TextView
+                                android:id="@+id/ciw317txt04"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/pink_100"
+                                android:text="@string/ciw312sub3"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@color/colorPrimaryDark" />
 
                             <CheckBox
                                 android:id="@+id/ciw317o"
@@ -1752,7 +1792,6 @@
                             android:layout_marginBottom="1dp"
                             android:text="@string/ciw321b" />
 
-
                         <RadioButton
                             android:id="@+id/ciw321c"
                             android:layout_width="match_parent"
@@ -1840,8 +1879,7 @@
                                 android:background="@color/pink_100"
                                 android:text="@string/ciw312sub1"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@color/colorPrimaryDark"
-                                android:visibility="gone" />
+                                android:textColor="@color/colorPrimaryDark" />
 
                             <CheckBox
                                 android:id="@+id/ciw322a"
@@ -1895,13 +1933,13 @@
                                 android:text='@{ciw322961.checked ? ciw322961x.getText.toString : ""}' />
 
                             <TextView
+                                android:id="@+id/ciw322txt01"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@color/pink_100"
                                 android:text="@string/ciw312sub2"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@color/colorPrimaryDark"
-                                android:visibility="gone" />
+                                android:textColor="@color/colorPrimaryDark" />
 
                             <CheckBox
                                 android:id="@+id/ciw322f"
@@ -1955,13 +1993,13 @@
 
 
                             <TextView
+                                android:id="@+id/ciw322txt02"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@color/pink_100"
                                 android:text="@string/ciw312sub3"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@color/colorPrimaryDark"
-                                android:visibility="gone" />
+                                android:textColor="@color/colorPrimaryDark" />
 
                             <CheckBox
                                 android:id="@+id/ciw322k"
@@ -1969,6 +2007,16 @@
                                 android:layout_height="match_parent"
                                 android:layout_marginBottom="1dp"
                                 android:text="@string/ciw312k" />
+
+
+                            <TextView
+                                android:id="@+id/ciw322txt03"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/pink_100"
+                                android:text="@string/ciw312sub2"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@color/colorPrimaryDark" />
 
                             <CheckBox
                                 android:id="@+id/ciw322l"
@@ -1990,6 +2038,15 @@
                                 android:layout_height="match_parent"
                                 android:layout_marginBottom="1dp"
                                 android:text="@string/ciw312n" />
+
+                            <TextView
+                                android:id="@+id/ciw322txt04"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/pink_100"
+                                android:text="@string/ciw312sub3"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@color/colorPrimaryDark" />
 
                             <CheckBox
                                 android:id="@+id/ciw322o"

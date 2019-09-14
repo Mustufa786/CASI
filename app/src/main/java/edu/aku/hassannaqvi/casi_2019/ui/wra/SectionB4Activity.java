@@ -21,13 +21,10 @@ import java.util.TimerTask;
 
 import butterknife.BindViews;
 import butterknife.ButterKnife;
-import edu.aku.hassannaqvi.casi_2019.JSONModels.JSONB4ModelClass;
 import edu.aku.hassannaqvi.casi_2019.R;
-import edu.aku.hassannaqvi.casi_2019.contracts.MWRAContract;
 import edu.aku.hassannaqvi.casi_2019.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2019.core.MainApp;
 import edu.aku.hassannaqvi.casi_2019.databinding.ActivitySectionB4Binding;
-import edu.aku.hassannaqvi.casi_2019.other.JSONUtilClass;
 import edu.aku.hassannaqvi.casi_2019.ui.mainUI.Menu2Activity;
 import edu.aku.hassannaqvi.casi_2019.ui.viewMem.ViewMemberActivity;
 import edu.aku.hassannaqvi.casi_2019.validation.ClearClass;
@@ -207,38 +204,39 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
 //        Validation Boolean
         MainApp.validateFlag = false;
 
-        AutoCompleteFields();
+//        AutoCompleteFields();
 
         /*For Tajik Visibility*/
-        binding.ciw401h.setVisibility(!userCountryTajik ? View.VISIBLE : View.GONE);
-        binding.ciw402h.setVisibility(!userCountryTajik ? View.VISIBLE : View.GONE);
+        binding.ciw401h.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
+        binding.ciw401txt01.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
+        binding.ciw401txt02.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
 
+        binding.ciw402h.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
+        binding.ciw402txt01.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
+        binding.ciw402txt02.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+
+        binding.ciw403txt01.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
+        binding.ciw403txt02.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        binding.ciw403i.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        binding.ciw403j.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
         binding.ciw403k.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
         binding.ciw403l.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
         binding.ciw403m.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
         binding.ciw403n.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
         binding.ciw403o.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
         binding.ciw403p.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        binding.ciw403q.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        binding.ciw403r.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        binding.ciw403s.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        binding.ciw403963.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
 
-        binding.ciw412f.setVisibility(!userCountryTajik ? View.VISIBLE : View.GONE);
+        binding.ciw412e.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
+        binding.ciw412f.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
 
-        binding.ciw413n.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        binding.ciw413o.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        binding.ciw413p.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        binding.ciw413q.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        binding.ciw413r.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        binding.ciw413s.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-
-        binding.ciw412e.setVisibility(!userCountryTajik ? View.VISIBLE : View.GONE);
-        binding.ciw412f.setVisibility(!userCountryTajik ? View.VISIBLE : View.GONE);
+        binding.ciw413.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
+        binding.ciw41301.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
 
     }
 
 
-    public void AutoCompleteFields() {
+    /*public void AutoCompleteFields() {
 
 //        BackPressed
         MWRAContract mwraContract = db.getsB4();
@@ -450,7 +448,7 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
             }
 
         }
-    }
+    }*/
 
     public void BtnContinue() {
 
@@ -516,13 +514,13 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
         if (!ValidatorClass.EmptyRadioButton(this, binding.ciw403, binding.ciw403a, getString(R.string.ciw403))) {
             return false;
         }
-        if (!ValidatorClass.EmptyRadioButton(this, binding.ciw403, binding.ciw403f, binding.ciw403fx, getString(R.string.ciw403) + " " + getString(R.string.ciw403f))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.ciw403, binding.ciw403961, binding.ciw403961x, getString(R.string.ciw403) + " " + getString(R.string.ciw403f))) {
             return false;
         }
-        if (!ValidatorClass.EmptyRadioButton(this, binding.ciw403, binding.ciw403j, binding.ciw403jx, getString(R.string.ciw403) + " " + getString(R.string.ciw403j))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.ciw403, binding.ciw403962, binding.ciw403962x, getString(R.string.ciw403) + " " + getString(R.string.ciw403j))) {
             return false;
         }
-        if (!ValidatorClass.EmptyRadioButton(this, binding.ciw403, binding.ciw40396, binding.ciw40396x, getString(R.string.ciw403) + " " + getString(R.string.other))) {
+        if (!ValidatorClass.EmptyRadioButton(this, binding.ciw403, binding.ciw403963, binding.ciw403963x, getString(R.string.ciw403) + " " + getString(R.string.other))) {
             return false;
         }
 //        ciw40301
@@ -615,19 +613,36 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
             }
             // ciw413
             if (binding.ciw412a.isChecked()) {
-                if (!ValidatorClass.EmptyRadioButton(this, binding.ciw413, binding.ciw413a, getString(R.string.cic403))) {
-                    return false;
+
+                if (userCountryTajik) {
+                    if (!ValidatorClass.EmptyRadioButton(this, binding.ciw41301, binding.ciw41301a, getString(R.string.cic403))) {
+                        return false;
+                    }
+                    //        ciw413019601
+                    if (!ValidatorClass.EmptyRadioButton(this, binding.ciw41301, binding.ciw41301961, binding.ciw41301961x, getString(R.string.ciw413) + " - " + getString(R.string.ciw413961))) {
+                        return false;
+                    }
+                    //        ciw413019602
+                    if (!ValidatorClass.EmptyRadioButton(this, binding.ciw41301, binding.ciw41301962, binding.ciw41301962x, getString(R.string.ciw413) + " - " + getString(R.string.ciw413962))) {
+                        return false;
+                    }
+                    //        ciw413019603
+                    return ValidatorClass.EmptyRadioButton(this, binding.ciw41301, binding.ciw41301963, binding.ciw41301963x, getString(R.string.ciw413) + " - " + getString(R.string.other));
+                } else {
+                    if (!ValidatorClass.EmptyRadioButton(this, binding.ciw413, binding.ciw413a, getString(R.string.cic403))) {
+                        return false;
+                    }
+                    //        ciw4139601
+                    if (!ValidatorClass.EmptyRadioButton(this, binding.ciw413, binding.ciw413961, binding.ciw413961x, getString(R.string.ciw413) + " - " + getString(R.string.ciw413961))) {
+                        return false;
+                    }
+                    //        ciw4139602
+                    if (!ValidatorClass.EmptyRadioButton(this, binding.ciw413, binding.ciw413962, binding.ciw413962x, getString(R.string.ciw413) + " - " + getString(R.string.ciw413962))) {
+                        return false;
+                    }
+                    //        ciw4139603
+                    return ValidatorClass.EmptyRadioButton(this, binding.ciw413, binding.ciw413963, binding.ciw413963x, getString(R.string.ciw413) + " - " + getString(R.string.other));
                 }
-                //        ciw4139601
-                if (!ValidatorClass.EmptyRadioButton(this, binding.ciw413, binding.ciw413961, binding.ciw413961x, getString(R.string.ciw413) + " - " + getString(R.string.ciw413961))) {
-                    return false;
-                }
-                //        ciw4139602
-                if (!ValidatorClass.EmptyRadioButton(this, binding.ciw413, binding.ciw413962, binding.ciw413962x, getString(R.string.ciw413) + " - " + getString(R.string.ciw413962))) {
-                    return false;
-                }
-                //        ciw4139603
-                return ValidatorClass.EmptyRadioButton(this, binding.ciw413, binding.ciw413963, binding.ciw413963x, getString(R.string.ciw413) + " - " + getString(R.string.other));
             }
         }
         return true;
@@ -670,32 +685,30 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
         sB4.put("ciw40296x", binding.ciw40296x.getText().toString());
 
 //       ciw403
-        sB4.put("ciw403", binding.ciw403a.isChecked() ? "1"
-                : binding.ciw403b.isChecked() ? "2"
-                : binding.ciw403c.isChecked() ? "3"
-                : binding.ciw403d.isChecked() ? "4"
-                : binding.ciw403e.isChecked() ? "5"
-                : binding.ciw403f.isChecked() ? "961"
-                : binding.ciw403g.isChecked() ? "7"
-                : binding.ciw403h.isChecked() ? "8"
-                : binding.ciw403i.isChecked() ? "9"
-                : binding.ciw403j.isChecked() ? "962"
-                : binding.ciw40396.isChecked() ? "963"
-                : binding.ciw403k.isChecked() ? "11"
-                : binding.ciw403l.isChecked() ? "12"
-                : binding.ciw403m.isChecked() ? "13"
-                : binding.ciw403n.isChecked() ? "14"
-                : binding.ciw403o.isChecked() ? "15"
-                : binding.ciw403p.isChecked() ? "16"
-                : binding.ciw403q.isChecked() ? "17"
-                : binding.ciw403r.isChecked() ? "18"
-                : binding.ciw403s.isChecked() ? "19"
-                : "0");
-//       ciw403
-
-        sB4.put("ciw403961x", binding.ciw403fx.getText().toString());
-        sB4.put("ciw403962x", binding.ciw403jx.getText().toString());
-        sB4.put("ciw403963x", binding.ciw40396x.getText().toString());
+        sB4.put("ciw303",
+                binding.ciw403a.isChecked() ? "1"
+                        : binding.ciw403b.isChecked() ? "2"
+                        : binding.ciw403c.isChecked() ? "3"
+                        : binding.ciw403d.isChecked() ? "4"
+                        : binding.ciw403e.isChecked() ? "5"
+                        : binding.ciw403961.isChecked() ? "961"
+                        : binding.ciw403f.isChecked() ? "6"
+                        : binding.ciw403g.isChecked() ? "7"
+                        : binding.ciw403h.isChecked() ? "8"
+                        : binding.ciw403962.isChecked() ? "962"
+                        : binding.ciw403i.isChecked() ? "9"
+                        : binding.ciw403j.isChecked() ? "10"
+                        : binding.ciw403k.isChecked() ? "11"
+                        : binding.ciw403l.isChecked() ? "12"
+                        : binding.ciw403m.isChecked() ? "13"
+                        : binding.ciw403n.isChecked() ? "14"
+                        : binding.ciw403o.isChecked() ? "15"
+                        : binding.ciw403p.isChecked() ? "16"
+                        : binding.ciw403963.isChecked() ? "963"
+                        : "0");
+        sB4.put("ciw303961x", binding.ciw403961x.getText().toString());
+        sB4.put("ciw303962x", binding.ciw403962x.getText().toString());
+        sB4.put("ciw303963x", binding.ciw403963x.getText().toString());
 
         sB4.put("ciw40301", binding.ciw40301a.isChecked() ? "1"
                 : binding.ciw40301b.isChecked() ? "2"
@@ -770,34 +783,57 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
 
 
         //        ciw413
-        sB4.put("ciw413", binding.ciw413a.isChecked() ? "1"
-                : binding.ciw413b.isChecked() ? "2"
-                : binding.ciw413c.isChecked() ? "3"
-                : binding.ciw413d.isChecked() ? "4"
-                : binding.ciw413e.isChecked() ? "5"
-                : binding.ciw413f.isChecked() ? "6"
-                : binding.ciw413g.isChecked() ? "7"
-                : binding.ciw413h.isChecked() ? "8"
-                : binding.ciw413i.isChecked() ? "9"
-                : binding.ciw413j.isChecked() ? "10"
-                : binding.ciw413k.isChecked() ? "11"
-                : binding.ciw413l.isChecked() ? "12"
-                : binding.ciw413m.isChecked() ? "13"
-                : binding.ciw413n.isChecked() ? "14"
-                : binding.ciw413o.isChecked() ? "15"
-                : binding.ciw413p.isChecked() ? "16"
-                : binding.ciw413q.isChecked() ? "17"
-                : binding.ciw413r.isChecked() ? "18"
-                : binding.ciw413s.isChecked() ? "19"
-                : binding.ciw413961.isChecked() ? "961"
-                : binding.ciw413962.isChecked() ? "962"
-                : binding.ciw413963.isChecked() ? "963"
-                : "0");
+        if (userCountryTajik) {
+            sB4.put("ciw413", binding.ciw41301a.isChecked() ? "1"
+                    : binding.ciw41301b.isChecked() ? "2"
+                    : binding.ciw41301c.isChecked() ? "3"
+                    : binding.ciw41301d.isChecked() ? "4"
+                    : binding.ciw41301e.isChecked() ? "5"
+                    : binding.ciw41301f.isChecked() ? "6"
+                    : binding.ciw41301g.isChecked() ? "7"
+                    : binding.ciw41301h.isChecked() ? "8"
+                    : binding.ciw41301i.isChecked() ? "9"
+                    : binding.ciw41301j.isChecked() ? "10"
+                    : binding.ciw41301k.isChecked() ? "11"
+                    : binding.ciw41301l.isChecked() ? "12"
+                    : binding.ciw41301m.isChecked() ? "13"
+                    : binding.ciw41301n.isChecked() ? "14"
+                    : binding.ciw41301o.isChecked() ? "15"
+                    : binding.ciw41301p.isChecked() ? "16"
+                    : binding.ciw41301q.isChecked() ? "17"
+                    : binding.ciw41301r.isChecked() ? "18"
+                    : binding.ciw41301s.isChecked() ? "19"
+                    : binding.ciw41301961.isChecked() ? "961"
+                    : binding.ciw41301962.isChecked() ? "962"
+                    : binding.ciw41301963.isChecked() ? "963"
+                    : "0");
 
-        sB4.put("ciw413961x", binding.ciw413961x.getText().toString());
-        sB4.put("ciw413962x", binding.ciw413962x.getText().toString());
-        sB4.put("ciw413963x", binding.ciw413963x.getText().toString());
+            sB4.put("ciw413961x", binding.ciw41301961x.getText().toString());
+            sB4.put("ciw413962x", binding.ciw41301962x.getText().toString());
+            sB4.put("ciw413963x", binding.ciw41301963x.getText().toString());
+        } else {
+            sB4.put("ciw413", binding.ciw413a.isChecked() ? "1"
+                    : binding.ciw413b.isChecked() ? "2"
+                    : binding.ciw413c.isChecked() ? "3"
+                    : binding.ciw413d.isChecked() ? "4"
+                    : binding.ciw413e.isChecked() ? "5"
+                    : binding.ciw413f.isChecked() ? "6"
+                    : binding.ciw413g.isChecked() ? "7"
+                    : binding.ciw413h.isChecked() ? "8"
+                    : binding.ciw413i.isChecked() ? "9"
+                    : binding.ciw413j.isChecked() ? "10"
+                    : binding.ciw413k.isChecked() ? "11"
+                    : binding.ciw413l.isChecked() ? "12"
+                    : binding.ciw413m.isChecked() ? "13"
+                    : binding.ciw413961.isChecked() ? "961"
+                    : binding.ciw413962.isChecked() ? "962"
+                    : binding.ciw413963.isChecked() ? "963"
+                    : "0");
 
+            sB4.put("ciw413961x", binding.ciw413961x.getText().toString());
+            sB4.put("ciw413962x", binding.ciw413962x.getText().toString());
+            sB4.put("ciw413963x", binding.ciw413963x.getText().toString());
+        }
 
         MainApp.mc.setsB4(String.valueOf(sB4));
 
@@ -854,14 +890,16 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
     @Override
     public void onBackPressed() {
 
-        try {
+        /*try {
             SaveDraft();
             UpdateDB();
         } catch (JSONException e) {
             e.printStackTrace();
         }
 
-        super.onBackPressed();
+        super.onBackPressed();*/
+
+        Toast.makeText(this, "You can't go back!!", Toast.LENGTH_SHORT).show();
     }
 
     @Override

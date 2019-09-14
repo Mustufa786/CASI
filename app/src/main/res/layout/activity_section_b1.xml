@@ -417,7 +417,7 @@
                             <EditText
                                 android:id="@+id/ciw206"
                                 style="@style/textInput"
-                                android:hint="@string/ciw206"
+                                android:hint="@string/ciw206a"
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{na11801a.checked ? ciw206.getText.toString : "" }' />
@@ -734,7 +734,7 @@
                                                     android:layout_height="wrap_content"
                                                     android:layout_weight="1"
                                                     android:background="@color/pink_100"
-                                                    android:text="@string/nr"
+                                                    android:text="@string/nb21004"
                                                     android:textAppearance="?android:attr/textAppearanceLarge"
                                                     android:textColor="@color/colorPrimaryDark" />
 
@@ -789,7 +789,7 @@
                                     <com.edittextpicker.aliazaz.EditTextPicker
                                         android:id="@+id/ciw211"
                                         style="@style/textInput"
-                                        android:hint="@string/ciw211"
+                                        android:hint="@string/ciw211a"
                                         android:inputType="number"
                                         android:maxLength="2"
                                         android:text='@{na11801a.checked ? ciw211.getText.toString : "" }'
@@ -816,7 +816,7 @@
                                         <com.edittextpicker.aliazaz.EditTextPicker
                                             android:id="@+id/ciw212"
                                             style="@style/textInput"
-                                            android:hint="@string/ciw212"
+                                            android:hint="@string/ciw212a"
                                             android:inputType="number"
                                             android:maxLength="2"
                                             android:text='@{na11801a.checked ? ciw212.getText.toString : "" }'
@@ -854,7 +854,7 @@
                                             <EditText
                                                 android:id="@+id/ciw213"
                                                 style="@style/textInput"
-                                                android:hint="@string/ciw213"
+                                                android:hint="@string/ciw213a"
                                                 android:inputType="number"
                                                 android:maxLength="2"
                                                 android:text='@{na11801a.checked ? ciw213.getText.toString : "" }' />
@@ -879,7 +879,7 @@
                                             <com.edittextpicker.aliazaz.EditTextPicker
                                                 android:id="@+id/ciw214"
                                                 style="@style/textInput"
-                                                android:hint="@string/ciw214"
+                                                android:hint="@string/ciw214a"
                                                 android:inputType="number"
                                                 android:maxLength="2"
                                                 android:text='@{na11801a.checked ? ciw214.getText.toString : "" }'
@@ -900,7 +900,7 @@
                                             <com.edittextpicker.aliazaz.EditTextPicker
                                                 android:id="@+id/ciw215"
                                                 style="@style/textInput"
-                                                android:hint="@string/ciw215"
+                                                android:hint="@string/ciw215a"
                                                 android:inputType="number"
                                                 android:maxLength="2"
                                                 android:text='@{na11801a.checked ? ciw215.getText.toString : "" }'
@@ -920,7 +920,7 @@
                                             <com.edittextpicker.aliazaz.EditTextPicker
                                                 android:id="@+id/ciw216"
                                                 style="@style/textInput"
-                                                android:hint="@string/ciw216"
+                                                android:hint="@string/ciw216a"
                                                 android:inputType="number"
                                                 android:maxLength="2"
                                                 android:text='@{na11801a.checked ? ciw216.getText.toString : "" }'

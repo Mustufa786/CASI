@@ -510,6 +510,7 @@
     <string name="ciw302f"> کیمونٹی مڈوائف </string>
     <string name="ciw302g"> لیڈی ہیلتھ وزیٹر </string>
     <string name="ciw302h"> دائی </string>
+
     <string name="ciw303sub1"> گھر </string>
     <string name="ciw303a"> جواب دہندہ کے گھر پر </string>
     <string name="ciw303b"> کسی اور کے گھر پر  </string>
@@ -517,21 +518,21 @@
     <string name="ciw303c"> سرکاری ہسپتال  </string>
     <string name="ciw303d">سرکاری کلینک </string>
     <string name="ciw303e">ماں اور بچہ کا صحت مرکز   </string>
-    <string name="ciw303f">  دیگر  سرکاری</string>
+    <string name="ciw303961">  دیگر  سرکاری</string>
     <string name="ciw303sub3">نجی ہسپتال/سیکٹر </string>
-    <string name="ciw303g"> پرائیوٹ ہسپتال </string>
-    <string name="ciw303h"> نجی  کلینک </string>
-    <string name="ciw303i"> نجی زچہ و بچہ سینٹر </string>
-    <string name="ciw303j"> دیگرنجی  </string>
-    <string name="ciw303k">  جگہ کا نام </string>
+    <string name="ciw303f"> پرائیوٹ ہسپتال </string>
+    <string name="ciw303g"> نجی  کلینک </string>
+    <string name="ciw303h"> نجی زچہ و بچہ سینٹر </string>
+    <string name="ciw303962"> دیگرنجی  </string>
+    <string name="ciw303i"> </string>
+    <string name="ciw303j"> </string>
+    <string name="ciw303k"> </string>
     <string name="ciw303l"> </string>
     <string name="ciw303m"> </string>
     <string name="ciw303n"> </string>
     <string name="ciw303o"> </string>
-    <string name="ciw303p"> </string>
-    <string name="ciw303q"> </string>
-    <string name="ciw303r"> </string>
-    <string name="ciw303s"> </string>
+    <string name="ciw303963">(دیگر کی صورت میں جگہ کا نام لکھیں)</string>
+
     <string name="ciw304info"> جواب نوٹ کریں جیسے جوابدہندہ نے بتایا ہے ۔اگر 9 مہینے یا اس زیادہ ہے تو "9" ریکارڈ کریں </string>
     <string name="ciw305info"> مزید پوچھیں: حمل کے معائنہ کے وزٹ کی تعداد کے بارے میں مزید پوچھیں ،اگر کوئی تعداد بتائی ہے تو جو کم سے کم نمبر وہ لکھیں </string>
     <string name="ciw305a"> معائنوں کی تعداد </string>
@@ -621,30 +622,31 @@
     <string name="ciw402g"> دوست /رشتہ دار </string>
     <string name="ciw402h">گائنا کالوجسٹ </string>
     <string name="ciw40299"> کوئی بھی نہیں </string>
+
     <string name="ciw403info"> پیدائش  کی جگہ کو شناخت کرنے کے لیے سوالات پوچھیں </string>
     <string name="ciw403info1"> گھر </string>
     <string name="ciw403a"> جواب دہندہ کے گھر پر </string>
-    <string name="ciw403b"> کسی اور کے گھر پر </string>
-    <string name="ciw403info2"> بپلک میڈیکل سیکٹ </string>
-    <string name="ciw403c"> سرکاری ہسپتال </string>
-    <string name="ciw403d"> سرکاری کلینک </string>
-    <string name="ciw403e"> ماں اور بچہ کا صحت مرکز</string>
-    <string name="ciw403f"> دیگر جگہ </string>
-    <string name="ciw403info3">  نجی ہسپتال/سیکٹر </string>
-    <string name="ciw403g"> نجی ہسپتال </string>
-    <string name="ciw403h"> نجی کلینک </string>
-    <string name="ciw403i"> نجی زچہ و بچہ سینٹر </string>
-    <string name="ciw403j"> دیگرنجی  صحت مرکز </string>
-    <string name="ciw403k">  </string>
+    <string name="ciw403b"> کسی اور کے گھر پر  </string>
+    <string name="ciw403info2"> بپلک میڈیکل سیکٹر </string>
+    <string name="ciw403c"> سرکاری ہسپتال  </string>
+    <string name="ciw403d">سرکاری کلینک </string>
+    <string name="ciw403e">ماں اور بچہ کا صحت مرکز   </string>
+    <string name="ciw403961">  دیگر  سرکاری</string>
+    <string name="ciw403info3">نجی ہسپتال/سیکٹر </string>
+    <string name="ciw403f"> پرائیوٹ ہسپتال </string>
+    <string name="ciw403g"> نجی  کلینک </string>
+    <string name="ciw403h"> نجی زچہ و بچہ سینٹر </string>
+    <string name="ciw403962"> دیگرنجی  </string>
+    <string name="ciw403i"> </string>
+    <string name="ciw403j"> </string>
+    <string name="ciw403k"> </string>
     <string name="ciw403l"> </string>
-    <string name="ciw403m">  </string>
+    <string name="ciw403m"> </string>
     <string name="ciw403n"> </string>
-    <string name="ciw403o"></string>
-    <string name="ciw403p">  </string>
-    <string name="ciw403q">  </string>
-    <string name="ciw403r">  </string>
-    <string name="ciw403s"> </string>
-    <string name="ciw403info4"> (دیگر کی صورت میں جگہ کا نام لکھیں) </string>
+    <string name="ciw403o"> </string>
+    <string name="ciw403p"></string>
+    <string name="ciw403963">(دیگر کی صورت میں جگہ کا نام لکھیں)</string>
+
     <string name="ciw404a"> بہت بڑا </string>
     <string name="ciw404b"> اوسطً سے بڑا </string>
     <string name="ciw404c"> اوسطً </string>
@@ -952,6 +954,9 @@
     <string name="cic408c">   وقت کی کمی     </string>
     <string name="cic408d">اصحت کے مرکز کا دور ہونا    </string>
     <string name="cic408e">اساتھ چلنے کے لئے کوئی نہیں تھا    </string>
+    <string name="cic408f"></string>
+    <string name="cic408g"></string>
+    <string name="cic408h"></string>
     <string name="cic409">  ۔C507 - آپ نے (نام)کا   نمونیہ (ARI)کی بیماری کا علاج کہاں سے کروایا؟  ؟</string>
     <string name="cic409sub1"> بپلک میڈیکل سیکٹر </string>
     <string name="cic409a"> سرکاری ہسپتال </string>
@@ -1088,14 +1093,6 @@
     <string name="ciw321f">کیمونٹی مڈوائف </string>
     <string name="ciw321g"> لیڈی ہیلتھ وزیٹر</string>
     <string name="ciw321h"> دائی </string>
-    <string name="ciw214">۔W214 - گذشتہ پانچ سالوں کے دوران ہونے والے حمل کی تعداد (بشمول موجودہ حمل)</string>
-    <string name="ciw215">۔W215 - گذشتہ پانچ سالوں کے دوران آپ کی کتنی زچگیاں ہوئیں؟</string>
-    <string name="ciw205time"> زچگیوں کی تعداد </string>
-    <string name="ciw216">۔W216 - گذشتہ دو سالوں کے دوران آپ کی کتنی زچگیاں ہوئیں؟۔</string>
-    <string name="ciw216a">۔W216a -  کیا پچھلے دو سالوں میں زندہ پیدائش ہوئی تھی؟</string>
-
-    <!--<string name="ciw217">۔W217 -  گذشتہ پانچ سالوں کے دوران ہونے والے حمل کی معلومات جن کا نتیجہ  مردہ بچے کی پیدائش /اسقاط حمل ہے  </string>
-  -->
     <string name="ciw217Flag"> Delete Record </string>
     <string name="ciw21701"> حمل کا نتیجہ </string>
     <string name="ciw21702"> حمل کے نتیجہ کی تاریخ </string>
@@ -1263,6 +1260,22 @@
     <string name="ciw211">۔W211 - آپ اپنی زندگی میں کتنی مرتبہ حاملہ ہوئیں؟ (بشمول موجودہ حمل) </string>
     <string name="ciw212">۔W212 -آپ کی زندگی میں کل کتنی زچگیاں ہوئیں؟ </string>
     <string name="ciw213">۔W213 - پہلے بچے کی پیدائش کے وقت آپ کی عمر کیاتھی؟</string>
+
+    <string name="ciw211a">Number of pregnancies</string>
+    <string name="ciw212a">Number of deliveries </string>
+    <string name="ciw213a">Age in years  </string>
+    <string name="ciw214a">Number of pregnancies </string>
+    <string name="ciw215a">Number of deliveries </string>
+
+
+    <string name="ciw214">۔W214 - گذشتہ پانچ سالوں کے دوران ہونے والے حمل کی تعداد (بشمول موجودہ حمل)</string>
+    <string name="ciw215">۔W215 - گذشتہ پانچ سالوں کے دوران آپ کی کتنی زچگیاں ہوئیں؟</string>
+    <string name="ciw205time"> زچگیوں کی تعداد </string>
+    <string name="ciw216">۔W216 - گذشتہ دو سالوں کے دوران آپ کی کتنی زچگیاں ہوئیں؟۔</string>
+    <string name="ciw216a">۔W216a -  کیا پچھلے دو سالوں میں زندہ پیدائش ہوئی تھی؟</string>
+    <!--<string name="ciw217">۔W217 -  گذشتہ پانچ سالوں کے دوران ہونے والے حمل کی معلومات جن کا نتیجہ  مردہ بچے کی پیدائش /اسقاط حمل ہے  </string>
+  -->
+
     <string name="ciw302">۔W302 - آپ نے کس سے معائنہ کروایاتھا؟</string>
     <string name="ciw303">۔W303 - آپ نے یہ معائنہ کہاں کروایا تھا؟</string>
     <string name="ciw304">۔W304 - جب آپ نے گزشتہ حمل کے دوران  پہلی دفعہ معائنہ کروایا ،تو آپ کاحمل  کتنے ہفتوں یا مہینہ کا تھا؟</string>

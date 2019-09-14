@@ -515,21 +515,21 @@
     <string name="ciw303c">شفاخانه دولتی   </string>
     <string name="ciw303d">کلینیک دولتی  </string>
     <string name="ciw303e">مرکز صحی طفل و مادر   </string>
-    <string name="ciw303f">  دیگر تاسیسات عامه (مشخص کنید) </string>
+    <string name="ciw303961">  دیگر تاسیسات عامه (مشخص کنید) </string>
     <string name="ciw303sub3">بخش خصوصی صحی </string>
-    <string name="ciw303g"> شفاخانه شخصی </string>
-    <string name="ciw303h"> کلینیک شخصی  </string>
-    <string name="ciw303i">زایشگاه شخصی </string>
-    <string name="ciw303j"> دیگر(مشخص کنید)  </string>
-    <string name="ciw303k">  نام مکان  </string>
+    <string name="ciw303f"> شفاخانه شخصی </string>
+    <string name="ciw303g"> کلینیک شخصی  </string>
+    <string name="ciw303h">زایشگاه شخصی </string>
+    <string name="ciw303962"> دیگر(مشخص کنید)  </string>
+    <string name="ciw303i"> </string>
+    <string name="ciw303j"> </string>
+    <string name="ciw303k"> </string>
     <string name="ciw303l"> </string>
     <string name="ciw303m"> </string>
     <string name="ciw303n"> </string>
     <string name="ciw303o"> </string>
-    <string name="ciw303p"> </string>
-    <string name="ciw303q"> </string>
-    <string name="ciw303r"> </string>
-    <string name="ciw303s"> </string>
+    <string name="ciw303963">نام مکان</string>
+
     <string name="ciw304info"> همان گونه که جواب دهنده جواب ها را می دهد، درج کنید. اگر 9" ماه " یا بعدتر باشد، 9 ثبت کنید. </string>
     <string name="ciw305info">بپرسید تا تعداد مراتب که مراقبت از ولادت دریافت شده، را پیدا کنید و کمترین تعداد مراتب که مراقبت دریافت نموده است را درج کنید؟ </string>
     <string name="ciw305a">تعداد مراقبت  </string>
@@ -619,30 +619,31 @@
     <string name="ciw402g"> اقاریب/دوست  </string>
     <string name="ciw402h">داکتر ولادی نسای</string>
     <string name="ciw40299"> هیچ کس </string>
+
     <string name="ciw403info"> بپرسید تا انواع مکان ها را تشخیص دهید </string>
     <string name="ciw403info1"> خانه </string>
     <string name="ciw403a"> خانه جواب دهنده  </string>
-    <string name="ciw403b"> خانه کس دیگر  </string>
-    <string name="ciw403info2">بخش صحت عامه </string>
-    <string name="ciw403c"> شفاخانه دولتی  </string>
-    <string name="ciw403d"> کلینیک دولتی  </string>
-    <string name="ciw403e">مرکز صحی طفل و مادر </string>
-    <string name="ciw403f">دیگر تاسیسات عامه (مشخص کنید)  </string>
-    <string name="ciw403info3"> خش خصوصی صحی </string>
-    <string name="ciw403g"> شفاخانه شخصی  </string>
-    <string name="ciw403h">کلینیک شخصی  </string>
-    <string name="ciw403i"> زایشگاه شخصی  </string>
-    <string name="ciw403j">دیگر مراکز صحی شخصی (مشخص کنید) </string>
-    <string name="ciw403k"> دیگر(مشخص کنید) </string>
+    <string name="ciw403b">خانه کس دیگر   </string>
+    <string name="ciw403info2"> بخش صحت عامه </string>
+    <string name="ciw403c">شفاخانه دولتی   </string>
+    <string name="ciw403d">کلینیک دولتی  </string>
+    <string name="ciw403e">مرکز صحی طفل و مادر   </string>
+    <string name="ciw403961">  دیگر تاسیسات عامه (مشخص کنید) </string>
+    <string name="ciw403info3">بخش خصوصی صحی </string>
+    <string name="ciw403f"> شفاخانه شخصی </string>
+    <string name="ciw403g"> کلینیک شخصی  </string>
+    <string name="ciw403h">زایشگاه شخصی </string>
+    <string name="ciw403962"> دیگر(مشخص کنید)  </string>
+    <string name="ciw403i"> </string>
+    <string name="ciw403j"> </string>
+    <string name="ciw403k"> </string>
     <string name="ciw403l"> </string>
-    <string name="ciw403m">  </string>
+    <string name="ciw403m"> </string>
     <string name="ciw403n"> </string>
-    <string name="ciw403o"></string>
-    <string name="ciw403p">  </string>
-    <string name="ciw403q">  </string>
-    <string name="ciw403r">  </string>
-    <string name="ciw403s"> </string>
-    <string name="ciw403info4"> نام مکان  </string>
+    <string name="ciw403o"> </string>
+    <string name="ciw403p"> </string>
+    <string name="ciw403963">نام مکان </string>
+
     <string name="ciw404a"> بسیار بزرگ  </string>
     <string name="ciw404b"> بزرگتر از اوسط  </string>
     <string name="ciw404c"> متوسط  </string>
@@ -950,6 +951,9 @@
     <string name="cic408c">   نداشتن وقت      </string>
     <string name="cic408d">دوری راه از امکانات صحی     </string>
     <string name="cic408e">کسی خانه برای همراهی نبود     </string>
+    <string name="cic408f"></string>
+    <string name="cic408g"></string>
+    <string name="cic408h"></string>
     <string name="cic409">  ۔C507 در کجا تداوی مشکلات تنفسی  را جستجو کردید؟</string>
     <string name="cic409sub1"> بخش صحت عامه </string>
     <string name="cic409a"> شفاخانه دولتی  </string>
@@ -1085,13 +1089,6 @@
     <string name="ciw321f">قابله  </string>
     <string name="ciw321g"> LHV</string>
     <string name="ciw321h"> دایه محلی  </string>
-    <string name="ciw214">۔W214 - چند بار شما در پنج سال گذشته حمل گرفته اید؟ (به شمول حمل فعلی)</string>
-    <string name="ciw215">۔W215 - در پنج سال گذشته، چند بار طفل به دنیا آورده آید؟</string>
-    <string name="ciw205time"> زچگیوں کی تعداد </string>
-    <string name="ciw216">۔W216 - در دو سال گذشته، چند بار طفل به دنیا آورده آید؟۔</string>
-    <string name="ciw216a">۔W216a -  اگر ہاں تو ان کی تعداد کتنی ہے؟</string>
-    <!--<string name="ciw217">۔W217 -  گذشتہ پانچ سالوں کے دوران ہونے والے حمل کی معلومات جن کا نتیجہ  مردہ بچے کی پیدائش /اسقاط حمل ہے  </string>
-  -->
     <string name="ciw217Flag"> Delete Record </string>
     <string name="ciw21701"> حمل  نتیجه </string>
     <string name="ciw21702"> تاریخ نتیجه </string>
@@ -1259,6 +1256,21 @@
     <string name="ciw211">۔W211 - چند بار شما در طول زندگی تان حامله شده اید؟ (به شمول حمل فعلی) </string>
     <string name="ciw212">۔W212 -چند بار در زندگی تان طفل به دنیا آورده اید؟ </string>
     <string name="ciw213">۔W213 - در اولین ولادت، سن شما چند بود؟</string>
+
+    <string name="ciw211a">Number of pregnancies</string>
+    <string name="ciw212a">Number of deliveries </string>
+    <string name="ciw213a">Age in years  </string>
+    <string name="ciw214a">Number of pregnancies </string>
+    <string name="ciw215a">Number of deliveries </string>
+
+    <string name="ciw214">۔W214 - چند بار شما در پنج سال گذشته حمل گرفته اید؟ (به شمول حمل فعلی)</string>
+    <string name="ciw215">۔W215 - در پنج سال گذشته، چند بار طفل به دنیا آورده آید؟</string>
+    <string name="ciw205time"> زچگیوں کی تعداد </string>
+    <string name="ciw216">۔W216 - در دو سال گذشته، چند بار طفل به دنیا آورده آید؟۔</string>
+    <string name="ciw216a">Number of deliveries</string>
+    <!--<string name="ciw217">۔W217 -  گذشتہ پانچ سالوں کے دوران ہونے والے حمل کی معلومات جن کا نتیجہ  مردہ بچے کی پیدائش /اسقاط حمل ہے  </string>
+  -->
+
     <string name="ciw302">۔W302 - کی را دیدید؟</string>
     <string name="ciw303">۔W303 - شما مراقبت قبل از ولادت را از کجا بدست می آوردید؟</string>
     <string name="ciw304">۔W304 - چند ماهه حامله بودید وقتیکه اولین مراقبت قبل از ودلات را در جریان آخرین حمل تان دریافت کردید؟</string>
