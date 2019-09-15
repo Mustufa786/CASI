@@ -278,7 +278,9 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                         binding.cih2eduh.setEnabled(false);
                         binding.cih2eduh.setChecked(false);
                         binding.cih2edui.setEnabled(false);
+                        binding.cih2eduj.setEnabled(false);
                         binding.cih2edui.setChecked(false);
+                        binding.cih2eduj.setChecked(false);
 
 //                        binding.cih2occa.setEnabled(true);
 //                        binding.cih2occb.setEnabled(true);
@@ -337,6 +339,8 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                         binding.cih2eduh.setChecked(false);
                         binding.cih2edui.setEnabled(false);
                         binding.cih2edui.setChecked(false);
+                        binding.cih2eduj.setEnabled(false);
+                        binding.cih2eduj.setChecked(false);
 
 //                        binding.cih2occa.setEnabled(true);
 //                        binding.cih2occb.setEnabled(true);
@@ -390,6 +394,8 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                         binding.cih2eduh.setChecked(false);
                         binding.cih2edui.setEnabled(false);
                         binding.cih2edui.setChecked(false);
+                        binding.cih2eduj.setEnabled(false);
+                        binding.cih2eduj.setChecked(false);
 
                         binding.cih2occa.setEnabled(true);
                         binding.cih2occb.setEnabled(true);
@@ -442,6 +448,8 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                         binding.cih2eduh.setChecked(false);
                         binding.cih2edui.setEnabled(false);
                         binding.cih2edui.setChecked(false);
+                        binding.cih2eduj.setEnabled(false);
+                        binding.cih2eduj.setChecked(false);
 
                         binding.cih2occa.setEnabled(true);
                         binding.cih2occb.setEnabled(true);
@@ -493,6 +501,8 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                         binding.cih2eduh.setChecked(false);
                         binding.cih2edui.setEnabled(false);
                         binding.cih2edui.setChecked(false);
+                        binding.cih2eduj.setEnabled(false);
+                        binding.cih2eduj.setChecked(false);
 
                         binding.cih2occa.setEnabled(true);
                         binding.cih2occb.setEnabled(true);
@@ -542,6 +552,8 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                         binding.cih2eduh.setEnabled(true);
                         binding.cih2edui.setEnabled(false);
                         binding.cih2edui.setChecked(false);
+                        binding.cih2eduj.setEnabled(false);
+                        binding.cih2eduj.setChecked(false);
 
                         binding.cih2occa.setEnabled(true);
                         binding.cih2occb.setEnabled(true);
@@ -590,6 +602,7 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                         binding.cih2edug.setEnabled(true);
                         binding.cih2eduh.setEnabled(true);
                         binding.cih2edui.setEnabled(true);
+                        binding.cih2eduj.setEnabled(true);
 
                         binding.cih2occa.setEnabled(true);
                         binding.cih2occb.setEnabled(true);
@@ -903,6 +916,7 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
             sA2.put("cih208", binding.cih2edua.isChecked() ? "1" : binding.cih2edub.isChecked() ? "2" : binding.cih2educ.isChecked() ? "3" : binding.cih2edud.isChecked() ? "4"
                     : binding.cih2edue.isChecked() ? "5" : binding.cih2eduf.isChecked() ? "6" : binding.cih2edug.isChecked() ? "7" : binding.cih2eduh.isChecked() ? "8"
                     : binding.cih2edui.isChecked() ? "9"
+                    : binding.cih2eduj.isChecked() ? "10"
                     : binding.cih2edu98.isChecked() ? "98" :
                     "0");
 

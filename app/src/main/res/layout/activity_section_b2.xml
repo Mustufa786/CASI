@@ -384,7 +384,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_marginBottom="1dp"
-                            android:text="@string/ciw303j" />
+                            android:text="@string/ciw303962" />
 
                         <EditText
                             android:id="@+id/ciw303962x"
@@ -815,8 +815,7 @@
                         <RadioGroup
                             android:id="@+id/ciw31001"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
+                            android:layout_height="wrap_content">
 
                             <RadioButton
                                 android:id="@+id/ciw31001a"

@@ -909,6 +909,7 @@
                                                 app:type="range" />
 
                                             <TextView
+                                                android:visibility="gone"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginTop="16dp"
@@ -918,6 +919,7 @@
                                                 android:textColor="@android:color/white" />
 
                                             <com.edittextpicker.aliazaz.EditTextPicker
+                                                android:visibility="gone"
                                                 android:id="@+id/ciw216"
                                                 style="@style/textInput"
                                                 android:hint="@string/ciw205time"

@@ -660,6 +660,15 @@
                             android:text="@string/cih2edui" />
 
                         <RadioButton
+                            android:id="@+id/cih2eduj"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/cih2eduj" />
+
+                        <RadioButton
                             android:id="@+id/cih2edu98"
                             style="@style/radiobutton"
                             android:layout_width="match_parent"
@@ -811,7 +820,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="match_parent"

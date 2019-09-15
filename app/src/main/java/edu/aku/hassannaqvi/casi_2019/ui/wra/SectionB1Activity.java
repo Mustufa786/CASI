@@ -1337,8 +1337,8 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                         if (!ValidatorClass.EmptyEditTextPicker(this, bi.ciw215, getString(R.string.ciw215)))
                             return false;
 
-                        if (!ValidatorClass.EmptyEditTextPicker(this, bi.ciw216, getString(R.string.ciw216)))
-                            return false;
+                        /*if (!ValidatorClass.EmptyEditTextPicker(this, bi.ciw216, getString(R.string.ciw216)))
+                            return false;*/
 
                         return ValidatorClass.EmptyRadioButton(this, bi.ciw21601, bi.ciw21601a, getString(R.string.ciw216a));
 

@@ -312,13 +312,15 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/_8sdp"
-                            android:text="@string/checkHHpresent" />
+                            android:text="@string/checkHHpresent"
+                            android:visibility="gone" />
 
                         <LinearLayout
                             android:id="@+id/fldGrpcih110a"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            android:visibility="gone">
 
                             <TextView
                                 android:layout_width="match_parent"

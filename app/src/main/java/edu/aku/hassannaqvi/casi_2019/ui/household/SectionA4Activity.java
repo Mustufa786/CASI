@@ -665,8 +665,10 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
             return false;
         }
 
-        if (!ValidatorClass.EmptyRadioButton(this, binding.cih303a, binding.cih303a1, getString(R.string.cih303a))) {
-            return false;
+        if (!userCountryTajik_Home) {
+            if (!ValidatorClass.EmptyRadioButton(this, binding.cih303a, binding.cih303a1, getString(R.string.cih303a))) {
+                return false;
+            }
         }
 
         if (!ValidatorClass.EmptyRadioButton(this, binding.cih303, binding.cih303b, getString(R.string.cih303))) {

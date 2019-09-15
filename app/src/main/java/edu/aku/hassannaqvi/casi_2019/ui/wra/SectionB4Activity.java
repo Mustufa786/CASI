@@ -189,13 +189,22 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
                 }
             }
         });
+        binding.ciw407.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i != binding.ciw407a.getId())
+                    binding.ciw409.clearCheck();
+            }
+        });
+
+
         binding.ciw401.setOnCheckedChangeListener(this);
         binding.ciw403.setOnCheckedChangeListener(this);
         binding.ciw40301.setOnCheckedChangeListener(this);
         binding.ciw404.setOnCheckedChangeListener(this);
         binding.ciw406c.addTextChangedListener(this);
         binding.ciw406r.addTextChangedListener(this);
-        binding.ciw407.setOnCheckedChangeListener(this);
+//        binding.ciw407.setOnCheckedChangeListener(this);
         binding.ciw408.setOnCheckedChangeListener(this);
         binding.ciw409.setOnCheckedChangeListener(this);
         binding.ciw410.setOnCheckedChangeListener(this);
@@ -575,8 +584,10 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
             return false;
         }
         // ciw409
-        if (!ValidatorClass.EmptyRadioButton(this, binding.ciw409, binding.ciw409a, getString(R.string.ciw409))) {
-            return false;
+        if (binding.ciw407a.isChecked()) {
+            if (!ValidatorClass.EmptyRadioButton(this, binding.ciw409, binding.ciw409a, getString(R.string.ciw409))) {
+                return false;
+            }
         }
         // ciw410
         if (!ValidatorClass.EmptyRadioButton(this, binding.ciw410, binding.ciw410a, getString(R.string.ciw410))) {

@@ -850,13 +850,15 @@
                     android:background="@color/colorPrimary"
                     android:text="@string/ciw409"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textColor="@android:color/white" />
+                    android:textColor="@android:color/white"
+                    android:visibility="@{ciw407a.checked ? View.VISIBLE : View.GONE}" />
 
                 <RadioGroup
                     android:id="@+id/ciw409"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:visibility="@{ciw407a.checked ? View.VISIBLE : View.GONE}">
 
                     <RadioButton
                         android:id="@+id/ciw409a"

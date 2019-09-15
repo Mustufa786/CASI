@@ -100,8 +100,8 @@
     <string name="na106"> Сана ва вақти пурсиш </string>
     <string name="cih113">  H113 -Номи мусоҳиб: </string>
     <string name="respName">  Номи мусоҳиб  </string>
-    <string name="cih111">   Санаи мусоҳиба:  </string>
-    <string name="cih115"> Синну соли пурраи </string>
+    <string name="cih111"> H111 - Санаи мусоҳиба:  </string>
+    <string name="cih115"> H115 - Синну соли пурраи </string>
     <string name="cih115a"> мусоҳиб </string>
     <string name="na107"> Номи мусоҳиб: </string>
     <string name="nw2info">ИН ҚИСМ БО ЗАНОНИ ҚОБИЛИ ТАВАЛЛУДИ АЗ 15 ТО 49 СОЛА, КИ АЗ РУИ ҶАДВАЛИ ХОНАВОДА МУАЙЯН КАРДА МЕШАВАНД ПУР КАРДА МЕШАВАД. БАРОИ ҲАР ЯК ЗАН ИН ҚИСМ ДАР АЛОҲИДАГӢ ПУР КАРДА МЕШАВАД.</string>
@@ -123,14 +123,14 @@
     <string name="na119f"> таҷрибаи бади гузашта </string>
     <string name="na119g"> خون اور پیشاب کے نمونے کا لینا </string>
     <string name="na111">H117 - Мувофиқа гирифта шуд?</string>
-    <string name="na112">W114. Мувофиқа гирифта шуд? </string>
+    <string name="na112">Мувофиқа гирифта шуд? </string>
 
     <string name="na2heading"> РУИХАТИ АЪЗОИ ХОНАВОДА  </string>
     <string name="na2subHeading"> ХОНАНДАГОНИ ХОНАНДАГОН ДАТА </string>
     <string name="na2subEditHeading"> ЭДИТИ ХОНАНДАГОНИ ДӮСТОН </string>
     <string name="na201"> Рақами сатр </string>
     <string name="na202Info">  Пеш аз ҳама, лутфан ҳамаи аъзои хонаводае, ки дар ин ҷо сукунат мекунанд аз сардори хонавода сар карда номбар кунед </string>
-    <string name="na202"> ном </string>
+    <string name="na202">H202 - ном </string>
     <string name="na203">H203 - Хешигарӣ нисбат ба сардори хонавода?</string>
     <string name="na203a">Сардори хонавода </string>
     <string name="na203b">Зан,шавҳар </string>
@@ -169,6 +169,8 @@
     <string name="cih2edug"> Олии нопурра </string>
     <string name="cih2eduh"> Олӣ </string>
     <string name="cih2edui"> Магистр</string>
+    <string name="cih2eduj"> Номзад/Доктори илм </string>
+
     <string name="cih2occ">  H209- ШУҒЛ  </string>
     <string name="cih2occa">Кӯдакито 7 сола</string>
     <string name="cih2occb">Хонандаимактаб</string>
@@ -180,6 +182,7 @@
     <string name="cih2occh"> КормандиТҒД </string>
     <string name="cih2occi"> Корманди муваққатӣ </string>
     <string name="cih2occj"> Нафақахӯр </string>
+
     <string name="cih2u5"> Record line No. for child under five years </string>
     <string name="h2adol"> Record line No. for Adolescent 10-19 years </string>
     <string name="h2mwra"> Record line No. for Married women 15-49 years</string>
@@ -399,7 +402,7 @@
     <string name="cih322acr"> Ҳисса</string>
     <string name="cih322can"> Гектар </string>
     <string name="cih323">H323 -Оё шумо чорво, ҳайвон ва ё мурғ доред?</string>
-    <string name="cih324">H324 - Агар Ҳа, хонаводаатон чанд шумора чорво, ҳайвон ва ё мурғ дорад?\nҲар як ҷавобро хонда нависед ва агар надошта бошанд 000 нависед.</string>
+    <string name="cih324">H324 - Агар Ҳа, хонаводаатон чанд шумора чорво, ҳайвон ва ё мурғ дорад?</string>
     <string name="cih324info"> Ҳар як ҷавобро хонда нависед ва агар надошта бошанд 000 нависед.  </string>
     <string name="cih324a">Гов, Барзагов </string>
     <string name="cih324b">Асп/Хар/Хачир </string>
@@ -437,9 +440,9 @@
     <string name="cih40603">Пеш аз хурондани кӯдак </string>
     <string name="cih40604">Баъди тоза намудани кӯдаке, ки қазои ҳоҷат кард </string>
     <string name="cih40605">Баъди истифода намудани ҳоҷатхона </string>
-    <string name="cih406info">Ин саволи кушод аст. Ҷавобҳоро нахонед. </string>
+    <string name="cih406info">(Ин саволи кушод аст. Ҷавобҳоро нахонедю Якчанд ҷавоб мумкин аст).</string>
     <string name="cih406info1">  </string>
-    <string name="cih406">H406 -Дар кадом мавридҳо шумо дастонатонро бо собун мешуед? \n (Ин саволи кушод аст. Ҷавобҳоро нахонедю Якчанд ҷавоб мумкин аст).</string>
+    <string name="cih406">H406 -Дар кадом мавридҳо шумо дастонатонро бо собун мешуед? </string>
     <!--[ЯКЧАНД ҶАВОБ МУМКИН АСТ]   </string>-->
 
 
@@ -499,7 +502,7 @@
     <string name="cih608">  H604a - Ин дар чор ҳафтаи охир чи тез рух дод? </string>
     <string name="cih609">  H605 - Дар чор ҳафтаи охир оё шумо ё ягон аъзои хонаводаатон маҷбур будед баръакси ниёзатон хӯроки камтар истеъмол намоед, зеро хӯрок кофӣ набуд? </string>
     <string name="cih610">  H605a - Ин дар чор ҳафтаи охир чи тез рух дод?</string>
-    <string name="cih611">  H606 - Дарчорҳафтаиохироёшумоёягонаъзоихонаводаатонмаҷбурбудеддарякрӯзазмеъёримуқаррарӣкамтархӯрокхӯред, зерохӯрокикофӣнадоштед? (завтрак, обед, ужин) </string>
+    <string name="cih611">  H606 - Дар чор ҳафтаи охир оё шумо ё ягон аъзои хонаводаатон маҷбур будед дар як рӯз аз меъёри муқаррарӣ камтар хӯрок хӯред, зеро хӯроки кофӣ надоштед? (завтрак, обед, ужин) </string>
     <string name="cih612">  H606a - Ин дар чор ҳафтаи охир чи тез рух дод?  </string>
     <string name="cih613"> H607 - Дар чор ҳафтаи охир оё дар хонаводаатон ягон хӯроки хӯрданӣ набуд, зеро шумо натавонистед маводи хӯрока истеҳсол кунед ё бихаред?</string>
     <string name="cih614">  H607a - Ин дар чор ҳафтаи охир чи тез рух дод? </string>
@@ -570,7 +573,7 @@
     <string name="ciw201sub3"> Агар сол маълум набошад, ’9998’ нависед </string>
     <string name="ciw202">W202 -Лутфан гӯед, ки шумо чанд сола ҳастед? Дар рӯзи таваллуди охирин, ки қайд кардед, шумо чанд сола шудед? \n СИННУ СОЛИ ПУРРАРО НАВИСЕД </string>
     <string name="ciw202a">Синну соли пурра </string>
-    <string name="ciw203"> W203 -Агар маълумоти W201 and W202 мувофиқат накунанд, муайян кунед, ки кадоми онҳо дақиқтар аст? </string>
+    <string name="ciw203"> W203 -W201 ва W202-ро тафтиш кунед: оё синну соли мусоҳиб аз 15 то 49 ҳаст? Агар маълумоти W201 and W202 мувофиқат накунанд, муайян кунед, ки кадоми онҳо дақиқтар аст? </string>
     <string name="ciw204info"> (Аз он ҷумла ҳомиладории ҳозира)</string>
     <string name="ciw204">W204 -Оё шумо оиладор ҳастед? </string>
     <string name="ciw204a"> حمل کی تعداد </string>
@@ -590,11 +593,11 @@
     <string name="ciw213a">Синну сол</string>
     <string name="ciw214">W214 -Дар давоми ду соли охир шумо чанд бор ҳомиладор будед? \n (аз ҷумла ҳомиладории ҳозира) </string>
     <string name="ciw214a">Шумораи ҳомиладориҳо </string>
-    <string name="ciw215">W215 -Дар давоми панҷ соли охир шумо чанд бор  таваллуд кардед? </string>
+    <string name="ciw215">W215 -Дар давоми ду соли охир шумо чанд бор таваллуд кардед? </string>
     <string name="ciw215a">Шумораи таваллудҳо </string>
     <string name="ciw205time"> Шумораи таваллудҳо </string>
     <string name="ciw216">W216 - Дар давоми ду соли охир шумо чанд бор  таваллуд кардед? </string>
-    <string name="ciw216a">W216a - Дар давоми ду соли охир таваллуди зинда буд?</string>
+    <string name="ciw216a">W215a - Дар давоми ду соли охир таваллуди зинда буд?</string>
 
     <string name="ciw217">W217 -  گذشتہ پانچ سالوں کے دوران ہونے والے حمل کی معلومات جن کا نتیجہ  مردہ بچے کی پیدائش /اسقاط حمل ہے  </string>
     <string name="nb1aheading">Ҳама маълумот дар бораи ҳомиладорӣ дар панҷ соли охир  </string>
@@ -634,7 +637,7 @@
     <string name="ciw302info"> Ҳамаи ҷавобҳоро нависед </string>
 
     <string name="ciw302">W302 - Кӣ шуморо аз назар гузаронд? \nПурсед: Боз кӣ?\n[ЯКЧАНД ҶАВОБ МУМКИН АСТ]\nҲамаи ҷавобҳоро нависед</string>
-    <string name="ciw302a"> Духтури ҳамрозаи занон   </string>
+    <string name="ciw302a"> Акушер-гинеколог   </string>
     <string name="ciw302b"> Духтури дигар  </string>
     <string name="ciw302c"> Ҳамшираи шавқат   </string>
     <string name="ciw302d"> Акушер-гинеколог    </string>
@@ -1970,6 +1973,6 @@
     <string name="cid618a"> مشکل نیست  </string>
     <string name="cid618b"> مطمئین نیست </string>
     <string name="cid618c"> مشکل  </string>
-    <string name="addMore">" مزید اندراج کریں "</string>
+    <string name="addMore"> مزید اندراج کریں </string>
 
 </resources>

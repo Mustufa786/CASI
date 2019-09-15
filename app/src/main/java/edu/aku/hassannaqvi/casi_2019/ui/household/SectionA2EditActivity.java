@@ -182,7 +182,8 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
                                                                     jsonB2.getcih208().equals("7") ? binding.cih2edug.getId() :
                                                                             jsonB2.getcih208().equals("8") ? binding.cih2eduh.getId() :
                                                                                     jsonB2.getcih208().endsWith("9") ? binding.cih2edui.getId() :
-                                                                                            binding.cih2edu98.getId());
+                                                                                            jsonB2.getcih208().endsWith("10") ? binding.cih2eduj.getId() :
+                                                                                                    binding.cih2edu98.getId());
         }
 
         if (!jsonB2.getcih209().equals("0")) {
@@ -580,7 +581,7 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
                         binding.cih2eduh.setEnabled(false);
                         binding.cih2eduh.setChecked(false);
                         binding.cih2edui.setEnabled(false);
-                        binding.cih2edui.setChecked(false);
+                        binding.cih2eduj.setChecked(false);
 
 //                        binding.cih2occa.setEnabled(true);
 //                        binding.cih2occb.setEnabled(true);
@@ -634,6 +635,8 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
                         binding.cih2eduh.setChecked(false);
                         binding.cih2edui.setEnabled(false);
                         binding.cih2edui.setChecked(false);
+                        binding.cih2eduj.setEnabled(false);
+                        binding.cih2eduj.setChecked(false);
 
 //                        binding.cih2occa.setEnabled(true);
 //                        binding.cih2occb.setEnabled(true);
@@ -682,6 +685,8 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
                         binding.cih2eduh.setChecked(false);
                         binding.cih2edui.setEnabled(false);
                         binding.cih2edui.setChecked(false);
+                        binding.cih2eduj.setEnabled(false);
+                        binding.cih2eduj.setChecked(false);
 
                         binding.cih2occa.setEnabled(true);
                         binding.cih2occb.setEnabled(true);
@@ -729,6 +734,8 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
                         binding.cih2eduh.setChecked(false);
                         binding.cih2edui.setEnabled(false);
                         binding.cih2edui.setChecked(false);
+                        binding.cih2eduj.setEnabled(false);
+                        binding.cih2eduj.setChecked(false);
 
                         binding.cih2occa.setEnabled(true);
                         binding.cih2occb.setEnabled(true);
@@ -775,6 +782,8 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
                         binding.cih2eduh.setChecked(false);
                         binding.cih2edui.setEnabled(false);
                         binding.cih2edui.setChecked(false);
+                        binding.cih2eduj.setEnabled(false);
+                        binding.cih2eduj.setChecked(false);
 
                         binding.cih2occa.setEnabled(true);
                         binding.cih2occb.setEnabled(true);
@@ -819,6 +828,8 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
                         binding.cih2eduh.setEnabled(true);
                         binding.cih2edui.setEnabled(false);
                         binding.cih2edui.setChecked(false);
+                        binding.cih2eduj.setEnabled(false);
+                        binding.cih2eduj.setChecked(false);
 
                         binding.cih2occa.setEnabled(true);
                         binding.cih2occb.setEnabled(true);
@@ -862,6 +873,7 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
                         binding.cih2edug.setEnabled(true);
                         binding.cih2eduh.setEnabled(true);
                         binding.cih2edui.setEnabled(true);
+                        binding.cih2eduj.setEnabled(true);
 
                         binding.cih2occa.setEnabled(true);
                         binding.cih2occb.setEnabled(true);
@@ -1042,6 +1054,7 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
         sA2.put("cih208", binding.cih2edua.isChecked() ? "1" : binding.cih2edub.isChecked() ? "2" : binding.cih2educ.isChecked() ? "3" : binding.cih2edud.isChecked() ? "4"
                 : binding.cih2edue.isChecked() ? "5" : binding.cih2eduf.isChecked() ? "6" : binding.cih2edug.isChecked() ? "7" : binding.cih2eduh.isChecked() ? "8"
                 : binding.cih2edui.isChecked() ? "9"
+                : binding.cih2eduj.isChecked() ? "9"
                 : binding.cih2edu98.isChecked() ? "98"
                 : "0");
 

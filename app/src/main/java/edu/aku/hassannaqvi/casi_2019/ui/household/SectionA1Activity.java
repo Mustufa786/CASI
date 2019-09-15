@@ -433,7 +433,6 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
         }
 
 //        cih108
-
         if (!binding.cih102.getText().toString().isEmpty()) {
 
             if (binding.cih108.getText().toString().length() == 8) {
@@ -451,14 +450,13 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
         }
 
 //        New HHHead
-
-        if (!binding.checkHHHeadpresent.isChecked()) {
+        /*if (!binding.checkHHHeadpresent.isChecked()) {
             if (!ValidatorClass.EmptyTextBox(this, binding.newHHheadname, "New head name.")) {
                 return false;
             }
         } else {
             binding.newHHheadname.setError(null);
-        }
+        }*/
 
 //        cih113
         if (!flag) {
