@@ -29,7 +29,80 @@ public class JSONA2ModelClass {
     private String cih211 = "";
     private String cih212 = "";
 
+    private String cih209aa = "";
+    private String cih209ab = "";
+    private String cih209ac = "";
+    private String cih209ad = "";
+    private String cih209ae = "";
+    private String cih209af = "";
+    private String cih209ag = "";
+    private String cih209ah = "";
+
     public JSONA2ModelClass() {
+    }
+
+    public String getCih209aa() {
+        return cih209aa;
+    }
+
+    public void setCih209aa(String cih209aa) {
+        this.cih209aa = cih209aa;
+    }
+
+    public String getCih209ab() {
+        return cih209ab;
+    }
+
+    public void setCih209ab(String cih209ab) {
+        this.cih209ab = cih209ab;
+    }
+
+    public String getCih209ac() {
+        return cih209ac;
+    }
+
+    public void setCih209ac(String cih209ac) {
+        this.cih209ac = cih209ac;
+    }
+
+    public String getCih209ad() {
+        return cih209ad;
+    }
+
+    public void setCih209ad(String cih209ad) {
+        this.cih209ad = cih209ad;
+    }
+
+    public String getCih209ae() {
+        return cih209ae;
+    }
+
+    public void setCih209ae(String cih209ae) {
+        this.cih209ae = cih209ae;
+    }
+
+    public String getCih209af() {
+        return cih209af;
+    }
+
+    public void setCih209af(String cih209af) {
+        this.cih209af = cih209af;
+    }
+
+    public String getCih209ag() {
+        return cih209ag;
+    }
+
+    public void setCih209ag(String cih209ag) {
+        this.cih209ag = cih209ag;
+    }
+
+    public String getCih209ah() {
+        return cih209ah;
+    }
+
+    public void setCih209ah(String cih209ah) {
+        this.cih209ah = cih209ah;
     }
 
     public String getCluster_no() {

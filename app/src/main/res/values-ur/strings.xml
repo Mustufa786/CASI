@@ -181,6 +181,17 @@
     <string name="h2adol"> Record line No. for Adolescent 10-19 years </string>
     <string name="h2mwra"> Record line No. for Married women 15-49 years</string>
     <string name="cih213"> ۔H213- گھر کے سربراہ کا فون نمبر </string>
+
+    <string name="cih214"></string>
+    <string name="cih214a"></string>
+    <string name="cih214b"></string>
+    <string name="cih214c"></string>
+    <string name="cih214d"></string>
+    <string name="cih214e"></string>
+    <string name="cih214f"></string>
+    <string name="cih214g"></string>
+    <string name="cih214h"></string>
+
     <string name="cih2mw"> شادی شدہ خواتین </string>
     <string name="na2ad"> نوعمر افراد </string>
     <string name="cih2adm"> مرد </string>

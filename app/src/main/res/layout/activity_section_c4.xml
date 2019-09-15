@@ -536,6 +536,7 @@
                             android:text="@string/cic404g" />
 
                         <RadioButton
+                            android:visibility="gone"
                             android:id="@+id/cic40401h"
                             style="@style/radiobutton"
                             android:layout_width="match_parent"
@@ -560,6 +561,7 @@
                             android:text="@string/cic404j" />
 
                         <RadioButton
+                            android:visibility="gone"
                             android:id="@+id/cic40401k"
                             style="@style/radiobutton"
                             android:layout_width="match_parent"
@@ -1334,6 +1336,7 @@
                             android:text="@string/cic409g" />
 
                         <RadioButton
+                            android:visibility="gone"
                             android:id="@+id/cic40901h"
                             style="@style/radiobutton"
                             android:layout_width="match_parent"
@@ -1358,6 +1361,7 @@
                             android:text="@string/cic409j" />
 
                         <RadioButton
+                            android:visibility="gone"
                             android:id="@+id/cic40901k"
                             style="@style/radiobutton"
                             android:layout_width="match_parent"
@@ -2095,6 +2099,7 @@
                             android:text="@string/cic414g" />
 
                         <RadioButton
+                            android:visibility="gone"
                             android:id="@+id/cic41401h"
                             style="@style/radiobutton"
                             android:layout_width="match_parent"
@@ -2119,6 +2124,7 @@
                             android:text="@string/cic414j" />
 
                         <RadioButton
+                            android:visibility="gone"
                             android:id="@+id/cic41401k"
                             style="@style/radiobutton"
                             android:layout_width="match_parent"

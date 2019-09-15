@@ -37,6 +37,8 @@ import edu.aku.hassannaqvi.casi_2019.other.DateUtils;
 import edu.aku.hassannaqvi.casi_2019.validation.ClearClass;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
+import static edu.aku.hassannaqvi.casi_2019.ui.household.SectionA1Activity.userCountryTajik_Home;
+
 
 public class SectionA2Activity extends AppCompatActivity implements TextWatcher, RadioGroup.OnCheckedChangeListener {
 
@@ -165,6 +167,11 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
             binding.na20396.setEnabled(false);
             binding.na20398.setEnabled(false);
         }
+
+        /*For Tajik*/
+        binding.fldGrpcih214check.setVisibility(userCountryTajik_Home ? View.VISIBLE : View.GONE);
+
+
     }
 
     public void skipPattern() {
@@ -905,6 +912,18 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
 
             sA2.put("cih20996x", binding.cih2occ96x.getText().toString());
 
+            sA2.put("cih214", binding.cih214a.isChecked() ? "1" : binding.cih214b.isChecked() ? "2" : binding.cih214c.isChecked() ? "3" : binding.cih214d.isChecked() ? "4"
+                    : binding.cih214e.isChecked() ? "5" : binding.cih214f.isChecked() ? "6" : binding.cih214g.isChecked() ? "7" : binding.cih214h.isChecked() ? "8" : "0");
+
+            sA2.put("cih209aa", binding.cih214a.isChecked() ? "1" : "0");
+            sA2.put("cih209ab", binding.cih214b.isChecked() ? "2" : "0");
+            sA2.put("cih209ac", binding.cih214c.isChecked() ? "3" : "0");
+            sA2.put("cih209ad", binding.cih214d.isChecked() ? "4" : "0");
+            sA2.put("cih209ae", binding.cih214e.isChecked() ? "5" : "0");
+            sA2.put("cih209af", binding.cih214f.isChecked() ? "6" : "0");
+            sA2.put("cih209ag", binding.cih214g.isChecked() ? "7" : "0");
+            sA2.put("cih209ah", binding.cih214h.isChecked() ? "8" : "0");
+
             sA2.put("cih210", binding.cih210a.isChecked() ? "1" : binding.cih210b.isChecked() ? "2" : "0");
 
             sA2.put("cih211", fathersMap.get(binding.cih211.getSelectedItem().toString() + "_" + fathersSerials.get(fathersList.indexOf(binding.cih211.getSelectedItem().toString()) - 1)));
@@ -1186,6 +1205,12 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                 }
 
                 if (!ValidatorClass.EmptyRadioButton(this, binding.cih2occ, binding.cih2occ96, binding.cih2occ96x, getString(R.string.cih2occ))) {
+                    return false;
+                }
+            }
+
+            if (userCountryTajik_Home) {
+                if (!ValidatorClass.EmptyCheckBox(this, binding.fldGrpcih214check, binding.cih214a, getString(R.string.cih214))) {
                     return false;
                 }
             }

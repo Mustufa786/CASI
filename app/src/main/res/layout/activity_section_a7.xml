@@ -13,8 +13,8 @@
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <!--Heading-->
         <TextView
@@ -935,7 +935,6 @@
                     app:minValue="1"
                     app:type="range" />
 
-
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -955,80 +954,87 @@
 
 
                 <!--====cih713===-->
-
-                <TextView
+                <LinearLayout
+                    android:id="@+id/fldGrpA701"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:background="@color/colorPrimary"
-                    android:text="@string/cih713"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textColor="@android:color/white" />
+                    android:orientation="vertical">
 
-                <RadioGroup
-                    android:id="@+id/cih713"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-
-                    <RadioButton
-                        android:id="@+id/cih713a"
-                        style="@style/radiobutton"
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="1dp"
-                        android:layout_weight="1"
-                        android:text="@string/yes" />
+                        android:layout_marginTop="16dp"
+                        android:background="@color/colorPrimary"
+                        android:text="@string/cih713"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/white" />
 
-                    <RadioButton
-                        android:id="@+id/cih713b"
-                        style="@style/radiobutton"
+                    <RadioGroup
+                        android:id="@+id/cih713"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="1dp"
-                        android:layout_weight="1"
-                        android:text="@string/no" />
-                </RadioGroup>
+                        android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:background="@color/colorPrimary"
-                    android:text="@string/benef"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textColor="@android:color/white"
-                    android:visibility='@{cih713a.checked? View.VISIBLE : View.GONE}' />
 
-                <com.edittextpicker.aliazaz.EditTextPicker
-                    android:id="@+id/cih71302"
-                    style="@style/textInput"
-                    android:hint="@string/benef"
-                    android:inputType="number"
-                    android:maxLength="2"
-                    android:text='@{cih713a.checked? cih71302.getText.toString : "" }'
-                    android:visibility='@{cih713a.checked? View.VISIBLE : View.GONE}'
-                    app:maxValue="4"
-                    app:minValue="1"
-                    app:type="range" />
+                        <RadioButton
+                            android:id="@+id/cih713a"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/yes" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:background="@color/colorPrimary"
-                    android:text="@string/source"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textColor="@android:color/white"
-                    android:visibility='@{cih713a.checked? View.VISIBLE : View.GONE}' />
+                        <RadioButton
+                            android:id="@+id/cih713b"
+                            style="@style/radiobutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:text="@string/no" />
+                    </RadioGroup>
 
-                <EditText
-                    android:id="@+id/cih71303"
-                    style="@style/textInput"
-                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
-                    android:spinnerMode="dialog"
-                    android:visibility='@{cih713a.checked? View.VISIBLE : View.GONE}' />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@color/colorPrimary"
+                        android:text="@string/benef"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/white"
+                        android:visibility='@{cih713a.checked? View.VISIBLE : View.GONE}' />
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
+                        android:id="@+id/cih71302"
+                        style="@style/textInput"
+                        android:hint="@string/benef"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:text='@{cih713a.checked? cih71302.getText.toString : "" }'
+                        android:visibility='@{cih713a.checked? View.VISIBLE : View.GONE}'
+                        app:maxValue="4"
+                        app:minValue="1"
+                        app:type="range" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@color/colorPrimary"
+                        android:text="@string/source"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/white"
+                        android:visibility='@{cih713a.checked? View.VISIBLE : View.GONE}' />
+
+                    <EditText
+                        android:id="@+id/cih71303"
+                        style="@style/textInput"
+                        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ - , ."
+                        android:spinnerMode="dialog"
+                        android:visibility='@{cih713a.checked? View.VISIBLE : View.GONE}' />
+
+                </LinearLayout>
 
                 <!--====cih714===-->
 

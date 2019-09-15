@@ -36,6 +36,8 @@ import edu.aku.hassannaqvi.casi_2019.other.DateUtils;
 import edu.aku.hassannaqvi.casi_2019.other.JSONUtilClass;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
+import static edu.aku.hassannaqvi.casi_2019.ui.household.SectionA1Activity.userCountryTajik_Home;
+
 
 public class SectionA2EditActivity extends AppCompatActivity implements TextWatcher, RadioGroup.OnCheckedChangeListener {
 
@@ -126,6 +128,9 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
 
         AutoPopulate();
 
+        /*For Tajik*/
+        binding.fldGrpcih214check.setVisibility(userCountryTajik_Home ? View.VISIBLE : View.GONE);
+
     }
 
     public void AutoPopulate() {
@@ -196,6 +201,32 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
 
             binding.cih2occ96x.setText(jsonB2.getcih20996x());
         }
+
+        if (!jsonB2.getCih209aa().equals("0")) {
+            binding.cih214a.setChecked(true);
+        }
+        if (!jsonB2.getCih209ab().equals("0")) {
+            binding.cih214b.setChecked(true);
+        }
+        if (!jsonB2.getCih209ac().equals("0")) {
+            binding.cih214c.setChecked(true);
+        }
+        if (!jsonB2.getCih209ad().equals("0")) {
+            binding.cih214d.setChecked(true);
+        }
+        if (!jsonB2.getCih209ae().equals("0")) {
+            binding.cih214e.setChecked(true);
+        }
+        if (!jsonB2.getCih209af().equals("0")) {
+            binding.cih214f.setChecked(true);
+        }
+        if (!jsonB2.getCih209ag().equals("0")) {
+            binding.cih214g.setChecked(true);
+        }
+        if (!jsonB2.getCih209ah().equals("0")) {
+            binding.cih214h.setChecked(true);
+        }
+
 
         if (!jsonB2.getcih210().equals("0")) {
             binding.cih210.check(
@@ -378,10 +409,12 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
                     }
                 }
             } else {
-                for (byte i = 0; i < MainApp.mwraChild.size(); i++) {
-                    if (MainApp.mwraChild.get(i).getSerialNo().equals(mothersSerials.get(mothersList.indexOf(binding.cih212.getSelectedItem().toString()) - 1))) {
-                        MainApp.mwraChild.remove(i);
-                        break;
+                if (Age < 5) {
+                    for (byte i = 0; i < MainApp.mwraChild.size(); i++) {
+                        if (MainApp.mwraChild.get(i).getSerialNo().equals(mothersSerials.get(mothersList.indexOf(binding.cih212.getSelectedItem().toString()) - 1))) {
+                            MainApp.mwraChild.remove(i);
+                            break;
+                        }
                     }
                 }
             }
@@ -1018,6 +1051,15 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
 
         sA2.put("cih20996x", binding.cih2occ96x.getText().toString());
 
+        sA2.put("cih209aa", binding.cih214a.isChecked() ? "1" : "0");
+        sA2.put("cih209ab", binding.cih214b.isChecked() ? "2" : "0");
+        sA2.put("cih209ac", binding.cih214c.isChecked() ? "3" : "0");
+        sA2.put("cih209ad", binding.cih214d.isChecked() ? "4" : "0");
+        sA2.put("cih209ae", binding.cih214e.isChecked() ? "5" : "0");
+        sA2.put("cih209af", binding.cih214f.isChecked() ? "6" : "0");
+        sA2.put("cih209ag", binding.cih214g.isChecked() ? "7" : "0");
+        sA2.put("cih209ah", binding.cih214h.isChecked() ? "8" : "0");
+
         sA2.put("cih210", binding.cih210a.isChecked() ? "1" : binding.cih210b.isChecked() ? "2" : "0");
 
         sA2.put("cih211", fathersMap.get(binding.cih211.getSelectedItem().toString() + "_" + fathersSerials.get(fathersList.indexOf(binding.cih211.getSelectedItem().toString()) - 1)));
@@ -1272,12 +1314,20 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
             return false;
         }
 
-        if (!ValidatorClass.EmptyRadioButton(this, binding.cih2occ, binding.cih2occa, getString(R.string.cih2occ))) {
-            return false;
+        if (Age >= 10) {
+            if (!ValidatorClass.EmptyRadioButton(this, binding.cih2occ, binding.cih2occa, getString(R.string.cih2occ))) {
+                return false;
+            }
+
+            if (!ValidatorClass.EmptyRadioButton(this, binding.cih2occ, binding.cih2occ96, binding.cih2occ96x, getString(R.string.cih2occ))) {
+                return false;
+            }
         }
 
-        if (!ValidatorClass.EmptyRadioButton(this, binding.cih2occ, binding.cih2occ96, binding.cih2occ96x, getString(R.string.cih2occ))) {
-            return false;
+        if (userCountryTajik_Home) {
+            if (!ValidatorClass.EmptyCheckBox(this, binding.fldGrpcih214check, binding.cih214a, getString(R.string.cih214))) {
+                return false;
+            }
         }
 
         if (!MainApp.IsResp) {

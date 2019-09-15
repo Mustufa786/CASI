@@ -202,6 +202,16 @@
     <string name="cih2tm"> Мард  </string>
     <string name="cih2tf"> Зан  </string>
 
+    <string name="cih214">H209a -Оё вай ягон маъюбӣ дорад?\n(Ҳамаи ҷавобҳоро қайд кунед)</string>
+    <string name="cih214a">Нобино </string>
+    <string name="cih214b">Ношунаво</string>
+    <string name="cih214c">Гунг</string>
+    <string name="cih214d">Ҷисман маъюб</string>
+    <string name="cih214e">Эпилептик</string>
+    <string name="cih214f">Зеҳнан маъюб</string>
+    <string name="cih214g">Касалии равонӣ</string>
+    <string name="cih214h">Ҳеҷ кадом</string>
+
     <string name="cih3heading">ҚИСМИH3: ВАЗЪИ ИҶТИМОӢ-ИҚТИСОДӢ </string>
     <string name="cih3sub">Дастурамал: Ин қисм бо сардори хонавода ё аъзое, ки аз 18 сола боло аст пур карда мешавад  </string>
     <string name="cih301">H301 -Забони модарии сардори хонавода кадом аст? </string>

@@ -920,7 +920,7 @@
                                             <com.edittextpicker.aliazaz.EditTextPicker
                                                 android:id="@+id/ciw216"
                                                 style="@style/textInput"
-                                                android:hint="@string/ciw216a"
+                                                android:hint="@string/ciw205time"
                                                 android:inputType="number"
                                                 android:maxLength="2"
                                                 android:text='@{na11801a.checked ? ciw216.getText.toString : "" }'
@@ -933,7 +933,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginTop="16dp"
                                                 android:background="@color/colorPrimary"
-                                                android:text="@string/ciw216"
+                                                android:text="@string/ciw216a"
                                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                                 android:textColor="@android:color/white" />
 

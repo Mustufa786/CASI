@@ -56,21 +56,32 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
 //        AutoCompleteFields();
 
         /*For Tajik Visibility*/
+        // 302
+        bi.ciw302d.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
+
         // 303
         bi.ciw303txt01.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
         bi.ciw303txt02.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
         bi.ciw303i.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        bi.ciw303j.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        bi.ciw303j.setVisibility(userCountryTajik ? View.GONE : View.GONE);
         bi.ciw303k.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
         bi.ciw303l.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        bi.ciw303m.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        bi.ciw303m.setVisibility(userCountryTajik ? View.GONE : View.GONE);
         bi.ciw303n.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        bi.ciw303o.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        bi.ciw303o.setVisibility(userCountryTajik ? View.GONE : View.GONE);
         bi.ciw303963.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
 
         bi.fldGrpciw310.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
         bi.fldGrpciw325.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
 
+        // fldGrpB201
+        bi.fldGrpB201.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
+
+        // ciw311
+        bi.ciw311d.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
+
+        bi.ciw312h.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
+        bi.ciw312k.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
         bi.ciw312n.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
         bi.ciw312o.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
         bi.ciw312p.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
@@ -81,6 +92,11 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
         bi.ciw312txt04.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
         bi.ciw312962.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
 
+        // ciw316
+        bi.ciw316d.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
+
+        bi.ciw317h.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
+        bi.ciw317k.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
         bi.ciw317n.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
         bi.ciw317o.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
         bi.ciw317p.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
@@ -91,6 +107,11 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
         bi.ciw317txt04.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
         bi.ciw317962.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
 
+        // ciw321
+        bi.ciw321d.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
+
+        bi.ciw322h.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
+        bi.ciw322k.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
         bi.ciw322n.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
         bi.ciw322o.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
         bi.ciw322p.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
@@ -864,22 +885,26 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
             }
 
         }
-        if (!ValidatorClass.EmptyRadioButton(this, bi.ciw307, bi.ciw307a, getString(R.string.ciw307))) {
-            return false;
-        }
 
-        if (!ValidatorClass.EmptyRadioButton(this, bi.ciw308, bi.ciw308a, getString(R.string.ciw308))) {
-            return false;
-        }
+        if (!userCountryTajik) {
 
-        if (bi.ciw308a.isChecked()) {
-            if (!bi.ciw30998.isChecked()) {
-                if (!ValidatorClass.EmptyTextBox(this, bi.ciw309, getString(R.string.ciw309) + " - " + getString(R.string.times))) {
-                    return false;
-                }
+            if (!ValidatorClass.EmptyRadioButton(this, bi.ciw307, bi.ciw307a, getString(R.string.ciw307))) {
+                return false;
+            }
 
-                if (!ValidatorClass.RangeTextBox(this, bi.ciw309, 1, 5, getString(R.string.ciw309), " times")) {
-                    return false;
+            if (!ValidatorClass.EmptyRadioButton(this, bi.ciw308, bi.ciw308a, getString(R.string.ciw308))) {
+                return false;
+            }
+
+            if (bi.ciw308a.isChecked()) {
+                if (!bi.ciw30998.isChecked()) {
+                    if (!ValidatorClass.EmptyTextBox(this, bi.ciw309, getString(R.string.ciw309) + " - " + getString(R.string.times))) {
+                        return false;
+                    }
+
+                    if (!ValidatorClass.RangeTextBox(this, bi.ciw309, 1, 5, getString(R.string.ciw309), " times")) {
+                        return false;
+                    }
                 }
             }
         }

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.Toast;
 
 import com.edittextpicker.aliazaz.EditTextPicker;
@@ -24,6 +25,8 @@ import edu.aku.hassannaqvi.casi_2019.databinding.ActivitySectionA7Binding;
 import edu.aku.hassannaqvi.casi_2019.other.JSONUtilClass;
 import edu.aku.hassannaqvi.casi_2019.ui.viewMem.ViewMemberActivity;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
+
+import static edu.aku.hassannaqvi.casi_2019.ui.household.SectionA1Activity.userCountryTajik_Home;
 
 public class SectionA7Activity extends AppCompatActivity {
 
@@ -47,6 +50,10 @@ public class SectionA7Activity extends AppCompatActivity {
         if (SectionA1Activity.editFormFlag) {
             autoPopulate();
         }
+
+        /*For Tajik*/
+        bi.fldGrpA701.setVisibility(userCountryTajik_Home ? View.GONE : View.VISIBLE);
+
     }
 
     private void autoPopulate() {

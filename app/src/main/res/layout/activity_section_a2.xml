@@ -836,7 +836,88 @@
 
                     </LinearLayout>
 
-                    <!--12-->
+                    <!--14-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:background="@color/colorPrimary"
+                            android:text="@string/cih214"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@android:color/white" />
+
+                        <LinearLayout
+                            android:id="@+id/fldGrpcih214check"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:id="@+id/cih214a"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:text="@string/cih214a" />
+
+                            <CheckBox
+                                android:id="@+id/cih214b"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:text="@string/cih214b" />
+
+                            <CheckBox
+                                android:id="@+id/cih214c"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:text="@string/cih214c" />
+
+                            <CheckBox
+                                android:id="@+id/cih214d"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:text="@string/cih214d" />
+
+                            <CheckBox
+                                android:id="@+id/cih214e"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:text="@string/cih214e" />
+
+                            <CheckBox
+                                android:id="@+id/cih214f"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:text="@string/cih214f" />
+
+                            <CheckBox
+                                android:id="@+id/cih214g"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:text="@string/cih214g" />
+
+                            <CheckBox
+                                android:id="@+id/cih214h"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:text="@string/cih214h" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--10-->
                     <TextView
                         android:id="@+id/txtcih210"
                         android:layout_width="match_parent"
@@ -873,7 +954,7 @@
 
                     </RadioGroup>
 
-                    <!--05-->
+                    <!--11-->
                     <LinearLayout
                         android:id="@+id/fldGrpfid"
                         android:layout_width="match_parent"
@@ -902,7 +983,7 @@
 
                     </LinearLayout>
 
-                    <!--06-->
+                    <!--12-->
                     <LinearLayout
                         android:id="@+id/fldGrpmid"
                         android:layout_width="match_parent"
@@ -930,6 +1011,7 @@
                             android:gravity="center" />
 
                     </LinearLayout>
+
 
                 </LinearLayout>
 

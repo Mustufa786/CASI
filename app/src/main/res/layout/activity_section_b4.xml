@@ -1342,7 +1342,8 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_marginBottom="1dp"
-                                android:text="@string/ciw413h" />
+                                android:text="@string/ciw413h"
+                                android:visibility="gone" />
 
                             <RadioButton
                                 android:id="@+id/ciw41301i"
@@ -1363,14 +1364,16 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_marginBottom="1dp"
-                                android:text="@string/ciw413k" />
+                                android:text="@string/ciw413k"
+                                android:visibility="gone" />
 
                             <RadioButton
                                 android:id="@+id/ciw41301l"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_marginBottom="1dp"
-                                android:text="@string/ciw413l" />
+                                android:text="@string/ciw413l"
+                                android:visibility="gone" />
 
                             <RadioButton
                                 android:id="@+id/ciw41301961"
@@ -1409,7 +1412,8 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_marginBottom="1dp"
-                                android:text="@string/ciw413n" />
+                                android:text="@string/ciw413n"
+                                android:visibility="gone" />
 
                             <RadioButton
                                 android:id="@+id/ciw41301o"
@@ -1430,7 +1434,8 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_marginBottom="1dp"
-                                android:text="@string/ciw413962" />
+                                android:text="@string/ciw413962"
+                                android:visibility="gone" />
 
                             <EditText
                                 android:id="@+id/ciw41301962x"
@@ -1439,7 +1444,8 @@
                                 android:enabled='@{ciw41301962.checked ? true : false }'
                                 android:hint="@string/ciw413962"
                                 android:inputType="text"
-                                android:text='@{ciw41301962.checked ? ciw41301962x.getText.toString : ""}' />
+                                android:text='@{ciw41301962.checked ? ciw41301962x.getText.toString : ""}'
+                                android:visibility="gone" />
 
                             <TextView
                                 android:layout_width="match_parent"

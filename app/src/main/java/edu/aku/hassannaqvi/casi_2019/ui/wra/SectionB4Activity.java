@@ -207,10 +207,13 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
 //        AutoCompleteFields();
 
         /*For Tajik Visibility*/
+        binding.ciw401d.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
         binding.ciw401h.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
         binding.ciw401txt01.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
         binding.ciw401txt02.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
 
+        binding.ciw402a.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
+        binding.ciw401d.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
         binding.ciw402h.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
         binding.ciw402txt01.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
         binding.ciw402txt02.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
@@ -218,13 +221,13 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
         binding.ciw403txt01.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
         binding.ciw403txt02.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
         binding.ciw403i.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        binding.ciw403j.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        binding.ciw403j.setVisibility(userCountryTajik ? View.GONE : View.GONE);
         binding.ciw403k.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
         binding.ciw403l.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        binding.ciw403m.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        binding.ciw403m.setVisibility(userCountryTajik ? View.GONE : View.GONE);
         binding.ciw403n.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
         binding.ciw403o.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        binding.ciw403p.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        binding.ciw403p.setVisibility(userCountryTajik ? View.GONE : View.GONE);
         binding.ciw403963.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
 
         binding.ciw412e.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
@@ -623,9 +626,9 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
                         return false;
                     }
                     //        ciw413019602
-                    if (!ValidatorClass.EmptyRadioButton(this, binding.ciw41301, binding.ciw41301962, binding.ciw41301962x, getString(R.string.ciw413) + " - " + getString(R.string.ciw413962))) {
+                    /*if (!ValidatorClass.EmptyRadioButton(this, binding.ciw41301, binding.ciw41301962, binding.ciw41301962x, getString(R.string.ciw413) + " - " + getString(R.string.ciw413962))) {
                         return false;
-                    }
+                    }*/
                     //        ciw413019603
                     return ValidatorClass.EmptyRadioButton(this, binding.ciw41301, binding.ciw41301963, binding.ciw41301963x, getString(R.string.ciw413) + " - " + getString(R.string.other));
                 } else {

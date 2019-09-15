@@ -201,6 +201,16 @@
     <string name="cih2tm"> Мард  </string>
     <string name="cih2tf"> Зан  </string>
 
+    <string name="cih214">H209a -Оё вай ягон маъюбӣ дорад?\n(Ҳамаи ҷавобҳоро қайд кунед)</string>
+    <string name="cih214a">Нобино </string>
+    <string name="cih214b">Ношунаво</string>
+    <string name="cih214c">Гунг</string>
+    <string name="cih214d">Ҷисман маъюб</string>
+    <string name="cih214e">Эпилептик</string>
+    <string name="cih214f">Зеҳнан маъюб</string>
+    <string name="cih214g">Касалии равонӣ</string>
+    <string name="cih214h">Ҳеҷ кадом</string>
+
     <string name="cih3heading">ҚИСМИH3: ВАЗЪИ ИҶТИМОӢ-ИҚТИСОДӢ </string>
     <string name="cih3sub">Дастурамал: Ин қисм бо сардори хонавода ё аъзое, ки аз 18 сола боло аст пур карда мешавад  </string>
     <string name="cih301">H301 -Забони модарии сардори хонавода кадом аст? </string>
@@ -389,7 +399,7 @@
     <string name="cih322acr"> Ҳисса</string>
     <string name="cih322can"> Гектар </string>
     <string name="cih323">H323 -Оё шумо чорво, ҳайвон ва ё мурғ доред?</string>
-    <string name="cih324">H324 - Агар Ҳа, хонаводаатон чанд шумора чорво, ҳайвон ва ё мурғ дорад? \n Ҳар як ҷавобро хонда нависед ва мушоҳида кунед ва агар надошта бошанд 000 нависед.\n(Мушоҳида кардан ғайри имкон аст)</string>
+    <string name="cih324">H324 - Агар Ҳа, хонаводаатон чанд шумора чорво, ҳайвон ва ё мурғ дорад?\nҲар як ҷавобро хонда нависед ва агар надошта бошанд 000 нависед.</string>
     <string name="cih324info"> Ҳар як ҷавобро хонда нависед ва агар надошта бошанд 000 нависед.  </string>
     <string name="cih324a">Гов, Барзагов </string>
     <string name="cih324b">Асп/Хар/Хачир </string>
@@ -578,13 +588,13 @@
     <string name="ciw212a">Шумораи таваллудҳо</string>
     <string name="ciw213">W213 -Дар вақти таваллуди нахустин шумо чанд сола будед?</string>
     <string name="ciw213a">Синну сол</string>
-    <string name="ciw214">W214 -Дар давоми панҷ соли охир шумо чанд бор ҳомиладор будед? \n (аз ҷумла ҳомиладории ҳозира) </string>
+    <string name="ciw214">W214 -Дар давоми ду соли охир шумо чанд бор ҳомиладор будед? \n (аз ҷумла ҳомиладории ҳозира) </string>
     <string name="ciw214a">Шумораи ҳомиладориҳо </string>
     <string name="ciw215">W215 -Дар давоми панҷ соли охир шумо чанд бор  таваллуд кардед? </string>
     <string name="ciw215a">Шумораи таваллудҳо </string>
     <string name="ciw205time"> Шумораи таваллудҳо </string>
     <string name="ciw216">W216 - Дар давоми ду соли охир шумо чанд бор  таваллуд кардед? </string>
-    <string name="ciw216a"> Шумораи таваллудҳо</string>
+    <string name="ciw216a">W216a - Дар давоми ду соли охир таваллуди зинда буд?</string>
 
     <string name="ciw217">W217 -  گذشتہ پانچ سالوں کے دوران ہونے والے حمل کی معلومات جن کا نتیجہ  مردہ بچے کی پیدائش /اسقاط حمل ہے  </string>
     <string name="nb1aheading">Ҳама маълумот дар бораи ҳомиладорӣ дар панҷ соли охир  </string>
@@ -639,7 +649,7 @@
     <string name="ciw303b">   Дар хонаи дигар </string>
 
     <string name="ciw303sub2"> Бахши давлатӣ </string>
-    <string name="ciw303c"> Маркази саломатӣ </string>
+    <string name="ciw303c"> Бунгоҳи саломатӣ (медпункт) </string>
     <string name="ciw303d"> Маркази саломатии деҳотӣ </string>
     <string name="ciw303e"> Беморхонаи деҳотӣ  </string>
     <string name="ciw303961"> Дигар (аниқ кунед)</string>
@@ -653,7 +663,7 @@
     <string name="ciw303m">Диспансер </string>
 
     <string name="ciw303sub3">Бахши хусусӣ </string>
-    <string name="ciw303n">Баморхонаи хусусӣ   </string>
+    <string name="ciw303n">Баморхонаи хусусӣ / Клиника </string>
     <string name="ciw303o">Клиника</string>
     <string name="ciw303962"></string>
     <string name="ciw303963">Хусусии дигар (аниқ кунед)</string>
@@ -698,28 +708,28 @@
     <string name="ciw311h"> Корманди худихтиёри тиб (волонтер)  </string>
 
     <string name="ciw312">W312 -Шумо оҳан кислотаи фолеаро дар вақти ҳомиладорӣ аз куҷо дастрас кардед? \n[Якчанд ҷавоб мумкин аст]</string>
-    <string name="ciw312sub1"> Бахши давлатӣ</string>
-    <string name="ciw312a">  Маркази саломатӣ</string>
-    <string name="ciw312b"> Маркази саломатии деҳотӣ</string>
-    <string name="ciw312c"> Беморхонаи деҳотӣ</string>
-    <string name="ciw312d"> Маркази саломатии ноҳиявӣ</string>
-    <string name="ciw312e">Маркази саломатии репродуктивии ноҳиявӣ</string>
-    <string name="ciw312961">Дигар (аниқ кунед)</string>
-    <string name="ciw312sub2"> Бахши хусусӣ</string>
-    <string name="ciw312f"> Беморхонаи ноҳиявӣ </string>
-    <string name="ciw312g">  Маркази саломатии шаҳрӣ</string>
-    <string name="ciw312h">  Беморхонаи шаҳрӣ  </string>
-    <string name="ciw312i">Маркази саломатии репродуктивии вилоятӣ </string>
-    <string name="ciw312j">  Беморхонаи вилоятӣ </string>
-    <string name="ciw312962">Дигар (аниқ кунед) </string>
-    <string name="ciw312sub3">Дигар манбаъ</string>
+    <string name="ciw312sub1">Бахши давлатӣ </string>
+    <string name="ciw312a">   Маркази саломатӣ </string>
+    <string name="ciw312b">   Маркази саломатии деҳотӣ </string>
+    <string name="ciw312c">   Беморхонаи деҳотӣ  </string>
+    <string name="ciw312d">   Маркази саломатии ноҳиявӣ </string>
+    <string name="ciw312e">   Маркази саломатии репродуктивии ноҳиявӣ </string>
+    <string name="ciw312f">   Беморхонаи ноҳиявӣ  </string>
+    <string name="ciw312g">   Маркази саломатии шаҳрӣ </string>
+    <string name="ciw312h">   Беморхонаи шаҳрӣ </string>
+    <string name="ciw312i">   Маркази саломатии репродуктивии вилоятӣ </string>
+    <string name="ciw312j">   Беморхонаи вилоятӣ  </string>
     <string name="ciw312k">   Диспансер </string>
-    <string name="ciw312l">  Корманди худихтиёри тиб  </string>
-    <string name="ciw312m">   Беморхона/дармонгоҳи хусусӣ   </string>
-    <string name="ciw312n">   Дорухона    </string>
-    <string name="ciw312o">   Дигар манбаъ   </string>
-    <string name="ciw312p">   Хешу табор/дугона/ҳамсоя   </string>
-    <string name="ciw312q">   Мағоза/бозор   </string>
+    <string name="ciw312961"> Дигар (аниқ кунед) </string>
+    <string name="ciw312sub2">Бахши хусусӣ </string>
+    <string name="ciw312l">   Беморхона/дармонгоҳи хусусӣ </string>
+    <string name="ciw312m">   Корманди худихтиёри тиб </string>
+    <string name="ciw312n">   Дорухона </string>
+    <string name="ciw312962">Дигар (аниқ кунед) </string>
+    <string name="ciw312sub3"> Дигар манбаъ </string>
+    <string name="ciw312o">   Хешу табор/дугона/ҳамсоя </string>
+    <string name="ciw312p">   Мағоза/бозор </string>
+    <string name="ciw312q">   Табиби мардумӣ  </string>
 
     <string name="ciw313">W313 - Дар вақти ҳомиладорӣ шумо чӣ қадар зуд оҳан кислотаи фолеаро истеъмол кардед?</string>
     <string name="ciw313a"> Якбор дар як руз </string>
@@ -797,8 +807,8 @@
     <string name="nb4heading">ҚИСМИ W4:ТАВАЛЛУД ВА МУОИНАИ БАЪДИ ТАВАЛЛУД </string>
     <string name="nb4subheading">(Бо занони қобили таваллуд (15 то 49), ки дар давоми 2 соли охир таваллуд кардаанд,пур карда шавад)</string>
     <string name="ciw401sub">Корманди тиб</string>
-    <string name="ciw401">  W401 Кӣ таваллуди (НОМ)-ро қабул кард? </string>
-    <string name="ciw401a"> Духтур </string>
+    <string name="ciw401">  W401 -Кӣ таваллуди (НОМ)-ро қабул кард? </string>
+    <string name="ciw401a"> Акушер-гинеколог </string>
     <string name="ciw401b"> Акушерка  </string>
     <string name="ciw401c"> Ҳамшираи шавқат </string>
     <string name="ciw401d"> Акушер-гинеколог </string>
@@ -807,6 +817,7 @@
     <string name="ciw401f">Хешу табор/дугона/ҳамсоя </string>
     <string name="ciw401g">Корманди худихтиёри тиб (волонтёр) </string>
     <string name="ciw401h"></string>
+
     <string name="ciw402"> W402 -Дар вақти таваллуди (НОМ) кӣ ба шумо кумак кард?\nПурсед: Боз кӣ?\nҲамаи онҳое, ки дар вақти таваллуд кумак кардаанд пурсед ва ҳамаи ҷавобҳоро нависед.\n[Якчанд ҷавоб мумкин аст]</string>
     <string name="ciw402info">Корманди тиб</string>
     <string name="ciw402a">Духтур</string>
@@ -826,7 +837,7 @@
     <string name="ciw403a">   Дар хонаи худ  </string>
     <string name="ciw403b">   Дар хонаи дигар </string>
     <string name="ciw403info2"> Бахши давлатӣ </string>
-    <string name="ciw403c"> Маркази саломатӣ </string>
+    <string name="ciw403c"> Бунгоҳи саломатӣ (медпункт) </string>
     <string name="ciw403d"> Маркази саломатии деҳотӣ </string>
     <string name="ciw403e"> Беморхонаи деҳотӣ  </string>
     <string name="ciw403961"> Дигар (аниқ кунед)</string>
@@ -840,7 +851,7 @@
     <string name="ciw403m">Таваллудхона</string>
     <string name="ciw403info3">Бахши хусусӣ </string>
     <string name="ciw403n">Диспансер</string>
-    <string name="ciw403o">Баморхонаи хусусӣ</string>
+    <string name="ciw403o">Баморхонаи хусусӣ / Клиника</string>
     <string name="ciw403p">Клиника</string>
     <string name="ciw403962">Хусусии дигар (аниқ кунед)</string>
     <string name="ciw403963"></string>
@@ -890,7 +901,7 @@
     <string name="ciw413sub1"> Бахши давлатӣ</string>
     <string name="ciw413sub2">  Бахши хусусӣ</string>
     <string name="ciw413sub3"> Дигар манбаъ </string>
-    <string name="ciw413a">Маркази саломатӣ</string>
+    <string name="ciw413a">Бунгоҳи саломатӣ (медпункт)</string>
     <string name="ciw413b">Маркази саломатии деҳотӣ</string>
     <string name="ciw413c">Беморхонаи деҳотӣ </string>
     <string name="ciw413d">Маркази саломатии ноҳиявӣ</string>
@@ -905,7 +916,7 @@
     <string name="ciw413m">Баморхонаи хусусӣ/клиника</string>
     <string name="ciw413n">Духтури хусусӣ</string>
     <string name="ciw413o">Дорухона </string>
-    <string name="ciw413p">Корманди худихтиёри тиб (волонтёр)</string>
+    <string name="ciw413p">Корманди худихтиёри тиб</string>
     <string name="ciw413q">Табиби мардумӣ</string>
     <string name="ciw413r">Хешу табор/дугона/ҳамсоя</string>
     <string name="ciw413s">Мағоза/бозор </string>
@@ -1201,8 +1212,8 @@
     <string name="cic215c">Шир (дар қутӣ, хушк ё шири тозаи ҳайвонот) </string>
     <string name="cic215d">Сок</string>
     <string name="cic215e">Хомшурбо </string>
-    <string name="cic215f">Ёгурт  </string>
-    <string name="cic215g">Шавлаи сероб </string>
+    <string name="cic215f">Ёгурт (каша) </string>
+    <string name="cic215g">Шавлаи сероб (каша) </string>
     <string name="cic215h">Дигар ғизои моеъ (номгуи дигар ғизоҳои моеъро, ки дар маҳал ҳастанд, номбар кунед)</string>
     <string name="cic215i">Дигар</string>
     <string name="cic217"> C217 -Лутфан ҳамаи ғизоҳоеро, ки (НОМ) дина шабона ва рузона дар хона ва ё берун истеъмол кардааст, номбар кунед.</string>
@@ -1210,7 +1221,7 @@
     <string name="cic217b"> Каду, сабзӣ, ёкартошкаи ширин, ки дохилаш зард аст </string>
     <string name="cic217c"> Картошкаи сафед,ё дигар озуқа аз решаҳои сафед </string>
     <string name="cic217d">Сабзавотҳои сабзранги тира</string>
-    <string name="cic217e">  Ягон мева ё сабзавот </string>
+    <string name="cic217e">  Дигар мева ё сабзавот ба ғайр аз B ва D </string>
     <string name="cic217f">  Ҷигар, гурда, дил, шуш ё дигар гушти узвҳо </string>
     <string name="cic217g"> Гӯшти чорво ва мурғ, аз ҷумла гӯшти гов, гӯсфанд, буз, харгӯш, мурғ, мурғобӣ ва дигар паррандаҳо </string>
     <string name="cic217h">  Тухм </string>
@@ -1242,7 +1253,7 @@
     <string name="cic301d"> Синну сол 36-59 </string>
     <string name="cic302">C302 - Кудак корти милии эмкунӣ дорад, ки ҳамаи эмкуниҳои (НОМ) дар он сабт шудааст</string>
     <string name="cic303">C303 - Мумкин аст ман кортр ё ягон ҳуҷҷати дигаре, ки дар эмкунӣ қайд шудааст, бинам</string>
-    <string name="cic303info">C403 - دی گئی ہر کارڈ یا پرچہ سے ویکسین کی تاریخ نوٹ کریں؟ (c) اگردن کے کالم میں 44 لکھیں اگر کارڈ میں ویکسین دینے کی تاریخ نہ لکھی ہو</string>
+    <string name="cic303info"></string>
     <string name="cic303a"> Ҳа, фақат корт дида шуд </string>
     <string name="cic303b"> Ҳа, фақат дигар ҳуҷҷат дида шуд</string>
     <string name="cic303c"> Ҳа, ҳам корт ва ҳам дигар ҳуҷҷат дида шуд</string>
@@ -1328,15 +1339,15 @@
     <string name="cic403c"> Вақт нест </string>
     <string name="cic403d"> Масофаи дур ба муассиаси таббӣ   </string>
     <string name="cic403e"> Ягон кас дар хона барои бурдан нест  </string>
-    <string name="cic403f">Ба куҷо муроҷиат карданро намедонад</string>
-    <string name="cic403g">Сабабҳои оилавӣ/суннатӣ</string>
-    <string name="cic403h">Ба духтурон/кормандони тиб боварӣ нест</string>
+    <string name="cic403f"> Ба куҷо муроҷиат карданро намедонад</string>
+    <string name="cic403g"> Сабабҳои оилавӣ/суннатӣ</string>
+    <string name="cic403h"> Ба духтурон/кормандони тиб боварӣ нест</string>
 
     <string name="cic404">  C403 -Шумо барои табобати дарунравӣ ба куҷо муроҷиат кардед? </string>
     <string name="cic404sub1"> Бахши давлатӣ </string>
     <string name="cic404sub2">Бахши хусусӣ</string>
     <string name="cic404sub3"> Дигар манбаъ </string>
-    <string name="cic404a"> Маркази саломатӣ   </string>
+    <string name="cic404a"> Бунгоҳи саломатӣ (медпункт)   </string>
     <string name="cic404b"> Маркази саломатии деҳотӣ   </string>
     <string name="cic404c"> Беморхонаи деҳотӣ    </string>
     <string name="cic404d"> Маркази саломатии ноҳиявӣ   </string>
@@ -1388,7 +1399,7 @@
     <string name="cic409sub1"> Бахши давлатӣ </string>
     <string name="cic409sub2">Бахши хусусӣ</string>
     <string name="cic409sub3"> Дигар манбаъ </string>
-    <string name="cic409a"> Маркази саломатӣ   </string>
+    <string name="cic409a"> Бунгоҳи саломатӣ (медпункт)   </string>
     <string name="cic409b"> Маркази саломатии деҳотӣ   </string>
     <string name="cic409c"> Беморхонаи деҳотӣ    </string>
     <string name="cic409d"> Маркази саломатии ноҳиявӣ   </string>
@@ -1428,7 +1439,7 @@
     <string name="cic414sub1"> Бахши давлатӣ </string>
     <string name="cic414sub2">Бахши хусусӣ</string>
     <string name="cic414sub3"> Дигар манбаъ </string>
-    <string name="cic414a"> Маркази саломатӣ   </string>
+    <string name="cic414a"> Бунгоҳи саломатӣ (медпункт)   </string>
     <string name="cic414b"> Маркази саломатии деҳотӣ   </string>
     <string name="cic414c"> Беморхонаи деҳотӣ    </string>
     <string name="cic414d"> Маркази саломатии ноҳиявӣ   </string>
@@ -1533,7 +1544,7 @@
     <string name="cid101sno"> Сатр # </string>
     <string name="cid1w"> Вазн (кг) </string>
     <string name="cid1h"> Қад/дарозӣ (см) </string>
-    <string name="cid1muac"> Даври бозу (см) </string>
+    <string name="cid1muac"> Даври бозу (см)\n(фақат барои кудакони то 5 сола) </string>
     <string name="cid1bcgscar"> БЦЖ </string>0
     <string name="cid1bcgscarifo">(Фақат барои кудакони то 5 сола) </string>
     <string name="cid1g"> Goiter </string>
