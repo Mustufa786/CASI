@@ -824,6 +824,24 @@
                                 android:text="@string/cih2occj" />
 
                             <RadioButton
+                                android:id="@+id/cih2occk"
+                                style="@style/radiobutton"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_weight="1"
+                                android:text="@string/cih2occk" />
+
+                            <RadioButton
+                                android:id="@+id/cih2occ98"
+                                style="@style/radiobutton"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_weight="1"
+                                android:text="@string/dkn" />
+
+                            <RadioButton
                                 android:id="@+id/cih2occ96"
                                 style="@style/radiobutton"
                                 android:layout_width="match_parent"

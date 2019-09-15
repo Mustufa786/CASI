@@ -222,7 +222,7 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
         binding.ciw401txt02.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
 
         binding.ciw402a.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
-        binding.ciw401d.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
+        binding.ciw402d.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
         binding.ciw402h.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
         binding.ciw402txt01.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
         binding.ciw402txt02.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
@@ -234,7 +234,7 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
         binding.ciw403k.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
         binding.ciw403l.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
         binding.ciw403m.setVisibility(userCountryTajik ? View.GONE : View.GONE);
-        binding.ciw403n.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        binding.ciw403n.setVisibility(userCountryTajik ? View.GONE : View.GONE);
         binding.ciw403o.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
         binding.ciw403p.setVisibility(userCountryTajik ? View.GONE : View.GONE);
         binding.ciw403963.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);

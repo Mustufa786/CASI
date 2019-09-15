@@ -100,7 +100,9 @@ public class SectionB5Activity extends Menu2Activity implements TextWatcher, Rad
 
         /*For Tajik Visibility*/
         binding.ciw415d.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
-        binding.ciw415h.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
+        binding.ciw415h.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        binding.ciw420h.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        binding.ciw423e.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
 
     }
 
@@ -214,6 +216,9 @@ public class SectionB5Activity extends Menu2Activity implements TextWatcher, Rad
             }
             if (!jsonB5.getciw420g().equals("0")) {
                 binding.ciw420g.setChecked(true);
+            }
+            if (!jsonB5.getciw420h().equals("0")) {
+                binding.ciw420h.setChecked(true);
             }
             if (!jsonB5.getciw42096().equals("0")) {
                 binding.ciw42096.setChecked(true);
@@ -526,6 +531,7 @@ public class SectionB5Activity extends Menu2Activity implements TextWatcher, Rad
         sB5.put("ciw420e", binding.ciw420e.isChecked() ? "5" : "0");
         sB5.put("ciw420f", binding.ciw420f.isChecked() ? "6" : "0");
         sB5.put("ciw420g", binding.ciw420g.isChecked() ? "7" : "0");
+        sB5.put("ciw420h", binding.ciw420h.isChecked() ? "8" : "0");
         sB5.put("ciw42096", binding.ciw42096.isChecked() ? "96" : "0");
         sB5.put("ciw42096x", binding.ciw42096x.getText().toString());
 

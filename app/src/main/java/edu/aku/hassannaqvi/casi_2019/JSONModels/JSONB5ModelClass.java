@@ -40,6 +40,7 @@ public class JSONB5ModelClass {
     private String ciw420e = "";
     private String ciw420f = "";
     private String ciw420g = "";
+    private String ciw420h = "";
     private String ciw42096 = "";
     private String ciw42096x = "";
     private String ciw421 = "";
@@ -329,6 +330,14 @@ public class JSONB5ModelClass {
 
     public void setciw420g(String ciw420g) {
         this.ciw420g = ciw420g;
+    }
+
+    public String getciw420h() {
+        return ciw420h;
+    }
+
+    public void setciw420h(String ciw420h) {
+        this.ciw420h = ciw420h;
     }
 
     public String getciw42096() {

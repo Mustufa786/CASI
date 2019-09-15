@@ -1006,7 +1006,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginBottom="1dp"
                         android:layout_weight="1"
-                        android:text="@string/dkn" />
+                        android:text="@string/dkn2" />
 
                 </RadioGroup>
 

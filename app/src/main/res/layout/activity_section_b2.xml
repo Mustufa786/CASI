@@ -1994,7 +1994,7 @@
                                 android:id="@+id/ciw322962x"
                                 style="@style/textInput"
                                 android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
-                                android:enabled='@{ciw322962.checked ? true : false}'
+                                android:visibility='@{ciw322962.checked ? View.VISIBLE : View.GONE}'
                                 android:hint="@string/other1"
                                 android:text='@{ciw322962.checked ? ciw322962x.getText.toString : ""}' />
 

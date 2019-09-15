@@ -170,7 +170,7 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
 
         /*For Tajik*/
         binding.fldGrpcih214check.setVisibility(userCountryTajik_Home ? View.VISIBLE : View.GONE);
-
+        binding.cih2occ98.setVisibility(userCountryTajik_Home ? View.VISIBLE : View.GONE);
 
     }
 
@@ -404,6 +404,8 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                         binding.cih2occe.setEnabled(true);
                         binding.cih2occg.setEnabled(true);
                         binding.cih2occh.setEnabled(true);
+                        binding.cih2occk.setEnabled(true);
+                        binding.cih2occ98.setEnabled(true);
                         //binding.cih2occi.setEnabled(true);
 
                        /* if (!flag) {
@@ -458,6 +460,8 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                         binding.cih2occe.setEnabled(true);
                         binding.cih2occg.setEnabled(true);
                         binding.cih2occh.setEnabled(true);
+                        binding.cih2occk.setEnabled(true);
+                        binding.cih2occ98.setEnabled(true);
 
                        /* if (!flag) {
                             if (!family.getna204().equals("1")) {
@@ -511,6 +515,8 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                         binding.cih2occe.setEnabled(true);
                         binding.cih2occg.setEnabled(true);
                         binding.cih2occh.setEnabled(true);
+                        binding.cih2occk.setEnabled(true);
+                        binding.cih2occ98.setEnabled(true);
 
                         /*if (!flag) {
                             if (!family.getna204().equals("1")) {
@@ -562,6 +568,8 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                         binding.cih2occe.setEnabled(true);
                         binding.cih2occg.setEnabled(true);
                         binding.cih2occh.setEnabled(true);
+                        binding.cih2occk.setEnabled(true);
+                        binding.cih2occ98.setEnabled(true);
                         //binding.cih2occi.setEnabled(true);
 
                        /* if (!flag) {
@@ -611,6 +619,8 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                         binding.cih2occe.setEnabled(true);
                         binding.cih2occg.setEnabled(true);
                         binding.cih2occh.setEnabled(true);
+                        binding.cih2occk.setEnabled(true);
+                        binding.cih2occ98.setEnabled(true);
                         //binding.cih2occi.setEnabled(true);
 
                         /*if (!flag) {
@@ -922,7 +932,7 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
 
             sA2.put("cih209", binding.cih2occa.isChecked() ? "1" : binding.cih2occb.isChecked() ? "2" : binding.cih2occc.isChecked() ? "3" : binding.cih2occd.isChecked() ? "4"
                     : binding.cih2occe.isChecked() ? "5" : binding.cih2occf.isChecked() ? "6" : binding.cih2occg.isChecked() ? "7" : binding.cih2occh.isChecked() ? "8"
-                    : binding.cih2occi.isChecked() ? "9" : binding.cih2occj.isChecked() ? "10" : binding.cih2occ96.isChecked() ? "96" : "0");
+                    : binding.cih2occi.isChecked() ? "9" : binding.cih2occj.isChecked() ? "10" : binding.cih2occk.isChecked() ? "11" : binding.cih2occ98.isChecked() ? "98" : binding.cih2occ96.isChecked() ? "96" : "0");
 
             sA2.put("cih20996x", binding.cih2occ96x.getText().toString());
 
