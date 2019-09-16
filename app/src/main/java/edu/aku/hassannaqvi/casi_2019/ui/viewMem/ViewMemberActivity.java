@@ -654,7 +654,7 @@ public class ViewMemberActivity extends MenuActivity {
             int counter = KishGrid.KishGridProcess(Integer.valueOf(MainApp.selectedHead.getSno()), MainApp.adolesUnderAge.size());
             return new Intent(this, SectionD6Activity.class).putExtra("adolescent", MainApp.adolesUnderAge.get(counter - 1));
         } else {
-            return new Intent(this, EndingActivity.class).putExtra("complete", false);
+            return new Intent(this, EndingActivity.class).putExtra("complete", true);
         }
 
     }

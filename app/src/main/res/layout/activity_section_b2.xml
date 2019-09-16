@@ -391,7 +391,7 @@
                             style="@style/textInput"
                             android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:enabled='@{ciw303962.checked ? true : false}'
-                            android:hint="@string/explain"
+                            android:hint="@string/ciw303962"
                             android:inputType="text"
                             android:text='@{ciw303962.checked ? ciw303962x.getText.toString : ""}' />
 

@@ -73,6 +73,20 @@ public class SectionC402Activity extends Menu2Activity {
 
     private void setupViews() {
 
+        binding.cic416.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i == binding.cic416a.getId()) {
+                    binding.fldGrpcic41601.setVisibility(View.VISIBLE);
+                } else {
+                    binding.fldGrpcic41601.setVisibility(View.GONE);
+                    binding.cic41601.clearCheck();
+                }
+
+            }
+        });
+
+
         binding.cic418.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -557,6 +571,11 @@ public class SectionC402Activity extends Menu2Activity {
         sC4.put("cic416", binding.cic416a.isChecked() ? "1"
                 : binding.cic416b.isChecked() ? "2"
                 : binding.cic41698.isChecked() ? "98"
+                : "0");
+
+//        cic41601
+        sC4.put("cic41601", binding.cic41601a.isChecked() ? "1"
+                : binding.cic41601b.isChecked() ? "2"
                 : "0");
 
 
