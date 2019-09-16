@@ -1542,10 +1542,10 @@
     <string name="cic506">C506 - کیااپنی روز مرہ کی زبان استعمال کرتے ہوئے آپ کےبچےکو بات چیت میں (مثلاً کسی کو بات سمجھاتے وقت یا کسی کی بات سمجھتے وقت) دشواری پیش آتی ہے ؟</string>
 
     <string name="nd1heading"> ҚИСМИD1: АНТРОПОМЕТРИЯ ВА САНҶИШ </string>
-    <string name="na3subHeading"> یہ سیکشن گھر کے سربراہ سے یا گھر میں کم سے کم 18 سال یا اس سے ذائد عمر کے کسی سمجھدار شخص سے پوچھا جائیگا </string>
-    <string name="na4subHeading"> وزن کا دوبارہ اندراج کریں</string>
-    <string name="na5subHeading"> لمبائی کا دوبارہ اندراج کریں</string>
-    <string name="na6subHeading"> MUAC  کا دوبارہ اندراج کریں</string>
+    <string name="na3subHeading"> Дастурамал: Аз миёни аъзои хонавода; кудакони то 5 сола, занони қобили таваллуд (15-49) ва духтарони наврас (10-19) барои ин қисм мувофиқ ҳастанд. </string>
+    <string name="na4subHeading"> Вазнро дубора ворид кунед</string>
+    <string name="na5subHeading"> баландӣ боз ворид кунед</string>
+    <string name="na6subHeading"> Боз як бори дигар ворид шавед</string>
     <string name="cid101sno"> Сатр # </string>
     <string name="cid1w"> Вазн (кг) </string>
     <string name="cid1h"> Қад/дарозӣ (см) </string>
