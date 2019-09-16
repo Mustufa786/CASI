@@ -3,6 +3,10 @@
 <resources>
     <string name="app_name"> CENTRAL ASIA STUNTING INITIATIVE 2019 - DARI </string>
     <!-- Strings related to login -->
+
+    <string name="sync">Sync</string>
+    <string name="upload">Upload Data</string>
+
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
     <string name="btnSync">Sync</string>
@@ -845,6 +849,7 @@
     <string name="cic303b"> بلی، تنها سند دیگر دیده شد  </string>
     <string name="cic303c"> بلی، کارت (ها) و سند دیگر دیده شد </string>
     <string name="cic303d">نه کارت و نه سند دیگر دیده شد  </string>
+    <string name="cic304">C304 - Deatils of Immunization </string>
     <string name="atbirth">در هنگام تولد </string>
     <string name="atbirth2">  </string>
     <string name="cic3bcg"> BCG </string>

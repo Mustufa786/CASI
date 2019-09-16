@@ -5,13 +5,13 @@
     <item
         android:id="@+id/menu_sync"
         android:orderInCategory="1"
-        android:title="Sync"
+        android:title="@string/sync"
         app:showAsAction="never" />
 
     <item
         android:id="@+id/menu_upload"
         android:orderInCategory="1"
-        android:title="Upload Data"
+        android:title="@string/upload"
         app:showAsAction="never" />
 
     <item

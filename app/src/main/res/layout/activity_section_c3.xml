@@ -158,6 +158,14 @@
                     android:padding="8px">
                     <!--android:visibility="@{cic303d.checked ? View.GONE : View.VISIBLE}"-->
 
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:text="@string/cic304"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/white" />
+
                     <!-- At Birth-->
                     <TextView
                         android:layout_width="match_parent"
@@ -1385,8 +1393,8 @@
                         <!--OPV4-->
                         <LinearLayout
                             android:id="@+id/fldGrpc303b"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
                             android:orientation="vertical">
 
                             <!-- opv4 -->

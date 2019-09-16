@@ -606,7 +606,7 @@ public class SectionC3Activity extends Menu2Activity implements RadioGroup.OnChe
             return false;
         }
 
-        if (userCountryTajik_Child) {
+/*        if (userCountryTajik_Child) {
 //        cic3dp
             if (!ValidatorClass.EmptyRadioButton(this, binding.cic3dp, binding.cic3dpa, getString(R.string.cic3dp) + getString(R.string.cic3response))) {
                 return false;
@@ -628,7 +628,7 @@ public class SectionC3Activity extends Menu2Activity implements RadioGroup.OnChe
             if (!ValidatorClass.EmptyRadioButton(this, binding.cic3mr2src, binding.cic3mr2srca, getString(R.string.cic3mr2) + getString(R.string.cic3src))) {
                 return false;
             }
-        }
+        }*/
 
 
 //        cic305

@@ -171,6 +171,7 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
         /*For Tajik*/
         binding.fldGrpcih214check.setVisibility(userCountryTajik_Home ? View.VISIBLE : View.GONE);
         binding.cih2occ98.setVisibility(userCountryTajik_Home ? View.VISIBLE : View.GONE);
+        binding.cih2occ96.setVisibility(userCountryTajik_Home ? View.GONE : View.VISIBLE);
 
     }
 

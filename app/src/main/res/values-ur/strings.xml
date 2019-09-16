@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name"> CENTRAL ASIA STUNTING INITIATIVE 2019 - URDU</string>
+
+    <string name="sync">Sync</string>
+    <string name="upload">Upload Data</string>
+
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
@@ -848,6 +852,7 @@
     <string name="cic303b"> ہاں ،صرف دستاویزات دیکھے ہیں </string>
     <string name="cic303c"> ہاں ، کارڈ اور دستاویزات  دونوں دیکھےہیں</string>
     <string name="cic303d"> کوئی کارڈ یا دستاویزات نہیں دیکھے </string>
+    <string name="cic304">C304 - Deatils of Immunization </string>
     <string name="atbirth"> پیدائش پر </string>
     <string name="atbirth2">  </string>
     <string name="cic3bcg"> بی سی جی </string>
