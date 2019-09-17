@@ -64,5 +64,9 @@ public class VersionAppContract {
         public static final String COLUMN_PATH_NAME = "path";
 
         public static final String _URI = "output.json";
+        public static final String DEFAULT_FOLDER = "baseline/";
+        public static final String TAJIK_FOLDER = "baseline_tajik/";
+        public static final String DARI_FOLDER = "baseline_dari/";
+        public static final String URDU_FOLDER = "baseline_urdu/";
     }
 }
