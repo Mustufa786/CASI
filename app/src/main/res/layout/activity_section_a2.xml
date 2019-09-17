@@ -734,6 +734,33 @@
                             android:orientation="vertical">
 
                             <RadioButton
+                                android:id="@+id/cih2occl"
+                                style="@style/radiobutton"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_weight="1"
+                                android:text="@string/cih2occl" />
+
+                            <RadioButton
+                                android:id="@+id/cih2occm"
+                                style="@style/radiobutton"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_weight="1"
+                                android:text="@string/cih2occm" />
+
+                            <RadioButton
+                                android:id="@+id/cih2occn"
+                                style="@style/radiobutton"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:layout_weight="1"
+                                android:text="@string/cih2occn" />
+
+                            <RadioButton
                                 android:id="@+id/cih2occa"
                                 style="@style/radiobutton"
                                 android:layout_width="match_parent"
@@ -831,33 +858,6 @@
                                 android:layout_marginBottom="1dp"
                                 android:layout_weight="1"
                                 android:text="@string/cih2occk" />
-
-                            <RadioButton
-                                android:id="@+id/cih2occl"
-                                style="@style/radiobutton"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="1dp"
-                                android:layout_weight="1"
-                                android:text="@string/cih2occl" />
-
-                            <RadioButton
-                                android:id="@+id/cih2occm"
-                                style="@style/radiobutton"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="1dp"
-                                android:layout_weight="1"
-                                android:text="@string/cih2occm" />
-
-                            <RadioButton
-                                android:id="@+id/cih2occn"
-                                style="@style/radiobutton"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="1dp"
-                                android:layout_weight="1"
-                                android:text="@string/cih2occn" />
 
                             <RadioButton
                                 android:id="@+id/cih2occ98"
