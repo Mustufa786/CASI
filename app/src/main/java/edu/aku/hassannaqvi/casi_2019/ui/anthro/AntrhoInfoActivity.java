@@ -51,6 +51,7 @@ public class AntrhoInfoActivity extends Activity {
     Boolean isHC = false, isHT = false, isWT = false;
     int length = 0;
 
+    public static boolean userCountryTajik_Anthro = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +63,11 @@ public class AntrhoInfoActivity extends Activity {
         this.setTitle(getString(R.string.na1heading));
 
         SetupViewFunctionality();
+
+
+        HashMap<String, String> tagVal = MainApp.getTagValues(this);
+        String country = tagVal.get("org") != null ? tagVal.get("org").equals("null") ? "0" : tagVal.get("org").equals("") ? "0" : tagVal.get("org") : "0";
+        userCountryTajik_Anthro = Integer.valueOf(country) == 3;
 
     }
 

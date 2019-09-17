@@ -40,6 +40,8 @@ import edu.aku.hassannaqvi.casi_2019.ui.mainUI.Menu2Activity;
 import edu.aku.hassannaqvi.casi_2019.validation.ClearClass;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
+import static edu.aku.hassannaqvi.casi_2019.ui.anthro.AntrhoInfoActivity.userCountryTajik_Anthro;
+
 public class SectionAnth1Activity extends Menu2Activity implements TextWatcher, RadioGroup.OnCheckedChangeListener, CompoundButton.OnCheckedChangeListener {
 
     static List<String> members;
@@ -58,6 +60,8 @@ public class SectionAnth1Activity extends Menu2Activity implements TextWatcher, 
     String weight1, height1, muac1;
     Boolean flagW1 = false, flagH1 = false, flagM1 = false;
     private Timer timer = new Timer();
+
+    boolean muacFlag = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -121,31 +125,36 @@ public class SectionAnth1Activity extends Menu2Activity implements TextWatcher, 
                     switch (slc_type) {
                         case 1: // MWRA
 
-//                            binding.fldGrpbcgScar.setVisibility(View.GONE);
                             ClearClass.ClearAllFields(binding.fldGrpbcgScar, false);
-
-//                            binding.fldGrpode.setVisibility(View.GONE);
                             ClearClass.ClearAllFields(binding.fldGrpode, false);
                             break;
 
                         case 2: // U5
 
-//                            binding.fldGrpbcgScar.setVisibility(View.VISIBLE);
                             ClearClass.ClearAllFields(binding.fldGrpbcgScar, true);
 
-//                            binding.fldGrpode.setVisibility(View.VISIBLE);
                             ClearClass.ClearAllFields(binding.fldGrpode, true);
                             break;
 
                         case 3: // Adolescent
 
-//                            binding.fldGrpbcgScar.setVisibility(View.GONE);
                             ClearClass.ClearAllFields(binding.fldGrpbcgScar, false);
 
-//                            binding.fldGrpode.setVisibility(View.GONE);
                             ClearClass.ClearAllFields(binding.fldGrpode, false);
                             break;
                     }
+
+                    if (userCountryTajik_Anthro && slc_type != 2) {
+                        binding.fldGrpAnth01.setVisibility(View.GONE);
+                        ClearClass.ClearAllFields(binding.fldGrpAnth01, null);
+
+                        muacFlag = false;
+                    } else {
+                        binding.fldGrpAnth01.setVisibility(View.VISIBLE);
+
+                        muacFlag = true;
+                    }
+
                 }
             }
 
@@ -180,7 +189,6 @@ public class SectionAnth1Activity extends Menu2Activity implements TextWatcher, 
                             binding.fldGrpW2.setVisibility(View.VISIBLE);
 
                         } else {
-                            //binding.fldGrpW2.setVisibility(View.GONE);
                             binding.cid1w1.setText(null);
                             binding.cid1w.setEnabled(true);
                         }
@@ -253,7 +261,6 @@ public class SectionAnth1Activity extends Menu2Activity implements TextWatcher, 
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
-                //flag = false;
             }
 
             @Override
@@ -409,8 +416,8 @@ public class SectionAnth1Activity extends Menu2Activity implements TextWatcher, 
                         } else {
                             binding.cid1muac.setText(muac1);
                             binding.cid1muac.setEnabled(true);
-                            binding.cid1muac.setError("Values dont match.. !!");
-                            binding.cid1muac1.setError("Values dont match..!!");
+                            binding.cid1muac.setError("Values don't match.. !!");
+                            binding.cid1muac1.setError("Values don't match..!!");
                         }
                     }
                 }
@@ -447,7 +454,6 @@ public class SectionAnth1Activity extends Menu2Activity implements TextWatcher, 
 //        Validation Boolean
         MainApp.validateFlag = true;
 
-
         if (formValidation()) {
             try {
                 SaveDraft();
@@ -455,22 +461,6 @@ public class SectionAnth1Activity extends Menu2Activity implements TextWatcher, 
                 e.printStackTrace();
             }
             if (UpdateDB()) {
-
-/*
-                if (counter == MainApp.all_members.size()) {
-
-                    counter = 1;
-
-                    startActivity(new Intent(this, EndingActivity.class).putExtra("complete", true));
-
-                } else {
-
-                    members.remove(binding.cid101.getSelectedItem().toString());
-
-                    startActivity(new Intent(this, Sectiocid1Activity.class)
-                            .putExtra("flag", true));
-                }
-*/
 
                 String readings = "Weight: " + binding.cid1w.getText().toString() + "\n" +
                         "Height: " + binding.cid1h.getText().toString() + "\n" +
@@ -524,9 +514,7 @@ public class SectionAnth1Activity extends Menu2Activity implements TextWatcher, 
 
     private boolean formValidation() {
 
-
         if (endflag) {
-
             return ValidatorClass.EmptySpinner(this, binding.cid101, getString(R.string.cid101sno));
         } else {
 
@@ -585,22 +573,26 @@ public class SectionAnth1Activity extends Menu2Activity implements TextWatcher, 
                 return false;
             }
 
-            if (!ValidatorClass.EmptyTextBox(this, binding.cid1muac, getString(R.string.cid1muac))) {
-                return false;
-            }
+            /*New Condition for tajik*/
+            if (muacFlag) {
+
+                if (!ValidatorClass.EmptyTextBox(this, binding.cid1muac, getString(R.string.cid1muac))) {
+                    return false;
+                }
 
 
-            if (!binding.cid1muac.getText().toString().matches("^(\\d{2,2}\\.\\d{1,1})$")) {
-                Toast.makeText(this, "ERROR(invalid): " + "Please type the correct format" + getString(R.string.cid1muac), Toast.LENGTH_LONG).show();
-                binding.cid1muac.setError("Please type correct format (XX.X)");
-                return false;
-            } else {
-                binding.cid1muac.setError(null);
-            }
+                if (!binding.cid1muac.getText().toString().matches("^(\\d{2,2}\\.\\d{1,1})$")) {
+                    Toast.makeText(this, "ERROR(invalid): " + "Please type the correct format" + getString(R.string.cid1muac), Toast.LENGTH_LONG).show();
+                    binding.cid1muac.setError("Please type correct format (XX.X)");
+                    return false;
+                } else {
+                    binding.cid1muac.setError(null);
+                }
 
 
-            if (!ValidatorClass.RangeTextBox(this, binding.cid1muac, MinMAUC(slc_type), MaxMAUC(slc_type), getString(R.string.cid1muac), " MAUC")) {
-                return false;
+                if (!ValidatorClass.RangeTextBox(this, binding.cid1muac, MinMAUC(slc_type), MaxMAUC(slc_type), getString(R.string.cid1muac), " MAUC")) {
+                    return false;
+                }
             }
             /*end*/
 

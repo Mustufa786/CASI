@@ -1581,8 +1581,8 @@
 
     <string name="ne1heading"> MODULE E: САНҶИШИ ГЕМОГЛОБИН </string>
     <string name="ne101">  E107-Сатр </string>
-    <string name="ne102"> منتخب شدہ فرد کا نام </string>
-    <string name="neselected">E105. Гуруҳи аъзои интихобшуда -E103 </string>
+    <string name="ne102">шахсро интихоб кунед </string>
+    <string name="neselected">E103. Гуруҳи аъзои интихобшуда </string>
     <string-array name="neselected">
         <item>....</item>
         <item>ЗҚТ (15-49)</item>
@@ -1600,11 +1600,11 @@
     <string name="ne104b"> پیشاب کا نمونہ </string>
     <string name="ne104c"> پوٹ ایچ بی ٹیسٹ </string>
     <string name="barcode">اگر ہاں، تو بار کوڈ اسکین کریں</string>
-    <string name="hb_result">ہیموگلوبن کے نتائج درج کریں</string>
-    <string name="ne104"> کیا نمونہ حاصل کیا گیا تھا؟ </string>
-    <string name="ne107"> . Агар Не, сабабро муайян кунед: </string>
-    <string name="ne107a"> Дар хона нест </string>
-    <string name="ne107b"> Рад кард </string>
+    <string name="hb_result">E104. Натиҷаи санҷиши гемоглобинро нависед</string>
+    <string name="ne104"></string>
+    <string name="ne107"> E105.  Агар Не, сабабро муайян кунед </string>
+    <string name="ne107a">Дар хона нест </string>
+    <string name="ne107b">Рад кард </string>
     <string name="ne2heading"> سیکشن ای 2: پانی کے نمونے </string>
     <string name="ne201"> نمونے کی قسم </string>
     <string name="ne201a"> Microbiology (Type-A) </string>
