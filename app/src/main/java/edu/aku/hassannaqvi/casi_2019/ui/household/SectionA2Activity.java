@@ -172,6 +172,12 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
         binding.fldGrpcih214check.setVisibility(userCountryTajik_Home ? View.VISIBLE : View.GONE);
         binding.cih2occ98.setVisibility(userCountryTajik_Home ? View.VISIBLE : View.GONE);
         binding.cih2occ96.setVisibility(userCountryTajik_Home ? View.GONE : View.VISIBLE);
+        binding.cih2occa.setVisibility(userCountryTajik_Home ? View.GONE : View.VISIBLE);
+        binding.cih2occh.setVisibility(userCountryTajik_Home ? View.GONE : View.VISIBLE);
+
+        binding.cih2occl.setVisibility(userCountryTajik_Home ? View.VISIBLE : View.GONE);
+        binding.cih2occm.setVisibility(userCountryTajik_Home ? View.VISIBLE : View.GONE);
+        binding.cih2occn.setVisibility(userCountryTajik_Home ? View.VISIBLE : View.GONE);
 
     }
 
@@ -235,11 +241,12 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
 
                 if (!binding.cih2agey.getText().toString().isEmpty()) {
 
+                    binding.cih2occ.clearCheck();
+
                     Age = Integer.valueOf(binding.cih2agey.getText().toString());
                     if (Age <= 2) {
                         binding.fldGrpcih2edu.setVisibility(View.GONE);
                         binding.fldGrpcih2ms.setVisibility(View.GONE);
-                        binding.fldGrpcih2occ.setVisibility(View.GONE);
 
                         binding.fldGrpfid.setVisibility(View.VISIBLE);
                         binding.fldGrpmid.setVisibility(View.VISIBLE);
@@ -249,18 +256,14 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                         binding.cih2occ.clearCheck();
 
                         binding.cih2edua.setChecked(true);
-                        binding.cih2occa.setChecked(true);
                         binding.cih2mse.setChecked(true);
 
                     } else if (Age > 2 && Age <= 5) {
-                        binding.cih2occ.clearCheck();
                         binding.cih2edu.clearCheck();
                         binding.fldGrpcih2edu.setVisibility(View.VISIBLE);
                         binding.fldGrpcih2ms.setVisibility(View.GONE);
                         binding.cih2mse.setChecked(true);
 
-                        binding.fldGrpcih2occ.setVisibility(View.GONE);
-                        binding.cih2occ.clearCheck();
                         binding.fldGrpfid.setVisibility(View.VISIBLE);
                         binding.fldGrpmid.setVisibility(View.VISIBLE);
 
@@ -283,40 +286,11 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                         binding.cih2edui.setChecked(false);
                         binding.cih2eduj.setChecked(false);
 
-//                        binding.cih2occa.setEnabled(true);
-//                        binding.cih2occb.setEnabled(true);
-//                        binding.cih2occc.setEnabled(true);
-//                        binding.cih2occd.setEnabled(true);
-//                        binding.cih2occe.setEnabled(true);
-//                        binding.cih2occg.setEnabled(true);
-//                        binding.cih2occh.setEnabled(true);
-
-                       /* if (!flag) {
-                            if (!family.getna204().equals("1")) {
-                                binding.cih2occi.setEnabled(true);
-                            } else {
-                                binding.cih2occi.setEnabled(false);
-                                binding.cih2occi.setChecked(false);
-                            }
-                        }*/
-
-//                        binding.cih2occ96.setEnabled(true);
-//                        binding.cih2occ96x.setEnabled(true);
-//
-//                        binding.cih2occf.setEnabled(false);
-//                        binding.cih2occf.setChecked(false);
-//                        binding.cih2occj.setEnabled(false);
-//                        binding.cih2occj.setChecked(false);
-
                     } else if (Age > 5 && Age < 10) {
-                        binding.cih2occ.clearCheck();
                         binding.cih2edu.clearCheck();
                         binding.cih2ms.clearCheck();
                         binding.fldGrpcih2edu.setVisibility(View.VISIBLE);
                         binding.fldGrpcih2ms.setVisibility(View.GONE);
-
-                        binding.fldGrpcih2occ.setVisibility(View.GONE);
-                        binding.cih2occ.clearCheck();
 
                         binding.fldGrpfid.setVisibility(View.GONE);
                         binding.fldGrpmid.setVisibility(View.GONE);
@@ -343,39 +317,11 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                         binding.cih2eduj.setEnabled(false);
                         binding.cih2eduj.setChecked(false);
 
-//                        binding.cih2occa.setEnabled(true);
-//                        binding.cih2occb.setEnabled(true);
-//                        binding.cih2occc.setEnabled(true);
-//                        binding.cih2occd.setEnabled(true);
-//                        binding.cih2occe.setEnabled(true);
-//                        binding.cih2occg.setEnabled(true);
-//                        binding.cih2occh.setEnabled(true);
-                        //binding.cih2occi.setEnabled(true);
-
-                        /*if (!flag) {
-                            if (!family.getna204().equals("1")) {
-                                binding.cih2occi.setEnabled(true);
-                            } else {
-                                binding.cih2occi.setEnabled(false);
-                                binding.cih2occi.setChecked(false);
-                            }
-                        }
-*/
-//                        binding.cih2occ96.setEnabled(true);
-//                        binding.cih2occ96x.setEnabled(true);
-//
-//                        binding.cih2occf.setEnabled(false);
-//                        binding.cih2occf.setChecked(false);
-//                        binding.cih2occj.setEnabled(false);
-//                        binding.cih2occj.setChecked(false);
-
                     } else if (Age >= 10 && Age < 14) {
-                        binding.cih2occ.clearCheck();
                         binding.cih2edu.clearCheck();
                         binding.cih2ms.clearCheck();
                         binding.fldGrpcih2edu.setVisibility(View.VISIBLE);
                         binding.fldGrpcih2ms.setVisibility(View.VISIBLE);
-                        binding.fldGrpcih2occ.setVisibility(View.VISIBLE);
 
                         binding.fldGrpfid.setVisibility(View.GONE);
                         binding.fldGrpmid.setVisibility(View.GONE);
@@ -398,40 +344,11 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                         binding.cih2eduj.setEnabled(false);
                         binding.cih2eduj.setChecked(false);
 
-                        binding.cih2occa.setEnabled(true);
-                        binding.cih2occb.setEnabled(true);
-                        binding.cih2occc.setEnabled(true);
-                        binding.cih2occd.setEnabled(true);
-                        binding.cih2occe.setEnabled(true);
-                        binding.cih2occg.setEnabled(true);
-                        binding.cih2occh.setEnabled(true);
-                        binding.cih2occk.setEnabled(true);
-                        binding.cih2occ98.setEnabled(true);
-                        //binding.cih2occi.setEnabled(true);
-
-                       /* if (!flag) {
-                            if (!family.getna204().equals("1")) {
-                                binding.cih2occi.setEnabled(true);
-                            } else {
-                                binding.cih2occi.setEnabled(false);
-                                binding.cih2occi.setChecked(false);
-                            }
-                        }*/
-
-                        binding.cih2occ96.setEnabled(true);
-                        binding.cih2occ96x.setEnabled(true);
-
-                        binding.cih2occf.setEnabled(false);
-                        binding.cih2occf.setChecked(false);
-                        binding.cih2occj.setEnabled(false);
-                        binding.cih2occj.setChecked(false);
                     } else if (Age >= 14 && Age < 17) {
-                        binding.cih2occ.clearCheck();
                         binding.cih2edu.clearCheck();
                         binding.cih2ms.clearCheck();
                         binding.fldGrpcih2edu.setVisibility(View.VISIBLE);
                         binding.fldGrpcih2ms.setVisibility(View.VISIBLE);
-                        binding.fldGrpcih2occ.setVisibility(View.VISIBLE);
 
                         binding.fldGrpfid.setVisibility(View.GONE);
                         binding.fldGrpmid.setVisibility(View.GONE);
@@ -454,40 +371,11 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                         binding.cih2eduj.setEnabled(false);
                         binding.cih2eduj.setChecked(false);
 
-                        binding.cih2occa.setEnabled(true);
-                        binding.cih2occb.setEnabled(true);
-                        binding.cih2occc.setEnabled(true);
-                        binding.cih2occd.setEnabled(true);
-                        binding.cih2occe.setEnabled(true);
-                        binding.cih2occg.setEnabled(true);
-                        binding.cih2occh.setEnabled(true);
-                        binding.cih2occk.setEnabled(true);
-                        binding.cih2occ98.setEnabled(true);
-
-                       /* if (!flag) {
-                            if (!family.getna204().equals("1")) {
-                                binding.cih2occi.setEnabled(true);
-                            } else {
-                                binding.cih2occi.setEnabled(false);
-                                binding.cih2occi.setChecked(false);
-                            }
-                        }*/
-
-                        //binding.cih2occi.setEnabled(true);
-                        binding.cih2occ96.setEnabled(true);
-                        binding.cih2occ96x.setEnabled(true);
-
-                        binding.cih2occf.setEnabled(false);
-                        binding.cih2occf.setChecked(false);
-                        binding.cih2occj.setEnabled(false);
-                        binding.cih2occj.setChecked(false);
                     } else if (Age >= 17 && Age < 20) {
-                        binding.cih2occ.clearCheck();
                         binding.cih2edu.clearCheck();
                         binding.cih2ms.clearCheck();
                         binding.fldGrpcih2edu.setVisibility(View.VISIBLE);
                         binding.fldGrpcih2ms.setVisibility(View.VISIBLE);
-                        binding.fldGrpcih2occ.setVisibility(View.VISIBLE);
 
                         binding.fldGrpfid.setVisibility(View.GONE);
                         binding.fldGrpmid.setVisibility(View.GONE);
@@ -509,39 +397,11 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                         binding.cih2eduj.setEnabled(false);
                         binding.cih2eduj.setChecked(false);
 
-                        binding.cih2occa.setEnabled(true);
-                        binding.cih2occb.setEnabled(true);
-                        binding.cih2occc.setEnabled(true);
-                        binding.cih2occd.setEnabled(true);
-                        binding.cih2occe.setEnabled(true);
-                        binding.cih2occg.setEnabled(true);
-                        binding.cih2occh.setEnabled(true);
-                        binding.cih2occk.setEnabled(true);
-                        binding.cih2occ98.setEnabled(true);
-
-                        /*if (!flag) {
-                            if (!family.getna204().equals("1")) {
-                                binding.cih2occi.setEnabled(true);
-                            } else {
-                                binding.cih2occi.setEnabled(false);
-                                binding.cih2occi.setChecked(false);
-                            }
-                        }*/
-
-                        //binding.cih2occi.setEnabled(true);
-                        binding.cih2occ96.setEnabled(true);
-                        binding.cih2occ96x.setEnabled(true);
-
-                        binding.cih2occf.setEnabled(true);
-                        binding.cih2occj.setEnabled(false);
-                        binding.cih2occj.setChecked(false);
                     } else if (Age >= 19 && Age < 22) {
-                        binding.cih2occ.clearCheck();
                         binding.cih2edu.clearCheck();
                         binding.cih2ms.clearCheck();
                         binding.fldGrpcih2edu.setVisibility(View.VISIBLE);
                         binding.fldGrpcih2ms.setVisibility(View.VISIBLE);
-                        binding.fldGrpcih2occ.setVisibility(View.VISIBLE);
 
                         binding.fldGrpfid.setVisibility(View.GONE);
                         binding.fldGrpmid.setVisibility(View.GONE);
@@ -562,39 +422,11 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                         binding.cih2eduj.setEnabled(false);
                         binding.cih2eduj.setChecked(false);
 
-                        binding.cih2occa.setEnabled(true);
-                        binding.cih2occb.setEnabled(true);
-                        binding.cih2occc.setEnabled(true);
-                        binding.cih2occd.setEnabled(true);
-                        binding.cih2occe.setEnabled(true);
-                        binding.cih2occg.setEnabled(true);
-                        binding.cih2occh.setEnabled(true);
-                        binding.cih2occk.setEnabled(true);
-                        binding.cih2occ98.setEnabled(true);
-                        //binding.cih2occi.setEnabled(true);
-
-                       /* if (!flag) {
-                            if (!family.getna204().equals("1")) {
-                                binding.cih2occi.setEnabled(true);
-                            } else {
-                                binding.cih2occi.setEnabled(false);
-                                binding.cih2occi.setChecked(false);
-                            }
-                        }
-*/
-                        binding.cih2occ96.setEnabled(true);
-                        binding.cih2occ96x.setEnabled(true);
-
-                        binding.cih2occf.setEnabled(true);
-                        binding.cih2occj.setEnabled(false);
-                        binding.cih2occj.setChecked(false);
                     } else if (Age >= 22) {
-                        binding.cih2occ.clearCheck();
                         binding.cih2edu.clearCheck();
                         binding.cih2ms.clearCheck();
                         binding.fldGrpcih2edu.setVisibility(View.VISIBLE);
                         binding.fldGrpcih2ms.setVisibility(View.VISIBLE);
-                        binding.fldGrpcih2occ.setVisibility(View.VISIBLE);
 
                         binding.fldGrpfid.setVisibility(View.GONE);
                         binding.fldGrpmid.setVisibility(View.GONE);
@@ -612,34 +444,51 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                         binding.cih2eduh.setEnabled(true);
                         binding.cih2edui.setEnabled(true);
                         binding.cih2eduj.setEnabled(true);
+                    }
 
-                        binding.cih2occa.setEnabled(true);
+                    binding.cih2occa.setEnabled(true);
+                    binding.cih2occb.setEnabled(false);
+                    binding.cih2occc.setEnabled(false);
+                    binding.cih2occd.setEnabled(false);
+                    binding.cih2occe.setEnabled(false);
+                    binding.cih2occf.setEnabled(false);
+                    binding.cih2occg.setEnabled(false);
+                    binding.cih2occh.setEnabled(false);
+                    binding.cih2occj.setEnabled(false);
+                    binding.cih2occk.setEnabled(false);
+                    binding.cih2occl.setEnabled(false);
+                    binding.cih2occm.setEnabled(false);
+                    binding.cih2occn.setEnabled(false);
+                    binding.cih2occ98.setEnabled(false);
+                    binding.cih2occ96.setEnabled(false);
+
+                    if (Age > 10) {
                         binding.cih2occb.setEnabled(true);
                         binding.cih2occc.setEnabled(true);
                         binding.cih2occd.setEnabled(true);
                         binding.cih2occe.setEnabled(true);
+                        binding.cih2occf.setEnabled(true);
                         binding.cih2occg.setEnabled(true);
                         binding.cih2occh.setEnabled(true);
                         binding.cih2occk.setEnabled(true);
+                        binding.cih2occl.setEnabled(true);
+                        binding.cih2occm.setEnabled(true);
+                        binding.cih2occn.setEnabled(true);
                         binding.cih2occ98.setEnabled(true);
-                        //binding.cih2occi.setEnabled(true);
-
-                        /*if (!flag) {
-                            if (!family.getna204().equals("1")) {
-                                binding.cih2occi.setEnabled(true);
-                            } else {
-                                binding.cih2occi.setEnabled(false);
-                                binding.cih2occi.setChecked(false);
-                            }
-                        }*/
-
                         binding.cih2occ96.setEnabled(true);
-                        binding.cih2occ96x.setEnabled(true);
-
-                        binding.cih2occf.setEnabled(true);
-                        binding.cih2occj.setEnabled(true);
-
                     }
+
+                    if (Age < 7)
+                        binding.cih2occl.setEnabled(true);
+                    else if (Age >= 7 && Age < 18)
+                        binding.cih2occm.setEnabled(true);
+                    else if (Age >= 18 && Age < 50)
+                        binding.cih2occn.setEnabled(true);
+                    else {
+                        binding.cih2occn.setEnabled(true);
+                        binding.cih2occj.setEnabled(true);
+                    }
+
 
                 }
             }
@@ -864,7 +713,7 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
             MainApp.fmc.setRealtionHH(binding.na203a.isChecked() ? "1" : binding.na203b.isChecked() ? "2" : binding.na203c.isChecked() ? "3" : binding.na203d.isChecked() ? "4"
                     : binding.na203e.isChecked() ? "5" : binding.na203f.isChecked() ? "6" : binding.na203g.isChecked() ? "7" : binding.na203h.isChecked() ? "8"
                     : binding.na203i.isChecked() ? "9" : binding.na203j.isChecked() ? "10" : binding.na203k.isChecked() ? "11" : binding.na203l.isChecked() ? "12"
-                    : binding.na203m.isChecked() ? "13" : binding.na20398.isChecked() ? "98" : binding.na20396.isChecked() ? "96" : "0");
+                    : binding.na203m.isChecked() ? "13" : binding.na203n.isChecked() ? "14" : binding.na203o.isChecked() ? "15" : binding.na20398.isChecked() ? "98" : binding.na20396.isChecked() ? "96" : "0");
 
             MainApp.fmc.setResp(binding.respa.isChecked() ? "1" : binding.respb.isChecked() ? "2" : "0"); //respondent
 
@@ -933,7 +782,8 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
 
             sA2.put("cih209", binding.cih2occa.isChecked() ? "1" : binding.cih2occb.isChecked() ? "2" : binding.cih2occc.isChecked() ? "3" : binding.cih2occd.isChecked() ? "4"
                     : binding.cih2occe.isChecked() ? "5" : binding.cih2occf.isChecked() ? "6" : binding.cih2occg.isChecked() ? "7" : binding.cih2occh.isChecked() ? "8"
-                    : binding.cih2occi.isChecked() ? "9" : binding.cih2occj.isChecked() ? "10" : binding.cih2occk.isChecked() ? "11" : binding.cih2occ98.isChecked() ? "98" : binding.cih2occ96.isChecked() ? "96" : "0");
+                    : binding.cih2occi.isChecked() ? "9" : binding.cih2occj.isChecked() ? "10" : binding.cih2occk.isChecked() ? "11" : binding.cih2occl.isChecked() ? "12"
+                    : binding.cih2occm.isChecked() ? "13" : binding.cih2occn.isChecked() ? "14" : binding.cih2occ98.isChecked() ? "98" : binding.cih2occ96.isChecked() ? "96" : "0");
 
             sA2.put("cih20996x", binding.cih2occ96x.getText().toString());
 

@@ -433,7 +433,7 @@ public class SpecimenInfoActivity extends AppCompatActivity {
                 binding.fldGrpQR.setVisibility(View.GONE);
                 binding.btnContinue.setVisibility(View.VISIBLE);
                 binding.btnEnd.setVisibility(View.GONE);
-                binding.fldGrpHH.setVisibility(View.GONE);
+                binding.fldGrpHH.setVisibility(View.VISIBLE);
 
             } else {
                 binding.fldGrpQR.setVisibility(View.GONE);
