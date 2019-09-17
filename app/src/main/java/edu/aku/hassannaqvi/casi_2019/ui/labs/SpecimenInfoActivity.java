@@ -430,10 +430,10 @@ public class SpecimenInfoActivity extends AppCompatActivity {
             if (MainApp.all_members.size() > 0) {
 
                 Toast.makeText(this, "Members Found..", Toast.LENGTH_SHORT).show();
-                binding.fldGrpQR.setVisibility(View.VISIBLE);
+                binding.fldGrpQR.setVisibility(View.GONE);
                 binding.btnContinue.setVisibility(View.VISIBLE);
                 binding.btnEnd.setVisibility(View.GONE);
-                binding.fldGrpHH.setVisibility(View.VISIBLE);
+                binding.fldGrpHH.setVisibility(View.GONE);
 
             } else {
                 binding.fldGrpQR.setVisibility(View.GONE);
