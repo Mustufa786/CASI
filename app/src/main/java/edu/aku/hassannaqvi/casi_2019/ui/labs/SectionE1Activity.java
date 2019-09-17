@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.google.zxing.integration.android.IntentIntegrator;
@@ -22,6 +23,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 
 import edu.aku.hassannaqvi.casi_2019.JSONModels.JSONModelClass;
 import edu.aku.hassannaqvi.casi_2019.R;
@@ -91,11 +93,6 @@ public class SectionE1Activity extends AppCompatActivity {
                 originalPositions.add(2);
             }
 
-            if (MainApp.minors.size() > 0) {
-                group.add(getResources().getString(R.string.neselectedc));
-                originalPositions.add(3);
-            }
-
             if (MainApp.adolescents.size() > 0) {
                 group.add(getResources().getString(R.string.neselectedd));
                 originalPositions.add(4);
@@ -145,6 +142,14 @@ public class SectionE1Activity extends AppCompatActivity {
             }
         });
 
+        bi.ne107.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i != bi.ne107c.getId())
+                    bi.ne106.setText(null);
+            }
+        });
+
     }
 
     private void fetchMembersFromGroup(int position) {
@@ -170,12 +175,19 @@ public class SectionE1Activity extends AppCompatActivity {
     public void familyMembersSetting(List<FamilyMembersContract> family) {
 
 
-        for (FamilyMembersContract fmc : family) {
+        /*for (FamilyMembersContract fmc : family) {
             json = JSONUtilClass.getModelFromJSON(fmc.getsA2(), JSONModelClass.class);
             membersMap.put(json.getName() + "_" + json.getSerialNo(), new SelectedMem(position, fmc, json.getSerialNo()));
             if (!MainApp.duplicateMembers.contains(json.getName() + "_" + json.getSerialNo()))
                 members.add(json.getName() + "_" + json.getSerialNo());
-        }
+        }*/
+
+        int rnd = new Random().nextInt(family.size());
+
+        json = JSONUtilClass.getModelFromJSON(family.get(rnd).getsA2(), JSONModelClass.class);
+        membersMap.put(json.getName() + "_" + json.getSerialNo(), new SelectedMem(position, family.get(rnd), json.getSerialNo()));
+        if (!MainApp.duplicateMembers.contains(json.getName() + "_" + json.getSerialNo()))
+            members.add(json.getName() + "_" + json.getSerialNo());
 
 
     }
@@ -184,12 +196,10 @@ public class SectionE1Activity extends AppCompatActivity {
         List<String> memberslist = new ArrayList<>();
         for (FamilyMembersContract fmc : family) {
 
+            json = JSONUtilClass.getModelFromJSON(fmc.getsA2(), JSONModelClass.class);
+            if (!MainApp.duplicateMembers.contains(json.getName() + "_" + json.getSerialNo()))
+                memberslist.add(json.getName() + "_" + json.getSerialNo());
 
-            {
-                json = JSONUtilClass.getModelFromJSON(fmc.getsA2(), JSONModelClass.class);
-                if (!MainApp.duplicateMembers.contains(json.getName() + "_" + json.getSerialNo()))
-                    memberslist.add(json.getName() + "_" + json.getSerialNo());
-            }
         }
 
         return memberslist.size() > 0;
@@ -329,7 +339,21 @@ public class SectionE1Activity extends AppCompatActivity {
     }
 
     private boolean formValidation() {
-        return ValidatorClass.EmptyCheckingContainerV2(this, bi.fldGrphb);
+        if (!ValidatorClass.EmptyCheckingContainerV2(this, bi.fldGrphb))
+            return false;
+
+        if (bi.ne107c.isChecked()) {
+            if (!bi.ne106.getText().toString().matches("^(\\d{2,2}\\.\\d{1,1})$")) {
+                Toast.makeText(this, "ERROR(invalid): " + "Please type the correct format" + getString(R.string.hb_result), Toast.LENGTH_LONG).show();
+                bi.ne106.setError("Please type correct format (XX.X)");
+                return false;
+            } else {
+                bi.ne106.setError(null);
+            }
+        }
+
+        return true;
+
     }
 
     private void SaveDraft() throws JSONException {

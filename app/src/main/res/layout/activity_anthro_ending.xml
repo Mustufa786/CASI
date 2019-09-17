@@ -68,7 +68,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="1dp"
-                    android:text="@string/anthrod" />
+                    android:text="@string/anthrod"
+                    android:visibility="gone" />
 
 
                 <!--<RadioButton

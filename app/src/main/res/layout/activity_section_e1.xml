@@ -88,9 +88,10 @@
                 <EditText
                     android:id="@+id/ne106"
                     style="@style/textInput"
-                    android:hint="@string/hb_result"
+                    android:hint="XX.X"
                     android:inputType="numberDecimal"
-                    android:maxLength="4" />
+                    android:maxLength="4"
+                    android:tag="-1" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -104,8 +105,7 @@
                 <RadioGroup
                     android:id="@+id/ne107"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:layout_height="wrap_content">
 
                     <RadioButton
                         android:id="@+id/ne107a"
@@ -122,6 +122,14 @@
                         android:layout_marginStart="1dp"
                         android:layout_weight="1"
                         android:text="@string/ne107b" />
+
+                    <RadioButton
+                        android:id="@+id/ne107c"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="1dp"
+                        android:layout_weight="1"
+                        android:text="@string/anthroa" />
 
                 </RadioGroup>
 

@@ -546,7 +546,7 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                 bi.ciw211.setMinvalue(roasterChildrens);
                 bi.ciw212.setMinvalue(roasterChildrens);
                 bi.ciw214.setMinvalue(roasterChildrens);
-                bi.ciw215.setMinvalue(roasterChildrens);
+                bi.ciw215.setMinvalue(roasterChildrensUnder2);
                 bi.ciw216.setMinvalue(roasterChildrensUnder2);
 
                 if (wraMap.get(bi.nb101.getSelectedItem().toString()).getKishSelected().equals("1"))

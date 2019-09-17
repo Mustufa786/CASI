@@ -33,9 +33,9 @@
     <string name="istatusg">Аз рӯи синну сол қобили қабул нест </string>
 
     <string name="anthrostatus">Assessment Status</string>
-    <string name="anthroa">ба итмом расид</string>
-    <string name="anthrob">На ҳама</string>
-    <string name="anthroc">рад</string>
+    <string name="anthroa">иҷро шуд</string>
+    <string name="anthrob">иҷро нашуд</string>
+    <string name="anthroc">рад карда шуд</string>
     <string name="anthrod"> Дар хона ҳоло не </string>
     <string name="date"> санаи</string>
     <string name="time">вақт</string>
@@ -1602,7 +1602,7 @@
     <string name="barcode">اگر ہاں، تو بار کوڈ اسکین کریں</string>
     <string name="hb_result">E104. Натиҷаи санҷиши гемоглобинро нависед</string>
     <string name="ne104"></string>
-    <string name="ne107"> E105.  Агар Не, сабабро муайян кунед </string>
+    <string name="ne107"> E105.  ГЕМОГЛОБИН Натиҷаи </string>
     <string name="ne107a">Дар хона нест </string>
     <string name="ne107b">Рад кард </string>
     <string name="ne2heading"> سیکشن ای 2: پانی کے نمونے </string>
