@@ -781,9 +781,6 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
                         binding.cih2occg.setEnabled(true);
                         binding.cih2occh.setEnabled(true);
                         binding.cih2occk.setEnabled(true);
-                        binding.cih2occl.setEnabled(true);
-                        binding.cih2occm.setEnabled(true);
-                        binding.cih2occn.setEnabled(true);
                         binding.cih2occ98.setEnabled(true);
                         binding.cih2occ96.setEnabled(true);
                     }
