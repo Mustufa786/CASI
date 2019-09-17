@@ -9,7 +9,6 @@ import android.text.Editable;
 import android.text.InputType;
 import android.text.TextWatcher;
 import android.view.View;
-import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.google.zxing.integration.android.IntentIntegrator;
@@ -118,7 +117,7 @@ public class SpecimenInfoActivity extends AppCompatActivity {
 
         }
 
-        binding.na11802.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        /*binding.na11802.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (binding.na11802a.isChecked()) {
@@ -130,7 +129,7 @@ public class SpecimenInfoActivity extends AppCompatActivity {
                     binding.hcCode.setText(null);
                 }
             }
-        });
+        });*/
 
         //slcMem = new ArrayList<>();
         binding.cih102.addTextChangedListener(new TextWatcher() {
