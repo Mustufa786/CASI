@@ -699,7 +699,7 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
         sB4.put("ciw40296x", binding.ciw40296x.getText().toString());
 
 //       ciw403
-        sB4.put("ciw303",
+        sB4.put("ciw403",
                 binding.ciw403a.isChecked() ? "1"
                         : binding.ciw403b.isChecked() ? "2"
                         : binding.ciw403c.isChecked() ? "3"
@@ -720,9 +720,9 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
                         : binding.ciw403p.isChecked() ? "16"
                         : binding.ciw403963.isChecked() ? "963"
                         : "0");
-        sB4.put("ciw303961x", binding.ciw403961x.getText().toString());
-        sB4.put("ciw303962x", binding.ciw403962x.getText().toString());
-        sB4.put("ciw303963x", binding.ciw403963x.getText().toString());
+        sB4.put("ciw403961x", binding.ciw403961x.getText().toString());
+        sB4.put("ciw403962x", binding.ciw403962x.getText().toString());
+        sB4.put("ciw403963x", binding.ciw403963x.getText().toString());
 
         sB4.put("ciw40301", binding.ciw40301a.isChecked() ? "1"
                 : binding.ciw40301b.isChecked() ? "2"

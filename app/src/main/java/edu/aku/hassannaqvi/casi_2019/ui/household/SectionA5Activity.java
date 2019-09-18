@@ -555,7 +555,7 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
 
         sA5.put("cih616", binding.cih616a.isChecked() ? "1"
                 : binding.cih616b.isChecked() ? "2"
-                : binding.cih616c.isChecked() ? "2"
+                : binding.cih616c.isChecked() ? "3"
                 : "0");
         sA5.put("cih617", binding.cih617a.isChecked() ? "1"
                 : binding.cih617b.isChecked() ? "2"

@@ -1011,8 +1011,8 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
         sB1.put("ciw213", bi.ciw213.getText().toString());
         sB1.put("ciw214", bi.ciw214.getText().toString());
         sB1.put("ciw215", bi.ciw215.getText().toString());
-        sB1.put("ciw216", bi.ciw216.getText().toString());
-        sB1.put("ciw21601", bi.ciw21601a.isChecked() ? "1" : bi.ciw21601b.isChecked() ? "2" : "0");
+//        sB1.put("ciw216", bi.ciw216.getText().toString());
+        sB1.put("ciw21501", bi.ciw21601a.isChecked() ? "1" : bi.ciw21601b.isChecked() ? "2" : "0");
 
         sB1.put("no_child", roasterChildrens);
 
