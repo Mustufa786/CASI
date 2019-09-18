@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layoutDirection="ltr"
+    android:layoutDirection="rtl"
     tools:context=".ui.anthro.AntrhoInfoActivity">
 
     <data>
@@ -21,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:animateLayoutChanges="true"
-            android:layoutDirection="ltr"
+            android:layoutDirection="rtl"
             android:orientation="vertical">
 
             <!--cih102-->
@@ -225,9 +225,9 @@
                         android:digits="0123456789-"
                         android:hint="9999-999"
                         android:inputType="number"
-                        android:layoutDirection="ltr"
+                        android:layoutDirection="rtl"
                         android:maxLength="8"
-                        android:textDirection="ltr" />
+                        android:textDirection="rtl" />
 
                     <Button
                         android:id="@+id/checkHHBtn"
@@ -351,7 +351,7 @@
                                 android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-"
                                 android:inputType="textCapCharacters"
                                 android:maxLength="7"
-                                android:textDirection="ltr" />
+                                android:textDirection="rtl" />
 
 
                         </LinearLayout>
@@ -397,7 +397,7 @@
                                 android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-"
                                 android:inputType="textCapCharacters"
                                 android:maxLength="7"
-                                android:textDirection="ltr" />
+                                android:textDirection="rtl" />
 
 
                         </LinearLayout>

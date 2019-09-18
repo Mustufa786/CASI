@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layoutDirection="ltr"
+    android:layoutDirection="rtl"
     tools:context=".ui.labs.SpecimenInfoActivity">
 
     <data>
@@ -26,7 +26,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:animateLayoutChanges="true"
-                android:layoutDirection="ltr"
+                android:layoutDirection="rtl"
                 android:orientation="vertical">
 
                 <!--cih102-->
@@ -229,9 +229,9 @@
                             android:layout_weight="60"
                             android:digits="0123456789-"
                             android:hint="9999-999"
-                            android:layoutDirection="ltr"
+                            android:layoutDirection="rtl"
                             android:maxLength="8"
-                            android:textDirection="ltr" />
+                            android:textDirection="rtl" />
 
                         <Button
                             android:id="@+id/checkHHBtn"
