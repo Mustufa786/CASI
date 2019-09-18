@@ -129,7 +129,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="1dp"
                         android:layout_weight="1"
-                        android:text="@string/anthroa" />
+                        android:text="@string/ne107c" />
 
                 </RadioGroup>
 
