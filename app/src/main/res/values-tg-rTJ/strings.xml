@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name"> CENTRAL ASIA STUNTING INITIATIVE 2019 </string>
+    <string name="app_name"> CENTRAL ASIA STUNTING INITIATIVE 2019 - Tajik </string>
     <!-- Strings related to login -->
     <string name="prompt_email">корбар</string>
     <string name="prompt_password">рамз</string>
@@ -1337,7 +1337,7 @@
     <string name="cic315"></string>
     <string name="cic316"></string>
 
-    <string name="cic4heading"> ҚИСМИC4: ФАВТ ВА ТАБОБАТИ БЕМОРИҲО</string>
+    <string name="cic4heading"> ҚИСМИ C5: КАСАЛӢ ВА ТАБОБАТИ БЕМОРИҲО </string>
     <string name="cic401"> C401 - (Name) Кудак дар ду ҳафтаи охир дарунравӣ дошт? </string>
     <string name="cic402"> C402 -Оё шумо барои табобати дарунравӣ ба ягон кас/ҷой муроҷиат кардед? </string>
     <string name="cic403"> C402a -Барои чӣ шумо барои табобати дарунравӣ муроҷиат накардед?</string>
