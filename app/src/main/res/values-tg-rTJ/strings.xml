@@ -676,7 +676,7 @@
     <string name="ciw303n">Баморхонаи хусусӣ / Клиника </string>
     <string name="ciw303o">Клиника</string>
     <string name="ciw303962">Хусусии дигар (аниқ кунед)</string>
-    <string name="ciw303963"></string>
+    <string name="ciw303963">" "</string>
 
     <string name="ciw304">W304 -Ҳангоме, ки бори аввал Шумо барои ҳомиладории охирон аз муоина гузаштед, дар кадом ҳафта/моҳи ҳомиладорӣ қарор доштед?</string>
     <string name="ciw304info">Ҷавоби мусоҳибро нависед. Агар ҷавоб 9 моҳ бошад ё дертар рақами 9 нависед. </string>
@@ -864,7 +864,7 @@
     <string name="ciw403o">Баморхонаи хусусӣ / Клиника</string>
     <string name="ciw403p">Клиника</string>
     <string name="ciw403962">Хусусии дигар (аниқ кунед)</string>
-    <string name="ciw403963"></string>
+    <string name="ciw403963">" "</string>
 
     <string name="ciw40301">W403a -Намуди таваллуд </string>
     <string name="ciw40301a">Маҳбалӣ </string>
@@ -1604,7 +1604,7 @@
     <string name="ne104c"> پوٹ ایچ بی ٹیسٹ </string>
     <string name="barcode">اگر ہاں، تو بار کوڈ اسکین کریں</string>
     <string name="hb_result">E104. Натиҷаи санҷиши гемоглобинро нависед</string>
-    <string name="ne104"></string>
+    <string name="ne104">" "</string>
     <string name="ne107"> E105.  ГЕМОГЛОБИН Натиҷаи </string>
     <string name="ne107a">Дар хона нест </string>
     <string name="ne107b">Рад кард </string>
@@ -1990,5 +1990,6 @@
     <string name="cih7h1">" "</string>
     <string name="ciw403info4">" "</string>
     <string name="nofood">" "</string>
+    <string name="cid608b">" "</string>
 
 </resources>
