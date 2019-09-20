@@ -510,7 +510,7 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
     public void skipPattern() {
 
         binding.na202.addTextChangedListener(this);
-        binding.na203.setOnCheckedChangeListener(this);
+//        binding.na203.setOnCheckedChangeListener(this);
         binding.na204.setOnCheckedChangeListener(this);
         binding.resp.setOnCheckedChangeListener(this);
         //binding.cih2ms.setOnCheckedChangeListener(this);
@@ -518,6 +518,22 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
         binding.cih2occ.setOnCheckedChangeListener(this);
         binding.cih210.setOnCheckedChangeListener(this);
 
+        binding.na203.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i == binding.na203b.getId()) {
+                    binding.cih2msb.setEnabled(false);
+                    binding.cih2msc.setEnabled(false);
+                    binding.cih2msd.setEnabled(false);
+                    binding.cih2mse.setEnabled(false);
+                } else {
+                    binding.cih2msb.setEnabled(true);
+                    binding.cih2msc.setEnabled(true);
+                    binding.cih2msd.setEnabled(true);
+                    binding.cih2mse.setEnabled(true);
+                }
+            }
+        });
 
     }
 

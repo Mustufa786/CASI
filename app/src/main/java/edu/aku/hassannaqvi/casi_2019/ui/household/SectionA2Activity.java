@@ -168,9 +168,15 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
             binding.na20398.setEnabled(false);
         }
 
-        if (!flag)
+        if (!flag) {
             binding.cih2occi.setEnabled(family.getna204().equals("2"));
-
+            if (family.getRealtionHH().equals("2")) {
+                binding.cih2msb.setEnabled(false);
+                binding.cih2msc.setEnabled(false);
+                binding.cih2msd.setEnabled(false);
+                binding.cih2mse.setEnabled(false);
+            }
+        }
 
         /*For Tajik*/
         binding.fldGrpcih214.setVisibility(userCountryTajik_Home ? View.VISIBLE : View.GONE);
@@ -302,9 +308,6 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                         binding.fldGrpmid.setVisibility(View.GONE);
                         binding.cih2mse.setChecked(true);
 
-                        binding.cih211.setSelection(1);
-                        binding.cih212.setSelection(1);
-
                         binding.cih2edua.setEnabled(true);
                         binding.cih2edub.setEnabled(true);
                         binding.cih2edu98.setEnabled(true);
@@ -331,8 +334,6 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
 
                         binding.fldGrpfid.setVisibility(View.GONE);
                         binding.fldGrpmid.setVisibility(View.GONE);
-                        binding.cih211.setSelection(1);
-                        binding.cih212.setSelection(1);
                         binding.cih2edua.setEnabled(true);
                         binding.cih2edub.setEnabled(true);
                         binding.cih2edu98.setEnabled(true);
@@ -358,8 +359,6 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
 
                         binding.fldGrpfid.setVisibility(View.GONE);
                         binding.fldGrpmid.setVisibility(View.GONE);
-                        binding.cih211.setSelection(1);
-                        binding.cih212.setSelection(1);
 
                         binding.cih2edua.setEnabled(true);
                         binding.cih2edub.setEnabled(true);
@@ -385,8 +384,6 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
 
                         binding.fldGrpfid.setVisibility(View.GONE);
                         binding.fldGrpmid.setVisibility(View.GONE);
-                        binding.cih211.setSelection(1);
-                        binding.cih212.setSelection(1);
 
                         binding.cih2edua.setEnabled(true);
                         binding.cih2edub.setEnabled(true);
@@ -411,8 +408,6 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
 
                         binding.fldGrpfid.setVisibility(View.GONE);
                         binding.fldGrpmid.setVisibility(View.GONE);
-                        binding.cih211.setSelection(1);
-                        binding.cih212.setSelection(1);
 
                         binding.cih2edua.setEnabled(true);
                         binding.cih2edub.setEnabled(true);
@@ -436,8 +431,6 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
 
                         binding.fldGrpfid.setVisibility(View.GONE);
                         binding.fldGrpmid.setVisibility(View.GONE);
-                        binding.cih211.setSelection(1);
-                        binding.cih212.setSelection(1);
 
                         binding.cih2edua.setEnabled(true);
                         binding.cih2edub.setEnabled(true);
@@ -503,6 +496,50 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                         }
                     }
 
+                    // Setting Dropdowns
+                    /*mothersList = new ArrayList<>();
+                    mothersSerials = new ArrayList<>();
+                    mothersMap = new HashMap<>();
+                    motherChildMap = new HashMap<>();
+
+                    mothersList.add("....");
+                    mothersList.add("N/A");
+                    mothersSerials.add("0");
+                    mothersMap.put("N/A_0", "00");
+
+                    fathersList = new ArrayList<>();
+                    fathersSerials = new ArrayList<>();
+                    fathersMap = new HashMap<>();
+
+                    fathersList.add("....");
+                    fathersList.add("N/A");
+                    fathersSerials.add("0");
+                    fathersMap.put("N/A_0", "00");
+
+                    for (FamilyMembersContract mem : MainApp.members_f_m) {
+                        if (Integer.valueOf(family.getAge()) < 15) continue;
+                        if (mem.getna204().equals("1")) {
+                            fathersList.add(mem.getName());
+                            fathersSerials.add(mem.getSerialNo());
+                            fathersMap.put(mem.getName() + "_" + mem.getSerialNo(), mem.getSerialNo());
+                        } else {
+                            mothersList.add(mem.getName());
+                            mothersSerials.add(mem.getSerialNo());
+                            mothersMap.put(mem.getName() + "_" + mem.getSerialNo(), mem.getSerialNo());
+
+                            motherChildMap.put(mem.getName() + "_" + mem.getSerialNo(), mem);
+                        }
+                    }
+
+                    binding.cih211.setAdapter(new ArrayAdapter<>(SectionA2Activity.this, R.layout.item_style, fathersList));
+                    binding.cih212.setAdapter(new ArrayAdapter<>(SectionA2Activity.this, R.layout.item_style, mothersList));
+*/
+                    if (Age > 5) {
+
+                        binding.cih211.setSelection(1);
+                        binding.cih212.setSelection(1);
+
+                    }
 
                 }
             }

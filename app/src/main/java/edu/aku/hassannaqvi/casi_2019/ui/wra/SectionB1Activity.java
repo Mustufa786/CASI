@@ -280,10 +280,10 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                 bi.ciw212.setMaxvalue(resultPreg);
                 bi.ciw214.setMaxvalue(totalPreg);
 
-                if (resultPreg <= roasterChildrens)
+                /*if ((bi.ciw208a.isChecked() ? totalPreg + 1 : resultPreg) < roasterChildrens)
                     bi.ciw211.setMaxvalue(roasterChildrens);
                 else
-                    bi.ciw211.setMaxvalue(20);
+                    bi.ciw211.setMaxvalue(20);*/
 
 
                 if (bi.ciw211.getText().toString().equals("0")) {
