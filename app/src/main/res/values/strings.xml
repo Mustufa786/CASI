@@ -151,14 +151,14 @@
     <string name="na203l">Дигар хешу табор, </string>
     <string name="na203m">Писархон ё духтархон, писари угай ё дахтари уга</string>
     <string name="na203n">Ятим</string>
-    <string name="na203o"></string>
+    <string name="na203o">" "</string>
     <string name="na20396">Дигар (хеш нест) </string>
     <string name="na20398">Намедонам  </string>
     <string name="na204"> H204 - Ҷинс </string>
-    <string name="na204c"></string>
+    <string name="na204c">" "</string>
     <string name="cih2dob">H205 -Санаи таваллуди (ном) кадом аст?</string>
     <string name="na2age">H206 - (Ном) чанд сола аст?</string>
-    <string name="cih2ms"> H207-Вазъиятиоилавӣ </string>
+    <string name="cih2ms"> H207-Вазъияти оилавӣ </string>
     <string name="cih2msa">Оиладор </string>
     <string name="cih2msb">Бева </string>
     <string name="cih2msc">Талоқшуда </string>
@@ -1429,7 +1429,7 @@
     <string name="cic4099602"> Хусусии дигар (аниқ кунед)  </string>
     <string name="cic4099603"> Дигар (аниқ кунед)  </string>
 
-    <string name="cic410">  C408 -Барои табобати сирояти шадиди роҳҳои нафас шумо ба  кудак чӣ додед? \n [Якчанд ҷавоб мумкин аст]</string>
+    <string name="cic410">  C408 -Барои табобати сирояти шадиди роҳҳои нафас шумо ба  кудак чӣ додед? \r\n [Якчанд ҷавоб мумкин аст]</string>
     <string name="cic410sub1">Ҳаб ё сироп</string>
     <string name="cic410a"> Антибиотик</string>
     <string name="cic410b">   Ҳаб ё сиропи номаълум</string>
@@ -1571,7 +1571,7 @@
     <string name="disconnect_peer_button">Disconnect</string>
     <string name="get_file_button">Launch Gallery</string>
     <string name="empty">" "</string>
-    <string name="yes1">yes</string>
+    <string name="yes1">" ҳа "</string>
     <string name="no1">no</string>
     <string name="client_text">This device will act as a client. Click on Gallery button to pick a local(stored) file</string>
     <string name="empty_message">No devices found. Turn on P2P and perform discovery from the Action Bar</string>
