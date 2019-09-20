@@ -15,6 +15,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
+import java.util.HashMap;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -36,6 +37,7 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
     DatabaseHelper db;
     Boolean backPressed = false;
     private Timer timer = new Timer();
+    private boolean userCountryDari;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +54,12 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
 
 //        Validation Boolean
         MainApp.validateFlag = false;
+
+//        Dari Users
+        HashMap<String, String> tagVal = MainApp.getTagValues(this);
+        String country = tagVal.get("org") != null ? tagVal.get("org").equals("null") ? "0" : tagVal.get("org").equals("") ? "0" : tagVal.get("org") : "0";
+        userCountryDari = Integer.valueOf(country) == 2;
+
 
 //        AutoCompleteFields();
 
@@ -71,8 +79,8 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
         bi.ciw303o.setVisibility(userCountryTajik ? View.GONE : View.GONE);
         bi.ciw303963.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
 
-        bi.fldGrpciw310.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        bi.fldGrpciw325.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        bi.fldGrpciw310.setVisibility(userCountryTajik || userCountryDari ? View.VISIBLE : View.GONE);
+        bi.fldGrpciw325.setVisibility(userCountryTajik || userCountryDari ? View.VISIBLE : View.GONE);
 
         // fldGrpB201
         bi.fldGrpB201.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
@@ -916,7 +924,7 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
         if (bi.ciw310a.isChecked()) {
 
 
-            if (userCountryTajik) {
+            if (userCountryTajik || userCountryDari) {
                 if (!ValidatorClass.EmptyRadioButton(this, bi.ciw31001, bi.ciw31001a, getString(R.string.ciw31001))) {
                     return false;
                 }
@@ -1108,7 +1116,7 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
             return false;
         }
 
-        if (bi.ciw325a.isChecked() && userCountryTajik) {
+        if (bi.ciw325a.isChecked() && (userCountryTajik || userCountryDari)) {
             if (!ValidatorClass.EmptyRadioButton(this, bi.ciw32501, bi.ciw32501a, getString(R.string.ciw32501))) {
                 return false;
             }

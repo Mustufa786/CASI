@@ -139,6 +139,8 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
         binding.cih2occl.setVisibility(userCountryTajik_Home ? View.VISIBLE : View.GONE);
         binding.cih2occm.setVisibility(userCountryTajik_Home ? View.VISIBLE : View.GONE);
         binding.cih2occn.setVisibility(userCountryTajik_Home ? View.VISIBLE : View.GONE);
+
+        binding.na203o.setVisibility(userCountryTajik_Home ? View.GONE : View.VISIBLE);
     }
 
     public void AutoPopulate() {
@@ -764,6 +766,7 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
                     binding.cih2occf.setEnabled(false);
                     binding.cih2occg.setEnabled(false);
                     binding.cih2occh.setEnabled(false);
+                    binding.cih2occi.setEnabled(false);
                     binding.cih2occj.setEnabled(false);
                     binding.cih2occk.setEnabled(false);
                     binding.cih2occl.setEnabled(false);
@@ -794,6 +797,15 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
                     else {
                         binding.cih2occn.setEnabled(true);
                         binding.cih2occj.setEnabled(true);
+                    }
+
+                    if (Age >= 14) {
+                        if (binding.na204b.isChecked()) {
+                            binding.cih2occi.setEnabled(true);
+                        } else {
+                            binding.cih2occi.setEnabled(false);
+                            binding.cih2occi.setChecked(false);
+                        }
                     }
 
                 }

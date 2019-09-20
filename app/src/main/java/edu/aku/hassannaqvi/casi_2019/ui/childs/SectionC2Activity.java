@@ -174,6 +174,7 @@ public class SectionC2Activity extends Menu2Activity implements RadioGroup.OnChe
 
         bi.txtcic206.setText(bi.txtcic206.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
         bi.txtcic207.setText(bi.txtcic207.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
+        bi.txtcic208.setText(bi.txtcic208.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
         bi.txtcic209.setText(bi.txtcic209.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
         bi.txtcic210.setText(bi.txtcic210.getText().toString().replace("Name", SectionC1Activity.selectedChildName));
         bi.txtcic211.setText(bi.txtcic211.getText().toString().replace("Name", SectionC1Activity.selectedChildName));

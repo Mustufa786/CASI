@@ -168,8 +168,12 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
             binding.na20398.setEnabled(false);
         }
 
+        if (!flag)
+            binding.cih2occi.setEnabled(family.getna204().equals("2"));
+
+
         /*For Tajik*/
-        binding.fldGrpcih214check.setVisibility(userCountryTajik_Home ? View.VISIBLE : View.GONE);
+        binding.fldGrpcih214.setVisibility(userCountryTajik_Home ? View.VISIBLE : View.GONE);
         binding.cih2occ98.setVisibility(userCountryTajik_Home ? View.VISIBLE : View.GONE);
         binding.cih2occ96.setVisibility(userCountryTajik_Home ? View.GONE : View.VISIBLE);
         binding.cih2occa.setVisibility(userCountryTajik_Home ? View.GONE : View.VISIBLE);
@@ -178,6 +182,8 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
         binding.cih2occl.setVisibility(userCountryTajik_Home ? View.VISIBLE : View.GONE);
         binding.cih2occm.setVisibility(userCountryTajik_Home ? View.VISIBLE : View.GONE);
         binding.cih2occn.setVisibility(userCountryTajik_Home ? View.VISIBLE : View.GONE);
+
+        binding.na203o.setVisibility(userCountryTajik_Home ? View.GONE : View.VISIBLE);
 
     }
 
@@ -454,6 +460,7 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                     binding.cih2occf.setEnabled(false);
                     binding.cih2occg.setEnabled(false);
                     binding.cih2occh.setEnabled(false);
+                    binding.cih2occi.setEnabled(false);
                     binding.cih2occj.setEnabled(false);
                     binding.cih2occk.setEnabled(false);
                     binding.cih2occl.setEnabled(false);
@@ -461,6 +468,7 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                     binding.cih2occn.setEnabled(false);
                     binding.cih2occ98.setEnabled(false);
                     binding.cih2occ96.setEnabled(false);
+
 
                     if (Age > 10) {
                         binding.cih2occb.setEnabled(true);
@@ -486,6 +494,15 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                         binding.cih2occj.setEnabled(true);
                     }
 
+                    if (Age >= 14) {
+                        if (!family.getna204().equals("1")) {
+                            binding.cih2occi.setEnabled(true);
+                        } else {
+                            binding.cih2occi.setEnabled(false);
+                            binding.cih2occi.setChecked(false);
+                        }
+                    }
+
 
                 }
             }
@@ -498,14 +515,14 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
         });
 
 
-        if (!flag) {
+        /*if (!flag) {
             if (!family.getna204().equals("1")) {
                 binding.cih2occi.setEnabled(true);
             } else {
                 binding.cih2occi.setEnabled(false);
                 binding.cih2occi.setChecked(false);
             }
-        }
+        }*/
         binding.cih2edu.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {

@@ -15,11 +15,13 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
 
     <string name="end_interview">پایان </string>
+    <string name="end_interview02">پایان </string>
     <string name="start_interview"> انٹروہو شروع کریں </string>
     <string name="nextSection"> بخش گلو </string>
     <string name="dataShare"> توزیع داده </string>
     <string name="addMember"> افراد کا اندراج </string>
     <string name="saveMember"> وارد شوید </string>
+    <string name="saveMember02"> وارد شوید </string>
     <string name="istatus">انٹرویو کا نتیجہ</string>
     <string name="istatusa">کامل</string>
     <string name="istatusb">در خانه حاضر نیستم</string>
@@ -1576,13 +1578,13 @@
     <string name="cih7h1">یاد داشت: مصاحبه کننده محصولات غذایی را در هنگام مصاحبه نشان خواهد داد. </string>
     <string name="benef"> در 30 روز گذشته، آیا کسی در فامیل شما امداد های ذیل را بدست آورده است؟ از یکایک بپرسید. </string>
     <string name="source">ذریعہ</string>
-    <string name="cih701">  H701 RUSF یا Wawamum برای اطفال </string>
-    <string name="cih702"> H702 RUTF برای اطفال </string>
-    <string name="cih703"> H703 ۔پودر های مواد مغذی (مایکرونیوترینت ها) بری اطفال (MNP)</string>
-    <string name="cih704">  H704 ۔حبوبات عالی(Super Cereal)، آمیخته سویا گندم برای خانم ها (Mamta) </string>
+    <string name="cih701"> RUSF یا Wawamum برای اطفال -H701</string>
+    <string name="cih702"> RUTF برای اطفال -H702</string>
+    <string name="cih703">  ۔H703- پودر های مواد مغذی (مایکرونیوترینت ها) بری اطفال (MNP)</string>
+    <string name="cih704"> ۔H704- حبوبات عالی(Super Cereal)، آمیخته سویا گندم برای خانم ها(Mamta) </string>
     <string name="cih705">  ۔H705- گندم </string>
     <string name="cih706">  ۔H706- پول نقد </string>
-    <string name="cih707">  ۔H707- رسید نقدی    </string>
+    <string name="cih707">  ۔H707- رسید نقدی </string>
     <string name="cih708">  ۔H708- رسید غذای </string>
     <string name="cih709">  ۔H709- امداد صحی، ادویه </string>
     <string name="cih710">  ۔H710- امداد تعلیمی (لباس، کتاب، پول فیس) </string>
