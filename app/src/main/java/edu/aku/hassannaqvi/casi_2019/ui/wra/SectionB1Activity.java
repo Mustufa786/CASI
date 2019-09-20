@@ -276,8 +276,15 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
 
                 if (bi.ciw211.getText().toString().isEmpty()) return;
                 int totalPreg = Integer.valueOf(bi.ciw211.getText().toString());
-                bi.ciw212.setMaxvalue(bi.ciw208a.isChecked() ? totalPreg - 1 : totalPreg);
+                int resultPreg = bi.ciw208a.isChecked() ? totalPreg - 1 : totalPreg;
+                bi.ciw212.setMaxvalue(resultPreg);
                 bi.ciw214.setMaxvalue(totalPreg);
+
+                /*if ((bi.ciw208a.isChecked() ? totalPreg + 1 : resultPreg) < roasterChildrens)
+                    bi.ciw211.setMaxvalue(roasterChildrens);
+                else
+                    bi.ciw211.setMaxvalue(20);*/
+
 
                 if (bi.ciw211.getText().toString().equals("0")) {
                     bi.ciw212.setEnabled(false);
@@ -543,9 +550,15 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
                         break;
                     }
                 }
+
+                if (roasterChildrens > 0) {
+                    bi.ciw207.clearCheck();
+                    bi.ciw207b.setEnabled(false);
+                }
+
                 bi.ciw211.setMinvalue(roasterChildrens);
                 bi.ciw212.setMinvalue(roasterChildrens);
-                bi.ciw214.setMinvalue(roasterChildrens);
+                bi.ciw214.setMinvalue(roasterChildrensUnder2);
                 bi.ciw215.setMinvalue(roasterChildrensUnder2);
                 bi.ciw216.setMinvalue(roasterChildrensUnder2);
 

@@ -14,19 +14,21 @@
     <string name="error_field_required"> This field is required </string>
     <string name="permission_rationale"> "Contacts permissions are needed for providing email completions." </string>
 
-    <string name="end_interview"> پایان </string>
+    <string name="end_interview">پایان </string>
+    <string name="end_interview02">پایان </string>
     <string name="start_interview"> انٹروہو شروع کریں </string>
     <string name="nextSection"> بخش گلو </string>
     <string name="dataShare"> توزیع داده </string>
     <string name="addMember"> افراد کا اندراج </string>
     <string name="saveMember"> وارد شوید </string>
-    <string name="istatus"> انٹرویو کا نتیجہ </string>
-    <string name="istatusa"> کامل </string>
-    <string name="istatusb"> در خانه حاضر نیستم </string>
-    <string name="istatusc"> انکار </string>
-    <string name="istatusd"> تقریبا کامل است </string>
-    <string name="istatuse"> قادر به پاسخ دادن نیست </string>
-    <string name="istatusf"> صفحه اصلی یافت نشد </string>
+    <string name="saveMember02"> وارد شوید </string>
+    <string name="istatus">انٹرویو کا نتیجہ</string>
+    <string name="istatusa">کامل</string>
+    <string name="istatusb">در خانه حاضر نیستم</string>
+    <string name="istatusc">انکار </string>
+    <string name="istatusd">تقریبا کامل است</string>
+    <string name="istatuse">قادر به پاسخ دادن نیست</string>
+    <string name="istatusf">صفحه اصلی یافت نشد</string>
     <string name="istatusg"> عمر کی وجہ سے نااہل </string>
     <string name="cic3response"> Response </string>
     <string name="cic3src"> Source </string>
@@ -1571,7 +1573,6 @@
     <string name="cih618"> ۔H609a- چقدر گاهی واقع شده است؟ </string>
     <string name="cih7h1"> " " </string>
     <!--Section A7-->
-    <string name="sectionA701">در 30 روز گذشته، آیا کسی در فامیل شما امداد های ذیل را بدست آورده است؟ از یکایک بپرسید. </string>
     <string name="benef"> تعداد مستفیدین </string>
     <string name="source"> منبع </string>
     <string name="cih701"> ۔H701 RUSF یا Wawamum برای اطفال </string>

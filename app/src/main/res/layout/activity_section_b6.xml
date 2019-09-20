@@ -238,6 +238,7 @@
                             android:text="@string/ciw503h2h" />
 
                         <RadioButton
+                            android:visibility="gone"
                             android:id="@+id/ciw5030102i"
                             style="@style/radiobutton"
                             android:layout_width="match_parent"
@@ -412,6 +413,7 @@
                             android:text="@string/ciw503h2h" />
 
                         <RadioButton
+                            android:visibility="gone"
                             android:id="@+id/ciw5030202i"
                             style="@style/radiobutton"
                             android:layout_width="match_parent"
@@ -585,6 +587,7 @@
                             android:text="@string/ciw503h2h" />
 
                         <RadioButton
+                            android:visibility="gone"
                             android:id="@+id/ciw5030302i"
                             style="@style/radiobutton"
                             android:layout_width="match_parent"
@@ -760,6 +763,7 @@
                             android:text="@string/ciw503h2h" />
 
                         <RadioButton
+                            android:visibility="gone"
                             android:id="@+id/ciw5030402i"
                             style="@style/radiobutton"
                             android:layout_width="match_parent"
@@ -933,6 +937,7 @@
                             android:text="@string/ciw503h2h" />
 
                         <RadioButton
+                            android:visibility="gone"
                             android:id="@+id/ciw5030502i"
                             style="@style/radiobutton"
                             android:layout_width="match_parent"
@@ -1107,6 +1112,7 @@
                             android:text="@string/ciw503h2h" />
 
                         <RadioButton
+                            android:visibility="gone"
                             android:id="@+id/ciw5030602i"
                             style="@style/radiobutton"
                             android:layout_width="match_parent"
@@ -1280,6 +1286,7 @@
                             android:text="@string/ciw503h2h" />
 
                         <RadioButton
+                            android:visibility="gone"
                             android:id="@+id/ciw5030702i"
                             style="@style/radiobutton"
                             android:layout_width="match_parent"
@@ -1453,6 +1460,7 @@
                             android:text="@string/ciw503h2h" />
 
                         <RadioButton
+                            android:visibility="gone"
                             android:id="@+id/ciw5030802i"
                             style="@style/radiobutton"
                             android:layout_width="match_parent"

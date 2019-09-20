@@ -18,11 +18,13 @@
     <string name="error_field_required">This field is required</string>
     <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
     <string name="end_interview">اختتام </string>
+    <string name="end_interview02">اختتام </string>
     <string name="start_interview"> انٹروہو شروع کریں </string>
     <string name="nextSection"> اگلا سیکشن </string>
     <string name="dataShare"> ڈیٹا تقسیم </string>
     <string name="addMember"> افراد کا اندراج </string>
     <string name="saveMember"> درج کریں </string>
+    <string name="saveMember02"> درج کریں </string>
     <string name="istatus">انٹرویو کا نتیجہ</string>
     <string name="istatusa"> مکمل</string>
     <string name="istatusb"> گھر پر موجود نہیں</string>

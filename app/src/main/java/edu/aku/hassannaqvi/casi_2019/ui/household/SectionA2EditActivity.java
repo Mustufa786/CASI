@@ -139,6 +139,8 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
         binding.cih2occl.setVisibility(userCountryTajik_Home ? View.VISIBLE : View.GONE);
         binding.cih2occm.setVisibility(userCountryTajik_Home ? View.VISIBLE : View.GONE);
         binding.cih2occn.setVisibility(userCountryTajik_Home ? View.VISIBLE : View.GONE);
+
+        binding.na203o.setVisibility(userCountryTajik_Home ? View.GONE : View.VISIBLE);
     }
 
     public void AutoPopulate() {
@@ -508,7 +510,7 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
     public void skipPattern() {
 
         binding.na202.addTextChangedListener(this);
-        binding.na203.setOnCheckedChangeListener(this);
+//        binding.na203.setOnCheckedChangeListener(this);
         binding.na204.setOnCheckedChangeListener(this);
         binding.resp.setOnCheckedChangeListener(this);
         //binding.cih2ms.setOnCheckedChangeListener(this);
@@ -516,6 +518,22 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
         binding.cih2occ.setOnCheckedChangeListener(this);
         binding.cih210.setOnCheckedChangeListener(this);
 
+        binding.na203.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i == binding.na203b.getId()) {
+                    binding.cih2msb.setEnabled(false);
+                    binding.cih2msc.setEnabled(false);
+                    binding.cih2msd.setEnabled(false);
+                    binding.cih2mse.setEnabled(false);
+                } else {
+                    binding.cih2msb.setEnabled(true);
+                    binding.cih2msc.setEnabled(true);
+                    binding.cih2msd.setEnabled(true);
+                    binding.cih2mse.setEnabled(true);
+                }
+            }
+        });
 
     }
 
@@ -764,6 +782,7 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
                     binding.cih2occf.setEnabled(false);
                     binding.cih2occg.setEnabled(false);
                     binding.cih2occh.setEnabled(false);
+                    binding.cih2occi.setEnabled(false);
                     binding.cih2occj.setEnabled(false);
                     binding.cih2occk.setEnabled(false);
                     binding.cih2occl.setEnabled(false);
@@ -794,6 +813,15 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
                     else {
                         binding.cih2occn.setEnabled(true);
                         binding.cih2occj.setEnabled(true);
+                    }
+
+                    if (Age >= 14) {
+                        if (binding.na204b.isChecked()) {
+                            binding.cih2occi.setEnabled(true);
+                        } else {
+                            binding.cih2occi.setEnabled(false);
+                            binding.cih2occi.setChecked(false);
+                        }
                     }
 
                 }

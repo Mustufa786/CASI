@@ -91,14 +91,14 @@ public class SectionC402Activity extends Menu2Activity {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
 
-                if (checkedId == binding.cic418b.getId()) {
+                if (checkedId == binding.cic418a.getId()) {
+                    binding.fldGrpcic419.setVisibility(View.VISIBLE);
+                    binding.fldGrpcic420.setVisibility(View.VISIBLE);
+                } else {
                     binding.fldGrpcic419.setVisibility(View.GONE);
                     binding.fldGrpcic420.setVisibility(View.GONE);
                     ClearClass.ClearAllFields(binding.fldGrpcic420, null);
                     ClearClass.ClearAllFields(binding.fldGrpcic419, null);
-                } else {
-                    binding.fldGrpcic419.setVisibility(View.VISIBLE);
-                    binding.fldGrpcic420.setVisibility(View.VISIBLE);
 
                 }
             }
