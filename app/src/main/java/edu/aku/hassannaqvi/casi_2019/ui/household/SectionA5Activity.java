@@ -38,7 +38,7 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
     public CheckBox.OnCheckedChangeListener check = new CompoundButton.OnCheckedChangeListener() {
         @Override
         public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-            if (!binding.cih403a.isChecked() && !binding.cih403c.isChecked() && !binding.cih403d.isChecked()) {
+            /*if (!binding.cih403a.isChecked() && !binding.cih403c.isChecked() && !binding.cih403d.isChecked()) {
                 if ((binding.cih403b.isChecked() && !binding.cih403e.isChecked()) || (!binding.cih403b.isChecked() && binding.cih403e.isChecked()))
                     binding.fldGrcih404.setVisibility(View.VISIBLE);
                 else {
@@ -48,6 +48,13 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
             } else {
                 binding.fldGrcih404.setVisibility(View.GONE);
                 ClearClass.ClearAllFields(binding.fldGrcih404, null);
+            }*/
+
+            if (binding.cih403a.isChecked() || binding.cih403b.isChecked() || binding.cih403c.isChecked()) {
+                binding.fldGrcih404.setVisibility(View.GONE);
+                ClearClass.ClearAllFields(binding.fldGrcih404, null);
+            } else {
+                binding.fldGrcih404.setVisibility(View.VISIBLE);
             }
         }
     };
@@ -69,13 +76,8 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 //formValidation();
-                if (!(checkedId == R.id.cih401a)) {
-                    ClearClass.ClearAllFields(binding.fldGrpcih402, true);
-                    ClearClass.ClearAllFields(binding.fldGrcih404, true);
-                } else {
-
-                    ClearClass.ClearAllFields(binding.fldGrpcih402, true);
-                    ClearClass.ClearAllFields(binding.fldGrcih404, true);
+                if (checkedId != R.id.cih401a) {
+                    ClearClass.ClearAllFields(binding.fldGrpcih402, null);
                 }
             }
         });
@@ -88,7 +90,6 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    binding.fldGrcih404.setVisibility(View.VISIBLE);
                     ClearClass.ClearAllFields(binding.fldGrcih403check, false);
                 } else {
                     binding.fldGrcih404.setVisibility(View.GONE);
@@ -102,10 +103,7 @@ public class SectionA5Activity extends Menu2Activity implements TextWatcher, Rad
             public void onCheckedChanged(RadioGroup group, int checkedId) {
 
                 if (checkedId == R.id.cih404b) {
-                    ClearClass.ClearAllFields(binding.fldGrpcih405, true);
-
-                } else {
-                    ClearClass.ClearAllFields(binding.fldGrpcih405, true);
+                    ClearClass.ClearAllFields(binding.fldGrpcih405, null);
                 }
             }
         });

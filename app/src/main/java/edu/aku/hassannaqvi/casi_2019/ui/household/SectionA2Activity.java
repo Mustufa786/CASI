@@ -476,15 +476,19 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                         binding.cih2occ96.setEnabled(true);
                     }
 
-                    if (Age < 7)
-                        binding.cih2occl.setEnabled(true);
-                    else if (Age >= 7 && Age < 18)
-                        binding.cih2occm.setEnabled(true);
-                    else if (Age >= 18 && Age < 50)
-                        binding.cih2occn.setEnabled(true);
-                    else {
-                        binding.cih2occn.setEnabled(true);
-                        binding.cih2occj.setEnabled(true);
+                    if (userCountryTajik_Home) {
+                        if (Age < 7) {
+                            binding.cih2occl.setEnabled(true);
+                            binding.cih2educ.setEnabled(false);
+                            binding.cih2edud.setEnabled(false);
+                        } else if (Age >= 7 && Age < 18)
+                            binding.cih2occm.setEnabled(true);
+                        else if (Age >= 18 && Age < 50)
+                            binding.cih2occn.setEnabled(true);
+                        else {
+                            binding.cih2occn.setEnabled(true);
+                            binding.cih2occj.setEnabled(true);
+                        }
                     }
 
                     if (Age >= 14) {

@@ -881,9 +881,9 @@
                                                 style="@style/textInput"
                                                 android:hint="@string/ciw214a"
                                                 android:inputType="number"
-                                                android:maxLength="2"
+                                                android:maxLength="1"
                                                 android:text='@{na11801a.checked ? ciw214.getText.toString : "" }'
-                                                app:maxValue="20"
+                                                app:maxValue="5"
                                                 app:minValue="0"
                                                 app:type="range" />
 

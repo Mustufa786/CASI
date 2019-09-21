@@ -305,7 +305,7 @@ public class SectionC1Activity extends AddMember_MenuActivity implements TextWat
             binding.txtCounter.setText("Child " + counter + " out of " + counterPerNA
                     + "\n\n " + motherName + " : " + getString(R.string.cih212a));
 
-
+            binding.fldGrpresp.setVisibility(View.VISIBLE);
         }
 
         // setup spinner
