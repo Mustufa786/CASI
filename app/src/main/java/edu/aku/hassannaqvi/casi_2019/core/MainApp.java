@@ -46,6 +46,7 @@ import edu.aku.hassannaqvi.casi_2019.contracts.SignupContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.SpecimenContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.SummaryContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.UsersContract;
+import edu.aku.hassannaqvi.casi_2019.contracts.VersionAppContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.WaterSpecimenContract;
 import edu.aku.hassannaqvi.casi_2019.other.MembersCount;
 import edu.aku.hassannaqvi.casi_2019.ui.anthro.AnthroEndingActivity;
@@ -89,7 +90,7 @@ public class MainApp extends Application {
 
     public static boolean isAttitudeCheck = false;
     public static String _HOST_URL = "https://" + MainApp._IP + "/casi/api/";
-    public static String _UPDATE_URL = "https://" + MainApp._IP + "/casi/app/";
+    public static String _UPDATE_URL;
     public static String deviceId;
 
     public static Boolean admin = false;
@@ -563,6 +564,24 @@ public class MainApp extends Application {
 
 //        Initialize Dead Member List
 //        deadMembers = new ArrayList<String>();
+
+        //Update URL
+        HashMap<String, String> tagVal = getTagValues(this);
+        String country = tagVal.get("org") != null ? tagVal.get("org").equals("null") ? "0" : tagVal.get("org").equals("") ? "0" : tagVal.get("org") : "0";
+
+        _UPDATE_URL = "https://" + _IP + "/casi/app/";
+
+        String URI_VERSION;
+        if (country.equals("1"))
+            URI_VERSION = VersionAppContract.VersionAppTable.DARI_FOLDER;
+        else if (country.equals("2"))
+            URI_VERSION = VersionAppContract.VersionAppTable.URDU_FOLDER;
+        else if (country.equals("3"))
+            URI_VERSION = VersionAppContract.VersionAppTable.TAJIK_FOLDER;
+        else
+            URI_VERSION = VersionAppContract.VersionAppTable.DEFAULT_FOLDER;
+
+        _UPDATE_URL = _UPDATE_URL + (URI_VERSION + VersionAppContract.VersionAppTable._URI);
 
     }
 

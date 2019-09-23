@@ -16,14 +16,12 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.HashMap;
 import java.util.List;
 
 import edu.aku.hassannaqvi.casi_2019.adapters.SyncListAdapter;
 import edu.aku.hassannaqvi.casi_2019.contracts.BLRandomContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.EnumBlockContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.UsersContract;
-import edu.aku.hassannaqvi.casi_2019.contracts.VersionAppContract;
 import edu.aku.hassannaqvi.casi_2019.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2019.core.MainApp;
 import edu.aku.hassannaqvi.casi_2019.other.SyncModel;
@@ -137,21 +135,7 @@ public class GetAllData extends AsyncTask<String, String, String> {
                     position = 2;
                     break;
                 case "VersionApp":
-
-                    HashMap<String, String> tagVal = MainApp.getTagValues(mContext);
-                    String country = tagVal.get("org") != null ? tagVal.get("org").equals("null") ? "0" : tagVal.get("org").equals("") ? "0" : tagVal.get("org") : "0";
-
-                    String URI_VERSION;
-                    if (country.equals("1"))
-                        URI_VERSION = VersionAppContract.VersionAppTable.DARI_FOLDER;
-                    else if (country.equals("2"))
-                        URI_VERSION = VersionAppContract.VersionAppTable.URDU_FOLDER;
-                    else if (country.equals("3"))
-                        URI_VERSION = VersionAppContract.VersionAppTable.TAJIK_FOLDER;
-                    else
-                        URI_VERSION = VersionAppContract.VersionAppTable.DEFAULT_FOLDER;
-
-                    url = new URL(MainApp._UPDATE_URL + (URI_VERSION + VersionAppContract.VersionAppTable._URI));
+                    url = new URL(MainApp._UPDATE_URL);
                     position = 3;
                     break;
             }
