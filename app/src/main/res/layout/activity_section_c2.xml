@@ -144,11 +144,11 @@
                             <EditText
                                 android:id="@+id/cic207h"
                                 style="@style/textInput"
-                                android:enabled="@{cic207b.checked ? true : false}"
                                 android:hint="@string/cic207b"
                                 android:inputType="number"
                                 android:maxLength="2"
-                                android:text='@{cic207b.checked ? cic207h.getText.toString : ""}' />
+                                android:text='@{cic207b.checked ? cic207h.getText.toString : ""}'
+                                android:visibility="@{cic207b.checked ? View.VISIBLE : View.GONE}" />
 
                             <RadioButton
                                 android:id="@+id/cic207c"
@@ -161,11 +161,11 @@
                             <EditText
                                 android:id="@+id/cic207d"
                                 style="@style/textInput"
-                                android:enabled="@{cic207c.checked ? true : false}"
                                 android:hint="@string/cic207c"
                                 android:inputType="number"
                                 android:maxLength="2"
-                                android:text='@{cic207c.checked ? cic207d.getText.toString : ""}' />
+                                android:text='@{cic207c.checked ? cic207d.getText.toString : ""}'
+                                android:visibility="@{cic207c.checked ? View.VISIBLE : View.GONE}" />
 
 
                         </RadioGroup>
@@ -274,10 +274,10 @@
                                 android:id="@+id/cic20996x"
                                 style="@style/textInput"
                                 android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
-                                android:enabled="@{cic20996.checked ? true : false}"
                                 android:hint="@string/other"
                                 android:inputType="text"
-                                android:text='@{cic20996.checked ? cic20996x.getText.toString : ""}' />
+                                android:text='@{cic20996.checked ? cic20996x.getText.toString : ""}'
+                                android:visibility="@{cic20996.checked ? View.VISIBLE : View.GONE}" />
 
 
                         </LinearLayout>
@@ -288,10 +288,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
-                            android:background="@color/pink_100"
+                            android:background="@color/colorPrimary"
                             android:text="@string/cic210"
                             android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@color/colorPrimaryDark" />
+                            android:textColor="@android:color/white" />
 
 
                         <RadioGroup
@@ -437,7 +437,9 @@
                                 style="@style/textInput"
                                 android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
                                 android:hint="@string/other"
-                                android:inputType="text" />
+                                android:inputType="text"
+                                android:text='@{cic21196.checked ? cic21196x.getText.toString : ""}'
+                                android:visibility="@{cic21196.checked ? View.VISIBLE : View.GONE}" />
 
                         </LinearLayout>
 
