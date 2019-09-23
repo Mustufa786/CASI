@@ -491,6 +491,10 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                         }
                     }
 
+                    if (Age >= 50) {
+                        binding.cih2occj.setEnabled(true);
+                    }
+
                     if (Age >= 14) {
                         if (!family.getna204().equals("1")) {
                             binding.cih2occi.setEnabled(true);
