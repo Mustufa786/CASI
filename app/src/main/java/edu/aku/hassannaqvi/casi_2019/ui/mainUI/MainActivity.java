@@ -438,7 +438,6 @@ public class MainActivity extends MenuActivity {
         } else {
             Toast.makeText(this, "Sync data!!", Toast.LENGTH_SHORT).show();
         }*/
-
         OpenFormFun();
     }
 
