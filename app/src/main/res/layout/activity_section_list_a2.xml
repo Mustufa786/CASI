@@ -36,7 +36,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:animateLayoutChanges="true"
-                android:layoutDirection="ltr"
+                android:layoutDirection="rtl"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -316,7 +316,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignBottom="@+id/counts"
                     android:layout_marginTop="3dp"
-                    android:layoutDirection="ltr"
+                    android:layoutDirection="rtl"
                     android:scrollbars="vertical"
                     tools:listitem="@layout/familymemberslist" />
 

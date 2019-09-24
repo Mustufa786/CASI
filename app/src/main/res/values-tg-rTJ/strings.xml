@@ -112,7 +112,7 @@
     <string name="nw2info">ИН ҚИСМ БО ЗАНОНИ ҚОБИЛИ ТАВАЛЛУДИ АЗ 15 ТО 49 СОЛА, КИ АЗ РУИ ҶАДВАЛИ ХОНАВОДА МУАЙЯН КАРДА МЕШАВАНД ПУР КАРДА МЕШАВАД. БАРОИ ҲАР ЯК ЗАН ИН ҚИСМ ДАР АЛОҲИДАГӢ ПУР КАРДА МЕШАВАД.</string>
     <string name="na109"> маълумотнокӣ  (3 СОЛ Ё БЕШТАР)</string>
     <string name="na110"> Шуғл (3 СОЛ Ё БЕШТАР)* </string>
-    <string name="na11101blood"> </string>
+    <string name="na11101blood">" "</string>
     <string name="na11101urine">" "</string>
     <string name="na11102water">" "</string>
     <string name="na112info"> Саволдиҳанда мувофиқаро барои мусоҳиб хонда, мақсади пурсиш ва вақти лозимро барои тамом кардани мусоҳиба мефаҳмонад (варақаи алоҳида барои муврфиқа ба саволдиҳанда дода мешавад)</string>
@@ -233,8 +233,8 @@
     <string name="cih301e"> Рушонӣ </string>
     <string name="cih301f"> Бартангӣ </string>
     <string name="cih301g"> Ишкошимӣ </string>
-    <string name="cih301h">"   "</string>
-    <string name="cih301i">  </string>
+    <string name="cih301h">"    "</string>
+    <string name="cih301i">"  "</string>
 
     <string name="daysQuan"> Миқдори рӯзҳо</string>
 
@@ -243,7 +243,7 @@
     <string name="cih302b">  Иҷора </string>
 
     <string name="cih303">H303 - Манбаи асосии оби ошомиданӣ барои хонаводаатон чист? </string>
-    <string name="cih303a">  </string>
+    <string name="cih303a">" "</string>
     <string name="cih303b"> Қубури об дар хона </string>
     <string name="cih303c"> Қубури об дар ҳавлӣ </string>
     <string name="cih303d"> Қубури об дар ҳавлии ҳамсоя </string>
@@ -259,7 +259,7 @@
     <string name="cih303n"> Оби кашонда бо бочка </string>
     <string name="cih303o"> Оби равон (дарё/наҳр/кӯл/ҷуй/канал </string>
     <string name="cih303p"> Оби бутилка </string>
-    <string name="cih303q"> </string>
+    <string name="cih303q">" "</string>
 
     <string name="cih304"> H304 - Одатан барои рафта расидан, об гирифтан ва баргашта омадан чӣ қадар вақт сарф мешавад?\n(Барои оби ошомиданӣ)</string>
     <string name="cih304min">дақиқа</string>
@@ -323,13 +323,13 @@
     <string name="cih312e">Ароба (ба чорво пайвастшуда)</string>
     <string name="cih312f">  Мошини сабукрав ё боркаш ё автобус </string>
     <string name="cih312g"> Трактор </string>
-    <string name="cih312h">" "</string>
-    <string name="cih312i">" "</string>
+    <string name="cih312h">"  "</string>
+    <string name="cih312i">"  "</string>
 
     <string name="cih313"> H313 -Мушоҳида кунед, ки барои равшан намудани хона чиро истифода мебаранд?\n [ЯКЧАНД ҶАВОБ МУМКИН АСТ]</string>
     <string name="cih313a"> Чароғи барқӣ (зард)</string>
     <string name="cih313b"> Чароғи барқии рузона (дневной)</string>
-    <string name="cih313ca"> </string>
+    <string name="cih313ca">"  "</string>
     <string name="cih313c">Чароғи LED (галагенӣ)</string>
     <string name="cih313d">Чароғи каммасраф </string>
     <string name="cih313e"> Шам </string>
@@ -357,7 +357,7 @@
     <string name="cih317b"> Пору </string>
     <string name="cih317info1"> Фарши оддӣ </string>
     <string name="cih317c">Тахтапуш </string>
-    <string name="cih317d"> </string>
+    <string name="cih317d">" "</string>
     <string name="cih317info2">Фарши коркардшуда </string>
     <string name="cih317e">Чӯбфарш ё паркет</string>
     <string name="cih317f">Хишти сафолӣ</string>
@@ -365,17 +365,17 @@
     <string name="cih317h"> Гилем (ковролин) </string>
     <string name="cih317i"> Линолеум </string>
     <string name="cih317j"> Хишти пухта </string>
-    <string name="cih317k"> </string>
+    <string name="cih317k">" "</string>
     <string name="cih318">H318 - Масолеҳи сохтмонии асосии БОМИ хона: </string>
     <string name="cih318info"> Боми табиӣ </string>
     <string name="cih318a">Бом нест </string>
     <string name="cih318b">Решахок (ғех)</string>
-    <string name="cih318c">  </string>
+    <string name="cih318c">" "</string>
     <string name="cih318info1">Боми оддӣ</string>
     <string name="cih318d">Гилем</string>
     <string name="cih318e">Тахтапуш</string>
     <string name="cih318f"> Муқоваи тунук </string>
-    <string name="cih318g"> </string>
+    <string name="cih318g">" "</string>
     <string name="cih318info2"> Боми коркардшуда</string>
     <string name="cih318h"> Оҳан/Қалъагӣ (тунука)</string>
     <string name="cih318i"> Чуб</string>
@@ -383,12 +383,12 @@
     <string name="cih318k">Сементи</string>
     <string name="cih318l"> Шифер </string>
     <string name="cih318m"> Хишти пухта</string>
-    <string name="cih318n"> </string>
+    <string name="cih318n">" "</string>
     <string name="cih319">H319 -Масолеҳи сохтмонии асосии деворҳои берун:</string>
     <string name="cih319sub">Девори табиӣ</string>
     <string name="cih319a">Девор нест</string>
     <string name="cih319b">Гил/Лой</string>
-    <string name="cih319c"> </string>
+    <string name="cih319c">" "</string>
     <string name="cih319sub1">Девори оддӣ </string>
     <string name="cih319d"> Гил бо хӯса</string>
     <string name="cih319e">Санг бо гил</string>
@@ -551,7 +551,7 @@
     <string name="cih702a">" "</string>
     <string name="na8aheading">" "</string>
     <string name="cih7a01info">" "</string>
-    <string name="cih7a01">" "</string>
+    <string name="cih7a01">"  "</string>
     <string name="cih7a02">" "</string>
     <string name="cih7a03">" "</string>
     <string name="cih7a04">" "</string>
@@ -840,7 +840,7 @@
     <string name="ciw402f">Хешу табор/дугона/ҳамсоя</string>
     <string name="ciw402e">Момодояи анъанавӣ</string>
     <string name="ciw402g">Корманди худихтиёри тиб (волонтёр)</string>
-    <string name="ciw402h"> </string>
+    <string name="ciw402h">" "</string>
     <string name="ciw40299"> Ҳеҷ кас </string>
 
     <string name="ciw403">W403 - Шумо (НОМ) ро дар кучо тавалллуд кардед?\nПурсед ва ҷои таваллудро муайян кунед.</string>
@@ -903,8 +903,8 @@
     <string name="ciw412b">Дигар васоили антисептикӣ (машруботи спиртӣ) </string>
     <string name="ciw412c">Хокистар </string>
     <string name="ciw412d"> Пору </string>
-    <string name="ciw412e">  </string>
-    <string name="ciw412f">  </string>
+    <string name="ciw412e">" "</string>
+    <string name="ciw412f">" "</string>
     <string name="ciw413">W413- Хлориксидин аз куҷо дастрас карда шуд? </string>
     <string name="ciw413sub1"> Бахши давлатӣ</string>
     <string name="ciw413sub2">  Бахши хусусӣ</string>
@@ -1298,8 +1298,8 @@
     <string name="cic3opv3dt"> DD-MM-YYYY </string>
     <string name="cic3p3"> ПЕНТА-3  </string>
     <string name="cic3p3dt"> DD-MM-YYYY </string>
-    <string name="cic3pcv3">  </string>
-    <string name="cic3pcv3dt"> </string>
+    <string name="cic3pcv3">" "</string>
+    <string name="cic3pcv3dt">" "</string>
     <string name="cic3ipv"> Фалаҷ (ИПВ) </string>
     <string name="cic3ipvdt"> DD-MM-YYYY </string>
 
@@ -1521,7 +1521,7 @@
     <string name="cic502b"> ҳамон тавр </string>
     <string name="cic502c">бисёртар </string>
     <string name="cic5h1"> Дар давоми 7 рӯзи охир чанд рӯз кудаки шумо ғизоҳои зеринро истеъмол кард? \nЁддошт: Агар 2 ва ё зиёда ғизо аз як гуруҳи ғизо дар як руз истеъмол карда шудаанд, шумораи умумии ин рузҳо як аст.</string>
-    <string name="cic503">C503 - کیا آپ کےبچےکو چلنے یا چڑھنے کے دوران کوئی مشکلات پیش آتی ہے؟</string>
+    <string name="cic503">" "</string>
     <string name="cic503h1">Шумораи рузҳо, дар давоми 7 рузи охир, ки дар онҳо ин гуруҳи ғизоҳоро истеъмол кардааст? </string>
     <string name="cic503h2"> Манбаъи асосии ин ғизоҳо дар давоми 7 рӯзи охир чӣ буд?</string>
     <string name="cic503h2a"> ҳосили худӣ/маҳсулоти боғӣ</string>
@@ -1982,15 +1982,15 @@
     <string name="cid618b"> مطمئین نیست </string>
     <string name="cid618c"> مشکل  </string>
     <string name="addMore"> مزید اندراج کریں </string>
-    <string name="cih301j">" "</string>
-    <string name="cih301k">" "</string>
+    <string name="cih301j">"  "</string>
+    <string name="cih301k">"  "</string>
     <string name="cih301l">" "</string>
-    <string name="cih301m">" "</string>
-    <string name="cih6often">" "</string>
-    <string name="cih6rare">" "</string>
-    <string name="cih6stime">" "</string>
+    <string name="cih301m">"  "</string>
+    <string name="cih6often">"   "</string>
+    <string name="cih6rare">"  "</string>
+    <string name="cih6stime">"  "</string>
     <string name="cih7h1">" "</string>
-    <string name="ciw403info4">" "</string>
+    <string name="ciw403info4">"  "</string>
     <string name="nofood">" "</string>
 
 </resources>

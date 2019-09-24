@@ -26,7 +26,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/_10sdp"
                 android:animateLayoutChanges="true"
-                android:layoutDirection="ltr"
+                android:layoutDirection="rtl"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -268,7 +268,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:layoutDirection="ltr"
+                        android:layoutDirection="rtl"
                         android:orientation="vertical"
                         android:visibility="gone"
                         tools:visibility="visible">
@@ -371,7 +371,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:background="@null"
-                                    android:layoutDirection="ltr"
+                                    android:layoutDirection="rtl"
                                     android:nestedScrollingEnabled="false"
                                     android:scrollbars="vertical"
                                     tools:listitem="@layout/wra_adapter" />
@@ -404,7 +404,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:background="@null"
-                                    android:layoutDirection="ltr"
+                                    android:layoutDirection="rtl"
                                     android:nestedScrollingEnabled="false"
                                     android:scrollbars="vertical"
                                     tools:listitem="@layout/child_adapter" />
@@ -480,7 +480,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:background="@null"
-                                    android:layoutDirection="ltr"
+                                    android:layoutDirection="rtl"
                                     android:nestedScrollingEnabled="false"
                                     android:scrollbars="vertical"
                                     tools:listitem="@layout/adol_adapter" />
@@ -513,7 +513,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:background="@null"
-                                    android:layoutDirection="ltr"
+                                    android:layoutDirection="rtl"
                                     android:nestedScrollingEnabled="false"
                                     android:scrollbars="vertical"
                                     tools:listitem="@layout/other_adapter" />
