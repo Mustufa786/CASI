@@ -184,10 +184,13 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
         binding.cih2occ96.setVisibility(userCountryTajik_Home ? View.GONE : View.VISIBLE);
         binding.cih2occa.setVisibility(userCountryTajik_Home ? View.GONE : View.VISIBLE);
         binding.cih2occh.setVisibility(userCountryTajik_Home ? View.GONE : View.VISIBLE);
+        binding.cih2occk.setVisibility(userCountryTajik_Home ? View.VISIBLE : View.GONE);
 
         binding.cih2occl.setVisibility(userCountryTajik_Home ? View.VISIBLE : View.GONE);
         binding.cih2occm.setVisibility(userCountryTajik_Home ? View.VISIBLE : View.GONE);
         binding.cih2occn.setVisibility(userCountryTajik_Home ? View.VISIBLE : View.GONE);
+
+        binding.cih2eduj.setVisibility(userCountryTajik_Home ? View.VISIBLE : View.GONE);
 
         binding.na203o.setVisibility(userCountryTajik_Home ? View.GONE : View.VISIBLE);
 
@@ -489,6 +492,10 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                             binding.cih2occn.setEnabled(true);
                             binding.cih2occj.setEnabled(true);
                         }
+                    }
+
+                    if (Age >= 50) {
+                        binding.cih2occj.setEnabled(true);
                     }
 
                     if (Age >= 14) {

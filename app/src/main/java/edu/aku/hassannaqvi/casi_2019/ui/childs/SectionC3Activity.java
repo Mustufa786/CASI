@@ -73,11 +73,8 @@ public class SectionC3Activity extends Menu2Activity implements RadioGroup.OnChe
 //                formValidation();
                 if (checkedId == R.id.cic302b) {
                     ClearClass.ClearAllFields(binding.fldGrpcic303parent, false);
-
-
                 } else {
                     ClearClass.ClearAllFields(binding.fldGrpcic303parent, true);
-
                 }
 
             }
