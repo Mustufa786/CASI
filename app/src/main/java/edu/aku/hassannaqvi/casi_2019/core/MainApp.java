@@ -86,7 +86,7 @@ public class MainApp extends Application {
     //    public static String _IP2 = "58.65.211.13"; // Test PHP server
     //    public static String _IP = "43.245.131.159"; // Test PHP server
     public static String _IP = "f38158"; // Test PHP server
-    //public static String _IP = "vcoe1.aku.edu"; // Live PHP server
+//    public static String _IP = "vcoe1.aku.edu"; // Live PHP server
 
     public static boolean isAttitudeCheck = false;
     public static String _HOST_URL = "http://" + MainApp._IP + "/casi/api/";

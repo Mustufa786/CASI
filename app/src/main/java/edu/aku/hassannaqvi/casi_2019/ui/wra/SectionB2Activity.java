@@ -58,7 +58,7 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
 //        Dari Users
         HashMap<String, String> tagVal = MainApp.getTagValues(this);
         String country = tagVal.get("org") != null ? tagVal.get("org").equals("null") ? "0" : tagVal.get("org").equals("") ? "0" : tagVal.get("org") : "0";
-        userCountryDari = Integer.valueOf(country) == 2;
+        userCountryDari = Integer.valueOf(country) == 1;
 
 
 //        AutoCompleteFields();
@@ -79,8 +79,8 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
         bi.ciw303o.setVisibility(userCountryTajik ? View.GONE : View.GONE);
         bi.ciw303963.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
 
-        bi.fldGrpciw310.setVisibility(userCountryTajik || userCountryDari ? View.VISIBLE : View.GONE);
-        bi.fldGrpciw325.setVisibility(userCountryTajik || userCountryDari ? View.VISIBLE : View.GONE);
+        /*bi.fldGrpciw310.setVisibility(userCountryTajik || userCountryDari ? View.VISIBLE : View.GONE);
+        bi.fldGrpciw325.setVisibility(userCountryTajik || userCountryDari ? View.VISIBLE : View.GONE);*/
 
         // fldGrpB201
         bi.fldGrpB201.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
@@ -924,11 +924,11 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
         if (bi.ciw310a.isChecked()) {
 
 
-            if (userCountryTajik || userCountryDari) {
+//            if (userCountryTajik || userCountryDari) {
                 if (!ValidatorClass.EmptyRadioButton(this, bi.ciw31001, bi.ciw31001a, getString(R.string.ciw31001))) {
                     return false;
                 }
-            }
+//            }
 
 
             if (!ValidatorClass.EmptyRadioButton(this, bi.ciw311, bi.ciw311a, getString(R.string.ciw311))) {
@@ -1116,7 +1116,8 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
             return false;
         }
 
-        if (bi.ciw325a.isChecked() && (userCountryTajik || userCountryDari)) {
+//        if (bi.ciw325a.isChecked() && (userCountryTajik || userCountryDari)) {
+        if (bi.ciw325a.isChecked()) {
             if (!ValidatorClass.EmptyRadioButton(this, bi.ciw32501, bi.ciw32501a, getString(R.string.ciw32501))) {
                 return false;
             }

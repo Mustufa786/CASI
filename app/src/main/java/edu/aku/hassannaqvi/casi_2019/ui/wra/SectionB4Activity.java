@@ -30,6 +30,7 @@ import edu.aku.hassannaqvi.casi_2019.ui.viewMem.ViewMemberActivity;
 import edu.aku.hassannaqvi.casi_2019.validation.ClearClass;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
+import static edu.aku.hassannaqvi.casi_2019.ui.wra.SectionB1Activity.userCountryDari;
 import static edu.aku.hassannaqvi.casi_2019.ui.wra.SectionB1Activity.userCountryTajik;
 
 public class SectionB4Activity extends Menu2Activity implements TextWatcher, RadioGroup.OnCheckedChangeListener {
@@ -244,6 +245,9 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
 
         binding.ciw413.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
         binding.ciw41301.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+
+        /*Dari*/
+        binding.ciw401b.setVisibility(userCountryDari ? View.GONE : View.VISIBLE);
 
     }
 

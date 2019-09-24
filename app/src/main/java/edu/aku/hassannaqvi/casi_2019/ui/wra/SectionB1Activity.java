@@ -141,7 +141,7 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
     private Timer timer = new Timer();
     public static boolean isCurrentlyPreg = false;
 
-    public static boolean userCountryTajik = false;
+    public static boolean userCountryTajik = false, userCountryDari = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -184,6 +184,7 @@ public class SectionB1Activity extends AddMember_MenuActivity implements TextWat
         HashMap<String, String> tagVal = MainApp.getTagValues(this);
         String country = tagVal.get("org") != null ? tagVal.get("org").equals("null") ? "0" : tagVal.get("org").equals("") ? "0" : tagVal.get("org") : "0";
         userCountryTajik = Integer.valueOf(country) == 3;
+        userCountryDari = Integer.valueOf(country) == 1;
 
     }
 
