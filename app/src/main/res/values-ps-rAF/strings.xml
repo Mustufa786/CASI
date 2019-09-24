@@ -859,7 +859,7 @@
     <string name="cic209b"> ترس از مریض شدن طفل </string>
     <string name="cic209c"> غلیظ بودن شیر </string>
 
-    <string name="cic211info"> " هیچ چیز داده نشده است"، 99 میتواند درج شود، اگر هیچ یک از دیگر کتگوری جواب درج نشده است. </string>
+    <string name="cic211info">هیچ چیز داده نشده است"، 99 میتواند درج شود، اگر هیچ یک از دیگر کتگوری جواب درج نشده است. </string>
 
     <string name="cic211a"> شیر(بجز از شیر مادر) </string>
     <string name="cic211b"> آب ساده </string>
@@ -1359,8 +1359,8 @@
     <string name="ciw402"> ۔W402 -چه کسی ولادت (Name) را کمک کرد </string>
     <string name="ciw40301"> ۔W40301 -نوع ولادت چگونه بود؟ </string>
     <string name="ciw40301a"> ولادت مهبلی </string>
-    <string name="ciw40301b"> "عملیات سیزارین " </string>
-    <string name="ciw40301c"> "بسیار بزرگ " </string>
+    <string name="ciw40301b">عملیات سیزارین</string>
+    <string name="ciw40301c">بسیار بزرگ</string>
     <string name="ciw403"> ۔W403 - (Name) را در کجا ولادت دادید؟ </string>
     <string name="ciw404"> ۔W404 -وقتیکه (Name) متولد شد، جسامت او بسیار بزرگ، بزرگتر از اوسط، متوسط، کوچکتر از اوسط یا بسیار کوچک بود؟ </string>
     <string name="ciw405"> ۔W405 - آیا (Name) در زمان ولادت وزن شده بود؟ </string>
@@ -2003,12 +2003,12 @@
     <string name="cih615b"></string>
     <string name="cih617b"></string>
     <string name="ciw205time"></string>
-    <string name="ciw211a"> "تعداد حمل ها " </string>
-    <string name="ciw212a"> "تعداد حمل ها " </string>
-    <string name="ciw213a"> "سن به سال مکمل " </string>
+    <string name="ciw211a">تعداد حمل ها</string>
+    <string name="ciw212a">تعداد حمل ها</string>
+    <string name="ciw213a">سن به سال مکمل</string>
     <string name="ciw214"> چند بار شما در دو سال گذشته حمل گرفته اید؟ </string>
-    <string name="ciw214a"> "تعداد حمل ها " </string>
-    <string name="ciw215a"> "تعداد حمل ها " </string>
+    <string name="ciw214a">تعداد حمل ها</string>
+    <string name="ciw215a">تعداد حمل ها</string>
     <string name="ciw215"> در دو سال گذشته، چند بار طفل به دنیا آورده آید؟ </string>
     <string name="ciw216"> آیا در دو سال گذشته تولد زنده ای وجود داشته است؟ </string>
     <string name="ciw216a"></string>
@@ -2018,10 +2018,10 @@
     <string name="ciw303m"></string>
     <string name="ciw303n"></string>
     <string name="ciw303o"></string>
-    <string name="ciw31001"> " در چه زمانی از بارداری شروع به مصرف اسید فولیک اسید کردید؟" </string>
+    <string name="ciw31001">در چه زمانی از بارداری شروع به مصرف اسید فولیک اسید کردید؟" </string>
     <string name="ciw31001a"> سه ماهه اول </string>
-    <string name="ciw31001b"> " سه ماهه دوم" </string>
-    <string name="ciw31001c"> " سه ماهه سوم" </string>
+    <string name="ciw31001b">سه ماهه دوم" </string>
+    <string name="ciw31001c">سه ماهه سوم" </string>
     <string name="ciw312n"></string>
     <string name="ciw312o"></string>
     <string name="ciw312p"></string>
