@@ -650,7 +650,10 @@ public class ViewMemberActivity extends MenuActivity {
     }
 
     private Intent getAdolesActivity() {
-        if (MainApp.adolesUnderAge.size() > 0 && !userCountryTajik) {
+        if (MainApp.adolesUnderAge.size() > 0) {
+            if (userCountryTajik) {
+                return new Intent(this, EndingActivity.class).putExtra("complete", true);
+            }
             int counter = KishGrid.KishGridProcess(Integer.valueOf(MainApp.selectedHead.getSno()), MainApp.adolesUnderAge.size());
             return new Intent(this, SectionD6Activity.class).putExtra("adolescent", MainApp.adolesUnderAge.get(counter - 1));
         } else {
