@@ -142,6 +142,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
         if (flag) {
             HashMap<String, String> tagVal = MainApp.getTagValues(this);
             new syncData(SyncActivity.this, tagVal.get("org") != null ? tagVal.get("org").equals("null") ? null : tagVal.get("org") : null).execute();
+            MainApp.updateApp(this);
         }
     }
 

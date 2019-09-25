@@ -86,11 +86,11 @@ public class MainApp extends Application {
     public static final long MILLISECONDS_IN_2Years = MILLIS_IN_SECOND * SECONDS_IN_MINUTE * MINUTES_IN_HOUR * HOURS_IN_DAY * DAYS_IN_2_YEAR;
     //    public static String _IP2 = "58.65.211.13"; // Test PHP server
     //    public static String _IP = "43.245.131.159"; // Test PHP server
-    public static String _IP = "f38158"; // Test PHP server
-//    public static String _IP = "vcoe1.aku.edu"; // Live PHP server
+//    public static String _IP = "f38158"; // Test PHP server
+    public static String _IP = "vcoe1.aku.edu"; // Live PHP server
 
     public static boolean isAttitudeCheck = false;
-    public static String _HOST_URL = "http://" + MainApp._IP + "/casi/api/";
+    public static String _HOST_URL = "https://" + MainApp._IP + "/casi/api/";
     public static String _UPDATE_URL;
     public static String deviceId;
 
@@ -534,6 +534,28 @@ public class MainApp extends Application {
         return ageInYears;
     }
 
+    public static void updateApp(Context mContext) {
+        //Update URL
+        HashMap<String, String> tagVal = getTagValues(mContext);
+        String country = tagVal.get("org") != null ? tagVal.get("org").equals("null") ? "0" : tagVal.get("org").equals("") ? "0" : tagVal.get("org") : "0";
+
+        _UPDATE_URL = "https://" + _IP + "/casi/app/";
+
+        String URI_VERSION;
+        if (country.equals("1"))
+            URI_VERSION = VersionAppContract.VersionAppTable.DARI_FOLDER;
+        else if (country.equals("2"))
+            URI_VERSION = VersionAppContract.VersionAppTable.URDU_FOLDER;
+        else if (country.equals("3"))
+            URI_VERSION = VersionAppContract.VersionAppTable.TAJIK_FOLDER;
+        else
+            URI_VERSION = VersionAppContract.VersionAppTable.DEFAULT_FOLDER;
+
+        Log.i("Update URL", _UPDATE_URL + URI_VERSION);
+
+        _UPDATE_URL = _UPDATE_URL + URI_VERSION;
+    }
+
     @Override
     public void onCreate() {
         super.onCreate();
@@ -565,27 +587,7 @@ public class MainApp extends Application {
 
 //        Initialize Dead Member List
 //        deadMembers = new ArrayList<String>();
-
-        //Update URL
-        HashMap<String, String> tagVal = getTagValues(this);
-        String country = tagVal.get("org") != null ? tagVal.get("org").equals("null") ? "0" : tagVal.get("org").equals("") ? "0" : tagVal.get("org") : "0";
-
-        _UPDATE_URL = "https://" + _IP + "/casi/app/";
-
-        String URI_VERSION;
-        if (country.equals("1"))
-            URI_VERSION = VersionAppContract.VersionAppTable.DARI_FOLDER;
-        else if (country.equals("2"))
-            URI_VERSION = VersionAppContract.VersionAppTable.URDU_FOLDER;
-        else if (country.equals("3"))
-            URI_VERSION = VersionAppContract.VersionAppTable.TAJIK_FOLDER;
-        else
-            URI_VERSION = VersionAppContract.VersionAppTable.DEFAULT_FOLDER;
-
-        Log.i("Update URL", _UPDATE_URL + (URI_VERSION + VersionAppContract.VersionAppTable._URI));
-
-        _UPDATE_URL = _UPDATE_URL + (URI_VERSION + VersionAppContract.VersionAppTable._URI);
-
+        updateApp(this);
     }
 
     private void requestPermission() {

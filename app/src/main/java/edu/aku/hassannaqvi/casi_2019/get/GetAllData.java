@@ -22,6 +22,7 @@ import edu.aku.hassannaqvi.casi_2019.adapters.SyncListAdapter;
 import edu.aku.hassannaqvi.casi_2019.contracts.BLRandomContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.EnumBlockContract;
 import edu.aku.hassannaqvi.casi_2019.contracts.UsersContract;
+import edu.aku.hassannaqvi.casi_2019.contracts.VersionAppContract;
 import edu.aku.hassannaqvi.casi_2019.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2019.core.MainApp;
 import edu.aku.hassannaqvi.casi_2019.other.SyncModel;
@@ -135,7 +136,7 @@ public class GetAllData extends AsyncTask<String, String, String> {
                     position = 2;
                     break;
                 case "VersionApp":
-                    url = new URL(MainApp._UPDATE_URL);
+                    url = new URL(MainApp._UPDATE_URL + VersionAppContract.VersionAppTable._URI);
                     position = 3;
                     break;
             }
