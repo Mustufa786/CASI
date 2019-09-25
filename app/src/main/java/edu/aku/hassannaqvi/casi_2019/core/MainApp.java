@@ -17,6 +17,7 @@ import android.os.Bundle;
 import android.provider.Settings;
 import android.support.v4.app.ActivityCompat;
 import android.text.format.DateFormat;
+import android.util.Log;
 import android.widget.Toast;
 
 import java.text.ParseException;
@@ -580,6 +581,8 @@ public class MainApp extends Application {
             URI_VERSION = VersionAppContract.VersionAppTable.TAJIK_FOLDER;
         else
             URI_VERSION = VersionAppContract.VersionAppTable.DEFAULT_FOLDER;
+
+        Log.i("Update URL", _UPDATE_URL + (URI_VERSION + VersionAppContract.VersionAppTable._URI));
 
         _UPDATE_URL = _UPDATE_URL + (URI_VERSION + VersionAppContract.VersionAppTable._URI);
 
