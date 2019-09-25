@@ -197,7 +197,7 @@ public abstract class ValidatorClass {
             } else if (view instanceof LinearLayout) {
 
                 if (view.getTag() != null && view.getTag().equals("0")) {
-                    if (!EmptyCheckBox(context, ((LinearLayout) view),
+                    if (!EmptyCheckBox02(context, ((LinearLayout) view),
                             (CheckBox) ((LinearLayout) view).getChildAt(0),
                             getString(context, getIDComponent(((LinearLayout) view).getChildAt(0))))) {
                         return false;
@@ -560,6 +560,51 @@ public abstract class ValidatorClass {
             Log.i(context.getClass().getName(), context.getResources().getResourceEntryName(cbx.getId()) + ": This data is Required!");
             return false;
         }
+    }
+
+    public static boolean EmptyCheckBox02(Context context, LinearLayout container, CheckBox cbx, String msg) {
+
+        Boolean flag = false;
+        for (int i = 0; i < container.getChildCount(); i++) {
+            View v = container.getChildAt(i);
+            if (v instanceof CheckBox) {
+                CheckBox cb = (CheckBox) v;
+                cb.setError(null);
+
+                if (!cb.isEnabled()) {
+                    flag = true;
+                    continue;
+                } else {
+                    if (!flag)
+                        flag = false;
+                }
+
+                if (cb.isChecked()) {
+                    flag = true;
+
+                    for (int j = 0; j < container.getChildCount(); j++) {
+                        View innerV = container.getChildAt(j);
+                        if (innerV instanceof EditText) {
+                            if (getIDComponent(cb).equals(innerV.getTag())) {
+                                if (innerV instanceof EditTextPicker)
+                                    flag = EmptyEditTextPicker(context, (EditText) innerV, getString(context, getIDComponent(innerV)));
+                                else
+                                    flag = EmptyTextBox(context, (EditText) innerV, getString(context, getIDComponent(innerV)));
+                            }
+                        }
+                    }
+//                    break;
+                }
+            }
+        }
+        if (!flag) {
+            FancyToast.makeText(context, "ERROR(empty): " + msg, FancyToast.LENGTH_LONG, FancyToast.ERROR, false).show();
+            cbx.setError("This data is Required!");    // Set Error on last radio button
+
+            Log.i(context.getClass().getName(), context.getResources().getResourceEntryName(cbx.getId()) + ": This data is Required!");
+            return false;
+        }
+        return true;
     }
 
     public static void setErrorOnMultTextFields(Context context, String msg, Boolean condition, EditText... textFields) {
