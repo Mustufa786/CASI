@@ -255,12 +255,16 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
             }
             new SyncAllData(
                     this,
-                    "Specimen",
+                    "Hemoglobin",
                     "updateSyncedSpecimen",
                     SpecimenContract.class,
                     MainApp._HOST_URL + SpecimenContract.SpecimenTable._URL,
                     db.getUnsyncedSpecimenForms(), this.findViewById(R.id.syncStatus), 6, uploadListAdapter, uploadlist
             ).execute();
+
+            HashMap<String, String> tagVal = MainApp.getTagValues(this);
+            String country = tagVal.get("org") != null ? tagVal.get("org").equals("null") ? "0" : tagVal.get("org").equals("") ? "0" : tagVal.get("org") : "0";
+            if (Integer.valueOf(country) == 3) return;
 
             if (uploadlistActivityCreated) {
                 uploadmodel = new SyncModel();
@@ -276,20 +280,6 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
                     db.getUnsyncedAdoles(), this.findViewById(R.id.syncStatus), 7, uploadListAdapter, uploadlist
             ).execute();
 
-            if (uploadlistActivityCreated) {
-                uploadmodel = new SyncModel();
-                uploadmodel.setstatusID(0);
-                uploadlist.add(uploadmodel);
-            }
-            new SyncAllData(
-                    this,
-                    "Hemoglobin",
-                    "updateSyncedSpecimen",
-                    SpecimenContract.class,
-                    MainApp._HOST_URL + SpecimenContract.SpecimenTable._URL,
-                    db.getUnsyncedSpecimenForms(), this.findViewById(R.id.syncStatus), 8, uploadListAdapter, uploadlist
-            ).execute();
-
             for (int i = 0; i < MainApp.D4WRAURLS.length; i++) {
                 if (uploadlistActivityCreated) {
                     uploadmodel = new SyncModel();
@@ -302,7 +292,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
                         "updateDWRASyncedForm",
                         D4WRAContract.class,
                         MainApp._HOST_URL + D4WRAContract.D4WRATable.urls[i],
-                        db.getUnsyncedDWRA(MainApp.D4WRATypes[i]), this.findViewById(R.id.syncStatus), 9 + i, uploadListAdapter, uploadlist
+                        db.getUnsyncedDWRA(MainApp.D4WRATypes[i]), this.findViewById(R.id.syncStatus), 8 + i, uploadListAdapter, uploadlist
                 ).execute();
             }
 
