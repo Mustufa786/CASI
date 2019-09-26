@@ -131,7 +131,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/cid40605"
-                    android:inputType="textMultiLine" />
+                    android:inputType="textMultiLine"
+                    android:tag="-1" />
 
             </LinearLayout>
 
