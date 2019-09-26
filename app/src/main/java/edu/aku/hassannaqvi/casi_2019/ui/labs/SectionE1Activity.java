@@ -381,7 +381,7 @@ public class SectionE1Activity extends AppCompatActivity {
         sE1.put("cine102", bi.ne102.getSelectedItem().toString());
         sE1.put("cine103", originalPositions.get(bi.ne103.getSelectedItemPosition()));
         sE1.put("cine104", bi.ne106.getText().toString());
-        sE1.put("cine105", bi.ne107a.isChecked() ? "1" : bi.ne107b.isChecked() ? "2" : bi.ne107c.isChecked() ? "3" : "0");
+        sE1.put("cine105", bi.ne107a.isChecked() ? "1" : bi.ne107b.isChecked() ? "2" : bi.ne107c.isChecked() ? "3" : bi.ne107d.isChecked() ? "4" : "0");
         sE1.put("end_time", new SimpleDateFormat("dd-MM-yyyy HH:mm").format(System.currentTimeMillis()));
 
         MainApp.smc.setsE1(String.valueOf(sE1));
