@@ -47,7 +47,7 @@ import edu.aku.hassannaqvi.casi_2019.ui.mainUI.MenuActivity;
 import edu.aku.hassannaqvi.casi_2019.ui.wra.SectionB1Activity;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
-import static edu.aku.hassannaqvi.casi_2019.ui.wra.SectionB1Activity.userCountryTajik;
+import static edu.aku.hassannaqvi.casi_2019.ui.household.SectionA1Activity.userCountryTajik_Home;
 
 
 public class ViewMemberActivity extends MenuActivity {
@@ -650,10 +650,7 @@ public class ViewMemberActivity extends MenuActivity {
     }
 
     private Intent getAdolesActivity() {
-        if (MainApp.adolesUnderAge.size() > 0) {
-            if (userCountryTajik) {
-                return new Intent(this, EndingActivity.class).putExtra("complete", true);
-            }
+        if (MainApp.adolesUnderAge.size() > 0 && !userCountryTajik_Home) {
             int counter = KishGrid.KishGridProcess(Integer.valueOf(MainApp.selectedHead.getSno()), MainApp.adolesUnderAge.size());
             return new Intent(this, SectionD6Activity.class).putExtra("adolescent", MainApp.adolesUnderAge.get(counter - 1));
         } else {

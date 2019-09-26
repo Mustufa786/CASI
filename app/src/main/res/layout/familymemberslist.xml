@@ -52,9 +52,12 @@
             android:layout_height="match_parent"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="10dp"
+            android:layout_marginBottom="6dp"
             android:layout_toEndOf="@+id/imgUser"
+            android:background="@android:color/darker_gray"
             android:paddingTop="@dimen/_2sdp">
             <!-- Family Member Name-->
             <TextView
@@ -64,7 +67,6 @@
                 android:layout_height="@dimen/_24sdp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
                 android:text="Memeber Name"
                 android:textColor="#efefef"
                 android:textSize="24sp"
@@ -75,7 +77,7 @@
             <TextView
                 android:id="@+id/mmName"
                 style="@style/listItems"
-                android:layout_width="fill_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="@dimen/_20sdp"
                 android:layout_below="@id/memberName"
                 android:layout_alignParentStart="true"
@@ -89,10 +91,12 @@
             <TextView
                 android:id="@+id/ffName"
                 style="@style/listItems"
-                android:layout_width="fill_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="@dimen/_20sdp"
                 android:layout_below="@id/mmName"
                 android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="3dp"
                 android:gravity="clip_horizontal"
                 android:text="ABCDEFG"
                 android:textColor="@color/colorPrimaryDark"

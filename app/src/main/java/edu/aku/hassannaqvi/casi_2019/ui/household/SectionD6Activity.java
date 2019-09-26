@@ -48,7 +48,7 @@ public class SectionD6Activity extends AppCompatActivity {
 
             for (FamilyMembersContract fmc : MainApp.respList) {
 
-                if (fmc.getna204().equals("1")) return;
+//                if (fmc.getna204().equals("1")) return;
 
                 respName.add(fmc.getName() + "-" + fmc.getSerialNo());
                 respMap.put(fmc.getName() + "-" + fmc.getSerialNo(), fmc);
@@ -56,6 +56,8 @@ public class SectionD6Activity extends AppCompatActivity {
 
             bi.resp.setAdapter(new ArrayAdapter<>(this, R.layout.item_style, respName));
 
+        } else {
+            bi.fldGrpresp.setVisibility(View.GONE);
         }
 
         bi.adolesName.setText(fmc.getName().toUpperCase());
