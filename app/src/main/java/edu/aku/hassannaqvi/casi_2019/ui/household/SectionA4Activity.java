@@ -826,7 +826,7 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
             return false;
         }
 
-        if (!userCountryTajik_Home) {
+        /*if (!userCountryTajik_Home) {
             if (!ValidatorClass.EmptyRadioButton(this, binding.cih312h, binding.cih312h1, getString(R.string.cih312h))) {
                 return false;
             }
@@ -834,7 +834,7 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
             if (!ValidatorClass.EmptyRadioButton(this, binding.cih312i, binding.cih312i1, getString(R.string.cih312i))) {
                 return false;
             }
-        }
+        }*/
 
         if (!ValidatorClass.EmptyCheckBox(this, binding.fldGrpna0413check, binding.cih313a, getString(R.string.cih313))) {
             return false;

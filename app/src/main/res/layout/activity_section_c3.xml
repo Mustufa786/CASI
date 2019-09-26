@@ -57,7 +57,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:animateLayoutChanges="true"
-                android:layoutDirection="rtl"
+                android:layoutDirection="ltr"
                 android:orientation="vertical">
 
                 <!-- 2-->
@@ -649,7 +649,7 @@
                             android:layout_height="wrap_content"
                             android:background="@color/pink_100"
                             android:gravity="center"
-                            android:text="@string/cic3src"
+                            android:text="@string/cic3response"
                             android:textColor="@color/colorPrimaryDark" />
 
                         <RadioGroup
