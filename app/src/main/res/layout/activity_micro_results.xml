@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:animateLayoutChanges="true"
-            android:layoutDirection="ltr"
+            android:layoutDirection="rtl"
             android:orientation="vertical">
 
             <!--cih102-->
@@ -224,9 +224,9 @@
                         android:digits="0123456789-"
                         android:hint="9999-999"
                         android:inputType="number"
-                        android:layoutDirection="ltr"
+                        android:layoutDirection="rtl"
                         android:maxLength="8"
-                        android:textDirection="ltr" />
+                        android:textDirection="rtl" />
 
                     <Button
                         android:id="@+id/checkHHBtn"
@@ -291,7 +291,7 @@
                         android:enabled="true"
                         android:inputType="textCapCharacters"
                         android:maxLength="19"
-                        android:textDirection="ltr" />
+                        android:textDirection="rtl" />
 
                 </LinearLayout>
 
@@ -299,7 +299,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:layoutDirection="ltr"
+                    android:layoutDirection="rtl"
                     android:orientation="horizontal">
 
                     <android.support.design.widget.TextInputLayout
@@ -344,7 +344,7 @@
                             android:focusable="false"
                             android:hint="@string/ne20301c"
                             android:textColor="@android:color/black"
-                            android:textDirection="ltr"
+                            android:textDirection="rtl"
                             app:is24HourView="true"
                             app:timeFormat="HH:mm" />
 
@@ -367,7 +367,7 @@
                         android:focusable="false"
                         android:hint="@string/ne20301d"
                         android:textColor="@android:color/black"
-                        android:textDirection="ltr"
+                        android:textDirection="rtl"
                         app:is24HourView="true"
                         app:timeFormat="HH:mm" />
 
@@ -389,7 +389,7 @@
                         android:focusable="false"
                         android:hint="@string/ne20301e"
                         android:textColor="@android:color/black"
-                        android:textDirection="ltr"
+                        android:textDirection="rtl"
                         app:is24HourView="true"
                         app:timeFormat="HH:mm" />
 
@@ -400,7 +400,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:layoutDirection="ltr"
+                    android:layoutDirection="rtl"
                     android:orientation="horizontal">
 
                     <android.support.design.widget.TextInputLayout
@@ -445,7 +445,7 @@
                             android:focusable="false"
                             android:hint="@string/ne20301g"
                             android:textColor="@android:color/black"
-                            android:textDirection="ltr"
+                            android:textDirection="rtl"
                             app:is24HourView="true"
                             app:timeFormat="HH:mm" />
 
@@ -470,7 +470,7 @@
                         android:inputType="number"
                         android:maxLength="3"
                         android:textColor="@android:color/black"
-                        android:textDirection="ltr" />
+                        android:textDirection="rtl" />
 
                 </android.support.design.widget.TextInputLayout>
 
@@ -491,7 +491,7 @@
                         android:inputType="number"
                         android:maxLength="3"
                         android:textColor="@android:color/black"
-                        android:textDirection="ltr" />
+                        android:textDirection="rtl" />
 
 
                 </android.support.design.widget.TextInputLayout>

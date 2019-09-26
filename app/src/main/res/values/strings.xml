@@ -591,7 +591,7 @@
     <string name="cih104"> ولسوالی </string>
     <string name="cih105"> شهر </string>
     <string name="cih106"> قریه </string>
-    <string name="cih108"> ۔H108- نام و شماره مصاحبه شونده </string>
+    <string name="cih108"> ۔H108. شماره خانواده </string>
     <string name="cih110"> نام رهبر تیم و شماره </string>
     <string name="cih111"> تاریخ مصاحبه </string>
     <string name="cih113"> ۔H113 -نام جواب دهنده </string>
@@ -1467,9 +1467,9 @@
     <string name="ne107"> اگر نخیر، علت مشخص کنید: </string>
     <string name="ne107a"> خانه نبود </string>
     <string name="ne107b"> انکار کرد </string>
-    <string name="ne107c"> کامل </string>
+    <string name="ne107c"> انکار کرد </string>
     <string name="ne1heading"> بخش E1: نمونه های خون، ادرار و هموگلوبین </string>
-    <string name="neselected">۔E103 - گروه منحصر به فرد انتخاب شده</string>
+    <string name="neselected"> گروه منحصر به فرد انتخاب شدهE103 </string>
     <string name="neselected0"> .... </string>
     <string name="neselecteda"> . خانم های 15 -49 </string>
     <string name="neselectedb"> پطفل زیر 5 ساله </string>

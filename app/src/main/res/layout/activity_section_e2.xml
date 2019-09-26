@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:animateLayoutChanges="true"
-            android:layoutDirection="ltr"
+            android:layoutDirection="rtl"
             android:orientation="vertical">
 
             <TextView
@@ -132,7 +132,7 @@
                             android:enabled="false"
                             android:inputType="textCapCharacters"
                             android:maxLength="19"
-                            android:textDirection="ltr" />
+                            android:textDirection="rtl" />
 
                     </LinearLayout>
 
@@ -231,7 +231,7 @@
                             android:enabled="false"
                             android:inputType="textCapCharacters"
                             android:maxLength="19"
-                            android:textDirection="ltr" />
+                            android:textDirection="rtl" />
 
                     </LinearLayout>
 
@@ -329,7 +329,7 @@
                             android:enabled="false"
                             android:inputType="textCapCharacters"
                             android:maxLength="19"
-                            android:textDirection="ltr" />
+                            android:textDirection="rtl" />
 
                     </LinearLayout>
 
@@ -427,7 +427,7 @@
                             android:enabled="false"
                             android:inputType="textCapCharacters"
                             android:maxLength="19"
-                            android:textDirection="ltr" />
+                            android:textDirection="rtl" />
 
                     </LinearLayout>
 
@@ -525,7 +525,7 @@
                             android:enabled="false"
                             android:inputType="textCapCharacters"
                             android:maxLength="19"
-                            android:textDirection="ltr" />
+                            android:textDirection="rtl" />
 
                     </LinearLayout>
 
@@ -636,7 +636,7 @@
                                     android:enabled="false"
                                     android:inputType="textCapCharacters"
                                     android:maxLength="19"
-                                    android:textDirection="ltr" />
+                                    android:textDirection="rtl" />
 
                             </LinearLayout>
 
@@ -726,7 +726,7 @@
                                     android:enabled="false"
                                     android:inputType="textCapCharacters"
                                     android:maxLength="19"
-                                    android:textDirection="ltr" />
+                                    android:textDirection="rtl" />
 
                             </LinearLayout>
 
@@ -816,7 +816,7 @@
                                     android:enabled="false"
                                     android:inputType="textCapCharacters"
                                     android:maxLength="19"
-                                    android:textDirection="ltr" />
+                                    android:textDirection="rtl" />
 
                             </LinearLayout>
 
@@ -906,7 +906,7 @@
                                     android:enabled="false"
                                     android:inputType="textCapCharacters"
                                     android:maxLength="19"
-                                    android:textDirection="ltr" />
+                                    android:textDirection="rtl" />
 
                             </LinearLayout>
 

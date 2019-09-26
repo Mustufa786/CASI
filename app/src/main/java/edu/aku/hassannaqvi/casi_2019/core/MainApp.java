@@ -562,10 +562,10 @@ public class MainApp extends Application {
         //  TypefaceUtil.overrideFont(getApplicationContext(), "SERIF", "fonts/JameelNooriNastaleeq.ttf");
 
         // font from assets: font for Farsi
-        //TypefaceUtil.overrideFont(getApplicationContext(), "SERIF", "fonts/farsi.ttf");
+        TypefaceUtil.overrideFont(getApplicationContext(), "SERIF", "fonts/farsi.ttf");
 
         //font for Tajik
-        TypefaceUtil.overrideFont(getApplicationContext(), "SERIF", "fonts/Arimo-Regular.ttf");
+        //TypefaceUtil.overrideFont(getApplicationContext(), "SERIF", "fonts/Arimo-Regular.ttf");
 
 
         deviceId = Settings.Secure.getString(getApplicationContext().getContentResolver(),
