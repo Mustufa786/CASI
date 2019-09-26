@@ -48,7 +48,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:animateLayoutChanges="true"
-                android:layoutDirection="rtl"
+                android:layoutDirection="ltr"
                 android:orientation="vertical">
 
                 <!--1-->
@@ -259,7 +259,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/pink_100"
-                        android:text="Piped Water"
+                        android:text="@string/cic303_sub"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:textColor="@color/colorPrimaryDark" />
 

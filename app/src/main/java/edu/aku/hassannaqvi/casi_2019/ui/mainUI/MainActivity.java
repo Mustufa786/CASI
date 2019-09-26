@@ -425,7 +425,7 @@ public class MainActivity extends MenuActivity {
     }
 
     private void permissiongrantedStuff() {
-        /*if (versionAppContract.getVersioncode() != null) {
+        if (versionAppContract.getVersioncode() != null) {
             if (MainApp.versionCode < Integer.valueOf(versionAppContract.getVersioncode())) {
                 if (sharedPrefDownload.getBoolean("flag", true) && file.exists()) {
                     showDialog(newVer, preVer);
@@ -436,9 +436,9 @@ public class MainActivity extends MenuActivity {
                 OpenFormFun();
             }
         } else {
-            Toast.makeText(this, "Sync data!!", Toast.LENGTH_SHORT).show();
-        }*/
-        OpenFormFun();
+            Toast.makeText(this, "Please sync data to enter new form.", Toast.LENGTH_SHORT).show();
+        }
+        //OpenFormFun();
     }
 
     private void OpenFormFun() {
