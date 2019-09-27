@@ -138,6 +138,7 @@ public class SectionD4DActivity extends AppCompatActivity {
         MainApp.d4WRAc.set_UUID(MainApp.fc.getUID());
         MainApp.d4WRAc.setfType(MainApp.WRAD4D);
         MainApp.d4WRAc.setD1SerialNo(String.valueOf(MainApp.dwraSerial_no));
+        MainApp.d4WRAc.setFMUID(MainApp.mc.get_UID());
         if (!MainApp.isAttitudeCheck) {
             sB12.put("cid407", bi.cid407a.isChecked() ? "1"
                     : bi.cid407b.isChecked() ? "2"

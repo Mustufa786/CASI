@@ -29,6 +29,7 @@ import edu.aku.hassannaqvi.casi_2019.ui.viewMem.ViewMemberActivity;
 import edu.aku.hassannaqvi.casi_2019.validation.ClearClass;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
+import static edu.aku.hassannaqvi.casi_2019.ui.household.SectionA1Activity.userCountryDari_Home;
 import static edu.aku.hassannaqvi.casi_2019.ui.household.SectionA1Activity.userCountryTajik_Home;
 
 public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnCheckedChangeListener, TextWatcher {
@@ -208,16 +209,15 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
 
         /*For Tajik*/
         if (userCountryTajik_Home) {
-
-            binding.fldGrpA4a.setVisibility(View.GONE);
-            binding.fldGrpA4b.setVisibility(View.GONE);
             binding.cih317d.setVisibility(View.GONE);
             binding.cih317k.setVisibility(View.GONE);
             binding.lblPipedWater.setVisibility(View.GONE);
             binding.fldGrcih303.setVisibility(View.GONE);
             binding.cih303q.setVisibility(View.GONE);
-
         }
+
+        binding.fldGrpA4a.setVisibility(userCountryTajik_Home || userCountryDari_Home ? View.GONE : View.VISIBLE);
+        binding.fldGrpA4b.setVisibility(userCountryTajik_Home || userCountryDari_Home ? View.GONE : View.VISIBLE);
 
     }
 
@@ -826,7 +826,7 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
             return false;
         }
 
-        /*if (!userCountryTajik_Home) {
+        if (!userCountryTajik_Home && !userCountryDari_Home) {
             if (!ValidatorClass.EmptyRadioButton(this, binding.cih312h, binding.cih312h1, getString(R.string.cih312h))) {
                 return false;
             }
@@ -834,7 +834,7 @@ public class SectionA4Activity extends Menu2Activity implements RadioGroup.OnChe
             if (!ValidatorClass.EmptyRadioButton(this, binding.cih312i, binding.cih312i1, getString(R.string.cih312i))) {
                 return false;
             }
-        }*/
+        }
 
         if (!ValidatorClass.EmptyCheckBox(this, binding.fldGrpna0413check, binding.cih313a, getString(R.string.cih313))) {
             return false;

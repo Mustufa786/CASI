@@ -332,7 +332,7 @@
     <string name="cic415sub1"> گولیاں یا شربت </string>
     <string name="cic415sub2"> انجکشن </string>
     <string name="cic416"> ۔C513 -  کیا بچہ (نام) کوگزشتہ چھ مہینوں میں پیٹ کے کیٹرے مارنے والی دوا دی گئی تھیں </string>
-    <string name="cic41601">  </string>
+    <string name="cic41601"> ۔C513a - کیا بچے نے آنتوں کے کیڑوں کے لئے دوا استعمال کی تھی؟ </string>
     <string name="cic417"> ۔C514 -  کیا بچہ (نام) کو گزشتہ چھ مہینے کے دوران رات میں کم نظر آتا ہے </string>
     <string name="cic418"> ۔C515 - کیا بچہ (نام) کو کبھی وٹامن اے کے قطرے پلائے گئے ہیں؟ </string>
     <string name="cic419"> ۔C516 - (نام) کو کتنی وٹامن اے کی اضافی خوراکیں دی گئی؟ </string>
@@ -1258,8 +1258,8 @@
     <string name="ciw403"> ۔W403 - آپ کے بچے (نام) کی پیدائش کس جگہ واقع ہوئی تھی؟ </string>
     <string name="ciw40301"> ۔W40301 -زچگی کیسے ہوئ تھی؟ </string>
     <string name="ciw40301a"> زچگی نارمل ہوئ تھی </string>
-    <string name="ciw40301b"> زچگی کسی آواز یا ویکیوم کے زریعہ ہوئ تھی </string>
-    <string name="ciw40301c"> ۔زچگی بڑے آپریشن سے ہوئ تھی </string>
+    <string name="ciw40301b"> سیکشن سی </string>
+    <string name="ciw40301c"> زچگی کسی آواز یا ویکیوم کے زریعہ ہوئ تھی </string>
     <string name="ciw403961"> دیگر  سرکاری </string>
     <string name="ciw403962"> دیگرنجی </string>
     <string name="ciw403963"> (دیگر کی صورت میں جگہ کا نام لکھیں) </string>
@@ -1720,7 +1720,7 @@
     <string name="often"> اکثر(پچھلے 4 ہفتوں کے دوران دس سےزیادہ مرتبہ) </string>
     <string name="other"> دیگر وضاحت کریں </string>
     <string name="other1"> وضاحت کریں </string>
-    <string name="other2"> " " </string>
+    <string name="other2">  کوئی اور وضاحت کریں </string>
     <string name="otherprim"> دوسرے نجی دواخانے </string>
     <string name="otherpubm"> دوسرے عوامی طبی مرکز </string>
     <string name="othSeed"> دوسرے پھل </string>

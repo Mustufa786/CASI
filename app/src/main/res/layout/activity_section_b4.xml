@@ -161,7 +161,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_marginBottom="1dp"
-                            android:text="@string/ciw401h" />
+                            android:text="@string/ciw401h"
+                            android:visibility="gone" />
 
 
                         <RadioButton

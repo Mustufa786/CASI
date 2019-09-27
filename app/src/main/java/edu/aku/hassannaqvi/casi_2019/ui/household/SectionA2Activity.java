@@ -1136,7 +1136,13 @@ public class SectionA2Activity extends AppCompatActivity implements TextWatcher,
                 return false;
             }
 
-            if (Age >= 10) {
+            boolean occFlag;
+            if (userCountryTajik_Home)
+                occFlag = true;
+            else
+                occFlag = Age >= 10;
+
+            if (occFlag) {
                 if (!ValidatorClass.EmptyRadioButton(this, binding.cih2occ, binding.cih2occa, getString(R.string.cih2occ))) {
                     return false;
                 }

@@ -24,6 +24,7 @@ import edu.aku.hassannaqvi.casi_2019.ui.viewMem.ViewMemberActivity;
 import edu.aku.hassannaqvi.casi_2019.validation.ClearClass;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
+import static edu.aku.hassannaqvi.casi_2019.ui.household.SectionA1Activity.userCountryDari_Home;
 import static edu.aku.hassannaqvi.casi_2019.ui.household.SectionA1Activity.userCountryTajik_Home;
 
 public class SectionA402Activity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener, TextWatcher {
@@ -179,15 +180,14 @@ public class SectionA402Activity extends AppCompatActivity implements RadioGroup
 
         /*For Tajik*/
         if (userCountryTajik_Home) {
-
             binding.cih318c.setVisibility(View.GONE);
-            binding.cih318n.setVisibility(View.GONE);
             binding.cih318g.setVisibility(View.GONE);
 
             binding.cih319c.setVisibility(View.GONE);
             binding.cih319p.setVisibility(View.GONE);
-
         }
+
+        binding.cih318n.setVisibility(userCountryTajik_Home || userCountryDari_Home ? View.GONE : View.VISIBLE);
 
     }
 

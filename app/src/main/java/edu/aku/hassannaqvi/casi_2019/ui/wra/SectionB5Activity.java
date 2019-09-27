@@ -101,9 +101,9 @@ public class SectionB5Activity extends Menu2Activity implements TextWatcher, Rad
 
         /*For Tajik Visibility*/
         binding.ciw415d.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
-        binding.ciw415h.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        binding.ciw420h.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        binding.ciw423e.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
+//        binding.ciw415h.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+//        binding.ciw420h.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+//        binding.ciw423e.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
 
         binding.ciw415f.setVisibility(userCountryDari ? View.GONE : View.VISIBLE);
         binding.ciw420f.setVisibility(userCountryDari ? View.GONE : View.VISIBLE);

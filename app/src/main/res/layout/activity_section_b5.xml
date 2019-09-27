@@ -162,7 +162,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="1dp"
-                            android:text="@string/ciw415h" />
+                            android:text="@string/ciw415h"
+                            android:visibility="gone" />
 
                         <CheckBox
                             android:id="@+id/ciw41596"
@@ -496,7 +497,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="1dp"
-                            android:text="@string/ciw402g" />
+                            android:text="@string/ciw402h"
+                            android:visibility="gone" />
 
                         <CheckBox
                             android:id="@+id/ciw42096"
@@ -675,7 +677,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="1dp"
-                            android:text="@string/ciw423e" />
+                            android:text="@string/ciw423e"
+                            android:visibility="gone" />
 
                         <CheckBox
                             android:id="@+id/ciw42396"

@@ -86,9 +86,11 @@
 
             <!--            cid20504-->
             <LinearLayout
+                android:id="@+id/fldGrpD2B01"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:visibility="@{cid20503b ? View.VISIBLE : View.GONE}">
 
                 <TextView
                     android:layout_width="match_parent"

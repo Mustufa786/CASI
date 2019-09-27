@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import org.json.JSONException;
@@ -30,6 +31,14 @@ public class SectionD2BActivity extends AppCompatActivity {
         bi.setCallback(this);
 
         this.setTitle(getString(R.string.cid2h));
+
+        bi.cid20503.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i == bi.cid20503a.getId())
+                    bi.cid20504.clearCheck();
+            }
+        });
     }
 
     public void BtnContinue() {
@@ -110,6 +119,7 @@ public class SectionD2BActivity extends AppCompatActivity {
         MainApp.d4WRAc.set_UUID(MainApp.fc.getUID());
         MainApp.d4WRAc.setfType(MainApp.WRAD2B);
         MainApp.d4WRAc.setD1SerialNo(String.valueOf(MainApp.dwraSerial_no));
+        MainApp.d4WRAc.setFMUID(MainApp.mc.get_UID());
 
         JSONObject dwraC = new JSONObject();
         dwraC.put("cid20502", bi.cid20502.getText().toString());
