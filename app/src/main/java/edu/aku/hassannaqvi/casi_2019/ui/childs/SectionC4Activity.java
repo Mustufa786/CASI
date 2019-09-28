@@ -24,6 +24,7 @@ import edu.aku.hassannaqvi.casi_2019.ui.wra.SectionB1Activity;
 import edu.aku.hassannaqvi.casi_2019.validation.ClearClass;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
+import static edu.aku.hassannaqvi.casi_2019.ui.childs.SectionC1Activity.userCountryDari_Child;
 import static edu.aku.hassannaqvi.casi_2019.ui.childs.SectionC1Activity.userCountryTajik_Child;
 
 public class SectionC4Activity extends Menu2Activity {
@@ -269,6 +270,9 @@ public class SectionC4Activity extends Menu2Activity {
             binding.cic415txt01.setVisibility(View.VISIBLE);
 
         }
+
+        // Dari
+        binding.cic415b.setVisibility(userCountryDari_Child ? View.GONE : View.VISIBLE);
 
 
     }

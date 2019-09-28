@@ -80,7 +80,7 @@ public class SectionC1Activity extends AddMember_MenuActivity implements TextWat
     private Timer timer = new Timer();
 
 
-    public static boolean userCountryTajik_Child = false;
+    public static boolean userCountryTajik_Child = false, userCountryDari_Child = false;
 
 
     @Override
@@ -119,6 +119,7 @@ public class SectionC1Activity extends AddMember_MenuActivity implements TextWat
         HashMap<String, String> tagVal = MainApp.getTagValues(this);
         String country = tagVal.get("org") != null ? tagVal.get("org").equals("null") ? "0" : tagVal.get("org").equals("") ? "0" : tagVal.get("org") : "0";
         userCountryTajik_Child = Integer.valueOf(country) == 3;
+        userCountryDari_Child = Integer.valueOf(country) == 1;
 
     }
 

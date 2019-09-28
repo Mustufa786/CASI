@@ -130,6 +130,19 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
         bi.ciw322txt04.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
         bi.ciw322962.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
 
+        // Dari
+        bi.ciw302e.setVisibility(userCountryDari ? View.GONE : View.VISIBLE);
+        bi.ciw302g.setVisibility(userCountryDari ? View.GONE : View.VISIBLE);
+
+        bi.ciw311d.setVisibility(userCountryDari ? View.GONE : View.VISIBLE);
+        bi.ciw311e.setVisibility(userCountryDari ? View.GONE : View.VISIBLE);
+        bi.ciw311g.setVisibility(userCountryDari ? View.GONE : View.VISIBLE);
+
+        bi.ciw316e.setVisibility(userCountryDari ? View.GONE : View.VISIBLE);
+        bi.ciw316g.setVisibility(userCountryDari ? View.GONE : View.VISIBLE);
+
+        bi.ciw321e.setVisibility(userCountryDari ? View.GONE : View.VISIBLE);
+        bi.ciw321g.setVisibility(userCountryDari ? View.GONE : View.VISIBLE);
 
     }
 
