@@ -248,6 +248,8 @@ public class SectionB4Activity extends Menu2Activity implements TextWatcher, Rad
 
         /*Dari*/
         binding.ciw401b.setVisibility(userCountryDari ? View.GONE : View.VISIBLE);
+        binding.ciw402b.setVisibility(userCountryDari ? View.GONE : View.VISIBLE);
+        binding.ciw40301c.setVisibility(userCountryDari ? View.GONE : View.VISIBLE);
 
     }
 
