@@ -531,8 +531,9 @@ public class ViewMemberActivity extends MenuActivity {
                         SectionC1Activity.counterPerMom = 0;
                         SectionC1Activity.counterPerNA = 0;
 
-                        GetIntent = new Intent(this, EndingActivity.class).
-                                putExtra("complete", true);
+                        /*GetIntent = new Intent(this, EndingActivity.class).
+                                putExtra("complete", true);*/
+                        getAdolesActivity();
 
                     } else {
 
