@@ -437,10 +437,12 @@ public class MainActivity extends MenuActivity {
                     OpenFormFun();
                 }
             } else {
-                Toast.makeText(this, "Please sync data to enter new form.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Please sync data to enter new form.", Toast.LENGTH_LONG).show();
             }
         } else {
-            //OpenFormFun();
+            OpenFormFun();
+            Toast.makeText(this, "App is currently in testing mode.", Toast.LENGTH_LONG).show();
+
         }
     }
 
