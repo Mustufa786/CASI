@@ -425,20 +425,23 @@ public class MainActivity extends MenuActivity {
     }
 
     private void permissiongrantedStuff() {
-        if (versionAppContract.getVersioncode() != null) {
-            if (MainApp.versionCode < Integer.valueOf(versionAppContract.getVersioncode())) {
-                if (sharedPrefDownload.getBoolean("flag", true) && file.exists()) {
-                    showDialog(newVer, preVer);
+        if (MainApp.appMode.equals("field")) {
+            if (versionAppContract.getVersioncode() != null) {
+                if (MainApp.versionCode < Integer.valueOf(versionAppContract.getVersioncode())) {
+                    if (sharedPrefDownload.getBoolean("flag", true) && file.exists()) {
+                        showDialog(newVer, preVer);
+                    } else {
+                        OpenFormFun();
+                    }
                 } else {
                     OpenFormFun();
                 }
             } else {
-                OpenFormFun();
+                Toast.makeText(this, "Please sync data to enter new form.", Toast.LENGTH_SHORT).show();
             }
         } else {
-            Toast.makeText(this, "Please sync data to enter new form.", Toast.LENGTH_SHORT).show();
+            //OpenFormFun();
         }
-        //OpenFormFun();
     }
 
     private void OpenFormFun() {

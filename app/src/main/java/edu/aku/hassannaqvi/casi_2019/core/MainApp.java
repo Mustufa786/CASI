@@ -61,6 +61,9 @@ import edu.aku.hassannaqvi.casi_2019.ui.wra.MotherEndingActivity;
 
 public class MainApp extends Application {
 
+    public static String appMode = "Test"; // Field or Test
+
+
     public static final Integer _PORT = 443; // Port - with colon (:)
     public static final Integer MONTHS_LIMIT = 11;
     public static final Integer DAYS_LIMIT = 29;
@@ -559,10 +562,10 @@ public class MainApp extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        //  TypefaceUtil.overrideFont(getApplicationContext(), "SERIF", "fonts/JameelNooriNastaleeq.ttf");
+        TypefaceUtil.overrideFont(getApplicationContext(), "SERIF", "fonts/JameelNooriNastaleeq.ttf");
 
         // font from assets: font for Farsi
-        TypefaceUtil.overrideFont(getApplicationContext(), "SERIF", "fonts/farsi.ttf");
+        //TypefaceUtil.overrideFont(getApplicationContext(), "SERIF", "fonts/farsi.ttf");
 
         //font for Tajik
         //TypefaceUtil.overrideFont(getApplicationContext(), "SERIF", "fonts/Arimo-Regular.ttf");
