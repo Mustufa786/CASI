@@ -42,7 +42,7 @@
 
                 <EditText
                     android:id="@+id/cid20502"
-                    style="@style/textInput"
+                    style="@style/EditText"
                     android:hint="@string/cid20502"
                     android:inputType="textMultiLine" />
 

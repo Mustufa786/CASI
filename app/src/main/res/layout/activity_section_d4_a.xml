@@ -80,8 +80,7 @@
 
                 <EditText
                     android:id="@+id/cid40202"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/EditText"
                     android:hint="@string/cid40202"
                     android:inputType="textMultiLine" />
 
@@ -96,8 +95,7 @@
 
                 <EditText
                     android:id="@+id/cid40203"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/EditText"
                     android:hint="@string/cid40203"
                     android:inputType="textMultiLine" />
 
@@ -112,8 +110,7 @@
 
                 <EditText
                     android:id="@+id/cid40204"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/EditText"
                     android:hint="@string/cid40204"
                     android:inputType="textMultiLine" />
 
@@ -128,8 +125,7 @@
 
                 <EditText
                     android:id="@+id/cid40205"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/EditText"
                     android:hint="@string/cid40205"
                     android:inputType="textMultiLine"
                     android:tag="-1" />

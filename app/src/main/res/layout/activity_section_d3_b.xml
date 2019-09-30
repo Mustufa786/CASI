@@ -41,7 +41,7 @@
 
                 <EditText
                     android:id="@+id/cid30402"
-                    style="@style/textInput"
+                    style="@style/EditText"
                     android:hint="@string/cid30402"
                     android:inputType="textMultiLine" />
 
@@ -97,7 +97,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:visibility='@{cid30403a.checked? View.VISIBLE  : View.GONE}'>
+                android:visibility='@{cid30403b.checked? View.VISIBLE  : View.GONE}'>
 
                 <TextView
                     android:layout_width="match_parent"
