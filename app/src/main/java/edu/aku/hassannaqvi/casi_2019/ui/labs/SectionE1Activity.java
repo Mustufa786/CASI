@@ -116,6 +116,14 @@ public class SectionE1Activity extends AppCompatActivity {
 
                     fetchMembersFromGroup(position);
                     bi.ne102.setAdapter(new ArrayAdapter<>(SectionE1Activity.this, R.layout.item_style, members));
+
+                    if (position == 2 && members.size() == 2)
+                        bi.ne107d.setVisibility(View.VISIBLE);
+                    else {
+                        bi.ne107d.setVisibility(View.GONE);
+                        bi.ne107.clearCheck();
+                    }
+
                 }
             }
 
