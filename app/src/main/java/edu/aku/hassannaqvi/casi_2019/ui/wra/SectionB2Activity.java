@@ -299,7 +299,6 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (i == bi.ciw325a.getId()) {
-                    if (!userCountryTajik) return;
                     bi.fldGrpciw325.setVisibility(View.VISIBLE);
                 } else {
                     bi.ciw32501.clearCheck();

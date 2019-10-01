@@ -577,7 +577,7 @@
 
             <EditText
                 android:id="@+id/cid611"
-                style="@style/textInput"
+                style="@style/EditText"
                 android:hint="@string/cid611" />
 
             <!--cid612-->

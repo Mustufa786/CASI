@@ -533,7 +533,7 @@ public class ViewMemberActivity extends MenuActivity {
 
                         /*GetIntent = new Intent(this, EndingActivity.class).
                                 putExtra("complete", true);*/
-                        getAdolesActivity();
+                        GetIntent = getAdolesActivity();
 
                     } else {
 
