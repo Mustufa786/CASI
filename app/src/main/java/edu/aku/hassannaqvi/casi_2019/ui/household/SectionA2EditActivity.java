@@ -427,7 +427,8 @@ public class SectionA2EditActivity extends AppCompatActivity implements TextWatc
             } else {
                 if (Age < 5) {
                     for (byte i = 0; i < MainApp.mwraChild.size(); i++) {
-                        if (MainApp.mwraChild.get(i).getSerialNo().equals(mothersSerials.get(mothersList.indexOf(binding.cih212.getSelectedItem().toString()) - 1))) {
+//                        if (MainApp.mwraChild.get(i).getSerialNo().equals(binding.cih212.getSelectedItem().toString() + "_" + mothersSerials.get(mothersList.indexOf(binding.cih212.getSelectedItem().toString()) - 1))) {
+                        if (MainApp.mwraChild.get(i).getName().toUpperCase().equals(MainApp.fmc.getMotherName().toUpperCase())) {
                             MainApp.mwraChild.remove(i);
                             break;
                         }
