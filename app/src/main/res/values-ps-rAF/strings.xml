@@ -1603,9 +1603,9 @@
     <string name="na2t"> تمام اعضای خانواده (به شمول اطفال) </string>
     <string name="na2u5"> اطفال زیر 5 سال </string>
     <string name="na3subHeading"> در میان تمام اعضای خانواده؛ اطفال زیر 5 سال، خانم های سن حاملگی ( 15 یا 49) و دختران نوبالغ (10 تا 19) برای این بخش واجد شرایط هستند. </string>
-    <string name="na4subHeading"> وزن کا دوبارہ اندراج کریں </string>
+    <string name="na4subHeading"> لطفا دوباره وزن کنید </string>
     <string name="na5heading"> بخش H4: دست شوی (HW) </string>
-    <string name="na5subHeading"> لمبائی کا دوبارہ اندراج کریں </string>
+    <string name="na5subHeading"> لطفا دوباره وارد قد شوید </string>
     <string name="na601"> ۔H601 - میخواهیم نمک که در خانواده شما استفاده می شود، را امتحان کنیم که آیا آیودین دار است؟ ممکن است نمونه از نمک که شما در پخت و پز استفاده می کنید، را داشته باشیم؟ </string>
     <string name="na601a"> 0 ppm (بدون عکس العمل) </string>
     <string name="na601b"> ( بین 0 و 15ppm ) </string>
@@ -1623,7 +1623,7 @@
     <string name="na603c"> مشاهده نشد </string>
     <string name="na603d"> نمک در مرتبان بود </string>
     <string name="na6heading"> بخش H5: نمک آیودینی (SI) </string>
-    <string name="na6subHeading"> ۔MUAC کا دوبارہ اندراج کریں </string>
+    <string name="na6subHeading"> لطفا دوباره وارد MUAC شوید </string>
     <string name="na7heading"> بخش H6: ابزار اندازه گیری میزان تشویش دسترسی غذای خانواده (HFIAS) </string>
     <string name="na8aheading"> " " </string>
     <string name="na8heading"> " " </string>
