@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import org.json.JSONException;
@@ -21,6 +22,7 @@ import edu.aku.hassannaqvi.casi_2019.contracts.FamilyMembersContract;
 import edu.aku.hassannaqvi.casi_2019.core.DatabaseHelper;
 import edu.aku.hassannaqvi.casi_2019.core.MainApp;
 import edu.aku.hassannaqvi.casi_2019.databinding.ActivitySectionD6Binding;
+import edu.aku.hassannaqvi.casi_2019.validation.ClearClass;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
 public class SectionD6Activity extends AppCompatActivity {
@@ -61,6 +63,18 @@ public class SectionD6Activity extends AppCompatActivity {
         }
 
         bi.adolesName.setText(fmc.getName().toUpperCase());
+
+        bi.cid612.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i == bi.cid612b.getId()) {
+                    bi.fldGrpD601.setVisibility(View.GONE);
+                    ClearClass.ClearAllFields(bi.fldGrpD601, null);
+                } else
+                    bi.fldGrpD601.setVisibility(View.VISIBLE);
+
+            }
+        });
 
     }
 
