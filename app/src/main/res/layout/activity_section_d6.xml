@@ -660,7 +660,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="1dp"
                     android:layout_weight="1"
-                    android:text="@string/yes" />
+                    android:text="@string/cid614a" />
 
                 <RadioButton
                     android:id="@+id/cid614b"
@@ -669,7 +669,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="1dp"
                     android:layout_weight="1"
-                    android:text="@string/no" />
+                    android:text="@string/cid614b" />
 
                 <RadioButton
                     android:id="@+id/cid614c"
