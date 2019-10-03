@@ -211,7 +211,7 @@ public class SectionAnth1Activity extends Menu2Activity implements TextWatcher, 
             public void onFocusChange(View v, boolean hasFocus) {
                 if (hasFocus) {
                     flagW1 = true;
-                    binding.cid1w.setText("XXX.XX");
+                    binding.cid1w.setText(null);
                     binding.cid1w.setEnabled(false);
                 } else {
                     flagW1 = false;
@@ -294,7 +294,7 @@ public class SectionAnth1Activity extends Menu2Activity implements TextWatcher, 
             public void onFocusChange(View v, boolean hasFocus) {
                 if (hasFocus) {
                     flagH1 = true;
-                    binding.cid1h.setText("XXX.X");
+                    binding.cid1h.setText(null);
                     binding.cid1h.setEnabled(false);
                 } else {
                     flagH1 = false;
@@ -381,7 +381,7 @@ public class SectionAnth1Activity extends Menu2Activity implements TextWatcher, 
             public void onFocusChange(View v, boolean hasFocus) {
                 if (hasFocus) {
                     flagM1 = true;
-                    binding.cid1muac.setText("XX.X");
+                    binding.cid1muac.setText(null);
                     binding.cid1muac.setEnabled(false);
                 } else {
                     flagM1 = false;
