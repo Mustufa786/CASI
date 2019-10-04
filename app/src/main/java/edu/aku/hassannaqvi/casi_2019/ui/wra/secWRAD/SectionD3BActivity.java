@@ -37,7 +37,7 @@ public class SectionD3BActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
 
-                if (checkedId == bi.cid30403a.getId()) {
+                if (checkedId == bi.cid30403b.getId()) {
                     ClearClass.ClearAllFields(bi.fldGrpcid30404, null);
                 }
             }

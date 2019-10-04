@@ -698,7 +698,8 @@
                 android:background="@color/colorPrimary"
                 android:text="@string/na11801"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:visibility="gone" />
 
             <!--cid615-->
             <TextView

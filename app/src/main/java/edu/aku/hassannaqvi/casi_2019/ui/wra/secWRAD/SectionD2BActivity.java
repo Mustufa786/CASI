@@ -35,7 +35,7 @@ public class SectionD2BActivity extends AppCompatActivity {
         bi.cid20503.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                if (i == bi.cid20503a.getId())
+                if (i == bi.cid20503b.getId())
                     bi.cid20504.clearCheck();
             }
         });
@@ -134,6 +134,7 @@ public class SectionD2BActivity extends AppCompatActivity {
                 : bi.cid20504h.isChecked() ? "8"
                 : bi.cid20504i.isChecked() ? "9"
                 : bi.cid20504j.isChecked() ? "10"
+                : bi.cid20504k.isChecked() ? "11"
                 : bi.cid2050496.isChecked() ? "96"
                 : "0");
         dwraC.put("cid2050496x", bi.cid2050496x.getText().toString());
