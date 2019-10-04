@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+
     <string name="_1"> ناشتہ سے پہلے </string>
     <string name="_2"> ناشتہ </string>
     <string name="_3"> ناشتہ اور دوپہر کے کھانے کے درمیان </string>
@@ -587,6 +588,8 @@
     <string name="cid612"> ۔D612. کل دن اور رات کے دوران ، کیا آپ نے اپنے پیسوں سے کھانا خریدا تھا؟ </string>
     <string name="cid613"> ۔D613. آپ نے کیا خریدا تھا؟   </string>
     <string name="cid614"> ۔D614. آپ نے وہ کھانے کہاں سے خریدے تھے؟    </string>
+    <string name="cid614a"> اسکول کی کینٹین سے   </string>
+    <string name="cid614b"> سڑک پر(بیچنے والے سے /مارکیٹ) </string>
     <string name="cid615"> ۔D615. آپ کے خیال میں اسکول جانے سے پہلے ناشتہ کرنا کتنا اچھا ہے؟  </string>
     <string name="cid615a"> اچھا نہیں  </string>
     <string name="cid615b"> معلوم نہیں  </string>
@@ -1752,5 +1755,6 @@
     <string name="yes1"> yes </string>
     <string name="cic303_sub"> آب نل </string>
     <string name="ne107d"> بچہ 6 ماہ سے چھوٹا ہے </string>
+
 
 </resources>
