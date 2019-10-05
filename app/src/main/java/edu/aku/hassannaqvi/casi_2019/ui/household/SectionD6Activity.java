@@ -76,6 +76,33 @@ public class SectionD6Activity extends AppCompatActivity {
             }
         });
 
+        bi.cid601.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i != bi.cid601a.getId()) {
+                    bi.cid603.clearCheck();
+                }
+            }
+        });
+
+        bi.cid604.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i == bi.cid604b.getId()) {
+                    ClearClass.ClearAllFields(bi.fldGrpcid604, null);
+                }
+            }
+        });
+
+        bi.cid607.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i == bi.cid607b.getId()) {
+                    ClearClass.ClearAllFields(bi.fldGrpcid608, null);
+                }
+            }
+        });
+
     }
 
     public void BtnContinue() {
