@@ -24,16 +24,20 @@
             android:layoutDirection="rtl"
             android:orientation="vertical">
 
+            <TextView
+                style="@style/textview_fm_lst_h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cid2h1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
             <LinearLayout
                 android:id="@+id/fldGrpCheck"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-
                 <!--            cid201-->
-
-
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

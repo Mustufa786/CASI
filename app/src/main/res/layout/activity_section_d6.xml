@@ -23,6 +23,13 @@
             android:layoutDirection="rtl"
             android:orientation="vertical">
 
+            <TextView
+                style="@style/textview_fm_lst_h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cid6h1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
             <LinearLayout
                 android:id="@+id/fldGrpresp"
                 android:layout_width="match_parent"

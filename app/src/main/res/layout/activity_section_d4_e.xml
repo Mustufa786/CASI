@@ -297,6 +297,12 @@
 
             </RadioGroup>
 
+            <TextView
+                style="@style/textview_fm_lst_h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cid4h1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -304,7 +310,7 @@
                 android:background="@color/colorAccent"
                 android:gravity="center"
                 android:padding="25dp"
-                android:text="HYGIENE"
+                android:text="@string/cid5h"
                 android:textColor="@color/white"
                 android:textSize="25sp" />
 
