@@ -319,7 +319,7 @@
                             android:layout_marginBottom="1dp"
                             android:text="@string/ciw303h" />
 
-                        <!--Tajik-->
+                        <!--Tajik | Urdu-->
                         <RadioButton
                             android:id="@+id/ciw303i"
                             android:layout_width="match_parent"
@@ -327,6 +327,7 @@
                             android:layout_marginBottom="1dp"
                             android:text="@string/ciw303i" />
 
+                        <!--Tajik-->
                         <RadioButton
                             android:id="@+id/ciw303j"
                             android:layout_width="match_parent"
@@ -1994,9 +1995,9 @@
                                 android:id="@+id/ciw322962x"
                                 style="@style/textInput"
                                 android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
-                                android:visibility='@{ciw322962.checked ? View.VISIBLE : View.GONE}'
                                 android:hint="@string/other1"
-                                android:text='@{ciw322962.checked ? ciw322962x.getText.toString : ""}' />
+                                android:text='@{ciw322962.checked ? ciw322962x.getText.toString : ""}'
+                                android:visibility='@{ciw322962.checked ? View.VISIBLE : View.GONE}' />
 
 
                             <TextView

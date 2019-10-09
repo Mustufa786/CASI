@@ -29,6 +29,7 @@ import edu.aku.hassannaqvi.casi_2019.validation.ClearClass;
 import edu.aku.hassannaqvi.casi_2019.validation.ValidatorClass;
 
 import static edu.aku.hassannaqvi.casi_2019.ui.wra.SectionB1Activity.userCountryTajik;
+import static edu.aku.hassannaqvi.casi_2019.ui.wra.SectionB1Activity.userCountryUrdu;
 
 public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnCheckedChangeListener, TextWatcher {
 
@@ -70,7 +71,7 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
         // 303
         bi.ciw303txt01.setVisibility(userCountryTajik ? View.GONE : View.VISIBLE);
         bi.ciw303txt02.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
-        bi.ciw303i.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
+        bi.ciw303i.setVisibility(userCountryTajik || userCountryUrdu ? View.VISIBLE : View.GONE);
         bi.ciw303j.setVisibility(userCountryTajik ? View.GONE : View.GONE);
         bi.ciw303k.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
         bi.ciw303l.setVisibility(userCountryTajik ? View.VISIBLE : View.GONE);
@@ -937,9 +938,9 @@ public class SectionB2Activity extends Menu2Activity implements RadioGroup.OnChe
 
 
 //            if (userCountryTajik || userCountryDari) {
-                if (!ValidatorClass.EmptyRadioButton(this, bi.ciw31001, bi.ciw31001a, getString(R.string.ciw31001))) {
-                    return false;
-                }
+            if (!ValidatorClass.EmptyRadioButton(this, bi.ciw31001, bi.ciw31001a, getString(R.string.ciw31001))) {
+                return false;
+            }
 //            }
 
 
