@@ -40,7 +40,7 @@
                 android:id="@+id/Age"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/childName"
+                android:layout_alignParentEnd="true"
                 android:layout_alignParentTop="true"
                 android:background="@null"
                 android:gravity="end"
