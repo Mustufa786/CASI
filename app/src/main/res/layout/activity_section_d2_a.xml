@@ -25,11 +25,10 @@
             android:orientation="vertical">
 
             <TextView
-                style="@style/textview_fm_lst_h"
+                style="@style/h_textview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/cid2h1"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
+                android:text="@string/cid2h1" />
 
             <LinearLayout
                 android:id="@+id/fldGrpCheck"

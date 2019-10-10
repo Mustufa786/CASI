@@ -295,6 +295,16 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
 
+                            <Button
+                                android:id="@+id/showMembers"
+                                style="@style/MyBorderlessButton"
+                                android:layout_width="300sp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="20dp"
+                                android:onClick="@{() -> callback.BtnShowMembers()}"
+                                android:text="Show Members" />
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -336,8 +346,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
-                            android:visibility="gone"
-                            tools:visibility="visible">
+                            android:visibility="gone">
 
                             <LinearLayout
                                 android:id="@+id/fldGrpHC"

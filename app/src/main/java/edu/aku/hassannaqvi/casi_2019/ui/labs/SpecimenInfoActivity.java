@@ -1,11 +1,14 @@
 package edu.aku.hassannaqvi.casi_2019.ui.labs;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
+import android.text.Html;
 import android.text.InputType;
 import android.text.TextWatcher;
 import android.view.View;
@@ -63,6 +66,7 @@ public class SpecimenInfoActivity extends AppCompatActivity {
     FamilyMembersContract slecMem;
     String date = "";
     String dateTime;
+    StringBuilder mwra, adolscent, child, other;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,6 +104,11 @@ public class SpecimenInfoActivity extends AppCompatActivity {
         hhList = new ArrayList<>();
         hh = new ArrayList<>();
         json = new JSONModelClass();
+
+        mwra = new StringBuilder();
+        other = new StringBuilder();
+        adolscent = new StringBuilder();
+        child = new StringBuilder();
 
         if (MainActivity.ftype.equals("B")) {
             binding.fldGrpcihconsent.setVisibility(View.VISIBLE);
@@ -399,6 +408,11 @@ public class SpecimenInfoActivity extends AppCompatActivity {
                         MainApp.mwra.add(fm);
                         MainApp.all_members.add(fm);
                         addIfNotExists(MainApp.all_members, fm);
+
+                        if (mwra.length() == 0)
+                            mwra.append("<h3>&ensp;&ensp;MWRA's</h3>");
+
+                        mwra.append("<i>" + json.getName().substring(0, 1).toUpperCase() + json.getName().substring(1) + "</i><br>");
                     }
                     if ((Integer.valueOf(json.getAge()) >= 10 && (Integer.valueOf(json.getAge()) < 20))
                             && json.getGender().equals("2") && json.getcih210().equals("1") && json.getMaritalStatus().equals("5")) {
@@ -406,6 +420,11 @@ public class SpecimenInfoActivity extends AppCompatActivity {
                         MainApp.adolescents.add(fm);
                         MainApp.all_members.add(fm);
                         addIfNotExists(MainApp.all_members, fm);
+
+                        if (adolscent.length() == 0)
+                            adolscent.append("<h3>&ensp;&ensp;Adolescent's</h3>");
+
+                        adolscent.append("<i>" + json.getName().substring(0, 1).toUpperCase() + json.getName().substring(1) + "</i><br>");
                     }
                     if ((Integer.valueOf(json.getAge()) >= 6 && (Integer.valueOf(json.getAge()) < 13))
                             && json.getcih210().equals("1")) {
@@ -413,12 +432,22 @@ public class SpecimenInfoActivity extends AppCompatActivity {
                         MainApp.minors.add(fm);
                         MainApp.all_members.add(fm);
                         addIfNotExists(MainApp.all_members, fm);
+
+                        if (other.length() == 0)
+                            other.append("<h3>&ensp;&ensp;Other's</h3>");
+
+                        other.append("<i>" + json.getName().substring(0, 1).toUpperCase() + json.getName().substring(1) + "</i><br>");
                     }
                     if (Integer.valueOf(json.getAge()) < 6 && json.getcih210().equals("1")) {
                         fm.setType("2");
                         MainApp.childUnder5.add(fm);
                         MainApp.all_members.add(fm);
                         addIfNotExists(MainApp.all_members, fm);
+
+                        if (child.length() == 0)
+                            child.append("<h3>&ensp;&ensp;Children's < 5</h3>");
+
+                        child.append("<i>" + json.getName().substring(0, 1).toUpperCase() + json.getName().substring(1) + "</i><br>");
                     }
 
 
@@ -524,5 +553,22 @@ public class SpecimenInfoActivity extends AppCompatActivity {
         }
     }
 
+    public void BtnShowMembers() {
+
+        StringBuilder allSelMem = new StringBuilder();
+        allSelMem.append(mwra).append(child).append(adolscent).append(other);
+
+        new AlertDialog.Builder(this)
+                .setTitle(Html.fromHtml("<h1>&ensp;&ensp;MEMBERS INFORMATION</h1>"))
+                .setMessage(Html.fromHtml(allSelMem.toString()))
+                .setPositiveButton("Ok",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog,
+                                                int id) {
+                                dialog.dismiss();
+                            }
+                        }
+                ).create().show();
+    }
 
 }
