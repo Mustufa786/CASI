@@ -425,7 +425,7 @@ public class MainActivity extends MenuActivity {
     }
 
     private void permissiongrantedStuff() {
-        if (MainApp.appMode.equals("field")) {
+        if (MainApp.appMode.equals("Field")) {
             if (versionAppContract.getVersioncode() != null) {
                 if (MainApp.versionCode < Integer.valueOf(versionAppContract.getVersioncode())) {
                     if (sharedPrefDownload.getBoolean("flag", true) && file.exists()) {
