@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="_1"> ناشتہ سے پہلے </string>
     <string name="_2"> ناشتہ </string>
     <string name="_3"> ناشتہ اور دوپہر کے کھانے کے درمیان </string>
@@ -133,7 +134,7 @@
     <string name="cic301d"> Синну сол 36-59 </string>
     <string name="cic302"> C302 - Кудак корти милии эмкунӣ дорад, ки ҳамаи эмкуниҳои (НОМ) дар он сабт шудааст </string>
     <string name="cic303"> C303 - Мумкин аст ман корт ё ягон ҳуҷҷати дигаре, ки дар он эмкунӣ қайд карда шудааст, бинам? </string>
-    #N/A
+    <string name="cic303_sub"> 0 </string>
     <string name="cic303a"> Ҳа, фақат корт дида шуд </string>
     <string name="cic303b"> Ҳа, фақат дигар ҳуҷҷат дида шуд </string>
     <string name="cic303c"> Ҳа, ҳам корт ва ҳам дигар ҳуҷҷат дида шуд </string>
@@ -439,7 +440,7 @@
     <string name="cid207b"> مطمئین نیست </string>
     <string name="cid207c"> خوب </string>
     <string name="cid2h"> رفتارها و عادات تغذی (برگرفته شده از FAO) </string>
-    #N/A
+    <string name="cid2h1"> 0 </string>
     <string name="cid301"> D301- آیا شما عادات غذایی خود را در هنگام شیردهی تغییر می دهید؟ </string>
     <string name="cid301a"> بلی </string>
     <string name="cid301b"> نخیر </string>
@@ -548,14 +549,14 @@
     <string name="cid415b"> مطمئین نیست </string>
     <string name="cid415c"> مشکل </string>
     <string name="cid4h"> رفتارها و عادات تغذیوی غذاهای متمم ( 23 – 6 ماهه) </string>
-    #N/A
+    <string name="cid4h1"> 0 </string>
     <string name="cid501"> D501- آیا سبزی ها و میوه ها را با آب پاگ می شوید؟ </string>
     <string name="cid502"> D502- شما چگونه غذاهای تازه خراب شوینده مانند گوشت خام، گوشت مرغ و غذای های بحری را نگه داری می کنید؟ </string>
     <string name="cid502a"> در یخچال/صندوق سرد </string>
     <string name="cid502b"> پوشیده </string>
     <string name="cid502c"> دیگر </string>
     <string name="cid502d"> نمی داند/جواب نداد </string>
-    #N/A
+    <string name="cid5h"> 0 </string>
     <string name="cid601"> D601- آیا قبل از مکتب امروز چای صبح خوردید؟ </string>
     <string name="cid602"> D602- در کدام وقت؟ </string>
     <string name="cid602a"> بین 9 – 6 صبح </string>
@@ -590,8 +591,8 @@
     <string name="cid612"> D612- آیا دیروز در هنگام شب یا روز، با پول خود تان غذا خریده بودید؟ </string>
     <string name="cid613"> D613- چه خریده بودید؟ این سوال یک سوال باز است. </string>
     <string name="cid614"> D614- آن غذاها را از کجا خریده بودید؟ </string>
-    #N/A
-    #N/A
+    <string name="cid614a"> 0 </string>
+    <string name="cid614b"> 0 </string>
     <string name="cid615"> D615- به نظرتان چه اندازه خوب است که چای صبح قبل از مکتب خورده شود؟ </string>
     <string name="cid615a"> خوب نیست </string>
     <string name="cid615b"> مطمئین نیست </string>
@@ -609,7 +610,7 @@
     <string name="cid618b"> مطمئین نیست </string>
     <string name="cid618c"> مشکل </string>
     <string name="cid6h"> رفتارها و عادات غذای اطفال سنین مکتب و نو بالغی </string>
-    #N/A
+    <string name="cid6h1"> 0 </string>
     <string name="cih101"> H101 - Номи маҳалли аҳолинишин </string>
     <string name="cih102"> H102 Рақами деҳа: </string>
     <string name="cih102a"> H107 - Рақами кластер: </string>
@@ -1759,14 +1760,6 @@
     <string name="year2"> Сол </string>
     <string name="yes"> ҳа </string>
     <string name="yes1">  ҳа  </string>
-    <string name="cic303_sub">" "</string>
-    <string name="cid2h1">" "</string>
-    <string name="cid4h1">" "</string>
-    <string name="cid5h">" "</string>
-    <string name="cid614a">" "</string>
-    <string name="cid614b">" "</string>
-    <string name="cid6h1">" "</string>
-    <string name="cih7heading">" "</string>
-    <string name="cih7info">" "</string>
+
 
 </resources>
