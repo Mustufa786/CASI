@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string name="_1"> ناشتہ سے پہلے </string>
     <string name="_2"> ناشتہ </string>
     <string name="_3"> ناشتہ اور دوپہر کے کھانے کے درمیان </string>
@@ -987,8 +986,8 @@
     <string name="cih7a05">   </string>
     <string name="cih7a06">   </string>
     <string name="cih7h1">   </string>
-    #N/A
-    #N/A
+    <string name="cih7heading"> ҚИСМИ H7. КУМАК </string>
+    <string name="cih7info"> Дар давоми 30 рӯзи охир ягон кас аз аъзои хонаводаатон кумакҳои зеринро дарёфт намудааст? Ҳар як намуди кумакро пурсед </string>
     <string name="cih801"> H801 - گذشتہ 5 سالوں کے دوران کیا اس گھر میں کسی گھر کے فرد کی موت واقع ہوئی </string>
     <string name="cih802"> H802 - وفات پانے والوں کی تعداد </string>
     <string name="cih802sub"> اگر ہاں تو برائے مہربانی وفات پانے والے کی تفصیل بتائیں </string>

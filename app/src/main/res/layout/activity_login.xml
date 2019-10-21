@@ -33,7 +33,7 @@
             android:id="@+id/email_login_form"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layoutDirection="rtl"
+            android:layoutDirection="ltr"
             android:orientation="vertical">
 
             <TextView
@@ -97,7 +97,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_30sdp"
-                    android:layoutDirection="rtl">
+                    android:layoutDirection="ltr">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -133,7 +133,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_30sdp"
                     android:layout_marginTop="@dimen/_5sdp"
-                    android:layoutDirection="rtl">
+                    android:layoutDirection="ltr">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -201,7 +201,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:gravity="center"
-                android:layoutDirection="rtl"
+                android:layoutDirection="ltr"
                 android:popupBackground="#3d3d3d"
                 android:visibility="gone" />
 
@@ -212,7 +212,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="14dp"
                 android:gravity="center"
-                android:layoutDirection="rtl"
+                android:layoutDirection="ltr"
                 android:popupBackground="#3d3d3d"
                 android:visibility="gone" />
 

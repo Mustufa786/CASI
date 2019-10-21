@@ -7,7 +7,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
-import android.content.res.Configuration;
 import android.databinding.DataBindingUtil;
 import android.os.Build;
 import android.os.Bundle;
@@ -32,7 +31,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
 import java.util.HashMap;
-import java.util.Locale;
 import java.util.Map;
 import java.util.Timer;
 
@@ -74,13 +72,13 @@ public class SectionA1Activity extends Menu2Activity implements TextWatcher, Rad
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        String languageToLoad = "ps-rAF"; // your language
+      /*  String languageToLoad = "ps-rAF"; // your language
         Configuration configuration = getResources().getConfiguration();
         Locale locale = new Locale("ps", "rAF"); //DARI
         Locale.setDefault(locale);
         configuration.locale = locale;
         getResources().updateConfiguration(configuration, getResources().getDisplayMetrics());
-        Toast.makeText(this, locale.getLanguage(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, locale.getLanguage(), Toast.LENGTH_SHORT).show();*/
         binding = DataBindingUtil.setContentView(this, R.layout.activity_section_a1);
         db = new DatabaseHelper(this);
         binding.setCallback(this);
